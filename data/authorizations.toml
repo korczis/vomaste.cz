@@ -524,3 +524,38 @@ authorized_at = "2026-08-08"
 subjects = ["robert-pelikan"]
 agents_md_section = "Scope extension, 2026-08-08: Robert Pelikán"
 scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Robert Pelikán je politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce — ministr spravedlnosti (březen 2015 – 27. 6. 2018, vlády Bohuslava Sobotky a první vláda Andreje Babiše, od 24. 1. 2018 v demisi, ANO), dříve 1. náměstek ministra spravedlnosti a právník. V dubnu 2018 oznámil odchod z politiky; jeho zdůvodnění (názorové neshody v ANO mj. ohledně SPD a lidských práv, kontext vydání Jevgenije Nikulina do USA) se cituje jeho slovy (ČT24 2018-04-07). Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní představitele posledních tří volebních období, po pěti postupně.  Rozsah tohoto dossieru je záměrně minimální: základní biografický záznam dřívější vládní funkce a ohlášeného odchodu z politiky s jeho vlastním zdůvodněním, doloženo přímo otevřenými zdroji (vlada.gov.cz, ČT24). Nejde o investigativní rešerši žádné kauzy — to by vyžadovalo samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-08-JAROSLAVA-NEMCOVA"
+authorized_at = "2026-08-08"
+subjects = ["jaroslava-nemcova"]
+agents_md_section = "Scope extension, 2026-08-08: Jaroslava Němcová"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jaroslava Němcová je politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce — ministryně práce a sociálních věcí (13. 12. 2017 – 27. 6. 2018, první vláda Andreje Babiše, od 24. 1. 2018 v demisi, ANO); dříve ředitelka pobočky VZP, náměstkyně ředitele nemocnice a radní Středočeského kraje pro zdravotnictví. Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní představitele posledních tří volebních období, po pěti postupně.  Rozsah tohoto dossieru je záměrně minimální: základní biografický záznam dřívější vládní funkce. Tvrzení nese stav 1 ZDROJ (jediný přímo otevřený zdroj je oficiální profil na vlada.gov.cz; iROZHLAS vrací automatizovanému přístupu 403); povýšení na CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-08-ILJA-SMID"
+authorized_at = "2026-08-08"
+subjects = ["ilja-smid"]
+agents_md_section = "Scope extension, 2026-08-08: Ilja Šmíd"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Ilja Šmíd je politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce — ministr kultury (13. 12. 2017 – 27. 6. 2018, první vláda Andreje Babiše, od 24. 1. 2018 v demisi); dříve ředitel Pražské komorní filharmonie (1995–2006) a Symfonického orchestru hl. m. Prahy FOK (2006–2012), muzikolog a pedagog. Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní představitele posledních tří volebních období, po pěti postupně.  Rozsah tohoto dossieru je záměrně minimální: základní biografický záznam dřívější vládní funkce. Tvrzení nese stav 1 ZDROJ (jediný přímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-08-TOMAS-HUNER"
+authorized_at = "2026-08-08"
+subjects = ["tomas-huner"]
+agents_md_section = "Scope extension, 2026-08-08: Tomáš Hüner"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Tomáš Hüner je politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce — ministr průmyslu a obchodu (13. 12. 2017 – 27. 6. 2018, první vláda Andreje Babiše, od 24. 1. 2018 v demisi); dříve náměstek ministra průmyslu a obchodu (2006–2011), předseda dozorčí rady ČEPS a ředitel divize Energy Management v Siemens. Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní představitele posledních tří volebních období, po pěti postupně.  Rozsah tohoto dossieru je záměrně minimální: základní biografický záznam dřívější vládní funkce. Tvrzení nese stav 1 ZDROJ (jediný přímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-08-JIRI-MILEK"
+authorized_at = "2026-08-08"
+subjects = ["jiri-milek"]
+agents_md_section = "Scope extension, 2026-08-08: Jiří Milek"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Milek je politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce — ministr zemědělství (13. 12. 2017 – 27. 6. 2018, první vláda Andreje Babiše, od 24. 1. 2018 v demisi); dříve generální ředitel a předseda představenstva ÚSOVSKO a.s. a agronom. Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní představitele posledních tří volebních období, po pěti postupně.  Rozsah tohoto dossieru je záměrně minimální: základní biografický záznam dřívější vládní funkce. Tvrzení nese stav 1 ZDROJ (jediný přímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-08-KARLA-SLECHTOVA"
+authorized_at = "2026-08-08"
+subjects = ["karla-slechtova"]
+agents_md_section = "Scope extension, 2026-08-08: Karla Šlechtová"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Karla Šlechtová je politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných funkcí — ministryně obrany (13. 12. 2017 – 27. 6. 2018, první vláda Andreje Babiše, od 24. 1. 2018 v demisi) a ministryně pro místní rozvoj (září 2014 – 13. 12. 2017, vláda Bohuslava Sobotky); dříve ředitelka odboru fondů EU na Úřadu vlády a manažerka v Deloitte. Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní představitele posledních tří volebních období, po pěti postupně.  Rozsah tohoto dossieru je záměrně minimální: základní biografický záznam dřívějších vládních funkcí. Tvrzení nese stav 1 ZDROJ (jediný přímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."

@@ -2698,3 +2698,98 @@ záznam dřívější vládní funkce a ohlášeného odchodu z politiky s jeho
 vlastním zdůvodněním, doloženo přímo otevřenými zdroji (vlada.gov.cz,
 ČT24). Nejde o investigativní rešerši žádné kauzy — to by vyžadovalo
 samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jaroslava Němcová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jaroslava Němcová je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministryně práce a sociálních věcí (13. 12. 2017 – 27. 6.
+2018, první vláda Andreje Babiše, od 24. 1. 2018 v demisi, ANO); dříve
+ředitelka pobočky VZP, náměstkyně ředitele nemocnice a radní
+Středočeského kraje pro zdravotnictví. Autorizace navazuje na výslovnou
+žádost vlastníka v této konverzaci pokrýt vládní představitele
+posledních tří volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce. Tvrzení nese stav 1 ZDROJ (jediný přímo
+otevřený zdroj je oficiální profil na vlada.gov.cz; iROZHLAS vrací
+automatizovanému přístupu 403); povýšení na CORROBORATED vyžaduje
+otevření druhého, nezávislého zdroje. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Ilja Šmíd
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Ilja Šmíd je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr kultury (13. 12. 2017 – 27. 6. 2018, první vláda Andreje
+Babiše, od 24. 1. 2018 v demisi); dříve ředitel Pražské komorní
+filharmonie (1995–2006) a Symfonického orchestru hl. m. Prahy FOK
+(2006–2012), muzikolog a pedagog. Autorizace navazuje na výslovnou
+žádost vlastníka v této konverzaci pokrýt vládní představitele
+posledních tří volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce. Tvrzení nese stav 1 ZDROJ (jediný přímo
+otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Tomáš Hüner
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Tomáš Hüner je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr průmyslu a obchodu (13. 12. 2017 – 27. 6. 2018, první
+vláda Andreje Babiše, od 24. 1. 2018 v demisi); dříve náměstek ministra
+průmyslu a obchodu (2006–2011), předseda dozorčí rady ČEPS a ředitel
+divize Energy Management v Siemens. Autorizace navazuje na výslovnou
+žádost vlastníka v této konverzaci pokrýt vládní představitele
+posledních tří volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce. Tvrzení nese stav 1 ZDROJ (jediný přímo
+otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jiří Milek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Milek je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr zemědělství (13. 12. 2017 – 27. 6. 2018, první vláda
+Andreje Babiše, od 24. 1. 2018 v demisi); dříve generální ředitel a
+předseda představenstva ÚSOVSKO a.s. a agronom. Autorizace navazuje na
+výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele posledních tří volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce. Tvrzení nese stav 1 ZDROJ (jediný přímo
+otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Karla Šlechtová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Karla Šlechtová je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — ministryně obrany (13. 12. 2017 – 27. 6. 2018, první vláda
+Andreje Babiše, od 24. 1. 2018 v demisi) a ministryně pro místní rozvoj
+(září 2014 – 13. 12. 2017, vláda Bohuslava Sobotky); dříve ředitelka
+odboru fondů EU na Úřadu vlády a manažerka v Deloitte. Autorizace
+navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele posledních tří volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších vládních funkcí. Tvrzení nese stav 1 ZDROJ (jediný
+přímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.

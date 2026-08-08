@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ilja-smid/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ilja-smid"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil člena vlády)",
+  "description": "Oficiální vládní profil: ministr kultury 13. 12. 2017 – 27. 6. 2018, dříve ředitel PKF a FOK.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/ilja-smid-162057/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ilja-smid/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "ilja-smid"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil člena vlády na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci ministra kultury od 13. 12. 2017, od 24. 1. 2018 do 27. 6. 2018 v demisi, a dřívější dráhu: ředitel Pražské komorní filharmonie (1995–2006), ředitel Symfonického orchestru hl. m. Prahy FOK (2006–2012), umělecký šéf Divadla J. K. Tyla v Plzni (2013–2014) a docent arts managementu na VŠE (od 2014).\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam a zatím jediný přímo otevřený zdroj tohoto tvrzení** — proto stav 1 ZDROJ; povýšení na CORROBORATED vyžaduje skutečné otevření druhého, nezávislého zdroje."
+    }
+  ],
+  "order": 1
+}
