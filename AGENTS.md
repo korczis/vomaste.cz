@@ -2366,3 +2366,116 @@ záznam dřívějších veřejných a stranických funkcí, doložený přímo
 otevřenými zdroji (vlada.gov.cz, ČT24). Nejde o investigativní rešerši
 žádné kauzy z jeho ministerského působení — to by vyžadovalo
 samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Tomáš Petříček
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Tomáš Petříček je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr zahraničních věcí (16. 10. 2018 – 12. 4. 2021, druhá
+vláda Andreje Babiše, ČSSD). O odvolání se podle Aktuálně.cz dozvěděl
+na schůzce s předsedou ČSSD Janem Hamáčkem po neúspěšné kandidatuře na
+předsedu strany; odvolání je politický krok, jeho vlastní interpretace
+(postoj k tendru na Dukovany, k neschváleným vakcínám) se cituje
+atribuovaně. Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele posledních tří volebních období,
+po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní biografický
+záznam dřívější vládní funkce a okolností odvolání tak, jak je popsaly
+citované zdroje. Doloženo přímo otevřenými zdroji (vlada.gov.cz,
+Aktuálně.cz). Nejde o investigativní rešerši žádné kauzy — to by
+vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Miroslav Toman
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Miroslav Toman je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — ministr zemědělství (27. 6. 2018 – 17. 12. 2021, druhá vláda
+Andreje Babiše, nominován za ČSSD; v demisi od 11. 11. 2021) a ministr
+zemědělství i v letech 2013–2014 (vláda Jiřího Rusnoka); dříve
+prezident Potravinářské komory ČR a Agrární komory ČR a náměstek
+ministra zemědělství. Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt vládní představitele posledních tří volebních
+období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní biografický
+záznam dřívějších veřejných funkcí. Tvrzení zatím nese stav 1 ZDROJ:
+jediný přímo otevřený zdroj je oficiální vládní profil (nezávislé
+redakce k tématu vracejí automatizovanému přístupu 403 nebo článek už
+není dostupný); povýšení na CORROBORATED vyžaduje otevření druhého,
+nezávislého zdroje. Nejde o investigativní rešerši žádné kauzy (vč.
+podnikání rodiny Tomanových) — to by vyžadovalo samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Roman Prymula
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Roman Prymula je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr zdravotnictví (21. 9. – 29. 10. 2020, druhá vláda
+Andreje Babiše), předtím náměstek ministra zdravotnictví (2017–2020),
+epidemiolog. Konec v úřadu následoval poté, co byl v říjnu 2020
+vyfotografován při nočním odchodu z pražské restaurace v době, kdy
+restaurace musely být podle protiepidemických opatření zavřené; premiér
+Babiš ho poté vyzval k rezignaci a navrhl prezidentovi jeho odvolání
+(RESPEKT 2020-10-23). Prymulova vlastní obhajoba („zas tolik jsem toho
+neprovedl", tvrzení, že nic neporušil) se cituje jeho slovy. Autorizace
+navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele posledních tří volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce a okolností jejího konce tak, jak je
+popsaly citované zdroje — odvolání je politický krok premiéra, nikoli
+soudní ani správní závěr o porušení pravidel, a Prymulovo popření se
+uvádí při každé zmínce. Doloženo přímo otevřenými zdroji (vlada.gov.cz,
+RESPEKT). Hlubší rešerše vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jan Blatný
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Blatný je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr zdravotnictví (29. 10. 2020 – 7. 4. 2021, druhá vláda
+Andreje Babiše), dětský hematolog FN Brno a docent Masarykovy
+univerzity. Jeho odvolání podle Tiscali/Zpráv provázel dříve veřejně
+vyslovený požadavek prezidenta Zemana kvůli Blatného postoji k vakcíně
+Sputnik V (trval na schválení EMA); Blatný odvolání označil za
+politické rozhodnutí a uvedl, že má čisté svědomí — obě strany se
+citují atribuovaně. Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt vládní představitele posledních tří volebních
+období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce a okolností odvolání tak, jak je popsaly
+citované zdroje — odvolání je politický krok a žádné pochybení se z něj
+nevyvozuje. Doloženo přímo otevřenými zdroji (vlada.gov.cz,
+zpravy.tiscali.cz). Hlubší rešerše vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Jakub Kulhánek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jakub Kulhánek je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr zahraničních věcí (od 21. 4. 2021 do 17. 12. 2021,
+druhá vláda Andreje Babiše, ČSSD; v demisi od 11. 11. 2021), předtím
+náměstek na ministerstvech vnitra (2018–2021), zahraničí (2014–2016) a
+obrany (2014). Jmenován byl v době kauzy Vrbětice a mezi jeho první
+kroky patřilo předání protestu ruskému velvyslanci (Blesk 2021-04-21).
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci
+pokrýt vládní představitele posledních tří volebních období, po pěti
+postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí, doložený přímo otevřenými zdroji
+(vlada.gov.cz, Blesk.cz). Dřívější externí poradenství pro CEFC Europe
+je zmíněno pouze jako citovaným zdrojem uvedený fakt s kritikou
+připsanou kritikům, nikoli jako vlastní hodnocení webu. Hlubší rešerše
+vyžaduje samostatnou budoucí autorizaci.

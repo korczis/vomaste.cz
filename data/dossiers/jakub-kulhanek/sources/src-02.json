@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jakub-kulhanek/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jakub-kulhanek"
+  },
+  "title": "SRC-02 — Blesk.cz: Zeman jmenoval Kulhánka ministrem zahraničí",
+  "description": "Blesk o jmenování Kulhánka 21. 4. 2021 v době kauzy Vrbětice; prvním krokem protest ruskému velvyslanci.",
+  "outlet": "Blesk.cz",
+  "sourceType": "zpravodajský článek",
+  "url": "https://www.blesk.cz/clanek/zpravy-politika/677010/zeman-na-voziku-jmenoval-kulhanka-ministrem-sef-diplomacie-hned-promluvil-o-agentech.html",
+  "retrieved": "2026-08-08",
+  "published": "2021-04-21",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jakub-kulhanek/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "jakub-kulhanek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek Blesku z 21. 4. 2021, otevřen a přečten 2026-08-08.\nUvádí, že prezident Zeman jmenoval 21. 4. 2021 Jakuba Kulhánka (ČSSD) ministrem zahraničních věcí jako nástupce odvolaného Tomáše Petříčka; ještě týž den si Kulhánek předvolal ruského velvyslance k předání protestu v souvislosti s výbuchy ve Vrběticích. Článek zmiňuje i jeho dřívější externí poradenství pro čínskou firmu CEFC Europe s tím, že na ně jako na bezpečnostní riziko upozorňovali kritici.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství — dokládá akt jmenování a jeho okolnosti; kritika poradenství pro CEFC je připsána kritikům, není hodnocením tohoto webu."
+    }
+  ],
+  "order": 2
+}

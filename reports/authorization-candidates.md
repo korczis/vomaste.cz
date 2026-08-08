@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 487 context entities across 61 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 486 context entities across 66 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -4053,16 +4053,6 @@ Generated from 487 context entities across 61 dossier(s). Regenerate with `npm r
 - Appears in: adam-vojtech
 - Claims: CLM-09, CLM-33
 - Sources: SRC-02, SRC-20 (2 independent source families)
-- Relations: none
-- Missing: explicit owner authorization to promote this to its own dossier
-
-## Roman Prymula (`roman-prymula`)
-
-- Type: person
-- Status: not_authorized
-- Appears in: adam-vojtech
-- Claims: CLM-46
-- Sources: SRC-11 (1 independent source family)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 

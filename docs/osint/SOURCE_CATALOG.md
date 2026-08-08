@@ -197,34 +197,34 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 779 záznamů v 128 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 788 záznamů v 129 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 294 | 24 | [ano](/zdroje/ctk/) |
+| Vláda České republiky (vlada.gov.cz) | 53 | 42 | [ano](/zdroje/vlada-cz/) |
 | Poslanecká sněmovna Parlamentu ČR | 51 | 32 | [ano](/zdroje/psp-cz/) |
-| Vláda České republiky (vlada.gov.cz) | 48 | 37 | [ano](/zdroje/vlada-cz/) |
 | seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
 | ČT24 (Česká televize) | 24 | 16 | [ano](/zdroje/ceska-televize/) |
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
 | denik-n | 17 | 9 | [ano](/zdroje/denik-n/) |
+| Aktuálně.cz | 16 | 11 | [ano](/zdroje/aktualne-cz/) |
 | Echo24 | 16 | 12 | [ano](/zdroje/echo24/) |
-| Aktuálně.cz | 15 | 10 | [ano](/zdroje/aktualne-cz/) |
 | Novinky.cz | 13 | 12 | [ano](/zdroje/novinky-cz/) |
 | denik-cz | 11 | 6 | [ano](/zdroje/denik-cz/) |
 | Česká justice | 11 | 6 | [ano](/zdroje/ceska-justice/) |
 | Ekonomický deník | 9 | 5 | [ano](/zdroje/ekonomicky-denik/) |
 | irozhlas | 8 | 6 | [ano](/zdroje/irozhlas/) |
 | hlidac-statu | 7 | 2 | [ano](/zdroje/hlidac-statu/) |
+| Blesk.cz | 6 | 4 | [ano](/zdroje/blesk-cz/) |
 | udhpsh | 6 | 1 | [ano](/zdroje/udhpsh/) |
-| Blesk.cz | 5 | 3 | [ano](/zdroje/blesk-cz/) |
 | e15.cz | 5 | 3 | — |
 | Hospodářské noviny | 5 | 4 | — |
+| Respekt | 5 | 4 | — |
 | Zdravé zprávy | 5 | 2 | — |
 | HlídacíPes.org | 4 | 4 | — |
 | Ministerstvo dopravy ČR | 4 | 1 | — |
 | Reflex | 4 | 4 | — |
-| Respekt | 4 | 3 | — |
 | Státní zemědělský intervenční fond | 4 | 1 | — |
 | verejnazaloba | 4 | 1 | — |
 | CNN Prima News | 3 | 3 | — |
@@ -327,6 +327,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 779 záznamů v 128 rodinách/out
 | Zdopravy.cz | 1 | 1 | — |
 | Zdravotnický deník | 1 | 1 | — |
 | Život v Česku | 1 | 1 | — |
+| Zprávy Tiscali (zpravy.tiscali.cz) | 1 | 1 | — |
 | smlouvy-gov-cz | 1 | 1 | [ano](/zdroje/registr-smluv/) |
 | usoud | 1 | 1 | — |
 
@@ -336,5 +337,6 @@ Tyhle zdroje dataset používá aspoň pětkrát, ale katalog k nim nemá zázna
 
 - e15.cz (5×)
 - Hospodářské noviny (5×)
+- Respekt (5×)
 - Zdravé zprávy (5×)
 

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jakub-kulhanek",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "jakub-kulhanek",
+  "slug": "jakub-kulhanek",
+  "title": "Jakub Kulhánek",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Jakub Kulhánek.",
+  "dossierType": "entity",
+  "canonicalDossier": "jakub-kulhanek",
+  "subject": "jakub-kulhanek",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-JAKUB-KULHANEK"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "jakub-kulhanek",
+        "label": "Jakub Kulhánek",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nJakub Kulhánek je bývalý ministr zahraničních věcí (duben–prosinec\n2021, druhá vláda Andreje Babiše, ČSSD); dříve náměstek na\nministerstvech vnitra, zahraničí a obrany. Jako politicky exponovaná\nosoba v souvislosti s výkonem dřívější veřejné funkce spadá do standing\nscope autorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam\npro tento dossier je `AUTH-2026-08-08-JAKUB-KULHANEK`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívějších veřejných funkcí. Dřívější externí poradenství pro\nCEFC Europe je uvedeno pouze jako citovaným zdrojem popsaný fakt\ns kritikou připsanou kritikům. Rozšíření rozsahu vyžaduje samostatnou\nbudoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/jakub-kulhanek/claims/clm-01.md) | Jakub Kulhánek byl podle oficiálního profilu na webu Vlády ČR ministrem zahraničních věcí od 21. 4. 2021 do 17. 12. 2021 (v demisi od 11. 11. 2021, ČSSD), předtím náměstkem na ministerstvu vnitra (2018–2021), ministerstvu zahraničních věcí (2014–2016) a ministerstvu obrany (2014); podle Blesku ho prezident Zeman jmenoval v době kauzy Vrbětice a mezi jeho první kroky patřilo předvolání ruského velvyslance k předání protestu | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/jakub-kulhanek/sources/src-01.md), [SRC-02](@/dossiers/jakub-kulhanek/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/roman-prymula",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "roman-prymula",
+  "slug": "roman-prymula",
+  "title": "Roman Prymula",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Roman Prymula.",
+  "dossierType": "entity",
+  "canonicalDossier": "roman-prymula",
+  "subject": "roman-prymula",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-ROMAN-PRYMULA"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "roman-prymula",
+        "label": "Roman Prymula",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nRoman Prymula je bývalý ministr zdravotnictví (21. 9. – 29. 10. 2020,\ndruhá vláda Andreje Babiše), epidemiolog a bývalý náměstek ministra\nzdravotnictví. Jako politicky exponovaná osoba v souvislosti s výkonem\ndřívější veřejné funkce spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-08-ROMAN-PRYMULA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce a okolností jejího konce tak, jak je\npopsaly citované zdroje. **Povinné rámování při každé zmínce:** výzva\nk rezignaci a návrh odvolání jsou politické kroky premiéra, nikoli\nsoudní či správní závěr o porušení pravidel; Prymulovo popření se uvádí\njeho vlastními slovy. Rozšíření rozsahu vyžaduje samostatnou budoucí\nautorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/roman-prymula/claims/clm-01.md) | Roman Prymula byl podle oficiálního profilu na webu Vlády ČR ministrem zdravotnictví od 21. 9. do 29. 10. 2020, předtím náměstkem ministra zdravotnictví pro zdravotní péči (2017–2020); podle RESPEKTU premiér Babiš poté, co byl Prymula vyfotografován při nočním odchodu z pražské restaurace v době platnosti protiepidemických uzavírek, požádal o jeho rezignaci a navrhl prezidentovi jeho odvolání, zatímco Prymula uváděl, že podle svého přesvědčení žádná nařízení neporušil | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/roman-prymula/sources/src-01.md), [SRC-02](@/dossiers/roman-prymula/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

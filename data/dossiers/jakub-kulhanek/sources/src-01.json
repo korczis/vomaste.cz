@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jakub-kulhanek/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jakub-kulhanek"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil člena vlády)",
+  "description": "Oficiální vládní profil: ministr zahraničních věcí od 21. 4. 2021 (v demisi od 11. 11. 2021), dříve náměstek.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/jakub-kulhanek-187862/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jakub-kulhanek/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "jakub-kulhanek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil člena vlády na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci ministra zahraničních věcí od 21. 4. 2021, s obdobím v demisi od 11. 11. do 17. 12. 2021, dřívější funkce náměstka člena vlády na ministerstvu vnitra (2018–2021), náměstka ministra zahraničních věcí (2014–2016) a náměstka ministra obrany (2014) a vzdělání na Georgetown University.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — dokládá výkon funkcí a jejich data; okolnosti jmenování dokládá SRC-02."
+    }
+  ],
+  "order": 1
+}
