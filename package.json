@@ -54,6 +54,7 @@
     "verify:jsonld": "node scripts/dossier/verify-jsonld.mjs",
     "verify:og": "node scripts/build/verify-og.mjs",
     "verify:full-pages": "node scripts/dossier/verify-full-pages.mjs",
+    "verify:table-responsive": "node scripts/dossier/verify-table-responsive.mjs",
     "authorize:entity": "node scripts/dossier/authorize-entity.mjs",
     "build:government-roster": "node scripts/dossier/build-government-roster.mjs",
     "screening:public-money": "node scripts/osint/screen-public-money.mjs",

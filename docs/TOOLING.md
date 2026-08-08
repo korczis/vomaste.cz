@@ -4,11 +4,11 @@
 
 Publikovaná podoba: [/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prikazy/).
 
-122 příkazů celkem: 97 npm skriptů, 9 skills, 16 just receptů. 46 z nich může shodit běh, 42 jsou krokem `npm run build` a 9 běží v pre-commit hooku.
+123 příkazů celkem: 98 npm skriptů, 9 skills, 16 just receptů. 47 z nich může shodit běh, 43 jsou krokem `npm run build` a 9 běží v pre-commit hooku.
 
 **Pravidlo, které z katalogu plyne**: příkaz se přidává do `package.json` (nebo do `justfile` či `.claude/skills/`) a zároveň do `data/tooling/`. Bez záznamu build spadne — dokumentace tak nemůže zaostat za kódem.
 
-## npm skript (97)
+## npm skript (98)
 
 | Příkaz | Kategorie | Vynucuje | Pipeline | Pre-commit |
 |---|---|---|---|---|
@@ -78,6 +78,7 @@ Publikovaná podoba: [/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prik
 | [`npm run verify:navigation-counts`](/dokumentace/prikazy/verify-navigation-counts/) | kontrola výstupů | ano | build | — |
 | [`npm run verify:og`](/dokumentace/prikazy/verify-og/) | kontrola výstupů | ano | build | — |
 | [`npm run verify:source-catalog`](/dokumentace/prikazy/verify-source-catalog/) | kontrola výstupů | ano | — | ano |
+| [`npm run verify:table-responsive`](/dokumentace/prikazy/verify-table-responsive/) | kontrola výstupů | ano | build | — |
 | [`npm run verify:tooling-catalog`](/dokumentace/prikazy/verify-tooling-catalog/) | kontrola výstupů | ano | build | — |
 | [`npm run prismatic:diff`](/dokumentace/prikazy/prismatic-diff/) | rešerše | — | — | — |
 | [`npm run prismatic:drift`](/dokumentace/prikazy/prismatic-drift/) | rešerše | — | — | — |
@@ -357,6 +358,10 @@ Publikovaná podoba: [/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prik
 
 - Rozdíl mezi vygenerovaným katalogem a tím, co leží v repozitáři — tedy zastaralé stránky /zdroje/ nebo docs/osint/SOURCE_CATALOG.md. Náprava: `npm run build:source-catalog`.
 
+### `npm run verify:table-responsive`
+
+- Tabulka v hotovém HTML bez předka .dossier-prose ani overflow-x-auto — na mobilu by se hroutila místo scrollování.
+
 ### `npm run verify:tooling-catalog`
 
 - G1 — npm skript v package.json (mimo npm lifecycle hooky) bez záznamu v data/tooling/, a záznam ukazující na skript, který v package.json není.
@@ -395,7 +400,7 @@ Publikovaná podoba: [/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prik
 
 - **validace vstupů** (14): `npm run data:compile`, `npm run data:validate`, `npm run check:workflow-parity`, `npm run intake:validate-form`, `npm run intake:validate-workflow`, `npm run lint:component-reuse`, `npm run lint:hardcoded-records`, `npm run lint:historical-coupling`, `npm run lint:source-outlets`, `npm run validate:authorization`, `npm run validate:concepts`, `npm run validate:dossier-types`, `npm run validate:entity-types`, `npm run verify:authorization-log`
 - **generování** (21): `npm run build:data-exports`, `npm run build:entity-type-sections`, `npm run build:government-roster`, `npm run build:graph-projections`, `npm run build:jsonld-exports`, `npm run build:navigation`, `npm run build:routes`, `npm run build:search-index`, `npm run build:secondary-providers`, `npm run build:source-catalog`, `npm run build:tooling-catalog`, `npm run css:build`, `npm run data:generate-content`, `npm run data:metrics`, `npm run data:sync-content`, `npm run data:views`, `npm run generate:candidates`, `npm run generate:discovery-log`, `npm run intake:index`, `npm run js:build`, `npm run report:evidence-plan`
-- **kontrola výstupů** (35): `npm run data:check-generated`, `npm run data:check-generated:content`, `npm run intake:e2e-fixture`, `npm run intake:fixture`, `npm run intake:match-fixture`, `npm run intake:preflight-fixture`, `npm run intake:publish-fixture`, `npm run intake:validate`, `npm run lint:generated-content`, `npm run test`, `npm run test:e2e`, `npm run test:e2e:benchmark`, `npm run test:e2e:desktop`, `npm run test:intake`, `npm run test:intake:e2e`, `npm run test:intake:form`, `npm run test:intake:github`, `npm run test:intake:matching`, `npm run test:intake:preflight`, `npm run test:intake:risk`, `npm run validate:directory-index`, `npm run validate:graph-projections`, `npm run validate:navigation`, `npm run validate:navigation-metrics`, `npm run verify:anchors`, `npm run verify:export`, `npm run verify:full-pages`, `npm run verify:jsonld`, `npm run verify:navigation-counts`, `npm run verify:og`, `npm run verify:source-catalog`, `npm run verify:tooling-catalog`, `just doctor`, `just check`, `just test`
+- **kontrola výstupů** (36): `npm run data:check-generated`, `npm run data:check-generated:content`, `npm run intake:e2e-fixture`, `npm run intake:fixture`, `npm run intake:match-fixture`, `npm run intake:preflight-fixture`, `npm run intake:publish-fixture`, `npm run intake:validate`, `npm run lint:generated-content`, `npm run test`, `npm run test:e2e`, `npm run test:e2e:benchmark`, `npm run test:e2e:desktop`, `npm run test:intake`, `npm run test:intake:e2e`, `npm run test:intake:form`, `npm run test:intake:github`, `npm run test:intake:matching`, `npm run test:intake:preflight`, `npm run test:intake:risk`, `npm run validate:directory-index`, `npm run validate:graph-projections`, `npm run validate:navigation`, `npm run validate:navigation-metrics`, `npm run verify:anchors`, `npm run verify:export`, `npm run verify:full-pages`, `npm run verify:jsonld`, `npm run verify:navigation-counts`, `npm run verify:og`, `npm run verify:source-catalog`, `npm run verify:table-responsive`, `npm run verify:tooling-catalog`, `just doctor`, `just check`, `just test`
 - **rešerše** (20): `npm run prismatic:diff`, `npm run prismatic:drift`, `npm run prismatic:enrich-all`, `npm run prismatic:import`, `npm run prismatic:plan`, `npm run prismatic:probe`, `npm run prismatic:promote`, `npm run prismatic:review`, `npm run prismatic:run`, `npm run prismatic:status`, `npm run prismatic:verify`, `npm run screening:public-money`, `npm run sources:detect-family`, `skill investigate`, `skill prismatic-bootstrap`, `skill prismatic-drift-audit`, `skill prismatic-enrich-all`, `skill prismatic-promote`, `just ares *args`, `just expand ico *args`
 - **provoz** (32): `npm run authorization:anchor`, `npm run authorize:entity`, `npm run benchmark:graph`, `npm run build`, `npm run css:watch`, `npm run data:build`, `npm run dev`, `npm run dossier:next-id`, `npm run dossier:scaffold`, `npm run generate:all`, `npm run hooks:install`, `npm run check`, `npm run intake:github-event`, `npm run intake:process`, `npm run preflight`, `npm run serve`, `npm run test:update-golden`, `skill adr`, `skill bootstrap`, `skill commit`, `skill dossier-entry`, `just authorize entity`, `just build`, `just clean`, `just coop`, `just default`, `just dev`, `just hooks`, `just inbox`, `just regen`, `just scaffold slug title subject auth_record_id`, `just setup`
 
