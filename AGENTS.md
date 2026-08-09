@@ -5080,3 +5080,82 @@ Authorized by the site owner, explicitly and on the record, 2026-08-09:
 Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): rozšíření AUTH-2026-08-07-JIRI-POSPISIL. Jiří Pospíšil byl ministrem spravedlnosti 2006–2009 a 2010–2012. Dřívější autorizace omezovala dossier na aktuální politický profil. Tato autorizace rozšiřuje rozsah na jedno konkrétní, dokumentované téma: **jeho odvolání z funkce ministra spravedlnosti 27. 6. 2012** — odvolání prezidentem Klausem na návrh premiéra Nečase, oficiálně uváděné důvody (ztráta důvěry v manažerské a rozpočtové řízení resortu, žádost o navýšení rozpočtu během úsporných opatření), Pospíšilova publikovaná reakce („Respektuji jeho rozhodnutí…“), a dobově reportovaný kontext: odvolání přišlo krátce po návrhu nejvyššího státního zástupce Zemana jmenovat Lenku Bradáčovou vrchní státní zástupkyní v Praze, což část politiků (nejotevřeněji Schwarzenberg) veřejně spojovala se zákulisním sporem o podobu státního zastupitelství. Přímo otevřené zdroje: Deník.cz (27. 6. 2012), Patria.cz (27. 6. 2012), e15.cz (28. 6. 2012 — komentář, cituje se výhradně jako NÁZOR).
 
 Povinné rámování: oficiální důvody a alternativní výklady se citují vedle sebe jako pozice, ne jako zjištění — tento web nerozhoduje, proč byl ministr odvolán. Odvolání člena vlády je ústavní pravomoc, ne pochybení odvolaného; žádný citovaný zdroj netvrdí protiprávní jednání Pospíšila a nic takového nesmí být naznačeno. Lenka Bradáčová, Pavel Zeman ani Vlastimil Rampula se touto autorizací nestávají subjekty — vystupují jen jako záznam vazby v rozsahu citovaného zpravodajství. Jiná témata jeho ministerských období vyžadují samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-09: František Koudela
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): František Koudela je
+veřejný funkcionář — starosta města Znojma (ODS), zvolený zastupitelstvem
+5. 8. 2024 po odvolání dosavadní starostky, dříve ředitel organizace
+Znojemská Beseda. Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah: aktuální mandát a funkce starosty dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo otevřeno); okolnosti
+změny vedení radnice v srpnu 2024; jeho citovaná reakce na tvrzení hnutí
+ANO o nabídkách úplatků koaličním zastupitelům (červenec 2024) — tvrzení
+o úplatcích jsou výhradně atribuovaná tvrzení stran sporu, nikdo nebyl
+obviněn a nic z nich se nepřijímá za závěr webu (gate 4). Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Bohumila Beranová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Bohumila Beranová je
+veřejná funkcionářka — statutární místostarostka města Znojma (Znojmáci).
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt
+celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah: aktuální mandát a funkce dle oficiálního webu města (znojmocity.cz,
+přímo otevřeno) a ČT24/ČTK (přímo otevřeno); její role při změně koalice
+v srpnu 2024 — přechod od koalice ANO+SPD+Znojmáci k nové koalici — s jejím
+vlastním zdůvodněním („koalice nefungovala") vedeným jako atribuovaný výrok.
+Žádné pochybení se z přechodu mezi koalicemi nevyvozuje. Rozšíření rozsahu
+vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Jiří Kacetl
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Kacetl je veřejný
+funkcionář — místostarosta města Znojma (PRO ZNOJMO), zvolený zastupitelstvem
+5. 8. 2024. Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát a funkce místostarosty dle
+oficiálního webu města (znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo
+otevřeno). Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Jakub Malačka
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jakub Malačka je veřejný
+funkcionář — místostarosta města Znojma (Naše Znojmo), zvolený zastupitelstvem
+5. 8. 2024. Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah: aktuální mandát a funkce místostarosty dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo otevřeno); jeho ČT24
+citované hodnocení hospodaření města (ztráta 71 mil. Kč, „nejhorší za
+13 let") vedené jako atribuovaný výrok opozičního politika, nikoli jako
+vlastní závěr webu. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Ivana Solařová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Ivana Solařová je veřejná
+funkcionářka — zastupitelka města Znojma (ANO 2011), starostka města od
+komunálních voleb 2022 do 5. 8. 2024, kdy ji zastupitelstvo odvolalo.
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt
+celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah: aktuální mandát dle oficiálního webu města (znojmocity.cz, přímo
+otevřeno); okolnosti jejího odvolání 5. 8. 2024 dle ČT24/ČTK (přímo
+otevřeno). Povinné rámování při každé zmínce: odvolání starostky je
+politický krok zastupitelstva, nikoli závěr o pochybení; kritika hospodaření
+města je atribuovaná kritika tehdejší opozice. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.

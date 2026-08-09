@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivana-solarova",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "ivana-solarova",
+  "slug": "ivana-solarova",
+  "title": "Ivana Solařová",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Ivana Solařová.",
+  "dossierType": "entity",
+  "canonicalDossier": "ivana-solarova",
+  "subject": "ivana-solarova",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-09",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-09-IVANA-SOLAROVA"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "ivana-solarova",
+        "label": "Ivana Solařová",
+        "subject": true,
+        "claims": [
+          "CLM-01",
+          "CLM-02",
+          "CLM-03"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02",
+          "SRC-03"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nIvana Solařová je zastupitelka města Znojma (ANO 2011); starostkou města byla od komunálních voleb 2022 do 5. 8. 2024, kdy ji zastupitelstvo odvolalo. Jako veřejný funkcionář spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-09-IVANA-SOLAROVA`, navazující na výslovnou žádost vlastníka pokrýt celé\nznojemské zastupitelstvo a navázané kauzy.\n\nDossier dokládá aktuální mandát a funkci podle oficiálního webu města\nZnojma a přímo otevřeného zpravodajství ČT24 (ČTK) a v mezích autorizace\nzaznamenává okolnosti změny vedení radnice v srpnu 2024. Rozšíření\nrozsahu vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/ivana-solarova/claims/clm-01.md) | Ivana Solařová je zastupitelkou města Znojma za hnutí ANO 2011 | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/ivana-solarova/sources/src-01.md) |\n| <a id=\"clm-02\"></a>[CLM-02](@/dossiers/ivana-solarova/claims/clm-02.md) | Ivana Solařová byla starostkou Znojma od komunálních voleb 2022; 5. 8. 2024 ji odvolalo 17 z 31 zastupitelů a koalice ANO, SPD a Znojmáků tím skončila — odvolání je politický krok zastupitelstva, nikoli závěr o pochybení; kritika hospodaření města (ztráta 71 mil. Kč za rok 2023) je atribuovaná kritika tehdejší opozice | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-02](@/dossiers/ivana-solarova/sources/src-02.md) |\n| <a id=\"clm-03\"></a>[CLM-03](@/dossiers/ivana-solarova/claims/clm-03.md) | Krajská předsedkyně ANO Alena Schillerová podle ČT24 (ČTK) viděla v postupu znojemské opozice v červenci 2024 účelovost a snahu ovlivnit krajské volby, neboť Ivana Solařová byla kandidátkou ANO na hejtmanku; jde o atribuovanou pozici jedné strany sporu | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-03](@/dossiers/ivana-solarova/sources/src-03.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat.\n\nOdvolání z funkce starostky je politický krok zastupitelstva, nikoli závěr o pochybení, a tak je uvedeno při každé zmínce. Kritika hospodaření i obhajoba ze strany ANO jsou atribuované pozice stran sporu — web žádnou z nich nepřijímá za vlastní závěr."
+    }
+  ]
+}

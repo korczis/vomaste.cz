@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivana-solarova/claims/CLM-03",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivana-solarova"
+  },
+  "text": "Krajská předsedkyně ANO Alena Schillerová podle ČT24 (ČTK) viděla v postupu znojemské opozice v červenci 2024 účelovost a snahu ovlivnit krajské volby, neboť Ivana Solařová byla kandidátkou ANO na hejtmanku; jde o atribuovanou pozici jedné strany sporu",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivana-solarova/sources/SRC-03"
+    }
+  ],
+  "subjects": [
+    "ivana-solarova"
+  ],
+  "order": 3,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ivana-solarova/_index.md)."
+    }
+  ]
+}

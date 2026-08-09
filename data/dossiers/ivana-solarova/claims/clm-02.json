@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivana-solarova/claims/CLM-02",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivana-solarova"
+  },
+  "text": "Ivana Solařová byla starostkou Znojma od komunálních voleb 2022; 5. 8. 2024 ji odvolalo 17 z 31 zastupitelů a koalice ANO, SPD a Znojmáků tím skončila — odvolání je politický krok zastupitelstva, nikoli závěr o pochybení; kritika hospodaření města (ztráta 71 mil. Kč za rok 2023) je atribuovaná kritika tehdejší opozice",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivana-solarova/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "ivana-solarova"
+  ],
+  "order": 2,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ivana-solarova/_index.md)."
+    }
+  ]
+}

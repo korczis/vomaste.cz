@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/frantisek-koudela/claims/CLM-03",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/frantisek-koudela"
+  },
+  "text": "K tvrzení hnutí ANO z července 2024, že lidé spojení s tehdejší znojemskou opozicí nabídli koaličním zastupitelům úplatky, František Koudela podle ČT24 (ČTK) uvedl: „Musí říct, kdo nabídku učinil, konkrétní jméno. Za SPOLU tohle nařčení jednoznačně odmítám. Paní Beranová odešla ze své vůle.\"",
+  "status": "status-quote",
+  "statusLabel": "CITACE",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/frantisek-koudela/sources/SRC-03"
+    }
+  ],
+  "subjects": [
+    "frantisek-koudela"
+  ],
+  "order": 3,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/frantisek-koudela/_index.md)."
+    }
+  ]
+}

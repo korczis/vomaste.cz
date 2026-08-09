@@ -1476,3 +1476,38 @@ authorized_at = "2026-08-09"
 subjects = ["jiri-pospisil"]
 agents_md_section = "Scope extension, 2026-08-09: Jiří Pospíšil — ministerské období (odvolání 2012)"
 scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): rozšíření na jedno téma — odvolání z funkce ministra spravedlnosti 27. 6. 2012 (Klaus na návrh Nečase; oficiální důvody rozpočtové, Pospíšilova reakce, dobově reportovaný kontext návrhu na jmenování Bradáčové a spor o státní zastupitelství dle Schwarzenberga). Deník.cz + Patria.cz (reporting, oba přímo otevřeny), e15.cz jen jako NÁZOR. Oficiální důvody i alternativní výklady jako citované pozice; žádné protiprávní jednání se netvrdí; Bradáčová/Zeman/Rampula jen záznam vazby."
+
+[[authorizations]]
+id = "AUTH-2026-08-09-FRANTISEK-KOUDELA"
+authorized_at = "2026-08-09"
+subjects = ["frantisek-koudela"]
+agents_md_section = "Scope extension, 2026-08-09: František Koudela"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): František Koudela je veřejný funkcionář — starosta města Znojma (ODS), zvolený zastupitelstvem 5. 8. 2024 po odvolání dosavadní starostky, dříve ředitel organizace Znojemská Beseda. Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.  Rozsah: aktuální mandát a funkce starosty dle oficiálního webu města (znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo otevřeno); okolnosti změny vedení radnice v srpnu 2024; jeho citovaná reakce na tvrzení hnutí ANO o nabídkách úplatků koaličním zastupitelům (červenec 2024) — tvrzení o úplatcích jsou výhradně atribuovaná tvrzení stran sporu, nikdo nebyl obviněn a nic z nich se nepřijímá za závěr webu (gate 4). Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-09-BOHUMILA-BERANOVA"
+authorized_at = "2026-08-09"
+subjects = ["bohumila-beranova"]
+agents_md_section = "Scope extension, 2026-08-09: Bohumila Beranová"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Bohumila Beranová je veřejná funkcionářka — statutární místostarostka města Znojma (Znojmáci). Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.  Rozsah: aktuální mandát a funkce dle oficiálního webu města (znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo otevřeno); její role při změně koalice v srpnu 2024 — přechod od koalice ANO+SPD+Znojmáci k nové koalici — s jejím vlastním zdůvodněním („koalice nefungovala\") vedeným jako atribuovaný výrok. Žádné pochybení se z přechodu mezi koalicemi nevyvozuje. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-09-JIRI-KACETL"
+authorized_at = "2026-08-09"
+subjects = ["jiri-kacetl"]
+agents_md_section = "Scope extension, 2026-08-09: Jiří Kacetl"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Kacetl je veřejný funkcionář — místostarosta města Znojma (PRO ZNOJMO), zvolený zastupitelstvem 5. 8. 2024. Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.  Rozsah je záměrně minimální: aktuální mandát a funkce místostarosty dle oficiálního webu města (znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-09-JAKUB-MALACKA"
+authorized_at = "2026-08-09"
+subjects = ["jakub-malacka"]
+agents_md_section = "Scope extension, 2026-08-09: Jakub Malačka"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jakub Malačka je veřejný funkcionář — místostarosta města Znojma (Naše Znojmo), zvolený zastupitelstvem 5. 8. 2024. Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.  Rozsah: aktuální mandát a funkce místostarosty dle oficiálního webu města (znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo otevřeno); jeho ČT24 citované hodnocení hospodaření města (ztráta 71 mil. Kč, „nejhorší za 13 let\") vedené jako atribuovaný výrok opozičního politika, nikoli jako vlastní závěr webu. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-09-IVANA-SOLAROVA"
+authorized_at = "2026-08-09"
+subjects = ["ivana-solarova"]
+agents_md_section = "Scope extension, 2026-08-09: Ivana Solařová"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Ivana Solařová je veřejná funkcionářka — zastupitelka města Znojma (ANO 2011), starostka města od komunálních voleb 2022 do 5. 8. 2024, kdy ji zastupitelstvo odvolalo. Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.  Rozsah: aktuální mandát dle oficiálního webu města (znojmocity.cz, přímo otevřeno); okolnosti jejího odvolání 5. 8. 2024 dle ČT24/ČTK (přímo otevřeno). Povinné rámování při každé zmínce: odvolání starostky je politický krok zastupitelstva, nikoli závěr o pochybení; kritika hospodaření města je atribuovaná kritika tehdejší opozice. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."

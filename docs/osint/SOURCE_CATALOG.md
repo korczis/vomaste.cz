@@ -197,11 +197,11 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 989 záznamů v 143 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 1001 záznamů v 144 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
-| ctk | 303 | 31 | [ano](/zdroje/ctk/) |
+| ctk | 310 | 36 | [ano](/zdroje/ctk/) |
 | Vláda České republiky (vlada.gov.cz) | 184 | 167 | [ano](/zdroje/vlada-cz/) |
 | Poslanecká sněmovna Parlamentu ČR | 61 | 42 | [ano](/zdroje/psp-cz/) |
 | seznam-zpravy | 40 | 14 | [ano](/zdroje/seznam-zpravy/) |
@@ -222,6 +222,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 989 záznamů v 143 rodinách/out
 | CNN Prima News | 6 | 6 | — |
 | Seznam Zprávy | 6 | 6 | [ano](/zdroje/seznam-zpravy/) |
 | Zdravé zprávy | 6 | 2 | — |
+| mesto-znojmo | 5 | 5 | — |
 | e15.cz | 5 | 3 | — |
 | Respekt | 5 | 4 | — |
 | HlídacíPes.org | 4 | 4 | — |
@@ -352,6 +353,7 @@ Tyhle zdroje dataset používá aspoň pětkrát, ale katalog k nim nemá zázna
 - Hospodářské noviny (7×)
 - CNN Prima News (6×)
 - Zdravé zprávy (6×)
+- mesto-znojmo (5×)
 - e15.cz (5×)
 - Respekt (5×)
 

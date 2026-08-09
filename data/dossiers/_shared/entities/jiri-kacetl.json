@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/jiri-kacetl",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "jiri-kacetl",
+  "entityId": "jiri-kacetl",
+  "title": "Jiří Kacetl",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "jiri-kacetl"
+  ],
+  "order": 678,
+  "description": "Jiří Kacetl — místostarosta města Znojma (PRO ZNOJMO).",
+  "provenance": {
+    "discoveredAt": "2026-08-09",
+    "discoveredVia": [
+      "znojmo-council-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Místostarosta města Znojma (PRO ZNOJMO), zvolen zastupitelstvem 5. 8. 2024.\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ]
+}
