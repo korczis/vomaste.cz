@@ -70,6 +70,9 @@ for (const [label, pattern] of [
   ["offline archive gate", /run:\s*npm run archive:check\s*$/m],
   ["full build", /run:\s*npm run build\s*$/m],
   ["review PR", /gh pr (?:create|edit)/m],
+  ["review fallback warning", /::warning title=Review PR not created::/m],
+  ["review fallback summary", /GITHUB_STEP_SUMMARY/m],
+  ["review fallback comparison", /compare\/master\.\.\./m],
   ["pull-request permission", /^\s*pull-requests:\s*write\s*$/m],
 ]) {
   if (!pattern.test(workflow)) fail(`archive refresh workflow lacks ${label}`);

@@ -65,4 +65,13 @@ jobs:
           fi
           git commit -m "archive: scheduled official-record refresh"
           git push --force-with-lease origin "HEAD:refs/heads/$REFRESH_BRANCH"
-          gh pr view "$REFRESH_BRANCH" --json url >/dev/null 2>&1 || gh pr create --base master --head "$REFRESH_BRANCH" --title "archive: scheduled official-record refresh" --body "Automated Zone A refresh of ARES, sanitized Justice indexes and docket-only noticeboard snapshots. Raw Zone B material was not uploaded. Review the diff before merge."
+          PR_URL="$(gh pr list --head "$REFRESH_BRANCH" --state open --json url --jq '.[0].url // empty')"
+          if [ -z "$PR_URL" ]; then
+            if ! PR_URL="$(gh pr create --base master --head "$REFRESH_BRANCH" --title "archive: scheduled official-record refresh" --body "Automated Zone A refresh of ARES, sanitized Justice indexes and docket-only noticeboard snapshots. Raw Zone B material was not uploaded. Review the diff before merge.")"; then
+              COMPARE_URL="https://github.com/${GITHUB_REPOSITORY}/compare/master...${REFRESH_BRANCH}?expand=1"
+              echo "::warning title=Review PR not created::GitHub Actions may not create pull requests in this repository. The verified refresh branch was pushed; open ${COMPARE_URL} to review it."
+              printf '### Archive refresh awaits review\n\nThe verified branch was pushed, but the repository denied automated PR creation. [Open the review comparison](%s).\n' "$COMPARE_URL" >> "$GITHUB_STEP_SUMMARY"
+              exit 0
+            fi
+          fi
+          printf 'Review PR: %s\n' "$PR_URL" >> "$GITHUB_STEP_SUMMARY"
