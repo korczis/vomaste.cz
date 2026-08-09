@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run build:data-exports — Ploché JSON exporty registrů"
 template = "tooling-command.html"
-weight = 15
+weight = 16
 description = "Ploché JSON exporty registrů: Ploché JSON exporty každého registru pro SQL konzoli v prohlížeči i pro kohokoli, kdo chce prostě data — stabilní URL, čitelné curlem a jq, bez WASM.. npm skript, generování."
 
 [extra]

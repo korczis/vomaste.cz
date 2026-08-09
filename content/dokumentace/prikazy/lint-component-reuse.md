@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run lint:component-reuse — Znovupoužití UI komponent"
 template = "tooling-command.html"
-weight = 6
+weight = 7
 description = "Znovupoužití UI komponent: Vynucuje vlastní konvenci webu: obsahová šablona nesmí ručně psát markup, pro který už existuje sdílená komponenta.. npm skript, validace vstupů."
 
 [extra]

@@ -10,7 +10,7 @@
   "name": "generate:all",
   "title": "Všechny generátory bez validace",
   "category": "provoz",
-  "summary": "Řetěz samotných generátorů: sekce typů entit, routy, navigace, sekundární providery, exporty, grafové projekce, JSON-LD, metriky, index vyhledávání, kandidáti, log objevení, CSS a JS.",
+  "summary": "Generační podmnožina jednotné dev pipeline: view modely a content adaptéry, sekce typů entit, routy, navigace, sekundární providery, katalogy, exporty, grafové projekce, JSON-LD, metriky, index vyhledávání, kandidáti, log objevení, CSS a JS.",
   "whenToRun": "Jako záchrana po klonu nebo po `git pull`, kdy data/generated/** neexistuje. Volá ho `npm run serve`, když preflight ohlásí chybějící vstupy.",
   "describedFrom": "command",
   "notes": [

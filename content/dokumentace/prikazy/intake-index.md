@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run intake:index — Index pro párování entit"
 template = "tooling-command.html"
-weight = 33
+weight = 34
 description = "Index pro párování entit: Odvozuje jeden plochý, deterministicky seřazený seznam ze dvou kanonických zdrojů — entitních dossierů a sdílených registrových entit — a do žádného z nich nic nezapisuje.. npm skript, generování."
 
 [extra]

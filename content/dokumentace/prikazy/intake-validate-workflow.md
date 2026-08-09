@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run intake:validate-workflow — Bezpečnostní kontrola intake workflow"
 template = "tooling-command.html"
-weight = 5
+weight = 6
 description = "Bezpečnostní kontrola intake workflow: Statický bezpečnostní validátor .github/workflows/dossier-intake.yml. npm skript, validace vstupů."
 
 [extra]

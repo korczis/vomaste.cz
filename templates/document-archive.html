@@ -13,8 +13,27 @@
     <span class="rounded border border-white/15 px-2 py-1 text-white/60">{{ archive.counts.justiceMetadataSnapshots }} indexů Sbírky listin</span>
     <span class="rounded border border-white/15 px-2 py-1 text-white/60">{{ archive.counts.justiceDocuments }} listin / {{ archive.counts.justiceDocumentGigabytes }} GiB evidováno</span>
     <span class="rounded border border-white/15 px-2 py-1 text-white/60">{{ archive.counts.courtBoardChecks }} kontrol soudních vývěsek</span>
+    <span class="rounded border border-white/15 px-2 py-1 text-white/60">{{ archive.counts.courtDocketsInventoried }} spisových značek v inventuře</span>
     <span class="rounded border border-white/15 px-2 py-1 text-white/60">{{ archive.counts.entitiesWithoutIco }} entit čeká na IČO resolution</span>
   </div>
+
+  <section class="mb-10 rounded-xl border border-white/10 bg-white/[0.02] p-5" aria-labelledby="spisova-inventura">
+    <h2 id="spisova-inventura" class="text-lg font-semibold">Úplnost inventury spisových značek</h2>
+    <p class="mt-2 text-sm leading-relaxed text-white/60">Build mechanicky vytěžuje podporované tvary spisových značek ze všech kanonických dossierových JSON. Každá musí být buď dotázána výhradně podle značky, nebo přiřazena správnému samostatnému úřednímu systému. Nová nezatříděná značka shodí <code>npm run archive:check</code>.</p>
+    <ul class="mt-4 grid gap-2 sm:grid-cols-2">
+      {%- for item in archive.courtDocketInventory %}
+      <li class="rounded-lg border border-white/10 px-3 py-3 text-sm">
+        <span class="font-mono text-[#f3e5c0]">{{ item.docket }}</span>
+        {%- if item.status == "queried" %}
+        <span class="ml-2 text-emerald-300">vývěska dotázána</span>
+        {%- else %}
+        <a href="{{ item.sourceUrl }}" rel="noreferrer" class="ml-2 text-[#f3e5c0] underline">samostatný úřední systém</a>
+        <p class="mt-1 text-xs leading-relaxed text-white/50">{{ item.reason }}</p>
+        {%- endif %}
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
 
   <ul class="space-y-4" aria-label="Archivované dokumenty">
     {%- for record in archive.records %}

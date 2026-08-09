@@ -53,6 +53,11 @@ const BUILD_STEPS = [
   // pro Zolu. Běží hned po kanonické bráně, aby report nemohl být starší
   // než data; kdyby žil mimo pipeline, zastaral by první změnou dossieru.
   "report:evidence-plan",
+  // Offline archive doctrine gate: no network and no Zone B dependency.
+  // It makes every entity with a verified IČO carry ARES + sanitized Justice
+  // coverage, verifies hashes and docket inventory, and proves that the
+  // scheduled network refresh can only create a reviewable branch/PR.
+  "archive:check",
   "test",
   "build:government-roster",
   "validate:authorization",
@@ -126,6 +131,7 @@ const DEV_STEPS = [
   "data:views",
   "data:generate-content",
   "data:sync-content",
+  "archive:check",
   "validate:authorization",
   "validate:dossier-types",
   "build:entity-type-sections",
@@ -155,6 +161,7 @@ const DEV_STEPS = [
 // data/generated/).
 const CHECK_STEPS = [
   "data:validate",
+  "archive:check",
   "validate:authorization",
   "verify:authorization-log",
   "validate:dossier-types",

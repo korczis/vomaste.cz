@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "skill adr — Architektonické rozhodnutí (ADR)"
 template = "tooling-command.html"
-weight = 104
+weight = 108
 description = "Architektonické rozhodnutí (ADR): Postup pro napsání záznamu architektonického rozhodnutí do docs/adr/ podle šablony, kterou repozitář už používá: měřeno, ne odhadnuto. Claude skill, provoz."
 
 [extra]

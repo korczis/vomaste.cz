@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run css:build — Build CSS"
 template = "tooling-command.html"
-weight = 26
+weight = 27
 description = "Build CSS: Přeloží static/css/input.css Tailwindem do minifikovaného static/css/main.css.. npm skript, generování."
 
 [extra]

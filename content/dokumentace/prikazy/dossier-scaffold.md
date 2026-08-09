@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run dossier:scaffold — Scaffold kanonického dossieru"
 template = "tooling-command.html"
-weight = 90
+weight = 94
 description = "Scaffold kanonického dossieru: Vytvoří minimální VALIDNÍ kanonický balíček dossieru: dossier.json a prázdné registry adresáře claims/sources/cases/gaps/relations/updates. npm skript, provoz."
 
 [extra]

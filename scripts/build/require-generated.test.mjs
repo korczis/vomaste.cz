@@ -9,6 +9,7 @@ import assert from "node:assert/strict";
 import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { MODES } from "./pipeline.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 
@@ -57,16 +58,18 @@ test("generate:all pokrývá všechny generátory z dev pipeline", () => {
   // `npm run serve` skončil na chybějícím navigation-metrics.json —
   // tedy přesně na tom selhání, které měl preflight řešit.
   //
-  // generate:all se proto odvozuje z `dev` (všechny kroky kromě validátorů
-  // a serveru). Tenhle test hlídá, že se ty dva seznamy nerozejdou, až
-  // někdo přidá nový generátor jen do dev.
+  // generate:all se proto odvozuje z jednotné dev pipeline (všechny
+  // generátory kromě validátorů, offline bran a serveru). Tenhle test hlídá,
+  // že se ty dva seznamy nerozejdou, až někdo přidá nový generátor jen do dev.
   const pkg = JSON.parse(readFileSync(join(ROOT, "package.json"), "utf8"));
-  const kroky = pkg.scripts.dev.split("&&").map((x) => x.trim());
-  const ocekavane = kroky.filter((k) => k.startsWith("npm run ") && !/npm run validate:/.test(k));
+  const ocekavane = MODES.dev
+    .filter((step) => typeof step === "string")
+    .filter((step) => !step.startsWith("validate:") && step !== "data:validate" && step !== "archive:check")
+    .map((step) => `npm run ${step}`);
   const maji = pkg.scripts["generate:all"].split("&&").map((x) => x.trim());
 
   const chybi = ocekavane.filter((k) => !maji.includes(k));
   assert.deepEqual(chybi, [], `generate:all nepokrývá: ${chybi.join(", ")}`);
   assert.ok(!/zola/.test(pkg.scripts["generate:all"]), "generate:all nesmí spouštět zolu");
-  assert.ok(ocekavane.length >= 8, "z dev se nevyčetly generátory — parser je rozbitý");
+  assert.ok(ocekavane.length >= 8, "z dev pipeline se nevyčetly generátory — parser je rozbitý");
 });

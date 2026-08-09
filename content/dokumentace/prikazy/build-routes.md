@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run build:routes — Manifest rout"
 template = "tooling-command.html"
-weight = 21
+weight = 22
 description = "Manifest rout: Staví jediný explicitní manifest id → routa napříč všemi dossiery, aby žádná šablona ani skript nemusely skládat URL z id na víc než jednom místě. npm skript, generování."
 
 [extra]

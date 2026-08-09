@@ -2,8 +2,8 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run dev — Vývojový server"
 template = "tooling-command.html"
-weight = 88
-description = "Vývojový server: Řetěz validátorů a generátorů zakončený `zola serve`. npm skript, provoz."
+weight = 92
+description = "Vývojový server: Vývojový režim jednotné pipeline: validace, archivní offline brána, potřebné generátory a nakonec dlouho běžící `zola serve`.. npm skript, provoz."
 
 [extra]
 generated = true
@@ -15,7 +15,7 @@ tooling_command = "dev"
 view_model = "generated/tooling-catalog.json"
 +++
 
-Řetěz validátorů a generátorů zakončený `zola serve`. Nepoužívá režim `dev` pipeline — je to samostatný řetěz `&&` v package.json.
+Vývojový režim jednotné pipeline: validace, archivní offline brána, potřebné generátory a nakonec dlouho běžící `zola serve`.
 
 ## Kdy ho spustit {#kdy}
 

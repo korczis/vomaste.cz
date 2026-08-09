@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/archive-check-private",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "archive-check-private",
+  "kind": "npm",
+  "name": "archive:check-private",
+  "title": "Kontrola soukromé Zone B",
+  "category": "kontrola",
+  "summary": "Na důvěryhodném lokálním úložišti ověří inventory.sha256, manifestové hashe a nepřítomnost částečných .part souborů v soukromém archivu listin.",
+  "enforces": [
+    "Chybějící nebo neúplný inventory.sha256, hash mismatch, chybějící manifestový soubor, nevalidní manifest nebo zbylý .part soubor."
+  ],
+  "whenToRun": "Jen na stroji s připojenou perzistentní Zone B; po downloadu, přesunu nebo zálohování soukromého archivu.",
+  "inputs": [
+    "$VOMASTE_JUSTICE_ARCHIVE_ROOT/justice-api-metadata/**",
+    "$VOMASTE_JUSTICE_ARCHIVE_ROOT/sbirka-listin/**"
+  ],
+  "sourceFile": "scripts/osint/check-private-document-archive.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Není v CI ani veřejném buildu, protože Zone B nesmí být na běžném runneru ani v GitHub artifactu.",
+    "Bez --require-complete výslovně reportuje počet dosud nestažených dokumentů, ale nezaměňuje neúplnost za porušení integrity již uložených souborů."
+  ]
+}
