@@ -1546,3 +1546,38 @@ authorized_at = "2026-08-09"
 subjects = ["blanka-dufkova"]
 agents_md_section = "Scope extension, 2026-08-09: Blanka Dufková"
 scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Blanka Dufková je veřejná funkcionářka — zastupitelka města Znojma (Naše Znojmo), 5. 8. 2024 zvolena členkou rady města. Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.  Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu města (znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo otevřeno, změna vedení radnice 5. 8. 2024). Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-09-VLASTIMIL-TIMA"
+authorized_at = "2026-08-09"
+subjects = ["vlastimil-tima"]
+agents_md_section = "Scope extension, 2026-08-09: Vlastimil Tima"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Vlastimil Tima je veřejný funkcionář — zastupitel města Znojma (Naše Znojmo), 5. 8. 2024 zvolen členem rady města. Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.  Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu města (znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo otevřeno, změna vedení radnice 5. 8. 2024). Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-09-JIRI-BEROUN"
+authorized_at = "2026-08-09"
+subjects = ["jiri-beroun"]
+agents_md_section = "Scope extension, 2026-08-09: Jiří Beroun"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Beroun je veřejný funkcionář — zastupitel města Znojma (Naše Znojmo). Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.  Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu města (znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-09-JAN-BLAHA"
+authorized_at = "2026-08-09"
+subjects = ["jan-blaha"]
+agents_md_section = "Scope extension, 2026-08-09: Jan Blaha"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Blaha je veřejný funkcionář — zastupitel města Znojma (ANO 2011). Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.  Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu města (znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-09-KAREL-BLAHUSEK"
+authorized_at = "2026-08-09"
+subjects = ["karel-blahusek"]
+agents_md_section = "Scope extension, 2026-08-09: Karel Blahůšek"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Karel Blahůšek je veřejný funkcionář — zastupitel města Znojma (ANO 2011). Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.  Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu města (znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-09-LUKAS-DAVID"
+authorized_at = "2026-08-09"
+subjects = ["lukas-david"]
+agents_md_section = "Scope extension, 2026-08-09: Lukáš David"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Lukáš David je veřejný funkcionář — zastupitel města Znojma (PRO ZNOJMO). Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.  Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu města (znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."

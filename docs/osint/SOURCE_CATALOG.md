@@ -197,11 +197,11 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 1012 záznamů v 144 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 1018 záznamů v 144 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
-| ctk | 316 | 41 | [ano](/zdroje/ctk/) |
+| ctk | 317 | 42 | [ano](/zdroje/ctk/) |
 | Vláda České republiky (vlada.gov.cz) | 184 | 167 | [ano](/zdroje/vlada-cz/) |
 | Poslanecká sněmovna Parlamentu ČR | 61 | 42 | [ano](/zdroje/psp-cz/) |
 | seznam-zpravy | 40 | 14 | [ano](/zdroje/seznam-zpravy/) |
@@ -210,10 +210,10 @@ Dopočítáno z `data/dossiers/**/sources/**`, 1012 záznamů v 144 rodinách/ou
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
 | Echo24 | 19 | 15 | [ano](/zdroje/echo24/) |
 | denik-n | 18 | 10 | [ano](/zdroje/denik-n/) |
+| mesto-znojmo | 15 | 15 | — |
 | Novinky.cz | 13 | 12 | [ano](/zdroje/novinky-cz/) |
 | denik-cz | 12 | 7 | [ano](/zdroje/denik-cz/) |
 | Česká justice | 11 | 6 | [ano](/zdroje/ceska-justice/) |
-| mesto-znojmo | 10 | 10 | — |
 | Ekonomický deník | 10 | 6 | [ano](/zdroje/ekonomicky-denik/) |
 | irozhlas | 9 | 6 | [ano](/zdroje/irozhlas/) |
 | hlidac-statu | 7 | 2 | [ano](/zdroje/hlidac-statu/) |
@@ -350,7 +350,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 1012 záznamů v 144 rodinách/ou
 
 Tyhle zdroje dataset používá aspoň pětkrát, ale katalog k nim nemá záznam s mezemi a pastmi:
 
-- mesto-znojmo (10×)
+- mesto-znojmo (15×)
 - Hospodářské noviny (7×)
 - CNN Prima News (6×)
 - Zdravé zprávy (6×)

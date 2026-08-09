@@ -5230,3 +5230,63 @@ Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního 
 města (znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo otevřeno, změna
 vedení radnice 5. 8. 2024). Rozšíření rozsahu vyžaduje samostatnou budoucí
 autorizaci.
+
+### Scope extension, 2026-08-09: Vlastimil Tima
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Vlastimil Tima je veřejný funkcionář — zastupitel města Znojma (Naše Znojmo), 5. 8. 2024 zvolen členem rady města.
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt
+celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu
+města (znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo otevřeno, změna vedení radnice 5. 8. 2024). Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Jiří Beroun
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Beroun je veřejný funkcionář — zastupitel města Znojma (Naše Znojmo).
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt
+celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu
+města (znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Jan Blaha
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Blaha je veřejný funkcionář — zastupitel města Znojma (ANO 2011).
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt
+celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu
+města (znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Karel Blahůšek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Karel Blahůšek je veřejný funkcionář — zastupitel města Znojma (ANO 2011).
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt
+celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu
+města (znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Lukáš David
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Lukáš David je veřejný funkcionář — zastupitel města Znojma (PRO ZNOJMO).
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt
+celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu
+města (znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vlastimil-tima/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/vlastimil-tima"
+  },
+  "title": "SRC-02 — ČT24: Znojemští zastupitelé odvolali starostku, nahradí ji Koudela z ODS",
+  "description": "ČT24 (zdroj ČTK) o změně vedení znojemské radnice 5. 8. 2024: zvolení Vlastimila Timy radním.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajský článek",
+  "url": "https://ct24.ceskatelevize.cz/clanek/regiony/znojemsti-zastupitele-odvolali-starostku-koalice-konci-351746",
+  "retrieved": "2026-08-08",
+  "published": "2024-08-05",
+  "sourceFamily": "ctk",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vlastimil-tima/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "vlastimil-tima"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Článek ČT24 z 5. 8. 2024 (uvedený zdroj ČTK), otevřen a přečten 2026-08-08. Popisuje odvolání starostky, zvolení nového vedení a jmenovitě volbu radních (mj. Vlastimil Tima).\n\nPoznámka k limitům: materiál vychází z agenturního zpravodajství ČTK (sourceFamily ctk); vůči oficiálnímu webu města jde o jiného vydavatele i jinou rodinu zdrojů, s dalšími přejímkami ČTK ale netvoří nezávislý pár."
+    }
+  ],
+  "order": 2
+}
