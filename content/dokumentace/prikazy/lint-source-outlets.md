@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run lint:source-outlets — Hygiena nezávislosti zdrojů"
 template = "tooling-command.html"
-weight = 9
+weight = 10
 description = "Hygiena nezávislosti zdrojů: Status „doloženo dvěma nezávislými“ znamená jedno: dva NEZÁVISLÍ vydavatelé referovali totéž. npm skript, validace vstupů."
 
 [extra]

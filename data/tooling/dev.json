@@ -10,9 +10,10 @@
   "name": "dev",
   "title": "Vývojový server",
   "category": "provoz",
-  "summary": "Řetěz validátorů a generátorů zakončený `zola serve`. Nepoužívá režim `dev` pipeline — je to samostatný řetěz `&&` v package.json.",
+  "summary": "Vývojový režim jednotné pipeline: validace, archivní offline brána, potřebné generátory a nakonec dlouho běžící `zola serve`.",
   "whenToRun": "Při práci na šablonách a stylech. Dlouho běžící: sám od sebe neskončí.",
-  "describedFrom": "command",
+  "sourceFile": "scripts/build/pipeline.mjs",
+  "describedFrom": "header",
   "notes": [
     "Režim build drží zámek po celý běh, `dev` ne: `zola serve` může běžet hodiny a zamykat by na tu dobu blokovalo každý jiný build ve stejném checkoutu."
   ]

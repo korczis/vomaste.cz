@@ -543,6 +543,61 @@ cannot claim coverage the data does not have. A row without a catalogue entry
 is not an error: it is the honest statement that a source is in use and its
 limits are not written down yet.
 
+## Povinná archivace úředních podkladů
+
+<!-- DOCUMENT_ARCHIVE_DOCTRINE_V1 -->
+
+Archivace ARES, veřejného rejstříku / Sbírky listin a soudních úředních
+desek je součást datového kontraktu, ne volitelný krok rešerše. Platí pro
+každý současný i budoucí dossier a každou navázanou entitu:
+
+1. Každá česká právnická osoba podporovaného typu s bezpečně ověřeným
+   osmimístným IČO musí mít v **Zone A** jeden hashovaný základní snapshot
+   ARES a jeden sanitizovaný index Sbírky listin. Přidání nebo změna takové
+   entity bez obou záznamů shodí `npm run archive:check`. Entita bez
+   důvěryhodného IČO zůstává ve veřejném seznamu `entitiesWithoutIco`; IČO
+   se nikdy nedoplňuje odhadem ani podle pouhé shody jména.
+2. Každá strojově rozpoznaná spisová značka v `data/dossiers/**/*.json`
+   musí být v `data/court-docket-inventory.json`. Buď má docket-only dotaz
+   na správnou soudní vývěsku, nebo výslovný záznam, že jej obsluhuje jiný
+   oficiální systém (např. NALUS či vlastní systém NSS). Jméno osoby, datum
+   narození ani jiný osobní identifikátor se při kontrole vývěsky nepoužije.
+   Negativní odpověď znamená pouze „v den dotazu nebylo aktivní vyvěšení“,
+   nikdy „dokument neexistoval“.
+3. **Zone A (veřejný Git a UI `/dokumenty/`)** smí nést jen základní
+   obchodní identifikační data ARES, sanitizovaný index listin bez adres
+   fyzických osob, původních názvů souborů a interních document ID, prázdné
+   docket-only odpovědi vývěsek a jednotlivě revidované bezpečné úřední
+   dokumenty. Každý publikovaný soubor má původní URL, datum pořízení a
+   SHA-256; `data/document-archive.json` a UI jsou generovány z týchž
+   zdrojových manifestů.
+4. **Zone B (nikdy Git, issue, PR, artifact ani veřejný web)** obsahuje raw
+   Justice metadata, originální listiny a neprázdné odpovědi soudních
+   vývěsek. Výchozí kořen je `~/dev/vomaste-archive`, přenositelně jej určuje
+   `VOMASTE_JUSTICE_ARCHIVE_ROOT`. Soubory se stahují přes `.part`, po
+   kontrole typu/velikosti se atomicky přejmenují, každý manifest nese
+   SHA-256 a `inventory.sha256` pokrývá všechny fyzické soubory. Přerušení,
+   nedostatek místa a neúplné pokrytí se hlásí výslovně — nesmějí se
+   přepsat na „hotovo“.
+5. Originální listina ze Zone B se do Zone A povyšuje jen po individuální
+   obsahové a osobněprávní kontrole. Musí mít redakční důvod, provenienci,
+   `reviewNote` a podle potřeby bezpečný derivát. Hromadné publikování PDF,
+   raw JSON nebo původních názvů souborů je zakázané i tehdy, když je
+   zdrojový registr veřejný.
+
+Vynucení má tři oddělené režimy. `npm run archive:check` je čistě offline,
+nic nezapisuje a běží automaticky v pre-commit hooku i ve všech režimech
+pipeline (`build`, `dev`, `check`). Ověřuje úplné IČO pokrytí, sanitizaci,
+hash parity, docket inventuru, nepřítomnost Zone B v Gitu a zapojení této
+doktríny do `AGENTS.md`, `README.md`, `CLAUDE.md` i automatického workflow.
+`npm run archive:refresh-public` je síťový zápis Zone A; spouští se ručně a
+týdně přes `.github/workflows/archive-refresh.yml`, který smí pouze vytvořit
+review PR — nikdy pushnout `master` ani nahrát Zone B. `npm run
+archive:refresh-private` patří jen na důvěryhodný stroj s perzistentním
+úložištěm; stáhne všechny indexované listiny, obnoví úplný checksum manifest
+a selže, pokud plné pokrytí chybí. Deterministický build sám na síť ani do
+soukromého archivu nesahá.
+
 ## Standing scope authorization and publication gates
 
 As of **2026-08-05** (`AUTH-2026-08-05-PLATFORM-SCOPE`, see the log

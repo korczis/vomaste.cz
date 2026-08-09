@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run data:compile — Kompilace kanonického datasetu"
 template = "tooling-command.html"
-weight = 1
+weight = 2
 description = "Kompilace kanonického datasetu: Načte kanonický dataset, zvaliduje ho a zkompiluje do modelu, se kterým dál pracují generátory. npm skript, validace vstupů."
 
 [extra]

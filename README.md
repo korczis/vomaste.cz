@@ -255,7 +255,10 @@ Vedle vložených dat existují **samostatné JSON-LD exportní routy**
   `node scripts/dossier/verify-export.mjs --dir <stažená-kopie>`;
 - každý citovaný zdroj nese `vomaste:citationFingerprint` — SHA-256 nad
   trojicí url + retrieved + outlet, přepočitatelný kýmkoli z viditelných
-  polí (otisk citace, ne archivu stránky — archivace zatím neexistuje).
+  polí. Je to otisk citace, ne otisk archivované stránky; úřední registrní
+  snapshoty a individuálně revidované dokumenty mají vlastní SHA-256 v
+  samostatném [archivu dokumentů](https://vomaste.cz/dokumenty/), běžné
+  citované webové stránky se však plošně nearchivují.
   Stejný otisk nesou i citační uzly vložené v HTML a dossier stránky na
   svůj export odkazují `<link rel="alternate" type="application/ld+json">`.
 
@@ -300,6 +303,38 @@ Filtrování a řazení řídí jedna kolekce pro všechny tři pohledy, takže 
 nemůžou rozejít. Bez JavaScriptu zůstává výchozí projekce plně použitelná.
 
 Rozhodnutí a jeho důsledky: [ADR](docs/adr/dossier-directory-multi-view.md).
+
+## Archivace ARES, Justice a soudních vývěsek
+
+<!-- DOCUMENT_ARCHIVE_DOCTRINE_V1 -->
+
+Archiv úředních podkladů je na webu pod
+[/dokumenty/](https://vomaste.cz/dokumenty/). **Zone A** ve veřejném Gitu
+obsahuje hashované základní odpovědi ARES, sanitizované indexy Sbírky listin,
+prázdné docket-only odpovědi soudních vývěsek a jednotlivě revidované
+bezpečné dokumenty. Každá podporovaná česká právnická osoba s ověřeným IČO
+musí mít ARES i Justice záznam; chybějící IČO zůstává v explicitním seznamu a
+nikdy se nehádá podle názvu. Každá strojově rozpoznaná spisová značka v
+kanonických dossierech musí být v inventuře jako dotaz správné vývěsky nebo
+jako odkaz na samostatný oficiální systém NSS/Ústavního soudu. Nulový nález
+na vývěsce vypovídá jen o dni kontroly, ne o celé historii.
+
+**Zone B** je vždy mimo Git, PR, CI artifact i web: raw Justice metadata,
+originální listiny a neprázdné odpovědi vývěsek. Výchozí kořen je
+`~/dev/vomaste-archive`, nebo `VOMASTE_JUSTICE_ARCHIVE_ROOT`. Každý fyzický
+soubor má SHA-256 a globální `inventory.sha256`; `.part`, chybějící soubor či
+neúplné stažení se hlásí jako chyba. Originál lze zveřejnit jen jednotlivě po
+obsahové a osobněprávní kontrole s proveniencí a `reviewNote` — veřejnost
+zdrojového registru není souhlas s hromadným vložením PDF do Gitu.
+
+Vynucení je záměrně rozdělené: `npm run archive:check` je offline a běží v
+pre-commit hooku i v `build`/`dev`/`check`; kontroluje pokrytí, sanitizaci,
+hash parity, spisovou inventuru, hranici Zone A/B a zapojení doktríny.
+`npm run archive:refresh-public` dělá živé dotazy a týdenní GitHub workflow z
+jeho bezpečných změn pouze otevře review PR. `npm run archive:refresh-private`
+smí běžet jen na důvěryhodném stroji s perzistentním úložištěm a vyžaduje
+úplný soukromý inventář. Deterministický build sám nikdy nesahá na síť ani do
+Zone B.
 
 ## Struktura repozitáře
 
@@ -500,6 +535,9 @@ zatímco tenhle výběr je ruční a záměrně neúplný.
 | `node scripts/osint/ares-lookup.mjs --ico=… \| --name="…"` | dotaz do ARES (jediný spolehlivě funkční primární rejstřík) — **není** součástí `npm run build`, dělá živý síťový dotaz; doloží identitu/sídlo/formu/status, **nedoloží** skutečné majitele ani „od kdy ovládá" |
 | `npm run screening:public-money -- --ico=…` | screening toku veřejných prostředků k IČO z registru smluv (ISRS) — **není** součástí `npm run build`, stahuje měsíční otevřená data; výstup je **interní** (`data/generated/public-money-screening.json` + `reports/public-money-screening.md`), nikdy se neroutuje. Doloží zveřejněné smlouvy, objem a objednatele v pokrytém období; **nedoloží** žádné pochybení ani úplnost. Viz [screening veřejných peněz](#screening-toku-veřejných-prostředků) |
 | `npm run sources:detect-family` | detekce zdrojové rodiny u zdrojů s prázdným `sourceFamily` — **není** součástí `npm run build`, stahuje živě stránky zdrojů. Výstup je **návrh** (`data/generated/source-family-proposals.json` + `reports/source-family-proposals.md`), do kanonických dat sám nezapisuje; zápis dělá samostatný krok `--apply`, a to jen u verdiktu `ctk` a jen do prázdného pole. Doloží kredit původu v metadatech/podpisu/patičce; **nedoloží** obsahovou totožnost článků ani úplnost. Viz [detekce zdrojových rodin](#detekce-zdrojových-rodin) |
+| `npm run archive:check` | čistě offline závazná brána archivu: úplné pokrytí entit s IČO v ARES + sanitizované Justice indexy, SHA-256 všech veřejných souborů, úplná inventura rozpoznaných spisových značek, nepřítomnost Zone B v Gitu a bezpečné zapojení plánovaného refresh workflow |
+| `npm run archive:refresh-public` | živý refresh veřejné Zone A; ARES + sanitizované Justice indexy + docket-only vývěsky, pak offline brána. Týdenní workflow z výsledku jen otevře review PR |
+| `npm run archive:check-private` / `archive:refresh-private` | kontrola checksum inventáře Zone B / úplné stažení všech indexovaných listin na důvěryhodném perzistentním úložišti. Nikdy CI ani veřejný Git; kořen určuje `VOMASTE_JUSTICE_ARCHIVE_ROOT` |
 | `node scripts/osint/expand-entity.mjs --ico=… [--write]` | rozbalí rejstříkové okolí firmy (statutární orgány, společníci) na kontextové entity — kanonické JSON záznamy v `data/dossiers/_shared/entities/` (stránky `/entities/…` přegeneruje `npm run data:build`); na rozdíl od základního endpointu čte větev veřejného rejstříku, která u s.r.o. **vrací** zapsané společníky i velikost podílu. Akcionáři a.s. v rejstříku nejsou, takže prázdný seznam znamená „nezapsáno", ne „firma nemá vlastníky". Data narození a adresy bydliště nepřebírá; existující záznam nikdy nepřepíše |
 
 ## Screening toku veřejných prostředků
@@ -796,10 +834,11 @@ tam vůbec nedostane, byl na plné bráně červený.
   nikdo nedoplnil. Opraveno tím, že CI volá `npm run build`; proti
   opakování hlídá `npm run check:workflow-parity` (součást build gate).
 - Citační otisky (`vomaste:citationFingerprint`) jsou otiskem citace
-  (url + retrieved + outlet), **ne** archivované stránky — projekt
-  zatím fetchnuté stránky nearchivuje; manifest exportů je hashovaný,
-  ne podepsaný (ADR práh: podpis až bude reálná potřeba prokazovat
-  autorství exportu, ne jen integritu).
+  (url + retrieved + outlet), **ne** archivované stránky. Projekt nyní
+  archivuje bezpečné úřední registrní výstupy a jednotlivě revidované
+  dokumenty s vlastními SHA-256, nikoli plošně všechny citované webové
+  stránky; manifest exportů je hashovaný, ne podepsaný (ADR práh: podpis
+  až bude reálná potřeba prokazovat autorství exportu, ne jen integritu).
 - **Žádný důvěrný intake kanál.** Veřejný intake (níže) je veřejná
   GitHub issue — okamžitě viditelná, trvale dohledatelná, bez záruky
   anonymity odesílatele. Nic v tomto repozitáři nenabízí chráněné ani

@@ -165,6 +165,24 @@ entry; it does not replace reading and applying the rule.
   potential, gaps, a data-derived priority and a concrete next step. Read
   it instead of asking "what should I work on"; never hand-maintain a
   parallel todo list, it would be stale before the next commit.
+- **Official-document preservation is mandatory for every dossier/entity
+  change.** <!-- DOCUMENT_ARCHIVE_DOCTRINE_V1 --> `npm run archive:check`
+  is the offline owner and runs in pre-commit plus every `build`/`dev`/`check`
+  pipeline. It requires **Zone A** coverage in ARES and a sanitized Justice
+  index for every supported Czech legal entity with a verified IČO, checks
+  every public SHA-256, and requires every mechanically recognized court
+  docket to be either queried by docket only or assigned to the correct
+  separate official system. Never guess an IČO or search a court board by
+  name/birth data; a negative board response is only a current-day snapshot.
+  **Zone B** (raw Justice metadata, original deeds and non-empty board
+  responses) must stay outside Git/issues/PRs/artifacts/web under
+  `~/dev/vomaste-archive` or `VOMASTE_JUSTICE_ARCHIVE_ROOT`, with manifests,
+  no `.part` files and a complete `inventory.sha256`. Use `npm run
+  archive:refresh-public` for live safe derivatives; the weekly workflow may
+  only open a review PR. Use `npm run archive:refresh-private` only on trusted
+  persistent storage. Never bulk-promote Zone B: each public document needs
+  individual content/privacy review, provenance, a `reviewNote` and, where
+  necessary, a safe derivative.
 - **Discovery is unblocked; publishing findings is not.** Since 2026-07-30
   these are two different acts and only the second is gated:
   - **Recording that a registry relation exists** — a context entity

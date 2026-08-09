@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run lint:hardcoded-records — Zákaz natvrdo psaných záznamů v šablonách"
 template = "tooling-command.html"
-weight = 7
+weight = 8
 description = "Zákaz natvrdo psaných záznamů v šablonách: Brána proti konstantám v šablonách. npm skript, validace vstupů."
 
 [extra]

@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run validate:concepts — Kontrola konceptů proti skupinám"
 template = "tooling-command.html"
-weight = 11
+weight = 12
 description = "Kontrola konceptů proti skupinám: Ověřuje stránky content/koncepty/* proti data/concept-groups.toml. npm skript, validace vstupů."
 
 [extra]

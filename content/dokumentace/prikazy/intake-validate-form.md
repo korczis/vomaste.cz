@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run intake:validate-form — Strukturální kontrola issue formulářů"
 template = "tooling-command.html"
-weight = 4
+weight = 5
 description = "Strukturální kontrola issue formulářů: Kontroluje malou množinu strukturálních vlastností .github/ISSUE_TEMPLATE/*.yml a config.yml, které by jinak tiše rozbily skutečné odeslání. npm skript, validace vstupů."
 
 [extra]

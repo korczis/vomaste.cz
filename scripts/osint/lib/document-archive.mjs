@@ -6,6 +6,7 @@ export const ROOT = resolve(import.meta.dirname, "../../..");
 export const sha256 = (bytes) => createHash("sha256").update(bytes).digest("hex");
 
 const MANIFEST_PATH = join(ROOT, "data/document-archive.json");
+const COURT_DOCKET_INVENTORY_PATH = join(ROOT, "data/court-docket-inventory.json");
 const SOURCE_PATHS = [
   join(ROOT, "data/document-archive-manual.json"),
   join(ROOT, "data/document-archive-ares.json"),
@@ -54,6 +55,7 @@ export function buildDocumentArchive({ write = false, check = false } = {}) {
   const justiceRecords = records.filter((record) => record.registry === "Sbírka listin – metadata");
   const justiceDocumentBytes = justiceRecords.reduce((sum, record) => sum + (record.documentBytes ?? 0), 0);
   const retrieved = records.map((record) => record.retrieved).filter(Boolean).sort().at(-1) ?? new Date().toISOString().slice(0, 10);
+  const courtDocketInventory = JSON.parse(readFileSync(COURT_DOCKET_INVENTORY_PATH, "utf8")).entries;
   const manifest = {
     schemaVersion: 1,
     generatedAt: retrieved,
@@ -66,12 +68,15 @@ export function buildDocumentArchive({ write = false, check = false } = {}) {
       justiceDocumentBytes,
       justiceDocumentGigabytes: Number((justiceDocumentBytes / 1024 ** 3).toFixed(2)),
       courtBoardChecks: records.filter((record) => record.registry === "Soudní úřední deska – kontrola").length,
+      courtDocketsInventoried: courtDocketInventory.length,
+      courtDocketsExternalSystems: courtDocketInventory.filter((record) => record.status === "external-system").length,
       found: records.filter((record) => record.found).length,
       notFound: records.filter((record) => !record.found).length,
       entitiesWithoutIco: entitiesWithoutIco.length,
     },
     records,
     entitiesWithoutIco,
+    courtDocketInventory,
   };
   const rendered = `${JSON.stringify(manifest, null, 2)}\n`;
 

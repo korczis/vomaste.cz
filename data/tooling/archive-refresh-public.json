@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/archive-refresh-public",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "archive-refresh-public",
+  "kind": "npm",
+  "name": "archive:refresh-public",
+  "title": "Síťový refresh veřejné Zone A",
+  "category": "reserse",
+  "summary": "Stáhne nové základní ARES snapshoty, uloží raw Justice odpovědi mimo Git, vytvoří sanitizované Justice indexy, provede docket-only dotazy soudních vývěsek a nakonec spustí offline archivní bránu.",
+  "enforces": [
+    "Neúspěšný síťový dotaz, neočekávaný tvar odpovědi, neprázdnou soudní vývěsku bez individuálního review nebo následně červenou offline archivní bránu."
+  ],
+  "whenToRun": "Po přidání či změně entity s IČO a pravidelně týdně přes review workflow; vyžaduje síť.",
+  "inputs": [
+    "data/dossiers/_shared/entities/*.json",
+    "ARES API",
+    "Justice Sbírka listin API",
+    "soudní úřední deska API"
+  ],
+  "outputs": [
+    "data/document-archive*.json",
+    "static/documents/registry/**",
+    "static/documents/court-noticeboards/**",
+    "$VOMASTE_JUSTICE_ARCHIVE_ROOT/justice-api-metadata/**",
+    "$VOMASTE_JUSTICE_ARCHIVE_ROOT/court-noticeboards-raw/**"
+  ],
+  "sourceFile": "scripts/osint/refresh-document-archive.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Naplánovaný GitHub workflow smí commitnout jen veřejné Zone A deriváty do review větve; Zone B se nikdy neuploaduje.",
+    "Neprázdná odpověď vývěsky se nejprve uchová v lokální Zone B a pak běh zastaví, aby nemohla být automaticky zveřejněna."
+  ]
+}

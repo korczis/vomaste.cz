@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run lint:historical-coupling — Zákaz vazby na historické subjekty"
 template = "tooling-command.html"
-weight = 8
+weight = 9
 description = "Zákaz vazby na historické subjekty: Anti-coupling lint: vomaste.cz je víceúčelový systém pro libovolný počet dossierů. npm skript, validace vstupů."
 
 [extra]

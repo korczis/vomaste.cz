@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run test:e2e:benchmark — Playwright — benchmark grafu"
 template = "tooling-command.html"
-weight = 47
+weight = 49
 description = "Playwright — benchmark grafu: Spustí tests/e2e/graph-benchmark.spec.mjs v projektu desktop s proměnnou RUN_GRAPH_BENCHMARK=1, která test odemyká — bez ní se přeskakuje.. npm skript, kontrola výstupů."
 
 [extra]

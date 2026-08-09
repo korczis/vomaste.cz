@@ -10,6 +10,8 @@
     "justiceDocumentBytes": 8318238493,
     "justiceDocumentGigabytes": 7.75,
     "courtBoardChecks": 6,
+    "courtDocketsInventoried": 16,
+    "courtDocketsExternalSystems": 10,
     "found": 226,
     "notFound": 55,
     "entitiesWithoutIco": 113
@@ -6162,6 +6164,98 @@
       "dossiers": [
         "martin-sebestyan"
       ]
+    }
+  ],
+  "courtDocketInventory": [
+    {
+      "docket": "1 Afs 59/2025",
+      "status": "external-system",
+      "sourceUrl": "https://www.nssoud.cz/rozhodovaci-cinnost/uredni-deska",
+      "reason": "Nejvyšší správní soud is linked by the Justice noticeboard portal to its own official noticeboard; the Justice API is not used as a substitute. The dossier also cites the official decision database."
+    },
+    {
+      "docket": "1 T 95/2025",
+      "status": "queried",
+      "queryIdentifier": "court-board-1-t-95-2025"
+    },
+    {
+      "docket": "10 A 92/2024",
+      "status": "queried",
+      "queryIdentifier": "court-board-10-a-92-2024"
+    },
+    {
+      "docket": "2 VZV 11/2025",
+      "status": "queried",
+      "queryIdentifier": "court-board-2-vzv-11-2025"
+    },
+    {
+      "docket": "3 To 34/2024",
+      "status": "queried",
+      "queryIdentifier": "court-board-3-to-34-2024"
+    },
+    {
+      "docket": "56 T 7/2022",
+      "status": "queried",
+      "queryIdentifier": "court-board-56-t-7-2022"
+    },
+    {
+      "docket": "6 Afs 82/2025",
+      "status": "external-system",
+      "sourceUrl": "https://www.nssoud.cz/rozhodovaci-cinnost/uredni-deska",
+      "reason": "Nejvyšší správní soud uses its own official noticeboard and decision database; the Justice API is not the authoritative endpoint for this docket."
+    },
+    {
+      "docket": "8 Afs 215/2024",
+      "status": "external-system",
+      "sourceUrl": "https://www.nssoud.cz/rozhodovaci-cinnost/uredni-deska",
+      "reason": "Nejvyšší správní soud uses its own official noticeboard and decision database; the Justice API is not the authoritative endpoint for this docket."
+    },
+    {
+      "docket": "85 Cm 1204/2023",
+      "status": "queried",
+      "queryIdentifier": "court-board-85-cm-1204-2023"
+    },
+    {
+      "docket": "IV. ÚS 3359/25",
+      "status": "external-system",
+      "sourceUrl": "https://nalus.usoud.cz/Search/Search.aspx",
+      "reason": "Ústavní soud proceedings are published in the official NALUS system, not the Justice-sector noticeboard API."
+    },
+    {
+      "docket": "IV. ÚS 3740/25",
+      "status": "external-system",
+      "sourceUrl": "https://nalus.usoud.cz/Search/Search.aspx",
+      "reason": "Ústavní soud proceedings are published in the official NALUS system, not the Justice-sector noticeboard API."
+    },
+    {
+      "docket": "IV. ÚS 2980/22",
+      "status": "external-system",
+      "sourceUrl": "https://nalus.usoud.cz/Search/Search.aspx",
+      "reason": "Ústavní soud proceedings are published in the official NALUS system, not the Justice-sector noticeboard API."
+    },
+    {
+      "docket": "Pl. ÚS 1/25",
+      "status": "external-system",
+      "sourceUrl": "https://nalus.usoud.cz/Search/Search.aspx",
+      "reason": "This docket is an endpoint of an explicitly cited range in the official Ústavní soud proceedings list; that list and NALUS, not the Justice-sector noticeboard API, are authoritative."
+    },
+    {
+      "docket": "Pl. ÚS 16/26",
+      "status": "external-system",
+      "sourceUrl": "https://nalus.usoud.cz/Search/Search.aspx",
+      "reason": "Ústavní soud proceedings are published in the official NALUS system, not the Justice-sector noticeboard API."
+    },
+    {
+      "docket": "Pl. ÚS 17/26",
+      "status": "external-system",
+      "sourceUrl": "https://nalus.usoud.cz/Search/Search.aspx",
+      "reason": "This docket is an endpoint of an explicitly cited range in the official Ústavní soud proceedings list; that list and NALUS, not the Justice-sector noticeboard API, are authoritative."
+    },
+    {
+      "docket": "Pl. ÚS 41/23",
+      "status": "external-system",
+      "sourceUrl": "https://nalus.usoud.cz/Search/Search.aspx",
+      "reason": "Ústavní soud proceedings are published in the official NALUS system, not the Justice-sector noticeboard API."
     }
   ]
 }

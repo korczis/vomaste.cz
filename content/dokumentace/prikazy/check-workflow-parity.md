@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run check:workflow-parity — Parita CI s lokálním buildem"
 template = "tooling-command.html"
-weight = 3
+weight = 4
 description = "Parita CI s lokálním buildem: Hlídá, že deploy workflow volá `npm run build`, a ne že si znovu vypisuje jednotlivé kroky pipeline.. npm skript, validace vstupů."
 
 [extra]

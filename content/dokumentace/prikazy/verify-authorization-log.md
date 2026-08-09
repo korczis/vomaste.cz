@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run verify:authorization-log — Append-only autorizační log"
 template = "tooling-command.html"
-weight = 14
+weight = 15
 description = "Append-only autorizační log: Mechanicky vynucuje nejkritičtější pravidlo AGENTS.md: sekce „Content about real parties“ je append-only. npm skript, validace vstupů."
 
 [extra]

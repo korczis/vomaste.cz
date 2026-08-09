@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run build:government-roster — Vládní jmenný seznam jako kontext"
 template = "tooling-command.html"
-weight = 17
+weight = 18
 description = "Vládní jmenný seznam jako kontext: Generuje globální KONTEXTOVÝ záznam entity pro každého člena vládního seznamu v data/government.toml — faktický veřejný údaj „kdo zastává který úřad“, záměrně nejslabší publikační stav, jaký repozitář má.. npm skript, generování."
 
 [extra]

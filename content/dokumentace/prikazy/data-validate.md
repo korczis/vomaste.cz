@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run data:validate — Kanonická brána datasetu"
 template = "tooling-command.html"
-weight = 2
+weight = 3
 description = "Kanonická brána datasetu: Zvaliduje tvar všech kanonických souborů proti schemas/canonical/ (AJV 2020-12, strict), pak nad celým datasetem referenční integritu, sémantiku a JSON-LD expanzi. npm skript, validace vstupů."
 
 [extra]
