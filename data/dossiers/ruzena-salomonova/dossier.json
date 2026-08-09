@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ruzena-salomonova",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "ruzena-salomonova",
+  "slug": "ruzena-salomonova",
+  "title": "Růžena Šalomonová",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Růžena Šalomonová.",
+  "dossierType": "entity",
+  "canonicalDossier": "ruzena-salomonova",
+  "subject": "ruzena-salomonova",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-09",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-09-RUZENA-SALOMONOVA"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "ruzena-salomonova",
+        "label": "Růžena Šalomonová",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nRůžena Šalomonová je zastupitelka města Znojma. Jako veřejná funkcionářka spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-09-RUZENA-SALOMONOVA`, navazující na výslovnou žádost vlastníka pokrýt celé\nznojemské zastupitelstvo a navázané kauzy.\n\nDossier dokládá aktuální mandát podle oficiálního webu města Znojma.\nTvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED vyžaduje otevření\ndalšího, nezávislého zdroje. Rozšíření rozsahu vyžaduje samostatnou\nbudoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/ruzena-salomonova/claims/clm-01.md) | Růžena Šalomonová je podle oficiálního webu města Znojma nezařazenou zastupitelkou města | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/ruzena-salomonova/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedeného mandátu nic dalšího; nejde o hodnocení\npolitického působení ani o investigativní rešerši jiných témat."
+    }
+  ]
+}

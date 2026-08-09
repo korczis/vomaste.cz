@@ -5410,3 +5410,63 @@ v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
 Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
 (znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
 budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Jan Simonides
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Simonides je veřejný funkcionář —
+zastupitel města Znojma (Naše Znojmo). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Oldřich Staněk
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Oldřich Staněk je veřejný funkcionář —
+zastupitel města Znojma (ANO 2011). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Petra Svedíková Vávrová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Petra Svedíková Vávrová je veřejná funkcionářka —
+zastupitelka města Znojma (SPD). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Růžena Šalomonová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Růžena Šalomonová je veřejná funkcionářka —
+zastupitelka města Znojma (nezařazená). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: David Štolpa
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): David Štolpa je veřejný funkcionář —
+zastupitel města Znojma (ANO 2011). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.

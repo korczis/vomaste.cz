@@ -197,7 +197,7 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 1028 záznamů v 144 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 1033 záznamů v 144 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
@@ -205,8 +205,8 @@ Dopočítáno z `data/dossiers/**/sources/**`, 1028 záznamů v 144 rodinách/ou
 | Vláda České republiky (vlada.gov.cz) | 184 | 167 | [ano](/zdroje/vlada-cz/) |
 | Poslanecká sněmovna Parlamentu ČR | 61 | 42 | [ano](/zdroje/psp-cz/) |
 | seznam-zpravy | 40 | 14 | [ano](/zdroje/seznam-zpravy/) |
+| mesto-znojmo | 30 | 30 | — |
 | ČT24 (Česká televize) | 26 | 18 | [ano](/zdroje/ceska-televize/) |
-| mesto-znojmo | 25 | 25 | — |
 | Aktuálně.cz | 22 | 15 | [ano](/zdroje/aktualne-cz/) |
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
 | Echo24 | 19 | 15 | [ano](/zdroje/echo24/) |
@@ -350,7 +350,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 1028 záznamů v 144 rodinách/ou
 
 Tyhle zdroje dataset používá aspoň pětkrát, ale katalog k nim nemá záznam s mezemi a pastmi:
 
-- mesto-znojmo (25×)
+- mesto-znojmo (30×)
 - Hospodářské noviny (7×)
 - CNN Prima News (6×)
 - Zdravé zprávy (6×)
