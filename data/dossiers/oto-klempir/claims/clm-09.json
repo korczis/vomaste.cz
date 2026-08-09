@@ -10,11 +10,14 @@
     "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
   },
   "text": "Navrhované částky jsou nižší než dosavadní výnos poplatků — Česká televize letos plánovala vybrat 6,73 miliardy korun a Český rozhlas 2,48 miliardy korun.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-20"
     }
   ],
   "subjects": [
