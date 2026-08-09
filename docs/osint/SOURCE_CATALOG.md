@@ -197,7 +197,7 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 1018 záznamů v 144 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 1023 záznamů v 144 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
@@ -207,10 +207,10 @@ Dopočítáno z `data/dossiers/**/sources/**`, 1018 záznamů v 144 rodinách/ou
 | seznam-zpravy | 40 | 14 | [ano](/zdroje/seznam-zpravy/) |
 | ČT24 (Česká televize) | 26 | 18 | [ano](/zdroje/ceska-televize/) |
 | Aktuálně.cz | 22 | 15 | [ano](/zdroje/aktualne-cz/) |
+| mesto-znojmo | 20 | 20 | — |
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
 | Echo24 | 19 | 15 | [ano](/zdroje/echo24/) |
 | denik-n | 18 | 10 | [ano](/zdroje/denik-n/) |
-| mesto-znojmo | 15 | 15 | — |
 | Novinky.cz | 13 | 12 | [ano](/zdroje/novinky-cz/) |
 | denik-cz | 12 | 7 | [ano](/zdroje/denik-cz/) |
 | Česká justice | 11 | 6 | [ano](/zdroje/ceska-justice/) |
@@ -350,7 +350,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 1018 záznamů v 144 rodinách/ou
 
 Tyhle zdroje dataset používá aspoň pětkrát, ale katalog k nim nemá záznam s mezemi a pastmi:
 
-- mesto-znojmo (15×)
+- mesto-znojmo (20×)
 - Hospodářské noviny (7×)
 - CNN Prima News (6×)
 - Zdravé zprávy (6×)

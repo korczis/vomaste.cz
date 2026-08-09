@@ -5290,3 +5290,63 @@ celé znojemské zastupitelstvo a navázané kauzy.
 Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu
 města (znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje
 samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Jiří Jordán
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Jordán je veřejný funkcionář —
+zastupitel města Znojma (ANO 2011). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Radomír Kaman
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Radomír Kaman je veřejný funkcionář —
+zastupitel města Znojma (ANO 2011). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Jan Kauer
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Kauer je veřejný funkcionář —
+zastupitel města Znojma (ANO 2011). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Miroslav Kavka
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Miroslav Kavka je veřejný funkcionář —
+zastupitel města Znojma (ODS + KDU-ČSL SPOLU). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Jana Kochová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jana Kochová je veřejná funkcionářka —
+zastupitelka města Znojma (ANO 2011). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
