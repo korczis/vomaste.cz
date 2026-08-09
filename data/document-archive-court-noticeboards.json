@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-08",
+  "generatedAt": "2026-08-09",
   "records": [
     {
       "identifier": "court-board-1-t-95-2025",
@@ -11,11 +11,11 @@
       "dossiers": [
         "tomio-okamura"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://infodeska.gov.cz/eudpub/",
       "file": "/documents/court-noticeboards/court-board-1-t-95-2025.json",
       "mediaType": "application/json",
-      "sha256": "426717b06aa4c65fc9205e3c6f0fb5c67cd0fdd55c1d1fa2193e6675fdd5d985",
+      "sha256": "3a6a8bf53990829756ca25982714de7be63e82a0f36c3c89d9f3cf6dfdb6cc8f",
       "found": false,
       "matchCount": 0
     },
@@ -28,11 +28,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://infodeska.gov.cz/eudpub/",
       "file": "/documents/court-noticeboards/court-board-3-to-34-2024.json",
       "mediaType": "application/json",
-      "sha256": "7d24112510a7b0ff53d416a6363b91d4d3171765a8532871a237e448b9c042fd",
+      "sha256": "d64949b2eeba3810045e68ec8730ed2f3b50ec2eda216d0be697859df9a08d73",
       "found": false,
       "matchCount": 0
     },
@@ -45,11 +45,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://infodeska.gov.cz/eudpub/",
       "file": "/documents/court-noticeboards/court-board-56-t-7-2022.json",
       "mediaType": "application/json",
-      "sha256": "7bd7eb3d5c1910140f3c2788bd29d57dc7a67f90bcf92fdd2959af7f4599a93b",
+      "sha256": "0eb302036ab15c00acf3acba6f8fdba2007244c101fc416262bb569c8f107437",
       "found": false,
       "matchCount": 0
     },
@@ -62,11 +62,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://infodeska.gov.cz/eudpub/",
       "file": "/documents/court-noticeboards/court-board-10-a-92-2024.json",
       "mediaType": "application/json",
-      "sha256": "1d4e7afd412519b2f4bef3e1137715ef65ffdf53913c0648211e9394c2a8537d",
+      "sha256": "363c2a90f6e8e44f65e1e19f0572b787a09b2e470c7829a8e5135a747aee7542",
       "found": false,
       "matchCount": 0
     },
@@ -79,11 +79,11 @@
       "dossiers": [
         "james-quick"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://infodeska.gov.cz/eudpub/",
       "file": "/documents/court-noticeboards/court-board-85-cm-1204-2023.json",
       "mediaType": "application/json",
-      "sha256": "67bfb82b0d3368b2f1a7abb83da8ec31a0e79a3285a1052e43aa5cce755b88c5",
+      "sha256": "a110f985817170042e4f1384faad7b494dbebd8bac551e7bf39c65ce2dd89c81",
       "found": false,
       "matchCount": 0
     },
@@ -96,11 +96,11 @@
       "dossiers": [
         "jeronym-tejc"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://infodeska.gov.cz/eudpub/",
       "file": "/documents/court-noticeboards/court-board-2-vzv-11-2025.json",
       "mediaType": "application/json",
-      "sha256": "9575a36ed4e5a7a855faf735d0d22fa5bd44957810522f30b4cd32a655471fb6",
+      "sha256": "e69d355df40b851256857679232376e38abd503d9525d4713d3caf2a3dfc083f",
       "found": false,
       "matchCount": 0
     }

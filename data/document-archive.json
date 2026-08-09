@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-08",
+  "generatedAt": "2026-08-09",
   "policy": "Public business-registry identity and filing metadata only. Person birth dates, home addresses and personal identifiers are refused; document PDFs are published only after individual review.",
   "counts": {
     "records": 281,
@@ -26,11 +26,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/26228548.json",
       "mediaType": "application/json",
-      "sha256": "1c59df36cf2eb8fe226d619567d3c102f542896f85a92bdeb73896d6f56ddfe0",
+      "sha256": "fecab4d68367b639f2e2b4ea5aa748296a0c97f6660f47e592c9e437350a44db",
       "found": true
     },
     {
@@ -42,11 +42,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/63832721.json",
       "mediaType": "application/json",
-      "sha256": "9c0b25403523e20274a5cef19b26b644a652b5407a78175c4f660e934e949e08",
+      "sha256": "5c7b916ff331c12bbc256dd6bb45efce8c3a86020f55070fecfc50dd8b422525",
       "found": true
     },
     {
@@ -58,11 +58,11 @@
       "dossiers": [
         "martin-sebestyan"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/48118753.json",
       "mediaType": "application/json",
-      "sha256": "b1e67da29ab02e7dd257fde1c6888867b95a996b605f920c4b10473b93131f67",
+      "sha256": "3fe123428abc199715e6807be2e6b07b7334d5442c3e10542021c52c7b9d52d2",
       "found": true
     },
     {
@@ -74,11 +74,11 @@
       "dossiers": [
         "tunde-bartha"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/24722197.json",
       "mediaType": "application/json",
-      "sha256": "404d335a587fa42879d82c0bfa947b9491b26544148c017a4d3afebd9e45b88f",
+      "sha256": "d36b3c223138651ffa85a77b289eccb0fc0cc0f4ca996e46d042ebd9794c3f48",
       "found": true
     },
     {
@@ -90,11 +90,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/49455958.json",
       "mediaType": "application/json",
-      "sha256": "4c9ae3ab1ca06f3d6e78ab3f6811c03377588c3beccc8eda6502fd5ad71e10c6",
+      "sha256": "2688fe48e5bd0f955de649b849dab8be5ac7f44102308a902b50763f7379ee2e",
       "found": true
     },
     {
@@ -109,11 +109,11 @@
         "martin-sebestyan",
         "tunde-bartha"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/26185610.json",
       "mediaType": "application/json",
-      "sha256": "3bca23173f177a03e5750cd2368fa8451a7448131200c39f2fbebb996c4527c4",
+      "sha256": "14eb2b445ed57cf8897317678d45c276d508370163b390b7ad087c704227db4c",
       "found": true
     },
     {
@@ -125,11 +125,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/60461446.json",
       "mediaType": "application/json",
-      "sha256": "6898a041419f248f9c601a8a143b9b659efd9f4d3489adb7bf0c948d9b1e159d",
+      "sha256": "8ae55fd46c9194f71bb3828486ced54efc979924b5a492b86a8b2d950e63e1d0",
       "found": true
     },
     {
@@ -141,11 +141,11 @@
       "dossiers": [
         "boris-stastny"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/27082440.json",
       "mediaType": "application/json",
-      "sha256": "f0dc75703e9400a0fd98760f8655300fc22e717e6a529b5e70fda309766873a8",
+      "sha256": "3f164de32f15445fa637a44c306847f583c690b11c746c2e4df93405f392bad2",
       "found": true
     },
     {
@@ -167,11 +167,11 @@
         "tunde-bartha",
         "zuzana-mrazova"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/71443339.json",
       "mediaType": "application/json",
-      "sha256": "1d08ee32e08ded1635279570d6daca459310299adff1a7e9c30f09f639a3b133",
+      "sha256": "c49c90f4462efb534199dcc64714fe65e1c16e4f927c4d7a368c1fe13645681f",
       "found": true
     },
     {
@@ -184,11 +184,11 @@
         "igor-cerveny",
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/05411408.json",
       "mediaType": "application/json",
-      "sha256": "993f0d74b11fcda63baebb80de411740afd16d721c884a0418780aad366c635d",
+      "sha256": "14fb1e1727d7399be9547e0c47196f6a2e04958fe804348ec3831e50dcd5bcda",
       "found": true
     },
     {
@@ -201,11 +201,11 @@
         "adam-vojtech",
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/26547783.json",
       "mediaType": "application/json",
-      "sha256": "bcb1896ac5f00a30ebff894417cbc03c1d83928071d2db0bf311a94da9c0180c",
+      "sha256": "4221cd367cfc7f27dca0182bc5227536848fc89119b30dd86e12392070170fc1",
       "found": true
     },
     {
@@ -217,11 +217,11 @@
       "dossiers": [
         "robert-plaga"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/60449101.json",
       "mediaType": "application/json",
-      "sha256": "48cb6616eb79eb3251734cb23e272cf8453502a00f4d3ad20f0194ef3d0e4572",
+      "sha256": "84badbe4ab6374a1f04d5f4bbd44a2421df8ab3426f264f099751523428816f4",
       "found": true
     },
     {
@@ -233,11 +233,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/01818899.json",
       "mediaType": "application/json",
-      "sha256": "69d9e333ef7a41ee90764167fe648a0de0948bb55fbdd8a2c44350ae890182dd",
+      "sha256": "19d75e7d9b43bf05024b4790c80dcd0e209247bc9e28e4f05e41c59c31b23c6f",
       "found": true
     },
     {
@@ -249,11 +249,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/22419519.json",
       "mediaType": "application/json",
-      "sha256": "1a5a743c37b2d63c67e74f3ead94994a1e02832e656e259b400fe331824b63a5",
+      "sha256": "154f5f886101d61d46579b35ee559aa504965f6d4ba0245e0da41ffe0a0ff4bf",
       "found": true
     },
     {
@@ -265,11 +265,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/02922703.json",
       "mediaType": "application/json",
-      "sha256": "ffa4d823f9eff0c8b6658fba123bb19766b58f02cf491758e8596d36c51cf42c",
+      "sha256": "2ff21b1fc86434bde78fc498f26045577d908a36b0236095e74ca936ea16e623",
       "found": true
     },
     {
@@ -281,11 +281,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/11823461.json",
       "mediaType": "application/json",
-      "sha256": "ada039cf6f0a632ea6fd7538e22737190a077332503930299ab0d4237cefbdab",
+      "sha256": "81593147dd346e3d9b279dc817b818408ab3eed48f6336b758f9d1e2052b8b98",
       "found": true
     },
     {
@@ -297,11 +297,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/46504940.json",
       "mediaType": "application/json",
-      "sha256": "bd9d1f1cd460eb7b5b110bec77b076fdb9e5a042caa45e9d055dce92328f9bde",
+      "sha256": "393ec57853e1068770edde29024ca3b42779629109bc74913c0fccb82c5ba856",
       "found": true
     },
     {
@@ -313,11 +313,11 @@
       "dossiers": [
         "james-quick"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/03877248.json",
       "mediaType": "application/json",
-      "sha256": "9c4ac082480ad058ad03a34d6fbfe14b8b5d4677c074112b43aeab03af7eed96",
+      "sha256": "4bfef875da6a60c64d56fb605fead20ce2f7694884ac90e5766099b101ee90fe",
       "found": false
     },
     {
@@ -329,11 +329,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/28196678.json",
       "mediaType": "application/json",
-      "sha256": "3e268e4cd257c9716612785642a724436c01795466a14f236311c9eadce38d6e",
+      "sha256": "4ef7d7842f060a0477545e0c44e5de6d44e87dfb430dd0e0034eef2b0807dc76",
       "found": true
     },
     {
@@ -345,11 +345,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/45770743.json",
       "mediaType": "application/json",
-      "sha256": "56bd69aaa623be00f78e43486944b39ebc106bac2f549bbed73cc4c7e07c8515",
+      "sha256": "cd76dad0a0f72f3dd3230668e26ef4a9ea8ea8f460d94494f5fd33b0a125b263",
       "found": true
     },
     {
@@ -362,11 +362,11 @@
         "alena-schillerova",
         "lubomir-metnar"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/48136450.json",
       "mediaType": "application/json",
-      "sha256": "5523782c687a780b002c79df3e884e5c0280db5433ce5da1a563f07cf4276195",
+      "sha256": "ec8856478faf66f8cf5dfe544ca163eea957c1e2ec47d7cc68bf794f66aa1072",
       "found": true
     },
     {
@@ -378,11 +378,11 @@
       "dossiers": [
         "james-quick"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00020869.json",
       "mediaType": "application/json",
-      "sha256": "bf1beb6af468c2299d67c5e2a0cab98d05f33286245eb71c621a80a8dd36c394",
+      "sha256": "0daec3c07d3098aded76f2c8372b661e853735198b62dbee303dfe8a9ddb0e51",
       "found": true
     },
     {
@@ -395,11 +395,11 @@
         "boris-stastny",
         "robert-plaga"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00638994.json",
       "mediaType": "application/json",
-      "sha256": "f22233dd862357c1f6a1745a44031e2bdd9c7d08341753664bc0388bb0e95b9e",
+      "sha256": "29a4ec3cf00f3e056a49f4b21ecdeb7b3df2cf67faa95cfd7a17b11500664bee",
       "found": true
     },
     {
@@ -411,11 +411,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00027383.json",
       "mediaType": "application/json",
-      "sha256": "6033ce79fb16f6b4d6cad11b5cdb411e8900d8fd1d8685d56081c0526a3dadca",
+      "sha256": "fb67d558bc2c197816234aa062fa2674d454cf906a32e8cfa4d75d239ae316b3",
       "found": true
     },
     {
@@ -427,11 +427,11 @@
       "dossiers": [
         "boris-stastny"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00469548.json",
       "mediaType": "application/json",
-      "sha256": "a1e6c4ef6ca0f85f2ba3153e830b5d2b91d2e45b4424d85f5dd7a039ec8a556f",
+      "sha256": "f4eba82a7cc91c967f8c58ae98190ab59555dda587d72d0bcd071219ca1001e6",
       "found": true
     },
     {
@@ -443,11 +443,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/70994226.json",
       "mediaType": "application/json",
-      "sha256": "64028dea62cf26b79fd6528b3218a21bb5c05a3bd55d6aea5fdc9648d4638740",
+      "sha256": "86b728e6080bddc0d09bf56d22a75be9f516d055438b0ada8b50ff43a768896e",
       "found": true
     },
     {
@@ -459,11 +459,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/68407700.json",
       "mediaType": "application/json",
-      "sha256": "092c0f3b1743ef019a53be26cb44033ccb6d3770c86fa446179ce1aec326c440",
+      "sha256": "0ffca14d1495e009b8d47112f52b662dc4b9a52a7dca7870fb15e8e78a0f1a51",
       "found": true
     },
     {
@@ -475,11 +475,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/45245053.json",
       "mediaType": "application/json",
-      "sha256": "104145ef2cd0bec2c710f09096e282e7a4fc9a5da2031b3f13312dfe50483943",
+      "sha256": "8bb980806be3305670128455308f30cbf8556dcd9d239c3af278ac619e4504a8",
       "found": true
     },
     {
@@ -491,11 +491,11 @@
       "dossiers": [
         "jeronym-tejc"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00409171.json",
       "mediaType": "application/json",
-      "sha256": "217421fb8703550a3065511796670a662a51ea8ed2504a9e26f5a2a1b54d3e63",
+      "sha256": "6c22c116aece1e51ec9739c9e51ce34eece250e09f22528d4b36f37513ea9ba6",
       "found": true
     },
     {
@@ -507,11 +507,11 @@
       "dossiers": [
         "martin-sebestyan"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/05140544.json",
       "mediaType": "application/json",
-      "sha256": "556b2e54760e3084aadb15c5c5a0ae8db7388839a928d281dfeeb8d3002ed093",
+      "sha256": "ebea7c8be5e2de6d601676b153ddeddef61dcb78126f0674cb478c6c9111f17e",
       "found": true
     },
     {
@@ -523,11 +523,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/04771664.json",
       "mediaType": "application/json",
-      "sha256": "29f8d6a39b833b323d67c9b392187903edc5d72f08ece93b314173a3737f9ce7",
+      "sha256": "c0ac8d8802a95a894c9a9ae33e58b834f5e789dab23e3c2509bb04c32c0a2c52",
       "found": true
     },
     {
@@ -539,11 +539,11 @@
       "dossiers": [
         "robert-plaga"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/24706370.json",
       "mediaType": "application/json",
-      "sha256": "e870efae96bd6ca86112a49090793b1dfc4e7e3d5129108322571f51a1bf183c",
+      "sha256": "c09cd920e583493831fe701b9c6d4e5e3969b0958f6b394ce4486833af1de57e",
       "found": true
     },
     {
@@ -555,11 +555,11 @@
       "dossiers": [
         "igor-cerveny"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/22461787.json",
       "mediaType": "application/json",
-      "sha256": "c518be45d882617f48ac895b44a427a87ed22215a09d10acbc2a6e661f7137db",
+      "sha256": "954ff9e16ade38bbf67970873d59a0c6cab717263ae15e7c37fb23d097c68a34",
       "found": true
     },
     {
@@ -571,11 +571,11 @@
       "dossiers": [
         "adam-vojtech"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00098892.json",
       "mediaType": "application/json",
-      "sha256": "3b1ff053468e3c1d3d773602ad9a30276a159c7c245e198fe9db024877608e33",
+      "sha256": "9703610d26f9be7a9418c993968a8460d14c2b568e8ab46c7923164717c93223",
       "found": true
     },
     {
@@ -587,11 +587,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/61858374.json",
       "mediaType": "application/json",
-      "sha256": "c4fd038bea0ae54ae271aba85a8712e25998acbbf4353a017ad28b34e9913860",
+      "sha256": "e4f5e6a690ede5df78d959537d5a654ea864d521c647079384f0dc3936d39cf7",
       "found": true
     },
     {
@@ -603,11 +603,11 @@
       "dossiers": [
         "alena-schillerova"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/72080043.json",
       "mediaType": "application/json",
-      "sha256": "8e951c374237205e57423d4a0d795866a5ebf350b067b9c28cf6de9003a6523f",
+      "sha256": "6410cb3e6330370aa34e486df8df7d1568d17a3d9a3e13b67267c6abe66651b3",
       "found": true
     },
     {
@@ -621,11 +621,11 @@
         "petr-macinka",
         "petr-vencalek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/28274318.json",
       "mediaType": "application/json",
-      "sha256": "26116d943a37b6b324e1d940b985b80899b487cd0f65de5b8c2e35335d75a6e3",
+      "sha256": "3fd1148f3c6b38e320643d34c251340125b1c499e69790f9acbfa66b0c84f3be",
       "found": true
     },
     {
@@ -637,11 +637,11 @@
       "dossiers": [
         "robert-plaga"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/61388246.json",
       "mediaType": "application/json",
-      "sha256": "fd4aa34a8f61ed92a0900c3a0e9ebd652650926e5b9575a6aed594db231be2c4",
+      "sha256": "e464c981effd39543453625dba7c1e60c700318fe4cd31e7bad350414861cbee",
       "found": true
     },
     {
@@ -653,11 +653,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/01801261.json",
       "mediaType": "application/json",
-      "sha256": "900a4183eccef27b91e30506414735b98ad32448cb8a87e1e7889e6440e5271b",
+      "sha256": "ff319af69f0127cbd8c0d960be7a558d78affb939a78ff9f498b074bfe589195",
       "found": true
     },
     {
@@ -669,11 +669,11 @@
       "dossiers": [
         "igor-cerveny"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/04472586.json",
       "mediaType": "application/json",
-      "sha256": "253a7735aeb00854ff59b9c2abbd92e46ccb3c58baee81770f2a1be7c07a379a",
+      "sha256": "943949a2788ac44f7d6c4242492352e309486fad5aacca493eb0b5b3a83f6e4d",
       "found": true
     },
     {
@@ -685,11 +685,11 @@
       "dossiers": [
         "richard-chlad"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/05965527.json",
       "mediaType": "application/json",
-      "sha256": "d3c2bf5e70c66286e4a6a9931381cd41ec11242b9ff36a98be548b89bc82867b",
+      "sha256": "bbe543efd27a261863e23a8b90bc930ee48296d2cca8362986ec3c5fb4bc0e75",
       "found": true
     },
     {
@@ -701,11 +701,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/04449461.json",
       "mediaType": "application/json",
-      "sha256": "75db5d899e5425cebc6de4b8fadd320a873e01c2003eea86fc834bb73e315e3f",
+      "sha256": "7ca123ff51a3cd915dcefd75e331cbb0f18c2006df6041efcb0886546d4ebc93",
       "found": true
     },
     {
@@ -718,11 +718,11 @@
         "andrej-babis",
         "tunde-bartha"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/26124459.json",
       "mediaType": "application/json",
-      "sha256": "1e690ccd4a8945ffe01e514357ae39b5b7c3d18462a4f78e1221542284f3d14e",
+      "sha256": "b7467256384dcbd3937ae65f300a9d24c016f4746382d01734507943b76d0749",
       "found": true
     },
     {
@@ -734,11 +734,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/24220345.json",
       "mediaType": "application/json",
-      "sha256": "5012b75ae18fb208c7742cfc481034858a5c9e485e77a0bab286da8400962a80",
+      "sha256": "fbbf4eda413e40ebfc656430de4b1ae6ba9877cb5a515772fd8c75f8a78978fe",
       "found": true
     },
     {
@@ -750,11 +750,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/01680081.json",
       "mediaType": "application/json",
-      "sha256": "6b6a6827326b2406201d1a0354e6bbcf57c8f0ed302e4d18e3ab04c157c1b558",
+      "sha256": "ebc14257b87649b2b1c94190e4de2e7da8e553a17ae5168733a06d7a3e245f55",
       "found": true
     },
     {
@@ -766,11 +766,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/26557975.json",
       "mediaType": "application/json",
-      "sha256": "c0deb2ffb3424333c538e305cae6f66c001454da5021204be54b84a6d63998a3",
+      "sha256": "53b2d8de037d23f8d031c6b37906c4f0d9b3a69d201cc4d5430a7acf03fcff22",
       "found": true
     },
     {
@@ -782,11 +782,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/70888337.json",
       "mediaType": "application/json",
-      "sha256": "5911661ff7a0ae888e0075ef16f990fbf34f6bfe8850b1e4e6bb5d6e1210bc4d",
+      "sha256": "02d16d947260279ab34840cc93d3ace6afcc836a4d0647b9e3473843eb54d43f",
       "found": true
     },
     {
@@ -798,11 +798,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/49282778.json",
       "mediaType": "application/json",
-      "sha256": "edcd7afef6a65695f14d0f48de7658ea5e8a8900e173087d1124caea966f103e",
+      "sha256": "8fd399917f866617af341cccfc097f7f5fcabee5276df915ac94b38d9b69860e",
       "found": true
     },
     {
@@ -815,11 +815,11 @@
         "alena-schillerova",
         "jaromir-zuna"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/48136000.json",
       "mediaType": "application/json",
-      "sha256": "d75dfcdde710ac13eda6e10559ae74cd8f479317be89d52e168621a59e9677f9",
+      "sha256": "c495b0f9b06ba38119f174bde722555eb97e06921847fe1f43127d0196ba251d",
       "found": true
     },
     {
@@ -831,11 +831,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/05015502.json",
       "mediaType": "application/json",
-      "sha256": "87533b2cf9fe854becf80225fca0dc9dcf09721178c07bc5d5f1e2dd2a7871ca",
+      "sha256": "5edbf299f082d89a9286c49bbf1906bdfcf408144a16397190fbfc6b95ee171e",
       "found": true
     },
     {
@@ -850,11 +850,11 @@
         "karel-havlicek",
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00442704.json",
       "mediaType": "application/json",
-      "sha256": "cb75872386c7b3e360f801d22ae1ca04e234dc33946ded2c7a440e9fec05de79",
+      "sha256": "0253d89913e3834c2a17bc12b7f02f77b63445c3fcc1332a06aa545d9bf840a9",
       "found": true
     },
     {
@@ -867,11 +867,11 @@
         "macinka-turek",
         "petr-macinka"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/17353882.json",
       "mediaType": "application/json",
-      "sha256": "dd9569ba595d6c94213d67dc3d171fa19c2c0cec5d50091ebd27259d3c91eda1",
+      "sha256": "8a23232264688d8e1c4c2186d47a44c289b300277191286ccc94efc8c9b574f9",
       "found": true
     },
     {
@@ -883,11 +883,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/46900411.json",
       "mediaType": "application/json",
-      "sha256": "448602f98b61a99be4827394d94067abe883628d3f1d92344fe40663f9d60217",
+      "sha256": "48b7fc2200e4433dad219df6da3fa62c49c166805c00619ab4ffa9497cff36a0",
       "found": true
     },
     {
@@ -899,11 +899,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00215724.json",
       "mediaType": "application/json",
-      "sha256": "f934b76b5223be233ca4813f226d0e098daae0f173ac566ec1afcf26f2efbf22",
+      "sha256": "c0d8cbe440652e7376baa0cbc49cb957a1f83949bec017eedf221b3614ca36c9",
       "found": true
     },
     {
@@ -916,11 +916,11 @@
         "andrej-babis",
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00215678.json",
       "mediaType": "application/json",
-      "sha256": "6fe6a01a5045d62308f49a7c6ed106cc52cbdb97c358f8d25b49c9fac3c72cc7",
+      "sha256": "7166d7ca2ffbc267166037ab99e22e0796e6a0704367fa224f6ff65ce34bc24e",
       "found": true
     },
     {
@@ -933,11 +933,11 @@
         "macinka-turek",
         "richard-chlad"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/23177586.json",
       "mediaType": "application/json",
-      "sha256": "c6071b3e5ccf8cf9d3034d9fc21193415dc5b881ae2773efc8240212534614dc",
+      "sha256": "0b95eadaa623cdc65ff19bb0c8a3bbc3aacac5c461cce3b1a84bba6671d72948",
       "found": true
     },
     {
@@ -949,11 +949,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/42196451.json",
       "mediaType": "application/json",
-      "sha256": "03f5dd528d3b97e02afe6f218c688bf02c3518d66220f4aac464a16ed174b440",
+      "sha256": "594dba3144fb660a864559f8f65a4cbded60daf600567112c20599ebef3a9a1b",
       "found": true
     },
     {
@@ -967,11 +967,11 @@
         "jeronym-tejc",
         "robert-plaga"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00216224.json",
       "mediaType": "application/json",
-      "sha256": "c7462366c447a66910f1e4abccc93a38869ec45d341059daf8d7bec2744672e7",
+      "sha256": "ae927218e748ba8c1e75b286fba0eba89a2d7ff35ef9b78705b3eabba5b00327",
       "found": true
     },
     {
@@ -983,11 +983,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/04347803.json",
       "mediaType": "application/json",
-      "sha256": "6d03890a9db4622b38388ae0131a6d703b98303cc32932579801f3bf288ca214",
+      "sha256": "33d913dececf71ae41f45ea27ddd5b44222d68b9ce9e6320e3d64a197117e351",
       "found": true
     },
     {
@@ -999,11 +999,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/01529820.json",
       "mediaType": "application/json",
-      "sha256": "4d27308f66d497c45147e1dd6e680c6cbb81150d76f07b6d7d730d050fcb6d6d",
+      "sha256": "2939e196588441afceea2f0306d0f50ef7ae36646640784994c7639e0e6c3c24",
       "found": true
     },
     {
@@ -1015,11 +1015,11 @@
       "dossiers": [
         "zuzana-mrazova"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00266230.json",
       "mediaType": "application/json",
-      "sha256": "a8e2f6d15a4b53e2f4d854b3c2f2b89ebc8b0f4134ab932e30f34542f9969ad7",
+      "sha256": "ded5c5e8ebb044f8125ddae90830f910442cbf160726cd7441c851fe962700b6",
       "found": true
     },
     {
@@ -1031,11 +1031,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00284301.json",
       "mediaType": "application/json",
-      "sha256": "354220fd755bd9196cf49c5b16548969d1feba3802df928a5295ea39c1f83e6f",
+      "sha256": "712a06821cfd506e8418be2c152c5524c03cc6e8ec5c9249d10662b13badf8ed",
       "found": true
     },
     {
@@ -1047,11 +1047,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00304450.json",
       "mediaType": "application/json",
-      "sha256": "36d1487b7802dd7daa63028e0b804e4b8d3f6de6f889826dd7f586bfc5bba4a4",
+      "sha256": "c0bf7b7280d12a663cfce299553f2e2991a6eebcb9c7caa08b7e2fcee86f5db6",
       "found": true
     },
     {
@@ -1063,11 +1063,11 @@
       "dossiers": [
         "tunde-bartha"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00063517.json",
       "mediaType": "application/json",
-      "sha256": "1a96ab989b0adcb9d0be14e60b7c58d6f35a3b2d74c4a4af18e0fafef4e3caac",
+      "sha256": "fb6677b86deb6ded7cf0beea396e4e1ff725b24ca57c6107252ea0c3b7c19e92",
       "found": true
     },
     {
@@ -1079,11 +1079,11 @@
       "dossiers": [
         "jaroslav-faltynek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00026000.json",
       "mediaType": "application/json",
-      "sha256": "5898a0cd68f3fb91d38169ed2a73a180bf82e3eb7200b6f79155e0883a251904",
+      "sha256": "90936858f5e6fb3c3ca3d50073ec21161f2131284d46bdda4e01d6a0671d15fb",
       "found": true
     },
     {
@@ -1097,11 +1097,11 @@
         "james-quick",
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00215660.json",
       "mediaType": "application/json",
-      "sha256": "2e9e2879cb58babcf2c2038e0a74238f0dbf067bbd506048cfd4cba314f54d91",
+      "sha256": "80b9a8863769b09404f5ed6442862bef37e791bbd601f335f8a571fe8740d32d",
       "found": true
     },
     {
@@ -1113,11 +1113,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/06760538.json",
       "mediaType": "application/json",
-      "sha256": "8ae06b459c2bbecacfc1ae8870110b3f63672e75a98a04852952b4795311ecb4",
+      "sha256": "e016b4dcebfc239d686c432b4e09280a5596c15521c25ae17b537a57d8eff75d",
       "found": true
     },
     {
@@ -1129,11 +1129,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/47609109.json",
       "mediaType": "application/json",
-      "sha256": "db787cb84d4d04da4c5f749bef6ed20efc208c86511b3d3b58a8fc37ef4c0376",
+      "sha256": "27cbe00e960e26d876db53d0b7731591dcda010768c90998e19384d49eea727a",
       "found": true
     },
     {
@@ -1146,11 +1146,11 @@
         "filip-turek",
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00024341.json",
       "mediaType": "application/json",
-      "sha256": "d4e86834b38909aaea13425916f0ee0a207dcaa35670bb7076b3bc40e7641383",
+      "sha256": "3c344df1d2458a0037779f01232ea78a90236c5dd42bfedea51ab49313f9257f",
       "found": true
     },
     {
@@ -1162,11 +1162,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/48169188.json",
       "mediaType": "application/json",
-      "sha256": "41e20fdd754f41507914859b029fa0e32e86d20c86a0ce8f635f5876a83753d4",
+      "sha256": "14163e9b047880912fee9580e63c604834aaf6c30850c47bc5b21b6dabe0c8c7",
       "found": true
     },
     {
@@ -1179,11 +1179,11 @@
         "macinka-turek",
         "richard-chlad"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/17573866.json",
       "mediaType": "application/json",
-      "sha256": "521ff953ed67862586be695808d138735a7cc5b993909ccb131dd15ffe0bc5f1",
+      "sha256": "94fab9757ab3e5332190beb559e3bc3f43d28dc9170564dd95e568f41f664b78",
       "found": true
     },
     {
@@ -1195,11 +1195,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/70890692.json",
       "mediaType": "application/json",
-      "sha256": "af563207ebacc44109d8aa54e508ab77b22a2c515b8d1752686f436c0b7ec666",
+      "sha256": "eded7ef6da8f6c897377922b5b7314c7f95928550511374d607bf5e519a6dfb9",
       "found": true
     },
     {
@@ -1211,11 +1211,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/14076705.json",
       "mediaType": "application/json",
-      "sha256": "8eeebea822c3566eb47331bbe64997d516b228299b40eebe328538df5077dac2",
+      "sha256": "423dd8a3dd86e7923b1e25770a1231288907d902a66a6866b006be2960abd3a2",
       "found": true
     },
     {
@@ -1231,11 +1231,11 @@
         "petr-macinka",
         "richard-chlad"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/05989175.json",
       "mediaType": "application/json",
-      "sha256": "5ff4fc97661590dc9b3e2a404e58f21d4da9c430a21a1dbd6b1faa225c6fd143",
+      "sha256": "3702c56adbe4d0881b27bada9a86d1c1ac06884b8ba4ae4472aec9cf487c2091",
       "found": true
     },
     {
@@ -1247,11 +1247,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/75032333.json",
       "mediaType": "application/json",
-      "sha256": "63fd2ea66425a5c810bde82c35c074d5db5a7f5a236610d4b7c24491abf5033e",
+      "sha256": "4b376e6eefb5c23503d2976314aab6cd9cbb1f2a3b98bcbe7648c5f110a0064d",
       "found": true
     },
     {
@@ -1263,11 +1263,11 @@
       "dossiers": [
         "boris-stastny"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/07460121.json",
       "mediaType": "application/json",
-      "sha256": "cffbed3827b31db499e9574bfdfe99bb0844d4456277857e5a49af47225e2f77",
+      "sha256": "a1559a17e725b977046d08acb1bd37c639da8940dc26b32dde1e60f11dcbc525",
       "found": true
     },
     {
@@ -1279,11 +1279,11 @@
       "dossiers": [
         "robert-plaga"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00023752.json",
       "mediaType": "application/json",
-      "sha256": "4cf090ced4b243e01f00836313f5ad5c63eb14d2c0680f22b28d1166b5df641c",
+      "sha256": "98db57846e837f2336fa8b8f75ec3bcb83b385ec8773ddd9480af748c9b711e5",
       "found": true
     },
     {
@@ -1295,11 +1295,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/63489911.json",
       "mediaType": "application/json",
-      "sha256": "c0445087a3e35258915d341d12516c5fa430a1969be82702f47531c2057071d0",
+      "sha256": "7b87ee219e399682d5c66995cf4c44035a006e1a215ded2ba29df87003269309",
       "found": true
     },
     {
@@ -1312,11 +1312,11 @@
         "ales-juchelka",
         "lubomir-metnar"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/49370227.json",
       "mediaType": "application/json",
-      "sha256": "50c8d104229ea7fd6e7e8ac8af45fac629d6ef715d882af95427611864aef402",
+      "sha256": "9ae634549d25b273be2d12b13f36969fb32097ec11200493a2aa1586956f8485",
       "found": true
     },
     {
@@ -1328,11 +1328,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/75003716.json",
       "mediaType": "application/json",
-      "sha256": "5c83d5df7a0a5574c998498e05328fc21fdde5f1e0869b6a1993b47ff6eec488",
+      "sha256": "17021f3a4951b3f4ab1e11aec9df7a64eb16c8cec12bfedbf644d30df6e7b0b2",
       "found": true
     },
     {
@@ -1345,11 +1345,11 @@
         "andrej-babis",
         "jeronym-tejc"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/49467352.json",
       "mediaType": "application/json",
-      "sha256": "e30d1ada007046c93ca1ff4622b8294c6a4520591d560fcf37363d4ac9fbce0e",
+      "sha256": "87e7209064d09f88f6cc9beb5aac0a4579162ca433060c5a575e00a019e9237c",
       "found": true
     },
     {
@@ -1361,11 +1361,11 @@
       "dossiers": [
         "tomio-okamura"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00024384.json",
       "mediaType": "application/json",
-      "sha256": "c55462d61cc021072f972d694f7bf67b63ffb5db73535595ea5513f9762d15ce",
+      "sha256": "8198e6da9ccbe9089aa5228cd201009bf5322e2ea1b9666b4894b347cf2d5682",
       "found": true
     },
     {
@@ -1382,11 +1382,11 @@
         "karel-havlicek",
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/16192656.json",
       "mediaType": "application/json",
-      "sha256": "05dd82e58f78b8864f44197632e0d435b2c3ae1d44ffa944727b59579ccbdaec",
+      "sha256": "fd339178bf3d3c0277ca2c6db5a7afdd5e846d16b7b85e9cd162b5bab3981318",
       "found": true
     },
     {
@@ -1398,11 +1398,11 @@
       "dossiers": [
         "jeronym-tejc"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00024490.json",
       "mediaType": "application/json",
-      "sha256": "4b29d623ed8474e3a1025b2b8c145e6a05cf2c6a2ab04407375348408323c981",
+      "sha256": "9a71b6af35a22c2c918a5901726fbb50e70354fa1b2d48ce856fe0bf74ebada4",
       "found": true
     },
     {
@@ -1415,11 +1415,11 @@
         "andrej-babis",
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/41035895.json",
       "mediaType": "application/json",
-      "sha256": "352611711268968f4c460edb4a4a91d4ea304dee7fa613da1a2935c558ae5e32",
+      "sha256": "13da748d0df368e66bafcb581fa7d3d7fc0502bb739c76bbe17561a03e750cee",
       "found": true
     },
     {
@@ -1431,11 +1431,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/46967851.json",
       "mediaType": "application/json",
-      "sha256": "86625a573fe5000e79dcc9dfb0b2f6895dab3b97026a038eb3c5ce59c7e30931",
+      "sha256": "54e61e2dbc158a93dc7cb6c321d61442aa276f4f77ea27e6ceebeed33885f27c",
       "found": true
     },
     {
@@ -1447,11 +1447,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/25542125.json",
       "mediaType": "application/json",
-      "sha256": "476424ba0c7e11f58b980419720f5036b3343c4e51c2c04d27eea74256706160",
+      "sha256": "8ba3a3ca2a9212fe716e8b7201b98553388880d9911df9b29e5c14397d78c069",
       "found": true
     },
     {
@@ -1468,11 +1468,11 @@
         "tomio-okamura",
         "zuzana-mrazova"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/71339698.json",
       "mediaType": "application/json",
-      "sha256": "a7b3e770bd25fc905d23a6da20a9dec4968eee17a40beec9dcbb2d0f9df255b4",
+      "sha256": "340707e1ce651fe77497f0ebfab4e6785298c425b235bd92b6b67dd5509018ee",
       "found": true
     },
     {
@@ -1484,11 +1484,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/49241494.json",
       "mediaType": "application/json",
-      "sha256": "736195df088316d8b003892aecf55a6856d0f63c3a8772e0df30fff6df3584dd",
+      "sha256": "2ad49260309f6678a0fb79f706d988ae08bb2a00f613dbb7850d6caf57b243d0",
       "found": true
     },
     {
@@ -1500,11 +1500,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/70890005.json",
       "mediaType": "application/json",
-      "sha256": "04d81dcbf6f7766225a3797c8d0f394956b89ba6a93e70ebeb5832de305909c9",
+      "sha256": "545a6c792be48b80ebc7e7bf7a3d0742a314d574ed74879b4207f53a2133d8b7",
       "found": true
     },
     {
@@ -1516,11 +1516,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/70890021.json",
       "mediaType": "application/json",
-      "sha256": "3dcec33b709d82382ca3498c786d89d1812bd64399e88469ef0777b03defacdd",
+      "sha256": "7236a0abc8bc4659c5413221a1567fda9b13264009f8ee7e4d4be3a152e2e6c6",
       "found": true
     },
     {
@@ -1532,11 +1532,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/26311208.json",
       "mediaType": "application/json",
-      "sha256": "930115a01671a51ab2c6efd4893d0409979e1f14a82bce16f81229761d9b3af3",
+      "sha256": "cc55fe4b608142f855972c4146e06cc5fbaba79093540dce3fbf2fe924687e2f",
       "found": true
     },
     {
@@ -1548,11 +1548,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/10742409.json",
       "mediaType": "application/json",
-      "sha256": "aa3c11415d0cf9b9c53cb45b47624160dfe891a909c32d1960d850675c62e5bb",
+      "sha256": "26fcec5916d893c668289bbc078537fd88a6eb74cb7a5e69972651e8ab53bf09",
       "found": true
     },
     {
@@ -1564,11 +1564,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/24099333.json",
       "mediaType": "application/json",
-      "sha256": "fda0ed21d2eb22777b3c17823f7dc51c732b00f30ade2638465597be2af5b861",
+      "sha256": "3abed0a41c71dc8195a5b670a7fe271ea4e719abc6bea487b872c78454cbb700",
       "found": true
     },
     {
@@ -1580,11 +1580,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/21030367.json",
       "mediaType": "application/json",
-      "sha256": "44d3d30cea849693d58e411492c59d5ed63fcfe421dbb4ce14dca52b96de2ea8",
+      "sha256": "5610964ac7ca54ec13da27eb8376443802962afd813b37a6c36e2c831acf1230",
       "found": true
     },
     {
@@ -1596,11 +1596,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/67981801.json",
       "mediaType": "application/json",
-      "sha256": "34741b012c24b8e3fffb32427e86a02cc7c827ec5a379c265cecbc6c88f03a4f",
+      "sha256": "0c3d62ef8e1bf94fd024cec98b4ac4ff89e977c5c57a0d0e7e870a3117697f6f",
       "found": true
     },
     {
@@ -1612,11 +1612,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/27699293.json",
       "mediaType": "application/json",
-      "sha256": "3dfdd9210d66d3bae9c3a8343c2ae053ad9665110c93c675dc262ea8e88f591a",
+      "sha256": "1877ff5ea0b45e4d8b159a4d8a6dd581b5216c663f25be70e43e289e6bc928d0",
       "found": true
     },
     {
@@ -1628,11 +1628,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/17048826.json",
       "mediaType": "application/json",
-      "sha256": "1602b43e9b10b7f2fe5a966a6212e0aec45aecc780366b61c160e5880ba2c6a4",
+      "sha256": "266b1d889d61fe02c63f69d3a8b6365cde1aa168d8a8bbba70f0d2e1471ad87e",
       "found": true
     },
     {
@@ -1644,11 +1644,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/46708707.json",
       "mediaType": "application/json",
-      "sha256": "904af40b001cf90b6d9e49b218401c39ca3f7d20e5d19837d33ba7690cc4f761",
+      "sha256": "d317ea85a829b4445b90e973496dab40fdf0acf11863d2d2333734be861a4610",
       "found": true
     },
     {
@@ -1660,11 +1660,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/26168685.json",
       "mediaType": "application/json",
-      "sha256": "9d91984130f46dd304fc7929e869f5452f94cfcf6b950d133214ccea1e2f4d14",
+      "sha256": "cba332639b4d1ec3d25343d6e8b68480cf01119dc397b6719630bca578edbff8",
       "found": true
     },
     {
@@ -1676,11 +1676,11 @@
       "dossiers": [
         "martin-sebestyan"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/62301659.json",
       "mediaType": "application/json",
-      "sha256": "2c0565b5ddb2ced61355483ada2603e0aebec97e6e1f348349a00efce16bcb23",
+      "sha256": "a854b1ca3bfc0bd2ec2e0df826763e39e659c8970f85adf00e868bb6e055f46e",
       "found": true
     },
     {
@@ -1692,11 +1692,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00255092.json",
       "mediaType": "application/json",
-      "sha256": "894cd558ee1c5fc2b50dc60d0ae6dbaf90a79410c7b6314eb69eaf12a8bcf45e",
+      "sha256": "76d984d906b0c605c32affed4f92d8fee012c2b14d91f9f50f791097221ecd0c",
       "found": true
     },
     {
@@ -1708,11 +1708,11 @@
       "dossiers": [
         "igor-cerveny"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/61505463.json",
       "mediaType": "application/json",
-      "sha256": "747b8f8e597284d9f760f9dd4b3f5ab9ba91a0224ea369cbde849b5852d9bfc8",
+      "sha256": "c0aed6801861117e5ff2164d8c2f6bc2416173a1534e5a8a1572f3edf3771c39",
       "found": true
     },
     {
@@ -1724,11 +1724,11 @@
       "dossiers": [
         "tomio-okamura"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/04134940.json",
       "mediaType": "application/json",
-      "sha256": "3cf775b9ddb104eb7e9f2f02672b607d4417fe22d8581a9170c8cafaca89e722",
+      "sha256": "f8ec5dbe910bf77909df15708bd340de397a9657881f0eb9c21d21b2892e3651",
       "found": true
     },
     {
@@ -1740,11 +1740,11 @@
       "dossiers": [
         "tomio-okamura"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/09871713.json",
       "mediaType": "application/json",
-      "sha256": "895e44c04b5bc450be61de39e87d80a717fcffa3d2265f184fc1e9dda2bae559",
+      "sha256": "58a902482dbf5972b49b5caef178326ebd04051a1bcd02a5f0e0fc422870fda4",
       "found": true
     },
     {
@@ -1756,11 +1756,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/70994234.json",
       "mediaType": "application/json",
-      "sha256": "238f259a92610a4690c6d662b7f0ac449bcc06bf60c1d29ea85322b56f4bbf72",
+      "sha256": "54347ba899a416980067d391daeec94833b029ba985fb0137e6ea37bb6b55ef6",
       "found": true
     },
     {
@@ -1772,11 +1772,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/25157507.json",
       "mediaType": "application/json",
-      "sha256": "b976ef1df57317f644070e47e39c78c97ff4b324f1f606054353998661678015",
+      "sha256": "4af034b8b71530115d7fc0d5767730c51cbf4808959f8fbf729562f95a771c6e",
       "found": true
     },
     {
@@ -1793,11 +1793,11 @@
         "karel-havlicek",
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/26673908.json",
       "mediaType": "application/json",
-      "sha256": "47c3a95b303da0673b0d309e57ba375127f586b572734484168d226683d44265",
+      "sha256": "967a62fda9e152bf1159df80e8190519b304d127c49be059e9f1bebfbdb3fd36",
       "found": true
     },
     {
@@ -1809,11 +1809,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/70856508.json",
       "mediaType": "application/json",
-      "sha256": "055b8a17b70bd83987073831e93dc60bc3c7e7227d681f6a2e13fe2f5483854b",
+      "sha256": "a41156ecbd1268666caba2c7894e4cd3cba0f99567a254291e615137b8861334",
       "found": true
     },
     {
@@ -1825,11 +1825,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/01312774.json",
       "mediaType": "application/json",
-      "sha256": "20fff905cfd7e37d567d5af3a74aa6c7a5a5eb3c481e9c91b66f42f74c6026d9",
+      "sha256": "4c91297ce80b0eb61703fc279c4e0fae4b1c124f91f28f773dd8efae9c11e002",
       "found": true
     },
     {
@@ -1842,11 +1842,11 @@
         "andrej-babis",
         "martin-sebestyan"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/48133981.json",
       "mediaType": "application/json",
-      "sha256": "1a0c0ec0cdec4cf9e2ab55b916ebfa4b6d4d1959eb7c2748219880c145f0b238",
+      "sha256": "4844effad07c7c42cbfef6b59fcc00d4d98029f301652c1482f35eabf3c39e29",
       "found": true
     },
     {
@@ -1858,11 +1858,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00299308.json",
       "mediaType": "application/json",
-      "sha256": "45534e39c4b58f758f1e54dc6b8e48d07610b6709bbf6ea62dab941d8cebf89d",
+      "sha256": "b98b025dbae0abf22c250d8b4cce7ca71601fa137a2374c0ffc22ece3641b390",
       "found": true
     },
     {
@@ -1874,11 +1874,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/70891095.json",
       "mediaType": "application/json",
-      "sha256": "1b484f0577b296cc5fb44ffc285b4fa1c72715d4a41d2b8585ce59ecf0514a9c",
+      "sha256": "b3d60b8863e81df2928eba37c4b3ed83172ac15fc7fb271efdbbe793bd116473",
       "found": true
     },
     {
@@ -1891,11 +1891,11 @@
         "adam-vojtech",
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/26014343.json",
       "mediaType": "application/json",
-      "sha256": "b34afac785d64d755aa215713369df823057fc6d4c2832603c49d14276175ed2",
+      "sha256": "3e2f9f6b276beec0243d4c93c2b61e31ab49cf6b56469efd6bdab2eaf2e8097d",
       "found": true
     },
     {
@@ -1907,11 +1907,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00177041.json",
       "mediaType": "application/json",
-      "sha256": "a4aabdc304cbf75bb6f6df768eb1c8f69452bdef07e76918bbe057e51053f3b6",
+      "sha256": "8e7c7b2882df962f233593b51ec735b14b5c6a12e82d19bf619fac1431f82820",
       "found": true
     },
     {
@@ -1926,11 +1926,11 @@
         "jaromir-zuna",
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/71339728.json",
       "mediaType": "application/json",
-      "sha256": "d0f24b18392c5aa45cdc80965ec750c5a71b4c99132ae0a471a16f29e396a3b5",
+      "sha256": "dd8ca4345db5c49d884cb092986fa6b41c874f4fd9aa4bd196c080aff2af909e",
       "found": true
     },
     {
@@ -1942,11 +1942,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/06230113.json",
       "mediaType": "application/json",
-      "sha256": "054ad6bc272f2cbabe47c7a92b739ba5d9c5c92b27d84066394adf4e86e54e76",
+      "sha256": "80526a501277e1ec698adb6e27268ad8d215c8969298b6363ad34d706cd06209",
       "found": true
     },
     {
@@ -1958,11 +1958,11 @@
       "dossiers": [
         "robert-plaga"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/06616275.json",
       "mediaType": "application/json",
-      "sha256": "2b512032cc022203e88127072a5dc281e603d6d2775d3cb554b26bb3c8709f6d",
+      "sha256": "aa0d5dc13cd0597e06a2048aacd9f07fe52b39aacd01e024387cb9f59536ae3b",
       "found": true
     },
     {
@@ -1974,11 +1974,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00418005.json",
       "mediaType": "application/json",
-      "sha256": "27093146373bb530ed6e76366baeeac152bce339a447550bd033d1ad1e6d8628",
+      "sha256": "15d679e489f7882f2421c3ccb43099abf27de1ea11cc162dec1b024db8d8a445",
       "found": true
     },
     {
@@ -1990,11 +1990,11 @@
       "dossiers": [
         "tomio-okamura"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/63833239.json",
       "mediaType": "application/json",
-      "sha256": "ac268474c8cf0457fb90b1edcb0bba27666f5415fd005b184cd0499cd044c958",
+      "sha256": "7bb670c931af40c4a8d8081b25fddefa7bb312747dfadc1b5d7b526bb19b29a2",
       "found": true
     },
     {
@@ -2006,11 +2006,11 @@
       "dossiers": [
         "alena-schillerova"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00216208.json",
       "mediaType": "application/json",
-      "sha256": "f34d7ff80587dbd10e4423b5097b8ab5aa746ddca063b74b2a7506ac2efd11df",
+      "sha256": "a0dfc28075c257570bb5b1ae21578df9a0910e3e2fd4afe483275112890731af",
       "found": true
     },
     {
@@ -2022,11 +2022,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/05553466.json",
       "mediaType": "application/json",
-      "sha256": "810d86b1c51a097013dca07a13cdc5a59fa5c994ce0232cddb598170847f4a6a",
+      "sha256": "d5ad10d65e94702c8d048a5af58c3386b7bbb6f982f43a7ba4e31923f004ea42",
       "found": true
     },
     {
@@ -2040,11 +2040,11 @@
         "jeronym-tejc",
         "tomio-okamura"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/48513687.json",
       "mediaType": "application/json",
-      "sha256": "aafa4c0f4e6f86e14cd40499b8bdb810167d6e48d27f6350c67fa06450218af8",
+      "sha256": "68df94dfb0e1b94af06b65f19d473319e5b8248d8980d5426d5966bb0182935e",
       "found": true
     },
     {
@@ -2056,11 +2056,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/25396480.json",
       "mediaType": "application/json",
-      "sha256": "218cbecd720774580bbdfdc11dec8d5ec57ae4769d0ce8a990ab8048aa14ce6f",
+      "sha256": "4b50a9f75d901e6691b2886a6f33a0f33b5035aa5c9a23b0398af20a1b65c8b4",
       "found": true
     },
     {
@@ -2072,11 +2072,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00215651.json",
       "mediaType": "application/json",
-      "sha256": "d98156c39844517269189a8e8e36000413db5342eef1d3978986cda1e19c0d6c",
+      "sha256": "14e9ca188842739ec58e1d75adb2d2b2663d7a2f3495e5a19da165016f788742",
       "found": true
     },
     {
@@ -2089,11 +2089,11 @@
         "adam-vojtech",
         "jeronym-tejc"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/64124584.json",
       "mediaType": "application/json",
-      "sha256": "f33456b1de766be6b24c53c5d2b91bf26d48e99b60aa8e604239a79c0e9e8a0d",
+      "sha256": "adb3e98fbed4171e48732b53a14701acb5c6d306712c9673b54edc0eb83d27ab",
       "found": true
     },
     {
@@ -2105,11 +2105,11 @@
       "dossiers": [
         "martin-sebestyan"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/49625586.json",
       "mediaType": "application/json",
-      "sha256": "c6663f8efac2b9567bfba4eaa4fc0b958766fdd8deddcd4c95e82822d3566471",
+      "sha256": "4953d36f49ee59f1cac4fe0267a0c5088dd79f0483fdb4593a39b7d0b76d8d19",
       "found": true
     },
     {
@@ -2121,11 +2121,11 @@
       "dossiers": [
         "adam-vojtech"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/41197518.json",
       "mediaType": "application/json",
-      "sha256": "247fa1351b21b651fad756a586da80c5218379bce9754b083cc35a6dca68b8eb",
+      "sha256": "4203113321f8de7c4e9d8d52a32cd86a85178acc32e7c922d82e97f39b4cb805",
       "found": true
     },
     {
@@ -2137,11 +2137,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/26102463.json",
       "mediaType": "application/json",
-      "sha256": "c198ecd6818c684e7341dfcbd2d94edc1e3cf4abd75e2a1f5eab3da2abcd5046",
+      "sha256": "e31bd20dc951033a89d8f935de25f8f54028e5f614642b860e7c4dfbd0082b07",
       "found": true
     },
     {
@@ -2153,11 +2153,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/61384399.json",
       "mediaType": "application/json",
-      "sha256": "5ad8905100cadaebc301480a835e67a067c353cb4a3733b99f4a7f5b77e3df66",
+      "sha256": "e36198106fcf78befcc8424fe79b8659120445f4c58e24ca3f909a0199007b61",
       "found": true
     },
     {
@@ -2169,11 +2169,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00027162.json",
       "mediaType": "application/json",
-      "sha256": "6b9349a8acbf6a1a599bb407fce02f1e2caf4941a2014efc3af9029865f8c588",
+      "sha256": "f6d3718069aeb19ddb94c50e94e376a2363d18174a47b2f159c653d55e9781e4",
       "found": true
     },
     {
@@ -2185,11 +2185,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/26417171.json",
       "mediaType": "application/json",
-      "sha256": "2f3b365051090918929b9eca13476b2a607292a5f5fdd6156f335d64deffc1d0",
+      "sha256": "944fad04db7fe86a8bbdf2c982af5f7492453f8fe6500bc949a62e2391bbdb74",
       "found": true
     },
     {
@@ -2202,11 +2202,11 @@
         "filip-turek",
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/05411394.json",
       "mediaType": "application/json",
-      "sha256": "32bf0fa224bada5074995abea57a75d9ceaed68fb4049b251ff48d4611be4c8c",
+      "sha256": "960be072be52706a447ad87370b7e4c48136ab1659a167e2887cedb81840d2c9",
       "found": true
     },
     {
@@ -2293,11 +2293,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/26228548.json",
       "mediaType": "application/json",
-      "sha256": "50cb9cc2684b3b16359a6a8417ae17492ffdc399beb92c47fdc4c2ae8ac75611",
+      "sha256": "8a97a8d7522df11be9a8aeb18cbfd8a8c6d320bc84f0f51b22f3b8d90db2a01e",
       "found": true,
       "filingCount": 0,
       "documentCount": 0,
@@ -2314,11 +2314,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/63832721.json",
       "mediaType": "application/json",
-      "sha256": "c4b9d25d6ffb2e75647bebbbfc760086d57b2af79c79b7a996de17efdedd9ac8",
+      "sha256": "0b7d75b0cd21b5249600c3e32886836e76ecb0cd609b0f96159580f09569db38",
       "found": true,
       "filingCount": 27,
       "documentCount": 27,
@@ -2335,11 +2335,11 @@
       "dossiers": [
         "martin-sebestyan"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/48118753.json",
       "mediaType": "application/json",
-      "sha256": "aa9879ad457876229ae56402bda379b65e564d640669ba4e1a0f31e304166887",
+      "sha256": "2bd25a6f074c38f15a587253696d23ceb69510a7dbca59aec3408896fe8e17b0",
       "found": true,
       "filingCount": 40,
       "documentCount": 40,
@@ -2356,11 +2356,11 @@
       "dossiers": [
         "tunde-bartha"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/24722197.json",
       "mediaType": "application/json",
-      "sha256": "e326c572d3b1ab160f7a4d02238aacd7879090f0776725101468e9c4207071eb",
+      "sha256": "61f33e7f640a03b768c6fb7a95ba0b2d278f40a25ca897afcf5d9295d50f7991",
       "found": true,
       "filingCount": 44,
       "documentCount": 46,
@@ -2377,11 +2377,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/49455958.json",
       "mediaType": "application/json",
-      "sha256": "2e84373ad515048495a73b9755a3e78d02ccc16ab2067f5dcac8ea32cae337ea",
+      "sha256": "0709ef12f5cecf7535c1d8e1a69f46d5c833d3afcd057cf139647e79cf9d6b6e",
       "found": true,
       "filingCount": 159,
       "documentCount": 159,
@@ -2401,11 +2401,11 @@
         "martin-sebestyan",
         "tunde-bartha"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/26185610.json",
       "mediaType": "application/json",
-      "sha256": "7968727ace902df1b52282a3be7a55fcef45da11f816f686067210d82b3bd9ec",
+      "sha256": "a5aca852734795105769f844d2ac4f0a7b7aaa52bb64e66c5914d8f73eb6d2ca",
       "found": true,
       "filingCount": 244,
       "documentCount": 244,
@@ -2422,11 +2422,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/60461446.json",
       "mediaType": "application/json",
-      "sha256": "be3a2e2031465d65ac10bf305f8142f20ffeb22ba36e8d4e8546b5263b6d73ba",
+      "sha256": "93e8a1ef63d4e85a7b53bd6397c3f010d0466c9213be572d2bbe693a1b91ba7b",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2443,11 +2443,11 @@
       "dossiers": [
         "boris-stastny"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/27082440.json",
       "mediaType": "application/json",
-      "sha256": "9ddac283e78cb69c5d86583adae3ece62626c96b2493b4847f547cd5290f8a56",
+      "sha256": "2fd0ebb2bcd8f6087e8f46d31ee402ca1747530a117cdedb72ca06fff4d047de",
       "found": true,
       "filingCount": 93,
       "documentCount": 93,
@@ -2474,11 +2474,11 @@
         "tunde-bartha",
         "zuzana-mrazova"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/71443339.json",
       "mediaType": "application/json",
-      "sha256": "371fdb40871a29ffe62d26addbb374d32d0bd13318df1509a45d51d02d9025a8",
+      "sha256": "847631dc481ca4fd9696ec43190080d4f8172efe3449fd1f712c185d8d949161",
       "found": true,
       "filingCount": 0,
       "documentCount": 0,
@@ -2496,11 +2496,11 @@
         "igor-cerveny",
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/05411408.json",
       "mediaType": "application/json",
-      "sha256": "0b28c055017e277cb782fe5b81e33949016114b62a8da50882e2b89e3885a4ec",
+      "sha256": "26d3896f303b9ff3c82251bc274b7488abe273148c6e15b1be9625ff1c5cbbd4",
       "found": true,
       "filingCount": 19,
       "documentCount": 19,
@@ -2518,11 +2518,11 @@
         "adam-vojtech",
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/26547783.json",
       "mediaType": "application/json",
-      "sha256": "8988212dcb66e5340781a0ef5b79dc21998665a965e33ef23abcf5d0ac9c5d22",
+      "sha256": "eff2b389e21758a0365208a89eb6fc2a4c760fdd192a96cf90474e4a5c6d0a19",
       "found": true,
       "filingCount": 77,
       "documentCount": 77,
@@ -2539,11 +2539,11 @@
       "dossiers": [
         "robert-plaga"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/60449101.json",
       "mediaType": "application/json",
-      "sha256": "c18322ed90645c9c226a8f7dfb072b9c49dd37c4e3e86fe47c46c07dde5cec68",
+      "sha256": "b52c2cd8c36abb823b573c1913ceb07b593882b86e93d777ed3b0e7dbca8e45f",
       "found": true,
       "filingCount": 14,
       "documentCount": 14,
@@ -2560,11 +2560,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/01818899.json",
       "mediaType": "application/json",
-      "sha256": "0309d1a8b755c89f8810948f88765923369f197f25ff176f63075a6eee684ffd",
+      "sha256": "e8b481ad1b3c0c9aee4241eb3ce270644df9f7fec343b6f6ebd5c31e1abbf42b",
       "found": true,
       "filingCount": 1,
       "documentCount": 1,
@@ -2581,11 +2581,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/22419519.json",
       "mediaType": "application/json",
-      "sha256": "fc53dcb63fb464e94aa5850da6424db1b75ec45fac935372e27b3eef537979a1",
+      "sha256": "05bf53e294297bbc704cb4d27ae56eb326d2eeae18a033020eb9de1cf62a7948",
       "found": true,
       "filingCount": 1,
       "documentCount": 1,
@@ -2602,11 +2602,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/02922703.json",
       "mediaType": "application/json",
-      "sha256": "20cedc1792cd1485304119925ba3b3ebac98a52c9861e82127b073f11443df4c",
+      "sha256": "8d52c13dbe1d0f597015c286bdf45eaf32598604be638925ae47a763230c761d",
       "found": true,
       "filingCount": 1,
       "documentCount": 1,
@@ -2623,11 +2623,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/11823461.json",
       "mediaType": "application/json",
-      "sha256": "b4a547ef359f6b094d5764951ce22891790af59e648f3881ce9c7e278287767e",
+      "sha256": "dadb10eb6a8eaefbc4330f5d030fffdcc4301aed8a5eacb8a3f15ea554daf4b0",
       "found": true,
       "filingCount": 3,
       "documentCount": 3,
@@ -2644,11 +2644,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/46504940.json",
       "mediaType": "application/json",
-      "sha256": "ff37674e047b0de3a65f4e58f6cc0f64d1380b3b9064a3e07c9d1141c65174cb",
+      "sha256": "24170155a4a79d2151222b0bf573d72badc75b5b3dc424a8e6ffde327679acaf",
       "found": true,
       "filingCount": 178,
       "documentCount": 178,
@@ -2665,11 +2665,11 @@
       "dossiers": [
         "james-quick"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/03877248.json",
       "mediaType": "application/json",
-      "sha256": "dfb4d5bbf39aa52535bb1e0c7eec9e55ba83f607d32b94194f632f3e580ad7e6",
+      "sha256": "8351cb135abe20bf6df1f331c5552f002f2a7c49dd10c55c6f63261512726aab",
       "found": true,
       "filingCount": 5,
       "documentCount": 5,
@@ -2686,11 +2686,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/28196678.json",
       "mediaType": "application/json",
-      "sha256": "3bbbd8ac8259dacb2ea2c9d1e4d6a9394dd1c3274ff2f1aaec1f1a0bd0ce4cf0",
+      "sha256": "ae25618653f055e537c6446134305eb100696f84e3fab7446de53894380269ff",
       "found": true,
       "filingCount": 150,
       "documentCount": 150,
@@ -2707,11 +2707,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/45770743.json",
       "mediaType": "application/json",
-      "sha256": "cb73e2275baa4577bfab44932a5c898ec7803f7b47ee5a2e0681ca597b3288e8",
+      "sha256": "e34a2e0fe93b94999df72b6c62126c74556fd7a1ca1231b26b52050f79887a84",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2729,11 +2729,11 @@
         "alena-schillerova",
         "lubomir-metnar"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/48136450.json",
       "mediaType": "application/json",
-      "sha256": "cee8bde3593797cc2b4dd488c678b764e2c2119f9a05011ce42ffac62afc463c",
+      "sha256": "ca3bf0b4d1656af00d400764ec2a4fd62a5987dcb3c0ba93016c5316ae6e342d",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2750,11 +2750,11 @@
       "dossiers": [
         "james-quick"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00020869.json",
       "mediaType": "application/json",
-      "sha256": "165d73a15bea8291ff1559dc6a1445cd5e581d7fad8084717520265db8bac6d9",
+      "sha256": "b0505be1c3439441828c6daeab6f08d7f4d24c5275b76c93218edd885244dd74",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2772,11 +2772,11 @@
         "boris-stastny",
         "robert-plaga"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00638994.json",
       "mediaType": "application/json",
-      "sha256": "a4e70f07c4ae8d3bb5785e039372b0c5e99d3424b0c1b17b4d972182b30abb14",
+      "sha256": "b2183e2bbf0dc8741e4d82017f4d49a174a2307a18ab9c4da13bdea89f2efebe",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2793,11 +2793,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00027383.json",
       "mediaType": "application/json",
-      "sha256": "c659620aa6d53fa0d80cc606f6949c4b21a0dfa5a06df394a80ef21f30c78d87",
+      "sha256": "33b38c7640c4be58d2f7e148f7a507f13dbc8d0bce2e897f8d1de8db4985a0c4",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2814,11 +2814,11 @@
       "dossiers": [
         "boris-stastny"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00469548.json",
       "mediaType": "application/json",
-      "sha256": "37f9b9f1f17870ce62d43ffb5859b9864b879cd879be1ca66399721ecc6e2963",
+      "sha256": "0d3c37edc63945de663d6f9280c6da812f4dbfb8b1a61dad1f989a01c63c8e2b",
       "found": true,
       "filingCount": 31,
       "documentCount": 31,
@@ -2835,11 +2835,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/70994226.json",
       "mediaType": "application/json",
-      "sha256": "cf78108a922fc6c99999baec58a03a910d673977948c61b9bcb33356ef5886a3",
+      "sha256": "98089fe61c07a760c693fc6be2a6e0fefcec810ad7fc3e4e3d06b884f03a2346",
       "found": true,
       "filingCount": 236,
       "documentCount": 238,
@@ -2856,11 +2856,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/68407700.json",
       "mediaType": "application/json",
-      "sha256": "05015bd419157901d655b54e3fcb823957ffe67d7c0f51f104d1f86eb082f22a",
+      "sha256": "8d64ba62b6f25c55b2e248b9d25b930090d1d2aff5f496acec57bcbe479643cb",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2877,11 +2877,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/45245053.json",
       "mediaType": "application/json",
-      "sha256": "8170ecb9ed27fb343e056f51bb22fdadbcb6a560f72b1e1df660cd1bfb29a4e0",
+      "sha256": "2450c3d42ee0575dcf22f01acf843c3f7132737afab6ce928f040e2679990571",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2898,11 +2898,11 @@
       "dossiers": [
         "jeronym-tejc"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00409171.json",
       "mediaType": "application/json",
-      "sha256": "82abd73767a85392037d29a656ed514d715c8c5dc0fe92e76e246fee6d93f1ca",
+      "sha256": "f1d00a0d325d6d3efef075261915f317003f0f2a5e47ad05283929c03e80cc0d",
       "found": true,
       "filingCount": 0,
       "documentCount": 0,
@@ -2919,11 +2919,11 @@
       "dossiers": [
         "martin-sebestyan"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/05140544.json",
       "mediaType": "application/json",
-      "sha256": "1468d10ca2a288bc6683c7b1538c959a69f4bdcb4c38be8f0e01868035622ce0",
+      "sha256": "8ea959998fb7d625bec43b9190cdd9837fe24afd670c9965539cf18e5b5a83e8",
       "found": true,
       "filingCount": 23,
       "documentCount": 23,
@@ -2940,11 +2940,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/04771664.json",
       "mediaType": "application/json",
-      "sha256": "5ef3e786a12d37b8890b76274b158d7e88dd728f4c95b3f67488774ee3a5d91d",
+      "sha256": "b27170e1828e2e26c4f8fb9b30489951a7baa37155dadbc503aa1cd9bf57a6a5",
       "found": true,
       "filingCount": 15,
       "documentCount": 21,
@@ -2961,11 +2961,11 @@
       "dossiers": [
         "robert-plaga"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/24706370.json",
       "mediaType": "application/json",
-      "sha256": "78f4313eb548c9bf63fc0d783fc8384074dca7ccfb3461e8006d51469e8dbe8e",
+      "sha256": "650714cbcbef7015352d6a91e5e6f5de0f015e77ba944fde81c6abaed5b5edda",
       "found": true,
       "filingCount": 72,
       "documentCount": 72,
@@ -2982,11 +2982,11 @@
       "dossiers": [
         "igor-cerveny"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/22461787.json",
       "mediaType": "application/json",
-      "sha256": "e918c4964761b0de4cc2ca497e0b9e1aeb88293e1e4352e215cf42f9a59f989d",
+      "sha256": "3a5db103c4d3e2e99de1dee6ac8b78e09347bf257dc2684ef9e911b83aa9f7c9",
       "found": true,
       "filingCount": 4,
       "documentCount": 6,
@@ -3003,11 +3003,11 @@
       "dossiers": [
         "adam-vojtech"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00098892.json",
       "mediaType": "application/json",
-      "sha256": "464586b5c9d0db987ec9fb59701db603afc779a11510bfbdef2dabcae8871ff0",
+      "sha256": "52d30433311a906718552ef646be4166d7e5e95dc43f6d8bd12f727fc1cced6b",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -3024,11 +3024,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/61858374.json",
       "mediaType": "application/json",
-      "sha256": "649d083a0c99ecae09d7a01d8a01bfb4c1f47d43002b1dd07c4a0969bec3c194",
+      "sha256": "eb0eaf647e60923c90a6b0a48b47b168cb10d1e6b8dafaa3d81b2bca72cb1ccd",
       "found": true,
       "filingCount": 89,
       "documentCount": 93,
@@ -3045,11 +3045,11 @@
       "dossiers": [
         "alena-schillerova"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/72080043.json",
       "mediaType": "application/json",
-      "sha256": "91be446472c671333e4f7f9a2fc9397fb09f5fc8604cf60454368945d0c2bd4a",
+      "sha256": "b22523913180ac1825650dc340d4aa9ec7500460230789cf394c748ab0152974",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -3068,11 +3068,11 @@
         "petr-macinka",
         "petr-vencalek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/28274318.json",
       "mediaType": "application/json",
-      "sha256": "9b7e499336a816673fe5dad53287057c42a11e7573d9254e191f0985026c6f30",
+      "sha256": "818e13a3fa4c8b2084658e6431633d081e87bc9f22aad48052eaa13a4732e402",
       "found": true,
       "filingCount": 30,
       "documentCount": 38,
@@ -3089,11 +3089,11 @@
       "dossiers": [
         "robert-plaga"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/61388246.json",
       "mediaType": "application/json",
-      "sha256": "4cc45ea7141cba5e61ac726252942c9380edb4268670e6e3f737a261135cb393",
+      "sha256": "0a4270ab391d7e7a738a63901a4d445ca6839421d130698557de1fdd9f0624dc",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -3110,11 +3110,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/01801261.json",
       "mediaType": "application/json",
-      "sha256": "5b7e309152df96c18b1e965bd87d3f205cc4bf1b47c0c2b15a162af12f9c8634",
+      "sha256": "62634e9f908e1f3678549c751e8f902ae944f6e7f708f7430f08e338b96bb3a5",
       "found": true,
       "filingCount": 42,
       "documentCount": 42,
@@ -3131,11 +3131,11 @@
       "dossiers": [
         "igor-cerveny"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/04472586.json",
       "mediaType": "application/json",
-      "sha256": "c82f1f5c9035bdbd1bbb42bd079cd994772bcd68d8a2f1484fa7168d8fa89091",
+      "sha256": "1f5c5052e101bae74116fc854e42ec3303d3044ae1c988c4f3d30acc75d69db7",
       "found": true,
       "filingCount": 18,
       "documentCount": 27,
@@ -3152,11 +3152,11 @@
       "dossiers": [
         "richard-chlad"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/05965527.json",
       "mediaType": "application/json",
-      "sha256": "7967504bee310df24cf9eba7e335ef4196f79d395ad67c4d0c318c1c36498a43",
+      "sha256": "79a1fa00432d5af701c6f3213f6c9447a10b7c184670952f32ecabd8c8b5705a",
       "found": true,
       "filingCount": 16,
       "documentCount": 16,
@@ -3173,11 +3173,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/04449461.json",
       "mediaType": "application/json",
-      "sha256": "fe29c87a27f213769c1d71681c3134dcc7fb79b65839488172cd010e12112710",
+      "sha256": "606ff1047fac0559cad12107f4bc229b361ce506a9a9807918aa87b93c929dbf",
       "found": true,
       "filingCount": 8,
       "documentCount": 18,
@@ -3195,11 +3195,11 @@
         "andrej-babis",
         "tunde-bartha"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/26124459.json",
       "mediaType": "application/json",
-      "sha256": "57bc73df32639cfeb36419f0a8b441f7e1341021719a3fe93777d41874fb912b",
+      "sha256": "f3af6e088332109c1fcaede2e06b91e46fb7aa5b86f1a21c9cc1ed60f7c8532b",
       "found": true,
       "filingCount": 109,
       "documentCount": 109,
@@ -3216,11 +3216,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/24220345.json",
       "mediaType": "application/json",
-      "sha256": "199eb38f9fef75ed43e240ecd5a7e893a93a86bb838178f4066ab6acdcc83133",
+      "sha256": "4719318c0a52c550bfc021a5fe42632dc577006b4b44bbf62a970087146bc882",
       "found": true,
       "filingCount": 18,
       "documentCount": 18,
@@ -3237,11 +3237,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/01680081.json",
       "mediaType": "application/json",
-      "sha256": "6c1fffde28f2ba81bb48b9a359c098b500cf0fdd894f4e430aa6e5497d7599ba",
+      "sha256": "71bef7cb029040ed0d525a01104ea245ac3e38054cdac5ec43c6bf926188352e",
       "found": true,
       "filingCount": 27,
       "documentCount": 27,
@@ -3258,11 +3258,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/26557975.json",
       "mediaType": "application/json",
-      "sha256": "07793ff0bae46eba756c1a13566e179632491763d9a5310f3890f9b5efe54b7d",
+      "sha256": "ff9606f2a626d9c21a29a6e1c0574c1ff8be6d6494c6280b27e20fb3e7dd931e",
       "found": true,
       "filingCount": 2,
       "documentCount": 2,
@@ -3279,11 +3279,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/70888337.json",
       "mediaType": "application/json",
-      "sha256": "9a5d341f3336ef634ce96382fa234cf0e940a37a6639ad64e5ecebe7018ea4b6",
+      "sha256": "a89c43d0a82089e1c6847eb6f58cbbc38bdaae0d525f167940ee33e50d8d4c95",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -3300,11 +3300,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/49282778.json",
       "mediaType": "application/json",
-      "sha256": "3f261cfd8706a3e29190c87541c4cc031761a05e2660613b18ae2194b375e383",
+      "sha256": "02fd9f752f5854d0e59a8ffee5afecc2786fe85fa4bc7ef490ec0ceafcf18967",
       "found": true,
       "filingCount": 34,
       "documentCount": 42,
@@ -3322,11 +3322,11 @@
         "alena-schillerova",
         "jaromir-zuna"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/48136000.json",
       "mediaType": "application/json",
-      "sha256": "5181af0a40b3c46cf152f0711a763318f9dfc53f25c607df48a7624a4923cddc",
+      "sha256": "4b9818b1daf6ceac7a4c1d11cffb05b1eb753d2c364ff056ecb479f4f076dc23",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -3343,11 +3343,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/05015502.json",
       "mediaType": "application/json",
-      "sha256": "b86a8661674ed8ba1072470b0fb12abfc70b80240557bbfc1846d1adbc80d031",
+      "sha256": "0b2c4cb4ec18dc2e04225c449415cfc56638fa0fe73d8d0eec8f763ee84e53be",
       "found": true,
       "filingCount": 25,
       "documentCount": 34,
@@ -3367,11 +3367,11 @@
         "karel-havlicek",
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00442704.json",
       "mediaType": "application/json",
-      "sha256": "b395cf4af5d4edef166e6430dde732231f0a006bdfd94107709d51539738dd9e",
+      "sha256": "2e7436b92e8f27e1a692737db83776aca039eebb91428ed17fb37e128b7b6a83",
       "found": true,
       "filingCount": 0,
       "documentCount": 0,
@@ -3389,11 +3389,11 @@
         "macinka-turek",
         "petr-macinka"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/17353882.json",
       "mediaType": "application/json",
-      "sha256": "05d2440b683daf388b3e8470bb08ed64bc7658d9fbcf92a7c58b5dc1e9e94ee4",
+      "sha256": "c8ae8777c3c6bbcebf3089f657b426fd2e0866c1c33fdcbbe47ad6a667e091b7",
       "found": true,
       "filingCount": 4,
       "documentCount": 4,
@@ -3410,11 +3410,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/46900411.json",
       "mediaType": "application/json",
-      "sha256": "8748640c772399a6b744a5501a515a603c43df05e91c0c4eb4bc12e9a3cc3044",
+      "sha256": "735b88f463f030ad1147277163f009ab9ea326cb80a8258b2902e2ae60de2a35",
       "found": true,
       "filingCount": 237,
       "documentCount": 237,
@@ -3431,11 +3431,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00215724.json",
       "mediaType": "application/json",
-      "sha256": "342754867e12f5ee4e7393dbc7649ef73897743b558f52d2a8b3934672013e58",
+      "sha256": "230e6f844531be2bc2daa73e78e4bb471ae4549e753249da6261fb1b74bca8b6",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -3453,11 +3453,11 @@
         "andrej-babis",
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00215678.json",
       "mediaType": "application/json",
-      "sha256": "a0fca953db2c02a57cde56f2a5c499a0261ddfcb4bf811856862515f0bd545f8",
+      "sha256": "4826794b1fe0ec58b51f8d521c8fbb5e49e72ba8700996c9bfb5c72b581b9500",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -3475,11 +3475,11 @@
         "macinka-turek",
         "richard-chlad"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/23177586.json",
       "mediaType": "application/json",
-      "sha256": "73c25661721a51fac73955790886bad1e78302044342c90ac4d6d06170bc2814",
+      "sha256": "05c80f58ed9f6ced9b0c7add163582c10f5fcba9d572e6cd4cad513934c2cb1c",
       "found": true,
       "filingCount": 1,
       "documentCount": 1,
@@ -3496,11 +3496,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/42196451.json",
       "mediaType": "application/json",
-      "sha256": "f3c5b8b3e10666ce73aaf007534e6465fa56e0fcd07582942615b71dec5227b5",
+      "sha256": "902ddbed50dcd58a7b3ff6bfe9ff5bb0947cab46050f24d500f294eb24cda7c6",
       "found": true,
       "filingCount": 191,
       "documentCount": 191,
@@ -3519,11 +3519,11 @@
         "jeronym-tejc",
         "robert-plaga"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00216224.json",
       "mediaType": "application/json",
-      "sha256": "11a3a8f0b19709648917333828dd4a44984801360ee6899f30b91e7a4720ae7f",
+      "sha256": "cf1bde2ffd60f29ad29a6f233d2ae5c2208af16a1a9f5e3ebfc5d08327dc2d20",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -3540,11 +3540,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/04347803.json",
       "mediaType": "application/json",
-      "sha256": "080e3f578d63bbe039b79daa112c50df30e45b3e0e12c02ce9a96bd4f4f1306b",
+      "sha256": "0acd92d66b04ba7d498a87fe0321f859bc0aeae777a4733d1366591ff5392cad",
       "found": true,
       "filingCount": 15,
       "documentCount": 19,
@@ -3561,11 +3561,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/01529820.json",
       "mediaType": "application/json",
-      "sha256": "191e87670bceede9ccbdcfe27d77b86fdd17048502b2d693c08f8392536b9a15",
+      "sha256": "4e9d563b08c1f8927af8e9fc0c3dd2d9bce395acbdf3a061a22a3517bcb444b0",
       "found": true,
       "filingCount": 11,
       "documentCount": 21,
@@ -3582,11 +3582,11 @@
       "dossiers": [
         "zuzana-mrazova"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00266230.json",
       "mediaType": "application/json",
-      "sha256": "42d9f8ff984ac6aefcd2b9f5d34295ae5f30bdf02969a552e079d054852d1080",
+      "sha256": "47fa536ebbf629f04384b5e3c52bfb6d2db6607e93261ddded84397b18a390d5",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -3603,11 +3603,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00284301.json",
       "mediaType": "application/json",
-      "sha256": "c7afb0ff10ac30414edc5b783370cd59b5959f3f02ff0031044b5bb32976b3d4",
+      "sha256": "ac6d7c067afdc7bcf3ab8de2ba3cff5e552a0dcc56d3dc2dc884f5507c92785f",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -3624,11 +3624,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00304450.json",
       "mediaType": "application/json",
-      "sha256": "348f0c7a0ea761fdec757a5f5a7fadea051365728f64c26e32d0589edc42ae5e",
+      "sha256": "f8ce41b4566f0bd2ddea5aeda25bbe9482177ae8fa6689b836b79f1d40a84dd1",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -3645,11 +3645,11 @@
       "dossiers": [
         "tunde-bartha"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00063517.json",
       "mediaType": "application/json",
-      "sha256": "9233986503a24c13776133fa3b63e10fe1305c5166a444cbd4e63df41f35e4a2",
+      "sha256": "dab01854737a02f9511e7ba40dfbd29682b737de3ec89db951de27e2dab3a06f",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -3666,11 +3666,11 @@
       "dossiers": [
         "jaroslav-faltynek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00026000.json",
       "mediaType": "application/json",
-      "sha256": "aae3cc2005654364b9a6abd38ac2e2fc8e42229212ba6f6f3eda5c6882cae9cf",
+      "sha256": "f6cab75a22f1ff39c0d181f72acf85b5c8df051059fba74a824d1082b1107c5e",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -3689,11 +3689,11 @@
         "james-quick",
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00215660.json",
       "mediaType": "application/json",
-      "sha256": "eaeb806521fd98b15530b5f6ed119073667f94273262c761c2a06177726cb1eb",
+      "sha256": "4286457ccf531b063ecfa5594659ce4cabd6571008aed2396ca06ded140b5ac2",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -3710,11 +3710,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/06760538.json",
       "mediaType": "application/json",
-      "sha256": "2e2f52a97421a3af330f111e9712de1e35e7a9c8c9403eebff4cd12b6c5ea1f2",
+      "sha256": "52840bec9f348c903e9017be78cb852b7bd11d4ef8ae155bcef90c5bf1452ddc",
       "found": true,
       "filingCount": 32,
       "documentCount": 32,
@@ -3731,11 +3731,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/47609109.json",
       "mediaType": "application/json",
-      "sha256": "a21fa452e29a4fb839c491f32dac3f024407ad963fc09186111adf106c6b7954",
+      "sha256": "f5d93eb8c09bf28f42e64ad2df44a27bb6afbfa2bd94cedc35d0506ac8d9cdfc",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -3753,11 +3753,11 @@
         "filip-turek",
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00024341.json",
       "mediaType": "application/json",
-      "sha256": "c084f2d892e9fc93d798220b9643de13d7a8c4d6c5d093d38c49a6b542d7be4f",
+      "sha256": "c42ff5b3b735a71517295fb287ffc1462076d43281e1cbd0a23c63484b97b919",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -3774,11 +3774,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/48169188.json",
       "mediaType": "application/json",
-      "sha256": "80bad72b6574796d7692437e3c876edfec0931fa16e46e0775eeba169711c69b",
+      "sha256": "02ae6641bf64f04840c4d71f6d31840e01d05017d5d79782902aabb6dc190e34",
       "found": true,
       "filingCount": 80,
       "documentCount": 80,
@@ -3796,11 +3796,11 @@
         "macinka-turek",
         "richard-chlad"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/17573866.json",
       "mediaType": "application/json",
-      "sha256": "9bacd6c5f166938f7b8a751b69aa09cceceebe5d2104de1d0bae2744a13e6238",
+      "sha256": "13a2b4ba91d9ed8bac7873b02293b3d936d4d15d7934f024b0c4a436328319bf",
       "found": true,
       "filingCount": 5,
       "documentCount": 5,
@@ -3817,11 +3817,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/70890692.json",
       "mediaType": "application/json",
-      "sha256": "460e88f617cee6314f1b292bd3c88f2b1390d5e7438f8965b9f3b44552705841",
+      "sha256": "0382d5f57a8e2906beed7ed4989cd9ffefed5fea54f1e12462fca5b289b57774",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -3838,11 +3838,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/14076705.json",
       "mediaType": "application/json",
-      "sha256": "e818f6e4a73a7f80c734f07155b11cdb66668fd00ff698cc606cd9cc7048424c",
+      "sha256": "66bdf79ff18090a59e26d62dcee00f7c058fcfc78833dd3f858e7fa16d962f10",
       "found": true,
       "filingCount": 3,
       "documentCount": 3,
@@ -3863,11 +3863,11 @@
         "petr-macinka",
         "richard-chlad"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/05989175.json",
       "mediaType": "application/json",
-      "sha256": "1964931dcb6fc8d3d9b590b53b6209dfd7bf54dfa22e5ed4d1dbd40e507d19f2",
+      "sha256": "67d4a91a1bb14fe885038bf47bf84ec27a1063e9eb18255ef8ab1be5c7e90d36",
       "found": true,
       "filingCount": 0,
       "documentCount": 0,
@@ -3884,11 +3884,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/75032333.json",
       "mediaType": "application/json",
-      "sha256": "b4685b106f55ae68c687e7705aeb9def7ed21cdccb18bd650ae9892938738587",
+      "sha256": "6694e537f21977d0e5c3de87ac0b3ce7eaaea33d03bf5f42ba811a3722661c90",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -3905,11 +3905,11 @@
       "dossiers": [
         "boris-stastny"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/07460121.json",
       "mediaType": "application/json",
-      "sha256": "ca4faab39e5c8c60e82914bb9cbdc59c3574929b41cfe2fc76021f35f99461c1",
+      "sha256": "fc7d724cd7246cad539e7d24a27c3fd9e0b33fccdf4ed9a72fa175ad3a86c8d9",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -3926,11 +3926,11 @@
       "dossiers": [
         "robert-plaga"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00023752.json",
       "mediaType": "application/json",
-      "sha256": "7537c492adbfa380d788f300608de11e55165ec236c6e68f7362c8c45a70a77c",
+      "sha256": "55b3f76aa5379d5ee67413a20f825628f81248efab4b76128890d123cceb0245",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -3947,11 +3947,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/63489911.json",
       "mediaType": "application/json",
-      "sha256": "924a6c2814137ef8bb653ccaaf4553609110154309454af143421f6292082bda",
+      "sha256": "482aba9acba134cd817fd8c58f99685013d8cc9181f570b4298e59e05614da0c",
       "found": true,
       "filingCount": 53,
       "documentCount": 53,
@@ -3969,11 +3969,11 @@
         "ales-juchelka",
         "lubomir-metnar"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/49370227.json",
       "mediaType": "application/json",
-      "sha256": "332ca88b5a012afe917f3d108124153a0268aacf9f8ad9b5e6bcb5089bb430b5",
+      "sha256": "a1e19d0ded4efcbdb65f5dd868f03a7fdfa6dec6e923264f04ce0adef8a8eb3e",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -3990,11 +3990,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/75003716.json",
       "mediaType": "application/json",
-      "sha256": "687ab9132b57146dd60daf06a95255e78701a33f25e967a4cc8f5dcad82e4a6c",
+      "sha256": "62206c3268235cbe121051e3b4d368e9b1b8001d1416d9b584f7bf2b3ae7c11e",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -4012,11 +4012,11 @@
         "andrej-babis",
         "jeronym-tejc"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/49467352.json",
       "mediaType": "application/json",
-      "sha256": "681ec8f1b6b24eb7896acceacb4b8131d3903d75e4d6cb806f8ab239eeb72c44",
+      "sha256": "2d7dd36cc09158523286aaf4be7210af54fa7d055e6bad5e675fb240af798180",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -4033,11 +4033,11 @@
       "dossiers": [
         "tomio-okamura"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00024384.json",
       "mediaType": "application/json",
-      "sha256": "e4528b18055018e46c8b1b4126c64237fa55eb9fe0540bd2a2a28f45cf0f8a3a",
+      "sha256": "ed610837bd4f3f78506cd440971bef7212c057f3b1b6d1c7f16d1dad1c23cf33",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -4059,11 +4059,11 @@
         "karel-havlicek",
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/16192656.json",
       "mediaType": "application/json",
-      "sha256": "3b936e6c5c0c325be8baafa076b4551e0e573ececde3cf0e49c312fbe40378b4",
+      "sha256": "f6220f9311e1950ddbb62cf4ce220ea5b821f009b3239d6388321d82bfdcc24b",
       "found": true,
       "filingCount": 0,
       "documentCount": 0,
@@ -4080,11 +4080,11 @@
       "dossiers": [
         "jeronym-tejc"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00024490.json",
       "mediaType": "application/json",
-      "sha256": "ac9ba51dc8737b6d5472fa85fa0d0ac4edcc4d8a144335a4231a9f9294ccf6ee",
+      "sha256": "2ecb384b54510185ee87688fb9798d8f53a05272bb759c063e4be0b8b9a83345",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -4102,11 +4102,11 @@
         "andrej-babis",
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/41035895.json",
       "mediaType": "application/json",
-      "sha256": "f12d505f248501c086f86b1ae27d6381409d808e47458618998011fde31e36f2",
+      "sha256": "44c430d89e5c45b8a257f5a62d382b7622006bbc6181bf33604d983df9d47be9",
       "found": true,
       "filingCount": 86,
       "documentCount": 86,
@@ -4123,11 +4123,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/46967851.json",
       "mediaType": "application/json",
-      "sha256": "0b1a4b801e146184f81a1008d6e9c180597e61d27ae5942d956a8d0e2bb7ea36",
+      "sha256": "38caff2ab69cd4f06f223aa496c426e583f2b6e6240d6c3ec7ec4f743c012f16",
       "found": true,
       "filingCount": 227,
       "documentCount": 219,
@@ -4144,11 +4144,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/25542125.json",
       "mediaType": "application/json",
-      "sha256": "cf0bfe813462b607d3756bd362e340d63b2a9f3af64caec593bebfc34f89f9fb",
+      "sha256": "8f0f44d3c650434ad34be255a11ca470a468e26989b31b9bb53ac679a7e17b89",
       "found": true,
       "filingCount": 15,
       "documentCount": 23,
@@ -4170,11 +4170,11 @@
         "tomio-okamura",
         "zuzana-mrazova"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/71339698.json",
       "mediaType": "application/json",
-      "sha256": "f20a06b50fadd0f9afbf2f8cd29aca3530ea9caba96a2bf8a7204a1c5dbf8be2",
+      "sha256": "ac84d6b4571a5f2277eb073954e322e0eefb31ccb588cfcb2f11c30b2870b9c0",
       "found": true,
       "filingCount": 0,
       "documentCount": 0,
@@ -4191,11 +4191,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/49241494.json",
       "mediaType": "application/json",
-      "sha256": "8e4e4b00e30c4d0cfce89ed4fb40ca09185710d524fa21b0479cee3444a4b83b",
+      "sha256": "1ad6f41a17583092a50fb91f0679e02f1e14da5de2ab19f4797bf42666b0a19c",
       "found": true,
       "filingCount": 174,
       "documentCount": 174,
@@ -4212,11 +4212,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/70890005.json",
       "mediaType": "application/json",
-      "sha256": "8c7c70fe9c2e5198c766b338dc5048cdb2d7c52b97be686f1409a8971e75258b",
+      "sha256": "b2ddc155042c0ce1f45d3068abcf2cd99404fd106bb1870325850deb908dda34",
       "found": true,
       "filingCount": 127,
       "documentCount": 127,
@@ -4233,11 +4233,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/70890021.json",
       "mediaType": "application/json",
-      "sha256": "c7b44888ed72bdf0d1a6b57df299efaa3e05a47e6ea4d9b43eda610ed5fd242f",
+      "sha256": "9bd050a6fc8db5d179be870122de39dda5e5d0c296e8c70a0dae4e397b38aa44",
       "found": true,
       "filingCount": 140,
       "documentCount": 140,
@@ -4254,11 +4254,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/26311208.json",
       "mediaType": "application/json",
-      "sha256": "89b11501831a700b7111c383b499833082ca130beecf935ef1bb116a49ef4eb2",
+      "sha256": "593a99de7c2e4ca983d548afb4d0aa7478f3ab087da5a8aab4c470df28b4a2e2",
       "found": true,
       "filingCount": 148,
       "documentCount": 148,
@@ -4275,11 +4275,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/10742409.json",
       "mediaType": "application/json",
-      "sha256": "d835eee98371dab9c2569346252548c748ba5dfbb4ba10259edef9ed5327ac63",
+      "sha256": "6061ed8dc9ed15bc2641a29f2051b3b7584f84c0bfee6379bd85b2374ddcc1db",
       "found": true,
       "filingCount": 0,
       "documentCount": 0,
@@ -4296,11 +4296,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/24099333.json",
       "mediaType": "application/json",
-      "sha256": "aac08ef08ef2a535972523547fd6c7d458cf6eead03685f25ae0a9549723a028",
+      "sha256": "904fb1094042081ff1d5475a467c1b5d8ff9118508c4ccffc3404e9c3481f046",
       "found": true,
       "filingCount": 4,
       "documentCount": 3,
@@ -4317,11 +4317,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/21030367.json",
       "mediaType": "application/json",
-      "sha256": "42e73ad531493c11884f7d6d896f0f2e0af154ae815329f87c2ca4c35458c5d1",
+      "sha256": "68d0b1912de9e76ea0f594aa2aeffb1466c58ffa3cba2d0f92f3ee82478d4df0",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -4338,11 +4338,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/67981801.json",
       "mediaType": "application/json",
-      "sha256": "20550ce605ba1779b7ad86b4fe2e745e13d1aa74f7d950ce743008e96da2623d",
+      "sha256": "d8f856750dc02d202558ff36ec11887ffa0c8a5526d4fa74a85427cd69f2c11d",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -4359,11 +4359,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/27699293.json",
       "mediaType": "application/json",
-      "sha256": "e543d1d2e198adaadac21e839b2249bef0bbeaf24c9dc6b1148c30e5187f3338",
+      "sha256": "ce94ec63dd97bafe819f4dd3081f4fee5e307dc4b745c6e631d1ee7067bdf120",
       "found": true,
       "filingCount": 93,
       "documentCount": 93,
@@ -4380,11 +4380,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/17048826.json",
       "mediaType": "application/json",
-      "sha256": "d854c5bbccf290c7f98ce72a2e1d8c94ba3243ecf09a007c32695d49758d2ccb",
+      "sha256": "8ecb4afb77f4b0ae8b61bba7093260253d16e68bb1841662c073f90a9fec5fe3",
       "found": true,
       "filingCount": 36,
       "documentCount": 36,
@@ -4401,11 +4401,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/46708707.json",
       "mediaType": "application/json",
-      "sha256": "c3a5a1b20dfeea7723978a067c188c835df0cad89cc0e46ea314334096caa993",
+      "sha256": "3b41153fb207ca368487d7316b8c4b734cc1a6e14f7866bc7605db657affef89",
       "found": true,
       "filingCount": 151,
       "documentCount": 147,
@@ -4422,11 +4422,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/26168685.json",
       "mediaType": "application/json",
-      "sha256": "6edab64ad0bf1f6b16233758bab3605738b3e1fb21f4d6cdf7ba677f2dc13f64",
+      "sha256": "2908ed0df2596ed65eaf2e3be6f226c301f368b90c37e42ae5bb6d0451bc62d0",
       "found": true,
       "filingCount": 161,
       "documentCount": 161,
@@ -4443,11 +4443,11 @@
       "dossiers": [
         "martin-sebestyan"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/62301659.json",
       "mediaType": "application/json",
-      "sha256": "e13c25645b2df3716e8cd787da8c44a5f0c8607bf02ab38584b341ca9ef80073",
+      "sha256": "21fea9d5504c5b4b78e19d519a0715d0355417b52ab11cf6af0f97f14f2425fc",
       "found": true,
       "filingCount": 47,
       "documentCount": 47,
@@ -4464,11 +4464,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00255092.json",
       "mediaType": "application/json",
-      "sha256": "bc0a0f511941b09df24d687a92dc2c176c74c315efa869bfaaeaee6fcf9fac70",
+      "sha256": "f6f9eb36bc6a3798aabb610c57b35377dcd5e5fe10b188938a562b89cf43a049",
       "found": true,
       "filingCount": 139,
       "documentCount": 145,
@@ -4485,11 +4485,11 @@
       "dossiers": [
         "igor-cerveny"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/61505463.json",
       "mediaType": "application/json",
-      "sha256": "355209ceeec8f0c658c18dd64e94896bbaee68b91053042e92946eb48bb6edb9",
+      "sha256": "6d7042de77cd7bb5bd92abf02e9a6c18761e96f84a9b43859794b65e1e46cd3f",
       "found": true,
       "filingCount": 40,
       "documentCount": 50,
@@ -4506,11 +4506,11 @@
       "dossiers": [
         "tomio-okamura"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/04134940.json",
       "mediaType": "application/json",
-      "sha256": "9a3efd2433bfe10586524953e427e15c606ffb549ccad5c019c802df75bee795",
+      "sha256": "5d781563446f4339b34bae04b9d9564e721ee1bded3aa8f08e5f8d9cb8657293",
       "found": true,
       "filingCount": 0,
       "documentCount": 0,
@@ -4527,11 +4527,11 @@
       "dossiers": [
         "tomio-okamura"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/09871713.json",
       "mediaType": "application/json",
-      "sha256": "58361ca047c86d74da940eb14c9e24799c8da332459c956b5a30fdb6e60b079c",
+      "sha256": "2af28d60708514adebbd34dc9a543043f1145cd3041fdd49b9358abefe606284",
       "found": true,
       "filingCount": 9,
       "documentCount": 9,
@@ -4548,11 +4548,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/70994234.json",
       "mediaType": "application/json",
-      "sha256": "d9d5206fa0412857c38aeab480e354eba61dfe4093d764d0201c55fa4f43dfaa",
+      "sha256": "d14fd4975d31428a5f70e2fa7301b0d9f33fc5903434cdbbd3462642b957e1fd",
       "found": true,
       "filingCount": 68,
       "documentCount": 68,
@@ -4569,11 +4569,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/25157507.json",
       "mediaType": "application/json",
-      "sha256": "848efcbf045644bb8221f8c40ff741712c67380abb635a9e6e445cf05756bbf2",
+      "sha256": "ab4d307cc6cf7340a21afeb983571b4086e0a6a46caad02a868b013c4ca7f057",
       "found": true,
       "filingCount": 123,
       "documentCount": 123,
@@ -4595,11 +4595,11 @@
         "karel-havlicek",
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/26673908.json",
       "mediaType": "application/json",
-      "sha256": "2bfe9b1aaa5225a9b7ab09c680e12adf1750625d3b19259e1de148d6550dc95d",
+      "sha256": "b541471becbc85a0d75b49942699c0c1db593a81f0acf1ceb30bb16dfdd21478",
       "found": true,
       "filingCount": 0,
       "documentCount": 0,
@@ -4616,11 +4616,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/70856508.json",
       "mediaType": "application/json",
-      "sha256": "973f7a216ecd94833e6152cdea415b78706cf57a65690aa41adef06195b0e620",
+      "sha256": "3d960eb37319fbb1117d3a0625b3a087c8d76302f6e0cdd91e27c6b35c8a52aa",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -4637,11 +4637,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/01312774.json",
       "mediaType": "application/json",
-      "sha256": "deb6d67dd1fd8a71f1bceba2dca99a62d38218692aa2d466278db9e9df1a2c55",
+      "sha256": "0195a688f46c55ead244942cf05d619237a686b0114995f78713cd2c469dae74",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -4659,11 +4659,11 @@
         "andrej-babis",
         "martin-sebestyan"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/48133981.json",
       "mediaType": "application/json",
-      "sha256": "50608716f4f9565955b312e3263758ceeb3fd3eaa9540e02462b086566fb6e96",
+      "sha256": "cf9dec1a8c3535036d845b2d5c91fc57974d7af46d47b7c7d2a34061ad9ee84d",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -4680,11 +4680,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00299308.json",
       "mediaType": "application/json",
-      "sha256": "307f6925ccd47f1a801fc72ba4c9be3a65bcb7a00868c4b7babe428ee68f2493",
+      "sha256": "551812d2d7f2e3e21b6cc6c78c1d60775312367e10134b0730f1aec281d080f5",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -4701,11 +4701,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/70891095.json",
       "mediaType": "application/json",
-      "sha256": "18e5661c81362bf0abd65301c2552b04b0c62f2911d214d88785784e12b60f73",
+      "sha256": "76401ef32f4b4671106c863a302dcc66467bb3a008cda0120099be84a7eb2542",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -4723,11 +4723,11 @@
         "adam-vojtech",
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/26014343.json",
       "mediaType": "application/json",
-      "sha256": "daca1e4347efc46be552e31e36cf11ecce988487c0bb962a5884c0cc1ed10c36",
+      "sha256": "d0e86583ae46c90a555b12e0e69d5fe371ed04a6c66562d18013092f36d2549f",
       "found": true,
       "filingCount": 64,
       "documentCount": 64,
@@ -4744,11 +4744,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00177041.json",
       "mediaType": "application/json",
-      "sha256": "b8f4807be56d8639d46c2ff2d04191fe5f0c034b116c4d29a13af1d31745a521",
+      "sha256": "5cd15943903876d1b6f6ed24e4a8a94ffa9d983e4c29ef0be82a89a669ebe01f",
       "found": true,
       "filingCount": 233,
       "documentCount": 233,
@@ -4768,11 +4768,11 @@
         "jaromir-zuna",
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/71339728.json",
       "mediaType": "application/json",
-      "sha256": "dd0b2245be76f2f204c51ceb03a389fef13d1b61abed7016ab54a22a70154c85",
+      "sha256": "23adfd7b5e8fe8687a51584573d96f5193236da45a9c2b6f90461736d31bc8a3",
       "found": true,
       "filingCount": 0,
       "documentCount": 0,
@@ -4789,11 +4789,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/06230113.json",
       "mediaType": "application/json",
-      "sha256": "f1ad61fdec26a7ddd47a633241ef8839b06e550d5b109dc4289fd031f21b241b",
+      "sha256": "59a8b1b83e8a611843389ff02ae48d02e4b6b949cf62319ba0553175cf6b5665",
       "found": true,
       "filingCount": 25,
       "documentCount": 25,
@@ -4810,11 +4810,11 @@
       "dossiers": [
         "robert-plaga"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/06616275.json",
       "mediaType": "application/json",
-      "sha256": "7f38e685e86e475baa2bccfc172a321c25d1ffe6446a42925b9433e0e72bdf5e",
+      "sha256": "7170d8f7077f359596d5bd0811ccef523a68b69c45048af758771c7ef12e2026",
       "found": true,
       "filingCount": 20,
       "documentCount": 20,
@@ -4831,11 +4831,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00418005.json",
       "mediaType": "application/json",
-      "sha256": "1439b066508ad19fe8b8836e7d55377bb34a4d343d6480bae43f3c4e4167c6e2",
+      "sha256": "e6882ee7fa6639bfdd48b830acaca18319f03ad090b88ce9ee4629b6fe9b41e8",
       "found": true,
       "filingCount": 19,
       "documentCount": 19,
@@ -4852,11 +4852,11 @@
       "dossiers": [
         "tomio-okamura"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/63833239.json",
       "mediaType": "application/json",
-      "sha256": "2b5946ba23c0dd965024a792eea518d9ace47fb9d897561469d34529d2afa9df",
+      "sha256": "cf5f4595c8f5ba59b29615a34001aa3ad44d5c7f172a049914666cc27f4dbdb5",
       "found": true,
       "filingCount": 12,
       "documentCount": 12,
@@ -4873,11 +4873,11 @@
       "dossiers": [
         "alena-schillerova"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00216208.json",
       "mediaType": "application/json",
-      "sha256": "f945bfb567e66e5074d3839af97011fd220e8e3379a4ec432d86657d2f3af70b",
+      "sha256": "a776321429d4c55531128f9b6fc22b3ae858931f0b67b6a0d23b8b62c7ff0301",
       "found": true,
       "filingCount": 0,
       "documentCount": 0,
@@ -4894,11 +4894,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/05553466.json",
       "mediaType": "application/json",
-      "sha256": "35ef010c0ed1fe81e01bc8df44b3225276bb037e40e81b19996b7ebd8f45ed6b",
+      "sha256": "ec6d72776d2ce12748bf042697ac6308bca3a833c271d720a95e6e2868592226",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -4917,11 +4917,11 @@
         "jeronym-tejc",
         "tomio-okamura"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/48513687.json",
       "mediaType": "application/json",
-      "sha256": "323e1f3aad32a9fc65aac903ab052594eb726b01702f2a239a0b830fed5e2593",
+      "sha256": "ccde0e15311dabc52db4dd6ad0262c6cedd808d1afa8931206b9f2f419cd2f15",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -4938,11 +4938,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/25396480.json",
       "mediaType": "application/json",
-      "sha256": "84e1aaf6c3c0a0290b2f144135ca4e90341bd7ccccd49f93cf8595bf006cbd4c",
+      "sha256": "7a011f8be59eee0e4a80a4acd9a6954448e70a79ca5da5b0b017f36852b0ebd0",
       "found": true,
       "filingCount": 127,
       "documentCount": 126,
@@ -4959,11 +4959,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00215651.json",
       "mediaType": "application/json",
-      "sha256": "c96cba0ed6c5e3c0d64caccce04a5cbabf0835b9c11f2c9429f8ba9f20317c54",
+      "sha256": "2ecc22ae2fc689cc2165bce88cdfc9a3cb2cc35dcdfa881d1bf6e29b431fb521",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -4981,11 +4981,11 @@
         "adam-vojtech",
         "jeronym-tejc"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/64124584.json",
       "mediaType": "application/json",
-      "sha256": "2827b6f8573dd2789c3bd4a0e03688e215c39faf60af5185ac3055ad4136faca",
+      "sha256": "6c5ede0825ab3be135c39907a2790261215f39d63c187e05f62207b8c6e75117",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -5002,11 +5002,11 @@
       "dossiers": [
         "martin-sebestyan"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/49625586.json",
       "mediaType": "application/json",
-      "sha256": "81079ea2965c8309fd8bbfd3ee115cc8796cf73c52875c20e2a4716983dfc8ec",
+      "sha256": "dc9dad3606f17f5207f8fdeeef7b0a764a664f1249a5b36221648957c6d467d1",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -5023,11 +5023,11 @@
       "dossiers": [
         "adam-vojtech"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/41197518.json",
       "mediaType": "application/json",
-      "sha256": "5884c8e72f078af3d1ac731854d98e75ffccc845d66c933b6ef756bc28f4d1be",
+      "sha256": "26eae7884283b309e40b106b82fafe308fa72cd9243f79cf79381c1c3b49721b",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -5044,11 +5044,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/26102463.json",
       "mediaType": "application/json",
-      "sha256": "9bb067ecad700bf11cf3c572ec802f9556dece73c207b372508692039c23fb70",
+      "sha256": "7eb47a0bd59868cb83efdb05a2bf1f7fc1d6372e16437075cab1411903e50a82",
       "found": true,
       "filingCount": 70,
       "documentCount": 70,
@@ -5065,11 +5065,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/61384399.json",
       "mediaType": "application/json",
-      "sha256": "8251c40ae568e79d4649e6764e7c55dfa195f0bb6a67aad6ed6de0281d15788a",
+      "sha256": "20e3e9d8d4a2a059eec2c8bcf36595d225301903172a77b22bc041c9306cc21d",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -5086,11 +5086,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00027162.json",
       "mediaType": "application/json",
-      "sha256": "85911f8bfa80ccad137c0948d478919ef7982875de91fb6419316200c5a9b1ea",
+      "sha256": "947df3df4dac201b186945768eafb99a8cdc3f41b83e85fbb6ac27bcbf3961b1",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -5107,11 +5107,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/26417171.json",
       "mediaType": "application/json",
-      "sha256": "92df58b3f8e904ae0c6f2438bdefe70f4014f44b0a45254ecc33cf83c7d9478c",
+      "sha256": "e9f6db29595bfb48650f92d79406ff2313fc3e7e56487f1b19659d964d44a3f5",
       "found": true,
       "filingCount": 58,
       "documentCount": 58,
@@ -5129,11 +5129,11 @@
         "filip-turek",
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/05411394.json",
       "mediaType": "application/json",
-      "sha256": "55cd6ab90a968b24daf1c6bb1f0af661f21c1a58daa6192e76c75bdc3deb0843",
+      "sha256": "3aafed1feffa5608b92b31ceb6878746062640bd693badbc683d49bb7eed9870",
       "found": true,
       "filingCount": 22,
       "documentCount": 22,
@@ -5150,11 +5150,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://infodeska.gov.cz/eudpub/",
       "file": "/documents/court-noticeboards/court-board-10-a-92-2024.json",
       "mediaType": "application/json",
-      "sha256": "1d4e7afd412519b2f4bef3e1137715ef65ffdf53913c0648211e9394c2a8537d",
+      "sha256": "363c2a90f6e8e44f65e1e19f0572b787a09b2e470c7829a8e5135a747aee7542",
       "found": false,
       "matchCount": 0
     },
@@ -5167,11 +5167,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://infodeska.gov.cz/eudpub/",
       "file": "/documents/court-noticeboards/court-board-56-t-7-2022.json",
       "mediaType": "application/json",
-      "sha256": "7bd7eb3d5c1910140f3c2788bd29d57dc7a67f90bcf92fdd2959af7f4599a93b",
+      "sha256": "0eb302036ab15c00acf3acba6f8fdba2007244c101fc416262bb569c8f107437",
       "found": false,
       "matchCount": 0
     },
@@ -5184,11 +5184,11 @@
       "dossiers": [
         "james-quick"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://infodeska.gov.cz/eudpub/",
       "file": "/documents/court-noticeboards/court-board-85-cm-1204-2023.json",
       "mediaType": "application/json",
-      "sha256": "67bfb82b0d3368b2f1a7abb83da8ec31a0e79a3285a1052e43aa5cce755b88c5",
+      "sha256": "a110f985817170042e4f1384faad7b494dbebd8bac551e7bf39c65ce2dd89c81",
       "found": false,
       "matchCount": 0
     },
@@ -5201,11 +5201,11 @@
       "dossiers": [
         "tomio-okamura"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://infodeska.gov.cz/eudpub/",
       "file": "/documents/court-noticeboards/court-board-1-t-95-2025.json",
       "mediaType": "application/json",
-      "sha256": "426717b06aa4c65fc9205e3c6f0fb5c67cd0fdd55c1d1fa2193e6675fdd5d985",
+      "sha256": "3a6a8bf53990829756ca25982714de7be63e82a0f36c3c89d9f3cf6dfdb6cc8f",
       "found": false,
       "matchCount": 0
     },
@@ -5218,11 +5218,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://infodeska.gov.cz/eudpub/",
       "file": "/documents/court-noticeboards/court-board-3-to-34-2024.json",
       "mediaType": "application/json",
-      "sha256": "7d24112510a7b0ff53d416a6363b91d4d3171765a8532871a237e448b9c042fd",
+      "sha256": "d64949b2eeba3810045e68ec8730ed2f3b50ec2eda216d0be697859df9a08d73",
       "found": false,
       "matchCount": 0
     },
@@ -5235,11 +5235,11 @@
       "dossiers": [
         "jeronym-tejc"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://infodeska.gov.cz/eudpub/",
       "file": "/documents/court-noticeboards/court-board-2-vzv-11-2025.json",
       "mediaType": "application/json",
-      "sha256": "9575a36ed4e5a7a855faf735d0d22fa5bd44957810522f30b4cd32a655471fb6",
+      "sha256": "e69d355df40b851256857679232376e38abd503d9525d4713d3caf2a3dfc083f",
       "found": false,
       "matchCount": 0
     },
