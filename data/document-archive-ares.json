@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-08",
+  "generatedAt": "2026-08-09",
   "records": [
     {
       "identifier": "ares-00020869",
@@ -11,11 +11,11 @@
       "dossiers": [
         "james-quick"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00020869.json",
       "mediaType": "application/json",
-      "sha256": "bf1beb6af468c2299d67c5e2a0cab98d05f33286245eb71c621a80a8dd36c394",
+      "sha256": "0daec3c07d3098aded76f2c8372b661e853735198b62dbee303dfe8a9ddb0e51",
       "found": true
     },
     {
@@ -27,11 +27,11 @@
       "dossiers": [
         "robert-plaga"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00023752.json",
       "mediaType": "application/json",
-      "sha256": "4cf090ced4b243e01f00836313f5ad5c63eb14d2c0680f22b28d1166b5df641c",
+      "sha256": "98db57846e837f2336fa8b8f75ec3bcb83b385ec8773ddd9480af748c9b711e5",
       "found": true
     },
     {
@@ -44,11 +44,11 @@
         "filip-turek",
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00024341.json",
       "mediaType": "application/json",
-      "sha256": "d4e86834b38909aaea13425916f0ee0a207dcaa35670bb7076b3bc40e7641383",
+      "sha256": "3c344df1d2458a0037779f01232ea78a90236c5dd42bfedea51ab49313f9257f",
       "found": true
     },
     {
@@ -60,11 +60,11 @@
       "dossiers": [
         "tomio-okamura"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00024384.json",
       "mediaType": "application/json",
-      "sha256": "c55462d61cc021072f972d694f7bf67b63ffb5db73535595ea5513f9762d15ce",
+      "sha256": "8198e6da9ccbe9089aa5228cd201009bf5322e2ea1b9666b4894b347cf2d5682",
       "found": true
     },
     {
@@ -76,11 +76,11 @@
       "dossiers": [
         "jeronym-tejc"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00024490.json",
       "mediaType": "application/json",
-      "sha256": "4b29d623ed8474e3a1025b2b8c145e6a05cf2c6a2ab04407375348408323c981",
+      "sha256": "9a71b6af35a22c2c918a5901726fbb50e70354fa1b2d48ce856fe0bf74ebada4",
       "found": true
     },
     {
@@ -92,11 +92,11 @@
       "dossiers": [
         "jaroslav-faltynek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00026000.json",
       "mediaType": "application/json",
-      "sha256": "5898a0cd68f3fb91d38169ed2a73a180bf82e3eb7200b6f79155e0883a251904",
+      "sha256": "90936858f5e6fb3c3ca3d50073ec21161f2131284d46bdda4e01d6a0671d15fb",
       "found": true
     },
     {
@@ -108,11 +108,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00027162.json",
       "mediaType": "application/json",
-      "sha256": "6b9349a8acbf6a1a599bb407fce02f1e2caf4941a2014efc3af9029865f8c588",
+      "sha256": "f6d3718069aeb19ddb94c50e94e376a2363d18174a47b2f159c653d55e9781e4",
       "found": true
     },
     {
@@ -124,11 +124,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00027383.json",
       "mediaType": "application/json",
-      "sha256": "6033ce79fb16f6b4d6cad11b5cdb411e8900d8fd1d8685d56081c0526a3dadca",
+      "sha256": "fb67d558bc2c197816234aa062fa2674d454cf906a32e8cfa4d75d239ae316b3",
       "found": true
     },
     {
@@ -140,11 +140,11 @@
       "dossiers": [
         "tunde-bartha"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00063517.json",
       "mediaType": "application/json",
-      "sha256": "1a96ab989b0adcb9d0be14e60b7c58d6f35a3b2d74c4a4af18e0fafef4e3caac",
+      "sha256": "fb6677b86deb6ded7cf0beea396e4e1ff725b24ca57c6107252ea0c3b7c19e92",
       "found": true
     },
     {
@@ -156,11 +156,11 @@
       "dossiers": [
         "adam-vojtech"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00098892.json",
       "mediaType": "application/json",
-      "sha256": "3b1ff053468e3c1d3d773602ad9a30276a159c7c245e198fe9db024877608e33",
+      "sha256": "9703610d26f9be7a9418c993968a8460d14c2b568e8ab46c7923164717c93223",
       "found": true
     },
     {
@@ -172,11 +172,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00177041.json",
       "mediaType": "application/json",
-      "sha256": "a4aabdc304cbf75bb6f6df768eb1c8f69452bdef07e76918bbe057e51053f3b6",
+      "sha256": "8e7c7b2882df962f233593b51ec735b14b5c6a12e82d19bf619fac1431f82820",
       "found": true
     },
     {
@@ -188,11 +188,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00215651.json",
       "mediaType": "application/json",
-      "sha256": "d98156c39844517269189a8e8e36000413db5342eef1d3978986cda1e19c0d6c",
+      "sha256": "14e9ca188842739ec58e1d75adb2d2b2663d7a2f3495e5a19da165016f788742",
       "found": true
     },
     {
@@ -206,11 +206,11 @@
         "james-quick",
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00215660.json",
       "mediaType": "application/json",
-      "sha256": "2e9e2879cb58babcf2c2038e0a74238f0dbf067bbd506048cfd4cba314f54d91",
+      "sha256": "80b9a8863769b09404f5ed6442862bef37e791bbd601f335f8a571fe8740d32d",
       "found": true
     },
     {
@@ -223,11 +223,11 @@
         "andrej-babis",
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00215678.json",
       "mediaType": "application/json",
-      "sha256": "6fe6a01a5045d62308f49a7c6ed106cc52cbdb97c358f8d25b49c9fac3c72cc7",
+      "sha256": "7166d7ca2ffbc267166037ab99e22e0796e6a0704367fa224f6ff65ce34bc24e",
       "found": true
     },
     {
@@ -239,11 +239,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00215724.json",
       "mediaType": "application/json",
-      "sha256": "f934b76b5223be233ca4813f226d0e098daae0f173ac566ec1afcf26f2efbf22",
+      "sha256": "c0d8cbe440652e7376baa0cbc49cb957a1f83949bec017eedf221b3614ca36c9",
       "found": true
     },
     {
@@ -255,11 +255,11 @@
       "dossiers": [
         "alena-schillerova"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00216208.json",
       "mediaType": "application/json",
-      "sha256": "f34d7ff80587dbd10e4423b5097b8ab5aa746ddca063b74b2a7506ac2efd11df",
+      "sha256": "a0dfc28075c257570bb5b1ae21578df9a0910e3e2fd4afe483275112890731af",
       "found": true
     },
     {
@@ -273,11 +273,11 @@
         "jeronym-tejc",
         "robert-plaga"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00216224.json",
       "mediaType": "application/json",
-      "sha256": "c7462366c447a66910f1e4abccc93a38869ec45d341059daf8d7bec2744672e7",
+      "sha256": "ae927218e748ba8c1e75b286fba0eba89a2d7ff35ef9b78705b3eabba5b00327",
       "found": true
     },
     {
@@ -289,11 +289,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00255092.json",
       "mediaType": "application/json",
-      "sha256": "894cd558ee1c5fc2b50dc60d0ae6dbaf90a79410c7b6314eb69eaf12a8bcf45e",
+      "sha256": "76d984d906b0c605c32affed4f92d8fee012c2b14d91f9f50f791097221ecd0c",
       "found": true
     },
     {
@@ -305,11 +305,11 @@
       "dossiers": [
         "zuzana-mrazova"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00266230.json",
       "mediaType": "application/json",
-      "sha256": "a8e2f6d15a4b53e2f4d854b3c2f2b89ebc8b0f4134ab932e30f34542f9969ad7",
+      "sha256": "ded5c5e8ebb044f8125ddae90830f910442cbf160726cd7441c851fe962700b6",
       "found": true
     },
     {
@@ -321,11 +321,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00284301.json",
       "mediaType": "application/json",
-      "sha256": "354220fd755bd9196cf49c5b16548969d1feba3802df928a5295ea39c1f83e6f",
+      "sha256": "712a06821cfd506e8418be2c152c5524c03cc6e8ec5c9249d10662b13badf8ed",
       "found": true
     },
     {
@@ -337,11 +337,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00299308.json",
       "mediaType": "application/json",
-      "sha256": "45534e39c4b58f758f1e54dc6b8e48d07610b6709bbf6ea62dab941d8cebf89d",
+      "sha256": "b98b025dbae0abf22c250d8b4cce7ca71601fa137a2374c0ffc22ece3641b390",
       "found": true
     },
     {
@@ -353,11 +353,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00304450.json",
       "mediaType": "application/json",
-      "sha256": "36d1487b7802dd7daa63028e0b804e4b8d3f6de6f889826dd7f586bfc5bba4a4",
+      "sha256": "c0bf7b7280d12a663cfce299553f2e2991a6eebcb9c7caa08b7e2fcee86f5db6",
       "found": true
     },
     {
@@ -369,11 +369,11 @@
       "dossiers": [
         "jeronym-tejc"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00409171.json",
       "mediaType": "application/json",
-      "sha256": "217421fb8703550a3065511796670a662a51ea8ed2504a9e26f5a2a1b54d3e63",
+      "sha256": "6c22c116aece1e51ec9739c9e51ce34eece250e09f22528d4b36f37513ea9ba6",
       "found": true
     },
     {
@@ -385,11 +385,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00418005.json",
       "mediaType": "application/json",
-      "sha256": "27093146373bb530ed6e76366baeeac152bce339a447550bd033d1ad1e6d8628",
+      "sha256": "15d679e489f7882f2421c3ccb43099abf27de1ea11cc162dec1b024db8d8a445",
       "found": true
     },
     {
@@ -404,11 +404,11 @@
         "karel-havlicek",
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00442704.json",
       "mediaType": "application/json",
-      "sha256": "cb75872386c7b3e360f801d22ae1ca04e234dc33946ded2c7a440e9fec05de79",
+      "sha256": "0253d89913e3834c2a17bc12b7f02f77b63445c3fcc1332a06aa545d9bf840a9",
       "found": true
     },
     {
@@ -420,11 +420,11 @@
       "dossiers": [
         "boris-stastny"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00469548.json",
       "mediaType": "application/json",
-      "sha256": "a1e6c4ef6ca0f85f2ba3153e830b5d2b91d2e45b4424d85f5dd7a039ec8a556f",
+      "sha256": "f4eba82a7cc91c967f8c58ae98190ab59555dda587d72d0bcd071219ca1001e6",
       "found": true
     },
     {
@@ -437,11 +437,11 @@
         "boris-stastny",
         "robert-plaga"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/00638994.json",
       "mediaType": "application/json",
-      "sha256": "f22233dd862357c1f6a1745a44031e2bdd9c7d08341753664bc0388bb0e95b9e",
+      "sha256": "29a4ec3cf00f3e056a49f4b21ecdeb7b3df2cf67faa95cfd7a17b11500664bee",
       "found": true
     },
     {
@@ -453,11 +453,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/01312774.json",
       "mediaType": "application/json",
-      "sha256": "20fff905cfd7e37d567d5af3a74aa6c7a5a5eb3c481e9c91b66f42f74c6026d9",
+      "sha256": "4c91297ce80b0eb61703fc279c4e0fae4b1c124f91f28f773dd8efae9c11e002",
       "found": true
     },
     {
@@ -469,11 +469,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/01529820.json",
       "mediaType": "application/json",
-      "sha256": "4d27308f66d497c45147e1dd6e680c6cbb81150d76f07b6d7d730d050fcb6d6d",
+      "sha256": "2939e196588441afceea2f0306d0f50ef7ae36646640784994c7639e0e6c3c24",
       "found": true
     },
     {
@@ -485,11 +485,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/01680081.json",
       "mediaType": "application/json",
-      "sha256": "6b6a6827326b2406201d1a0354e6bbcf57c8f0ed302e4d18e3ab04c157c1b558",
+      "sha256": "ebc14257b87649b2b1c94190e4de2e7da8e553a17ae5168733a06d7a3e245f55",
       "found": true
     },
     {
@@ -501,11 +501,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/01801261.json",
       "mediaType": "application/json",
-      "sha256": "900a4183eccef27b91e30506414735b98ad32448cb8a87e1e7889e6440e5271b",
+      "sha256": "ff319af69f0127cbd8c0d960be7a558d78affb939a78ff9f498b074bfe589195",
       "found": true
     },
     {
@@ -517,11 +517,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/01818899.json",
       "mediaType": "application/json",
-      "sha256": "69d9e333ef7a41ee90764167fe648a0de0948bb55fbdd8a2c44350ae890182dd",
+      "sha256": "19d75e7d9b43bf05024b4790c80dcd0e209247bc9e28e4f05e41c59c31b23c6f",
       "found": true
     },
     {
@@ -533,11 +533,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/02922703.json",
       "mediaType": "application/json",
-      "sha256": "ffa4d823f9eff0c8b6658fba123bb19766b58f02cf491758e8596d36c51cf42c",
+      "sha256": "2ff21b1fc86434bde78fc498f26045577d908a36b0236095e74ca936ea16e623",
       "found": true
     },
     {
@@ -549,11 +549,11 @@
       "dossiers": [
         "james-quick"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/03877248.json",
       "mediaType": "application/json",
-      "sha256": "9c4ac082480ad058ad03a34d6fbfe14b8b5d4677c074112b43aeab03af7eed96",
+      "sha256": "4bfef875da6a60c64d56fb605fead20ce2f7694884ac90e5766099b101ee90fe",
       "found": false
     },
     {
@@ -565,11 +565,11 @@
       "dossiers": [
         "tomio-okamura"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/04134940.json",
       "mediaType": "application/json",
-      "sha256": "3cf775b9ddb104eb7e9f2f02672b607d4417fe22d8581a9170c8cafaca89e722",
+      "sha256": "f8ec5dbe910bf77909df15708bd340de397a9657881f0eb9c21d21b2892e3651",
       "found": true
     },
     {
@@ -581,11 +581,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/04347803.json",
       "mediaType": "application/json",
-      "sha256": "6d03890a9db4622b38388ae0131a6d703b98303cc32932579801f3bf288ca214",
+      "sha256": "33d913dececf71ae41f45ea27ddd5b44222d68b9ce9e6320e3d64a197117e351",
       "found": true
     },
     {
@@ -597,11 +597,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/04449461.json",
       "mediaType": "application/json",
-      "sha256": "75db5d899e5425cebc6de4b8fadd320a873e01c2003eea86fc834bb73e315e3f",
+      "sha256": "7ca123ff51a3cd915dcefd75e331cbb0f18c2006df6041efcb0886546d4ebc93",
       "found": true
     },
     {
@@ -613,11 +613,11 @@
       "dossiers": [
         "igor-cerveny"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/04472586.json",
       "mediaType": "application/json",
-      "sha256": "253a7735aeb00854ff59b9c2abbd92e46ccb3c58baee81770f2a1be7c07a379a",
+      "sha256": "943949a2788ac44f7d6c4242492352e309486fad5aacca493eb0b5b3a83f6e4d",
       "found": true
     },
     {
@@ -629,11 +629,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/04771664.json",
       "mediaType": "application/json",
-      "sha256": "29f8d6a39b833b323d67c9b392187903edc5d72f08ece93b314173a3737f9ce7",
+      "sha256": "c0ac8d8802a95a894c9a9ae33e58b834f5e789dab23e3c2509bb04c32c0a2c52",
       "found": true
     },
     {
@@ -645,11 +645,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/05015502.json",
       "mediaType": "application/json",
-      "sha256": "87533b2cf9fe854becf80225fca0dc9dcf09721178c07bc5d5f1e2dd2a7871ca",
+      "sha256": "5edbf299f082d89a9286c49bbf1906bdfcf408144a16397190fbfc6b95ee171e",
       "found": true
     },
     {
@@ -661,11 +661,11 @@
       "dossiers": [
         "martin-sebestyan"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/05140544.json",
       "mediaType": "application/json",
-      "sha256": "556b2e54760e3084aadb15c5c5a0ae8db7388839a928d281dfeeb8d3002ed093",
+      "sha256": "ebea7c8be5e2de6d601676b153ddeddef61dcb78126f0674cb478c6c9111f17e",
       "found": true
     },
     {
@@ -678,11 +678,11 @@
         "filip-turek",
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/05411394.json",
       "mediaType": "application/json",
-      "sha256": "32bf0fa224bada5074995abea57a75d9ceaed68fb4049b251ff48d4611be4c8c",
+      "sha256": "960be072be52706a447ad87370b7e4c48136ab1659a167e2887cedb81840d2c9",
       "found": true
     },
     {
@@ -695,11 +695,11 @@
         "igor-cerveny",
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/05411408.json",
       "mediaType": "application/json",
-      "sha256": "993f0d74b11fcda63baebb80de411740afd16d721c884a0418780aad366c635d",
+      "sha256": "14fb1e1727d7399be9547e0c47196f6a2e04958fe804348ec3831e50dcd5bcda",
       "found": true
     },
     {
@@ -711,11 +711,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/05553466.json",
       "mediaType": "application/json",
-      "sha256": "810d86b1c51a097013dca07a13cdc5a59fa5c994ce0232cddb598170847f4a6a",
+      "sha256": "d5ad10d65e94702c8d048a5af58c3386b7bbb6f982f43a7ba4e31923f004ea42",
       "found": true
     },
     {
@@ -727,11 +727,11 @@
       "dossiers": [
         "richard-chlad"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/05965527.json",
       "mediaType": "application/json",
-      "sha256": "d3c2bf5e70c66286e4a6a9931381cd41ec11242b9ff36a98be548b89bc82867b",
+      "sha256": "bbe543efd27a261863e23a8b90bc930ee48296d2cca8362986ec3c5fb4bc0e75",
       "found": true
     },
     {
@@ -747,11 +747,11 @@
         "petr-macinka",
         "richard-chlad"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/05989175.json",
       "mediaType": "application/json",
-      "sha256": "5ff4fc97661590dc9b3e2a404e58f21d4da9c430a21a1dbd6b1faa225c6fd143",
+      "sha256": "3702c56adbe4d0881b27bada9a86d1c1ac06884b8ba4ae4472aec9cf487c2091",
       "found": true
     },
     {
@@ -763,11 +763,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/06230113.json",
       "mediaType": "application/json",
-      "sha256": "054ad6bc272f2cbabe47c7a92b739ba5d9c5c92b27d84066394adf4e86e54e76",
+      "sha256": "80526a501277e1ec698adb6e27268ad8d215c8969298b6363ad34d706cd06209",
       "found": true
     },
     {
@@ -779,11 +779,11 @@
       "dossiers": [
         "robert-plaga"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/06616275.json",
       "mediaType": "application/json",
-      "sha256": "2b512032cc022203e88127072a5dc281e603d6d2775d3cb554b26bb3c8709f6d",
+      "sha256": "aa0d5dc13cd0597e06a2048aacd9f07fe52b39aacd01e024387cb9f59536ae3b",
       "found": true
     },
     {
@@ -795,11 +795,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/06760538.json",
       "mediaType": "application/json",
-      "sha256": "8ae06b459c2bbecacfc1ae8870110b3f63672e75a98a04852952b4795311ecb4",
+      "sha256": "e016b4dcebfc239d686c432b4e09280a5596c15521c25ae17b537a57d8eff75d",
       "found": true
     },
     {
@@ -811,11 +811,11 @@
       "dossiers": [
         "boris-stastny"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/07460121.json",
       "mediaType": "application/json",
-      "sha256": "cffbed3827b31db499e9574bfdfe99bb0844d4456277857e5a49af47225e2f77",
+      "sha256": "a1559a17e725b977046d08acb1bd37c639da8940dc26b32dde1e60f11dcbc525",
       "found": true
     },
     {
@@ -827,11 +827,11 @@
       "dossiers": [
         "tomio-okamura"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/09871713.json",
       "mediaType": "application/json",
-      "sha256": "895e44c04b5bc450be61de39e87d80a717fcffa3d2265f184fc1e9dda2bae559",
+      "sha256": "58a902482dbf5972b49b5caef178326ebd04051a1bcd02a5f0e0fc422870fda4",
       "found": true
     },
     {
@@ -843,11 +843,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/10742409.json",
       "mediaType": "application/json",
-      "sha256": "aa3c11415d0cf9b9c53cb45b47624160dfe891a909c32d1960d850675c62e5bb",
+      "sha256": "26fcec5916d893c668289bbc078537fd88a6eb74cb7a5e69972651e8ab53bf09",
       "found": true
     },
     {
@@ -859,11 +859,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/11823461.json",
       "mediaType": "application/json",
-      "sha256": "ada039cf6f0a632ea6fd7538e22737190a077332503930299ab0d4237cefbdab",
+      "sha256": "81593147dd346e3d9b279dc817b818408ab3eed48f6336b758f9d1e2052b8b98",
       "found": true
     },
     {
@@ -875,11 +875,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/14076705.json",
       "mediaType": "application/json",
-      "sha256": "8eeebea822c3566eb47331bbe64997d516b228299b40eebe328538df5077dac2",
+      "sha256": "423dd8a3dd86e7923b1e25770a1231288907d902a66a6866b006be2960abd3a2",
       "found": true
     },
     {
@@ -896,11 +896,11 @@
         "karel-havlicek",
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/16192656.json",
       "mediaType": "application/json",
-      "sha256": "05dd82e58f78b8864f44197632e0d435b2c3ae1d44ffa944727b59579ccbdaec",
+      "sha256": "fd339178bf3d3c0277ca2c6db5a7afdd5e846d16b7b85e9cd162b5bab3981318",
       "found": true
     },
     {
@@ -912,11 +912,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/17048826.json",
       "mediaType": "application/json",
-      "sha256": "1602b43e9b10b7f2fe5a966a6212e0aec45aecc780366b61c160e5880ba2c6a4",
+      "sha256": "266b1d889d61fe02c63f69d3a8b6365cde1aa168d8a8bbba70f0d2e1471ad87e",
       "found": true
     },
     {
@@ -929,11 +929,11 @@
         "macinka-turek",
         "petr-macinka"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/17353882.json",
       "mediaType": "application/json",
-      "sha256": "dd9569ba595d6c94213d67dc3d171fa19c2c0cec5d50091ebd27259d3c91eda1",
+      "sha256": "8a23232264688d8e1c4c2186d47a44c289b300277191286ccc94efc8c9b574f9",
       "found": true
     },
     {
@@ -946,11 +946,11 @@
         "macinka-turek",
         "richard-chlad"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/17573866.json",
       "mediaType": "application/json",
-      "sha256": "521ff953ed67862586be695808d138735a7cc5b993909ccb131dd15ffe0bc5f1",
+      "sha256": "94fab9757ab3e5332190beb559e3bc3f43d28dc9170564dd95e568f41f664b78",
       "found": true
     },
     {
@@ -962,11 +962,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/21030367.json",
       "mediaType": "application/json",
-      "sha256": "44d3d30cea849693d58e411492c59d5ed63fcfe421dbb4ce14dca52b96de2ea8",
+      "sha256": "5610964ac7ca54ec13da27eb8376443802962afd813b37a6c36e2c831acf1230",
       "found": true
     },
     {
@@ -978,11 +978,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/22419519.json",
       "mediaType": "application/json",
-      "sha256": "1a5a743c37b2d63c67e74f3ead94994a1e02832e656e259b400fe331824b63a5",
+      "sha256": "154f5f886101d61d46579b35ee559aa504965f6d4ba0245e0da41ffe0a0ff4bf",
       "found": true
     },
     {
@@ -994,11 +994,11 @@
       "dossiers": [
         "igor-cerveny"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/22461787.json",
       "mediaType": "application/json",
-      "sha256": "c518be45d882617f48ac895b44a427a87ed22215a09d10acbc2a6e661f7137db",
+      "sha256": "954ff9e16ade38bbf67970873d59a0c6cab717263ae15e7c37fb23d097c68a34",
       "found": true
     },
     {
@@ -1011,11 +1011,11 @@
         "macinka-turek",
         "richard-chlad"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/23177586.json",
       "mediaType": "application/json",
-      "sha256": "c6071b3e5ccf8cf9d3034d9fc21193415dc5b881ae2773efc8240212534614dc",
+      "sha256": "0b95eadaa623cdc65ff19bb0c8a3bbc3aacac5c461cce3b1a84bba6671d72948",
       "found": true
     },
     {
@@ -1027,11 +1027,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/24099333.json",
       "mediaType": "application/json",
-      "sha256": "fda0ed21d2eb22777b3c17823f7dc51c732b00f30ade2638465597be2af5b861",
+      "sha256": "3abed0a41c71dc8195a5b670a7fe271ea4e719abc6bea487b872c78454cbb700",
       "found": true
     },
     {
@@ -1043,11 +1043,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/24220345.json",
       "mediaType": "application/json",
-      "sha256": "5012b75ae18fb208c7742cfc481034858a5c9e485e77a0bab286da8400962a80",
+      "sha256": "fbbf4eda413e40ebfc656430de4b1ae6ba9877cb5a515772fd8c75f8a78978fe",
       "found": true
     },
     {
@@ -1059,11 +1059,11 @@
       "dossiers": [
         "robert-plaga"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/24706370.json",
       "mediaType": "application/json",
-      "sha256": "e870efae96bd6ca86112a49090793b1dfc4e7e3d5129108322571f51a1bf183c",
+      "sha256": "c09cd920e583493831fe701b9c6d4e5e3969b0958f6b394ce4486833af1de57e",
       "found": true
     },
     {
@@ -1075,11 +1075,11 @@
       "dossiers": [
         "tunde-bartha"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/24722197.json",
       "mediaType": "application/json",
-      "sha256": "404d335a587fa42879d82c0bfa947b9491b26544148c017a4d3afebd9e45b88f",
+      "sha256": "d36b3c223138651ffa85a77b289eccb0fc0cc0f4ca996e46d042ebd9794c3f48",
       "found": true
     },
     {
@@ -1091,11 +1091,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/25157507.json",
       "mediaType": "application/json",
-      "sha256": "b976ef1df57317f644070e47e39c78c97ff4b324f1f606054353998661678015",
+      "sha256": "4af034b8b71530115d7fc0d5767730c51cbf4808959f8fbf729562f95a771c6e",
       "found": true
     },
     {
@@ -1107,11 +1107,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/25396480.json",
       "mediaType": "application/json",
-      "sha256": "218cbecd720774580bbdfdc11dec8d5ec57ae4769d0ce8a990ab8048aa14ce6f",
+      "sha256": "4b50a9f75d901e6691b2886a6f33a0f33b5035aa5c9a23b0398af20a1b65c8b4",
       "found": true
     },
     {
@@ -1123,11 +1123,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/25542125.json",
       "mediaType": "application/json",
-      "sha256": "476424ba0c7e11f58b980419720f5036b3343c4e51c2c04d27eea74256706160",
+      "sha256": "8ba3a3ca2a9212fe716e8b7201b98553388880d9911df9b29e5c14397d78c069",
       "found": true
     },
     {
@@ -1140,11 +1140,11 @@
         "adam-vojtech",
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/26014343.json",
       "mediaType": "application/json",
-      "sha256": "b34afac785d64d755aa215713369df823057fc6d4c2832603c49d14276175ed2",
+      "sha256": "3e2f9f6b276beec0243d4c93c2b61e31ab49cf6b56469efd6bdab2eaf2e8097d",
       "found": true
     },
     {
@@ -1156,11 +1156,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/26102463.json",
       "mediaType": "application/json",
-      "sha256": "c198ecd6818c684e7341dfcbd2d94edc1e3cf4abd75e2a1f5eab3da2abcd5046",
+      "sha256": "e31bd20dc951033a89d8f935de25f8f54028e5f614642b860e7c4dfbd0082b07",
       "found": true
     },
     {
@@ -1173,11 +1173,11 @@
         "andrej-babis",
         "tunde-bartha"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/26124459.json",
       "mediaType": "application/json",
-      "sha256": "1e690ccd4a8945ffe01e514357ae39b5b7c3d18462a4f78e1221542284f3d14e",
+      "sha256": "b7467256384dcbd3937ae65f300a9d24c016f4746382d01734507943b76d0749",
       "found": true
     },
     {
@@ -1189,11 +1189,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/26168685.json",
       "mediaType": "application/json",
-      "sha256": "9d91984130f46dd304fc7929e869f5452f94cfcf6b950d133214ccea1e2f4d14",
+      "sha256": "cba332639b4d1ec3d25343d6e8b68480cf01119dc397b6719630bca578edbff8",
       "found": true
     },
     {
@@ -1208,11 +1208,11 @@
         "martin-sebestyan",
         "tunde-bartha"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/26185610.json",
       "mediaType": "application/json",
-      "sha256": "3bca23173f177a03e5750cd2368fa8451a7448131200c39f2fbebb996c4527c4",
+      "sha256": "14eb2b445ed57cf8897317678d45c276d508370163b390b7ad087c704227db4c",
       "found": true
     },
     {
@@ -1224,11 +1224,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/26228548.json",
       "mediaType": "application/json",
-      "sha256": "1c59df36cf2eb8fe226d619567d3c102f542896f85a92bdeb73896d6f56ddfe0",
+      "sha256": "fecab4d68367b639f2e2b4ea5aa748296a0c97f6660f47e592c9e437350a44db",
       "found": true
     },
     {
@@ -1240,11 +1240,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/26311208.json",
       "mediaType": "application/json",
-      "sha256": "930115a01671a51ab2c6efd4893d0409979e1f14a82bce16f81229761d9b3af3",
+      "sha256": "cc55fe4b608142f855972c4146e06cc5fbaba79093540dce3fbf2fe924687e2f",
       "found": true
     },
     {
@@ -1256,11 +1256,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/26417171.json",
       "mediaType": "application/json",
-      "sha256": "2f3b365051090918929b9eca13476b2a607292a5f5fdd6156f335d64deffc1d0",
+      "sha256": "944fad04db7fe86a8bbdf2c982af5f7492453f8fe6500bc949a62e2391bbdb74",
       "found": true
     },
     {
@@ -1273,11 +1273,11 @@
         "adam-vojtech",
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/26547783.json",
       "mediaType": "application/json",
-      "sha256": "bcb1896ac5f00a30ebff894417cbc03c1d83928071d2db0bf311a94da9c0180c",
+      "sha256": "4221cd367cfc7f27dca0182bc5227536848fc89119b30dd86e12392070170fc1",
       "found": true
     },
     {
@@ -1289,11 +1289,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/26557975.json",
       "mediaType": "application/json",
-      "sha256": "c0deb2ffb3424333c538e305cae6f66c001454da5021204be54b84a6d63998a3",
+      "sha256": "53b2d8de037d23f8d031c6b37906c4f0d9b3a69d201cc4d5430a7acf03fcff22",
       "found": true
     },
     {
@@ -1310,11 +1310,11 @@
         "karel-havlicek",
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/26673908.json",
       "mediaType": "application/json",
-      "sha256": "47c3a95b303da0673b0d309e57ba375127f586b572734484168d226683d44265",
+      "sha256": "967a62fda9e152bf1159df80e8190519b304d127c49be059e9f1bebfbdb3fd36",
       "found": true
     },
     {
@@ -1326,11 +1326,11 @@
       "dossiers": [
         "boris-stastny"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/27082440.json",
       "mediaType": "application/json",
-      "sha256": "f0dc75703e9400a0fd98760f8655300fc22e717e6a529b5e70fda309766873a8",
+      "sha256": "3f164de32f15445fa637a44c306847f583c690b11c746c2e4df93405f392bad2",
       "found": true
     },
     {
@@ -1342,11 +1342,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/27699293.json",
       "mediaType": "application/json",
-      "sha256": "3dfdd9210d66d3bae9c3a8343c2ae053ad9665110c93c675dc262ea8e88f591a",
+      "sha256": "1877ff5ea0b45e4d8b159a4d8a6dd581b5216c663f25be70e43e289e6bc928d0",
       "found": true
     },
     {
@@ -1358,11 +1358,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/28196678.json",
       "mediaType": "application/json",
-      "sha256": "3e268e4cd257c9716612785642a724436c01795466a14f236311c9eadce38d6e",
+      "sha256": "4ef7d7842f060a0477545e0c44e5de6d44e87dfb430dd0e0034eef2b0807dc76",
       "found": true
     },
     {
@@ -1376,11 +1376,11 @@
         "petr-macinka",
         "petr-vencalek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/28274318.json",
       "mediaType": "application/json",
-      "sha256": "26116d943a37b6b324e1d940b985b80899b487cd0f65de5b8c2e35335d75a6e3",
+      "sha256": "3fd1148f3c6b38e320643d34c251340125b1c499e69790f9acbfa66b0c84f3be",
       "found": true
     },
     {
@@ -1393,11 +1393,11 @@
         "andrej-babis",
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/41035895.json",
       "mediaType": "application/json",
-      "sha256": "352611711268968f4c460edb4a4a91d4ea304dee7fa613da1a2935c558ae5e32",
+      "sha256": "13da748d0df368e66bafcb581fa7d3d7fc0502bb739c76bbe17561a03e750cee",
       "found": true
     },
     {
@@ -1409,11 +1409,11 @@
       "dossiers": [
         "adam-vojtech"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/41197518.json",
       "mediaType": "application/json",
-      "sha256": "247fa1351b21b651fad756a586da80c5218379bce9754b083cc35a6dca68b8eb",
+      "sha256": "4203113321f8de7c4e9d8d52a32cd86a85178acc32e7c922d82e97f39b4cb805",
       "found": true
     },
     {
@@ -1425,11 +1425,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/42196451.json",
       "mediaType": "application/json",
-      "sha256": "03f5dd528d3b97e02afe6f218c688bf02c3518d66220f4aac464a16ed174b440",
+      "sha256": "594dba3144fb660a864559f8f65a4cbded60daf600567112c20599ebef3a9a1b",
       "found": true
     },
     {
@@ -1441,11 +1441,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/45245053.json",
       "mediaType": "application/json",
-      "sha256": "104145ef2cd0bec2c710f09096e282e7a4fc9a5da2031b3f13312dfe50483943",
+      "sha256": "8bb980806be3305670128455308f30cbf8556dcd9d239c3af278ac619e4504a8",
       "found": true
     },
     {
@@ -1457,11 +1457,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/45770743.json",
       "mediaType": "application/json",
-      "sha256": "56bd69aaa623be00f78e43486944b39ebc106bac2f549bbed73cc4c7e07c8515",
+      "sha256": "cd76dad0a0f72f3dd3230668e26ef4a9ea8ea8f460d94494f5fd33b0a125b263",
       "found": true
     },
     {
@@ -1473,11 +1473,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/46504940.json",
       "mediaType": "application/json",
-      "sha256": "bd9d1f1cd460eb7b5b110bec77b076fdb9e5a042caa45e9d055dce92328f9bde",
+      "sha256": "393ec57853e1068770edde29024ca3b42779629109bc74913c0fccb82c5ba856",
       "found": true
     },
     {
@@ -1489,11 +1489,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/46708707.json",
       "mediaType": "application/json",
-      "sha256": "904af40b001cf90b6d9e49b218401c39ca3f7d20e5d19837d33ba7690cc4f761",
+      "sha256": "d317ea85a829b4445b90e973496dab40fdf0acf11863d2d2333734be861a4610",
       "found": true
     },
     {
@@ -1505,11 +1505,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/46900411.json",
       "mediaType": "application/json",
-      "sha256": "448602f98b61a99be4827394d94067abe883628d3f1d92344fe40663f9d60217",
+      "sha256": "48b7fc2200e4433dad219df6da3fa62c49c166805c00619ab4ffa9497cff36a0",
       "found": true
     },
     {
@@ -1521,11 +1521,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/46967851.json",
       "mediaType": "application/json",
-      "sha256": "86625a573fe5000e79dcc9dfb0b2f6895dab3b97026a038eb3c5ce59c7e30931",
+      "sha256": "54e61e2dbc158a93dc7cb6c321d61442aa276f4f77ea27e6ceebeed33885f27c",
       "found": true
     },
     {
@@ -1537,11 +1537,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/47609109.json",
       "mediaType": "application/json",
-      "sha256": "db787cb84d4d04da4c5f749bef6ed20efc208c86511b3d3b58a8fc37ef4c0376",
+      "sha256": "27cbe00e960e26d876db53d0b7731591dcda010768c90998e19384d49eea727a",
       "found": true
     },
     {
@@ -1553,11 +1553,11 @@
       "dossiers": [
         "martin-sebestyan"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/48118753.json",
       "mediaType": "application/json",
-      "sha256": "b1e67da29ab02e7dd257fde1c6888867b95a996b605f920c4b10473b93131f67",
+      "sha256": "3fe123428abc199715e6807be2e6b07b7334d5442c3e10542021c52c7b9d52d2",
       "found": true
     },
     {
@@ -1570,11 +1570,11 @@
         "andrej-babis",
         "martin-sebestyan"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/48133981.json",
       "mediaType": "application/json",
-      "sha256": "1a0c0ec0cdec4cf9e2ab55b916ebfa4b6d4d1959eb7c2748219880c145f0b238",
+      "sha256": "4844effad07c7c42cbfef6b59fcc00d4d98029f301652c1482f35eabf3c39e29",
       "found": true
     },
     {
@@ -1587,11 +1587,11 @@
         "alena-schillerova",
         "jaromir-zuna"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/48136000.json",
       "mediaType": "application/json",
-      "sha256": "d75dfcdde710ac13eda6e10559ae74cd8f479317be89d52e168621a59e9677f9",
+      "sha256": "c495b0f9b06ba38119f174bde722555eb97e06921847fe1f43127d0196ba251d",
       "found": true
     },
     {
@@ -1604,11 +1604,11 @@
         "alena-schillerova",
         "lubomir-metnar"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/48136450.json",
       "mediaType": "application/json",
-      "sha256": "5523782c687a780b002c79df3e884e5c0280db5433ce5da1a563f07cf4276195",
+      "sha256": "ec8856478faf66f8cf5dfe544ca163eea957c1e2ec47d7cc68bf794f66aa1072",
       "found": true
     },
     {
@@ -1620,11 +1620,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/48169188.json",
       "mediaType": "application/json",
-      "sha256": "41e20fdd754f41507914859b029fa0e32e86d20c86a0ce8f635f5876a83753d4",
+      "sha256": "14163e9b047880912fee9580e63c604834aaf6c30850c47bc5b21b6dabe0c8c7",
       "found": true
     },
     {
@@ -1638,11 +1638,11 @@
         "jeronym-tejc",
         "tomio-okamura"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/48513687.json",
       "mediaType": "application/json",
-      "sha256": "aafa4c0f4e6f86e14cd40499b8bdb810167d6e48d27f6350c67fa06450218af8",
+      "sha256": "68df94dfb0e1b94af06b65f19d473319e5b8248d8980d5426d5966bb0182935e",
       "found": true
     },
     {
@@ -1654,11 +1654,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/49241494.json",
       "mediaType": "application/json",
-      "sha256": "736195df088316d8b003892aecf55a6856d0f63c3a8772e0df30fff6df3584dd",
+      "sha256": "2ad49260309f6678a0fb79f706d988ae08bb2a00f613dbb7850d6caf57b243d0",
       "found": true
     },
     {
@@ -1670,11 +1670,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/49282778.json",
       "mediaType": "application/json",
-      "sha256": "edcd7afef6a65695f14d0f48de7658ea5e8a8900e173087d1124caea966f103e",
+      "sha256": "8fd399917f866617af341cccfc097f7f5fcabee5276df915ac94b38d9b69860e",
       "found": true
     },
     {
@@ -1687,11 +1687,11 @@
         "ales-juchelka",
         "lubomir-metnar"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/49370227.json",
       "mediaType": "application/json",
-      "sha256": "50c8d104229ea7fd6e7e8ac8af45fac629d6ef715d882af95427611864aef402",
+      "sha256": "9ae634549d25b273be2d12b13f36969fb32097ec11200493a2aa1586956f8485",
       "found": true
     },
     {
@@ -1703,11 +1703,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/49455958.json",
       "mediaType": "application/json",
-      "sha256": "4c9ae3ab1ca06f3d6e78ab3f6811c03377588c3beccc8eda6502fd5ad71e10c6",
+      "sha256": "2688fe48e5bd0f955de649b849dab8be5ac7f44102308a902b50763f7379ee2e",
       "found": true
     },
     {
@@ -1720,11 +1720,11 @@
         "andrej-babis",
         "jeronym-tejc"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/49467352.json",
       "mediaType": "application/json",
-      "sha256": "e30d1ada007046c93ca1ff4622b8294c6a4520591d560fcf37363d4ac9fbce0e",
+      "sha256": "87e7209064d09f88f6cc9beb5aac0a4579162ca433060c5a575e00a019e9237c",
       "found": true
     },
     {
@@ -1736,11 +1736,11 @@
       "dossiers": [
         "martin-sebestyan"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/49625586.json",
       "mediaType": "application/json",
-      "sha256": "c6663f8efac2b9567bfba4eaa4fc0b958766fdd8deddcd4c95e82822d3566471",
+      "sha256": "4953d36f49ee59f1cac4fe0267a0c5088dd79f0483fdb4593a39b7d0b76d8d19",
       "found": true
     },
     {
@@ -1752,11 +1752,11 @@
       "dossiers": [
         "robert-plaga"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/60449101.json",
       "mediaType": "application/json",
-      "sha256": "48cb6616eb79eb3251734cb23e272cf8453502a00f4d3ad20f0194ef3d0e4572",
+      "sha256": "84badbe4ab6374a1f04d5f4bbd44a2421df8ab3426f264f099751523428816f4",
       "found": true
     },
     {
@@ -1768,11 +1768,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/60461446.json",
       "mediaType": "application/json",
-      "sha256": "6898a041419f248f9c601a8a143b9b659efd9f4d3489adb7bf0c948d9b1e159d",
+      "sha256": "8ae55fd46c9194f71bb3828486ced54efc979924b5a492b86a8b2d950e63e1d0",
       "found": true
     },
     {
@@ -1784,11 +1784,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/61384399.json",
       "mediaType": "application/json",
-      "sha256": "5ad8905100cadaebc301480a835e67a067c353cb4a3733b99f4a7f5b77e3df66",
+      "sha256": "e36198106fcf78befcc8424fe79b8659120445f4c58e24ca3f909a0199007b61",
       "found": true
     },
     {
@@ -1800,11 +1800,11 @@
       "dossiers": [
         "robert-plaga"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/61388246.json",
       "mediaType": "application/json",
-      "sha256": "fd4aa34a8f61ed92a0900c3a0e9ebd652650926e5b9575a6aed594db231be2c4",
+      "sha256": "e464c981effd39543453625dba7c1e60c700318fe4cd31e7bad350414861cbee",
       "found": true
     },
     {
@@ -1816,11 +1816,11 @@
       "dossiers": [
         "igor-cerveny"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/61505463.json",
       "mediaType": "application/json",
-      "sha256": "747b8f8e597284d9f760f9dd4b3f5ab9ba91a0224ea369cbde849b5852d9bfc8",
+      "sha256": "c0aed6801861117e5ff2164d8c2f6bc2416173a1534e5a8a1572f3edf3771c39",
       "found": true
     },
     {
@@ -1832,11 +1832,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/61858374.json",
       "mediaType": "application/json",
-      "sha256": "c4fd038bea0ae54ae271aba85a8712e25998acbbf4353a017ad28b34e9913860",
+      "sha256": "e4f5e6a690ede5df78d959537d5a654ea864d521c647079384f0dc3936d39cf7",
       "found": true
     },
     {
@@ -1848,11 +1848,11 @@
       "dossiers": [
         "martin-sebestyan"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/62301659.json",
       "mediaType": "application/json",
-      "sha256": "2c0565b5ddb2ced61355483ada2603e0aebec97e6e1f348349a00efce16bcb23",
+      "sha256": "a854b1ca3bfc0bd2ec2e0df826763e39e659c8970f85adf00e868bb6e055f46e",
       "found": true
     },
     {
@@ -1864,11 +1864,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/63489911.json",
       "mediaType": "application/json",
-      "sha256": "c0445087a3e35258915d341d12516c5fa430a1969be82702f47531c2057071d0",
+      "sha256": "7b87ee219e399682d5c66995cf4c44035a006e1a215ded2ba29df87003269309",
       "found": true
     },
     {
@@ -1880,11 +1880,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/63832721.json",
       "mediaType": "application/json",
-      "sha256": "9c0b25403523e20274a5cef19b26b644a652b5407a78175c4f660e934e949e08",
+      "sha256": "5c7b916ff331c12bbc256dd6bb45efce8c3a86020f55070fecfc50dd8b422525",
       "found": true
     },
     {
@@ -1896,11 +1896,11 @@
       "dossiers": [
         "tomio-okamura"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/63833239.json",
       "mediaType": "application/json",
-      "sha256": "ac268474c8cf0457fb90b1edcb0bba27666f5415fd005b184cd0499cd044c958",
+      "sha256": "7bb670c931af40c4a8d8081b25fddefa7bb312747dfadc1b5d7b526bb19b29a2",
       "found": true
     },
     {
@@ -1913,11 +1913,11 @@
         "adam-vojtech",
         "jeronym-tejc"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/64124584.json",
       "mediaType": "application/json",
-      "sha256": "f33456b1de766be6b24c53c5d2b91bf26d48e99b60aa8e604239a79c0e9e8a0d",
+      "sha256": "adb3e98fbed4171e48732b53a14701acb5c6d306712c9673b54edc0eb83d27ab",
       "found": true
     },
     {
@@ -1929,11 +1929,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/67981801.json",
       "mediaType": "application/json",
-      "sha256": "34741b012c24b8e3fffb32427e86a02cc7c827ec5a379c265cecbc6c88f03a4f",
+      "sha256": "0c3d62ef8e1bf94fd024cec98b4ac4ff89e977c5c57a0d0e7e870a3117697f6f",
       "found": true
     },
     {
@@ -1945,11 +1945,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/68407700.json",
       "mediaType": "application/json",
-      "sha256": "092c0f3b1743ef019a53be26cb44033ccb6d3770c86fa446179ce1aec326c440",
+      "sha256": "0ffca14d1495e009b8d47112f52b662dc4b9a52a7dca7870fb15e8e78a0f1a51",
       "found": true
     },
     {
@@ -1961,11 +1961,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/70856508.json",
       "mediaType": "application/json",
-      "sha256": "055b8a17b70bd83987073831e93dc60bc3c7e7227d681f6a2e13fe2f5483854b",
+      "sha256": "a41156ecbd1268666caba2c7894e4cd3cba0f99567a254291e615137b8861334",
       "found": true
     },
     {
@@ -1977,11 +1977,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/70888337.json",
       "mediaType": "application/json",
-      "sha256": "5911661ff7a0ae888e0075ef16f990fbf34f6bfe8850b1e4e6bb5d6e1210bc4d",
+      "sha256": "02d16d947260279ab34840cc93d3ace6afcc836a4d0647b9e3473843eb54d43f",
       "found": true
     },
     {
@@ -1993,11 +1993,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/70890005.json",
       "mediaType": "application/json",
-      "sha256": "04d81dcbf6f7766225a3797c8d0f394956b89ba6a93e70ebeb5832de305909c9",
+      "sha256": "545a6c792be48b80ebc7e7bf7a3d0742a314d574ed74879b4207f53a2133d8b7",
       "found": true
     },
     {
@@ -2009,11 +2009,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/70890021.json",
       "mediaType": "application/json",
-      "sha256": "3dcec33b709d82382ca3498c786d89d1812bd64399e88469ef0777b03defacdd",
+      "sha256": "7236a0abc8bc4659c5413221a1567fda9b13264009f8ee7e4d4be3a152e2e6c6",
       "found": true
     },
     {
@@ -2025,11 +2025,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/70890692.json",
       "mediaType": "application/json",
-      "sha256": "af563207ebacc44109d8aa54e508ab77b22a2c515b8d1752686f436c0b7ec666",
+      "sha256": "eded7ef6da8f6c897377922b5b7314c7f95928550511374d607bf5e519a6dfb9",
       "found": true
     },
     {
@@ -2041,11 +2041,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/70891095.json",
       "mediaType": "application/json",
-      "sha256": "1b484f0577b296cc5fb44ffc285b4fa1c72715d4a41d2b8585ce59ecf0514a9c",
+      "sha256": "b3d60b8863e81df2928eba37c4b3ed83172ac15fc7fb271efdbbe793bd116473",
       "found": true
     },
     {
@@ -2057,11 +2057,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/70994226.json",
       "mediaType": "application/json",
-      "sha256": "64028dea62cf26b79fd6528b3218a21bb5c05a3bd55d6aea5fdc9648d4638740",
+      "sha256": "86b728e6080bddc0d09bf56d22a75be9f516d055438b0ada8b50ff43a768896e",
       "found": true
     },
     {
@@ -2073,11 +2073,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/70994234.json",
       "mediaType": "application/json",
-      "sha256": "238f259a92610a4690c6d662b7f0ac449bcc06bf60c1d29ea85322b56f4bbf72",
+      "sha256": "54347ba899a416980067d391daeec94833b029ba985fb0137e6ea37bb6b55ef6",
       "found": true
     },
     {
@@ -2094,11 +2094,11 @@
         "tomio-okamura",
         "zuzana-mrazova"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/71339698.json",
       "mediaType": "application/json",
-      "sha256": "a7b3e770bd25fc905d23a6da20a9dec4968eee17a40beec9dcbb2d0f9df255b4",
+      "sha256": "340707e1ce651fe77497f0ebfab4e6785298c425b235bd92b6b67dd5509018ee",
       "found": true
     },
     {
@@ -2113,11 +2113,11 @@
         "jaromir-zuna",
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/71339728.json",
       "mediaType": "application/json",
-      "sha256": "d0f24b18392c5aa45cdc80965ec750c5a71b4c99132ae0a471a16f29e396a3b5",
+      "sha256": "dd8ca4345db5c49d884cb092986fa6b41c874f4fd9aa4bd196c080aff2af909e",
       "found": true
     },
     {
@@ -2139,11 +2139,11 @@
         "tunde-bartha",
         "zuzana-mrazova"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/71443339.json",
       "mediaType": "application/json",
-      "sha256": "1d08ee32e08ded1635279570d6daca459310299adff1a7e9c30f09f639a3b133",
+      "sha256": "c49c90f4462efb534199dcc64714fe65e1c16e4f927c4d7a368c1fe13645681f",
       "found": true
     },
     {
@@ -2155,11 +2155,11 @@
       "dossiers": [
         "alena-schillerova"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/72080043.json",
       "mediaType": "application/json",
-      "sha256": "8e951c374237205e57423d4a0d795866a5ebf350b067b9c28cf6de9003a6523f",
+      "sha256": "6410cb3e6330370aa34e486df8df7d1568d17a3d9a3e13b67267c6abe66651b3",
       "found": true
     },
     {
@@ -2171,11 +2171,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/75003716.json",
       "mediaType": "application/json",
-      "sha256": "5c83d5df7a0a5574c998498e05328fc21fdde5f1e0869b6a1993b47ff6eec488",
+      "sha256": "17021f3a4951b3f4ab1e11aec9df7a64eb16c8cec12bfedbf644d30df6e7b0b2",
       "found": true
     },
     {
@@ -2187,11 +2187,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-08",
+      "retrieved": "2026-08-09",
       "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
       "file": "/documents/registry/ares/75032333.json",
       "mediaType": "application/json",
-      "sha256": "63fd2ea66425a5c810bde82c35c074d5db5a7f5a236610d4b7c24491abf5033e",
+      "sha256": "4b376e6eefb5c23503d2976314aab6cd9cbb1f2a3b98bcbe7648c5f110a0064d",
       "found": true
     }
   ],
