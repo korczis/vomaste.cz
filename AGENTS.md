@@ -5159,3 +5159,74 @@ otevřeno). Povinné rámování při každé zmínce: odvolání starostky je
 politický krok zastupitelstva, nikoli závěr o pochybení; kritika hospodaření
 města je atribuovaná kritika tehdejší opozice. Rozšíření rozsahu vyžaduje
 samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Bert Bartas
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Bert Bartas je veřejný
+funkcionář — zastupitel města Znojma (Znojmáci). Autorizace navazuje na
+výslovnou žádost vlastníka v této konverzaci pokrýt celé znojemské
+zastupitelstvo a navázané kauzy.
+
+Rozsah: aktuální mandát dle oficiálního webu města (znojmocity.cz, přímo
+otevřeno); jeho postoj při změně vedení radnice 5. 8. 2024 dle ČT24/ČTK
+(přidal se k odvolání, nepodpořil volbu nového vedení, nepodepsal koaliční
+smlouvu); a skutečnost, že podle tvrzení hnutí ANO z července 2024 měl
+dostat „v podstatě korupční nabídky", k čemuž se dle ČT24 odmítl vyjádřit.
+Povinné rámování: tvrzení o nabídkách je výhradně atribuované tvrzení
+jedné strany sporu, nikdo nebyl obviněn, Bartas není z ničeho podezřelý
+ani obviněný a z jeho mlčení se nic nevyvozuje (gate 4). Rozšíření rozsahu
+vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Jan Šťastník
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Šťastník je veřejný funkcionář — zastupitel města Znojma (dle oficiálního webu města Naše Znojmo) a člen rady města; podle ČT24/ČTK podpořil v srpnu 2024 jako nezařazený zastupitel (zvolený za ANO) vznik nové koalice a byl zvolen radním — vývoj příslušnosti je doložen dvěma zdroji s různými daty a uvádí se bez hodnocení.
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt
+celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu
+města (znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo otevřeno, změna
+vedení radnice 5. 8. 2024). Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-09: Pavel Jajtner
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Pavel Jajtner je veřejný funkcionář — zastupitel města Znojma (ODS + KDU-ČSL SPOLU, dle ČT24 nominován KDU-ČSL), 5. 8. 2024 zvolen členem rady města.
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt
+celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu
+města (znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo otevřeno, změna
+vedení radnice 5. 8. 2024). Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-09: Alena Paulenková
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Alena Paulenková je veřejná funkcionářka — zastupitelka města Znojma (PRO ZNOJMO), 5. 8. 2024 zvolena členkou rady města.
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt
+celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu
+města (znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo otevřeno, změna
+vedení radnice 5. 8. 2024). Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-09: Blanka Dufková
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Blanka Dufková je veřejná funkcionářka — zastupitelka města Znojma (Naše Znojmo), 5. 8. 2024 zvolena členkou rady města.
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt
+celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu
+města (znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo otevřeno, změna
+vedení radnice 5. 8. 2024). Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.

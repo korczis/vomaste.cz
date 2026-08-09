@@ -1511,3 +1511,38 @@ authorized_at = "2026-08-09"
 subjects = ["ivana-solarova"]
 agents_md_section = "Scope extension, 2026-08-09: Ivana Solařová"
 scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Ivana Solařová je veřejná funkcionářka — zastupitelka města Znojma (ANO 2011), starostka města od komunálních voleb 2022 do 5. 8. 2024, kdy ji zastupitelstvo odvolalo. Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.  Rozsah: aktuální mandát dle oficiálního webu města (znojmocity.cz, přímo otevřeno); okolnosti jejího odvolání 5. 8. 2024 dle ČT24/ČTK (přímo otevřeno). Povinné rámování při každé zmínce: odvolání starostky je politický krok zastupitelstva, nikoli závěr o pochybení; kritika hospodaření města je atribuovaná kritika tehdejší opozice. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-09-BERT-BARTAS"
+authorized_at = "2026-08-09"
+subjects = ["bert-bartas"]
+agents_md_section = "Scope extension, 2026-08-09: Bert Bartas"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Bert Bartas je veřejný funkcionář — zastupitel města Znojma (Znojmáci). Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.  Rozsah: aktuální mandát dle oficiálního webu města (znojmocity.cz, přímo otevřeno); jeho postoj při změně vedení radnice 5. 8. 2024 dle ČT24/ČTK (přidal se k odvolání, nepodpořil volbu nového vedení, nepodepsal koaliční smlouvu); a skutečnost, že podle tvrzení hnutí ANO z července 2024 měl dostat „v podstatě korupční nabídky\", k čemuž se dle ČT24 odmítl vyjádřit. Povinné rámování: tvrzení o nabídkách je výhradně atribuované tvrzení jedné strany sporu, nikdo nebyl obviněn, Bartas není z ničeho podezřelý ani obviněný a z jeho mlčení se nic nevyvozuje (gate 4). Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-09-JAN-STASTNIK"
+authorized_at = "2026-08-09"
+subjects = ["jan-stastnik"]
+agents_md_section = "Scope extension, 2026-08-09: Jan Šťastník"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Šťastník je veřejný funkcionář — zastupitel města Znojma (dle oficiálního webu města Naše Znojmo) a člen rady města; podle ČT24/ČTK podpořil v srpnu 2024 jako nezařazený zastupitel (zvolený za ANO) vznik nové koalice a byl zvolen radním — vývoj příslušnosti je doložen dvěma zdroji s různými daty a uvádí se bez hodnocení. Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.  Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu města (znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo otevřeno, změna vedení radnice 5. 8. 2024). Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-09-PAVEL-JAJTNER"
+authorized_at = "2026-08-09"
+subjects = ["pavel-jajtner"]
+agents_md_section = "Scope extension, 2026-08-09: Pavel Jajtner"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Pavel Jajtner je veřejný funkcionář — zastupitel města Znojma (ODS + KDU-ČSL SPOLU, dle ČT24 nominován KDU-ČSL), 5. 8. 2024 zvolen členem rady města. Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.  Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu města (znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo otevřeno, změna vedení radnice 5. 8. 2024). Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-09-ALENA-PAULENKOVA"
+authorized_at = "2026-08-09"
+subjects = ["alena-paulenkova"]
+agents_md_section = "Scope extension, 2026-08-09: Alena Paulenková"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Alena Paulenková je veřejná funkcionářka — zastupitelka města Znojma (PRO ZNOJMO), 5. 8. 2024 zvolena členkou rady města. Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.  Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu města (znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo otevřeno, změna vedení radnice 5. 8. 2024). Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."
+
+[[authorizations]]
+id = "AUTH-2026-08-09-BLANKA-DUFKOVA"
+authorized_at = "2026-08-09"
+subjects = ["blanka-dufkova"]
+agents_md_section = "Scope extension, 2026-08-09: Blanka Dufková"
+scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Blanka Dufková je veřejná funkcionářka — zastupitelka města Znojma (Naše Znojmo), 5. 8. 2024 zvolena členkou rady města. Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.  Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu města (znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo otevřeno, změna vedení radnice 5. 8. 2024). Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci."

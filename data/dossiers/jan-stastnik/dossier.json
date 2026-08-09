@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jan-stastnik",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "jan-stastnik",
+  "slug": "jan-stastnik",
+  "title": "Jan Šťastník",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Jan Šťastník.",
+  "dossierType": "entity",
+  "canonicalDossier": "jan-stastnik",
+  "subject": "jan-stastnik",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-09",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-09-JAN-STASTNIK"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "jan-stastnik",
+        "label": "Jan Šťastník",
+        "subject": true,
+        "claims": [
+          "CLM-01",
+          "CLM-02"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nJan Šťastník je zastupitel města Znojma a člen rady města. Jako veřejný funkcionář spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-09-JAN-STASTNIK`, navazující na výslovnou žádost vlastníka pokrýt celé\nznojemské zastupitelstvo a navázané kauzy.\n\nDossier dokládá aktuální mandát a funkci podle oficiálního webu města\nZnojma a přímo otevřeného zpravodajství ČT24 (ČTK). Rozšíření rozsahu\nvyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/jan-stastnik/claims/clm-01.md) | Jan Šťastník je zastupitelem města Znojma; oficiální web města jej řadí k uskupení Naše Znojmo | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/jan-stastnik/sources/src-01.md) |\n| <a id=\"clm-02\"></a>[CLM-02](@/dossiers/jan-stastnik/claims/clm-02.md) | Jan Šťastník podle ČT24 (ČTK) podpořil 5. 8. 2024 jako nezařazený zastupitel (zvolený za ANO) vznik nové koalice a byl zvolen členem rady města | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-02](@/dossiers/jan-stastnik/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat.\n\nVývoj klubové příslušnosti (zvolen za ANO → v srpnu 2024 nezařazený → dle aktuálního webu města Naše Znojmo) je doložen dvěma zdroji s různými daty pořízení a uvádí se bez jakéhokoli hodnocení."
+    }
+  ]
+}

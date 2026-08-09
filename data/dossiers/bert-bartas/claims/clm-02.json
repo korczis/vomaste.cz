@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/bert-bartas/claims/CLM-02",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/bert-bartas"
+  },
+  "text": "Bert Bartas se podle ČT24 (ČTK) 5. 8. 2024 přidal k odvolání starostky a místostarostů, ale nepodpořil volbu nového starosty a místostarostů a nepodepsal koaliční smlouvu nové koalice",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/bert-bartas/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "bert-bartas"
+  ],
+  "order": 2,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/bert-bartas/_index.md)."
+    }
+  ]
+}
