@@ -5350,3 +5350,63 @@ v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
 Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
 (znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
 budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Ladislav Ondrovčák
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Ladislav Ondrovčák je veřejný funkcionář —
+zastupitel města Znojma (Naše Znojmo). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Stanislav Plichta
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Stanislav Plichta je veřejný funkcionář —
+zastupitel města Znojma (nezařazený). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Karel Podzimek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Karel Podzimek je veřejný funkcionář —
+zastupitel města Znojma (ODS + KDU-ČSL SPOLU). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: František Pokorný
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): František Pokorný je veřejný funkcionář —
+zastupitel města Znojma (ANO 2011). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Marcela Přibylová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Marcela Přibylová je veřejná funkcionářka —
+zastupitelka města Znojma (Naše Znojmo). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
