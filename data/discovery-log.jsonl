@@ -1050,3 +1050,6 @@
 {"logged_at":"2026-08-09","record_id":"oldrich-stanek","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["oldrich-stanek"]},"action":"created"}
 {"logged_at":"2026-08-09","record_id":"petra-svedikova-vavrova","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["petra-svedikova-vavrova"]},"action":"created"}
 {"logged_at":"2026-08-09","record_id":"ruzena-salomonova","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["ruzena-salomonova"]},"action":"created"}
+{"logged_at":"2026-08-09","record_id":"jan-grois","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
+{"logged_at":"2026-08-09","record_id":"kvetoslav-svoboda","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":[]},"action":"created"}
+{"logged_at":"2026-08-09","record_id":"ondrej-zelinka","record_type":"entity","discovered_from":{"claims":[],"sources":[],"dossiers":["ondrej-zelinka"]},"action":"created"}

@@ -5470,3 +5470,17 @@ v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
 Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
 (znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
 budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Ondřej Zelinka
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Ondřej Zelinka je veřejný
+funkcionář — zastupitel města Znojma (SPD). Autorizace navazuje na výslovnou
+žádost vlastníka v této konverzaci pokrýt celé znojemské zastupitelstvo a
+navázané kauzy; tímto záznamem je pokryto všech 31 členů aktuálního
+zastupitelstva.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
