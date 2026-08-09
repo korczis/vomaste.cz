@@ -197,7 +197,7 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 987 záznamů v 142 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 989 záznamů v 143 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
@@ -211,7 +211,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 987 záznamů v 142 rodinách/out
 | Echo24 | 19 | 15 | [ano](/zdroje/echo24/) |
 | denik-n | 18 | 10 | [ano](/zdroje/denik-n/) |
 | Novinky.cz | 13 | 12 | [ano](/zdroje/novinky-cz/) |
-| denik-cz | 11 | 6 | [ano](/zdroje/denik-cz/) |
+| denik-cz | 12 | 7 | [ano](/zdroje/denik-cz/) |
 | Česká justice | 11 | 6 | [ano](/zdroje/ceska-justice/) |
 | Ekonomický deník | 10 | 6 | [ano](/zdroje/ekonomicky-denik/) |
 | irozhlas | 9 | 6 | [ano](/zdroje/irozhlas/) |
@@ -340,6 +340,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 987 záznamů v 142 rodinách/out
 | Zdravotnický deník | 1 | 1 | — |
 | Život v Česku | 1 | 1 | — |
 | Zprávy Tiscali (zpravy.tiscali.cz) | 1 | 1 | — |
+| patria | 1 | 1 | — |
 | respekt | 1 | 1 | — |
 | usoud | 1 | 1 | — |
 | vlm | 1 | 1 | — |
