@@ -124,6 +124,37 @@ if (pinned) {
     console.log(`  Wikidata: ${identity.id} — ${identity.label}${identity.description ? ` (${identity.description})` : ""}`);
 
     /*
+     * A rejection is a decision and has to be written down.
+     *
+     * `martin-pavlik` is pinned by a business-register profile; Wikidata's
+     * "Martin Pavlík" is a physician of the same name, whose photograph that
+     * subject's authorization explicitly forbids. The first time it was caught
+     * by eye and deleted — and the next batch downloaded it right back, because
+     * nothing in the data remembered why. Recorded rejections are checked here,
+     * so the same wrong person cannot return on the third run either.
+     */
+    const rejected = String(record.externalIds?.wikidataRejected ?? "")
+      .split(",")
+      .map((s) => s.trim())
+      .filter(Boolean);
+    if (rejected.includes(identity.id)) {
+      console.log(
+        `${entityId}: ${identity.id} je zaznamenaný jako CIZÍ osoba téhož jména — nestahuji. ` +
+          `(externalIds.wikidataRejected)`,
+      );
+      process.exit(1);
+    }
+    if (has("reject")) {
+      record.externalIds = {
+        ...(record.externalIds ?? {}),
+        wikidataRejected: [...rejected, identity.id].join(","),
+      };
+      writeFileSync(entityFile, `${JSON.stringify(record, null, 2)}\n`);
+      console.log(`  zapsáno: ${identity.id} je pro ${entityId} cizí osoba (nestáhne se ani příště)`);
+      process.exit(0);
+    }
+
+    /*
      * A logo run must land on an organisation, and an abbreviation is a trap:
      * "PRO" resolves to protein, and the run cheerfully downloaded a mosaic of
      * a biopolymer as a party logo. The ambiguity warning alone was not enough
