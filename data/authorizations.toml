@@ -1476,3 +1476,10 @@ authorized_at = "2026-08-09"
 subjects = ["jiri-pospisil"]
 agents_md_section = "Scope extension, 2026-08-09: Jiří Pospíšil — ministerské období (odvolání 2012)"
 scope_summary = "Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): rozšíření na jedno téma — odvolání z funkce ministra spravedlnosti 27. 6. 2012 (Klaus na návrh Nečase; oficiální důvody rozpočtové, Pospíšilova reakce, dobově reportovaný kontext návrhu na jmenování Bradáčové a spor o státní zastupitelství dle Schwarzenberga). Deník.cz + Patria.cz (reporting, oba přímo otevřeny), e15.cz jen jako NÁZOR. Oficiální důvody i alternativní výklady jako citované pozice; žádné protiprávní jednání se netvrdí; Bradáčová/Zeman/Rampula jen záznam vazby."
+
+[[authorizations]]
+id = "AUTH-2026-08-10-RECURSIVE-SCOPE"
+authorized_at = "2026-08-10"
+subjects = ["*"]
+agents_md_section = "Governance and scope supersession, 2026-08-10: rekurzivní rozšiřování jakéhokoli dossieru do šířky i do hloubky"
+scope_summary = "Sdílený standing-scope autorizační záznam (wildcard subjects = [\"*\"]). Povoluje rekurzivní a průběžné rozšiřování jakéhokoli dossieru do šířky (nové subjekty z veřejně doložených vazeb, které samy projdou testem veřejného zájmu) i do hloubky (další témata) bez per-subjektového autorizačního kola. validate-authorization.mjs a scaffold-dossier.mjs ho přijímají pro jakýkoli standing-scope subjekt; strukturální kontroly hranice subjekt/kontext a všech devět publikačních bran platí beze změny. Soukromé osoby a jmenovci zůstávají kontextové entity. Backstop: dávkový lidský review diffu, žádná tichá publikace automatizací."

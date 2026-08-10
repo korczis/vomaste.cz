@@ -5106,3 +5106,57 @@ dokumentů, a všechna dřívější výslovně zamítavá rozhodnutí (mj. záz
 „Not authorized: Radovan Krejčíř" platí dál). Dřívější záznamy se
 neupravují ani neodstraňují — tento záznam mění jejich procesní
 důsledek, ne jejich text.
+
+### Governance and scope supersession, 2026-08-10: rekurzivní rozšiřování jakéhokoli dossieru do šířky i do hloubky
+
+Authorized by the site owner, explicitly and on the record, 2026-08-10:
+`AUTH-2026-08-10-RECURSIVE-SCOPE`.
+
+Vlastník rozhodl, že jakýkoli existující i budoucí dossier smí být
+rozšiřován rekurzivně a průběžně — do šířky (sledováním veřejně
+doložených vazeb z entitního grafu k novým subjektům) i do hloubky
+(přidáváním dalších témat) — bez samostatného per-subjektového nebo
+per-tématového autorizačního kola. Rozšiřuje mechanismus, který standing
+scope (AUTH-2026-08-05-PLATFORM-SCOPE) a zrušení „záměrně minimálních"
+omezení (2026-08-09) už zavedly, na plnou rekurzi: agent smí objevený
+uzel povýšit na samostatný dossier a z něj pokračovat na jeho vazby, a
+tak dál, dokud každý povýšený uzel sám splňuje test veřejného zájmu.
+
+Zastavovací podmínka rekurze je **test veřejného zájmu** (konstituce §7):
+subjektem se stává jen uzel, který jím projde sám o sobě. Soukromé osoby,
+jmenovci a třetí strany zůstávají **kontextovými entitami**
+(`publicationRole = "context"`, žádné tvrzení) přesně jako dosud; worked
+examples zůstávají závazné (záznam „Not authorized: Radovan Krejčíř",
+FIDUCIA / František Pavlík).
+
+Co se NEMĚNÍ, výslovně a bez výjimky: všech devět povinných publikačních
+bran, všechna redakční pravidla (procesní vs. věcný výsledek při každé
+zmínce, nejmenované třetí osoby, mezera místo spekulace), minimalizace
+dat (data narození a adresy bydliště se nikdy nepřebírají), pravidlo „no
+guilt by graph", doktrína archivace úředních dokumentů, deterministický
+veřejný build a všechna dřívější výslovně zamítavá rozhodnutí. Rekurze
+mění, KOHO lze zpracovat bez ceremonie, nikoli CO lze publikovat.
+
+Mechanická změna gate (na rozdíl od záznamu 2026-08-05, který zůstal jen
+politikou): zavádí se sdílený standing-scope autorizační záznam
+`AUTH-2026-08-10-RECURSIVE-SCOPE` s `subjects = ["*"]`.
+`scripts/dossier/validate-authorization.mjs` a
+`scripts/data/scaffold-dossier.mjs` ho přijímají jako platnou autorizaci
+pro jakýkoli standing-scope subjekt, takže nový dossier už nevyžaduje
+vlastní per-subjektový záznam v `data/authorizations.toml` ani vlastní
+datovaný záznam v tomto logu. Strukturální kontroly hranice
+subjekt/kontext (žádná kontextová entita nesmí být `publicationRole =
+"subject"` / `dossierEnabled` / `dossierStatus = "authorized"`, povinná
+`provenance.discoveredAt`) i pravidla S5/S6 platí beze změny — wildcard
+ruší jen povinnost per-subjektového záznamu, neruší strukturální pojistku
+proti tichému povýšení kontextové entity na subjekt.
+
+Backstop zůstává review model standing scope: automatizace smí objevovat,
+normalizovat, deduplikovat a připravovat kandidátní záznamy, ale nesmí
+tiše mergnout, commitnout, pushnout ani nasadit kanonická veřejná data —
+každé povýšení je přezkoumatelný diff, dávkový lidský review je povolen a
+je to jediné, co stojí mezi kandidátem a publikací.
+
+Dřívější záznamy se neupravují ani neodstraňují — tento záznam mění jejich
+procesní důsledek (odpadá per-subjektové kolo i mechanická per-dossier
+transkripce), ne jejich text.

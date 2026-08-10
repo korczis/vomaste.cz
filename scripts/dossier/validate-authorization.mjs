@@ -163,7 +163,15 @@ for (const w of dossierWrappers) {
   for (const rid of recordIds) {
     const authRecord = authorizations.get(rid);
     if (!authRecord) continue;
-    const overlap = authRecord.subjects.some((s) => subjectEntities.includes(s));
+    // "*" = standing-scope záznam (governance záznam 2026-08-10,
+    // AUTH-2026-08-10-RECURSIVE-SCOPE): pokrývá jakýkoli subjekt ve standing
+    // scope, takže overlap je z definice splněn. Strukturální
+    // anti-silent-promotion kontroly entity výše (publicationRole/dossierEnabled/
+    // dossierStatus/provenance) platí beze změny — wildcard NEobchází, kdo smí
+    // být subjekt, jen ruší povinnost per-subjektového autorizačního záznamu.
+    const overlap =
+      authRecord.subjects.includes("*") ||
+      authRecord.subjects.some((s) => subjectEntities.includes(s));
     if (!overlap) err(`[${slug}] cites authorization "${rid}" (subjects: ${authRecord.subjects.join(", ")}), which shares no subject with this dossier's own subject entities (${subjectEntities.join(", ")}).`);
   }
 }
