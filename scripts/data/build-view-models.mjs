@@ -609,6 +609,11 @@ export function buildViewModels(compiled, { governmentRoster = new Map() } = {})
     if (r.routeAliases) view.routeAliases = r.routeAliases;
     if (r.snapshotDate) view.snapshotDate = r.snapshotDate;
     if (r.description !== undefined) view.description = r.description;
+    // Licencovaná média (0..N: portrét, logo, fotky). Projekce beze změny
+    // včetně licenčních údajů — šablona je musí vypsat u každého zobrazení,
+    // protože u CC BY / BY-SA je uvedení autora a licence podmínkou užití,
+    // ne dekorace.
+    if (r.media !== undefined) view.media = r.media;
     // Provenience objevení (fáze H — kanonická, viz entity.schema.json);
     // government_* z data/government.toml (kanonický vlastník, injektuje
     // se jako governmentRoster mapou — view model je čistá projekce).
@@ -690,6 +695,49 @@ export function buildViewModels(compiled, { governmentRoster = new Map() } = {})
       if (gov) row.government = { office: gov.office, party: gov.party };
       return row;
     }),
+  });
+
+  /*
+   * --- media index ------------------------------------------------------
+   *
+   * Every published image with its author, licence and source, in one place.
+   * This is not a nicety: for the CC BY / BY-SA photographs the site uses,
+   * naming the author and the licence is a CONDITION of the licence. The
+   * per-image credit next to each picture satisfies it; this index makes the
+   * whole set auditable at once — and, like every other count here, it is
+   * COMPUTED from the canonical records, so it can never quietly disagree with
+   * what is actually published.
+   */
+  const mediaRows = [];
+  for (const w of compiled.entities) {
+    for (const item of w.record.media ?? []) {
+      mediaRows.push({
+        entityId: w.record.entityId,
+        entityTitle: w.record.title,
+        entityRoute: w.route,
+        file: item.file,
+        title: item.title ?? null,
+        subtitle: item.subtitle ?? null,
+        role: item.role ?? null,
+        author: item.author,
+        license: item.license,
+        licenseUrl: item.licenseUrl ?? null,
+        credit: item.credit ?? null,
+        sourceUrl: item.sourceUrl,
+        retrieved: item.retrieved,
+      });
+    }
+  }
+  mediaRows.sort((a, b) => cmp(a.entityTitle, b.entityTitle) || cmp(a.file, b.file));
+  const licenceCounts = new Map();
+  for (const row of mediaRows) licenceCounts.set(row.license, (licenceCounts.get(row.license) ?? 0) + 1);
+  views.set("media-index.json", {
+    route: "/dokumentace/licence-medii/",
+    count: mediaRows.length,
+    byLicense: [...licenceCounts.entries()]
+      .sort(([a], [b]) => cmp(a, b))
+      .map(([license, count]) => ({ license, count })),
+    rows: mediaRows,
   });
 
   // --- dossiers index + landing ----------------------------------------

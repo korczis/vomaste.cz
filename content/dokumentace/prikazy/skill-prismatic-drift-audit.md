@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "skill prismatic-drift-audit — Audit driftu Prismatic"
 template = "tooling-command.html"
-weight = 105
+weight = 107
 description = "Audit driftu Prismatic: Má porovnávat nainstalovaný commit Prismatic, dostupné schopnosti, schémata kontraktu a fixtures proti poslednímu přijatému integračnímu baseline. Claude skill, rešerše."
 
 [extra]

@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "skill prismatic-bootstrap — Příprava integrace s Prismatic"
 template = "tooling-command.html"
-weight = 104
+weight = 106
 description = "Příprava integrace s Prismatic: Zkontroluje oba repozitáře, vyřeší cestu k prismatic-platform, zaznamená commit SHA, ověří exportní kontrakt a řekne, jestli je bezpečné začít lokální integrační běh.. Claude skill, rešerše."
 
 [extra]

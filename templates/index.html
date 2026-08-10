@@ -408,6 +408,12 @@
         v registru entit a vypadalo by to jako chyba. -#}
     <p class="mx-auto mt-4 max-w-2xl text-center text-sm text-white/50">Entity se počítají po dossierech: jedna entita vystupující ve víc dossierech se počítá vícekrát. Unikátních entit vede <a href="{{ get_url(path='@/entities/_index.md') | safe }}" class="underline decoration-white/30 underline-offset-2 hover:text-white">registr</a> {{ ev.entities }}, propojených <a href="{{ get_url(path='@/map/_index.md') | safe }}" class="underline decoration-white/30 underline-offset-2 hover:text-white">mapou vztahů</a>. Celý dataset se dá stáhnout nebo dotázat v <a href="{{ get_url(path='@/data/_index.md') | safe }}" class="underline decoration-white/30 underline-offset-2 hover:text-white">datové konzoli</a>.</p>
 
+    {#- Dokumentace byla dosud dosažitelná jen ze sidebaru, takže na mobilu —
+        kde je sidebar zavřený — z titulní strany prakticky neexistovala.
+        Odkaz vede na rozcestník, ne na jednu vybranou stránku: co v
+        dokumentaci je, rozhoduje obsah, ne tenhle odstavec. -#}
+    <p class="mx-auto mt-3 max-w-2xl text-center text-sm text-white/50">Jak web pracuje se zdroji, daty a rozsahem pokrytí, popisuje <a href="{{ get_url(path='@/dokumentace/_index.md') | safe }}" class="underline decoration-white/30 underline-offset-2 hover:text-white">dokumentace</a> — včetně <a href="{{ get_url(path='@/dokumentace/konstituce.md') | safe }}" class="underline decoration-white/30 underline-offset-2 hover:text-white">konstituce projektu</a> a <a href="{{ get_url(path='@/dokumentace/licence.md') | safe }}" class="underline decoration-white/30 underline-offset-2 hover:text-white">licenčních pravidel</a>.</p>
+
     <h3 class="mt-14 text-center text-lg font-semibold text-white">Poslední aktualizace</h3>
     <p class="mx-auto mt-2 max-w-xl text-center text-sm text-white/50">Append-only historie: co bylo kdy skutečně ověřeno a změněno — napříč celým webem, řazeno podle data, nejnovější první.</p>
     {#- landing.recentUpdates je flatten přes VŠECHNY kanonické dossiery,

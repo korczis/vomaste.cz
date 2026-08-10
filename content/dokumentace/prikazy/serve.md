@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run serve — Zola server s automatickou nápravou"
 template = "tooling-command.html"
-weight = 101
+weight = 103
 description = "Zola server s automatickou nápravou: Spustí preflight; když chybí vygenerované vstupy, dožene je přes generate:all a teprve pak spustí `zola serve`.. npm skript, provoz."
 
 [extra]

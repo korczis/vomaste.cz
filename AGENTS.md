@@ -912,6 +912,46 @@ každého agenta:
    nikdy neinzeruje schopnosti (bezpečný intake, příspěvkové CLI,
    federace), dokud neexistují.
 
+## Média: fotografie a loga (závazné)
+
+Přijato 2026-08-06. Entita smí nést kanonické pole `media` — pole 0..N
+položek (portrét, logo, fotky), každá se souborem, zdrojem, licencí,
+autorem a datem stažení; volitelně `title`, `subtitle`, `href` a `role`.
+Pravidla, protože obrázek je publikace cizího díla, ne dekorace:
+
+1. **Jen svobodná licence.** Publikuje se výhradně to, co dovoluje licence
+   zdroje (CC0, public domain, CC BY, CC BY-SA, Attribution). Allowlist má
+   jednoho vlastníka — `scripts/media/lib/licences.mjs` — a importuje ho
+   stahovač i brána, aby se dvě kopie nemohly rozejít. „Fair use",
+   „non-free logo", `©` ani prázdná hodnota neprojdou.
+2. **Atribuce je podmínka, ne zdvořilost.** U CC BY / BY-SA je uvedení
+   autora a licence podmínkou užití. Proto existuje **jediná** cesta, jak
+   se na webu zobrazí obrázek — `ui::media_figure` — a ta vždy vypíše
+   autora, licenci s odkazem a odkaz na stránku zdroje. Holý `<img>` na
+   médium z `media` je porušení licence, ne jen odchylka od stylu.
+3. **Bajty patří do repozitáře.** Hotlink na cizí server znamená, že
+   náhled se rozbije, až tam někdo přeuspořádá CDN, a že se každý požadavek
+   čtenáře tiše posílá třetí straně. Soubory leží v
+   `static/images/{people,logos,media}/`.
+4. **Identita se ověřuje, ne hádá.** Subjekt se dohledává přes Wikidata
+   (jen `P31=Q5`, skóre podle „žije" + občanství + popisu) a použije se
+   jeho `P18`. Fulltextové hledání na Commons je jen výslovný fallback
+   (`--allow-search`) — vrátilo mimo jiné portrét Karla Havlíčka
+   Borovského na dossier ministra Havlíčka. Nalezený záznam se vždy vypíše,
+   aby šel zkontrolovat.
+5. **Žádný placeholder.** Když volná fotka neexistuje, entita zůstane bez
+   obrázku a OG karta zůstane typografická. Silueta ze stocku ani cizí
+   fotka „na doplnění" se nepoužijí.
+6. **Nic nepřipsaného v repu.** Soubor v mediálním adresáři, ke kterému se
+   nehlásí žádný záznam, shodí build.
+
+Vynucuje `npm run validate:media` (kontroly M1–M4, součást `npm run build`),
+`scripts/media/licences.test.mjs` a `lint:component-reuse`. Přehled všech
+publikovaných médií je generovaný z kanonických dat na
+`/dokumentace/licence-medii/` — nikdy se nevede ručně. Stahování:
+`npm run media:fetch -- <entity-id>`, vždy **jedna entita na běh**, protože
+každý obrázek je publikační rozhodnutí o konkrétním člověku.
+
 ## Flowbite doktrína (závazná, mandatory pro adoptery)
 
 Přijato 2026-07-30 na pokyn vlastníka. Každá stránka webu — tedy každý

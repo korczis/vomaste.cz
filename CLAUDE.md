@@ -230,6 +230,21 @@ entry; it does not replace reading and applying the rule.
   dokumentaci ani UI nesmí tvrdit bezpečnostní/příspěvkové schopnosti
   (bezpečný intake, anonymita, příspěvkové CLI), které nejsou skutečně
   implementované a vynucované.
+- **Obrázek je publikace cizího díla, ne dekorace.** Entity mohou nést
+  kanonické pole `media` (0..N položek). Publikovat se smí jen to, co
+  dovoluje **svobodná licence** zdroje, a u CC BY / BY-SA je uvedení autora
+  a licence **podmínkou užití** — proto existuje jediná cesta, jak se
+  obrázek na webu zobrazí (`ui::media_figure`), a ta vždy nese autora,
+  licenci a odkaz na zdroj. Bajty patří do repa (`static/images/…`), ne
+  hotlink. Identita subjektu se ověřuje přes Wikidata, ne fulltextem —
+  hledání „Karel Havlíček" na Commons vrátí portrét Havlíčka Borovského
+  a takový omyl by se publikoval jako fakt. Když volná fotka není, entita
+  zůstane bez obrázku; placeholder se nepoužije. Vynucuje
+  `npm run validate:media` (v `npm run build`); stahování
+  `npm run media:fetch -- <entity-id>`, vždy jedna entita na běh. Plné
+  znění pravidel: AGENTS.md, „Média: fotografie a loga"; datový kontrakt:
+  `docs/data-contract.md`; přehled publikovaných médií se generuje na
+  `/dokumentace/licence-medii/`.
 - **UI component reuse is a real, enforced gate** —
   `npm run lint:component-reuse` (part of `npm run build`, pre-commit,
   and CI) fails if a content template doesn't import and use

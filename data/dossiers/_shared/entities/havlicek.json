@@ -117,5 +117,19 @@
       "type": "markdown",
       "value": "Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v [hlavním přehledu](@/dossiers/karel-havlicek/_index.md#kdo)."
     }
+  ],
+  "media": [
+    {
+      "file": "images/people/havlicek.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Karel_Havl%C3%AD%C4%8Dek_akademicky-snem-duben-2026_03_(cropped).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "author": "Josef Landergott / Akademie věd ČR",
+      "credit": "Photo Bank o the Czech Academy of Sciences",
+      "retrieved": "2026-08-05",
+      "width": 1200,
+      "height": 1469,
+      "role": "portrait"
+    }
   ]
 }

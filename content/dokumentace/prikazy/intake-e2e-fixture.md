@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run intake:e2e-fixture — End-to-end běh všech golden fixtures"
 template = "tooling-command.html"
-weight = 40
+weight = 41
 description = "End-to-end běh všech golden fixtures: Protáhne každý golden fixture tests/fixtures/intake/e2e-*.json PLNOU pipeline — parsování, validace, normalizace, párování entit, klasifikace rizika, preflight URL, manifest, report — s pevnými hodinami a mock DNS adaptérem.. npm skript, kontrola výstupů."
 
 [extra]

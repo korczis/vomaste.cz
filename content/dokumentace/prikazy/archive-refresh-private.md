@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run archive:refresh-private — Úplný refresh soukromé Zone B"
 template = "tooling-command.html"
-weight = 71
+weight = 72
 description = "Úplný refresh soukromé Zone B: Na důvěryhodném stroji stáhne všechny listiny indexované v private raw Justice metadatech, atomicky dokončí soubory, přegeneruje globální checksum inventář a vyžádá úplné pokrytí.. npm skript, rešerše."
 
 [extra]

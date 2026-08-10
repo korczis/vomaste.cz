@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run test:intake:e2e — Testy end-to-end fixtures"
 template = "tooling-command.html"
-weight = 52
+weight = 53
 description = "Testy end-to-end fixtures: node:test nad scripts/intake/run-e2e-fixture.test.mjs: protáhne golden fixtures skutečnou pipeline a kontroluje očekávané výsledky, sémantiku editace a jednu skutečně dosažitelnou (mockovanou, jen lokální) šťastnou cestu.. npm skript, kontrola výstupů."
 
 [extra]

@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "skill prismatic-enrich-all — Hromadné obohacení přes Prismatic"
 template = "tooling-command.html"
-weight = 106
+weight = 108
 description = "Hromadné obohacení přes Prismatic: Postaví deterministický plán úloh napříč kanonickými entitami a dossiery, spustí jen použitelné schopnosti, naimportuje očištěné kandidáty do stagingu a vygeneruje report k posouzení. Claude skill, rešerše."
 
 [extra]

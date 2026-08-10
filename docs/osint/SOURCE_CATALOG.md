@@ -197,11 +197,11 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 989 záznamů v 143 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 989 záznamů v 141 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
-| ctk | 303 | 31 | [ano](/zdroje/ctk/) |
+| ctk | 305 | 31 | [ano](/zdroje/ctk/) |
 | Vláda České republiky (vlada.gov.cz) | 184 | 167 | [ano](/zdroje/vlada-cz/) |
 | Poslanecká sněmovna Parlamentu ČR | 61 | 42 | [ano](/zdroje/psp-cz/) |
 | seznam-zpravy | 40 | 14 | [ano](/zdroje/seznam-zpravy/) |
@@ -320,7 +320,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 989 záznamů v 143 rodinách/out
 | Peníze.cz | 1 | 1 | — |
 | Podpůrný a garanční rolnický a lesnický fond (PGRLF) | 1 | 1 | — |
 | Policie České republiky — Krajské ředitelství policie Olomouckého kraje | 1 | 1 | — |
-| Průmyslová automatizace | 1 | 1 | — |
 | RAILTARGET | 1 | 1 | — |
 | Refresher.cz | 1 | 1 | — |
 | Romea.cz | 1 | 1 | — |
@@ -330,7 +329,6 @@ Dopočítáno z `data/dossiers/**/sources/**`, 989 záznamů v 143 rodinách/out
 | Taneční aktuality | 1 | 1 | — |
 | TN.cz (TV Nova) | 1 | 1 | — |
 | Transport a logistika | 1 | 1 | — |
-| Transport Minutes | 1 | 1 | — |
 | Uměleckohistorická společnost (UHS) | 1 | 1 | — |
 | Úřad evropského veřejného žalobce (EPPO) | 1 | 1 | — |
 | Vrchní soud v Praze | 1 | 1 | — |

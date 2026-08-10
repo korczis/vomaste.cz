@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/gaps/GAP-12",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-12",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "title": "GAP-12 — Celý nález nahrávacího zařízení stojí na jedné původní redakci",
+  "description": "CLM-02, CLM-06, CLM-08 a CLM-09 citují dohromady pět zdrojů, ale všechny přebírají tutéž původní reportáž Seznam Zpráv. Nezávislé doložení by musela přinést redakce, která fakta zjistila sama, nebo dokument Úřadu vlády.",
+  "priority": "nízká",
+  "checked": "2026-08-10",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-09"
+    }
+  ],
+  "subjects": [
+    "stastny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Pět citovaných zdrojů — ČeskéNoviny.cz, CNN Prima News, Deník.cz,\nAktuálně.cz a Respekt — nese shodně rodinu `ctk`, takže jde o jedno\ndoložení, ne o pět.\n\n**Co bylo 2026-08-05 zkontrolováno a proč to nestačilo.** Jako druhý hlas\nse nabízel text FORUM 24 z 11. 7. 2026, který v celém dokumentu nemá ani\njednu zmínku ČTK a obsahuje přesně ty údaje, o které tady jde — doslovnou\ncitaci „Zařízení bylo nalezeno zaměstnanci, kteří prováděli běžný úklid.\nBylo vypnuté a nebylo nijak ukryté, jednalo se tedy zcela zjevně\no ztrátu“ i to, že přístroj několik týdnů nikdo neprověřoval. **Připojen\npřesto nebyl**, protože týž text sám uvádí svůj původ: „V pátek o tom\ninformoval server Seznam Zprávy“ a citovanou mluvčí kabinetu popisuje\nslovy „už dříve **serveru Seznam Zprávy** řekla“. Jde tedy o navazující\ntext nad cizím zjištěním, ne o vlastní reportáž.\n\nTo je podstatnější než rodina zdroje: nezávislost neurčuje, kdo článek\nvydal, ale kdo fakta zjistil. Agenturní převzetí i redakční navazující\ntext obojí vedou k téže původní redakci, a připojení druhého z nich by\nnezávislost jen předstíralo.\n\n**Mimo úvahu záměrně zůstal** text Reflexu k témuž tématu — vychází\nv sekci „Divoký kačer“, tedy ve výslovně fiktivní rubrice, kterou tento\nweb nesmí citovat jako fakt (viz autorizační záznam k Otovi Klempířovi,\nkde se táž past už jednou zachytila).\n\n**Jak se mezera uzavře.** Vlastním zjištěním jiné redakce, dokumentem\nÚřadu vlády k nálezu a jeho prověření, nebo odpovědí na žádost podle\nzákona o svobodném přístupu k informacím."
+    }
+  ],
+  "order": 12
+}

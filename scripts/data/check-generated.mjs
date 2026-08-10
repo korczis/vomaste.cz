@@ -78,6 +78,10 @@ export function checkGenerated({ root = REPO_ROOT, content = false } = {}) {
     expectedViews.add("entities-index.json");
     expectedViews.add("landing.json");
     expectedViews.add("map.json");
+    // Souhrn publikovaných médií pro /dokumentace/licence-medii/ — počítaný
+    // z `media` kanonických entit, proto patří mezi očekávané view modely
+    // i tehdy, když zatím žádná entita obrázek nemá.
+    expectedViews.add("media-index.json");
 
     for (const w of compiled.records) {
       if (w.registry === "updates") continue;

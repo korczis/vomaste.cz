@@ -519,6 +519,8 @@ zatímco tenhle výběr je ruční a záměrně neúplný.
 | `npm run validate:authorization` | každý obsah o reálné osobě odpovídá autorizačnímu záznamu |
 | `npm run verify:authorization-log` | append-only autorizační log v `AGENTS.md`: žádná existující sekce nesmí být upravena ani smazána, jen přidána nová |
 | `npm run validate:dossier-types` | invarianty entity/aggregate dossierů |
+| `npm run validate:media` | fotografie a loga: doložená **svobodná** licence, autor, odkaz na stránku zdroje, soubor v repu; nepřipsaný obrázek v repu shodí build (M1–M4) |
+| `npm run media:fetch -- <entity-id>` | stáhne portrét/logo jedné entity: identita přes Wikidata (`P31=Q5`, `P18`), licence se čte z metadat **před** stažením, soubor jde do `static/images/…` a licence do kanonického záznamu. Vždy jedna entita na běh. Přehled: `/dokumentace/licence-medii/` |
 | `npm run validate:navigation` | navigace odpovídá kanonickému datasetu a existujícím routám |
 | `npm run verify:anchors` | po buildu: každá kotva ze zdrojů existuje v HTML |
 | `npm run verify:jsonld` | po buildu: validita, pokrytí a poctivost JSON-LD (žádné truth ratingy, citační otisky se přepočítávají) |

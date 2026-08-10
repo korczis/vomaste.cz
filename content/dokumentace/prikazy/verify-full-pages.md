@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run verify:full-pages — Plnostránková doktrína"
 template = "tooling-command.html"
-weight = 64
+weight = 65
 description = "Plnostránková doktrína: Vynucuje, že každé tvrzení a každý zdroj je plnohodnotná stránka, ne stub — a že se vykresluje ze strukturovaných dat, ne z druhé ručně psané reprezentace. npm skript, kontrola výstupů."
 
 [extra]

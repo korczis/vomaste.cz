@@ -176,6 +176,29 @@ Tři místa, jinak je změna nedokončená:
 3. konzument (šablona / export) — pole bez uživatele se nepřidává
    (recenze); mrtvé pole odhalí i review view modelů.
 
+### Worked example: `media` na entitě (2026-08-06)
+
+Pole `media` prošlo přesně těmi třemi místy a je proto dobrou ukázkou:
+
+1. **schéma** — `schemas/canonical/entity.schema.json`, pole 0..N položek
+   s povinnými `file`, `sourceUrl`, `license`, `author`, `retrieved`
+   a volitelnými `title`, `subtitle`, `href`, `role`, `licenseUrl`,
+   `credit`, `width`, `height`; **plus term v contextu v1** — `media` je
+   mapované na `schema:image` se scoped kontextem (ImageObject-like),
+   ne na neprůhledný `@json` blob, aby exporty zůstaly strojově čitelné;
+2. **view model** — `build-view-models.mjs` promítá `media` beze změny do
+   entity view a navíc počítá `media-index.json` (souhrn napříč entitami)
+   pro stránku atribucí;
+3. **konzumenti** — `templates/entity.html` přes `ui::media_figure`
+   a `ui::media_gallery`, `templates/media-licences.html`
+   (`/dokumentace/licence-medii/`) a OG karty
+   (`scripts/og/build-og-images.mjs`, portrét se inlinuje z repa).
+
+Navíc má **vlastní validátor** `scripts/dossier/validate-media.mjs`
+(M1–M4), protože tvarová kontrola schématem tu nestačí: schéma ověří, že
+`license` je string, ne že ta licence dovoluje publikaci. Viz AGENTS.md,
+sekce „Média: fotografie a loga".
+
 ## Dělba práce validátorů (jedno pravidlo, jeden vlastník)
 
 | Vrstva | Vlastník | Příklady |

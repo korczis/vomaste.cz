@@ -27,8 +27,9 @@
   "content": [
     {
       "type": "markdown",
-      "value": "**Český ministr dopravy naléhá na EU, aby přijala opatření v oblasti železniční nákladní dopravy**\n\nBednárik vyzývá k celoevropské koordinaci kvůli životaschopnosti nákladní železnice. Označuje cenu trakční elektřiny za nejkritičtější problém, upozorňuje na nerovné vymáhání pravidel (přísné hmotnostní limity na železnici vs. přetížené kamiony) a na to, že takřka žádný velký evropský nákladní železniční dopravce nehospodaří se ziskem, ačkoli EU cílí na přesun 30 % zboží nad 300 km ze silnice na železnici do roku 2030.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+      "value": "**Český ministr dopravy naléhá na EU, aby přijala opatření v oblasti železniční nákladní dopravy**\n\nBednárik vyzývá k celoevropské koordinaci kvůli životaschopnosti nákladní železnice. Označuje cenu trakční elektřiny za nejkritičtější problém, upozorňuje na nerovné vymáhání pravidel (přísné hmotnostní limity na železnici vs. přetížené kamiony) a na to, že takřka žádný velký evropský nákladní železniční dopravce nehospodaří se ziskem, ačkoli EU cílí na přesun 30 % zboží nad 300 km ze silnice na železnici do roku 2030.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji.\n\n**Doplnění rodiny 2026-08-10.** Automatický detektor skončil verdiktem\n„nezjištěno\" — stránka nemá podpisový blok ani agenturní značku ve\nstrojových metadatech. Ruční čtení ale původ určuje jednoznačně: článek\ndvakrát uvádí, že ministr své teze sdělil **„v rozhovoru pro ČTK\"**.\nObsah tedy pochází z agenturního rozhovoru, ne z vlastního zjištění\nredakce.\n\nNa stavu [CLM-35](@/dossiers/ivan-bednarik/claims/clm-35.md) to nic\nnemění: druhým zdrojem je vlastní text Seznam Zpráv, dvojice zůstává\nnezávislá. Rodina se doplňuje kvůli přesnosti modelu."
     }
   ],
-  "order": 18
+  "order": 18,
+  "sourceFamily": "ctk"
 }

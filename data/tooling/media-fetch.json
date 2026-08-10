@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/media-fetch",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "media-fetch",
+  "kind": "npm",
+  "name": "media:fetch",
+  "title": "Stažení licencovaného portrétu nebo loga",
+  "category": "reserse",
+  "summary": "Stáhne pro jednu entitu volně licencovaný obrázek, uloží bajty do repozitáře a licenci, autora i zdroj zapíše do kanonického záznamu.",
+  "enforces": [
+    "Licence se čte ze strojových metadat zdroje PŘED stažením; soubor s nesvobodnou licencí se nestahuje vůbec.",
+    "Identita subjektu se rozhoduje přes Wikidata (jen lidé, P31=Q5, obrázek z P18), ne fulltextem — hledání „Karel Havlíček“ na Commons vrací portrét Havlíčka Borovského.",
+    "Bajty jdou do repozitáře, ne hotlink: cizí CDN se přeuspořádá a náhled se tiše rozbije.",
+    "Když volný obrázek neexistuje, entita zůstane bez obrázku — žádný placeholder."
+  ],
+  "whenToRun": "Ručně, při zakládání nebo doplňování entity. Vždy jedna entita na běh.",
+  "inputs": [
+    "data/dossiers/_shared/entities/<entity-id>.json",
+    "https://www.wikidata.org/w/api.php",
+    "https://commons.wikimedia.org/w/api.php"
+  ],
+  "sourceFile": "scripts/media/fetch-media.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Jedna entita na běh je záměr, ne omezení: každý obrázek je publikační rozhodnutí o konkrétním člověku a smyčka přes pět set entit je přesně ten hromadný akt, kterému pravidla repozitáře brání.",
+    "Potvrzená identita se ukládá do `externalIds.wikidata`, aby ji další běh nemusel hádat — jméno není identifikátor.",
+    "Volby: --wikidata Q… (přišpendlí identitu), --file File:… (přišpendlí soubor), --allow-search (fulltext, výsledek se musí ověřit očima), --add, --force, --dry-run.",
+    "Po stažení je potřeba `npm run data:build` a `npm run validate:media`."
+  ]
+}

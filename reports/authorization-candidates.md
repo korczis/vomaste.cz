@@ -1889,7 +1889,7 @@ Generated from 480 context entities across 202 dossier(s). Regenerate with `npm 
 - Status: not_authorized
 - Appears in: karel-havlicek
 - Claims: CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-08, CLM-09, CLM-19, CLM-20, CLM-21, CLM-22, CLM-23, CLM-24, CLM-25, CLM-26, CLM-27, CLM-28
-- Sources: SRC-02, SRC-03, SRC-04, SRC-05, SRC-06, SRC-11, SRC-12, SRC-13, SRC-14, SRC-15, SRC-16, SRC-32 (6 independent source families)
+- Sources: SRC-02, SRC-03, SRC-04, SRC-05, SRC-06, SRC-11, SRC-12, SRC-13, SRC-14, SRC-15, SRC-16, SRC-32 (5 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -2402,7 +2402,7 @@ Generated from 480 context entities across 202 dossier(s). Regenerate with `npm 
 - Status: not_authorized
 - Appears in: andrej-babis, karel-havlicek
 - Claims: CLM-20, CLM-21
-- Sources: SRC-11, SRC-12, SRC-36 (4 independent source families)
+- Sources: SRC-11, SRC-12, SRC-36 (3 independent source families)
 - Relations:
   - edge-piecha-penam (marian-piecha -> penam-zelena-louka, "Náměstek MPO Piecha oznámil odnětí dotace Pekárně Zelená louka a později potvrdil pokračování vymáhání", dossier: karel-havlicek)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -2549,7 +2549,7 @@ Generated from 480 context entities across 202 dossier(s). Regenerate with `npm 
 - Status: not_authorized
 - Appears in: andrej-babis, karel-havlicek, james-quick
 - Claims: CLM-01, CLM-08, CLM-20, CLM-50, CLM-62, CLM-63, CLM-64, CLM-66, CLM-80, CLM-14
-- Sources: SRC-01, SRC-03, SRC-08, SRC-12, SRC-23, SRC-24, SRC-41, SRC-42, SRC-43, SRC-47, SRC-57, SRC-15 (15 independent source families)
+- Sources: SRC-01, SRC-03, SRC-08, SRC-12, SRC-23, SRC-24, SRC-41, SRC-42, SRC-43, SRC-47, SRC-57, SRC-15 (14 independent source families)
 - Relations:
   - edge-csr-protikorupcnilinka-mestsky-soud-praha (csr-protikorupcnilinka -> mestsky-soud-praha, "společnost zrušena bez likvidace a vymazána na základě usnesení soudu", dossier: james-quick)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -3101,7 +3101,7 @@ Generated from 480 context entities across 202 dossier(s). Regenerate with `npm 
 - Status: not_authorized
 - Appears in: andrej-babis, jeronym-tejc, karel-havlicek
 - Claims: CLM-27, CLM-75
-- Sources: SRC-12, SRC-52 (2 independent source families)
+- Sources: SRC-12, SRC-52 (1 independent source family)
 - Relations:
   - edge-babis-ncoz-pandora (babis -> ncoz, "Pandora Papers, česká větev: jednání nelze posoudit jako TČ na území ČR, poznatky předány jiné zemi EU — závěr o příslušnosti, ne zproštění", dossier: andrej-babis)
   - edge-eppo-ncoz (eppo -> ncoz, "prověřováním pověřena NCOZ (24. 5. 2026)", dossier: andrej-babis)
@@ -3548,7 +3548,7 @@ Generated from 480 context entities across 202 dossier(s). Regenerate with `npm 
 - Status: not_authorized
 - Appears in: karel-havlicek
 - Claims: CLM-05, CLM-06, CLM-07, CLM-21
-- Sources: SRC-02, SRC-04, SRC-12 (3 independent source families)
+- Sources: SRC-02, SRC-04, SRC-12 (2 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -3558,7 +3558,7 @@ Generated from 480 context entities across 202 dossier(s). Regenerate with `npm 
 - Status: not_authorized
 - Appears in: karel-havlicek, andrej-babis
 - Claims: CLM-05, CLM-07, CLM-08, CLM-19, CLM-21, CLM-22, CLM-25, CLM-27, CLM-55, CLM-57, CLM-58
-- Sources: SRC-02, SRC-04, SRC-05, SRC-11, SRC-12, SRC-13, SRC-14, SRC-15, SRC-34, SRC-35, SRC-36, SRC-37 (12 independent source families)
+- Sources: SRC-02, SRC-04, SRC-05, SRC-11, SRC-12, SRC-13, SRC-14, SRC-15, SRC-34, SRC-35, SRC-36, SRC-37 (11 independent source families)
 - Relations:
   - edge-agrofert-penam (agrofert -> penam-zelena-louka, "Agrofert k obžalobě opakovaně uvedl, že jeho dceřiná společnost postupovala v souladu se zákonem", dossier: karel-havlicek)
   - edge-basny-penam (adam-basny -> penam-zelena-louka, "Evropský pověřený žalobce Bašný (EPPO) podal obžalobu na Pekárnu Zelená louka a dvě fyzické osoby", dossier: karel-havlicek)
@@ -4832,7 +4832,7 @@ Generated from 480 context entities across 202 dossier(s). Regenerate with `npm 
 - Status: not_authorized
 - Appears in: macinka-turek, petr-macinka, filip-turek, oto-klempir, alena-schillerova, ales-juchelka, ivan-bednarik, boris-stastny, andrej-babis, karel-havlicek, jaromir-zuna, jeronym-tejc, zuzana-mrazova, adam-vojtech, igor-cerveny, robert-plaga, martin-sebestyan, tunde-bartha
 - Claims: CLM-03, CLM-01, CLM-36, CLM-07, CLM-08
-- Sources: SRC-11, SRC-01, SRC-08, SRC-09, SRC-12, SRC-04 (24 independent source families)
+- Sources: SRC-11, SRC-01, SRC-08, SRC-09, SRC-12, SRC-04 (23 independent source families)
 - Relations:
   - edge-babis-vlada (babis -> vlada, "premiér", dossier: macinka-turek)
   - edge-motoriste-vlada (motoriste -> vlada, "člen koalice", dossier: macinka-turek)
