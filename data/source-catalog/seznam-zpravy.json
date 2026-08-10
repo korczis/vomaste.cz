@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source-catalog-entry.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/zdroje/seznam-zpravy",
+  "@type": "vomaste:SourceCatalogEntry",
+  "recordType": "sourceCatalogEntry",
+  "identifier": "seznam-zpravy",
+  "kind": "media",
+  "jurisdiction": "CZ",
+  "access": "open",
+  "title": "Seznam Zprávy",
+  "operator": "Seznam.cz, a.s.",
+  "publisherGroup": "seznam",
+  "authentication": "none",
+  "url": "https://www.seznamzpravy.cz/",
+  "order": 200,
+  "outlets": [
+    "Seznam Zprávy"
+  ],
+  "proves": [
+    "Že redakce k danému datu zveřejnila text daného znění, včetně vlastního investigativního zjištění, je-li tak článek podepsán."
+  ],
+  "doesNotProve": [
+    "Že popsaný děj nastal. Článek dokládá, co redakce k danému datu zveřejnila, a je-li v něm citováno prohlášení strany sporu, dokládá to prohlášení, ne jeho obsah.",
+    "Nezávislost na jiném zdroji, dokud není ověřen kredit u konkrétního článku."
+  ],
+  "traps": [
+    {
+      "title": "Byline rozhoduje o nezávislosti, ne logo",
+      "detail": "Tentýž web vydává vlastní zpravodajství i přebrané agenturní zprávy. O tom, zda jde o nezávislé doložení, rozhoduje kredit u konkrétního článku, ne vydavatel. Bez ověřeného kreditu je verdikt `unknown` a rodina se nevyplní — `unknown` NENÍ „vlastní zpravodajství\"."
+    }
+  ],
+  "howToSearch": "Druhá nejcitovanější rodina v datasetu. U článku vždy zjisti, zda nese vlastní podpis, nebo přebírá ČTK — na tom stojí rozdíl mezi 1 ZDROJ a CORROBORATED.",
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Redakce s vlastním zpravodajstvím. Právě proto je u ní kontrola kreditu důležitější než u čistého přebírajícího média: **část** produkce je vlastní a část přebraná, takže vydavatel sám o nezávislosti nevypovídá."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "25542125",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/25542125",
+  "nazev": "PG Contract, spol.s.r.o.",
+  "sidlo": "Londýnská 166/1, Vinohrady, 12000 Praha 2",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "C",
+    "vlozka": "106851"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "jednatel",
+      "since": "2009-05-29",
+      "kind": "person",
+      "name": "Jan Hájek"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "person",
+      "name": "Jan Hájek",
+      "podil": "100 %",
+      "vklad": "100000;00",
+      "splaceno": "100"
+    }
+  ]
+}

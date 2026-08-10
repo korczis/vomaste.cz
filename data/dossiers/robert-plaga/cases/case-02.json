@@ -10,12 +10,27 @@
     "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
   },
   "title": "Obrat u zákazu mobilů ve školách",
-  "summary": "Obrat u zákazu mobilů ve školách — viz tvrzení CLM-11, CLM-12, CLM-13, CLM-14, CLM-15.",
+  "summary": "Obrat u zákazu mobilů ve školách — Plagova březnová kritika opozičního návrhu na zákaz mobilů, jeho pozdější společný poslanecký návrh s premiérem Babišem na plošný zákaz, vládní podpora návrhu, výjimky ze zdravotních důvodů a pro speciální vzdělávací potřeby, a Plagovo zdůvodnění obratu dokončeným monitoringem škol.",
   "period": "2026",
   "status": "status-single",
   "statusLabel": "Sledované téma",
   "anchor": "kauza-mobily",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-15"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-30"
     },
@@ -73,34 +88,58 @@
   ],
   "sources": [
     {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-19"
+    },
+    {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-24"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-26"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-16"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-19"
-    },
-    {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-27"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-15"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-18"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-30"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-29"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-17"
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-30"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-32"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-34"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-37"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-38"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-39"
     }
   ],
   "subjects": [

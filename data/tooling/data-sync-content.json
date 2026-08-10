@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/data-sync-content",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "data-sync-content",
+  "kind": "npm",
+  "name": "data:sync-content",
+  "title": "Sync stagingu do content/",
+  "category": "generovani",
+  "summary": "Kopíruje data/generated/content-staging/** do content/** pro všechny cesty pokryté kanonickým modelem. Uvnitř pokrytého scope maže .md soubory bez staging protějšku — zaniklý kanonický záznam nesmí v content/ zůstat jako sirotčí stránka.",
+  "whenToRun": "Automaticky v pipeline po data:generate-content. Nikdy needituj content/** v pokrytém scope ručně — nejbližší sync to přepíše.",
+  "inputs": [
+    "data/generated/content-staging/**"
+  ],
+  "outputs": [
+    "content/dossiers/**",
+    "content/entities/*.md"
+  ],
+  "sourceFile": "scripts/data/sync-content.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Nikdy nekopíruje ani nemaže ručně psané kořenové indexy (content/dossiers/_index.md, content/entities/_index.md) ani aux stránky dossierů.",
+    "Kopírování je byte-verné; druhý běh nad stejným stavem vypíše copied=0, deleted=0."
+  ]
+}

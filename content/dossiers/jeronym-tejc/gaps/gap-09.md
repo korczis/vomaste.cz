@@ -21,3 +21,5 @@ směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
 
 **Opakovaná kontrola k 2026-08-03**: hledání zopakováno i k novější obžalobě z 31. 7. 2026 (viz [GAP-02](@/dossiers/jeronym-tejc/gaps/gap-02.md)), přímá Tejcova citace k žádné z obou procesních fází nedohledána. Mezera zůstává otevřená.
+
+**Opakovaná kontrola k 2026-08-06**: beze změny. Doslovná reakce ministra na zahájení stíhání Pavla Blažka nebyla nalezena ani v tiskových zprávách msp.gov.cz (archiv projit, mezi 20. 4. a 5. 5. 2026 žádná tisková zpráva k tématu není), ani v tiskových zprávách VSZ Olomouc. Konkrétně chybí: přímá, plnotextově ověřená citace ministra k datu 4. 5. 2026.

@@ -10,12 +10,33 @@
     "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
   },
   "title": "Vymáhání dotací po Agrofertu",
-  "summary": "Vymáhání dotací po Agrofertu — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-16.",
+  "summary": "Vymáhání dotací po Agrofertu — SZIF nezahájil vymáhání dotací po firmách Agrofertu, exministrova tvrzení o právních analýzách, Šebestyánova obhajoba, kritika opozice, stanovisko Ministerstva pro místní rozvoj k dopisu Evropské komise, chybějící klíčový dokument, požadavek Komise na úplné právní posouzení, zahájené trestní řízení Úřadu evropské veřejné žalobkyně, absence závazného rozhodnutí Komise i rozsudek Nejvyššího správního soudu.",
   "period": "2026",
   "status": "status-single",
   "statusLabel": "Sledované téma",
   "anchor": "kauza-vymahani-agrofert",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-16"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-17"
     },
@@ -72,14 +93,47 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-44"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-45"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-46"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-48"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-49"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-50"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-51"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-52"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-54"
     }
   ],
   "sources": [
     {
-      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-08"
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-02"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-15"
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-08"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-09"
@@ -100,7 +154,7 @@
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-14"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-23"
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-15"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-18"
@@ -109,7 +163,49 @@
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-19"
     },
     {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-23"
+    },
+    {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-25"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-27"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-29"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-30"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-32"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-33"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-35"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-36"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-37"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-39"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-40"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-41"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-43"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-44"
     }
   ],
   "subjects": [

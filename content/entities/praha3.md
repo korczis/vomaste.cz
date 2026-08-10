@@ -4,6 +4,7 @@ title = "Městská část Praha 3"
 template = "entity.html"
 weight = 4
 aliases = ["/dossiers/tunde-bartha/entities/praha3/"]
+description = "Městská část Praha 3 — Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
 
 [extra]
 generated = true

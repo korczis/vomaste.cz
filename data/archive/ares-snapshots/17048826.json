@@ -1,0 +1,15 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "17048826",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/17048826",
+  "nazev": "Sdružení automobilového průmyslu",
+  "sidlo": null,
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "ALXII",
+    "vlozka": "161"
+  },
+  "statutarniOrgan": [],
+  "spolecnici": []
+}

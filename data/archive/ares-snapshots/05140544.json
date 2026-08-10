@@ -1,0 +1,40 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "05140544",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/05140544",
+  "nazev": "Demagog.cz, z.s.",
+  "sidlo": "Roháčova 145/14, Žižkov, 13000 Praha 3",
+  "spisovaZnacka": {
+    "soud": "KSBR",
+    "oddil": "L",
+    "vlozka": "21775"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "člen",
+      "since": "2016-06-28",
+      "kind": "person",
+      "name": "Mgr. Petr Gongala"
+    },
+    {
+      "role": "Člen rady spolku",
+      "since": "2024-09-12",
+      "kind": "person",
+      "name": "Bc Jan Tvrdoň"
+    },
+    {
+      "role": "Člen rady spolku",
+      "since": "2024-09-12",
+      "kind": "person",
+      "name": "Mgr. Jan Fridrichovský"
+    },
+    {
+      "role": "Členka rady spolku",
+      "since": "2024-09-12",
+      "kind": "person",
+      "name": "Kamila Žihlová"
+    }
+  ],
+  "spolecnici": []
+}

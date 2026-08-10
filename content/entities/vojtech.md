@@ -4,6 +4,7 @@ title = "Adam Vojtěch"
 template = "entity.html"
 weight = 1
 aliases = ["/dossiers/adam-vojtech/entities/vojtech/"]
+description = "Adam Vojtěch — Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v hlavním přehledu."
 
 [extra]
 generated = true

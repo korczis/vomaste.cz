@@ -10,7 +10,7 @@
     "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
   },
   "title": "Čapí hnízdo — dotační kauza",
-  "summary": "Spor o dotaci 50 mil. Kč na areál Čapí hnízdo z let 2007–2008; dotaci firma vrátila v roce 2018. Stíhání zahájeno v říjnu 2017 po vydání Sněmovnou, v září 2019 je státní zástupce zastavil a nejvyšší státní zástupce zastavení v prosinci 2019 zrušil jako nezákonné a předčasné; obžaloba podána v březnu 2022. Městský soud oba obžalované zprostil v lednu 2023 i v únoru 2024, odvolací soud obě zproštění zrušil (naposledy 23. 6. 2025) a vrátil věc se závazným právním názorem; ten 4. 5. 2026 uznal nepravomocně vinnou spoluobžalovanou Janu Nagyovou. Nic z toho není pravomocné, rozsudek nad spoluobžalovanou se netýká Andreje Babiše, jehož stíhání je po nevydání Sněmovnou přerušeno, a oba obžalovaní vinu odmítají.",
+  "summary": "Spor o dotaci 50 mil. Kč na areál Čapí hnízdo z let 2007–2008; dotaci firma vrátila v roce 2018. Sněmovna vyslovila souhlas s trestním stíháním poslanců Babiše a Faltýnka 6. září 2017 a stíhání bylo zahájeno v říjnu 2017; usnesením z 30. srpna 2019 (pravomocným 17. září 2019) je státní zástupce zastavil a nejvyšší státní zástupce zastavení 4. prosince 2019 u dvou ze šesti obviněných zrušil jako nezákonné a předčasné; obžalobu na dvě osoby podalo Městské státní zastupitelství v Praze 21. března 2022. Městský soud oba obžalované zprostil v lednu 2023 i v únoru 2024, odvolací soud obě zproštění zrušil (naposledy 23. 6. 2025) a vrátil věc se závazným právním názorem; ten 4. 5. 2026 uznal nepravomocně vinnou spoluobžalovanou Janu Nagyovou. Nic z toho není pravomocné, rozsudek nad spoluobžalovanou se netýká Andreje Babiše, jehož stíhání je po nevydání Sněmovnou přerušeno, a oba obžalovaní vinu odmítají.",
   "period": "2015–",
   "status": "status-disputed",
   "statusLabel": "Nepravomocný rozsudek nad spoluobžalovanou, o Babišovi nerozhodnuto",
@@ -110,6 +110,24 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-51"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-79"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-82"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-83"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-84"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-85"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-86"
     }
   ],
   "subjects": [

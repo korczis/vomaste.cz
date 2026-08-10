@@ -3,6 +3,7 @@
 title = "Farma Čapí hnízdo"
 template = "entity.html"
 weight = 126
+description = "Farma Čapí hnízdo — Kontextová entita — Společnost čerpající 50mil. dotaci po vyvedení ze skupiny Agrofert; odlišná od existující entity capi-hnizdo (kauza)."
 
 [extra]
 generated = true

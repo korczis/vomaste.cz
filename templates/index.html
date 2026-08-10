@@ -134,6 +134,28 @@
     </details>
   </section>
 
+  {#- Manifest: proč projekt existuje. Text karty NENÍ psaný tady — jde
+      z front matter content/manifest.md (extra.card_heading /
+      card_paragraphs / card_cta), stejně jako konceptové dlaždice čtou svůj
+      text ze své vlastní stránky. Titulní strana a manifest tak nemůžou
+      tvrdit dvě různé věci a úprava se dělá na jednom místě. -#}
+  {% set manifest_page = get_page(path="manifest.md") %}
+  <section aria-labelledby="manifest-heading" class="landing-section pt-10 sm:pt-12">
+    <a href="{{ manifest_page.permalink | safe }}" class="group block rounded-xl border border-[#d4af37]/30 bg-[#d4af37]/[0.05] p-6 no-underline transition-colors hover:border-[#d4af37]/60 sm:p-8">
+      <h2 id="manifest-heading" class="flex items-center gap-2 text-xl font-bold text-[#f3e5c0] sm:text-2xl">
+        {{ manifest_page.extra.card_heading }}
+        <span class="text-white/55 transition-transform group-hover:translate-x-0.5" aria-hidden="true">&rarr;</span>
+      </h2>
+      {%- for p in manifest_page.extra.card_paragraphs %}
+      <p class="mt-3 text-sm leading-relaxed text-white/70 sm:text-base">{{ p }}</p>
+      {%- endfor %}
+      <span class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#f3e5c0] underline decoration-white/30 underline-offset-2">
+        {{ manifest_page.extra.card_cta }}
+        <span aria-hidden="true">&rarr;</span>
+      </span>
+    </a>
+  </section>
+
   <section aria-labelledby="what-is-heading" class="landing-section py-12 sm:py-16 lg:py-20">
     <h2 id="what-is-heading" class="text-center text-2xl font-bold text-white sm:text-3xl">Co vomaste.cz je — a co není</h2>
     <div class="mt-10 grid gap-6 sm:grid-cols-2">
@@ -252,6 +274,11 @@
       <h3 class="font-semibold text-[#f3e5c0]">Revize 5. srpna 2026: 119 tvrzení dolů</h3>
       <p class="mt-2 text-sm leading-relaxed text-white/70">Většina zdrojů neměla zaznamenaný původ, takže validátor nedokázal odlišit druhého vydavatele od druhého otisku téže agenturní zprávy. Po doplnění původu kleslo <strong class="text-white">119 tvrzení</strong> z „ověřeno více zdroji" na „1 zdroj" a celkový počet nezávisle potvrzených tvrzení spadl z 300 na 181. Opravilo se i 27 komentářů, které nezávislost výslovně tvrdily.</p>
       <p class="mt-3 text-sm leading-relaxed text-white/70">Žádný zdroj se nesmazal — dokládá dál totéž co předtím, jen už nepotvrzuje sám sebe. Je to doklad, že pravidlo platí i zpětně, ne ostuda.</p>
+      {#- Bez téhle věty si návštěvník odnese „181" jako dnešní stav, protože
+          je to poslední číslo v odstavci nad ním. Historická čísla zůstávají
+          napevno — jsou to údaje o události s datem — ale aktuální počet se
+          bere z dat, aby se nemohl rozejít s dlaždicemi ani s registrem. -#}
+      <p class="mt-3 text-sm leading-relaxed text-white/70">Od té revize počet zase roste, jak se dokládají další zdroje: k dnešnímu buildu je nezávisle potvrzených <strong class="text-white">{{ ev.claimsByStatus.corroborated }}</strong> tvrzení z {{ ev.claims }}. Tohle číslo se dopočítává, nepřepisuje ručně.</p>
       <p class="mt-4 text-sm">
         <a href="{{ get_url(path='@/koncepty/nezavisle-dolozeni.md') | safe }}" class="text-[#f3e5c0] underline decoration-white/30 underline-offset-2">Jak se nezávislost počítá &rarr;</a>
       </p>
@@ -280,14 +307,59 @@
     {%- endif %}
   </section>
 
+  {#- Odkud to víme. Web stojí a padá s tím, že každé tvrzení má zdroj — ale
+      landing page to dosud tvrdila, aniž by ukázala, o jaký zdrojový základ
+      se opírá. Čísla i vyzdvižené zdroje jdou z data/generated/source-catalog.json
+      (staví build-source-catalog.mjs z ručně psaných záznamů plus dopočtu ze
+      skutečných citací), takže nemůžou zastarat proti datům a v šabloně není
+      napsaný ani jeden název zdroje.
+
+      Záměrně se ukazuje i to, co zdroj NEdokládá: bez toho by výčet registrů
+      působil jako nárok na vševědoucnost, což je přesně opačné sdělení. -#}
+  {%- set catalog = load_data(path="data/generated/source-catalog.json") -%}
+  {%- if catalog.counts.entries > 0 %}
+  <section aria-labelledby="zdroje-heading" class="landing-section py-12 sm:py-16 lg:py-20">
+    <h2 id="zdroje-heading" class="text-center text-2xl font-bold text-white sm:text-3xl">Odkud to víme</h2>
+    <p class="mx-auto mt-3 max-w-xl text-center text-white/60">Doklad je vždy primární registr. Agregátor ukáže, kde hledat — cituje se ale to, na co ukazuje.</p>
+
+    <div class="mt-8 flex flex-wrap items-center justify-center gap-3 text-xs">
+      <span class="rounded bg-white/5 px-3 py-1.5 font-mono text-[#f3e5c0]">{{ catalog.counts.sourceRecords }} citací</span>
+      <span class="rounded border border-white/15 px-3 py-1.5 text-white/55">{{ catalog.counts.usedFamiliesOrOutlets }} rodin a outletů</span>
+      <span class="rounded border border-white/15 px-3 py-1.5 text-white/55">{{ catalog.counts.entries }} zdrojů s popsanými mezemi</span>
+    </div>
+
+    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {%- for e in catalog.entries | filter(attribute="kind", value="primary-registry") %}
+      <a href="{{ config.base_url }}{{ e.route }}" class="group block rounded-xl border border-white/10 bg-white/[0.03] p-6 no-underline transition-colors hover:border-white/25 hover:bg-white/[0.05]">
+        <span class="font-mono text-xs text-[#f3e5c0]">primární registr</span>
+        <h3 class="mt-1 flex items-center gap-2 font-semibold text-white">
+          {{ e.title }}
+          <span class="text-white/55 transition-transform group-hover:translate-x-0.5" aria-hidden="true">&rarr;</span>
+        </h3>
+        {%- if e.proves | length > 0 %}
+        <p class="mt-2 text-sm leading-relaxed text-white/60">{{ e.proves | first }}</p>
+        {%- endif %}
+        {%- if e.doesNotProve | length > 0 %}
+        <p class="mt-2 text-sm leading-relaxed text-white/60"><span class="text-white/70">Nedokládá:</span> {{ e.doesNotProve | first }}</p>
+        {%- endif %}
+      </a>
+      {%- endfor %}
+    </div>
+
+    <p class="mx-auto mt-8 max-w-2xl text-center text-sm text-white/60">
+      <a href="{{ get_url(path='@/zdroje/_index.md') | safe }}" class="text-[#f3e5c0] underline decoration-white/30 underline-offset-2">Celý katalog zdrojů</a> — včetně pastí, na které se v každém z nich najíždí, a přehledu, co dataset skutečně cituje.
+    </p>
+  </section>
+  {%- endif %}
   {#- Adresář místo zdi karet. Původně tu byla na každý dossier karta přes
       celou šířku se čtyřmi statistickými dlaždicemi a čtyřmi velkými
       tlačítky — při dvou dossierech vitrína, při dvaadvaceti stěna, kterou
       musí člověk na mobilu odrolovat, aby zjistil, co web obsahuje.
 
-      Data jdou z /data/dossiers.json (staví record-tables.mjs z dossiers.toml,
-      stats.toml, front matter a navigačního manifestu), takže počty ani
-      routy nejsou psané v šabloně a nemůžou zastarat. -#}
+      Data jdou z /data/dossiers.json (staví record-tables.mjs jako projekci
+      compiled kanonického modelu + navigačního manifestu — dřívější
+      data/dossiers.toml i per-dossier stats.toml zanikly v T-028 fázi H),
+      takže počty ani routy nejsou psané v šabloně a nemůžou zastarat. -#}
   {%- set directory_items = load_data(path="static/data/dossiers.json") -%}
   {%- if directory_items | length > 0 %}
   <section class="landing-section py-12 sm:py-16 lg:py-20">
@@ -343,11 +415,14 @@
     <p class="mx-auto mt-3 max-w-2xl text-center text-sm text-white/50">Jak web pracuje se zdroji, daty a rozsahem pokrytí, popisuje <a href="{{ get_url(path='@/dokumentace/_index.md') | safe }}" class="underline decoration-white/30 underline-offset-2 hover:text-white">dokumentace</a> — včetně <a href="{{ get_url(path='@/dokumentace/konstituce.md') | safe }}" class="underline decoration-white/30 underline-offset-2 hover:text-white">konstituce projektu</a> a <a href="{{ get_url(path='@/dokumentace/licence.md') | safe }}" class="underline decoration-white/30 underline-offset-2 hover:text-white">licenčních pravidel</a>.</p>
 
     <h3 class="mt-14 text-center text-lg font-semibold text-white">Poslední aktualizace</h3>
-    <p class="mx-auto mt-2 max-w-xl text-center text-sm text-white/50">Append-only historie: co bylo kdy skutečně ověřeno a změněno.</p>
+    <p class="mx-auto mt-2 max-w-xl text-center text-sm text-white/50">Append-only historie: co bylo kdy skutečně ověřeno a změněno — napříč celým webem, řazeno podle data, nejnovější první.</p>
+    {#- landing.recentUpdates je flatten přes VŠECHNY kanonické dossiery,
+        seřazený podle data (scripts/data/build-view-models.mjs) — dřív tahle
+        sekce vypisovala poslední dva updaty KAŽDÉHO dossieru v pořadí
+        registru, takže půlroční update dossieru na začátku seznamu
+        vizuálně předbíhal včerejší update dossieru dál v pořadí. -#}
     <div class="mx-auto mt-6 max-w-3xl space-y-3">
-      {% for cd in canonical_dossiers %}
-      {% set slug = cd.slug %}
-      {% for u in cd.updates | reverse | slice(end=2) %}
+      {% for u in landing.recentUpdates %}
       <details class="group rounded-xl border border-white/10 bg-white/[0.03] open:border-[#f3e5c0]/30">
         <summary class="flex cursor-pointer items-baseline gap-3 p-4 text-sm marker:content-none [&::-webkit-details-marker]:hidden">
           <span class="font-mono text-xs font-bold text-[#f3e5c0]">{{ u.date }}</span>
@@ -355,13 +430,13 @@
           <span class="text-white/55 transition-transform group-open:rotate-90" aria-hidden="true">›</span>
         </summary>
         <div class="border-t border-white/10 p-4 text-sm leading-relaxed text-white/70">
-          <p>{{ u.summary }}</p>
+          <a href="{{ get_url(path='@/dossiers/' ~ u.dossierSlug ~ '/_index.md') | safe }}" class="text-xs font-semibold text-[#f3e5c0] no-underline hover:underline">{{ u.dossierTitle }}</a>
+          <p class="mt-2">{{ u.summary }}</p>
           <p class="mt-3 flex flex-wrap gap-2 font-mono text-xs">
-            {% for c in u.addedClaims %}{% set cslug = c | lower %}<a href="{{ get_url(path='@/dossiers/' ~ slug ~ '/claims/' ~ cslug ~ '.md') | safe }}" class="id-chip rounded bg-white/5 px-1.5 py-0.5 text-[#f3e5c0] no-underline hover:bg-white/10">{{ c }}</a>{% endfor %}
+            {% for c in u.addedClaims %}{% set cslug = c | lower %}<a href="{{ get_url(path='@/dossiers/' ~ u.dossierSlug ~ '/claims/' ~ cslug ~ '.md') | safe }}" class="id-chip rounded bg-white/5 px-1.5 py-0.5 text-[#f3e5c0] no-underline hover:bg-white/10">{{ c }}</a>{% endfor %}
           </p>
         </div>
       </details>
-      {% endfor %}
       {% endfor %}
     </div>
   </section>
@@ -393,7 +468,12 @@
           <span class="mt-1 block text-sm font-semibold text-white">Citované zdroje →</span>
           <ul class="mt-2 space-y-1 text-xs text-white/50">
             {%- for s in demo.sources %}
-            <li><a href="{{ config.base_url }}{{ s.route }}" class="text-white/70 no-underline hover:text-[#f3e5c0] hover:underline">{{ s.identifier }}</a> — {{ s.outlet }}{% if s.published %}, {{ s.published }}{% endif %}</li>
+            {#- Podtržení je trvalé, ne jen na hover: odkaz stojí uvnitř věty a
+                axe (link-in-text-block) ho jinak označí za nerozlišitelný —
+                kontrast proti okolnímu textu vychází 1,88:1 proti požadovaným
+                3:1. Stejný zápis jako u ostatních odkazů v textu na této
+                stránce. -#}
+            <li><a href="{{ config.base_url }}{{ s.route }}" class="text-white/70 underline decoration-white/30 underline-offset-2 hover:text-[#f3e5c0]">{{ s.identifier }}</a> — {{ s.outlet }}{% if s.published %}, {{ s.published }}{% endif %}</li>
             {%- endfor %}
           </ul>
           <span class="mt-2 block text-xs text-white/50">Každý s přímým odkazem na originál. Kolik z nich je nezávislých hlasů, řeší <a href="{{ get_url(path='@/koncepty/nezavisle-dolozeni.md') | safe }}" class="underline decoration-white/30 underline-offset-2 hover:text-white">důkazní standard</a>.</span>
@@ -509,7 +589,7 @@
       </details>
       <details class="group rounded-xl border border-white/10 bg-white/[0.03] open:border-[#f3e5c0]/30">
         <summary class="flex cursor-pointer items-center justify-between gap-3 p-5 text-sm font-semibold text-white marker:content-none [&::-webkit-details-marker]:hidden">Počítá se pět článků o téže věci jako pět potvrzení?<span class="text-white/55 transition-transform group-open:rotate-90" aria-hidden="true">&rsaquo;</span></summary>
-        <p class="border-t border-white/10 p-5 text-sm leading-relaxed text-white/70">Ne. Zdroje, které přebírají tutéž agenturní zprávu nebo tentýž článek, patří do jedné <strong class="text-white">rodiny</strong> a počítají se jako <strong class="text-white">jedno</strong> nezávislé doložení. Bez toho by stačilo, aby jednu zprávu převzalo pět webů, a tvrzení by vypadalo pětinásobně doložené. Rodina je editorské určení, ne funkce vydavatele — dva různí vydavatelé mohou sdílet rodinu a jeden vydavatel může vydat dvě nezávislé reportáže. Celé pravidlo i to, co se stalo, když se podle něj revidoval už publikovaný obsah: <a href="{{ get_url(path='@/koncepty/nezavisle-dolozeni.md') | safe }}" class="underline decoration-white/30 underline-offset-2 hover:text-white">nezávislé doložení</a>.</p>
+        <p class="border-t border-white/10 p-5 text-sm leading-relaxed text-white/70">Ne. Zdroje, které přebírají tutéž agenturní zprávu nebo tentýž článek, patří do jedné <strong class="text-white">rodiny</strong> a počítají se jako <strong class="text-white">jedno</strong> nezávislé doložení. Bez toho by stačilo, aby jednu zprávu převzalo pět webů, a tvrzení by vypadalo pětinásobně doložené. Rodina je editorské určení podle původu materiálu, ne funkce vydavatele: dva různí vydavatelé mohou sdílet rodinu. Obráceně to ale neplatí — <strong class="text-white">dva texty téhož vydavatele nejsou nikdy dvě nezávislá doložení</strong>, ať mají rodinu vyplněnou jakkoli. Nezávislost je až dvojice zdrojů, která se liší rodinou i vydavatelem (porovnává se název média i registrovaná doména). Celé pravidlo i to, co se stalo, když se podle něj revidoval už publikovaný obsah: <a href="{{ get_url(path='@/koncepty/nezavisle-dolozeni.md') | safe }}" class="underline decoration-white/30 underline-offset-2 hover:text-white">nezávislé doložení</a>.</p>
       </details>
       <details class="group rounded-xl border border-white/10 bg-white/[0.03] open:border-[#f3e5c0]/30">
         <summary class="flex cursor-pointer items-center justify-between gap-3 p-5 text-sm font-semibold text-white marker:content-none [&::-webkit-details-marker]:hidden">Proč má u některých dossierů skoro každý registr jen pár záznamů?<span class="text-white/55 transition-transform group-open:rotate-90" aria-hidden="true">&rsaquo;</span></summary>
@@ -540,7 +620,7 @@
       <p class="max-w-2xl text-balance text-sm font-medium leading-relaxed text-black/70 sm:text-base">Public domain od prvního commitu. Přidej druhý nezávislý zdroj k jednozdrojovému tvrzení, oprav mrtvý odkaz, nebo si celý systém odnes a postav na něm vlastní výzkum.</p>
       <div class="flex w-full flex-col items-stretch gap-3 sm:w-auto sm:flex-row">
         <a href="https://github.com/korczis/vomaste.cz/fork" class="inline-flex items-center justify-center gap-2 rounded-lg bg-black px-6 py-3.5 text-base font-bold text-[#f3e5c0] no-underline transition-colors hover:bg-black/80 sm:py-3 sm:text-sm">Forknout na GitHubu</a>
-        <a href="https://github.com/korczis/vomaste.cz/blob/master/CONTRIBUTING.md" class="inline-flex items-center justify-center rounded-lg border-2 border-black/30 px-6 py-3.5 text-base font-semibold text-black no-underline transition-colors hover:border-black hover:bg-black/5 sm:py-3 sm:text-sm">Jak přispět</a>
+        <a href="{{ get_url(path='@/dokumentace/prispivani.md') | safe }}" class="inline-flex items-center justify-center rounded-lg border-2 border-black/30 px-6 py-3.5 text-base font-semibold text-black no-underline transition-colors hover:border-black hover:bg-black/5 sm:py-3 sm:text-sm">Jak přispět</a>
         <a href="{{ get_url(path='@/dossiers/_index.md') | safe }}" class="inline-flex items-center justify-center rounded-lg border-2 border-black/30 px-6 py-3.5 text-base font-semibold text-black no-underline transition-colors hover:border-black hover:bg-black/5 sm:py-3 sm:text-sm">Otevřené otázky ({{ ev.openGaps }})</a>
       </div>
     </div>
@@ -557,10 +637,12 @@
         <div class="text-sm lg:col-span-1">
           <p class="type-80s text-xl text-white">vomaste.cz</p>
           <p class="mt-3 leading-relaxed text-white/60">Otevřený, Git-native systém dohledatelných dossierů ve veřejném zájmu. Nevěřte autorovi — zkontrolujte data.</p>
-          {#- Newest date across every canonical dossier's append-only update
-              log — same data the "Poslední aktualizace" section renders. -#}
+          {#- Newest date across each canonical dossier record and its
+              append-only update log. A dossier's `updated` date may advance
+              before a matching narrative update is added. -#}
           {%- set_global update_dates = [] %}
           {%- for cd in canonical_dossiers %}
+            {%- set_global update_dates = update_dates | concat(with=cd.updated) %}
             {%- for u in cd.updates %}{% set_global update_dates = update_dates | concat(with=u.date) %}{% endfor %}
           {%- endfor %}
           {%- set last_update = update_dates | sort | last | default(value="") %}
@@ -585,6 +667,7 @@
         <nav aria-label="Pravidla" class="text-sm">
           <h3 class="font-mono text-xs font-bold uppercase tracking-widest text-white/55">Pravidla</h3>
           <ul class="mt-3 space-y-2">
+            <li><a href="{{ get_url(path='@/manifest.md') | safe }}" class="text-white/70 no-underline hover:text-white hover:underline">Manifest projektu</a></li>
             <li><a href="{{ get_url(path='@/koncepty/bezpecnostni-hranice.md') | safe }}" class="text-white/70 no-underline hover:text-white hover:underline">Bezpečnostní hranice</a></li>
             <li><a href="{{ get_url(path='@/koncepty/public-domain.md') | safe }}" class="text-white/70 no-underline hover:text-white hover:underline">Licence obsahu a kódu</a></li>
             <li><a href="https://github.com/korczis/vomaste.cz/blob/master/docs/constitution/OPEN_INTELLIGENCE_COMMONS.md" class="text-white/70 no-underline hover:text-white hover:underline">Konstituce projektu <span class="text-white/55" aria-hidden="true">&#8599;</span></a></li>

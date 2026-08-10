@@ -3,6 +3,7 @@
 title = "Generální ředitelství Evropské komise pro rozpočet (DG BUDGET)"
 template = "entity.html"
 weight = 109
+description = "Generální ředitelství Evropské komise pro rozpočet (DG… — Kontextová entita — Adresát podnětu Transparency International k RSVP Trust."
 
 [extra]
 generated = true

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jana-cernochova",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "jana-cernochova",
+  "slug": "jana-cernochova",
+  "title": "Jana Černochová",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení Jany Černochové.",
+  "dossierType": "entity",
+  "canonicalDossier": "jana-cernochova",
+  "subject": "jana-cernochova",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-06",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-06-JANA-CERNOCHOVA"
+    ]
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nJana Černochová je poslankyně Poslanecké sněmovny PČR za ODS a bývalá\nministryně obrany ČR (2021–2025). Jako veřejná funkcionářka spadá do\nstanding scope autorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní\nzáznam pro tento dossier je `AUTH-2026-08-06-JANA-CERNOCHOVA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam — dokládá pouze její aktuální poslanecký mandát a roli\npředsedkyně sněmovního Výboru pro bezpečnost, nikoli hloubkovou\ninvestigativní rešerši jejího ministerského období nebo jiných témat.\nRozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/jana-cernochova/claims/clm-01.md) | Jana Černochová je podle profilu na webu Poslanecké sněmovny PČR poslankyní zvolenou za ODS (mandát od 4. 10. 2025, členka poslaneckého klubu ODS od 8. 10. 2025) a od 6. 3. 2026 předsedkyní sněmovního Výboru pro bezpečnost — do čela výboru byla zvolena tajnou volbou (11 z 14 přítomných hlasů), jak nezávisle informovaly Novinky.cz | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/jana-cernochova/sources/src-01.md), [SRC-02](@/dossiers/jana-cernochova/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedeného mandátu a předsednictví výboru nic\ndalšího; nejde o hodnocení jejího politického působení ani o\ninvestigativní rešerši jejího ministerského období nebo jiných témat."
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "entity": "jana-cernochova",
+        "label": "Jana Černochová",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  }
+}

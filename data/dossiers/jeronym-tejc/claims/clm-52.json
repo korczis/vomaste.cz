@@ -9,12 +9,15 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
   },
-  "text": "Vrchní státní zastupitelství v Olomouci podalo 31. 7. 2026 obžalobu na čtyři osoby v bitcoinové kauze — Pavla Blažka a Radomíra Daňhela (navrhovaný trest 6,5 roku), Kárima Titze (navrhovaný trest 8 let) a Tomáše Jiřikovského (navrhovaný souhrnný trest 20 let); o vině rozhodne Krajský soud v Brně. Jde o procesní krok (podání obžaloby), nikoli o rozsudek — navrhovaný trest je požadavek žalobce, platí presumpce neviny.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Státní zástupkyně Vrchního státního zastupitelství v Olomouci podala 31. 7. 2026 u Krajského soudu v Brně obžalobu na čtyři obviněné fyzické osoby v bitcoinové kauze, z nichž jedna je stíhána vazebně. Podle citovaného zpravodajství jde o Pavla Blažka a Radomíra Daňhela (u obou navrhován úhrnný trest 6,5 roku a peněžitý trest), Kárima Titze (navrhován úhrnný trest 8 let, peněžitý trest a osmiletý zákaz činnosti) a Tomáše Jiřikovského (navrhován souhrnný trest 20 let, propadnutí majetku a věci a k tomu další trest 9 let za legalizaci spojenou s darováním 468,468 BTC ministerstvu); tisková zpráva zastupitelství jména neuvádí. Jde o procesní krok (podání obžaloby), nikoli o rozsudek — navrhovaný trest je požadavek žalobce, platí presumpce neviny.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-30"
     }
   ],
   "subjects": [

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/boris-stastny/gaps/GAP-11",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-11",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
+  },
+  "title": "GAP-11 — Datum jmenování vlády není doloženo citovaným zdrojem",
+  "description": "CLM-23 staví odvolání vedení Národní sportovní agentury do vztahu ke jmenování vlády („den poté\"). Citovaný zdroj ani usnesení vlády č. 1029/2025 datum jmenování vlády neuvádějí.",
+  "priority": "nízká",
+  "checked": "2026-08-10",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/claims/CLM-23"
+    }
+  ],
+  "subjects": [
+    "stastny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co bylo 2026-08-05 zkontrolováno.** Primární dokument, který v tomto\ndossieru už je — usnesení vlády č. 1029 ze 16. 12. 2025\n([SRC-20](@/dossiers/boris-stastny/sources/src-20.md)) — dokládá **datum\na obsah odvolání**, tedy jednu půlku tvrzení. Neuvádí ale, kdy byla vláda\njmenována prezidentem republiky, a tedy nedokládá vztah „den poté\", na\nkterém tvrzení stojí. Připojen proto nebyl.\n\n**Jak se mezera uzavře.** Doložením data jmenování vlády z primárního\nzdroje (např. oznámení Kanceláře prezidenta republiky nebo záznam Úřadu\nvlády), po němž je časový vztah odvozený z obou dat, ne z jediného\nzpravodajského textu."
+    }
+  ],
+  "order": 11
+}

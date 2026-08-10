@@ -3,6 +3,7 @@
 title = "CER (Community of European Railway and Infrastructure Companies)"
 template = "entity.html"
 weight = 88
+description = "CER (Community of European Railway and Infrastructure… — Kontextová entita — Evropská železniční asociace (šéf Alberto Mazzola); okrajová zmínka z bruselských jednání."
 
 [extra]
 generated = true

@@ -9,17 +9,19 @@
   "entityId": "vit-rakusan",
   "title": "Vít Rakušan",
   "entityType": "person",
-  "publicationRole": "context",
-  "dossierEnabled": false,
-  "dossierStatus": "not_authorized",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
   "coverageState": "discovered",
   "dossiers": [
+    "vit-rakusan",
     "andrej-babis",
     "boris-stastny",
     "martin-sebestyan",
     "oto-klempir",
     "ales-juchelka",
-    "alena-schillerova"
+    "alena-schillerova",
+    "vit-rakusan"
   ],
   "order": 434,
   "provenance": {

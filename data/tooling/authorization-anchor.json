@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/authorization-anchor",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "authorization-anchor",
+  "kind": "npm",
+  "name": "authorization:anchor",
+  "title": "Ukotvení záznamu autorizačního logu",
+  "category": "provoz",
+  "summary": "Jediná cesta, jak se záznam z autorizačního logu v AGENTS.md dostane do hash-kotvy. Nový záznam vyžaduje potvrzení „ANCHOR“; změna nebo zmizení už ukotveného záznamu je porušení append-only pravidla a vyžaduje silnější potvrzení „OVERRIDE-APPEND-ONLY“.",
+  "whenToRun": "Hned po authorize:entity — dokud nový záznam není ukotvený, verify:authorization-log build fail-closed zastaví.",
+  "inputs": [
+    "AGENTS.md"
+  ],
+  "outputs": [
+    "data/authorizations-log-anchor.json"
+  ],
+  "sourceFile": "scripts/dossier/anchor-authorization-log.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Běžně interaktivní. Čistě nový záznam smí agent ukotvit neinteraktivně po výslovném rozhodnutí vlastníka v aktuální konverzaci; existující záznam tímhle režimem změnit nelze nikdy."
+  ]
+}

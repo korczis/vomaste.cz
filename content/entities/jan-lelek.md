@@ -3,6 +3,7 @@
 title = "Jan Lelek"
 template = "entity.html"
 weight = 163
+description = "Jan Lelek — Kontextová entita — Šéf Obvodního státního zastupitelství pro Prahu 1; podal obžalobu na Okamuru a SPD."
 
 [extra]
 generated = true

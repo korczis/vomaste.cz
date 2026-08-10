@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-09",
+  "records": [
+    {
+      "identifier": "court-board-1-t-95-2025",
+      "registry": "Soudní úřední deska – kontrola",
+      "title": "Obvodní soud pro Prahu 1 – 1 T 95/2025",
+      "docket": "1 T 95/2025",
+      "entity": "obvodni-soud-praha-1",
+      "dossiers": [
+        "tomio-okamura"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://infodeska.gov.cz/eudpub/",
+      "file": "/documents/court-noticeboards/court-board-1-t-95-2025.json",
+      "mediaType": "application/json",
+      "sha256": "3a6a8bf53990829756ca25982714de7be63e82a0f36c3c89d9f3cf6dfdb6cc8f",
+      "found": false,
+      "matchCount": 0
+    },
+    {
+      "identifier": "court-board-3-to-34-2024",
+      "registry": "Soudní úřední deska – kontrola",
+      "title": "Vrchní soud v Praze – 3 To 34/2024",
+      "docket": "3 To 34/2024",
+      "entity": "vrchni-soud-praha",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://infodeska.gov.cz/eudpub/",
+      "file": "/documents/court-noticeboards/court-board-3-to-34-2024.json",
+      "mediaType": "application/json",
+      "sha256": "d64949b2eeba3810045e68ec8730ed2f3b50ec2eda216d0be697859df9a08d73",
+      "found": false,
+      "matchCount": 0
+    },
+    {
+      "identifier": "court-board-56-t-7-2022",
+      "registry": "Soudní úřední deska – kontrola",
+      "title": "Městský soud v Praze – 56 T 7/2022",
+      "docket": "56 T 7/2022",
+      "entity": "mestsky-soud-praha",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://infodeska.gov.cz/eudpub/",
+      "file": "/documents/court-noticeboards/court-board-56-t-7-2022.json",
+      "mediaType": "application/json",
+      "sha256": "0eb302036ab15c00acf3acba6f8fdba2007244c101fc416262bb569c8f107437",
+      "found": false,
+      "matchCount": 0
+    },
+    {
+      "identifier": "court-board-10-a-92-2024",
+      "registry": "Soudní úřední deska – kontrola",
+      "title": "Městský soud v Praze – 10 A 92/2024",
+      "docket": "10 A 92/2024",
+      "entity": "mestsky-soud-praha",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://infodeska.gov.cz/eudpub/",
+      "file": "/documents/court-noticeboards/court-board-10-a-92-2024.json",
+      "mediaType": "application/json",
+      "sha256": "363c2a90f6e8e44f65e1e19f0572b787a09b2e470c7829a8e5135a747aee7542",
+      "found": false,
+      "matchCount": 0
+    },
+    {
+      "identifier": "court-board-85-cm-1204-2023",
+      "registry": "Soudní úřední deska – kontrola",
+      "title": "Městský soud v Praze – 85 Cm 1204/2023",
+      "docket": "85 Cm 1204/2023",
+      "entity": "mestsky-soud-praha",
+      "dossiers": [
+        "james-quick"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://infodeska.gov.cz/eudpub/",
+      "file": "/documents/court-noticeboards/court-board-85-cm-1204-2023.json",
+      "mediaType": "application/json",
+      "sha256": "a110f985817170042e4f1384faad7b494dbebd8bac551e7bf39c65ce2dd89c81",
+      "found": false,
+      "matchCount": 0
+    },
+    {
+      "identifier": "court-board-2-vzv-11-2025",
+      "registry": "Soudní úřední deska – kontrola",
+      "title": "Vrchní státní zastupitelství v Olomouci – 2 VZV 11/2025",
+      "docket": "2 VZV 11/2025",
+      "entity": "vrchni-statni-zastupitelstvi-olomouc",
+      "dossiers": [
+        "jeronym-tejc"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://infodeska.gov.cz/eudpub/",
+      "file": "/documents/court-noticeboards/court-board-2-vzv-11-2025.json",
+      "mediaType": "application/json",
+      "sha256": "e69d355df40b851256857679232376e38abd503d9525d4713d3caf2a3dfc083f",
+      "found": false,
+      "matchCount": 0
+    }
+  ]
+}

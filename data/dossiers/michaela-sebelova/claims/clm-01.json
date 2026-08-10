@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/michaela-sebelova/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/michaela-sebelova"
+  },
+  "text": "Michaela Šebelová je od 4. 10. 2025 poslankyní Poslanecké sněmovny Parlamentu ČR za hnutí STAN (volební obvod Moravskoslezský kraj); od 10. 10. 2025 je předsedkyní poslaneckého klubu STAN a od 11. 11. 2025 je členkou Výboru pro zdravotnictví. Zároveň je místopředsedkyní hnutí STAN, které je v aktuálním složení Poslanecké sněmovny opoziční stranou — nezávisle informovaly Deník.cz (ČTK) i Deník N.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/michaela-sebelova/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/michaela-sebelova/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/michaela-sebelova/sources/SRC-03"
+    }
+  ],
+  "subjects": [
+    "michaela-sebelova"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/michaela-sebelova/_index.md)."
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Magda Kopczyńska — šéfka generálního ředitelství DG MOVE — DG MOVE (Generální ředitelství EK pro mobilitu a dopravu)"
+description = "Magda Kopczyńska — šéfka generálního ředitelství DG MOVE — DG MOVE (Generální ředitelství…. Vztah v grafu dossieru Ivan Bednárik. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 15
 

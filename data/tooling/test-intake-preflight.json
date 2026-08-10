@@ -1,0 +1,22 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/test-intake-preflight",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "test-intake-preflight",
+  "kind": "npm",
+  "name": "test:intake:preflight",
+  "title": "Testy preflightu URL",
+  "category": "kontrola",
+  "summary": "node:test nad scripts/intake/preflight/*.test.mjs — mimo jiné chování proti skutečnému lokálnímu mock serveru.",
+  "enforces": [
+    "Padlý test preflightu URL, včetně SSRF politiky."
+  ],
+  "whenToRun": "Rychlá smyčka při práci na preflightu.",
+  "inputs": [
+    "scripts/intake/preflight/*.test.mjs"
+  ],
+  "describedFrom": "command"
+}

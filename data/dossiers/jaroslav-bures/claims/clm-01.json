@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaroslav-bures/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaroslav-bures"
+  },
+  "text": "Jaroslav Bureš byl podle oficiálních přehledů členů vlád na webu Vlády ČR ministrem spravedlnosti od 2. 2. 2001 do 12. 7. 2002 ve vládě Miloše Zemana a ministrem a předsedou Legislativní rady vlády od 4. 8. 2004 do 25. 4. 2005 ve vládě Stanislava Grosse",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-bures/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslav-bures/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "jaroslav-bures"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jaroslav-bures/_index.md)."
+    }
+  ]
+}

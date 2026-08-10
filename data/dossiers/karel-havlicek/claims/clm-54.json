@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-54",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-54",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "text": "U 89 z 90 kontaktů registr uvádí i konkrétní fyzickou osobu, přes kterou kontakt proběhl; celkem jde o 81 různých zprostředkovatelů. Nejčastěji uvedení jsou Lukáš Kraus (9 kontaktů), Ladislav Minčič (9), Nikol Lakomá (6), Jiří Koželouh (5), Josef Kotrba (5) a Jan Rafaj (4). Registr o nich zveřejňuje jméno a roli u daného kontaktu; nic dalšího tento přehled nepřebírá.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-39"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "order": 54,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Jména zprostředkovatelů jsou převzata přesně v rozsahu, v jakém je\nveřejný registr sám zveřejňuje — jméno a role u konkrétního kontaktu.\nŽádné další údaje o těchto osobách se odsud nepřebírají a jejich\nuvedení v registru není samo o sobě zjištěním o čemkoli nepatřičném.\n\nRegistr u kontaktu vede vedle zprostředkovatele i pole „v čí zájem“;\nobojí se v datech objevuje ve stejném seznamu účastníků a rozlišuje se\ntypem záznamu. Tady jsou započítány jen fyzické osoby v roli\nzprostředkovatele, ne klienti — ti jsou v\n[CLM-56](@/dossiers/karel-havlicek/claims/clm-56.md)."
+    }
+  ]
+}

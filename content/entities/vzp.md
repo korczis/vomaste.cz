@@ -3,6 +3,7 @@
 title = "Všeobecná zdravotní pojišťovna (VZP)"
 template = "entity.html"
 weight = 450
+description = "Všeobecná zdravotní pojišťovna (VZP) — Kontextová entita — Prověřuje stovky implantací ICD ve FN Olomouc; projekt Zdravá firma kritizovaný Okamurou."
 
 [extra]
 generated = true

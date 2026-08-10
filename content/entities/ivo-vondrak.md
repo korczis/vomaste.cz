@@ -3,6 +3,7 @@
 title = "Ivo Vondrák"
 template = "entity.html"
 weight = 157
+description = "Ivo Vondrák — Kontextová entita — Nezařazený poslanec; v únoru 2025 podpořil vydání Okamury ke stíhání."
 
 [extra]
 generated = true

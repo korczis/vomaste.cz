@@ -10,23 +10,75 @@
     "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
   },
   "date": "2026-08-05",
-  "summary": "Korroborační kolo po revizi zdrojových rodin (T-056/T-057), po níž tento dossier neměl ani jedno tvrzení ve stavu CORROBORATED — všech 9 zdrojů spadalo do tří rodin (ctk, seznam-zpravy-syndication, tisková zpráva NKÚ). CLM-25 povýšeno na CORROBORATED: dosavadní SRC-06 (Blesk.cz) i SRC-07 (Hospodářské noviny) patří oba do rodiny ctk, přibylo vlastní zpravodajství Echo24 (SRC-10, podepsáno Janem Křovákem, v celém HTML ani jedna zmínka ČTK) s doslovnou citací prezidenta jmenující NKÚ. CLM-26 povýšeno na CORROBORATED bez nového výzkumu: tisková zpráva NKÚ (SRC-09), už v datasetu, doslovně popisuje rozhodnutí vlády z 27. 7. 2026 o vyřazení sídla NKÚ a zařazení ČNB, ale byla připojena jen k CLM-27/28. Nově CLM-29 s primárním úředním záznamem vlády (SRC-11): bod 28, čj. 591/26, předkladatel ministr vnitra, výsledek schváleno — záznam sám ale neuvádí, kterých objektů se změna týká, což je v jeho redakční poznámce výslovně uvedeno. Zamítnuto jako nezávislé doložení: Advokátní deník (23. 7. 2026) uvádí u téže věci zdroj ČTK, e15.cz je podepsán ČTK — obojí by jen zopakovalo už započtenou rodinu; tisková zpráva NKÚ nedokládá částku ~20 milionů korun z CLM-05 (mluví o „desítkách milionů“) a neobsahuje citaci z CLM-03 v doslovném znění.",
+  "summary": "Dvě kola téhož dne, sloučená do jednoho záznamu. (1) Korroborační kolo po revizi zdrojových rodin (T-056/T-057), po níž dossier neměl ani jedno tvrzení ve stavu CORROBORATED — všech 9 tehdejších zdrojů spadalo do tří rodin. CLM-25 povýšeno vlastním zpravodajstvím Echo24 (SRC-10, podepsáno Janem Křovákem, v celém HTML ani jedna zmínka ČTK), CLM-26 tiskovou zprávou NKÚ (SRC-09), která už v datasetu byla, ale visela jen na CLM-27/28; nově zavedena CLM-29 s primárním úředním záznamem vlády (SRC-11). (2) Kolo dohledávání primárních dokumentů (T-064): přibyly sněmovní evidence tisku 90 (SRC-12) a vlastní údaje NKÚ o nákladech na stavbu sídla (SRC-13), dvě nová tvrzení (CLM-30, CLM-31) a čtyři nové mezery (GAP-12 až GAP-15); čtyři tvrzení opravena proti primárnímu dokumentu, z toho dvě vedena jako SPORNÉ. Po sloučení je devět tvrzení korroborovaných. Zamítnuto jako nezávislé doložení: Advokátní deník (23. 7. 2026) i e15.cz uvádějí u téže věci ČTK — jen by zopakovaly už započtenou rodinu; tisková zpráva NKÚ nedokládá částku ~20 milionů korun z CLM-05 (mluví o „desítkách milionů“).",
   "addedClaims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-29"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-30"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-31"
     }
   ],
   "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-24"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-25"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-26"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-27"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-28"
     }
   ],
-  "addedGaps": [],
+  "addedGaps": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/gaps/GAP-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/gaps/GAP-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/gaps/GAP-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/gaps/GAP-15"
+    }
+  ],
   "closedGaps": [],
   "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-08"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-09"
     },
@@ -35,6 +87,18 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/sources/SRC-13"
+    }
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "## Co se dělalo\n\nDossier měl 28 tvrzení a **ani jedno korroborované** — všechna doložení stála buď na původní reportáži Seznam Zpráv z 29. 7. 2026, nebo na jedné agenturní rodině. Téhož dne proběhla dvě nezávisle vedená kola: jedno hledalo druhého vydavatele k už zaznamenaným tvrzením, druhé dohledávalo primární dokumenty. Tento záznam je nese obě.\n\n## Nové zdroje\n\n- [SRC-10](@/dossiers/lubomir-metnar/sources/src-10.md) — Echo24, vlastní zpravodajství z 22. 7. 2026 o prezidentském vetu s doslovnou citací Petra Pavla jmenující NKÚ.\n- [SRC-11](@/dossiers/lubomir-metnar/sources/src-11.md) — Úřad vlády ČR, Výsledky jednání vlády 27. července 2026 (bod 28, čj. 591/26, předkládá ministr vnitra, schváleno v části bez rozpravy).\n- [SRC-12](@/dossiers/lubomir-metnar/sources/src-12.md) — Poslanecká sněmovna PČR, historie sněmovního tisku 90 (zákon doručen prezidentovi 8. 7. 2026, nepodepsán a vrácen 22. 7. 2026).\n- [SRC-13](@/dossiers/lubomir-metnar/sources/src-13.md) — NKÚ, „Za kolik?“: náklady na stavbu sídla 914 mil. Kč včetně DPH při předpokládané ceně 940 mil. Kč.\n\nObě kola nezávisle na sobě otevřela **tentýž** dokument Úřadu vlády. Vede se jako jeden zdroj ([SRC-11](@/dossiers/lubomir-metnar/sources/src-11.md)) — táž URL není druhý hlas.\n\n## Povýšeno na CORROBORATED\n\nCLM-04, CLM-08, CLM-10, CLM-12, CLM-25, CLM-26, CLM-27 a nová CLM-29 a CLM-30 — vždy proto, že přibyl **druhý vydavatel s vlastním zjišťováním**, ne proto, že přibyl další článek. Druhými hlasy byly zpráva ČTK z 30. 7. 2026 po zveřejnění usnesení ([SRC-08](@/dossiers/lubomir-metnar/sources/src-08.md)), oficiální tisková zpráva NKÚ ([SRC-09](@/dossiers/lubomir-metnar/sources/src-09.md)), vlastní zpravodajství Echo24 ([SRC-10](@/dossiers/lubomir-metnar/sources/src-10.md)) a nové primární dokumenty.\n\n## Opraveno proti primárnímu dokumentu\n\n- [CLM-28](@/dossiers/lubomir-metnar/claims/clm-28.md) — přímý citát prezidenta NKÚ byl reprodukován nepřesně („Zajištění bezpečnosti jedné důležité státní instituce…“); tisková zpráva NKÚ má „Posílení ochrany jedné významné státní instituce…“. Opraveno na doslovné znění.\n- [CLM-07](@/dossiers/lubomir-metnar/claims/clm-07.md) — původní výčet („Úřad vlády, ministerstva, Poslanecká sněmovna a Senát“) neodpovídá zveřejněnému obsahu usnesení č. 1604/2008: chráněna jsou sídla ministerstev zahraničních věcí a vnitra, ne ministerstev obecně. Výčet opraven, zdroj vyměněn.\n- [CLM-25](@/dossiers/lubomir-metnar/claims/clm-25.md) — doplněna Kancelář prezidenta republiky, kterou prezident ve výčtu institucí jmenoval, a zmírněna zesílená formulace „zasahovat do hospodaření“ na jeho vlastní znění. Opravené znění kryje i doslovná citace v Echo24, tvrzení proto zůstává korroborované.\n- [CLM-09](@/dossiers/lubomir-metnar/claims/clm-09.md) → **SPORNÉ**: reportáž psala, že návrh se teprve chystá do vlády, ale vláda jej podle svých zveřejněných výsledků schválila už dva dny předtím.\n- [CLM-24](@/dossiers/lubomir-metnar/claims/clm-24.md) → **SPORNÉ**: údaj „třetina z celkových 690 milionů korun“ se neshoduje s vlastními údaji NKÚ (914 mil. Kč včetně DPH, předpoklad 940 mil. Kč), které navíc žádný podíl uspořený úřadem neuvádějí.\n\n## Co se doložit nepodařilo\n\n- [GAP-12](@/dossiers/lubomir-metnar/gaps/gap-12.md) — prezidentovo vlastní odůvodnění veta: hrad.cz vrací HTTP 403 (Cloudflare), sněmovní tisk 90/8 je naskenovaný obrázek bez textové vrstvy, Advokátní deník přebírá ČTK.\n- [GAP-13](@/dossiers/lubomir-metnar/gaps/gap-13.md) — rozpor v nákladech na stavbu sídla NKÚ zůstal nevyřešen.\n- [GAP-14](@/dossiers/lubomir-metnar/gaps/gap-14.md) — úplné znění usnesení vlády č. 1604/2008 o chráněných objektech není veřejné.\n- [GAP-15](@/dossiers/lubomir-metnar/gaps/gap-15.md) — příčina rozporu v procesním stavu návrhu není doložena.\n\nNepovýšeno bylo tam, kde by druhým hlasem byl **týž mluvčí podruhé** — typicky [CLM-18](@/dossiers/lubomir-metnar/claims/clm-18.md), kde je tvrzení atribuované prezidentu NKÚ a jediné další doložení je oficiální zpráva jeho vlastního úřadu. Tvrzení opřená výhradně o obsah materiálu v systému vládních dokumentů a o výroky získané Seznam Zprávami zůstávají na 1 ZDROJ."
     }
   ]
 }

@@ -19,6 +19,25 @@ výše jsou úplné. Zodpovídá otázku sledovanou
 [GAP-01](@/dossiers/lubomir-metnar/gaps/gap-01.md): návrh popsaný v
 [CLM-01](@/dossiers/lubomir-metnar/claims/clm-01.md) byl vládou přijat.
 
+**Povýšeno 2026-08-05 na CORROBORATED.** Tři doložení ze tří různých
+rodin:
+
+- [SRC-08](@/dossiers/lubomir-metnar/sources/src-08.md) — ČTK, 30. 7.
+  2026, po zveřejnění usnesení Úřadem vlády.
+- [SRC-09](@/dossiers/lubomir-metnar/sources/src-09.md) — oficiální
+  tisková zpráva NKÚ z 29. 7. 2026, doslova: „rozhodnutím vlády České
+  republiky ze dne 27. července 2026, kterým bylo sídlo NKÚ vyřazeno ze
+  seznamu chráněných objektů Policií ČR… Namísto NKÚ bylo na seznam
+  chráněných budov zařazeno sídlo České národní banky (ČNB).“
+- [SRC-11](@/dossiers/lubomir-metnar/sources/src-11.md) — oficiální
+  výsledky jednání vlády z 27. 7. 2026 (bod 28, čj. 591/26, předkládá
+  ministr vnitra, schváleno).
+
+**Poctivá výhrada k primárnímu zdroji.** Stránka Úřadu vlády dokládá
+**datum, předkladatele, způsob projednání a výsledek**; NKÚ ani ČNB v ní
+jmenovány nejsou. Konkrétní obsah změny doloží až ostatní dva zdroje. Bez
+nich by tvrzení v této podobě doloženo nebylo.
+
 **Co to je a není.** Jde o zaznamenání procesního stavu (usnesení
 přijato), ne o hodnocení, zda je rozhodnutí správné nebo účelné. NKÚ a
 jeho vedení rozhodnutí veřejně kritizovali už ve fázi návrhu

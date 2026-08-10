@@ -3,6 +3,7 @@
 title = "Asociace ředitelů základních škol"
 template = "entity.html"
 weight = 73
+description = "Asociace ředitelů základních škol — Kontextová entita — Ředitelská asociace; reakce na zkrácení školního roku a testování."
 
 [extra]
 generated = true

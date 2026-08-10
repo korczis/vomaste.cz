@@ -3,6 +3,7 @@
 title = "Masarykova nemocnice v Ústí nad Labem"
 template = "entity.html"
 weight = 251
+description = "Masarykova nemocnice v Ústí nad Labem — Kontextová entita — Kriminalisté zde v 5/2026 zasahovali; kardiologii vede Miloš Táborský."
 
 [extra]
 generated = true

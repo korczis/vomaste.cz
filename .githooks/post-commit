@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# vomaste.cz post-commit — "commit = push = deploy" na masteru.
+#
+# Vlastník výslovně chce, aby commit na masteru automaticky znamenal
+# fetch + rebase + PLNÝ `npm run build` + push (= deploy, GitHub Pages CI
+# v .github/workflows/deploy.yml se spustí na push do master). Vzniklo
+# ze session 2026-08-05, kde ORCH stejnou sekvenci spouštěl ručně
+# opakovaně (viz docs/coop/PROTOCOL.md, „Automatický push po commitu").
+#
+# Skutečná logika (guardy, fetch/rebase/build/push smyčka) žije ve
+# sdíleném .githooks/lib/auto-push-master.sh — od 2026-08-06 ji volá i
+# .githooks/post-merge, protože `git merge`/`git pull` spouští úplně
+# jiný pár hooků (pre-merge-commit/post-merge, ne pre-commit/post-commit)
+# a merge commity z workeřích větví jinak auto-push úplně obešly. Viz
+# tamní komentář pro celý dosavadní bezpečnostní kontrakt (rebase-guard,
+# jen master, COOP_NO_AUTOPUSH, nikdy nepushnout červený build, bounded
+# retry).
+#
+# Instalace: `git config core.hooksPath .githooks` (scripts/setup/
+# install-git-hooks.mjs, běží na `npm ci`/`npm install`, nebo ručně
+# `npm run hooks:install`) — stejný mechanismus jako .githooks/pre-commit.
+
+set -uo pipefail
+HOOK_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=lib/auto-push-master.sh
+source "$HOOK_DIR/lib/auto-push-master.sh"
+auto_push_master "post-commit"

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-87",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-87",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-87 — Hospodářské noviny (ČTK): Ve Francii skončilo vyšetřování Babišova nákupu vily, verdikt zatím nezveřejnili (12. 5. 2026)",
+  "description": "Agenturní zpravodajství ČTK: francouzští vyšetřovatelé po více než třech letech uzavřeli šetření nákupu panství u Cannes, spis se vrací Národní finanční prokuratuře (PNF), ta má rozhodnout o dalším postupu; Babiš jako úřadující premiér požívá ve Francii imunity.",
+  "outlet": "Hospodářské noviny",
+  "sourceType": "agenturní zpravodajství",
+  "sourceFamily": "ctk",
+  "url": "https://zahranicni.hn.cz/c1-67876160-ve-francii-skoncilo-vysetrovani-babisova-nakupu-vily-kriminaliste-zkoumali-mozne-prani-spinavych-penez-a-danovy-unik-verdikt-zatim-nezverejnili",
+  "published": "2026-05-12",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-54"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Hospodářské noviny přebírají 12. 5. 2026 zprávu agentury ČTK, podle níž\nfrancouzští specialisté na daňové podvody uzavřeli více než tři roky\ntrvající vyšetřování nákupu rozsáhlého panství Château Bigaud u Cannes\nna jihu Francie. Mluvčí uvedla, že „vyšetřování bylo vráceno Národní\nfinanční prokuratuře, vyšetřovatelé je tedy považují za uzavřené\", a věc\nnyní posuzuje PNF, která má rozhodnout o dalším postupu. Vyšetřováno\nbylo možné praní špinavých peněz a daňový únik při pořízení nemovitosti\nza zhruba 14 milionů eur přes řetězec offshore společností. Článek\nzároveň potvrzuje, že Babiš jako úřadující premiér požívá podle\nfrancouzských pravidel imunity vázané na výkon funkce.\n\n**Poznámka k procesní přesnosti**: uzavření policejního vyšetřování\n**není** rozhodnutí o vině ani nevině; prokuratura teprve rozhodne, zda\nbude stíhání zahájeno. Imunita je procesní ochrana vázaná na výkon\nfunkce, ne zproštění odpovědnosti.\n\n**Nezávislost vůči SRC-26 (FORUM 24)**: jde o zpravodajství agentury\nČTK (rodina `ctk`) v titulu Hospodářské noviny — jiný vydavatel\n(Economia), jiná registrovaná doména i jiná source family než\nu původního textu FORUM 24. Dvě nezávislé redakce/rodiny doloženě\npopisují tutéž skutečnost (uzavření vyšetřování a předání PNF), proto\nCLM-54 povýšeno na `CORROBORATED`. Otevřeno a přečteno 2026-08-08."
+    }
+  ],
+  "order": 87
+}

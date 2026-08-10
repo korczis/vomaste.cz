@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/validate-navigation",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "validate-navigation",
+  "kind": "npm",
+  "name": "validate:navigation",
+  "title": "Kontrola navigačního stromu",
+  "category": "kontrola",
+  "summary": "Hlídá generovaný navigační strom proti dvěma strukturálním rozhodnutím vlastníka a proti realitě na disku.",
+  "enforces": [
+    "Osoba jako top-level položka sidebaru — skelet musí zůstat bez slugu, bez osoby a bez ručně psané per-dossier registry položky.",
+    "Agregátní dossier s vlastním rozbalovacím podstromem (smí být jen jeden zřetelně označený odkaz, aby nešel splést s třetí osobou).",
+    "Odkaz na něco, co na disku neexistuje."
+  ],
+  "whenToRun": "Hned po build:navigation, v build i dev pipeline.",
+  "inputs": [
+    "data/generated/navigation.json",
+    "data/navigation.toml",
+    "content/**"
+  ],
+  "sourceFile": "scripts/dossier/validate-navigation.mjs",
+  "describedFrom": "header"
+}

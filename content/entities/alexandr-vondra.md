@@ -3,6 +3,7 @@
 title = "Alexandr Vondra"
 template = "entity.html"
 weight = 61
+description = "Alexandr Vondra — Kontextová entita — Europoslanec ODS, exministr obrany; vyzval Zůnu k rezignaci po hlasování proti Hlaváčovi."
 
 [extra]
 generated = true

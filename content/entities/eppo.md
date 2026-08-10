@@ -4,6 +4,7 @@ title = "Úřad evropského veřejného žalobce (EPPO)"
 template = "entity.html"
 weight = 11
 aliases = ["/dossiers/andrej-babis/entities/eppo/"]
+description = "Úřad evropského veřejného žalobce (EPPO) — Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu."
 
 [extra]
 generated = true

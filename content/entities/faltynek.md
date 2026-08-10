@@ -4,6 +4,7 @@ title = "Jaroslav Faltýnek"
 template = "entity.html"
 weight = 1
 aliases = ["/dossiers/jaroslav-faltynek/entities/faltynek/"]
+description = "Jaroslav Faltýnek — Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v hlavním přehledu."
 
 [extra]
 generated = true

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/data-check-generated",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "data-check-generated",
+  "kind": "npm",
+  "name": "data:check-generated",
+  "title": "Parita generovaných artefaktů",
+  "category": "kontrola",
+  "summary": "Ověřuje 1:1 pokrytí kanonického datasetu view modely a staging stuby. Šest kontrol C1–C6; C6 (parita content/ se stagingem) běží jen s přepínačem --content.",
+  "enforces": [
+    "C1 — kanonický záznam s routou bez právě jednoho staging stubu a právě jednoho view modelu; chybějící strukturální _index stuby a souhrnné view modely.",
+    "C2 — sirotčí soubor: staging stub nebo view model, kterému neodpovídá záznam ani očekávaný strukturální soubor.",
+    "C3 — stub bez extra.generated = true, s record_id ≠ @id záznamu nebo s view_model ukazujícím na neexistující soubor.",
+    "C4 — routa staging stubu, která se neshoduje s dnešním data/generated/routes.json (rozdíly se vypisují oběma směry).",
+    "C5 — top-level alias content souboru, který v odpovídajícím stubu chybí."
+  ],
+  "whenToRun": "Po generátorech. V build pipeline běží varianta data:check-generated:content, tahle podoba je pro ruční ladění bez content parity.",
+  "inputs": [
+    "data/generated/views/**",
+    "data/generated/content-staging/**",
+    "data/generated/routes.json",
+    "content/**"
+  ],
+  "sourceFile": "scripts/data/check-generated.mjs",
+  "describedFrom": "header"
+}

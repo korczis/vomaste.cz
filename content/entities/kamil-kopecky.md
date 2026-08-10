@@ -3,6 +3,7 @@
 title = "Kamil Kopecký"
 template = "entity.html"
 weight = 184
+description = "Kamil Kopecký — Kontextová entita — Odborník (E-Bezpečí); plošný zákaz mobilů považuje za zbytečný."
 
 [extra]
 generated = true

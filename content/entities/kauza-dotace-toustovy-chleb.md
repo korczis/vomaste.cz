@@ -3,6 +3,7 @@
 title = "Kauza dotace na toustový chléb (Penam / Pekárna Zelená louka)"
 template = "entity.html"
 weight = 202
+description = "Kauza dotace na toustový chléb (Penam / Pekárna Zelená… — Kontextová entita — Stomilionová dotace na toustovou linku, audit EK, odnětí dotace, obvinění NCOZ (2024) a obžaloba EPPO (2026)."
 
 [extra]
 generated = true

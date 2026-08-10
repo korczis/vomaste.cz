@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Pavel Šámal — soudce zpravodaj v řízení o kompetenčním sporu — Kompetenční spor prezident vs. vláda (Pl. ÚS 16/26)"
+description = "Pavel Šámal — soudce zpravodaj v řízení o kompetenčním sporu — Kompetenční spor prezident…. Vztah v grafu dossieru Jeroným Tejc. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 19
 

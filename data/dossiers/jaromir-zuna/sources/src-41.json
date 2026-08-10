@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-41",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-41",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "title": "SRC-41 — CNN Prima News: Z armády přímo do Senátu? Bývalý náčelník generálního štábu Řehka bude kandidovat v Plzni",
+  "description": "Zpráva CNN Prima News o Řehkově kandidatuře do Senátu, protikandidátech a jeho vlastním vyjádření k nezávislosti navzdory podpoře STAN.",
+  "outlet": "CNN Prima News",
+  "sourceFamily": "ctk",
+  "sourceType": "redakční zpravodajství",
+  "url": "https://cnn.iprima.cz/z-armady-primo-do-senatu-nekdejsi-nacelnik-generalniho-stabu-rehka-bude-kandidovat-v-plzni-518192",
+  "published": "2026-07-30",
+  "retrieved": "2026-08-06",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-58"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Druhý, na Deníku N nezávislý zdroj (jiný vydavatel, jiná redakce) k témuž oznámení — jmenuje všechny protikandidáty a cituje Řehkova vlastní slova o nezávislosti navzdory stranické podpoře, což CLM-58 přebírá doslovně přes nepřímou řeč."
+    }
+  ],
+  "order": 41
+}

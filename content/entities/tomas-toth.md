@@ -3,6 +3,7 @@
 title = "Tomáš Tóth"
 template = "entity.html"
 weight = 407
+description = "Tomáš Tóth — Kontextová entita — Generální ředitel Správy železnic; potvrdil, že některé velké projekty nelze v 2026 financovat (např."
 
 [extra]
 generated = true

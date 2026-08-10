@@ -98,6 +98,69 @@ const mdBody = (blocks) =>
     .map((b) => b.value)
     .join("\n\n");
 
+// Meta description z redakčního těla záznamu. Bez ní spadne stránka
+// v base.html na popis celého webu — a ten byl doslova týž na 820
+// stránkách (326 vztahů + ~494 entit), takže je vyhledávač ani náhled
+// odkazu nerozlišily. Nic se tu nevymýšlí: bere se začátek už napsaného
+// kanonického textu, jen zkrácený a zbavený markdown syntaxe, aby se
+// v atributu <meta> neobjevily odkazy a hvězdičky.
+const summarize = (text, limit = 185) => {
+  const flat = String(text ?? "")
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+    .replace(/[*_`#>]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+  if (!flat) return null;
+  if (flat.length <= limit) return flat;
+  const cut = flat.slice(0, limit);
+  const at = cut.lastIndexOf(" ");
+  return `${(at > limit * 0.6 ? cut.slice(0, at) : cut).replace(/[,;:.\s]+$/, "")}…`;
+};
+
+// Doložka typu „Záznam nevyjadřuje vinu ani osobní, obchodní či lobbistický
+// vztah." stojí v kanonickém textu poslední, takže ji obyčejné zkrácení
+// uřízne první — a zrovna na stránce o jmenované třetí osobě je popis
+// končící uprostřed slova „ani osobní, obchodní či…" ta nejhorší možná
+// věta, na které skončit. Proto se u záznamů s vlastním redakčním textem
+// řeže po větách a závěrečná doložka se drží celá; když se nevejde,
+// zůstane radši jen úvodní věta celá než doložka na půl.
+const CAVEAT = /\b(nikoli|nezakládá|nevyjadřuje|neobsahuje|nezná)\b/i;
+
+// Čeština píše řadové číslovky s tečkou, takže naivní dělení na „. " rozřízne
+// „žáků 5. a 9. tříd" po „5." a popis pak tvrdí něco jiného než zdrojový text.
+// Hranice věty se proto uzná jen tehdy, když za tečkou začíná velké písmeno
+// A ZÁROVEŇ tečce nepředchází jedno- či dvouciferné číslo. Rok („…v roce
+// 2006. Záznam…") tím projde, řadová číslovka ne.
+const splitSentences = (text) => {
+  const out = [];
+  let start = 0;
+  const re = /[.!?]\s+/g;
+  for (let m = re.exec(text); m; m = re.exec(text)) {
+    const end = m.index + 1;
+    const next = text[m.index + m[0].length];
+    const ordinal = /\b\d{1,2}$/.test(text.slice(start, m.index));
+    if (next && next === next.toLocaleUpperCase("cs") && next !== next.toLocaleLowerCase("cs") && !ordinal) {
+      out.push(text.slice(start, end).trim());
+      start = m.index + m[0].length;
+    }
+  }
+  const tail = text.slice(start).trim();
+  if (tail) out.push(tail);
+  return out;
+};
+
+const summarizeRecord = (text, limit = 195) => {
+  const flat = summarize(text, Number.MAX_SAFE_INTEGER);
+  if (!flat || flat.length <= limit) return flat;
+  const sentences = splitSentences(flat);
+  const first = sentences[0] ?? flat;
+  const last = sentences.at(-1);
+  if (sentences.length > 1 && CAVEAT.test(last) && first.length + 1 + last.length <= limit) {
+    return `${first} ${last}`;
+  }
+  return summarize(first, limit);
+};
+
 /*
  * Passthrough čtení existujícího content souboru: RAW řádky klíčů po
  * sekcích (top / extra / ostatní sekce verbatim) + tělo. RAW řádky (ne
@@ -308,6 +371,79 @@ export function buildStubs(compiled, { contentRoot = REPO_ROOT } = {}) {
 
   // --- záznamy -----------------------------------------------------------
   const entityTitle = (iri) => byId[iri]?.record.title ?? localPart(iri);
+  const dossierTitles = new Map(dossierWrappers.map((w) => [w.dossier, w.record.title]));
+
+  // Poslední záchrana pro kontextovou entitu bez jakéhokoli redakčního textu.
+  // Neříká nic, co by v záznamu nebylo: jen že jde o kontextový záznam, ve
+  // kterých dossierech vystupuje a že to není obvinění. Subjektová entita
+  // fallback nedostane — u té je popis redakční věc a prázdno je signál, že
+  // ji někdo má dopsat, ne že ji má zalepit generátor.
+  // Které redakční popisy zdrojů se v datasetu opakují. Počítá se přes celý
+  // compiled model předem, protože jeden záznam o sobě nepozná, že má dvojče
+  // v jiném dossieru.
+  // Počítá se `description` i `text`: u tvrzení je popisem stránky jeho
+  // text, a právě tvrzení se mezi dossiery legitimně opakují — autorizace
+  // Petra Pavla i Petra Vencálka výslovně říkají, že už doložené vlákno se
+  // do nového dossieru PŘENÁŠÍ, nezkoumá znovu. Stejný text na dvou
+  // stránkách je tedy záměr; stejný popis bez rozlišení dossieru vada.
+  const descriptionUses = new Map();
+  const bump = (d) => {
+    if (typeof d === "string" && d) descriptionUses.set(d, (descriptionUses.get(d) ?? 0) + 1);
+  };
+  for (const w of compiled.records) {
+    bump(w.record?.description);
+    bump(w.record?.text);
+  }
+  const duplicateDescriptions = new Set([...descriptionUses].filter(([, n]) => n > 1).map(([d]) => d));
+  // Doplní dossier k popisu, který v datasetu není jedinečný. Jedinečný text
+  // zůstává beze změny — cílem je rozlišit stránky, ne olepit všechny.
+  //
+  // Rozpočet se rozdává PŘED spojením, ne po něm: text tvrzení mívá kolem
+  // 190 znaků, šablona popis ořezává na 200, takže přípona připojená naivně
+  // padne pod nůž a obě stránky zůstanou nerozlišené — přesně ta chyba, na
+  // kterou jsem narazil u doložky u vztahů.
+  const disambiguated = (text, by) => {
+    if (!duplicateDescriptions.has(text)) return text;
+    const suffix = ` ${by}`;
+    return `${summarize(text, Math.max(60, 195 - suffix.length))}${suffix}`;
+  };
+
+  // Kontextový odstavec entity je u desítek záznamů psaný jednou formulí
+  // („Kontextová entita — uvedena, protože se přímo objevuje v citovaném
+  // zpravodajství…") a jméno entity v něm není. Popis pak měly desítky
+  // stránek doslova shodný — pro vyhledávač i pro sdílený odkaz jsou
+  // nerozlišitelné. Název se proto předsadí, když ho vlastní text
+  // neobsahuje; kde ho obsahuje, se nic nepřidává, aby nevzniklo
+  // „Agrofert — Agrofert je…".
+  const namedEntityDescription = (r) => {
+    const summary = summarizeRecord(mdBody(r.content));
+    if (!summary || summary.includes(r.title)) return summary;
+    return `${summarize(r.title, 60)} — ${summarizeRecord(mdBody(r.content), 195 - Math.min(r.title.length, 60) - 3)}`;
+  };
+
+  const contextEntityFallback = (r) => {
+    if (r.publicationRole !== "context") return null;
+    // Tituly dossierů se ZÁMĚRNĚ nespojují spojkou: agregátní pohled se sám
+    // jmenuje „Petr Macinka a Filip Turek", takže „dossieru X a Y" z něj
+    // vyrobí „Petr Macinka a Filip Turek a Filip Turek". Jmenuje se proto
+    // vždy jen jeden a zbytek se počítá.
+    const named = (r.dossiers ?? []).map((s) => dossierTitles.get(s)).filter(Boolean);
+    // Počet se do věty nepíše číslicí: „v 2 dossierech" je špatně česky
+    // (vokalizované „ve" před dvojkou) a ohýbat předložku podle číslovky by
+    // sem přitáhlo pravidlo, které s generováním stránek nesouvisí.
+    const where =
+      named.length === 0
+        ? ""
+        : named.length === 1
+          ? ` Vystupuje v dossieru ${named[0]}.`
+          : ` Vystupuje v dossieru ${named[0]} a dalších.`;
+    // Titul končící tečkou („Zapper-Club s.r.o.") by jinak dal „s.r.o..".
+    const titled = summarize(r.title, 60).replace(/\.+$/, "");
+    return tomlString(
+      `Kontextový záznam na vomaste.cz: ${titled}.${where}` +
+        " Uveden, protože ho jmenuje citovaný obsah, ne jako tvrzení o pochybení.",
+    );
+  };
   const graphLabelMaps = new Map(
     dossierWrappers
       .filter((w) => w.record.graph)
@@ -336,10 +472,32 @@ export function buildStubs(compiled, { contentRoot = REPO_ROOT } = {}) {
     let description = null;
     if (r.recordType === "claim") {
       title = tomlString(r.identifier);
-      description = existingDescription ?? tomlString(r.text);
+      // Passthrough starého popisu má jinak přednost (legacy scaffold, fáze
+      // H), ale u textu sdíleného dvěma dossiery by přenesl přesně tu
+      // nerozlišenou verzi, kvůli které tu disambiguace je. Přenesené vlákno
+      // je záměr autorizace, dvě stránky se stejným popisem už ne.
+      description = duplicateDescriptions.has(r.text)
+        ? tomlString(disambiguated(r.text, `Dossier: ${dossierTitles.get(slug) ?? slug}.`))
+        : (existingDescription ?? tomlString(r.text));
     } else if (r.recordType === "source") {
       title = tomlString(r.title);
-      description = r.description !== undefined ? tomlString(r.description) : null;
+      // Dvě různé situace se stejným příznakem. (1) Týž zdroj — oficiální web
+      // vlády, profil poslance — cituje osm dossierů a každý má vlastní SRC
+      // záznam s doslova stejným popisem. (2) Dvě RŮZNÉ redakce přetiskly
+      // tutéž zprávu ČTK a autor jim napsal shodnou poznámku; to nejsou
+      // duplicitní záznamy (jiná URL, jiné claimy, obě správně s rodinou
+      // `ctk`), jen shodný text. V obou případech rozliší vydavatel — u (2)
+      // je to i jediné, co je odlišuje, protože jsou v témž dossieru.
+      // Rozlišit musí OBOJÍ: outlet sám nestačí u osmi záznamů „oficiální web
+      // vlády" (týž vydavatel v osmi dossierech), dossier sám nestačí u dvou
+      // přetisků ČTK v jednom dossieru. Dohromady je pár (vydavatel, dossier)
+      // jedinečný v každém dosud nalezeném případě.
+      description =
+        r.description === undefined
+          ? null
+          : tomlString(
+              disambiguated(r.description, `Zdroj: ${r.outlet}, dossier ${dossierTitles.get(slug) ?? slug}.`),
+            );
     } else if (r.recordType === "case") {
       title = tomlString(r.title);
       description = existingDescription ?? tomlString(r.summary);
@@ -355,6 +513,23 @@ export function buildStubs(compiled, { contentRoot = REPO_ROOT } = {}) {
       const tgt = localPart(r.targetEntity["@id"]);
       const derived = `${labels.get(src) ?? entityTitle(r.sourceEntity["@id"])} — ${r.label} — ${labels.get(tgt) ?? entityTitle(r.targetEntity["@id"])}`;
       title = tomlString(rawTitle(contentRoot, relPath) ?? derived);
+      // Tělo stránky vztahu je generický rozcestník („Viz plné znění…"),
+      // takže popis se skládá z toho, co záznam skutečně nese: koho s kým
+      // spojuje, v čím grafu a o která tvrzení se opírá. Poslední věta není
+      // ozdoba — hrana v grafu je záznam vazby, ne obvinění, a v náhledu
+      // odkazu je to jediné místo, kde to je vidět (viz AGENTS.md).
+      // Délkový rozpočet se rozdává předem, ne oříznutím celku: popisky hran
+      // bývají celé věty (nejdelší přes 130 znaků) a při zkrácení až nakonec
+      // zmizí právě ta doložka na konci, kvůli které tam je. Rozpočet musí
+      // sedět pod 200 znaků, kde description ořezává base.html — jinak by
+      // doložku uřízla ta. Seznam CLM se do popisu nedává schválně: v náhledu
+      // odkazu ani ve výsledku vyhledávání identifikátor nikomu nic neřekne
+      // a na stránce samotné je stejně vidět.
+      const inDossier = dossierTitles.get(slug) ?? slug;
+      description = tomlString(
+        `${summarize(derived, 90)}. Vztah v grafu dossieru ${summarize(inDossier, 35)}.` +
+          " Záznam vazby, nikoli tvrzení o pochybení.",
+      );
     }
 
     put(relPath, {
@@ -392,7 +567,25 @@ export function buildStubs(compiled, { contentRoot = REPO_ROOT } = {}) {
         ["template", tomlString(templateOf(relPath, DEFAULT_TEMPLATES.entity))],
         ["weight", String(r.order ?? i + 1)],
         ["aliases", mergedAliases(relPath, r.routeAliases)],
-        ["description", r.description !== undefined ? tomlString(r.description) : null],
+        // Kanonický `description` vyhrává; entita bez něj má ale pořád svůj
+        // ručně psaný kontextový odstavec („Kontextová entita — … nezakládá
+        // žádné tvrzení o pochybení."), a ten je pro popis stránky přesnější
+        // než cokoli odvozeného z typu a rolí.
+        //
+        // Nejstarší uzly grafu (macinka-turek) vznikly ještě před tou
+        // konvencí a tělo nemají vůbec — bez fallbacku spadne jejich popis
+        // na popis celého webu a stránka se v hledání nedá odlišit. Fallback
+        // proto neopakuje typ ani role (množná čísla z entity-types.toml by
+        // se do věty nedala ohnout a druhý slovník tu nechci), ale drží se
+        // toho, co záznam sám deklaruje: že je kontextový a odkud pochází.
+        [
+          "description",
+          r.description !== undefined
+            ? tomlString(r.description)
+            : (summarizeRecord(mdBody(r.content))
+                ? tomlString(namedEntityDescription(r))
+                : contextEntityFallback(r)),
+        ],
       ],
       extraDerived: [
         ["generated", "true"],

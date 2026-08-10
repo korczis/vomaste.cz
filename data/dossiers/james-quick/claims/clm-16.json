@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-16",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-16",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "text": "Novinky v červnu 2006 označily Jiřího Jehličku za organizátora opakovaných demonstrací požadujících odchod tehdejšího premiéra Jiřího Paroubka z politiky; Jehlička médiu sdělil, že chce zveřejnit informace podporující Kubiceho zprávu a případně uspořádat další demonstrace.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-17"
+    }
+  ],
+  "subjects": [
+    "james-quick"
+  ],
+  "order": 16,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tvrzení dokládá veřejný politický aktivismus a dobové vyjádření organizátora. Neprokazuje stranické zadání, financování ani vztah k ODS; citovaný článek výslovně uvádí, že ODS spojení s mítinky odmítla."
+    }
+  ]
+}

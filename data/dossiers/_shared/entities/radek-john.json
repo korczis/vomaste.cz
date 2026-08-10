@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/radek-john",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "radek-john",
+  "entityId": "radek-john",
+  "title": "Radek John",
+  "entityType": "person",
+  "role": "tehdejší ministr vnitra a předseda Věcí veřejných",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "radek-john",
+    "james-quick"
+  ],
+  "order": 523,
+  "provenance": {
+    "discoveredAt": "2026-08-05",
+    "discoveredVia": [
+      "edge-james-quick-radek-john"
+    ],
+    "claimRefs": [
+      "CLM-15"
+    ],
+    "sourceRefs": [
+      "SRC-16"
+    ],
+    "cluster": "verejna-oznameni",
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalý místopředseda vlády (13. 7. 2010 – 20. 5. 2011) a ministr vnitra\n(13. 7. 2010 – 21. 4. 2011, Nečasova vláda, Věci veřejné).\n\n**Subjekt autorizovaného dossieru** (minimální biografický záznam).\nV dossieru James Quick zůstává zároveň evidována dřívější kontextová\nvazba (CLM-15, SRC-16) — záznam vazby, žádné tvrzení o pochybení."
+    }
+  ],
+  "description": "Radek John — bývalý místopředseda vlády a ministr vnitra (2010–2011); subjekt minimálního biografického dossieru."
+}

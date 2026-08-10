@@ -1,0 +1,305 @@
+{
+  "retrieved": "2026-08-09",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "00469548"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "00469548",
+        "obchodniJmeno": "Česká unie sportu, z.s.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 60,
+          "nazevSpravnihoObvodu": "Praha 6",
+          "kodMestskehoObvodu": 60,
+          "nazevMestskehoObvodu": "Praha 6",
+          "kodMestskeCastiObvodu": 500178,
+          "kodUlice": 716812,
+          "nazevMestskeCastiObvodu": "Praha 6",
+          "nazevUlice": "Zátopkova",
+          "cisloDomovni": 100,
+          "kodCastiObce": 490032,
+          "cisloOrientacni": 2,
+          "nazevCastiObce": "Břevnov",
+          "kodAdresnihoMista": 25791478,
+          "psc": 16900,
+          "textovaAdresa": "Zátopkova 100/2, Břevnov, 16900 Praha 6",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "706",
+        "pravniFormaRos": "706",
+        "financniUrad": "006",
+        "datumVzniku": "1990-07-04",
+        "datumAktualizace": "2026-06-06",
+        "dic": "CZ00469548",
+        "icoId": "00469548",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Zátopkova 100/2",
+          "radekAdresy2": "Břevnov",
+          "radekAdresy3": "16900 Praha 6"
+        },
+        "czNace2008": [
+          "4322",
+          "469",
+          "4725",
+          "559",
+          "5610",
+          "581",
+          "6831",
+          "692",
+          "82",
+          "8690",
+          "93110"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "AKTIVNI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Česká unie sportu, z.s., Plavecký stadion Podolí",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 43,
+                  "nazevSpravnihoObvodu": "Praha 4",
+                  "kodMestskeCastiObvodu": 500119,
+                  "kodUlice": 465984,
+                  "nazevMestskeCastiObvodu": "Praha 4",
+                  "nazevUlice": "Podolská",
+                  "cisloDomovni": 43,
+                  "kodCastiObce": 400190,
+                  "cisloOrientacni": 74,
+                  "nazevCastiObce": "Podolí",
+                  "kodAdresnihoMista": 21959391,
+                  "psc": 14700,
+                  "textovaAdresa": "Podolská 43/74, Podolí, 14700 Praha 4",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "736",
+            "datovyZdroj": "nrpzs"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Česká unie sportu, z.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 60,
+                  "nazevSpravnihoObvodu": "Praha 6",
+                  "kodMestskehoObvodu": 60,
+                  "nazevMestskehoObvodu": "Praha 6",
+                  "kodMestskeCastiObvodu": 500178,
+                  "kodUlice": 716812,
+                  "nazevMestskeCastiObvodu": "Praha 6",
+                  "nazevUlice": "Zátopkova",
+                  "cisloDomovni": 100,
+                  "kodCastiObce": 490032,
+                  "cisloOrientacni": 2,
+                  "nazevCastiObce": "Břevnov",
+                  "kodAdresnihoMista": 25791478,
+                  "psc": 16900,
+                  "textovaAdresa": "Zátopkova 100/2, Břevnov, 16900 Praha 6",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "706",
+            "pravniFormaRos": "706",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Česká unie sportu, z.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 60,
+                  "nazevSpravnihoObvodu": "Praha 6",
+                  "kodMestskehoObvodu": 60,
+                  "nazevMestskehoObvodu": "Praha 6",
+                  "kodMestskeCastiObvodu": 500178,
+                  "kodUlice": 716812,
+                  "nazevMestskeCastiObvodu": "Praha 6",
+                  "nazevUlice": "Zátopkova",
+                  "cisloDomovni": 100,
+                  "kodCastiObce": 490032,
+                  "cisloOrientacni": 2,
+                  "nazevCastiObce": "Břevnov",
+                  "kodAdresnihoMista": 25791478,
+                  "psc": 16900,
+                  "textovaAdresa": "Zátopkova 100/2, Břevnov, 16900 Praha 6",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "706",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Česká unie sportu, z.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 60,
+                  "nazevSpravnihoObvodu": "Praha 6",
+                  "kodMestskehoObvodu": 60,
+                  "nazevMestskehoObvodu": "Praha 6",
+                  "kodMestskeCastiObvodu": 500178,
+                  "kodUlice": 716812,
+                  "nazevMestskeCastiObvodu": "Praha 6",
+                  "nazevUlice": "Zátopkova",
+                  "cisloDomovni": 100,
+                  "kodCastiObce": 490032,
+                  "cisloOrientacni": 2,
+                  "nazevCastiObce": "Břevnov",
+                  "kodAdresnihoMista": 25791478,
+                  "psc": 16900,
+                  "textovaAdresa": "Zátopkova 100/2, Břevnov, 16900 Praha 6",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "706",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Česká unie sportu, z.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 60,
+                  "nazevSpravnihoObvodu": "Praha 6",
+                  "kodMestskehoObvodu": 60,
+                  "nazevMestskehoObvodu": "Praha 6",
+                  "kodMestskeCastiObvodu": 500178,
+                  "kodUlice": 716812,
+                  "nazevMestskeCastiObvodu": "Praha 6",
+                  "nazevUlice": "Zátopkova",
+                  "cisloDomovni": 100,
+                  "kodCastiObce": 490032,
+                  "cisloOrientacni": 2,
+                  "nazevCastiObce": "Břevnov",
+                  "kodAdresnihoMista": 25791478,
+                  "psc": 16900,
+                  "textovaAdresa": "Zátopkova 100/2, Břevnov, 16900 Praha 6",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "706",
+            "spisovaZnacka": "L 830/MSPH",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "46900",
+          "93110",
+          "581",
+          "47250",
+          "4322",
+          "55900",
+          "56110",
+          "869",
+          "69200",
+          "68310",
+          "82"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

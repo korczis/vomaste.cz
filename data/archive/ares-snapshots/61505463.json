@@ -1,0 +1,30 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "61505463",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/61505463",
+  "nazev": "SPACE PLAN, spol. s r.o.",
+  "sidlo": "Knovízská 2410/2, Chodov, 14900 Praha 4",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "C",
+    "vlozka": "29747"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "Jednatel",
+      "since": "2001-10-04",
+      "kind": "person",
+      "name": "Ivo Ragan"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "person",
+      "name": "Ivo Ragan",
+      "podil": "100 %",
+      "vklad": "100000",
+      "splaceno": "100"
+    }
+  ]
+}

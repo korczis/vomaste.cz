@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/katerina-stojanova/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/katerina-stojanova"
+  },
+  "title": "SRC-02 — Deník.cz (VLTAVA LABE MEDIA): Místopředsedy Pirátů se stali Šmíd, Stojanová, Hlavenka a Richterová",
+  "description": "Agenturní zpravodajství ČTK o volbě místopředsedů České pirátské strany na celostátním fóru v Prachaticích 17. 1. 2026 — jedním ze čtyř zvolených místopředsedů je Kateřina Stojanová, uvedená zároveň jako místopředsedkyně poslaneckého klubu.",
+  "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.denik.cz/z_domova/mistopredsedy-piratu-se-stali-smid-stojanova-hlavenka-a-richterova.html",
+  "published": "2026-01-17",
+  "retrieved": "2026-08-07",
+  "sourceFamily": "ctk",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/katerina-stojanova/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "katerina-stojanova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Agenturní zpráva ČTK přetištěná na Deník.cz ze 17. 1. 2026, otevřena a přečtena 2026-08-07.\nInformuje o volbě místopředsedů České pirátské strany na celostátním fóru v Prachaticích: místopředsedy se stali Martin Šmída (434 hlasů), Kateřina Stojanová (419 hlasů), Jiří Hlavenka (366 hlasů) a Olga Richterová (322 hlasů), předsedou strany byl znovuzvolen Zdeněk Hřib. Článek Stojanovou popisuje zároveň jako „místopředsedkyni poslaneckého klubu“.\n\nPoznámka k typu zdroje a jeho limitům: agenturní zpravodajství ČTK (`sourceFamily: ctk`) — jiný vydavatel i jiná doména než SRC-01 (Poslanecká sněmovna, primární úřední zdroj bez redakční vydavatelské rodiny), takže spolu s ním tvoří nezávislou dvojici pro účely korporace tohoto tvrzení. Článek neuvádí žádné pořadové označení („2. místopředsedkyně“) mezi zvolenými místopředsedy — takové řazení proto do tvrzení nepřebíráme, jen fakt zvolení do funkce místopředsedkyně strany."
+    }
+  ],
+  "order": 2
+}

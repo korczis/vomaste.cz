@@ -3,6 +3,7 @@
 title = "František Talíř"
 template = "entity.html"
 weight = 134
+description = "František Talíř — Kontextová entita — Politik KDU-ČSL; Klempířův návrh financování ČT/ČRo označil za „frontální útok“ a „zákon o likvidaci“."
 
 [extra]
 generated = true

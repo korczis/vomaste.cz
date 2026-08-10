@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-hydroprogress-mesto-otrokovice",
+  "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/relations/edge-hydroprogress-mesto-otrokovice",
+  "relationId": "edge-hydroprogress-mesto-otrokovice",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-pavlik"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/hydroprogress-s-r-o"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/mesto-otrokovice"
+  },
+  "relationType": "CONTRACTED_BY",
+  "label": "Město Otrokovice zveřejnilo v registru smluv smlouvu, jejíž protistranou je HYDROPROGRESS, s.r.o.",
+  "status": "single",
+  "directed": true,
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-08"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/sources/SRC-04"
+    }
+  ],
+  "subjects": [
+    "martin-pavlik"
+  ],
+  "order": 11,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Hrana říká, že zveřejňující subjekt a protistrana spolu mají v registru evidovanou smlouvu. Neříká nic o objemu, o průběhu plnění ani o čemkoli závadném."
+    }
+  ]
+}

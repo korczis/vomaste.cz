@@ -1,0 +1,54 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-09",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/11823461",
+  "status": "OK",
+  "subject": {
+    "ico": "11823461",
+    "businessName": "Centrum pro výzkum terorismu z.s.",
+    "registerReference": "L 75249/MSPH"
+  },
+  "filings": [
+    {
+      "referenceLabel": "L 75249/SL1/MSPH",
+      "documentType": "stanovy společnosti",
+      "createdAt": "16-08-2021",
+      "receivedByCourtAt": "20-08-2021",
+      "filedAt": "08-10-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 2197346
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 75249/SL2/MSPH",
+      "documentType": "ostatní zápis z ustavující schůze",
+      "createdAt": "16-08-2021",
+      "receivedByCourtAt": "20-08-2021",
+      "filedAt": "08-10-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 697489
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 75249/SL3/MSPH",
+      "documentType": "zakladatelské dokumenty, notářský zápis [NZ 340/2022]",
+      "createdAt": "02-06-2022",
+      "filedAt": "03-06-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 111531
+        }
+      ]
+    }
+  ]
+}

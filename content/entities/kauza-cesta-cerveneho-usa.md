@@ -3,6 +3,7 @@
 title = "Cesta ministra Červeného do USA (červenec 2026)"
 template = "entity.html"
 weight = 200
+description = "Cesta ministra Červeného do USA (červenec 2026) — Kontextová entita — Desetidenní cesta s návštěvou národních parků; nevyjasněné složení delegace, účast mluvčího Motoristů a hrazení nákladů."
 
 [extra]
 generated = true

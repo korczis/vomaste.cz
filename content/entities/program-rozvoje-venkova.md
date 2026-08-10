@@ -3,6 +3,7 @@
 title = "Program rozvoje venkova (PRV)"
 template = "entity.html"
 weight = 353
+description = "Program rozvoje venkova (PRV) — Kontextová entita — Dotační program — zdroj zrušené dotace Kosteleckých uzenin a 75mil. dotace Vodňanské drůbeže; zvážit typ (program vs. proces)."
 
 [extra]
 generated = true

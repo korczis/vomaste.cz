@@ -3,6 +3,7 @@
 title = "Donald Trump"
 template = "entity.html"
 weight = 113
+description = "Donald Trump — Kontextová entita — Prezident USA; Červený jej pochválil v rozhovoru pro Fox News."
 
 [extra]
 generated = true

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karla-slechtova",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "karla-slechtova",
+  "slug": "karla-slechtova",
+  "title": "Karla Šlechtová",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Karla Šlechtová.",
+  "dossierType": "entity",
+  "canonicalDossier": "karla-slechtova",
+  "subject": "karla-slechtova",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-KARLA-SLECHTOVA"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "karla-slechtova",
+        "label": "Karla Šlechtová",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nKarla Šlechtová je politicky exponovaná osoba v souvislosti s výkonem\ndřívějších veřejných funkcí — ministryně obrany (13. 12. 2017 –\n27. 6. 2018, první vláda Andreje Babiše, od 24. 1. 2018 v demisi) a\nministryně pro místní rozvoj (září 2014 – prosinec 2017, vláda\nBohuslava Sobotky). Spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-08-KARLA-SLECHTOVA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívějších vládních funkcí. Tvrzení nese stav 1 ZDROJ (jediný\npřímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na\nCORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření\nrozsahu vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/karla-slechtova/claims/clm-01.md) | Karla Šlechtová byla podle oficiálního profilu na webu Vlády ČR ministryní obrany od 13. 12. 2017 do 27. 6. 2018 (první vláda Andreje Babiše, od 24. 1. 2018 v demisi) a předtím ministryní pro místní rozvoj od září 2014 do prosince 2017 (vláda Bohuslava Sobotky); dříve byla ředitelkou odboru fondů EU na Úřadu vlády a konzultantkou v Deloitte | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/karla-slechtova/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

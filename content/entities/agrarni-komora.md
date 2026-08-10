@@ -3,6 +3,7 @@
 title = "Agrární komora ČR"
 template = "entity.html"
 weight = 53
+description = "Agrární komora ČR — Kontextová entita — Zemědělská komora; podpořila Šebestyánovu nominaci i potravinového ombudsmana."
 
 [extra]
 generated = true

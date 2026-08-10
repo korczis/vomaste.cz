@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-41",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-41",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "title": "SRC-41 — Podnikatel.cz",
+  "description": "Síkela sebere Agrofertu dotaci 100 milionů, inovační linka na „tousťák“ nebyla dost inovační",
+  "outlet": "Podnikatel.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.podnikatel.cz/aktuality/sikela-sebere-agrofertu-dotaci-100-milionu-inovacni-linka-na-toustak-nebyla-dost-inovacni/",
+  "published": "2022-03-21",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-19"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Síkela sebere Agrofertu dotaci 100 milionů, inovační linka na „tousťák“ nebyla dost inovační**\n\nVlastní zpravodajství Podnikatel.cz (autor Daniel Morávek) ze dne 21. března 2022 dokládá, že Ministerstvo průmyslu a obchodu téhož dne oznámilo záměr odejmout stomilionovou dotaci Pekárně Zelená louka ze skupiny Agrofert na linku na výrobu toustového chleba. Důvodem byla podle podkladů Evropské komise nedostatečná inovativnost projektu. Text cituje ministra Josefa Síkelu, náměstka Mariana Piechu i mluvčího Agrofertu Pavla Heřmanského.\n\nZdroj otevřen a přečten 2026-08-08. Slouží jako nezávislé druhé doložení tvrzení CLM-19 vedle primární tiskové zprávy MPO (SRC-11): jde o samostatnou redakční práci jiného vydavatele (podnikatel.cz) s vlastním autorem, nikoli o převzatou agenturní zprávu ČTK — liší se tak vydavatelem i doménou od úředního primárního zdroje, a zakládá proto nezávislý pár ve smyslu pravidel S2/S10."
+    }
+  ],
+  "order": 41
+}

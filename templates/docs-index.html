@@ -10,6 +10,24 @@
 
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
+  {#- Podsekce dokumentace (dnes katalog příkazů). Vypisují se odděleně od
+      stránek: stránka vykresluje JEDEN řídicí dokument repozitáře, podsekce
+      je generovaný katalog s vlastním indexem. Seznam jde ze
+      section.subsections, takže přidání další podsekce sem nevyžaduje
+      žádnou změnu. -#}
+  {% if section.subsections | length > 0 %}
+  <div class="mb-3 grid gap-3">
+    {% for path in section.subsections %}
+    {% set sub = get_section(path=path, metadata_only=true) %}
+    <a href="{{ sub.permalink | safe }}" class="registry-card">
+      <span class="font-semibold text-white">{{ sub.title }}</span>
+      <span class="mt-1 block text-xs text-white/60">{{ sub.description }}</span>
+      <span class="mt-2 block font-mono text-[0.7rem] text-white/55">generovaný katalog</span>
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
   {% if section.pages | length == 0 %}
   {{ ui::empty_state(message="Zatím zde není žádná zveřejněná stránka dokumentace.") }}
   {% else %}

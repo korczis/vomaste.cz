@@ -18,8 +18,8 @@
  * vygenerují. Od fáze H (T-028) je kanonický dataset JEDINÝ zdroj
  * pravdy: dřívější validátory obsahové vrstvy (validate:dossier,
  * validate:schemas, validate:graph) zanikly — jejich pravidla vlastní
- * kanonické validátory (validate-references R1–R7, validate-semantics
- * S1–S8, validate-registry-table T1–T8, schemas/canonical/) a schema
+ * kanonické validátory (validate-references R1–R8, validate-semantics
+ * S1–S10, validate-registry-table T1–T8, schemas/canonical/) a schema
  * brána exportů žije přímo v build:data-exports.
  *
  * Kroky se spouštějí přes `npm run <script>`, aby definice příkazů
@@ -28,6 +28,7 @@
 import { spawnSync } from "node:child_process";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { acquireLock, releaseLock, LockTimeoutError } from "./with-build-lock.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 
@@ -52,6 +53,11 @@ const BUILD_STEPS = [
   // pro Zolu. Běží hned po kanonické bráně, aby report nemohl být starší
   // než data; kdyby žil mimo pipeline, zastaral by první změnou dossieru.
   "report:evidence-plan",
+  // Offline archive doctrine gate: no network and no Zone B dependency.
+  // It makes every entity with a verified IČO carry ARES + sanitized Justice
+  // coverage, verifies hashes and docket inventory, and proves that the
+  // scheduled network refresh can only create a reviewable branch/PR.
+  "archive:check",
   "test",
   "build:government-roster",
   "validate:authorization",
@@ -72,6 +78,17 @@ const BUILD_STEPS = [
   "lint:component-reuse",
   "lint:hardcoded-records",
   "lint:generated-content",
+  "build:source-catalog",
+  // Katalog toolingu: brána běží PŘED generátorem schválně. `--check`
+  // porovnává commitnuté stránky a docs/TOOLING.md s tím, co by z dat
+  // vzniklo — kdyby běžela až za generátorem, porovnávala by výstup se
+  // sebou samým a nikdy by neselhala. Zároveň je to místo, kde build
+  // spadne na příkazu přidaném do package.json / justfile /
+  // .claude/skills bez záznamu v data/tooling/ (kontroly G1–G6 běží
+  // v obou režimech). Generátor za ní pak doplní gitignorovaný view
+  // model, který šablony čtou při `zola build`.
+  "verify:tooling-catalog",
+  "build:tooling-catalog",
   "build:data-exports",
   "build:graph-projections",
   "validate:graph-projections",
@@ -84,11 +101,26 @@ const BUILD_STEPS = [
   "generate:discovery-log",
   "css:build",
   "js:build",
-  { raw: ["node", "scripts/build/with-build-lock.mjs", "zola", "build"] },
+  // Lock coverage for this step (and everything that writes to
+  // data/generated/ before it) comes from acquireLock() in main() below,
+  // not from wrapping this one step — see with-build-lock.mjs's 2026-08-06
+  // note for why a zola-build-only lock wasn't enough.
+  { raw: ["zola", "build"] },
   "verify:navigation-counts",
   "verify:anchors",
   "verify:jsonld",
+  // Sociální a SEO metadata (T-076): úplnost og:*/twitter:*, shoda
+  // og:url s kanonickou URL, existence náhledového obrázku, meze délky
+  // z data/seo.toml a shoda titulku/popisu se stránkovým uzlem JSON-LD.
+  // Musí běžet po zola build — kontroluje vydané HTML, ne šablony.
+  "verify:og",
   "verify:full-pages",
+  // Každá vydaná <table> musí být ve scroll kontextu (.dossier-prose nebo
+  // overflow-x-auto obal z macros/table.html) — jinak by se na mobilu
+  // hroutila místo scrollování. Doplněk lint:component-reuse na úrovni
+  // hotového HTML: markdown tabulky šablonou neprojdou, vidí je až
+  // post-build průchod nad public/.
+  "verify:table-responsive",
   "verify:export",
 ];
 
@@ -100,6 +132,7 @@ const DEV_STEPS = [
   "data:views",
   "data:generate-content",
   "data:sync-content",
+  "archive:check",
   "validate:authorization",
   "validate:dossier-types",
   "build:entity-type-sections",
@@ -107,6 +140,8 @@ const DEV_STEPS = [
   "build:navigation",
   "build:secondary-providers",
   "validate:navigation",
+  "build:source-catalog",
+  "build:tooling-catalog",
   "build:data-exports",
   "build:graph-projections",
   "validate:graph-projections",
@@ -127,6 +162,7 @@ const DEV_STEPS = [
 // data/generated/).
 const CHECK_STEPS = [
   "data:validate",
+  "archive:check",
   "validate:authorization",
   "verify:authorization-log",
   "validate:dossier-types",
@@ -160,6 +196,24 @@ const steps = MODES[mode];
 console.log(`pipeline: režim ${mode} — ${steps.length} krok(ů).`);
 const startedAt = Date.now();
 
+// `build` je jediný režim, který od data:views dál PÍŠE do data/generated/
+// a nakonec do public/ (zola build) — přesně to, co with-build-lock.mjs
+// chrání. Zamykáme na celý běh, ne jen na zola krok (viz komentář 2026-08-06
+// ve with-build-lock.mjs): dva souběžné `npm run build` ve stejném
+// checkoutu se dřív přetahovaly už o data/generated/views/**, dřív než
+// jeden z nich vůbec došel na zola build, kde by je zamykání zachytilo.
+// `dev` končí interaktivním `zola serve`, který může běžet hodiny — zamykat
+// by na tu dobu blokovalo každý jiný build ve stejném checkoutu, proto se
+// nezamyká. `check` nic negeneruje, zamykání nepotřebuje.
+if (mode === "build") {
+  try {
+    acquireLock([`node scripts/build/pipeline.mjs ${mode}`]);
+  } catch (err) {
+    if (err instanceof LockTimeoutError) process.exit(1);
+    throw err;
+  }
+}
+
 for (const [i, step] of steps.entries()) {
   const [cmd, ...args] = typeof step === "string" ? ["npm", "run", step] : step.raw;
   const label = typeof step === "string" ? step : step.raw.join(" ");
@@ -173,6 +227,10 @@ for (const [i, step] of steps.entries()) {
     console.error(`pipeline: krok "${label}" skončil s kódem ${res.status} — zastavuji.`);
     process.exit(res.status ?? 1);
   }
+}
+
+if (mode === "build") {
+  releaseLock();
 }
 
 console.log(`\npipeline: režim ${mode} OK (${((Date.now() - startedAt) / 1000).toFixed(1)} s).`);

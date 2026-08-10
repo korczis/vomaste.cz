@@ -1,4 +1,5 @@
 {
+  "externalIds": { "ares": "00216208" },
  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
  "schemaVersion": 1,
  "@context": "https://vomaste.cz/context/v1.jsonld",

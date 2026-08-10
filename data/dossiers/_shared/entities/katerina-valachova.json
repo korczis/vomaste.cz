@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/katerina-valachova",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "katerina-valachova",
+  "entityId": "katerina-valachova",
+  "title": "Kateřina Valachová",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "katerina-valachova"
+  ],
+  "order": 572,
+  "description": "Kateřina Valachová — bývalá ministryně školství (2015–2017).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalá ministryně školství, mládeže a tělovýchovy (2015 – 21. 6. 2017,\nČSSD), právnička.\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ]
+}

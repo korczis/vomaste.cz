@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/katerina-valachova",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "katerina-valachova",
+  "slug": "katerina-valachova",
+  "title": "Kateřina Valachová",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Kateřina Valachová.",
+  "dossierType": "entity",
+  "canonicalDossier": "katerina-valachova",
+  "subject": "katerina-valachova",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-KATERINA-VALACHOVA"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "katerina-valachova",
+        "label": "Kateřina Valachová",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nKateřina Valachová je bývalá ministryně školství, mládeže a\ntělovýchovy (2015–2017, vláda Bohuslava Sobotky, ČSSD), právnička.\nJako politicky exponovaná osoba v souvislosti s výkonem dřívější\nveřejné funkce spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-08-KATERINA-VALACHOVA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívějších veřejných funkcí. Oba citované zdroje jsou týž\nvydavatel (vlada.gov.cz), takže tvrzení nese stav 1 ZDROJ; drobný\nrozpor v datu začátku funkce mezi oběma úředními stránkami je uveden\notevřeně, ne tiše rozhodnut. Okolnosti konce v úřadu se zde bez přímo\notevřeného zdroje neuvádějí. Rozšíření rozsahu vyžaduje samostatnou\nbudoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/katerina-valachova/claims/clm-01.md) | Kateřina Valachová byla ministryní školství, mládeže a tělovýchovy vlády Bohuslava Sobotky do 21. 6. 2017 (nominována za ČSSD) — oficiální přehled členů vlády na webu Vlády ČR uvádí začátek funkce 5. 6. 2015, zatímco její vládní profil byl publikován až 17. 6. 2015; předtím byla náměstkyní ministra pro lidská práva pro řízení sekce Legislativní rady vlády a vedoucí právního odboru Kanceláře veřejného ochránce práv (2002–2012) | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/katerina-valachova/sources/src-01.md), [SRC-02](@/dossiers/katerina-valachova/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

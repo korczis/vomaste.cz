@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vit-rakusan/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/vit-rakusan"
+  },
+  "title": "SRC-02 — Blesk.cz: STAN předbíhá tápající ODS. Politolog popsal, zda má Rakušan na to být šéfem opozice",
+  "description": "Redakční analytický článek Blesk.cz o postavení STAN v opozičních preferencích, s citací předsedy STAN Víta Rakušana.",
+  "outlet": "Blesk.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.blesk.cz/clanek/zpravy-politika/835946/stan-predbiha-tapajici-ods-politolog-popsal-zda-ma-rakusan-na-to-byt-sefem-opozice.html",
+  "published": "2026-04-06",
+  "retrieved": "2026-08-07",
+  "sourceFamily": "blesk",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vit-rakusan/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "vit-rakusan"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Redakční článek Blesk.cz (autor Tomáš Černík) ze 6. 4. 2026, otevřen a přečten 2026-08-07.\nOznačuje Víta Rakušana jako „předsedu Starostů“ a cituje jeho vlastní vyjádření k postavení STAN vůči ODS v opozičních preferencích („Předseda Starostů Vít Rakušan ale podle svých slov překonání ODS za zásadní metu nepovažuje“).\n\nPoznámka k typu zdroje a jeho limitům: vlastní redakční práce Blesk.cz s jmenovaným autorem, ne agenturní přebírka ČTK (na stránce není žádná citace ČTK) — jiný vydavatel i jiná doména než SRC-03 (Tiscali.cz/ČTK), takže spolu s ním tvoří nezávislou dvojici pro účely korporace tvrzení o funkci předsedy hnutí STAN."
+    }
+  ],
+  "order": 2
+}

@@ -3,6 +3,7 @@
 title = "Vladimír Růžička"
 template = "entity.html"
 weight = 521
+description = "Vladimír Růžička — Kontextová veřejná osoba: iROZHLAS doložil podání trestního oznámení Jiřím Jehličkou v souvislosti s tehdejší kauzou trenéra."
 
 [extra]
 generated = true

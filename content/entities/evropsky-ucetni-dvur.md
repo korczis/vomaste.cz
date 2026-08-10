@@ -3,6 +3,7 @@
 title = "Evropský účetní dvůr"
 template = "entity.html"
 weight = 124
+description = "Evropský účetní dvůr — Kontextová entita — Adresát podnětu Transparency International k RSVP Trust."
 
 [extra]
 generated = true

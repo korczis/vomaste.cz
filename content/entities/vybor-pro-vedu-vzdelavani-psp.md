@@ -3,6 +3,7 @@
 title = "Výbor pro vědu, vzdělávání, mládež a sport Poslanecké sněmovny"
 template = "entity.html"
 weight = 447
+description = "Výbor pro vědu, vzdělávání, mládež a sport Poslanecké… — Kontextová entita — Výbor, jemuž byl přikázán tisk 232 (zákaz mobilů)."
 
 [extra]
 generated = true

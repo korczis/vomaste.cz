@@ -3,6 +3,7 @@
 title = "Ministerstvo kultury ČR"
 template = "entity.html"
 weight = 274
+description = "Ministerstvo kultury ČR — Kontextová entita — Resort řízený Klempířem — rozpočtové škrty, mimořádné dotace, zrušené výběrové řízení NGP, návrh zákona o financování médií."
 
 [extra]
 generated = true

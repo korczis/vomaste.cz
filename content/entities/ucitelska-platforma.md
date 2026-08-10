@@ -3,6 +3,7 @@
 title = "Učitelská platforma"
 template = "entity.html"
 weight = 418
+description = "Učitelská platforma — Kontextová entita — Profesní sdružení učitelů; kritika testování i načasování zkrácení školního roku."
 
 [extra]
 generated = true

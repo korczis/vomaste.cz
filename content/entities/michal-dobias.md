@@ -3,6 +3,7 @@
 title = "Michal Dobiáš"
 template = "entity.html"
 weight = 262
+description = "Michal Dobiáš — Kontextová entita — Vedoucí odboru MČ Praha 3 — jeho stanovisko varovalo, že pro výpověď z nájmu neexistuje právně relevantní podklad."
 
 [extra]
 generated = true

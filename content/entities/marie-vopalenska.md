@@ -3,6 +3,7 @@
 title = "Marie Vopálenská"
 template = "entity.html"
 weight = 247
+description = "Marie Vopálenská — Kontextová entita — Generální ředitelka ACRI; na diskusním fóru uvedla připravenost českého železničního průmyslu."
 
 [extra]
 generated = true

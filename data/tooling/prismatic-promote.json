@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/prismatic-promote",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "prismatic-promote",
+  "kind": "npm",
+  "name": "prismatic:promote",
+  "title": "Promoce do kanonických dat — nehotové",
+  "category": "reserse",
+  "summary": "Stub. Vypíše odkaz na architektonické rozhodnutí a skončí nenulově. Formát manifestu, zapisovač promoce ani rollback logika neexistují — dnes tenhle příkaz do kanonických dat zapsat nic nemůže.",
+  "whenToRun": "Nespouštět.",
+  "sourceFile": "scripts/prismatic/promote.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Až vznikne, bude to JEDINÝ krok integrace, který smí sáhnout na data/dossiers/**, a musí projít stejnými publikačními branami jako ručně psané tvrzení."
+  ]
+}

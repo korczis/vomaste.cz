@@ -4,6 +4,7 @@ title = "Vodňanská drůbež"
 template = "entity.html"
 weight = 25
 aliases = ["/dossiers/andrej-babis/entities/vodnanska-drubez/"]
+description = "Vodňanská drůbež — Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
 
 [extra]
 generated = true

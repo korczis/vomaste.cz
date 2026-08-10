@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-89",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-89",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "title": "SRC-89 — Ekonomický deník: Poslanecká sněmovna si popřála silnou řepku (21. 5. 2015)",
+  "description": "Autorská analýza Petra Musila k hlasování Sněmovny o ukončení daňové podpory biopaliv z 20. 5. 2015: z poslanců ANO 25 hlasovalo proti návrhu, 15 se zdrželo a pouze 3 jej podpořili; návrh neprošel.",
+  "outlet": "Ekonomický deník",
+  "sourceType": "autorská analýza",
+  "url": "https://ekonomickydenik.cz/poslanecka-snemovna-si-poprala-silnou-repku/",
+  "published": "2015-05-21",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-85"
+    }
+  ],
+  "subjects": [
+    "babis"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Ekonomický deník přinesl 21. 5. 2015 autorskou analýzu Petra Musila\nk hlasování Poslanecké sněmovny z 20. 5. 2015 o ukončení daňové podpory\nbiopaliv. Text uvádí shodný rozpis hlasů poslaneckého klubu ANO:\n„25 poslanců hnutí ANO hlasovalo proti tomuto návrhu, dalších 15 se\nzdrželo hlasování a pouzí tři z nich návrh podpořili.\" Návrh na zrušení\ndaňové podpory tím nebyl přijat.\n\n**Poznámka k přesnosti**: jde o doložený průběh hlasování v legislativním\nsporu, ne o správní ani trestní zjištění; rozdíl mezi Babišovou dřívější\ndeklarací souhlasu a skutečným hlasováním klubu dossier uvádí bez\ninterpretace motivů, které žádný citovaný zdroj nedokládá.\n\n**Nezávislost vůči SRC-61 (Novinky.cz)**: SRC-61 je agenturně založený\ntext ČTK (rodina `ctk`, vydavatel spojený se Seznam.cz/Borgis) v titulu\nNovinky.cz; tento text je vlastní autorská analýza s uvedeným autorem\n(Petr Musil) v titulu Ekonomický deník (vydavatel Media Network s.r.o.)\n— jiná source family, jiný vydavatel i registrovaná doména. Rozpis hlasů\nje veřejný záznam parlamentního hlasování, který obě redakce popisují\nnezávisle; proto CLM-85 povýšeno na `CORROBORATED`. Otevřeno a přečteno\n2026-08-08."
+    }
+  ],
+  "order": 89
+}

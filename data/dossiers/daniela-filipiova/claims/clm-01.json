@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/daniela-filipiova/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/daniela-filipiova"
+  },
+  "text": "Daniela Filipiová byla podle oficiálního přehledu členů druhé vlády Mirka Topolánka na webu Vlády ČR ministryní zdravotnictví od 23. 1. 2009 do 26. 3. 2009 a poté do 8. 5. 2009 vykonávala funkci v demisi",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/daniela-filipiova/sources/SRC-01"
+    }
+  ],
+  "subjects": [
+    "daniela-filipiova"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/daniela-filipiova/_index.md)."
+    }
+  ]
+}

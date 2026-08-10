@@ -3,6 +3,7 @@
 title = "Miloš Táborský"
 template = "entity.html"
 weight = 269
+description = "Miloš Táborský — Kontextová entita — Bývalý přednosta kardiologické kliniky FN Olomouc, nyní vede kardiologii v Ústí n."
 
 [extra]
 generated = true

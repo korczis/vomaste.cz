@@ -3,6 +3,7 @@
 title = "Daniel Dočekal"
 template = "entity.html"
 weight = 101
+description = "Daniel Dočekal — Kontextová entita — Odborník na sociální sítě; příspěvek Šťastného podle něj „vykazuje znaky manipulace“."
 
 [extra]
 generated = true

@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-45 — HN.cz (Hospodářské noviny)"
-description = "Babiš nezvažuje kompetenční žalobu na prezidenta; řízením ministerstva životního prostředí dočasně pověřen Macinka."
+description = "Babiš nezvažuje kompetenční žalobu na prezidenta; řízením ministerstva životního prostředí dočasně pověřen Macinka. Zdroj: Hospodářské noviny, dossier Petr Macinka a Filip Turek."
 template = "dossier-source.html"
 weight = 45
 aliases = ["/dossier/zdroje/src-45/"]

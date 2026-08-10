@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source-catalog-entry.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/zdroje/datove-schranky",
+  "@type": "vomaste:SourceCatalogEntry",
+  "recordType": "sourceCatalogEntry",
+  "identifier": "datove-schranky",
+  "title": "Informační systém datových schránek (ISDS)",
+  "operator": "Ministerstvo vnitra ČR",
+  "kind": "primary-registry",
+  "jurisdiction": "CZ",
+  "access": "restricted",
+  "authentication": "none-for-lookup",
+  "url": "https://www.mojedatovaschranka.cz/",
+  "order": 80,
+  "proves": [
+    "Že subjekt má zřízenou datovou schránku, pokud jeho identifikátor znáš předem."
+  ],
+  "doesNotProve": [
+    "Nic o obsahu komunikace. Ta je ze zákona neveřejná."
+  ],
+  "traps": [
+    {
+      "title": "Zpětné vyhledání neexistuje",
+      "detail": "Veřejná služba, která by k IČO vrátila ID schránky, není k dispozici. Údaj o schránce se získává jako součást rejstříkového výpisu (ARES ROS), ne samostatným dotazem."
+    },
+    {
+      "title": "Osmimístné ID schránky se plete s IČO",
+      "detail": "Obojí je osmiznakový řetězec. Kdo rozlišuje regulárním výrazem podle délky, pošle IČO do větve pro ID schránky a zpět dostane nesmysl."
+    }
+  ],
+  "howToSearch": "Neptej se ISDS. Zeptej se ARES na sub-registr ROS a údaj o schránce si přečti z výpisu subjektu.",
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Záznam existuje hlavně proto, aby zabránil opakovanému hledání neexistující služby. Adaptér, který sliboval vyhledání schránky podle jména, mířil na API, které nikdy neexistovalo."
+    }
+  ],
+  "answers": [
+    {
+      "question": "Má subjekt datovou schránku?",
+      "note": "Zjistíš z výpisu ARES (ROS), ne dotazem na ISDS — zpětné vyhledání neexistuje."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/svatopluk-nemecek",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "svatopluk-nemecek",
+  "entityId": "svatopluk-nemecek",
+  "title": "Svatopluk Němeček",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "svatopluk-nemecek"
+  ],
+  "order": 575,
+  "description": "Svatopluk Němeček — bývalý ministr zdravotnictví (2014–2016).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalý ministr zdravotnictví (29. 1. 2014 – 30. 11. 2016), dříve\nředitel FN Ostrava.\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ]
+}

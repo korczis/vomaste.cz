@@ -3,6 +3,7 @@
 title = "Investigace.cz"
 template = "entity.html"
 weight = 153
+description = "Investigace.cz — Kontextová entita — Investigativní server; aktér kauzy majetkového přiznání — jeho upozornění vedlo k Macinkovu dodatečnému přiznání podílu v GMR GAS UA LLC (jmenován přímo v…"
 
 [extra]
 generated = true

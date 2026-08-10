@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-fiala/gaps/GAP-01",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-fiala"
+  },
+  "title": "GAP-01 — Ministerské rezignace v jeho vládě (2021–2025) nejsou dosud doloženy přímo otevřenými primárními zdroji",
+  "description": "AUTH-2026-08-07-PETR-FIALA-PREMIERSHIP autorizuje organizační fakta o personálním složení vlády, ale zatím byl otevřen jen agregační přehled (Wikipedie), ne prvotní zpravodajské zdroje k jednotlivým rezignacím.",
+  "priority": "střední",
+  "checked": "2026-08-07",
+  "claims": [],
+  "subjects": [
+    "petr-fiala"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Přehled ministerských rezignací v Fialově vládě (2021–2025) — mj. Věslav Michalik (listopad 2021), Petr Gazdík (červen 2022), Anna Hubáčková (říjen 2022), Vladimír Balaš (květen 2023), Helena Langšádlová (květen 2024), Ivan Bartoš (září 2024) — je zatím doložen jen agregačním přehledem (Wikipedie), který podle standardu tohoto webu není citovatelným primárním zdrojem.\n\n**Proč je to mezera**: AUTH-2026-08-07-PETR-FIALA-PREMIERSHIP výslovně vyžaduje, aby každý zdroj k tomuto tématu byl před napsáním tvrzení přímo otevřen a přečten u prvotního, jmenovaného zpravodajského zdroje — ne přebrán z agregátoru. Tato práce zatím nebyla provedena. Mezera **není** zjištěním žádným směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit přímo otevřeným prvotním zdrojem."
+    }
+  ],
+  "order": 1
+}

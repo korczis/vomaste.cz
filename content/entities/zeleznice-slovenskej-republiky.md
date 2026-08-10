@@ -3,6 +3,7 @@
 title = "Železnice Slovenskej republiky (ŽSR)"
 template = "entity.html"
 weight = 461
+description = "Železnice Slovenskej republiky (ŽSR) — Kontextová entita — Bednárik generálním ředitelem ŽSR od 15. 5. 2025 před nástupem do vlády; předtím poradce slovenského ministra dopravy (ministr…"
 
 [extra]
 generated = true

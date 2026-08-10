@@ -10,12 +10,27 @@
     "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
   },
   "title": "Neodvysílaný rozhovor s prezidentem Pavlem",
-  "summary": "Neodvysílaný rozhovor s prezidentem Pavlem — viz tvrzení CLM-08, CLM-09, CLM-10, CLM-11, CLM-12.",
+  "summary": "Neodvysílaný rozhovor s prezidentem Pavlem — nezveřejnění rozhovoru pro podcast Kamufláž, opoziční obvinění z cenzury, obhajoba ministerstva, dodatečné zveřejnění na YouTube a Facebooku, závěry interní inspekce ministerstva a náčelníka generálního štábu Řehky.",
   "period": "2026",
   "status": "status-single",
   "statusLabel": "Sledované téma",
   "anchor": "kauza-rozhovor-pavel",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-12"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-29"
     },
@@ -24,9 +39,21 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-31"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-54"
     }
   ],
   "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-08"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-21"
     },
@@ -34,7 +61,7 @@
       "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-27"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-08"
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-35"
     }
   ],
   "subjects": [

@@ -900,6 +900,21 @@ export function buildViewModels(compiled, { governmentRoster = new Map() } = {})
       }),
     };
   })();
+  /*
+   * "Poslední aktualizace" na titulní straně má být skutečně nejnovější
+   * napříč celým webem, ne "poslední dvě od každého dossieru vypsané
+   * v pořadí registru". Dřív šablona dělala přesně tohle (vnořená smyčka
+   * dossier → jeho top-2 updaty), takže dossier na začátku registru s
+   * půl rokem starým update mohl vizuálně předběhnout dossier s updatem
+   * ze včerejška, jen podle abecedy/redakčního pořadí. Řazení a výběr
+   * proto patří sem (view model), ne do šablony — stejné pravidlo jako
+   * u demoClaim výš.
+   */
+  const RECENT_UPDATES_LIMIT = 8;
+  const recentUpdates = canonicalOrdered
+    .flatMap((w) => updatesOf(w.dossier).map((u) => ({ ...u, dossierSlug: w.dossier, dossierTitle: w.record.title })))
+    .sort((a, b) => cmp(b.date, a.date) || cmp(a.dossierSlug, b.dossierSlug))
+    .slice(0, RECENT_UPDATES_LIMIT);
   views.set("landing.json", {
     totals,
     dossiers: visibleCards,
@@ -926,9 +941,11 @@ export function buildViewModels(compiled, { governmentRoster = new Map() } = {})
     primaryDocuments,
     primaryCanonical,
     demoClaim,
+    recentUpdates,
     canonicalDossiers: canonicalOrdered.map((w) => ({
       slug: w.dossier,
       title: w.record.title,
+      updated: w.record.updated,
       updates: updatesOf(w.dossier),
     })),
   });

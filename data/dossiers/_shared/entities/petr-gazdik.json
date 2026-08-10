@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/petr-gazdik",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "petr-gazdik",
+  "entityId": "petr-gazdik",
+  "title": "Petr Gazdík",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "petr-gazdik"
+  ],
+  "order": 533,
+  "description": "Petr Gazdík — bývalý ministr školství (2021–2022).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalý ministr školství, mládeže a tělovýchovy (17. 12. 2021 –\n29. 6. 2022, STAN); v červnu 2022 podal demisi.\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ]
+}

@@ -3,6 +3,7 @@
 title = "Jan Boháč"
 template = "entity.html"
 weight = 159
+description = "Jan Boháč — Kontextová entita — Předseda České unie sportu; jmenování Kováře do čela NSA uvítal."
 
 [extra]
 generated = true

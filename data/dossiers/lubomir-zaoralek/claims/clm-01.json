@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-zaoralek/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-zaoralek"
+  },
+  "text": "Lubomír Zaorálek byl podle oficiálního profilu na webu Vlády ČR ministrem kultury od 27. 8. 2019 do 17. 12. 2021 (v demisi od 11. 11. 2021), ministrem zahraničních věcí od ledna 2014 a předsedou Poslanecké sněmovny v letech 2002–2006; podle ČT24 byl 5. 10. 2024 na sjezdu SOCDEM v Hradci Králové zvolen statutárním místopředsedou strany (100 ze 135 odevzdaných hlasů)",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-zaoralek/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-zaoralek/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "lubomir-zaoralek"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/lubomir-zaoralek/_index.md)."
+    }
+  ]
+}

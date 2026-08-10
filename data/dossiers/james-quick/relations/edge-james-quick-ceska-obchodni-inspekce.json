@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/relations/edge-james-quick-ceska-obchodni-inspekce",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-james-quick-ceska-obchodni-inspekce",
+  "relationId": "edge-james-quick-ceska-obchodni-inspekce",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/cerd-system-llc"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/ceska-obchodni-inspekce"
+  },
+  "relationType": "SUBJECT_OF_PROCEEDING",
+  "label": "ČOI zveřejnila spotřebitelské varování k CERD",
+  "status": "single",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-10"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-11"
+    }
+  ],
+  "subjects": [
+    "james-quick"
+  ],
+  "directed": true,
+  "order": 7,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Institucionální vazba vede od CERD k veřejnému varování ČOI. Nevyjadřuje osobní vztah mezi inspekcí a Jamesem Quickem ani trestní rozhodnutí."
+    }
+  ]
+}

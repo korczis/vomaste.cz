@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source-catalog-entry.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/zdroje/justice-sbirka-listin",
+  "@type": "vomaste:SourceCatalogEntry",
+  "recordType": "sourceCatalogEntry",
+  "identifier": "justice-sbirka-listin",
+  "title": "Sbírka listin veřejného rejstříku",
+  "operator": "Ministerstvo spravedlnosti ČR",
+  "kind": "primary-document",
+  "jurisdiction": "CZ",
+  "access": "open",
+  "authentication": "none",
+  "url": "https://or.justice.cz/ias/ui/rejstrik",
+  "order": 40,
+  "proves": [
+    "Znění zakladatelských dokumentů, účetních závěrek a rozhodnutí valné hromady tak, jak byly soudu skutečně založeny.",
+    "Totožnost osoby napříč subjekty, protože listiny nesou rodné číslo nebo datum narození, které rejstříkový výpis v agregátorech neukazuje."
+  ],
+  "doesNotProve": [
+    "Aktuálnost. Zakládání listin má zákonné lhůty a část subjektů je nedodržuje; chybějící závěrka není důkaz o hospodaření.",
+    "Nic o osobách, které v listinách nefigurují."
+  ],
+  "traps": [
+    {
+      "title": "Listiny jsou skeny, ne data",
+      "detail": "Většina dokumentů je PDF sken bez textové vrstvy. Strojové čtení vyžaduje OCR a jeho výstup je nutné před citací ověřit okem."
+    },
+    {
+      "title": "Osobní údaje v listinách",
+      "detail": "Listiny běžně obsahují rodná čísla a adresy bydliště. Slouží k rozlišení osob při rešerši; do publikovaného dossieru se nepřebírají."
+    }
+  ],
+  "howToSearch": "Najdi subjekt podle IČO, otevři oddíl Sbírka listin a jdi po zakladatelských dokumentech a smlouvách o převodu podílu. Tohle je jediný veřejný zdroj, který spolehlivě odliší jmenovce.",
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Sbírka listin je nejvyšší stupeň důkazu, který má tenhle projekt bez žádosti podle zákona o svobodném přístupu k informacím k dispozici. Kde rejstříkový výpis říká „je zapsán\", listina říká „takto to bylo podepsáno a kým\".\n\nPoužívá se zejména k **rozlišení osob stejného jména**. Dokud identita napříč subjekty nestojí na listině, zůstává evidovaná jako mezera, ne jako tvrzení."
+    }
+  ],
+  "answers": [
+    {
+      "question": "Je tenhle Jan Novák tentýž člověk ve dvou firmách?",
+      "note": "Jediný veřejný pramen, který spolehlivě odliší jmenovce."
+    },
+    {
+      "question": "Jak zněla zakladatelská listina nebo smlouva o převodu podílu?"
+    },
+    {
+      "question": "Jak firma hospodařila?",
+      "note": "Účetní závěrka, pokud byla založena — část subjektů lhůty nedodržuje."
+    }
+  ]
+}

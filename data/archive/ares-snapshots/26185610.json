@@ -1,0 +1,88 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "26185610",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/26185610",
+  "nazev": "AGROFERT, a.s.",
+  "sidlo": "Pyšelská 2327/2, Chodov, 14900 Praha 4",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "B",
+    "vlozka": "6626"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "předseda představenstva",
+      "since": "2021-05-31",
+      "kind": "person",
+      "name": "Ing. Zbyněk Průša"
+    },
+    {
+      "role": "místopředseda představenstva",
+      "since": "2021-05-31",
+      "kind": "person",
+      "name": "Ing. Petr Cingr"
+    },
+    {
+      "role": "místopředseda představenstva",
+      "since": "2021-05-31",
+      "kind": "person",
+      "name": "Ing. Josef Mráz"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2021-05-31",
+      "kind": "person",
+      "name": "Ing. Jaroslav Kurčík"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2021-05-31",
+      "kind": "person",
+      "name": "Ing. Petra Procházková"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2021-05-31",
+      "kind": "person",
+      "name": "JUDr. Alexej Bílek"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2021-05-31",
+      "kind": "person",
+      "name": "Mgr. Libor Němeček"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2026-02-20",
+      "kind": "person",
+      "name": "Ing. Martin Kubů"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2026-02-20",
+      "kind": "person",
+      "name": "Ing. Michal Jedlička"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2026-02-20",
+      "kind": "person",
+      "name": "Jiří Tvrdík"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2026-02-20",
+      "kind": "person",
+      "name": "Ing. Martin Rada"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2026-02-20",
+      "kind": "person",
+      "name": "Mgr. Pavel Hanus"
+    }
+  ],
+  "spolecnici": []
+}

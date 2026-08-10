@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-29",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-29",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "title": "SRC-29 — Vrchní státní zastupitelství v Olomouci",
+  "description": "Tisková zpráva ze dne 4. 5. 2026 v trestní věci související s darováním bitcoinů Ministerstvu spravedlnosti",
+  "outlet": "Vrchní státní zastupitelství v Olomouci",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://verejnazaloba.cz/vsz-olomouc/tiskova-zprava-ze-dne-4-5-2026-v-trestni-veci-souvisejici-s-darovanim-bitcoinu-ministerstvu-spravedlnosti/",
+  "published": "2026-05-04",
+  "retrieved": "2026-08-06",
+  "localDocument": {
+    "path": "documents/jeronym-tejc/vsz-olomouc-2-vzv-11-2025.html.txt",
+    "originalUrl": "https://verejnazaloba.cz/vsz-olomouc/tiskova-zprava-ze-dne-4-5-2026-v-trestni-veci-souvisejici-s-darovanim-bitcoinu-ministerstvu-spravedlnosti/",
+    "retrievedAt": "2026-08-08",
+    "sizeBytes": 28928,
+    "reviewNote": "Oficiální tisková zpráva VSZ v Olomouci byla stažena a strojově prohledána 2026-08-08. Zpráva stíhané osoby nejmenuje a neobsahuje rodná čísla, data narození ani adresy bydliště. Původní HTML je publikováno jako prostý text, aby archivovaná stránka nespouštěla aktivní webový obsah."
+  },
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-22"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Tisková zpráva ze dne 4. 5. 2026 v trestní věci související s darováním bitcoinů Ministerstvu spravedlnosti**\n\nOficiální sdělení dozorového státního zastupitelství. Uvádí, že policejní orgán Policie ČR, Národní centrála proti organizovanému zločinu SKPV, rozhodl 4. května 2026 o zahájení trestního stíhání **dalších tří osob**, a to se souhlasem **dozorové státní zástupkyně** Vrchního státního zastupitelství v Olomouci, u něhož je věc vedena pod **sp. zn. 2 VZV 11/2025**.\n\nZdroj otevřen a přečten v plném znění 2026-08-06.\n\n**Co dokládá.** Datum, orgán a rozsah zahájení stíhání ([CLM-19](@/dossiers/jeronym-tejc/claims/clm-19.md)); právní kvalifikaci — zneužití pravomoci úřední osoby podle § 329 odst. 1 písm. a), odst. 3 písm. a) tr. zákoníku dílem dokonané, dílem ve stadiu pokusu, a dva zvlášť závažné zločiny legalizace výnosů z trestné činnosti podle § 216 ([CLM-20](@/dossiers/jeronym-tejc/claims/clm-20.md)); příslušnost dozorového zastupitelství ([CLM-21](@/dossiers/jeronym-tejc/claims/clm-21.md)); a trestní sazbu „úhrnného trestu odnětí svobody na 5 až 12 let“ i to, že stíhání je vedeno na svobodě ([CLM-22](@/dossiers/jeronym-tejc/claims/clm-22.md)).\n\n**Poznámka k přesnosti a limitům.** Zpráva **nejmenuje** žádnou ze stíhaných osob — jména (Pavel Blažek, Radomír Daňhel, Kárim Titze) zůstávají na citovaném zpravodajství a tvrzení to nově uvádějí výslovně. Rozdíl proti dosavadnímu znění: [CLM-21](@/dossiers/jeronym-tejc/claims/clm-21.md) tvrdilo, že „dozorujícím státním zástupcem je Radim Dragoun“; podle dokumentu je dozorovým státním zástupcem **žena** („se souhlasem dozorové státní zástupkyně“) a JUDr. Bc. Radim Dragoun, Ph.D. je **vrchní státní zástupce**, tedy vedoucí úřadu, který zprávu podepisuje. Tvrzení bylo podle dokumentu opraveno. Dále: [CLM-19](@/dossiers/jeronym-tejc/claims/clm-19.md) hovořilo o „trestním stíhání tří osob“, dokument uvádí „**dalších** tří osob“ — v téže věci tedy byla stíhána už osoba dřívější. Zahájení trestního stíhání je obvinění, nikoli obžaloba ani odsouzení; platí presumpce neviny. Příčinnou souvislost s trestním oznámením ministra Tejce dokument netvrdí — viz [GAP-08](@/dossiers/jeronym-tejc/gaps/gap-08.md)."
+    }
+  ],
+  "order": 29
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/generate-discovery-log",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "generate-discovery-log",
+  "kind": "npm",
+  "name": "generate:discovery-log",
+  "title": "Append-only log objevení",
+  "category": "generovani",
+  "summary": "Append-only auditní stopa každé entity a každého vztahu ve chvíli, kdy poprvé vstoupí do systému. Na rozdíl od data/generated/** je data/discovery-log.jsonl commitnutý soubor, do kterého se jen přidává.",
+  "whenToRun": "V build i dev pipeline. Pro už zalogované záznamy se nic nemění.",
+  "inputs": [
+    "data/dossiers/** (compiled model)"
+  ],
+  "outputs": [
+    "data/discovery-log.jsonl (append-only)"
+  ],
+  "sourceFile": "scripts/dossier/generate-discovery-log.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Je to záznam toho, co systém pozoroval a kdy — ne publikační rozhodnutí. Zápis sem nemá žádný vliv na to, jestli bude entita někdy autorizovaná."
+  ]
+}

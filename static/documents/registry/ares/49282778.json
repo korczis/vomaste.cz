@@ -1,0 +1,223 @@
+{
+  "retrieved": "2026-08-09",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "49282778"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "49282778",
+        "obchodniJmeno": "JWT, s.r.o.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 78,
+          "nazevKraje": "Liberecký kraj",
+          "kodOkresu": 3504,
+          "nazevOkresu": "Jablonec nad Nisou",
+          "kodObce": 563820,
+          "nazevObce": "Tanvald",
+          "kodUlice": 160024,
+          "nazevUlice": "U Lesíka",
+          "cisloDomovni": 563,
+          "kodCastiObce": 408255,
+          "nazevCastiObce": "Tanvald",
+          "kodAdresnihoMista": 12228648,
+          "psc": 46841,
+          "textovaAdresa": "U Lesíka 563, 46841 Tanvald",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "112",
+        "pravniFormaRos": "112",
+        "financniUrad": "187",
+        "datumVzniku": "1993-06-15",
+        "datumAktualizace": "2025-12-31",
+        "icoId": "49282778",
+        "adresaDorucovaci": {
+          "radekAdresy1": "U Lesíka 563",
+          "radekAdresy2": "46841 Tanvald"
+        },
+        "czNace2008": [
+          "13920",
+          "46410",
+          "47110"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "NEEXISTUJICI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "JWT, s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 78,
+                  "nazevKraje": "Liberecký kraj",
+                  "kodOkresu": 3504,
+                  "nazevOkresu": "Jablonec nad Nisou",
+                  "kodObce": 563820,
+                  "nazevObce": "Tanvald",
+                  "kodUlice": 160024,
+                  "nazevUlice": "U Lesíka",
+                  "cisloDomovni": 563,
+                  "kodCastiObce": 408255,
+                  "nazevCastiObce": "Tanvald",
+                  "kodAdresnihoMista": 12228648,
+                  "psc": 46841,
+                  "textovaAdresa": "U Lesíka 563, 46841 Tanvald",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "pravniFormaRos": "112",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "JWT, s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 78,
+                  "nazevKraje": "Liberecký kraj",
+                  "kodOkresu": 3504,
+                  "nazevOkresu": "Jablonec nad Nisou",
+                  "kodObce": 563820,
+                  "nazevObce": "Tanvald",
+                  "kodUlice": 160024,
+                  "nazevUlice": "U Lesíka",
+                  "cisloDomovni": 563,
+                  "kodCastiObce": 408255,
+                  "nazevCastiObce": "Tanvald",
+                  "kodAdresnihoMista": 12228648,
+                  "psc": 46841,
+                  "textovaAdresa": "U Lesíka 563, 46841 Tanvald",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "112",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "JWT, s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 78,
+                  "nazevKraje": "Liberecký kraj",
+                  "kodOkresu": 3504,
+                  "nazevOkresu": "Jablonec nad Nisou",
+                  "kodObce": 563820,
+                  "nazevObce": "Tanvald",
+                  "kodUlice": 160024,
+                  "nazevUlice": "U Lesíka",
+                  "cisloDomovni": 563,
+                  "kodCastiObce": 408255,
+                  "nazevCastiObce": "Tanvald",
+                  "kodAdresnihoMista": 12228648,
+                  "psc": 46841,
+                  "textovaAdresa": "U Lesíka 563, 46841 Tanvald",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "JWT, s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 78,
+                  "nazevKraje": "Liberecký kraj",
+                  "kodOkresu": 3504,
+                  "nazevOkresu": "Jablonec nad Nisou",
+                  "kodObce": 563820,
+                  "nazevObce": "Tanvald",
+                  "kodUlice": 160024,
+                  "nazevUlice": "U Lesíka",
+                  "cisloDomovni": 563,
+                  "kodCastiObce": 408255,
+                  "nazevCastiObce": "Tanvald",
+                  "kodAdresnihoMista": 12228648,
+                  "psc": 46841,
+                  "textovaAdresa": "U Lesíka 563, 46841 Tanvald",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "spisovaZnacka": "C 11910/KSUL",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "46410",
+          "47110",
+          "13920"
+        ]
+      }
+    ]
+  }
+}

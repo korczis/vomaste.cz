@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/lint-historical-coupling",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "lint-historical-coupling",
+  "kind": "npm",
+  "name": "lint:historical-coupling",
+  "title": "Zákaz vazby na historické subjekty",
+  "category": "validace",
+  "summary": "Anti-coupling lint: vomaste.cz je víceúčelový systém pro libovolný počet dossierů. Dva historické seed subjekty musí zůstat obyčejná doménová DATA, nikdy architektura.",
+  "enforces": [
+    "Identifikátor historického seed subjektu (jména a odvozené slugy) ve STRUKTURÁLNÍ části zdroje: šablony, navigační data, skripty, styly, JS moduly, konfigurace, CI."
+  ],
+  "whenToRun": "Ručně po refaktoru šablon nebo skriptů. Záměrně zatím není zapojený v žádné bráně — de-specializační migrace ještě běží a lint je zatím červený by design (viz komentář v .githooks/pre-commit).",
+  "inputs": [
+    "templates/**",
+    "assets/**",
+    "scripts/**",
+    "data/navigation.toml",
+    ".github/**",
+    "scripts/lint/historical-coupling-allowlist.json"
+  ],
+  "sourceFile": "scripts/lint/lint-historical-coupling.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Nikdy se neskenuje kanonický obsah (content/**), per-dossier data, generované artefakty ani dokumentace včetně append-only logu v AGENTS.md.",
+    "Zbylé legitimní výskyty se povolují po jednom v scripts/lint/historical-coupling-allowlist.json s odůvodněním — žádné plošné ignorování."
+  ]
+}

@@ -3,6 +3,7 @@
 title = "Pavel Blažek"
 template = "entity.html"
 weight = 327
+description = "Pavel Blažek — Kontextová entita — Exministr spravedlnosti (ODS); v bitcoinové kauze trestně stíhán od 5/2026 (presumpce neviny)."
 
 [extra]
 generated = true

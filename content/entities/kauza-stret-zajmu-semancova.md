@@ -3,6 +3,7 @@
 title = "Kauza střetu zájmů poradkyně na MPSV (2026)"
 template = "entity.html"
 weight = 212
+description = "Kauza střetu zájmů poradkyně na MPSV (2026) — Kontextová entita — Souhrnná kauza dossieru: reportovaný střet zájmů, dopis Evropské komise, rozpočtová mezera 63,8 + 17,6 mil."
 
 [extra]
 generated = true

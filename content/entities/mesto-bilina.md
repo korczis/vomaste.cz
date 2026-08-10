@@ -3,6 +3,7 @@
 title = "Město Bílina (městský úřad a stavební úřad)"
 template = "entity.html"
 weight = 256
+description = "Město Bílina (městský úřad a stavební úřad) — Kontextová entita — Obec, kde Mrázová starostovala, užívala obecní byt a vlastní sporný pozemek; stavební úřad léta nekonal."
 
 [extra]
 generated = true

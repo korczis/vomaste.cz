@@ -3,6 +3,7 @@
 title = "Výbor pro zdravotnictví Poslanecké sněmovny"
 template = "entity.html"
 weight = 448
+description = "Výbor pro zdravotnictví Poslanecké sněmovny — Kontextová entita — Dějiště sporů o Národní očkovací strategii."
 
 [extra]
 generated = true

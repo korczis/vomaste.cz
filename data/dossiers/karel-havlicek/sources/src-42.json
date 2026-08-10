@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/sources/SRC-42",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-42",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-havlicek"
+  },
+  "title": "SRC-42 — InfoDnes.cz",
+  "description": "Brusel hostí jednání o konkurenceschopnosti, Havlíček vede českou delegaci",
+  "outlet": "InfoDnes.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.infodnes.cz/zpravodajstvi/69857-brusel-hosti-jednani-o-konkurenceschopnosti-havlicek-vede-ceskou-delegaci",
+  "published": "2026-02-26",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-havlicek/claims/CLM-40"
+    }
+  ],
+  "subjects": [
+    "havlicek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Brusel hostí jednání o konkurenceschopnosti, Havlíček vede českou delegaci**\n\nVlastní zpravodajství InfoDnes.cz (redakce Pavla Absolonová) ze dne 26. února 2026 potvrzuje, že Karel Havlíček tento den vedl českou delegaci na zasedání Rady EU pro konkurenceschopnost (COMPET) v Bruselu a že se jednalo o posílení průmyslové odolnosti a odstraňování bariér jednotného trhu. Podrobnější rozpad agendy na nouzové plány pro ocelářský, automobilový a chemický průmysl v rámci Dohody o čistém průmyslu nese primární úřední zdroj (SRC-26, vlada.gov.cz).\n\nZdroj otevřen a přečten 2026-08-08. Slouží jako nezávislé druhé doložení jádra tvrzení CLM-40 (kdo delegaci vedl, kdy, v jakém orgánu a k tématu průmyslové odolnosti) vedle úředního přehledu vlády: jde o redakční text jiného vydavatele (infodnes.cz) bez agenturní hlavičky ČTK — liší se vydavatelem i doménou od primárního zdroje, a zakládá proto nezávislý pár ve smyslu pravidel S2/S10."
+    }
+  ],
+  "order": 42
+}

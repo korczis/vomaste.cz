@@ -12,7 +12,7 @@
   "title": "GAP-02 — Obsah bezpečnostní analýzy, na niž se ministerstvo odvolává",
   "description": "Analýza Policie ČR nebyla v citovaných zdrojích zveřejněna ani ověřena.",
   "priority": "nízká",
-  "checked": "2026-08-03",
+  "checked": "2026-08-05",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-02"
@@ -27,7 +27,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Ministerstvo odůvodňuje návrh bezpečnostní analýzou Policie ČR\n([CLM-02](@/dossiers/lubomir-metnar/claims/clm-02.md)). Tato analýza\nnebyla v citovaných zdrojích zveřejněna, takže dossier **nemůže posoudit\nani potvrdit**, co obsahuje — zaznamenává pouze, že se na ni ministerstvo\nodvolává.\n\nZ toho neplyne, že analýza neexistuje ani že je vadná. Plyne z toho jen,\nže její obsah není doložen, a proto se o něj nelze opřít.\n\n**Podmínka uzavření**: zveřejnění analýzy nebo jejího relevantního\nvýtahu, případně doložený popis jejích závěrů z otevřeného zdroje.\n\n**Opakovaná kontrola k 2026-08-03**: cílené hledání zopakováno. Nalezené zdroje (ČT24, Respekt, Deník N, Blesk) opakují jen totéž shrnutí závěru analýzy, které už dossier dokládá (CLM-02, CLM-15) — nejnižší dlouhodobé riziko sídla NKÚ, vlastní moderní zabezpečení. Samotný text analýzy ani její podrobnější výtah nebyl zveřejněn v žádném přímo otevřeném zdroji. Mezera zůstává otevřená."
+      "value": "Ministerstvo odůvodňuje návrh bezpečnostní analýzou Policie ČR\n([CLM-02](@/dossiers/lubomir-metnar/claims/clm-02.md)). Tato analýza\nnebyla v citovaných zdrojích zveřejněna, takže dossier **nemůže posoudit\nani potvrdit**, co obsahuje — zaznamenává pouze, že se na ni ministerstvo\nodvolává.\n\nZ toho neplyne, že analýza neexistuje ani že je vadná. Plyne z toho jen,\nže její obsah není doložen, a proto se o něj nelze opřít.\n\n**Podmínka uzavření**: zveřejnění analýzy nebo jejího relevantního\nvýtahu, případně doložený popis jejích závěrů z otevřeného zdroje.\n\n**Opakovaná kontrola k 2026-08-03**: cílené hledání zopakováno. Nalezené zdroje (ČT24, Respekt, Deník N, Blesk) opakují jen totéž shrnutí závěru analýzy, které už dossier dokládá (CLM-02, CLM-15) — nejnižší dlouhodobé riziko sídla NKÚ, vlastní moderní zabezpečení. Samotný text analýzy ani její podrobnější výtah nebyl zveřejněn v žádném přímo otevřeném zdroji. Mezera zůstává otevřená.\n\n**Opakovaná kontrola k 2026-08-05**: hledání zopakováno cíleně na mv.gov.cz a policie.gov.cz. Bezpečnostní analýza Policie ČR nadále není zveřejněna a žádný otevřený zdroj neuvádí ani její závěry nad rámec toho, co k nim řeklo ministerstvo. Mezera zůstává otevřená."
     }
   ],
   "order": 2

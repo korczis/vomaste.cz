@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zdenek-nekula/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zdenek-nekula"
+  },
+  "title": "SRC-02 — ČeskéNoviny.cz: Nekula končí jako ministr zemědělství, nahradit ho má Výborný",
+  "description": "ČTK o konci Nekuly v úřadu (červen 2023) a jeho vlastním zdůvodněním; nahradil ho Výborný.",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajský článek",
+  "url": "https://www.ceskenoviny.cz/zpravy/nekula-konci-jako-ministr-zemedelstvi-nahradit-ho-ma-vyborny/2378345",
+  "retrieved": "2026-08-08",
+  "published": "2023-06-14",
+  "sourceFamily": "ctk",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zdenek-nekula/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "zdenek-nekula"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek ČeskýchNovin (servis ČTK) ze 14. 6. 2023, otevřen a přečten 2026-08-08.\nUvádí, že Zdeněk Nekula po zhruba roce a půl končí jako ministr zemědělství ke konci června 2023, svůj konec zdůvodnil tím, že potřeboval cítit silnou podporu vedení strany, kterou v posledních měsících neměl, a nahradit ho měl Marek Výborný (KDU-ČSL).\n\nPoznámka k typu zdroje a jeho limitům: nezávislé agenturní zpravodajství (rodina ČTK) — dokládá okolnosti a zdůvodnění konce v úřadu jeho vlastními slovy; jde o politickou událost, nikoli pochybení, a nic dalšího se z ní nevyvozuje."
+    }
+  ],
+  "order": 2
+}

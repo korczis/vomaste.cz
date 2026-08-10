@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/milos-zeman/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/milos-zeman"
+  },
+  "text": "Miloš Zeman byl podle oficiálního přehledu členů vlády Miloše Zemana na webu Vlády ČR předsedou vlády České republiky od 22. 7. 1998 do 12. 7. 2002",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/milos-zeman/sources/SRC-01"
+    }
+  ],
+  "subjects": [
+    "milos-zeman"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/milos-zeman/_index.md)."
+    }
+  ]
+}

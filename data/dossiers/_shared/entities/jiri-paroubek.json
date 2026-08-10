@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/jiri-paroubek",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "jiri-paroubek",
+  "entityId": "jiri-paroubek",
+  "title": "Jiří Paroubek",
+  "entityType": "person",
+  "role": "tehdejší premiér a předseda ČSSD",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "contextual",
+  "dossiers": [
+    "jiri-paroubek",
+    "james-quick"
+  ],
+  "order": 524,
+  "provenance": {
+    "discoveredAt": "2026-08-05",
+    "discoveredVia": [
+      "edge-james-quick-jiri-paroubek"
+    ],
+    "claimRefs": [
+      "CLM-16"
+    ],
+    "sourceRefs": [
+      "SRC-17"
+    ],
+    "cluster": "politicky-aktivismus",
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová veřejná osoba: Jiří Jehlička v roce 2006 organizoval demonstrace požadující Paroubkův odchod z politiky. Záznam popisuje veřejný politický protest, nikoli osobní či obchodní vztah."
+    },
+    {
+      "type": "markdown",
+      "value": "Bývalý předseda vlády České republiky (25. 4. 2005 – 16. 8. 2006); podle oficiálního přehledu vláda podala demisi 16. 8. 2006. Záznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ]
+}

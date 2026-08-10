@@ -1,0 +1,28 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "01680081",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01680081",
+  "nazev": "České centrum pro investigativní žurnalistiku, o.p.s.",
+  "sidlo": null,
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "O",
+    "vlozka": "1135"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "Člen statutárního orgánu",
+      "since": "2025-08-21"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "person",
+      "name": "Pavla Holcová",
+      "podil": null,
+      "vklad": null,
+      "splaceno": null
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-01 — Vláda ČR (oficiální web)"
-description = "Oficiální web Úřadu vlády: funkce a údaje, které stránka sama uvádí."
+description = "Oficiální web Úřadu vlády: funkce a údaje, které stránka sama uvádí. Zdroj: Vláda České republiky (vlada.gov.cz), dossier Zuzana Mrázová."
 template = "dossier-source.html"
 weight = 1
 
@@ -23,3 +23,5 @@ posouzení. Potvrzení **současné** funkce v této vládě vychází z ověře
 oficiálního seznamu členů vlády k 2026-07-30 (viz
 `data/government.toml`). Sebeprezentační části profilu nejsou nezávisle
 ověřeným faktem a dossier je jako fakt nepřebírá.
+
+**Doplněno 2026-08-05 (T-070).** Zdroj znovu otevřen a přečten; přiřazen i k [CLM-34](@/dossiers/zuzana-mrazova/claims/clm-34.md), které dosud stálo jen na dvou vydáních agenturní zprávy ČTK. Oficiální životopis na webu Úřadu vlády uvádí v části „Profesní a veřejná činnost“ doslovně „2018–2025: Město Bílina, starostka“ a „2015–2018: Město Bílina, místostarostka pro věci investiční“ a v textové části „Do zastupitelstva města Bíliny byla zvolena na jaře roku 2015 a zároveň byla zvolena místostarostkou města pro věci investiční, v roce 2018 byla zvolena starostkou města.“ **Oprava:** agenturní zpravodajství uvádělo „čtyři roky místostarostkou“; podle oficiálního životopisu šlo o období 2015–2018, tedy tři roky. Tvrzení bylo opraveno na období, která uvádí primární zdroj. **Limit:** jde o **autobiografický údaj zveřejněný úřadem**, tedy o sebeprezentaci úřadující členky vlády, ne o nezávislé zjištění třetí strany; volební a úřední doklady jednotlivých mandátů ověřeny nebyly.

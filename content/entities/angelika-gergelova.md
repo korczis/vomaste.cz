@@ -3,6 +3,7 @@
 title = "Angelika Gergelová"
 template = "entity.html"
 weight = 67
+description = "Angelika Gergelová — Kontextová entita — Zástupkyně Unie rodičů; upozornila na problém péče o děti při posunutých prázdninách."
 
 [extra]
 generated = true

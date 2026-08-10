@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Richard Chlad — evidováno 638 864 Kč za rok 2025 včetně nepeněžního plnění; veřejně uváděná čísla se liší — Motoristé sobě"
+description = "Richard Chlad — úředně vykázáno 638 864 Kč za rok 2025, celou částkou jako bezúplatná…. Vztah v grafu dossieru Richard Chlad. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 1
 

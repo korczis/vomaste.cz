@@ -41,9 +41,10 @@ adapters**, not sources: Zola needs a content file to create a route, so
 `npm run data:build` regenerates minimal stubs (`generated = true`, a
 pointer to the record's view model, the canonical markdown body).
 Templates read view models (`data/generated/views/**`, gitignored) via
-`load_data("data/" ~ extra.view_model)`. **Hand-editing a generated page
-is a build error, not a shortcut** — the canonical fix is always: edit
-`data/dossiers/**`, run `npm run data:build`. Two gates own that rule:
+`load_data("data/" ~ extra.view_model)`. **Hand-editing a generated page is
+never the fix** — the canonical one is always: edit `data/dossiers/**`, run
+`npm run data:build`. Two gates own that rule, and neither is as absolute as
+it sounds (see the ordering note below):
 
 - `npm run data:check-generated:content`
   (`scripts/data/check-generated.mjs --content`) — fails when a synced
@@ -52,12 +53,15 @@ is a build error, not a shortcut** — the canonical fix is always: edit
 - `npm run lint:generated-content` — fails when such a page loses
   `generated = true` / `view_model`, or grows a front-matter key outside
   the minimal envelope (domain fields belong in the canonical record).
+  Be precise about its reach: it inspects **front matter only** (rules
+  L1–L3). A hand edit to a page *body* passes this lint untouched.
 
 Know the ordering, because it decides what a hand edit costs you: inside
 `npm run build` the sync step runs *before* the parity gate, so a body
 edit is silently **overwritten** rather than reported — the build stays
-green and the edit is simply gone. It is reported as an error when the
-parity gate runs on an unsynced tree, i.e. `npm run
+green and the edit is simply gone. Nor does the pre-commit hook catch it:
+`data:check-generated:content` is not in its fast subset. It is reported as
+an error only when the parity gate runs on an unsynced tree, i.e. `npm run
 data:check-generated:content` on its own — that is how to check a
 suspicious `content/` diff.
 
@@ -97,7 +101,7 @@ One rule, one owner — the validators that guard the dataset (all run by
 | Layer | Owner |
 |---|---|
 | Shape (types, required fields, `@id`/ISO formats, closed enums) | `schemas/canonical/*.schema.json` via `scripts/data/validate-shape.mjs` |
-| Referential integrity R1–R7 (unique `@id`s, path ↔ `@id` consistency, same-dossier references, graph layer integrity) | `scripts/data/validate-references.mjs` |
+| Referential integrity R1–R8 (unique `@id`s, path ↔ `@id` consistency, same-dossier references, graph layer integrity R7, bidirectional claim ↔ source link R8) | `scripts/data/validate-references.mjs` |
 | Editorial semantics S1–S10 (single/corroborated source rules, authorization S5/S6, graph subject nodes S7, connectivity S8, entity provenance refs S9, one-publisher-is-one-voice S10) | `scripts/data/validate-semantics.mjs` |
 | Claims-table parity T1–T8 (table row ↔ canonical claim, byte-exact) | `scripts/data/validate-registry-table.mjs` |
 | JSON-LD expansion (local context only, no network) | `scripts/data/validate-jsonld.mjs` |
@@ -105,6 +109,7 @@ One rule, one owner — the validators that guard the dataset (all run by
 | content == generated staging | `npm run data:check-generated:content` + `lint:generated-content` |
 | JSON-LD on every published page (+ node shape, no truth ratings) | `scripts/dossier/verify-jsonld.mjs` (post-build, `npm run verify:jsonld`) |
 | Evidence work plan per dossier (generated, never hand-written) | `scripts/data/report-evidence-plan.mjs` (`npm run report:evidence-plan`) |
+| Source catalogue outputs match `data/source-catalog/**` | `npm run verify:source-catalog` (pre-commit only — inside the pipeline it runs right after the generator and could never fail) |
 
 The build has a single orchestration entrypoint,
 `scripts/build/pipeline.mjs` (`npm run build` / `dev` / `check`). Graph
@@ -257,14 +262,19 @@ records ever disagree — see "One canonical source" below.
   (must be byte-identical to the overview row's claim text), `sources`
   (`@id` refs to the `SRC-##` it cites), `subjects`. Statuses:
   - `status-corroborated` ("CORROBORATED") — independently confirmed by
-    multiple outlets. Rule S2 (`validate-semantics.mjs`) enforces ≥2
-    cited sources from ≥2 distinct source families for this status —
-    sources from one publisher family don't count as independent.
-  - `status-single` ("1 ZDROJ") — a factual claim supported by exactly
-    one cited source, honestly labeled as such instead of being
-    overstated as corroborated. Rule S1 enforces exactly one cited
-    source. Upgrading to CORROBORATED requires adding a second,
-    genuinely independent source — never just relabeling.
+    multiple outlets. Rule S2 (`validate-semantics.mjs`) enforces at least
+    one **independent pair** among the cited sources: two sources that
+    differ in source family *and* in publisher (rule S10 compares both
+    `outlet` and the registered domain of `url`). Two reprints of one
+    agency wire — or two pieces from the same newsroom — are one voice.
+  - `status-single` ("1 ZDROJ") — a factual claim whose cited sources do
+    not add up to a second independent voice, honestly labeled as such
+    instead of being overstated as corroborated. Rule S1 fails when an
+    independent pair *does* exist among them. It is **not** "exactly one
+    cited source": a claim may legitimately cite three URLs and stay
+    `1 ZDROJ` if they are reprints of the same wire or come from one
+    publisher. Upgrading to CORROBORATED requires adding a genuinely
+    independent source — never just relabeling.
   - `status-quote` ("CITACE") — a direct quote from the subject, presented
     as a quote, not this site's own assessment
   - `status-disputed` ("SPORNÉ") — open, unconfirmed, or contested claim
@@ -272,10 +282,22 @@ records ever disagree — see "One canonical source" below.
     separate from reporting
 - **Sources registry (`SRC-##`)** — one canonical record per source under
   `…/sources/src-NN.json`: `outlet`, `sourceType`, `url`, `retrieved`,
-  `published`, `claims` (the CLM-## it supports), `sourceFamily` (sources
-  sharing a publisher family — not independent corroboration — versus
-  genuinely independent outlets; the S2 rule counts families, not files),
-  and a mandatory editorial markdown body (rule T7, ≥ 150 chars).
+  `published`, `claims` (the CLM-## it supports), `sourceFamily` (named
+  after the **origin** of the material, not the publisher — a ČTK wire
+  reprinted by Blesk belongs to family `ctk`; sources sharing a family are
+  one voice, not independent corroboration) and a mandatory editorial
+  markdown body (rule T7, ≥ 150 chars). The field is optional and never
+  sufficient on its own: rule S10 collapses two sources with the same
+  `outlet` or the same registered domain into one voice whatever their
+  family says, so a family can only ever *remove* independence, never add
+  it. `claims` must agree with the claims' own `sources` in both
+  directions (rule R8). A source may additionally carry a locally-hosted
+  copy of its primary document (`localDocument` field, or a markdown
+  link to `/documents/<slug>/…`) — only after an individual personal-data
+  review, never as a bulk harvest; the file must exist under `static/`
+  (enforced in `validateCanonicalDataset`, step 3c). Full mechanism and
+  policy pointers: `docs/data-contract.md`, "Lokálně hostované
+  dokumenty".
 - **Cases registry (`CASE-##`)** — one canonical record per tracked case
   under `…/cases/case-NN.json` (`anchor`, `period`, `title`, `status`,
   `label`, `summary`, `subjects`). Detail pages deliberately do **not**
@@ -329,7 +351,10 @@ cards, timeline rendering, tile counts, navigation, exports and JSON-LD
 all come from one compiled model. There are no `migrate-*-to-pages.mjs`
 regeneration scripts anymore — after editing canonical JSON, run
 `npm run data:build` to regenerate view models and content adapters, and
-never edit a generated file by hand (`lint:generated-content` blocks it).
+never edit a generated file by hand. Do not expect a gate to stop you:
+`lint:generated-content` only inspects front matter, and inside `npm run
+build` the sync step overwrites a body edit before the parity gate ever
+sees it (see "Canonical data model: JSON-first" above).
 
 Every anchor/link is additionally enforced by two build-time checks:
 
@@ -419,11 +444,15 @@ only the routing envelope.
   v `data/entity-types.toml`; `scripts/dossier/validate-entity-types.mjs`
   (součást `npm run build`) shodí build, když typ použitý v datech nemá
   popisek nebo když popisek nemá v datech odpovídající entitu.
-- `templates/base.html` — shared layout; all `<meta>` (title, description,
-  canonical, Open Graph) is declared once in front matter and rendered
-  once here — do not hand-write `<meta>` tags elsewhere. It also carries the
-  site-wide footer (licence, "navrhnout opravu"); page-level footers must not
-  repeat those links.
+- `templates/base.html` — shared layout; rozloží front matter na `meta_*`
+  hodnoty a předá je makrům. Všechna `<meta>` (title, description,
+  canonical, Open Graph, Twitter) se deklarují jednou a vydávají jednou —
+  do jiných šablon `<meta>` tagy nepatří. Nese taky site-wide patičku
+  (licence, „navrhnout opravu"); patičky stránek ty odkazy neopakují.
+- `templates/macros/meta.html` — jednotná komponenta pro sociální a SEO
+  metadata (`meta::open_graph`, `meta::twitter`, `meta::canonical`).
+  Politiku čte z `data/seo.toml`, výsledek vynucuje
+  `npm run verify:og` po každém buildu. Viz sekci [Metadata](#metadata).
 - `templates/macros/table.html` — jednotná komponenta pro tabulární data
   (`table::advanced_table` / `table::advanced_table_end`; vlastní
   implementace podle vzoru Flowbite „Advanced Tables" nad volným
@@ -462,26 +491,228 @@ only the routing envelope.
 8. No speculation or hedged guessing where sources are silent — that
    belongs in the gaps registry, not the claims registry.
 
-## Authorizing a new dossier subject or expanding scope
+### Where to search: the source catalogue
 
-The default is to cover no one. Adding a new subject, or expanding an
-existing subject's scope to a new controversy, requires an explicit,
-dated authorization from the site owner, recorded in this file — never
-assumed silently, and never inferred just because a topic is "publicly
-interesting." A clear owner instruction to create, add, investigate or
-expand a dossier for a named subject is itself authorization; no magic
-phrase, repeated confirmation or separate "proceed" is required. The owner
-may type a detailed scope in the interactive CLI, or an agent may derive a
-concrete working scope from the owner's request and the public sources it
-opens, then record it through `authorize-entity.mjs` using
-`--owner-authorized-in-conversation` and `--scope-file`. CI, scheduled
-automation and inferred consent may not use that mode. An authorization
-record must identify the subject and describe the working topics; the agent
-may refine that description during research without returning for approval,
-provided every published claim remains limited to named, reputable sources
-and the owner's stated exclusions are respected. A newly encountered person
-does not become a dossier subject merely by appearing in reporting, but the
-owner may authorize broad or multiple-subject coverage in one instruction.
+Editorial rule 1 says every claim cites a named source. The catalogue answers
+the question that comes before it — **which source, and what can it actually
+carry**.
+
+- Canonical records: `data/source-catalog/*.json`, one per registry, tool or
+  aggregator. Each carries `proves`, `doesNotProve`, `traps` and
+  `howToSearch` — the part that cannot be derived from data and that someone
+  had to learn, usually the hard way.
+- Generated from them: `docs/osint/SOURCE_CATALOG.md` (read this in the
+  repository), `/zdroje/` on the site (one page per source), and
+  `data/generated/source-catalog.json` (the view model both render from, and
+  the JSON-LD `Dataset` node each page emits).
+- `npm run build:source-catalog` regenerates; `npm run verify:source-catalog`
+  fails if the committed output has drifted from the data. The latter is a
+  pre-commit check, not a pipeline step — inside the pipeline it runs right
+  after the generator and could never fail.
+
+Two live research tools sit next to the catalogue. Neither is part of
+`npm run build`, both hit the network, and both write **internal** output
+that is never routed:
+
+- `npm run sources:detect-family` — reads the pages of sources with an empty
+  `sourceFamily` and proposes an origin from the literal credit (machine
+  metadata, byline, `Zdroj:` footer). Output is a *proposal*
+  (`reports/source-family-proposals.md`); writing back is a separate
+  `--apply` step, only for the `ctk` verdict and only into an empty field.
+  It proves the origin credit on the page — never that two texts are
+  identical, never completeness.
+- `npm run screening:public-money -- --ico=…` — published contracts for a
+  company from the contracts register (ISRS) open data. It proves that
+  published contracts exist with a counterparty, date and value; it proves
+  no wrongdoing, no completeness, and it is not an authorization decision.
+
+Two rules follow from it and bind any research pass:
+
+1. **The doclad is always the primary registry.** An aggregator is a
+   signpost — it shows where to look, and then you cite what it points at.
+   A claim sourced only to an aggregator stays at `1 ZDROJ`.
+2. **A source that cannot answer must be refused, not approximated.** Some
+   services return data for questions they do not actually support — the VVZ
+   search endpoint silently ignores filters it cannot apply and hands back an
+   unfiltered page. Presenting that as a finding is worse than saying the
+   question cannot be answered from this source.
+
+The "what the dataset actually cites" table is computed from
+`data/dossiers/**/sources/**` at every build, never hand-maintained, so it
+cannot claim coverage the data does not have. A row without a catalogue entry
+is not an error: it is the honest statement that a source is in use and its
+limits are not written down yet.
+
+## Povinná archivace úředních podkladů
+
+<!-- DOCUMENT_ARCHIVE_DOCTRINE_V1 -->
+
+Archivace ARES, veřejného rejstříku / Sbírky listin a soudních úředních
+desek je součást datového kontraktu, ne volitelný krok rešerše. Platí pro
+každý současný i budoucí dossier a každou navázanou entitu:
+
+1. Každá česká právnická osoba podporovaného typu s bezpečně ověřeným
+   osmimístným IČO musí mít v **Zone A** jeden hashovaný základní snapshot
+   ARES a jeden sanitizovaný index Sbírky listin. Přidání nebo změna takové
+   entity bez obou záznamů shodí `npm run archive:check`. Entita bez
+   důvěryhodného IČO zůstává ve veřejném seznamu `entitiesWithoutIco`; IČO
+   se nikdy nedoplňuje odhadem ani podle pouhé shody jména.
+2. Každá strojově rozpoznaná spisová značka v `data/dossiers/**/*.json`
+   musí být v `data/court-docket-inventory.json`. Buď má docket-only dotaz
+   na správnou soudní vývěsku, nebo výslovný záznam, že jej obsluhuje jiný
+   oficiální systém (např. NALUS či vlastní systém NSS). Jméno osoby, datum
+   narození ani jiný osobní identifikátor se při kontrole vývěsky nepoužije.
+   Negativní odpověď znamená pouze „v den dotazu nebylo aktivní vyvěšení“,
+   nikdy „dokument neexistoval“.
+3. **Zone A (veřejný Git a UI `/dokumenty/`)** smí nést jen základní
+   obchodní identifikační data ARES, sanitizovaný index listin bez adres
+   fyzických osob, původních názvů souborů a interních document ID, prázdné
+   docket-only odpovědi vývěsek a jednotlivě revidované bezpečné úřední
+   dokumenty. Každý publikovaný soubor má původní URL, datum pořízení a
+   SHA-256; `data/document-archive.json` a UI jsou generovány z týchž
+   zdrojových manifestů.
+4. **Zone B (nikdy Git, issue, PR, artifact ani veřejný web)** obsahuje raw
+   Justice metadata, originální listiny a neprázdné odpovědi soudních
+   vývěsek. Výchozí kořen je `~/dev/vomaste-archive`, přenositelně jej určuje
+   `VOMASTE_JUSTICE_ARCHIVE_ROOT`. Soubory se stahují přes `.part`, po
+   kontrole typu/velikosti se atomicky přejmenují, každý manifest nese
+   SHA-256 a `inventory.sha256` pokrývá všechny fyzické soubory. Přerušení,
+   nedostatek místa a neúplné pokrytí se hlásí výslovně — nesmějí se
+   přepsat na „hotovo“.
+5. Originální listina ze Zone B se do Zone A povyšuje jen po individuální
+   obsahové a osobněprávní kontrole. Musí mít redakční důvod, provenienci,
+   `reviewNote` a podle potřeby bezpečný derivát. Hromadné publikování PDF,
+   raw JSON nebo původních názvů souborů je zakázané i tehdy, když je
+   zdrojový registr veřejný.
+
+Vynucení má tři oddělené režimy. `npm run archive:check` je čistě offline,
+nic nezapisuje a běží automaticky v pre-commit hooku i ve všech režimech
+pipeline (`build`, `dev`, `check`). Ověřuje úplné IČO pokrytí, sanitizaci,
+hash parity, docket inventuru, nepřítomnost Zone B v Gitu a zapojení této
+doktríny do `AGENTS.md`, `README.md`, `CLAUDE.md` i automatického workflow.
+`npm run archive:refresh-public` je síťový zápis Zone A; spouští se ručně a
+týdně přes `.github/workflows/archive-refresh.yml`, který smí pouze vytvořit
+review PR — nikdy pushnout `master` ani nahrát Zone B. `npm run
+archive:refresh-private` patří jen na důvěryhodný stroj s perzistentním
+úložištěm; stáhne všechny indexované listiny, obnoví úplný checksum manifest
+a selže, pokud plné pokrytí chybí. Deterministický build sám na síť ani do
+soukromého archivu nesahá.
+
+## Standing scope authorization and publication gates
+
+As of **2026-08-05** (`AUTH-2026-08-05-PLATFORM-SCOPE`, see the log
+below), the site owner has replaced the per-subject, per-topic
+authorization procedure that governed every entry above with a standing
+scope authorization for public-interest research and publication. The
+authorization entries above remain permanent historical records of what
+was approved under the earlier governance model — they are not edited or
+removed — but a new subject or topic occurring on or after this date no
+longer needs its own separate dated owner approval before research or
+dossier scaffolding may begin.
+
+The standing scope covers:
+
+- public officials and politically exposed persons acting in or connected
+  to their public role;
+- candidates for public office and senior officials whose decisions,
+  appointments, public funding, regulatory authority or institutional
+  responsibilities create a demonstrable public-interest basis;
+- companies, foundations, associations, political parties, public bodies
+  and other legal entities materially connected to public money, public
+  procurement, public power, regulated activity or an already covered
+  public-interest case;
+- other persons or organizations only where reputable public reporting,
+  an official record or a primary public document establishes a concrete
+  and proportionate public-interest reason for including them.
+
+This wider scope changes **who may be researched**; it does not lower
+**what may be published**. Every one of the editorial rules elsewhere in
+this file — sourcing, quote handling, procedural-vs-substantive framing,
+unnamed third parties, gap-not-speculation — applies exactly as before,
+in full, to every subject covered by the standing scope.
+
+### Mandatory publication gates
+
+A record may enter the public canonical dataset only when all applicable
+conditions below are met:
+
+1. **Named evidence.** A factual claim has a directly identifiable,
+   retrievable source or a directly referenceable public registry/official
+   document, actually opened and read. Search snippets, internal notes and
+   model output are not sources.
+2. **Provenance.** The repository records where the information came from,
+   when it was retrieved, which transformation produced it and which
+   canonical record it supports.
+3. **Faithful status.** Quotes remain quotes; allegations remain attributed
+   allegations; disputed matters remain visibly disputed; procedural
+   outcomes are never rewritten as substantive findings.
+4. **No guilt by graph.** A relation, common employer, common address,
+   company link, event attendance or co-occurrence does not by itself
+   establish influence, coordination, responsibility or wrongdoing.
+5. **Source-family independence.** Syndicated or commonly owned outlets do
+   not count as independent corroboration merely because they have
+   different URLs (rule S2).
+6. **Data minimization.** Home addresses, personal contact details,
+   unnecessary dates of birth, private family details, source-identifying
+   information and other disproportionate personal data are not published.
+7. **Third-party proportionality.** A third party named by a source may be
+   represented as context where necessary to understand the public-interest
+   matter, but is not automatically promoted into a dossier subject and is
+   not described beyond what the evidence and public-interest basis justify.
+8. **Reviewable change.** Every canonical promotion is a reviewable diff.
+   Batch review is allowed; silent direct publication from a discovery run
+   is not.
+9. **Deterministic public build.** The public site must build from
+   repository data without requiring an external research platform, private
+   database, credentials or live network access.
+
+### Review model
+
+The former per-subject authorization gate is replaced by a run-level or
+batch-level review gate: a human reviewer may approve a coherent batch of
+candidate records after inspecting its diff, provided each promoted record
+still individually satisfies the nine gates above. Automation may discover,
+normalize, deduplicate, create gaps and prepare candidate records without a
+per-entity approval round. Automation may not silently merge candidates
+into canonical public data, commit, push or deploy them.
+
+### Implementation status — mechanical gate not yet rewritten
+
+This section changes editorial **policy**. It does not, by itself, change
+the mechanical enforcement in `scripts/dossier/validate-authorization.mjs`
+or `npm run dossier:scaffold`, which as of this writing still hard-require
+a matching per-dossier record in `data/authorizations.toml` cross-checked
+against a specific `agents_md_section` in the log below (see that script's
+own header comment for the exact invariants it enforces). Per this repo's
+own constitution §8, a policy nothing enforces doesn't count as
+implemented — so until that validator is rewritten to recognize the
+standing-scope entry as sufficient authorization on its own, **a new
+dossier still needs a corresponding record in `data/authorizations.toml`
+for the build to pass**, even though it no longer needs a separate,
+individually negotiated owner conversation to justify one. Writing that
+record for a standing-scope subject is a mechanical/audit step, not a new
+approval ceremony. Rewriting the validator itself is tracked as follow-up
+work, not done as part of this entry.
+
+### Prismatic Platform as an upstream capability provider
+
+`~/dev/prismatic-platform` is authorized as a local upstream research and
+enrichment engine for this repository, for discovery, public-register
+lookup, source discovery, extraction, normalization, identity resolution,
+relationship discovery, timeline construction, provenance capture,
+deduplication and gap analysis across all subjects within the standing
+scope. It is never a citable public source: its internal database, agent
+output, confidence value, embedding similarity, heuristic score or
+inference may generate a candidate or point to evidence, but may not be
+published as a factual finding unless the canonical record cites the
+underlying public evidence. A direct public-registry record transported by
+Prismatic may be cited as that registry record; the citation is to the
+registry, not to Prismatic.
+
+The public Zola build must never depend on Prismatic being present — see
+`docs/adr/prismatic-platform-integration.md` for the full integration
+architecture (data zones, export contract, review flow) and its current
+implementation status.
 
 ### Context entities are not coverage (2026-07-30)
 
@@ -742,9 +973,29 @@ adoptér, který kontroly vypne, se nemůže hlásit k tomuto UI standardu.
 
 ## Metadata
 
-Metadata (title, description, canonical, Open Graph) is declared once in
-front matter and rendered once in `templates/base.html`. Do not hand-write
-`<meta>` tags in other templates.
+Sociální a SEO metadata jsou **data, ne šablonová logika**:
+
+| Vrstva | Soubor | Co vlastní |
+|---|---|---|
+| Konfigurace | `data/seo.toml` | locale, výchozí karta a její rozměry, oddělovač a tagline titulku, meze délky, povinná sada značek, mapování `record_type` → `og:type` + výchozí schema.org typ |
+| Vykreslení | `templates/macros/meta.html` | `meta::open_graph`, `meta::twitter`, `meta::canonical` + čisté funkce pro titulek, popis, obrázek a jeho alt |
+| Vstupy | `templates/base.html` | rozloží front matter stránky/sekce na `meta_*` skaláry a zavolá makra |
+| Strojová vrstva | `templates/partials/jsonld.html` | stránkový uzel `@graph[0]` čte **tytéž** `meta_*` proměnné |
+| Vynucení | `scripts/build/verify-og.mjs` | po `zola build` ověří výsledek proti `data/seo.toml` |
+
+Pravidla:
+
+- `<meta property="og:*">` ani `<meta name="twitter:*">` se **nepíšou
+  ručně** v žádné šabloně — vydává je jedině `macros/meta.html`.
+- Rozhodovací logika („jaký `og:type` má stránka tvrzení") patří do
+  `data/seo.toml`, ne do `if` v šabloně. Nový `record_type` bez záznamu
+  v `[page_types.*]` **shodí build** (a mrtvý záznam bez použití v datech
+  taky) — obousměrně, stejně jako `data/entity-types.toml`.
+- `og:title`/`og:description` a `name`/`description` stránkového uzlu
+  JSON-LD musí být **tatáž hodnota**. Nejsou to dva popisy téže stránky.
+- Sociální a SEO klíče nepatří do `config.toml`; ten drží jen to, co
+  potřebuje sama Zola (`base_url`, `title`, `description`, `lang`,
+  `author`, `keywords`, `index`).
 
 ## Multi-instance co-op protocol
 
@@ -767,6 +1018,20 @@ versioned). Binding constraints:
 - Merge to `master` only with a clean `npm run build` in the worktree
   **and** on `master` after the merge. Pushing `master` is the deploy
   (GitHub Pages CI); deploy continuously after each merged task.
+- Since 2026-08-05/06 that push is automatic: `.githooks/post-commit`
+  and `.githooks/post-merge` (git fires a different hook pair for merge/
+  pull than for commit, so both are needed to cover every path onto
+  `master`) share one routine that runs fetch → rebase → the full
+  `npm run build` → `git push origin master` after every commit or merge
+  made directly on `master`, and reports on the coop bus
+  (`type: "deploy"`). It never pushes a red build or a mid-rebase
+  state — see `docs/coop/PROTOCOL.md`, "Automatický push po commitu a
+  mergi" for the exact conditions and `COOP_NO_AUTOPUSH=1` to opt a
+  commit/merge out. Same section also has the resolution recipe for the
+  generated-file conflicts (golden test snapshot, discovery log, reports)
+  that this
+  makes visible sooner when several instances are active on the same
+  dossier.
 
 ### Structural change, 2026-07-29 (second): full physical decoupling of the entity dossiers
 
@@ -1505,3 +1770,3379 @@ Publikovat lze pouze tvrzení podložená pojmenovaným, datovaným a přímo ot
 Authorized by the site owner, explicitly and on the record, 2026-08-05:
 
 Samostatný entity dossier pro Martina Pavlíka, jednoznačně vymezeného veřejným rejstříkovým profilem https://www.podnikatel.cz/rejstrik/osoby/martin-pavlik-1902710/ a navázanými záznamy ARES. Rozsah zahrnuje pouze přímo doložené veřejné rejstříkové role a podíly u MEDIA PROJECT CZ s.r.o. (IČO 01529820), Bydlíme v Králově Poli, z.s. (IČO 02922703), HYDROPROGRESS, s.r.o. (IČO 04449461) a Nadačního fondu FIDUCIA (IČO 26228548). Dossier nesmí obsahovat ani odvozovat IT profesní profil, schopnosti, zaměstnání, přibližný věk, datum narození, adresu bydliště ani jiné osoby stejného jména. Každé publikované tvrzení musí být doloženo přímo otevřeným veřejným zdrojem; vlastní či profilové zdroje dokládají jen vlastní sebeprezentaci. Při jakékoli nejasnosti identity se údaj nezveřejní a zůstane jako mezera, nikoli jako domněnka. Samotná rejstříková funkce nebo podíl nesmějí být prezentovány jako podezření či pochybení.
+
+### Governance and scope supersession, 2026-08-05: standing public-interest scope and Prismatic integration
+
+Authorized by the site owner, explicitly and on the record, 2026-08-05:
+`AUTH-2026-08-05-PLATFORM-SCOPE`.
+
+The owner decided that the previous requirement for a separate,
+name-by-name and topic-by-topic authorization before research or dossier
+creation imposed unnecessary operational friction. For work performed on
+or after this date, that procedure is superseded by the standing scope
+and publication gates recorded in "Standing scope authorization and
+publication gates" above.
+
+The repository may research, scaffold, enrich and publish dossiers about
+public officials, politically exposed persons, public-interest legal
+entities and materially connected context entities without a new
+per-subject authorization entry, provided every published record
+satisfies the repository's source, provenance, status, proportionality,
+privacy and review requirements — the nine mandatory publication gates
+above apply without exception.
+
+The owner further authorizes direct local use of
+`~/dev/prismatic-platform` as an upstream capability provider for all
+existing and future entities and dossiers within that standing scope, for
+discovery, registry lookups, extraction, normalization, identity
+resolution, relationship discovery, source and provenance capture,
+timeline construction, deduplication and gap analysis. This authorization
+does not turn Prismatic output into a source, does not authorize
+publication of unsupported inference, does not permit private or
+disproportionate personal data, and does not permit an automated
+discovery run to silently publish, commit, push or deploy canonical
+content. Canonical promotion remains evidence-backed, diff-based and
+reviewable, with batch-level approval allowed.
+
+All authorization entries preceding this one remain untouched as
+permanent historical records. Their subject-specific limits describe the
+governance then in force; they do not restrict the standing scope adopted
+by this entry for future work.
+
+**Implementation note (operational, not a scope limit)**: as recorded in
+"Standing scope authorization and publication gates" above, this entry
+changes editorial policy; it does not by itself rewrite
+`scripts/dossier/validate-authorization.mjs` or `npm run dossier:scaffold`,
+which still mechanically require a per-dossier record in
+`data/authorizations.toml`. Until that validator work lands, a concrete
+`data/authorizations.toml` record is still the mechanical step that lets
+`npm run build` pass for a new dossier — it is no longer gated on a
+separate owner negotiation per subject, but it still has to exist. See
+`docs/adr/prismatic-platform-integration.md` for the integration
+architecture this entry authorizes, and its current implementation
+status (governance adopted; CLI pipeline scaffolded, not yet functional).
+
+### Scope extension, 2026-08-06: Martin Kupka
+
+Authorized by the site owner, explicitly and on the record, 2026-08-06:
+
+Standing scope authorization (AUTH-2026-08-05-PLATFORM-SCOPE): Martin Kupka je veřejný funkcionář — poslanec Poslanecké sněmovny PČR zvolený za ODS a od ledna 2026 předseda ODS, opoziční parlamentní strany. Autorizace pokrývá výhradně jeho základní veřejné politicko-kariérní fakty (poslanecký mandát, funkce předsedy strany) doložené přímo otevřenými zdroji (psp.cz, Deník.cz). Nejde o hlubší investigativní rešerši kauz ani o žádné další téma — to by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-06: Petr Fiala
+
+Authorized by the site owner, explicitly and on the record, 2026-08-06:
+
+Standing scope autorizace (AUTH-2026-08-05-PLATFORM-SCOPE): Petr Fiala je
+veřejný funkcionář — poslanec Poslanecké sněmovny PČR za ODS, bývalý
+předseda ODS (2014–2026) a bývalý předseda vlády ČR (2021–2025).
+Rozsah tohoto dossieru je omezen na jeho základní, přímo doložený
+politický profil: aktuální poslanecký mandát a roli řadového poslance po
+odchodu z čela ODS (nástupem Martina Kupky v lednu 2026), doloženo
+oficiálním profilem na webu Poslanecké sněmovny a nezávislým
+zpravodajstvím. Hlubší investigativní rešerše jeho premiérského období
+nebo jiných kauz vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-06: Jana Černochová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-06:
+
+Jana Černochová je veřejná funkcionářka — bývalá ministryně obrany ČR a poslankyně Poslanecké sněmovny PČR za ODS, od 6. 3. 2026 předsedkyně sněmovního Výboru pro bezpečnost. Spadá do standing scope autorizace (AUTH-2026-08-05-PLATFORM-SCOPE) jako veřejná osoba působící ve veřejné funkci. Rozsah tohoto dossieru je omezen na základní, nekontroverzní fakta o jejím aktuálním politickém mandátu a funkci (poslanecký mandát, členství v poslaneckém klubu ODS, předsednictví bezpečnostního výboru), doložená přímo otevřenými veřejnými zdroji. Hlubší investigativní rešerše jejího ministerského působení nebo jiných témat vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-06: Martin Baxa
+
+Authorized by the site owner, explicitly and on the record, 2026-08-06:
+
+Martin Baxa je veřejný funkcionář — bývalý ministr kultury ČR (2021–2025) a
+současný poslanec Poslanecké sněmovny PČR za ODS, člen sněmovního Výboru pro
+mediální záležitosti a předseda Podvýboru pro kulturu, v rámci stínové vlády
+ODS působící jako stínový ministr kultury. Spadá do standing scope
+autorizace (AUTH-2026-08-05-PLATFORM-SCOPE). Rozsah tohoto dossieru je
+záměrně minimální: pouze základní, aktuální politicko-funkční fakta (mandát,
+klubová a výborová příslušnost, role stínového ministra), doložená přímo
+otevřenými zdroji. Nejde o investigativní rešerši jeho ministerského období
+ani jiných témat — hlubší témata vyžadují samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-06: Jan Skopeček
+
+Authorized by the site owner, explicitly and on the record, 2026-08-06:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Skopeček je veřejný
+funkcionář — poslanec Poslanecké sněmovny PČR za ODS, místopředseda
+Poslanecké sněmovny a stínový ministr financí ODS. Dossier je založen
+jako minimální, čistě biografický záznam pokrývající pouze jeho aktuální
+poslanecký mandát a tyto funkce, doložený přímo otevřenými zdroji
+(oficiální profil na psp.cz, nezávislé zpravodajství). Nejde o hloubkovou
+investigativní rešerši jiných témat; rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-06: Eva Decroix
+
+Authorized by the site owner, explicitly and on the record, 2026-08-06:
+
+Eva Decroix je veřejná funkcionářka — bývalá ministryně spravedlnosti (10. 6. 2025 – 15. 12. 2025), nyní poslankyně Poslanecké sněmovny PČR za ODS a místopředsedkyně poslaneckého klubu ODS, v rámci stínové vlády ODS působící jako stínová ministryně spravedlnosti. Spadá do standing scope autorizace (AUTH-2026-08-05-PLATFORM-SCOPE) jako veřejná osoba působící ve veřejné funkci.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně ověřený politický profil (poslanecký mandát, členství a funkce v poslaneckém klubu ODS, role stínové ministryně spravedlnosti), doložený přímo otevřenými zdroji (psp.cz, nezávislé zpravodajství). Nejde o investigativní rešerši jejího ministerského působení ani žádné kauzy — to by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-06: Marek Benda
+
+Authorized by the site owner, explicitly and on the record, 2026-08-06:
+
+Marek Benda je veřejný funkcionář — dlouholetý poslanec Poslanecké sněmovny PČR za ODS a předseda poslaneckého klubu ODS. Spadá do standing scope autorizace (AUTH-2026-08-05-PLATFORM-SCOPE) jako veřejný funkcionář v souvislosti s výkonem veřejné funkce. Rozsah tohoto dossieru je záměrně minimální: pouze jeho aktuální poslanecký mandát a role předsedy poslaneckého klubu ODS, doložené přímo otevřenými zdroji, bez hlubší investigativní rešerše dalších témat.
+
+### Scope extension, 2026-08-06: Karel Haas
+
+Authorized by the site owner, explicitly and on the record, 2026-08-06:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Karel Haas je veřejný
+funkcionář — poslanec Poslanecké sněmovny PČR za ODS (mandát od
+4. 10. 2025, Pardubický kraj), místopředseda ODS (od ledna 2026, zvolen
+na 32. kongresu ODS) a stínový ministr sportu, prevence a zdraví ve
+stínové vládě ODS. Rozsah tohoto dossieru je záměrně minimální: pouze
+základní, nekontroverzní tvrzení o jeho aktuálním poslaneckém mandátu
+a straně/klubu ODS, funkci místopředsedy ODS a roli stínového ministra
+sportu, prevence a zdraví — doloženo přímo otevřenými zdroji
+(Poslanecká sněmovna PČR, ČT24, ODS). Nejde o investigativní rešerši
+žádné kauzy ani sporu.
+
+### Scope extension, 2026-08-06: Pavel Drobil
+
+Authorized by the site owner, explicitly and on the record, 2026-08-06:
+
+Autorizuji vznik minimálního entity dossieru pro Pavla Drobila v rámci
+standing scope (AUTH-2026-08-05-PLATFORM-SCOPE) — je veřejným
+funkcionářem: místopředseda ODS (zvolen na 32. kongresu ODS 18. 1. 2026)
+a stínový ministr průmyslu a obchodu ve stínové vládě ODS vedené
+Martinem Kupkou, dříve poslanec PSP ČR (2010–2013) a ministr životního
+prostředí (2010, vláda Petra Nečase).
+
+Rozsah je záměrně minimální: dokládá pouze jeho aktuální stranickou
+funkci (místopředseda ODS) a roli ve stínové vládě (stínový ministr
+průmyslu a obchodu), doloženo nezávislými zdroji (ČT24, Echo24) a
+vlastním profilem ODS. Nejde o investigativní rešerši žádné kauzy ani
+o rozšíření na jiná témata jeho veřejného působení — to by vyžadovalo
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-06: Martin Červíček
+
+Authorized by the site owner, explicitly and on the record, 2026-08-06:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Martin Červíček je veřejný funkcionář — senátor Parlamentu ČR za ODS (obvod č. 47 – Náchod, mandát 28. 9. 2024 – 28. 9. 2030), od ledna 2026 místopředseda ODS (zvolen na 32. kongresu ODS 18. 1. 2026) a od března 2026 stínový ministr vnitra ve stínové vládě ODS vedené Martinem Kupkou. Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně ověřený politický profil (senátorský mandát, funkce místopředsedy ODS a role stínového ministra vnitra), doložený přímo otevřenými zdroji (senat.cz, ČT24, Novinky.cz). Nejde o investigativní rešerši žádné kauzy ani jiného tématu z jeho dřívějšího policejního nebo krajského působení — to by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-06: Petr Sokol
+
+Authorized by the site owner, explicitly and on the record, 2026-08-06:
+
+Autorizuji entity dossier pro Petra Sokola v rámci standing scope
+(AUTH-2026-08-05-PLATFORM-SCOPE). Petr Sokol je veřejný funkcionář —
+poslanec Parlamentu ČR za ODS (mandát od 4. 10. 2025, psp.cz id 7045),
+místopředseda poslaneckého klubu ODS (od 4. 2. 2026) a stínový poradce
+pro EU ve stínové vládě ODS vedené Martinem Kupkou (od března 2026).
+Rozsah je záměrně minimální: jediné tvrzení o jeho aktuálním mandátu a
+straně funkcích, doložené přímo otevřenými zdroji (psp.cz, Echo24,
+Hospodářské noviny, Forum24.cz) — nejde o investigativní rešerši
+žádné kauzy. Ověřena totožnost proti oficiálnímu profilu na psp.cz
+(id 7045), aby nedošlo k záměně se jmenovcem — jde o tutéž osobu
+(politolog a publicista je stejný Petr Sokol, nikoli jmenovec).
+
+### Scope extension, 2026-08-06: Renáta Zajíčková
+
+Authorized by the site owner, explicitly and on the record, 2026-08-06:
+
+Autorizuji entity dossier pro Renátu Zajíčkovou (ODS) v rámci standing scope
+(AUTH-2026-08-05-PLATFORM-SCOPE) — veřejná funkcionářka, poslankyně
+Parlamentu ČR za ODS. Rozsah je záměrně minimální: pouze aktuální
+poslanecký mandát (od 4. 10. 2025), členství ve Výboru pro zdravotnictví
+a role stínové ministryně školství, mládeže a tělovýchovy ve stínové
+vládě ODS, doloženo přímo otevřenými zdroji (psp.cz, Zdravotnický deník,
+Echo24). Nejde o investigativní rešerši žádné kauzy ani sporného tématu.
+
+### Scope extension, 2026-08-06: Martin Pavlík — plný rozsah v mezích rejstříkové/veřejnoprávní stopy
+
+Authorized by the site owner, explicitly and on the record, 2026-08-06
+("rozšiř celý dossier" k `/dossiers/martin-pavlik/`, potvrzeno "full
+scope authorized"): ruší se dřívější omezení `AUTH-2026-08-05-MARTIN-PAVLIK`
+na výhradně čtyři jmenovitě uvedené subjekty a šest tvrzení. Dossier smí
+nadále pokrývat **jakoukoli veřejně doloženou rejstříkovou, spolkovou
+a veřejnoprávní/veřejnopeněžní stopu** osoby jednoznačně vymezené stejnou
+identitní kotvou jako dosud — veřejným rejstříkovým profilem
+`https://www.podnikatel.cz/rejstrik/osoby/martin-pavlik-1902710/`
+a navázanými záznamy ARES (větev VR) — včetně:
+
+- doplňkových rejstříkových záznamů/funkcí, pokud se u této konkrétní,
+  identitně ověřené osoby objeví (nové i historické/zaniklé zápisy);
+- řádně dopočítaného objemu a předmětu smluv v Registru smluv za všechny
+  čtyři již uvedené subjekty (HYDROPROGRESS, s.r.o.; MEDIA PROJECT CZ
+  s.r.o.; Bydlíme v Králově Poli, z.s.; Nadační fond FIDUCIA), nikoli jen
+  citovaného počtu nalezených záznamů;
+- veřejně publikovaných výročních zpráv/účetních závěrek ve Sbírce listin
+  těchto subjektů, pokud jsou založeny;
+- listinného dokladu (zakladatelská listina, smlouva o převodu podílu,
+  zápis z valné hromady) jako silnějšího, nezávislejšího zdroje pro
+  tvrzení dosud opřená jen o shodná rejstříková data (ARES + Podnikatel.cz
+  sdílejí `sourceFamily: cz-verejny-rejstrik`, a proto samy o sobě
+  nezakládají korporaci — viz zdůvodnění v SRC-02).
+
+**"Plný rozsah" mění šíři témat, ne standard péče.** Beze změny, protože
+to nikdy nebylo prostým tematickým omezením, nýbrž strukturálním
+pravidlem projektu (`docs/constitution/OPEN_INTELLIGENCE_COMMONS.md`
+§6–§7 a samo znění `AUTH-2026-08-05-MARTIN-PAVLIK`), platí i nadále a bez
+výjimky:
+
+- žádný IT profesní profil, schopnosti, jiné zaměstnání, přibližný věk,
+  datum narození ani adresa bydliště se do dossieru nepřebírají, i kdyby
+  se objevily ve stejném zdroji (rejstřík i listiny je běžně obsahují —
+  odstraňují se v souladu s dosavadní praxí, ne citují);
+- žádná jiná osoba stejného jména se s tímto subjektem neslučuje bez
+  listinného nebo jinak jednoznačného ověření identity; při nejasnosti
+  zůstává údaj mezerou (GAP), nikdy domněnkou;
+- zápis funkce, podílu nebo smluvního vztahu se nadále prezentuje jako
+  evidenční fakt, nikdy jako podezření nebo důkaz pochybení.
+
+Tato autorizace nerozšiřuje rozsah na žádný jiný subjekt.
+
+### Scope extension, 2026-08-07: Vít Rakušan
+
+Authorized by the site owner, explicitly and on the record, 2026-08-07:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Vít Rakušan je veřejný
+funkcionář — bývalý první místopředseda vlády a ministr vnitra ČR, nyní
+poslanec Poslanecké sněmovny Parlamentu ČR za hnutí STAN (mandát od
+4. 10. 2025, Středočeský kraj) a předseda hnutí STAN, které je
+v aktuálním složení Poslanecké sněmovny opoziční stranou. Rozsah tohoto
+dossieru je záměrně minimální: pouze základní, aktuálně ověřený politický
+profil (poslanecký mandát, funkce místopředsedy poslaneckého klubu STAN,
+členství ve Zahraničním výboru a role předsedy hnutí STAN v opozici),
+doložený přímo otevřenými veřejnými zdroji (psp.cz, Blesk.cz, Tiscali.cz).
+Nejde o investigativní rešerši jeho ministerského působení ani žádné
+kauzy — to by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-07: Michaela Šebelová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-07:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Michaela Šebelová je veřejná
+funkcionářka — poslankyně Poslanecké sněmovny Parlamentu ČR za hnutí STAN
+(mandát od 4. 10. 2025, volební obvod Moravskoslezský kraj), předsedkyně
+poslaneckého klubu STAN (od 10. 10. 2025) a místopředsedkyně hnutí
+Starostové a nezávislí. Rozsah tohoto dossieru je záměrně minimální: pouze
+základní, aktuálně ověřený politický profil (poslanecký mandát, funkce
+předsedkyně poslaneckého klubu STAN, členství ve Výboru pro zdravotnictví
+a role místopředsedkyně hnutí STAN), doložený přímo otevřenými zdroji
+(psp.cz, Deník.cz, Deník N). Nejde o investigativní rešerši žádné kauzy
+ani sporného tématu — to by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-07: Zdeněk Hřib
+
+Authorized by the site owner, explicitly and on the record, 2026-08-07:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Zdeněk Hřib je veřejný
+funkcionář — poslanec Poslanecké sněmovny Parlamentu ČR (mandát od
+4. 10. 2025, volební obvod Praha) a předseda České pirátské strany
+(zvolen 2024, znovuzvolen 17. 1. 2026 na republikovém fóru v Prachaticích).
+Rozsah tohoto dossieru je záměrně minimální: pouze jeho aktuální
+poslanecký mandát a strana (Piráti) a funkce předsedy strany, doloženo
+přímo otevřenými zdroji (psp.cz, ČeskéNoviny.cz/ČTK, CNN Prima News).
+Nejde o investigativní rešerši jeho dřívějšího působení jako primátora
+hlavního města Prahy ani žádné jiné téma — to by vyžadovalo samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-07: Olga Richterová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-07:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Olga Richterová je veřejná
+funkcionářka — poslankyně Poslanecké sněmovny Parlamentu ČR za Piráty
+(mandát od 4. 10. 2025, volební obvod hlavní město Praha), předsedkyně
+poslaneckého klubu Pirátů (od 5. 10. 2025) a od 17. 1. 2026 4. místopředsedkyně
+České pirátské strany (obhájila tuto pozici na republikovém fóru v
+Prachaticích). Rozsah tohoto dossieru je záměrně minimální: pouze základní,
+aktuálně ověřený politický profil (poslanecký mandát, vedení poslaneckého
+klubu Pirátů, funkce místopředsedkyně strany), doložený přímo otevřenými
+zdroji (psp.cz, Deník.cz/ČTK, CNN Prima News). Nejde o investigativní
+rešerši žádné kauzy ani jiného tématu — to by vyžadovalo samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-07: Ivan Bartoš
+
+Authorized by the site owner, explicitly and on the record, 2026-08-07:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Ivan Bartoš je veřejný
+funkcionář — poslanec Poslanecké sněmovny Parlamentu ČR za Piráty
+(mandát od 4. 10. 2025, volební obvod Středočeský kraj), první
+místopředseda poslaneckého klubu Pirátů (od 5. 10. 2025) a bývalý
+místopředseda vlády pro digitalizaci a ministr pro místní rozvoj
+(prosinec 2021 – říjen 2024). Rozsah tohoto dossieru je záměrně
+minimální: pouze základní, aktuálně ověřený politický profil (poslanecký
+mandát, strana/klub Piráti, role prvního místopředsedy poslaneckého
+klubu), doložený přímo otevřenými zdroji (psp.cz, ČeskéNoviny.cz/ČTK).
+Nejde o investigativní rešerši jeho ministerského působení ani žádné
+kauzy — to by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-07: Kateřina Stojanová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-07:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Kateřina Stojanová je veřejná
+funkcionářka — poslankyně Poslanecké sněmovny Parlamentu ČR za Piráty (mandát
+od 4. 10. 2025, volební kraj Ústecký), místopředsedkyně poslaneckého klubu
+Piráti (od 5. 10. 2025) a místopředsedkyně České pirátské strany (zvolena na
+celostátním fóru v Prachaticích 17. 1. 2026). Rozsah tohoto dossieru je
+záměrně minimální: pouze základní, aktuálně ověřený politický profil
+(poslanecký mandát, klubová funkce, stranická funkce místopředsedkyně),
+doložený přímo otevřenými zdroji (psp.cz, Deník.cz/ČTK). Nejde o
+investigativní rešerši žádné kauzy ani sporného tématu — to by vyžadovalo
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-07: Jan Grolich
+
+Authorized by the site owner, explicitly and on the record, 2026-08-07:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Grolich je veřejný
+funkcionář — hejtman Jihomoravského kraje za KDU-ČSL (mandát od
+4. 11. 2024, obhájeno) a od 24. 4. 2026 předseda KDU-ČSL (zvolen na
+sjezdu strany v Ostravě, podpořen 233 z 266 delegátů). Rozsah tohoto
+dossieru je záměrně minimální: pouze základní, nekontroverzní tvrzení
+o jeho aktuální krajské funkci (hejtman) a stranické funkci (předseda
+KDU-ČSL), doložené přímo otevřenými zdroji (oficiální profil na webu
+Jihomoravského kraje kr-jihomoravsky.cz, nezávislé zpravodajství
+Deník.cz). Nejde o investigativní rešerši žádné kauzy ani sporu.
+
+### Scope extension, 2026-08-07: Marian Jurečka
+
+Authorized by the site owner, explicitly and on the record, 2026-08-07:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Marian Jurečka je veřejný
+funkcionář — bývalý místopředseda vlády a ministr práce a sociálních věcí,
+poslanec Poslanecké sněmovny Parlamentu ČR za KDU-ČSL (mandát od 4. 10. 2025,
+Olomoucký kraj) a od 6. 5. 2026 předseda poslaneckého klubu KDU-ČSL. Rozsah
+tohoto dossieru je záměrně minimální: pouze základní, aktuálně ověřený
+politický profil (poslanecký mandát a role předsedy poslaneckého klubu
+KDU-ČSL), doložený přímo otevřenými zdroji (psp.cz, ČeskéNoviny.cz).
+Nejde o investigativní rešerši jeho ministerského období ani žádné kauzy —
+to by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-07: Benjamin Činčila
+
+Authorized by the site owner, explicitly and on the record, 2026-08-07:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Benjamin Činčila je veřejný funkcionář — poslanec Poslanecké sněmovny Parlamentu ČR za KDU-ČSL (mandát od 4. 10. 2025, volební kraj Vysočina), od 24. 4. 2026 první místopředseda KDU-ČSL (zvolen na sjezdu strany, podpořen 239 z 264 delegátů) a od 6. 5. 2026 místopředseda poslaneckého klubu KDU-ČSL. Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně ověřený politický profil (poslanecký mandát, stranická funkce prvního místopředsedy KDU-ČSL, klubová funkce místopředsedy poslaneckého klubu), doložený přímo otevřenými zdroji (psp.cz, ČT24/Česká televize). Nejde o investigativní rešerši žádné kauzy ani sporného tématu — to by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-07: Petr Fiala — premiérské období
+
+Authorized by the site owner, explicitly and on the record, 2026-08-07:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): rozšíření AUTH-2026-08-06-PETR-FIALA. Petr Fiala byl v letech 2021–2025 předsedou vlády ČR — nejvyšší exekutivní funkce, veřejný zájem nesporný. Dřívější autorizace omezovala dossier na jeho poslanecký profil po odchodu z čela ODS a výslovně vylučovala hlubší rešerši premiérského období. Tato autorizace rozšiřuje rozsah na premiérské období samotné, v mezích níže uvedených témat, nalezených na úrovni search-výsledku a u dvou z nich již přímo otevřených a přečtených před sepsáním tohoto záznamu.
+
+Rozsah zahrnuje:
+
+1. Souhrnné veřejné hodnocení jeho čtyřletého mandátu — průzkum CVVM „Hodnocení vlády Petra Fialy" (zveřejněno 2025-08-21, otevřeno a přečteno přímo: nespokojenost převažuje ve všech zkoumaných oblastech, nejlépe hodnocen ohlášený program 30 % a osoba premiéra 28 %, nejhůře komunikace vlády s veřejností 18 %) a anketa RESPEKT „Jaký premiér byl Petr Fiala" (2025-09-12, otevřena a přečtena přímo: 15 jmenovaných přispěvatelů — Jindřich Šídlo, Apolena Rychlíková, Josef Středula, Zuzana Szabó Lenhartová, Petros Michopulos, Michal Stehlík, Petra Hůlová, Ivan Pilný, Ivan Gabal, Johana Nejedlová, Tomáš Halík, Otto Eibl, Jana Matesová, Martin Groman, Šárka Homfray), vedená striktně jako OPINION/NÁZOR, nikdy jako vlastní hodnocení webu.
+2. Organizační fakta o personálním složení jeho vlády — přehled ministerských rezignací a jejich oficiálně uváděných důvodů v průběhu mandátu (2021–2025), jako fakta o vládě, kterou vedl, nikoli jako rozvinutí vlastní kauzy jmenovaného ministra bez jeho samostatné autorizace; každý takto zmíněný ministr zůstává záznamem vazby v rozsahu už publikovaného zpravodajství.
+3. „Bitcoinová kauza" ministerstva spravedlnosti (přijetí daru v bitcoinech v hodnotě cca 1 miliardy Kč od odsouzeného drogového dealera, rezignace ministra spravedlnosti Pavla Blažka v květnu/červnu 2025, vyšetřování NCOZ) — výhradně z pohledu institucionální odpovědnosti a reakce vlády/premiéra, nikoli jako rozvinutí obvinění vůči Pavlu Blažkovi samotnému, který není a touto autorizací se nestává subjektem vlastního dossieru.
+4. Zásadní hospodářsko-politický rekord mandátu, jak je popisován nezávislým zpravodajstvím: energetická krize a snížení závislosti na ruských zdrojích, podpora Ukrajině (rozsah a forma vojenské a jiné pomoci), vývoj inflace a veřejného dluhu, důchodová reforma.
+
+Každý jednotlivý zdroj u bodů 2–4 musí být před napsáním jakéhokoli tvrzení přímo otevřen a přečten (nejde o přebírání z Wikipedie nebo z výtahu vyhledávače) u prvotního, jmenovaného, nezávislého zpravodajského zdroje. Status tvrzení (CORROBORATED/1 ZDROJ/CITACE/SPORNÉ/NÁZOR) se řídí stejnými validátorovými pravidly jako zbytek datasetu. Procesní stav (rezignace, vyšetřování, dosud nepravomocné závěry) musí být uveden při každé zmínce, nikoli jen jednou. Žádný jmenovaný ministr uvedený v bodě 2 ani Pavel Blažek v bodě 3 se touto autorizací nestává subjektem vlastního dossieru — objeví se výhradně jako záznam vazby v rozsahu už citovaného zpravodajství.
+
+### Scope extension, 2026-08-07: Matěj Ondřej Havel
+
+Authorized by the site owner, explicitly and on the record, 2026-08-07:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Matěj Ondřej Havel je veřejný funkcionář — poslanec Poslanecké sněmovny Parlamentu ČR za TOP 09 (mandát od 4. 10. 2025, volební kraj Královéhradecký), od 14. 11. 2025 předseda Výboru pro vědu, vzdělání, kulturu, mládež a tělovýchovu a od 8. 11. 2025 předseda TOP 09 (zvolen na sněmu strany, podpořen 120 ze 171 hlasujících delegátů, nahradil Markétu Pekarovou Adamovou). Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně ověřený politický profil (poslanecký mandát, výborová funkce předsedy školského výboru, stranická funkce předsedy TOP 09), doložený přímo otevřenými zdroji (psp.cz, Aktuálně.cz). Nejde o investigativní rešerši žádné kauzy ani sporného tématu — to by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-07: Jan Jakob
+
+Authorized by the site owner, explicitly and on the record, 2026-08-07:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Jakob je veřejný
+funkcionář — poslanec Poslanecké sněmovny Parlamentu ČR za TOP 09
+(mandát od 4. 10. 2025, Středočeský kraj) a předseda poslaneckého klubu
+TOP 09 (od 7. 10. 2025, zvolen opakovaně po volbách 2025). Rozsah tohoto
+dossieru je záměrně minimální: pouze základní, nekontroverzní tvrzení o
+jeho aktuálním poslaneckém mandátu a roli předsedy poslaneckého klubu
+TOP 09, doložené přímo otevřenými zdroji (Poslanecká sněmovna Parlamentu
+ČR, ČeskéNoviny.cz). Nejde o investigativní rešerši žádné kauzy ani
+sporného tématu.
+
+### Scope extension, 2026-08-07: Vlastimil Válek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-07:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Vlastimil Válek je veřejný
+funkcionář — bývalý místopředseda vlády a ministr zdravotnictví (17. 12.
+2021 – 15. 12. 2025, TOP 09), nyní poslanec Poslanecké sněmovny Parlamentu
+ČR za TOP 09 (mandát od 4. 10. 2025) a od 20. 1. 2026 místopředseda
+sněmovního Výboru pro zdravotnictví. Rozsah tohoto dossieru je záměrně
+minimální: pouze základní, aktuálně ověřený politický profil (poslanecký
+mandát, klubová příslušnost TOP 09, funkce místopředsedy zdravotnického
+výboru, dřívější ministerská funkce s přesnými daty), doložený přímo
+otevřenými zdroji (psp.cz, vlada.gov.cz, zdravezpravy.cz). Nejde o
+investigativní rešerši jeho ministerského působení ani žádné kauzy — to
+by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-07: Jiří Pospíšil
+
+Authorized by the site owner, explicitly and on the record, 2026-08-07:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Pospíšil je veřejný funkcionář — poslanec Poslanecké sněmovny Parlamentu ČR za TOP 09 (mandát od 4. 10. 2025, Praha) a od 8. 11. 2025 první místopředseda TOP 09 (dříve předseda TOP 09 2017–2019, ministr spravedlnosti 2006–2009 a 2010–2012). Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně ověřený politický profil (poslanecký mandát, klubová příslušnost TOP 09, funkce prvního místopředsedy strany), doložený přímo otevřenými zdroji (psp.cz, Deník N, Echo24.cz). Nejde o investigativní rešerši žádné kauzy ani sporného tématu.
+
+### Scope extension, 2026-08-08: Vít Rakušan — ministerské období
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): rozšíření AUTH-2026-08-07-VIT-RAKUSAN. Vít Rakušan byl 2021–2025 prvním místopředsedou vlády a ministrem vnitra ČR. Dřívější autorizace omezovala dossier na jeho aktuální poslanecký a stranický profil a výslovně vylučovala hlubší rešerši ministerského období. Tato autorizace rozšiřuje rozsah na ministerské období samotné, v mezích níže uvedených témat, nalezených na úrovni search-výsledku a oběma přímo otevřených a přečtených před sepsáním tohoto záznamu.
+
+Rozsah zahrnuje:
+
+1. **Kontrolní nález NKÚ k profesionalizaci státní služby** (zveřejněno únor 2026, Ekonomický deník, otevřeno a přečteno přímo): přes 870 milionů Kč vynaložených na profesionalizaci státní služby v letech 2016–2023 „nepřineslo očekávaný efekt" — konkrétně 60+ milionů Kč na standardy řízení (51 z 84 úřadů cíl nesplnilo, ministerstvo vnitra samo mezi třemi nejhoršími), nikdy nespuštěný e-learningový portál, 22+ milionů Kč za aplikaci eZkouška zrušenou v listopadu 2023 (návrat k papírovým testům) a 640 milionů Kč za informační systém státní služby (2015–2024) bez potřebných evaluačních dat. Rakušan vedl ministerstvo od prosince 2021, kontrolované období se s jeho mandátem částečně překrývá. Ministerstvo nálezy zpochybnilo s odkazem na covid a válku na Ukrajině — obě strany musí být v textu zastoupeny.
+2. **Kauza šifrovaného telefonu a souvislost s kauzou Dozimetr** (Echo24, 22. 4. 2026, otevřeno a přečteno přímo, plus dobově navazující zpravodajství ČT24/iROZHLAS/CNN Prima News z podzimu 2023): Rakušan přiznal používání telefonu s šifrovací aplikací (CryptoCult) od podzimu 2021 do ledna/února 2022, se zdůvodněním obavy z odposlechu během vyjednávání vlády; podle svých slov jej použil „tak třikrát čtyřikrát" a nikdy s nikým z obviněných v kauze Dozimetr — z obviněných osobně znal jen Petra Hlubučka. **Povinné rámování při každé zmínce**: použití stejné komerčně dostupné aplikace jako obvinění v kauze Dozimetr není samo o sobě spojením s trestnou činností (konstituční pravidlo „no guilt by graph") — Rakušan sám nebyl v kauze Dozimetr obviněn ani stíhán. Opoziční výzvy k rezignaci (Babiš) i Fialova obhajoba ministra jsou obě citovány jako pozice, ne jako zjištění.
+
+Každý jednotlivý zdroj musí být před napsáním jakéhokoli tvrzení přímo otevřen a přečten. Status tvrzení (CORROBORATED/1 ZDROJ/CITACE/SPORNÉ/NÁZOR) se řídí stejnými validátorovými pravidly jako zbytek datasetu. Procesní stav u bodu 2 (nikdy neobviněn, nestíhán) musí být uveden při každé zmínce, nikoli jen jednou. Petr Hlubuček a žádná jiná osoba spojená s kauzou Dozimetr se touto autorizací nestává subjektem vlastního dossieru — objeví se výhradně jako záznam vazby v rozsahu už citovaného zpravodajství.
+
+### Scope extension, 2026-08-08: Vít Rakušan
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Vít Rakušan je veřejný
+funkcionář — poslanec Poslanecké sněmovny PČR zvolený za hnutí STAN
+(mandát od 4. 10. 2025, Středočeský kraj), místopředseda poslaneckého
+klubu STAN (od 26. 6. 2026), předseda hnutí STAN (od dubna 2019,
+naposledy znovuzvolen na celostátním sněmu 16. 5. 2025 — 282 z 286
+hlasů), bývalý 1. místopředseda vlády a ministr vnitra ČR (2021–2025).
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci
+pokrýt vládní představitele posledních tří volebních období, jednoho po
+druhém.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně
+ověřený politický profil (poslanecký mandát, funkce v poslaneckém klubu
+STAN, předsednictví hnutí STAN), doložený přímo otevřenými zdroji
+(oficiální profil na psp.cz, ČT24). Nejde o investigativní rešerši
+žádné kauzy — hlubší témata (například politická odpovědnost v kauze
+Dozimetr, kde sám obviněn není) vyžadují samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Marian Jurečka
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Marian Jurečka je veřejný
+funkcionář — poslanec Poslanecké sněmovny PČR zvolený na kandidátce SPOLU
+za KDU-ČSL (mandát od 4. 10. 2025, Olomoucký kraj), člen poslaneckého
+klubu KDU-ČSL od 7. 10. 2025 a předseda poslaneckého klubu KDU-ČSL od
+6. 5. 2026 (resp. 5. 5. 2026 dle ČT24 — datum zápisu na psp.cz je
+6. 5. 2026), člen Výboru pro sociální politiku; bývalý předseda KDU-ČSL
+a bývalý místopředseda vlády a ministr práce a sociálních věcí
+(2021–2025). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele posledních tří volebních období.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně
+ověřený politický profil (poslanecký mandát, předsednictví poslaneckého
+klubu KDU-ČSL, dřívější vládní a stranické funkce jako prostý
+biografický fakt), doložený přímo otevřenými zdroji (oficiální profil na
+psp.cz, ČT24). Nejde o investigativní rešerši žádné kauzy z jeho
+ministerského působení — to by vyžadovalo samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Vlastimil Válek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Vlastimil Válek je
+veřejný funkcionář — poslanec Poslanecké sněmovny PČR zvolený na
+kandidátce SPOLU za TOP 09 (mandát od 4. 10. 2025, Jihomoravský kraj),
+člen poslaneckého klubu TOP 09 od 7. 10. 2025, místopředseda Výboru pro
+zdravotnictví od 20. 1. 2026 a člen Správní rady VZP; bývalý
+místopředseda vlády a ministr zdravotnictví (2021–2025). Autorizace
+navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele posledních tří volebních období.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně
+ověřený politický profil (poslanecký mandát, funkce ve Výboru pro
+zdravotnictví, dřívější vládní funkce jako prostý biografický fakt),
+doložený přímo otevřenými zdroji (oficiální profil na psp.cz,
+Zdravotnický deník). Nejde o investigativní rešerši žádné kauzy z jeho
+ministerského působení — to by vyžadovalo samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Zbyněk Stanjura
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Zbyněk Stanjura je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr financí ČR 2021–2025 (vláda Petra Fialy), předtím
+ministr dopravy (2012–2013), dlouholetý poslanec (2010–2025), předseda
+poslaneckého klubu ODS a 1. místopředseda ODS. Ve sněmovních volbách
+v říjnu 2025 jako lídr kandidátky SPOLU v Moravskoslezském kraji mandát
+neobhájil (přeskočen preferenčními hlasy) a po volbách odešel i z vedení
+ODS (Aktuálně.cz 2025-10-04, iROZHLAS). Autorizace navazuje na výslovnou
+žádost vlastníka v této konverzaci pokrýt vládní představitele
+posledních tří volebních období.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní biografický
+záznam dřívějších veřejných funkcí (ministr financí 2021–2025, ministr
+dopravy 2012–2013, poslanecký mandát 2010–2025, funkce v ODS) a fakt
+neobhájení mandátu v roce 2025, doložený přímo otevřenými zdroji
+(Aktuálně.cz; vlada.gov.cz). Neobhájení mandátu je volební výsledek,
+nikoli pochybení, a tak musí být podáno. Nejde o investigativní rešerši
+žádné kauzy z jeho ministerského působení (vč. zmiňované bitcoinové
+kauzy) — to by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jan Lipavský
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Lipavský je veřejný
+funkcionář — poslanec Poslanecké sněmovny PČR zvolený na kandidátce
+SPOLU za ODS (mandát od 4. 10. 2025), člen poslaneckého klubu ODS od
+8. 10. 2025, člen Zahraničního výboru a Výboru pro evropské záležitosti
+od 16. 1. 2026 a člen Stálé komise pro kontrolu činnosti BIS od
+16. 1. 2026; bývalý ministr zahraničních věcí ČR (2021–2025, nominován
+za Piráty, od podzimu 2024 nestraník). Autorizace navazuje na výslovnou
+žádost vlastníka v této konverzaci pokrýt vládní představitele
+posledních tří volebních období.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně
+ověřený politický profil (poslanecký mandát a výborové/komisní funkce,
+dřívější ministerská funkce a změna stranické příslušnosti jako prostý,
+zdroji doložený biografický fakt), doloženo přímo otevřenými zdroji
+(oficiální profil na psp.cz, nezávislé zpravodajství). Nejde o
+investigativní rešerši žádné kauzy z jeho ministerského působení — to by
+vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Ivan Bartoš
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Ivan Bartoš je veřejný
+funkcionář — poslanec Poslanecké sněmovny PČR zvolený za Piráty (mandát
+od 4. 10. 2025, Středočeský kraj), místopředseda poslaneckého klubu
+Pirátů od 5. 10. 2025, člen Výboru pro obranu od 11. 11. 2025 a člen
+stálých komisí pro kontrolu činnosti NÚKIB a Vojenského zpravodajství od
+14. 11. 2025; bývalý místopředseda vlády pro digitalizaci a ministr pro
+místní rozvoj (17. 12. 2021 – 30. 9. 2024) a bývalý dlouholetý předseda
+České pirátské strany. Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt vládní představitele posledních tří volebních
+období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně
+ověřený politický profil (poslanecký mandát, funkce v klubu a výborech,
+dřívější vládní a stranické funkce jako prostý biografický fakt),
+doložený přímo otevřenými zdroji (oficiální profil na psp.cz,
+vlada.gov.cz). Nejde o investigativní rešerši žádné kauzy (například
+okolností jeho odvolání z vlády či digitalizace stavebního řízení) — to
+by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jozef Síkela
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jozef Síkela je veřejný
+funkcionář — evropský komisař pro mezinárodní partnerství (Evropská
+komise 2024–2029, jmenování oznámila předsedkyně EK Ursula von der
+Leyenová 17. 9. 2024), bývalý ministr průmyslu a obchodu ČR (2021–2024,
+nominován za STAN). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt vládní představitele posledních tří volebních
+období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně
+ověřený profil veřejných funkcí (evropský komisař, dřívější ministerská
+funkce jako prostý biografický fakt), doložený přímo otevřenými zdroji
+(oficiální profil na commission.europa.eu, ČT24). Nejde o investigativní
+rešerši žádné kauzy z jeho ministerského či komisařského působení — to
+by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Petr Hladík
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Petr Hladík je veřejný
+funkcionář — poslanec Poslanecké sněmovny PČR zvolený na kandidátce
+SPOLU za KDU-ČSL (mandát od 4. 10. 2025, Jihomoravský kraj),
+místopředseda poslaneckého klubu KDU-ČSL od 4. 3. 2026, člen Výboru pro
+životní prostředí a Výboru pro evropské záležitosti od 16. 1. 2026 a
+předseda Stálé komise pro kontrolu činnosti Finančního analytického
+úřadu od 25. 3. 2026; bývalý ministr životního prostředí (od 10. 3.
+2023, od 6. 11. 2025 do 15. 12. 2025 v demisi). Autorizace navazuje na
+výslovnou žádost vlastníka v této konverzaci pokrýt vládní představitele
+posledních tří volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně
+ověřený politický profil (poslanecký mandát, funkce v klubu, výborech a
+komisi, dřívější ministerská funkce jako prostý biografický fakt),
+doložený přímo otevřenými zdroji (oficiální profil na psp.cz,
+vlada.gov.cz). Nejde o investigativní rešerši žádné kauzy z jeho
+ministerského působení — to by vyžadovalo samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Marek Výborný
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Marek Výborný je
+veřejný funkcionář — poslanec Poslanecké sněmovny PČR zvolený na
+kandidátce SPOLU za KDU-ČSL (mandát od 4. 10. 2025, Pardubický kraj),
+místopředseda Výboru pro vědu, vzdělávání, mládež a sport od 21. 1. 2026
+a člen Zemědělského výboru; bývalý ministr zemědělství (od 29. 6. 2023,
+od 6. 11. 2025 do 15. 12. 2025 v demisi), bývalý předseda KDU-ČSL
+(2019–2020 a podruhé do 24. 4. 2026, kdy ho na sjezdu v Ostravě po dvou
+letech vystřídal Jan Grolich) a bývalý předseda poslaneckého klubu
+KDU-ČSL (2021–2023). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt vládní představitele posledních tří volebních
+období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně
+ověřený politický profil (poslanecký mandát a výborové funkce, dřívější
+vládní a stranické funkce jako prostý biografický fakt), doložený přímo
+otevřenými zdroji (oficiální profil na psp.cz, vlada.gov.cz,
+ČeskéNoviny.cz). Nejde o investigativní rešerši žádné kauzy z jeho
+ministerského působení — to by vyžadovalo samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Zdeněk Nekula
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Zdeněk Nekula je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr zemědělství ČR od 3. 1. 2022 do 28. 6. 2023 (vláda
+Petra Fialy, nominován za KDU-ČSL); dříve dlouholetý starosta obce
+Těšetice (2007–2014 a 2018–2021), předseda představenstva PGRLF
+(2015–2018) a zastupitel Jihomoravského kraje (2012–2016). Svůj konec
+v úřadu v červnu 2023 sám zdůvodnil chybějící podporou vedení strany;
+nahradil ho Marek Výborný (ČeskéNoviny.cz 2023-06-14). Autorizace
+navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele posledních tří volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní biografický
+záznam dřívějších veřejných funkcí a okolností konce v úřadu tak, jak je
+sám veřejně uvedl — konec v úřadu je politická událost, nikoli
+pochybení, a tak musí být podán. Doloženo přímo otevřenými zdroji
+(oficiální profil na vlada.gov.cz, ČeskéNoviny.cz). Nejde o
+investigativní rešerši žádné kauzy z jeho ministerského působení — to by
+vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Mikuláš Bek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Mikuláš Bek je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — ministr školství, mládeže a tělovýchovy (4. 5. 2023 –
+15. 12. 2025, od 6. 11. 2025 v demisi), předtím ministr pro evropské
+záležitosti (17. 12. 2021 – 4. 5. 2023), senátor (2018–2024) a rektor
+Masarykovy univerzity (2011–2019). Podle oficiálního profilu na psp.cz
+není v aktuálním volebním období členem žádného orgánu Sněmovny.
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci
+pokrýt vládní představitele posledních tří volebních období, po pěti
+postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní biografický
+záznam dřívějších veřejných funkcí, doložený přímo otevřenými zdroji
+(vlada.gov.cz, oficiální přehled ministrů na msmt.gov.cz). Nejde o
+investigativní rešerši žádné kauzy z jeho ministerského působení — to by
+vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Petr Gazdík
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Petr Gazdík je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr školství, mládeže a tělovýchovy (17. 12. 2021 –
+29. 6. 2022, vláda Petra Fialy, STAN). V červnu 2022 podal demisi poté,
+co média upozornila na jeho kontakty s podnikatelem Michalem Redlem,
+obviněným v kauze Dozimetr; sám uvedl, že se necítí ničím vinen a
+nechce rozkolísat vládu, a rezignoval i na funkci místopředsedy STAN
+(Forum24 2022-06-19). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt vládní představitele posledních tří volebních
+období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní biografický
+záznam dřívější vládní funkce a okolností demise tak, jak je popsaly
+citované zdroje. Mandatory framing: Gazdík není v kauze Dozimetr
+obviněn; jeho demise je politický krok, jeho zdůvodnění se cituje jeho
+vlastními slovy a z kontaktů s obviněným se nevyvozuje žádné pochybení
+(gate 4 — no guilt by graph). Doloženo přímo otevřenými zdroji
+(oficiální přehled ministrů na msmt.gov.cz, Forum24). Hlubší rešerše
+(např. samotné kauzy Dozimetr) vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Vladimír Balaš
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Vladimír Balaš je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr školství, mládeže a tělovýchovy (od 1. 7. 2022 dle
+vlada.gov.cz, resp. od 29. 6. 2022 dle přehledu MŠMT, do 4. 5. 2023;
+vláda Petra Fialy, STAN), poslanec PSP ČR od října 2021 (volební období
+2021–2025), profesor mezinárodního práva a bývalý ředitel Ústavu státu
+a práva AV ČR. Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele posledních tří volebních období,
+po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní biografický
+záznam dřívějších veřejných funkcí, doložený přímo otevřenými zdroji
+(vlada.gov.cz, oficiální přehled ministrů na msmt.gov.cz). Nejde o
+investigativní rešerši žádné kauzy z jeho ministerského působení — to
+by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Anna Hubáčková
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Anna Hubáčková je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — ministryně životního prostředí (17. 12. 2021 – 31. 10. 2022,
+vláda Petra Fialy, nominována KDU-ČSL), senátorka (2016–2022),
+starostka Ratíškovic (2014–2018) a vedoucí odboru životního prostředí
+Krajského úřadu Jihomoravského kraje (2001–2014). Autorizace navazuje
+na výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele posledních tří volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní biografický
+záznam dřívějších veřejných funkcí, doložený přímo otevřenými zdroji
+(oficiální profil na vlada.gov.cz a nezávislé zpravodajství). Nejde o
+investigativní rešerši žádné kauzy z jejího ministerského působení — to
+by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Lukáš Vlček
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Lukáš Vlček je veřejný
+funkcionář — poslanec Poslanecké sněmovny PČR zvolený za STAN (mandát
+od 4. 10. 2025, Vysočina), předseda sněmovního Výboru pro veřejnou
+správu a regionální rozvoj od 6. 3. 2026, 1. místopředseda hnutí STAN
+(od července 2022, funkci obhájil na celostátním sněmu v květnu 2025);
+bývalý ministr průmyslu a obchodu (od 8. 10. 2024, od 6. 11. 2025 do
+15. 12. 2025 v demisi) a dlouholetý starosta Pacova (2006–2021).
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci
+pokrýt vládní představitele posledních tří volebních období, po pěti
+postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně
+ověřený politický profil (poslanecký mandát, předsednictví výboru,
+stranická funkce, dřívější vládní funkce jako prostý biografický fakt),
+doložený přímo otevřenými zdroji (oficiální profil na psp.cz,
+vlada.gov.cz). Nejde o investigativní rešerši žádné kauzy z jeho
+ministerského působení — to by vyžadovalo samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Petr Kulhánek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Petr Kulhánek je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — ministr pro místní rozvoj (8. 10. 2024 – 15. 12. 2025, od
+6. 11. 2025 v demisi; jmenován prezidentem Pavlem po odvolání Ivana
+Bartoše, nominován za STAN), hejtman Karlovarského kraje (2020–2024) a
+primátor Karlových Varů (2010–2018). Autorizace navazuje na výslovnou
+žádost vlastníka v této konverzaci pokrýt vládní představitele
+posledních tří volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní biografický
+záznam dřívějších veřejných funkcí, doložený přímo otevřenými zdroji
+(oficiální profil na vlada.gov.cz, ČeskéNoviny.cz/ČTK). Nejde o
+investigativní rešerši žádné kauzy z jeho působení — to by vyžadovalo
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Helena Langšádlová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Helena Langšádlová je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — ministryně pro vědu, výzkum a inovace (17. 12. 2021 –
+5. 5. 2024, TOP 09), dlouholetá poslankyně (od 2010) a starostka
+Černošic (1998–2006). Její konec v úřadu v květnu 2024 provázela podle
+Echo24 nespokojenost vedení TOP 09 s prezentací výsledků resortu; její
+i stranická vyjádření se citují atribuovaně. Autorizace navazuje na
+výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele posledních tří volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní biografický
+záznam dřívějších veřejných funkcí a okolností konce v úřadu tak, jak
+je popsaly citované zdroje — konec v úřadu je politická událost, nikoli
+pochybení, důvody se připisují tomu, kdo je vyslovil. Doloženo přímo
+otevřenými zdroji (oficiální profil na vlada.gov.cz, Echo24). Nejde o
+investigativní rešerši žádné kauzy — to by vyžadovalo samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Marek Ženíšek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Marek Ženíšek je
+veřejný funkcionář — poslanec Poslanecké sněmovny PČR zvolený na
+kandidátce SPOLU za TOP 09 (mandát od 4. 10. 2025), místopředseda
+Zahraničního výboru od 22. 1. 2026 a člen Stálé komise pro kontrolu
+činnosti ÚZSI od 16. 1. 2026; bývalý ministr pro vědu, výzkum a inovace
+(16. 5. 2024 – 15. 12. 2025, od 6. 11. 2025 v demisi), poslanec i
+2013–2017 a od 2021, dříve náměstek ministra spravedlnosti a
+1. náměstek ministra zdravotnictví. Autorizace navazuje na výslovnou
+žádost vlastníka v této konverzaci pokrýt vládní představitele
+posledních tří volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně
+ověřený politický profil (poslanecký mandát a výborové funkce, dřívější
+vládní funkce jako prostý biografický fakt), doložený přímo otevřenými
+zdroji (oficiální profil na psp.cz, vlada.gov.cz). Nejde o
+investigativní rešerši žádné kauzy — to by vyžadovalo samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Michal Šalomoun
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Michal Šalomoun je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr pro legislativu a předseda Legislativní rady vlády
+(17. 12. 2021 – 11. 10. 2024, nominován za Piráty, sám nestraník).
+Demisi podal 1. 10. 2024 v souvislosti s odchodem Pirátů z vlády po
+odvolání Ivana Bartoše; jeho zdůvodnění („nemám tam koho
+reprezentovat") se cituje jeho vlastními slovy a post po něm nebyl
+obsazen (Aktuálně.cz 2024-10-01). Autorizace navazuje na výslovnou
+žádost vlastníka v této konverzaci pokrýt vládní představitele
+posledních tří volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní biografický
+záznam dřívější vládní funkce a okolností demise tak, jak je popsaly
+citované zdroje — demise je politický krok navazující na rozhodnutí
+strany, nikoli pochybení. Doloženo přímo otevřenými zdroji (oficiální
+profil na vlada.gov.cz, Aktuálně.cz). Nejde o investigativní rešerši
+žádné kauzy — to by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Martin Dvořák
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Martin Dvořák je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr pro evropské záležitosti (4. 5. 2023 – 15. 12. 2025,
+od 6. 11. 2025 v demisi, nominován za STAN); dříve náměstek ministra
+zahraničních věcí (2021–2023), diplomat (mj. generální konzul v New
+Yorku 2012–2017, velvyslanec v Kuvajtu a Kataru 2017–2021) a první
+polistopadový primátor Hradce Králové (do 1998). Autorizace navazuje na
+výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele posledních tří volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní biografický
+záznam dřívějších veřejných funkcí, doložený přímo otevřeným oficiálním
+profilem na vlada.gov.cz; dokud není otevřen druhý nezávislý zdroj,
+tvrzení nese poctivě stav 1 ZDROJ (iROZHLAS i Deník.cz vracejí
+automatizovanému přístupu 403). Nejde o investigativní rešerši žádné
+kauzy — to by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jan Hamáček
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Hamáček je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — 1. místopředseda vlády a ministr vnitra (27. 6. 2018 –
+17. 12. 2021, druhá vláda Andreje Babiše), dvakrát pověřen řízením
+ministerstva zahraničních věcí (2018, 2021), předseda ČSSD (2018–2021),
+předseda Poslanecké sněmovny (2013–2017). Podle e15 (2024-02-15) po
+odchodu z politiky působí jako ředitel pro vnější vztahy skupiny
+Czechoslovak Group; podle iROZHLAS v červnu 2024 vystoupil ze SOCDEM.
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci
+pokrýt vládní představitele posledních tří volebních období, po pěti
+postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní biografický
+záznam dřívějších veřejných funkcí a doloženého současného soukromého
+působení (jako prostý fakt zaměstnání, bez jakéhokoli hodnocení),
+doložený přímo otevřenými zdroji (vlada.gov.cz, e15.cz). Nejde o
+investigativní rešerši žádné kauzy z jeho ministerského působení — to
+by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Richard Brabec
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Richard Brabec je
+veřejný funkcionář — hejtman Ústeckého kraje (zvolen 15. 11. 2024,
+koalice ANO, ODS a Lepší Sever), bývalý ministr životního prostředí
+(leden 2014 – prosinec 2017 a 27. 6. 2018 – 17. 12. 2021, v demisi od
+11. 11. 2021) a bývalý místopředseda vlády (2017–2018), dlouholetý
+poslanec za ANO. Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt vládní představitele posledních tří volebních
+období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně
+ověřený politický profil (hejtmanství, dřívější vládní funkce jako
+prostý biografický fakt), doložený přímo otevřenými zdroji
+(vlada.gov.cz, Forum24). Nejde o investigativní rešerši žádné kauzy
+z jeho ministerského působení — to by vyžadovalo samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Jana Maláčová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jana Maláčová je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — ministryně práce a sociálních věcí (30. 7. 2018 – 17. 12.
+2021, druhá vláda Andreje Babiše, ČSSD) a předsedkyně SOCDEM (zvolena
+5. 10. 2024 na sjezdu v Hradci Králové 101 ze 139 hlasů, nahradila
+Michala Šmardu; v listopadu 2025 z čela strany i vrcholné politiky
+odešla). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele posledních tří volebních
+období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní biografický
+záznam dřívějších veřejných a stranických funkcí — konec v čele strany
+je výsledek jejího vlastního rozhodnutí a stranické volby, nikoli
+pochybení, a tak musí být podán. Doloženo přímo otevřenými zdroji
+(vlada.gov.cz, ČT24). Nejde o investigativní rešerši žádné kauzy — to
+by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Klára Dostálová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Klára Dostálová je
+veřejná funkcionářka — poslankyně Evropského parlamentu (zvolena
+v eurovolbách 2024 jako lídryně kandidátky ANO), bývalá ministryně pro
+místní rozvoj (prosinec 2017 – 17. 12. 2021, obě vlády Andreje Babiše,
+v demisi od 11. 11. 2021), poslankyně PSP ČR 2017–2024, předtím
+náměstkyně na MMR (2014–2017). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele posledních tří
+volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní, aktuálně
+ověřený politický profil (mandát europoslankyně, dřívější vládní a
+poslanecké funkce jako prostý biografický fakt), doložený přímo
+otevřenými zdroji (vlada.gov.cz, ČT24). Nejde o investigativní rešerši
+žádné kauzy z jejího ministerského působení — to by vyžadovalo
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Lubomír Zaorálek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Lubomír Zaorálek je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — ministr kultury (27. 8. 2019 – 17. 12. 2021, druhá vláda
+Andreje Babiše, v demisi od 11. 11. 2021), ministr zahraničních věcí
+(2014–2017), předseda Poslanecké sněmovny (2002–2006), dlouholetý
+poslanec a místopředseda ČSSD; podle ČT24 byl 5. 10. 2024 zvolen
+statutárním místopředsedou SOCDEM (100 ze 135 hlasů). Autorizace
+navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele posledních tří volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní biografický
+záznam dřívějších veřejných a stranických funkcí, doložený přímo
+otevřenými zdroji (vlada.gov.cz, ČT24). Nejde o investigativní rešerši
+žádné kauzy z jeho ministerského působení — to by vyžadovalo
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Tomáš Petříček
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Tomáš Petříček je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr zahraničních věcí (16. 10. 2018 – 12. 4. 2021, druhá
+vláda Andreje Babiše, ČSSD). O odvolání se podle Aktuálně.cz dozvěděl
+na schůzce s předsedou ČSSD Janem Hamáčkem po neúspěšné kandidatuře na
+předsedu strany; odvolání je politický krok, jeho vlastní interpretace
+(postoj k tendru na Dukovany, k neschváleným vakcínám) se cituje
+atribuovaně. Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele posledních tří volebních období,
+po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní biografický
+záznam dřívější vládní funkce a okolností odvolání tak, jak je popsaly
+citované zdroje. Doloženo přímo otevřenými zdroji (vlada.gov.cz,
+Aktuálně.cz). Nejde o investigativní rešerši žádné kauzy — to by
+vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Miroslav Toman
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Miroslav Toman je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — ministr zemědělství (27. 6. 2018 – 17. 12. 2021, druhá vláda
+Andreje Babiše, nominován za ČSSD; v demisi od 11. 11. 2021) a ministr
+zemědělství i v letech 2013–2014 (vláda Jiřího Rusnoka); dříve
+prezident Potravinářské komory ČR a Agrární komory ČR a náměstek
+ministra zemědělství. Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt vládní představitele posledních tří volebních
+období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: pouze základní biografický
+záznam dřívějších veřejných funkcí. Tvrzení zatím nese stav 1 ZDROJ:
+jediný přímo otevřený zdroj je oficiální vládní profil (nezávislé
+redakce k tématu vracejí automatizovanému přístupu 403 nebo článek už
+není dostupný); povýšení na CORROBORATED vyžaduje otevření druhého,
+nezávislého zdroje. Nejde o investigativní rešerši žádné kauzy (vč.
+podnikání rodiny Tomanových) — to by vyžadovalo samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Roman Prymula
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Roman Prymula je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr zdravotnictví (21. 9. – 29. 10. 2020, druhá vláda
+Andreje Babiše), předtím náměstek ministra zdravotnictví (2017–2020),
+epidemiolog. Konec v úřadu následoval poté, co byl v říjnu 2020
+vyfotografován při nočním odchodu z pražské restaurace v době, kdy
+restaurace musely být podle protiepidemických opatření zavřené; premiér
+Babiš ho poté vyzval k rezignaci a navrhl prezidentovi jeho odvolání
+(RESPEKT 2020-10-23). Prymulova vlastní obhajoba („zas tolik jsem toho
+neprovedl", tvrzení, že nic neporušil) se cituje jeho slovy. Autorizace
+navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele posledních tří volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce a okolností jejího konce tak, jak je
+popsaly citované zdroje — odvolání je politický krok premiéra, nikoli
+soudní ani správní závěr o porušení pravidel, a Prymulovo popření se
+uvádí při každé zmínce. Doloženo přímo otevřenými zdroji (vlada.gov.cz,
+RESPEKT). Hlubší rešerše vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jan Blatný
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Blatný je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr zdravotnictví (29. 10. 2020 – 7. 4. 2021, druhá vláda
+Andreje Babiše), dětský hematolog FN Brno a docent Masarykovy
+univerzity. Jeho odvolání podle Tiscali/Zpráv provázel dříve veřejně
+vyslovený požadavek prezidenta Zemana kvůli Blatného postoji k vakcíně
+Sputnik V (trval na schválení EMA); Blatný odvolání označil za
+politické rozhodnutí a uvedl, že má čisté svědomí — obě strany se
+citují atribuovaně. Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt vládní představitele posledních tří volebních
+období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce a okolností odvolání tak, jak je popsaly
+citované zdroje — odvolání je politický krok a žádné pochybení se z něj
+nevyvozuje. Doloženo přímo otevřenými zdroji (vlada.gov.cz,
+zpravy.tiscali.cz). Hlubší rešerše vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Jakub Kulhánek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jakub Kulhánek je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr zahraničních věcí (od 21. 4. 2021 do 17. 12. 2021,
+druhá vláda Andreje Babiše, ČSSD; v demisi od 11. 11. 2021), předtím
+náměstek na ministerstvech vnitra (2018–2021), zahraničí (2014–2016) a
+obrany (2014). Jmenován byl v době kauzy Vrbětice a mezi jeho první
+kroky patřilo předání protestu ruskému velvyslanci (Blesk 2021-04-21).
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci
+pokrýt vládní představitele posledních tří volebních období, po pěti
+postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí, doložený přímo otevřenými zdroji
+(vlada.gov.cz, Blesk.cz). Dřívější externí poradenství pro CEFC Europe
+je zmíněno pouze jako citovaným zdrojem uvedený fakt s kritikou
+připsanou kritikům, nikoli jako vlastní hodnocení webu. Hlubší rešerše
+vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Taťána Malá
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Taťána Malá je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministryně spravedlnosti (27. 6. – 10. 7. 2018, druhá vláda
+Andreje Babiše, ANO), poslankyně od října 2017, dříve místopředsedkyně
+hejtmana Jihomoravského kraje. Po 13 dnech ve funkci rezignovala
+v souvislosti s mediálně popsaným podezřením z plagiátorství jejích
+diplomových prací; sama uvedla, že se ničeho nedopustila, a její
+vyjádření se cituje jejími slovy (Blesk 2018-07-09). Autorizace
+navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele posledních tří volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce a okolností rezignace tak, jak je popsaly
+citované zdroje. **Povinné rámování při každé zmínce:** jde o mediálně
+popsané podezření, nikoli o soudní či akademický verdikt doložený
+citovaným zdrojem; její popření se uvádí vždy. Rozšíření rozsahu
+vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jan Kněžínek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Kněžínek je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr spravedlnosti (10. 7. 2018 – 30. 4. 2019, druhá vláda
+Andreje Babiše, nestraník), dlouholetý legislativec Úřadu vlády
+(2007–2018, náměstek pro řízení sekce Legislativní rady vlády). Demisi
+podal v dubnu 2019 bez bližšího zdůvodnění; opoziční spekulace
+o souvislosti s vývojem kauzy Čapí hnízdo jsou v citovaném zdroji
+připsány opozici a nic víc z nich neplyne (ČT24 2019-04-18). Nahradila
+ho Marie Benešová. Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt vládní představitele posledních tří volebních
+období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce a okolností demise tak, jak je popsaly
+citované zdroje — demise je jeho rozhodnutí, spekulace zůstávají
+připsané těm, kdo je vyslovili. Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Petr Krčál
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Petr Krčál je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr práce a sociálních věcí (27. 6. – 18. 7. 2018, druhá
+vláda Andreje Babiše, ČSSD), dříve radní Kraje Vysočina a náměstek na
+Úřadu vlády. Po zhruba třech týdnech rezignoval v souvislosti se
+zjištěními Seznam Zpráv o shodách v jeho bakalářské práci; jeho vlastní
+vyjádření (připustil možné nedostatky, zmínil i zdravotní důvody) se
+cituje jeho slovy (Hospodářské noviny 2018-07-17). Nahradila ho Jana
+Maláčová. Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele posledních tří volebních období,
+po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce a okolností rezignace tak, jak je popsaly
+citované zdroje. **Povinné rámování:** jde o mediálně popsaná zjištění
+a jeho rezignaci, nikoli o soudní či akademický verdikt doložený
+citovaným zdrojem. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Petr Arenberger
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Petr Arenberger je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr zdravotnictví (7. 4. – 25. 5. 2021, druhá vláda
+Andreje Babiše), ředitel FN Královské Vinohrady a přednosta
+dermatovenerologické kliniky 3. LF UK. Rezignoval poté, co Seznam
+Zprávy popsaly nesrovnalosti v jeho majetkových přiznáních (nepřiznané
+nemovitosti, příjmy z klinických studií); sám uvedl, že přiznání
+vyplnil nesprávně, ale daně platí poctivě, a dění označil za „mediální
+lynč" — obojí se cituje jeho slovy (Seznam Zprávy 2021-05-25).
+Nahradil ho Adam Vojtěch. Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele posledních tří
+volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce a okolností rezignace tak, jak je popsaly
+citované zdroje. **Povinné rámování při každé zmínce:** popsané
+nesrovnalosti jsou zjištění citované redakce a jeho přiznaná chyba ve
+vyplnění, nikoli soudní či správní verdikt; jeho obhajoba se uvádí
+vždy. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Antonín Staněk
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Antonín Staněk je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr kultury (27. 6. 2018 – 31. 7. 2019, druhá vláda
+Andreje Babiše, ČSSD), dříve primátor Olomouce (od 2014) a poslanec
+(od 2017). Jeho odvolání předcházel spor o odvolání ředitele Národní
+galerie Praha Jiřího Fajta a ředitele Muzea umění Olomouc, kritika
+odborné veřejnosti a žádost ČSSD o jeho konec; prezident Zeman jeho
+květnovou rezignaci nejprve nepřijal a odvolal ho k 31. 7. 2019
+(Aktuálně.cz 2019-07-29). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele posledních tří
+volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce a okolností odvolání tak, jak je popsaly
+citované zdroje — kritika je připsána kritikům, prezidentova
+protichůdná interpretace (poděkování za „odhalení zneužívání veřejných
+prostředků") jemu, a web žádnou stranu nepřijímá za svou. Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Dan Ťok
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Dan Ťok je politicky
+exponovaná osoba v souvislosti s výkonem dřívějších veřejných funkcí —
+ministr dopravy nepřetržitě od prosince 2014 do 30. 4. 2019 (vlády
+Bohuslava Sobotky a obě vlády Andreje Babiše, nestraník za ANO), dříve
+předseda představenstva a generální ředitel Skanska a.s. Konec v úřadu
+oznámil v dubnu 2019 v rámci vládních změn, nahradil ho Vladimír
+Kremlík (Seznam Zprávy 2019-04-10). Autorizace navazuje na výslovnou
+žádost vlastníka v této konverzaci pokrýt vládní představitele
+posledních tří volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí, doložený přímo otevřenými zdroji
+(vlada.gov.cz, Seznam Zprávy). Nejde o investigativní rešerši žádné
+kauzy (vč. dálničních zakázek) — to by vyžadovalo samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Vladimír Kremlík
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Vladimír Kremlík je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr dopravy (29. 4. 2019 – 23. 1. 2020, druhá vláda
+Andreje Babiše), dříve náměstek Úřadu pro zastupování státu ve věcech
+majetkových a advokát. Při ohlášení nominace ho premiér Babiš popsal
+jako profesionála s bezpečnostní prověrkou na stupeň „tajné" (Seznam
+Zprávy 2019-04-10). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt vládní představitele posledních tří volebních
+období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce s daty z oficiálního profilu, doložený
+přímo otevřenými zdroji (vlada.gov.cz, Seznam Zprávy). Nejde o
+investigativní rešerši žádné kauzy (vč. okolností jeho odvolání kolem
+zakázky na e-shop dálničních známek — bez přímo otevřeného zdroje se
+zde neuvádí) — to by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Marta Nováková
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Marta Nováková je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministryně průmyslu a obchodu (27. 6. 2018 – 30. 4. 2019,
+druhá vláda Andreje Babiše), dříve prezidentka Svazu obchodu a
+cestovního ruchu ČR a majitelka U&SLUNO a.s. Její konec v úřadu
+premiér Babiš doprovodil slovy, že přechod ze soukromého sektoru do
+veřejné správy není snadný, a výslovně odmítl, že by důvodem byl
+incident s tchajwanskou zástupkyní (Seznam Zprávy 2019-04-10); nahradil
+ji Karel Havlíček. Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt vládní představitele posledních tří volebních
+období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce a okolností konce v úřadu tak, jak je
+popsaly citované zdroje — důvody se připisují tomu, kdo je vyslovil.
+Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Martin Stropnický
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Martin Stropnický je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — místopředseda vlády a ministr zahraničních věcí (13. 12. 2017
+– 27. 6. 2018, první vláda Andreje Babiše, od 24. 1. 2018 v demisi),
+ministr obrany (2014–2017, vláda Bohuslava Sobotky), ministr kultury
+(1998, Tošovského vláda), dlouholetý diplomat (velvyslanec
+v Portugalsku, Itálii a při Svatém stolci; od listopadu 2018
+velvyslanec v Izraeli) a herec. Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele posledních tří
+volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí a odchodu z vysoké politiky do
+diplomacie (jeho vlastní rozhodnutí dle citovaných zdrojů), doloženo
+přímo otevřenými zdroji (vlada.gov.cz — profil i oficiální přehled
+členů první vlády, Aktuálně.cz). Nejde o investigativní rešerši žádné
+kauzy — to by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Robert Pelikán
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Robert Pelikán je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr spravedlnosti (březen 2015 – 27. 6. 2018, vlády
+Bohuslava Sobotky a první vláda Andreje Babiše, od 24. 1. 2018
+v demisi, ANO), dříve 1. náměstek ministra spravedlnosti a právník.
+V dubnu 2018 oznámil odchod z politiky; jeho zdůvodnění (názorové
+neshody v ANO mj. ohledně SPD a lidských práv, kontext vydání Jevgenije
+Nikulina do USA) se cituje jeho slovy (ČT24 2018-04-07). Autorizace
+navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele posledních tří volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce a ohlášeného odchodu z politiky s jeho
+vlastním zdůvodněním, doloženo přímo otevřenými zdroji (vlada.gov.cz,
+ČT24). Nejde o investigativní rešerši žádné kauzy — to by vyžadovalo
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jaroslava Němcová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jaroslava Němcová je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministryně práce a sociálních věcí (13. 12. 2017 – 27. 6.
+2018, první vláda Andreje Babiše, od 24. 1. 2018 v demisi, ANO); dříve
+ředitelka pobočky VZP, náměstkyně ředitele nemocnice a radní
+Středočeského kraje pro zdravotnictví. Autorizace navazuje na výslovnou
+žádost vlastníka v této konverzaci pokrýt vládní představitele
+posledních tří volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce. Tvrzení nese stav 1 ZDROJ (jediný přímo
+otevřený zdroj je oficiální profil na vlada.gov.cz; iROZHLAS vrací
+automatizovanému přístupu 403); povýšení na CORROBORATED vyžaduje
+otevření druhého, nezávislého zdroje. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Ilja Šmíd
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Ilja Šmíd je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr kultury (13. 12. 2017 – 27. 6. 2018, první vláda Andreje
+Babiše, od 24. 1. 2018 v demisi); dříve ředitel Pražské komorní
+filharmonie (1995–2006) a Symfonického orchestru hl. m. Prahy FOK
+(2006–2012), muzikolog a pedagog. Autorizace navazuje na výslovnou
+žádost vlastníka v této konverzaci pokrýt vládní představitele
+posledních tří volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce. Tvrzení nese stav 1 ZDROJ (jediný přímo
+otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Tomáš Hüner
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Tomáš Hüner je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr průmyslu a obchodu (13. 12. 2017 – 27. 6. 2018, první
+vláda Andreje Babiše, od 24. 1. 2018 v demisi); dříve náměstek ministra
+průmyslu a obchodu (2006–2011), předseda dozorčí rady ČEPS a ředitel
+divize Energy Management v Siemens. Autorizace navazuje na výslovnou
+žádost vlastníka v této konverzaci pokrýt vládní představitele
+posledních tří volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce. Tvrzení nese stav 1 ZDROJ (jediný přímo
+otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jiří Milek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Milek je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr zemědělství (13. 12. 2017 – 27. 6. 2018, první vláda
+Andreje Babiše, od 24. 1. 2018 v demisi); dříve generální ředitel a
+předseda představenstva ÚSOVSKO a.s. a agronom. Autorizace navazuje na
+výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele posledních tří volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce. Tvrzení nese stav 1 ZDROJ (jediný přímo
+otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Karla Šlechtová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Karla Šlechtová je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — ministryně obrany (13. 12. 2017 – 27. 6. 2018, první vláda
+Andreje Babiše, od 24. 1. 2018 v demisi) a ministryně pro místní rozvoj
+(září 2014 – 13. 12. 2017, vláda Bohuslava Sobotky); dříve ředitelka
+odboru fondů EU na Úřadu vlády a manažerka v Deloitte. Autorizace
+navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele posledních tří volebních období, po pěti postupně.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších vládních funkcí. Tvrzení nese stav 1 ZDROJ (jediný
+přímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Pavel Blažek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Pavel Blažek je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — ministr spravedlnosti (17. 12. 2021 – 9. 6. 2025, vláda Petra
+Fialy, ODS) a ministr spravedlnosti i v letech 2012–2013 (vláda Petra
+Nečase), dlouholetý poslanec (od 2013). Demisi oznámil 30. 5. 2025
+v souvislosti s bitcoinovou kauzou ministerstva spravedlnosti (dar
+bitcoinů od Tomáše Jiříkovského a jejich prodej ministerstvem); sám
+uvedl, že si není vědom žádného protiprávního jednání a nechce
+poškozovat pověst vlády a koalice — obojí se cituje jeho slovy (ČT24
+2025-05-30). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele posledních tří volebních období.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších vládních funkcí a okolností demise tak, jak je
+popsaly citované zdroje. **Povinné rámování při každé zmínce:** demise
+je politický krok, Blažek podle citovaných zdrojů není obviněn, jeho
+vyjádření se uvádí vždy; samotná bitcoinová kauza je v tomto repozitáři
+pokryta samostatně (dossier Jeronýma Tejce) a tento dossier ji
+nerozšiřuje. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Bohuslav Sobotka
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Bohuslav Sobotka je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — předseda vlády ČR (29. 1. 2014 – 13. 12. 2017, od 5. 12. 2017
+v demisi), ministr financí a místopředseda vlády (2002–2006), předseda
+ČSSD (2011–2017), poslanec od 1996. Podle CNN Prima News po odchodu
+z politiky působí jako manažer ve firmě z oboru zdravotnické techniky a
+z veřejného života se stáhl. Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí a doloženého současného soukromého
+působení (prostý fakt, bez hodnocení), doloženo přímo otevřenými zdroji
+(vlada.gov.cz, CNN Prima News). Nejde o investigativní rešerši žádné
+kauzy z jeho premiérského působení — to by vyžadovalo samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Milan Chovanec
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Milan Chovanec je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr vnitra (29. 1. 2014 – 13. 12. 2017, vláda Bohuslava
+Sobotky, ČSSD, od 5. 12. 2017 v demisi), dříve hejtman Plzeňského
+kraje (od 2010). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt vládní představitele postupně až do roku 1989,
+po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí. Tvrzení nese stav 1 ZDROJ (jediný
+přímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Pavel Bělobrádek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Pavel Bělobrádek je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — místopředseda vlády pro vědu, výzkum a inovace (29. 1. 2014 –
+13. 12. 2017, vláda Bohuslava Sobotky, od 5. 12. 2017 v demisi),
+předseda KDU-ČSL od 2010, poslanec od 2013. Autorizace navazuje na
+výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele postupně až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí. Tvrzení nese stav 1 ZDROJ (jediný
+přímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Věra Jourová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Věra Jourová je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — místopředsedkyně Evropské komise pro hodnoty a transparentnost
+(2019 – 30. 11. 2024), eurokomisařka pro spravedlnost, ochranu
+spotřebitelů a rovnost žen a mužů (2014–2019), ministryně pro místní
+rozvoj ČR (29. 1. – 3. 10. 2014, vláda Bohuslava Sobotky, ANO),
+poslankyně od října 2013. Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí, doložený přímo otevřenými zdroji
+(vlada.gov.cz, Aktuálně.cz). Nejde o investigativní rešerši žádné kauzy
+— to by vyžadovalo samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Michaela Marksová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Michaela Marksová je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministryně práce a sociálních věcí (29. 1. 2014 –
+13. 12. 2017, vláda Bohuslava Sobotky, ČSSD, od 5. 12. 2017 v demisi;
+v červnu 2015 krátce pověřena i řízením ministerstva školství).
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci
+pokrýt vládní představitele postupně až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce. Tvrzení nese stav 1 ZDROJ (jediný přímo
+otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Marcel Chládek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Marcel Chládek je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr školství, mládeže a tělovýchovy (29. 1. 2014 –
+5. 6. 2015, vláda Bohuslava Sobotky, ČSSD), dříve senátor (od 2008) a
+náměstek hejtmana Středočeského kraje. Autorizace navazuje na výslovnou
+žádost vlastníka v této konverzaci pokrýt vládní představitele postupně
+až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí. Tvrzení nese stav 1 ZDROJ (jediný
+přímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Okolnosti
+konce v úřadu se zde bez přímo otevřeného zdroje neuvádějí. Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Kateřina Valachová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Kateřina Valachová je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministryně školství, mládeže a tělovýchovy (2015 –
+21. 6. 2017, vláda Bohuslava Sobotky, ČSSD; oficiální přehled členů
+vlády uvádí začátek 5. 6. 2015, její vládní profil byl publikován
+17. 6. 2015 — drobný rozpor úředních evidencí se uvádí otevřeně),
+dříve náměstkyně pro řízení sekce Legislativní rady vlády a vedoucí
+právního odboru Kanceláře veřejného ochránce práv. Autorizace navazuje
+na výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele postupně až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí. Tvrzení nese stav 1 ZDROJ (jediný
+přímo otevřený zdroj je vlada.gov.cz); povýšení na CORROBORATED
+vyžaduje otevření druhého, nezávislého zdroje. Okolnosti konce v úřadu
+se zde bez přímo otevřeného zdroje neuvádějí. Rozšíření rozsahu
+vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Daniel Herman
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Daniel Herman je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr kultury (29. 1. 2014 – 13. 12. 2017, vláda Bohuslava
+Sobotky, KDU-ČSL, od 5. 12. 2017 v demisi), dříve ředitel Ústavu pro
+studium totalitních režimů (2010–2013) a mluvčí České biskupské
+konference (1996–2005), poslanec od října 2013. Autorizace navazuje na
+výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele postupně až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí. Tvrzení nese stav 1 ZDROJ (jediný
+přímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jan Mládek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Mládek je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — ministr průmyslu a obchodu (29. 1. 2014 – 28. 2. 2017, vláda
+Bohuslava Sobotky, ČSSD), ministr zemědělství (2005–2006) a 1. náměstek
+ministra financí (1999–2001). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí. Tvrzení nese stav 1 ZDROJ (jediný
+přímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Okolnosti
+konce v úřadu (únor 2017) se zde bez přímo otevřeného zdroje neuvádějí.
+Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Svatopluk Němeček
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Svatopluk Němeček je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr zdravotnictví (29. 1. 2014 – 30. 11. 2016, vláda
+Bohuslava Sobotky), dříve ředitel Fakultní nemocnice Ostrava
+(2005–2014) a Městské nemocnice Bohumín (2002–2005). Autorizace
+navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele postupně až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí. Tvrzení nese stav 1 ZDROJ (jediný
+přímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Okolnosti
+konce v úřadu (listopad 2016) se zde bez přímo otevřeného zdroje
+neuvádějí. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Miloslav Ludvík
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Miloslav Ludvík je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr zdravotnictví (30. 11. 2016 – 13. 12. 2017, vláda
+Bohuslava Sobotky, ČSSD, od 5. 12. 2017 v demisi), dříve dlouholetý
+ředitel Fakultní nemocnice v Motole (2000–2016). Autorizace navazuje na
+výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele postupně až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí. Tvrzení nese stav 1 ZDROJ (jediný
+přímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jiří Havlíček
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Havlíček je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr průmyslu a obchodu (4. 4. – 13. 12. 2017, vláda
+Bohuslava Sobotky, ČSSD, od 5. 12. 2017 v demisi). Autorizace navazuje
+na výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele postupně až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED
+vyžaduje otevření druhého, nezávislého zdroje. Rozšíření rozsahu
+vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Stanislav Štech
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Stanislav Štech je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr školství, mládeže a tělovýchovy (21. 6. – 13. 12.
+2017, vláda Bohuslava Sobotky, nominován za ČSSD, od 5. 12. 2017
+v demisi), dříve náměstek ministra školství (od 2015), profesor
+pedagogické psychologie a prorektor Univerzity Karlovy (2003–2015).
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci
+pokrýt vládní představitele postupně až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí. Tvrzení nese stav 1 ZDROJ (jediný
+přímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jiří Dienstbier ml.
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Dienstbier ml. je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — ministr pro lidská práva, rovné příležitosti a legislativu a
+předseda Legislativní rady vlády (29. 1. 2014 – 30. 11. 2016, vláda
+Bohuslava Sobotky, ČSSD), senátor a bývalý místopředseda ČSSD
+(2011–2013). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších veřejných funkcí. Tvrzení nese stav 1 ZDROJ (jediný
+přímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na
+CORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Okolnosti
+konce v úřadu se zde bez přímo otevřeného zdroje neuvádějí. Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Helena Válková
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Helena Válková je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministryně spravedlnosti (29. 1. 2014 – 1. 3. 2015, vláda
+Bohuslava Sobotky, ANO), profesorka trestního práva a kriminoložka.
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci
+pokrýt vládní představitele postupně až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce a akademické dráhy. Tvrzení nese stav
+1 ZDROJ (jediný přímo otevřený zdroj je oficiální profil na
+vlada.gov.cz); povýšení na CORROBORATED vyžaduje otevření druhého,
+nezávislého zdroje. Okolnosti konce v úřadu ani pozdější veřejné funkce
+se zde bez přímo otevřeného zdroje neuvádějí. Rozšíření rozsahu
+vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Ivan Pilný
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Ivan Pilný je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr financí (24. 5. – 13. 12. 2017, vláda Bohuslava
+Sobotky, ANO, od 5. 12. 2017 v demisi), když ve funkci nahradil Andreje
+Babiše. Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED
+vyžaduje otevření druhého, nezávislého zdroje. Rozšíření rozsahu
+vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Antonín Prachař
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Antonín Prachař je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr dopravy (29. 1. 2014 – 13. 11. 2014, vláda Bohuslava
+Sobotky, ANO), kdy podle oficiálního přehledu podal rezignaci.
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci
+pokrýt vládní představitele postupně až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz — rezignace je uvedena jako fakt bez důvodů, které
+přehled neuvádí. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED
+vyžaduje otevření druhého, nezávislého zdroje. Rozšíření rozsahu
+vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jan Chvojka
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Chvojka je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — ministr pro lidská práva, rovné příležitosti a legislativu
+(30. 11. 2016 – 13. 12. 2017, vláda Bohuslava Sobotky, ČSSD, od
+5. 12. 2017 v demisi). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED
+vyžaduje otevření druhého, nezávislého zdroje. Rozšíření rozsahu
+vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jiří Rusnok
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Rusnok je
+politicky exponovaná osoba v souvislosti s výkonem dřívější veřejné
+funkce — předseda vlády ČR (25. 6. 2013 – 29. 1. 2014, úřednická
+vláda, od 13. 8. 2013 v demisi po neúspěšném hlasování o důvěře).
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci
+pokrýt vládní představitele postupně až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění pozdějšího působení (guvernér ČNB) vyžaduje otevření dalších
+zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Martin Pecina
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Martin Pecina je
+politicky exponovaná osoba v souvislosti s výkonem dřívějších veřejných
+funkcí — místopředseda vlády a ministr vnitra (10. 7. 2013 –
+29. 1. 2014, Rusnokova úřednická vláda, od 13. 8. 2013 v demisi);
+ministrem vnitra byl i ve vládě Jana Fischera (2009–2010). Autorizace
+navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt vládní
+představitele postupně až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívějších vládních funkcí doložený oficiálním přehledem členů
+vlády na vlada.gov.cz (Rusnokova vláda) — dřívější Fischerovo období se
+uvádí, jen pokud je doloží otevřený zdroj. Tvrzení nese stav 1 ZDROJ;
+povýšení na CORROBORATED vyžaduje otevření druhého, nezávislého zdroje.
+Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jan Fischer
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Fischer je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+1. místopředseda vlády a ministr financí; dříve předseda úřednické vlády (2009–2010), což se v dossieru uvede, až to doloží přímo otevřený zdroj (10. 7. 2013 – 29. 1. 2014, Rusnokova úřednická vláda, od
+13. 8. 2013 v demisi). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Jiřího Rusnoka na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění dřívějších či pozdějších funkcí vyžaduje
+otevření dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Jan Kohout
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Kohout je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr zahraničních věcí (10. 7. 2013 – 29. 1. 2014, Rusnokova úřednická vláda, od
+13. 8. 2013 v demisi). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Jiřího Rusnoka na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění dřívějších či pozdějších funkcí vyžaduje
+otevření dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: František Koníček
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): František Koníček je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr práce a sociálních věcí (10. 7. 2013 – 29. 1. 2014, Rusnokova úřednická vláda, od
+13. 8. 2013 v demisi). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Jiřího Rusnoka na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění dřívějších či pozdějších funkcí vyžaduje
+otevření dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Martin Holcát
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Martin Holcát je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr zdravotnictví (10. 7. 2013 – 29. 1. 2014, Rusnokova úřednická vláda, od
+13. 8. 2013 v demisi). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Jiřího Rusnoka na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění dřívějších či pozdějších funkcí vyžaduje
+otevření dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Jiří Balvín
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Balvín je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr kultury (10. 7. 2013 – 29. 1. 2014, Rusnokova úřednická vláda, od
+13. 8. 2013 v demisi). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Jiřího Rusnoka na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění dřívějších či pozdějších funkcí vyžaduje
+otevření dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Dalibor Štys
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Dalibor Štys je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr školství, mládeže a tělovýchovy (10. 7. 2013 – 29. 1. 2014, Rusnokova úřednická vláda, od
+13. 8. 2013 v demisi). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Jiřího Rusnoka na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED vyžaduje otevření dalších zdrojů. Rozšíření rozsahu
+vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Zdeněk Žák
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Zdeněk Žák je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr dopravy (10. 7. 2013 – 29. 1. 2014, Rusnokova úřednická vláda, od
+13. 8. 2013 v demisi). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Jiřího Rusnoka na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED vyžaduje otevření dalších zdrojů. Rozšíření rozsahu
+vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Petr Nečas
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Petr Nečas je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+předseda vlády ČR (28. 6. 2010 – 10. 7. 2013, od 17. 6. 2013 v demisi, ODS) (vláda Petra Nečase, 2010–2013). Autorizace navazuje na výslovnou
+žádost vlastníka v této konverzaci pokrýt vládní představitele postupně
+až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění dalších dřívějších či pozdějších funkcí
+vyžaduje otevření dalších zdrojů. Nejde o investigativní rešerši žádné
+kauzy (u P. Nečase vč. okolností demise 2013) — to by vyžadovalo
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Karel Schwarzenberg
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Karel Schwarzenberg je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+1. místopředseda vlády a ministr zahraničních věcí (13. 7. 2010 – 10. 7. 2013, TOP 09) (vláda Petra Nečase, 2010–2013). Autorizace navazuje na výslovnou
+žádost vlastníka v této konverzaci pokrýt vládní představitele postupně
+až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění dalších dřívějších či pozdějších funkcí
+vyžaduje otevření dalších zdrojů. Nejde o investigativní rešerši žádné
+kauzy (u P. Nečase vč. okolností demise 2013) — to by vyžadovalo
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Miroslav Kalousek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Miroslav Kalousek je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr financí (13. 7. 2010 – 10. 7. 2013, TOP 09) (vláda Petra Nečase, 2010–2013). Autorizace navazuje na výslovnou
+žádost vlastníka v této konverzaci pokrýt vládní představitele postupně
+až do roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění dalších dřívějších či pozdějších funkcí
+vyžaduje otevření dalších zdrojů. Nejde o investigativní rešerši žádné
+kauzy (u P. Nečase vč. okolností demise 2013) — to by vyžadovalo
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Karolína Peake
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Karolína Peake je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+místopředsedkyně vlády (1. 7. 2011 – 10. 7. 2013, od 17. 6. 2013 v demisi) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Radek John
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Radek John je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+místopředseda vlády (13. 7. 2010 – 20. 5. 2011) a ministr vnitra (13. 7. 2010 – 21. 4. 2011) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Alexandr Vondra (ministr obrany)
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Alexandr Vondra je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr obrany (13. 7. 2010 – 7. 12. 2012); pro odlišení od případných jmenovců je subjekt vymezen právě touto funkcí v přehledu vlády (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jaromír Drábek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jaromír Drábek je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr práce a sociálních věcí (13. 7. 2010 – 31. 10. 2012) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Leoš Heger
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Leoš Heger je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr zdravotnictví (13. 7. 2010 – 10. 7. 2013, od 17. 6. 2013 v demisi) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Josef Dobeš
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Josef Dobeš je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr školství (13. 7. 2010 – 31. 3. 2012, Věci veřejné) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jiří Pospíšil
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Pospíšil je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr spravedlnosti (13. 7. 2010 – 27. 6. 2012, ODS) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Kamil Jankovský
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Kamil Jankovský je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr pro místní rozvoj (13. 7. 2010 – 10. 7. 2013, od 17. 6. 2013 v demisi, VV) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Tomáš Chalupa
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Tomáš Chalupa je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr životního prostředí (17. 1. 2011 – 10. 7. 2013, od 17. 6. 2013 v demisi, ODS) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jan Kubice
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Kubice je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr vnitra (22. 4. 2011 – 10. 7. 2013, od 17. 6. 2013 v demisi) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Petr Bendl
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Petr Bendl je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr zemědělství (6. 10. 2011 – 10. 7. 2013, od 17. 6. 2013 v demisi, ODS); pro odlišení od jmenovců je subjekt vymezen touto funkcí v přehledu vlády (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Martin Kuba
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Martin Kuba je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr průmyslu a obchodu (16. 11. 2011 – 10. 7. 2013, od 17. 6. 2013 v demisi, ODS) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Ivan Fuksa
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Ivan Fuksa je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr zemědělství (13. 7. 2010 – 4. 10. 2011, ODS) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Jiří Besser
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Besser je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr kultury (13. 7. 2010 – 16. 12. 2011) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Alena Hanáková
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Alena Hanáková je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministryně kultury (20. 12. 2011 – 10. 7. 2013, od 17. 6. 2013 v demisi) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost
+vlastníka v této konverzaci pokrýt vládní představitele postupně až do
+roku 1989, po pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+Petra Nečase na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na
+CORROBORATED i doplnění okolností konce v úřadu či dalších funkcí
+vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-08: Pavel Dobeš
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Pavel Dobeš je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr dopravy (1. 7. 2011 – 3. 12. 2012) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Ludmila Müllerová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Ludmila Müllerová je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministryně práce a sociálních věcí (16. 11. 2012 – 10. 7. 2013, od 17. 6. 2013 v demisi) (vláda Petra Nečase). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Vladimír Tošovský
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Vladimír Tošovský je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr průmyslu a obchodu (8. 5. 2009 – 13. 7. 2010, od 25. 6. 2010 v demisi) (Fischerova úřednická vláda). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Gustáv Slamečka
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Gustáv Slamečka je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr dopravy (8. 5. 2009 – 13. 7. 2010, od 25. 6. 2010 v demisi) (Fischerova úřednická vláda). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Daniela Kovářová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Daniela Kovářová je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministryně spravedlnosti (2009–2010) (Fischerova úřednická vláda). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Martin Barták
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Martin Barták je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+místopředseda vlády a ministr obrany (8. 5. 2009 – 13. 7. 2010, od 25. 6. 2010 v demisi) (Fischerova úřednická vláda). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Petr Šimerka
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Petr Šimerka je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr práce a sociálních věcí (8. 5. 2009 – 13. 7. 2010, od 25. 6. 2010 v demisi) (Fischerova úřednická vláda). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Jakub Šebesta
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jakub Šebesta je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr zemědělství (8. 5. 2009 – 13. 7. 2010, od 25. 6. 2010 v demisi; 22. 3. – 15. 4. 2010 pověřen i řízením Ministerstva životního prostředí) (Fischerova úřednická vláda). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Dana Jurásková
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Dana Jurásková je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministryně zdravotnictví (8. 5. 2009 – 13. 7. 2010, od 25. 6. 2010 v demisi) (Fischerova úřednická vláda). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Miroslava Kopicová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Miroslava Kopicová je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministryně školství, mládeže a tělovýchovy (8. 5. 2009 – 13. 7. 2010, od 25. 6. 2010 v demisi) (Fischerova úřednická vláda). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Ladislav Miko
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Ladislav Miko je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr životního prostředí (8. 5. 2009 – 30. 11. 2009; přehled u konce působení uvádí demisi) (Fischerova úřednická vláda). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Jan Dusík
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Dusík je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr životního prostředí (30. 11. 2009 – 19. 3. 2010; přehled u konce působení uvádí demisi) (Fischerova úřednická vláda). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Rut Bízková
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Rut Bízková je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministryně životního prostředí (15. 4. 2010 – 13. 7. 2010, od 25. 6. 2010 v demisi) (Fischerova úřednická vláda). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Juraj Chmiel
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Juraj Chmiel je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr pro evropské záležitosti (30. 11. 2009 – 13. 7. 2010, od 25. 6. 2010 v demisi) (Fischerova úřednická vláda). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Štefan Füle
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Štefan Füle je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr pro evropské záležitosti (8. 5. 2009 – 30. 11. 2009; přehled u konce působení uvádí demisi) (Fischerova úřednická vláda). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Michael Kocáb
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Michael Kocáb je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr vlády ČR pro lidská práva a menšiny (23. 1. 2009 – 8. 5. 2009, od 26. 3. 2009 v demisi; druhá vláda Mirka Topolánka) a ministr vlády ČR pro lidská práva (8. 5. 2009 – 29. 3. 2010, Fischerova úřednická vláda); oba vládní přehledy přímo otevřeny, jde ale o téhož vydavatele, takže tvrzení zůstává 1 ZDROJ. Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Pavel Zářecký
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Pavel Zářecký je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr a předseda Legislativní rady vlády (30. 11. 2009 – 13. 7. 2010, od 25. 6. 2010 v demisi) (Fischerova úřednická vláda). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Mirek Topolánek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Mirek Topolánek je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+předseda vlády České republiky (druhá vláda: 9. 1. 2007 – 26. 3. 2009, poté do 8. 5. 2009 v demisi pověřen řízením vlády). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Martin Bursík
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Martin Bursík je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+místopředseda vlády a ministr životního prostředí (9. 1. 2007 – 8. 5. 2009, od 26. 3. 2009 v demisi; 4. 10. – 4. 12. 2007 pověřen řízením resortu MŠMT) (druhá vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Ivan Langer
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Ivan Langer je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr vnitra a ministr informatiky (9. 1. 2007 – 8. 5. 2009, od 26. 3. 2009 v demisi) (druhá vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Jiří Čunek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Čunek je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+1. místopředseda vlády a ministr pro místní rozvoj (9. 1. 2007 – 13. 11. 2007 a znovu 2. 4. 2008 – 23. 1. 2009; přehled u obou období uvádí demisi) (druhá vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Vlasta Parkanová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Vlasta Parkanová je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministryně obrany (9. 1. 2007 – 8. 5. 2009, od 26. 3. 2009 v demisi; od 23. 1. 2009 zároveň místopředsedkyně vlády) (druhá vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Martin Říman
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Martin Říman je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr průmyslu a obchodu (9. 1. 2007 – 8. 5. 2009, od 26. 3. 2009 v demisi) (druhá vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Tomáš Julínek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Tomáš Julínek je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr zdravotnictví (9. 1. 2007 – 23. 1. 2009; přehled u konce působení uvádí odvolání — odvolání je politický krok, nikoli závěr o pochybení) (druhá vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Daniela Filipiová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Daniela Filipiová je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministryně zdravotnictví (23. 1. 2009 – 8. 5. 2009, od 26. 3. 2009 v demisi) (druhá vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Dana Kuchtová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Dana Kuchtová je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministryně školství, mládeže a tělovýchovy (9. 1. 2007 – 4. 10. 2007; přehled u konce působení uvádí demisi) (druhá vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Ondřej Liška
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Ondřej Liška je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr školství, mládeže a tělovýchovy (4. 12. 2007 – 8. 5. 2009, od 26. 3. 2009 v demisi) (druhá vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Aleš Řebíček
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Aleš Řebíček je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr dopravy (9. 1. 2007 – 23. 1. 2009; přehled u konce působení uvádí odvolání — odvolání je politický krok, nikoli závěr o pochybení) (druhá vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Petr Gandalovič
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Petr Gandalovič je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr zemědělství (9. 1. 2007 – 8. 5. 2009, od 26. 3. 2009 v demisi) (druhá vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Václav Jehlička
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Václav Jehlička je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr kultury (26. 1. 2007 – 8. 5. 2009, od 26. 3. 2009 v demisi) (druhá vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Helena Třeštíková
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Helena Třeštíková je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministryně kultury (9. 1. 2007 – 26. 1. 2007; přehled u konce působení uvádí demisi) (druhá vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Cyril Svoboda
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Cyril Svoboda je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr vlády ČR a předseda Legislativní rady vlády (9. 1. 2007 – 23. 1. 2009), poté ministr pro místní rozvoj (23. 1. 2009 – 8. 5. 2009, od 26. 3. 2009 v demisi) (druhá vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Pavel Svoboda
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Pavel Svoboda je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr vlády ČR a předseda Legislativní rady vlády (23. 1. 2009 – 8. 5. 2009, od 26. 3. 2009 v demisi) (druhá vláda Mirka Topolánka); pro odlišení od jmenovců je subjekt vymezen touto funkcí v oficiálním přehledu vlády. Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Džamila Stehlíková
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Džamila Stehlíková je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministryně vlády ČR pro lidská práva a národnostní menšiny (9. 1. 2007 – 23. 1. 2009; přehled u konce působení uvádí demisi) (druhá vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Jiří Šedivý
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Šedivý je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr obrany (4. 9. 2006 – 9. 1. 2007) (první vláda Mirka Topolánka); pro odlišení od jmenovců (mj. bývalého náčelníka Generálního štábu AČR) je subjekt vymezen právě touto funkcí v oficiálním přehledu vlády. Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Vlastimil Tlustý
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Vlastimil Tlustý je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr financí (4. 9. 2006 – 9. 1. 2007) (první vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Milena Vicenová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Milena Vicenová je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministryně zemědělství (4. 9. 2006 – 9. 1. 2007) (první vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Petr Kalaš
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Petr Kalaš je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr životního prostředí (4. 9. 2006 – 9. 1. 2007) (první vláda Mirka Topolánka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Jiří Paroubek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Paroubek je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+předseda vlády České republiky (25. 4. 2005 – 16. 8. 2006; vláda podle oficiálního přehledu podala demisi 16. 8. 2006). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Zdeněk Škromach
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Zdeněk Škromach je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+místopředseda vlády a ministr práce a sociálních věcí (25. 4. 2005 – 16. 8. 2006; 12. 10. – 4. 11. 2005 pověřen i řízením Ministerstva zdravotnictví) (vláda Jiřího Paroubka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Pavel Němec
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Pavel Němec je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+místopředseda vlády a ministr spravedlnosti (25. 4. 2005 – 16. 8. 2006) (vláda Jiřího Paroubka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Milan Šimonovský
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Milan Šimonovský je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+místopředseda vlády a ministr dopravy (25. 4. 2005 – 16. 8. 2006) (vláda Jiřího Paroubka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Martin Jahn
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Martin Jahn je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+místopředseda vlády pro ekonomiku (25. 4. 2005 – 31. 12. 2005) (vláda Jiřího Paroubka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: František Bublan
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): František Bublan je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr vnitra (25. 4. 2005 – 16. 8. 2006) (vláda Jiřího Paroubka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Milan Urban
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Milan Urban je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr průmyslu a obchodu (25. 4. 2005 – 16. 8. 2006) (vláda Jiřího Paroubka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Karel Kühnl
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Karel Kühnl je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr obrany (25. 4. 2005 – 16. 8. 2006) (vláda Jiřího Paroubka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Petr Zgarba
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Petr Zgarba je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr zemědělství (25. 4. 2005 – 10. 11. 2005) (vláda Jiřího Paroubka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: David Rath
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): David Rath je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr zdravotnictví (4. 11. 2005 – 16. 8. 2006); rozsah je výhradně tato vládní funkce — pozdější trestní kauza z doby hejtmanství není tímto záznamem autorizována a vyžadovala by samostatnou autorizaci (vláda Jiřího Paroubka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Petra Buzková
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Petra Buzková je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministryně školství, mládeže a tělovýchovy (25. 4. 2005 – 16. 8. 2006) (vláda Jiřího Paroubka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Libor Ambrozek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Libor Ambrozek je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr životního prostředí (25. 4. 2005 – 16. 8. 2006) (vláda Jiřího Paroubka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Vítězslav Jandák
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Vítězslav Jandák je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr kultury (17. 8. 2005 – 16. 8. 2006) (vláda Jiřího Paroubka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Radko Martínek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Radko Martínek je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr pro místní rozvoj (25. 4. 2005 – 16. 8. 2006) (vláda Jiřího Paroubka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Dana Bérová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Dana Bérová je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministryně informatiky (25. 4. 2005 – 16. 8. 2006) (vláda Jiřího Paroubka). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Milada Emmerová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Milada Emmerová je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministryně zdravotnictví (4. 8. 2004 – 25. 4. 2005 ve vládě Stanislava Grosse a 25. 4. 2005 – 12. 10. 2005 ve vládě Jiřího Paroubka); oba vládní přehledy přímo otevřeny, jde ale o téhož vydavatele, takže tvrzení zůstává 1 ZDROJ. Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Jaroslav Palas
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jaroslav Palas je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr zemědělství (4. 8. 2004 – 25. 4. 2005) (vláda Stanislava Grosse). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Vladimír Mlynář
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Vladimír Mlynář je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr informatiky (15. 7. 2002 – 4. 8. 2004 ve vládě Vladimíra Špidly a 4. 8. 2004 – 25. 4. 2005 ve vládě Stanislava Grosse); oba vládní přehledy přímo otevřeny, jde ale o téhož vydavatele, takže tvrzení zůstává 1 ZDROJ. Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Jaroslav Bureš
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jaroslav Bureš je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr spravedlnosti (2. 2. 2001 – 12. 7. 2002, vláda Miloše Zemana) a ministr a předseda Legislativní rady vlády (4. 8. 2004 – 25. 4. 2005, vláda Stanislava Grosse); oba vládní přehledy přímo otevřeny, jde ale o téhož vydavatele, takže tvrzení zůstává 1 ZDROJ. Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Vladimír Špidla
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Vladimír Špidla je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+předseda vlády České republiky (15. 7. 2002 – 4. 8. 2004). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Pavel Rychetský
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Pavel Rychetský je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+místopředseda vlády a předseda Legislativní rady vlády (22. 7. 1998 – 12. 7. 2002, vláda Miloše Zemana), místopředseda vlády (15. 7. 2002 – 4. 8. 2004) a ministr spravedlnosti (15. 7. 2002 – 5. 8. 2003) ve vládě Vladimíra Špidly; oba vládní přehledy přímo otevřeny, jde ale o téhož vydavatele, takže tvrzení zůstává 1 ZDROJ; pozdější působení v čele Ústavního soudu není tímto záznamem pokryto. Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Petr Mareš
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Petr Mareš je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+místopředseda vlády pro výzkum a vývoj, lidská práva a lidské zdroje (15. 7. 2002 – 4. 8. 2004) (vláda Vladimíra Špidly). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Jaroslav Tvrdík
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jaroslav Tvrdík je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr obrany (15. 7. 2002 – 9. 6. 2003; přehled uvádí demisi 3. 6. 2003) (vláda Vladimíra Špidly). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Miroslav Kostelka
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Miroslav Kostelka je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr obrany (9. 6. 2003 – 4. 8. 2004) (vláda Vladimíra Špidly). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Jozef Kubinyi
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jozef Kubinyi je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministr zdravotnictví (14. 4. 2004 – 4. 8. 2004) (vláda Vladimíra Špidly). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Marie Součková
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Marie Součková je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+ministryně zdravotnictví (15. 7. 2002 – 14. 4. 2004) (vláda Vladimíra Špidly). Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-08: Miloš Zeman
+
+Authorized by the site owner, explicitly and on the record, 2026-08-08:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Miloš Zeman je politicky
+exponovaná osoba v souvislosti s výkonem dřívější veřejné funkce —
+předseda vlády České republiky (22. 7. 1998 – 12. 7. 2002); rozsah je výhradně tato vládní funkce — pozdější prezidentské období (2013–2023) není tímto záznamem autorizováno a vyžadovalo by samostatnou autorizaci. Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt vládní představitele postupně až do roku 1989, po
+pěti.
+
+Rozsah tohoto dossieru je záměrně minimální: základní biografický
+záznam dřívější vládní funkce doložený oficiálním přehledem členů vlády
+na vlada.gov.cz. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED i
+doplnění okolností konce v úřadu či dalších funkcí vyžaduje otevření
+dalších zdrojů. Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+
+### Scope extension, 2026-08-09: Vlastimil Válek — ministerské období (léková krize)
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): rozšíření AUTH-2026-08-07-VLASTIMIL-VALEK a AUTH-2026-08-08-VLASTIMIL-VALEK. Vlastimil Válek byl 2021–2025 místopředsedou vlády a ministrem zdravotnictví. Dřívější autorizace omezovaly dossier na jeho aktuální poslanecký profil a výslovně vylučovaly rešerši ministerského období. Tato autorizace rozšiřuje rozsah na jedno konkrétní, dokumentované téma jeho ministerského období, nalezené na úrovni search-výsledku a doložené dvěma přímo otevřenými a přečtenými zdroji před sepsáním tohoto záznamu.
+
+Rozsah zahrnuje: **krizi s výpadky léků (zejména penicilinových antibiotik) 2022–2023 a její politické a legislativní řešení** — trvající nedostatek antibiotik, antipyretik a onkologických léků; opoziční kritiku jeho postupu včetně publikovaných výzev k rezignaci (Schillerová) a výroků Babiše; jeho vlastní publikovaná vyjádření a sliby (dodávky penicilinu, aplikace pro dostupnost léků); a vládní novelu o léčivech (povinnost výrobců dodávat po nahlášení výpadku, měsíční zásoby distributorů, hlášení lékáren) s publikovanou opoziční kritikou její dostatečnosti (Farhan, Maříková). Přímo otevřené zdroje: Seznam Zprávy (10. 5. 2023) a ČT24 (29. 8. 2023).
+
+Povinné rámování: výpadky léků byly dle citovaného zpravodajství celoevropský jev s příčinami mimo ČR (výpadky výroby v Číně a Indii) — kritika opozice i obhajoba ministra a koalice se citují jako pozice, ne jako zjištění; žádný citovaný zdroj netvrdí protiprávní jednání ministra a nic takového nesmí být naznačeno. Každý další zdroj musí být před napsáním tvrzení přímo otevřen a přečten; status tvrzení dle validátorových pravidel. Tato autorizace nepokrývá žádné jiné téma jeho ministerského období (vč. zmíněného SÚKL či VZP) — to by vyžadovalo samostatnou budoucí autorizaci.
+
+
+### Scope extension, 2026-08-09: Jiří Pospíšil — ministerské období (odvolání 2012)
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): rozšíření AUTH-2026-08-07-JIRI-POSPISIL. Jiří Pospíšil byl ministrem spravedlnosti 2006–2009 a 2010–2012. Dřívější autorizace omezovala dossier na aktuální politický profil. Tato autorizace rozšiřuje rozsah na jedno konkrétní, dokumentované téma: **jeho odvolání z funkce ministra spravedlnosti 27. 6. 2012** — odvolání prezidentem Klausem na návrh premiéra Nečase, oficiálně uváděné důvody (ztráta důvěry v manažerské a rozpočtové řízení resortu, žádost o navýšení rozpočtu během úsporných opatření), Pospíšilova publikovaná reakce („Respektuji jeho rozhodnutí…“), a dobově reportovaný kontext: odvolání přišlo krátce po návrhu nejvyššího státního zástupce Zemana jmenovat Lenku Bradáčovou vrchní státní zástupkyní v Praze, což část politiků (nejotevřeněji Schwarzenberg) veřejně spojovala se zákulisním sporem o podobu státního zastupitelství. Přímo otevřené zdroje: Deník.cz (27. 6. 2012), Patria.cz (27. 6. 2012), e15.cz (28. 6. 2012 — komentář, cituje se výhradně jako NÁZOR).
+
+Povinné rámování: oficiální důvody a alternativní výklady se citují vedle sebe jako pozice, ne jako zjištění — tento web nerozhoduje, proč byl ministr odvolán. Odvolání člena vlády je ústavní pravomoc, ne pochybení odvolaného; žádný citovaný zdroj netvrdí protiprávní jednání Pospíšila a nic takového nesmí být naznačeno. Lenka Bradáčová, Pavel Zeman ani Vlastimil Rampula se touto autorizací nestávají subjekty — vystupují jen jako záznam vazby v rozsahu citovaného zpravodajství. Jiná témata jeho ministerských období vyžadují samostatnou budoucí autorizaci.
+
+### Governance and scope supersession, 2026-08-09: zrušení „záměrně minimálních" omezení rozsahu
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09
+("unblock expansions" v této konverzaci):
+
+Všechny dřívější autorizační záznamy, které omezují dossier na „záměrně
+minimální" základní politický/biografický profil a uvádějí, že hlubší
+rešerše „by vyžadovala samostatnou budoucí autorizaci", se mění takto:
+samostatné per-téma autorizační kolo se již nevyžaduje. Agent smí u
+kteréhokoli takového subjektu konkretizovat témata rozšíření přímo z
+přímo otevřených veřejných zdrojů — stejným mechanismem, jaký standing
+scope (AUTH-2026-08-05-PLATFORM-SCOPE) už umožňuje pro nové subjekty — a
+zdokumentovat každé rozšíření datovaným update záznamem dossieru, bez
+nového zápisu do tohoto logu za každé téma.
+
+Co se NEMĚNÍ, výslovně a bez výjimky: všech devět povinných publikačních
+bran (named evidence, provenance, faithful status, no guilt by graph,
+source-family independence, data minimization, third-party
+proportionality, reviewable change, deterministic build), všechna
+redakční pravidla (procesní vs. věcný výsledek při každé zmínce,
+nejmenované třetí osoby, mezera místo spekulace), doktrína archivace
+dokumentů, a všechna dřívější výslovně zamítavá rozhodnutí (mj. záznam
+„Not authorized: Radovan Krejčíř" platí dál). Dřívější záznamy se
+neupravují ani neodstraňují — tento záznam mění jejich procesní
+důsledek, ne jejich text.

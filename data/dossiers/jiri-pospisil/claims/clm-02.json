@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jiri-pospisil/claims/CLM-02",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jiri-pospisil"
+  },
+  "text": "Dne 27. 6. 2012 odvolal prezident Klaus na návrh premiéra Nečase Jiřího Pospíšila z funkce ministra spravedlnosti; Nečas jako důvod uvedl ztrátu důvěry v manažerské a rozpočtové řízení resortu (žádost o navýšení rozpočtu během úsporných opatření), Pospíšil rozhodnutí přijal slovy „Respektuji jeho rozhodnutí, je to jeho plná pravomoc“ a dobové zpravodajství nezávisle zaznamenalo, že odvolání přišlo krátce po návrhu nejvyššího státního zástupce jmenovat Lenku Bradáčovou vrchní státní zástupkyní v Praze — časovou souslednost, ne doložený kauzální vztah; odvolání člena vlády je ústavní pravomoc a žádný citovaný zdroj netvrdí protiprávní jednání odvolaného",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jiri-pospisil/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jiri-pospisil/sources/SRC-05"
+    }
+  ],
+  "subjects": [
+    "jiri-pospisil"
+  ],
+  "order": 2,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jiri-pospisil/_index.md)."
+    }
+  ]
+}

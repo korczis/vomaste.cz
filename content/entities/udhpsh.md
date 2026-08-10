@@ -3,6 +3,7 @@
 title = "Úřad pro dohled nad hospodařením politických stran a politických hnutí (ÚDHPSH)"
 template = "entity.html"
 weight = 419
+description = "Úřad pro dohled nad hospodařením politických stran a… — Kontextová entita — Dohledový orgán, podle jehož pravidel Motoristé sobě povinně zveřejnili přehledy dárců kampaně PS 2025."
 
 [extra]
 generated = true

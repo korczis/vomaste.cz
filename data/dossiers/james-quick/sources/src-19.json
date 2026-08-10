@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-19",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-19",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "title": "SRC-19 — ČT24: Trenér Růžička je vinen, rozhodl soud a pokutoval ho bezmála půl milionem",
+  "description": "Zpráva České televize o prvoinstančním rozsudku nad Vladimírem Růžičkou ve věci zpronevěry.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "veřejnoprávní zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/trener-ruzicka-je-vinen-rozhodl-soud-a-pokutoval-ho-bezmala-pul-milionem-108974",
+  "published": "2016-09-27",
+  "retrieved": "2026-08-06",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-18"
+    }
+  ],
+  "subjects": [
+    "james-quick"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Veřejnoprávní zpravodajský zdroj, přímo otevřený. Výslovně uvádí, že rozsudek zatím není pravomocný a obě strany mají lhůtu k odvolání — dossier tuto výhradu přebírá doslovně, aby nebyl vytvořen dojem konečného rozhodnutí."
+    }
+  ],
+  "order": 19
+}

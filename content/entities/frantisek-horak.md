@@ -3,6 +3,7 @@
 title = "František Horák"
 template = "entity.html"
 weight = 133
+description = "František Horák — Kontextová entita — Člen Rady NSA odvolaný vládou 16. 12. 2025 společně s předsedou Šebkem."
 
 [extra]
 generated = true

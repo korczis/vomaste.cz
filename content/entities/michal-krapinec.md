@@ -3,6 +3,7 @@
 title = "Michal Krapinec"
 template = "entity.html"
 weight = 264
+description = "Michal Krapinec — Kontextová entita — Generální ředitel Českých drah; na fóru ACRI upozornil na náklady vozidel pro 230 km/h."
 
 [extra]
 generated = true

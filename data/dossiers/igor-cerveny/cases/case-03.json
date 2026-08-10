@@ -10,12 +10,27 @@
     "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
   },
   "title": "Rekonstrukce kanceláří ministerstva",
-  "summary": "Rekonstrukce kanceláří ministerstva — viz tvrzení CLM-11, CLM-12, CLM-13, CLM-14, CLM-15.",
+  "summary": "Rekonstrukce kanceláří a personální změny — plánované stavební úpravy sekretariátu a ministrovy pracovny za až 3 miliony korun, přesun z původní kanceláře (kterou nyní užívá poslanec Filip Turek), Červeného vlastní zdůvodnění i havarijním stavem budovy, kritika exministra Petra Hladíka, konkrétní uzavřené smlouvy na náhradní prostory a oficiální reakce MŽP odmítající dřívější mediální údaj o „3 milionech za kancelář“.",
   "period": "2026",
   "status": "status-single",
   "statusLabel": "Sledované téma",
   "anchor": "kauza-kancelare",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-15"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-34"
     },
@@ -60,20 +75,32 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-48"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-58"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-59"
     }
   ],
   "sources": [
     {
-      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-21"
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-09"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-20"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-22"
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-21"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-07"
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-22"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-29"
@@ -88,7 +115,13 @@
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-32"
     },
     {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-33"
+    },
+    {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-34"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-39"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-40"

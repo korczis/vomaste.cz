@@ -1,0 +1,13 @@
+{
+  "retrieved": "2026-08-09",
+  "endpoint": "https://infodeska.gov.cz/eudpub/api/v1/vyveseni/vyhledej",
+  "docket": "56 T 7/2022",
+  "request": {
+    "kodSubjektu": "201000",
+    "cisloSenat": 56,
+    "rejstrik": "T",
+    "cisloBezne": 7,
+    "rocnik": 2022
+  },
+  "response": []
+}

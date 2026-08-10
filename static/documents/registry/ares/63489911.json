@@ -1,0 +1,235 @@
+{
+  "retrieved": "2026-08-09",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "63489911"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "63489911",
+        "obchodniJmeno": "NAVOS FARM TECHNIC  s.r.o.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 124,
+          "nazevKraje": "Olomoucký kraj",
+          "kodOkresu": 3709,
+          "nazevOkresu": "Prostějov",
+          "kodObce": 589659,
+          "nazevObce": "Kralice na Hané",
+          "kodUlice": 513598,
+          "nazevUlice": "Háj",
+          "cisloDomovni": 322,
+          "kodCastiObce": 72443,
+          "nazevCastiObce": "Kralice na Hané",
+          "kodAdresnihoMista": 25931521,
+          "psc": 79812,
+          "textovaAdresa": "Háj 322, 79812 Kralice na Hané",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "112",
+        "pravniFormaRos": "112",
+        "financniUrad": "325",
+        "datumVzniku": "1996-01-23",
+        "datumAktualizace": "2026-06-12",
+        "dic": "CZ63489911",
+        "icoId": "63489911",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Háj 322",
+          "radekAdresy2": "79812 Kralice na Hané"
+        },
+        "czNace2008": [
+          "25620",
+          "30990",
+          "33120",
+          "45200",
+          "46900",
+          "47190",
+          "52100",
+          "68320"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "NAVOS FARM TECHNIC  s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 124,
+                  "nazevKraje": "Olomoucký kraj",
+                  "kodOkresu": 3709,
+                  "nazevOkresu": "Prostějov",
+                  "kodObce": 589659,
+                  "nazevObce": "Kralice na Hané",
+                  "kodUlice": 513598,
+                  "nazevUlice": "Háj",
+                  "cisloDomovni": 322,
+                  "kodCastiObce": 72443,
+                  "nazevCastiObce": "Kralice na Hané",
+                  "kodAdresnihoMista": 25931521,
+                  "psc": 79812,
+                  "textovaAdresa": "Háj 322, 79812 Kralice na Hané",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "pravniFormaRos": "112",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "NAVOS FARM TECHNIC  s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 124,
+                  "nazevKraje": "Olomoucký kraj",
+                  "kodOkresu": 3709,
+                  "nazevOkresu": "Prostějov",
+                  "kodObce": 589659,
+                  "nazevObce": "Kralice na Hané",
+                  "kodUlice": 513598,
+                  "nazevUlice": "Háj",
+                  "cisloDomovni": 322,
+                  "kodCastiObce": 72443,
+                  "nazevCastiObce": "Kralice na Hané",
+                  "kodAdresnihoMista": 25931521,
+                  "psc": 79812,
+                  "textovaAdresa": "Háj 322, 79812 Kralice na Hané",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "112",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "NAVOS FARM TECHNIC s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 124,
+                  "nazevKraje": "Olomoucký kraj",
+                  "kodOkresu": 3709,
+                  "nazevOkresu": "Prostějov",
+                  "kodObce": 589659,
+                  "nazevObce": "Kralice na Hané",
+                  "kodUlice": 513598,
+                  "nazevUlice": "Háj",
+                  "cisloDomovni": 322,
+                  "kodCastiObce": 72443,
+                  "nazevCastiObce": "Kralice na Hané",
+                  "kodAdresnihoMista": 25931521,
+                  "psc": 79812,
+                  "textovaAdresa": "Háj 322, 79812 Kralice na Hané",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "NAVOS FARM TECHNIC  s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 124,
+                  "nazevKraje": "Olomoucký kraj",
+                  "kodOkresu": 3709,
+                  "nazevOkresu": "Prostějov",
+                  "kodObce": 589659,
+                  "nazevObce": "Kralice na Hané",
+                  "kodUlice": 513598,
+                  "nazevUlice": "Háj",
+                  "cisloDomovni": 322,
+                  "kodCastiObce": 72443,
+                  "nazevCastiObce": "Kralice na Hané",
+                  "kodAdresnihoMista": 25931521,
+                  "psc": 79812,
+                  "textovaAdresa": "Háj 322, 79812 Kralice na Hané",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "spisovaZnacka": "C 21693/KSBR",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "47120",
+          "30990",
+          "46900",
+          "25530",
+          "33120",
+          "52100",
+          "68320",
+          "95310"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

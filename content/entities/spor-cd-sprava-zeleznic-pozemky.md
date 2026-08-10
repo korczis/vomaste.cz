@@ -3,6 +3,7 @@
 title = "Spor o pozemky a majetkové vypořádání ČD vs. Správa železnic"
 template = "entity.html"
 weight = 385
+description = "Spor o pozemky a majetkové vypořádání ČD vs. Správa železnic — Kontextová entita — Nedokončené majetkové vypořádání od rozdělení 2002–2003 (převod 12 mld. 2008, 3,3 mld. za nádraží 2016…"
 
 [extra]
 generated = true

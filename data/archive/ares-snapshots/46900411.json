@@ -1,0 +1,47 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "46900411",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/46900411",
+  "nazev": "Kostelecké uzeniny a.s.",
+  "sidlo": "č.p. 60, 58861 Kostelec",
+  "spisovaZnacka": {
+    "soud": "KSBR",
+    "oddil": "B",
+    "vlozka": "835"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "člen představenstva",
+      "since": "2023-10-18",
+      "kind": "person",
+      "name": "Ing. Petr Coufal"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2025-03-21",
+      "kind": "company",
+      "name": "AGROFERT, a.s.",
+      "ico": "26185610"
+    },
+    {
+      "role": "místopředseda představenstva",
+      "since": "2025-03-19",
+      "kind": "person",
+      "name": "Ing. Jaroslav Janoušek"
+    },
+    {
+      "role": "místopředseda představenstva",
+      "since": "2026-02-03",
+      "kind": "person",
+      "name": "Ing. Michal Žídek"
+    },
+    {
+      "role": "předseda představenstva",
+      "since": "2026-06-02",
+      "kind": "person",
+      "name": "Ing. Michal Jedlička"
+    }
+  ],
+  "spolecnici": []
+}

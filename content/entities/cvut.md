@@ -3,6 +3,7 @@
 title = "České vysoké učení technické v Praze (ČVUT)"
 template = "entity.html"
 weight = 100
+description = "České vysoké učení technické v Praze (ČVUT) — Kontextová entita — Univerzita; uvedena v oficiálním kariérním profilu Karla Havlíčka (absolvent 1992)."
 
 [extra]
 generated = true

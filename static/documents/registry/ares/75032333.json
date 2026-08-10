@@ -1,0 +1,206 @@
+{
+  "retrieved": "2026-08-09",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "75032333"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "75032333",
+        "obchodniJmeno": "Národní památkový ústav",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 19,
+          "nazevSpravnihoObvodu": "Praha 1",
+          "kodMestskehoObvodu": 19,
+          "nazevMestskehoObvodu": "Praha 1",
+          "kodMestskeCastiObvodu": 500054,
+          "kodUlice": 477290,
+          "nazevMestskeCastiObvodu": "Praha 1",
+          "nazevUlice": "Valdštejnské náměstí",
+          "cisloDomovni": 162,
+          "kodCastiObce": 490121,
+          "cisloOrientacni": 3,
+          "nazevCastiObce": "Malá Strana",
+          "kodAdresnihoMista": 21695717,
+          "psc": 11800,
+          "textovaAdresa": "Valdštejnské náměstí 162/3, Malá Strana, 11800 Praha 1",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "332",
+        "pravniFormaRos": "332",
+        "financniUrad": "001",
+        "datumVzniku": "2003-01-01",
+        "datumAktualizace": "2026-08-02",
+        "dic": "CZ75032333",
+        "icoId": "75032333",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Valdštejnské náměstí 162/3",
+          "radekAdresy2": "Malá Strana",
+          "radekAdresy3": "11800 Praha 1"
+        },
+        "czNace2008": [
+          "91030"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "NEEXISTUJICI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "AKTIVNI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Národní památkový ústav",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 477290,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Valdštejnské náměstí",
+                  "cisloDomovni": 162,
+                  "kodCastiObce": 490121,
+                  "cisloOrientacni": 3,
+                  "nazevCastiObce": "Malá Strana",
+                  "kodAdresnihoMista": 21695717,
+                  "psc": 11800,
+                  "textovaAdresa": "Valdštejnské náměstí 162/3, Malá Strana, 11800 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "332",
+            "pravniFormaRos": "332",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Národní památkový ústav",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 477290,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Valdštejnské náměstí",
+                  "cisloDomovni": 162,
+                  "kodCastiObce": 490121,
+                  "cisloOrientacni": 3,
+                  "nazevCastiObce": "Malá Strana",
+                  "kodAdresnihoMista": 21695717,
+                  "psc": 11800,
+                  "textovaAdresa": "Valdštejnské náměstí 162/3, Malá Strana, 11800 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "332",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Národní památkový ústav",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 477290,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Valdštejnské náměstí",
+                  "cisloDomovni": 162,
+                  "kodCastiObce": 490121,
+                  "cisloOrientacni": 3,
+                  "nazevCastiObce": "Malá Strana",
+                  "kodAdresnihoMista": 21695717,
+                  "psc": 11800,
+                  "textovaAdresa": "Valdštejnské náměstí 162/3, Malá Strana, 11800 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "332",
+            "datovyZdroj": "rzp"
+          }
+        ],
+        "czNace": [
+          "91220"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

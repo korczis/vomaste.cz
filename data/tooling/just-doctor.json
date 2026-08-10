@@ -1,0 +1,22 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/just-doctor",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "just-doctor",
+  "kind": "just",
+  "name": "doctor",
+  "title": "Kontrola prerekvizit",
+  "category": "kontrola",
+  "summary": "Ověří node, zola, node_modules a nastavení git hooků proti verzím, které deklaruje README. Reportuje, nikdy neinstaluje.",
+  "enforces": [
+    "Skončí nenulově, když node je starší než deklarovaná hlavní verze, zola neodpovídá deklarované vedlejší verzi, nebo chybí node_modules. Nenastavené git hooky se hlásí, ale exit kód neovlivňují."
+  ],
+  "whenToRun": "Dřív, než začneš vinit repozitář. Build může selhat z důvodů, které nejsou v obsahu.",
+  "describedFrom": "code",
+  "notes": [
+    "Verze se drží jako proměnné v justfile, aby se kontrolovalo proti jedné deklarované hodnotě místo čísla napsaného v próze."
+  ]
+}

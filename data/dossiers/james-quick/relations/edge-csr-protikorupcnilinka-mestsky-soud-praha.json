@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/relation.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/relations/edge-csr-protikorupcnilinka-mestsky-soud-praha",
+  "@type": "vomaste:Relation",
+  "recordType": "relation",
+  "identifier": "edge-csr-protikorupcnilinka-mestsky-soud-praha",
+  "relationId": "edge-csr-protikorupcnilinka-mestsky-soud-praha",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "sourceEntity": {
+    "@id": "https://vomaste.cz/id/entities/csr-protikorupcnilinka"
+  },
+  "targetEntity": {
+    "@id": "https://vomaste.cz/id/entities/mestsky-soud-praha"
+  },
+  "relationType": "SUBJECT_OF_PROCEEDING",
+  "label": "společnost zrušena bez likvidace a vymazána na základě usnesení soudu",
+  "status": "corroborated",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-22"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-23"
+    }
+  ],
+  "subjects": [
+    "james-quick"
+  ],
+  "directed": true,
+  "order": 9,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Procesní vazba s přesnou spisovou značkou je doložena rejstříkovým přepisem i úplným usnesením. Primární dokument uvádí chybějící účetní závěrky, nedoručenou výzvu, trvání důvodu zrušení a nezjištění majetku společnosti; nejde o výrok o osobní trestní odpovědnosti Jamese Quicka."
+    }
+  ]
+}

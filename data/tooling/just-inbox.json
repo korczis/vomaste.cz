@@ -1,0 +1,17 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/just-inbox",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "just-inbox",
+  "kind": "just",
+  "name": "inbox",
+  "title": "Zprávy pro tohoto agenta",
+  "category": "provoz",
+  "summary": "Vypíše zprávy adresované tomuhle agentovi na co-op sběrnici.",
+  "whenToRun": "Průběžně během práce ve worktree.",
+  "sourceFile": "scripts/coop/coop.sh",
+  "describedFrom": "code"
+}

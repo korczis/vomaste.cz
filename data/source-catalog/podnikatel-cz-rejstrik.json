@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source-catalog-entry.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/zdroje/podnikatel-cz-rejstrik",
+  "@type": "vomaste:SourceCatalogEntry",
+  "recordType": "sourceCatalogEntry",
+  "identifier": "podnikatel-cz-rejstrik",
+  "title": "Podnikatel.cz — rejstříkové profily",
+  "operator": "Internet Info, s. r. o.",
+  "kind": "aggregator",
+  "jurisdiction": "CZ",
+  "access": "open",
+  "authentication": "none",
+  "url": "https://www.podnikatel.cz/rejstrik/",
+  "order": 70,
+  "proves": [
+    "Že profil k danému jménu na uvedené adrese existuje a jaké role zobrazuje."
+  ],
+  "doesNotProve": [
+    "Skutečný rozsah rolí. Agregátor přebírá data z rejstříků se zpožděním a bez záruky úplnosti.",
+    "Totožnost osoby. Profil slučuje záznamy podle jména; jmenovci splývají.",
+    "Nezávislé potvrzení rejstříkového údaje. Pro tvrzení opřené o rejstřík je ARES silnější pramen a agregátor k němu nic nepřidává."
+  ],
+  "traps": [
+    {
+      "title": "Profil může mísit jmenovce",
+      "detail": "Jediná stránka může nést role několika různých lidí téhož jména. Před převzetím role ji ověř v ARES podle IČO subjektu."
+    },
+    {
+      "title": "Sdílí rodinu s ARES, takže ho nepotvrzuje",
+      "detail": "V datasetu je tento agregátor i ARES veden pod touž rodinou `cz-verejny-rejstrik`, protože obojí čerpá z týchž veřejných rejstříků. Citace obou tedy NEJSOU dvě nezávislá doložení a tvrzení opřené o ně zůstává 1 ZDROJ, i když jde o dva různé vydavatele a dvě různé domény."
+    }
+  ],
+  "howToSearch": "Použitelný jako identitní kotva a rychlý přehled vazeb, odkud se skáče do ARES a Sbírky listin. Sám o sobě nese stav 1 ZDROJ.",
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Sekundární rejstříkový agregátor. V tomto projektu se objevuje jako **výchozí kotva** u nových subjektů: ukáže, kde hledat, a tam se doložení pořizuje znovu z primárního rejstříku."
+    }
+  ],
+  "outlets": [
+    "Podnikatel.cz"
+  ],
+  "answers": [
+    {
+      "question": "Jaké má osoba rejstříkové vazby?",
+      "note": "Rychlý přehled jako vstupní stopa; doložení pořiď znovu z ARES."
+    }
+  ]
+}

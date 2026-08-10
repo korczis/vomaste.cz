@@ -23,13 +23,16 @@ set -euo pipefail
 cd "$(git rev-parse --show-toplevel)"
 
 # T-028 fáze H: validate:dossier a validate:graph zanikly — jejich
-# pravidla vlastní kanonická brána data:validate (shape + reference R1–R7
-# + sémantika S1–S8 + tabulková parita T1–T8 + JSON-LD expanze).
+# pravidla vlastní kanonická brána data:validate (shape + reference R1–R8
+# + sémantika S1–S10 + tabulková parita T1–T8 + JSON-LD expanze).
 FAST_CHECKS=(
   data:validate
   validate:authorization
   verify:authorization-log
   validate:dossier-types
+  # Offline only: full IČO coverage, sanitized Justice indexes, hashes,
+  # docket inventory, Zone A/B boundary and doctrine/workflow wiring.
+  archive:check
   build:routes
   # Must generate the navigation before validating it, exactly as build:routes
   # does for routes.json. Without this the hook failed on the FIRST commit in
@@ -40,6 +43,12 @@ FAST_CHECKS=(
   build:navigation
   validate:navigation
   lint:component-reuse
+  # Katalog zdrojů má tři generované výstupy (stránky /zdroje/, markdown pro
+  # agenty, view model pro UI a JSON-LD). Kdo změní data/source-catalog/ nebo
+  # přidá citaci a nepřegeneruje, zacommituje výstup, který o datech lhal.
+  # V build pipeline by kontrola stát nemohla — tam běží hned po generátoru a
+  # nikdy by neselhala; smysl má jen tady, před commitem.
+  verify:source-catalog
 )
 
 for check in "${FAST_CHECKS[@]}"; do

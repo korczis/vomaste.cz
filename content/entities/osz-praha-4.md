@@ -3,6 +3,7 @@
 title = "Obvodní státní zastupitelství pro Prahu 4"
 template = "entity.html"
 weight = 323
+description = "Obvodní státní zastupitelství pro Prahu 4 — Kontextová entita — Konkrétní OSZ (vedoucí Jan Vychyta), které oznámilo odložení trestního oznámení na Turka; obecná entita statni-zastupitelstvi…"
 
 [extra]
 generated = true

@@ -3,6 +3,7 @@
 title = "Aleš Bělohradský"
 template = "entity.html"
 weight = 59
+description = "Aleš Bělohradský — Kontextová entita — Ekonom, autor stanoviska Centra veřejných financí UK k novele (pozměňovací návrhy 825/826); citován i k překročení dluhové brzdy 55 % HDP v letech…"
 
 [extra]
 generated = true

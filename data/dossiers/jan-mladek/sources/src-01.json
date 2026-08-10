@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jan-mladek/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jan-mladek"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil člena vlády)",
+  "description": "Oficiální vládní profil: ministr průmyslu a obchodu 29. 1. 2014 – 28. 2. 2017, dříve ministr zemědělství.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/jan-mladek-115393/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jan-mladek/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "jan-mladek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil člena vlády na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci ministra průmyslu a obchodu od 29. 1. 2014 do 28. 2. 2017, dřívější funkci ministra zemědělství (listopad 2005 – září 2006) s předsednictvím prezidia Pozemkového fondu ČR, funkci 1. náměstka ministra financí (červen 1999 – květen 2001) a členství v ČSSD od 1995.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — jediný přímo otevřený zdroj tohoto dossieru; tvrzení proto nese stav 1 ZDROJ a okolnosti konce v úřadu se neuvádějí."
+    }
+  ],
+  "order": 1
+}

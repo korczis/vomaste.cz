@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/milan-chovanec/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/milan-chovanec"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil člena vlády)",
+  "description": "Oficiální vládní profil: ministr vnitra 29. 1. 2014 – 13. 12. 2017, dříve hejtman Plzeňského kraje.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/karla-slechtova-115392/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/milan-chovanec/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "milan-chovanec"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil člena vlády na webu Vlády ČR, otevřen a přečten 2026-08-08 (stránkový systém vlada.gov.cz profil zobrazuje pod číselným identifikátorem; obsah stránky je profil Milana Chovance).\nUvádí funkci ministra vnitra od 29. 1. 2014, s obdobím v demisi od 5. do 13. 12. 2017, nominaci za ČSSD, hejtmanství Plzeňského kraje od 2010, předchozí funkci 1. náměstka hejtmana a členství v ČSSD od 1997.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — jediný přímo otevřený zdroj tohoto dossieru; tvrzení proto nese stav 1 ZDROJ."
+    }
+  ],
+  "order": 1
+}

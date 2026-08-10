@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/frantisek-pavlik",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "frantisek-pavlik",
+  "entityId": "frantisek-pavlik",
+  "title": "František Pavlík",
+  "entityType": "person",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "referenced",
+  "dossiers": [],
+  "order": 529,
+  "description": "František Pavlík — kontextový záznam rejstříkové vazby z ARES, ne dossier.",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "ares-expansion-26228548-2026-08-08"
+    ],
+    "depth": 3
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Záznam z veřejného rejstříku (ARES), ověřený ručně 2026-08-08 (automatická\nexpanze záznam záměrně nezaložila kvůli pojistce na shodná příjmení — viz\nníže): zapsán jako **zakladatel** a **člen správní rady** společnosti\n\"Nadační fond FIDUCIA\" (IČO 26228548).\n\n**Kontextová entita, ne předmět šetření.** Tahle stránka eviduje jednu\nzveřejněnou rejstříkovou vazbu a nic víc — žádný profil, žádné tvrzení,\nžádné naznačené pochybení. Být zapsán ve statutárním orgánu nebo držet\npodíl je běžný, veřejně evidovaný fakt. Dossier o této osobě by vyžadoval\nsamostatné, datované rozhodnutí zapsané v autorizačním logu.\n\n**Shoda příjmení není vztah.** Ve správní radě téhož fondu je zapsán i\nMartin Pavlík, subjekt samostatného dossieru. Tento web z shody příjmení\nnic nevyvozuje: žádný rodinný ani jiný osobní vztah mezi oběma osobami\nnení doložen citovatelným zdrojem, a proto zde žádný tvrzen není.\n\nDatum narození ani adresu bydliště tento web z rejstříku nepřebírá,\npřestože je záznam obsahuje — pro evidenci vazby nejsou potřebné."
+    }
+  ]
+}

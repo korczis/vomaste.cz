@@ -9,7 +9,7 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
   },
-  "text": "Nevydání Tomia Okamury ke stíhání podpořili 5. března 2026 podle zpravodajství všichni přítomní poslanci vládních klubů ANO, SPD a Motoristů; sněmovní mandátový a imunitní výbor předtím vydání nedoporučil.",
+  "text": "Pro usnesení, jímž Sněmovna 5. března 2026 odmítla vydat Tomia Okamuru, hlasovali podle oficiálního hlasovacího záznamu všichni přítomní poslanci vládních klubů ANO (77), SPD (14) a Motoristů (13); proti byli všichni přítomní poslanci klubů ODS (24), STAN (20), Piráti (16), KDU-ČSL (15) a TOP 09 (7). Sněmovní mandátový a imunitní výbor předtím usnesením č. 21 ze 17. února 2026 navrhl Sněmovně vyslovit nesouhlas.",
   "status": "status-corroborated",
   "statusLabel": "CORROBORATED",
   "sources": [
@@ -21,6 +21,9 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-29"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-30"
     }
   ],
   "subjects": [
@@ -32,5 +35,6 @@
       "type": "markdown",
       "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/tomio-okamura/_index.md#registr-tvrzeni)."
     }
-  ]
+  ],
+  "checkedAt": "2026-08-05"
 }

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-investigate",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-investigate",
+  "kind": "skill",
+  "name": "investigate",
+  "title": "Jedno autorizované vyšetřování",
+  "category": "reserse",
+  "summary": "Provede jedno autorizované vyšetřování od začátku do konce: kontrola rozsahu, větev, manifest vyšetřování, zdrojovaná rešerše s předáním každého záznamu do postupu pro vstup do dossieru, a nakonec pull request, který musí schválit člověk.",
+  "whenToRun": "Když má vzniknout ucelené vyšetřování k jednomu subjektu a tématu. Argument: id subjektu a konkrétní téma, které už je autorizované — nebo rozšíření rozsahu, které vlastník výslovně autorizuje v téhle konverzaci.",
+  "describedFrom": "header",
+  "notes": [
+    "Nikdy nepublikuje sám. Obsahové změny z vyšetřování se NIKDY necommitují přímo na master, bez ohledu na roli.",
+    "Krok 0 je tvrdá brána bez override: buď se dá ukázat na konkrétní datovanou podsekci autorizačního logu, nebo se nepokračuje. „Asi to schválí“ nestačí.",
+    "Je to jedna skill, ne agentní framework: nezavádí nový roster agentů, nový datový formát, LLM router ani nic, co běží mimo existující nástroje.",
+    "Manifest vyšetřování je provozní záznam, ne druhá kopie autorizace — odkazuje na id záznamu v AGENTS.md, aby rozsah byl definovaný právě na jednom místě."
+  ]
+}

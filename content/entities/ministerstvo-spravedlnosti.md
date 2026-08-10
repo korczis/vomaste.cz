@@ -3,6 +3,7 @@
 title = "Ministerstvo spravedlnosti ČR"
 template = "entity.html"
 weight = 278
+description = "Ministerstvo spravedlnosti ČR — Kontextová entita — Resort Jeronýma Tejce; bitcoinový audit, podněty k majetkovým přiznáním Mrázové a Červeného."
 
 [extra]
 generated = true

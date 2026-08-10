@@ -4,6 +4,7 @@ title = "Alena Schillerová"
 template = "entity.html"
 weight = 1
 aliases = ["/dossiers/alena-schillerova/entities/schillerova/"]
+description = "Alena Schillerová — Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v hlavním přehledu."
 
 [extra]
 generated = true

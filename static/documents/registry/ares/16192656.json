@@ -1,0 +1,204 @@
+{
+  "retrieved": "2026-08-09",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "16192656"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "16192656",
+        "obchodniJmeno": "Občanská demokratická strana",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 19,
+          "nazevSpravnihoObvodu": "Praha 1",
+          "kodMestskehoObvodu": 19,
+          "nazevMestskehoObvodu": "Praha 1",
+          "kodMestskeCastiObvodu": 500054,
+          "kodUlice": 472417,
+          "nazevMestskeCastiObvodu": "Praha 1",
+          "nazevUlice": "Truhlářská",
+          "cisloDomovni": 1106,
+          "kodCastiObce": 490148,
+          "cisloOrientacni": 9,
+          "nazevCastiObce": "Nové Město",
+          "kodAdresnihoMista": 21709416,
+          "psc": 11000,
+          "textovaAdresa": "Truhlářská 1106/9, Nové Město, 11000 Praha 1",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "711",
+        "pravniFormaRos": "711",
+        "financniUrad": "001",
+        "datumVzniku": "1991-03-18",
+        "datumAktualizace": "2026-02-20",
+        "dic": "CZ16192656",
+        "icoId": "16192656",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Truhlářská 1106/9",
+          "radekAdresy2": "Nové Město",
+          "radekAdresy3": "11000 Praha 1"
+        },
+        "czNace2008": [
+          "94920"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "NEEXISTUJICI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "NEEXISTUJICI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "AKTIVNI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Občanská demokratická strana",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 472417,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Truhlářská",
+                  "cisloDomovni": 1106,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 9,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21709416,
+                  "psc": 11000,
+                  "textovaAdresa": "Truhlářská 1106/9, Nové Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "711",
+            "pravniFormaRos": "711",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Občanská demokratická strana",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 472417,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Truhlářská",
+                  "cisloDomovni": 1106,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 9,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21709416,
+                  "psc": 11000,
+                  "textovaAdresa": "Truhlářská 1106/9, Nové Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "711",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Občanská demokratická strana",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 472417,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Truhlářská",
+                  "cisloDomovni": 1106,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 9,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21709416,
+                  "psc": 11000,
+                  "textovaAdresa": "Truhlářská 1106/9, Nové Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "711",
+            "datovyZdroj": "rpsh"
+          }
+        ],
+        "czNace": [
+          "94920"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

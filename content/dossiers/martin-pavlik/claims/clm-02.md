@@ -17,3 +17,5 @@ clm_id = "CLM-02"
 Tvrzení reprodukuje pouze roli zobrazenou na určeném veřejném rejstříkovém profilu. Nevyjadřuje závěr o skutečném rozsahu činnosti spolku, o rozhodování Martina Pavlíka ani o jakémkoli pochybení. Protože je zatím doloženo jediným rejstříkovým agregátorem, zůstává ve stavu 1 ZDROJ.
 
 Roli shodně uvádí primární registr ARES i agregátor Podnikatel.cz, ale nejde o nezávislé potvrzení: agregátor tato data z registru přebírá, takže mu nemůže odporovat. Je to jedno doložení citované dvakrát — proto 1 ZDROJ, byť opřený o primární registr, ne pouze o agregátor.
+
+**Upřesnění (2026-08-06, ze SRC-02):** funkce 1. místopředsedy vznikla 13. 5. 2014 (`vznikFunkce`), aktuální zápis veden od 21. 10. 2020. Jde o nepřerušené trvání jedné funkce, ne o nové jmenování.

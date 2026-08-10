@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vlastimil-valek/sources/SRC-05",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/vlastimil-valek"
+  },
+  "title": "SRC-05 — ČT24: Vládní novela má řešit nouzi o léky",
+  "description": "Zpravodajský článek o vládní novele o léčivech předložené jako řešení výpadků léků, s Válkovým rámováním i opoziční kritikou.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceFamily": "ct24",
+  "sourceType": "zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/domaci/3610982-vladni-novela-ma-resit-nouzi-o-leky-pacienti-nekdy-musi-pouzit-i-troje-antibiotika",
+  "published": "2023-08-29",
+  "retrieved": "2026-08-09",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vlastimil-valek/claims/CLM-02"
+    }
+  ],
+  "subjects": [
+    "vlastimil-valek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek ČT24, otevřen a přečten 2026-08-09. Popisuje vládní novelu o léčivech: povinnost výrobců dodávat léky až dva měsíce po nahlášení výpadku, měsíční zásoby distributorů u léků na zvláštním seznamu, pravidelné hlášení zásob lékáren. Válek novelu rámuje jako „komplexní a vyvážené řešení“ a slibuje aplikaci pro dohledání dostupných léků; článek dokumentuje přes rok trvající výpadky (penicilinová antibiotika, antipyretika, onkologické léky, lékaři popisují nutnost „trojích antibiotik“). Opozice (Kamal Farhan/ANO, Karla Maříková/SPD) novelu označila za nedostatečnou — neřeší příčiny, opomíjí volně prodejné léky, může vést k omezení dodávek do lékáren.\n\n**Co to dokládá a co ne**: dokládá obsah novely, ministrovo rámování a znění opoziční kritiky — ne, zda novela problém skutečně vyřešila. Jiný vydavatel i doména než SRC-04 (Seznam Zprávy) — spolu tvoří nezávislou dvojici."
+    }
+  ],
+  "order": 5
+}

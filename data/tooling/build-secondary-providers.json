@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/build-secondary-providers",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "build-secondary-providers",
+  "kind": "npm",
+  "name": "build:secondary-providers",
+  "title": "Data pro sekundární sidebar a explorery",
+  "category": "generovani",
+  "summary": "Staví tři artefakty pro sekundární navigaci: nezávisle načitatelné per-dossier podstromy, katalog dossierů s fasetovými poli a explorer entit se server-side spočítanými fasetami.",
+  "whenToRun": "V build i dev pipeline po build:navigation.",
+  "inputs": [
+    "data/dossiers/** (compiled model)",
+    "data/navigation.toml"
+  ],
+  "outputs": [
+    "data/generated/navigation-secondary.json",
+    "data/generated/dossier-catalog.json",
+    "data/generated/entity-explorer.json"
+  ],
+  "sourceFile": "scripts/dossier/build-secondary-providers.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Popisky, ikony a pořadí registrů se čtou ze stejného data/navigation.toml, který používá build:navigation — primární a sekundární sidebar tak nemohou rozejít.",
+    "Ani jeden slug není v souboru napsaný: všechno jde z compiled modelu nebo z registry seznamu."
+  ]
+}

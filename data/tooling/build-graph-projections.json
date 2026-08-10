@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/build-graph-projections",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "build-graph-projections",
+  "kind": "npm",
+  "name": "build:graph-projections",
+  "title": "Grafové projekce",
+  "category": "generovani",
+  "summary": "Nahrazuje monolitický globální graf manifestem a samostatně stahovatelnými vrstvami: kurátorovaný entitní graf, plná registrová vrstva a per-dossier graf.",
+  "whenToRun": "Po build:routes a build:data-exports, jejichž výstupy čte.",
+  "inputs": [
+    "data/dossiers/** (kanonická vrstva `graph`)",
+    "static/data/*.json"
+  ],
+  "outputs": [
+    "static/data/graph/manifest.json",
+    "static/data/graph/global-curated.json",
+    "static/data/graph/global-registry.json",
+    "static/data/graph/dossier/<slug>.json"
+  ],
+  "sourceFile": "scripts/dossier/build-graph-projections.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Všechno je projekce, ne nový zdroj pravdy. Souřadnice se počítají jednou při buildu, takže prohlížeč nikdy nespouští synchronní layout při načtení."
+  ]
+}

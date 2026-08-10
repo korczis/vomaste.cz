@@ -3,6 +3,7 @@
 title = "Zdenka Němečková Crkvenjaš"
 template = "entity.html"
 weight = 459
+description = "Zdenka Němečková Crkvenjaš — Kontextová entita — Poslankyně ODS; iniciátorka debaty o očkovací strategii."
 
 [extra]
 generated = true

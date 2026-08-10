@@ -3,6 +3,7 @@
 title = "Aston Martin klub ČR, z.s."
 template = "entity.html"
 weight = 75
+description = "Aston Martin klub ČR, z.s. — Kontextová entita — IČO 01818899; Turek členem statutárního orgánu od 5. 1. 2017 (rejstříková vazba)."
 
 [extra]
 generated = true

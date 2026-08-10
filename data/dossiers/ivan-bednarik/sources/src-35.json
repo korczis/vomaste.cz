@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-35",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-35",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
+  },
+  "title": "SRC-35 — InfoDnes.cz: Sněmovna schválila rozpočet SFDI 169,3 mld. na rok 2026 (12. 3. 2026)",
+  "description": "Zpravodajský portál InfoDnes.cz nezávisle na tiskové zprávě Ministerstva dopravy (SRC-07) uvádí tytéž číselné údaje rozpočtu SFDI 2026: 169,3 mld. celkem, 119,5 mld. investiční a 49,8 mld. neinvestiční výdaje, 144 mld. národní zdroje a 25,3 mld. z fondů EU.",
+  "outlet": "InfoDnes.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.infodnes.cz/zpravodajstvi/70135-ceska-doprava-ceka-rekordni-rok-snemovna-schvalila-169-miliard-na-vystavbu-a-modernizace",
+  "published": "2026-03-12",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-13"
+    }
+  ],
+  "subjects": [
+    "bednarik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "InfoDnes.cz (redakce: Pavla Absolonová), 12. 3. 2026: článek o schválení rozpočtu Státního fondu dopravní infrastruktury na rok 2026 uvádí „rekordních 169,3 miliardy korun\", z toho „Investiční výdaje dosahují 119,5 miliardy korun\" a „Neinvestiční výdaje činí 49,8 miliardy korun\", a k financování „národní zdroje 144 miliard korun, přičemž dalších 25,3 miliardy korun má pocházet z evropských fondů\". Všechny čtyři dílčí částky se přesně shodují s údaji tvrzení CLM-13.\n\n**Nezávislost**: samostatná redakce s vlastní autorskou signaturou (Pavla Absolonová), bez uvedení ČTK jako zdroje, jiný vydavatel i doména než primární tisková zpráva Ministerstva dopravy ČR (SRC-07, doména md.gov.cz). Jde tedy o druhý nezávislý hlas potvrzující tytéž rozpočtové údaje — proto CLM-13 nese stav `CORROBORATED`.\n\n**Limity**: článek referuje o oficiálně schváleném rozpočtu, tedy o téže rozpočtové listině jako tisková zpráva resortu; potvrzuje zveřejněná čísla, ne nezávisle zjištěné plnění rozpočtu. Nedokládá žádné hodnocení ani spornou interpretaci, pouze fakticky reprodukuje strukturu schváleného rozpočtu."
+    }
+  ],
+  "order": 35
+}

@@ -3,6 +3,7 @@
 title = "Nejvyšší státní zastupitelství"
 template = "entity.html"
 weight = 300
+description = "Nejvyšší státní zastupitelství — Kontextová entita — Zamítlo stížnosti obviněných v bitcoinové kauze."
 
 [extra]
 generated = true

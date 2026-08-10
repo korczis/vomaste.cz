@@ -3,6 +3,7 @@
 title = "Univerzita Karlova"
 template = "entity.html"
 weight = 423
+description = "Univerzita Karlova — Kontextová entita — Zmíněna jako mateřská instituce Centra veřejných financí; kontextová zmínka."
 
 [extra]
 generated = true

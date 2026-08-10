@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/data-check-generated-content",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "data-check-generated-content",
+  "kind": "npm",
+  "name": "data:check-generated:content",
+  "title": "Parita content/ se stagingem",
+  "category": "kontrola",
+  "summary": "Totéž co data:check-generated, navíc kontrola C6: každá synchronizovaná cesta je v content/ byte-identická se stagingem a v pokrytém scope neleží žádný .md bez staging protějšku.",
+  "enforces": [
+    "C1–C5 stejně jako data:check-generated.",
+    "C6 — ruční drift content/**: soubor v pokrytém scope, který se liší od stagingu, nebo který ve stagingu nemá protějšek. Content je pro tyhle cesty generovaný artefakt, ruční edit je chyba brány."
+  ],
+  "whenToRun": "V build pipeline běží až po build:routes — C4 čte data/generated/routes.json a před prvním build:routes by neexistoval (čerstvý klon) nebo byl zastaralý.",
+  "inputs": [
+    "content/**",
+    "data/generated/content-staging/**",
+    "data/generated/routes.json"
+  ],
+  "sourceFile": "scripts/data/check-generated.mjs",
+  "describedFrom": "header"
+}

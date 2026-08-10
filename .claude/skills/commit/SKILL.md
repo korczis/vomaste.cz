@@ -1,6 +1,6 @@
 ---
 name: commit
-description: Make a well-formed commit in vomaste.cz — conventional message, correct build gate for the situation (pre-commit fast subset vs. full npm run build before merge/push), and the right coop-bus report for your role.
+description: Make a well-formed commit in vomaste.cz — conventional message, correct build gate for the situation (pre-commit fast subset vs. full npm run build before merge/push), the right coop-bus report for your role, and awareness that on master a commit auto-pushes/deploys via .githooks/post-commit.
 argument-hint: [optional: short description of the change]
 ---
 
@@ -47,14 +47,40 @@ diff).
   `lint:historical-coupling` (intentionally, while the de-specialization
   migration is in progress). A hook failure means a real, cheap-to-find
   defect — fix it, don't fight it.
-- **Before a review-request (worker) or a merge/push (ORCH)**: run the
-  full `npm run build` yourself and confirm it exits clean. The
-  pre-commit hook passing is not evidence of this — they check different
-  things. Never claim "build is green" from the hook output alone.
+- **On `master` specifically, right after that**: `.githooks/post-commit`
+  automatically does fetch → rebase → the **full** `npm run build` →
+  `git push origin master` (= deploy) → a `deploy` message on the coop
+  bus. This is real automation, not just the fast pre-commit subset —
+  see `docs/coop/PROTOCOL.md`, "Automatický push po commitu" for exactly
+  what it does and does not do (it aborts cleanly on a rebase conflict
+  or a red full build; it never pushes broken state). Consequence: on
+  `master`, `git commit` is no longer a safe, reversible-until-you-push
+  step — it typically pushes and deploys within seconds. Run the full
+  `npm run build` yourself first if you want to know ahead of time
+  whether the auto-push will succeed, rather than finding out from the
+  hook's stderr after the fact.
+- **In a worker worktree (`task/T-###`)**: the hook is a no-op (it only
+  fires on `master`), so the old manual sequence still applies — run the
+  full `npm run build` yourself before a `review-request`, and ORCH
+  still explicitly merges into `master` (where the hook then takes over
+  and pushes that merge commit).
+- **If you're running `git commit` on `master` via the Bash tool**: the
+  hook's full build takes ~2–4 minutes, run synchronously inside
+  `git commit` itself — a default ~2-minute Bash-tool timeout can kill
+  it mid-build before the push happens (seen firsthand: 2026-08-05,
+  build was still green, just never got to push). The commit itself is
+  never lost when this happens (`git log`/`git status` will show it sitting
+  locally, ahead of `origin/master`) — but check `git status` after any
+  `master` commit that might have hit a timeout, and if it's still
+  unpushed, finish the job yourself: `npm run build && git push origin
+  master` (with a generous timeout or `run_in_background`), same as the
+  hook would have done.
 - **`--no-verify`**: a real git escape hatch, not forbidden outright, but
   never use it silently — if you ever need it, say so explicitly (to the
-  user, and on the coop bus if you're in a worktree), and still run
-  `npm run build` before anything gets merged or pushed.
+  user, and on the coop bus if you're in a worktree). `--no-verify`
+  skips pre-commit but **not** post-commit (git doesn't gate post-commit
+  on it) — if you need to stop the auto-push too, use
+  `COOP_NO_AUTOPUSH=1 git commit …` instead, or both together.
 
 ## Reporting the commit (role-dependent)
 
@@ -77,8 +103,19 @@ diff).
 ## Pushing
 
 Pushing `master` is the deploy (`.github/workflows/deploy.yml` → GitHub
-Pages) for a public site about real, identifiable people. Confirm with
-whoever you're working with before pushing unless you've been given
-standing authorization to do so — this mirrors the general rule that
-hard-to-reverse, externally-visible actions get a check-in, not just a
-green build.
+Pages) for a public site about real, identifiable people — and since
+`.githooks/post-commit` automates fetch → rebase → full build → push
+on every `master` commit, **the confirmation now has to happen before
+you commit on `master`, not after**: by the time `git commit` returns,
+the push has typically already gone out. Confirm with whoever you're
+working with before committing directly on `master` unless you've been
+given standing authorization to do so (as with any hard-to-reverse,
+externally-visible action) — don't rely on a chance to bail out between
+commit and push, because for practical purposes there isn't one.
+`COOP_NO_AUTOPUSH=1 git commit …` restores that gap deliberately (e.g.
+composing several related commits before one review/push).
+
+In a worker worktree this doesn't apply directly — `task/T-###`
+branches are never auto-pushed — but the same logic lands one step
+later: get confirmation before ORCH merges into `master`, since that
+merge commit is what the hook picks up and pushes.

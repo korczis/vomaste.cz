@@ -3,6 +3,7 @@
 title = "Ředitelství silnic a dálnic (ŘSD)"
 template = "entity.html"
 weight = 371
+description = "Ředitelství silnic a dálnic (ŘSD) — Kontextová entita — Příjemce 81,1 mld. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

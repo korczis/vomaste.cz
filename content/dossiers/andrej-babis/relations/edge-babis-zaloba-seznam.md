@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Andrej Babiš — žalovaný v civilním sporu o ochranu pověsti — podaná žaloba není rozhodnutí soudu — Žaloba Seznam.cz na ochranu pověsti (2026)"
+description = "Andrej Babiš — žalovaný v civilním sporu o ochranu pověsti — podaná žaloba není…. Vztah v grafu dossieru Andrej Babiš. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 39
 

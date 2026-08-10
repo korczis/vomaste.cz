@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-11",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-11",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "title": "SRC-11 — ČOI varuje před Centrálním registrem dlužníků",
+  "description": "Oficiální spotřebitelské varování České obchodní inspekce k CERD, kontaktování provozovatele a ukončení předplatného.",
+  "outlet": "Česká obchodní inspekce",
+  "sourceType": "úřední varování",
+  "url": "https://coi.gov.cz/coi-varuje-pred-centralnim-registrem-dluzniku/",
+  "published": "2018-08-09",
+  "retrieved": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-23"
+    }
+  ],
+  "subjects": [
+    "james-quick"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Primární úřední zdroj dokládá veřejné varování ČOI a přesně vymezuje, co inspekce odvozovala ze spotřebitelských podnětů. Nezaměňujeme jej za soudní rozsudek ani z něj neodvozujeme osobní odpovědnost nad rámec zveřejněného textu."
+    }
+  ],
+  "order": 11
+}

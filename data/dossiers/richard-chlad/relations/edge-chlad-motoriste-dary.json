@@ -17,7 +17,7 @@
     "@id": "https://vomaste.cz/id/entities/motoriste"
   },
   "relationType": "DONATED_TO",
-  "label": "evidováno 638 864 Kč za rok 2025 včetně nepeněžního plnění; veřejně uváděná čísla se liší",
+  "label": "úředně vykázáno 638 864 Kč za rok 2025, celou částkou jako bezúplatná plnění volební kampani; veřejně uváděná čísla se liší",
   "status": "contextual",
   "claims": [
     {
@@ -28,6 +28,12 @@
     }
   ],
   "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-05"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/richard-chlad/sources/SRC-01"
     },

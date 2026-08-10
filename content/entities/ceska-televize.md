@@ -3,6 +3,7 @@
 title = "Česká televize"
 template = "entity.html"
 weight = 93
+description = "Česká televize — Kontextová entita — Veřejnoprávní televize — přímý aktér kauzy zrušení koncesionářských poplatků a přechodu na financování ze státního rozpočtu."
 
 [extra]
 generated = true

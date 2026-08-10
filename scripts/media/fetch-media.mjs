@@ -96,6 +96,7 @@ console.log(`hledám volně licencovaný obrázek: ${JSON.stringify(query)} (${e
  * always printed so the choice is auditable rather than merely automatic.
  */
 let candidates = [];
+let resolvedWikidataId = null;
 const pinned = flag("file");
 if (pinned) {
   candidates = await commonsFileInfo(pinned);
@@ -104,7 +105,17 @@ if (pinned) {
     process.exit(1);
   }
 } else {
-  const identity = await resolveWikidata(query, flag("wikidata"));
+  /*
+   * Pinned identity beats name matching.
+   *
+   * A name is not an identifier. `martin-pavlik` is defined by a business
+   * register profile, while Wikidata's "Martin Pavlík" is a physician — a
+   * different man, whose photograph on that dossier would be exactly the
+   * confusion the subject's authorization forbids. Once an identity is
+   * confirmed it is stored in `externalIds.wikidata` and reused, so later runs
+   * stop guessing.
+   */
+  const identity = await resolveWikidata(query, flag("wikidata") ?? record.externalIds?.wikidata);
   if (identity) {
     console.log(`  Wikidata: ${identity.id} — ${identity.label}${identity.description ? ` (${identity.description})` : ""}`);
     if (identity.image) {
@@ -173,6 +184,10 @@ if (flag("href")) item.href = flag("href");
 item.role = flag("role") ?? (kind === "logos" ? "logo" : index === 0 ? "portrait" : "photo");
 
 record.media = [...keep, item];
+// Potvrzená identita se ukládá, aby ji další běh nemusel hádat znovu.
+if (resolvedWikidataId) {
+  record.externalIds = { ...(record.externalIds ?? {}), wikidata: resolvedWikidataId };
+}
 writeFileSync(entityFile, `${JSON.stringify(record, null, 2)}\n`);
 console.log(`  zapsáno do data/dossiers/_shared/entities/${entityId}.json`);
 console.log("dál: npm run data:build && npm run validate:media");

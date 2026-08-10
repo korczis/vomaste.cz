@@ -4,6 +4,7 @@ title = "Státní zastupitelství"
 template = "entity.html"
 weight = 19
 aliases = ["/dossiers/macinka-turek/entities/statni-zastupitelstvi/"]
+description = "Státní zastupitelství — Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu."
 
 [extra]
 generated = true

@@ -40,5 +40,11 @@
     ],
     "cluster": "financni-vazby",
     "depth": 0
-  }
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v [hlavním přehledu](@/dossiers/richard-chlad/_index.md#kdo)."
+    }
+  ]
 }

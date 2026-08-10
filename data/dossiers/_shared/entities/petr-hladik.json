@@ -9,11 +9,12 @@
   "entityId": "petr-hladik",
   "title": "Petr Hladík",
   "entityType": "person",
-  "publicationRole": "context",
-  "dossierEnabled": false,
-  "dossierStatus": "not_authorized",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
   "coverageState": "discovered",
   "dossiers": [
+    "petr-hladik",
     "igor-cerveny"
   ],
   "order": 339,

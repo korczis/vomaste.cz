@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-cervicek/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-cervicek"
+  },
+  "text": "Martin Červíček je senátorem Parlamentu ČR za ODS (obvod č. 47 – Náchod, mandát 28. 9. 2024 – 28. 9. 2030); od ledna 2026 je místopředsedou ODS — zvolen na 32. kongresu ODS 18. 1. 2026 (308 z 502 platných hlasů) — a od března 2026 zastává ve stínové vládě ODS vedené Martinem Kupkou roli stínového ministra vnitra, nezávisle informovaly ČT24 i Novinky.cz.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-cervicek/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-cervicek/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-cervicek/sources/SRC-03"
+    }
+  ],
+  "subjects": [
+    "martin-cervicek"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/martin-cervicek/_index.md)."
+    }
+  ]
+}

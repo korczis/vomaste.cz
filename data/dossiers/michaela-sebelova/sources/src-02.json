@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/michaela-sebelova/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/michaela-sebelova"
+  },
+  "title": "SRC-02 — Deník.cz (ČTK): Klub STAN povede Šebelová. Na místopředsedu Sněmovny nominovali Rakušana",
+  "description": "Agenturní zpravodajství ČTK přejaté Deník.cz o zvolení Michaely Šebelové předsedkyní poslaneckého klubu STAN.",
+  "outlet": "Deník.cz (VLTAVA LABE MEDIA)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.denik.cz/z_domova/klub-stan-michaela-sebelova.html",
+  "published": "2025-10-10",
+  "retrieved": "2026-08-07",
+  "sourceFamily": "ctk",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/michaela-sebelova/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "michaela-sebelova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Agenturní zpráva ČTK přejatá Deník.cz z 10. 10. 2025, otevřena a přečtena 2026-08-07.\nInformuje o zvolení Michaely Šebelové předsedkyní poslaneckého klubu STAN, označuje ji jako místopředsedkyni hnutí STAN a cituje její vyjádření po zvolení: „Vstupujeme do opozice. Jsme připraveni být opozicí, která je razantní, ale konstruktivní.“\n\nPoznámka k typu zdroje a jeho limitům: agenturní zpravodajství ČTK (`sourceFamily: ctk`, byline „ČTK“ na stránce) — jiný vydavatel i jiná doména než SRC-03 (Deník N, vlastní redakční práce bez ČTK), takže spolu s ním tvoří nezávislou dvojici pro účely korporace tvrzení o zvolení předsedkyní klubu. Nedokládá podrobnosti mandátu ani výborové příslušnosti — ty dokládá SRC-01 (psp.cz)."
+    }
+  ],
+  "order": 2
+}

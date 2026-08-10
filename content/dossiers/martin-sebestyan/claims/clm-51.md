@@ -18,3 +18,5 @@ Tato stránka je kanonický záznam tvrzení CLM-51 — shrnutí, stav a zdroje
 výše jsou úplné. Odpovídá na [GAP-10](@/dossiers/martin-sebestyan/gaps/gap-10.md):
 analýzy nejsou neveřejné — SZIF je sám zveřejnil (dohledatelné přímo
 na szif.gov.cz), včetně jména druhé zpracovávající advokátní kanceláře.
+
+**Oprava proti primárnímu dokumentu (6. 8. 2026)**: dřívější znění převzalo ze zpravodajství, že šlo o čtyři analýzy v poměru dvě a dvě. Sekce webu SZIF ([SRC-40](@/dossiers/martin-sebestyan/sources/src-40.md)) jich nabízí šest a z hlaviček jednotlivých PDF vyplývá poměr čtyři PORTOS ku dvěma Pelikán Krofta Kohoutek. Dokument má přednost; údaj ze zpravodajství je v tvrzení ponechán, aby byl rozdíl dohledatelný.

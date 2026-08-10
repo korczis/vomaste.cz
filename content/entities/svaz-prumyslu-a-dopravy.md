@@ -3,6 +3,7 @@
 title = "Svaz průmyslu a dopravy ČR"
 template = "entity.html"
 weight = 400
+description = "Svaz průmyslu a dopravy ČR — Kontextová entita — Benefitový návrh označil za krok správným směrem."
 
 [extra]
 generated = true

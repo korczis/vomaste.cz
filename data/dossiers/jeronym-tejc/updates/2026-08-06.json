@@ -1,0 +1,93 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/updates/2026-08-06",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-06",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "date": "2026-08-06",
+  "summary": "Kolo doložení primárními dokumenty (T-072). Dossier měl 16 tvrzení ve třídě E1+ — dvě a více citací, ale všechny rodiny ctk, tedy jeden hlas. Osm z nich přešlo na CORROBORATED připojením šesti nově otevřených úředních dokumentů: tisková zpráva Ministerstva spravedlnosti z 20. 4. 2026 k internímu auditu (SRC-18) u CLM-02, CLM-04 a CLM-05; přepis tiskové konference po jednání vlády z 20. 7. 2026 a přehled výsledků téhož jednání, čj. 565/26, sp. zn. Pl. ÚS 16/26 (SRC-22, SRC-24) u CLM-16, CLM-18, CLM-47 a CLM-48; tisková zpráva Vrchního státního zastupitelství v Olomouci ze 4. 5. 2026, sp. zn. 2 VZV 11/2025 (SRC-29) u CLM-19, CLM-20, CLM-21 a CLM-22. Dále byla doložena jednozdrojová tvrzení CLM-52 tiskovou zprávou VSZ Olomouc ze 3. 8. 2026 k podání obžaloby (SRC-30) a citační tvrzení CLM-17, CLM-49 a CLM-50 přepisem tiskové konference. Opravy proti dokumentu: CLM-05 uvádělo škodu 'přibližně 13 milionů korun', dokument mluví o možné škodě nejméně 13 milionů, v krajním případě až 95 milionů, při snížení nejnižšího podání o 10 % ve všech 78 aukcích; CLM-17 přisuzovalo soudci Šámalovi citaci, kterou ministr podle přepisu pronesl neosobně; CLM-19 hovořilo o stíhání 'tří osob', dokument uvádí 'dalších tří osob' a jména neuvádí; CLM-21 tvrdilo, že dozorujícím státním zástupcem je Radim Dragoun — podle dokumentu je dozorovým státním zástupcem žena a Dragoun je vrchní státní zástupce, který zprávu podepisuje; CLM-50 citovalo 'souběžně vládou a prezidentem', přepis má 'souběžně vládou a souběžně prezidentem'; CLM-52 doplněno o vazební stíhání jedné ze čtyř osob a o navrhovaný další trest 9 let vedle souhrnných 20 let. Stenoprotokol 24. schůze Poslanecké sněmovny z 25. 6. 2026 (SRC-31) ukázal, že ústní interpelace Karla Dvořáka proběhla 25. června a že jednací den 2. července vystoupení ministra k Ústavnímu soudu neobsahuje: CLM-44, CLM-45 a CLM-46 proto byly opraveny z 'vyjádření ve sněmovně 2. července 2026' na odpověď na písemnou interpelaci publikovanou Českou justicí 2. 7. 2026, a u CLM-46 bylo zrušeno tvrzení, že Macinkovy výroky padly v téže debatě. Bez doložení zůstává osm tvrzení třídy E1+ (CLM-03, CLM-06, CLM-07, CLM-09 až CLM-13) — primární dokument k doručení oznámení VSZ 23. 4., k dílčím zjištěním auditu a ke kárnému řízení se soudkyní nebyl nalezen. Revidováno všech deset mezer, žádná neuzavřena; GAP-02, GAP-07 a GAP-08 zúženy podle nově otevřených úředních zpráv.",
+  "addedClaims": [],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-16"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-17"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-44"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-45"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-46"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-47"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-48"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-49"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-50"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-52"
+    }
+  ],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-24"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-29"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-30"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-31"
+    }
+  ]
+}

@@ -3,6 +3,7 @@
 title = "Vrchní soud v Praze"
 template = "entity.html"
 weight = 440
+description = "Vrchní soud v Praze — Kontextová entita — Odvolací soud — 23. 6. 2025 podruhé zrušil zprošťující rozsudek v kauze Čapí hnízdo se závazným právním názorem."
 
 [extra]
 generated = true

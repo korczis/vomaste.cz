@@ -1,0 +1,293 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-09",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/06616275",
+  "status": "OK",
+  "subject": {
+    "ico": "06616275",
+    "businessName": "Učitelská platforma, z.s.",
+    "registerReference": "L 69402/MSPH"
+  },
+  "filings": [
+    {
+      "referenceLabel": "L 69402/SL1/MSPH",
+      "documentType": "ostatní dohoda o založení spolku",
+      "createdAt": "25-09-2017",
+      "receivedByCourtAt": "30-10-2017",
+      "filedAt": "11-12-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 41816
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69402/SL2/MSPH",
+      "documentType": "stanovy společnosti",
+      "createdAt": "25-09-2017",
+      "receivedByCourtAt": "30-10-2017",
+      "filedAt": "11-12-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 259225
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69402/SL3/MSPH",
+      "documentType": "ostatní zápis o průběhu voleb",
+      "createdAt": "06-04-2020",
+      "receivedByCourtAt": "08-06-2022",
+      "filedAt": "20-06-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 44688
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69402/SL4/MSPH",
+      "documentType": "ostatní zápis o zvolení předsedkyně",
+      "createdAt": "06-04-2020",
+      "receivedByCourtAt": "08-06-2022",
+      "filedAt": "20-06-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 22866
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69402/SL5/MSPH",
+      "documentType": "stanovy společnosti",
+      "createdAt": "28-02-2021",
+      "receivedByCourtAt": "08-06-2022",
+      "filedAt": "20-06-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 217837
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69402/SL6/MSPH",
+      "documentType": "ostatní usnesení o hlasování",
+      "createdAt": "15-03-2021",
+      "receivedByCourtAt": "08-06-2022",
+      "filedAt": "20-06-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 25471
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69402/SL7/MSPH",
+      "documentType": "stanovy společnosti",
+      "createdAt": "20-03-2023",
+      "receivedByCourtAt": "25-05-2023",
+      "filedAt": "26-07-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 4137169
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69402/SL8/MSPH",
+      "documentType": "ostatní Zápis z členské schůze",
+      "createdAt": "20-03-2023",
+      "receivedByCourtAt": "25-05-2023",
+      "filedAt": "26-07-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 394447
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69402/SL9/MSPH",
+      "documentType": "účetní závěrka [2021] Příloha",
+      "createdAt": "31-12-2021",
+      "receivedByCourtAt": "08-11-2023",
+      "filedAt": "13-11-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 181078
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69402/SL10/MSPH",
+      "documentType": "účetní závěrka [2022] VZaZ",
+      "createdAt": "31-12-2022",
+      "receivedByCourtAt": "08-11-2023",
+      "filedAt": "13-11-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 38344
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69402/SL11/MSPH",
+      "documentType": "účetní závěrka [2022] rozvaha",
+      "createdAt": "31-12-2022",
+      "receivedByCourtAt": "08-11-2023",
+      "filedAt": "13-11-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 38820
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69402/SL12/MSPH",
+      "documentType": "účetní závěrka [2021]",
+      "createdAt": "31-12-2021",
+      "receivedByCourtAt": "08-11-2023",
+      "filedAt": "13-11-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 7973
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69402/SL13/MSPH",
+      "documentType": "účetní závěrka [2022] příloha",
+      "createdAt": "31-12-2022",
+      "receivedByCourtAt": "08-11-2023",
+      "filedAt": "13-11-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 188054
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69402/SL14/MSPH",
+      "documentType": "účetní závěrka [2023] rozvaha",
+      "createdAt": "31-12-2023",
+      "receivedByCourtAt": "15-07-2024",
+      "filedAt": "30-07-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 308628
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69402/SL15/MSPH",
+      "documentType": "účetní závěrka [2023] VZaZ",
+      "createdAt": "31-12-2023",
+      "receivedByCourtAt": "15-07-2024",
+      "filedAt": "30-07-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 301086
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69402/SL16/MSPH",
+      "documentType": "účetní závěrka [2023] příloha",
+      "createdAt": "31-12-2023",
+      "receivedByCourtAt": "15-07-2024",
+      "filedAt": "30-07-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 136640
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69402/SL17/MSPH",
+      "documentType": "účetní závěrka [2024] příloha",
+      "createdAt": "31-12-2024",
+      "receivedByCourtAt": "27-06-2025",
+      "filedAt": "08-07-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 136987
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69402/SL18/MSPH",
+      "documentType": "účetní závěrka [2024] rozvaha",
+      "createdAt": "31-12-2024",
+      "receivedByCourtAt": "27-06-2025",
+      "filedAt": "08-07-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 298449
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69402/SL19/MSPH",
+      "documentType": "ostatní zápis z členské schůze",
+      "createdAt": "19-01-2026",
+      "receivedByCourtAt": "18-03-2026",
+      "filedAt": "02-04-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 252156
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69402/SL20/MSPH",
+      "documentType": "účetní závěrka [2025]",
+      "createdAt": "31-12-2025",
+      "receivedByCourtAt": "03-07-2026",
+      "filedAt": "08-07-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 526362
+        }
+      ]
+    }
+  ]
+}

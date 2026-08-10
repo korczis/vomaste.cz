@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jan-jakob/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jan-jakob"
+  },
+  "title": "SRC-02 — ČeskéNoviny.cz: Sněmovní klub TOP 09 opět povede Jan Jakob, do vedení Sněmovny strana nechce",
+  "description": "Zpravodajství ČeskéNoviny.cz (ČTK) o ustavení poslaneckého klubu TOP 09 7. 10. 2025 a znovuzvolení Jana Jakoba jeho předsedou.",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajská agentura",
+  "url": "https://www.ceskenoviny.cz/zpravy/2731142",
+  "published": "2025-10-07",
+  "retrieved": "2026-08-07",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jan-jakob/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "jan-jakob"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpráva ČeskéNoviny.cz (ČTK) ze 7. 10. 2025 o ustavující schůzi poslaneckého klubu TOP 09, otevřena a přečtena 2026-08-07.\nInformuje, že poslanecký klub TOP 09 opět povede Jan Jakob a že strana nebude usilovat o post místopředsedy Sněmovny navzdory zmenšenému počtu devíti mandátů.\n\nPoznámka k typu zdroje a jeho limitům: agenturní zpravodajství (ČTK, publikováno přes ČeskéNoviny.cz) — jiná doména i jiný vydavatel než SRC-01 (Poslanecká sněmovna Parlamentu ČR, primární úřední zdroj), takže spolu s ním tvoří nezávislou dvojici pro účely korporace tohoto tvrzení. Přesné datum poslaneckého mandátu (4. 10. 2025) dokládá SRC-01."
+    }
+  ],
+  "order": 2
+}

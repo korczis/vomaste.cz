@@ -1,0 +1,40 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "00469548",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/00469548",
+  "nazev": "Česká unie sportu, z.s.",
+  "sidlo": "Zátopkova 100/2, Břevnov, 16900 Praha 6",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "L",
+    "vlozka": "830"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "místopředseda",
+      "since": "2024-06-26",
+      "kind": "person",
+      "name": "Ing. Marek Hájek"
+    },
+    {
+      "role": "místopředseda",
+      "since": "2024-06-26",
+      "kind": "person",
+      "name": "Mgr. Marek Pakosta"
+    },
+    {
+      "role": "předseda",
+      "since": "2025-06-25",
+      "kind": "person",
+      "name": "Mgr. Jan Boháč"
+    },
+    {
+      "role": "generální sekretář",
+      "since": "2025-06-25",
+      "kind": "person",
+      "name": "Mgr. Gabriela Petrusová"
+    }
+  ],
+  "spolecnici": []
+}

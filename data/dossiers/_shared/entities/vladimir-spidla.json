@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/vladimir-spidla",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "vladimir-spidla",
+  "entityId": "vladimir-spidla",
+  "title": "Vladimír Špidla",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "vladimir-spidla"
+  ],
+  "order": 668,
+  "description": "Vladimír Špidla — bývalý předseda vlády ČR (2002–2004).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalý předseda vlády České republiky (15. 7. 2002 – 4. 8. 2004).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/prismatic-plan",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "prismatic-plan",
+  "kind": "npm",
+  "name": "prismatic:plan",
+  "title": "Plán obohacovacích úloh",
+  "category": "reserse",
+  "summary": "Staví deterministický, vysvětlitelný plán úloh proti vlastnímu compiled kanonickému modelu vomaste. Žádné volání Prismatic tu neprobíhá — rozhoduje se jen, co by se dalo naplánovat a proč.",
+  "whenToRun": "Když chceš vidět, kde by obohacení mohlo pomoct: `-- [--all | --entity=<id> | --dossier=<slug>] [--max-records=N] [--json]`.",
+  "inputs": [
+    "data/dossiers/** (compiled model)"
+  ],
+  "sourceFile": "scripts/prismatic/plan.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Záměrně omezené na JEDINOU schopnost, kterou audit označil za přímo použitelnou se skutečným, otestovaným kódem: dohledání firmy v ARES pro entity typu company/organization bez stabilního IČO.",
+    "Ostatní schopnosti (nemovitosti, sankce, instituce EU…) se neplánují — audit je našel jako vymyšlené, rozbité nebo neověřené, a naplánovat proti nim úlohu by naznačovalo, že je bezpečné je spustit."
+  ]
+}

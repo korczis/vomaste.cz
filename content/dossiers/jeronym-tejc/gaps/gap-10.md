@@ -21,3 +21,5 @@ směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
 
 **Opakovaná kontrola k 2026-08-03**: iROZHLAS.cz zůstává trvale nedostupný (HTTP 403, potvrzeno opakovaně). Mezera zůstává otevřená.
+
+**Opakovaná kontrola k 2026-08-06**: beze změny — iROZHLAS.cz vrací HTTP 403 i nadále. Rozhodnutí Nejvyššího státního zastupitelství o stížnostech nebylo v sekci NSZ na verejnazaloba.cz k datu kontroly dohledáno v podobě samostatné tiskové zprávy. Konkrétně chybí: druhý plnotextově ověřený vydavatel nebo úřední sdělení NSZ k zamítnutí stížností.

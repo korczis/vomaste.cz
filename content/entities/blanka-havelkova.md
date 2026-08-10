@@ -3,6 +3,7 @@
 title = "Blanka Havelková"
 template = "entity.html"
 weight = 82
+description = "Blanka Havelková — Kontextová entita — Nová členka představenstva ČD po odchodu Bednárika, Nebeského a Pavelce."
 
 [extra]
 generated = true

@@ -3,6 +3,7 @@
 title = "Karel Matuška"
 template = "entity.html"
 weight = 190
+description = "Karel Matuška — Kontextová entita — Starosta Bíliny (ANO); město podle něj nebude do řešení černých staveb zasahovat."
 
 [extra]
 generated = true

@@ -58,6 +58,10 @@ Body E.
 ### Not authorized: Mallory (on the record)
 
 Body F.
+
+### Governance and scope supersession, 2026-01-05: standing scope
+
+Body G.
 `;
 
 test("recognizes every real-world entry heading shape (B-2)", () => {
@@ -68,16 +72,17 @@ test("recognizes every real-world entry heading shape (B-2)", () => {
     "### Rozšíření rozsahu, 2026-07-30: finanční a majetková vrstva",
     "### Structural change, 2026-07-29 (second): full physical decoupling of the entity dossiers",
     "### Not authorized: Radovan Krejčíř (on the record)",
+    "### Governance and scope supersession, 2026-08-05: standing public-interest scope and Prismatic integration",
   ]) {
     assert.equal(isEntryHeading(h), true, `měl být rozpoznán: ${h}`);
   }
   assert.equal(isEntryHeading("### Templates"), false);
 });
 
-test("extracts all six fixture entries; doc heading before the log is ignored", () => {
+test("extracts all seven fixture entries; doc heading before the log is ignored", () => {
   const { entries, problems } = extractLogEntries(FIXTURE);
   assert.deepEqual(problems, []);
-  assert.equal(entries.size, 6);
+  assert.equal(entries.size, 7);
   assert.equal(
     entries.get("### Authorized subject: Alice (on the record)"),
     "### Authorized subject: Alice (on the record)\n\nBody A.",

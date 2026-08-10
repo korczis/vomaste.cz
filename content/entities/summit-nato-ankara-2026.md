@@ -3,6 +3,7 @@
 title = "Summit NATO v Ankaře (7.–8. 7. 2026)"
 template = "entity.html"
 weight = 398
+description = "Summit NATO v Ankaře (7.–8. 7. 2026) — Kontextová entita — Babiš zde oznámil navýšení obranného rozpočtu; účast prezidenta vynutilo předběžné opatření ÚS."
 
 [extra]
 generated = true

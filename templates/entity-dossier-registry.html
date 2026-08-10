@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 {% import "macros/ui.html" as ui %}
+{% import "macros/table.html" as table %}
+{% import "macros/views.html" as views %}
 
 {#- Generic registry-index view for an ENTITY dossier (petr-macinka,
     filip-turek): claims/sources/cases/gaps. Owns no content of its own —
@@ -7,7 +9,14 @@
     dossier's records filtered by `subjects` and linking to the canonical
     detail pages. See AGENTS.md's "Entity dossiers vs. the aggregate view"
     — this is what keeps every claim/source/case/gap a single record,
-    never physically duplicated per person. -#}
+    never physically duplicated per person.
+
+    T-013 (2026-08-08): migrated from static registry-card grids to the
+    shared views::/table::advanced_table toolbar the canonical registry
+    indexes already use — same sort/filter/URL-state/inspector behavior,
+    one component owner (advancedTable()), no separate hand-rolled UI.
+    The card grid stays available as the "grid" projection, so the old
+    look is a click away rather than gone. -#}
 
 {% block content %}
 <main class="mx-auto max-w-6xl px-6 py-12 text-white">
@@ -44,16 +53,63 @@
   {% if filtered | length == 0 %}
     {{ ui::empty_state(message="Žádné tvrzení v tomto rozsahu.") }}
   {% else %}
-  <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-    {% for p in filtered %}
-    <a href="{{ config.base_url }}{{ p.route }}" class="registry-card">
-      <span class="font-mono text-xs text-[#f3e5c0]">{{ p.identifier }}</span>
-      {% if p.subjects | length > 1 %}<span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.6rem] uppercase tracking-wide text-white/55">sdílené</span>{% endif %}
-      <span class="status-badge {{ p.status }} mt-1 inline-block w-fit">{{ p.statusLabel }}</span>
-      <span class="mt-2 text-sm text-white/70">{{ p.text }}</span>
-    </a>
-    {% endfor %}
-  </div>
+  {{ views::open(
+    id="entity-claims",
+    title="Registr tvrzení",
+    count=filtered | length,
+    default_view="table",
+    allowed_views=["table", "grid"],
+    search_label="Hledat v tvrzeních",
+    sort_options=["id::ID", "status::Stav"],
+    columns=["ID", "Stav", "Tvrzení"],
+    export_name="tvrzeni",
+    facets=[
+      "status-corroborated::Corroborated",
+      "status-single::1 zdroj",
+      "status-disputed::Sporné",
+      "status-quote::Citace",
+    ]) }}
+
+  {{ views::projection(name="table", default_view="table") }}
+    {{ table::advanced_table(
+      id="entity-claims-table",
+      caption="Registr tvrzení",
+      record_type="claim",
+      columns=["ID", "Stav", "Tvrzení"],
+      sort_keys=["id", "status", ""]) }}
+      {%- for p in filtered %}
+      <tr data-record-key="{{ p.identifier }}" data-facet="{{ p.status }}" id="entity-claims-table-{{ p.identifier | lower }}">
+        <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.identifier }}">
+          <a href="{{ config.base_url }}{{ p.route }}" class="font-mono text-xs text-[#f3e5c0] underline decoration-white/30 underline-offset-2 transition-colors hover:text-white">{{ p.identifier }}</a>
+          {% if p.subjects | length > 1 %}<span class="ml-1 rounded bg-white/5 px-1.5 py-0.5 text-[0.6rem] uppercase tracking-wide text-white/55">sdílené</span>{% endif %}
+        </td>
+        <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.statusLabel }}">
+          <span class="status-badge {{ p.status }}">{{ p.statusLabel }}</span>
+        </td>
+        <td class="p-3 align-top text-white/75">
+          <a href="{{ config.base_url }}{{ p.route }}" class="line-clamp-3 text-white/75 no-underline hover:text-white hover:underline sm:line-clamp-none">{{ p.text }}</a>
+        </td>
+      </tr>
+      {%- endfor %}
+    {{ table::advanced_table_end() }}
+  {{ views::projection_end() }}
+
+  {{ views::projection(name="grid", default_view="table") }}
+    <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+      {% for p in filtered %}
+      <a href="{{ config.base_url }}{{ p.route }}" data-record-key="{{ p.identifier }}" data-facet="{{ p.status }}" class="registry-card">
+        <span class="font-mono text-xs text-[#f3e5c0]">{{ p.identifier }}</span>
+        {% if p.subjects | length > 1 %}<span class="rounded bg-white/5 px-1.5 py-0.5 text-[0.6rem] uppercase tracking-wide text-white/55">sdílené</span>{% endif %}
+        <span class="status-badge {{ p.status }} mt-1 inline-block w-fit">{{ p.statusLabel }}</span>
+        <span class="mt-2 text-sm text-white/70">{{ p.text }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  {{ views::projection_end() }}
+
+  {{ views::close(
+    empty_text="Žádné tvrzení neodpovídá zadanému filtru.",
+    footer="Pohled, řazení i filtr se promítají do adresy — výřez dat jde poslat odkazem.") }}
   {% endif %}
 
   {% elif registry == "sources" %}
@@ -63,16 +119,55 @@
   {% if filtered | length == 0 %}
     {{ ui::empty_state(message="Žádný zdroj v tomto rozsahu.") }}
   {% else %}
-  <div class="grid gap-3 sm:grid-cols-2">
-    {% for p in filtered %}
-    <a href="{{ config.base_url }}{{ p.route }}" class="registry-card">
-      <span class="font-mono text-xs text-[#f3e5c0]">{{ p.identifier }}</span>
-      <span class="font-semibold text-white break-words">{{ p.outlet }}</span>
-      <span class="mt-1 text-xs text-white/55">{{ p.sourceType }}</span>
-      <span class="mt-2 text-sm text-white/70">{{ p.description }}</span>
-    </a>
-    {% endfor %}
-  </div>
+  {{ views::open(
+    id="entity-sources",
+    title="Registr zdrojů",
+    count=filtered | length,
+    default_view="table",
+    allowed_views=["table", "grid"],
+    search_label="Hledat ve zdrojích",
+    sort_options=["id::ID", "outlet::Médium"],
+    columns=["ID", "Médium", "Typ", "Popis"],
+    export_name="zdroje") }}
+
+  {{ views::projection(name="table", default_view="table") }}
+    {{ table::advanced_table(
+      id="entity-sources-table",
+      caption="Registr zdrojů",
+      record_type="source",
+      columns=["ID", "Médium", "Typ", "Popis"],
+      sort_keys=["id", "outlet", "", ""]) }}
+      {%- for p in filtered %}
+      <tr data-record-key="{{ p.identifier }}" id="entity-sources-table-{{ p.identifier | lower }}">
+        <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.identifier }}">
+          <a href="{{ config.base_url }}{{ p.route }}" class="font-mono text-xs text-[#f3e5c0] underline decoration-white/30 underline-offset-2 transition-colors hover:text-white">{{ p.identifier }}</a>
+        </td>
+        <td class="p-3 align-top font-semibold text-white" data-sort-value="{{ p.outlet }}">{{ p.outlet }}</td>
+        <td class="whitespace-nowrap p-3 align-top text-xs text-white/55">{{ p.sourceType }}</td>
+        <td class="p-3 align-top text-sm text-white/70">
+          <a href="{{ config.base_url }}{{ p.route }}" class="line-clamp-3 text-white/70 no-underline hover:text-white hover:underline sm:line-clamp-none">{{ p.description }}</a>
+        </td>
+      </tr>
+      {%- endfor %}
+    {{ table::advanced_table_end() }}
+  {{ views::projection_end() }}
+
+  {{ views::projection(name="grid", default_view="table") }}
+    <div class="grid gap-3 sm:grid-cols-2">
+      {% for p in filtered %}
+      <a href="{{ config.base_url }}{{ p.route }}" data-record-key="{{ p.identifier }}" class="registry-card">
+        <span class="font-mono text-xs text-[#f3e5c0]">{{ p.identifier }}</span>
+        <span class="font-semibold text-white break-words">{{ p.outlet }}</span>
+        <span class="mt-1 text-xs text-white/55">{{ p.sourceType }}</span>
+        <span class="mt-2 text-sm text-white/70">{{ p.description }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  {{ views::projection_end() }}
+
+  {{ views::close(
+    empty_text="Žádný zdroj neodpovídá zadanému filtru.",
+    footer="Pohled, řazení i filtr se promítají do adresy — výřez dat jde poslat odkazem.") }}
   {% endif %}
 
   {% elif registry == "cases" %}
@@ -82,16 +177,58 @@
   {% if filtered | length == 0 %}
     {{ ui::empty_state(message="Žádná kauza v tomto rozsahu.") }}
   {% else %}
-  <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-    {% for p in filtered %}
-    <a href="{{ config.base_url }}{{ p.route }}" class="registry-card">
-      <span class="status-badge {{ p.status }} w-fit">{{ p.statusLabel }}</span>
-      <span class="font-semibold text-white">{{ p.identifier }} — {{ p.title }}</span>
-      <span class="text-xs text-white/55">{{ p.period }}</span>
-      <span class="mt-2 text-sm text-white/70">{{ p.summary }}</span>
-    </a>
-    {% endfor %}
-  </div>
+  {{ views::open(
+    id="entity-cases",
+    title="Registr kauz",
+    count=filtered | length,
+    default_view="table",
+    allowed_views=["table", "grid"],
+    search_label="Hledat v kauzách",
+    sort_options=["id::ID", "status::Stav"],
+    columns=["ID", "Stav", "Kauza", "Období"],
+    export_name="kauzy") }}
+
+  {{ views::projection(name="table", default_view="table") }}
+    {{ table::advanced_table(
+      id="entity-cases-table",
+      caption="Registr kauz",
+      record_type="case",
+      columns=["ID", "Stav", "Kauza", "Období"],
+      sort_keys=["id", "status", "", ""]) }}
+      {%- for p in filtered %}
+      <tr data-record-key="{{ p.identifier }}" data-facet="{{ p.status }}" id="entity-cases-table-{{ p.identifier | lower }}">
+        <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.identifier }}">
+          <a href="{{ config.base_url }}{{ p.route }}" class="font-mono text-xs text-[#f3e5c0] underline decoration-white/30 underline-offset-2 transition-colors hover:text-white">{{ p.identifier }}</a>
+        </td>
+        <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.statusLabel }}">
+          <span class="status-badge {{ p.status }}">{{ p.statusLabel }}</span>
+        </td>
+        <td class="p-3 align-top">
+          <a href="{{ config.base_url }}{{ p.route }}" class="font-semibold text-white no-underline hover:underline">{{ p.title }}</a>
+          <p class="mt-1 line-clamp-2 text-sm text-white/70 sm:line-clamp-none">{{ p.summary }}</p>
+        </td>
+        <td class="whitespace-nowrap p-3 align-top text-xs text-white/55">{{ p.period }}</td>
+      </tr>
+      {%- endfor %}
+    {{ table::advanced_table_end() }}
+  {{ views::projection_end() }}
+
+  {{ views::projection(name="grid", default_view="table") }}
+    <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+      {% for p in filtered %}
+      <a href="{{ config.base_url }}{{ p.route }}" data-record-key="{{ p.identifier }}" data-facet="{{ p.status }}" class="registry-card">
+        <span class="status-badge {{ p.status }} w-fit">{{ p.statusLabel }}</span>
+        <span class="font-semibold text-white">{{ p.identifier }} — {{ p.title }}</span>
+        <span class="text-xs text-white/55">{{ p.period }}</span>
+        <span class="mt-2 text-sm text-white/70">{{ p.summary }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  {{ views::projection_end() }}
+
+  {{ views::close(
+    empty_text="Žádná kauza neodpovídá zadanému filtru.",
+    footer="Pohled, řazení i filtr se promítají do adresy — výřez dat jde poslat odkazem.") }}
   {% endif %}
 
   {% elif registry == "gaps" %}
@@ -105,18 +242,63 @@
   {% if filtered | length == 0 %}
     {{ ui::empty_state(message="V tomto rozsahu nejsou vedeny žádné otevřené mezery.") }}
   {% else %}
-  <div class="grid gap-3">
-    {% for p in filtered %}
-    <a href="{{ config.base_url }}{{ p.route }}" class="registry-card group">
-      <div class="flex flex-wrap items-center gap-2">
-        <span class="font-mono text-xs text-[#f3e5c0]">{{ p.identifier }}</span>
-        <span class="gap-priority-badge {% if p.priority == 'vysoká' %}gap-priority-high{% else %}gap-priority-low{% endif %}">Priorita: {{ p.priority }}</span>
-      </div>
-      <span class="font-semibold text-white group-hover:text-[#f3e5c0]">{{ p.title | split(pat=" — ") | last }}</span>
-      <span class="text-sm text-white/70">{{ p.description }}</span>
-    </a>
-    {% endfor %}
-  </div>
+  {{ views::open(
+    id="entity-gaps",
+    title="Registr mezer",
+    count=filtered | length,
+    default_view="table",
+    allowed_views=["table", "grid"],
+    search_label="Hledat v mezerách",
+    sort_options=["id::ID", "priority::Priorita"],
+    columns=["ID", "Priorita", "Otevřená otázka"],
+    export_name="mezery",
+    facets=[
+      "vysoká::Vysoká priorita",
+      "nízká::Nízká priorita",
+    ]) }}
+
+  {{ views::projection(name="table", default_view="table") }}
+    {{ table::advanced_table(
+      id="entity-gaps-table",
+      caption="Registr mezer",
+      record_type="gap",
+      columns=["ID", "Priorita", "Otevřená otázka"],
+      sort_keys=["id", "priority", ""]) }}
+      {%- for p in filtered %}
+      <tr data-record-key="{{ p.identifier }}" data-facet="{{ p.priority }}" id="entity-gaps-table-{{ p.identifier | lower }}">
+        <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.identifier }}">
+          <a href="{{ config.base_url }}{{ p.route }}" class="font-mono text-xs text-[#f3e5c0] underline decoration-white/30 underline-offset-2 transition-colors hover:text-white">{{ p.identifier }}</a>
+        </td>
+        <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.priority }}">
+          <span class="gap-priority-badge {% if p.priority == 'vysoká' %}gap-priority-high{% else %}gap-priority-low{% endif %}">{{ p.priority }}</span>
+        </td>
+        <td class="p-3 align-top">
+          <a href="{{ config.base_url }}{{ p.route }}" class="font-semibold text-white no-underline hover:underline">{{ p.title | split(pat=" — ") | last }}</a>
+          <p class="mt-1 line-clamp-2 text-sm text-white/70 sm:line-clamp-none">{{ p.description }}</p>
+        </td>
+      </tr>
+      {%- endfor %}
+    {{ table::advanced_table_end() }}
+  {{ views::projection_end() }}
+
+  {{ views::projection(name="grid", default_view="table") }}
+    <div class="grid gap-3">
+      {% for p in filtered %}
+      <a href="{{ config.base_url }}{{ p.route }}" data-record-key="{{ p.identifier }}" data-facet="{{ p.priority }}" class="registry-card group">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="font-mono text-xs text-[#f3e5c0]">{{ p.identifier }}</span>
+          <span class="gap-priority-badge {% if p.priority == 'vysoká' %}gap-priority-high{% else %}gap-priority-low{% endif %}">Priorita: {{ p.priority }}</span>
+        </div>
+        <span class="font-semibold text-white group-hover:text-[#f3e5c0]">{{ p.title | split(pat=" — ") | last }}</span>
+        <span class="text-sm text-white/70">{{ p.description }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  {{ views::projection_end() }}
+
+  {{ views::close(
+    empty_text="Žádná mezera neodpovídá zadanému filtru.",
+    footer="Pohled, řazení i filtr se promítají do adresy — výřez dat jde poslat odkazem.") }}
   {% endif %}
   {% endif %}
 

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/updates/2026-08-06",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-06",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "date": "2026-08-06",
+  "summary": "Kolo doložení primárními dokumenty (T-072). Dossier měl 6 tvrzení ve třídě E1+ — dvě a více citací, ale všechny rodiny ctk. Tři z nich byly posíleny nově otevřenými dokumenty Úřadu vlády: přepis tiskové konference po jednání vlády z 26. 1. 2026 (SRC-26) u CLM-02 a CLM-03 a tisková zpráva Úřadu vlády z 18. 5. 2026 (SRC-38) u CLM-20; CLM-02 a CLM-20 tím přešla na CORROBORATED. Přepis tiskové konference z 18. 5. 2026 (SRC-39) doložil CLM-13 a upřesnil CLM-26. Opravy proti dokumentu: CLM-02 uvádělo pokles 'o 21 miliard' bez rozlišení kapitol — dokument uvádí 21 miliard v kapitole Ministerstva obrany a dalších 0,8 miliardy v ostatních kapitolách, celkové obranné výdaje 185,693 miliardy a poměr 2,11 % HDP podle dubnové a 2,07 % podle lednové predikce, přičemž výchozí hodnotu 206 miliard a 2,35 % HDP dokument neobsahuje a tvrzení to nově říká výslovně; CLM-03 uvádělo, že se škrt dotkne 'pouze nových, dosud nevyhlášených projektů', ministr mluví o 'některých nových projektech' a o pokračování všech stávajících včetně vyhlášených; CLM-26 uvádělo, že Zůna pro jmenování 'nehlasoval' — podle přepisu hlasoval proti, a to jako jediný člen vlády. Bez doložení zůstávají tři tvrzení třídy E1+ (CLM-21, CLM-28, CLM-29) — jmenovací akt prezidenta, předání funkce na Vítkově, Řehkova senátní kandidatura a prezidentovy výroky nejsou v žádném otevřeném primárním dokumentu; hrad.cz vrací HTTP 403 a zpravodajství resortu obrany na mo.gov.cz se k tématu nepodařilo dohledat. Revidováno všech 11 mezer; GAP-04 a GAP-05 uzavřeny (rozdíl metodik kapitola versus celkové obranné výdaje i nezávislost rozpočtového tvrzení jsou nyní doloženy primárním záznamem z jednání vlády), GAP-02 a GAP-11 zúženy.",
+  "addedClaims": [],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-26"
+    }
+  ],
+  "addedGaps": [],
+  "closedGaps": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/gaps/GAP-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/gaps/GAP-05"
+    }
+  ],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-26"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-38"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-39"
+    }
+  ]
+}

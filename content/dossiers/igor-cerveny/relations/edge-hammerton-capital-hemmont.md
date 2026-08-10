@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Hammerton Capital Co. Limited — čínská mateřská společnost vlastnící Hemmont — Hemmont"
+description = "Hammerton Capital Co. Limited — čínská mateřská společnost vlastnící Hemmont — Hemmont. Vztah v grafu dossieru Igor Červený. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 11
 

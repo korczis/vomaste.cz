@@ -9,12 +9,18 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
   },
-  "text": "Předmětem kauzy Čapí hnízdo je dotace 50 milionů korun na výstavbu areálu z let 2007–2008, kterou čerpala Farma Čapí hnízdo poté, co byla vyvedena ze skupiny Agrofert; sporné bylo, zda šlo o účelové vyvedení kvůli podmínce podpory pro malé a střední podniky",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Předmětem kauzy Čapí hnízdo je dotace ve výši téměř 50 milionů korun na výstavbu areálu, o kterou Farma Čapí hnízdo požádala v roce 2008; žadatel se v čestném prohlášení deklaroval jako malý a střední podnik a spor se vede právě o to, zda toto zařazení odpovídalo skutečnosti. Městské státní zastupitelství v Praze v roce 2019 uzavřelo, že Farma Čapí hnízdo definici malého a středního podniku splňovala a propojení s koncernem Agrofert přes rodinné příslušníky „nehrálo při posouzení roli“; Vrchní soud v Praze v roce 2025 naopak dospěl k závaznému závěru, že společnost kritéria malého podniku nesplňovala a byla „personálně i finančně zcela závislá na holdingu Agrofert“. Ani jedno z toho není pravomocné rozhodnutí o vině. Že Farma Čapí hnízdo byla před čerpáním vyvedena ze skupiny Agrofert, uvádí citované zpravodajství — primární dokumenty tento krok nepopisují",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-23"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-82"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-75"
     }
   ],
   "subjects": [],
@@ -22,7 +28,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni)."
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/andrej-babis/_index.md#registr-tvrzeni).\n\n**Opraveno a povýšeno 2026-08-06 (kolo CASE-05, T-078).** Připojeny dva primární\ndokumenty: tisková zpráva Městského státního zastupitelství v Praze\n([SRC-82](@/dossiers/andrej-babis/sources/src-82.md)) a tisková zpráva Vrchního\nsoudu v Praze k věci 3 To 34/2024\n([SRC-75](@/dossiers/andrej-babis/sources/src-75.md)). Tři opravy proti\ndosavadnímu znění, které vycházelo z agenturního zpravodajství\n([SRC-23](@/dossiers/andrej-babis/sources/src-23.md)):\n\n- **„dotace 50 milionů korun“ → „téměř 50 milionů korun“.** Vrchní soud v Praze\n  uvádí, že obžalovaní „dosáhli neoprávněného přiznání dotace v rozsahu **téměř\n  50 milionů Kč**“. Zaokrouhlená padesátka je zkratka zpravodajství.\n- **„z let 2007–2008“ → „žádost podána v roce 2008“.** Městské státní\n  zastupitelství pracuje s „dobou **podání žádosti o poskytnutí dotace v roce\n  2008**“ a s posouzením pojmu malý a střední podnik „**k roku 2008**“. Rok 2007\n  žádný z otevřených primárních dokumentů neuvádí.\n- **„poté, co byla vyvedena ze skupiny Agrofert“ → přesunuto k citovanému\n  zpravodajství.** Primární dokumenty tento krok nepopisují: MSZ mluví\n  o „propojení prostřednictvím řady akcionářů na úrovni rodinných příslušníků\n  s koncernem Agrofert“, Vrchní soud o tom, že společnost byla „personálně\n  i finančně zcela závislá na holdingu Agrofert“ a do projektu „zapojena toliko\n  formálně“. To je popis závislosti, ne popis převodu vlastnictví — dossier obojí\n  nesměšuje.\n\n**Limit:** obě instituce došly k **opačnému** právnímu závěru o statusu malého\npodniku (MSZ 2019: splňovala; Vrchní soud 2025: nesplňovala). Dossier je vede\nvedle sebe, protože ani jeden není pravomocným rozhodnutím o vině."
     }
   ]
 }

@@ -10,9 +10,9 @@
     "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
   },
   "title": "GAP-01 — Výsledek odvolání SPD proti nepravomocnému rozsudku",
-  "description": "Hnutí oznámilo odvolání; výsledek nebyl ve zkontrolovaných zdrojích nalezen.",
+  "description": "Hnutí oznámilo odvolání; výsledek nebyl ve zkontrolovaných zdrojích ani v primárních rejstřících nalezen.",
   "priority": "vysoká",
-  "checked": "2026-08-04",
+  "checked": "2026-08-05",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/claims/CLM-01"
@@ -27,7 +27,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Rozsudek OS pro Prahu 1 z 3. 6. 2026 není pravomocný a SPD oznámila\nodvolání ([SRC-01](@/dossiers/tomio-okamura/sources/src-01.md)). Ve\nzkontrolovaných zdrojích **nebyl k datu kontroly nalezen** doklad o\nvýsledku odvolacího řízení — zda byl rozsudek potvrzen, zrušen, změněn,\nani zda se hnutí obrátilo na Ústavní soud, jak oznámilo.\n\nOtevřenost této mezery **není** zjištěním v žádném směru. Dokud odvolací\nřízení neskončí, není o vině rozhodnuto.\n\n**Podmínka uzavření**: dohledání a přímé otevření zdroje k rozhodnutí\nodvolacího soudu (případně Ústavního soudu) a doplnění tvrzení s\nodpovídajícím stavem a přesným procesním popisem.\n\n**Opakovaná kontrola k 2026-08-02** (iROZHLAS, ČT24, Deník N, Echo24,\nČeská justice, Aktuálně.cz, Respekt — cílené dotazy na odvolací řízení):\nvšechny dohledané zprávy zůstávají z června 2026 (oznámení odvolání),\nžádný zdroj k datu kontroly neuvádí rozhodnutí odvolacího soudu. Stav\nbeze změny.\n\n**Opakovaná kontrola k 2026-08-03**: hledání zopakováno, žádné rozhodnutí odvolacího soudu nedohledáno. Stav beze změny."
+      "value": "Rozsudek OS pro Prahu 1 z 3. 6. 2026 není pravomocný a SPD oznámila\nodvolání ([SRC-01](@/dossiers/tomio-okamura/sources/src-01.md)). Ve\nzkontrolovaných zdrojích **nebyl k datu kontroly nalezen** doklad o\nvýsledku odvolacího řízení — zda byl rozsudek potvrzen, zrušen, změněn,\nani zda se hnutí obrátilo na Ústavní soud, jak oznámilo.\n\nOtevřenost této mezery **není** zjištěním v žádném směru. Dokud odvolací\nřízení neskončí, není o vině rozhodnuto.\n\n**Podmínka uzavření**: dohledání a přímé otevření zdroje k rozhodnutí\nodvolacího soudu (případně Ústavního soudu) a doplnění tvrzení s\nodpovídajícím stavem a přesným procesním popisem.\n\n**Opakovaná kontrola k 2026-08-02** (iROZHLAS, ČT24, Deník N, Echo24,\nČeská justice, Aktuálně.cz, Respekt — cílené dotazy na odvolací řízení):\nvšechny dohledané zprávy zůstávají z června 2026 (oznámení odvolání),\nžádný zdroj k datu kontroly neuvádí rozhodnutí odvolacího soudu. Stav\nbeze změny.\n\n**Opakovaná kontrola k 2026-08-03**: hledání zopakováno, žádné rozhodnutí odvolacího soudu nedohledáno. Stav beze změny.\n\n**Opakovaná kontrola k 2026-08-05 (primární dokumenty)**: hledáno cíleně u primárních zdrojů, ne jen ve zpravodajství. Odvolacím soudem by byl Městský soud v Praze; jeho rozhodnutí ve věci nebylo nalezeno. InfoSoud (`infosoud.gov.cz`) je nově jednostránková javascriptová aplikace bez serverem vykresleného detailu řízení a bez veřejného API, takže stav věci z něj nelze doložit strojově ani citovat trvalou URL. **Co konkrétně chybí**: rozhodnutí odvolacího soudu o odvolání hnutí SPD proti rozsudku Obvodního soudu pro Prahu 1 ze 3. června 2026, případně úřední doklad, že o odvolání dosud rozhodnuto nebylo. Mezera zůstává otevřená."
     }
   ],
   "order": 1

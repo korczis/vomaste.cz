@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-pecina",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "martin-pecina",
+  "slug": "martin-pecina",
+  "title": "Martin Pecina",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Martin Pecina.",
+  "dossierType": "entity",
+  "canonicalDossier": "martin-pecina",
+  "subject": "martin-pecina",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-MARTIN-PECINA"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "martin-pecina",
+        "label": "Martin Pecina",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nMartin Pecina je bývalý místopředseda vlády a ministr vnitra\n(2013–2014, Rusnokova úřednická vláda). Jako politicky exponovaná\nosoba v souvislosti s výkonem dřívějších veřejných funkcí spadá do\nstanding scope autorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`);\nkonkrétní záznam pro tento dossier je `AUTH-2026-08-08-MARTIN-PECINA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce doložený oficiálním přehledem členů\nvlády — dřívější působení ve vládě Jana Fischera se uvede, až ho\ndoloží přímo otevřený zdroj. Tvrzení nese stav 1 ZDROJ; povýšení na\nCORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření\nrozsahu vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/martin-pecina/claims/clm-01.md) | Martin Pecina byl podle oficiálního přehledu členů vlády Jiřího Rusnoka na webu Vlády ČR místopředsedou vlády a ministrem vnitra od 10. 7. 2013, přičemž od 13. 8. 2013 do 29. 1. 2014 funkce vykonával v demisi | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/martin-pecina/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

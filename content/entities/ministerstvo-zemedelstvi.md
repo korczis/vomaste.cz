@@ -3,6 +3,7 @@
 title = "Ministerstvo zemědělství ČR"
 template = "entity.html"
 weight = 280
+description = "Ministerstvo zemědělství ČR — Kontextová entita — Resort Martina Šebestyána; spor o vymáhání dotací po Agrofertu."
 
 [extra]
 generated = true

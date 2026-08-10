@@ -3,6 +3,7 @@
 title = "Akademie výtvarných umění v Praze"
 template = "entity.html"
 weight = 56
+description = "Akademie výtvarných umění v Praze — Kontextová entita — Vysoká škola — uvedena jako působiště rektora Pospiszyla, kritika zrušení výběrového řízení NGP."
 
 [extra]
 generated = true

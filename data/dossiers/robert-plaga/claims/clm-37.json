@@ -10,14 +10,17 @@
     "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
   },
   "text": "Předkladatelé návrhu se odvolávají na doporučení Národního ústavu duševního zdraví a na zkušenosti z Francie a Nizozemska ohledně zlepšení koncentrace a snížení šikany.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-16"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-37"
     }
   ],
   "subjects": [

@@ -10,12 +10,21 @@
     "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik"
   },
   "title": "Rezignace ve vedení Českých drah",
-  "summary": "Bednárik v únoru 2022 rezignoval na funkci generálního ředitele ČD; konkrétní důvody veřejně neuvedl a citovaný zdroj je nedokládá.",
+  "summary": "Bednárik dne 15. února 2022 rezignoval na funkci generálního ředitele Českých drah, spolu s ním odešli další dva členové představenstva; konkrétní důvod veřejně neuvedl, citovaný zdroj jej nedokládá a tehdejší ministr dopravy mu poděkoval za pokračující obnovu vozového parku.",
   "period": "2022",
   "status": "status-single",
   "statusLabel": "Důvody nezveřejněny",
   "anchor": "kauza-rezignace-cd",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-04"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/claims/CLM-40"
     },
@@ -43,7 +52,16 @@
   ],
   "sources": [
     {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-12"
+    },
+    {
       "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-19"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-20"
@@ -52,10 +70,7 @@
       "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-21"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-19"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-12"
+      "@id": "https://vomaste.cz/id/dossiers/ivan-bednarik/sources/SRC-29"
     }
   ],
   "subjects": [

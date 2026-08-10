@@ -1,0 +1,15 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "26014343",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/26014343",
+  "nazev": "SynBiol, a.s.",
+  "sidlo": "Pyšelská 2327/2, Chodov, 14900 Praha 4",
+  "spisovaZnacka": {
+    "soud": "KSHK",
+    "oddil": "B",
+    "vlozka": "2399"
+  },
+  "statutarniOrgan": [],
+  "spolecnici": []
+}

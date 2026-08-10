@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Lubor Novák — on a jeho firma darovali Motoristům 400 tisíc korun — Motoristé sobě"
+description = "Lubor Novák — on a jeho firma darovali Motoristům 400 tisíc korun — Motoristé sobě. Vztah v grafu dossieru Igor Červený. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 9
 

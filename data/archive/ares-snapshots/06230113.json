@@ -1,0 +1,30 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "06230113",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/06230113",
+  "nazev": "Transgas s.r.o.",
+  "sidlo": "Petrská 1136/12, Nové Město, 11000 Praha 1",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "C",
+    "vlozka": "276898"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "jednatel",
+      "since": "2017-06-28",
+      "kind": "person",
+      "name": "Filip Turek"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "person",
+      "name": "Filip Turek",
+      "podil": "100",
+      "vklad": "1000",
+      "splaceno": "100"
+    }
+  ]
+}

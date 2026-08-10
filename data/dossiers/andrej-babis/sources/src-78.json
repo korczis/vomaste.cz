@@ -16,6 +16,13 @@
   "url": "https://vyhledavac.nssoud.cz/DokumentOriginal/Index/747444",
   "published": "2025-11-27",
   "retrieved": "2026-08-05",
+  "localDocument": {
+    "path": "documents/andrej-babis/nss-6-afs-82-2025-75.pdf",
+    "originalUrl": "https://vyhledavac.nssoud.cz/DokumentOriginal/Index/747444",
+    "retrievedAt": "2026-08-08",
+    "sizeBytes": 181614,
+    "reviewNote": "Plné znění rozsudku NSS (24 stran) bylo staženo, vykresleno a strojově prohledáno 2026-08-08. Dokument je úředně anonymizovaný a neobsahuje rodná čísla, data narození ani adresy bydliště soukromých osob."
+  },
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-19"

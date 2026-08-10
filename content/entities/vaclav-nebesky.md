@@ -3,6 +3,7 @@
 title = "Václav Nebeský"
 template = "entity.html"
 weight = 427
+description = "Václav Nebeský — Kontextová entita — Místopředseda představenstva ČD, odešel souběžně s Bednárikem (2022); Bednárikův předchůdce v čele ČD."
 
 [extra]
 generated = true

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-sokol/sources/SRC-04",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-04",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-sokol"
+  },
+  "title": "SRC-04 — Forum24: ODS představuje stínovou vládu, slibuje obranu před Babišovými nesmysly",
+  "description": "Zpravodajský článek o představení stínové vlády ODS vedené Martinem Kupkou v březnu 2026, včetně kompletního seznamu stínových ministrů a poradců.",
+  "outlet": "Forum24",
+  "sourceType": "zpravodajství",
+  "url": "https://www.forum24.cz/zive-decroix-baxa-i-ivan-ods-predstavuje-stinovou-vladu-slibuje-obranu-pred-babisovymi-nesmysly",
+  "published": "2026-03-09",
+  "retrieved": "2026-08-06",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-sokol/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "petr-sokol"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek Forum24 z 9. 3. 2026, otevřen a přečten 2026-08-06.\nV seznamu představené stínové vlády ODS vedené Martinem Kupkou uvádí u jména Petra Sokola roli \"stínový poradce pro EU\".\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství. Jako jediný ze čtyř zdrojů v tomto minimálním dossieru výslovně dokládá roli stínového poradce pro EU ve stínové vládě ODS (vnitrostranická konstrukce, nikoli státní funkce); nedokládá sám o sobě funkci místopředsedy poslaneckého klubu — tu potvrzuje nezávislá dvojice SRC-02/SRC-03."
+    }
+  ],
+  "order": 4
+}

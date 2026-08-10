@@ -3,6 +3,7 @@
 title = "Art of Performance"
 template = "entity.html"
 weight = 71
+description = "Art of Performance — Kontextová entita — Autodílna vlastněná Filipem Turkem; bývalé působiště Lukáše Vaverky."
 
 [extra]
 generated = true

@@ -10,12 +10,30 @@
     "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
   },
   "title": "Bitcoinová kauza resortu spravedlnosti",
-  "summary": "Bitcoinová kauza resortu spravedlnosti — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07.",
+  "summary": "Bitcoinová kauza resortu spravedlnosti — Tejcovo oznámení trestního oznámení kvůli zjištěním interního auditu k přijetí a prodeji darovaných bitcoinů, závěry auditu o chybách před i po přijetí daru, chybějící záznamy o schůzkách se zájemci o odkup, zařazení přijetí daru do funkčního období exministra Blažka a následná obžaloba čtyř fyzických osob podaná státní zástupkyní v Olomouci.",
   "period": "2026",
   "status": "status-single",
   "statusLabel": "Sledované téma",
   "anchor": "kauza-bitcoin",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-07"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-19"
     },
@@ -57,9 +75,21 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-32"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-52"
     }
   ],
   "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-04"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-11"
     },
@@ -79,7 +109,19 @@
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-16"
     },
     {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-18"
+    },
+    {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-26"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-28"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-29"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-30"
     }
   ],
   "subjects": [

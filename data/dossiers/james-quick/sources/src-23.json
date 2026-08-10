@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-23",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-23",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "title": "SRC-23 — Městský soud v Praze: usnesení 85 Cm 1204/2023-7",
+  "description": "Dvoustránkové usnesení zveřejněné v oficiální Sbírce listin, kterým byla CSR & Protikorupcnilinka.cz s.r.o. zrušena bez likvidace.",
+  "outlet": "Městský soud v Praze — Sbírka listin",
+  "sourceType": "soudní rozhodnutí",
+  "url": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=82250971&subjektId=891728&spis=977094",
+  "published": "2024-05-27",
+  "retrieved": "2026-08-07",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-22"
+    }
+  ],
+  "sourceFamily": "mestsky-soud-praha",
+  "subjects": [
+    "james-quick"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Primární soudní dokument, nikoli rejstříkový agregátor. Obě obrazové strany byly při revizi 7. srpna 2026 renderovány a vizuálně přečteny. Zdroj dokládá konkrétní důvody rozhodnutí i jeho omezení: výrok míří na společnost a sám nestanoví osobní vinu jednatele.\n\n**Dokument ke stažení:** [Usnesení Městského soudu v Praze č. j. 85 Cm 1204/2023-7 (PDF, 2 strany)](/documents/james-quick/mestsky-soud-85-cm-1204-2023-7.pdf). SHA-256: `440dc5a21185f5f99a78eaaeb88c57f2defb6556bc5eb5b9b9615d2b158ec6cd`."
+    }
+  ],
+  "order": 23
+}

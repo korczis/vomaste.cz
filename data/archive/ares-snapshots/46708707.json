@@ -1,0 +1,15 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "46708707",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/46708707",
+  "nazev": "SETUZA a.s.",
+  "sidlo": "Žukovova 100/27, Střekov, 40003 Ústí nad Labem",
+  "spisovaZnacka": {
+    "soud": "KSUL",
+    "oddil": "B",
+    "vlozka": "273"
+  },
+  "statutarniOrgan": [],
+  "spolecnici": []
+}

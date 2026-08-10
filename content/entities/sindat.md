@@ -3,6 +3,7 @@
 title = "Skupina Sindat"
 template = "entity.html"
 weight = 379
+description = "Skupina Sindat — Kontextová entita — Podnikatelská skupina, v níž byl Havlíček dle oficiálního profilu ředitelem a spoluvlastníkem (2001–2019)."
 
 [extra]
 generated = true

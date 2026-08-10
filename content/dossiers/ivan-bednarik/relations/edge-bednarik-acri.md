@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Ivan Bednárik — vystoupil na diskusním fóru ACRI (duben 2026) — ACRI — Asociace podniků českého železničního průmyslu"
+description = "Ivan Bednárik — vystoupil na diskusním fóru ACRI (duben 2026) — ACRI — Asociace podniků…. Vztah v grafu dossieru Ivan Bednárik. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 17
 

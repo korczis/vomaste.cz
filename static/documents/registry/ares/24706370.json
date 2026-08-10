@@ -1,0 +1,257 @@
+{
+  "retrieved": "2026-08-09",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "24706370"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "24706370",
+        "obchodniJmeno": "EDUin, o.p.s.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 51,
+          "nazevSpravnihoObvodu": "Praha 5",
+          "kodMestskehoObvodu": 51,
+          "nazevMestskehoObvodu": "Praha 5",
+          "kodMestskeCastiObvodu": 539694,
+          "kodUlice": 503533,
+          "nazevMestskeCastiObvodu": "Praha 13",
+          "nazevUlice": "Bucharova",
+          "cisloDomovni": 2928,
+          "kodCastiObce": 490172,
+          "cisloOrientacni": 14,
+          "cisloOrientacniPismeno": "a",
+          "nazevCastiObce": "Stodůlky",
+          "kodAdresnihoMista": 77912926,
+          "psc": 15800,
+          "textovaAdresa": "Bucharova 2928/14a, Stodůlky, 15800 Praha 5",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "141",
+        "pravniFormaRos": "141",
+        "financniUrad": "005",
+        "datumVzniku": "2010-08-04",
+        "datumAktualizace": "2026-06-05",
+        "dic": "CZ24706370",
+        "icoId": "24706370",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Bucharova 2928/14a",
+          "radekAdresy2": "Stodůlky",
+          "radekAdresy3": "15800 Praha 5"
+        },
+        "czNace2008": [
+          "58",
+          "6312",
+          "74",
+          "8559"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "EDUin, o.p.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 132,
+                  "nazevSpravnihoObvodu": "Praha 13",
+                  "kodMestskehoObvodu": 51,
+                  "nazevMestskehoObvodu": "Praha 5",
+                  "kodMestskeCastiObvodu": 539694,
+                  "kodUlice": 503533,
+                  "nazevMestskeCastiObvodu": "Praha 13",
+                  "nazevUlice": "Bucharova",
+                  "cisloDomovni": 2928,
+                  "kodCastiObce": 490172,
+                  "cisloOrientacni": 14,
+                  "cisloOrientacniPismeno": "a",
+                  "nazevCastiObce": "Stodůlky",
+                  "kodAdresnihoMista": 77912926,
+                  "psc": 15800,
+                  "textovaAdresa": "Bucharova 2928/14a, Stodůlky, 15800 Praha 5",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "141",
+            "pravniFormaRos": "141",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "EDUin, o.p.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 51,
+                  "nazevSpravnihoObvodu": "Praha 5",
+                  "kodMestskehoObvodu": 51,
+                  "nazevMestskehoObvodu": "Praha 5",
+                  "kodMestskeCastiObvodu": 539694,
+                  "kodUlice": 503533,
+                  "nazevMestskeCastiObvodu": "Praha 13",
+                  "nazevUlice": "Bucharova",
+                  "cisloDomovni": 2928,
+                  "kodCastiObce": 490172,
+                  "cisloOrientacni": 14,
+                  "cisloOrientacniPismeno": "a",
+                  "nazevCastiObce": "Stodůlky",
+                  "kodAdresnihoMista": 77912926,
+                  "psc": 15800,
+                  "textovaAdresa": "Bucharova 2928/14a, Stodůlky, 15800 Praha 5",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "141",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "EDUin, o.p.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 51,
+                  "nazevSpravnihoObvodu": "Praha 5",
+                  "kodMestskehoObvodu": 51,
+                  "nazevMestskehoObvodu": "Praha 5",
+                  "kodMestskeCastiObvodu": 539694,
+                  "kodUlice": 503533,
+                  "nazevMestskeCastiObvodu": "Praha 13",
+                  "nazevUlice": "Bucharova",
+                  "cisloDomovni": 2928,
+                  "kodCastiObce": 490172,
+                  "cisloOrientacni": 14,
+                  "cisloOrientacniPismeno": "a",
+                  "nazevCastiObce": "Stodůlky",
+                  "kodAdresnihoMista": 77912926,
+                  "psc": 15800,
+                  "textovaAdresa": "Bucharova 2928/14a, Stodůlky, 15800 Praha 5",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "141",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "EDUin, o.p.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 51,
+                  "nazevSpravnihoObvodu": "Praha 5",
+                  "kodMestskehoObvodu": 51,
+                  "nazevMestskehoObvodu": "Praha 5",
+                  "kodMestskeCastiObvodu": 539694,
+                  "kodUlice": 503533,
+                  "nazevMestskeCastiObvodu": "Praha 13",
+                  "nazevUlice": "Bucharova",
+                  "cisloDomovni": 2928,
+                  "kodCastiObce": 490172,
+                  "cisloOrientacni": 14,
+                  "cisloOrientacniPismeno": "a",
+                  "nazevCastiObce": "Stodůlky",
+                  "kodAdresnihoMista": 77912926,
+                  "psc": 15800,
+                  "textovaAdresa": "Bucharova 2928/14a, Stodůlky, 15800 Praha 5",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "141",
+            "spisovaZnacka": "O 738/MSPH",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "58",
+          "60390",
+          "8559",
+          "74"
+        ]
+      }
+    ]
+  }
+}

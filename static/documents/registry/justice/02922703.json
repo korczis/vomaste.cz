@@ -1,0 +1,27 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-09",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/02922703",
+  "status": "OK",
+  "subject": {
+    "ico": "02922703",
+    "businessName": "Bydlíme v Králově Poli, z.s.",
+    "registerReference": "L 19717/KSBR"
+  },
+  "filings": [
+    {
+      "referenceLabel": "L 19717/SL1/KSBR",
+      "documentType": "stanovy společnosti",
+      "createdAt": "01-03-2014",
+      "receivedByCourtAt": "28-03-2014",
+      "filedAt": "16-05-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 271060
+        }
+      ]
+    }
+  ]
+}

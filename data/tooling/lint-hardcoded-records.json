@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/lint-hardcoded-records",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "lint-hardcoded-records",
+  "kind": "npm",
+  "name": "lint:hardcoded-records",
+  "title": "Zákaz natvrdo psaných záznamů v šablonách",
+  "category": "validace",
+  "summary": "Brána proti konstantám v šablonách. Šablona smí znát datový MODEL (že existuje tvrzení a má stav), ne KONKRÉTNÍ ZÁZNAMY — jakmile v ní stojí CLM-07 nebo slug, vznikla konstanta, kterou by musel někdo ručně přepočítat, zatímco build zůstane zelený.",
+  "enforces": [
+    "Identifikátor záznamu (CLM/SRC/CASE/GAP-##) v šabloně mimo komentář.",
+    "Slug dossieru z kanonického registru v cestě `@/dossiers/<slug>/`.",
+    "Slug dossieru jako řetězcový literál kdekoli v šabloně.",
+    "Natvrdo zapsaný počet ve stat dlaždici (stat_tile(value=<číslo>)) — počet musí jít z dat."
+  ],
+  "whenToRun": "Po každé editaci šablon.",
+  "inputs": [
+    "templates/**",
+    "data/dossiers/** (registr slugů)"
+  ],
+  "sourceFile": "scripts/lint/lint-hardcoded-records.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Jména osob se nekontrolují — v komentářích a příkladech jsou legitimní a regulární výraz by z toho udělal hlídače slovníku."
+  ]
+}

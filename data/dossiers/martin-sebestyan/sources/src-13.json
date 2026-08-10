@@ -12,7 +12,7 @@
   "title": "SRC-13 — ParlamentníListy.cz",
   "description": "Ministr Šebestyán: Hospodářský i osobní zájem je vyloučen",
   "outlet": "ParlamentníListy.cz",
-  "sourceType": "oficiální primární zdroj",
+  "sourceType": "přepis vystoupení politika (neredigovaná rubrika)",
   "url": "https://www.parlamentnilisty.cz/politika/politici-volicum/Ministr-Sebestyan-Hospodarsky-i-osobni-zajem-je-vyloucen-792603",
   "published": "2026-06-11",
   "retrieved": "2026-07-30",
@@ -30,7 +30,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "**Ministr Šebestyán: Hospodářský i osobní zájem je vyloučen**\n\nMonitoring vystoupení ministra Šebestyána v Poslanecké sněmovně 11. 6. 2026 k bodu o dotacích Agrofertu. Ministr označil dopis DG Regio za pracovní, právně nezávaznou komunikaci a odmítl výklad, že Komise pozastavila platby; podle něj to může učinit jen prováděcí rozhodnutí. Tvrdí, že předmětem historického auditního šetření nikdy nebyly nárokové dotace (přímé platby) a že ty Komise po celou dobu propláceala. Delší část záznamu je uzamčena.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji."
+      "value": "**Ministr Šebestyán: Hospodářský i osobní zájem je vyloučen**\n\nMonitoring vystoupení ministra Šebestyána v Poslanecké sněmovně 11. 6. 2026 k bodu o dotacích Agrofertu. Ministr označil dopis DG Regio za pracovní, právně nezávaznou komunikaci a odmítl výklad, že Komise pozastavila platby; podle něj to může učinit jen prováděcí rozhodnutí. Tvrdí, že předmětem historického auditního šetření nikdy nebyly nárokové dotace (přímé platby) a že ty Komise po celou dobu propláceala. Delší část záznamu je uzamčena.\n\nZdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji.\n\n**Upřesnění povahy zdroje 2026-08-10.** Záznam byl veden jako „oficiální\nprimární zdroj\". To je nepřesné: rubrika ParlamentníListy.cz „Politici\nvoličům\" je **neredigovaná plocha pro sebeprezentaci politiků**, ne\noficiální evidence. Autoritativním záznamem sněmovního vystoupení je\nstenoprotokol Poslanecké sněmovny.\n\nPro [CLM-26](@/dossiers/martin-sebestyan/claims/clm-26.md) to znamená:\nzdroj dokládá, **že ministr tyto věci tvrdí** — a přesně tak je tvrzení\nformulováno —, nedokládá, že jeho výklad je správný."
     }
   ],
   "order": 13

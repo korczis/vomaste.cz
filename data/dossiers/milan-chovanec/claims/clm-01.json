@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/milan-chovanec/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/milan-chovanec"
+  },
+  "text": "Milan Chovanec byl podle oficiálního profilu na webu Vlády ČR ministrem vnitra od 29. 1. 2014 do 13. 12. 2017 (vláda Bohuslava Sobotky, nominován za ČSSD, od 5. 12. 2017 v demisi), předtím hejtmanem Plzeňského kraje (od 2010) a členem ČSSD byl od roku 1997",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/milan-chovanec/sources/SRC-01"
+    }
+  ],
+  "subjects": [
+    "milan-chovanec"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/milan-chovanec/_index.md)."
+    }
+  ]
+}

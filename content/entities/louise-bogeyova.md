@@ -3,6 +3,7 @@
 title = "Louise Bogeyová"
 template = "entity.html"
 weight = 233
+description = "Louise Bogeyová — Kontextová entita — Mluvčí Evropské komise — citována k neproplacení náhrad firmám ze skupiny Agrofert."
 
 [extra]
 generated = true

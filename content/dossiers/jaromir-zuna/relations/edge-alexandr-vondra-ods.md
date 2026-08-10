@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Alexandr Vondra — bývalý ministr obrany a europoslanec za ODS — ODS"
+description = "Alexandr Vondra — bývalý ministr obrany a europoslanec za ODS — ODS. Vztah v grafu dossieru Jaromír Zůna. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 25
 

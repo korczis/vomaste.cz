@@ -3,6 +3,7 @@
 title = "Kancelář prezidenta republiky"
 template = "entity.html"
 weight = 186
+description = "Kancelář prezidenta republiky — Kontextová entita — Vydala prohlášení o připravenosti prezidenta jmenovat Hlaváče."
 
 [extra]
 generated = true

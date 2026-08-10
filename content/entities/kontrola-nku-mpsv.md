@@ -3,6 +3,7 @@
 title = "Kontrola NKÚ na MPSV (2026–2027)"
 template = "entity.html"
 weight = 223
+description = "Kontrola NKÚ na MPSV (2026–2027) — Kontextová entita — Správní kontrola NKÚ zahrnující působení bývalé poradkyně (od července 2026, dokončení ~polovina 2027, zveřejnění po prázdninách 2027)…"
 
 [extra]
 generated = true

@@ -3,6 +3,7 @@
 title = "Krajský úřad Ústeckého kraje"
 template = "entity.html"
 weight = 226
+description = "Krajský úřad Ústeckého kraje — Kontextová entita — Převzal případ černých staveb, upozornil Bílinu na podezření z nečinnosti."
 
 [extra]
 generated = true

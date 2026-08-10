@@ -1,0 +1,30 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "05015502",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/05015502",
+  "nazev": "Kauppias s.r.o.",
+  "sidlo": "Plaská 614/10, Malá Strana, 15000 Praha 5",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "C",
+    "vlozka": "257044"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "Jednatel",
+      "since": "2026-01-08",
+      "kind": "person",
+      "name": "Ján Kožiak"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "person",
+      "name": "Mgr. Petr Macinka",
+      "podil": "100",
+      "vklad": "1000",
+      "splaceno": "100"
+    }
+  ]
+}

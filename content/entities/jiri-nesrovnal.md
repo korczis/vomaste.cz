@@ -3,6 +3,7 @@
 title = "Jiří Nesrovnal"
 template = "entity.html"
 weight = 177
+description = "Jiří Nesrovnal — Kontextová entita — Zástupce Komory daňových poradců ČR; kritik benefitového návrhu."
 
 [extra]
 generated = true

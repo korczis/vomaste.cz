@@ -10,12 +10,24 @@
     "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
   },
   "title": "Kritika očkovací strategie od koaliční SPD",
-  "summary": "Kritika očkovací strategie od koaliční SPD — viz tvrzení CLM-18, CLM-19, CLM-20, CLM-21.",
+  "summary": "Kritika očkovací strategie od koaliční SPD — kritika zdravotnického experta SPD Jana Síly, požadavek SPD na revokaci národní očkovací strategie, ministrovo odmítnutí zavedení registru neočkovaných a charakteristika signálního kódu, i kritika bonusů VZP za proočkovanost od předsedy SPD Tomia Okamury.",
   "period": "2026",
   "status": "status-single",
   "statusLabel": "Sledované téma",
   "anchor": "kauza-ockovani-spd",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-18"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-21"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-45"
     },
@@ -37,19 +49,22 @@
   ],
   "sources": [
     {
-      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-27"
-    },
-    {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-11"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-31"
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-27"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-29"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-30"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-31"
     }
   ],
   "subjects": [

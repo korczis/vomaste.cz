@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/benchmark-graph",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "benchmark-graph",
+  "kind": "npm",
+  "name": "benchmark:graph",
+  "title": "Benchmark grafového layoutu",
+  "category": "provoz",
+  "summary": "Technický benchmark build-time layoutu grafu nad syntetickým grafem (výchozí velikost se dá změnit přes --nodes/--edges). Používá TÝŽ kód, jakým staví registrovou vrstvu build:graph-projections.",
+  "whenToRun": "Ručně, když měříš dopad změny v layoutu. Není součástí `npm run build` — je to výkonnostní report, ne obsahová brána.",
+  "inputs": [
+    "scripts/dossier/lib/graph-layout.mjs"
+  ],
+  "outputs": [
+    "static/data/graph/benchmark.json (jen s --write; gitignorováno a z žádné stránky se neodkazuje)"
+  ],
+  "sourceFile": "scripts/dossier/benchmark-graph.mjs",
+  "describedFrom": "header"
+}

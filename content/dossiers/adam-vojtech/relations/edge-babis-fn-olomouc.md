@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Andrej Babiš — premiér Babiš vyjádřil řediteli FN Olomouc plnou důvěru (18. 2. 2026) — Fakultní nemocnice Olomouc"
+description = "Andrej Babiš — premiér Babiš vyjádřil řediteli FN Olomouc plnou důvěru (18. 2. 2026) —…. Vztah v grafu dossieru Adam Vojtěch. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 4
 

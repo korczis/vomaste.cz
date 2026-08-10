@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/validate-concepts",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "validate-concepts",
+  "kind": "npm",
+  "name": "validate:concepts",
+  "title": "Kontrola konceptů proti skupinám",
+  "category": "validace",
+  "summary": "Ověřuje stránky content/koncepty/* proti data/concept-groups.toml. Každá dlaždice na úvodní stránce se vykresluje z front matter konceptu a odkazuje na jeho stránku.",
+  "enforces": [
+    "Koncept bez polí dlaždice (extra.tile_title / tile_summary / bullets) — jinak by na úvodní stránce tiše vznikl prázdný klikatelný box.",
+    "Koncept v neznámé skupině — jinak by z úvodní stránky tiše zmizel úplně."
+  ],
+  "whenToRun": "V build pipeline; ručně po přidání nebo přesunu konceptu.",
+  "inputs": [
+    "content/koncepty/*.md",
+    "data/concept-groups.toml"
+  ],
+  "sourceFile": "scripts/dossier/validate-concepts.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Obě chyby jsou neviditelné v zeleném `zola build` — proto samostatná brána."
+  ]
+}

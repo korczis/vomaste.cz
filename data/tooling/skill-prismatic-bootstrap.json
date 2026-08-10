@@ -1,0 +1,22 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-prismatic-bootstrap",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-prismatic-bootstrap",
+  "kind": "skill",
+  "name": "prismatic-bootstrap",
+  "title": "Příprava integrace s Prismatic",
+  "category": "reserse",
+  "summary": "Zkontroluje oba repozitáře, vyřeší cestu k prismatic-platform, zaznamená commit SHA, ověří exportní kontrakt a řekne, jestli je bezpečné začít lokální integrační běh.",
+  "whenToRun": "Jako první, dřív než cokoli dalšího z Prismatic vrstvy — kdykoli se úkol dotýká rešerše nebo obohacení ze strany Prismatic.",
+  "describedFrom": "header",
+  "notes": [
+    "Skutečné a otestované je dnes rozřešení konfigurace, kontrola driftu proti auditu a exportní kontrakt (parsování NDJSON, validace záznamů proti schématu, tvrdé odmítnutí neznámé hlavní verze).",
+    "Nepostavené je všechno, co skutečně VOLÁ nějakou schopnost Prismatic. Prismatic sám zatím nemá odpovídající exportér, takže tahle skill nemůže spustit skutečný běh, ať konfigurace říká cokoli.",
+    "Nedostupný prismatic-platform je normální, správně reportovaný stav — ne porucha.",
+    "Výsledky se mají skutečně spustit a přečíst, ne odhadovat nebo si pamatovat z minula."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jiri-milek/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jiri-milek"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil člena vlády)",
+  "description": "Oficiální vládní profil: ministr zemědělství 13. 12. 2017 – 27. 6. 2018, dříve šéf ÚSOVSKO a.s.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/jiri-milek-162043/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jiri-milek/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "jiri-milek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil člena vlády na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci ministra zemědělství od 13. 12. 2017, od 24. 1. 2018 do 27. 6. 2018 v demisi, a dřívější dráhu: generální ředitel a předseda představenstva ÚSOVSKO a.s. (2009–2017), ředitel potravinářské divize tamtéž (2006–2008) a hlavní agronom JZD Troubelice (1989–2005).\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam a zatím jediný přímo otevřený zdroj tohoto tvrzení** — proto stav 1 ZDROJ; povýšení na CORROBORATED vyžaduje skutečné otevření druhého, nezávislého zdroje."
+    }
+  ],
+  "order": 1
+}

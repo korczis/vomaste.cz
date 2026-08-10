@@ -4,6 +4,7 @@ title = "AB private trust I a II"
 template = "entity.html"
 weight = 19
 aliases = ["/dossiers/andrej-babis/entities/ab-private-trusts/"]
+description = "AB private trust I a II — Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
 
 [extra]
 generated = true

@@ -3,6 +3,7 @@
 title = "Senát Parlamentu ČR"
 template = "entity.html"
 weight = 373
+description = "Senát Parlamentu ČR — Kontextová entita — Horní komora parlamentu; projednává stavební novelu i novelu EET."
 
 [extra]
 generated = true

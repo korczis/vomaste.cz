@@ -3,6 +3,7 @@
 title = "Transport & Environment"
 template = "entity.html"
 weight = 413
+description = "Transport & Environment — Kontextová entita — Evropská ekologická organizace; kritizovala zmírnění emisního cíle 2035 (analýza +720 mil. tun CO₂ do 2050)."
 
 [extra]
 generated = true

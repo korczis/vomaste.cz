@@ -10,14 +10,17 @@
     "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
   },
   "text": "Vláda podle Tejce namítá i porušení práva být slyšen, protože se před vydáním předběžného opatření nemohla k žalobě vyjádřit; ministr uvedl: „Porušení práva na to být slyšen nám připadá velmi zásadní.“",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-23"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-22"
     }
   ],
   "subjects": [

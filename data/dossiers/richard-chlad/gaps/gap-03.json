@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/richard-chlad/gaps/GAP-03",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/richard-chlad"
+  },
+  "title": "GAP-03 — Komu patří dva dary po 50 000 Kč z roku 2024",
+  "description": "Dva peněžité dary po 50 000 Kč eviduje výroční finanční zpráva hnutí za rok 2024 u dárce téhož jména, ale s jiným ročníkem narození než pětice plnění za rok 2025; zda se týkají subjektu tohoto přehledu, doloženo není.",
+  "priority": "vysoká",
+  "checked": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-chlad/claims/CLM-10"
+    }
+  ],
+  "subjects": [
+    "chlad"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Předseda strany podle citovaného zpravodajství uvedl: „Dal nám před\neurovolbami dvakrát 50 tisíc korun.\"\n([CLM-04](@/dossiers/richard-chlad/claims/clm-04.md)). Dva peněžité dary\npo 50 000 Kč **v evidenci roku 2024 skutečně jsou**\n([SRC-06](@/dossiers/richard-chlad/sources/src-06.md),\n[CLM-10](@/dossiers/richard-chlad/claims/clm-10.md)).\n\n**Nesedí ale údaj, podle kterého se dárce rozlišuje.** Výroční finanční\nzpráva hnutí za rok 2024 vede tyto dva dary u dárce jménem Richard Chlad\ns datem narození **ročníku 1992**. Pětice bezúplatných plnění ve zprávě\nza rok 2025 ([CLM-01](@/dossiers/richard-chlad/claims/clm-01.md)) je\nnaproti tomu vedena u osoby s titulem Ing. a **ročníkem 1962** — a tento\nročník odpovídá i profilu subjektu tohoto přehledu ve veřejném rejstříku\n([SRC-01](@/dossiers/richard-chlad/sources/src-01.md)). Jiná položka na\ntoto jméno ve zprávě za rok 2024 není.\n\n**Co z toho tento přehled vyvozuje: nic.** Otevřené dokumenty neuvádějí,\nzda jde o dvě různé osoby, o jinou osobu téhož jména, nebo o chybu v\nzapsaném údaji. Bez toho **nelze dary z roku 2024 připsat subjektu tohoto\npřehledu ani mu je upřít** — a nelze z nich nic vyvozovat ani o nikom\njiném.\n\n**Proč je mezera vedena na vysoké prioritě**: bez ní by čtenář mohl\nMacinkovo číslo a evidovaných 638 864 Kč automaticky číst jako údaje o\ntémže dárci a stavět je proti sobě\n([GAP-01](@/dossiers/richard-chlad/gaps/gap-01.md)). Připsat komukoli dar\npodle shody jména je přesně ta chyba, které se tento web vyhýbá.\n\nOsoba s ročníkem 1992 **není subjektem** tohoto ani žádného jiného\npřehledu na tomto webu, nevede se o ní žádné téma a tato mezera pro ni\nnení vstupní branou — je to poznámka o **kvalitě evidence**, ne o člověku."
+    }
+  ],
+  "order": 3
+}

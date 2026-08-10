@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/michaela-sebelova/sources/SRC-03",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/michaela-sebelova"
+  },
+  "title": "SRC-03 — Deník N: Hnutí STAN má nové vedení poslaneckého klubu. Předsedkyní se stala Michaela Šebelová",
+  "description": "Vlastní redakční zpráva Deník N o zvolení Michaely Šebelové předsedkyní poslaneckého klubu STAN a o dalším vedení klubu.",
+  "outlet": "Deník N",
+  "sourceType": "zpravodajství",
+  "url": "https://denikn.cz/minuta/1864438/",
+  "published": "2025-10-10",
+  "retrieved": "2026-08-07",
+  "sourceFamily": "denik-n",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/michaela-sebelova/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "michaela-sebelova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Vlastní redakční zpráva Deník N („Minuta N“) z 10. 10. 2025, 16:09, otevřena a přečtena 2026-08-07, bez ČTK byline.\nInformuje o zvolení Michaely Šebelové předsedkyní poslaneckého klubu STAN a o zvolení Pavly Pivoňky Vaňkové první místopředsedkyní klubu a dalších pěti místopředsedů/místopředsedkyň.\n\nPoznámka k typu zdroje a jeho limitům: vlastní redakční práce Deník N (`sourceFamily: denik-n`), bez agenturní přebírky ČTK — jiný vydavatel i jiná doména než SRC-02 (Deník.cz/ČTK), takže spolu s ním tvoří nezávislou dvojici pro účely korporace tvrzení o zvolení předsedkyní klubu. Neuvádí funkci místopředsedkyně hnutí STAN — tu dokládá SRC-02."
+    }
+  ],
+  "order": 3
+}

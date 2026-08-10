@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zdenek-hrib/sources/SRC-03",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zdenek-hrib"
+  },
+  "title": "SRC-03 — CNN Prima NEWS: Hřib je znovu šéf Pirátů, Bartoš mu dal kšiltovku. Rozkopli jsme dveře, řekl staronový předseda",
+  "description": "Vlastní redakční zpráva CNN Prima NEWS (autor Marek Pausz) o znovuzvolení Zdeňka Hřiba předsedou České pirátské strany.",
+  "outlet": "CNN Prima News",
+  "sourceType": "zpravodajství",
+  "url": "https://cnn.iprima.cz/hrib-je-znovu-sef-piratu-bartos-mu-dal-ksiltovku-rozkopli-jsme-dvere-rekl-staronovy-predseda-501700",
+  "published": "2026-01-17",
+  "retrieved": "2026-08-07",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zdenek-hrib/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "zdenek-hrib"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Vlastní redakční zpráva CNN Prima NEWS (autor Marek Pausz) z 17. 1. 2026, otevřena a přečtena 2026-08-07.\nInformuje o znovuzvolení Zdeňka Hřiba předsedou České pirátské strany na sjezdu v Prachaticích (469 hlasů proti 257 pro Davida Witosze), cituje jeho vyjádření po zvolení a opakovaně jej označuje jako poslance.\n\nPoznámka k typu zdroje a jeho limitům: vlastní redakční práce CNN Prima NEWS s uvedeným bylinem, bez ČTK přebírky u tohoto textu — jiný vydavatel i jiná doména než SRC-02 (ČeskéNoviny.cz/ČTK), takže spolu s ním tvoří nezávislou dvojici pro účely korporace tvrzení o znovuzvolení předsedou strany."
+    }
+  ],
+  "order": 3
+}

@@ -16,6 +16,9 @@
   {{ table::advanced_table(id="src-meta", caption="Metadata zdroje " ~ record.identifier, extra_class="mb-8") }}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Typ</th><td class="p-3">{{ record.sourceType }}</td></tr>
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Odkaz</th><td class="p-3"><a href="{{ record.url }}" rel="external" class="break-all">{{ record.url }}</a></td></tr>
+      {% if record.localDocument %}
+      <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Archivovaný dokument</th><td class="p-3"><a href="{{ config.base_url }}/{{ record.localDocument.path }}" class="break-all font-semibold text-[#f3e5c0] no-underline hover:underline">Stáhnout kopii ({{ record.localDocument.retrievedAt }})</a><p class="mt-1 text-xs text-white/55">Uloženo proti zmizení z internetu. {{ record.localDocument.reviewNote }}</p></td></tr>
+      {% endif %}
       {% if record.published %}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Publikováno</th><td class="p-3">{{ record.published }}</td></tr>
       {% else %}
@@ -39,6 +42,43 @@
           </p>
           <p class="mt-1 text-sm leading-relaxed text-white/70">{{ c.text }}</p>
         </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {#- Opačný směr k dossier-case.html, které odkazuje na své zdroje
+      (view.resolved.sources) — bez tohoto bloku čtenář stránky zdroje
+      neměl žádnou cestu zjistit, do jaké kauzy je zdroj zařazen. Pole
+      je počítané stejně jako view.related.gaps na stránce tvrzení
+      (build-view-models.mjs, relatedOf); šabloně dosud chybělo ho
+      vykreslit. -#}
+  {% if view.related.cases %}
+  <section class="mb-8" aria-labelledby="src-cases-h">
+    <h2 id="src-cases-h" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Kauzy citující tento zdroj ({{ view.related.cases | length }})</h2>
+    <ul class="space-y-2">
+      {% for cs in view.related.cases %}
+      <li class="rounded-lg border border-white/10 bg-white/[0.03] p-3 text-sm">
+        <a href="{{ config.base_url }}{{ cs.route }}" class="id-chip font-mono text-xs font-bold text-[#f3e5c0] no-underline hover:underline">{{ cs.identifier }}</a>
+        <span class="ml-2 text-white/70">{{ cs.title }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {#- Opačný směr k dossier-relation.html, které odkazuje na své zdroje
+      (view.resolved.sources) — stejný vzor jako blok „Vztahy v grafu"
+      na stránce tvrzení (dossier-claim.html). -#}
+  {% if view.related.relations %}
+  <section class="mb-8" aria-labelledby="src-rel-h">
+    <h2 id="src-rel-h" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Vztahy v grafu opřené o tento zdroj ({{ view.related.relations | length }})</h2>
+    <ul class="space-y-2">
+      {% for rp in view.related.relations %}
+      {% set rel_page = get_page(path="dossiers/" ~ dossier_slug ~ "/relations/" ~ rp.identifier ~ ".md") %}
+      <li class="rounded-lg border border-white/10 bg-white/[0.03] p-3 text-sm">
+        <a href="{{ config.base_url }}{{ rp.route }}" class="text-white/80 no-underline hover:text-white hover:underline">{{ rel_page.title }}</a>
+      </li>
       {% endfor %}
     </ul>
   </section>

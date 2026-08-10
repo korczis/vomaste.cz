@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-arenberger/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-arenberger"
+  },
+  "title": "SRC-02 — Seznam Zprávy: Arenberger rezignuje. Zdravotnictví znovu převezme Adam Vojtěch",
+  "description": "Seznam Zprávy o rezignaci Arenbergera (25. 5. 2021) po zjištěních o majetkových přiznáních; jeho obhajoba.",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "zpravodajský článek",
+  "url": "https://www.seznamzpravy.cz/clanek/arenberger-rezignuje-zdravotnictvi-znovu-prevezme-adam-vojtech-155895",
+  "retrieved": "2026-08-08",
+  "published": "2021-05-25",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-arenberger/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "petr-arenberger"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek Seznam Zpráv z 25. 5. 2021, otevřen a přečten 2026-08-08.\nUvádí, že Petr Arenberger po 48 dnech rezignoval na funkci ministra zdravotnictví poté, co redakce popsala nesrovnalosti v jeho majetkových přiznáních (v aktualizovaném přiznání za rok 2020 uvedl 65 nemovitostí a asi 30 mil. Kč vedlejších příjmů, dřívější přiznání byla výrazně stručnější; psalo se i o pronájmu budovy nemocnici, kterou řídil). Sám uvedl, že rezignoval dobrovolně kvůli tlaku na rodinu, přiznání vyplnil nesprávně, ale daně platí poctivě, a dění označil za „mediální lynč“. Nahradil ho Adam Vojtěch.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství (zároveň redakce, jejíž zjištění rezignaci předcházela) — zjištění jsou tvrzení redakce a jím přiznaná chyba ve vyplnění, **nikoli soudní či správní verdikt; jeho obhajoba se uvádí při každé zmínce.**"
+    }
+  ],
+  "order": 2
+}

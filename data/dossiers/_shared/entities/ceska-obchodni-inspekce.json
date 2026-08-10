@@ -1,0 +1,42 @@
+{
+  "externalIds": { "ares": "00020869" },
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/ceska-obchodni-inspekce",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "ceska-obchodni-inspekce",
+  "entityId": "ceska-obchodni-inspekce",
+  "title": "Česká obchodní inspekce",
+  "entityType": "public_institution",
+  "role": "orgán dozoru nad ochranou spotřebitele",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "contextual",
+  "dossiers": [
+    "james-quick"
+  ],
+  "order": 521,
+  "provenance": {
+    "discoveredAt": "2026-08-05",
+    "discoveredVia": [
+      "edge-james-quick-ceska-obchodni-inspekce"
+    ],
+    "claimRefs": [
+      "CLM-10"
+    ],
+    "sourceRefs": [
+      "SRC-11"
+    ],
+    "cluster": "cerd",
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová veřejná instituce: v roce 2018 zveřejnila spotřebitelské varování před službami CERD. Entita označuje původ úředního stanoviska, nikoli tvrzení o osobním vztahu k Jamesi Quickovi."
+    }
+  ]
+}

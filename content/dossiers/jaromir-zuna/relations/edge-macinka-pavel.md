@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Petr Macinka — na Facebooku zveřejnil nezveřejněný rozhovor prezidenta Pavla dříve, než ho vydala armáda — Petr Pavel (prezident)"
+description = "Petr Macinka — na Facebooku zveřejnil nezveřejněný rozhovor prezidenta Pavla dříve, než…. Vztah v grafu dossieru Jaromír Zůna. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 21
 

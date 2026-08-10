@@ -1,0 +1,34 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "02922703",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/02922703",
+  "nazev": "Bydlíme v Králově Poli, z.s.",
+  "sidlo": "Tučkova 780/9, Veveří, 60200 Brno",
+  "spisovaZnacka": {
+    "soud": "KSBR",
+    "oddil": "L",
+    "vlozka": "19717"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "1. místopředseda",
+      "since": "2014-05-13",
+      "kind": "person",
+      "name": "Martin Pavlík"
+    },
+    {
+      "role": "předseda",
+      "since": "2014-05-13",
+      "kind": "person",
+      "name": "Michal Vít"
+    },
+    {
+      "role": "2. místopředseda",
+      "since": "2014-05-13",
+      "kind": "person",
+      "name": "Josef Nerušil"
+    }
+  ],
+  "spolecnici": []
+}

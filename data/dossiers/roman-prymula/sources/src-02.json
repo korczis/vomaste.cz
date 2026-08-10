@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/roman-prymula/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/roman-prymula"
+  },
+  "title": "SRC-02 — RESPEKT: „Zas tolik jsem toho neprovedl,“ říká ministr zdravotnictví",
+  "description": "RESPEKT o říjnu 2020: noční návštěva restaurace, výzva k rezignaci, návrh odvolání, Prymulova obhajoba.",
+  "outlet": "Respekt",
+  "sourceType": "zpravodajský článek",
+  "url": "https://www.respekt.cz/agenda/zas-tolik-jsem-toho-neprovedl-rika-ministr-zdravotnictvi",
+  "retrieved": "2026-08-08",
+  "published": "2020-10-23",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/roman-prymula/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "roman-prymula"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek RESPEKTU z 23. 10. 2020, otevřen a přečten 2026-08-08.\nUvádí, že ministr zdravotnictví Roman Prymula strávil ve středu večer asi 90 minut v restauraci na pražském Vyšehradě v době, kdy restaurace musely být podle protiepidemických opatření zavřené; premiér Babiš jej poté vyzval k rezignaci („Požádal jsem pana ministra o rezignaci, jinak ho odvolám“) a předložil prezidentovi návrh na jeho odvolání. Prymula na svou obhajobu uvedl, že podle svého přesvědčení nic neporušil („Já si myslím, že jsem toho zas tolik neprovedl“). V souvislosti s událostí rezignoval Jaroslav Faltýnek na funkci 1. místopředsedy ANO.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství — dokládá průběh událostí a výroky aktérů jejich vlastními slovy. **Výzva k rezignaci a návrh odvolání jsou politické kroky premiéra, nikoli soudní či správní závěr o porušení pravidel; Prymulovo popření se uvádí při každé zmínce.**"
+    }
+  ],
+  "order": 2
+}

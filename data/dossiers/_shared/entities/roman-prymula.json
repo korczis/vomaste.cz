@@ -9,11 +9,12 @@
   "entityId": "roman-prymula",
   "title": "Roman Prymula",
   "entityType": "person",
-  "publicationRole": "context",
-  "dossierEnabled": false,
-  "dossierStatus": "not_authorized",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
   "coverageState": "discovered",
   "dossiers": [
+    "roman-prymula",
     "adam-vojtech"
   ],
   "order": 369,

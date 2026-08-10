@@ -3,6 +3,7 @@
 title = "Národní ústav duševního zdraví"
 template = "entity.html"
 weight = 296
+description = "Národní ústav duševního zdraví — Kontextová entita — Jeho doporučení citují předkladatelé zákazu mobilů."
 
 [extra]
 generated = true

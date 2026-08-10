@@ -9,15 +9,18 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
   },
-  "text": "Detektivové Národní centrály proti organizovanému zločinu zahájili 4. května 2026 trestní stíhání tří osob v bitcoinové kauze — exministra spravedlnosti Pavla Blažka, jeho bývalého náměstka Radomíra Daňhela a brněnského advokáta Kárima Titze. Jde o zahájení stíhání, tedy o obvinění, nikoli o obžalobu ani o odsouzení; platí presumpce neviny.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Policejní orgán Národní centrály proti organizovanému zločinu rozhodl 4. května 2026 o zahájení trestního stíhání dalších tří osob ve věci související s darováním bitcoinů Ministerstvu spravedlnosti; věc je u Vrchního státního zastupitelství v Olomouci vedena pod sp. zn. 2 VZV 11/2025. Podle citovaného zpravodajství jde o exministra spravedlnosti Pavla Blažka, jeho bývalého náměstka Radomíra Daňhela a brněnského advokáta Kárima Titze — tisková zpráva zastupitelství jména neuvádí. Jde o zahájení stíhání, tedy o obvinění, nikoli o obžalobu ani o odsouzení; platí presumpce neviny.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-11"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-29"
     }
   ],
   "subjects": [

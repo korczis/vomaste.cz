@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/pavel-drobil",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "pavel-drobil",
+  "entityId": "pavel-drobil",
+  "title": "Pavel Drobil",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "pavel-drobil"
+  ],
+  "order": 527,
+  "provenance": {
+    "discoveredAt": "2026-08-06",
+    "discoveredVia": [
+      "opozice-25-politiku-2026-08-06"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — místopředseda ODS, stínový ministr průmyslu a obchodu, bývalý ministr životního prostředí."
+    }
+  ]
+}

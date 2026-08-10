@@ -14,10 +14,13 @@
   "outlet": "Vláda České republiky (vlada.gov.cz)",
   "sourceType": "oficiální primární zdroj",
   "url": "https://vlada.gov.cz/cz/vlada/clenove-vlady/zuzana-mrazova-223988/",
-  "retrieved": "2026-07-30",
+  "retrieved": "2026-08-05",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-34"
     }
   ],
   "subjects": [
@@ -26,7 +29,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Oficiální stránka na webu Úřadu vlády, otevřena a přečtena 2026-07-30.\nUvádí funkci **ministryně pro místní rozvoj** a doložený přehled kariéry: narozena 24. 2. 1978 v Duchcově; PřF UK geografie (1996–2001); referentka odboru územního plánování MMR (2000–2006); místostarostka (2015–2018) a starostka Bíliny (2018–2025); poslankyně od 2025.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** —\ndokládá existenci a formulaci úředního údaje, ne nezávislé redakční\nposouzení. Potvrzení **současné** funkce v této vládě vychází z ověření\noficiálního seznamu členů vlády k 2026-07-30 (viz\n`data/government.toml`). Sebeprezentační části profilu nejsou nezávisle\nověřeným faktem a dossier je jako fakt nepřebírá."
+      "value": "Oficiální stránka na webu Úřadu vlády, otevřena a přečtena 2026-07-30.\nUvádí funkci **ministryně pro místní rozvoj** a doložený přehled kariéry: narozena 24. 2. 1978 v Duchcově; PřF UK geografie (1996–2001); referentka odboru územního plánování MMR (2000–2006); místostarostka (2015–2018) a starostka Bíliny (2018–2025); poslankyně od 2025.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** —\ndokládá existenci a formulaci úředního údaje, ne nezávislé redakční\nposouzení. Potvrzení **současné** funkce v této vládě vychází z ověření\noficiálního seznamu členů vlády k 2026-07-30 (viz\n`data/government.toml`). Sebeprezentační části profilu nejsou nezávisle\nověřeným faktem a dossier je jako fakt nepřebírá.\n\n**Doplněno 2026-08-05 (T-070).** Zdroj znovu otevřen a přečten; přiřazen i k [CLM-34](@/dossiers/zuzana-mrazova/claims/clm-34.md), které dosud stálo jen na dvou vydáních agenturní zprávy ČTK. Oficiální životopis na webu Úřadu vlády uvádí v části „Profesní a veřejná činnost“ doslovně „2018–2025: Město Bílina, starostka“ a „2015–2018: Město Bílina, místostarostka pro věci investiční“ a v textové části „Do zastupitelstva města Bíliny byla zvolena na jaře roku 2015 a zároveň byla zvolena místostarostkou města pro věci investiční, v roce 2018 byla zvolena starostkou města.“ **Oprava:** agenturní zpravodajství uvádělo „čtyři roky místostarostkou“; podle oficiálního životopisu šlo o období 2015–2018, tedy tři roky. Tvrzení bylo opraveno na období, která uvádí primární zdroj. **Limit:** jde o **autobiografický údaj zveřejněný úřadem**, tedy o sebeprezentaci úřadující členky vlády, ne o nezávislé zjištění třetí strany; volební a úřední doklady jednotlivých mandátů ověřeny nebyly."
     }
   ],
   "order": 1

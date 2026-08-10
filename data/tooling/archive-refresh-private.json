@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/archive-refresh-private",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "archive-refresh-private",
+  "kind": "npm",
+  "name": "archive:refresh-private",
+  "title": "Úplný refresh soukromé Zone B",
+  "category": "reserse",
+  "summary": "Na důvěryhodném stroji stáhne všechny listiny indexované v private raw Justice metadatech, atomicky dokončí soubory, přegeneruje globální checksum inventář a vyžádá úplné pokrytí.",
+  "enforces": [
+    "Selhání downloadu, chybný typ nebo velikost souboru, hash mismatch, zbylý .part soubor nebo jedinou indexovanou listinu chybějící v soukromém archivu."
+  ],
+  "whenToRun": "Pouze na důvěryhodném stroji s dostatečnou kapacitou a perzistentním úložištěm Zone B, po archive:refresh-public.",
+  "inputs": [
+    "$VOMASTE_JUSTICE_ARCHIVE_ROOT/justice-api-metadata/**",
+    "Justice document endpoint"
+  ],
+  "outputs": [
+    "$VOMASTE_JUSTICE_ARCHIVE_ROOT/sbirka-listin/**",
+    "$VOMASTE_JUSTICE_ARCHIVE_ROOT/sbirka-listin/inventory.sha256"
+  ],
+  "sourceFile": "scripts/osint/refresh-document-archive.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Nikdy neběží v CI a nikdy nic ze Zone B nepřidává do Gitu.",
+    "Při nedostatku místa selže a zachová resumovatelné .part; následná kontrola je označí jako nehotový stav, ne jako kompletní archiv."
+  ]
+}

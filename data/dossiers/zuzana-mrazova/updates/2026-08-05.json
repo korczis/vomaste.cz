@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/updates/2026-08-05",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
+  },
+  "date": "2026-08-05",
+  "summary": "T-070 — posílení evidence u tvrzení třídy „≥2 citace, jedna rodina/jeden vydavatel“. Prověřeno 14 takových tvrzení; 8 povýšeno na CORROBORATED nezávislým dokladem (usnesení zastupitelstva Bíliny ze 17. 6. 2026, hlasování Sněmovny č. 117, senátní tisk 272, oficiální životopis na webu Úřadu vlády, FORUM 24, ČT24). Proti primárním dokumentům opraveno CLM-33 (mandát zanikl k 25. 5. 2026, ne 17. 6.), CLM-34 (místostarostkou 2015–2018, tedy tři roky, ne čtyři), CLM-47 (88 hlasů pro, ne 89) a CLM-48 (doslovné znění nového § 256 odst. 3 včetně druhé kumulativní podmínky; jde o znění schválené Sněmovnou a projednávané Senátem, ne o platný zákon). Šest tvrzení povýšeno nebylo — důvody v GAP-16.",
+  "addedClaims": [],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-23"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-33"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-34"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-47"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-48"
+    }
+  ],
+  "addedGaps": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/gaps/GAP-16"
+    }
+  ],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-35"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-36"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-37"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-08"
+    }
+  ]
+}

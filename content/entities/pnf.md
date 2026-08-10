@@ -4,6 +4,7 @@ title = "Národní finanční prokuratura (PNF, Francie)"
 template = "entity.html"
 weight = 8
 aliases = ["/dossiers/andrej-babis/entities/pnf/"]
+description = "Národní finanční prokuratura (PNF, Francie) — Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu."
 
 [extra]
 generated = true

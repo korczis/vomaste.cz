@@ -1,0 +1,21 @@
++++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
+title = "GAP-03 — Sbírka listin dohledána, ale obsahuje jen údaje mimo rozsah"
+description = "Nezávislé (jiné než ARES/Podnikatel.cz) doložení rolí a podílů skrze listinné dokumenty ve Sbírce listin zůstává neobsazené — dohledaný obsah je buď mimo rozsah autorizace, nebo nebyl technicky dostupný k přímému ověření."
+template = "dossier-gap.html"
+weight = 3
+
+[extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/martin-pavlik/gaps/GAP-03"
+view_model = "generated/views/dossiers/martin-pavlik/gaps/gap-03.json"
+dossier = "martin-pavlik"
+record_type = "gap"
+lang = "cs"
+gap_id = "GAP-03"
++++
+**Aktualizace 2026-08-06, druhé kolo.** Primární or.justice.cz zůstává technicky nedostupný přímým dotazem (stavová formulářová aplikace bez URL podle IČO). Index Sbírky listin HYDROPROGRESSu se ale podařilo dohledat přes odvozený rejstříkový přehled (kurzy.cz), který cituje přesné spisové značky (C 89961/KSBR) — tři notářské zápisy (SL1 z 22. 9. 2015, SL2 z 5. 11. 2019, SL3 z 19. 5. 2022) a čtyři účetní závěrky (2021–2024).
+
+Datum SL3 (19.–22. 5. 2022) přesně odpovídá datu zápisu Pavlíkova 80% podílu v ARES — ale podle dohledaného souhrnu dokument primárně zaznamenává vstup **jiné, jmenovité fyzické osoby** jako nového společníka a jednatele k témuž datu. To je informace o **třetí osobě mimo rozsah** této autorizace (viz update 2026-08-05: „spoluspolečníci, členové orgánů a výboru... jsou soukromé třetí osoby a autorizace je výslovně vylučuje") — jméno se do dossieru nepřebírá. Zjištění samo o sobě nicméně vysvětluje, proč Pavlíkův podíl činí 80 %, ne 100 %: zbylých 20 % zjevně drží jiná osoba, což dossier nikde netvrdil ani nepopíral.
+
+Obsah zakladatelského zápisu SL1 (2015) se nepodařilo v tomto kole spolehlivě načíst (odvozený zdroj vrátil jen metadata, ne text listiny). Nezávislé doložení Pavlíkových vlastních rolí skrze listinu tak zůstává neuzavřené — ne proto, že by zdroj mlčel, ale protože dostupný obsah buď patří třetí osobě, nebo nebyl ověřitelně načten. Přímý přístup k or.justice.cz (řízený prohlížeč nebo jiný nástroj) zůstává cestou pro budoucí kolo.

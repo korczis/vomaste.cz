@@ -1,0 +1,166 @@
+{
+  "retrieved": "2026-08-09",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "48133981"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "48133981",
+        "obchodniJmeno": "Státní zemědělský intervenční fond",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodOkresu": 3100,
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 19,
+          "nazevSpravnihoObvodu": "Praha 1",
+          "kodMestskehoObvodu": 19,
+          "nazevMestskehoObvodu": "Praha 1",
+          "kodMestskeCastiObvodu": 500054,
+          "kodUlice": 477435,
+          "nazevMestskeCastiObvodu": "Praha 1",
+          "nazevUlice": "Ve Smečkách",
+          "cisloDomovni": 801,
+          "kodCastiObce": 490148,
+          "cisloOrientacni": 33,
+          "nazevCastiObce": "Nové Město",
+          "kodAdresnihoMista": 21706051,
+          "psc": 11000,
+          "textovaAdresa": "Ve Smečkách 801/33, Nové Město, 11000 Praha 1",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "381",
+        "pravniFormaRos": "382",
+        "financniUrad": "001",
+        "datumVzniku": "1993-01-01",
+        "datumAktualizace": "2026-03-12",
+        "dic": "CZ48133981",
+        "icoId": "48133981",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Ve Smečkách 801/33",
+          "radekAdresy2": "Nové Město",
+          "radekAdresy3": "11000 Praha 1"
+        },
+        "czNace2008": [
+          "84130"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "NEEXISTUJICI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "NEEXISTUJICI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "AKTIVNI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Státní zemědělský intervenční fond",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 477435,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Ve Smečkách",
+                  "cisloDomovni": 801,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 33,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21706051,
+                  "psc": 11000,
+                  "textovaAdresa": "Ve Smečkách 801/33, Nové Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "381",
+            "pravniFormaRos": "382",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Státní zemědělský intervenční fond",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodOkresu": 3100,
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 477435,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Ve Smečkách",
+                  "cisloDomovni": 801,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 33,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21706051,
+                  "psc": 11000,
+                  "textovaAdresa": "Ve Smečkách 801/33, Nové Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "382",
+            "datovyZdroj": "ros"
+          }
+        ],
+        "czNace": [
+          "84130"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

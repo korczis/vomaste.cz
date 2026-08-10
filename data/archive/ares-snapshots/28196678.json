@@ -1,0 +1,34 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "28196678",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/28196678",
+  "nazev": "ČD Cargo, a.s.",
+  "sidlo": "Jankovcova 1569/2c, Holešovice, 17000 Praha 7",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "B",
+    "vlozka": "12844"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "člen představenstva",
+      "since": "2022-06-07",
+      "kind": "person",
+      "name": "Martin Svojanovský"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2025-04-29",
+      "kind": "person",
+      "name": "Ing. Robert Heděnec"
+    },
+    {
+      "role": "předseda představenstva",
+      "since": "2026-02-01",
+      "kind": "person",
+      "name": "Ing. Radim Ječný"
+    }
+  ],
+  "spolecnici": []
+}

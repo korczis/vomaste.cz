@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jiri-rusnok/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jiri-rusnok"
+  },
+  "text": "Jiří Rusnok byl podle oficiálního přehledu členů své vlády na webu Vlády ČR předsedou vlády ČR od 25. 6. 2013, přičemž od 13. 8. 2013 do 29. 1. 2014 vedl vládu v demisi",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jiri-rusnok/sources/SRC-01"
+    }
+  ],
+  "subjects": [
+    "jiri-rusnok"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jiri-rusnok/_index.md)."
+    }
+  ]
+}

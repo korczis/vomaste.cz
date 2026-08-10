@@ -3,6 +3,7 @@
 title = "Kateřina Stojanová"
 template = "entity.html"
 weight = 197
+description = "Kateřina Stojanová — Kontextová entita — Pirátská poslankyně; interpelace na Mrázovou. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

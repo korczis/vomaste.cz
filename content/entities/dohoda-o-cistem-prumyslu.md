@@ -3,6 +3,7 @@
 title = "Dohoda o čistém průmyslu (Clean Industrial Deal)"
 template = "entity.html"
 weight = 112
+description = "Dohoda o čistém průmyslu (Clean Industrial Deal) — Kontextová entita — Rámec EU s akčními plány pro ocelářský, automobilový a chemický průmysl."
 
 [extra]
 generated = true

@@ -3,6 +3,7 @@
 title = "Rozpočtový výbor Poslanecké sněmovny"
 template = "entity.html"
 weight = 370
+description = "Rozpočtový výbor Poslanecké sněmovny — Kontextová entita — Doporučil Vojtěchův benefitový návrh ke schválení."
 
 [extra]
 generated = true

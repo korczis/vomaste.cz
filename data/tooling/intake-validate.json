@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/intake-validate",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "intake-validate",
+  "kind": "npm",
+  "name": "intake:validate",
+  "title": "Validace intake manifestu",
+  "category": "kontrola",
+  "summary": "Samostatný validátor už zapsaného manifestu proti schemas/intake/intake-manifest.schema.json.",
+  "enforces": [
+    "Manifest, který neodpovídá schématu intake manifestu."
+  ],
+  "whenToRun": "Když chceš překontrolovat manifest z dřívější verze procesoru bez opakování celé pipeline.",
+  "inputs": [
+    "manifest.json",
+    "schemas/intake/intake-manifest.schema.json"
+  ],
+  "sourceFile": "scripts/intake/validate-manifest.mjs",
+  "describedFrom": "header"
+}

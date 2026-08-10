@@ -1,0 +1,246 @@
+{
+  "retrieved": "2026-08-09",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "26547783"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "26547783",
+        "obchodniJmeno": "Asociace malých a středních podniků a živnostníků ČR",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 86,
+          "nazevSpravnihoObvodu": "Praha 8",
+          "kodMestskehoObvodu": 86,
+          "nazevMestskehoObvodu": "Praha 8",
+          "kodMestskeCastiObvodu": 500208,
+          "kodUlice": 469718,
+          "nazevMestskeCastiObvodu": "Praha 8",
+          "nazevUlice": "Sokolovská",
+          "cisloDomovni": 100,
+          "kodCastiObce": 400637,
+          "cisloOrientacni": 94,
+          "nazevCastiObce": "Karlín",
+          "kodAdresnihoMista": 22349561,
+          "psc": 18600,
+          "textovaAdresa": "Sokolovská 100/94, Karlín, 18600 Praha 8",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "706",
+        "pravniFormaRos": "706",
+        "financniUrad": "008",
+        "datumVzniku": "2001-11-26",
+        "datumAktualizace": "2026-08-01",
+        "dic": "CZ26547783",
+        "icoId": "26547783",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Sokolovská 100/94",
+          "radekAdresy2": "Karlín",
+          "radekAdresy3": "18600 Praha 8"
+        },
+        "czNace2008": [
+          "94120"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Asociace malých a středních podniků a živnostníků ČR",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 86,
+                  "nazevSpravnihoObvodu": "Praha 8",
+                  "kodMestskehoObvodu": 86,
+                  "nazevMestskehoObvodu": "Praha 8",
+                  "kodMestskeCastiObvodu": 500208,
+                  "kodUlice": 469718,
+                  "nazevMestskeCastiObvodu": "Praha 8",
+                  "nazevUlice": "Sokolovská",
+                  "cisloDomovni": 100,
+                  "kodCastiObce": 400637,
+                  "cisloOrientacni": 94,
+                  "nazevCastiObce": "Karlín",
+                  "kodAdresnihoMista": 22349561,
+                  "psc": 18600,
+                  "textovaAdresa": "Sokolovská 100/94, Karlín, 18600 Praha 8",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "706",
+            "pravniFormaRos": "706",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Asociace malých a středních podniků a živnostníků ČR",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 86,
+                  "nazevSpravnihoObvodu": "Praha 8",
+                  "kodMestskehoObvodu": 86,
+                  "nazevMestskehoObvodu": "Praha 8",
+                  "kodMestskeCastiObvodu": 500208,
+                  "kodUlice": 469718,
+                  "nazevMestskeCastiObvodu": "Praha 8",
+                  "nazevUlice": "Sokolovská",
+                  "cisloDomovni": 100,
+                  "kodCastiObce": 400637,
+                  "cisloOrientacni": 94,
+                  "nazevCastiObce": "Karlín",
+                  "kodAdresnihoMista": 22349561,
+                  "psc": 18600,
+                  "textovaAdresa": "Sokolovská 100/94, Karlín, 18600 Praha 8",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "706",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Asociace malých a středních podniků a živnostníků ČR",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 86,
+                  "nazevSpravnihoObvodu": "Praha 8",
+                  "kodMestskehoObvodu": 86,
+                  "nazevMestskehoObvodu": "Praha 8",
+                  "kodMestskeCastiObvodu": 500208,
+                  "kodUlice": 469718,
+                  "nazevMestskeCastiObvodu": "Praha 8",
+                  "nazevUlice": "Sokolovská",
+                  "cisloDomovni": 100,
+                  "kodCastiObce": 400637,
+                  "cisloOrientacni": 94,
+                  "nazevCastiObce": "Karlín",
+                  "kodAdresnihoMista": 22349561,
+                  "psc": 18600,
+                  "textovaAdresa": "Sokolovská 100/94, Karlín, 18600 Praha 8",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "706",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Asociace malých a středních podniků a živnostníků ČR",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 86,
+                  "nazevSpravnihoObvodu": "Praha 8",
+                  "kodMestskehoObvodu": 86,
+                  "nazevMestskehoObvodu": "Praha 8",
+                  "kodMestskeCastiObvodu": 500208,
+                  "kodUlice": 469718,
+                  "nazevMestskeCastiObvodu": "Praha 8",
+                  "nazevUlice": "Sokolovská",
+                  "cisloDomovni": 100,
+                  "kodCastiObce": 400637,
+                  "cisloOrientacni": 94,
+                  "nazevCastiObce": "Karlín",
+                  "kodAdresnihoMista": 22349561,
+                  "psc": 18600,
+                  "textovaAdresa": "Sokolovská 100/94, Karlín, 18600 Praha 8",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "706",
+            "spisovaZnacka": "L 12282/MSPH",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "94120"
+        ]
+      }
+    ]
+  }
+}

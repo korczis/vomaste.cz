@@ -1,0 +1,41 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-09",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/26557975",
+  "status": "OK",
+  "subject": {
+    "ico": "26557975",
+    "businessName": "Jaguar klub České republiky, z.s.",
+    "registerReference": "L 20217/MSPH"
+  },
+  "filings": [
+    {
+      "referenceLabel": "L 20217/SL1/MSPH",
+      "documentType": "ostatní zápis z jednání členské schůze",
+      "createdAt": "03-03-2023",
+      "receivedByCourtAt": "10-05-2023",
+      "filedAt": "17-07-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 24724
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 20217/SL2/MSPH",
+      "documentType": "stanovy společnosti",
+      "createdAt": "03-03-2023",
+      "receivedByCourtAt": "10-05-2023",
+      "filedAt": "17-07-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 99081
+        }
+      ]
+    }
+  ]
+}

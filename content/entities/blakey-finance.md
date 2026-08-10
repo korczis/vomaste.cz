@@ -4,6 +4,7 @@ title = "BLAKEY FINANCE LIMITED (BVI)"
 template = "entity.html"
 weight = 13
 aliases = ["/dossiers/andrej-babis/entities/blakey-finance/"]
+description = "BLAKEY FINANCE LIMITED (BVI) — Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu."
 
 [extra]
 generated = true

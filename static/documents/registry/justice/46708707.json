@@ -1,0 +1,1964 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-09",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/46708707",
+  "status": "OK",
+  "subject": {
+    "ico": "46708707",
+    "businessName": "SETUZA a.s.",
+    "registerReference": "B 273/KSUL"
+  },
+  "filings": [
+    {
+      "referenceLabel": "B 273/SL1/KSUL",
+      "documentType": "stanovy společnosti",
+      "createdAt": "18-06-1996",
+      "filedAt": "05-03-1999",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 18,
+          "sizeBytes": 202890
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL2/KSUL",
+      "documentType": "notářský zápis NZ 133/96",
+      "createdAt": "17-09-1996",
+      "filedAt": "05-03-1999",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 15,
+          "sizeBytes": 274897
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL3/KSUL",
+      "documentType": "ostatní -zápis z volební komise",
+      "createdAt": "25-08-1997",
+      "filedAt": "05-03-1999",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 28795
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL4/KSUL",
+      "documentType": "ostatní - zápis z řádné VH",
+      "createdAt": "27-08-1997",
+      "filedAt": "05-03-1999",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 142561
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL5/KSUL",
+      "documentType": "ostatní - zápis z mimořádné VH",
+      "createdAt": "28-04-1998",
+      "filedAt": "05-03-1999",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 11,
+          "sizeBytes": 185516
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL6/KSUL",
+      "documentType": "účetní závěrka - rozvaha k 31.12.1997",
+      "createdAt": "04-04-1998",
+      "filedAt": "05-03-1999",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 88971
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL7/KSUL",
+      "documentType": "účetní závěrka - závěrečný výrok audit.r.97",
+      "createdAt": "06-04-1998",
+      "filedAt": "05-03-1999",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 34927
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL8/KSUL",
+      "documentType": "účetní závěrka - příloha za rok 1997",
+      "createdAt": "01-04-1998",
+      "filedAt": "05-03-1999",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 27,
+          "sizeBytes": 606522
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL9/KSUL",
+      "documentType": "ostatní -zápis č.8/1998 z jed.představ",
+      "createdAt": "17-06-1998",
+      "filedAt": "05-03-1999",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 91057
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL10/KSUL",
+      "documentType": "ostatní -zápis č.9/1998 z jed.představ",
+      "createdAt": "29-06-1998",
+      "filedAt": "05-03-1999",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 102001
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL11/KSUL",
+      "documentType": "notářský zápis NZ 163/98",
+      "createdAt": "18-08-1998",
+      "filedAt": "05-03-1999",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 54,
+          "sizeBytes": 1233752
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL12/KSUL",
+      "documentType": "stanovy společnosti",
+      "createdAt": "18-08-1998",
+      "filedAt": "05-03-1999",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 115222
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL13/KSUL",
+      "documentType": "ostatní - odvolání kolektivní prokury",
+      "createdAt": "11-09-1998",
+      "filedAt": "05-03-1999",
+      "digitized": true,
+      "files": []
+    },
+    {
+      "referenceLabel": "B 273/SL14/KSUL",
+      "documentType": "ostatní - kolektivní prokura",
+      "createdAt": "11-09-1998",
+      "filedAt": "05-03-1999",
+      "digitized": true,
+      "files": []
+    },
+    {
+      "referenceLabel": "B 273/SL15/KSUL",
+      "documentType": "ostatní - osvědčení",
+      "createdAt": "11-09-1998",
+      "filedAt": "05-03-1999",
+      "digitized": true,
+      "files": []
+    },
+    {
+      "referenceLabel": "B 273/SL16/KSUL",
+      "documentType": "ostatní -zápis z jednání řádné VH",
+      "createdAt": "25-08-1999",
+      "filedAt": "27-01-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 113368
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL17/KSUL",
+      "documentType": "účetní závěrka -výroční zpráva za r.1998",
+      "filedAt": "27-01-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 25,
+          "sizeBytes": 493098
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL18/KSUL",
+      "documentType": "ostatní - zápis z jednání mimoř. VH",
+      "createdAt": "02-03-2000",
+      "filedAt": "10-05-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 167872
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL19/KSUL",
+      "documentType": "rozhod. o statut. orgánu do DR",
+      "createdAt": "30-03-2000",
+      "filedAt": "10-05-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 15581
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL20/KSUL",
+      "documentType": "ostatní - zápis z 1. zasedání DR",
+      "createdAt": "02-03-2000",
+      "filedAt": "10-05-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 62526
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL21/KSUL",
+      "documentType": "stanovy společnosti - úplné znění",
+      "createdAt": "02-03-2000",
+      "filedAt": "10-05-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 23,
+          "sizeBytes": 407015
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL22/KSUL",
+      "documentType": "účetní závěrka - roční zpráva 1996",
+      "createdAt": "21-04-1997",
+      "filedAt": "13-12-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 31,
+          "sizeBytes": 517963
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL23/KSUL",
+      "documentType": "ostatní - odstoupení z DR",
+      "createdAt": "09-08-2000",
+      "filedAt": "13-12-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 8925
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL24/KSUL",
+      "documentType": "ostatní - odstoupení z DR",
+      "createdAt": "10-08-2000",
+      "filedAt": "13-12-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 9232
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL25/KSUL",
+      "documentType": "ostatní - zápis č. 1 z jedn. DR",
+      "createdAt": "10-08-2000",
+      "filedAt": "13-12-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 19797
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL26/KSUL",
+      "documentType": "notářský zápis NZ 95/2000 - jednání VH",
+      "createdAt": "10-08-2000",
+      "filedAt": "13-12-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 32,
+          "sizeBytes": 441098
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL27/KSUL",
+      "documentType": "stanovy společnosti - úplné znění",
+      "createdAt": "10-08-2000",
+      "filedAt": "13-12-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 22,
+          "sizeBytes": 326797
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL28/KSUL",
+      "documentType": "ostatní - abdikace na f. čl. předst.",
+      "createdAt": "17-08-2000",
+      "filedAt": "13-12-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 9502
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL29/KSUL",
+      "documentType": "ostatní - zápis č. 2 z jednání DR",
+      "createdAt": "21-08-2000",
+      "filedAt": "13-12-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 30488
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL30/KSUL",
+      "documentType": "účetní závěrka - zpráva auditora rok 1999",
+      "createdAt": "29-06-2000",
+      "filedAt": "13-12-2000",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 44,
+          "sizeBytes": 793773
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL31/KSUL",
+      "documentType": "ostatní - zápis č. 6 z jednání DR",
+      "createdAt": "13-12-2000",
+      "filedAt": "04-05-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 52540
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL32/KSUL",
+      "documentType": "ostatní -osvědčení - Ing.Kubát",
+      "createdAt": "21-12-2000",
+      "filedAt": "04-05-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 13827
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL33/KSUL",
+      "documentType": "ostatní - osvědčení - Ing.Macek",
+      "createdAt": "21-12-2000",
+      "filedAt": "04-05-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 14122
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL34/KSUL",
+      "documentType": "ostatní - osvědčení - Ing.Stiebitz",
+      "createdAt": "21-12-2000",
+      "filedAt": "04-05-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 13922
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL35/KSUL",
+      "documentType": "ostatní - osvědčení - Ing.Voborník",
+      "createdAt": "21-12-2000",
+      "filedAt": "04-05-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 14080
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL36/KSUL",
+      "documentType": "ostatní - osvědčení - Ing.Sochor",
+      "createdAt": "21-12-2000",
+      "filedAt": "04-05-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 13736
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL37/KSUL",
+      "documentType": "ostatní - osvědčení - Ing.Volf",
+      "createdAt": "21-12-2000",
+      "filedAt": "04-05-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 13370
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL38/KSUL",
+      "documentType": "ostatní - osvědčení - Ing.Hušek",
+      "createdAt": "21-12-2000",
+      "filedAt": "04-05-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 13771
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL39/KSUL",
+      "documentType": "ostatní - odstoup. z předst. Ing.Macek",
+      "createdAt": "20-12-2000",
+      "filedAt": "04-05-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 7694
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL40/KSUL",
+      "documentType": "ostatní - odst. z předst.RNDrNetolický",
+      "createdAt": "20-12-2000",
+      "filedAt": "04-05-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 11906
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL41/KSUL",
+      "documentType": "ostatní - odstoupení - Dr.Ing.Vaněk",
+      "createdAt": "30-11-2000",
+      "filedAt": "04-05-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 15724
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL42/KSUL",
+      "documentType": "ostatní - odstoupení - Ing.Stiebitz",
+      "createdAt": "20-12-2000",
+      "filedAt": "04-05-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 7262
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL43/KSUL",
+      "documentType": "ostatní - zápis z jednání DR",
+      "createdAt": "21-12-2000",
+      "filedAt": "04-05-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 86805
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL44/KSUL",
+      "documentType": "ostatní - zápis č. 21 z jedn. předst.",
+      "createdAt": "21-12-2000",
+      "filedAt": "04-05-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 63276
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL45/KSUL",
+      "documentType": "stanovy společnosti - úplné znění",
+      "createdAt": "21-12-2000",
+      "filedAt": "04-05-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 22,
+          "sizeBytes": 557242
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL46/KSUL",
+      "documentType": "notářský zápis NZ 156/2000 vč. stanov",
+      "createdAt": "21-12-2000",
+      "filedAt": "04-05-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 58,
+          "sizeBytes": 1420464
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL47/KSUL",
+      "documentType": "výroční zpráva za rok 2000",
+      "filedAt": "24-10-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 63,
+          "sizeBytes": 1676229
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL48/KSUL",
+      "documentType": "rozhod. o statut. orgánu - zápis č. 5 z jednání DR",
+      "createdAt": "24-04-2001",
+      "filedAt": "23-01-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 19790
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL49/KSUL",
+      "documentType": "ostatní - abdikace Ing. Voborník",
+      "createdAt": "24-04-2001",
+      "filedAt": "23-01-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 11447
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL50/KSUL",
+      "documentType": "ostatní - zápis č. 7 z jednání DR",
+      "createdAt": "19-06-2001",
+      "filedAt": "23-01-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 28033
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL51/KSUL",
+      "documentType": "rozhod. o statut. orgánu - abdikace Ing. Stiebitz",
+      "createdAt": "19-06-2001",
+      "filedAt": "23-01-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 12869
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL52/KSUL",
+      "documentType": "ostatní - zápis č. 8 z jednání DR",
+      "createdAt": "20-06-2001",
+      "filedAt": "23-01-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 20517
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL53/KSUL",
+      "documentType": "rozhod. o statut. orgánu - abdikace Ing. Ohlídal CSc.",
+      "createdAt": "20-06-2001",
+      "filedAt": "23-01-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 12418
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL54/KSUL",
+      "documentType": "rozhod. o statut. orgánu - abdikace Ing. Tydlačka",
+      "createdAt": "20-06-2001",
+      "filedAt": "23-01-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 5048
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL55/KSUL",
+      "documentType": "rozhod. o statut. orgánu - abdikace Ing. Francová",
+      "createdAt": "20-06-2001",
+      "filedAt": "23-01-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 4289
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL56/KSUL",
+      "documentType": "podpisové vzory a čestné prohl.-Mgr. Činátlová",
+      "createdAt": "20-06-2001",
+      "filedAt": "23-01-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 36784
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL57/KSUL",
+      "documentType": "podpisové vzory a čestné prohl.- Ing. Stiebitz",
+      "createdAt": "20-06-2001",
+      "filedAt": "23-01-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 23563
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL58/KSUL",
+      "documentType": "podpisové vzory a čestné prohl. - Ing. Bouček",
+      "createdAt": "20-06-2001",
+      "filedAt": "23-01-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 33482
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL59/KSUL",
+      "documentType": "stanovy společnosti, rozhod. o statut. orgánu, ostatní NZ 107/2001",
+      "createdAt": "20-06-2001",
+      "filedAt": "23-01-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 71,
+          "sizeBytes": 1781462
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL60/KSUL",
+      "documentType": "stanovy společnosti - úplné znění",
+      "createdAt": "20-06-2001",
+      "filedAt": "23-01-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 24,
+          "sizeBytes": 607015
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL61/KSUL",
+      "documentType": "rozhod. o statut. orgánu - zápis č. 9 z jednání DR",
+      "createdAt": "24-07-2001",
+      "filedAt": "23-01-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 14280
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL62/KSUL",
+      "documentType": "rozhod. o statut. orgánu - zápis č. 10 z jednání DR",
+      "createdAt": "06-09-2001",
+      "filedAt": "23-01-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 21549
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL63/KSUL",
+      "documentType": "notářský zápis, stanovy společnosti NZ 147/2001",
+      "createdAt": "14-09-2001",
+      "filedAt": "23-01-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 27,
+          "sizeBytes": 787995
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL64/KSUL",
+      "documentType": "rozhod. o statut. orgánu - abdikace ing. Kubáta",
+      "createdAt": "15-10-2001",
+      "filedAt": "02-04-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 54599
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL65/KSUL",
+      "documentType": "rozhod. o statut. orgánu -prohl.o odst.z funkce čl DR ",
+      "createdAt": "20-03-2002",
+      "filedAt": "14-11-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 21750
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL66/KSUL",
+      "documentType": "rozhod. o statut. orgánu -zápis č.13 z jednání DR",
+      "createdAt": "28-03-2002",
+      "filedAt": "14-11-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 75457
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL67/KSUL",
+      "documentType": "rozhod. o statut. orgánu - zápis z jednání DR",
+      "createdAt": "19-07-2002",
+      "filedAt": "07-05-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 17754
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL68/KSUL",
+      "documentType": "podpisové vzory - Ing. František Janů",
+      "createdAt": "26-07-2002",
+      "filedAt": "07-05-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 51913
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL69/KSUL",
+      "documentType": "ostatní - výpis RT - Ing. F. Janů",
+      "createdAt": "29-07-2002",
+      "filedAt": "07-05-2003",
+      "digitized": true,
+      "files": []
+    },
+    {
+      "referenceLabel": "B 273/SL70/KSUL",
+      "documentType": "výroční zpráva rok 2001",
+      "createdAt": "29-04-2002",
+      "filedAt": "04-06-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 41,
+          "sizeBytes": 1052609
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL71/KSUL",
+      "documentType": "účetní závěrka, výroční zpráva k 31.12.2002",
+      "createdAt": "25-04-2003",
+      "filedAt": "14-08-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 41,
+          "sizeBytes": 1149656
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL72/KSUL",
+      "documentType": "rozhod. o statut. orgánu - prohlášení o odstoupení",
+      "createdAt": "19-06-2002",
+      "filedAt": "22-10-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 21627
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL73/KSUL",
+      "documentType": "notářský zápis NZ 187/2002",
+      "createdAt": "26-06-2002",
+      "filedAt": "22-10-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 11,
+          "sizeBytes": 305822
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL74/KSUL",
+      "documentType": "notářský zápis NZ 188/2002 - změna stanov",
+      "createdAt": "26-06-2002",
+      "filedAt": "22-10-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 39,
+          "sizeBytes": 976548
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL75/KSUL",
+      "documentType": "stanovy společnosti",
+      "createdAt": "26-06-2002",
+      "filedAt": "22-10-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 24,
+          "sizeBytes": 614492
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL76/KSUL",
+      "documentType": "rozhod. o statut. orgánu - zápis č.15 z mim. jednání DR",
+      "createdAt": "26-06-2002",
+      "filedAt": "22-10-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 18573
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL77/KSUL",
+      "documentType": "rozhod. o statut. orgánu - abdikace na funkci",
+      "createdAt": "02-08-2002",
+      "filedAt": "22-10-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 11206
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL78/KSUL",
+      "documentType": "rozhod. o statut. orgánu - zápis č.17 z jednání DR",
+      "createdAt": "05-09-2002",
+      "filedAt": "22-10-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 15527
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL79/KSUL",
+      "documentType": "rozhod. o statut. orgánu - prohlášení o odstoupení",
+      "createdAt": "16-09-2002",
+      "filedAt": "22-10-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 8700
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL80/KSUL",
+      "documentType": "rozhod. o statut. orgánu - prohlášení o odstoupení",
+      "createdAt": "16-09-2002",
+      "filedAt": "22-10-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 8737
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL81/KSUL",
+      "documentType": "rozhod. o statut. orgánu - zápis č. 32 ze zased. předst",
+      "createdAt": "16-09-2002",
+      "filedAt": "22-10-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 21289
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL82/KSUL",
+      "documentType": "podpisové vzory - Ing. Petr Hanitz",
+      "createdAt": "11-09-2002",
+      "filedAt": "22-10-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 21485
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL83/KSUL",
+      "documentType": "podpisové vzory - Mgr. Tomáš Truhlář",
+      "createdAt": "13-09-2002",
+      "filedAt": "22-10-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 23115
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL84/KSUL",
+      "documentType": "rozhod. o statut. orgánu - odstoupení z funkce člena DR",
+      "createdAt": "05-11-2002",
+      "filedAt": "11-12-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 6951
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL85/KSUL",
+      "documentType": "rozhod. o statut. orgánu - zápis č.18 z mim. jednání DR",
+      "createdAt": "05-11-2002",
+      "filedAt": "11-12-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 11842
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL86/KSUL",
+      "documentType": "podpisové vzory - Doc. Ing. Karel Kopp,CSc.",
+      "createdAt": "13-11-2002",
+      "filedAt": "11-12-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 25103
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL87/KSUL",
+      "documentType": "výroční zpráva rok 2002",
+      "createdAt": "25-04-2003",
+      "filedAt": "18-12-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 56,
+          "sizeBytes": 1379087
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL88/KSUL",
+      "documentType": "rozhod. o statut. orgánu - vzdání se funkce",
+      "createdAt": "25-04-2003",
+      "filedAt": "18-12-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 12570
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL89/KSUL",
+      "documentType": "podpisové vzory - Ing. Václav Grüner, CSc.",
+      "createdAt": "11-06-2003",
+      "filedAt": "18-12-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 24889
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL90/KSUL",
+      "documentType": "notářský zápis NZ 207/2003",
+      "createdAt": "11-06-2003",
+      "filedAt": "18-12-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 16,
+          "sizeBytes": 356049
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL91/KSUL",
+      "documentType": "notářský zápis NZ 208/2003 vč. stanov",
+      "createdAt": "11-06-2003",
+      "filedAt": "18-12-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 36,
+          "sizeBytes": 1067474
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL92/KSUL",
+      "documentType": "rozhod. o statut. orgánu - odstoupení - Mgr. Činátlová",
+      "createdAt": "02-09-2003",
+      "filedAt": "10-03-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 11557
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL93/KSUL",
+      "documentType": "rozhod. o statut. orgánu - zápis z jednání DR",
+      "createdAt": "25-09-2003",
+      "filedAt": "10-03-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 13604
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL94/KSUL",
+      "documentType": "rozhod. o statut. orgánu - zápis ze zasedání předst.",
+      "createdAt": "30-09-2003",
+      "filedAt": "10-03-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 10765
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL95/KSUL",
+      "documentType": "rozhod. o statut. orgánu - zápis z jednání DR",
+      "createdAt": "11-12-2003",
+      "filedAt": "10-03-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 12209
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL96/KSUL",
+      "documentType": "výroční zpráva rok 2003",
+      "createdAt": "22-06-2004",
+      "filedAt": "31-08-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 30,
+          "sizeBytes": 717802
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL97/KSUL",
+      "documentType": "rozhod. o statut. orgánu - protokol o volbě člena DR",
+      "createdAt": "16-06-2005",
+      "filedAt": "29-09-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 22558
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL98/KSUL",
+      "documentType": "podpisové vzory - Jaroslava Faiglová",
+      "createdAt": "29-06-2005",
+      "filedAt": "29-09-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 24456
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL99/KSUL",
+      "documentType": "rozhod. o statut. orgánu - zápis z mim. jednání DR",
+      "createdAt": "06-10-2005",
+      "filedAt": "15-12-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 15282
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL100/KSUL",
+      "documentType": "podpisové vzory - Ing. Jaroslav Filip",
+      "createdAt": "11-10-2005",
+      "filedAt": "15-12-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 26038
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL101/KSUL",
+      "documentType": "výroční zpráva rok 2004",
+      "createdAt": "29-04-2005",
+      "filedAt": "28-02-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 44,
+          "sizeBytes": 1227346
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL102/KSUL",
+      "documentType": "ostatní - zápis z jednání VH",
+      "createdAt": "29-06-2005",
+      "filedAt": "16-03-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 15,
+          "sizeBytes": 263264
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL103/KSUL",
+      "documentType": "účetní závěrka, výroční zpráva rok 2005",
+      "createdAt": "30-05-2006",
+      "filedAt": "14-11-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 42,
+          "sizeBytes": 1255097
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL104/KSUL",
+      "documentType": "rozhod. o statut. orgánu - zápis z jednání DR",
+      "createdAt": "20-04-2006",
+      "filedAt": "16-11-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 60188
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL105/KSUL",
+      "documentType": "notářský zápis NZ 269/2006",
+      "createdAt": "30-08-2006",
+      "filedAt": "16-11-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 19,
+          "sizeBytes": 548384
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL106/KSUL",
+      "documentType": "stanovy společnosti",
+      "createdAt": "30-08-2006",
+      "filedAt": "16-11-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 24,
+          "sizeBytes": 610208
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL107/KSUL",
+      "documentType": "podpisové vzory - RNDr. Jiří Koudelka",
+      "createdAt": "30-08-2006",
+      "filedAt": "16-11-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 30217
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL108/KSUL",
+      "documentType": "podpisové vzory - Ing. Michal Zouhar",
+      "createdAt": "04-09-2006",
+      "filedAt": "16-11-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 33732
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL109/KSUL",
+      "documentType": "rozhod. o statut. orgánu - zápis z jednání DR",
+      "createdAt": "18-09-2006",
+      "filedAt": "16-11-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 14297
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL110/KSUL",
+      "documentType": "výroční zpráva rok 2005",
+      "createdAt": "30-05-2006",
+      "filedAt": "29-11-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 37,
+          "sizeBytes": 1049753
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL111/KSUL",
+      "documentType": "rozhod. o statut. orgánu - zápis z jednání mim. DR",
+      "createdAt": "05-02-2007",
+      "filedAt": "29-03-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 41527
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL112/KSUL",
+      "documentType": "rozhod. o statut. orgánu - zápis ze zasedání představ.",
+      "createdAt": "06-02-2007",
+      "filedAt": "29-03-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 89992
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL113/KSUL",
+      "documentType": "podpisové vzory - Zdeněk Pařízek",
+      "createdAt": "09-02-2007",
+      "filedAt": "29-03-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 39930
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL114/KSUL",
+      "documentType": "podpisové vzory - Miloslav Mišner",
+      "createdAt": "09-02-2007",
+      "filedAt": "29-03-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 40302
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL115/KSUL",
+      "documentType": "podpisové vzory - Ing. Josef Johánek",
+      "createdAt": "09-02-2007",
+      "filedAt": "29-03-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 55237
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL116/KSUL",
+      "documentType": "rozhod. o statut. orgánu - zápis z mimoř. jedn. DR",
+      "createdAt": "15-03-2007",
+      "filedAt": "13-06-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 34334
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL117/KSUL",
+      "documentType": "rozhod. o statut. orgánu - odstoupení - Ing. Zouhar",
+      "createdAt": "15-03-2007",
+      "filedAt": "13-06-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 8769
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL118/KSUL",
+      "documentType": "podpisové vzory - Marian Mikuš",
+      "createdAt": "12-04-2007",
+      "filedAt": "13-06-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 41220
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL119/KSUL",
+      "documentType": "podpisové vzory - Vladimír Chlád",
+      "createdAt": "15-03-2007",
+      "filedAt": "13-06-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 41135
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL120/KSUL",
+      "documentType": "výroční zpráva - 2006",
+      "createdAt": "25-06-2007",
+      "filedAt": "20-08-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 47,
+          "sizeBytes": 2093286
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL121/KSUL",
+      "documentType": "ostatní - odstoupení z funkce",
+      "createdAt": "21-05-2007",
+      "filedAt": "19-10-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 31076
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL122/KSUL",
+      "documentType": "ostatní - odstoupení z funkce",
+      "createdAt": "20-06-2007",
+      "filedAt": "19-10-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 31139
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL123/KSUL",
+      "documentType": "ostatní - odstoupení z funkce",
+      "createdAt": "25-06-2007",
+      "filedAt": "19-10-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 22585
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL124/KSUL",
+      "documentType": "rozhod. o statut. orgánu - zápis ze zased. DR",
+      "createdAt": "11-07-2007",
+      "filedAt": "19-10-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 81433
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL125/KSUL",
+      "documentType": "rozhod. o statut. orgánu - zápis ze zased.DR",
+      "createdAt": "27-07-2007",
+      "filedAt": "19-10-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 44002
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL126/KSUL",
+      "documentType": "notářský zápis - NZ 214/2007 - VH",
+      "createdAt": "06-08-2007",
+      "filedAt": "19-10-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 146945
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL127/KSUL",
+      "documentType": "rozhod. o statut. orgánu - zápis ze zased. DR",
+      "createdAt": "06-08-2007",
+      "filedAt": "19-10-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 126908
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL128/KSUL",
+      "documentType": "rozhod. o statut. orgánu - zápis ze zased.představ.",
+      "createdAt": "06-08-2007",
+      "filedAt": "19-10-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 88727
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL129/KSUL",
+      "documentType": "podpisové vzory - Kamil Chocholouš",
+      "createdAt": "07-08-2007",
+      "filedAt": "19-10-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 46139
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL130/KSUL",
+      "documentType": "rozhod. o statut. orgánu - zápis ze zased.představ.",
+      "createdAt": "19-09-2007",
+      "filedAt": "12-12-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 98774
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL131/KSUL",
+      "documentType": "výroční zpráva - 2006- dodatek",
+      "createdAt": "30-01-2008",
+      "filedAt": "27-02-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 130434
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL132/KSUL",
+      "documentType": "insolvenční rozhodnutí - KSUL 70 INS 63/2008",
+      "createdAt": "22-01-2008",
+      "filedAt": "11-03-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 40242
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL133/KSUL",
+      "documentType": "výroční zpráva - 2007",
+      "createdAt": "28-04-2008",
+      "filedAt": "22-08-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 50,
+          "sizeBytes": 1012370
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL134/KSUL",
+      "documentType": "rozhod. o statut. orgánu - zápis ze zased.předst.a DR",
+      "createdAt": "21-07-2008",
+      "filedAt": "07-10-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 51331
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL135/KSUL",
+      "documentType": "ostatní - odstoupení z funkce",
+      "createdAt": "21-07-2008",
+      "filedAt": "07-10-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 45555
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL136/KSUL",
+      "documentType": "rozhod. o statut. orgánu - zápis o zased.DR",
+      "createdAt": "11-08-2008",
+      "filedAt": "07-10-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 73971
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL137/KSUL",
+      "documentType": "rozhod. o statut. orgánu - zápis ze zased.představ.",
+      "createdAt": "12-08-2008",
+      "filedAt": "07-10-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 31866
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL138/KSUL",
+      "documentType": "podpisové vzory - Marek Lončák",
+      "createdAt": "26-08-2008",
+      "filedAt": "07-10-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 49270
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL139/KSUL",
+      "documentType": "insolvenční rozhodnutí KSUL 45 INS 3805/2009-A-3",
+      "createdAt": "22-06-2009",
+      "filedAt": "01-07-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 21944
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL140/KSUL",
+      "documentType": "insolvenční rozhodnutí KSUL 45 INS 3805/2009-A-9",
+      "createdAt": "24-06-2009",
+      "filedAt": "24-07-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 62516
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL141/KSUL",
+      "documentType": "výroční zpráva - 2008",
+      "createdAt": "17-06-2009",
+      "receivedByCourtAt": "24-09-2009",
+      "filedAt": "24-09-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 45,
+          "sizeBytes": 1060258
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL142/KSUL",
+      "documentType": "insolvenční rozhodnutí 46 INS 2933/2010",
+      "createdAt": "23-03-2010",
+      "receivedByCourtAt": "29-03-2010",
+      "filedAt": "30-03-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 23345
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL143/KSUL",
+      "documentType": "usn. o konkursu a vyrovn. KSUL 46 INS 2933/2010-A-83",
+      "createdAt": "10-12-2010",
+      "receivedByCourtAt": "14-12-2010",
+      "filedAt": "15-12-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 201797
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL144/KSUL",
+      "documentType": "insolvenční rozhodnutí - KSUL 46 INS 2933/2010-B-24",
+      "createdAt": "14-03-2011",
+      "receivedByCourtAt": "18-04-2011",
+      "filedAt": "21-04-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 45004
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL145/KSUL",
+      "documentType": "ostatní - zápis z DR",
+      "createdAt": "29-05-2012",
+      "receivedByCourtAt": "22-10-2012",
+      "filedAt": "24-10-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 0
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL146/KSUL",
+      "documentType": "účetní závěrka - 2012 - VZ",
+      "createdAt": "31-01-2013",
+      "receivedByCourtAt": "04-02-2013",
+      "filedAt": "06-02-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 246685
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL147/KSUL",
+      "documentType": "účetní závěrka - 2012 - Př",
+      "receivedByCourtAt": "04-02-2013",
+      "filedAt": "06-02-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 142789
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL148/KSUL",
+      "documentType": "účetní závěrka - 2012 - R",
+      "createdAt": "31-01-2013",
+      "receivedByCourtAt": "04-02-2013",
+      "filedAt": "06-02-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 254199
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL149/KSUL",
+      "documentType": "účetní závěrka [2012] -2012 - Př",
+      "createdAt": "31-01-2013",
+      "receivedByCourtAt": "04-02-2013",
+      "filedAt": "06-02-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 135591
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL150/KSUL",
+      "documentType": "účetní závěrka - 2012",
+      "createdAt": "14-02-2013",
+      "receivedByCourtAt": "21-02-2013",
+      "filedAt": "26-02-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 20,
+          "sizeBytes": 177593
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 273/SL151/KSUL",
+      "documentType": "insolvenční rozhodnutí KSUL 46 INS 2933/2010-B-166",
+      "createdAt": "03-02-2017",
+      "receivedByCourtAt": "28-04-2017",
+      "filedAt": "01-06-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 0
+        }
+      ]
+    }
+  ]
+}

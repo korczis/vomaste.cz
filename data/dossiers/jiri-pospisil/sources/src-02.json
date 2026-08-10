@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jiri-pospisil/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jiri-pospisil"
+  },
+  "title": "SRC-02 — Deník N: Prvním místopředsedou TOP 09 se stal poslanec Jiří Pospíšil",
+  "description": "Zpravodajství Deníku N o zvolení Jiřího Pospíšila prvním místopředsedou TOP 09 na 9. sněmu strany.",
+  "outlet": "Deník N",
+  "sourceType": "zpravodajství",
+  "url": "https://denikn.cz/minuta/1888452/",
+  "published": "2025-11-08",
+  "retrieved": "2026-08-07",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jiri-pospisil/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "jiri-pospisil"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpráva Deníku N z 8. 11. 2025, otevřena a přečtena 2026-08-07.\nUvádí: „Prvním místopředsedou TOP 09 se stal poslanec Jiří Pospíšil.“ Pospíšil na sněmu strany v Praze získal 110 ze 182 hlasů; jeho jediným protikandidátem byl dosluhující místopředseda a tehdejší ministr zdravotnictví v demisi Vlastimil Válek.\n\nPoznámka k typu zdroje a jeho limitům: redakční zpravodajství, jiná doména i jiný vydavatel než SRC-01 (Poslanecká sněmovna Parlamentu ČR) i SRC-03 (Echo24.cz) — tvoří s nimi nezávislou dvojici pro účely korporace tohoto tvrzení. Přesné datum a klubovou příslušnost mandátu dokládá SRC-01."
+    }
+  ],
+  "order": 2
+}

@@ -1,0 +1,26 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-09",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/22419519",
+  "status": "OK",
+  "subject": {
+    "ico": "22419519",
+    "businessName": "BYD Automotive Czech s.r.o.",
+    "registerReference": "C 416418/MSPH"
+  },
+  "filings": [
+    {
+      "referenceLabel": "C 416418/SL1/MSPH",
+      "documentType": "zakladatelské dokumenty, notářský zápis [NZ 1331/2024]",
+      "createdAt": "04-12-2024",
+      "filedAt": "03-01-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 14,
+          "sizeBytes": 3917337
+        }
+      ]
+    }
+  ]
+}

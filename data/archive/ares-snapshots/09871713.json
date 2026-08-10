@@ -1,0 +1,37 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "09871713",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/09871713",
+  "nazev": "Společnost pro obranu svobody projevu, z.ú.",
+  "sidlo": "Králova 3213/1a, Žabovřesky, 61600 Brno",
+  "spisovaZnacka": {
+    "soud": "KSBR",
+    "oddil": "U",
+    "vlozka": "304"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "ředitel",
+      "since": "2024-01-28",
+      "kind": "person",
+      "name": "Ing. Vlastimil Veselý"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "person",
+      "name": "Ing. Vlastimil Veselý",
+      "podil": null,
+      "vklad": null,
+      "splaceno": null
+    },
+    {
+      "kind": "person",
+      "name": "Daniel Vávra",
+      "podil": null,
+      "vklad": null,
+      "splaceno": null
+    }
+  ]
+}

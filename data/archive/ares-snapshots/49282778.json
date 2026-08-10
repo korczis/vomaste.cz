@@ -1,0 +1,30 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "49282778",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/49282778",
+  "nazev": "JWT, s.r.o.",
+  "sidlo": "U Lesíka 563, 46841 Tanvald",
+  "spisovaZnacka": {
+    "soud": "KSUL",
+    "oddil": "C",
+    "vlozka": "11910"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "jednatel",
+      "since": "2014-07-23",
+      "kind": "person",
+      "name": "Augustin Zaplatílek"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "person",
+      "name": "Augustin Zaplatílek",
+      "podil": "100",
+      "vklad": "100000",
+      "splaceno": "100"
+    }
+  ]
+}

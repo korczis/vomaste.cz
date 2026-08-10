@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jan-grolich/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jan-grolich"
+  },
+  "title": "SRC-01 — Portál Jihomoravského kraje: oficiální profil hejtmana Jana Grolicha",
+  "description": "Oficiální profilová stránka hejtmana Jihomoravského kraje na webu kraje s jeho biografií a uvedením aktuální funkce.",
+  "outlet": "Jihomoravský kraj",
+  "sourceType": "primární úřední záznam",
+  "url": "https://www.kr-jihomoravsky.cz/Default.aspx?ID=426804&TypeID=1",
+  "retrieved": "2026-08-07",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jan-grolich/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "jan-grolich"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profilová stránka „Hejtman Jihomoravského kraje“ na portálu kr-jihomoravsky.cz, otevřena a přečtena 2026-08-07.\nUvádí „Mgr. Jan Grolich hejtman Jihomoravského kraje“ spolu s jeho biografií (narozen 1984 v Brně, právnické vzdělání, starosta Velatic 2010–2020, krajský zastupitel od 2016). Aktuální krajský mandát potvrzuje i nezávislé zpravodajství o jeho obhajobě funkce hejtmana v listopadu 2024 po krajských volbách (viz SRC-02 pro nezávislé potvrzení tohoto konkrétního volebního období).\n\nPoznámka k typu zdroje a jeho limitům: primární úřední zdroj — kraj sám eviduje funkci vlastního hejtmana, nejde o redakční zpravodajství a stránka nemá vlastní datum poslední aktualizace; nezávislé potvrzení konkrétního volebního období (4. 11. 2024) a stranické funkce předsedy KDU-ČSL (24. 4. 2026) dokládá SRC-02 (Deník.cz)."
+    }
+  ],
+  "order": 1
+}

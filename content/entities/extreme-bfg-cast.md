@@ -3,6 +3,7 @@
 title = "Extreme BFG Cast s.r.o."
 template = "entity.html"
 weight = 125
+description = "Extreme BFG Cast s.r.o. — Kontextová entita — Podcastová firma, v níž byl Červený jednatelem a spolumajitelem (střet zájmů); podíl prodal Luboru Novákovi."
 
 [extra]
 generated = true

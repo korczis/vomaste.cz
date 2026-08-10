@@ -3,6 +3,7 @@
 title = "Zdeněk Hřib"
 template = "entity.html"
 weight = 455
+description = "Zdeněk Hřib — Kontextová entita — Předseda Pirátů; předal Mrázové klíčenku, vyzval k doplacení ušetřeného nájmu."
 
 [extra]
 generated = true

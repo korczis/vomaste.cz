@@ -1,0 +1,31 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "17573866",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/17573866",
+  "nazev": "Moravia Green Hydrogen s.r.o.",
+  "sidlo": "Květoslava Mašity 409, 25231 Všenory",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "C",
+    "vlozka": "373368"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "Jednatel",
+      "since": "2024-01-05",
+      "kind": "person",
+      "name": "Ing. Richard Chlad"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "company",
+      "name": "Moravia Green Energy s.r.o.",
+      "ico": "25824881",
+      "podil": "100",
+      "vklad": "200000",
+      "splaceno": "100"
+    }
+  ]
+}

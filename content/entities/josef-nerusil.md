@@ -3,6 +3,7 @@
 title = "Josef Nerušil"
 template = "entity.html"
 weight = 181
+description = "Josef Nerušil — Kontextová entita — Politik SPD; spolu se Sílou vede téma revokace očkovací strategie."
 
 [extra]
 generated = true

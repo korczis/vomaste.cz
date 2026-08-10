@@ -3,6 +3,7 @@
 title = "Vít Rakušan"
 template = "entity.html"
 weight = 434
+description = "Vít Rakušan — Kontextová entita — Předseda STAN; nevymáhané miliardy podle něj poškodí rozpočet na obranu a vědu."
 
 [extra]
 generated = true

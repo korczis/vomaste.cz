@@ -3,6 +3,7 @@
 title = "Karel Dvořák"
 template = "entity.html"
 weight = 187
+description = "Karel Dvořák — Kontextová entita — Poslanec STAN; interpeloval Tejce kvůli znevažování justice. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

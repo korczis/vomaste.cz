@@ -1,0 +1,22 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "26557975",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/26557975",
+  "nazev": "Jaguar klub České republiky, z.s.",
+  "sidlo": "Petrská 1136/12, Nové Město, 11000 Praha 1",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "L",
+    "vlozka": "20217"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "prezident",
+      "since": "2023-03-03",
+      "kind": "person",
+      "name": "Bc. Filip Turek"
+    }
+  ],
+  "spolecnici": []
+}

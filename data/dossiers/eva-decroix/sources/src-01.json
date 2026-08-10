@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/eva-decroix/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/eva-decroix"
+  },
+  "title": "SRC-01 — Poslanecká sněmovna PČR (oficiální profil poslankyně)",
+  "description": "Oficiální profil poslankyně na webu Poslanecké sněmovny: mandát, klub, funkce místopředsedkyně poslaneckého klubu ODS.",
+  "outlet": "Poslanecká sněmovna Parlamentu ČR",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://www.psp.cz/sqw/detail.sqw?id=6727",
+  "retrieved": "2026-08-06",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/eva-decroix/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "eva-decroix"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil poslankyně na webu Poslanecké sněmovny PČR, otevřen a přečten 2026-08-06 (aktuální stav volebního období od 2025).\nUvádí mandát poslankyně od 4. 10. 2025 (zvolena na kandidátce SPOLU, nominující strana ODS), členství v Poslaneckém klubu ODS od 8. 10. 2025 a funkci místopředsedkyně poslaneckého klubu ODS od 8. 10. 2025.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — dokládá existenci a formulaci úředního údaje (mandát, klub, funkce místopředsedkyně klubu), nikoli nezávislé redakční posouzení její politické role. Pro nezávislé potvrzení role stínové ministryně spravedlnosti ODS je nutný druhý, nezávislý zdroj (viz SRC-02)."
+    }
+  ],
+  "order": 1
+}

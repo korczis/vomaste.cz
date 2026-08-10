@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vlastimil-valek/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/vlastimil-valek"
+  },
+  "title": "SRC-02 — Vláda ČR: profil Vlastimila Válka jako bývalého člena vlády",
+  "description": "Oficiální stránka Úřadu vlády ČR s údaji o funkčním období Vlastimila Válka jako místopředsedy vlády a ministra zdravotnictví.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "primární úřední záznam",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/vlastimil-valek-191700/",
+  "retrieved": "2026-08-07",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vlastimil-valek/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "vlastimil-valek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profilová stránka na webu vlády ČR, otevřena a přečtena 2026-08-07.\nUvádí přesné funkční období: „Místopředseda vlády a ministr zdravotnictví od 17. prosince 2021, od 6. listopadu 2025 do 15. prosince 2025 v demisi.“ Funkce tedy skončila 15. 12. 2025.\n\nPoznámka k typu zdroje a jeho limitům: primární úřední zdroj — úřad vlády eviduje vlastní bývalé členy, nejde o redakční zpravodajství a stránka nepokrývá jeho následný poslanecký mandát (ten dokládá SRC-01). Jiná doména i jiný vydavatel než SRC-01 (Poslanecká sněmovna Parlamentu ČR); nezávislé novinářské potvrzení přináší SRC-03 (zdravezpravy.cz)."
+    }
+  ],
+  "order": 2
+}

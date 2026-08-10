@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vit-rakusan/claims/CLM-02",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/vit-rakusan"
+  },
+  "text": "Podle kontrolní akce Nejvyššího kontrolního úřadu č. 24/28 (zveřejněno 23. 2. 2026) vynaložilo ministerstvo vnitra v letech 2015–2024 přes 873 milionů Kč na profesionalizaci a zvyšování kvality státní služby, aniž by dosáhlo požadovaného efektu — 51 z 84 služebních úřadů nesplnilo minimální standard kvality řízení, plánovaný e-learningový portál nikdy nevznikl, aplikace eZkouška (22+ milionů Kč) byla po čtyřech letech zrušena a Informační systém o státní službě (640 milionů Kč) neposkytuje potřebná evaluační data; kontrolované období zdaleka přesahuje nástup Víta Rakušana do funkce ministra vnitra (prosinec 2021) a ministerstvo nálezy zpochybnilo s odkazem na dopady covidu a války na Ukrajině",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vit-rakusan/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vit-rakusan/sources/SRC-05"
+    }
+  ],
+  "subjects": [
+    "vit-rakusan"
+  ],
+  "order": 2,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/vit-rakusan/_index.md)."
+    }
+  ]
+}

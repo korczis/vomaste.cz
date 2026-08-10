@@ -26,8 +26,15 @@ function fixture(mutateWorkflow) {
   mkdirSync(path.join(dir, ".github", "workflows"), { recursive: true });
   cpSync(SCRIPT, path.join(dir, "scripts", "ci", "check-workflow-parity.mjs"));
   // Fáze G: seznam kroků buildu žije v pipeline orchestrátoru — checker
-  // ho čte, takže fixture ho potřebuje taky.
+  // ho čte, takže fixture ho potřebuje taky. pipeline.mjs od 2026-08-06
+  // importuje with-build-lock.mjs (acquireLock/releaseLock pro celý build
+  // režim, ne jen zola krok) — fixture musí kopírovat i tenhle soubor,
+  // jinak `import` v izolovaném temp adresáři spadne na ERR_MODULE_NOT_FOUND.
   cpSync(path.join(ROOT, "scripts", "build", "pipeline.mjs"), path.join(dir, "scripts", "build", "pipeline.mjs"));
+  cpSync(
+    path.join(ROOT, "scripts", "build", "with-build-lock.mjs"),
+    path.join(dir, "scripts", "build", "with-build-lock.mjs"),
+  );
   cpSync(path.join(ROOT, "package.json"), path.join(dir, "package.json"));
   const wf = readFileSync(path.join(ROOT, ".github/workflows/deploy.yml"), "utf8");
   writeFileSync(path.join(dir, ".github/workflows/deploy.yml"), mutateWorkflow(wf));

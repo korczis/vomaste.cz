@@ -1,35 +1,38 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/jwt",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "jwt",
- "entityId": "jwt",
- "title": "JWT (J. Walter Thompson)",
- "entityType": "company",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "oto-klempir"
- ],
- "order": 183,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/jwt",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "jwt",
+  "entityId": "jwt",
+  "title": "JWT (J. Walter Thompson)",
+  "entityType": "company",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "oto-klempir"
   ],
-  "sourceRefs": [
-   "SRC-01"
-  ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Mezinárodní reklamní agentura z oficiálního životopisu Klempíře; jen biografický kontext. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (oto-klempir). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  "order": 183,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02"
+    ],
+    "sourceRefs": [
+      "SRC-01"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Mezinárodní reklamní agentura z oficiálního životopisu Klempíře; jen biografický kontext. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (oto-klempir). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
+  ],
+  "externalIds": {
+    "ico": "49282778"
   }
- ]
 }

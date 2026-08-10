@@ -1,0 +1,37 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "26417171",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/26417171",
+  "nazev": "YOUNG & RUBICAM CZ s.r.o., člen koncernu YOUNG & RUBICAM",
+  "sidlo": "Bubenská 1477/1, Holešovice, 17000 Praha 7",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "C",
+    "vlozka": "80574"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "jednatel",
+      "since": "2021-03-08",
+      "kind": "person",
+      "name": "Ing. Lukáš Vaculík"
+    },
+    {
+      "role": "Jednatel",
+      "since": "2025-01-27",
+      "kind": "person",
+      "name": "Iva Welker"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "company",
+      "name": "VML Czechia s.r.o.",
+      "ico": "26133113",
+      "podil": "100 %",
+      "vklad": "100000;00",
+      "splaceno": "100"
+    }
+  ]
+}

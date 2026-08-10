@@ -3,6 +3,7 @@
 title = "Společnost pro obranu svobody projevu"
 template = "entity.html"
 weight = 384
+description = "Společnost pro obranu svobody projevu — Kontextová entita — Advokační organizace; rozsudek nad SPD kritizovala jako „posvěcení cenzury“."
 
 [extra]
 generated = true

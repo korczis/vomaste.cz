@@ -1,0 +1,22 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/test",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "test",
+  "kind": "npm",
+  "name": "test",
+  "title": "Testová sada repozitáře",
+  "category": "kontrola",
+  "summary": "Spouští node:test nad všemi *.test.mjs v scripts/build, dossier, data, migrations, lint, ui, ci, osint, intake (včetně matching/risk/preflight) a prismatic.",
+  "enforces": [
+    "Jakýkoli padlý test v uvedených adresářích. Několik validátorů (validate-issue-forms, validate-intake-workflow) je do sady zapojených přes vlastní test soubor právě proto, aby nemusely být samostatným krokem pipeline."
+  ],
+  "whenToRun": "Je krokem build pipeline hned po datovém řetězci. Lokálně kdykoli — je rychlá a nepotřebuje síť.",
+  "inputs": [
+    "scripts/**/*.test.mjs"
+  ],
+  "describedFrom": "command"
+}

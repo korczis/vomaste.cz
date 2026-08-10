@@ -9,11 +9,12 @@
   "entityId": "ivan-bartos",
   "title": "Ivan Bartoš",
   "entityType": "person",
-  "publicationRole": "context",
-  "dossierEnabled": false,
-  "dossierStatus": "not_authorized",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
   "coverageState": "discovered",
   "dossiers": [
+    "ivan-bartos",
     "martin-sebestyan",
     "zuzana-mrazova"
   ],

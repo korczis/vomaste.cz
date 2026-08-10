@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ladislav-miko",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "ladislav-miko",
+  "slug": "ladislav-miko",
+  "title": "Ladislav Miko",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Ladislav Miko.",
+  "dossierType": "entity",
+  "canonicalDossier": "ladislav-miko",
+  "subject": "ladislav-miko",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-LADISLAV-MIKO"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "ladislav-miko",
+        "label": "Ladislav Miko",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nLadislav Miko je bývalý ministr životního prostředí (2009, Fischerova vláda). Jako politicky exponovaná osoba\nv souvislosti s výkonem dřívější veřejné funkce spadá do standing scope\nautorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro\ntento dossier je `AUTH-2026-08-08-LADISLAV-MIKO`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce doložený oficiálním přehledem členů\nvlády Jana Fischera na webu Vlády ČR. Tvrzení nese stav 1 ZDROJ; povýšení na\nCORROBORATED i doplnění okolností konce v úřadu či dalších funkcí\nvyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje\nsamostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/ladislav-miko/claims/clm-01.md) | Ladislav Miko byl podle oficiálního přehledu členů vlády Jana Fischera na webu Vlády ČR ministrem životního prostředí od 8. 5. 2009 do 30. 11. 2009; přehled u konce jeho působení uvádí demisi | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/ladislav-miko/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

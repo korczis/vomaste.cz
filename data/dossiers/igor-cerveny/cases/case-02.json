@@ -10,12 +10,21 @@
     "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
   },
   "title": "Střet zájmů — podcastová firma",
-  "summary": "Střet zájmů — podcastová firma — viz tvrzení CLM-08, CLM-09, CLM-10.",
+  "summary": "Střet zájmů — podcastová firma — Červený byl při nástupu do vlády jednatelem a spolumajitelem podcastové společnosti Extreme BFG Cast, podíl podle zjištění médií následně prodal spoluvlastníkovi a veřejně prohlásil, že střet zájmů má vyřešený.",
   "period": "2026",
   "status": "status-single",
   "statusLabel": "Sledované téma",
   "anchor": "kauza-stret-zajmu",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-10"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/claims/CLM-27"
     },
@@ -40,19 +49,25 @@
   ],
   "sources": [
     {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-06"
+    },
+    {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-24"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-26"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-28"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-25"
     },
     {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-26"
+    },
+    {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-27"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-28"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-35"

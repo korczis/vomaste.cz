@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-19",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-19",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "text": "Seznam Zprávy 11. ledna 2017 uvedly, že Městský soud v Praze zamítl odvolání Vladimíra Růžičky a potvrdil pokutu 400 tisíc korun za zpronevěru, čímž se rozsudek stal pravomocným; soudkyně Eva Burianová uvedla, že šlo o dar hokejovému klubu, nikoli Růžičkovi osobně.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-20"
+    }
+  ],
+  "subjects": [
+    "james-quick"
+  ],
+  "order": 19,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Uzavírá procesní linku otevřenou oznámením v CLM-08: pravomocné odsouzení za zpronevěru, nikoli nové tvrzení o Jehličkovi. Dossier tímto claimem dokumentuje, jak věc, kterou Jehlička svým oznámením zahájil, skutečně skončila — bez domýšlení a bez čekání na neurčito."
+    }
+  ]
+}

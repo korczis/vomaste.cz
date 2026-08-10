@@ -3,6 +3,7 @@
 title = "Evropská unie"
 template = "entity.html"
 weight = 122
+description = "Evropská unie — Kontextová entita — Nadnárodní společenství; rámec kauz dotace (poškození finančních zájmů EU) a emisních cílů elektromobility."
 
 [extra]
 generated = true

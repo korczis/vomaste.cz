@@ -3,6 +3,7 @@
 title = "Ministerstvo financí ČR"
 template = "entity.html"
 weight = 273
+description = "Ministerstvo financí ČR — Kontextová entita — Původně navrhovalo zrušit limit jen pro volnočasové benefity."
 
 [extra]
 generated = true

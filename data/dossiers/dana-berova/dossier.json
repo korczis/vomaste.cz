@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/dana-berova",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "dana-berova",
+  "slug": "dana-berova",
+  "title": "Dana Bérová",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Dana Bérová.",
+  "dossierType": "entity",
+  "canonicalDossier": "dana-berova",
+  "subject": "dana-berova",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-DANA-BEROVA"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "dana-berova",
+        "label": "Dana Bérová",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nDana Bérová je bývalá ministryně informatiky (2005–2006, vláda Jiřího Paroubka). Jako politicky exponovaná osoba\nv souvislosti s výkonem dřívější veřejné funkce spadá do standing scope\nautorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro\ntento dossier je `AUTH-2026-08-08-DANA-BEROVA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce doložený oficiálním přehledem členů\nvlády Jiřího Paroubka na webu Vlády ČR. Tvrzení nese stav 1 ZDROJ;\npovýšení na CORROBORATED i doplnění okolností konce v úřadu či dalších\nfunkcí vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje\nsamostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/dana-berova/claims/clm-01.md) | Dana Bérová byla podle oficiálního přehledu členů vlády Jiřího Paroubka na webu Vlády ČR ministryní informatiky od 25. 4. 2005 do 16. 8. 2006 | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/dana-berova/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

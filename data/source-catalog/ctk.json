@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source-catalog-entry.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/zdroje/ctk",
+  "@type": "vomaste:SourceCatalogEntry",
+  "recordType": "sourceCatalogEntry",
+  "identifier": "ctk",
+  "title": "ČTK — Česká tisková kancelář",
+  "operator": "Česká tisková kancelář",
+  "kind": "media",
+  "jurisdiction": "CZ",
+  "access": "restricted",
+  "authentication": "subscription",
+  "url": "https://www.ctk.cz/",
+  "order": 100,
+  "outlets": [
+    "ČTK"
+  ],
+  "proves": [
+    "Že agentura v daný den vydala zprávu daného znění — a tedy že údaj byl v tu chvíli veřejně k dispozici."
+  ],
+  "doesNotProve": [
+    "Nezávislost. Pět médií, která tutéž agenturní zprávu přebírají, je JEDNO doložení, ne pět.",
+    "Vlastní ověření agenturou. Zpráva často reprodukuje prohlášení strany sporu; kdo mluví, musí zůstat v tvrzení uvedeno."
+  ],
+  "traps": [
+    {
+      "title": "Přebírání vypadá jako shoda",
+      "detail": "Právě kvůli tomuhle existuje pole `sourceFamily`. Bez něj se pět vydání téže zprávy počítá jako pět nezávislých redakcí a tvrzení dostane CORROBORATED, které si nezaslouží. Revize T-056 takto musela srazit 55 tvrzení zpět na 1 ZDROJ."
+    },
+    {
+      "title": "Kredit je jen v metadatech a patičce",
+      "detail": "Zmínka „řekl ČTK\" uprostřed textu je běžná i ve vlastním zpravodajství a původ nedokládá. Rozhoduje `<meta name=\"author\">`, podpisový blok nebo patička „Zdroj: …\"."
+    }
+  ],
+  "howToSearch": "Rodinu nikdy nehádej z outletu ani z podobnosti titulků. `scripts/osint/detect-source-family.mjs` čte doslovný kredit ve třech ukotvených oblastech; bez kreditu je verdikt `unknown`, což NENÍ „vlastní zpravodajství\".",
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Nejcitovanější rodina v datasetu. Význam ČTK pro tenhle projekt není v tom, co dokládá, ale v tom, co **rozbíjí**: iluzi nezávislého potvrzení.\n\nDvě citace téže agenturní zprávy nejsou dvě doložení. Badge CORROBORATED slibuje dvě nezávislá — a slib, který data nekryjí, je horší než skromnější stav."
+    }
+  ]
+}

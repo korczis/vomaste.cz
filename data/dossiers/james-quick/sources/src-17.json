@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-17",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-17",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "title": "SRC-17 — Novinky: Demonstrace proti Jiřímu Paroubkovi",
+  "description": "Dobová zpráva identifikující Jiřího Jehličku jako organizátora demonstrací a zachycující jeho veřejné požadavky.",
+  "outlet": "Novinky.cz / Právo",
+  "sourceType": "zpravodajství",
+  "url": "https://www.novinky.cz/clanek/domaci-nemcova-demonstrace-proti-paroubkovi-chapu-40120020",
+  "published": "2006-06-15",
+  "retrieved": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-16"
+    }
+  ],
+  "subjects": [
+    "james-quick"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Dobový nezávislý zdroj dokládá organizování demonstrací a vlastní výroky Jiřího Jehličky. Současně zachycuje odmítnutí organizačního spojení ze strany ODS, proto z něj nelze odvozovat stranické zadání ani financování akcí."
+    }
+  ],
+  "order": 17
+}

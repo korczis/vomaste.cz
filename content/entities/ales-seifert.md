@@ -3,6 +3,7 @@
 title = "Aleš Seifert"
 template = "entity.html"
 weight = 60
+description = "Aleš Seifert — Kontextová entita — Jeden ze tří uchazečů postupujících do druhého kola zrušeného výběrového řízení na generálního ředitele NGP."
 
 [extra]
 generated = true

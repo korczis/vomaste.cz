@@ -31,19 +31,68 @@ entry; it does not replace reading and applying the rule.
   and not an imported agent framework. For the commit itself, `commit`
   (`.claude/skills/commit/`) — message format, which gate actually
   applies, and the right coop-bus report.
+- **Prismatic Platform integration (2026-08-06, partial)**:
+  `~/dev/prismatic-platform` is authorized as a local upstream
+  research/enrichment capability provider (`AUTH-2026-08-05-PLATFORM-SCOPE`
+  in `AGENTS.md`, "Standing scope authorization and publication gates";
+  architecture in `docs/adr/prismatic-platform-integration.md`). Real and
+  tested: `scripts/prismatic/lib/config.mjs` (path resolution + Git
+  validation), `scripts/prismatic/lib/contract.mjs` +
+  `schemas/prismatic/export-contract.schema.json` (NDJSON parse/validate,
+  unknown-major-version rejection), and `prismatic:status`/`prismatic:probe`/
+  `prismatic:plan` (the last narrowly scoped to one audited "reuse
+  directly" capability — ARES lookups for entities missing
+  `externalIds.ico`; do not add a new job type there without checking
+  `docs/audits/2026-08-05-prismatic-capability-map.md` first). Still
+  stubs: `run`/`import`/`diff`/`review-report`/`promote`/`verify`/`drift`/
+  `enrich-all` — Prismatic has no matching exporter to call yet. Read each
+  skill's own `SKILL.md` before invoking it — do not report
+  Prismatic-sourced research as done unless you actually built and ran the
+  missing pipeline first. Full build plan and per-sub-phase status:
+  `docs/missions/2026-08-05-prismatic-platform-integration-master-prompt.md`
+  + its companion checklist in the same directory. The public Zola build
+  has no dependency on any of this and must keep working with the
+  sibling repo entirely absent.
 - `git commit` runs `.githooks/pre-commit` (installed automatically by
   `npm ci`/`npm install` via `scripts/setup/install-git-hooks.mjs`, or
   manually: `npm run hooks:install`) — a fast, pure-data validator subset.
   This is a convenience, not the real gate: it does **not** replace the
   full `npm run build` requirement below, and does not include
-  `lint:historical-coupling` (still red — currently 58 residual
-  occurrences of seed-subject identifiers in structural code, e.g.
-  `templates/entity-dossier.html`, `scripts/data/build-view-models.mjs`
+  `lint:historical-coupling` (still red — residual occurrences of
+  seed-subject identifiers in structural code, e.g.
+  `templates/entity-dossier.html`, `scripts/data/build-view-models.mjs`,
+  `data/navigation.toml` and the archived migrators; the count is not
+  written down here on purpose, it drifts with every touch of those files
   — outside the build gate on purpose. The migration that was tracked as
   `docs/coop/TASKS.md` T-001 is done/superseded — see T-028 there — but
   this specific cleanup has no open tracking task right now; run
   `npm run lint:historical-coupling` yourself to see current occurrences
   before assuming it's clean).
+- **On `master`, a commit OR a merge auto-pushes.**
+  `.githooks/post-commit` and `.githooks/post-merge` (installed the same
+  way as pre-commit, since 2026-08-05/06) share one routine
+  (`.githooks/lib/auto-push-master.sh`) that runs fetch → rebase onto
+  `origin/master` → the **full** `npm run build` → `git push origin
+  master` automatically after every commit AND every merge made
+  directly on `master` — push to `master` is the live GitHub Pages
+  deploy, so this means committing or merging on `master` now typically
+  deploys within seconds, not "commit now, push later after a review
+  pause." Both hooks exist because `git merge`/`git pull` fire a
+  different hook pair than `git commit` (`pre-merge-commit`/
+  `post-merge`, never `pre-commit`/`post-commit`) — discovered
+  2026-08-06 when the standard coop merge step (`git merge --no-ff
+  task/T-###`) turned out to skip auto-push entirely. It aborts cleanly
+  (commit/merge stays local, nothing pushed) on a rebase conflict or a
+  red full build; see `docs/coop/PROTOCOL.md`, "Automatický push po
+  commitu a mergi" for the exact bail-out conditions and the recipe for
+  the generated-file conflicts (golden test snapshot, discovery log,
+  reports) that commonly cause the rebase step to need manual
+  resolution when several instances are active. Consequence for your
+  own workflow: get confirmation *before* committing directly on
+  `master` for anything that should be reviewed first — there is no
+  longer a safe pause between `git commit` and the push actually going
+  out. `COOP_NO_AUTOPUSH=1 git commit …` opts a single commit out (the
+  hook is a no-op in worker worktrees on `task/T-###` branches anyway).
 - Treat the "Content about real parties" log in `AGENTS.md` as append-only
   and load-bearing: never edit or remove an existing entry, even to "clean
   up" wording or fix a typo. A new scope extension is always a brand-new
@@ -116,6 +165,24 @@ entry; it does not replace reading and applying the rule.
   potential, gaps, a data-derived priority and a concrete next step. Read
   it instead of asking "what should I work on"; never hand-maintain a
   parallel todo list, it would be stale before the next commit.
+- **Official-document preservation is mandatory for every dossier/entity
+  change.** <!-- DOCUMENT_ARCHIVE_DOCTRINE_V1 --> `npm run archive:check`
+  is the offline owner and runs in pre-commit plus every `build`/`dev`/`check`
+  pipeline. It requires **Zone A** coverage in ARES and a sanitized Justice
+  index for every supported Czech legal entity with a verified IČO, checks
+  every public SHA-256, and requires every mechanically recognized court
+  docket to be either queried by docket only or assigned to the correct
+  separate official system. Never guess an IČO or search a court board by
+  name/birth data; a negative board response is only a current-day snapshot.
+  **Zone B** (raw Justice metadata, original deeds and non-empty board
+  responses) must stay outside Git/issues/PRs/artifacts/web under
+  `~/dev/vomaste-archive` or `VOMASTE_JUSTICE_ARCHIVE_ROOT`, with manifests,
+  no `.part` files and a complete `inventory.sha256`. Use `npm run
+  archive:refresh-public` for live safe derivatives; the weekly workflow may
+  only open a review PR. Use `npm run archive:refresh-private` only on trusted
+  persistent storage. Never bulk-promote Zone B: each public document needs
+  individual content/privacy review, provenance, a `reviewNote` and, where
+  necessary, a safe derivative.
 - **Discovery is unblocked; publishing findings is not.** Since 2026-07-30
   these are two different acts and only the second is gated:
   - **Recording that a registry relation exists** — a context entity
@@ -141,6 +208,19 @@ entry; it does not replace reading and applying the rule.
   When in doubt about which of the two you are doing, you are writing a
   claim — stop and ask. Personal data (dates of birth, home addresses) is
   never copied out of a registry in either case.
+- **Než začneš hledat, přečti si katalog zdrojů** —
+  `docs/osint/SOURCE_CATALOG.md` (publikovaná podoba `/zdroje/`). Odpovídá
+  na otázku, kterou si rešerše klade jako první: který registr vůbec
+  odpoví, co z jeho odpovědi lze citovat a na jaké pasti se v něm už
+  najelo. Ušetří to opakované placení téhož poznatku — že ARES rozlišuje
+  dva různé významy odpovědi 404, že registr smluv tiše ignoruje
+  `format=json` i vlastní stránkování, že věstník veřejných zakázek vrací
+  nefiltrovaná data na filtr, který neumí. Záznamy jsou
+  `data/source-catalog/*.json`, stránky i markdown jsou generované
+  (`npm run build:source-catalog`, kontrola driftu
+  `npm run verify:source-catalog`) — neupravuj je ručně. Narazíš-li na
+  nový zdroj nebo novou past, patří to jako záznam do katalogu, ne do
+  commit zprávy, kde to najde jen ten, kdo ví, že to má hledat.
 - Projekt je Open Intelligence Commons — přečti si a řiď se
   `docs/constitution/OPEN_INTELLIGENCE_COMMONS.md` (závazné invarianty
   shrnuty v AGENTS.md). Nad všemi kompromisy pohodlí dominují dvě
@@ -196,20 +276,26 @@ entry; it does not replace reading and applying the rule.
   edits `docs/coop/TASKS.md`, merges, and pushes. Workers live in
   `~/dev/vomaste-worktrees/T-###` on `task/T-###` branches, one task per
   instance, and merge-request only with a clean `npm run build`.
-- **Why 5 skills and not a large agent/command ecosystem**: this repo's
+- **Why 9 skills and not a large agent/command ecosystem**: this repo's
   Claude Code tooling (`.githooks/pre-commit`, `scripts/setup/`, the 5
-  skills above) is deliberately scaled to what a small, single-purpose
-  Zola static site actually needs — not a port of a large platform's
-  agent/command registry. That would be exactly the "doctrine/agent
-  sprawl" the constitution's operational-discipline invariants warn
-  against (`docs/constitution/OPEN_INTELLIGENCE_COMMONS.md`), adding
-  maintenance surface with no measured need. If a genuine new need shows
-  up, add the smallest thing that addresses it (another skill, another
-  validator) — not a framework in anticipation of needs this repo
-  doesn't have yet. `investigate` is the worked example: a 2026-07-30
-  request to import Prismatic's AIAD framework (549 agents, 234
-  commands, 1,636 files — see `docs/adr/aiad-and-agent-tooling-import.md`
-  for the measured comparison) was evaluated and declined on exactly this
-  reasoning, and the smallest thing that addressed the actual need — one
-  more skill — was added instead. Same reasoning `adr` asks you to apply
-  to a dependency, applied to this repo's own tooling.
+  core skills plus the 4 `prismatic-*` scaffolds) is deliberately scaled
+  to what a small, single-purpose Zola static site actually needs — not a
+  port of a large platform's agent/command registry. That would be
+  exactly the "doctrine/agent sprawl" the constitution's
+  operational-discipline invariants warn against
+  (`docs/constitution/OPEN_INTELLIGENCE_COMMONS.md`), adding maintenance
+  surface with no measured need. If a genuine new need shows up, add the
+  smallest thing that addresses it (another skill, another validator) —
+  not a framework in anticipation of needs this repo doesn't have yet.
+  `investigate` is the worked example: a 2026-07-30 request to import
+  Prismatic's AIAD framework (549 agents, 234 commands, 1,636 files — see
+  `docs/adr/aiad-and-agent-tooling-import.md` for the measured
+  comparison) was evaluated and declined on exactly this reasoning, and
+  the smallest thing that addressed the actual need — one more skill —
+  was added instead. The 4 `prismatic-*` skills added 2026-08-05 are the
+  same reasoning applied a second time, after the owner explicitly lifted
+  the earlier ban on using the platform itself (not on copying its
+  tooling tree): four thin, repository-specific skills that call a
+  versioned export contract, not the AIAD framework this ADR still
+  declines. Same reasoning `adr` asks you to apply to a dependency,
+  applied to this repo's own tooling.

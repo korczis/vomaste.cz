@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/stanislav-stech/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/stanislav-stech"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil člena vlády)",
+  "description": "Oficiální vládní profil: ministr školství 21. 6. – 13. 12. 2017, dříve náměstek a prorektor UK.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/stanislav-stech-157642/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/stanislav-stech/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "stanislav-stech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil člena vlády na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci ministra školství, mládeže a tělovýchovy od 21. 6. 2017, s obdobím v demisi od 5. do 13. 12. 2017, nominaci za ČSSD, funkci náměstka ministra školství od července 2015, profesuru pedagogické psychologie UK (od 2007) a prorektorství Univerzity Karlovy (2003–2015).\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — jediný přímo otevřený zdroj tohoto dossieru; tvrzení proto nese stav 1 ZDROJ."
+    }
+  ],
+  "order": 1
+}

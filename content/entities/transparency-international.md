@@ -3,6 +3,7 @@
 title = "Transparency International ČR"
 template = "entity.html"
 weight = 412
+description = "Transparency International ČR — Kontextová entita — Protikorupční NGO; varování před nominací Šebestyána, podnět institucím EU, obrana justice."
 
 [extra]
 generated = true

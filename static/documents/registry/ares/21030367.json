@@ -1,0 +1,160 @@
+{
+  "retrieved": "2026-08-09",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "21030367"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "21030367",
+        "obchodniJmeno": "Ředitelství silnic a dálnic s. p.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 43,
+          "nazevSpravnihoObvodu": "Praha 4",
+          "kodMestskehoObvodu": 43,
+          "nazevMestskehoObvodu": "Praha 4",
+          "kodMestskeCastiObvodu": 500119,
+          "kodUlice": 458651,
+          "nazevMestskeCastiObvodu": "Praha 4",
+          "nazevUlice": "Na Pankráci",
+          "cisloDomovni": 546,
+          "kodCastiObce": 490156,
+          "cisloOrientacni": 56,
+          "nazevCastiObce": "Nusle",
+          "kodAdresnihoMista": 22700480,
+          "psc": 14000,
+          "textovaAdresa": "Na Pankráci 546/56, Nusle, 14000 Praha 4",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "datumVzniku": "2024-01-01",
+        "datumAktualizace": "2025-01-18",
+        "icoId": "21030367",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Na Pankráci 546/56",
+          "radekAdresy2": "Nusle",
+          "radekAdresy3": "14000 Praha 4"
+        },
+        "czNace2008": [
+          "00",
+          "4211"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "NEEXISTUJICI",
+          "stavZdrojeRes": "ZANIKLY",
+          "stavZdrojeRzp": "NEEXISTUJICI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "NEEXISTUJICI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Ředitelství silnic a dálnic s. p.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 43,
+                  "nazevSpravnihoObvodu": "Praha 4",
+                  "kodMestskehoObvodu": 43,
+                  "nazevMestskehoObvodu": "Praha 4",
+                  "kodMestskeCastiObvodu": 500119,
+                  "kodUlice": 458651,
+                  "nazevMestskeCastiObvodu": "Praha 4",
+                  "nazevUlice": "Na Pankráci",
+                  "cisloDomovni": 546,
+                  "kodCastiObce": 490156,
+                  "cisloOrientacni": 56,
+                  "nazevCastiObce": "Nusle",
+                  "kodAdresnihoMista": 22700480,
+                  "psc": 14000,
+                  "textovaAdresa": "Na Pankráci 546/56, Nusle, 14000 Praha 4",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "301",
+            "pravniFormaRos": "301",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Ředitelství silnic a dálnic s. p.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 43,
+                  "nazevSpravnihoObvodu": "Praha 4",
+                  "kodMestskehoObvodu": 43,
+                  "nazevMestskehoObvodu": "Praha 4",
+                  "kodMestskeCastiObvodu": 500119,
+                  "kodUlice": 458651,
+                  "nazevMestskeCastiObvodu": "Praha 4",
+                  "nazevUlice": "Na Pankráci",
+                  "cisloDomovni": 546,
+                  "kodCastiObce": 490156,
+                  "cisloOrientacni": 56,
+                  "nazevCastiObce": "Nusle",
+                  "kodAdresnihoMista": 22700480,
+                  "psc": 14000,
+                  "textovaAdresa": "Na Pankráci 546/56, Nusle, 14000 Praha 4",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "301",
+            "datovyZdroj": "ros"
+          }
+        ],
+        "czNace": []
+      }
+    ]
+  }
+}

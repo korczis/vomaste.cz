@@ -3,6 +3,7 @@
 title = "Fastned"
 template = "entity.html"
 weight = 127
+description = "Fastned — Kontextová entita — Provozovatel nabíjecích stanic; účastník Forum Elektromobilita 2026."
 
 [extra]
 generated = true

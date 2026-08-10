@@ -27,6 +27,10 @@
       "@type": "@id"
     },
     "availability": "vomaste:availability",
+    "localDocument": {
+      "@id": "vomaste:localDocument",
+      "@type": "@json"
+    },
     "published": {
       "@id": "schema:datePublished",
       "@type": "xsd:date"

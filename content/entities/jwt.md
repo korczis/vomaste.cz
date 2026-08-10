@@ -3,6 +3,7 @@
 title = "JWT (J. Walter Thompson)"
 template = "entity.html"
 weight = 183
+description = "JWT (J. Walter Thompson) — Kontextová entita — Mezinárodní reklamní agentura z oficiálního životopisu Klempíře; jen biografický kontext."
 
 [extra]
 generated = true

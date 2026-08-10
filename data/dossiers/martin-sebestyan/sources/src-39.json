@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-39",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-39",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
+  },
+  "title": "SRC-39 — Státní zemědělský intervenční fond",
+  "description": "Stanovisko SZIF k otázce střetu zájmů, tisková zpráva z 22. dubna 2026",
+  "outlet": "Státní zemědělský intervenční fond",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://szif.gov.cz/cs/CmDocument?rid=/apa_anon/cs/zpravy/zpravy_o_fondu/tiskove_zpravy/1776844359948.pdf",
+  "published": "2026-04-22",
+  "retrieved": "2026-08-06",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-22"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-54"
+    }
+  ],
+  "subjects": [
+    "sebestyan"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Stanovisko SZIF k otázce střetu zájmů (Praha, 22. dubna 2026)**\n\nFond v dokumentu uvádí, že vyhodnotil závěry nezávislých právních analýz externích advokátních kanceláří a považuje vložení akcií koncernu Agrofert do svěřenského fondu RSVP Trust za řešení v souladu s národní i evropskou legislativou — „tedy, od 20. února 2026, není právní důvod pro vyloučení koncernu Agrofert z čerpání dotací SZIF či z účasti ve veřejných zakázkách realizovaných SZIF“. Generální ředitel Petr Dlouhý je citován: „V návaznosti na právní posouzení konstatuji, že svěřenský fond RSVP Trust splňuje podmínky vypořádání majetkových poměrů ve smyslu právní úpravy střetu zájmů.“\n\nDokument rozepisuje postup podle typu dotace: u nenárokových projektů PRV před uzavřením dohody eviduje fond 8 projektů ve výši cca 68 milionů korun, u nichž bude administrace ukončena; u nenárokových po uzavření dohody nemá vznik střetu zájmů vliv na způsobilost; u nárokových evropských dotací fond „nepřistoupí ke zpětnému vymáhání nárokových evropských dotací poskytnutých v letech 2017–2021“; u národních zemědělských dotací pokračuje v navazujících právních analýzách s tím, že „případná prekluzivní lhůta pro zahájení řízení o vrácení prostředků nastane nejdříve v prosinci 2027“.\n\n**Poznámka k přesnosti a limitům**: PDF staženo a přečteno celé (2 strany) dne 6. 8. 2026. Jde o stanovisko strany, jejíž postup je předmětem kritiky, nikoli o nezávislé posouzení. Dokument neobsahuje samotné právní analýzy, na které odkazuje, ani rozhodnutí jakéhokoli soudu či Evropské komise."
+    }
+  ],
+  "order": 39
+}

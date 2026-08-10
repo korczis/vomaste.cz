@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-01 — Vláda ČR (oficiální profil)"
-description = "Oficiální profil člena vlády: funkce a údaje, které stránka sama uvádí."
+description = "Oficiální profil člena vlády: funkce a údaje, které stránka sama uvádí. Zdroj: Vláda České republiky (vlada.gov.cz), dossier Ivan Bednárik."
 template = "dossier-source.html"
 weight = 1
 
@@ -15,7 +15,7 @@ lang = "cs"
 src_id = "SRC-01"
 +++
 Oficiální profil na webu Úřadu vlády, otevřen a přečten 2026-07-30.
-Uvádí funkci **ministr dopravy** a doložený přehled kariéry: narozen 16. 1. 1975 (Starý Tekov, Slovensko); téměř tři dekády v dopravě a logistice; bývalý předseda představenstva a generální ředitel Českých drah; dříve vedení ČD Cargo; poradce slovenského ministra dopravy (12/2023–5/2025); generální ředitel Železníc Slovenskej republiky (od 15. 5. 2025).
+Uvádí funkci **ministr dopravy** a doložený přehled kariéry: narozen 1975 (Starý Tekov, Slovensko); téměř tři dekády v dopravě a logistice; bývalý předseda představenstva a generální ředitel Českých drah; dříve vedení ČD Cargo; poradce slovenského ministra dopravy (12/2023–5/2025); generální ředitel Železníc Slovenskej republiky (od 15. 5. 2025).
 
 Poznámka k typu zdroje a jeho limitům: **primární úřední záznam** —
 dokládá existenci a formulaci úředního údaje, ne nezávislé redakční

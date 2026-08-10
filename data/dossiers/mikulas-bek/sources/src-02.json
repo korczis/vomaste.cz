@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/mikulas-bek/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/mikulas-bek"
+  },
+  "title": "SRC-02 — MŠMT: Ministři školství od roku 1848 (oficiální přehled)",
+  "description": "Oficiální resortní přehled ministrů školství: Bek 4. 5. 2023 – 15. 12. 2025.",
+  "outlet": "Ministerstvo školství, mládeže a tělovýchovy (msmt.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://msmt.gov.cz/ministerstvo/ministri-skolstvi-od-roku-1848",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/mikulas-bek/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "mikulas-bek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální přehled ministrů školství na webu MŠMT, otevřen a přečten 2026-08-08.\nUvádí funkční období Mikuláše Beka jako ministra školství, mládeže a tělovýchovy od 4. 5. 2023 do 15. 12. 2025.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam jiné instituce než SRC-01** (resortní evidence MŠMT vs. Úřad vlády) — dokládá funkční období v resortu školství; dřívější funkce (evropské záležitosti, Senát, rektorství) nese SRC-01."
+    }
+  ],
+  "order": 2
+}

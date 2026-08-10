@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vera-jourova",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "vera-jourova",
+  "slug": "vera-jourova",
+  "title": "Věra Jourová",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Věra Jourová.",
+  "dossierType": "entity",
+  "canonicalDossier": "vera-jourova",
+  "subject": "vera-jourova",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-VERA-JOUROVA"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "vera-jourova",
+        "label": "Věra Jourová",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nVěra Jourová je bývalá místopředsedkyně Evropské komise pro hodnoty a\ntransparentnost (2019–2024), bývalá eurokomisařka pro spravedlnost\n(2014–2019) a bývalá ministryně pro místní rozvoj ČR (2014). Jako\npoliticky exponovaná osoba v souvislosti s výkonem dřívějších veřejných\nfunkcí spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-08-VERA-JOUROVA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívějších veřejných funkcí. Rozšíření rozsahu vyžaduje\nsamostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/vera-jourova/claims/clm-01.md) | Věra Jourová byla podle oficiálního profilu na webu Vlády ČR ministryní pro místní rozvoj od 29. 1. do 3. 10. 2014 (vláda Bohuslava Sobotky) a poslankyní od října 2013; podle Aktuálně.cz poté působila deset let v Evropské komisi — v letech 2014–2019 jako eurokomisařka pro spravedlnost, ochranu spotřebitelů a rovnost žen a mužů a v letech 2019–2024 jako místopředsedkyně Evropské komise pro hodnoty a transparentnost, ve funkci skončila 30. 11. 2024 a v křesle českého komisaře ji nahradil Jozef Síkela | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/vera-jourova/sources/src-01.md), [SRC-02](@/dossiers/vera-jourova/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

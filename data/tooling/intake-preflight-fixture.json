@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/intake-preflight-fixture",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "intake-preflight-fixture",
+  "kind": "npm",
+  "name": "intake:preflight-fixture",
+  "title": "Smoke běh s preflightem přes mock DNS",
+  "category": "kontrola",
+  "summary": "Týž fixture jako intake:fixture, ale s `--preflight` přes MOCK DNS transport — nikdy skutečná síť. URL zdroje se přes injektovaný mock rozřeší na privátní adresu, takže se uplatní SSRF politika a zablokuje ji.",
+  "whenToRun": "Když měníš preflight, a chceš ověřit, že celá cesta doopravdy běží a plní neprázdnou sekci source_preflight.",
+  "inputs": [
+    "tests/fixtures/intake/**"
+  ],
+  "outputs": [
+    ".tmp/intake/** (gitignorováno)"
+  ],
+  "sourceFile": "scripts/intake/run-preflight-fixture.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Produkční kód nemá žádnou zadní vrátka pro privátní cíl — a přesně proto se ta cesta dá ověřit jen takhle, mockem na úrovni transportu."
+  ]
+}

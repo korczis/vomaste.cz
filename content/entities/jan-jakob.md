@@ -3,6 +3,7 @@
 title = "Jan Jakob"
 template = "entity.html"
 weight = 162
+description = "Jan Jakob — Kontextová entita — Oznámil přípravu ústavní stížnosti proti novele rozpočtových zákonů."
 
 [extra]
 generated = true

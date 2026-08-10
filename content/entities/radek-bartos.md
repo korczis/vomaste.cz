@@ -3,6 +3,7 @@
 title = "Radek Bartoš"
 template = "entity.html"
 weight = 357
+description = "Radek Bartoš — Kontextová entita — Mluvčí Vrchního státního zastupitelství v Olomouci; potvrdil doručení Tejcova trestního oznámení."
 
 [extra]
 generated = true

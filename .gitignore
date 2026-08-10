@@ -32,6 +32,14 @@ playwright-report/
 # smazatelná, skript si je stáhne znovu.
 .tmp/public-money/
 
+# Official-document archive Zone B. The normal location is a sibling tree
+# outside this repository (VOMASTE_JUSTICE_ARCHIVE_ROOT), but these root-level
+# guards prevent an accidental local override from ever being staged.
+/vomaste-archive/
+/justice-api-metadata/
+/sbirka-listin/
+/court-noticeboards-raw/
+
 # Zbytky po migraci na kanonický JSON model (T-028): per-dossier stats.toml
 # generoval dřívější generate-stats.mjs, dnes je počty vlastní view modely
 # (scripts/data/build-view-models.mjs). Nikdo je už negeneruje ani nečte —
@@ -39,3 +47,10 @@ playwright-report/
 # opakovaně vtahoval do stagingu. Pravidlo je tu proto, aby se mrtvý
 # artefakt nevrátil do gitu omylem.
 data/dossiers/*/stats.toml
+
+# Prismatic Platform integration (docs/adr/prismatic-platform-integration.md,
+# AUTH-2026-08-05-PLATFORM-SCOPE in AGENTS.md). Only var/prismatic-runs/ is
+# raw/ignored — data/staging, data/review and data/imports are sanitized,
+# reviewable Git-tracked zones by design and must NOT be added here.
+var/prismatic-runs/
+.prismatic-local.toml

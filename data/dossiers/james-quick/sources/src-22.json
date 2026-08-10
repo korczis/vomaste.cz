@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-22",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-22",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "title": "SRC-22 — iROZHLAS: Na internetu možná vznikne registr českých pedofilů",
+  "description": "Dobová zpráva Rádia Česko a iROZHLAS o oznámeném registru CERD, plánovaném zahraničním hostingu a stanovisku ÚOOÚ.",
+  "outlet": "iROZHLAS.cz (Český rozhlas)",
+  "sourceType": "redakční zpravodajství",
+  "url": "https://www.irozhlas.cz/zpravy-domov/na-internetu-mozna-vznikne-registr-ceskych-pedofilu_201010261523_lrafaelova",
+  "published": "2010-10-26",
+  "retrieved": "2026-08-07",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-21"
+    }
+  ],
+  "sourceFamily": "irozhlas",
+  "subjects": [
+    "james-quick"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Přímo otevřený dobový článek s vloženým záznamem rozhovoru. Je nezávislý na článku ČT24 a potvrzuje jen společné jádro CLM-21: oznámený veřejný registr, záměr hostovat jej mimo Českou republiku a nesouhlasné stanovisko ÚOOÚ. Neprokazuje, že byl projekt spuštěn."
+    }
+  ],
+  "order": 22
+}

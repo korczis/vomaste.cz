@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Igor Červený — jednal se zástupci společnosti Meta o využití umělé inteligence pro ochranu životního prostředí — Meta"
+description = "Igor Červený — jednal se zástupci společnosti Meta o využití umělé inteligence pro…. Vztah v grafu dossieru Igor Červený. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 17
 

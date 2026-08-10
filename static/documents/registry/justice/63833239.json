@@ -1,0 +1,181 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-09",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/63833239",
+  "status": "OK",
+  "subject": {
+    "ico": "63833239",
+    "businessName": "Unie státních zástupců České republiky",
+    "registerReference": "L 7161/MSPH"
+  },
+  "filings": [
+    {
+      "referenceLabel": "L 7161/SL1/MSPH",
+      "documentType": "stanovy společnosti",
+      "createdAt": "01-04-2014",
+      "receivedByCourtAt": "14-12-2015",
+      "filedAt": "10-02-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 12,
+          "sizeBytes": 359277
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 7161/SL2/MSPH",
+      "documentType": "rozhod. o statut. orgánu",
+      "createdAt": "02-04-2014",
+      "receivedByCourtAt": "14-12-2015",
+      "filedAt": "10-02-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 102381
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 7161/SL3/MSPH",
+      "documentType": "účetní závěrka [2014]",
+      "createdAt": "31-12-2014",
+      "receivedByCourtAt": "06-08-2019",
+      "filedAt": "06-09-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 591763
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 7161/SL4/MSPH",
+      "documentType": "účetní závěrka [2015]",
+      "createdAt": "31-12-2015",
+      "receivedByCourtAt": "06-08-2019",
+      "filedAt": "06-09-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 586464
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 7161/SL5/MSPH",
+      "documentType": "účetní závěrka [2016]",
+      "createdAt": "31-12-2016",
+      "receivedByCourtAt": "06-08-2019",
+      "filedAt": "06-09-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 596189
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 7161/SL6/MSPH",
+      "documentType": "účetní závěrka [2017]",
+      "createdAt": "31-12-2017",
+      "receivedByCourtAt": "06-08-2019",
+      "filedAt": "06-09-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 587958
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 7161/SL7/MSPH",
+      "documentType": "účetní závěrka [2018]",
+      "createdAt": "31-12-2018",
+      "receivedByCourtAt": "06-08-2019",
+      "filedAt": "06-09-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 564746
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 7161/SL8/MSPH",
+      "documentType": "účetní závěrka [2019]",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "31-03-2020",
+      "filedAt": "15-04-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 56980
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 7161/SL9/MSPH",
+      "documentType": "stanovy společnosti",
+      "createdAt": "01-01-2020",
+      "receivedByCourtAt": "17-07-2020",
+      "filedAt": "05-08-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 186190
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 7161/SL10/MSPH",
+      "documentType": "účetní závěrka [2020]",
+      "createdAt": "31-12-2020",
+      "receivedByCourtAt": "21-04-2021",
+      "filedAt": "05-05-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 392543
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 7161/SL11/MSPH",
+      "documentType": "účetní závěrka [2021]",
+      "createdAt": "31-12-2021",
+      "receivedByCourtAt": "20-04-2022",
+      "filedAt": "22-04-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 392527
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 7161/SL12/MSPH",
+      "documentType": "účetní závěrka [2022]",
+      "createdAt": "31-12-2022",
+      "receivedByCourtAt": "20-12-2023",
+      "filedAt": "05-01-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 321224
+        }
+      ]
+    }
+  ]
+}

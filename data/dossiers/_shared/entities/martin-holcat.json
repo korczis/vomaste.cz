@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/martin-holcat",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "martin-holcat",
+  "entityId": "martin-holcat",
+  "title": "Martin Holcát",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "martin-holcat"
+  ],
+  "order": 589,
+  "description": "Martin Holcát — bývalý ministr zdravotnictví (2013–2014).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalý ministr zdravotnictví (10. 7. 2013 – 29. 1. 2014, Rusnokova\nvláda, od 13. 8. 2013 v demisi).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ]
+}

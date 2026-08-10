@@ -1,0 +1,231 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vomaste.cz/schemas/canonical/source-catalog-entry.schema.json",
+  "title": "Kanonický záznam katalogu zdrojů (data/source-catalog/<slug>.json)",
+  "$comment": "Katalog odpovídá na otázku, která předchází citaci: kam se podívat a čemu z toho věřit. Na rozdíl od Source, který eviduje JEDNU použitou citaci, tenhle záznam popisuje CELÝ pramen — co dokládá, co nedokládá a na jaké pasti se v něm najíždí. Generátor scripts/dossier/build-source-catalog.mjs z něj staví /zdroje/, docs/osint/SOURCE_CATALOG.md i view model pro JSON-LD.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "@context",
+    "@id",
+    "@type",
+    "recordType",
+    "identifier",
+    "title",
+    "kind",
+    "access",
+    "url",
+    "order",
+    "proves",
+    "doesNotProve",
+    "content"
+  ],
+  "properties": {
+    "$schema": {
+      "const": "https://vomaste.cz/schemas/canonical/source-catalog-entry.schema.json"
+    },
+    "schemaVersion": {
+      "const": 1
+    },
+    "@context": {
+      "const": "https://vomaste.cz/context/v1.jsonld"
+    },
+    "@id": {
+      "type": "string",
+      "pattern": "^https://vomaste\\.cz/id/zdroje/[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "@type": {
+      "const": "vomaste:SourceCatalogEntry"
+    },
+    "recordType": {
+      "const": "sourceCatalogEntry"
+    },
+    "identifier": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "$comment": "Zároveň slug stránky /zdroje/<identifier>/ a název souboru."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "operator": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "Kdo pramen provozuje. Mapuje se na schema:provider v JSON-LD."
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "primary-registry",
+        "primary-document",
+        "aggregator",
+        "media",
+        "tool"
+      ],
+      "$comment": "Uzavřená množina. Rozdíl primary-registry × aggregator je nosný: doklad je vždy primární pramen, agregátor je rozcestník."
+    },
+    "jurisdiction": {
+      "type": "string",
+      "minLength": 2
+    },
+    "access": {
+      "type": "string",
+      "enum": [
+        "open",
+        "restricted",
+        "paid"
+      ],
+      "$comment": "Určuje isAccessibleForFree v JSON-LD; 'restricted' pokrývá captchu, paywall i nutný token."
+    },
+    "authentication": {
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "type": "string",
+      "pattern": "^https?://"
+    },
+    "apiUrl": {
+      "type": "string",
+      "pattern": "^https?://",
+      "$comment": "Strojové rozhraní, existuje-li. V JSON-LD se z něj stává schema:distribution — právě podle něj si agent vybere nástroj."
+    },
+    "order": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "families": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "$comment": "Hodnoty sourceFamily ze záznamů Source, které tenhle pramen pokrývá. Bez nich se skutečné užití nespáruje, protože rodina se často jmenuje jinak než záznam."
+    },
+    "outlets": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "$comment": "Hodnoty outlet ze záznamů Source. Zdroj bez rodiny se vede pod outletem, takže bez tohohle by institucionální prameny zůstaly navždy 'nepopsané'."
+    },
+    "proves": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "$comment": "Co pramen doopravdy dokládá. Prázdný seznam je zakázán: záznam, který neřekne, co pramen dokládá, katalogu k ničemu není."
+    },
+    "doesNotProve": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "$comment": "Meze. Povinné se stejnou vahou jako proves — pramen bez zapsaných mezí svádí k tomu vyvozovat z něj víc, než unese, a to je přesně chyba, které katalog předchází."
+    },
+    "traps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "detail"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "detail": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "$comment": "Konkrétní chování, na které se už najelo. Patří sem jen ověřené případy, ne domněnky — past, která se nestala, je pověra."
+    },
+    "subRegisters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "code",
+          "label"
+        ],
+        "properties": {
+          "code": {
+            "type": "string",
+            "minLength": 1
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "howToSearch": {
+      "type": "string",
+      "minLength": 1
+    },
+    "content": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "value"
+        ],
+        "properties": {
+          "type": {
+            "const": "markdown"
+          },
+          "value": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "answers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "question"
+        ],
+        "properties": {
+          "question": {
+            "type": "string",
+            "minLength": 1,
+            "$comment": "Otázka tak, jak si ji rešerše doopravdy klade — ne název pole v API."
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1,
+            "$comment": "Čím je odpověď z tohoto pramene omezená, pokud to není zřejmé z doesNotProve."
+          }
+        }
+      },
+      "$comment": "Na které otázky tenhle pramen odpovídá. Katalog bez tohohle popisuje zdroje, ale nemapuje na ně otázky — a rešerše začíná otázkou, ne názvem registru. Generátor z toho staví směrovací tabulku, v níž primární prameny stojí před agregátory a médii."
+    },
+    "publisherGroup": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "Vydavatelská skupina doložená v katalogu (týž provozovatel pod více značkami). Dva zdroje téže skupiny netvoří nezávislou dvojici — viz pravidlo S10 a scripts/data/lib/source-independence.mjs."
+    }
+  }
+}

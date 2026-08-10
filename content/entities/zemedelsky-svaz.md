@@ -3,6 +3,7 @@
 title = "Zemědělský svaz ČR"
 template = "entity.html"
 weight = 462
+description = "Zemědělský svaz ČR — Kontextová entita — Podpořil Šebestyánovu nominaci na ministra. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

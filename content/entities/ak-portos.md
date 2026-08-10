@@ -3,6 +3,7 @@
 title = "Advokátní kancelář Portos (dříve Češka a Smutný)"
 template = "entity.html"
 weight = 55
+description = "Advokátní kancelář Portos (dříve Češka a Smutný) — Kontextová entita — Zpracovatel právních analýz SZIF k nevymáhání dotací; zpochybněno Ivanem Bartošem."
 
 [extra]
 generated = true

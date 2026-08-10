@@ -9,14 +9,15 @@
   "entityId": "zdenek-hrib",
   "title": "Zdeněk Hřib",
   "entityType": "person",
-  "publicationRole": "context",
-  "dossierEnabled": false,
-  "dossierStatus": "not_authorized",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
   "coverageState": "discovered",
   "dossiers": [
     "alena-schillerova",
     "andrej-babis",
     "karel-havlicek",
+    "zdenek-hrib",
     "zuzana-mrazova"
   ],
   "order": 455,

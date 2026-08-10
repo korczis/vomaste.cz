@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/pavel-drobil/sources/SRC-03",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/pavel-drobil"
+  },
+  "title": "SRC-03 — ODS: profil Pavla Drobila ve stínové vládě",
+  "description": "Vlastní profilová stránka Pavla Drobila na webu ODS, uvádějící jeho roli ve stínové vládě strany.",
+  "outlet": "ODS (Občanská demokratická strana)",
+  "sourceType": "vlastní profil strany",
+  "url": "https://www.ods.cz/stinova-vlada/profil/302-pavel-drobil",
+  "retrieved": "2026-08-06",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/pavel-drobil/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "pavel-drobil"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Vlastní profilová stránka Pavla Drobila v sekci stínové vlády na webu ODS, otevřena a přečtena 2026-08-06.\nUvádí, že zastává funkci „stínového ministra průmyslu a obchodu\", potvrzuje zvolení místopředsedou strany na lednovém kongresu ODS 2026 a jeho dřívější funkci ministra životního prostředí (2010, vláda Petra Nečase).\n\nPoznámka k typu zdroje a jeho limitům: jde o **vlastní publikaci strany**, ne o zprávu nezávislého média — dokládá, jakou roli si strana sama přiřazuje (stínová vláda je vnitrostranická konstrukce, nikoli státní funkce), nikoli nezávislé redakční posouzení. Pro nezávislé potvrzení funkce místopředsedy ODS viz SRC-01 (ČT24) a SRC-02 (Echo24); roli stínového ministra průmyslu a obchodu jiný nezávislý zdroj v tomto minimálním dossieru zatím nedokládá — jde o údaj strany o vlastní vnitřní struktuře."
+    }
+  ],
+  "order": 3
+}

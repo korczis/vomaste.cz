@@ -3,6 +3,7 @@
 title = "Unie rodičů"
 template = "entity.html"
 weight = 421
+description = "Unie rodičů — Kontextová entita — Rodičovská organizace; kritika sběru citlivých dat a posunu prázdnin."
 
 [extra]
 generated = true

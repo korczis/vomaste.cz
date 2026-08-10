@@ -19,3 +19,13 @@ src_id = "SRC-13"
 Monitoring vystoupení ministra Šebestyána v Poslanecké sněmovně 11. 6. 2026 k bodu o dotacích Agrofertu. Ministr označil dopis DG Regio za pracovní, právně nezávaznou komunikaci a odmítl výklad, že Komise pozastavila platby; podle něj to může učinit jen prováděcí rozhodnutí. Tvrdí, že předmětem historického auditního šetření nikdy nebyly nárokové dotace (přímé platby) a že ty Komise po celou dobu propláceala. Delší část záznamu je uzamčena.
 
 Zdroj otevřen a přečten 2026-07-30. Dokládá znění citovaného zpravodajství k datu otevření, ne nezávislé potvrzení jinými zdroji.
+
+**Upřesnění povahy zdroje 2026-08-10.** Záznam byl veden jako „oficiální
+primární zdroj". To je nepřesné: rubrika ParlamentníListy.cz „Politici
+voličům" je **neredigovaná plocha pro sebeprezentaci politiků**, ne
+oficiální evidence. Autoritativním záznamem sněmovního vystoupení je
+stenoprotokol Poslanecké sněmovny.
+
+Pro [CLM-26](@/dossiers/martin-sebestyan/claims/clm-26.md) to znamená:
+zdroj dokládá, **že ministr tyto věci tvrdí** — a přesně tak je tvrzení
+formulováno —, nedokládá, že jeho výklad je správný.

@@ -9,12 +9,15 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
   },
-  "text": "Vedení SZIF v čele se Šebestyánem v srpnu 2022 veřejně vyzvalo vládu Petra Fialy, aby Evropskou komisi kvůli výsledkům auditu ke střetu zájmů zažalovala.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Vedení SZIF v čele se Šebestyánem v srpnu 2022 veřejně vyzvalo vládu Petra Fialy, aby Evropskou komisi kvůli výsledkům auditu ke střetu zájmů zažalovala. Vlastní materiál fondu z 1. 8. 2022 to formuluje jako doporučení podat žalobu proti prováděcímu rozhodnutí EK, s nímž fond seznámil Ministerstvo zemědělství jako nadřízený správní orgán; nejzazší termín pro podání žaloby fond uvedl na 19. 8. 2022.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-42"
     }
   ],
   "subjects": [

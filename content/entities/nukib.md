@@ -3,6 +3,7 @@
 title = "NÚKIB"
 template = "entity.html"
 weight = 307
+description = "NÚKIB — Kontextová entita — Národní úřad pro kybernetickou a informační bezpečnost — o nálezu zařízení nevěděl, nebyl mu nahlášen."
 
 [extra]
 generated = true

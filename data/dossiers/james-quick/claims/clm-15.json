@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-15",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-15",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "text": "ČT24 v červenci 2010 uvedla, že CERD zastoupený Jiřím Jehličkou podal trestní oznámení v souvislosti s Radkem Johnem a zakázkami společností Ora Print, VZP a Lesů ČR; zpráva popisovala podezření obsažená v oznámení, nikoli rozhodnutí o Johnově vině.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-16"
+    }
+  ],
+  "subjects": [
+    "james-quick"
+  ],
+  "order": 15,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Doloženo je podání a jeho veřejně popsaný předmět. Hrana k Radku Johnovi je procesní reakcí ve veřejné kauze, nikoli důkazem osobního, obchodního či lobbistického vztahu ani výsledku policejního prověřování."
+    }
+  ]
+}

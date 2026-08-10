@@ -1,0 +1,40 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "00177041",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/00177041",
+  "nazev": "Škoda Auto a.s.",
+  "sidlo": "tř. Václava Klementa 869, Mladá Boleslav II, 29301 Mladá Boleslav",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "B",
+    "vlozka": "332"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "člen představenstva",
+      "since": "2023-05-30",
+      "kind": "person",
+      "name": "Holger Peters"
+    },
+    {
+      "role": "předseda představenstva",
+      "since": "2022-07-01",
+      "kind": "person",
+      "name": "Klaus Zellmer"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2024-03-11",
+      "kind": "person",
+      "name": "Maren Gräf"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2024-03-11",
+      "kind": "person",
+      "name": "Martin Jahn"
+    }
+  ],
+  "spolecnici": []
+}

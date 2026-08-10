@@ -3,6 +3,7 @@
 title = "Hana Kordová Marvanová"
 template = "entity.html"
 weight = 141
+description = "Hana Kordová Marvanová — Kontextová entita — Advokátka; kritika Tejcovy novely občanského zákoníku."
 
 [extra]
 generated = true

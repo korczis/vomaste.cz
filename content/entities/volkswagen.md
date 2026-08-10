@@ -3,6 +3,7 @@
 title = "Volkswagen"
 template = "entity.html"
 weight = 439
+description = "Volkswagen — Kontextová entita — Automobilový koncern; Havlíček na tiskové konferenci vlády reagoval na jeho restrukturalizaci v kontextu emisních cílů EU."
 
 [extra]
 generated = true

@@ -3,6 +3,7 @@
 title = "Interní audit Národní sportovní agentury"
 template = "entity.html"
 weight = 76
+description = "Interní audit Národní sportovní agentury — Kontextová entita — Audit ohlášený ministrem Šťastným v souvislosti s odvoláním vedení NSA a řešením střetu zájmů poradního orgánu."
 
 [extra]
 generated = true

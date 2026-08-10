@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-18",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-18",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "title": "SRC-18 — Ministerstvo spravedlnosti ČR",
+  "description": "Interní audit odhalil závažná selhání při přijetí a prodeji bitcoinů",
+  "outlet": "Ministerstvo spravedlnosti ČR",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://msp.gov.cz/web/msp/tiskove-zpravy/-/clanek/intern%C3%AD-audit-odhalil-z%C3%A1va%C5%BEn%C3%A1-selh%C3%A1n%C3%AD-p%C5%99i-p%C5%99ijet%C3%AD-a-prodeji-bitcoin%C5%AF",
+  "published": "2026-04-20",
+  "retrieved": "2026-08-06",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-05"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Interní audit odhalil závažná selhání při přijetí a prodeji bitcoinů**\n\nTisková zpráva resortu k prezentaci výsledků interního auditu, který podle ní zpracovali kmenoví zaměstnanci ministerstva bez externích spolupracovníků. Zpráva nese v patičce datum „Praha 20. dubna 2026“ a podpis ředitele Odboru komunikace a tiskového mluvčího Vladimíra Řepky.\n\nZdroj otevřen a přečten v plném znění 2026-08-06.\n\n**Co dokládá.** Ministrovo oznámení, že resort podá Národní centrále proti organizovanému zločinu trestní oznámení a bude informovat dozorové Vrchní státní zastupitelství v Olomouci ([CLM-02](@/dossiers/jeronym-tejc/claims/clm-02.md)); právní kvalifikaci podezření — porušení povinnosti při správě cizího majetku a zneužití pravomoci úřední osoby ([CLM-04](@/dossiers/jeronym-tejc/claims/clm-04.md)); a zjištění auditu k aukcím: ve všech 78 aukcích byla hodnota nejnižšího podání snížena o 10 % oproti vyhlášeným podmínkám, čímž mohl být porušen zákon o majetku státu a státu vzniknout škoda „minimálně 13 milionům korun, v krajním případě lze hovořit o částce 95 milionů korun“ ([CLM-05](@/dossiers/jeronym-tejc/claims/clm-05.md)).\n\n**Poznámka k přesnosti a limitům.** Zdroj je od Ministerstva spravedlnosti — tedy od aktéra, o jehož vlastním kroku informuje; nezávislým potvrzením vůči ministrovi není, je primárním dokladem toho, co resort oficiálně uvedl. Rozdíl proti dosavadnímu znění tvrzení: [CLM-05](@/dossiers/jeronym-tejc/claims/clm-05.md) uvádělo podle zpravodajství, že stát „přišel přibližně o 13 milionů korun“; dokument mluví o **možné** škodě **nejméně** 13 milionů, v krajním případě až 95 milionů, a tvrzení bylo podle dokumentu opraveno. Dokument dále **neuvádí** datum, kdy byl audit prezentován (17. dubna 2026 podle ČTK) — nese jen datum vlastního vydání 20. dubna 2026 —, **neuvádí** doručení trestního oznámení VSZ v Olomouci 23. dubna ani mluvčího Radka Bartoše ([CLM-03](@/dossiers/jeronym-tejc/claims/clm-03.md)), **nejmenuje** exministra Blažka ani exministryni Decroix ([CLM-07](@/dossiers/jeronym-tejc/claims/clm-07.md)) a formulaci o chybějících záznamech ze schůzek se zájemci o odkup ([CLM-06](@/dossiers/jeronym-tejc/claims/clm-06.md)) neobsahuje — mluví obecněji o nedostatečné dokumentaci a kontrolní stopě při přípravě aukcí. K těmto tvrzením proto připojen není."
+    }
+  ],
+  "order": 18
+}

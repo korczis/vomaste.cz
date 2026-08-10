@@ -3,6 +3,7 @@
 title = "Krijcos Energy"
 template = "entity.html"
 weight = 228
+description = "Krijcos Energy — Kontextová entita — Chladova investice do solárních elektráren dle citovaného profilu."
 
 [extra]
 generated = true

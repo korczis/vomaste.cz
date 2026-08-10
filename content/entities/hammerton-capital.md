@@ -3,6 +3,7 @@
 title = "Hammerton Capital Co. Limited"
 template = "entity.html"
 weight = 140
+description = "Hammerton Capital Co. Limited — Kontextová entita — Čínská společnost se sídlem v Hongkongu, vlastník Hemmont."
 
 [extra]
 generated = true

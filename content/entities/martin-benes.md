@@ -3,6 +3,7 @@
 title = "Martin Beneš"
 template = "entity.html"
 weight = 249
+description = "Martin Beneš — Kontextová entita — Dětský ombudsman; člen komise k úmrtím dětí, kritik plošného zákazu mobilů."
 
 [extra]
 generated = true

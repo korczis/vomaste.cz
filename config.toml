@@ -23,26 +23,16 @@ taxonomies = []
 skip_prefixes = ["https://www.irozhlas.cz/"]
 
 [extra]
-locale = "cs_CZ"
+# POZOR: sociální a SEO metadata (og:*, twitter:*, locale, náhledové karty,
+# mapování typu stránky na og:type/schema.org typ, meze délky titulku a
+# popisu) tady NEJSOU. Od T-076 je vlastní `data/seo.toml` — deklarativně,
+# na jednom místě a vynuceně (`npm run verify:og` po každém buildu).
+# Tady zůstává jen to, co potřebuje sama Zola nebo co není metadatová
+# politika.
 lang = "cs"
 
-# Navržená preview karta 1200×630 JPEG (ne screenshot): generuje ji
-# scripts/og/build-og-images.mjs, které vyrábí i kartu pro každý dossier
-# (images/og/<slug>.jpg — templates/base.html je přiřazuje automaticky).
-# LinkedIn/Facebook SVG og:image nevykreslují, proto rastr; starší varianty
-# (og-image.svg, og-image.jpg, og-image-square.jpg) zůstávají v repu.
-og_image = "images/og/site.jpg"
-og_image_width = 1200
-og_image_height = 630
-og_image_type = "image/jpeg"
-og_image_alt = "vomaste.cz — Open Intelligence Commons. Nevěřte autorovi, zkontrolujte data, zdroje a historii změn."
 author = "vomaste.cz / korczis"
 keywords = "dossier, otevřená data, open source, OSINT, investigativní data, veřejný zájem, transparentnost, ověřitelné zdroje, registr tvrzení, JSON-LD, Git"
-# Čtvercová varianta pro platformy preferující 1:1 (WhatsApp, Telegram…):
-# static/images/og-image-square.jpg (1200×1200) — stejný vizuál.
-
-seo_type = "WebPage"
-og_type = "website"
 publisher = "vomaste.cz"
 
 index = true

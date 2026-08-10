@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-21",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-21",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "title": "SRC-21 — Peníze.cz: Kupte si „ministerskou“ webovou adresu – košer to není, ale sypat to může!",
+  "description": "Dobová reportáž Peníze.cz o doménách připomínajících státní instituce, jejich vlastnících a propagaci Centrálního registru dlužníků.",
+  "outlet": "Peníze.cz",
+  "sourceType": "redakční zpravodajství",
+  "url": "https://www.penize.cz/dluhy/202611-kupte-si-ministerskou-webovou-adresu-koser-to-neni-ale-sypat-to-muze%21",
+  "published": "2011-04-11",
+  "retrieved": "2026-08-07",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-20"
+    }
+  ],
+  "subjects": [
+    "james-quick"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Přímo otevřená dobová reportáž nezávislá na České televizi. Dokládá pouze překryv použitý v CLM-20: existenci domén názvem připomínajících státní instituce a jejich vazbu na propagaci CERD. Hodnotící jazyk článku ani jeho širší závěry dossier nepřebírá."
+    }
+  ],
+  "order": 21
+}

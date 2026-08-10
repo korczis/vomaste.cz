@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/klara-dostalova/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/klara-dostalova"
+  },
+  "text": "Klára Dostálová byla podle oficiálního profilu na webu Vlády ČR ministryní pro místní rozvoj od prosince 2017 do 17. 12. 2021 (obě vlády Andreje Babiše, v demisi od 11. 11. 2021), předtím náměstkyní na MMR (2014–2017); podle profilu ČT24 byla v eurovolbách 2024 zvolena poslankyní Evropského parlamentu jako lídryně kandidátky ANO a poslankyní PSP ČR byla v letech 2017–2024",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/klara-dostalova/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/klara-dostalova/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "klara-dostalova"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/klara-dostalova/_index.md)."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/updates/2026-08-08",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-08",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "date": "2026-08-08",
+  "summary": "Kolo rešerší k doložení nezávislým druhým hlasem. Dvě tvrzení posílena z 1 ZDROJ na CORROBORATED přímo otevřenou vlastní reportáží Aktuálně.cz (vydavatel Economia, autor Ondřej Stratilík), nezávislou na dosavadních zdrojích rodinou i vydavatelem: CLM-12 (inspekce ministerstva obrany neprokázala zákaz zveřejnění rozhovoru s prezidentem ani cílenou cenzuru, pochybení na obou stranách) doloženo SRC-43 vedle veřejnoprávní ČT24 přebírající ČTK (SRC-08); CLM-45 (rozpočet obrany 215 miliard v roce 2027 a 238 miliard v roce 2028, přibližně 2,5 % HDP — v úniku 2,34, resp. 2,47 % HDP dle přímé citace Zůny) doloženo SRC-44 vedle CNN Prima News (SRC-24). Ostatní jednozdrojová tvrzení prověřena, ale ponechána na 1 ZDROJ pro absenci skutečně nezávislého druhého hlasu: CLM-11 (zveřejnění rozhovoru 20. 4.) — nalezená reportáž Respektu nese v tiráži ČTK, tedy ne nezávislá na CNN Prima/ČTK; CLM-21 (Řehkovo předání funkce, konec služby 31. 8., Vítkov) — nalezená vlastní reportáž Forum24 potvrzuje jen předání 30. 6., nikoli celé znění; CLM-25 (jednomyslná podpora výboru pro obranu jmenování Hlaváče) — nejsilnější nezávislé potvrzení nese iROZHLAS, jehož vlastní zpravodajství vrací HTTP 403 a nešlo otevřít; CLM-36 (opětovné jednání Bezpečnostní rady státu 2. 7.) a CLM-38 (demografický propad) — dostupné pokrytí sdílí buď rodinu ctk, nebo tutéž redakci (Ekonomický deník) jako dosavadní zdroj. Beze změny rozsahu: žádné nové téma, subjekt ani třetí osoba.",
+  "addedClaims": [],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-45"
+    }
+  ],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-43"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-44"
+    }
+  ]
+}

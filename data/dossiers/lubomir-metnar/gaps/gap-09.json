@@ -12,7 +12,7 @@
   "title": "GAP-09 — Zdroj Radio Prague International nebyl přečten.",
   "description": "Server vrátil HTTP 403 Forbidden; z tohoto zdroje proto nebyla odvozena žádná tvrzení.",
   "priority": "střední",
-  "checked": "2026-08-03",
+  "checked": "2026-08-05",
   "claims": [],
   "subjects": [
     "metnar"
@@ -20,7 +20,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Zdroj Radio Prague International nebyl přečten.\n\n**Proč je to mezera**: Server vrátil HTTP 403 Forbidden; z tohoto zdroje proto nebyla odvozena žádná tvrzení. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-03**: dohledán konkrétní článek serveru Radio Prague International (cesky.radio.cz, „Ministerstvo vnitra navrhuje zrušení policejní ochranné služby NKÚ\") k tématu zrušení policejní ochrany NKÚ. Přímé otevření URL vrátilo opět HTTP 403 Forbidden — server zůstává nedostupný pro automatizované čtení. Klíčové skutečnosti z tohoto tématu (návrh MV, vyjádření Kaly, odhad nákladů na soukromou ostrahu cca 20 mil. Kč ročně) jsou už doloženy jinými přímo otevřenými zdroji ([SRC-01](@/dossiers/lubomir-metnar/sources/src-01.md), [CLM-01](@/dossiers/lubomir-metnar/claims/clm-01.md)). Mezera zůstává otevřená pouze pro obsah samotný specifický k tomuto konkrétnímu zdroji."
+      "value": "Zdroj Radio Prague International nebyl přečten.\n\n**Proč je to mezera**: Server vrátil HTTP 403 Forbidden; z tohoto zdroje proto nebyla odvozena žádná tvrzení. Tato mezera **není** zjištěním žádným\nsměrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit\notevřeným zdrojem.\n\n**Opakovaná kontrola k 2026-08-03**: dohledán konkrétní článek serveru Radio Prague International (cesky.radio.cz, „Ministerstvo vnitra navrhuje zrušení policejní ochranné služby NKÚ\") k tématu zrušení policejní ochrany NKÚ. Přímé otevření URL vrátilo opět HTTP 403 Forbidden — server zůstává nedostupný pro automatizované čtení. Klíčové skutečnosti z tohoto tématu (návrh MV, vyjádření Kaly, odhad nákladů na soukromou ostrahu cca 20 mil. Kč ročně) jsou už doloženy jinými přímo otevřenými zdroji ([SRC-01](@/dossiers/lubomir-metnar/sources/src-01.md), [CLM-01](@/dossiers/lubomir-metnar/claims/clm-01.md)). Mezera zůstává otevřená pouze pro obsah samotný specifický k tomuto konkrétnímu zdroji.\n\n**Opakovaná kontrola k 2026-08-05**: přímé otevření téže URL vrátilo znovu HTTP 403 Forbidden (Cloudflare challenge „Enable JavaScript and cookies to continue“). Z tohoto serveru nadále nebylo odvozeno žádné tvrzení. Mezera zůstává otevřená."
     }
   ],
   "order": 9

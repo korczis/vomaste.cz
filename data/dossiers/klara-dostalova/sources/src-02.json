@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/klara-dostalova/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/klara-dostalova"
+  },
+  "title": "SRC-02 — ČT24: Profil europoslankyně Kláry Dostálové",
+  "description": "ČT24 profil: zvolena europoslankyní 2024 jako lídryně ANO; poslankyně PSP 2017–2024, ministryně 2017–2021.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajský článek",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/profil-europoslankyne-klary-dostalove-350066",
+  "retrieved": "2026-08-08",
+  "published": "2024-06-10",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/klara-dostalova/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "klara-dostalova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Profilový článek ČT24 z 10. 6. 2024, otevřen a přečten 2026-08-08.\nUvádí, že Klára Dostálová byla v eurovolbách 2024 zvolena poslankyní Evropského parlamentu jako lídryně kandidátky ANO (poprvé), a rekapituluje její dřívější funkce: poslankyně PSP ČR 2017–2024, ministryně pro místní rozvoj 2017–2021, náměstkyně MMR 2014–2017, zastupitelka Královéhradeckého kraje.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství veřejnoprávní televize — dokládá zvolení do Evropského parlamentu a rekapituluje kariéru; přesná data vládní funkce nese SRC-01."
+    }
+  ],
+  "order": 2
+}

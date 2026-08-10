@@ -3,6 +3,7 @@
 title = "David Kotora"
 template = "entity.html"
 weight = 104
+description = "David Kotora — Kontextová entita — Ředitel Transparency International ČR; kritika Šebestyánovy nominace."
 
 [extra]
 generated = true

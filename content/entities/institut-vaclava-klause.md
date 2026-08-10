@@ -3,6 +3,7 @@
 title = "Institut Václava Klause"
 template = "entity.html"
 weight = 152
+description = "Institut Václava Klause — Kontextová entita — Macinka podle Hlídače státu manažerem institutu od 2017 (přehled funkcí)."
 
 [extra]
 generated = true

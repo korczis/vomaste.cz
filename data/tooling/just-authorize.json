@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/just-authorize",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "just-authorize",
+  "kind": "just",
+  "name": "authorize",
+  "title": "Zápis autorizace",
+  "category": "provoz",
+  "summary": "Zkratka na zápis nové autorizace pro entitu. INTERAKTIVNÍ ZÁMĚRNĚ: potřebuje skutečný terminál a člověka, který rozsah napíše vlastními slovy.",
+  "whenToRun": "Před založením nového dossieru, po rozhodnutí vlastníka.",
+  "describedFrom": "header",
+  "notes": [
+    "Je to jediná věc, která smí zapisovat do autorizačního logu. Žádný přepínač to nepřeskočí."
+  ]
+}

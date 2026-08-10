@@ -3,6 +3,7 @@
 title = "Novela rozpočtových zákonů 2026 (sněmovní tisk č. 90) a prezidentské veto"
 template = "entity.html"
 weight = 304
+description = "Novela rozpočtových zákonů 2026 (sněmovní tisk č. 90) a… — Kontextová entita — Centrální legislativní proces dossieru Schillerové: tisk č. 90 (novela zákona 23/2017 Sb.), schválení 91:68…"
 
 [extra]
 generated = true

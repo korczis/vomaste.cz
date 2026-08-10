@@ -92,6 +92,26 @@
   </section>
   {% endif %}
 
+  {#- Opačný směr k dossier-gap.html, které odkazuje na svá tvrzení
+      (view.resolved.claims) — bez tohoto bloku čtenář stránky tvrzení
+      neměl žádnou cestu zjistit, že je citováno v otevřené mezeře.
+      Pole je počítané stejně jako view.related.cases/relations výš
+      (build-view-models.mjs, relatedOf) a kryté testem
+      generated-artifacts.test.mjs; šabloně dosud chybělo ho vykreslit. -#}
+  {% if view.related.gaps %}
+  <section class="mb-8" aria-labelledby="clm-gap-h">
+    <h2 id="clm-gap-h" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Otevřené mezery citující toto tvrzení ({{ view.related.gaps | length }})</h2>
+    <ul class="space-y-2">
+      {% for g in view.related.gaps %}
+      <li class="rounded-lg border border-white/10 bg-white/[0.03] p-3 text-sm">
+        <a href="{{ config.base_url }}{{ g.route }}" class="id-chip font-mono text-xs font-bold text-[#f3e5c0] no-underline hover:underline">{{ g.identifier }}</a>
+        <span class="ml-2 text-white/70">{{ g.title }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
   {% if record.subjects %}
   {#- Subjekt → dossier subjektu jde z view modelu
       (resolved.subjectDossiers ← kanonický registr, T-028 fáze H). -#}

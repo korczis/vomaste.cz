@@ -1,0 +1,22 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "63832721",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/63832721",
+  "nazev": "ACRI - Asociace podniků českého železničního průmyslu",
+  "sidlo": "Politických vězňů 1419/11, Nové Město, 11000 Praha 1",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "L",
+    "vlozka": "58884"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "předseda",
+      "since": "2015-04-09",
+      "kind": "person",
+      "name": "Tomáš Ignačák"
+    }
+  ],
+  "spolecnici": []
+}

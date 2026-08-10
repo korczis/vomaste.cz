@@ -1,0 +1,47 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "25157507",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/25157507",
+  "nazev": "SPV Pelhřimov, a.s.",
+  "sidlo": "Plevnice 42, 39301 Olešná",
+  "spisovaZnacka": {
+    "soud": "KSCB",
+    "oddil": "B",
+    "vlozka": "824"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "člen představenstva",
+      "since": "2023-02-09",
+      "kind": "person",
+      "name": "Ing. Helena Lhotková"
+    },
+    {
+      "role": "předseda představenstva",
+      "since": "2025-03-08",
+      "kind": "person",
+      "name": "Ing. Michal Jedlička"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2025-03-26",
+      "kind": "company",
+      "name": "AGROFERT, a.s.",
+      "ico": "26185610"
+    },
+    {
+      "role": "místopředseda představenstva",
+      "since": "2026-01-03",
+      "kind": "person",
+      "name": "Ing. Petr Coufal"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2026-03-18",
+      "kind": "person",
+      "name": "Ing. Pavel Kerber"
+    }
+  ],
+  "spolecnici": []
+}

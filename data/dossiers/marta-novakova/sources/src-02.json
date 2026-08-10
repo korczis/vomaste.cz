@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/marta-novakova/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/marta-novakova"
+  },
+  "title": "SRC-02 — Seznam Zprávy: Babiš oznámil změny ve vládě",
+  "description": "Seznam Zprávy o konci Novákové (duben 2019) s premiérovým zdůvodněním; nahradil ji Havlíček.",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "zpravodajský článek",
+  "url": "https://www.seznamzpravy.cz/clanek/marta-novakova-konci-ve-funkci-ministryne-prumyslu-a-obchodu-70052",
+  "retrieved": "2026-08-08",
+  "published": "2019-04-10",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/marta-novakova/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "marta-novakova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek Seznam Zpráv z 10. 4. 2019, otevřen a přečten 2026-08-08.\nUvádí, že Marta Nováková končí ve funkci ministryně průmyslu a obchodu a nahradí ji Karel Havlíček; premiér Babiš uvedl, že „není jednoduché přijít ze soukromého sektoru do veřejné správy, která funguje úplně jinak“, a výslovně odmítl, že by důvodem byl incident, při němž byla na žádost Číny požádána tchajwanská zástupkyně o odchod z jednání se zahraničními investory.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství — důvody konce jsou připsány premiérovi a citovány; nic dalšího se z nich nevyvozuje."
+    }
+  ],
+  "order": 2
+}

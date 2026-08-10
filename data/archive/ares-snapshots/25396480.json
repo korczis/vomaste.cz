@@ -1,0 +1,53 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "25396480",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/25396480",
+  "nazev": "Vodňanská drůbež, a.s.",
+  "sidlo": "Radomilická 886, Vodňany II, 38901 Vodňany",
+  "spisovaZnacka": {
+    "soud": "KSOS",
+    "oddil": "C",
+    "vlozka": "17690"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "člen představenstva",
+      "since": "2022-03-23",
+      "kind": "person",
+      "name": "Ing. Martin Šácha"
+    },
+    {
+      "role": "předseda představenstva",
+      "since": "2024-05-03",
+      "kind": "company",
+      "name": "AGROFERT, a.s.",
+      "ico": "26185610"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2025-07-30",
+      "kind": "person",
+      "name": "Ing. Petr Komrska"
+    },
+    {
+      "role": "místopředseda představenstva",
+      "since": "2026-01-02",
+      "kind": "person",
+      "name": "Ing. Milan Říha"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2026-01-13",
+      "kind": "person",
+      "name": "Ing. Pavla Bublíková"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2026-01-13",
+      "kind": "person",
+      "name": "Ing. Jiří Šavrda"
+    }
+  ],
+  "spolecnici": []
+}

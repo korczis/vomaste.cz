@@ -3,6 +3,7 @@
 title = "Komora daňových poradců ČR"
 template = "entity.html"
 weight = 220
+description = "Komora daňových poradců ČR — Kontextová entita — Proti Vojtěchovu benefitovému návrhu. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

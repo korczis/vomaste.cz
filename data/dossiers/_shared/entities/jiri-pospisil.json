@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/jiri-pospisil",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "jiri-pospisil",
+  "entityId": "jiri-pospisil",
+  "title": "Jiří Pospíšil",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "jiri-pospisil"
+  ],
+  "order": 537,
+  "provenance": {
+    "discoveredAt": "2026-08-07",
+    "discoveredVia": [
+      "opozice-25-politiku-2026-08-07"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — poslanec Poslanecké sněmovny Parlamentu ČR za TOP 09 (psp.cz id 5273, Praha), od 8. 11. 2025 první místopředseda TOP 09."
+    }
+  ]
+}

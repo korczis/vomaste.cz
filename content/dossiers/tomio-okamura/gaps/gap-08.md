@@ -21,3 +21,5 @@ směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
 
 **Opakovaná kontrola k 2026-08-03**: iROZHLAS.cz zůstává trvale nedostupný (HTTP 403, potvrzeno opakovaně). Mezera zůstává otevřená.
+
+**Opakovaná kontrola k 2026-08-05 (primární dokumenty)**: skutková věta obžaloby, doslovně citovaná v usnesení mandátového a imunitního výboru ([SRC-30](@/dossiers/tomio-okamura/sources/src-30.md)), popisuje **oba plakáty podrobně** — jejich vyobrazení, texty i data a místa prezentace — a o generativní umělé inteligenci ani o autorství zadání **nehovoří vůbec**. Otázka tím tedy není zodpovězena, jen ohraničena: nejde o údaj, který by obžaloba tvrdila. **Co konkrétně chybí**: doklad z dokazování u soudu (protokol o hlavním líčení nebo písemné vyhotovení rozsudku) o tom, jak plakáty vznikly a kdo zadání formuloval. Mezera zůstává otevřená.

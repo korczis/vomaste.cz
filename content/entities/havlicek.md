@@ -4,6 +4,7 @@ title = "Karel Havlíček"
 template = "entity.html"
 weight = 1
 aliases = ["/dossiers/karel-havlicek/entities/havlicek/"]
+description = "Karel Havlíček — Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v hlavním přehledu."
 
 [extra]
 generated = true

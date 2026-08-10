@@ -3,6 +3,7 @@
 title = "Česká asociace pro srdeční rytmus"
 template = "entity.html"
 weight = 91
+description = "Česká asociace pro srdeční rytmus — Kontextová entita — Odborná společnost; její zástupci zasedali v komisi ke kauze defibrilátorů."
 
 [extra]
 generated = true

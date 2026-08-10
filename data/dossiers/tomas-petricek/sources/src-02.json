@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomas-petricek/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomas-petricek"
+  },
+  "title": "SRC-02 — Aktuálně.cz: Ministr zahraničí Petříček skončí ve vládě",
+  "description": "Aktuálně.cz o konci Petříčka (duben 2021) po neúspěšné kandidatuře na předsedu ČSSD.",
+  "outlet": "Aktuálně.cz",
+  "sourceType": "zpravodajský článek",
+  "url": "https://zpravy.aktualne.cz/domaci/politika/ministr-zahranici-petricek-skonci-ve-vlade-hamacek-mu-rekl-z/r~03dc82c09afa11ebaedf0cc47ab5f122/",
+  "retrieved": "2026-08-08",
+  "published": "2021-04-11",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomas-petricek/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "tomas-petricek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek Aktuálně.cz z 11. 4. 2021, otevřen a přečten 2026-08-08.\nUvádí, že Tomáš Petříček se o svém odvolání dozvěděl na nedělní schůzce s předsedou ČSSD Janem Hamáčkem, dva dny po neúspěšné kandidatuře na předsedu strany; prezident Zeman avizoval, že odvolání nebude blokovat. Petříčkova vlastní interpretace (postoj k bezpečnostním rizikům tendru na Dukovany, odmítání neschválených ruských a čínských vakcín) je v článku citována jako jeho názor.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství — dokládá okolnosti odvolání; jde o politický krok po vnitrostranické porážce a nic dalšího se z něj nevyvozuje."
+    }
+  ],
+  "order": 2
+}

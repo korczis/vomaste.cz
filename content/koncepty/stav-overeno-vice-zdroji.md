@@ -1,6 +1,6 @@
 +++
 title = "Stav: ověřeno více zdroji (CORROBORATED)"
-description = "Tvrzení potvrzené nezávisle nejméně dvěma různými redakcemi. Validátor počet zdrojů vynucuje; zdroje téhož vydavatele se jako nezávislé nepočítají."
+description = "Tvrzení potvrzené nezávisle nejméně dvěma různými redakcemi. Validátor hledá dvojici zdrojů lišící se rodinou i vydavatelem; zdroje téhož vydavatele se jako nezávislé nepočítají."
 template = "concept.html"
 weight = 110
 
@@ -33,14 +33,19 @@ ani o nevině.
 
 ## Co vynucuje tooling
 
-`validate:dossier` shodí build, pokud tvrzení s tímto stavem cituje méně než
-dva různé zdroje. Povýšení z [1 zdroje](@/koncepty/stav-jeden-zdroj.md)
-vyžaduje přidat skutečně nezávislý druhý zdroj — nikdy jen přeznačení stavu.
+`npm run data:validate` (pravidlo S2) shodí build, pokud citované zdroje
+nedávají ani jednu **nezávislou dvojici** — tedy dvojici, která se liší
+zdrojovou rodinou i vydavatelem. Povýšení z
+[1 zdroje](@/koncepty/stav-jeden-zdroj.md) vyžaduje přidat skutečně nezávislý
+druhý zdroj — nikdy jen přeznačení stavu.
 
-Počet je ale jediné, co jde zkontrolovat strojově. Jestli jsou ty dvě
-redakce doopravdy nezávislé, rozhoduje člověk podle vydavatelských rodin
-v [registru zdrojů](@/koncepty/registr-zdroju.md) — validátor nepozná, že
-dvě různé domény patří témuž vydavateli, dokud to někdo nezaznamená.
+Strojově se kontroluje víc než počet: pravidlo S10 porovnává i název média a
+registrovanou doménu, takže dvě redakční subdomény téhož titulu
+(`domaci.hn.cz` a `archiv.hn.cz`) validátor sám sloučí do jednoho hlasu, i
+když je nikdo neoznačil. Co stroj nepozná, je původ materiálu, který ze
+zdroje není vidět: jestli je článek přetiskem cizí zprávy, určuje člověk
+polem `sourceFamily` v [registru zdrojů](@/koncepty/registr-zdroju.md) — a
+nevyplněná rodina zůstává nevyplněná, validátor si ji nedomýšlí.
 
 ## Jak se do tohoto stavu dostane a jak z něj vypadne
 

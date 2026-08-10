@@ -32,13 +32,24 @@ text, jen bez nutnosti chodit na GitHub.
   Podání samo dataset nemění; projde přezkumem. Subjekty nemají redakční
   veto.
 
-## Co přispět NELZE bez předchozí autorizace
+## Co přispět NELZE bez pokrytí publikačními branami
 
 Jakýkoli **nový subjekt, nová kauza nebo nová jmenovaná třetí osoba**.
-Rozsah pokrytí reálných osob určuje výhradně append-only autorizační
-log v AGENTS.md — pull request rozšiřující pokrytí bez záznamu v logu
-bude zamítnut bez ohledu na kvalitu zdrojů. „Je to veřejně zajímavé"
-ani „už to někde vyšlo" není důvod. Návrh nového dossieru otevřete
+Rozsah pokrytí reálných osob určuje append-only autorizační log
+v AGENTS.md. Od 2026-08-05 (`AUTH-2026-08-05-PLATFORM-SCOPE`, sekce
+„Standing scope authorization and publication gates") pro veřejné
+činitele, PEP a subjekty materiálně napojené na veřejnou moc/peníze
+odpadá dřívější požadavek na samostatné datované schválení jménem po
+jménu — ale devět povinných publikačních bran v té sekci platí bez
+výjimky (jmenovaný zdroj, provenience, procesní rámování, žádná vina
+podle grafu, nezávislost zdrojových rodin, minimalizace dat,
+proporcionalita třetích stran, revidovatelná změna, deterministický
+build) a **mechanická brána buildu je nezměněná**: `npm run
+dossier:scaffold` a `validate:authorization` stále vyžadují odpovídající
+záznam v `data/authorizations.toml` — pull request rozšiřující pokrytí
+bez něj bude zamítnut bez ohledu na kvalitu zdrojů. „Je to veřejně
+zajímavé" ani „už to někde vyšlo" není samo o sobě důvod. Návrh nového
+dossieru mimo standing scope (soukromá osoba bez veřejné funkce) otevřete
 nejdřív jako issue z formuláře **Navrhnout dossier nebo entitu**
 (`.github/ISSUE_TEMPLATE/navrh-dossieru.yml`) a odůvodněte veřejný zájem
 — systém ho nepředpokládá. Co se s podnětem stane a co se nestane:
@@ -70,6 +81,19 @@ nejdřív jako issue z formuláře **Navrhnout dossier nebo entitu**
 
 ## Technický postup
 
+**Chcete si to jen spustit a podívat se, bez forku a bez commitu?**
+
+```bash
+git clone git@github.com:korczis/vomaste.cz.git
+cd vomaste.cz && npm ci
+npm run dev   # generátory + živý server na http://127.0.0.1:1111
+```
+
+To je celý bootstrap — `npm run dev` spustí všechny generátory (routes,
+navigace, search index, JSON-LD exporty) a pak `zola serve` s
+automatickým reloadem. Zbytek téhle sekce je až pro skutečný příspěvek
+(fork, vlastní branch, validace, pull request):
+
 ```bash
 # fork na GitHubu, potom:
 git clone git@github.com:<vas-ucet>/vomaste.cz.git
@@ -86,8 +110,12 @@ git commit && git push && # otevřít pull request
 kanonický JSON v `data/dossiers/**` (záznamy tvrzení/zdrojů/kauz/mezer/
 vztahů/updatů po souborech, `dossier.json` s tabulkou tvrzení a grafovou
 vrstvou, globální entity v `data/dossiers/_shared/entities/`). Markdown
-pod `content/dossiers/**` a `content/entities/` je **generovaný adaptér**
-— ruční úpravu zablokuje lint; regeneruje ji `npm run data:build`. Nový
+pod `content/dossiers/**` a `content/entities/` je **generovaný adaptér**;
+regeneruje ho `npm run data:build`. Nespoléhejte na to, že vás ruční úprava
+zastaví: `lint:generated-content` kontroluje jen front matter a uvnitř
+`npm run build` běží synchronizace *před* paritní bránou, takže úprava těla
+stránky se tiše přepíše a build zůstane zelený. Podezřelý diff v `content/`
+odhalí samostatné `npm run data:check-generated:content`. Nový
 dossier (po autorizaci) založí `npm run dossier:scaffold` — bez
 odpovídajícího záznamu v `data/authorizations.toml` odmítne běžet.
 Rychlá validace jednoho souboru:
@@ -127,6 +155,9 @@ prodlevy a bez nutnosti znovu objevovat pravidla z první konverzace:
      (vynucuje autorizační scope-gate jako krok 0 — bez záznamu v
      `AGENTS.md` se obsah o reálné osobě nepřidává, agent se má
      zeptat, ne hádat);
+   - celé autorizované šetření end-to-end (scope check → větev →
+     manifest → zdrojovaný výzkum → PR, nikdy autopublikace) → skill
+     **`investigate`**;
    - netriviální technické rozhodnutí (nová závislost, výměna
      komponenty) → skill **`adr`** (měřený současný stav, ne odhad —
      viz `docs/adr/graph-renderer.md` jako referenční příklad);

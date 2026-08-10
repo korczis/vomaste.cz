@@ -9,12 +9,15 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
   },
-  "text": "Vyplácení eurodotací firmám Agrofertu fond za Šebestyána zastavil podle jeho vlastních slov „preventivně z úcty ke komisi“; národní dotace a nárokové přímé platby jim ale vyplácel dál, za což byl kritizován (u nárokových plateb podle iROZHLAS ke střetu nemohlo docházet i podle názoru Bruselu).",
+  "text": "Vyplácení investičních (nenárokových) eurodotací firmám Agrofertu fond za Šebestyána zastavil podle jeho vlastních slov „preventivně z úcty ke komisi“; národní dotace a nárokové přímé platby jim ale vyplácel dál, za což byl kritizován (u nárokových plateb podle iROZHLAS ke střetu nemohlo docházet i podle názoru Bruselu). Vlastní dokumentace fondu to upřesňuje: opatření přijal SZIF 6. 9. 2019, nejprve u projektů schválených po 9. 2. 2017, a rozhodné datum později posunul na 2. 8. 2018, tedy na den nabytí účinnosti unijního finančního nařízení 2018/1046.",
   "status": "status-quote",
   "statusLabel": "CITACE",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-42"
     }
   ],
   "subjects": [

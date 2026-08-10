@@ -3,6 +3,7 @@
 title = "Moravia Green Hydrogen"
 template = "entity.html"
 weight = 287
+description = "Moravia Green Hydrogen — Kontextová entita — Chladova investice do vodíku dle citovaného profilu."
 
 [extra]
 generated = true

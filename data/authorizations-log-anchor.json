@@ -1,6 +1,6 @@
 {
   "$comment": "Hash-kotva append-only autorizačního logu v AGENTS.md (## Content about real parties). Generuje `npm run authorization:anchor`: interaktivně, nebo pro čistě nový záznam po výslovné autorizaci vlastníka v aktuální konverzaci. verify-authorization-log-append-only.mjs proti ní ověřuje byte-verní integritu každého záznamu; validate-authorization.mjs přes ni váže data/authorizations.toml na log. Needitovat ručně.",
-  "generatedAt": "2026-08-05",
+  "generatedAt": "2026-08-10",
   "algorithm": "sha256(normalized entry block: LF line endings, trailing whitespace trimmed)",
   "entries": [
     {
@@ -114,6 +114,758 @@
     {
       "heading": "### Scope extension, 2026-08-05: Martin Pavlík",
       "sha256": "7b8154307d75333bbdb9ad62aa21cd6cb6584282422d765eb7fd0e98ffab3142"
+    },
+    {
+      "heading": "### Governance and scope supersession, 2026-08-05: standing public-interest scope and Prismatic integration",
+      "sha256": "87c75536ee8fa1c09a0ddc60adca32ced8f9095b159cd6fb4dbb859b38b63c13"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-06: Martin Kupka",
+      "sha256": "6ae9f24937f6313ddf70cfe1794c2e2be586d85b346a7a9388f5ecf726de3824"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-06: Petr Fiala",
+      "sha256": "a70614d7099065fbf3bdfcd8cc1819a98757709ddbe21a7a0118c3e30373f71a"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-06: Jana Černochová",
+      "sha256": "cf511a77c5dd29d1e40997cce77043bbd4698fbbd0ef93a9f2b28d53dc63f3d7"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-06: Martin Baxa",
+      "sha256": "d0f0d98e5cc08e3721f3a535d608a649e10a4fc735a6fe2a7f9881db635065a5"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-06: Jan Skopeček",
+      "sha256": "4f21b608a17d33cbaae1982dae951c67da1661bbc0f0617d05ca1e44df88410c"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-06: Eva Decroix",
+      "sha256": "15d002e91ab2f87d1fded5ca1c0cf0af16ce5a51bdae2edbe94bcb3d002c478c"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-06: Marek Benda",
+      "sha256": "51506f9a7b2e7b40f5f42cd6399030b19285e174d80df9c3a270451a11283bf0"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-06: Karel Haas",
+      "sha256": "a33012b747a8add2440ad6bd32182b76f4608d8adc0ca240b23f17a5845dd6c1"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-06: Pavel Drobil",
+      "sha256": "27edade11ee0599b33442ce79ab7e78dbf4b074d81217d4dcdca2e3cf2db4969"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-06: Martin Červíček",
+      "sha256": "dd8aad103be2d07b54d0352edffff6ae84003e7b8a1fea2eac3dd0c77709ec96"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-06: Petr Sokol",
+      "sha256": "e6ecdeb200dd97505934305b1edd8384993a50e9a7ff02be98ad1d2388fb8ed0"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-06: Renáta Zajíčková",
+      "sha256": "6e002caea32e2990cee2ceffa9123bb6e5bacf6ff98c76c4e3e8b4438886bbd5"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-06: Martin Pavlík — plný rozsah v mezích rejstříkové/veřejnoprávní stopy",
+      "sha256": "953fc5e3ecbc8e1865a3b582a9804425ea3240a75fa612695a5ae7286de9095a"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-07: Vít Rakušan",
+      "sha256": "9076187860cf5018e6ab034ce87f579f96d63038f202e7747435e3b6596d13de"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-07: Michaela Šebelová",
+      "sha256": "1231045311c921186ae265942cf4d037ab76cdae0b089c527f11282fdd3c37ec"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-07: Zdeněk Hřib",
+      "sha256": "3ef635ce451160c9ed01b84857f6861cb9804c8c6ef3c4a135a809e727f3846a"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-07: Olga Richterová",
+      "sha256": "bdfdcc2f4cec7d369e46bc667a6eadb4fae822913b9eff70ee2ea1496fe133e8"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-07: Ivan Bartoš",
+      "sha256": "31c8874a3d62e28d6fbd4f55737964ac3d65af887a2caebafec183608d95d9c6"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-07: Kateřina Stojanová",
+      "sha256": "e14db8cb26f49d8739370673cd289802e00afd48da11e298a6e2de21e54c768b"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-07: Jan Grolich",
+      "sha256": "8301ecf95fe1073ed0d11c2a0848d35079a799148c92e08e5cefc8c716679f97"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-07: Marian Jurečka",
+      "sha256": "23cd4a9cabe07841f989745bd43784c75993aca5d50248710843584ad10a9ae0"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-07: Benjamin Činčila",
+      "sha256": "1b27656c834a0c8524cd53b21150f3b0ac1490c1c862bb58deba82b31e1c1ea4"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-07: Petr Fiala — premiérské období",
+      "sha256": "0012a89b61a36e528545006392e497863978d36bff32a3f3860215bc8c8bf796"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-07: Matěj Ondřej Havel",
+      "sha256": "b100d264caaa78d5f6df987f1023b00b04b10ac69100edc05b91132b992c119c"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-07: Jan Jakob",
+      "sha256": "c3b73a9a57cf294a81e9662aff1ed185369fdae6b0380c4354d0c0f28647dbc5"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-07: Vlastimil Válek",
+      "sha256": "9159df79d7be8b5a5c2dcda61ca69c176de3855fb4c46c0f87c8236ee7a555ff"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-07: Jiří Pospíšil",
+      "sha256": "8e9e446deb81ea4f93b2eecb37afd429e6a7fc983fca592a3ebf6a258a0a2896"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Vít Rakušan — ministerské období",
+      "sha256": "c4db8eb880c53d13caabe1e607d1699900d2e14243d03d63d2c197ce4076ddbd"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Vít Rakušan",
+      "sha256": "c5eac4f5580dae73e8e2cbc1a923056d96cb622a81c507e81384ffd9de2d27f7"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Marian Jurečka",
+      "sha256": "99a7e4f4ea222656f589a99a5f7c51be994ee48b5391be1c9d2d22190451b8e8"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Vlastimil Válek",
+      "sha256": "1948b2f55ec32d9ecab5a6e7ec3006f128a5d9bccbcf5daac03008fc0f73a22b"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Zbyněk Stanjura",
+      "sha256": "ef006a6361d68aeef9a71b8d6ef3c51e7e231263a6212e63a274f5b1f45f10dd"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jan Lipavský",
+      "sha256": "c3b0a8f1f1f26c7133eb0624dec089485ec17dac1c81f15588cffad08a406870"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Ivan Bartoš",
+      "sha256": "a8d13a390b7e4cab6772b776d4feb48e9937243c1680c2dee920c03dbfce6a7b"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jozef Síkela",
+      "sha256": "6240db9e4672a72831e1aa09e8b85cf8bd1b0f97c7fb441731ee2e58ec623b30"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Petr Hladík",
+      "sha256": "541165067e469b49bc7e9172dbf99f6a12b856c4a9328b8c293ed985e7afe614"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Marek Výborný",
+      "sha256": "f799cfcfadc89c2818824f1b4aa241b8dab35b5c6cbf9ccb5a66723a15fb8c0a"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Zdeněk Nekula",
+      "sha256": "5f4d3642fd45429459fb613aacf0e2f6f6b751766b6b4d73b067564cff6ca5a7"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Mikuláš Bek",
+      "sha256": "ed304aebc03d752d3706ca7a450540324dd49d2b399bc31bca891a53d6d78bea"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Petr Gazdík",
+      "sha256": "9141871ce11aac40e68fcb1bdd1b746146cce389fea346b253d229ef0e94fd4a"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Vladimír Balaš",
+      "sha256": "ac5adc85ee1edddbff0c400e7cfd099580f903b02cdfc0d190124e261a3fdd08"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Anna Hubáčková",
+      "sha256": "bffbaf07c9739bfa0dc888cb0531ec428c5fc054adb2d575e918486bca3113e5"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Lukáš Vlček",
+      "sha256": "b94f8865a9498ac78084a8f12435f7d63475855f518840d121f84d98fe2830b7"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Petr Kulhánek",
+      "sha256": "8313f7d5ec5e8565efe7e03efb1f32f46432466fa011a7be6c507c7134be8cad"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Helena Langšádlová",
+      "sha256": "6ec59a85575e27281a56f1de5aefb38ea0b7bcce4684eba0e3140fd46b312160"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Marek Ženíšek",
+      "sha256": "2c0016d277df36b4a281f0d63ad29da9ad8da940fa7a9a27285f068ef29ef15a"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Michal Šalomoun",
+      "sha256": "6200cba9bbbe17e21c353ec77c13ce00b7d2b93d55fa4efc9f02b7c9c79d7b5d"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Martin Dvořák",
+      "sha256": "cb1a4980396d05a2820ceaadcd0d8d33d097fa635879f0e2b079ef1f1e117c23"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jan Hamáček",
+      "sha256": "834e65adf4a6b0a2f6651e2eb04e9651cca5398c5956b47b0c49a8f8509de862"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Richard Brabec",
+      "sha256": "02f66a35ae18229a89e641d12bd2090f41cf82f59ad312dcec80a6cbfd43642e"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jana Maláčová",
+      "sha256": "4b9897682b599e890ef99b6fffbe32d839ca34e8ce130ce6bd91eb66a0343171"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Klára Dostálová",
+      "sha256": "797b8257bd6a6dcf84aa85bde8a5311de46dbc346820715fa13010aef6ee20f3"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Lubomír Zaorálek",
+      "sha256": "30407e99191a3bc179bba124edac36f477fd9cc93f0579aded104a2a50a7d323"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Tomáš Petříček",
+      "sha256": "faee8b260012d2eaba41ad82295551e6571b4f1ba574c5a7ae7570a9f132a0da"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Miroslav Toman",
+      "sha256": "d0a5cc0873a8b8ce63440ad399b54f38d630dab607782a31e835140baac9311e"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Roman Prymula",
+      "sha256": "033f9d743e3c3a704d41938bead58175ca28cf72067e4f498301ff6219606a1e"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jan Blatný",
+      "sha256": "13e4037d957ea56b3b2cdd50853ea396a1431ec5350ea65a6bbb742191cb925a"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jakub Kulhánek",
+      "sha256": "4f458db7dcc09a2cef1e532b7b5fc05ff214da13e6df4d51f18f7d05954bc8c0"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Taťána Malá",
+      "sha256": "51cc36e9b4d246ddaa6bf98d31b079d2e5d901fd3d8f88f96316dd6e4c6c4a16"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jan Kněžínek",
+      "sha256": "76db094e92678920b087bbea9c53e2fb5ff163cd7d43378d4fcf483998cafcaf"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Petr Krčál",
+      "sha256": "4f64f002ad6e59129c4ec075a838be8ce002ca89305450bff97c92cea4c7ce56"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Petr Arenberger",
+      "sha256": "e2927350af55cfa7076ab02decafb77b7fa379de5298eeed43bcd85965758e64"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Antonín Staněk",
+      "sha256": "a16a48948e75691f51cd6a241090c08a9bbe947ab2f75a58985c379149db28c1"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Dan Ťok",
+      "sha256": "29711c2ac65e8b04032ea2910b1d73f78aa8848e1bc383065dc38a4c173af8e7"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Vladimír Kremlík",
+      "sha256": "341835dd57ccdb9a1a05d58ba50fab0ca797b847fb3972608c65c9b1c3840fae"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Marta Nováková",
+      "sha256": "68696ff2bba7ac1ab8bd10d64824391d29815634dd3cde07cb7a6787e167dd68"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Martin Stropnický",
+      "sha256": "8889a94507e5eae6b638bcfd34bb554e7672ee4482d2e1f7b94764312e3902d3"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Robert Pelikán",
+      "sha256": "a4817f387c7d920a00face22c4b72a282b7dfa22ada9753ea263acf2db8acdb2"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jaroslava Němcová",
+      "sha256": "0d4d0c9ad676ff132a4de0b91ff5c3ab82dc3a92f6daf101ecfa89a2c0b4ca28"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Ilja Šmíd",
+      "sha256": "109f969e1d82ef7144284b96120c9cd5eca5a0166befeee1875605ceff6f14e6"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Tomáš Hüner",
+      "sha256": "1bb3b57fe764d1ab5218f0655985d71a95304a083c712bf5da35b25a6f63bc46"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jiří Milek",
+      "sha256": "0c97d1784862fe7fcca7544171607967f423b7266f93e3f90c9f4f7206c96b4b"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Karla Šlechtová",
+      "sha256": "a50db7401103fc1178f87e7b818e0921ca49b163994f0b9757d9b953187767c7"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Pavel Blažek",
+      "sha256": "81751f978ac357fe3b188ab6bea7fa3b9c01739805abbc557cd996126c20ee6f"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Bohuslav Sobotka",
+      "sha256": "89e7718be94dd3b092cdd03da715fbe2b9a87d2a9cb8eaa29a280f71b0c57441"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Milan Chovanec",
+      "sha256": "851418ff9e45bf160c8d33e6ef098cb69771daa5502b3f9620aeccdb61e3acef"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Pavel Bělobrádek",
+      "sha256": "746d7e42da7c303a84793221123e8456f4b684c60c74fef8d9b6ccddcaeee954"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Věra Jourová",
+      "sha256": "5d18ee433fa3cc53f8df6f99694adcff0ba946fdae7bffd9ace25f586ff18bc6"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Michaela Marksová",
+      "sha256": "7ead2234307f59daa99e9299448596afe954cb136114ebec0abd7f5a99a22aab"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Marcel Chládek",
+      "sha256": "4a48e86fdea1215cb4d9de3b374c7d48a2305300c1f8d023b6df58eeab73584d"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Kateřina Valachová",
+      "sha256": "0065977d1b79f77feb80ddc829dbedca2dfc73a27a2c016795f0437438e72700"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Daniel Herman",
+      "sha256": "bb9ee9702d67315161db859eaf05418d87ebcf5d97dda187e3170e512fec4953"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jan Mládek",
+      "sha256": "75106b90f8e63b3fa8005d4881aec64b41340152f10e2ca847d66ea01e35938b"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Svatopluk Němeček",
+      "sha256": "9fcf7b4ace1e89b2b439936b869a77a3f3f85f05c16f0e78e791d8a17099fc29"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Miloslav Ludvík",
+      "sha256": "97548fa5a953a072dfa0c78221407ce2d4372883b893266038795bdacbed4584"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jiří Havlíček",
+      "sha256": "9bfd762bf54eaf636c12491229e0366364b1b887f8e2d298e6dacebb387252eb"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Stanislav Štech",
+      "sha256": "6997f136f793a89ff8739d7ba8389f5ae5dc42eb3e30c0aac0c3e8080bfdadcc"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jiří Dienstbier ml.",
+      "sha256": "98d3b54ba65ef0d5ef97feb31627d84774ba2df92b4cc172964a3b650f8bc4aa"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Helena Válková",
+      "sha256": "5e1693a32cabd32b03b577670cb877c3b803f9659dfd7ac34f5d15eda9fda9ac"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Ivan Pilný",
+      "sha256": "d8e1c9bf45be0e5bb51751b965ade02f9ea9ea79307a332caf6179e6bf9b84f7"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Antonín Prachař",
+      "sha256": "df4d257bdfdff56cabb58b9719bdc043ff73814aec10c93a93abd07019969152"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jan Chvojka",
+      "sha256": "a5e756c21bdf4bee9f14bf2677f198703a5ac73529d0e67cf47b8c790fa452af"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jiří Rusnok",
+      "sha256": "a0deb572c756fd97ed35c747d2938c36c47583f01d2e2d4ed788c96bcd4b9e23"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Martin Pecina",
+      "sha256": "7a841d523729bbae4ecb2057ffc2b90038ed6e4e2ec1e2afb052a5dfca26eaba"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jan Fischer",
+      "sha256": "943d5e39f46a425ea2f5ca93c39f8b095b7c593ffbcccc1801c6075c83228ff7"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jan Kohout",
+      "sha256": "f449ee20d0359910350e6c475ec4857734fc002ddac5f581ff8cdb346f9429a5"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: František Koníček",
+      "sha256": "01679758a215be5bce45f04fe2264ad9f95f8b4fce45135783a47a2ff4d1b55c"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Martin Holcát",
+      "sha256": "c80e31cb1e2116f4e3e99c1ec2f6b31e30e87f61129fdc5ff048beb66f30b3c9"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jiří Balvín",
+      "sha256": "8944fcc53fb73a5f588e44a8c4e9c0bfc1ee8cad8ef291a9c8f5083106c1e4b2"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Dalibor Štys",
+      "sha256": "6ade9cf84b636eaa4306e35d17258ff61ad32faa75e2dcd44c96c9824a84d225"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Zdeněk Žák",
+      "sha256": "0831a99ffa6534bac80add5ba4853dc729fbd7db5c6996800cfff782d92cd125"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Petr Nečas",
+      "sha256": "124583a4caad7074e0caede808289e512b54ff25bec8ba951b01bace2a190741"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Karel Schwarzenberg",
+      "sha256": "82886103d697a6e32a36cc5f2974a3f3eabfdbb3027a909e8640a7caa41c0e23"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Miroslav Kalousek",
+      "sha256": "44dd9e82bc09270111c7968222bfd80b07652c6c90e67d9f30c57c2b20c341b5"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Karolína Peake",
+      "sha256": "b8c77ed1343be8f84089b2b13879554c6aa413eba02e8f99cee5c67df211c857"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Radek John",
+      "sha256": "6d6acca4058dba84d6d6955e148c8fedea20254757f9aafe6fe650475add3f4f"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Alexandr Vondra (ministr obrany)",
+      "sha256": "068c6ab6928f806c893f80e02923a2db2ec45808bc51fa9196e607710bfae613"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jaromír Drábek",
+      "sha256": "31425da36277e6e0ce9c6707f128ce17b47efff3a335b6a56414b2dc08822480"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Leoš Heger",
+      "sha256": "f935da5a4ad1554519729ef9f1f16eb89aa810fa6fb15dbd9293a4feaf7e0c06"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Josef Dobeš",
+      "sha256": "2f728094ac2ecc434e6415271d0d257d68fa638b0a21a1ac5a22c854f6169108"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jiří Pospíšil",
+      "sha256": "775e1e54176368c497abe8f9a8f2867407f215ac4c6f36ddc5e9be9b9c3b850a"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Kamil Jankovský",
+      "sha256": "1feb9e99d3ee16c73c38329557fe4bcca0310320f7d8515ca3df6c8f13f8f818"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Tomáš Chalupa",
+      "sha256": "2b82176abcf0584aef2849dfa85f7345d1c8ad814a57503395100fa16a5713d1"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jan Kubice",
+      "sha256": "d9fd15eab93e94699e35275b35c004f701e5e6f2710bd54f275eefe3e6c67313"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Petr Bendl",
+      "sha256": "b196ff99cf68f2b570790f0526635408fe31ea1d5a634bac607202b1e51a46be"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Martin Kuba",
+      "sha256": "18634917fcf0c800f8fd85ec9c0a1be0b896fabf8183d9c2fc3be0e5d12e1e6d"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Ivan Fuksa",
+      "sha256": "f2c2042cd48302ef700b5e0a4fc0ee90b9020c60c3422697572e3d5d7cf5b517"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jiří Besser",
+      "sha256": "1e7bbadccbadaf54b8e8ec38bb2a62c79b74c93219773c5ae446a2036e4ca04c"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Alena Hanáková",
+      "sha256": "208d2495fdd93ce572a0842c384da08d4fe547968bf827642246f96a5b55f6d8"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Pavel Dobeš",
+      "sha256": "e43bb0f96a45246c2920e62733de377b23206d7cba3fe4d9ec36c359d361034e"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Ludmila Müllerová",
+      "sha256": "20bfcb80a5089fc460e07173dd22f3c1aba9952d1b98f3b503e942f010b59018"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Vladimír Tošovský",
+      "sha256": "7fdd296623bae3bebd4d1b6a401cadc5d51bf74cfb2571858fd0471defc245ff"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Gustáv Slamečka",
+      "sha256": "6bd9e2b4f9ffcb6e3124e8fb6235e8aa5c33fbac6d523b4e09e7b49fdcb82800"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Daniela Kovářová",
+      "sha256": "2e211bd08037f89774346a553047fc9ad32b20dff1b21578b640e401ed83fd0a"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Martin Barták",
+      "sha256": "f6d2ce5992fad1c2fb179046600eb4efa8ac5036bf4673a2b9466ca898223fee"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Petr Šimerka",
+      "sha256": "8cf00e23a30e2d3720a6c839fc95100a961491397990e4b1bacd9a81a90e1e79"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jakub Šebesta",
+      "sha256": "bf82100f0c2ffcbee81aff1784c0c9696b2bdd60a00f814d560fb73bb4e90cdc"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Dana Jurásková",
+      "sha256": "916da481f5ff04a1bdc7cd8ddc27dc6a83d1909fbfbb3d449388e0dfb183dabd"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Miroslava Kopicová",
+      "sha256": "6cd36dbb8950bd617d164315cd050275628069dea4a9fefc320e9dc2b3c8cbf3"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Ladislav Miko",
+      "sha256": "76db3b030895eabc6025682eee4cbafde6bf5d29ca8f6f4d0a5a2d588aee2d29"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jan Dusík",
+      "sha256": "bb1fb380b82d28ba2b6ba4280bf579554dcabdf78717a678ed8eeb9a9f868a7e"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Rut Bízková",
+      "sha256": "e1b3a885858635dcc5737c8c221954e5cc76c8894267239537b3aba9ac8dca9c"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Juraj Chmiel",
+      "sha256": "fe218a4a897afc2755524f797ccf734f0aa08e142550076502f0d9da2720c56f"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Štefan Füle",
+      "sha256": "e669ab4e30871b570833d4bc612118daed5a6b6311696a60bc6d983269729862"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Michael Kocáb",
+      "sha256": "9b7d5275148d2689eab69a314bb441b579c3dc4c6340cf2ad7e826a8751a0a51"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Pavel Zářecký",
+      "sha256": "1984f33d73286cf4dd3c1a32cb052d2f8157a57cf448535631d7665123f991b7"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Mirek Topolánek",
+      "sha256": "c03ccd21b07baafbf4a6d7d182184255519b7f762f32aee4af4f3a3236e601e3"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Martin Bursík",
+      "sha256": "7cb368e90a7444d2f851758d1c8611e27108f8278f71f0645d69cc9aa0a90383"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Ivan Langer",
+      "sha256": "27cabd628deae4b03302c86dcbc05447da4e7f5efda8b81235d79723225d2f45"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jiří Čunek",
+      "sha256": "ca17149cde6a2db63ca959aeceef3b697b1a084f6c72b8643050f4e6a625f9f8"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Vlasta Parkanová",
+      "sha256": "6c513aa9f43107bc8f0b33264766ce14ff3b93224ffb0b6e03d65dd02083cb68"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Martin Říman",
+      "sha256": "4a26d6d9d1e8baaccdea579c3e3b8756fb8d35438ee4293ea2daffa501bc52b7"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Tomáš Julínek",
+      "sha256": "b3e8bc90bb1bced776ad73fda535cb6d9e249081b4e17b26c04f376ebca2a411"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Daniela Filipiová",
+      "sha256": "0e27a6bac6ff2f6da05c3a7f1605d33e43de9e7917a0090c83bc5813fc3f3896"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Dana Kuchtová",
+      "sha256": "a192af2f5cc0ae92c7d09e75a27a80e2f8e22db5d2f9f132287842a983f76df3"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Ondřej Liška",
+      "sha256": "26cfd82378a6358d07049319874c61b2097ff26690b88b1dbbbf3a90ddb2a504"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Aleš Řebíček",
+      "sha256": "cc96bb3e0db61216fe0165d199066c9b44dca380b9b149aff1ce75ac6776aa26"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Petr Gandalovič",
+      "sha256": "de020e02238c9de2142605d597bfa2a78cfba47183dcb10ed39bce438f18c15e"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Václav Jehlička",
+      "sha256": "2889fbe620d8848ecd0cd89390c6912cafd8e6f8b33cb7304ab657256b1b4120"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Helena Třeštíková",
+      "sha256": "d2521592a761af5b46a6872061965b075341339d68da0b740aa56e9e36bbfb65"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Cyril Svoboda",
+      "sha256": "14799aed34c7ada51677bdd86bd3f6223395243aa7c560f161490a92f3fbe077"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Pavel Svoboda",
+      "sha256": "9e4c9e714e8023dcb18c38d33ab1a5dbdf9ee94a20feeeba65d998310101eb40"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Džamila Stehlíková",
+      "sha256": "752e17fbfddd6873385e39273cb68b9e189bf69c3ba15e98cc845684bc515ccd"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jiří Šedivý",
+      "sha256": "53e69dd4bc34ae5aa92cd553746c1cb1d38dc660adf39a14e2b5194bf2e9ff49"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Vlastimil Tlustý",
+      "sha256": "a75eae51272c10be67e529f629df3060d6fa579c7a5dcad702c5b3f51f8e7c5c"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Milena Vicenová",
+      "sha256": "56ff69646dd6e76eca0bfb6a8108208251205e3094b5a3d5e8e55c5445fb0882"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Petr Kalaš",
+      "sha256": "583f668d48b28bd2514326a1b99717f4aa753d2655809fd32ddb6090721d2f07"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jiří Paroubek",
+      "sha256": "e2306a16c8f12f4c4184668fed2508141d1e3b9dff7805ec1181ff27b1ab5a5f"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Zdeněk Škromach",
+      "sha256": "8ec3680e4da6f4d1ac85f49e05d46b20db4a21aeab515881a3e4661afab9cc56"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Pavel Němec",
+      "sha256": "eebd9c197143669f8a7a4831797d0df82289d822ebfd90a9a3cf9d13073849c9"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Milan Šimonovský",
+      "sha256": "406d42d05274216cdd745c8b62cb343111542b5c5760aef0d05e63c0d67eda13"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Martin Jahn",
+      "sha256": "d75b3c20efd1fb22b83a6581ed7383094d31397f80b28083073d3d1ea02af872"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: František Bublan",
+      "sha256": "91b2271f6459006c8ad44cbeed778d6d0dccac985772f0f4868d22aeea1d41f5"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Milan Urban",
+      "sha256": "93ac6b98d76128d339434c3d2d028b2d1ec3e7d5b4fbc7c1c6495c527478a285"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Karel Kühnl",
+      "sha256": "befeabaeabe85a8e7bcaa303f656da04cb17acd8db022e60f5b4c20830e98c76"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Petr Zgarba",
+      "sha256": "3d26756e5c4862c6b7d9dab1a244459009a707438732daea04f10d8b9e1af867"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: David Rath",
+      "sha256": "099e1318c1caeef3f112ffddcd7295c08be1d5be3c340601a3a83da21a2b23a1"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Petra Buzková",
+      "sha256": "0712c6079b1584860112fdbce1d930cd93008ec4e8f2b274001dcada1a50aa9c"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Libor Ambrozek",
+      "sha256": "bcad29977a1053d9329b581d75753a23c3e14e7a0167ec27be5b87a6cfe06553"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Vítězslav Jandák",
+      "sha256": "479fc020dcaef154b47cd1d557e2a48b3c394f2cffcaf594e6c08155122096eb"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Radko Martínek",
+      "sha256": "761cde92b4d327b3a025ef173e1da5dbe016eee20be583a3b69065fe38f19c10"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Dana Bérová",
+      "sha256": "9e68b2b0f5599e83edac877f33f5409189fe8b3bb0a4d58660d13e0e44932210"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Milada Emmerová",
+      "sha256": "f60e77cdeda82efb410909ec1101d5a6a4a8fb1ef7d0f84cf71823cef0beef10"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jaroslav Palas",
+      "sha256": "9bfade357e0dda7febec071903f16cc5f41638145aa9ec5fce1d12c8f8a6724f"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Vladimír Mlynář",
+      "sha256": "c2021033c59154e06c01a44172167e791e2dee6aaefe14864ea2e7ae11f41bdf"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jaroslav Bureš",
+      "sha256": "866cc98b1b69128fb449a499ab987910effd81b510bd0972cccb089aa68e014f"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Vladimír Špidla",
+      "sha256": "23798b668d33dc018d951b282cd99b9abe871fd9d269320ce289116edf4e581f"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Pavel Rychetský",
+      "sha256": "6bb36b337aaee13ea8c5b7147bcd0b5fce3b58da3c8315627a41f0ac8c560758"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Petr Mareš",
+      "sha256": "0bc8184fda22ff6226042e8c2e8550fb4279769b4b97c736f40d84c98da00043"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jaroslav Tvrdík",
+      "sha256": "3b626b1825c962c2020200ac46baf96f1914f5cf14974cd1a6eb4edcc0f29f65"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Miroslav Kostelka",
+      "sha256": "4c7019f65e1f40a2086d79312ac9a7ec18706b91893249fb9ba379bacbda3949"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Jozef Kubinyi",
+      "sha256": "9fa2720d73adbc5b8a349ae8dc88ee33b3603427695ae5b4d08689694184212a"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Marie Součková",
+      "sha256": "8f157710065a9bfc153a780243e856ffe82e4c6b9a859929db8ea73237a31232"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-08: Miloš Zeman",
+      "sha256": "a060308d4dc3d928b1244f8de7ab0c0787aac75d2cd18da4f5999ed3e5679f7b"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Vlastimil Válek — ministerské období (léková krize)",
+      "sha256": "4d689bc7adb26ad60854beba1bd4bb7b03835c7e285ba09f9554725954cc0cb5"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Jiří Pospíšil — ministerské období (odvolání 2012)",
+      "sha256": "d4ef2b525037346cdcfb8e1255ad54e8d53e06cd31e474854f53dcd65d4abf04"
+    },
+    {
+      "heading": "### Governance and scope supersession, 2026-08-09: zrušení „záměrně minimálních\" omezení rozsahu",
+      "sha256": "78b006569e2a1ae1b907d06227f4f2f4680f5916975ab0f4697bcaa35da52a32"
     }
   ]
 }

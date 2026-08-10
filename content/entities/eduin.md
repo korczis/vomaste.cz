@@ -3,6 +3,7 @@
 title = "EDUin"
 template = "entity.html"
 weight = 116
+description = "EDUin — Kontextová entita — Vzdělávací organizace; souhlas se zastavením testování, obhajoba významu dat."
 
 [extra]
 generated = true

@@ -115,8 +115,6 @@ orgán — a ten ho v tomto případě podle citovaného zdroje nezjistil.
 Politické označení „bezpečnostní riziko" není zjištění. Absence
 vyšetřování není důkazem, že nebylo co vyšetřovat, ani že bylo.
 
-## Nahrávací zařízení v jednacím sále vlády {#kauza-nahravaci-zarizeni}
-
 Téma v autorizovaném rozsahu — viz tvrzení [CLM-06](@/dossiers/boris-stastny/claims/clm-06.md), [CLM-07](@/dossiers/boris-stastny/claims/clm-07.md), [CLM-08](@/dossiers/boris-stastny/claims/clm-08.md), [CLM-09](@/dossiers/boris-stastny/claims/clm-09.md), [CLM-10](@/dossiers/boris-stastny/claims/clm-10.md), [CLM-11](@/dossiers/boris-stastny/claims/clm-11.md), [CLM-12](@/dossiers/boris-stastny/claims/clm-12.md), [CLM-13](@/dossiers/boris-stastny/claims/clm-13.md), [CLM-14](@/dossiers/boris-stastny/claims/clm-14.md), [CLM-15](@/dossiers/boris-stastny/claims/clm-15.md), [CLM-16](@/dossiers/boris-stastny/claims/clm-16.md), [CLM-17](@/dossiers/boris-stastny/claims/clm-17.md), [CLM-18](@/dossiers/boris-stastny/claims/clm-18.md), [CLM-19](@/dossiers/boris-stastny/claims/clm-19.md), [CLM-20](@/dossiers/boris-stastny/claims/clm-20.md), [CLM-21](@/dossiers/boris-stastny/claims/clm-21.md), [CLM-42](@/dossiers/boris-stastny/claims/clm-42.md) v registru výše. Stav vždy dle síly doložení u jednotlivých tvrzení.
 
 ## Odvolání vedení Národní sportovní agentury {#kauza-odvolani-nsa}

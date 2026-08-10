@@ -10,12 +10,39 @@
     "@id": "https://vomaste.cz/id/dossiers/robert-plaga"
   },
   "title": "Zastavené testování žáků 5. a 9. tříd",
-  "summary": "Zastavené testování žáků 5. a 9. tříd — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-08, CLM-09, CLM-10.",
+  "summary": "Zastavené testování žáků 5. a 9. tříd — Plagovo nařízení okamžitě zastavit povinné testování, technické výpadky aplikace ČŠI, sporná dotazníková část s otázkami na duševní zdraví včetně sebevražedných myšlenek, kritika nemožnosti test dokončit bez osobních otázek, Plagovo přiznání selhání komunikace, předvolání ústředního školního inspektora Zatloukala a jeho omluva i obhajoba, reakce organizace EDUin.",
   "period": "2026",
   "status": "status-single",
   "statusLabel": "Sledované téma",
   "anchor": "kauza-testovani",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-10"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-20"
     },
@@ -45,11 +72,29 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-29"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/claims/CLM-55"
     }
   ],
   "sources": [
     {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-05"
+    },
+    {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-13"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-14"
@@ -58,13 +103,13 @@
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-23"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-02"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-13"
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-35"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-36"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-plaga/sources/SRC-40"
     }
   ],
   "subjects": [

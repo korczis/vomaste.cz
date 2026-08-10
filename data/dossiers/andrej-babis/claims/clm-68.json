@@ -9,15 +9,18 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
   },
-  "text": "Nejvyšší správní soud 11. prosince 2025 zamítl kasační stížnost Moravskoslezského kraje, kterému Ministerstvo pro místní rozvoj kvůli střetu zájmů odmítlo proplatit dotace za více než 43 milionů korun poté, co kraj zadal zakázku při budování školních dílen v Bruntále firmě Navos Farm Technic ze skupiny Agrofert; podle rozsudku byl „dodavatel (Navos Farm Technic) ovládán Ing. Andrejem Babišem“ a zákaz podle zákona o střetu zájmů proto dopadá i na veřejné zakázky malého rozsahu. Jde o výklad zadávacích a dotačních pravidel, ne o trestní odpovědnost",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Nejvyšší správní soud rozsudkem č. j. 8 Afs 215/2024-74 z 11. prosince 2025 zamítl kasační stížnost Moravskoslezského kraje, kterému Ministerstvo pro místní rozvoj kvůli střetu zájmů odmítlo proplatit část dotace ve výši 440 698,14 Kč (nezpůsobilé výdaje 489 664,60 Kč) poté, co kraj zadal zakázku malého rozsahu na traktor a vlečku při budování školních dílen v Bruntále firmě NAVOS FARM TECHNIC ze skupiny Agrofert; podle rozsudku „správní orgány i městský soud dospěly ke správnému závěru, že dodavatel byl ovládán Ing. Andrejem Babišem, který byl v době zadání i splnění zakázky veřejným funkcionářem“ a zákaz podle § 4b zákona o střetu zájmů proto dopadá i na veřejné zakázky malého rozsahu. Citované zpravodajství uvádělo částku „více než 43 milionů korun“ — ta se podle téhož článku vztahuje k souhrnu dotací firmám z Agrofertu ohlášenému ministerstvem v roce 2023, ne k této věci — a do citované věty vložilo v závorkách jména účastníků. Jde o výklad zadávacích a dotačních pravidel, ne o trestní odpovědnost",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-46"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-47"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-80"
     }
   ],
   "subjects": [],

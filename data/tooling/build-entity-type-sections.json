@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/build-entity-type-sections",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "build-entity-type-sections",
+  "kind": "npm",
+  "name": "build:entity-type-sections",
+  "title": "Sekce podle typu entity",
+  "category": "generovani",
+  "summary": "Generuje jednu sekci na typ entity, takže každý typ má skutečnou routu místo pohledu existujícího jen v JavaScriptu.",
+  "whenToRun": "V build i dev pipeline před build:routes.",
+  "inputs": [
+    "data/entity-types.toml",
+    "data/dossiers/_shared/entities/*.json (compiled model)"
+  ],
+  "outputs": [
+    "content/entities/typ/<id>/"
+  ],
+  "sourceFile": "scripts/dossier/build-entity-type-sections.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Sekce jsou filtrované pohledy nad jedním registrem, nikdy druhá kopie záznamů — entita si drží jednu kanonickou stránku, URL a @id.",
+    "Sekci dostane každý typ přítomný v datech, i typ s jedinou entitou. Práh by byl nezdokumentovaná mezera: čtenář, který jde za „9 typů“ a najde 6 rout, byl uveden v omyl.",
+    "Idempotentní: sekce typů, které v datech už nejsou, se odstraní."
+  ]
+}

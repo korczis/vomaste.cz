@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/michal-salomoun/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/michal-salomoun"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil člena vlády)",
+  "description": "Oficiální vládní profil: ministr pro legislativu a předseda LRV 17. 12. 2021 – 11. 10. 2024.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/michal-salomoun-191706/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/michal-salomoun/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "michal-salomoun"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil člena vlády na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci ministra pro legislativu a předsedy Legislativní rady vlády od 17. 12. 2021 do 11. 10. 2024.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — dokládá výkon funkce a její data; okolnosti a zdůvodnění demise dokládá SRC-02."
+    }
+  ],
+  "order": 1
+}

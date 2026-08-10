@@ -3,6 +3,7 @@
 title = "Eva Kropáčová"
 template = "entity.html"
 weight = 119
+description = "Eva Kropáčová — Kontextová entita — Mluvčí pražské policie; citovaný výrok o souladu dopravního značení na místě Turkovy nehody s projektovou dokumentací."
 
 [extra]
 generated = true

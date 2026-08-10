@@ -3,6 +3,7 @@
 title = "Magistrát města Most"
 template = "entity.html"
 weight = 240
+description = "Magistrát města Most — Kontextová entita — Uložil Mrázové nepravomocnou pokutu za střet zájmů; jeho stavební úřad převzal i řízení o černých stavbách."
 
 [extra]
 generated = true

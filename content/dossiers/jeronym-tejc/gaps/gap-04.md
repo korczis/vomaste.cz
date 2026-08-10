@@ -21,3 +21,5 @@ směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
 
 **Opakovaná kontrola k 2026-08-03**: téma je nyní doloženo i novým přímým zdrojem [SRC-28](@/dossiers/jeronym-tejc/sources/src-28.md) (Česká justice, obžaloba). Konkrétní původní článek Deníku N k bitcoinové kauze samotné se znovu nepodařilo dohledat. Mezera zůstává formálně otevřená, i když riziko z chybějícího zdroje je nízké — téma je jinak dostatečně korroborováno.
+
+**Opakovaná kontrola k 2026-08-06**: beze změny. Bitcoinové téma je nově doloženo i primárními dokumenty — tiskovou zprávou Ministerstva spravedlnosti [SRC-18](@/dossiers/jeronym-tejc/sources/src-18.md) a tiskovými zprávami Vrchního státního zastupitelství v Olomouci [SRC-29](@/dossiers/jeronym-tejc/sources/src-29.md) a [SRC-30](@/dossiers/jeronym-tejc/sources/src-30.md) —, takže doložení už nestojí jen na trojici Echo24 / ČTK / Blesk. Původní článek Deníku N se ale i nadále nepodařilo dohledat.

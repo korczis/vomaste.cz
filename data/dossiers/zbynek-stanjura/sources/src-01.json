@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zbynek-stanjura/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zbynek-stanjura"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil člena vlády)",
+  "description": "Oficiální vládní profil: ministr financí 2021–2025 (v demisi od 6. 11. 2025), dříve ministr dopravy.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/zbynek-stanjura-191691/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zbynek-stanjura/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "zbynek-stanjura"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil člena vlády na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci ministra financí od 17. 12. 2021, s obdobím v demisi od 6. 11. 2025 do 15. 12. 2025, dřívější funkci ministra dopravy (prosinec 2012 – srpen 2013), poslanecký mandát od roku 2010 obhájený v letech 2013, 2017 a 2021 a komunální působení v Opavě.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — dokládá výkon vládních funkcí a jejich data; nedokládá výsledek sněmovních voleb 2025, který nese SRC-02."
+    }
+  ],
+  "order": 1
+}

@@ -9,12 +9,15 @@
   "dossier": {
     "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
   },
-  "text": "Kontrolní akce NKÚ č. 23/06 zaměřená na Program rozvoje venkova 2014–2020 — tedy období, kdy SZIF vedl Martin Šebestyán — podle vyjádření Ministerstva zemědělství z března 2024 nenašla pochybení při administraci, kontrolách ani zadávání veřejných zakázek; zjištěné nedostatky se týkaly vyplňování monitorovacích zpráv žadateli.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "text": "Kontrolní akce NKÚ č. 23/06 zaměřená na Program rozvoje venkova 2014–2020 — tedy období, kdy SZIF vedl Martin Šebestyán — podle tiskové reakce Ministerstva zemědělství z 18. 3. 2024 nenašla pochybení při administraci, kontrolách ani zadávání veřejných zakázek a jediné nedostatky se podle ní týkaly vyplňování monitorovacích zpráv žadateli. Samotný kontrolní závěr, schválený Kolegiem NKÚ 15. 1. 2024 usnesením č. 12/I/2024, ale konstatuje „nedostatky v nastavení, řízení a realizaci PRV 2014–2020“, výslovně vytýká SZIF, že správnost údajů v monitorovacích zprávách nekontroluje a nepožaduje proto jejich revizi, a uvádí, že MZe ani SZIF ve třech případech neoznámily orgánům činným v trestním řízení skutečnosti nasvědčující spáchání trestného činu. Hospodárnost čerpání a soulad s právními předpisy naopak NKÚ u všech 20 kontrolovaných projektů potvrdil.",
+  "status": "status-disputed",
+  "statusLabel": "SPORNÉ",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-24"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-38"
     }
   ],
   "subjects": [
@@ -25,6 +28,10 @@
     {
       "type": "markdown",
       "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/martin-sebestyan/_index.md#registr-tvrzeni)."
+    },
+    {
+      "type": "markdown",
+      "value": "**Rozdíl mezi dokumentem a tiskovou reakcí (ověřeno 6. 8. 2026)**: tisková reakce ministerstva ([SRC-24](@/dossiers/martin-sebestyan/sources/src-24.md)) charakterizuje kontrolní závěr jako bezvýhradný a nedostatky omezuje na žadatele. Kontrolní závěr NKÚ ([SRC-38](@/dossiers/martin-sebestyan/sources/src-38.md)), otevřený a přečtený v plném rozsahu, adresuje výtky i oběma úřadům, včetně SZIF. Dokument má přednost, proto je jeho znění v tvrzení uvedeno vedle formulace ministerstva. Kontrolní zjištění NKÚ není rozhodnutím soudu a kontrolní závěr nekonstatuje osobní pochybení žádné konkrétní osoby; Martin Šebestyán v něm není jmenován."
     }
   ]
 }

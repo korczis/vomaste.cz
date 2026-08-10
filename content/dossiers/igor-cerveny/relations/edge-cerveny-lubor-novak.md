@@ -1,6 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "Igor Červený — odkoupil jeho podíl v Extreme BFG Cast a od října 2025 pracuje jako jeho poslanecký asistent — Lubor Novák"
+description = "Igor Červený — odkoupil jeho podíl v Extreme BFG Cast a od října 2025 pracuje jako jeho…. Vztah v grafu dossieru Igor Červený. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 8
 

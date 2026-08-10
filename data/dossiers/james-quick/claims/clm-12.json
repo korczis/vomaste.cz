@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-12",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-12",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "text": "ČT24 v říjnu 2010 uvedla, že CERD Jiřího Jehličky plánoval zveřejnit internetový registr pachatelů sexuálního násilí na dětech; Jehlička současně připustil možné zveřejnění také nepravomocně odsouzených nebo pouze podezřelých osob a umístění databáze na zahraniční server kvůli českému právu na ochranu osobních údajů.",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-13"
+    }
+  ],
+  "subjects": [
+    "james-quick"
+  ],
+  "order": 12,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tvrzení popisuje veřejně oznámený záměr a dobové vyjádření Jiřího Jehličky. Neříká, že plánovaná databáze skutečně vznikla, ani nepřebírá zaměňování klinického pojmu pedofilie s trestnou činností."
+    }
+  ]
+}

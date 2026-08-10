@@ -3,6 +3,7 @@
 title = "Motoristé Praha s.r.o."
 template = "entity.html"
 weight = 289
+description = "Motoristé Praha s.r.o. — Kontextová entita — IČO 14076705; Macinka členem statutárního orgánu a společníkem 31. 5. 2022 – 5. 1. 2026."
 
 [extra]
 generated = true

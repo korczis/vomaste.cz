@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/updates/2026-08-06",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-06",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-pavlik"
+  },
+  "date": "2026-08-06",
+  "summary": "Rozšíření v mezích nového autorizačního záznamu AUTH-2026-08-06-MARTIN-PAVLIK-FULLSCOPE (ruší omezení dřívějšího AUTH-2026-08-05-MARTIN-PAVLIK na čtyři jmenovité subjekty a šest tvrzení; nemění identitní/data-minimalizační pravidla). GAP-02 (nespočtený souhrnný objem smluv) uzavřena: přidán primární zdroj SRC-04 (měsíční otevřená data registru smluv, data.smlouvy.gov.cz, celé dostupné období 2016-07 až 2026-08, přes projektový nástroj scripts/osint/screen-public-money.mjs) a nové CLM-08 — u 119 smluv HYDROPROGRESS, s.r.o. (IČO 04449461) souhrnná deklarovaná hodnota nejméně 53 934 085 Kč (18 smluv bez hodnoty), deset objednatelů. CLM-07 upraveno: číslo 119 nyní potvrzeno dvěma technickými cestami ke stejnému primárnímu registru (vyhledávací formulář i otevřená data), stále 1 ZDROJ (sdílená source family smlouvy-gov-cz). CLM-01 až CLM-06 doplněna o přesná data z ARES (SRC-02): datum vzniku funkce/zápisu podílu a výše vkladu, beze změny textu tvrzení ani stavu. Graf rozšířen o sedm nových uzlů (objednatelé z registru smluv) a sedm hran; entita ministerstvo-obrany je sdílená s alena-schillerova a jaromir-zuna, doplněna o martin-pavlik do jejího dossiers pole. Ostatní tři subjekty (MEDIA PROJECT CZ, Bydlíme v Králově Poli, Nadační fond FIDUCIA) prověřeny stejným nástrojem na vlastní veřejnopeněžní stopu — bez publikačně relevantního nálezu nad rámec již uvedeného. Pokus o nezávislé doložení skrze Sbírku listin (or.justice.cz) nebyl technicky proveditelný v tomto kole (stránka vyžaduje stavovou navigaci, kterou dostupné nástroje nezvládly spolehlivě automatizovat) — zůstává jako GAP-03 pro budoucí kolo, ne jako vynucený odhad.",
+  "addedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-08"
+    }
+  ],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-07"
+    }
+  ],
+  "addedGaps": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/gaps/GAP-03"
+    }
+  ],
+  "closedGaps": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/gaps/GAP-02"
+    }
+  ],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/sources/SRC-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/sources/SRC-04"
+    }
+  ]
+}

@@ -10,12 +10,33 @@
     "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
   },
   "title": "Nepravomocná pokuta za střet zájmů",
-  "summary": "Nepravomocná pokuta za střet zájmů — viz tvrzení CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-08.",
+  "summary": "Nepravomocná pokuta za střet zájmů — magistrát Mostu uložil ministryni nepravomocnou pokutu za neuvedenou půjčku 500 000 Kč v majetkovém přiznání, vyhodnocenou jako nedbalostní přestupek, se změnami vysvětlení původu dalších 500 000 Kč na jejím účtu; Mrázová chybu podle mluvčí ministerstva uznává a pokutu nerozporuje.",
   "period": "2026",
   "status": "status-single",
   "statusLabel": "Sledované téma",
   "anchor": "kauza-pokuta-stret-zajmu",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-08"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-20"
     },
@@ -31,7 +52,22 @@
   ],
   "sources": [
     {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-03"
+    },
+    {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-12"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-14"

@@ -3,6 +3,7 @@
 title = "Úřad pro rozvoj území"
 template = "entity.html"
 weight = 424
+description = "Úřad pro rozvoj území — Kontextová entita — Nový centrální stavební úřad vznikající podle novely stavebního zákona."
 
 [extra]
 generated = true

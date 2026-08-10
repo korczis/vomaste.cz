@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jan-mladek",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "jan-mladek",
+  "slug": "jan-mladek",
+  "title": "Jan Mládek",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Jan Mládek.",
+  "dossierType": "entity",
+  "canonicalDossier": "jan-mladek",
+  "subject": "jan-mladek",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-JAN-MLADEK"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "jan-mladek",
+        "label": "Jan Mládek",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nJan Mládek je bývalý ministr průmyslu a obchodu (2014–2017, vláda\nBohuslava Sobotky, ČSSD), bývalý ministr zemědělství (2005–2006) a\nbývalý 1. náměstek ministra financí (1999–2001). Jako politicky\nexponovaná osoba v souvislosti s výkonem dřívějších veřejných funkcí\nspadá do standing scope autorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`);\nkonkrétní záznam pro tento dossier je `AUTH-2026-08-08-JAN-MLADEK`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívějších veřejných funkcí. Tvrzení nese stav 1 ZDROJ (jediný\npřímo otevřený zdroj je oficiální profil na vlada.gov.cz); okolnosti\nkonce v úřadu (únor 2017) se zde bez přímo otevřeného zdroje\nneuvádějí. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/jan-mladek/claims/clm-01.md) | Jan Mládek byl podle oficiálního profilu na webu Vlády ČR ministrem průmyslu a obchodu od 29. 1. 2014 do 28. 2. 2017 (vláda Bohuslava Sobotky, členem ČSSD od 1995), dříve ministrem zemědělství (listopad 2005 – září 2006), 1. náměstkem ministra financí (1999–2001) a ekonomickým poradcem předsedy vlády (2004–2005) | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/jan-mladek/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

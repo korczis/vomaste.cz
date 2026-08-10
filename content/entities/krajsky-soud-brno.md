@@ -3,6 +3,7 @@
 title = "Krajský soud v Brně"
 template = "entity.html"
 weight = 224
+description = "Krajský soud v Brně — Kontextová entita — Pouze rejstříková metadata (spisová značka C 57941 GMR GAS s.r.o.); okrajová zmínka, entita pravděpodobně zbytná."
 
 [extra]
 generated = true

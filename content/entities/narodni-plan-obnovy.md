@@ -3,6 +3,7 @@
 title = "Národní plán obnovy"
 template = "entity.html"
 weight = 294
+description = "Národní plán obnovy — Kontextová entita — Program, jehož oddělení financování na MŽP zaniklo při systemizaci 2026."
 
 [extra]
 generated = true

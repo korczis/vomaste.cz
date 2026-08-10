@@ -1,0 +1,70 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source-catalog-entry.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/zdroje/registr-smluv",
+  "@type": "vomaste:SourceCatalogEntry",
+  "recordType": "sourceCatalogEntry",
+  "identifier": "registr-smluv",
+  "title": "Registr smluv (ISRS)",
+  "operator": "Ministerstvo vnitra ČR",
+  "kind": "primary-registry",
+  "jurisdiction": "CZ",
+  "access": "open",
+  "authentication": "none",
+  "url": "https://smlouvy.gov.cz/vyhledavani",
+  "apiUrl": "https://smlouvy.gov.cz/otevrena-data",
+  "order": 20,
+  "proves": [
+    "Že mezi konkrétním veřejným zadavatelem a konkrétní protistranou byla uzavřena a zveřejněna smlouva, s předmětem, datem a hodnotou.",
+    "Objem a četnost obchodního vztahu se státem v čase, protože zákon o registru smluv ukládá zveřejnění jako podmínku účinnosti."
+  ],
+  "doesNotProve": [
+    "Že plnění proběhlo, ani že bylo řádné. Registr eviduje smlouvy, ne jejich naplnění.",
+    "Že šlo o cokoli nestandardního. Dodávat státním podnikům je legální, běžná a veřejně evidovaná činnost.",
+    "Úplnost. Smlouvy pod zákonným limitem a zákonné výjimky se nezveřejňují, takže absence záznamu není důkaz absence vztahu."
+  ],
+  "traps": [
+    {
+      "title": "Služba ignoruje tiše, a ne jednou",
+      "detail": "Ověřeno 5. 8. 2026 na živé službě, čtyři různé případy: `format=json` vrátí HTTP 200 a HTML; vlastní parametr `page` vrátí znovu první stránku; `export=xml` i `export=csv` vrátí tutéž HTML stránku o 38 125 bajtech jako dotaz bez nich; a Nette signál `do=exportCsv` skončí 403. Ani jeden z nich nevrátí chybu. Klient, který výstup nekontroluje, dostane nulu výsledků nebo N-krát tentýž vzorek a nepozná to."
+    },
+    {
+      "title": "Stránkování nepřežije holý GET",
+      "detail": "Vyhledávání je formulářová aplikace na Nette. Stránkování jede přes signály `searchResultList-offset` / `searchResultList-limit` s `do=searchResultList-setOffset`, a ty potřebují kompletní sadu parametrů formuláře. Vlastní `&page=N` se **tiše ignoruje** a vrátí znovu první stránku — kdo si nehlídá duplicitu, stáhne tutéž stránku N-krát a vydá to za N-krát větší vzorek."
+    },
+    {
+      "title": "Protistrana není publikující subjekt",
+      "detail": "`party_idnum` hledá IČO protistrany (typicky dodavatele), `subject_idnum` IČO zveřejňujícího subjektu (typicky úřadu). Záměna vrátí prázdný výsledek u firmy, která ve skutečnosti stovky smluv má."
+    },
+    {
+      "title": "Per-subjektový export neexistuje",
+      "detail": "Výsledek dotazu nelze stáhnout jako data. Souhrn za jeden subjekt proto vyžaduje průchod hromadnými dávkami registru, ne vyhledávací formulář — a dokud neproběhne, je poctivější uvést počet, který registr sám hlásí, než dopočítanou částku."
+    }
+  ],
+  "howToSearch": "Formulář používej k ověření jednotlivosti a k odečtu počtu záznamů, který stránka sama uvádí („Počet nalezených záznamů\") — ten je citovatelný. Na agregaci hodnot ho nepoužívej vůbec: nemá export a stránkování se tiše ignoruje, takže každý pokus o součet přes stránky vrací N-krát tutéž stránku. Pokaždé si ověř, že se stažené stránky mezi sebou liší; bez té kontroly chyba není vidět.",
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Registr smluv je primární doklad peněžního vztahu mezi soukromým subjektem a veřejným rozpočtem, a proto zdroj s nejvyšší důkazní hodnotou pro otázku „kdo bere veřejné peníze\".\n\nMetodická poznámka: součet hodnot smluv **není** totéž co příjem subjektu. Smlouvy se mění dodatky, každý dodatek je samostatný záznam, a část záznamů uvádí hodnotu bez DPH, část s DPH, část v cizí měně. Agregovanou částku publikuj jen tehdy, když je jasně řečeno, co se sčítalo."
+    }
+  ],
+  "families": [
+    "smlouvy-gov-cz"
+  ],
+  "outlets": [
+    "Registr smluv (Ministerstvo vnitra ČR)"
+  ],
+  "answers": [
+    {
+      "question": "Bere tenhle subjekt peníze z veřejných rozpočtů?"
+    },
+    {
+      "question": "S kterými úřady a státními podniky má uzavřené smlouvy?"
+    },
+    {
+      "question": "Kolik smluv s veřejným zadavatelem má?",
+      "note": "Počet ano; souhrnnou částku formulář nedá, viz pasti."
+    }
+  ]
+}

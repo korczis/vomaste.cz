@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/pavel-blazek/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/pavel-blazek"
+  },
+  "title": "SRC-02 — ČT24: Ministr Blažek oznámil, že podává demisi",
+  "description": "ČT24 o oznámení demise 30. 5. 2025 v souvislosti s bitcoinovým darem; jeho vyjádření citováno.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajský článek",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/ministr-spravedlnosti-blazek-uvedl-ze-poda-demisi-361531",
+  "retrieved": "2026-08-08",
+  "published": "2025-05-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/pavel-blazek/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "pavel-blazek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek ČT24 z 30. 5. 2025, otevřen a přečten 2026-08-08.\nUvádí, že ministr spravedlnosti Pavel Blažek (ODS) oznámil demisi v souvislosti s darem bitcoinů ministerstvu od Tomáše Jiříkovského, odsouzeného v roce 2017 (zpronevěra, drogy, zbraně), a jejich následným prodejem ministerstvem; Blažek uvedl, že si není vědom žádného protiprávního jednání, ale nechce poškozovat pověst vlády ani vládní koalice.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství veřejnoprávní televize — dokládá oznámení demise a jeho zdůvodnění Blažkovými vlastními slovy. **Demise je politický krok, Blažek podle tohoto zdroje není obviněn a jeho vyjádření se uvádí při každé zmínce**; datum účinnosti konce funkce (9. 6. 2025) nese SRC-01."
+    }
+  ],
+  "order": 2
+}

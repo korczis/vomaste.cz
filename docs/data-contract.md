@@ -14,7 +14,7 @@ data/dossiers/<slug>/{claims,sources,      data/dossiers/_shared/vocabularies/*.
   cases,gaps,relations,updates}/*.json     data/dossiers/_shared/context/vomaste-v1.jsonld
         │                                        │
         ▼                                        ▼
-  npm run data:validate  (tvar → reference R1–R7 → sémantika S1–S10 →
+  npm run data:validate  (tvar → reference R1–R8 → sémantika S1–S10 →
                           parita tabulky T1–T8 → JSON-LD expanze)
         │
         ▼
@@ -37,9 +37,13 @@ entit) a navigační skeleton (`data/navigation.toml`).
 
 Generované artefakty (`content/dossiers/**`, `content/entities/*.md`,
 `data/generated/*`, `static/data/*`, `static/search-index.json`) se
-**nikdy** needitují ručně — `lint:generated-content` a parity brána
-`data:check-generated:content` (content == staging) to vynucují; každý
-`npm run data:build` je přepíše.
+**nikdy** needitují ručně — každý `npm run data:build` je přepíše. Rozsah
+bran kolem toho je ale užší, než se čte: `lint:generated-content` kontroluje
+jen front matter (L1–L3) a paritní brána `data:check-generated:content`
+(content == staging) běží v pipeline **až po** `data:sync-content`, takže
+ruční úpravu těla stránky předtím přepíše sync a build zůstane zelený.
+Ohlásí ji jen samostatný běh `npm run data:check-generated:content` nad
+nesynchronizovaným stromem.
 
 ## Kde se data upravují
 
@@ -68,7 +72,7 @@ schématu), `schemaVersion` (const `1`), `@context`
 |---|---|---|
 | `dossier` | `dossier.json` | `slug`, `title`, `description`, `dossierType`, `language`, `navigationVisible`, `updated`; entity dossier navíc `canonicalDossier`, `subject`, `authorization.records` |
 | `claim` | `claims/clm-NN.json` | `text`, `status`, `statusLabel`, `sources` (mimo `status-opinion` ≥ 1), `subjects`, `order`, `content` |
-| `source` | `sources/src-NN.json` | `title`, `outlet`, `sourceType`, `url`, `retrieved`, `claims`, `subjects`, `content` (redakční poznámka, T7 ≥ 150 znaků), `order`; `sourceFamily`/`published` dle zdroje |
+| `source` | `sources/src-NN.json` | `title`, `outlet`, `sourceType`, `url`, `retrieved`, `claims`, `subjects`, `content` (redakční poznámka, T7 ≥ 150 znaků), `order`; `sourceFamily`/`published` dle zdroje; volitelně `localDocument` (viz níže) |
 | `case` | `cases/case-NN.json` | `title`, `summary`, `period`, `status`, `statusLabel`, `anchor`, `claims`, `sources`, `subjects`, `content`, `order` |
 | `gap` | `gaps/gap-NN.json` | `title`, `description`, `priority` (`vysoká`/`nízká`), `checked`, `claims`, `subjects`, `content`, `order` |
 | `relation` | `relations/edge-*.json` | `relationId`, `sourceEntity`, `targetEntity`, `relationType`, `label`, `status`, `claims`, `sources`, `subjects`; ne-kontextová hrana ≥ 1 claim i zdroj (S3) |
@@ -78,6 +82,34 @@ schématu), `schemaVersion` (const `1`), `@context`
 Interní reference jsou vždy objekty `{ "@id": "…" }` (typované
 `claimRef`/`sourceRef`/… v `_defs.schema.json`); `subjects` jsou prosté
 subject slugy (`"babis"`).
+
+### Lokálně hostované dokumenty (`localDocument`, `static/documents/`)
+
+Zdroj může nést kopii svého primárního dokumentu proti zmizení z
+internetu — **jen po individuální ruční kontrole osobních údajů**, nikdy
+jako hromadný dump (AGENTS.md, publication gate 6 a 8; ústavní dodatek
+2026-08-08 v `docs/constitution/OPEN_INTELLIGENCE_COMMONS.md` §4 —
+skenované listiny ze Sbírky listin se nehostují nikdy). Dvě rovnocenné
+konvence:
+
+- **strukturovaná** — pole `localDocument` na source záznamu
+  (`path` relativní ke `static/`, `originalUrl`, `retrievedAt`,
+  volitelně `sizeBytes`, povinná `reviewNote` ≥ 30 znaků dokumentující,
+  co bylo před publikací prověřeno); šablona `dossier-source.html` z ní
+  renderuje řádek „Archivovaný dokument" s odkazem ke stažení
+  (pilot: `vit-rakusan/SRC-04`);
+- **markdown odkaz** — `[…](/documents/<slug>/<soubor>)` přímo v
+  `content` bloku záznamu, se SHA-256 v textu
+  (pilot: `james-quick/SRC-02`, `SRC-23`).
+
+Obě konvence hlídá tatáž brána ve
+`scripts/data/lib/dataset.mjs` (krok 3c `validateCanonicalDataset`,
+test v `dataset-compile.test.mjs`): odkázaný soubor musí fyzicky
+existovat pod `static/`, jinak validace selže — publikovaná stránka
+nikdy nenabídne stažení souboru, který nebyl commitnut. ARES snapshoty
+ve `static/documents/registry/ares/` píše
+`scripts/osint/archive-ares-entities.mjs` (strukturovaná registrová
+data, bez osobních údajů — viz tentýž ústavní dodatek).
 
 ## Identifikátory: globální `@id`, lokální `identifier`
 
@@ -172,8 +204,8 @@ sekce „Média: fotografie a loga".
 | Vrstva | Vlastník | Příklady |
 |---|---|---|
 | Tvar (typy, povinnost, formáty `@id`/ISO, uzavřené enumy) | `schemas/canonical/` + `scripts/data/validate-shape.mjs` (AJV 2020-12, strict) | `CLM-\d+`, `retrieved` ISO datum, claim mimo opinion ≥ 1 zdroj |
-| Referenční integrita R1–R7 | `scripts/data/validate-references.mjs` | unikátní `@id`, cesta ↔ `@id`, same-dossier reference, graf (uzly = existující entity, edges 1:1 s relations) |
-| Redakční sémantika S1–S10 | `scripts/data/validate-semantics.mjs` | S1 single = žádná nezávislá dvojice; S2 corroborated ≥ 2 rodiny; S4 hrana single = žádná nezávislá dvojice (ne „1 zdroj"); S5/S6 autorizace; S7 subjektové uzly; S8 souvislost grafu (BFS); S9 provenance refs entit rozlišitelné v jejich dossierech; S10 týž vydavatel (outlet / registrovaná doména) nezakládá nezávislé doložení |
+| Referenční integrita R1–R8 | `scripts/data/validate-references.mjs` | unikátní `@id`, cesta ↔ `@id`, same-dossier reference, graf (uzly = existující entity, edges 1:1 s relations, R7); R8 obousměrnost vazby claim ↔ source (cituje-li tvrzení zdroj, musí ho zdroj uvádět ve svých `claims`, a naopak) |
+| Redakční sémantika S1–S10 | `scripts/data/validate-semantics.mjs` | S1 single = žádná nezávislá dvojice; S2 corroborated ≥ 2 rodiny; S4 hrana single = žádná nezávislá dvojice (ne „1 zdroj"); S5/S6 autorizace; S7 subjektové uzly; S8 souvislost grafu (BFS); S9 provenance refs entit rozlišitelné v jejich dossierech; S10 týž vydavatel (outlet / registrovaná doména / skupina vydavatelů z katalogu) nezakládá nezávislé doložení |
 | Parita tabulky tvrzení T1–T8 | `scripts/data/validate-registry-table.mjs` | řádka ↔ kanonický claim byte-verně, kotvy, URL dedup, T7 poznámka zdroje |
 | Renderovaná tabulka tvrzení | `verify:full-pages` (post-build, nad `public/`) | každá kotva `clm-##` leží uvnitř `<table>`, v počtu rovném počtu stránek tvrzení dossieru |
 | JSON-LD expanze | `scripts/data/validate-jsonld.mjs` | lokální context, safe mode, expandovatelnost každého záznamu |
@@ -208,9 +240,13 @@ rodinu (`family:ctk`), druhý jen fallback na outlet
 (`outlet:FORUM 24`) — a S2 je počítala jako dvě nezávislé redakce. Jedna
 redakce ale nepotvrzuje sama sebe.
 
-Pravidlo **S10** proto říká: dva zdroje se shodným `outlet`em **nebo**
-shodnou **registrovanou doménou** `url` jsou jeden nezávislý hlas **bez
-ohledu na `sourceFamily`**. Nezávislé doložení je až DVOJICE zdrojů,
+Pravidlo **S10** proto říká: dva zdroje se shodným `outlet`em, shodnou
+**registrovanou doménou** `url` **nebo shodnou skupinou vydavatelů**
+(volitelné `publisherGroup` v `data/source-catalog/*.json` — identita
+vydavatele zahrnuje i skupinu doloženou katalogem, protože jeden
+vydavatel drží víc titulů na víc doménách: Česká justice a Ekonomický
+deník vydává Media Network s.r.o., Novinky.cz a Seznam Zprávy provozuje
+Seznam.cz) jsou jeden nezávislý hlas **bez ohledu na `sourceFamily`**. Nezávislé doložení je až DVOJICE zdrojů,
 která se liší rodinou i vydavatelem. Primitiv sdílí S1, S2 i S4, takže
 totéž platí pro grafové hrany; severita se řídí hostitelským pravidlem
 (chyba u tvrzení, warning u hran) a S10 lze grandfatherovat baselinou

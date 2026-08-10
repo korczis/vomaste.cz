@@ -9,12 +9,13 @@
   "entityId": "jana-cernochova",
   "title": "Jana Černochová",
   "entityType": "person",
-  "publicationRole": "context",
-  "dossierEnabled": false,
-  "dossierStatus": "not_authorized",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
   "coverageState": "discovered",
   "dossiers": [
-    "jaromir-zuna"
+    "jaromir-zuna",
+    "jana-cernochova"
   ],
   "order": 167,
   "provenance": {

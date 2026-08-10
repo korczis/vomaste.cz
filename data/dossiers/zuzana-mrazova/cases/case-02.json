@@ -10,12 +10,21 @@
     "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
   },
   "title": "Obecní byt v Bílině",
-  "summary": "Obecní byt v Bílině — viz tvrzení CLM-09, CLM-10, CLM-11.",
+  "summary": "Obecní byt v Bílině — Mrázová od roku 2009 užívala obecní byt za nájemné okolo 4 500 Kč, obhajovala se splněním tehdejších podmínek přidělení, a předseda Pirátů Zdeněk Hřib jí ve sněmovně při projednávání novely o podpoře bydlení předal výzvu k rezignaci.",
   "period": "2026",
   "status": "status-single",
   "statusLabel": "Sledované téma",
   "anchor": "kauza-obecni-byt",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-11"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-27"
     },
@@ -49,25 +58,46 @@
   ],
   "sources": [
     {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-09"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-21"
+    },
+    {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-22"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-23"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-26"
-    },
-    {
-      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-21"
-    },
-    {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-24"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-26"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-28"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-29"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-35"
     }
   ],
   "subjects": [

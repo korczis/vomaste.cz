@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tomas-huner/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tomas-huner"
+  },
+  "text": "Tomáš Hüner byl podle oficiálního profilu na webu Vlády ČR ministrem průmyslu a obchodu od 13. 12. 2017 do 27. 6. 2018 (první vláda Andreje Babiše, od 24. 1. 2018 v demisi); dříve byl náměstkem ministra průmyslu a obchodu (2006–2011), předsedou dozorčí rady ČEPS (2006–2014) a ředitelem divize Energy Management v Siemens (2015–2017)",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomas-huner/sources/SRC-01"
+    }
+  ],
+  "subjects": [
+    "tomas-huner"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/tomas-huner/_index.md)."
+    }
+  ]
+}

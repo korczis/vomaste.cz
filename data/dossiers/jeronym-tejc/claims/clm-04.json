@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
   },
   "text": "Trestní oznámení směřuje k podezření z porušení povinnosti při správě cizího majetku a zneužití pravomoci úřední osoby. K datu citovaného zpravodajství nebyl v souvislosti s oznámením nikdo obviněn ani odsouzen; věc byla ve fázi podaného oznámení.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-02"
@@ -21,6 +21,9 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-04"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-18"
     }
   ],
   "subjects": [

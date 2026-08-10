@@ -7,6 +7,8 @@
 // Fasáda nic nevlastní — jen skládá moduly, z nichž každý vlastní své
 // vrstvy pravidel (validate-shape tvar, validate-references integritu,
 // validate-semantics redakční pravidla, validate-jsonld expanzi).
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import { loadCanonicalTree } from "../load.mjs";
 import { createValidators, validateRecordObject, RECORDS_ROOT } from "../validate-shape.mjs";
 import { validateReferences } from "../validate-references.mjs";
@@ -60,6 +62,33 @@ export async function validateCanonicalDataset(model, options = {}) {
   const tables = validateRegistryTables(model);
   errors.push(...tables.errors);
   warnings.push(...tables.warnings);
+
+  // 3c) lokálně hostované dokumenty musí fyzicky existovat pod static/ —
+  //     jinak by publikovaná stránka nabízela stažení souboru, který
+  //     nikdy nebyl commitnut. Kryje OBĚ konvence: strukturované
+  //     SRC.localDocument i markdown odkazy /documents/... v content
+  //     blocích libovolného záznamu (james-quick).
+  const staticRoot = join(RECORDS_ROOT, "..", "..", "static");
+  const DOC_LINK_RE = /\]\((\/documents\/[^)\s#?]+)/g;
+  for (const w of model.records) {
+    const doc = w.record?.localDocument;
+    if (doc) {
+      const abs = join(staticRoot, doc.path);
+      if (!existsSync(abs)) {
+        errors.push(`${w.relPath}: localDocument.path "${doc.path}" neexistuje ve static/ — soubor nebyl commitnut.`);
+      }
+    }
+    for (const block of w.record?.content ?? []) {
+      if (block?.type !== "markdown" || typeof block.value !== "string") continue;
+      let m;
+      while ((m = DOC_LINK_RE.exec(block.value))) {
+        const rel = decodeURIComponent(m[1].replace(/^\//, ""));
+        if (!existsSync(join(staticRoot, rel))) {
+          errors.push(`${w.relPath}: markdown odkaz "${m[1]}" nemá odpovídající soubor ve static/ — soubor nebyl commitnut.`);
+        }
+      }
+    }
+  }
 
   // 4) JSON-LD expanze (lokální kontexty, safe mode)
   errors.push(...(await validateJsonLd(model)));

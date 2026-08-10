@@ -3,6 +3,7 @@
 title = "Mojmír Hampl"
 template = "entity.html"
 weight = 286
+description = "Mojmír Hampl — Kontextová entita — Předseda Národní rozpočtové rady (entita nrr existuje); kritik výdajové trajektorie dopravní infrastruktury (růst ze 160 na 311+ mld."
 
 [extra]
 generated = true

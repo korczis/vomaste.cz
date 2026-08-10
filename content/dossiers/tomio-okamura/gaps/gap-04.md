@@ -21,3 +21,5 @@ směrem — zaznamenává jen, co se k datu kontroly nepodařilo doložit
 otevřeným zdrojem.
 
 **Opakovaná kontrola k 2026-08-03**: cílené hledání zopakováno, žádná zpráva o formálním podání odvolání ani o termínu odvolacího jednání nedohledána. Mezera zůstává otevřená.
+
+**Opakovaná kontrola k 2026-08-05 (primární dokumenty)**: hledán úřední doklad o podání odvolání i o nařízeném odvolacím jednání. **Co konkrétně chybí**: záznam o doručení odvolání Obvodnímu soudu pro Prahu 1 a termín jednání u Městského soudu v Praze. Ani jedno není v otevřených rejstřících dostupné — InfoSoud nemá serverem vykreslený detail řízení a přehled nařízených jednání ve věci nic nevrací. Mezera zůstává otevřená.

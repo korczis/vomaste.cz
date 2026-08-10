@@ -10,6 +10,7 @@ import { loadCanonicalTree } from "./load.mjs";
 import { validateReferences } from "./validate-references.mjs";
 import { validateSemantics, loadAuthorizationIds, registeredDomain } from "./validate-semantics.mjs";
 import { validateJsonLd, validateRecordJsonLd } from "./validate-jsonld.mjs";
+import { createSourceIndependence, loadPublisherGroups } from "./lib/source-independence.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const FIXTURE = join(ROOT, "tests/fixtures/canonical/example-fixture");
@@ -110,12 +111,34 @@ test("claim mimo status-opinion musí mít aspoň jeden existující zdroj; stat
   const model = clone();
   const claim = find(model, CLAIM);
   claim.record.sources = [];
+  // Protistrana se uvolňuje spolu s referencí: kdyby zdroj tvrzení dál
+  // uváděl, byla by to nekonzistentní vazba a ohlásilo by ji R8 — jiné
+  // pravidlo, než které tenhle test zkouší.
+  find(model, SOURCE).record.claims = [];
   let errors = validateReferences(model);
   assert.ok(errors.some((e) => e.includes("nemá žádný existující citovaný zdroj")), errors.join("\n"));
 
   claim.record.status = "status-opinion";
   errors = validateReferences(model);
   assert.deepEqual(errors, []);
+});
+
+test("R8: vazba claim↔source musí platit oběma směry", () => {
+  // Zdroj přestane uvádět tvrzení, které ho dál cituje.
+  const a = clone();
+  find(a, SOURCE).record.claims = [];
+  const aErrors = validateReferences(a);
+  assert.ok(aErrors.some((e) => e.includes("neuvádí ve svém poli claims")), aErrors.join("\n"));
+
+  // Opačný směr: tvrzení přestane citovat zdroj, který ho dál uvádí.
+  // Fixture nemá druhý zdroj, takže se claim přepne na status-opinion,
+  // jediný stav, který smí mít prázdné sources (jinak by se trefil do R6).
+  const b = clone();
+  const claimB = find(b, CLAIM);
+  claimB.record.sources = [];
+  claimB.record.status = "status-opinion";
+  const bErrors = validateReferences(b);
+  assert.ok(bErrors.some((e) => e.includes("necituje ve svém poli sources")), bErrors.join("\n"));
 });
 
 // --- validate-semantics --------------------------------------------------
@@ -381,6 +404,101 @@ test("S10 je grandfatherovatelné pravidlo (evidenční řada, na rozdíl od S5/
   const { errors, warnings } = validateSemantics(model, { authorizations: AUTHS, baseline });
   assert.deepEqual(errors, []);
   assert.ok(warnings.some((w) => w.startsWith("baseline (grandfathered S10)")), warnings.join("\n"));
+});
+
+// --- S10: skupina vydavatelů (T-083) -------------------------------------
+//
+// Outlet ani doména neuvidí vydavatele, který drží víc titulů na víc
+// doménách. Katalog zdrojů to doložit umí (`publisherGroup`), a protože
+// pravidlo má jediného vlastníka — `independentPair()` v
+// lib/source-independence.mjs — platí zároveň pro S1, S2, S4 i S10.
+//
+// Fixtury níž používají SKUTEČNÉ tituly z katalogu: kdyby někdo skupinu
+// z katalogu odstranil, doktrína „Media Network je jeden vydavatel" by
+// tiše zmizela a test to musí zachytit. Hermetickou variantu (injektovaná
+// mapa) drží poslední test dvojice.
+
+test("S10: dva tituly téže vydavatelské skupiny NEZAKLÁDAJÍ korroboraci", () => {
+  // Česká justice + Ekonomický deník: jiný outlet, jiná registrovaná
+  // doména, jiná rodina — a přesto jeden vydavatel (Media Network s.r.o.).
+  const model = clone();
+  const src01 = find(model, SOURCE).record;
+  src01.outlet = "Česká justice";
+  src01.url = "https://www.ceska-justice.cz/clanek/a";
+  corroboratedOn(model, {
+    sourceFamily: "ctk",
+    outlet: "Ekonomický deník",
+    url: "https://ekonomickydenik.cz/clanek/b",
+  });
+  const { errors } = validateSemantics(model, { authorizations: AUTHS });
+  assert.ok(
+    errors.some((e) => e.includes('táž skupina vydavatelů "media-network"')),
+    errors.join("\n"),
+  );
+});
+
+test("S10: titul ze skupiny a nezávislý vydavatel korroboraci ZAKLÁDAJÍ", () => {
+  // Pravidlo nesmí přestřelit: skupina váže jen své vlastní tituly.
+  const model = clone();
+  const src01 = find(model, SOURCE).record;
+  src01.outlet = "Česká justice";
+  src01.url = "https://www.ceska-justice.cz/clanek/a";
+  corroboratedOn(model, { sourceFamily: "ctk", outlet: "Jiný deník" });
+  const { errors } = validateSemantics(model, { authorizations: AUTHS });
+  assert.deepEqual(errors, []);
+});
+
+test("skupiny vydavatelů se čtou z katalogu zdrojů, ne z druhého seznamu v kódu", () => {
+  const groups = loadPublisherGroups();
+  assert.equal(groups.get("Česká justice"), groups.get("Ekonomický deník"));
+  assert.equal(groups.get("Seznam Zprávy"), groups.get("Novinky.cz"));
+  assert.notEqual(groups.get("Česká justice"), groups.get("Seznam Zprávy"));
+  // Titul bez doloženého vlastnictví skupinu nemá — pole je volitelné.
+  assert.equal(groups.get("Deník N"), undefined);
+});
+
+test("chybějící skupina nic nemění: bez publisherGroup rozhoduje outlet a doména jako dřív", () => {
+  const source = (identifier, outlet, url, sourceFamily = "") => ({
+    "@id": `id:${identifier}`,
+    identifier,
+    recordType: "source",
+    outlet,
+    url,
+    sourceFamily,
+  });
+  const records = new Map(
+    [
+      source("A", "Deník A", "https://denik-a.invalid/x"),
+      source("B", "Deník B", "https://denik-b.invalid/y", "ctk"),
+    ].map((r) => [r["@id"], r]),
+  );
+  const ids = [...records.keys()];
+
+  // Prázdný katalog: dvojice zůstává nezávislá.
+  const zadneSkupiny = createSourceIndependence((id) => records.get(id), {
+    publisherGroups: new Map(),
+  });
+  assert.deepEqual(zadneSkupiny.independentPair(ids), ["A", "B"]);
+
+  // Skupina jen u jednoho z nich: pořád nezávislá (skupina se páruje, ne
+  // barví — jeden titul ve skupině sám o sobě nic nediskvalifikuje).
+  const jednostranna = createSourceIndependence((id) => records.get(id), {
+    publisherGroups: new Map([["Deník A", "skupina-x"]]),
+  });
+  assert.deepEqual(jednostranna.independentPair(ids), ["A", "B"]);
+
+  // Oba tituly téže skupiny: dvojice zaniká.
+  const spolecna = createSourceIndependence((id) => records.get(id), {
+    publisherGroups: new Map([
+      ["Deník A", "skupina-x"],
+      ["Deník B", "skupina-x"],
+    ]),
+  });
+  assert.equal(spolecna.independentPair(ids), null);
+  assert.ok(
+    spolecna.publisherCollisions(ids)[0].includes('táž skupina vydavatelů "skupina-x"'),
+    spolecna.publisherCollisions(ids).join("; "),
+  );
 });
 
 // --- validate-jsonld -----------------------------------------------------

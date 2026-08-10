@@ -4,6 +4,7 @@ title = "Filip Turek"
 template = "entity.html"
 weight = 2
 aliases = ["/dossiers/macinka-turek/entities/turek/"]
+description = "Filip Turek — Hlavní subjekt autorizovaného dossieru."
 
 [extra]
 generated = true

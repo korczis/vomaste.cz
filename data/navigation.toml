@@ -84,12 +84,39 @@ order = 18.5
 icon = "M12 3c4.4 0 8 1.3 8 3s-3.6 3-8 3-8-1.3-8-3 3.6-3 8-3Z M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6 M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"
 
 [[items]]
+id = "sources"
+label = "Zdroje"
+path = "@/zdroje/_index.md"
+match_prefix = "/zdroje/"
+order = 18.7
+icon = "M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z M12 7v5l3 2 M3.5 9h17"
+
+[[items]]
 id = "docs"
 label = "Dokumentace"
 path = "@/dokumentace/_index.md"
 match_prefix = "/dokumentace/"
 order = 19
 icon = "M4 4a2 2 0 0 1 2-2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4Z M15 2v5h5 M8 13h8 M8 17h5"
+
+[[items]]
+id = "document-archive"
+label = "Archiv dokumentů"
+path = "@/dokumenty/_index.md"
+match_prefix = "/dokumenty/"
+order = 19.2
+icon = "M4 4h16v16H4z M8 8h8 M8 12h8 M8 16h5"
+
+# Manifest projektu (content/manifest.md). Vlastní top-level položka, ne
+# podstránka dokumentace: je to text vlastníka o tom, proč projekt existuje,
+# ne řídicí dokument vykreslovaný ze souboru v repozitáři.
+[[items]]
+id = "manifest"
+label = "Manifest"
+path = "@/manifest.md"
+match_prefix = "/manifest/"
+order = 20
+icon = "M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1Z M4 22v-7"
 
 # --- Per-dossier registry template -----------------------------------------
 # Applied to EVERY dossier by the generator, in this order, but only for the

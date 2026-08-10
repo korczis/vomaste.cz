@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/gaps/GAP-15",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-15",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar"
+  },
+  "title": "GAP-15 — Proč se reportáž a výsledky jednání vlády rozcházejí v procesním stavu návrhu",
+  "description": "Seznam Zprávy 29. 7. 2026 psaly, že se návrh teprve chystá do vlády; vláda jej podle vlastních zveřejněných výsledků schválila už 27. 7. 2026. Příčina rozporu doložena není.",
+  "priority": "střední",
+  "checked": "2026-08-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/lubomir-metnar/claims/CLM-09"
+    }
+  ],
+  "subjects": [
+    "metnar"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "[CLM-09](@/dossiers/lubomir-metnar/claims/clm-09.md) je vedeno jako **sporné**. Reportáž Seznam Zpráv z 29. 7. 2026 ([SRC-02](@/dossiers/lubomir-metnar/sources/src-02.md)) uvádí, že se návrh teprve připravuje k projednání ve vládě a na poslední jednání vlády se nedostal. Úřad vlády přitom už 27. 7. 2026 ve 14:55 zveřejnil výsledky jednání, kde je materiál ministra vnitra pod bodem 28 uveden jako **schválený** ([SRC-11](@/dossiers/lubomir-metnar/sources/src-11.md)).\n\n**Co doloženo není.** Čím rozpor vznikl. Ve hře je několik možností — bod doplněný na program dodatečně, prodleva mezi přijetím a zveřejněním samotného usnesení (ČTK zveřejnění usnesení hlásí až 30. 7.), nebo chyba v reportáži. Dossier mezi nimi **nerozhoduje**, protože žádnou z nich nemá čím doložit.\n\n**Co z toho neplyne.** Neplyne z toho nic o věrohodnosti ostatních zjištění téže reportáže — ta jsou posuzována každé zvlášť podle svého vlastního doložení. Neplyne z toho ani, že by vláda něco tajila; informativní zveřejnění výsledků jednání proběhlo v den jednání.\n\n**Podmínka uzavření**: doložený program jednání vlády z 27. 7. 2026 v podobě rozeslané před schůzí (zda bod 28 na něm byl), nebo oprava či upřesnění ze strany vydavatele reportáže."
+    }
+  ],
+  "order": 15
+}

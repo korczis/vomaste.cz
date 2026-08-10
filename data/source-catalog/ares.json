@@ -1,0 +1,125 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source-catalog-entry.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/zdroje/ares",
+  "@type": "vomaste:SourceCatalogEntry",
+  "recordType": "sourceCatalogEntry",
+  "identifier": "ares",
+  "title": "ARES — Administrativní registr ekonomických subjektů",
+  "operator": "Ministerstvo financí ČR",
+  "kind": "primary-registry",
+  "jurisdiction": "CZ",
+  "access": "open",
+  "authentication": "none",
+  "url": "https://ares.gov.cz/ekonomicke-subjekty",
+  "apiUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest",
+  "order": 10,
+  "proves": [
+    "Že subjekt s daným IČO je v konkrétním veřejném rejstříku zapsán, a s jakými údaji k datu výpisu.",
+    "Obsazení statutárního orgánu a společníků včetně dat zápisu a výmazu (sub-registr VR).",
+    "Předmět podnikání a živnostenská oprávnění (sub-registr RŽP)."
+  ],
+  "doesNotProve": [
+    "Skutečný rozsah činnosti, faktické rozhodování ani jakékoli pochybení. Zápis do orgánu je administrativní fakt, ne indicie.",
+    "Totožnost osoby napříč subjekty. ARES vrací jméno, ne identifikátor osoby; shoda jména není shoda osoby.",
+    "Aktuálnost k dnešku u záznamů, které rejstřík zveřejňuje se zpožděním po zápisu soudem."
+  ],
+  "subRegisters": [
+    {
+      "code": "ros",
+      "label": "Registr osob"
+    },
+    {
+      "code": "vr",
+      "label": "Veřejný rejstřík (obchodní, spolkový, nadační)"
+    },
+    {
+      "code": "rzp",
+      "label": "Registr živnostenského podnikání"
+    },
+    {
+      "code": "res",
+      "label": "Registr ekonomických subjektů (ČSÚ)"
+    },
+    {
+      "code": "rpsh",
+      "label": "Registr politických stran a hnutí"
+    },
+    {
+      "code": "rcns",
+      "label": "Registr církví a náboženských společností"
+    },
+    {
+      "code": "nrpzs",
+      "label": "Národní registr poskytovatelů zdravotních služeb"
+    },
+    {
+      "code": "szr",
+      "label": "Společný zemědělský registr"
+    },
+    {
+      "code": "ceu",
+      "label": "Centrální evidence úpadců"
+    },
+    {
+      "code": "rs",
+      "label": "Registr škol"
+    }
+  ],
+  "traps": [
+    {
+      "title": "Dva různé významy odpovědi 404",
+      "detail": "`{\"kod\":\"NENALEZENO\",\"subKod\":\"VYSTUP_SUBJEKT_NENALEZEN\"}` znamená, že subjekt v tomto sub-registru zapsán není — je to řádná odpověď, ne porucha. Naproti tomu `{\"status\":404,\"error\":\"Not Found\",\"path\":…}` znamená, že neexistuje sám endpoint. Sloučení obojího do „nenalezeno\" vede k závěru, že sub-registr neexistuje, ačkoli jen daný subjekt v něm není zapsán."
+    },
+    {
+      "title": "Dva různé významy odpovědi 400",
+      "detail": "`VYSTUP_PRILIS_MNOHO_VYSLEDKU` znamená přes tisíc výsledků, tedy „zpřesni dotaz\". `VSTUP_PRAZDNY` znamená, že se na dané pole vůbec neindexuje. První je obchodní odpověď, druhý konstrukční omezení dotazu."
+    },
+    {
+      "title": "Desetinný oddělovač je středník",
+      "detail": "Částky přicházejí jako `\"390000000;00\"`, tisíce oddělené nezlomitelnou mezerou (U+00A0) nebo úzkou nezlomitelnou mezerou (U+202F). Naivní `parseFloat` vrátí řádově jinou hodnotu."
+    },
+    {
+      "title": "Dvojí časová platnost ve VR",
+      "detail": "`datumZapisu`/`datumVymazu` je platnost ZÁZNAMU, `clenstvi.vznikClenstvi`/`zanikClenstvi` je platnost ČLENSTVÍ. Přeregistrace vytvoří nový záznam, aniž by členství skončilo — kdo počítá záznamy, napočítá víc funkčních období, než jich bylo."
+    },
+    {
+      "title": "„Nenastaveno\" je prázdný objekt",
+      "detail": "Sub-registr ROS zanořuje skaláry jako `%{\"hodnota\" => …}`, data jako `%{\"datum\" => …}` a pro nevyplněné pole vrací `{}`, ne `null`."
+    }
+  ],
+  "howToSearch": "Vyhledávání podle IČO je adresné a levné. Podle jména existuje, ale vrací nejvýše tisíc výsledků a u běžných jmen je nepoužitelné — používej ho k potvrzení, ne k objevování. Pole `seznamRegistraci` v odpovědi říká předem, ve kterých sub-registrech subjekt záznam má; ušetří to slepé dotazy.",
+  "content": [
+    {
+      "type": "markdown",
+      "value": "ARES je pro tenhle projekt výchozí primární zdroj rejstříkových vazeb. Je zdarma, bez autentizace a bez captchy, a jako jediný veřejný přístupový bod nabízí deset sub-registrů pod jedním IČO.\n\nCo z něj tento web nepřebírá: **datum narození a adresu bydliště fyzických osob**, přestože je odpovědi obsahují. Pro evidenci rejstříkové vazby nejsou potřebné a jejich publikace by z administrativního faktu udělala zásah do soukromí."
+    }
+  ],
+  "families": [
+    "ares-gov-cz",
+    "cz-verejny-rejstrik"
+  ],
+  "outlets": [
+    "ARES (Ministerstvo financí ČR)",
+    "ARES — Administrativní registr ekonomických subjektů (Ministerstvo financí ČR)"
+  ],
+  "answers": [
+    {
+      "question": "Kdo je jednatelem nebo členem statutárního orgánu firmy?"
+    },
+    {
+      "question": "Kdo drží v firmě obchodní podíl a jak velký?"
+    },
+    {
+      "question": "Existuje subjekt s tímhle IČO a co o něm rejstřík vede?"
+    },
+    {
+      "question": "V jakých rejstřících je subjekt vůbec zapsán?",
+      "note": "Pole `seznamRegistraci` odpoví předem a ušetří slepé dotazy."
+    },
+    {
+      "question": "Jaké má firma živnostenská oprávnění a předmět podnikání?"
+    }
+  ]
+}

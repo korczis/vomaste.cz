@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/andrej-babis/updates/2026-08-05-4",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-05-4",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/andrej-babis"
+  },
+  "date": "2026-08-05",
+  "summary": "Kolo primárních dokladů (T-071). Čtyři z pěti tvrzení, která měla dva a více zdrojů slévajících se do jedné rodiny, získala nezávislé doložení: CLM-57, CLM-58 a CLM-105 tiskovou zprávou EPPO z 22. 6. 2026 (SRC-74), CLM-68 rozsudkem NSS č. j. 8 Afs 215/2024-74 (SRC-80), CLM-50 vlastní reportáží Seznam Zpráv z 9. 1. 2023 (SRC-79) a CLM-20 připojením už existující reportáže Seznam Zpráv (SRC-76). Jednozdrojová CLM-66 a CLM-67 povýšena usnesením Ústavního soudu sp. zn. IV. ÚS 3359/25 (SRC-81). Opravy proti primárním dokumentům: CLM-68 — sporná částka je 440 698,14 Kč neproplacené části dotace, ne „více než 43 milionů korun“ (ta se v témže článku ČTK vztahuje k souhrnu dotací firmám z Agrofertu ohlášenému MMR v roce 2023), a citovaná věta rozsudku neobsahuje redakční závorky se jmény účastníků; CLM-66 — usnesení Ústavního soudu je z 17. 12. 2025, zpravodajství o něm informovalo 23. 1. 2026 po zpřístupnění v NALUS; CLM-67 — citovaná věta stojí v bodě [5] usnesení, kde Ústavní soud rekapituluje odůvodnění NSS, není to jeho vlastní nosný závěr a zpravodajství ji zkrátilo o druhou polovinu; CLM-57 — tisková zpráva EPPO nejmenuje žalobce, společnost ani hodnotu zajištěných nemovitostí a zajištění majetku připisuje sama sobě, ne NCOZ; CLM-105 — EPPO uvádí sazby jako následky hrozící v případě uznání viny, ne jako návrh trestu státního zástupce. CLM-86 zůstává 1 ZDROJ: všechny otevřené přetisky (FORUM 24, Deník N, Radio Prague International) nesou kredit ČTK a redakce Seznam Zprávy, Novinky.cz i Médium.cz vlastní sám žalobce — zapsáno jako GAP-08. SRC-44 dostal rodinu ct24 podle detektoru zdrojových rodin (verdikt own, podpis Milan Gerčák). Opravy se současně promítly do narativních částí dossieru a do souhrnů CASE-10, CASE-13 a CASE-14, aby v žádné vrstvě nezůstal údaj, který primární dokument vyvrací.",
+  "addedClaims": [],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-50"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-57"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-58"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-66"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-67"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-68"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-105"
+    }
+  ],
+  "addedGaps": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/gaps/GAP-08"
+    }
+  ],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-74"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-76"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-79"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-80"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-81"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/andrej-babis/sources/SRC-44"
+    }
+  ]
+}

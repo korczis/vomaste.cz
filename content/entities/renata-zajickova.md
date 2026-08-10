@@ -3,6 +3,7 @@
 title = "Renáta Zajíčková"
 template = "entity.html"
 weight = 364
+description = "Renáta Zajíčková — Kontextová entita — Poslankyně ODS; kritika procesu výjimek ze zkrácení školního roku."
 
 [extra]
 generated = true

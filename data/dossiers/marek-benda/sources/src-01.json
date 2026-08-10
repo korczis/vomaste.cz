@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/marek-benda/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/marek-benda"
+  },
+  "title": "SRC-01 — Poslanecká sněmovna PČR (oficiální profil poslance)",
+  "description": "Oficiální profil poslance na webu Poslanecké sněmovny: mandát, klub, funkce předsedy poslaneckého klubu ODS.",
+  "outlet": "Poslanecká sněmovna Parlamentu ČR",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://www.psp.cz/sqw/detail.sqw?id=4",
+  "retrieved": "2026-08-06",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/marek-benda/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "marek-benda"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil poslance na webu Poslanecké sněmovny PČR, otevřen a přečten 2026-08-06 (aktuální stav volebního období od 2025).\nUvádí mandát poslance od 4. 10. 2025 (zvolen na kandidátce SPOLU, nominující strana ODS), členství v Poslaneckém klubu ODS od 8. 10. 2025 a funkci předsedy poslaneckého klubu ODS od 8. 10. 2025.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — dokládá existenci a formulaci úředního údaje (mandát, klub, funkce předsedy klubu), nikoli nezávislé redakční posouzení jeho politické role. Pro nezávislé potvrzení okolností zvolení předsedou klubu je nutný druhý, nezávislý zdroj (viz SRC-02)."
+    }
+  ],
+  "order": 1
+}
