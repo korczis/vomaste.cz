@@ -72,5 +72,18 @@
   ],
   "externalIds": {
     "ico": "71443339"
-  }
+  },
+  "media": [
+    {
+      "file": "images/logos/ano.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ANO_Logo.svg",
+      "license": "Public domain",
+      "author": "Akce nespokojených občanů (ANO). The original uploader was Jonas Steinhöfel at German Wikipedia .. Later version(s) were uploaded by PanchoS at German Wikipedia .",
+      "credit": "www.anobudelip.cz",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 505,
+      "role": "logo"
+    }
+  ]
 }

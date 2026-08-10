@@ -63,5 +63,19 @@
   ],
   "externalIds": {
     "ico": "71339698"
-  }
+  },
+  "media": [
+    {
+      "file": "images/logos/pirati.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Czech_Pirate_Party_logo_2017.svg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "author": "Czech Pirate Party",
+      "credit": "https://www.pirati.cz/assets/img/brand/logo_napis.pdf",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 384,
+      "role": "logo"
+    }
+  ]
 }

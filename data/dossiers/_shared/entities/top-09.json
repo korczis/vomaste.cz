@@ -1,48 +1,61 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/top-09",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "top-09",
- "entityId": "top-09",
- "title": "TOP 09",
- "entityType": "political_party",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "andrej-babis",
-  "boris-stastny",
-  "jaromir-zuna",
-  "karel-havlicek"
- ],
- "order": 410,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/top-09",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "top-09",
+  "entityId": "top-09",
+  "title": "TOP 09",
+  "entityType": "political_party",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "andrej-babis",
+    "boris-stastny",
+    "jaromir-zuna",
+    "karel-havlicek"
   ],
-  "claimRefs": [
-   "CLM-09",
-   "CLM-32",
-   "CLM-39"
+  "order": 410,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02"
+    ],
+    "claimRefs": [
+      "CLM-09",
+      "CLM-32",
+      "CLM-39"
+    ],
+    "sourceRefs": [
+      "SRC-02",
+      "SRC-06",
+      "SRC-18"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (mj. jako stranická příslušnost více subjektů dossierů). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ],
-  "sourceRefs": [
-   "SRC-02",
-   "SRC-06",
-   "SRC-18"
+  "externalIds": {
+    "ico": "71339728"
+  },
+  "media": [
+    {
+      "file": "images/logos/top-09.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_TOP_09_(2021).svg",
+      "license": "Public domain",
+      "author": "TOP 09",
+      "credit": "https://www.top09.cz/styles/assets/svg/logo.svg",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 722,
+      "role": "logo"
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (mj. jako stranická příslušnost více subjektů dossierů). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ],
- "externalIds": {
-  "ico": "71339728"
- }
 }

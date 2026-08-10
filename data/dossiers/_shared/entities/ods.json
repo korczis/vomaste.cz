@@ -1,57 +1,70 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/ods",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "ods",
- "entityId": "ods",
- "title": "ODS",
- "entityType": "political_party",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "andrej-babis",
-  "boris-stastny",
-  "jaromir-zuna",
-  "jeronym-tejc",
-  "karel-havlicek",
-  "oto-klempir"
- ],
- "order": 311,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/ods",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "ods",
+  "entityId": "ods",
+  "title": "ODS",
+  "entityType": "political_party",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "andrej-babis",
+    "boris-stastny",
+    "jaromir-zuna",
+    "jeronym-tejc",
+    "karel-havlicek",
+    "oto-klempir"
   ],
-  "claimRefs": [
-   "CLM-05",
-   "CLM-07",
-   "CLM-09",
-   "CLM-12",
-   "CLM-15",
-   "CLM-21",
-   "CLM-26",
-   "CLM-29"
+  "order": 311,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02"
+    ],
+    "claimRefs": [
+      "CLM-05",
+      "CLM-07",
+      "CLM-09",
+      "CLM-12",
+      "CLM-15",
+      "CLM-21",
+      "CLM-26",
+      "CLM-29"
+    ],
+    "sourceRefs": [
+      "SRC-02",
+      "SRC-06",
+      "SRC-07",
+      "SRC-09",
+      "SRC-19"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (mj. jako stranická příslušnost více subjektů dossierů). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ],
-  "sourceRefs": [
-   "SRC-02",
-   "SRC-06",
-   "SRC-07",
-   "SRC-09",
-   "SRC-19"
+  "externalIds": {
+    "ico": "16192656"
+  },
+  "media": [
+    {
+      "file": "images/logos/ods.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_ODS_inverse_version.svg",
+      "license": "Public domain",
+      "author": "Civic Democratic Party",
+      "credit": "This vector image includes elements that have been taken or adapted from this file:",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 517,
+      "role": "logo"
+    }
   ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (mj. jako stranická příslušnost více subjektů dossierů). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
-  }
- ],
- "externalIds": {
-  "ico": "16192656"
- }
 }

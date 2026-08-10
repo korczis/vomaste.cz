@@ -43,5 +43,18 @@
   ],
   "externalIds": {
     "ico": "04134940"
-  }
+  },
+  "media": [
+    {
+      "file": "images/logos/spd.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SPD_Czechia_logo_(2026).svg",
+      "license": "Public domain",
+      "author": "Unknown author Unknown author",
+      "credit": "https://spd.cz/",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 764,
+      "role": "logo"
+    }
+  ]
 }

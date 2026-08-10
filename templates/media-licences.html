@@ -51,8 +51,11 @@
     {%- for row in media.rows %}
     <tr class="border-t border-white/5 align-top" data-entita="{{ row.entityTitle }}" data-autor="{{ row.author }}" data-licence="{{ row.license }}">
       <td class="px-3 py-2">
+        {#- Stejné pravidlo jako v ui::media_figure: logo se vejde celé, portrét
+            se ořezává na obličej. Ořezané logo je nečitelný kus písmene. -#}
         <img src="{{ get_url(path=row.file) | safe }}" alt="" loading="lazy" decoding="async"
-             width="48" height="64" class="h-16 w-12 rounded border border-white/10 bg-black/40 object-cover object-top">
+             width="64" height="64"
+             class="h-16 w-16 rounded border border-white/10 bg-black/40 {% if row.role == 'logo' %}object-contain p-1{% else %}object-cover object-top{% endif %}">
       </td>
       <td class="px-3 py-2">
         <a href="{{ get_url(path='@/entities/' ~ row.entityId ~ '.md') | safe }}"

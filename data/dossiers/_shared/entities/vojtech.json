@@ -120,5 +120,18 @@
       "type": "markdown",
       "value": "Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v [hlavním přehledu](@/dossiers/adam-vojtech/_index.md#kdo)."
     }
+  ],
+  "media": [
+    {
+      "file": "images/people/vojtech.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adam_Vojt%C4%9Bch.jpg",
+      "license": "Public domain",
+      "author": "Ministerstvo zdravotnictví České republiky",
+      "credit": "https://commons.wikimedia.org/wiki/File:Let%C3%A1k_MZCR_Coronavirus_A5.pdf",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 1377,
+      "role": "portrait"
+    }
   ]
 }

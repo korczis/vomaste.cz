@@ -45,5 +45,18 @@
   ],
   "externalIds": {
     "ico": "00442704"
-  }
+  },
+  "media": [
+    {
+      "file": "images/logos/kdu-csl.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:KDU-CSL_Logo_2012.svg",
+      "license": "Public domain",
+      "author": "Křesťanská a demokratická unie – Československá strana lidová (KDU-ČSL)",
+      "credit": "www.kdu.cz",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 683,
+      "role": "logo"
+    }
+  ]
 }

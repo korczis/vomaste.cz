@@ -227,6 +227,38 @@ if (conceptsItem) {
   }
 }
 
+/*
+ * Documentation subtree — generated from the pages that actually exist.
+ *
+ * Same rule the rest of this tree follows: the sidebar follows the data, not a
+ * hand-kept list. Documentation had only its landing item, so every document
+ * under it — the constitution, the licences, the newly generated media
+ * attribution index — was one click away and invisible from the sidebar.
+ * Listing pages here means adding a document is enough; nobody has to remember
+ * to also edit the skeleton, and a removed document cannot linger as a dead
+ * link.
+ */
+const docsItem = items.find((i) => i.id === "docs");
+if (docsItem) {
+  const dir = join(ROOT, "content/dokumentace");
+  docsItem.children = readdirSync(dir)
+    .filter((f) => f.endsWith(".md") && f !== "_index.md")
+    .map((f) => {
+      const fm = (readFileSync(join(dir, f), "utf8").match(/^\+\+\+\r?\n([\s\S]*?)\r?\n\+\+\+/) ?? [])[1] ?? "";
+      return { slug: f.replace(/\.md$/, ""), title: str(fm, "title"), weight: num(fm, "weight") };
+    })
+    .sort((a, b) => a.weight - b.weight || (a.title < b.title ? -1 : 1))
+    .map((p) => ({
+      id: `dokumentace-${p.slug}`,
+      label: p.title || p.slug,
+      path: `@/dokumentace/${p.slug}.md`,
+      matchPrefix: `/dokumentace/${p.slug}/`,
+      icon: docsItem.icon,
+      depth: 1,
+      children: [],
+    }));
+}
+
 for (const i of items) i.depth = 0;
 
 mkdirSync(dirname(OUT), { recursive: true });

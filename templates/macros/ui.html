@@ -224,7 +224,11 @@
     {%- if item.height %} height="{{ item.height }}"{% endif %}
     loading="{% if eager %}eager{% else %}lazy{% endif %}"
     decoding="async"
-    class="aspect-[3/4] w-full bg-black/40 object-cover object-top">
+    {#- Portrét se ořezává na výšku, protože jde o obličej. Logo se ořezávat
+        nesmí: z širokého loga by zbyl kus písmene. Proto se vejde celé
+        (object-contain) do širšího rámečku a dostane odsazení, aby se
+        nedotýkalo hran. -#}
+    class="w-full bg-black/40 {% if item.role == 'logo' %}aspect-[4/3] object-contain p-4{% else %}aspect-[3/4] object-cover object-top{% endif %}">
   {%- if item.href %}</a>{% endif %}
   <figcaption class="space-y-1 border-t border-white/10 px-3 py-2 text-xs leading-snug">
     {%- if item.title %}

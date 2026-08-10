@@ -115,9 +115,29 @@ if (pinned) {
    * confirmed it is stored in `externalIds.wikidata` and reused, so later runs
    * stop guessing.
    */
-  const identity = await resolveWikidata(query, flag("wikidata") ?? record.externalIds?.wikidata);
+  const identity = await resolveWikidata(
+    query,
+    flag("wikidata") ?? record.externalIds?.wikidata,
+    kind !== "logos",
+  );
   if (identity) {
     console.log(`  Wikidata: ${identity.id} — ${identity.label}${identity.description ? ` (${identity.description})` : ""}`);
+
+    /*
+     * A logo run must land on an organisation, and an abbreviation is a trap:
+     * "PRO" resolves to protein, and the run cheerfully downloaded a mosaic of
+     * a biopolymer as a party logo. The ambiguity warning alone was not enough
+     * — it printed and carried on. So for logos the resolved entity has to
+     * READ like an organisation, and if it does not, the run stops and asks
+     * for an explicit --wikidata rather than publishing whatever it found.
+     */
+    if (kind === "logos" && !/strana|hnut|party|movement|koalice|spolek|společnost|organiza/i.test(identity.description ?? "")) {
+      console.log(
+        `${entityId}: ${identity.id} nevypadá jako organizace — nestahuji. ` +
+          `Uprav --query nebo přišpendli --wikidata Q…`,
+      );
+      process.exit(1);
+    }
     if (identity.image) {
       candidates = await commonsFileInfo(`File:${identity.image}`);
     } else {
@@ -147,7 +167,18 @@ console.log(`  vybráno: ${chosen.title}`);
 console.log(`  licence: ${chosen.license} · autor: ${chosen.author}`);
 console.log(`  zdroj:   ${chosen.descriptionUrl}`);
 
-const ext = (chosen.thumbUrl.match(/\.(jpe?g|png|svg|webp)$/i)?.[1] ?? "jpg").toLowerCase();
+/*
+ * Extension from the thumbnail PATH, with the query string cut off first.
+ *
+ * Commons appends `?utm_source=…` to the URLs it returns, so an `$`-anchored
+ * match never fires and everything silently became `.jpg` — including PNG
+ * thumbnails of SVG logos, where the name would have claimed one format and
+ * the bytes been another. The path also matters more than the original file
+ * type: an SVG is served as `…ANO_Logo.svg.png`, and what we store are those
+ * PNG bytes.
+ */
+const thumbPath = chosen.thumbUrl.split("?")[0];
+const ext = (thumbPath.match(/\.(jpe?g|png|svg|webp)$/i)?.[1] ?? "jpg").toLowerCase();
 // 1..N médií na entitu: druhé a další dostanou pořadovou příponu, aby se
 // soubory nepřepisovaly a cesta zůstala odvoditelná z entity a pořadí.
 const keep = has("force") ? [] : existing;
@@ -213,7 +244,7 @@ function plain(html) {
  * the first human is returned but its description is printed, so a wrong match
  * is visible instead of silent.
  */
-async function resolveWikidata(term, pinnedId) {
+async function resolveWikidata(term, pinnedId, wantsHuman = true) {
   const api = "https://www.wikidata.org/w/api.php";
 
   let ids = [];
@@ -252,9 +283,19 @@ async function resolveWikidata(term, pinnedId) {
   if (!res.ok) return null;
   const entities = Object.values((await res.json()).entities ?? {});
 
-  const humans = entities.filter((e) =>
-    (e.claims?.P31 ?? []).some((c) => c.mainsnak?.datavalue?.value?.id === "Q5"),
-  );
+  /*
+   * People and organisations are resolved differently, because they fail
+   * differently. For a person the danger is a namesake, so only humans
+   * (P31=Q5) are ever accepted. For a party the danger is the opposite —
+   * requiring a human silently rejects every organisation — so the human
+   * filter is dropped and, instead, the ORGANISATION's own logo property
+   * (P154) is preferred over a photograph (P18): a party is represented by
+   * its mark, not by a picture of its headquarters.
+   */
+  const candidatesForKind = wantsHuman
+    ? entities.filter((e) => (e.claims?.P31 ?? []).some((c) => c.mainsnak?.datavalue?.value?.id === "Q5"))
+    : entities.filter((e) => !(e.claims?.P31 ?? []).some((c) => c.mainsnak?.datavalue?.value?.id === "Q5"));
+  const humans = candidatesForKind;
   if (humans.length === 0) return null;
 
   const describe = (e) => e.descriptions?.cs?.value ?? e.descriptions?.en?.value ?? "";
@@ -270,7 +311,7 @@ async function resolveWikidata(term, pinnedId) {
   const claimIds = (e, prop) =>
     (e.claims?.[prop] ?? []).map((c) => c.mainsnak?.datavalue?.value?.id).filter(Boolean);
   const score = (e) =>
-    ((e.claims?.P570 ?? []).length === 0 ? 4 : 0) + // bez data úmrtí = žijící
+    (wantsHuman && (e.claims?.P570 ?? []).length === 0 ? 4 : 0) + // bez data úmrtí = žijící
     (claimIds(e, "P27").includes("Q213") ? 2 : 0) + // občanství ČR
     (/politi|ministr|poslan|premiér|prezident|podnikatel/i.test(describe(e)) ? 1 : 0);
 
@@ -289,7 +330,12 @@ async function resolveWikidata(term, pinnedId) {
     id: chosen.id,
     label: chosen.labels?.cs?.value ?? chosen.labels?.en?.value ?? term,
     description: describe(chosen),
-    image: chosen.claims?.P18?.[0]?.mainsnak?.datavalue?.value ?? null,
+    // U organizace vyhrává logo (P154) nad fotografií (P18).
+    image:
+      (wantsHuman
+        ? chosen.claims?.P18?.[0]?.mainsnak?.datavalue?.value
+        : chosen.claims?.P154?.[0]?.mainsnak?.datavalue?.value ??
+          chosen.claims?.P18?.[0]?.mainsnak?.datavalue?.value) ?? null,
   };
 }
 
