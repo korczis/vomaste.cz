@@ -1,6 +1,6 @@
 {
   "$comment": "Hash-kotva append-only autorizačního logu v AGENTS.md (## Content about real parties). Generuje `npm run authorization:anchor`: interaktivně, nebo pro čistě nový záznam po výslovné autorizaci vlastníka v aktuální konverzaci. verify-authorization-log-append-only.mjs proti ní ověřuje byte-verní integritu každého záznamu; validate-authorization.mjs přes ni váže data/authorizations.toml na log. Needitovat ručně.",
-  "generatedAt": "2026-08-08",
+  "generatedAt": "2026-08-10",
   "algorithm": "sha256(normalized entry block: LF line endings, trailing whitespace trimmed)",
   "entries": [
     {
@@ -862,6 +862,10 @@
     {
       "heading": "### Scope extension, 2026-08-09: Jiří Pospíšil — ministerské období (odvolání 2012)",
       "sha256": "d4ef2b525037346cdcfb8e1255ad54e8d53e06cd31e474854f53dcd65d4abf04"
+    },
+    {
+      "heading": "### Governance and scope supersession, 2026-08-09: zrušení „záměrně minimálních\" omezení rozsahu",
+      "sha256": "78b006569e2a1ae1b907d06227f4f2f4680f5916975ab0f4697bcaa35da52a32"
     }
   ]
 }

@@ -5080,3 +5080,29 @@ Authorized by the site owner, explicitly and on the record, 2026-08-09:
 Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): rozšíření AUTH-2026-08-07-JIRI-POSPISIL. Jiří Pospíšil byl ministrem spravedlnosti 2006–2009 a 2010–2012. Dřívější autorizace omezovala dossier na aktuální politický profil. Tato autorizace rozšiřuje rozsah na jedno konkrétní, dokumentované téma: **jeho odvolání z funkce ministra spravedlnosti 27. 6. 2012** — odvolání prezidentem Klausem na návrh premiéra Nečase, oficiálně uváděné důvody (ztráta důvěry v manažerské a rozpočtové řízení resortu, žádost o navýšení rozpočtu během úsporných opatření), Pospíšilova publikovaná reakce („Respektuji jeho rozhodnutí…“), a dobově reportovaný kontext: odvolání přišlo krátce po návrhu nejvyššího státního zástupce Zemana jmenovat Lenku Bradáčovou vrchní státní zástupkyní v Praze, což část politiků (nejotevřeněji Schwarzenberg) veřejně spojovala se zákulisním sporem o podobu státního zastupitelství. Přímo otevřené zdroje: Deník.cz (27. 6. 2012), Patria.cz (27. 6. 2012), e15.cz (28. 6. 2012 — komentář, cituje se výhradně jako NÁZOR).
 
 Povinné rámování: oficiální důvody a alternativní výklady se citují vedle sebe jako pozice, ne jako zjištění — tento web nerozhoduje, proč byl ministr odvolán. Odvolání člena vlády je ústavní pravomoc, ne pochybení odvolaného; žádný citovaný zdroj netvrdí protiprávní jednání Pospíšila a nic takového nesmí být naznačeno. Lenka Bradáčová, Pavel Zeman ani Vlastimil Rampula se touto autorizací nestávají subjekty — vystupují jen jako záznam vazby v rozsahu citovaného zpravodajství. Jiná témata jeho ministerských období vyžadují samostatnou budoucí autorizaci.
+
+### Governance and scope supersession, 2026-08-09: zrušení „záměrně minimálních" omezení rozsahu
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09
+("unblock expansions" v této konverzaci):
+
+Všechny dřívější autorizační záznamy, které omezují dossier na „záměrně
+minimální" základní politický/biografický profil a uvádějí, že hlubší
+rešerše „by vyžadovala samostatnou budoucí autorizaci", se mění takto:
+samostatné per-téma autorizační kolo se již nevyžaduje. Agent smí u
+kteréhokoli takového subjektu konkretizovat témata rozšíření přímo z
+přímo otevřených veřejných zdrojů — stejným mechanismem, jaký standing
+scope (AUTH-2026-08-05-PLATFORM-SCOPE) už umožňuje pro nové subjekty — a
+zdokumentovat každé rozšíření datovaným update záznamem dossieru, bez
+nového zápisu do tohoto logu za každé téma.
+
+Co se NEMĚNÍ, výslovně a bez výjimky: všech devět povinných publikačních
+bran (named evidence, provenance, faithful status, no guilt by graph,
+source-family independence, data minimization, third-party
+proportionality, reviewable change, deterministic build), všechna
+redakční pravidla (procesní vs. věcný výsledek při každé zmínce,
+nejmenované třetí osoby, mezera místo spekulace), doktrína archivace
+dokumentů, a všechna dřívější výslovně zamítavá rozhodnutí (mj. záznam
+„Not authorized: Radovan Krejčíř" platí dál). Dřívější záznamy se
+neupravují ani neodstraňují — tento záznam mění jejich procesní
+důsledek, ne jejich text.
