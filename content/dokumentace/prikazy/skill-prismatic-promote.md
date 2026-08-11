@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "skill prismatic-promote — Promoce kandidátů do kanonických dat"
 template = "tooling-command.html"
-weight = 109
+weight = 108
 description = "Promoce kandidátů do kanonických dat: Má konzumovat výslovný manifest po revizi, ověřit evidenci a provenienci a zapsat kanonické změny přes EXISTUJÍCÍ generátory a datové kontrakty. Claude skill, rešerše."
 
 [extra]

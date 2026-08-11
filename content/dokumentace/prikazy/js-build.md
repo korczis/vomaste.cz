@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run js:build — Build JavaScriptu"
 template = "tooling-command.html"
-weight = 36
+weight = 35
 description = "Build JavaScriptu: Zabalí esbuildem assets/js/app.js a assets/js/graph-app.js do minifikovaných bundlů pro ES2020 v static/js/.. npm skript, generování."
 
 [extra]

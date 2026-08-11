@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run test — Testová sada repozitáře"
 template = "tooling-command.html"
-weight = 48
+weight = 47
 description = "Testová sada repozitáře: Spouští node:test nad všemi *.test.mjs v scripts/build, dossier, data, migrations, lint, ui, ci, osint, intake (včetně matching/risk/preflight) a prismatic.. npm skript, kontrola výstupů."
 
 [extra]

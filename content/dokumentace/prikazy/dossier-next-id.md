@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run dossier:next-id — Další volné ID záznamu, ověřené i proti originu"
 template = "tooling-command.html"
-weight = 95
+weight = 94
 description = "Další volné ID záznamu, ověřené i proti originu: Vrátí další volné CLM/SRC/CASE/GAP číslo pro registr jednoho dossieru a hlásí, když se lokální working tree a origin/master neshodnou — ID kolize při souběžné práci tím přestává být otázkou toho, jestli si někdo vzpomněl fetchnout.. npm skript, provoz."
 
 [extra]

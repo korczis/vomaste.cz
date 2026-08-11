@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run verify:navigation-counts — Počty v postaveném HTML"
 template = "tooling-command.html"
-weight = 67
+weight = 66
 description = "Počty v postaveném HTML: Post-build kontrola: každý navigační počet v postaveném HTML se musí rovnat hodnotě v manifestu metrik a žádná položka nesmí nést odznak, pro který metriku nikdy nedostala.. npm skript, kontrola výstupů."
 
 [extra]

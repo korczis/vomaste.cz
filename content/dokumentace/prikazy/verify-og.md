@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run verify:og — Sociální a SEO metadata ve vydaném HTML"
 template = "tooling-command.html"
-weight = 68
+weight = 67
 description = "Sociální a SEO metadata ve vydaném HTML: Post-build brána nad každou vydanou stránkou: og:* a twitter:* jsou úplné, míří na existující absolutní obrázek, vejdou se do mezí z data/seo.toml a nesou doslova tytéž hodnoty jako stránkový uzel JSON-LD.. npm skript, kontrola výstupů."
 
 [extra]

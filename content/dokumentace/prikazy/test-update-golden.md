@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run test:update-golden — Přegenerování golden snapshotu"
 template = "tooling-command.html"
-weight = 104
+weight = 103
 description = "Přegenerování golden snapshotu: Jediný podporovaný způsob, jak změnit golden počty: přegeneruje scripts/data/compiled-golden.snapshot.json z aktuálního compiled modelu.. npm skript, provoz."
 
 [extra]

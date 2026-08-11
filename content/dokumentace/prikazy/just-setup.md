@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "just setup — Instalace závislostí"
 template = "tooling-command.html"
-weight = 129
+weight = 128
 description = "Instalace závislostí: Nainstaluje závislosti; git hooky se zapojí samy přes postinstall.. just recept, provoz."
 
 [extra]

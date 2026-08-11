@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run intake:publish-fixture — Demo publikačního kroku"
 template = "tooling-command.html"
-weight = 45
+weight = 44
 description = "Demo publikačního kroku: Předvede vytvoření komentáře, aktualizaci TÉHOŽ komentáře při opakovaném běhu, synchronizaci štítků a rozhodnutí o notifikaci vlastníka — výhradně proti in-memory mock GitHub adaptéru.. npm skript, kontrola výstupů."
 
 [extra]

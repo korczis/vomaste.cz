@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run check — Validace bez generování"
 template = "tooling-command.html"
-weight = 99
+weight = 98
 description = "Validace bez generování: Režim pipeline, který spouští jen kroky, které nic nezapisují a nepotřebují vygenerované artefakty: kanonickou bránu, autorizaci, typy dossierů, koncepty, typy entit, čtyři linty a paritu CI workflow.. npm skript, provoz."
 
 [extra]

@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run prismatic:status — Stav integrace s Prismatic"
 template = "tooling-command.html"
-weight = 84
+weight = 83
 description = "Stav integrace s Prismatic: Reportuje, jestli je lokální checkout prismatic-platform dohledatelný a použitelný jako upstream poskytovatel schopností. npm skript, rešerše."
 
 [extra]

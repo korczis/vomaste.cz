@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run dev — Vývojový server"
 template = "tooling-command.html"
-weight = 94
+weight = 93
 description = "Vývojový server: Vývojový režim jednotné pipeline: validace, archivní offline brána, potřebné generátory a nakonec dlouho běžící `zola serve`.. npm skript, provoz."
 
 [extra]

@@ -2,7 +2,6 @@
 {%- import "macros/meta.html" as meta -%}
 {%- import "macros/nav.html" as nav -%}
 {%- import "macros/ui.html" as ui -%}
-{%- import "partials/app-shell/secondary-sidebar.html" as app_shell -%}
 {%- import "partials/app-shell/bottom-nav.html" as bottom_nav -%}
 {#- ===================== Sociální a SEO metadata =====================
 
@@ -325,24 +324,15 @@
     navigace je tam dostupná hamburgrem (drawer) + obsahem stránky.
     Všude jinde zůstává na desktopu docked. -#}
 {% set sidebar_docked = current_path is defined and current_path != "/" %}
-{#- Secondary sidebar (T-012): page or section extra.dossier tells us which
-    dossier we are inside, if any — same page/section resolution the footer
-    below already uses. Resolved here (not inside the macro) so both the
-    <aside> and #main's margin agree on whether it is actually rendered. -#}
-{%- set_global dossier_slug = "" -%}
-{%- if page is defined and page.extra.dossier -%}
-  {%- set_global dossier_slug = page.extra.dossier -%}
-{%- elif section is defined and section.extra.dossier -%}
-  {%- set_global dossier_slug = section.extra.dossier -%}
-{%- endif -%}
-{%- set_global has_secondary_sidebar = false -%}
-{%- if dossier_slug -%}
-  {%- set secondary_nav = load_data(path="data/generated/navigation-secondary.json") -%}
-  {%- set secondary_entry = secondary_nav[dossier_slug] | default(value=false) -%}
-  {%- if secondary_entry and secondary_entry.registries | length > 0 -%}
-    {%- set_global has_secondary_sidebar = true -%}
-  {%- endif -%}
-{%- endif -%}
+{#- Jediná navigační vrstva. Do 2026-08-11 tu vedle tohoto stromu stál ještě
+    docked sekundární panel (T-012, `partials/app-shell/secondary-sidebar.html`)
+    nad vlastním providerem `data/generated/navigation-secondary.json`. Byl
+    přidán jako additive druhý sloupec, ale primární strom se nikdy nezúžil,
+    takže na lg+ vypisoval registry aktuálního dossieru dvakrát vedle sebe —
+    dvě reprezentace téhož, přesně to, co tenhle repozitář zakazuje v datech.
+    Rozhodnuto ve prospěch jednoho vlastníka: strom níž registry už umí, umí je
+    bez JS i na mobilu a je zdrojem pro SiteNavigationElement. Panel, jeho
+    generátor i jeho tři (jinde nečtené) artefakty jsou pryč. -#}
 <aside id="sidebar" data-drawer-placement="left" tabindex="-1" aria-labelledby="sidebar-heading"
        class="fixed inset-y-0 left-0 z-40 w-64 -translate-x-full border-r border-white/10 bg-black pt-16 transition-transform{% if sidebar_docked %} md:translate-x-0{% endif %}">
   <h2 id="sidebar-heading" class="sr-only">Hlavní navigace</h2>
@@ -381,8 +371,6 @@
   </nav>
 </aside>
 
-{{ app_shell::render(dossier_slug=dossier_slug, current_path=current_path) }}
-
 <noscript>
   {#- The drawer's hamburger toggle requires JS (inherent to any off-canvas
       drawer). Without JS, the destinations are still one click away here
@@ -404,7 +392,7 @@
 
 {{ bottom_nav::render(nav_items=nav_items, active_id=active_id) }}
 
-<div id="main" class="pb-16 pt-16 md:pb-0{% if sidebar_docked %} md:ml-64{% endif %}{% if has_secondary_sidebar %} lg:ml-[32rem]{% endif %}">
+<div id="main" class="pb-16 pt-16 md:pb-0{% if sidebar_docked %} md:ml-64{% endif %}">
 {% block content %}{% endblock content %}
 {#- Resolve the content path ONCE (page or section, "" for neither, e.g.
     404) and let the macro render the footer. Previously the page and
