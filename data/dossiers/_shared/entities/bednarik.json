@@ -121,5 +121,8 @@
       "type": "markdown",
       "value": "Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v [hlavním přehledu](@/dossiers/ivan-bednarik/_index.md#kdo)."
     }
-  ]
+  ],
+  "externalIds": {
+    "wikidata": "Q103814978"
+  }
 }

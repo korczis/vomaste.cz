@@ -169,6 +169,18 @@ if (pinned) {
       );
       process.exit(1);
     }
+    /*
+     * The id is remembered, but NOT written down yet.
+     *
+     * Writing `externalIds.wikidata` the moment a name matches would publish an
+     * identity claim nobody verified — and the entity registry is exported, so
+     * that claim travels. `james-quick` matched an American football player and
+     * duly got his id recorded. The id is therefore only persisted further down,
+     * together with a picture that was actually used and looked at, or when it
+     * was pinned by hand with --wikidata.
+     */
+    resolvedWikidataId = identity.id;
+
     if (identity.image) {
       candidates = await commonsFileInfo(`File:${identity.image}`);
     } else {

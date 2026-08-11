@@ -125,5 +125,8 @@
       "type": "markdown",
       "value": "Hlavní subjekt autorizovaného dossieru (AUTH-2026-07-30-H), který se teprve plní — viz [hlavní přehled](@/dossiers/zuzana-mrazova/_index.md). Veřejná funkce doložena oficiálním webem Úřadu vlády (viz `data/government.toml`)."
     }
-  ]
+  ],
+  "externalIds": {
+    "wikidata": "Q97299448"
+  }
 }

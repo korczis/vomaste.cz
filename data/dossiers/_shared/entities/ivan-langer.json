@@ -30,5 +30,22 @@
       "type": "markdown",
       "value": "Bývalý ministr vnitra a ministr informatiky (9. 1. 2007 – 26. 3. 2009, poté do 8. 5. 2009 v demisi, druhá vláda Mirka Topolánka).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
     }
-  ]
+  ],
+  "media": [
+    {
+      "file": "images/people/ivan-langer.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ivan_Langer.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "author": "Packa",
+      "credit": "This image has been extracted from another file",
+      "retrieved": "2026-08-11",
+      "width": 1200,
+      "height": 1911,
+      "role": "portrait"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q3156137"
+  }
 }

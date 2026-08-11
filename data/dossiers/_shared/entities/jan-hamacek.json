@@ -30,5 +30,22 @@
       "type": "markdown",
       "value": "Bývalý 1. místopředseda vlády a ministr vnitra (2018–2021), předseda\nČSSD (2018–2021), předseda Poslanecké sněmovny (2013–2017).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
     }
-  ]
+  ],
+  "media": [
+    {
+      "file": "images/people/jan-hamacek.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hamacek_Danko_(cropped).jpg",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "author": "EU2016SK",
+      "credit": "https://www.flickr.com/photos/142675453@N02/30082375061/in/dateposted/",
+      "retrieved": "2026-08-11",
+      "width": 1200,
+      "height": 1612,
+      "role": "portrait"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q12022546"
+  }
 }

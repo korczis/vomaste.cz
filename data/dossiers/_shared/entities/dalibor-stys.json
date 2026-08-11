@@ -30,5 +30,22 @@
       "type": "markdown",
       "value": "Bývalý ministr školství, mládeže a tělovýchovy (10. 7. 2013 –\n29. 1. 2014, Rusnokova vláda, od 13. 8. 2013 v demisi).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
     }
-  ]
+  ],
+  "media": [
+    {
+      "file": "images/people/dalibor-stys.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dalibor_%C5%A0tys_2013.JPG",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "author": "David Sedlecký",
+      "credit": "Own work",
+      "retrieved": "2026-08-11",
+      "width": 1200,
+      "height": 1634,
+      "role": "portrait"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q13593750"
+  }
 }

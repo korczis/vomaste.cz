@@ -30,5 +30,22 @@
       "type": "markdown",
       "value": "Bývalý ministr průmyslu a obchodu (29. 1. 2014 – 28. 2. 2017, ČSSD),\ndříve ministr zemědělství (2005–2006).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
     }
-  ]
+  ],
+  "media": [
+    {
+      "file": "images/people/jan-mladek.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jan_Ml%C3%A1dek_-_July_2016_(cropped).jpg",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "author": "EU2016 SK",
+      "credit": "This image has been extracted from another file",
+      "retrieved": "2026-08-11",
+      "width": 1200,
+      "height": 1772,
+      "role": "portrait"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q12022843"
+  }
 }

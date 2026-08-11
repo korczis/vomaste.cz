@@ -30,5 +30,21 @@
       "type": "markdown",
       "value": "Bývalý ministr vnitra (22. 4. 2011 – 10. 7. 2013, Nečasova vláda, od\n17. 6. 2013 v demisi).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
     }
-  ]
+  ],
+  "media": [
+    {
+      "file": "images/people/jan-kubice.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jan_Kubice(portret).jpg",
+      "license": "Public domain",
+      "author": "Vojtech Brzek (vobrcz)",
+      "credit": "Took during discussion.",
+      "retrieved": "2026-08-11",
+      "width": 1200,
+      "height": 1562,
+      "role": "portrait"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q168783"
+  }
 }

@@ -30,5 +30,22 @@
       "type": "markdown",
       "value": "Bývalý ministr kultury (13. 12. 2017 – 27. 6. 2018), muzikolog,\ndlouholetý ředitel PKF a FOK.\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
     }
-  ]
+  ],
+  "media": [
+    {
+      "file": "images/people/ilja-smid.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chech_Minister_for_Culture_Ilja_%C5%A0m%C3%ADd_cropped.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "author": "Gwyndon",
+      "credit": "File:Chech Minister for Culture.jpg",
+      "retrieved": "2026-08-11",
+      "width": 1200,
+      "height": 1527,
+      "role": "portrait"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q44636609"
+  }
 }

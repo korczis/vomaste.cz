@@ -30,5 +30,22 @@
       "type": "markdown",
       "value": "Bývalá ministryně kultury (9. 1. 2007 – 26. 1. 2007, druhá vláda Mirka Topolánka); oficiální přehled u konce jejího působení uvádí demisi.\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
     }
-  ]
+  ],
+  "media": [
+    {
+      "file": "images/people/helena-trestikova.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Helena_Trestikova.jpg",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "author": "che (Please credit as \"Petr Novák, Wikipedia\" in case you use this outside Wikimedia projects.)",
+      "credit": "che",
+      "retrieved": "2026-08-11",
+      "width": 1200,
+      "height": 1800,
+      "role": "portrait"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q12019433"
+  }
 }

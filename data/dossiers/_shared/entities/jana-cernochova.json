@@ -38,5 +38,22 @@
       "type": "markdown",
       "value": "Kontextová entita — Bývalá ministryně obrany; terč Zůnovy kritiky obranného plánování. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jaromir-zuna). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
     }
-  ]
+  ],
+  "media": [
+    {
+      "file": "images/people/jana-cernochova.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:220421-D-BN624-0291_(52020611483)_(cropped).jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "author": "U.S. Secretary of Defense",
+      "credit": "220421-D-BN624-0291",
+      "retrieved": "2026-08-11",
+      "width": 1200,
+      "height": 1635,
+      "role": "portrait"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q12023473"
+  }
 }

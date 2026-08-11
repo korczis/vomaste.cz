@@ -30,5 +30,21 @@
       "type": "markdown",
       "value": "Bývalý ministr zahraničních věcí (10. 7. 2013 – 29. 1. 2014, Rusnokova\nvláda, od 13. 8. 2013 v demisi).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
     }
-  ]
+  ],
+  "media": [
+    {
+      "file": "images/people/jan-kohout.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jan_Kohout2009.jpg",
+      "license": "Public domain",
+      "author": "U.S. Department of State from United States",
+      "credit": "Cropped from Wikimedia Commons , UNGA 2009: Secretary Clinton Meets With Czech Republic Foreign Minister",
+      "retrieved": "2026-08-11",
+      "width": 1200,
+      "height": 1385,
+      "role": "portrait"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q943014"
+  }
 }
