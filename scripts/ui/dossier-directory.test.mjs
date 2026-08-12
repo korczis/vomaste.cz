@@ -47,7 +47,7 @@ test("metriky jsou definované jednou pro všechny projekce", () => {
 
 test("tabulka jde přes sdílené makro, nevzniká druhá implementace", () => {
   const c = read(COMPONENT);
-  assert.match(c, /table::advanced_table\(/, "projekce tabulky nepoužívá macros/table.html");
+  assert.match(c, /<table_advanced_table[\s/>]/, "projekce tabulky nepoužívá sdílenou tabulkovou komponentu");
   // Komentáře se odstraní: vysvětlení, PROČ tu vlastní <table> není, samo
   // slovo <table> obsahuje. Kontrolovat se má vykreslovaný markup, ne text
   // o něm — jinak test trestá dokumentaci vlastního rozhodnutí.

@@ -31,8 +31,8 @@
     attribute access against an undefined variable (Tera 1 quietly yielded
     undefined), so both are normalised to empty stand-ins here and the meta
     block below reads `pg`/`sec` instead. -#}
-{%- set pg = page | default(value={"extra": {}, "title": "", "description": ""}) -%}
-{%- set sec = section | default(value={"extra": {}, "title": "", "description": ""}) -%}
+{%- set pg = page | default(value={"extra": {}}) -%}
+{%- set sec = section | default(value={"extra": {}}) -%}
 {%- set meta_record_type = pg.extra.record_type | default(value=sec.extra.record_type | default(value="")) -%}
 {%- set meta_dossier_type = pg.extra.dossier_type | default(value=sec.extra.dossier_type | default(value="")) -%}
 {%- if page is not defined and section is not defined -%}
@@ -52,7 +52,11 @@
 {%- set meta_seo_type = pg.extra.seo_type | default(value=sec.extra.seo_type | default(value=meta_type.seo_type)) -%}
 
 {%- set meta_dossier = sec.extra.dossier | default(value=pg.extra.dossier | default(value="")) -%}
-{%- set meta_dossier_label = <meta_dossier_label nav={nav_data} slug={meta_dossier} /> -%}
+{#- Component output is HTML-escaped when captured into a variable and
+    Tera has no unescape filter, so each capture below decodes once.
+    Without it JSON-LD carries literal &quot; while the og: attribute
+    decodes to " — one page stating two different things. -#}
+{%- set meta_dossier_label = <meta_dossier_label nav={nav_data} slug={meta_dossier} /> | replace(from="&quot;", to="\"") | replace(from="&#39;", to="'") | replace(from="&lt;", to="<") | replace(from="&gt;", to=">") | replace(from="&amp;", to="&") -%}
 
 {#- /404.html má vlastní titulek i popis z dat: bez nich přebírá titulek
     webu a v náhledu na sociální síti se tváří jako úvodní stránka. -#}
@@ -64,8 +68,8 @@
     (agregátního) dossieru se naopak jmenují jen „Registr tvrzení" a
     doplnění potřebují. -#}
 {%- set meta_add_dossier = seo.title.dossier_disambiguation and meta_dossier_label != "" and meta_page_title != meta_dossier_label and meta_dossier_label not in meta_page_title -%}
-{%- set meta_title = <meta_social_title seo={seo} title={meta_page_title} label={meta_dossier_label} add_dossier={meta_add_dossier} /> -%}
-{%- set meta_document_title = <meta_document_title seo={seo} social={meta_title} site_title={config.title} is_home={meta_is_home} /> -%}
+{%- set meta_title = <meta_social_title seo={seo} title={meta_page_title} label={meta_dossier_label} add_dossier={meta_add_dossier} /> | replace(from="&quot;", to="\"") | replace(from="&#39;", to="'") | replace(from="&lt;", to="<") | replace(from="&gt;", to=">") | replace(from="&amp;", to="&") -%}
+{%- set meta_document_title = <meta_document_title seo={seo} social={meta_title} site_title={config.title} is_home={meta_is_home} /> | replace(from="&quot;", to="\"") | replace(from="&#39;", to="'") | replace(from="&lt;", to="<") | replace(from="&gt;", to=">") | replace(from="&amp;", to="&") -%}
 
 {#- Registrové indexy mají generický popis sdílený všemi dossiery
     („Registr tvrzení dossieru — …"), proto se u nich doplňuje, o čí
@@ -75,12 +79,12 @@
 {#- `and` yields its last operand, not a bool, so the final term is an
     explicit comparison — the component declares this parameter as bool. -#}
 {%- set meta_add_desc_dossier = meta_add_dossier and not pg.description and sec.description != "" -%}
-{%- set meta_description = <meta_description seo={seo} text={meta_raw_description} label={meta_dossier_label} add_dossier={meta_add_desc_dossier} /> -%}
+{%- set meta_description = <meta_description seo={seo} text={meta_raw_description} label={meta_dossier_label} add_dossier={meta_add_desc_dossier} /> | replace(from="&quot;", to="\"") | replace(from="&#39;", to="'") | replace(from="&lt;", to="<") | replace(from="&gt;", to=">") | replace(from="&amp;", to="&") -%}
 
 {%- set meta_image_override = pg.extra.og_image | default(value=sec.extra.og_image | default(value="")) -%}
-{%- set meta_image_url = get_url(path=<meta_image_path seo={seo} override={meta_image_override} dossier={meta_dossier} />) -%}
+{%- set meta_image_url = get_url(path=<meta_image_path seo={seo} override={meta_image_override} dossier={meta_dossier} /> | replace(from="&quot;", to="\"") | replace(from="&#39;", to="'") | replace(from="&lt;", to="<") | replace(from="&gt;", to=">") | replace(from="&amp;", to="&")) -%}
 {%- set meta_image_alt_override = pg.extra.og_image_alt | default(value=sec.extra.og_image_alt | default(value="")) -%}
-{%- set meta_image_alt = <meta_image_alt seo={seo} override={meta_image_alt_override} dossier={meta_dossier} label={meta_dossier_label} /> -%}
+{%- set meta_image_alt = <meta_image_alt seo={seo} override={meta_image_alt_override} dossier={meta_dossier} label={meta_dossier_label} /> | replace(from="&quot;", to="\"") | replace(from="&#39;", to="'") | replace(from="&lt;", to="<") | replace(from="&gt;", to=">") | replace(from="&amp;", to="&") -%}
 
 {#- Zola nedává /404.html `current_url` — chybová stránka žádnou kanonickou
     URL nemá a vydat ji by ji přihlásilo do indexu jako regulérní obsah.

@@ -1,7 +1,7 @@
 {#- Rendered for /404.html too, which has neither `page` nor `section`;
     Tera 2 errors on attribute access against an undefined variable. -#}
-{%- set pg = page | default(value={"extra": {}, "title": "", "description": ""}) -%}
-{%- set sec = section | default(value={"extra": {}, "title": "", "description": ""}) -%}
+{%- set pg = page | default(value={"extra": {}}) -%}
+{%- set sec = section | default(value={"extra": {}}) -%}
 {#- Central JSON-LD (structured data), rendered exactly once per page from
     base.html <head> — the same "declared once" discipline as the meta
     tags. Everything is generated from front matter, config.toml,
