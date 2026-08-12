@@ -1,10 +1,9 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
 
 {% block content %}
 {%- set archive = load_data(path="data/document-archive.json") -%}
 <main class="mx-auto max-w-5xl px-6 py-12 text-white">
-  {{ ui::page_header(title=section.title, breadcrumb_items=["Domů::" ~ get_url(path="@/_index.md"), section.title], description=section.description) }}
+  {{ <ui_page_header title={section.title} breadcrumb_items={["Domů::" ~ get_url(path="@/_index.md"), section.title]} description={section.description} /> }}
   <article class="dossier-prose mb-8">{{ section.content | safe }}</article>
 
   <div class="mb-8 flex flex-wrap gap-2 text-xs">

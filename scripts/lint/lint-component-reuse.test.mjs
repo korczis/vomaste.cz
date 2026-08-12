@@ -19,9 +19,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SCRIPT_PATH = path.join(__dirname, "lint-component-reuse.mjs");
 
 const CONFORMING = `{% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
 {% block content %}
-{{ ui::page_header(title=page.title, breadcrumb_items=[]) }}
+{{ <ui_page_header title={page.title} breadcrumb_items={[]} /> }}
 {% endblock content %}
 `;
 
@@ -32,37 +31,30 @@ const NO_IMPORT = `{% extends "base.html" %}
 `;
 
 const IMPORT_BUT_UNUSED = `{% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
 {% block content %}
 <h1>{{ page.title }}</h1>
 {% endblock content %}
 `;
 
 const RAW_TABLE_NO_IMPORT = `{% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
 {% block content %}
-{{ ui::page_header(title=page.title, breadcrumb_items=[]) }}
+{{ <ui_page_header title={page.title} breadcrumb_items={[]} /> }}
 <table><tbody><tr><td>x</td></tr></tbody></table>
 {% endblock content %}
 `;
 
 const RAW_TABLE_IMPORT_UNUSED = `{% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
-{% import "macros/table.html" as table %}
 {% block content %}
-{{ ui::page_header(title=page.title, breadcrumb_items=[]) }}
+{{ <ui_page_header title={page.title} breadcrumb_items={[]} /> }}
 <table><tbody><tr><td>x</td></tr></tbody></table>
 {% endblock content %}
 `;
 
 const TABLE_VIA_MACRO = `{% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
-{% import "macros/table.html" as table %}
 {% block content %}
-{{ ui::page_header(title=page.title, breadcrumb_items=[]) }}
-{{ table::advanced_table(id="t", caption="Test") }}
+{{ <ui_page_header title={page.title} breadcrumb_items={[]} /> }}
+{% <table_advanced_table id="t" caption="Test"> %}{% </table_advanced_table> %}
 <tr><td>x</td></tr>
-{{ table::advanced_table_end() }}
 {% endblock content %}
 `;
 
@@ -106,7 +98,7 @@ function withFixture(templateFiles, fn) {
   }
 }
 
-test("passes when all non-exempt templates import and use a ui:: macro", () => {
+test("passes when all non-exempt templates use a ui_* component", () => {
   withFixture({ "example.html": CONFORMING }, (dir) => {
     const { status } = runLint(dir);
     assert.equal(status, 0);
@@ -124,15 +116,15 @@ test("fails when a non-exempt template never imports macros/ui.html", () => {
   withFixture({ "example.html": NO_IMPORT }, (dir) => {
     const { status, out } = runLint(dir);
     assert.equal(status, 1);
-    assert.match(out, /does not import macros\/ui\.html/);
+    assert.match(out, /never calls a ui_\* component/);
   });
 });
 
-test("fails when a non-exempt template imports but never calls a ui:: macro", () => {
+test("fails when a non-exempt template never calls a ui_* component", () => {
   withFixture({ "example.html": IMPORT_BUT_UNUSED }, (dir) => {
     const { status, out } = runLint(dir);
     assert.equal(status, 1);
-    assert.match(out, /never calls a ui:: macro/);
+    assert.match(out, /never calls a ui_\* component/);
   });
 });
 
@@ -140,19 +132,19 @@ test("fails when a template renders a raw <table> without importing macros/table
   withFixture({ "example.html": RAW_TABLE_NO_IMPORT }, (dir) => {
     const { status, out } = runLint(dir);
     assert.equal(status, 1);
-    assert.match(out, /raw <table> but does not import macros\/table\.html/);
+    assert.match(out, /raw <table> but never calls the shared table component/);
   });
 });
 
-test("fails when a template renders a raw <table> and imports macros/table.html but never calls table::advanced_table", () => {
+test("fails when a template renders a raw <table> but never calls the shared table component", () => {
   withFixture({ "example.html": RAW_TABLE_IMPORT_UNUSED }, (dir) => {
     const { status, out } = runLint(dir);
     assert.equal(status, 1);
-    assert.match(out, /never calls table::advanced_table/);
+    assert.match(out, /never calls the shared table component/);
   });
 });
 
-test("passes when tabular data goes through table::advanced_table (no raw <table> in the template)", () => {
+test("passes when tabular data goes through table_advanced_table (no raw <table> in the template)", () => {
   withFixture({ "example.html": TABLE_VIA_MACRO }, (dir) => {
     const { status } = runLint(dir);
     assert.equal(status, 0);

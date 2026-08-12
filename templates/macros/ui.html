@@ -7,7 +7,7 @@
 {#- Tera has no object/map literal syntax usable inline in an expression,
     so each crumb is encoded as a single string "Label::URL" (linked) or
     just "Label" (current page, no link — normally the last item). -#}
-{%- macro breadcrumb(items) -%}
+{% component ui_breadcrumb(items) -%}
 <nav class="mb-2 text-sm text-white/50" aria-label="Drobečková navigace">
   <ol class="flex flex-wrap items-center gap-1">
     {%- for item in items %}
@@ -15,18 +15,18 @@
     <li class="flex items-center gap-1">
       {#- min-h-6 + inline-flex: drobeček byl 20 px vysoký, tedy pod minimem
           dotykového cíle (WCAG 2.5.8). Text zůstává stejně velký. -#}
-      {%- if parts | length > 1 %}<a href="{{ parts.1 | safe }}" class="inline-flex min-h-6 items-center text-[#f3e5c0] hover:underline">{{ parts.0 }}</a>{% else %}<span class="inline-flex min-h-6 items-center" aria-current="page">{{ parts.0 }}</span>{% endif -%}
+      {%- if parts | length > 1 %}<a href="{{ parts[1] | safe }}" class="inline-flex min-h-6 items-center text-[#f3e5c0] hover:underline">{{ parts[0] }}</a>{% else %}<span class="inline-flex min-h-6 items-center" aria-current="page">{{ parts[0] }}</span>{% endif -%}
       {%- if not loop.last %}<span aria-hidden="true">/</span>{% endif %}
     </li>
     {%- endfor %}
   </ol>
 </nav>
-{%- endmacro breadcrumb -%}
+{%- endcomponent %}
 
 {#- When `url` is given, the tile is a real link to the underlying
     registry — every summary count on the site must be reachable, not
     just a number. -#}
-{%- macro stat_tile(value, label, url="") -%}
+{% component ui_stat_tile(value, label, url="") -%}
 {%- if url -%}
 <a href="{{ url | safe }}" class="stat-tile stat-tile-link">
   <p class="stat-tile-value">{{ value }}</p>
@@ -38,15 +38,15 @@
   <p class="stat-tile-label">{{ label }}</p>
 </div>
 {%- endif -%}
-{%- endmacro stat_tile -%}
+{%- endcomponent %}
 
 {#- Consistent registry page header: breadcrumb, title, optional
     description, optional last-updated/last-reviewed line. `updated` and
     `reviewed` are only rendered when actually present in front matter —
     never fabricated. -#}
-{%- macro page_header(breadcrumb_items, title, description="", updated="", reviewed="") -%}
+{% component ui_page_header(breadcrumb_items, title, description="", updated="", reviewed="") -%}
 <header class="mb-8 border-b border-white/10 pb-6">
-  {{ ui::breadcrumb(items=breadcrumb_items) }}
+  {{ <ui_breadcrumb items={breadcrumb_items} /> }}
   <h1 class="mt-1 text-2xl font-black sm:text-3xl">{{ title }}</h1>
   {%- if description %}
   <p class="mt-2 text-sm text-white/60">{{ description }}</p>
@@ -59,13 +59,13 @@
   </p>
   {%- endif %}
 </header>
-{%- endmacro page_header -%}
+{%- endcomponent %}
 
-{%- macro back_link_footer(url, label) -%}
+{% component ui_back_link_footer(url, label) -%}
 <footer class="mt-12 border-t border-white/10 pt-6 text-xs text-white/55">
   <p><a href="{{ url | safe }}" class="underline">&larr; {{ label }}</a></p>
 </footer>
-{%- endmacro back_link_footer -%}
+{%- endcomponent %}
 
 {#- Evidentiary-status badge for a GRAPH EDGE (a relation), whose status
     vocabulary is its own — corroborated|single|disputed|quote|contextual,
@@ -79,7 +79,7 @@
     `long=false` renders the inline lowercase form used in the graph's
     relation list; the default renders the badge used in registry tables. -#}
 
-{%- macro relation_status(status, long=true) -%}
+{% component ui_relation_status(status, long=true) -%}
 {%- if status == "corroborated" %}{% set cls = "status-corroborated" %}{% set label = "FAKT" %}{% set inline = "fakt" %}
 {%- elif status == "single" %}{% set cls = "status-single" %}{% set label = "1 ZDROJ" %}{% set inline = "1 zdroj" %}
 {%- elif status == "disputed" %}{% set cls = "status-disputed" %}{% set label = "SPORNÉ" %}{% set inline = "sporné" %}
@@ -91,15 +91,15 @@
 {%- else -%}
 {{ inline }}
 {%- endif -%}
-{%- endmacro relation_status -%}
+{%- endcomponent %}
 
 {#- Empty state for a filtered/empty registry list. `message` should say
     why it's empty (no results vs. genuinely nothing yet), never a bare
     "nothing here" that reads as a bug. -#}
 
-{%- macro empty_state(message) -%}
+{% component ui_empty_state(message) -%}
 <p class="rounded-lg border border-dashed border-white/15 p-6 text-center text-sm text-white/50">{{ message }}</p>
-{%- endmacro empty_state -%}
+{%- endcomponent %}
 
 {#- Public-intake CTA (PHASE_006.md §42 Phase 7 contract). One shared
     macro so the landing page and the dossier index render byte-identical
@@ -111,12 +111,12 @@
     call site frame the same action for its own context (e.g. "Chybí tu
     dossier?" on the directory vs. a broader framing on the landing page)
     without re-authoring the URL or the warning. -#}
-{%- macro intake_cta(heading, lead) -%}
+{% component ui_intake_cta(heading, lead, issue_form_url) -%}
 <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
   <h3 class="text-lg font-semibold text-white sm:text-xl">{{ heading }}</h3>
   <p class="mt-2 text-sm leading-relaxed text-white/70 sm:text-base">{{ lead }}</p>
   <a
-    href="{{ config.extra.intake_issue_form_url }}"
+    href="{{ issue_form_url }}"
     rel="external"
     class="mt-5 inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-[#f3e5c0] px-5 py-3 text-sm font-bold text-black no-underline transition-colors hover:bg-[#e9d6a0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d4af37]"
   >
@@ -130,7 +130,7 @@
     <a href="{{ get_url(path='@/dokumentace/verejny-podnet.md') | safe }}" class="underline decoration-white/30 underline-offset-2 hover:text-white">jak podání funguje</a>.
   </p>
 </div>
-{%- endmacro intake_cta -%}
+{%- endcomponent %}
 
 {#- Site-wide footer, rendered once by base.html.
 
@@ -152,7 +152,7 @@
     correction links exactly once instead of the branch being duplicated
     per case. -#}
 
-{%- macro site_footer(content_path="") -%}
+{% component ui_site_footer(content_path="") -%}
 {%- set repo = "https://github.com/korczis/vomaste.cz" -%}
 <footer class="mt-16 border-t border-white/10 bg-white/[0.02]">
   <div class="mx-auto max-w-5xl px-4 py-8 sm:px-6">
@@ -197,7 +197,7 @@
     </div>
   </div>
 </footer>
-{%- endmacro site_footer -%}
+{%- endcomponent %}
 
 {#- Licensed media, rendered as one unified figure everywhere it appears.
 
@@ -213,7 +213,7 @@
     optional title / subtitle / href appear only when the data has them —
     nothing is invented to fill a slot. Mobile-first: full width by default,
     constrained from `sm:` upward. -#}
-{%- macro media_figure(item, sizes="w-full sm:w-64", eager=false) -%}
+{% component ui_media_figure(item, sizes="w-full sm:w-64", eager=false) -%}
 <figure class="{{ sizes }} overflow-hidden rounded-lg border border-white/10 bg-white/5">
   {%- set img_alt = item.title | default(value="") -%}
   {%- if item.href %}<a href="{{ item.href | safe }}" class="block focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300/70">{% endif -%}
@@ -249,13 +249,13 @@
     </p>
   </figcaption>
 </figure>
-{%- endmacro media_figure -%}
+{%- endcomponent %}
 
 {#- 1..N media as a responsive gallery. One column on a phone, more as the
     viewport allows; a single item stays a single figure rather than a
     one-cell grid. Renders nothing at all when the entity has no media —
     an empty frame would be the placeholder this site refuses to ship. -#}
-{%- macro media_gallery(items, heading="") -%}
+{% component ui_media_gallery(items, heading="") -%}
 {%- if items and items | length > 0 -%}
 <section class="mt-6" aria-label="{{ heading | default(value='Obrazová dokumentace') }}">
   {%- if heading %}
@@ -263,9 +263,9 @@
   {%- endif %}
   <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
     {%- for item in items %}
-    {{ ui::media_figure(item=item, sizes="w-full", eager=loop.first) }}
+    {{ <ui_media_figure item={item} sizes="w-full" eager={loop.first} /> }}
     {%- endfor %}
   </div>
 </section>
 {%- endif -%}
-{%- endmacro media_gallery -%}
+{%- endcomponent %}

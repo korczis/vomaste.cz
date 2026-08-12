@@ -11,7 +11,7 @@
 
     md:hidden: only small viewports get this — the docked primary sidebar
     already gives desktop one-tap access to everything. -#}
-{%- macro render(nav_items, active_id) -%}
+{% component bottom_nav_render(nav_items, active_id) -%}
 <nav aria-label="Rychlá navigace" class="fixed inset-x-0 bottom-0 z-40 flex border-t border-white/10 bg-black md:hidden">
   {%- for wanted_id in ["home", "dossiers", "map"] %}
     {%- for item in nav_items %}
@@ -36,4 +36,4 @@
     <span>Menu</span>
   </button>
 </nav>
-{%- endmacro render -%}
+{%- endcomponent %}

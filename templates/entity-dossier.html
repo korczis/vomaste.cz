@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
 
 {#- Main page for an ENTITY dossier (petr-macinka, filip-turek) — a real,
     primary-nav-worthy dossier about ONE person, but owning no physical
@@ -20,20 +19,17 @@
   {% set subject = view.subject %}
   {% set canonical_view = load_data(path="data/generated/views/dossiers/" ~ canonical_slug ~ "/overview.json") %}
 
-  {{ ui::page_header(title=section.title, breadcrumb_items=[
+  {{ <ui_page_header title={section.title} breadcrumb_items={[
     "Domů::" ~ get_url(path="@/_index.md"),
     "Dossiery::" ~ get_url(path="@/dossiers/_index.md"),
     section.title,
-  ], updated=section.extra.updated | default(value=""), reviewed=section.extra.reviewed_at | default(value="")) }}
+  ]} updated={section.extra.updated | default(value="")} reviewed={section.extra.reviewed_at | default(value="")} /> }}
 
   {#- Název společného přehledu i jména ostatních subjektů čteme z view
       modelu (overview.canonical ← kanonický dataset, T-028 fáze H), ať
       v šabloně není žádné jméno napevno. -#}
   {% set canonical_entry = view.canonical %}
-  {%- set_global sibling_titles = [] %}
-  {%- for s in canonical_entry.siblings | default(value=[]) %}
-    {%- set_global sibling_titles = sibling_titles | concat(with=s.title) %}
-  {%- endfor %}
+  {%- set sibling_titles = [s.title for s in canonical_entry.siblings | default(value=[])] %}
   <div class="mb-8 rounded-lg border border-white/10 bg-white/[0.03] p-4 text-sm text-white/70">
     Toto je samostatný dossier o jedné osobě. Sdílené souvislosti
     {%- if sibling_titles | length > 0 %} s dalšími sledovanými subjekty ({{ sibling_titles | join(sep=", ") }}){%- endif %}
@@ -46,10 +42,10 @@
 
   {% set counts = view.counts %}
   <section class="mb-12 grid grid-cols-2 gap-4 sm:grid-cols-4" aria-label="Souhrnné metriky dossieru">
-    {{ ui::stat_tile(value=counts.sources, label="Citovaných zdrojů", url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/sources/_index.md")) }}
-    {{ ui::stat_tile(value=counts.cases, label="Sledované kauzy", url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/cases/_index.md")) }}
-    {{ ui::stat_tile(value=counts.claims, label="Tvrzení v registru", url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/claims/_index.md")) }}
-    {{ ui::stat_tile(value=counts.gaps, label="Otevřené mezery", url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/gaps/_index.md")) }}
+    {{ <ui_stat_tile value={counts.sources} label="Citovaných zdrojů" url={get_url(path="@/dossiers/" ~ dossier_slug ~ "/sources/_index.md")} /> }}
+    {{ <ui_stat_tile value={counts.cases} label="Sledované kauzy" url={get_url(path="@/dossiers/" ~ dossier_slug ~ "/cases/_index.md")} /> }}
+    {{ <ui_stat_tile value={counts.claims} label="Tvrzení v registru" url={get_url(path="@/dossiers/" ~ dossier_slug ~ "/claims/_index.md")} /> }}
+    {{ <ui_stat_tile value={counts.gaps} label="Otevřené mezery" url={get_url(path="@/dossiers/" ~ dossier_slug ~ "/gaps/_index.md")} /> }}
   </section>
   <p class="-mt-8 mb-8 text-xs text-white/55">Metriky se počítají automaticky, filtrované z kanonického registru podle toho, koho se záznam týká — viz <code>scripts/dossier/generate-stats.mjs</code>.</p>
 
@@ -59,12 +55,7 @@
     <a href="{{ get_url(path='@/dossiers/' ~ dossier_slug ~ '/evidence/_index.md') | safe }}" class="rounded-full border border-white/15 px-3 py-1 text-white/70 no-underline hover:border-white/30 hover:text-white">Evidence</a>
   </nav>
 
-  {% set_global filtered_cases = [] %}
-  {% for c in canonical_view.cases %}
-    {% if c.subjects and c.subjects is containing(subject) %}
-      {% set_global filtered_cases = filtered_cases | concat(with=[c]) %}
-    {% endif %}
-  {% endfor %}
+  {% set filtered_cases = [c for c in canonical_view.cases if c.subjects and c.subjects is containing(pat=subject)] %}
   {% if filtered_cases | length > 0 %}
   <section aria-labelledby="cases-heading" class="mb-12">
     <h2 id="cases-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Kauzy v přehledu</h2>
@@ -85,12 +76,7 @@
   {% for b in canonical_view.contentBlocks %}
     {% if b.type == "timeline" %}{% set_global timeline_entries = b.entries %}{% endif %}
   {% endfor %}
-  {% set_global filtered_timeline = [] %}
-  {% for e in timeline_entries %}
-    {% if e.subjects and e.subjects is containing(subject) %}
-      {% set_global filtered_timeline = filtered_timeline | concat(with=[e]) %}
-    {% endif %}
-  {% endfor %}
+  {% set filtered_timeline = [e for e in timeline_entries if e.subjects and e.subjects is containing(pat=subject)] %}
   {% if filtered_timeline | length > 0 %}
   <section aria-labelledby="timeline-heading" class="mb-12">
     <h2 id="timeline-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Časová osa</h2>
@@ -107,12 +93,7 @@
   {% endif %}
 
   {% set relations_idx = load_data(path="data/generated/views/dossiers/" ~ canonical_slug ~ "/relations-index.json") %}
-  {% set_global filtered_relations = [] %}
-  {% for r in relations_idx.rows %}
-    {% if r.subjects and r.subjects is containing(subject) %}
-      {% set_global filtered_relations = filtered_relations | concat(with=[r]) %}
-    {% endif %}
-  {% endfor %}
+  {% set filtered_relations = [r for r in relations_idx.rows if r.subjects and r.subjects is containing(pat=subject)] %}
   {% if filtered_relations | length > 0 %}
   <section aria-labelledby="graph-list-heading" class="mb-12">
     <h2 id="graph-list-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Vztahy ({{ filtered_relations | length }})</h2>
@@ -141,7 +122,7 @@
   </section>
   {% endif %}
 
-  {{ ui::back_link_footer(url=get_url(path="@/dossiers/_index.md"), label="Zpět na registr dossierů") }}
+  {{ <ui_back_link_footer url={get_url(path="@/dossiers/_index.md")} label="Zpět na registr dossierů" /> }}
 
   {#- Same corrections notice as the aggregate dossier page. Wording differs on
       one point only: an entity dossier has no sources table of its own, it links

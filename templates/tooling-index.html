@@ -1,6 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
-{% import "macros/table.html" as table %}
 
 {#- Index katalogu toolingu.
 
@@ -12,11 +10,11 @@
 {%- set catalog = load_data(path="data/generated/tooling-catalog.json") -%}
 
 <main class="mx-auto max-w-3xl px-6 py-12 text-white">
-  {{ ui::page_header(title=section.title, breadcrumb_items=[
+  {{ <ui_page_header title={section.title} breadcrumb_items={[
     "Domů::" ~ get_url(path="@/_index.md"),
     "Dokumentace::" ~ get_url(path="@/dokumentace/_index.md"),
     section.title,
-  ], description=section.description) }}
+  ]} description={section.description} /> }}
 
   <article class="dossier-prose mb-10">
     {{ section.content | safe }}
@@ -35,15 +33,7 @@
       Sloupec „Vynucuje“ říká, jestli příkaz při porušení skončí nenulově a zastaví tím build. Sloupce „Pipeline“ a „Pre-commit“ se čtou
       z <code class="font-mono">scripts/build/pipeline.mjs</code> a <code class="font-mono">.githooks/pre-commit</code>, ne z ručně psaného záznamu.
     </p>
-    {{ table::advanced_table(
-      id="tooling-prikazy",
-      caption="Příkazy repozitáře",
-      record_type="toolingCommand",
-      columns=["Příkaz", "Vrstva", "Kategorie", "Vynucuje", "Pipeline", "Pre-commit"],
-      count=catalog.counts.total,
-      searchable=true,
-      sort_keys=["text", "text", "text", "text", "text", "text"],
-      export_name="tooling-prikazy") }}
+    {% <table_advanced_table id="tooling-prikazy" caption="Příkazy repozitáře" record_type="toolingCommand" columns={["Příkaz", "Vrstva", "Kategorie", "Vynucuje", "Pipeline", "Pre-commit"]} count={catalog.counts.total} searchable={true} sort_keys={["text", "text", "text", "text", "text", "text"]} export_name="tooling-prikazy" footer="Dopočítáno z package.json, justfile, .claude/skills/** a scripts/build/pipeline.mjs při každém buildu." empty_text="Filtru neodpovídá žádný příkaz."> %}
       {%- for e in catalog.entries %}
       <tr class="border-t border-white/5">
         <td class="p-3">
@@ -57,11 +47,9 @@
         <td class="p-3">{% if e.precommit %}ano{% else %}<span class="text-white/60">—</span>{% endif %}</td>
       </tr>
       {%- endfor %}
-    {{ table::advanced_table_end(
-      footer="Dopočítáno z package.json, justfile, .claude/skills/** a scripts/build/pipeline.mjs při každém buildu.",
-      empty_text="Filtru neodpovídá žádný příkaz.") }}
+    {% </table_advanced_table> %}
   </section>
 
-  {{ ui::back_link_footer(url=get_url(path="@/dokumentace/_index.md"), label="Zpět na dokumentaci") }}
+  {{ <ui_back_link_footer url={get_url(path="@/dokumentace/_index.md")} label="Zpět na dokumentaci" /> }}
 </main>
 {% endblock content %}

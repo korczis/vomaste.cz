@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
 
 {% block content %}
 <main class="mx-auto max-w-6xl px-6 py-12 text-white">
@@ -8,21 +7,21 @@
       matter section.pages — content adaptéry jsou generované. -#}
   {% set dossier_slug = section.extra.dossier %}
   {% set idx = load_data(path="data/" ~ section.extra.view_model) %}
-  {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
+  {{ <ui_page_header title={section.title} description={section.description} breadcrumb_items={[
     "Dossier::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
     "Registr vztahů",
-  ]) }}
+  ]} /> }}
 
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
-  {% set factual = idx.rows | filter(attribute="status", value="corroborated") %}
-  {% set disputed = idx.rows | filter(attribute="status", value="disputed") %}
-  {% set quotes = idx.rows | filter(attribute="status", value="quote") %}
+  {% set factual = [__i for __i in idx.rows if __i.status == "corroborated"] %}
+  {% set disputed = [__i for __i in idx.rows if __i.status == "disputed"] %}
+  {% set quotes = [__i for __i in idx.rows if __i.status == "quote"] %}
   <div class="mb-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
-    {{ ui::stat_tile(value=idx.rows | length, label="Vztahů celkem") }}
-    {{ ui::stat_tile(value=factual | length, label="Fakt") }}
-    {{ ui::stat_tile(value=disputed | length, label="Sporné") }}
-    {{ ui::stat_tile(value=quotes | length, label="Citace") }}
+    {{ <ui_stat_tile value={idx.rows | length} label="Vztahů celkem" /> }}
+    {{ <ui_stat_tile value={factual | length} label="Fakt" /> }}
+    {{ <ui_stat_tile value={disputed | length} label="Sporné" /> }}
+    {{ <ui_stat_tile value={quotes | length} label="Citace" /> }}
   </div>
 
   {#- Every part of every row is its own <a> — source entity, relation
@@ -38,7 +37,7 @@
       <a href="{{ config.base_url }}{{ r.route }}" class="id-chip text-[#f3e5c0] no-underline hover:underline">{{ r.label }}</a>
       <span aria-hidden="true" class="text-white/55">&rarr;</span>
       {% if r.to.title %}<a href="{{ config.base_url }}{{ r.to.route }}" class="inline-flex min-h-6 items-center font-medium text-white no-underline hover:underline">{{ r.to.title }}</a>{% else %}<span class="text-white/50">{{ r.to.entityId }}</span>{% endif %}
-      {{ ui::relation_status(status=r.status) }}
+      {{ <ui_relation_status status={r.status} /> }}
       {% if r.claims %}
       <span class="flex flex-wrap gap-1">
         {% for c in r.claims %}
@@ -51,6 +50,6 @@
     {% endfor %}
   </div>
 
-  {{ ui::back_link_footer(url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"), label="Zpět na celý dossier") }}
+  {{ <ui_back_link_footer url={get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md")} label="Zpět na celý dossier" /> }}
 </main>
 {% endblock content %}

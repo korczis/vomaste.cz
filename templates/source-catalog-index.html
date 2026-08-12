@@ -1,6 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
-{% import "macros/table.html" as table %}
 
 {#- Index of the source catalogue.
 
@@ -17,10 +15,10 @@
 {%- set catalog = load_data(path="data/generated/source-catalog.json") -%}
 
 <main class="mx-auto max-w-3xl px-6 py-12 text-white">
-  {{ ui::page_header(title=section.title, breadcrumb_items=[
+  {{ <ui_page_header title={section.title} breadcrumb_items={[
     "Domů::" ~ get_url(path="@/_index.md"),
     section.title,
-  ], description=section.description) }}
+  ]} description={section.description} /> }}
 
   <article class="dossier-prose mb-10">
     {{ section.content | safe }}
@@ -93,14 +91,7 @@
     <p class="mb-4 text-sm leading-relaxed text-white/55">
       Dopočítáno ze záznamů zdrojů, ne udržováno ručně. Rodina znamená, že dvě citace nejsou dvě nezávislá doložení, ale jedno převzetí téže zprávy.
     </p>
-    {{ table::advanced_table(
-      id="pouzite-zdroje",
-      caption="Citované rodiny a outlety",
-      columns=["Rodina / outlet", "Citací", "Dossierů", "Meze popsané"],
-      count=catalog.counts.usedFamiliesOrOutlets,
-      searchable=true,
-      sort_keys=["text", "num", "num", "text"],
-      export_name="citovane-zdroje") }}
+    {% <table_advanced_table id="pouzite-zdroje" caption="Citované rodiny a outlety" columns={["Rodina / outlet", "Citací", "Dossierů", "Meze popsané"]} count={catalog.counts.usedFamiliesOrOutlets} searchable={true} sort_keys={["text", "num", "num", "text"]} export_name="citovane-zdroje" footer="Dopočítáno z data/dossiers/**/sources/** při každém buildu." empty_text="Filtru neodpovídá žádná rodina ani outlet."> %}
       {%- for u in catalog.used %}
       <tr class="border-t border-white/5">
         <td class="p-3">{{ u.family | default(value=u.outlet) }}</td>
@@ -115,11 +106,9 @@
         </td>
       </tr>
       {%- endfor %}
-    {{ table::advanced_table_end(
-      footer="Dopočítáno z data/dossiers/**/sources/** při každém buildu.",
-      empty_text="Filtru neodpovídá žádná rodina ani outlet.") }}
+    {% </table_advanced_table> %}
   </section>
 
-  {{ ui::back_link_footer(url=get_url(path="@/_index.md"), label="Zpět na úvod") }}
+  {{ <ui_back_link_footer url={get_url(path="@/_index.md")} label="Zpět na úvod" /> }}
 </main>
 {% endblock content %}

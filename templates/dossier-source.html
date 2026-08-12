@@ -1,19 +1,17 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
-{% import "macros/table.html" as table %}
 
 {% block content %}
 <main class="mx-auto max-w-2xl px-6 py-12 text-white">
   {% set view = load_data(path="data/" ~ page.extra.view_model) %}
   {% set record = view.record %}
   {% set dossier_slug = view.dossier %}
-  {{ ui::page_header(title=record.identifier ~ " — " ~ record.outlet, breadcrumb_items=[
+  {{ <ui_page_header title={record.identifier ~ " — " ~ record.outlet} breadcrumb_items={[
     "Dossier::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
     "Registr zdrojů::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/sources/_index.md"),
     record.identifier,
-  ]) }}
+  ]} /> }}
 
-  {{ table::advanced_table(id="src-meta", caption="Metadata zdroje " ~ record.identifier, extra_class="mb-8") }}
+  {% <table_advanced_table id="src-meta" caption={"Metadata zdroje " ~ record.identifier} extra_class="mb-8"> %}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Typ</th><td class="p-3">{{ record.sourceType }}</td></tr>
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Odkaz</th><td class="p-3"><a href="{{ record.url }}" rel="external" class="break-all">{{ record.url }}</a></td></tr>
       {% if record.localDocument %}
@@ -28,7 +26,7 @@
       {% if record.sourceFamily %}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Zdrojová rodina</th><td class="p-3">{{ record.sourceFamily }}</td></tr>
       {% endif %}
-  {{ table::advanced_table_end() }}
+  {% </table_advanced_table> %}
 
   {% if view.resolved.claims %}
   <section class="mb-8" aria-labelledby="src-claims-h">
@@ -94,12 +92,7 @@
   </article>
 
   {% set idx = load_data(path="data/generated/views/dossiers/" ~ dossier_slug ~ "/sources-index.json") %}
-  {% set_global same_outlet = [] %}
-  {% for s in idx.rows %}
-    {% if s.outlet == record.outlet and s.identifier != record.identifier %}
-      {% set_global same_outlet = same_outlet | concat(with=[s]) %}
-    {% endif %}
-  {% endfor %}
+  {% set same_outlet = [s for s in idx.rows if s.outlet == record.outlet and s.identifier != record.identifier] %}
   {% if same_outlet | length > 0 %}
   <section class="mt-8 rounded-lg border border-white/10 bg-white/[0.03] p-4">
     <h2 class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/55">Další zdroje téhož vydavatele ({{ record.outlet }})</h2>
@@ -121,12 +114,7 @@
   </p>
 
   {% if record.sourceFamily %}
-  {% set_global siblings = [] %}
-  {% for s in idx.rows %}
-    {% if s.sourceFamily and s.sourceFamily == record.sourceFamily and s.identifier != record.identifier %}
-      {% set_global siblings = siblings | concat(with=[s]) %}
-    {% endif %}
-  {% endfor %}
+  {% set siblings = [s for s in idx.rows if s.sourceFamily and s.sourceFamily == record.sourceFamily and s.identifier != record.identifier] %}
   {% if siblings | length > 0 %}
   <section class="mt-10 rounded-lg border border-white/10 bg-white/[0.03] p-4">
     <h2 class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/55">Stejná zdrojová rodina ({{ record.sourceFamily }})</h2>
@@ -140,6 +128,6 @@
   {% endif %}
   {% endif %}
 
-  {{ ui::back_link_footer(url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"), label="Zpět na celý dossier") }}
+  {{ <ui_back_link_footer url={get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md")} label="Zpět na celý dossier" /> }}
 </main>
 {% endblock content %}

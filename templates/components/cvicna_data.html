@@ -1,0 +1,26 @@
+{#- Blokový komponent: blok cvičných dat s povinným označením.
+
+    Použití:
+      {% <cvicna_data> %}
+      SRC-A — tisková zpráva města Bukov…
+      {% </cvicna_data> %}
+
+    Jediná cesta, jak se do výuky dostane „záznam“, který vypadá jako
+    záznam z dossieru. Označení „FIKTIVNÍ / CVIČNÁ DATA“ vypisuje shortcode
+    sám a autor lekce ho nemůže vynechat — kdyby to bylo na kázni, jednou
+    by se to zapomnělo a cvičný příklad by se dal číst jako publikované
+    tvrzení o skutečném člověku. To je přesně to, co `AGENTS.md` zakazuje,
+    takže to nesmí záviset na pozornosti.
+
+    Text upozornění je jeden a bere se z `data/learning-fixtures.toml`,
+    aby se nemohl rozejít napříč lekcemi. -#}
+{% component cvicna_data() -%}
+{%- set fixtures = load_data(path="data/learning-fixtures.toml") -%}
+<figure class="my-8 overflow-hidden rounded-xl border border-amber-400/30 bg-amber-400/[0.05]">
+  <figcaption class="flex items-center gap-2 border-b border-amber-400/20 px-5 py-2.5 text-xs font-semibold uppercase tracking-wide text-amber-200/90">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0" aria-hidden="true"><path d="M12 9v4 M12 17h.01 M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
+    <span>{{ fixtures.world.disclaimer }}</span>
+  </figcaption>
+  <div class="dossier-prose px-5 py-4 text-sm">{{ body | markdown | safe }}</div>
+</figure>
+{%- endcomponent %}

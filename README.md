@@ -29,6 +29,23 @@ ověření a historií revizí.
 > přežívá ve forcích a cache. Projekt **nemá** zavedený důvěrný intake
 > kanál a netvrdí opak; anonymitu negarantuje.
 
+## Kudy začít
+
+Podle toho, co chcete. Každý odkaz je vstupní bod, ne rozcestník
+rozcestníků.
+
+| Jsem tu poprvé | → [/start/](https://vomaste.cz/start/) — pět minut od „nevím, co to je“ k „umím dossier přečíst“ |
+|---|---|
+| Chci přispět bez programování | → [/bootcamp/](https://vomaste.cz/bootcamp/) — praktický kurz na vymyšlených datech |
+| Chci rozumět metodice | → [/akademie/](https://vomaste.cz/akademie/) — kurikulum v sedmi úrovních |
+| Potřebuju rychle dohledat konkrétní věc | → [/prirucka/](https://vomaste.cz/prirucka/) — postupy, reference, řešení chyb, slovníček, FAQ |
+| Chci vědět, co který pojem znamená | → [/koncepty/](https://vomaste.cz/koncepty/) — **kanonické** definice |
+| Chci projekt vyvíjet | → [/prispet/chci-programovat/](https://vomaste.cz/prispet/chci-programovat/) a [Rychlý start](#rychlý-start) níž |
+
+Vztah těch vrstev je záměrný a hlídá ho validátor: **Koncepty vlastní
+definice**, Akademie a Bootcamp je učí používat, Příručka je pomáhá
+dohledat. Žádná z nich pojem nedefinuje podruhé.
+
 ## Co to je
 
 vomaste.cz je **Open Intelligence Commons** — otevřený, fork-friendly
@@ -269,7 +286,7 @@ zdrojování vycházejí jako `vomaste:status` doslova.
 
 ## Stack a architektura
 
-Build-time: [Zola](https://www.getzola.org/) 0.22.1 (obsah, routing,
+Build-time: [Zola](https://www.getzola.org/) 0.23.3 (obsah, routing,
 šablony Tera), Node.js 24 + npm (validátory a generátory v
 `scripts/`), Tailwind CSS (kompilace `static/css/input.css` →
 `main.css`), esbuild (bundle `assets/js/` → `static/js/app.js`),
@@ -383,7 +400,7 @@ Zone B.
 
 ## Rychlý start
 
-Prerekvizity: Git, **Node.js 24** a npm, **Zola 0.22.x**
+Prerekvizity: Git, **Node.js 24** a npm, **Zola 0.23.x**
 (<https://www.getzola.org/documentation/getting-started/installation/>).
 
 ```bash
@@ -860,7 +877,7 @@ tam vůbec nedostane, byl na plné bráně červený.
 
 | Příznak | Příčina a oprava |
 |---|---|
-| `zola: command not found` / build padá na Zole | Zola není v PATH nebo je jiná řada než **0.22.x** (CI pinuje 0.22.1). Instalace: <https://www.getzola.org/documentation/getting-started/installation/>; ověření `zola --version`. |
+| `zola: command not found` / build padá na Zole | Zola není v PATH nebo je jiná řada než **0.23.x** (CI pinuje 0.23.3). Instalace: <https://www.getzola.org/documentation/getting-started/installation/>; ověření `zola --version`. |
 | `data:validate` hlásí T3 „řádka tabulky se neshoduje s kanonickým claimem" | Tabulka tvrzení v `dossier.json` a kanonický záznam `claims/clm-NN.json` se rozešly (text/stav/zdroje se porovnávají byte-verně). Uprav jedno či druhé tak, aby se shodovaly, a validaci zopakuj. |
 | `data:check-generated:content` hlásí drift | Ručně editovaný generovaný soubor pod `content/dossiers/**` nebo `content/entities/`. Vrať úpravu do kanonického JSON a spusť `npm run data:build`. **Pozor na pořadí**: uvnitř `npm run build` běží `data:sync-content` *před* touhle bránou, takže ruční úpravu těla stránky přepíše a build zůstane zelený — drift se ohlásí jen když bránu spustíš samostatně nad nesynchronizovaným stromem. Podezřelý diff v `content/` se kontroluje takhle: `npm run data:check-generated:content`. |
 | `npm run dev` „visí" | Nevisí — `zola serve` je server a sám neskončí. Čekej na řádek `Web server is available`, web běží na <http://127.0.0.1:1111>. |

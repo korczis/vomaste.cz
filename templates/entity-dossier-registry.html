@@ -1,7 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
-{% import "macros/table.html" as table %}
-{% import "macros/views.html" as views %}
 
 {#- Generic registry-index view for an ENTITY dossier (petr-macinka,
     filip-turek): claims/sources/cases/gaps. Owns no content of its own —
@@ -30,53 +27,38 @@
   {%- elif registry == "sources" %}{% set registry_label = "Registr zdrojů" %}
   {%- elif registry == "cases" %}{% set registry_label = "Registr kauz" %}
   {%- else %}{% set registry_label = "Registr mezer" %}{% endif -%}
-  {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
+  {{ <ui_page_header title={section.title} description={section.description} breadcrumb_items={[
     "Dossiery::" ~ get_url(path="@/dossiers/_index.md"),
     idx.dossierTitle ~ "::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
     registry_label,
-  ]) }}
+  ]} /> }}
 
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
   {% if registry == "claims" %}
   <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-5">
-    {{ ui::stat_tile(value=filtered | length, label="Tvrzení celkem") }}
-    {% set corroborated = filtered | filter(attribute="status", value="status-corroborated") %}
-    {{ ui::stat_tile(value=corroborated | length, label="Corroborated") }}
-    {% set single = filtered | filter(attribute="status", value="status-single") %}
-    {{ ui::stat_tile(value=single | length, label="1 zdroj") }}
-    {% set disputed = filtered | filter(attribute="status", value="status-disputed") %}
-    {{ ui::stat_tile(value=disputed | length, label="Sporné") }}
-    {% set quotes = filtered | filter(attribute="status", value="status-quote") %}
-    {{ ui::stat_tile(value=quotes | length, label="Citace") }}
+    {{ <ui_stat_tile value={filtered | length} label="Tvrzení celkem" /> }}
+    {% set corroborated = [__i for __i in filtered if __i.status == "status-corroborated"] %}
+    {{ <ui_stat_tile value={corroborated | length} label="Corroborated" /> }}
+    {% set single = [__i for __i in filtered if __i.status == "status-single"] %}
+    {{ <ui_stat_tile value={single | length} label="1 zdroj" /> }}
+    {% set disputed = [__i for __i in filtered if __i.status == "status-disputed"] %}
+    {{ <ui_stat_tile value={disputed | length} label="Sporné" /> }}
+    {% set quotes = [__i for __i in filtered if __i.status == "status-quote"] %}
+    {{ <ui_stat_tile value={quotes | length} label="Citace" /> }}
   </div>
   {% if filtered | length == 0 %}
-    {{ ui::empty_state(message="Žádné tvrzení v tomto rozsahu.") }}
+    {{ <ui_empty_state message="Žádné tvrzení v tomto rozsahu." /> }}
   {% else %}
-  {{ views::open(
-    id="entity-claims",
-    title="Registr tvrzení",
-    count=filtered | length,
-    default_view="table",
-    allowed_views=["table", "grid"],
-    search_label="Hledat v tvrzeních",
-    sort_options=["id::ID", "status::Stav"],
-    columns=["ID", "Stav", "Tvrzení"],
-    export_name="tvrzeni",
-    facets=[
+  {% <views_section id="entity-claims" title="Registr tvrzení" count={filtered | length} default_view="table" allowed_views={["table", "grid"]} search_label="Hledat v tvrzeních" sort_options={["id::ID", "status::Stav"]} columns={["ID", "Stav", "Tvrzení"]} export_name="tvrzeni" facets={[
       "status-corroborated::Corroborated",
       "status-single::1 zdroj",
       "status-disputed::Sporné",
       "status-quote::Citace",
-    ]) }}
+    ]} empty_text="Žádné tvrzení neodpovídá zadanému filtru." footer="Pohled, řazení i filtr se promítají do adresy — výřez dat jde poslat odkazem."> %}
 
-  {{ views::projection(name="table", default_view="table") }}
-    {{ table::advanced_table(
-      id="entity-claims-table",
-      caption="Registr tvrzení",
-      record_type="claim",
-      columns=["ID", "Stav", "Tvrzení"],
-      sort_keys=["id", "status", ""]) }}
+  {% <views_projection name="table" default_view="table"> %}
+    {% <table_advanced_table id="entity-claims-table" caption="Registr tvrzení" record_type="claim" columns={["ID", "Stav", "Tvrzení"]} sort_keys={["id", "status", ""]}> %}
       {%- for p in filtered %}
       <tr data-record-key="{{ p.identifier }}" data-facet="{{ p.status }}" id="entity-claims-table-{{ p.identifier | lower }}">
         <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.identifier }}">
@@ -91,10 +73,10 @@
         </td>
       </tr>
       {%- endfor %}
-    {{ table::advanced_table_end() }}
-  {{ views::projection_end() }}
+    {% </table_advanced_table> %}
+  {% </views_projection> %}
 
-  {{ views::projection(name="grid", default_view="table") }}
+  {% <views_projection name="grid" default_view="table"> %}
     <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
       {% for p in filtered %}
       <a href="{{ config.base_url }}{{ p.route }}" data-record-key="{{ p.identifier }}" data-facet="{{ p.status }}" class="registry-card">
@@ -105,38 +87,22 @@
       </a>
       {% endfor %}
     </div>
-  {{ views::projection_end() }}
+  {% </views_projection> %}
 
-  {{ views::close(
-    empty_text="Žádné tvrzení neodpovídá zadanému filtru.",
-    footer="Pohled, řazení i filtr se promítají do adresy — výřez dat jde poslat odkazem.") }}
+  {% </views_section> %}
   {% endif %}
 
   {% elif registry == "sources" %}
   <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-    {{ ui::stat_tile(value=filtered | length, label="Zdrojů celkem") }}
+    {{ <ui_stat_tile value={filtered | length} label="Zdrojů celkem" /> }}
   </div>
   {% if filtered | length == 0 %}
-    {{ ui::empty_state(message="Žádný zdroj v tomto rozsahu.") }}
+    {{ <ui_empty_state message="Žádný zdroj v tomto rozsahu." /> }}
   {% else %}
-  {{ views::open(
-    id="entity-sources",
-    title="Registr zdrojů",
-    count=filtered | length,
-    default_view="table",
-    allowed_views=["table", "grid"],
-    search_label="Hledat ve zdrojích",
-    sort_options=["id::ID", "outlet::Médium"],
-    columns=["ID", "Médium", "Typ", "Popis"],
-    export_name="zdroje") }}
+  {% <views_section id="entity-sources" title="Registr zdrojů" count={filtered | length} default_view="table" allowed_views={["table", "grid"]} search_label="Hledat ve zdrojích" sort_options={["id::ID", "outlet::Médium"]} columns={["ID", "Médium", "Typ", "Popis"]} export_name="zdroje" empty_text="Žádný zdroj neodpovídá zadanému filtru." footer="Pohled, řazení i filtr se promítají do adresy — výřez dat jde poslat odkazem."> %}
 
-  {{ views::projection(name="table", default_view="table") }}
-    {{ table::advanced_table(
-      id="entity-sources-table",
-      caption="Registr zdrojů",
-      record_type="source",
-      columns=["ID", "Médium", "Typ", "Popis"],
-      sort_keys=["id", "outlet", "", ""]) }}
+  {% <views_projection name="table" default_view="table"> %}
+    {% <table_advanced_table id="entity-sources-table" caption="Registr zdrojů" record_type="source" columns={["ID", "Médium", "Typ", "Popis"]} sort_keys={["id", "outlet", "", ""]}> %}
       {%- for p in filtered %}
       <tr data-record-key="{{ p.identifier }}" id="entity-sources-table-{{ p.identifier | lower }}">
         <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.identifier }}">
@@ -149,10 +115,10 @@
         </td>
       </tr>
       {%- endfor %}
-    {{ table::advanced_table_end() }}
-  {{ views::projection_end() }}
+    {% </table_advanced_table> %}
+  {% </views_projection> %}
 
-  {{ views::projection(name="grid", default_view="table") }}
+  {% <views_projection name="grid" default_view="table"> %}
     <div class="grid gap-3 sm:grid-cols-2">
       {% for p in filtered %}
       <a href="{{ config.base_url }}{{ p.route }}" data-record-key="{{ p.identifier }}" class="registry-card">
@@ -163,38 +129,22 @@
       </a>
       {% endfor %}
     </div>
-  {{ views::projection_end() }}
+  {% </views_projection> %}
 
-  {{ views::close(
-    empty_text="Žádný zdroj neodpovídá zadanému filtru.",
-    footer="Pohled, řazení i filtr se promítají do adresy — výřez dat jde poslat odkazem.") }}
+  {% </views_section> %}
   {% endif %}
 
   {% elif registry == "cases" %}
   <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-    {{ ui::stat_tile(value=filtered | length, label="Kauzy celkem") }}
+    {{ <ui_stat_tile value={filtered | length} label="Kauzy celkem" /> }}
   </div>
   {% if filtered | length == 0 %}
-    {{ ui::empty_state(message="Žádná kauza v tomto rozsahu.") }}
+    {{ <ui_empty_state message="Žádná kauza v tomto rozsahu." /> }}
   {% else %}
-  {{ views::open(
-    id="entity-cases",
-    title="Registr kauz",
-    count=filtered | length,
-    default_view="table",
-    allowed_views=["table", "grid"],
-    search_label="Hledat v kauzách",
-    sort_options=["id::ID", "status::Stav"],
-    columns=["ID", "Stav", "Kauza", "Období"],
-    export_name="kauzy") }}
+  {% <views_section id="entity-cases" title="Registr kauz" count={filtered | length} default_view="table" allowed_views={["table", "grid"]} search_label="Hledat v kauzách" sort_options={["id::ID", "status::Stav"]} columns={["ID", "Stav", "Kauza", "Období"]} export_name="kauzy" empty_text="Žádná kauza neodpovídá zadanému filtru." footer="Pohled, řazení i filtr se promítají do adresy — výřez dat jde poslat odkazem."> %}
 
-  {{ views::projection(name="table", default_view="table") }}
-    {{ table::advanced_table(
-      id="entity-cases-table",
-      caption="Registr kauz",
-      record_type="case",
-      columns=["ID", "Stav", "Kauza", "Období"],
-      sort_keys=["id", "status", "", ""]) }}
+  {% <views_projection name="table" default_view="table"> %}
+    {% <table_advanced_table id="entity-cases-table" caption="Registr kauz" record_type="case" columns={["ID", "Stav", "Kauza", "Období"]} sort_keys={["id", "status", "", ""]}> %}
       {%- for p in filtered %}
       <tr data-record-key="{{ p.identifier }}" data-facet="{{ p.status }}" id="entity-cases-table-{{ p.identifier | lower }}">
         <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.identifier }}">
@@ -210,10 +160,10 @@
         <td class="whitespace-nowrap p-3 align-top text-xs text-white/55">{{ p.period }}</td>
       </tr>
       {%- endfor %}
-    {{ table::advanced_table_end() }}
-  {{ views::projection_end() }}
+    {% </table_advanced_table> %}
+  {% </views_projection> %}
 
-  {{ views::projection(name="grid", default_view="table") }}
+  {% <views_projection name="grid" default_view="table"> %}
     <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
       {% for p in filtered %}
       <a href="{{ config.base_url }}{{ p.route }}" data-record-key="{{ p.identifier }}" data-facet="{{ p.status }}" class="registry-card">
@@ -224,46 +174,29 @@
       </a>
       {% endfor %}
     </div>
-  {{ views::projection_end() }}
+  {% </views_projection> %}
 
-  {{ views::close(
-    empty_text="Žádná kauza neodpovídá zadanému filtru.",
-    footer="Pohled, řazení i filtr se promítají do adresy — výřez dat jde poslat odkazem.") }}
+  {% </views_section> %}
   {% endif %}
 
   {% elif registry == "gaps" %}
   {% set_global high_count = 0 %}
   {% for p in filtered %}{% if p.priority == "vysoká" %}{% set_global high_count = high_count + 1 %}{% endif %}{% endfor %}
   <div class="mb-8 grid grid-cols-2 gap-3 sm:grid-cols-3">
-    {{ ui::stat_tile(value=filtered | length, label="Otevřených mezer") }}
-    {{ ui::stat_tile(value=high_count, label="Vysoká priorita") }}
-    {{ ui::stat_tile(value=filtered | length - high_count, label="Střední / nízká") }}
+    {{ <ui_stat_tile value={filtered | length} label="Otevřených mezer" /> }}
+    {{ <ui_stat_tile value={high_count} label="Vysoká priorita" /> }}
+    {{ <ui_stat_tile value={filtered | length - high_count} label="Střední / nízká" /> }}
   </div>
   {% if filtered | length == 0 %}
-    {{ ui::empty_state(message="V tomto rozsahu nejsou vedeny žádné otevřené mezery.") }}
+    {{ <ui_empty_state message="V tomto rozsahu nejsou vedeny žádné otevřené mezery." /> }}
   {% else %}
-  {{ views::open(
-    id="entity-gaps",
-    title="Registr mezer",
-    count=filtered | length,
-    default_view="table",
-    allowed_views=["table", "grid"],
-    search_label="Hledat v mezerách",
-    sort_options=["id::ID", "priority::Priorita"],
-    columns=["ID", "Priorita", "Otevřená otázka"],
-    export_name="mezery",
-    facets=[
+  {% <views_section id="entity-gaps" title="Registr mezer" count={filtered | length} default_view="table" allowed_views={["table", "grid"]} search_label="Hledat v mezerách" sort_options={["id::ID", "priority::Priorita"]} columns={["ID", "Priorita", "Otevřená otázka"]} export_name="mezery" facets={[
       "vysoká::Vysoká priorita",
       "nízká::Nízká priorita",
-    ]) }}
+    ]} empty_text="Žádná mezera neodpovídá zadanému filtru." footer="Pohled, řazení i filtr se promítají do adresy — výřez dat jde poslat odkazem."> %}
 
-  {{ views::projection(name="table", default_view="table") }}
-    {{ table::advanced_table(
-      id="entity-gaps-table",
-      caption="Registr mezer",
-      record_type="gap",
-      columns=["ID", "Priorita", "Otevřená otázka"],
-      sort_keys=["id", "priority", ""]) }}
+  {% <views_projection name="table" default_view="table"> %}
+    {% <table_advanced_table id="entity-gaps-table" caption="Registr mezer" record_type="gap" columns={["ID", "Priorita", "Otevřená otázka"]} sort_keys={["id", "priority", ""]}> %}
       {%- for p in filtered %}
       <tr data-record-key="{{ p.identifier }}" data-facet="{{ p.priority }}" id="entity-gaps-table-{{ p.identifier | lower }}">
         <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.identifier }}">
@@ -278,10 +211,10 @@
         </td>
       </tr>
       {%- endfor %}
-    {{ table::advanced_table_end() }}
-  {{ views::projection_end() }}
+    {% </table_advanced_table> %}
+  {% </views_projection> %}
 
-  {{ views::projection(name="grid", default_view="table") }}
+  {% <views_projection name="grid" default_view="table"> %}
     <div class="grid gap-3">
       {% for p in filtered %}
       <a href="{{ config.base_url }}{{ p.route }}" data-record-key="{{ p.identifier }}" data-facet="{{ p.priority }}" class="registry-card group">
@@ -294,16 +227,14 @@
       </a>
       {% endfor %}
     </div>
-  {{ views::projection_end() }}
+  {% </views_projection> %}
 
-  {{ views::close(
-    empty_text="Žádná mezera neodpovídá zadanému filtru.",
-    footer="Pohled, řazení i filtr se promítají do adresy — výřez dat jde poslat odkazem.") }}
+  {% </views_section> %}
   {% endif %}
   {% endif %}
 
   <p class="mt-8 text-xs text-white/55">Tento registr je generovaný, filtrovaný pohled nad kanonickými záznamy vedenými v <a href="{{ get_url(path='@/dossiers/' ~ canonical_slug ~ '/' ~ registry ~ '/_index.md') | safe }}" class="text-[#f3e5c0] hover:underline">společném přehledu</a> — žádný záznam zde není fyzickou kopií.</p>
 
-  {{ ui::back_link_footer(url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"), label="Zpět na dossier") }}
+  {{ <ui_back_link_footer url={get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md")} label="Zpět na dossier" /> }}
 </main>
 {% endblock content %}

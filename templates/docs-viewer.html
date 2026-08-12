@@ -1,13 +1,12 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
 
 {% block content %}
 <main class="mx-auto max-w-3xl px-6 py-12 text-white">
-  {{ ui::page_header(title=page.title, description=page.description, breadcrumb_items=[
+  {{ <ui_page_header title={page.title} description={page.description} breadcrumb_items={[
     "Domů::" ~ get_url(path="@/_index.md"),
     "Dokumentace::" ~ get_url(path="@/dokumentace/_index.md"),
     page.title,
-  ]) }}
+  ]} /> }}
 
   {#- Redakční úvod z těla obálky (content/dokumentace/*.md): kontext, který
       do samotného řídicího dokumentu nepatří — proč ho číst, co z něj je
@@ -40,8 +39,8 @@
     {%- for pair in shifts -%}
       {%- set lv = pair | split(pat="::") -%}
       {%- set_global rendered = rendered
-            | replace(from="<h" ~ lv.0, to="<h" ~ lv.1)
-            | replace(from="</h" ~ lv.0 ~ ">", to="</h" ~ lv.1 ~ ">") -%}
+            | replace(from="<h" ~ lv[0], to="<h" ~ lv[1])
+            | replace(from="</h" ~ lv[0] ~ ">", to="</h" ~ lv[1] ~ ">") -%}
     {%- endfor -%}
     {#- Odkazy mezi řídicími dokumenty jsou v repozitáři relativní (correct na
         GitHubu, 404 pod /dokumentace/). Mapa se skládá z této sekce, takže

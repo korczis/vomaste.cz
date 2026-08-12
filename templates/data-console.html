@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
 
 {#- /data/ — in-browser SQL console over the generated registry exports.
     The heavy part (DuckDB-Wasm, several MB) is loaded only after the visitor
@@ -9,10 +8,10 @@
 
 {% block content %}
 <main class="mx-auto max-w-5xl px-6 py-12 text-white">
-  {{ ui::page_header(title=section.title, breadcrumb_items=[
+  {{ <ui_page_header title={section.title} breadcrumb_items={[
     "Domů::" ~ get_url(path="@/_index.md"),
     section.title,
-  ], description=section.description) }}
+  ]} description={section.description} /> }}
 
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
@@ -56,8 +55,8 @@
         ] -%}
         {%- for ex in examples %}
         {%- set parts = ex | split(pat="::") %}
-        <button type="button" data-sql-example="{{ parts.1 }}"
-          class="inline-flex min-h-8 items-center rounded-lg border border-white/15 px-3 text-xs text-white/70 transition-colors hover:border-white/35 hover:text-white">{{ parts.0 }}</button>
+        <button type="button" data-sql-example="{{ parts[1] }}"
+          class="inline-flex min-h-8 items-center rounded-lg border border-white/15 px-3 text-xs text-white/70 transition-colors hover:border-white/35 hover:text-white">{{ parts[0] }}</button>
         {%- endfor %}
       </div>
 
@@ -110,6 +109,6 @@
     </ul>
   </section>
 
-  {{ ui::back_link_footer(url=get_url(path="@/_index.md"), label="Zpět na úvod") }}
+  {{ <ui_back_link_footer url={get_url(path="@/_index.md")} label="Zpět na úvod" /> }}
 </main>
 {% endblock content %}

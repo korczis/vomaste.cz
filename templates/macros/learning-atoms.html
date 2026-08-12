@@ -1,0 +1,87 @@
+{#- Listová makra vzdělávací vrstvy — `badge` a `callout`.
+
+    Proč vlastní soubor: Tera neumí zavolat sourozenecké makro ve stejném
+    souboru (`self::` se vyhodnocuje proti VOLAJÍCÍ šabloně, ne proti té,
+    kde makro bydlí) a import sebe sama skončí nekonečnou rekurzí — Zola
+    na tom spadne přetečením zásobníku, ne chybou. Rozdělení na listová
+    a složená makra je proto jediné řešení, které drží pravidlo „jeden
+    markup, jedno místo“: složená makra i shortcodes importují tenhle
+    soubor a badge tak existuje právě jednou.
+
+    Nic tady nesmí volat jiné makro. To je celý smysl téhle vrstvy. -#}
+
+{#- ---------------------------------------------------------------------
+    callout — jeden prvek pro pět významů
+    ---------------------------------------------------------------------
+    `kind` rozhoduje o barvě, ikoně a předsazeném slově. Význam je nesený
+    textem, ne jen barvou (F5 / přístupnost: barva nesmí být jediný nosič
+    informace), proto má každá varianta viditelný štítek.
+
+      priklad       — jak to vypadá správně
+      protipriklad  — jak to vypadá špatně; nejčastější past
+      varovani      — něco, co působí neškodně a není
+      pravidlo      — odkaz na závazné pravidlo projektu
+      poznamka      — kontext, který se jinam nevešel                     -#}
+{% component atoms_callout(kind, title="", text="") -%}
+{%- set tone = "border-white/15 bg-white/[0.03] text-white/70" -%}
+{%- set label = "Poznámka" -%}
+{%- set icon = "M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z M12 16v-4 M12 8h.01" -%}
+{%- if kind == "priklad" -%}
+  {%- set tone = "border-emerald-400/30 bg-emerald-400/[0.06] text-white/75" -%}
+  {%- set label = "Příklad" -%}
+  {%- set icon = "M20 6 9 17l-5-5" -%}
+{%- elif kind == "protipriklad" -%}
+  {%- set tone = "border-rose-400/30 bg-rose-400/[0.06] text-white/75" -%}
+  {%- set label = "Takhle ne" -%}
+  {%- set icon = "M18 6 6 18 M6 6l12 12" -%}
+{%- elif kind == "varovani" -%}
+  {%- set tone = "border-amber-400/30 bg-amber-400/[0.06] text-white/75" -%}
+  {%- set label = "Pozor" -%}
+  {%- set icon = "M12 9v4 M12 17h.01 M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z" -%}
+{%- elif kind == "pravidlo" -%}
+  {%- set tone = "border-[#f3e5c0]/30 bg-[#f3e5c0]/[0.06] text-white/75" -%}
+  {%- set label = "Pravidlo projektu" -%}
+  {%- set icon = "M12 2 3 6v6c0 5 3.8 9.2 9 10 5.2-.8 9-5 9-10V6l-9-4Z" -%}
+{%- endif -%}
+<aside class="my-6 rounded-xl border {{ tone }} p-5 text-sm leading-relaxed">
+  <p class="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0" aria-hidden="true"><path d="{{ icon }}"/></svg>
+    <span>{{ label }}{% if title %} — {{ title }}{% endif %}</span>
+  </p>
+  <div class="learning-callout-body">{{ body | safe }}</div>
+</aside>
+{%- endcomponent %}
+
+{#- ---------------------------------------------------------------------
+    badge — audience, úroveň, obtížnost, čas
+    ---------------------------------------------------------------------
+    `title` jde do atributu title i do aria-label, aby zkratka („A2“) nebyla
+    pro odečítač obrazovky jen dvěma znaky bez významu.                  -#}
+{% component atoms_badge(label, title="", tone="neutral") -%}
+{%- set cls = "border-white/15 text-white/60" -%}
+{%- if tone == "accent" -%}{%- set cls = "border-[#f3e5c0]/40 bg-[#f3e5c0]/10 text-[#f3e5c0]" -%}{%- endif -%}
+{%- if tone == "muted" -%}{%- set cls = "border-white/10 text-white/65" -%}{%- endif -%}
+<span class="inline-flex items-center rounded-full border {{ cls }} px-2.5 py-0.5 text-[0.7rem]"{% if title %} title="{{ title }}"{% endif %}>{{ label }}</span>
+{%- endcomponent %}
+
+{#- ---------------------------------------------------------------------
+    checklist — kopírovatelný kontrolní seznam
+    ---------------------------------------------------------------------
+    Bez JS a bez stavu: jsou to <input type="checkbox">, které si prohlížeč
+    drží sám. Nic se neukládá a nic se nikam neposílá — projekt nemá backend
+    a předstírat uložený postup by bylo tvrzení o schopnosti, kterou nemá
+    (konstituce §8).                                                      -#}
+{% component atoms_checklist(id, items, heading) -%}
+<section aria-labelledby="{{ id }}-heading" class="my-8 rounded-xl border border-white/10 bg-white/[0.03] p-6">
+  <h2 id="{{ id }}-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">{{ heading }}</h2>
+  <ul class="space-y-2.5 text-sm leading-relaxed text-white/70">
+    {%- for it in items %}
+    <li class="flex items-start gap-3">
+      <input type="checkbox" id="{{ id }}-{{ loop.index }}" class="mt-1 h-4 w-4 shrink-0 rounded border-white/25 bg-transparent accent-[#f3e5c0]">
+      <label for="{{ id }}-{{ loop.index }}" class="cursor-pointer">{{ it | safe }}</label>
+    </li>
+    {%- endfor %}
+  </ul>
+  <p class="mt-4 text-xs text-white/65">Odškrtnutí se nikam neukládá — web nemá účty ani server, který by si postup pamatoval.</p>
+</section>
+{%- endcomponent %}

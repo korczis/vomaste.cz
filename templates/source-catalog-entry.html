@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
 
 {#- Full page for ONE catalogue source: what it proves, what it does not, and
     the traps someone already hit in it.
@@ -12,14 +11,14 @@
 
 {% block content %}
 {%- set catalog = load_data(path="data/generated/source-catalog.json") -%}
-{%- set entry = catalog.entries | filter(attribute="identifier", value=page.extra.catalog_entry) | first -%}
+{%- set entry = [__i for __i in catalog.entries if __i.identifier == page.extra.catalog_entry] | first -%}
 
 <main class="mx-auto max-w-2xl px-6 py-12 text-white">
-  {{ ui::page_header(title=page.title, breadcrumb_items=[
+  {{ <ui_page_header title={page.title} breadcrumb_items={[
     "Domů::" ~ get_url(path="@/_index.md"),
     "Zdroje::" ~ get_url(path="@/zdroje/_index.md"),
     page.title,
-  ], description=page.description) }}
+  ]} description={page.description} /> }}
 
   {%- if entry %}
   <p class="mb-8 flex flex-wrap items-center gap-2 text-xs">
@@ -85,6 +84,6 @@
   </section>
   {%- endif %}
 
-  {{ ui::back_link_footer(url=get_url(path="@/zdroje/_index.md"), label="Zpět na zdroje") }}
+  {{ <ui_back_link_footer url={get_url(path="@/zdroje/_index.md")} label="Zpět na zdroje" /> }}
 </main>
 {% endblock content %}

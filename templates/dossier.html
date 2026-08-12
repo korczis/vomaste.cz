@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
 
 {% block extra_js %}
 <script type="module" defer src="{{ get_url(path='js/graph-app.js', cachebust=true) | safe }}"></script>
@@ -13,11 +12,11 @@
       projekce static/data/graph/. Jediný zdroj pravdy = data/dossiers/**. -#}
   {% set dossier_slug = section.extra.dossier %}
   {% set view = load_data(path="data/" ~ section.extra.view_model) %}
-  {{ ui::page_header(title=section.title, breadcrumb_items=[
+  {{ <ui_page_header title={section.title} breadcrumb_items={[
     "Domů::" ~ get_url(path="@/_index.md"),
     "Dossiery::" ~ get_url(path="@/dossiers/_index.md"),
     section.title,
-  ], updated=section.extra.updated | default(value=""), reviewed=section.extra.reviewed_at | default(value="")) }}
+  ]} updated={section.extra.updated | default(value="")} reviewed={section.extra.reviewed_at | default(value="")} /> }}
 
   {% if view.dossierType == "aggregate" %}
   {#- Which dossiers this aggregate rolls up comes from the view model
@@ -52,21 +51,21 @@
   {% endfor %}
   <section class="mb-12 grid grid-cols-2 gap-3 sm:grid-cols-4" aria-label="Rozdělení tvrzení podle subjektu">
     {%- for d in source_dossiers %}
-    {{ ui::stat_tile(value=d.claims, label=d.title, url=get_url(path="@/dossiers/" ~ d.slug ~ "/claims/_index.md")) }}
+    {{ <ui_stat_tile value={d.claims} label={d.title} url={get_url(path="@/dossiers/" ~ d.slug ~ "/claims/_index.md")} /> }}
     {%- endfor %}
-    {{ ui::stat_tile(value=shared_claims, label="Sdílená tvrzení") }}
-    {{ ui::stat_tile(value=view.subjectEntities | length, label="Subjektů v tomto přehledu") }}
+    {{ <ui_stat_tile value={shared_claims} label="Sdílená tvrzení" /> }}
+    {{ <ui_stat_tile value={view.subjectEntities | length} label="Subjektů v tomto přehledu" /> }}
   </section>
   {% endif %}
 
   {% set counts = view.counts %}
   <section class="mb-12 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-6" aria-label="Souhrnné metriky dossieru">
-    {{ ui::stat_tile(value=counts.sources, label="Citovaných zdrojů", url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/sources/_index.md")) }}
-    {{ ui::stat_tile(value=counts.cases, label="Sledované kauzy", url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/cases/_index.md")) }}
-    {{ ui::stat_tile(value=counts.claims, label="Tvrzení v registru", url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/claims/_index.md")) }}
-    {{ ui::stat_tile(value=counts.gaps, label="Otevřené mezery", url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/gaps/_index.md")) }}
-    {{ ui::stat_tile(value=counts.entities, label="Entit v grafu", url=get_url(path="@/entities/_index.md")) }}
-    {{ ui::stat_tile(value=counts.relations, label="Vztahů v grafu", url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/relations/_index.md")) }}
+    {{ <ui_stat_tile value={counts.sources} label="Citovaných zdrojů" url={get_url(path="@/dossiers/" ~ dossier_slug ~ "/sources/_index.md")} /> }}
+    {{ <ui_stat_tile value={counts.cases} label="Sledované kauzy" url={get_url(path="@/dossiers/" ~ dossier_slug ~ "/cases/_index.md")} /> }}
+    {{ <ui_stat_tile value={counts.claims} label="Tvrzení v registru" url={get_url(path="@/dossiers/" ~ dossier_slug ~ "/claims/_index.md")} /> }}
+    {{ <ui_stat_tile value={counts.gaps} label="Otevřené mezery" url={get_url(path="@/dossiers/" ~ dossier_slug ~ "/gaps/_index.md")} /> }}
+    {{ <ui_stat_tile value={counts.entities} label="Entit v grafu" url={get_url(path="@/entities/_index.md")} /> }}
+    {{ <ui_stat_tile value={counts.relations} label="Vztahů v grafu" url={get_url(path="@/dossiers/" ~ dossier_slug ~ "/relations/_index.md")} /> }}
   </section>
   {#- Viditelný text ponechán beze změny (byte parity gate fáze H) — zmínka
       generate-stats.mjs je historická, počty jdou z view modelu; přeformulace
@@ -150,7 +149,7 @@
         {% if c.gaps and c.gaps | length > 0 %}
         <p class="mt-2 text-xs text-white/55">Otevřené mezery:
           {% for g in c.gaps %}
-            {% set gap_row = gaps_idx.rows | filter(attribute="identifier", value=g) | first %}
+            {% set gap_row = [__i for __i in gaps_idx.rows if __i.identifier == g] | first %}
             {% if gap_row %}<a href="{{ config.base_url }}{{ gap_row.route }}" class="text-[#f3e5c0] underline decoration-white/30 underline-offset-2">{{ g }}</a>{% if not loop.last %}, {% endif %}{% endif %}
           {% endfor %}
         </p>
@@ -170,7 +169,7 @@
         <span aria-hidden="true" class="text-white/55">&rarr;</span>
         {% if r.to.title %}<a href="{{ config.base_url }}{{ r.to.route }}" class="text-white/80 no-underline hover:underline">{{ r.to.title }}</a>{% endif %}
         <span class="text-white/55">(
-          {{- ui::relation_status(status=r.status, long=false) -}}
+          {{ <ui_relation_status status={r.status} long={false} /> }}
           {%- if r.claims %}, {% for c in r.claims %}<a href="{{ config.base_url }}{{ c.route }}" class="text-[#f3e5c0]/70 no-underline hover:underline">{{ c.identifier }}</a>{% if not loop.last %}, {% endif %}{% endfor %}{% endif -%}
         )</span>
       </li>

@@ -1,0 +1,31 @@
+{#- Blokový shortcode: kontrolní otázka na konci lekce.
+
+    Použití:
+      {% kontrola(otazka="Tři weby přinesly tutéž zprávu z ČTK. Jsou to tři nezávislá potvrzení?") %}
+      Ne. **Jeden původ**, tři adresy…
+      {% end %}
+
+    Rozdíl proti `cviceni`: kontrola ověřuje POCHOPENÍ, ne paměť. Otázka je
+    proto vždycky situační („co s tímhle uděláš“), nikdy definiční („co
+    znamená zkratka SRC“) — na to se stačí podívat do slovníčku a nic to
+    o porozumění neřekne.
+
+    Vědomě tu není skórování ani odznak za absolvování. Kdo proklikal osm
+    tlačítek, nezískal tím epistemickou kompetenci, a předstírat to by
+    bylo přesně to gamifikované obvinění, které projekt odmítá. -#}
+{% component kontrola(otazka="") -%}
+<section class="my-8 rounded-xl border border-[#f3e5c0]/25 bg-[#f3e5c0]/[0.05] p-6">
+  <p class="mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-[#f3e5c0]">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0" aria-hidden="true"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3 M12 17h.01"/></svg>
+    <span>Ověř si, že to sedí</span>
+  </p>
+  <p class="mb-4 text-sm leading-relaxed text-white">{{ otazka }}</p>
+  <details class="group rounded-lg border border-white/10 bg-black/30">
+    <summary class="cursor-pointer list-none px-4 py-2.5 text-sm text-[#f3e5c0] marker:content-none [&amp;::-webkit-details-marker]:hidden">
+      <span class="group-open:hidden">Zobrazit odpověď</span>
+      <span class="hidden group-open:inline">Skrýt odpověď</span>
+    </summary>
+    <div class="dossier-prose border-t border-white/10 px-4 py-4 text-sm">{{ body | markdown | safe }}</div>
+  </details>
+</section>
+{%- endcomponent %}

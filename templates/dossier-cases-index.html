@@ -1,7 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
-{% import "macros/table.html" as table %}
-{% import "macros/views.html" as views %}
 
 {% block content %}
 <main class="mx-auto max-w-6xl px-6 py-12 text-white">
@@ -9,38 +6,21 @@
       matter section.pages — content adaptéry jsou generované. -#}
   {% set dossier_slug = section.extra.dossier %}
   {% set idx = load_data(path="data/" ~ section.extra.view_model) %}
-  {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
+  {{ <ui_page_header title={section.title} description={section.description} breadcrumb_items={[
     "Dossier::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
     "Registr kauz",
-  ]) }}
+  ]} /> }}
 
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
   <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-    {{ ui::stat_tile(value=idx.rows | length, label="Kauzy celkem") }}
+    {{ <ui_stat_tile value={idx.rows | length} label="Kauzy celkem" /> }}
   </div>
 
-  {{ views::open(
-    id="cases-registry",
-    title="Registr kauz",
-    count=idx.rows | length,
-    default_view="table",
-    search_label="Hledat v kauzách",
-    sort_options=["id::ID", "status::Stav", "period::Období"],
-    columns=["ID", "Stav", "Kauza", "Období"],
-    export_name="kauzy") }}
+  {% <views_section id="cases-registry" title="Registr kauz" count={idx.rows | length} default_view="table" search_label="Hledat v kauzách" sort_options={["id::ID", "status::Stav", "period::Období"]} columns={["ID", "Stav", "Kauza", "Období"]} export_name="kauzy" empty_text="Žádná kauza neodpovídá zadanému filtru."> %}
 
-  {{ views::projection(name="table", default_view="table") }}
-  {{ table::advanced_table(
-    id="cases-registry-table",
-    caption="Registr kauz",
-    record_type="case",
-    count=idx.rows | length,
-    columns=["ID", "Stav", "Kauza", "Období"],
-    sort_keys=["id", "status", "", "period"],
-    searchable=true,
-    url_state=true,
-    export_name="kauzy") }}
+  {% <views_projection name="table" default_view="table"> %}
+  {% <table_advanced_table id="cases-registry-table" caption="Registr kauz" record_type="case" count={idx.rows | length} columns={["ID", "Stav", "Kauza", "Období"]} sort_keys={["id", "status", "", "period"]} searchable={true} url_state={true} export_name="kauzy" empty_text="Žádná kauza neodpovídá zadanému filtru."> %}
     {% for p in idx.rows %}
     <tr data-record-key="{{ p.identifier }}" data-status="{{ p.statusLabel }}" data-facet="{{ p.statusLabel }}" id="cases-registry-table-{{ p.identifier | lower }}">
       <td class="whitespace-nowrap p-3 align-top">
@@ -56,10 +36,10 @@
       <td class="whitespace-nowrap p-3 align-top text-xs text-white/55">{{ p.period }}</td>
     </tr>
     {% endfor %}
-  {{ table::advanced_table_end(empty_text="Žádná kauza neodpovídá zadanému filtru.") }}
-  {{ views::projection_end() }}
+  {% </table_advanced_table> %}
+  {% </views_projection> %}
 
-  {{ views::projection(name="list", default_view="table") }}
+  {% <views_projection name="list" default_view="table"> %}
     <ul class="divide-y divide-white/10 overflow-hidden rounded-lg border border-white/10 bg-white/[0.03]">
       {%- for p in idx.rows %}
       <li data-record-key="{{ p.identifier }}" data-facet="{{ p.statusLabel }}" id="cases-registry-list-{{ p.identifier | lower }}" class="p-3">
@@ -73,9 +53,9 @@
       </li>
       {%- endfor %}
     </ul>
-  {{ views::projection_end() }}
+  {% </views_projection> %}
 
-  {{ views::projection(name="grid", default_view="table") }}
+  {% <views_projection name="grid" default_view="table"> %}
     <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
       {%- for p in idx.rows %}
       <article data-record-key="{{ p.identifier }}" data-facet="{{ p.statusLabel }}" id="cases-registry-grid-{{ p.identifier | lower }}"
@@ -89,11 +69,11 @@
       </article>
       {%- endfor %}
     </div>
-  {{ views::projection_end() }}
+  {% </views_projection> %}
 
-  {{ views::close(empty_text="Žádná kauza neodpovídá zadanému filtru.") }}
+  {% </views_section> %}
 
 
-  {{ ui::back_link_footer(url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"), label="Zpět na celý dossier") }}
+  {{ <ui_back_link_footer url={get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md")} label="Zpět na celý dossier" /> }}
 </main>
 {% endblock content %}

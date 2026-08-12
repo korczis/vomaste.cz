@@ -1,6 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
-{% import "macros/table.html" as table %}
 
 {#- Attribution index for every published image.
 
@@ -15,11 +13,11 @@
 <main class="mx-auto max-w-5xl px-4 py-10 text-white sm:px-6 sm:py-12">
   {% set media = load_data(path="data/generated/views/media-index.json") %}
 
-  {{ ui::page_header(title=page.title, description=page.description, breadcrumb_items=[
+  {{ <ui_page_header title={page.title} description={page.description} breadcrumb_items={[
     "Domů::" ~ get_url(path="@/_index.md"),
     "Dokumentace::" ~ get_url(path="@/dokumentace/_index.md"),
     "Licence médií",
-  ]) }}
+  ]} /> }}
 
   <div class="mb-8 space-y-3 text-sm leading-relaxed text-white/70">
     <p>Fotografie a loga na tomhle webu <strong class="text-white/90">nejsou majetkem projektu</strong>. Publikují se výhradně pod svobodnými licencemi, které to dovolují — a u licencí typu <abbr title="Creative Commons Uveďte původ – Zachovejte licenci">CC BY-SA</abbr> je uvedení autora a licence <strong class="text-white/90">podmínkou užití, ne zdvořilostí</strong>.</p>
@@ -29,25 +27,17 @@
 
   {%- if media.byLicense | length > 0 %}
   <div class="mb-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
-    {{ ui::stat_tile(value=media.count, label="Médií celkem") }}
+    {{ <ui_stat_tile value={media.count} label="Médií celkem" /> }}
     {%- for row in media.byLicense %}
-    {{ ui::stat_tile(value=row.count, label=row.license) }}
+    {{ <ui_stat_tile value={row.count} label={row.license} /> }}
     {%- endfor %}
   </div>
   {%- endif %}
 
   {% if media.count == 0 %}
-  {{ ui::empty_state(message="Zatím není publikovaný žádný obrázek.") }}
+  {{ <ui_empty_state message="Zatím není publikovaný žádný obrázek." /> }}
   {% else %}
-  {{ table::advanced_table(
-    id="media-licences",
-    caption="Publikovaná média",
-    record_type="media",
-    count=media.count,
-    searchable=true,
-    columns=["Náhled", "Entita", "Autor", "Licence", "Zdroj"],
-    sort_keys=["", "entita", "autor", "licence", ""],
-  ) }}
+  {% <table_advanced_table id="media-licences" caption="Publikovaná média" record_type="media" count={media.count} searchable={true} columns={["Náhled", "Entita", "Autor", "Licence", "Zdroj"]} sort_keys={["", "entita", "autor", "licence", ""]} footer="Seznam je počítaný z kanonických záznamů entit — ručně se nevede a nemůže se s publikovaným obsahem rozejít." empty_text="Filtru neodpovídá žádné médium."> %}
     {%- for row in media.rows %}
     <tr class="border-t border-white/5 align-top" data-entita="{{ row.entityTitle }}" data-autor="{{ row.author }}" data-licence="{{ row.license }}">
       <td class="px-3 py-2">
@@ -80,12 +70,9 @@
       </td>
     </tr>
     {%- endfor %}
-  {{ table::advanced_table_end(
-    footer="Seznam je počítaný z kanonických záznamů entit — ručně se nevede a nemůže se s publikovaným obsahem rozejít.",
-    empty_text="Filtru neodpovídá žádné médium."
-  ) }}
+  {% </table_advanced_table> %}
   {% endif %}
 
-  {{ ui::back_link_footer(url=get_url(path="@/dokumentace/_index.md"), label="Zpět na dokumentaci") }}
+  {{ <ui_back_link_footer url={get_url(path="@/dokumentace/_index.md")} label="Zpět na dokumentaci" /> }}
 </main>
 {% endblock content %}

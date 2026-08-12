@@ -1,7 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
-{% import "macros/table.html" as table %}
-{% import "macros/views.html" as views %}
 
 {% block content %}
 <main class="mx-auto max-w-6xl px-6 py-12 text-white">
@@ -10,23 +7,23 @@
       content adaptéry jsou generované a nesou jen routing + tělo. -#}
   {% set dossier_slug = section.extra.dossier %}
   {% set idx = load_data(path="data/" ~ section.extra.view_model) %}
-  {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
+  {{ <ui_page_header title={section.title} description={section.description} breadcrumb_items={[
     "Dossier::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
     "Registr tvrzení",
-  ]) }}
+  ]} /> }}
 
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
   <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-5">
-    {{ ui::stat_tile(value=idx.rows | length, label="Tvrzení celkem") }}
-    {% set corroborated = idx.rows | filter(attribute="status", value="status-corroborated") %}
-    {{ ui::stat_tile(value=corroborated | length, label="Corroborated") }}
-    {% set single = idx.rows | filter(attribute="status", value="status-single") %}
-    {{ ui::stat_tile(value=single | length, label="1 zdroj") }}
-    {% set disputed = idx.rows | filter(attribute="status", value="status-disputed") %}
-    {{ ui::stat_tile(value=disputed | length, label="Sporné") }}
-    {% set quotes = idx.rows | filter(attribute="status", value="status-quote") %}
-    {{ ui::stat_tile(value=quotes | length, label="Citace") }}
+    {{ <ui_stat_tile value={idx.rows | length} label="Tvrzení celkem" /> }}
+    {% set corroborated = [__i for __i in idx.rows if __i.status == "status-corroborated"] %}
+    {{ <ui_stat_tile value={corroborated | length} label="Corroborated" /> }}
+    {% set single = [__i for __i in idx.rows if __i.status == "status-single"] %}
+    {{ <ui_stat_tile value={single | length} label="1 zdroj" /> }}
+    {% set disputed = [__i for __i in idx.rows if __i.status == "status-disputed"] %}
+    {{ <ui_stat_tile value={disputed | length} label="Sporné" /> }}
+    {% set quotes = [__i for __i in idx.rows if __i.status == "status-quote"] %}
+    {{ <ui_stat_tile value={quotes | length} label="Citace" /> }}
   </div>
 
   {#- Tři projekce nad jednou kolekcí, stejně jako adresář dossierů.
@@ -34,30 +31,15 @@
       macros/views.html a komponenta advancedTable(); markup projekcí
       zůstává tady, protože tvrzení se vykresluje jinak než zdroj a
       sjednotit to by znamenalo ztratit význam. -#}
-  {{ views::open(
-    id="claims-registry",
-    title="Registr tvrzení",
-    count=idx.rows | length,
-    default_view="table",
-    search_label="Hledat v tvrzeních",
-    sort_options=["id::ID", "status::Stav", "sources::Počet zdrojů"],
-    columns=["ID", "Stav", "Tvrzení", "Zdroje"],
-    export_name="tvrzeni",
-    inspector=true,
-    facets=[
+  {% <views_section id="claims-registry" title="Registr tvrzení" count={idx.rows | length} default_view="table" search_label="Hledat v tvrzeních" sort_options={["id::ID", "status::Stav", "sources::Počet zdrojů"]} columns={["ID", "Stav", "Tvrzení", "Zdroje"]} export_name="tvrzeni" inspector={true} facets={[
       "status-corroborated::Corroborated",
       "status-single::1 zdroj",
       "status-disputed::Sporné",
       "status-quote::Citace",
-    ]) }}
+    ]} empty_text="Žádné tvrzení neodpovídá zadanému filtru." footer="Pohled, řazení i filtr se promítají do adresy — výřez dat jde poslat odkazem."> %}
 
-  {{ views::projection(name="table", default_view="table") }}
-    {{ table::advanced_table(
-      id="claims-registry-table",
-      caption="Registr tvrzení",
-      record_type="claim",
-      columns=["ID", "Stav", "Tvrzení", "Zdroje"],
-      sort_keys=["id", "status", "", "sources"]) }}
+  {% <views_projection name="table" default_view="table"> %}
+    {% <table_advanced_table id="claims-registry-table" caption="Registr tvrzení" record_type="claim" columns={["ID", "Stav", "Tvrzení", "Zdroje"]} sort_keys={["id", "status", "", "sources"]} inspector={true}> %}
       {%- for p in idx.rows %}
       <tr data-record-key="{{ p.identifier }}" data-facet="{{ p.status }}" data-inspect-id="{{ p.identifier }}" id="claims-registry-table-{{ p.identifier | lower }}">
         <td class="whitespace-nowrap p-3 align-top" data-sort-value="{{ p.identifier }}">
@@ -78,10 +60,10 @@
         </td>
       </tr>
       {%- endfor %}
-    {{ table::advanced_table_end(inspector=true) }}
-  {{ views::projection_end() }}
+    {% </table_advanced_table> %}
+  {% </views_projection> %}
 
-  {{ views::projection(name="list", default_view="table") }}
+  {% <views_projection name="list" default_view="table"> %}
     <ul class="divide-y divide-white/10 overflow-hidden rounded-lg border border-white/10 bg-white/[0.03]">
       {%- for p in idx.rows %}
       <li data-record-key="{{ p.identifier }}" data-facet="{{ p.status }}" id="claims-registry-list-{{ p.identifier | lower }}" class="p-3">
@@ -98,9 +80,9 @@
       </li>
       {%- endfor %}
     </ul>
-  {{ views::projection_end() }}
+  {% </views_projection> %}
 
-  {{ views::projection(name="grid", default_view="table") }}
+  {% <views_projection name="grid" default_view="table"> %}
     <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
       {%- for p in idx.rows %}
       <article data-record-key="{{ p.identifier }}" data-facet="{{ p.status }}" id="claims-registry-grid-{{ p.identifier | lower }}"
@@ -113,12 +95,10 @@
       </article>
       {%- endfor %}
     </div>
-  {{ views::projection_end() }}
+  {% </views_projection> %}
 
-  {{ views::close(
-    empty_text="Žádné tvrzení neodpovídá zadanému filtru.",
-    footer="Pohled, řazení i filtr se promítají do adresy — výřez dat jde poslat odkazem.") }}
+  {% </views_section> %}
 
-  {{ ui::back_link_footer(url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"), label="Zpět na celý dossier") }}
+  {{ <ui_back_link_footer url={get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md")} label="Zpět na celý dossier" /> }}
 </main>
 {% endblock content %}

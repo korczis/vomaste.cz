@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+
+{#- Index jedné sekce vzdělávací vrstvy (Start, Bootcamp, Akademie,
+    Příručka, Jak přispět).
+
+    Jedna šablona pro pět sekcí, řízená front matter sekce:
+      extra.group_by = "level"    → seskupí lekce podle úrovní Akademie
+      extra.group_by = "category" → seskupí podle kategorií Příručky
+      (nevyplněno)                → prostý seznam v pořadí `weight`
+      extra.show_paths = true     → nad výpisem vykreslí learning paths
+
+    Popisky skupin i pořadí bere z `data/learning.toml`, nikdy z markupu —
+    přejmenovat úroveň nebo přidat kategorii je proto změna jednoho řádku
+    v datech, ne zásah do šablony. Stejný vztah jako
+    concepts-index.html ↔ concept-groups.toml. -#}
+
+{% block content %}
+{% set learning_data = load_data(path="data/learning.toml") %}
+{% set section_id = section.extra.section %}
+{% set section_meta = [__i for __i in learning_data.sections if __i.id == section_id] | first %}
+
+<main class="mx-auto max-w-3xl px-6 py-12 text-white">
+  {{ <ui_page_header title={section.title} breadcrumb_items={[
+    "Domů::" ~ get_url(path="@/_index.md"),
+    section.title,
+  ]} description={section.description} /> }}
+
+  <article class="dossier-prose mb-12">
+    {{ section.content | safe }}
+  </article>
+
+  {#- Learning paths: pořadí existujících lekcí, ne samostatný obsah.
+      Odhad času je součet z lekcí — orientační, ne měření, a stránka to
+      říká nahlas, aby si to nikdo nepletl s garancí. -#}
+  {%- if section.extra.show_paths | default(value=false) %}
+  {%- set paths = learning_data.paths | sort(attribute="order") %}
+  <section aria-labelledby="paths-heading" class="mb-14">
+    <h2 id="paths-heading" class="mb-1 text-lg text-white">Vyber si cestu</h2>
+    <p class="mb-5 text-sm text-white/55">Cesta je jen doporučené pořadí už existujících lekcí. Nic se neodemyká a nic se nezavírá — kdykoli můžeš odbočit.</p>
+    <ul class="grid gap-4 sm:grid-cols-2">
+      {%- for p in paths %}
+      {%- set aud = [__i for __i in learning_data.audiences if __i.id == p.audience] | first %}
+      {%- set lesson_count = p.lessons | length %}
+      <li class="rounded-xl border border-white/10 bg-white/[0.02] p-5">
+        <p class="mb-2 flex flex-wrap items-center gap-2">
+          {%- if aud %}{{ <atoms_badge label={aud.label} title={aud.lead} tone="accent" /> }}{% endif %}
+          {{ <atoms_badge label={lesson_count ~ " lekcí"} title="Počet lekcí na této cestě" tone="muted" /> }}
+        </p>
+        <p class="mb-1 text-base text-white">{{ p.label }}</p>
+        <p class="mb-3 text-sm leading-relaxed text-white/60">{{ p.lead }}</p>
+        <ol class="flex flex-wrap gap-1.5 text-xs">
+          {%- for lid in p.lessons %}
+          {%- set target = [__i for __i in section.pages if __i.extra.lesson_id == lid] | first %}
+          <li>
+            {%- if target %}
+            <a href="{{ target.permalink | safe }}" title="{{ target.title }}" class="rounded border border-white/15 px-2 py-1 font-mono text-white/60 no-underline hover:border-[#f3e5c0]/40 hover:text-[#f3e5c0]">{{ lid }}</a>
+            {%- else %}
+            <span class="rounded border border-white/10 px-2 py-1 font-mono text-white/30">{{ lid }}</span>
+            {%- endif %}
+          </li>
+          {%- endfor %}
+        </ol>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+
+  {#- Výpis lekcí / stránek sekce. -#}
+  {%- set group_by = section.extra.group_by | default(value="") %}
+  {%- if group_by == "level" %}
+  {%- for lvl in learning_data.levels | sort(attribute="order") %}
+  {%- set lessons = [__i for __i in section.pages if __i.extra.level == lvl.id] %}
+  {%- if lessons | length > 0 %}
+  <section id="{{ lvl.id }}" aria-labelledby="{{ lvl.id }}-heading" class="mb-12">
+    <h2 id="{{ lvl.id }}-heading" class="mb-1 flex flex-wrap items-center gap-2 text-lg text-white">
+      {{ <atoms_badge label={lvl.code} title="Kód úrovně" tone="accent" /> }}
+      <span>{{ lvl.label }}</span>
+    </h2>
+    <p class="mb-5 text-sm leading-relaxed text-white/55">{{ lvl.lead }}</p>
+    <ul class="grid gap-4 sm:grid-cols-2">
+      {%- for l in lessons %}
+      {{ <learning_lesson_card page={l} learning={learning_data} /> }}
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+  {%- endfor %}
+
+  {%- elif group_by == "category" %}
+  {%- for cat in learning_data.kb_categories | sort(attribute="order") %}
+  {%- set entries = [__i for __i in section.pages if __i.extra.category == cat.id] %}
+  <section id="{{ cat.id }}" aria-labelledby="{{ cat.id }}-heading" class="mb-12">
+    <h2 id="{{ cat.id }}-heading" class="mb-1 flex items-center gap-2 text-lg text-white">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-white/65" aria-hidden="true"><path d="{{ cat.icon }}"/></svg>
+      <span>{{ cat.label }}</span>
+    </h2>
+    <p class="mb-5 text-sm leading-relaxed text-white/55">{{ cat.lead }}</p>
+    {%- if entries | length > 0 %}
+    <ul class="grid gap-4 sm:grid-cols-2">
+      {%- for e in entries %}
+      {{ <learning_lesson_card page={e} learning={learning_data} /> }}
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+    {#- Kategorie, jejíž obsah vlastní jiná část webu, nemá vlastní stránky
+        a je to v pořádku: příručka pro ni dělá rozcestník, ne druhou kopii. -#}
+    {%- if cat.canonical_elsewhere | default(value="") %}
+    <p class="mt-3 text-sm">
+      <a href="{{ get_url(path=cat.canonical_elsewhere) | safe }}" class="text-[#f3e5c0] underline underline-offset-4">Kanonické znění je jinde — otevřít</a>
+    </p>
+    {%- elif entries | length == 0 %}
+    {{ <ui_empty_state message="Do téhle kategorie zatím nepatří žádná stránka." /> }}
+    {%- endif %}
+  </section>
+  {%- endfor %}
+
+  {%- else %}
+  {%- if section.pages | length > 0 %}
+  <ul class="grid gap-4 sm:grid-cols-2">
+    {%- for p in section.pages %}
+    {{ <learning_lesson_card page={p} learning={learning_data} /> }}
+    {%- endfor %}
+  </ul>
+  {%- else %}
+  {{ <ui_empty_state message="Tahle sekce zatím nemá žádnou stránku." /> }}
+  {%- endif %}
+  {%- endif %}
+
+  {%- if section.extra.footer_link | default(value="") %}
+  <nav aria-label="Kam dál" class="mt-12 border-t border-white/10 pt-6">
+    <a href="{{ get_url(path=section.extra.footer_link) | safe }}" class="group flex items-center justify-between gap-4 rounded-xl border border-white/15 p-5 no-underline hover:border-[#f3e5c0]/40">
+      <span class="min-w-0">
+        <span class="block text-xs uppercase tracking-wide text-white/65">Kam dál</span>
+        <span class="block truncate text-base text-[#f3e5c0]">{{ section.extra.footer_label | default(value="Pokračovat") }}</span>
+      </span>
+      <span class="shrink-0 text-white/65 transition-transform group-hover:translate-x-1" aria-hidden="true">→</span>
+    </a>
+  </nav>
+  {%- endif %}
+</main>
+{% endblock content %}

@@ -1,7 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
-{% import "macros/table.html" as table %}
-{% import "macros/views.html" as views %}
 
 {% block content %}
 <main class="mx-auto max-w-6xl px-6 py-12 text-white">
@@ -9,36 +6,40 @@
       matter section.pages — content adaptéry jsou generované. -#}
   {% set dossier_slug = section.extra.dossier %}
   {% set idx = load_data(path="data/" ~ section.extra.view_model) %}
-  {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
+  {{ <ui_page_header title={section.title} description={section.description} breadcrumb_items={[
     "Dossier::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
     "Registr zdrojů",
-  ]) }}
+  ]} /> }}
 
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
   {% set_global evidentiary_count = 0 %}
-  {% set_global named_families = [] %}
+  {#- See the note in dossier-evidence.html: distinct values are tracked as a
+      "|"-fenced string plus a counter. -#}
+  {% set_global named_families = "|" %}
+  {% set_global named_families_count = 0 %}
   {% set_global singleton_count = 0 %}
   {% for p in idx.rows %}
     {% if p.claims and p.claims | length > 0 %}
       {% set_global evidentiary_count = evidentiary_count + 1 %}
     {% endif %}
     {% if p.sourceFamily %}
-      {% if p.sourceFamily not in named_families %}
-        {% set_global named_families = named_families | concat(with=[p.sourceFamily]) %}
+      {% if "|" ~ p.sourceFamily ~ "|" not in named_families %}
+        {% set_global named_families = named_families ~ p.sourceFamily ~ "|" %}
+        {% set_global named_families_count = named_families_count + 1 %}
       {% endif %}
     {% else %}
       {% set_global singleton_count = singleton_count + 1 %}
     {% endif %}
   {% endfor %}
-  {% set_global named_families_len = named_families | length %}
+  {% set_global named_families_len = named_families_count %}
   {% set_global family_count = singleton_count + named_families_len %}
 
   <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-    {{ ui::stat_tile(value=idx.rows | length, label="Zdrojů celkem") }}
-    {{ ui::stat_tile(value=family_count, label="Zdrojových rodin") }}
-    {{ ui::stat_tile(value=evidentiary_count, label="Podkládá tvrzení") }}
-    {{ ui::stat_tile(value=idx.rows | length - evidentiary_count, label="Kontext / názor") }}
+    {{ <ui_stat_tile value={idx.rows | length} label="Zdrojů celkem" /> }}
+    {{ <ui_stat_tile value={family_count} label="Zdrojových rodin" /> }}
+    {{ <ui_stat_tile value={evidentiary_count} label="Podkládá tvrzení" /> }}
+    {{ <ui_stat_tile value={idx.rows | length - evidentiary_count} label="Kontext / názor" /> }}
   </div>
 
   {#- Registr zdrojů přešel z karetní mřížky na hustou tabulku přes sdílené
@@ -47,28 +48,10 @@
       takže se dvě implementace nemůžou rozejít. Oproti kartám navíc
       přibylo řazení a sdílitelná adresa; počet zobrazených nese badge
       v hlavičce tabulky, ne samostatná dlaždice. -#}
-  {{ views::open(
-    id="sources-registry",
-    title="Registr zdrojů",
-    count=idx.rows | length,
-    default_view="table",
-    search_label="Hledat ve zdrojích",
-    sort_options=["id::ID", "outlet::Vydavatel", "type::Typ", "claims::Podkládá tvrzení"],
-    columns=["ID", "Vydavatel", "Typ", "Rodina", "Popis", "Podkládá"],
-    export_name="zdroje",
-    select_facets=["type::Typ zdroje", "family::Zdrojová rodina"]) }}
+  {% <views_section id="sources-registry" title="Registr zdrojů" count={idx.rows | length} default_view="table" search_label="Hledat ve zdrojích" sort_options={["id::ID", "outlet::Vydavatel", "type::Typ", "claims::Podkládá tvrzení"]} columns={["ID", "Vydavatel", "Typ", "Rodina", "Popis", "Podkládá"]} export_name="zdroje" select_facets={["type::Typ zdroje", "family::Zdrojová rodina"]} empty_text="Žádný zdroj neodpovídá zadanému filtru." footer="Zdroje se stejnou rodinou nejsou dvě nezávislá doložení, ale jedno."> %}
 
-  {{ views::projection(name="table", default_view="table") }}
-  {{ table::advanced_table(
-    id="sources-registry-table",
-    caption="Registr zdrojů",
-    record_type="source",
-    count=idx.rows | length,
-    columns=["ID", "Vydavatel", "Typ", "Rodina", "Popis", "Podkládá"],
-    sort_keys=["id", "outlet", "type", "family", "", "claims"],
-    searchable=true,
-    url_state=true,
-    export_name="zdroje") }}
+  {% <views_projection name="table" default_view="table"> %}
+  {% <table_advanced_table id="sources-registry-table" caption="Registr zdrojů" record_type="source" count={idx.rows | length} columns={["ID", "Vydavatel", "Typ", "Rodina", "Popis", "Podkládá"]} sort_keys={["id", "outlet", "type", "family", "", "claims"]} searchable={true} url_state={true} export_name="zdroje" footer="Řazení a filtr se promítají do adresy — výřez dat jde poslat odkazem." empty_text="Žádný zdroj neodpovídá zadanému filtru."> %}
     {% for p in idx.rows %}
     <tr data-record-key="{{ p.identifier }}" data-type="{{ p.sourceType }}" data-family="{{ p.sourceFamily | default(value='') }}" id="sources-registry-table-{{ p.identifier | lower }}">
       <td class="whitespace-nowrap p-3 align-top">
@@ -98,12 +81,10 @@
       </td>
     </tr>
     {% endfor %}
-  {{ table::advanced_table_end(
-    footer="Řazení a filtr se promítají do adresy — výřez dat jde poslat odkazem.",
-    empty_text="Žádný zdroj neodpovídá zadanému filtru.") }}
-  {{ views::projection_end() }}
+  {% </table_advanced_table> %}
+  {% </views_projection> %}
 
-  {{ views::projection(name="list", default_view="table") }}
+  {% <views_projection name="list" default_view="table"> %}
     <ul class="divide-y divide-white/10 overflow-hidden rounded-lg border border-white/10 bg-white/[0.03]">
       {%- for p in idx.rows %}
       <li data-record-key="{{ p.identifier }}" data-type="{{ p.sourceType }}" data-family="{{ p.sourceFamily | default(value='') }}" data-facet="{{ p.sourceType }}" id="sources-registry-list-{{ p.identifier | lower }}" class="p-3">
@@ -117,9 +98,9 @@
       </li>
       {%- endfor %}
     </ul>
-  {{ views::projection_end() }}
+  {% </views_projection> %}
 
-  {{ views::projection(name="grid", default_view="table") }}
+  {% <views_projection name="grid" default_view="table"> %}
     <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
       {%- for p in idx.rows %}
       <article data-record-key="{{ p.identifier }}" data-type="{{ p.sourceType }}" data-family="{{ p.sourceFamily | default(value='') }}" data-facet="{{ p.sourceType }}" id="sources-registry-grid-{{ p.identifier | lower }}"
@@ -133,11 +114,11 @@
       </article>
       {%- endfor %}
     </div>
-  {{ views::projection_end() }}
+  {% </views_projection> %}
 
-  {{ views::close(empty_text="Žádný zdroj neodpovídá zadanému filtru.", footer="Zdroje se stejnou rodinou nejsou dvě nezávislá doložení, ale jedno.") }}
+  {% </views_section> %}
 
 
-  {{ ui::back_link_footer(url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"), label="Zpět na celý dossier") }}
+  {{ <ui_back_link_footer url={get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md")} label="Zpět na celý dossier" /> }}
 </main>
 {% endblock content %}

@@ -1,6 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
-{% import "partials/dossier-directory.html" as dd %}
 
 {#- No metadata blocks here on purpose. Title, description, canonical, Open
     Graph and JSON-LD all come from front matter via base.html. -#}
@@ -93,6 +91,18 @@
           Zdrojový kód a data
         </a>
       </div>
+
+      {#- Vstup pro člověka, který o projektu nikdy neslyšel. Záměrně pod
+          hlavními tlačítky a bez vlastního bloku: kdo web zná, přejde ho
+          očima; kdo ne, má tady jediný odkaz, kterým může začít. Text
+          nesmí předpokládat znalost slova „dossier“ ani „epistemický“. -#}
+      <p class="mt-4 text-sm text-white/70">
+        Jste tu poprvé?
+        <a
+          href="{{ get_url(path='@/start/_index.md') | safe }}"
+          class="ml-1 font-semibold text-[#f3e5c0] underline underline-offset-4 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d4af37]"
+        >Pochopte systém za pět minut</a>.
+      </p>
     </div>
 
     <a
@@ -159,7 +169,7 @@
   <section aria-labelledby="what-is-heading" class="landing-section py-12 sm:py-16 lg:py-20">
     <h2 id="what-is-heading" class="text-center text-2xl font-bold text-white sm:text-3xl">Co vomaste.cz je — a co není</h2>
     <div class="mt-10 grid gap-6 sm:grid-cols-2">
-      {%- for c in concepts | filter(attribute="extra.group", value="identita") %}
+      {%- for c in [__i for __i in concepts if __i.extra.group == "identita"] %}
       <a href="{{ c.permalink | safe }}" class="group block rounded-xl border border-white/10 bg-white/[0.03] p-6 no-underline transition-colors hover:border-white/25 hover:bg-white/[0.05]">
         <h3 class="flex items-center gap-2 font-semibold {% if c.extra.tile_accent %}text-[#f3e5c0]{% else %}text-white/70{% endif %}">
           {{ c.extra.tile_title | default(value=c.title) }}
@@ -181,7 +191,7 @@
     <p class="mx-auto mt-3 max-w-xl text-center text-white/60">Každý dossier na tomto webu stojí na stejné datové kostře — a každý záznam má vlastní stránku, ne jen řádek v tabulce.</p>
 
     <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-      {%- for c in concepts | filter(attribute="extra.group", value="model") %}
+      {%- for c in [__i for __i in concepts if __i.extra.group == "model"] %}
       <a href="{{ c.permalink | safe }}" class="group block rounded-xl border border-white/10 bg-white/[0.03] p-6 no-underline transition-colors hover:border-white/25 hover:bg-white/[0.05]">
         <span class="font-mono text-xs text-[#f3e5c0]">{{ c.extra.code }}</span>
         <h3 class="mt-1 flex items-center gap-2 font-semibold text-white">
@@ -213,7 +223,7 @@
     <h3 class="mt-14 text-center text-lg font-semibold text-white">Stavy tvrzení</h3>
     <p class="mx-auto mt-2 max-w-xl text-center text-sm text-white/50">Každý stav má vlastní stránku s tím, co přesně tvrdí a co netvrdí.</p>
     <div class="legend mt-4 justify-center">
-      {%- for c in concepts | filter(attribute="extra.group", value="stav") %}
+      {%- for c in [__i for __i in concepts if __i.extra.group == "stav"] %}
       <a href="{{ c.permalink | safe }}" class="no-underline hover:text-white">
         <span class="status-badge {{ c.extra.badge_class }}">{{ c.extra.badge_label }}</span> {{ c.extra.tile_summary | safe }}
       </a>
@@ -231,16 +241,16 @@
       takže po každém rešeršním kole odpovídají registrům. Dlaždice vedou na
       stránku toho stavu, ne do registru jednoho dossieru — číslo je součet
       přes celý web. -#}
-  {% set evidence_group = concepts | filter(attribute="extra.group", value="evidence") %}
+  {% set evidence_group = [__i for __i in concepts if __i.extra.group == "evidence"] %}
   <section id="dukazni-standard" aria-labelledby="evidence-heading" class="landing-section py-12 sm:py-16 lg:py-20">
     <h2 id="evidence-heading" class="text-center text-2xl font-bold text-white sm:text-3xl">Důkazní standard</h2>
     <p class="mx-auto mt-3 max-w-2xl text-center text-white/60">„Psaly o tom tři weby" a „potvrdily to tři nezávislé redakce" vypadají skoro stejně a znamenají něco jiného. Když tři redakce přetisknou tutéž agenturní zprávu, je to jedno doložení na třech adresách — a tenhle web to musí umět odlišit, jinak jeho odznaky nic neslibují.</p>
 
     <div class="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4">
-      {{ ui::stat_tile(value=ev.claimsByStatus.corroborated, label="Ověřeno více zdroji", url=get_url(path="@/koncepty/stav-overeno-vice-zdroji.md")) }}
-      {{ ui::stat_tile(value=ev.claimsByStatus.single, label="1 zdroj", url=get_url(path="@/koncepty/stav-jeden-zdroj.md")) }}
-      {{ ui::stat_tile(value=ev.claimsByStatus.quote, label="Citace", url=get_url(path="@/koncepty/stav-citace.md")) }}
-      {{ ui::stat_tile(value=ev.claimsByStatus.disputed, label="Sporné", url=get_url(path="@/koncepty/stav-sporne.md")) }}
+      {{ <ui_stat_tile value={ev.claimsByStatus.corroborated} label="Ověřeno více zdroji" url={get_url(path="@/koncepty/stav-overeno-vice-zdroji.md")} /> }}
+      {{ <ui_stat_tile value={ev.claimsByStatus.single} label="1 zdroj" url={get_url(path="@/koncepty/stav-jeden-zdroj.md")} /> }}
+      {{ <ui_stat_tile value={ev.claimsByStatus.quote} label="Citace" url={get_url(path="@/koncepty/stav-citace.md")} /> }}
+      {{ <ui_stat_tile value={ev.claimsByStatus.disputed} label="Sporné" url={get_url(path="@/koncepty/stav-sporne.md")} /> }}
     </div>
     <p class="mx-auto mt-4 max-w-2xl text-center text-sm text-white/50">
       Z {{ ev.claims }} tvrzení jich {{ ev.corroboratedPercent }} % nese nezávislé potvrzení a {{ ev.singlePercent }} % stojí přiznaně na jediném hlase. Podíl se nedá vylepšit přeznačením — jen dohledáním dalšího zdroje. Zdrojů je {{ ev.sources }} od {{ ev.outlets }} vydavatelů, {{ ev.sourceFamilies }} zdrojových rodin je deklarovaných jako převzetí téhož materiálu.
@@ -329,7 +339,7 @@
     </div>
 
     <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      {%- for e in catalog.entries | filter(attribute="kind", value="primary-registry") %}
+      {%- for e in [__i for __i in catalog.entries if __i.kind == "primary-registry"] %}
       <a href="{{ config.base_url }}{{ e.route }}" class="group block rounded-xl border border-white/10 bg-white/[0.03] p-6 no-underline transition-colors hover:border-white/25 hover:bg-white/[0.05]">
         <span class="font-mono text-xs text-[#f3e5c0]">primární registr</span>
         <h3 class="mt-1 flex items-center gap-2 font-semibold text-white">
@@ -363,13 +373,7 @@
   {%- set directory_items = load_data(path="static/data/dossiers.json") -%}
   {%- if directory_items | length > 0 %}
   <section class="landing-section py-12 sm:py-16 lg:py-20">
-    {{ dd::directory(
-      id="home-dossiers",
-      items=directory_items,
-      title="Aktuálně dostupné dossiery",
-      default_view="list",
-      url_state=false,
-      show_filters=false) }}
+    {{ <dd_directory id="home-dossiers" items={directory_items} title="Aktuálně dostupné dossiery" default_view="list" url_state={false} show_filters={false} /> }}
     <p class="mt-4 text-center text-sm">
       <a href="{{ get_url(path='@/dossiers/_index.md') | safe }}" class="text-[#f3e5c0] underline decoration-white/30 underline-offset-2">Celý adresář s filtrováním a exportem →</a>
     </p>
@@ -394,14 +398,14 @@
         neexistují, takže se odkazuje na adresář dossierů, odkud se do nich
         vstupuje; entity a vztahy svůj celowebový pohled mají. -#}
     <div data-dataset-tiles class="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-      {{ ui::stat_tile(value=tot_claims, label="Tvrzení", url=get_url(path="@/dossiers/_index.md")) }}
-      {{ ui::stat_tile(value=tot_sources, label="Zdrojů", url=get_url(path="@/dossiers/_index.md")) }}
-      {{ ui::stat_tile(value=tot_cases, label="Kauz", url=get_url(path="@/dossiers/_index.md")) }}
+      {{ <ui_stat_tile value={tot_claims} label="Tvrzení" url={get_url(path="@/dossiers/_index.md")} /> }}
+      {{ <ui_stat_tile value={tot_sources} label="Zdrojů" url={get_url(path="@/dossiers/_index.md")} /> }}
+      {{ <ui_stat_tile value={tot_cases} label="Kauz" url={get_url(path="@/dossiers/_index.md")} /> }}
       {#- „Otevřených" doslova: evidence.openGaps počítá jen neuzavřené
           mezery, zatímco canonicalTotals.gaps je celý registr. -#}
-      {{ ui::stat_tile(value=ev.openGaps, label="Otevřených mezer", url=get_url(path="@/dossiers/_index.md")) }}
-      {{ ui::stat_tile(value=tot_entities, label="Entit", url=get_url(path="@/entities/_index.md")) }}
-      {{ ui::stat_tile(value=tot_relations, label="Vztahů", url=get_url(path="@/map/_index.md")) }}
+      {{ <ui_stat_tile value={ev.openGaps} label="Otevřených mezer" url={get_url(path="@/dossiers/_index.md")} /> }}
+      {{ <ui_stat_tile value={tot_entities} label="Entit" url={get_url(path="@/entities/_index.md")} /> }}
+      {{ <ui_stat_tile value={tot_relations} label="Vztahů" url={get_url(path="@/map/_index.md")} /> }}
     </div>
     {#- Dlaždice „Entit" má sémantiku členství (entita ve víc dossierech se
         počítá vícekrát) — bez téhle věty by nesouhlasila s počtem řádků
@@ -516,7 +520,7 @@
   <section aria-labelledby="open-heading" class="landing-section py-12 sm:py-16 lg:py-20">
     <h2 id="open-heading" class="text-center text-2xl font-bold text-white sm:text-3xl">Otevřený systém, ne černá skříňka</h2>
     <div class="mt-10 grid gap-6 sm:grid-cols-2">
-      {%- for c in concepts | filter(attribute="extra.group", value="otevrenost") %}
+      {%- for c in [__i for __i in concepts if __i.extra.group == "otevrenost"] %}
       <a href="{{ c.permalink | safe }}" class="group block rounded-xl border p-6 no-underline transition-colors {% if c.extra.accent %}border-[#d4af37]/30 bg-[#d4af37]/[0.05] hover:border-[#d4af37]/60{% else %}border-white/10 bg-white/[0.03] hover:border-white/25 hover:bg-white/[0.05]{% endif %}">
         <h3 class="flex items-center gap-2 font-semibold {% if c.extra.accent %}text-[#f3e5c0]{% else %}text-white{% endif %}">
           {{ c.extra.tile_title | default(value=c.title) }}
@@ -537,7 +541,7 @@
     <p class="mx-auto mt-3 max-w-xl text-center text-white/60">Pravidla, která platí pro každé tvrzení na této stránce — každé i s tím, kde se obvykle porušují.</p>
 
     <div class="mt-12 grid gap-6 sm:grid-cols-3">
-      {%- for c in concepts | filter(attribute="extra.group", value="metodika") %}
+      {%- for c in [__i for __i in concepts if __i.extra.group == "metodika"] %}
       <a href="{{ c.permalink | safe }}" class="group block rounded-xl border border-white/10 bg-white/[0.03] p-6 no-underline transition-colors hover:border-white/25 hover:bg-white/[0.05]">
         <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-[#f3e5c0]/10 text-[#f3e5c0]" aria-hidden="true">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="{{ c.extra.icon }}"/></svg>
@@ -556,7 +560,7 @@
     <h2 id="intake-cta-heading" class="text-center text-2xl font-bold text-white sm:text-3xl">Chybí tu téma, které by tu podle vás mělo být?</h2>
     <p class="mx-auto mt-3 max-w-xl text-center text-white/60">Nemusíte forkovat celý projekt — veřejný podnět navrhne nový dossier, entitu nebo téma k prověření.</p>
     <div class="mx-auto mt-8 max-w-xl">
-      {{ ui::intake_cta(heading="Navrhnout dossier, entitu nebo téma", lead="Popíšete, co by mělo být prověřeno, a proč je to ve veřejném zájmu. O rozsahu pak rozhoduje výhradně vlastník projektu.") }}
+      {{ <ui_intake_cta heading="Navrhnout dossier, entitu nebo téma" lead="Popíšete, co by mělo být prověřeno, a proč je to ve veřejném zájmu. O rozsahu pak rozhoduje výhradně vlastník projektu." issue_form_url={config.extra.intake_issue_form_url} /> }}
     </div>
   </section>
 
@@ -640,12 +644,14 @@
           {#- Newest date across each canonical dossier record and its
               append-only update log. A dossier's `updated` date may advance
               before a matching narrative update is added. -#}
-          {%- set_global update_dates = [] %}
+          {#- Latest of: every dossier's `updated`, and every entry in its
+              append-only update log. Dates are ISO, so a lexicographic max is
+              the same answer the previous `sort | last` gave. -#}
+          {%- set_global last_update = "" %}
           {%- for cd in canonical_dossiers %}
-            {%- set_global update_dates = update_dates | concat(with=cd.updated) %}
-            {%- for u in cd.updates %}{% set_global update_dates = update_dates | concat(with=u.date) %}{% endfor %}
+            {%- if cd.updated > last_update %}{% set_global last_update = cd.updated %}{% endif %}
+            {%- for u in cd.updates %}{% if u.date > last_update %}{% set_global last_update = u.date %}{% endif %}{% endfor %}
           {%- endfor %}
-          {%- set last_update = update_dates | sort | last | default(value="") %}
           {%- if last_update %}
           <p class="mt-4 text-xs text-white/55">Poslední aktualizace obsahu: <span class="whitespace-nowrap">{{ last_update }}</span></p>
           {%- endif %}

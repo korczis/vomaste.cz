@@ -1,6 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
-{% import "macros/table.html" as table %}
 
 {% block content %}
 <main class="mx-auto max-w-2xl px-6 py-12 text-white">
@@ -9,23 +7,24 @@
       provenience je kanonická (entity.provenance) a resolve lokálních id
       per dossier je předpočítaný ve view.provenanceResolved. -#}
   {% set view = load_data(path="data/" ~ page.extra.view_model) %}
-  {{ ui::page_header(title=page.title, breadcrumb_items=[
+  {{ <ui_page_header title={page.title} breadcrumb_items={[
     "Domů::" ~ get_url(path="@/_index.md"),
     "Registr entit::" ~ get_url(path="@/entities/_index.md"),
     view.entityId,
-  ]) }}
+  ]} /> }}
 
   {#- Obrazová dokumentace: 1..N položek z kanonického `media`, každá s vlastní
       licencí a odkazem na zdroj (ui::media_figure). Portrét stojí vedle
       identifikačního řádku, ostatní jdou do galerie níž — a když entita žádné
       médium nemá, nevykreslí se nic; prázdný rámeček by byl přesně ten
       placeholder, který sem nepatří. -#}
-  {%- set portraits = view.media | default(value=[]) | filter(attribute="role", value="portrait") -%}
-  {%- set logos = view.media | default(value=[]) | filter(attribute="role", value="logo") -%}
-  {%- set lead_media = portraits | concat(with=logos) -%}
+  {#- Portraits first, then logos: the order is the priority of what leads. -#}
+  {%- set portraits = [m for m in view.media | default(value=[]) if m.role == "portrait"] -%}
+  {%- set logos = [m for m in view.media | default(value=[]) if m.role == "logo"] -%}
+  {%- set lead_media = [m for m in view.media | default(value=[]) if m.role == "portrait" or m.role == "logo"] -%}
   {%- if lead_media | length > 0 %}
   <div class="mb-6 sm:float-right sm:ml-6 sm:w-56">
-    {{ ui::media_figure(item=lead_media | first, sizes="w-full", eager=true) }}
+    {{ <ui_media_figure item={lead_media | first} sizes="w-full" eager={true} /> }}
   </div>
   {%- endif %}
 
@@ -56,7 +55,7 @@
   </div>
   {% endif %}
 
-  {{ table::advanced_table(id="entity-meta", caption="Metadata entity " ~ view.entityId, extra_class="mb-8") }}
+  {% <table_advanced_table id="entity-meta" caption={"Metadata entity " ~ view.entityId} extra_class="mb-8"> %}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Vyskytuje se v</th><td class="p-3">
         {#- Titulek chipu je prezentační title stránky dossieru (adaptér),
             ne kanonický title — u agregátu se liší („Dossier — …"). -#}
@@ -91,7 +90,7 @@
         {% endfor %}
       </td></tr>
       {% endif %}
-  {{ table::advanced_table_end() }}
+  {% </table_advanced_table> %}
 
   {%- if page.content | striptags | trim %}
   <article class="dossier-prose mb-8">
@@ -121,14 +120,8 @@
   {#- Vztahy per dossier z view modelu (kanonický graf): odchozí, pak
       příchozí, v prezentačním pořadí registru vztahů. -#}
   {% for d in view.dossiers %}
-  {% set_global outgoing = [] %}
-  {% set_global incoming = [] %}
-  {% for r in view.relations %}
-    {% if r.dossier == d.slug %}
-      {% if r.direction == "outgoing" %}{% set_global outgoing = outgoing | concat(with=[r]) %}{% endif %}
-      {% if r.direction == "incoming" %}{% set_global incoming = incoming | concat(with=[r]) %}{% endif %}
-    {% endif %}
-  {% endfor %}
+  {% set outgoing = [r for r in view.relations if r.dossier == d.slug and r.direction == "outgoing"] %}
+  {% set incoming = [r for r in view.relations if r.dossier == d.slug and r.direction == "incoming"] %}
 
   {% if outgoing | length > 0 or incoming | length > 0 %}
   {% set dossier_page = get_section(path="dossiers/" ~ d.slug ~ "/_index.md") %}
@@ -148,9 +141,9 @@
 
   {#- Zbylá média (fotky z akcí apod.) — galerie se vykreslí jen když nějaká
       jsou; portrét/logo už je v hlavičce, takže se tu neopakují. -#}
-  {%- set gallery = view.media | default(value=[]) | filter(attribute="role", value="photo") -%}
-  {{ ui::media_gallery(items=gallery, heading="Obrazová dokumentace") }}
+  {%- set gallery = [__i for __i in view.media | default(value=[]) if __i.role == "photo"] -%}
+  {{ <ui_media_gallery items={gallery} heading="Obrazová dokumentace" /> }}
 
-  {{ ui::back_link_footer(url=get_url(path="@/entities/_index.md"), label="Zpět na registr entit") }}
+  {{ <ui_back_link_footer url={get_url(path="@/entities/_index.md")} label="Zpět na registr entit" /> }}
 </main>
 {% endblock content %}

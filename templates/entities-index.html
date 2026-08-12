@@ -1,7 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
-{% import "macros/views.html" as views %}
-{% import "macros/table.html" as table %}
 
 {#-
   Registr entit jako průzkumník, ne jako plochá zeď dlaždic.
@@ -31,21 +28,21 @@
       zůstává prázdný i teď. -#}
   {% set idx = load_data(path="data/generated/views/entities-index.json") %}
   {% if section.extra.dossier %}{% set rows = [] %}{% else %}{% set rows = idx.rows %}{% endif %}
-  {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
+  {{ <ui_page_header title={section.title} description={section.description} breadcrumb_items={[
     "Domů::" ~ get_url(path="@/_index.md"),
     "Registr entit",
-  ]) }}
+  ]} /> }}
 
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
   {%- set dossier_registry = idx.dossierRegistry -%}
-  {%- set subjects = rows | filter(attribute="publicationRole", value="subject") -%}
-  {%- set contexts = rows | filter(attribute="publicationRole", value="context") -%}
+  {%- set subjects = [__i for __i in rows if __i.publicationRole == "subject"] -%}
+  {%- set contexts = [__i for __i in rows if __i.publicationRole == "context"] -%}
   <div class="mb-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
-    {{ ui::stat_tile(value=rows | length, label="Entit celkem") }}
-    {{ ui::stat_tile(value=subjects | length, label="Subjekty dossierů") }}
-    {{ ui::stat_tile(value=contexts | length, label="Kontextové entity") }}
-    {{ ui::stat_tile(value=dossier_registry | length, label="Dossierů v registru", url=get_url(path="@/dossiers/_index.md")) }}
+    {{ <ui_stat_tile value={rows | length} label="Entit celkem" /> }}
+    {{ <ui_stat_tile value={subjects | length} label="Subjekty dossierů" /> }}
+    {{ <ui_stat_tile value={contexts | length} label="Kontextové entity" /> }}
+    {{ <ui_stat_tile value={dossier_registry | length} label="Dossierů v registru" url={get_url(path="@/dossiers/_index.md")} /> }}
   </div>
 
   {#- Popisky skupin: dossiery z registru dossierů, typy entit ze slovníku
@@ -80,24 +77,10 @@
 
       data-jsonld-id zůstává na každé položce, takže co je vidět, je
       dohledatelné jako uzel v exportu. -#}
-  {{ views::open(
-    id="entities-registry",
-    title="Registr entit",
-    count=rows | length,
-    default_view="table",
-    search_label="Hledat entitu",
-    sort_options=["name::Název", "type::Typ", "role::Role", "dossiers::Počet dossierů"],
-    columns=["ID", "Název", "Typ", "Role", "Dossierů"],
-    export_name="entity",
-    select_facets=["entitytype::Typ entity", "role::Role v publikaci"]) }}
+  {% <views_section id="entities-registry" title="Registr entit" count={rows | length} default_view="table" search_label="Hledat entitu" sort_options={["name::Název", "type::Typ", "role::Role", "dossiers::Počet dossierů"]} columns={["ID", "Název", "Typ", "Role", "Dossierů"]} export_name="entity" select_facets={["entitytype::Typ entity", "role::Role v publikaci"]} empty_text="Žádná entita neodpovídá zadanému filtru."> %}
 
-  {{ views::projection(name="table", default_view="table") }}
-    {{ table::advanced_table(
-      id="entities-registry-table",
-      caption="Registr entit",
-      record_type="entity",
-      columns=["ID", "Název", "Typ", "Role", "Dossierů"],
-      sort_keys=["id", "name", "type", "role", "dossiers"]) }}
+  {% <views_projection name="table" default_view="table"> %}
+    {% <table_advanced_table id="entities-registry-table" caption="Registr entit" record_type="entity" columns={["ID", "Název", "Typ", "Role", "Dossierů"]} sort_keys={["id", "name", "type", "role", "dossiers"]}> %}
       {%- for p in rows %}
       <tr data-record-key="{{ p.entityId }}" data-entitytype="{{ p.entityType }}" data-role="{{ p.publicationRole }}"
         data-jsonld-id="{{ config.base_url }}{{ p.route }}#entity" id="entities-registry-table-{{ p.entityId | lower }}">
@@ -119,10 +102,10 @@
         <td class="p-3 align-top tabular-nums text-white/70" data-sort-value="{{ p.dossiers | length }}">{{ p.dossiers | length }}</td>
       </tr>
       {%- endfor %}
-    {{ table::advanced_table_end() }}
-  {{ views::projection_end() }}
+    {% </table_advanced_table> %}
+  {% </views_projection> %}
 
-  {{ views::projection(name="list", default_view="table") }}
+  {% <views_projection name="list" default_view="table"> %}
     <ul class="divide-y divide-white/10 overflow-hidden rounded-lg border border-white/10 bg-white/[0.03]">
       {%- for p in rows %}
       <li data-record-key="{{ p.entityId }}" data-entitytype="{{ p.entityType }}" data-role="{{ p.publicationRole }}"
@@ -136,9 +119,9 @@
       </li>
       {%- endfor %}
     </ul>
-  {{ views::projection_end() }}
+  {% </views_projection> %}
 
-  {{ views::projection(name="grid", default_view="table") }}
+  {% <views_projection name="grid" default_view="table"> %}
     <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
       {%- for p in rows %}
       <article data-record-key="{{ p.entityId }}" data-entitytype="{{ p.entityType }}" data-role="{{ p.publicationRole }}"
@@ -153,10 +136,10 @@
       </article>
       {%- endfor %}
     </div>
-  {{ views::projection_end() }}
+  {% </views_projection> %}
 
-  {{ views::close(empty_text="Žádná entita neodpovídá zadanému filtru.") }}
+  {% </views_section> %}
 
-{{ ui::back_link_footer(url=get_url(path="@/_index.md"), label="Zpět na hlavní stránku") }}
+{{ <ui_back_link_footer url={get_url(path="@/_index.md")} label="Zpět na hlavní stránku" /> }}
 </main>
 {% endblock content %}

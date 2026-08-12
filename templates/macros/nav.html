@@ -12,7 +12,7 @@
     and resolves item.countMetric itself, so desktop and mobile cannot end up
     resolving the same item differently — there is one lookup, in one place.
     Pass metrics={} to render without badges. -#}
-{%- macro nav_link(item, depth, active_id, label="", metrics="") -%}
+{% component nav_nav_link(item, depth, active_id, label="", metrics={}) -%}
 {%- set is_active = item.id == active_id -%}
 {%- set pad = "px-4" -%}
 {%- set size = 20 -%}
@@ -77,16 +77,16 @@
   <span aria-hidden="true"></span>
   {%- endif %}
 </a>
-{%- endmacro nav_link -%}
+{%- endcomponent %}
 
 {#- Standalone badge for rows that are not rendered through nav_link — a
     dossier with an expandable subtree is a <summary>, not an <a>, so its
     number has to be emitted there. Same manifest, same lookup, so the two
     render paths cannot disagree. -#}
-{%- macro dossier_count(metrics, slug) -%}
+{% component nav_dossier_count(metrics, slug) -%}
 {%- if metrics and metrics.perDossier is defined -%}
 {%- if metrics.perDossier[slug] is defined -%}
 <span class="nav-count-badge" data-metric-id="claims.by_dossier" data-dossier="{{ slug }}" data-count="{{ metrics.perDossier[slug].claims }}" aria-hidden="true">{{ metrics.perDossier[slug].claims }}</span>
 {%- endif -%}
 {%- endif -%}
-{%- endmacro dossier_count -%}
+{%- endcomponent %}

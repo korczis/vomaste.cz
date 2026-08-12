@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{#- Jedna lekce vzdělávací vrstvy — Bootcamp i Akademie.
+
+    Jedna šablona pro obě sekce schválně: lekce se liší obsahem a hloubkou,
+    ne strukturou. Dvě téměř shodné šablony by znamenaly, že se přístupnostní
+    oprava nebo změna pořadí prvků musí udělat dvakrát — a jednou se
+    zapomene.
+
+    Struktura stránky je vždycky stejná, protože právě to dělá kurz kurzem:
+      1. kde jsem (drobečky + odznaky: id, úroveň, čas, audience)
+      2. co budu umět (cíle)
+      3. co si mám přečíst dřív (prerekvizity, jako nabídka ne jako zákaz)
+      4. samotná lekce (tělo v markdownu, prvky přes shortcodes)
+      5. kanonické znění pojmů (odkaz do /koncepty/ — ne druhá definice)
+      6. jedno další místo, kam jít
+
+    Všechna metadata jdou z front matter stránky a z `data/learning.toml`;
+    šablona sama nic o kurikulu neví, takže přidání lekce je jeden soubor. -#}
+
+{% block content %}
+{% set learning_data = load_data(path="data/learning.toml") %}
+{% set section_id = page.extra.section %}
+{% set section_meta = [__i for __i in learning_data.sections if __i.id == section_id] | first %}
+{% set parent = get_section(path=section_id ~ "/_index.md") %}
+
+<main class="mx-auto max-w-2xl px-6 py-12 text-white">
+  {{ <ui_page_header title={page.title} breadcrumb_items={[
+    "Domů::" ~ get_url(path="@/_index.md"),
+    section_meta.label ~ "::" ~ get_url(path=section_meta.route),
+    page.title,
+  ]} description={page.description} /> }}
+
+  {{ <learning_lesson_meta page={page} learning={learning_data} /> }}
+
+  {{ <learning_objectives items={page.extra.objectives | default(value=[])} /> }}
+
+  {{ <learning_prerequisites ids={page.extra.prerequisites | default(value=[])} lookup={parent.pages} /> }}
+
+  <article class="dossier-prose">
+    {{ page.content | safe }}
+  </article>
+
+  {{ <learning_related_kb paths={page.extra.related_kb | default(value=[])} /> }}
+
+  {%- if page.extra.next | default(value="") %}
+  {{ <learning_next_lesson id={page.extra.next} lookup={parent.pages} /> }}
+  {%- else %}
+  {#- Poslední lekce v řadě: místo mrtvého konce ukazuje, kam dál mimo
+      tuhle sekci. `next_route` je volný odkaz, ne lesson_id. -#}
+  {%- if page.extra.next_route | default(value="") %}
+  <nav aria-label="Kam dál" class="mt-12 border-t border-white/10 pt-6">
+    <a href="{{ get_url(path=page.extra.next_route) | safe }}" class="group flex items-center justify-between gap-4 rounded-xl border border-white/15 p-5 no-underline hover:border-[#f3e5c0]/40">
+      <span class="min-w-0">
+        <span class="block text-xs uppercase tracking-wide text-white/65">Kam dál</span>
+        <span class="block truncate text-base text-[#f3e5c0]">{{ page.extra.next_label | default(value="Pokračovat") }}</span>
+      </span>
+      <span class="shrink-0 text-white/65 transition-transform group-hover:translate-x-1" aria-hidden="true">→</span>
+    </a>
+  </nav>
+  {%- endif %}
+  {%- endif %}
+
+  {{ <ui_back_link_footer url={get_url(path=section_meta.route)} label={"Zpět na " ~ section_meta.label} /> }}
+</main>
+{% endblock content %}

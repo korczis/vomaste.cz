@@ -1,6 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
-{% import "macros/table.html" as table %}
 
 {% block content %}
 <main class="mx-auto max-w-2xl px-6 py-12 text-white">
@@ -10,11 +8,11 @@
   {% set view = load_data(path="data/" ~ page.extra.view_model) %}
   {% set record = view.record %}
   {% set dossier_slug = view.dossier %}
-  {{ ui::page_header(title=page.title, breadcrumb_items=[
+  {{ <ui_page_header title={page.title} breadcrumb_items={[
     "Dossier::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
     "Registr vztahů::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/relations/_index.md"),
     record.identifier,
-  ]) }}
+  ]} /> }}
 
   {% set source_entity = view.resolved.sourceEntity %}
   {% set target_entity = view.resolved.targetEntity %}
@@ -28,10 +26,10 @@
   </p>
 
   <p class="mb-6">
-    {{ ui::relation_status(status=record.status) }}
+    {{ <ui_relation_status status={record.status} /> }}
   </p>
 
-  {{ table::advanced_table(id="rel-meta", caption="Metadata vztahu " ~ record.identifier, extra_class="mb-8") }}
+  {% <table_advanced_table id="rel-meta" caption={"Metadata vztahu " ~ record.identifier} extra_class="mb-8"> %}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Typ vztahu</th><td class="p-3 font-mono text-xs">{{ record.relationType }}</td></tr>
       {% if view.resolved.claims %}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Tvrzení</th><td class="p-3">
@@ -47,7 +45,7 @@
         {% endfor %}
       </td></tr>
       {% endif %}
-  {{ table::advanced_table_end() }}
+  {% </table_advanced_table> %}
 
   {#- page.content JE kanonický markdown blok záznamu (vkládá ho generátor
       content adaptérů) — renderuje ho Zola, takže @/ odkazy fungují. -#}
@@ -55,6 +53,6 @@
     {{ page.content | safe }}
   </article>
 
-  {{ ui::back_link_footer(url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/relations/_index.md"), label="Zpět na registr vztahů") }}
+  {{ <ui_back_link_footer url={get_url(path="@/dossiers/" ~ dossier_slug ~ "/relations/_index.md")} label="Zpět na registr vztahů" /> }}
 </main>
 {% endblock content %}

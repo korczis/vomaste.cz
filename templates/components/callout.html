@@ -1,0 +1,16 @@
+{#- Blokový komponent: zvýrazněný odstavec uvnitř těla lekce.
+
+    Použití v markdownu:
+      {% <callout kind="priklad"> %}
+      Text **s markdownem**.
+      {% </callout> %}
+
+    `kind`: priklad | protipriklad | varovani | pravidlo | poznamka
+    `title`: volitelné doplnění za předsazené slovo.
+
+    Markup nevlastní tenhle soubor — importuje makro, které používají
+    i šablony. Jinak by callout v lekci a callout v indexu časem vypadaly
+    jinak a nikdo by nevěděl, který je ten správný. -#}
+{% component callout(kind="poznamka", title="") -%}
+{{ <atoms_callout kind={kind} title={title} text={body | markdown | safe} /> }}
+{%- endcomponent %}

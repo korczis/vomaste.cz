@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
 
 {#- Stránka JEDNOHO příkazu toolingu: co dělá, co shodí běh, kdy ho spustit.
 
@@ -11,15 +10,15 @@
 
 {% block content %}
 {%- set catalog = load_data(path="data/generated/tooling-catalog.json") -%}
-{%- set entry = catalog.entries | filter(attribute="identifier", value=page.extra.tooling_command) | first -%}
+{%- set entry = [__i for __i in catalog.entries if __i.identifier == page.extra.tooling_command] | first -%}
 
 <main class="mx-auto max-w-2xl px-6 py-12 text-white">
-  {{ ui::page_header(title=page.title, breadcrumb_items=[
+  {{ <ui_page_header title={page.title} breadcrumb_items={[
     "Domů::" ~ get_url(path="@/_index.md"),
     "Dokumentace::" ~ get_url(path="@/dokumentace/_index.md"),
     "Příkazy::" ~ get_url(path="@/dokumentace/prikazy/_index.md"),
     page.title,
-  ], description=page.description) }}
+  ]} description={page.description} /> }}
 
   {%- if entry %}
   <p class="mb-6 flex flex-wrap items-center gap-2 text-xs">
@@ -138,6 +137,6 @@
   </p>
   {%- endif %}
 
-  {{ ui::back_link_footer(url=get_url(path="@/dokumentace/prikazy/_index.md"), label="Zpět na katalog příkazů") }}
+  {{ <ui_back_link_footer url={get_url(path="@/dokumentace/prikazy/_index.md")} label="Zpět na katalog příkazů" /> }}
 </main>
 {% endblock content %}

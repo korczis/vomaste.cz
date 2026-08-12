@@ -1,3 +1,7 @@
+{#- Rendered for /404.html too, which has neither `page` nor `section`;
+    Tera 2 errors on attribute access against an undefined variable. -#}
+{%- set pg = page | default(value={"extra": {}, "title": "", "description": ""}) -%}
+{%- set sec = section | default(value={"extra": {}, "title": "", "description": ""}) -%}
 {#- Central JSON-LD (structured data), rendered exactly once per page from
     base.html <head> — the same "declared once" discipline as the meta
     tags. Everything is generated from front matter, config.toml,
@@ -20,7 +24,6 @@
       under content/dossiers/ and matching extra.src_id, so records may
       physically live under any dossier;
     - breadcrumbs come from the page's/section's own `ancestors` chain. -#}
-{%- import "macros/jsonld.html" as jsonld -%}
 
 {#- T-076: prezentační pole stránkového uzlu se NEODVOZUJÍ znovu. Berou se
     z `meta_*` proměnných, které rozložila `templates/base.html` a ze
@@ -42,17 +45,17 @@
 {%- set ld_title = meta_title -%}
 {%- set ld_description = meta_description -%}
 {%- set ld_seo_type = meta_seo_type -%}
-{%- set ld_record_type = page.extra.record_type | default(value=section.extra.record_type | default(value="")) -%}
-{%- set ld_dossier = page.extra.dossier | default(value=section.extra.dossier | default(value="")) -%}
-{%- set ld_dossier_type = page.extra.dossier_type | default(value=section.extra.dossier_type | default(value="")) -%}
-{%- set ld_ancestors = page.ancestors | default(value=section.ancestors | default(value=[])) -%}
+{%- set ld_record_type = pg.extra.record_type | default(value=sec.extra.record_type | default(value="")) -%}
+{%- set ld_dossier = pg.extra.dossier | default(value=sec.extra.dossier | default(value="")) -%}
+{%- set ld_dossier_type = pg.extra.dossier_type | default(value=sec.extra.dossier_type | default(value="")) -%}
+{%- set ld_ancestors = pg.ancestors | default(value=sec.ancestors | default(value=[])) -%}
 
 {#- Person markup only where the canonical dossier record itself (view
     model overview.json — T-028 fáze H, dřívější data/dossiers.toml) says
     this dossier is about one real, primary-navigation-worthy person. -#}
 {%- set ld_person = false -%}
 {%- if ld_dossier_type == "entity" and ld_dossier -%}
-  {%- set ld_overview_path = page.extra.view_model | default(value=section.extra.view_model | default(value="")) -%}
+  {%- set ld_overview_path = pg.extra.view_model | default(value=sec.extra.view_model | default(value="")) -%}
   {%- if ld_overview_path -%}
     {%- set ld_overview = load_data(path="data/" ~ ld_overview_path) -%}
     {%- if ld_overview.dossierType == "entity" and ld_overview.navigationVisible -%}
@@ -70,13 +73,13 @@
     still physically live under any dossier. required=false keeps the page
     renderable outside the full pipeline. -#}
 {#- T-028 fáze F: doménová pole záznamu (identifier, text, kanonická
-    metadata zdroje) čte partial z view modelu (page.extra.view_model),
+    metadata zdroje) čte partial z view modelu (pg.extra.view_model),
     ne z front matter — front matter adaptér zůstává jen pro
     prezentační/SEO scaffolding (title/description/seo_type/lang),
     tedy tatáž pole, která plní <meta> tagy. -#}
 {%- set ld_view = false -%}
-{%- if ld_record_type == "claim" or ld_record_type == "source" -%}{%- if page.extra.view_model is defined -%}
-  {%- set ld_view = load_data(path="data/" ~ page.extra.view_model) -%}
+{%- if ld_record_type == "claim" or ld_record_type == "source" -%}{%- if pg.extra.view_model is defined -%}
+  {%- set ld_view = load_data(path="data/" ~ pg.extra.view_model) -%}
 {%- endif -%}{%- endif -%}
 {%- set ld_claim_sources = [] -%}
 {%- if ld_record_type == "claim" -%}
@@ -127,7 +130,7 @@
 {"@type":"ListItem","position":{{ ld_pos + 1 }},"name":{{ meta_page_title | json_encode | safe }}{% if current_url %},"item":{{ current_url | json_encode | safe }}{% endif %}}]}
 {%- endif -%}
 {%- if ld_record_type == "claim" and ld_view -%}
-,{"@type":"Claim","name":{{ ld_view.record.identifier | json_encode | safe }},"text":{{ ld_view.record.text | json_encode | safe }},"inLanguage":{{ ld_lang | json_encode | safe }}{% if current_url %},"url":{{ current_url | json_encode | safe }}{% endif %}{% if ld_claim_sources | length > 0 %},"appearance":[{% for ld_s in ld_claim_sources %}{{ jsonld::ld_source_record(s=ld_s) }}{% if not loop.last %},{% endif %}{% endfor %}]{% endif %}}
+,{"@type":"Claim","name":{{ ld_view.record.identifier | json_encode | safe }},"text":{{ ld_view.record.text | json_encode | safe }},"inLanguage":{{ ld_lang | json_encode | safe }}{% if current_url %},"url":{{ current_url | json_encode | safe }}{% endif %}{% if ld_claim_sources | length > 0 %},"appearance":[{% for ld_s in ld_claim_sources %}{{ <jsonld_ld_source_record s={ld_s} /> }}{% if not loop.last %},{% endif %}{% endfor %}]{% endif %}}
 {%- endif -%}
 {%- if ld_record_type == "source" and ld_view -%}
 {%- set ld_fp = "" -%}
@@ -135,7 +138,7 @@
   {%- set ld_fp_key = ld_dossier ~ "/" ~ ld_view.record.identifier -%}
   {%- set ld_fp = ld_fps[ld_fp_key] | default(value="") -%}
 {%- endif -%}
-,{{ jsonld::ld_source_canonical(record=ld_view.record, name=meta_page_title, fp=ld_fp) }}
+,{{ <jsonld_ld_source_canonical record={ld_view.record} name={meta_page_title} fp={ld_fp} /> }}
 {%- endif -%}
 {#- Source catalogue. A registry is a Dataset with a provider and, where one
     exists, a machine-readable distribution — which is exactly what an agent
@@ -143,9 +146,9 @@
     how-to-search note, `disambiguatingDescription` the limits, so what the
     page tells a human and what it tells a machine cannot drift apart. Loaded
     from the same generated view model the visible page renders from. -#}
-{%- if ld_record_type == "sourceCatalogEntry" and page.extra.catalog_entry -%}
+{%- if ld_record_type == "sourceCatalogEntry" and pg.extra.catalog_entry -%}
 {%- set ld_cat = load_data(path="data/generated/source-catalog.json") -%}
-{%- set ld_e = ld_cat.entries | filter(attribute="identifier", value=page.extra.catalog_entry) | first -%}
+{%- set ld_e = [__i for __i in ld_cat.entries if __i.identifier == pg.extra.catalog_entry] | first -%}
 {%- if ld_e -%}
 ,{"@type":"Dataset","@id":{{ ld_e["@id"] | json_encode | safe }},"name":{{ ld_e.title | json_encode | safe }},"description":{{ ld_description | json_encode | safe }},"inLanguage":{{ ld_lang | json_encode | safe }},"url":{{ ld_e.url | json_encode | safe }},"isAccessibleForFree":{% if ld_e.access == "open" %}true{% else %}false{% endif %}{% if ld_e.operator %},"provider":{"@type":"Organization","name":{{ ld_e.operator | json_encode | safe }}}{% endif %}{% if ld_e.jurisdiction %},"spatialCoverage":{{ ld_e.jurisdiction | json_encode | safe }}{% endif %}{% if ld_e.apiUrl %},"distribution":{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":{{ ld_e.apiUrl | json_encode | safe }}}{% endif %}{% if ld_e.howToSearch %},"usageInfo":{{ ld_e.howToSearch | json_encode | safe }}{% endif %}{% if ld_e.doesNotProve | length > 0 %},"disambiguatingDescription":{{ ld_e.doesNotProve | join(sep=" ") | json_encode | safe }}{% endif %}}
 {%- endif -%}

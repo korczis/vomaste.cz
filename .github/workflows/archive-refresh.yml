@@ -35,7 +35,7 @@ jobs:
       - name: Setup Zola
         uses: taiki-e/install-action@v2
         with:
-          tool: zola@0.22.1
+          tool: zola@0.23.3
 
       # This refresh writes only public Zone A derivatives. Raw Justice
       # metadata and any non-empty noticeboard response go outside the checkout
