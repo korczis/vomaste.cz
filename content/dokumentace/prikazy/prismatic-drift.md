@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run prismatic:drift — Detektor driftu Prismatic — nehotové"
 template = "tooling-command.html"
-weight = 75
+weight = 76
 description = "Detektor driftu Prismatic — nehotové: Stub. npm skript, rešerše."
 
 [extra]

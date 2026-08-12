@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run test:intake:form — Testy kontraktu formulář ↔ parser"
 template = "tooling-command.html"
-weight = 53
+weight = 54
 description = "Testy kontraktu formulář ↔ parser: node:test nad kompatibilitou skutečné issue šablony s parserem, nad strukturálním validátorem formulářů a nad regresní stráží šablon.. npm skript, kontrola výstupů."
 
 [extra]

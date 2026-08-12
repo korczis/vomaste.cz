@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run data:check-generated — Parita generovaných artefaktů"
 template = "tooling-command.html"
-weight = 38
+weight = 39
 description = "Parita generovaných artefaktů: Ověřuje 1:1 pokrytí kanonického datasetu view modely a staging stuby. npm skript, kontrola výstupů."
 
 [extra]

@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run build:jsonld-exports — Veřejné JSON-LD exporty"
 template = "tooling-command.html"
-weight = 21
+weight = 22
 description = "Veřejné JSON-LD exporty: Emituje plnohloubkový @graph pro každý dossier, sjednocený graf celého webu a manifest {routa, sha256, bajty}, aby stažená kopie šla ověřit offline.. npm skript, generování."
 
 [extra]

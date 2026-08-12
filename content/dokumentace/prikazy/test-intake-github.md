@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run test:intake:github — Testy GitHub adaptérů a publikace"
 template = "tooling-command.html"
-weight = 54
+weight = 55
 description = "Testy GitHub adaptérů a publikace: node:test nad adaptéry, zpracováním události, publikací výsledku, moduly github/ a kontrolou bezpečnosti artefaktů.. npm skript, kontrola výstupů."
 
 [extra]

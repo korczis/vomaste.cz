@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run hooks:install — Instalace git hooků"
 template = "tooling-command.html"
-weight = 97
+weight = 98
 description = "Instalace git hooků: Nasměruje git hooky tohohle checkoutu na .githooks/, aby se rychlé pre-commit validátory spouštěly samy.. npm skript, provoz."
 
 [extra]

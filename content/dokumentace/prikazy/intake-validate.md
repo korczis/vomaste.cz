@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run intake:validate — Validace intake manifestu"
 template = "tooling-command.html"
-weight = 45
+weight = 46
 description = "Validace intake manifestu: Samostatný validátor už zapsaného manifestu proti schemas/intake/intake-manifest.schema.json.. npm skript, kontrola výstupů."
 
 [extra]

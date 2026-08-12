@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run prismatic:diff — Diff proti kanonickým datům — nehotové"
 template = "tooling-command.html"
-weight = 74
+weight = 75
 description = "Diff proti kanonickým datům — nehotové: Stub. npm skript, rešerše."
 
 [extra]
