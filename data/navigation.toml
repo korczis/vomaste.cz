@@ -67,6 +67,23 @@ icon = "M9 20l-5.447-2.724A1 1 0 0 1 3 16.382V5.618a1 1 0 0 1 1.447-.894L9 7m0 1
 count_metric = "relations.total"
 count_noun = "vztahů"
 
+# Vzdělávací vrstva. JEDNA kořenová položka, ne pět: sekce Start, Bootcamp,
+# Akademie, Příručka a Jak přispět visí pod ní jako podstrom, který staví
+# generátor z `data/learning.toml` — stejný tvar jako podstrom konceptů.
+# Pět samostatných kořenových položek by z postranního panelu udělalo
+# seznam, ve kterém se „Dossiery“ ztratí mezi didaktikou.
+[[items]]
+id = "learn"
+label = "Naučit se"
+path = "@/start/_index.md"
+match_prefix = "/start/"
+# Hned za „Domů“, ne někde dole: je to vstupní bod pro člověka, který web
+# nezná, a ten se v seznamu dvou set dossierů nezorientuje. `order` se
+# v generátoru parsuje jako celé číslo, takže 17.5 by spadlo na 17 a
+# srazilo se s Globální mapou.
+order = 12
+icon = "M22 10 12 5 2 10l10 5 10-5Z M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"
+
 [[items]]
 id = "concepts"
 label = "Koncepty"

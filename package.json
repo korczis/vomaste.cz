@@ -29,6 +29,7 @@
     "build:navigation": "node scripts/dossier/build-navigation.mjs",
     "validate:navigation": "node scripts/dossier/validate-navigation.mjs",
     "validate:concepts": "node scripts/dossier/validate-concepts.mjs",
+    "validate:learning": "node scripts/dossier/validate-learning.mjs",
     "validate:entity-types": "node scripts/dossier/validate-entity-types.mjs",
     "validate:media": "node scripts/dossier/validate-media.mjs",
     "media:fetch": "node scripts/media/fetch-media.mjs",

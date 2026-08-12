@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/validate-learning",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "validate-learning",
+  "kind": "npm",
+  "name": "validate:learning",
+  "title": "Kontrola integrity vzdělávací vrstvy",
+  "category": "validace",
+  "summary": "Ověřuje Start, Bootcamp, Akademii, Příručku a Jak přispět proti data/learning.toml a data/learning-fixtures.toml. Kurikulum je graf a graf se rozbíjí tiše — lekce s odkazem na neexistující pokračování se projeví jen tím, že se odkaz nevykreslí, a build zůstane zelený.",
+  "enforces": [
+    "Rozbitý řetěz `next` nebo `next_route` — čtenář by skončil ve slepé uličce uprostřed kurzu.",
+    "Prerekvizita na neexistující nebo cizí lekci, kterou šablona nedohledá.",
+    "Duplicitní `lesson_id` a kód lekce neodpovídající kódu své úrovně.",
+    "Nedosažitelná lekce — nevede na ni žádný `next` ani učební cesta.",
+    "Učební cesta jmenující lekci, která neexistuje.",
+    "Odkaz `related_kb` na neexistující stránku konceptu (a prefix `@/`, který get_page() nepřijímá).",
+    "Cvičná data bez označení `synthetic` a cvičné URL mimo rezervovaný jmenný prostor (RFC 2606).",
+    "Odpověď klasifikačního cvičení neodpovídající žádnému skutečnému stavu tvrzení.",
+    "Cvičný identifikátor vyskytující se v data/dossiers/** — výuka nesmí být zadními vrátky k rozšíření rozsahu."
+  ],
+  "whenToRun": "V build pipeline a v režimu check; ručně po přidání nebo přesunu lekce, po změně učební cesty a po jakékoli úpravě cvičných dat.",
+  "inputs": [
+    "data/learning.toml",
+    "data/learning-fixtures.toml",
+    "content/start/*.md",
+    "content/bootcamp/*.md",
+    "content/akademie/*.md",
+    "content/prirucka/*.md",
+    "content/prispet/*.md"
+  ],
+  "sourceFile": "scripts/dossier/validate-learning.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Kontrola L13 (cvičná data mimo kanonický dataset) je jediný důvod, proč tenhle validátor prochází i data/dossiers/**. Cvičný subjekt v publikovaných datech by znamenal tvrzení o osobě, která neexistuje, bez zdroje a mimo jakýkoli rozsah.",
+    "Cíle lekce se vyžadují jen u výukových sekcí. Příručka je lookup, ne kurz — místo cílů se u ní vyžaduje kategorie."
+  ]
+}

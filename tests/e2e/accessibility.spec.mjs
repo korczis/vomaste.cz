@@ -20,9 +20,9 @@ const STRANKY = [
   ["lokální graf dossieru", "/dossiers/macinka-turek/"],
   // Entity dossier overview (T-018) — view tabs, rozšířený metric strip, gaps preview.
   ["entity dossier — přehled", "/dossiers/petr-macinka/"],
-  // Secondary sidebar (T-012) — druhý dokovaný sloupec vedle primárního,
-  // vykreslí se jen na stránce uvnitř konkrétního dossieru.
-  ["stránka tvrzení se sekundárním sidebarem", "/dossiers/andrej-babis/claims/clm-01/"],
+  // Stránka záznamu uvnitř dossieru — nejhlubší úroveň routingu, vlastní
+  // šablona a nejvíc obsahu na jedné stránce.
+  ["stránka tvrzení", "/dossiers/andrej-babis/claims/clm-01/"],
 ];
 
 for (const [nazev, cesta] of STRANKY) {
@@ -53,10 +53,11 @@ for (const [nazev, cesta] of STRANKY) {
     expect(prekroceni, "dokument se posouvá do strany").toBeLessThanOrEqual(1);
   });
 
-  test(`${nazev}: nepřetéká do strany na desktopu (dva dokované sidebary + obsah)`, async ({ page, isMobile }) => {
-    // T-012: sekundární sidebar se dokuje jen na desktopu (lg+) vedle
-    // primárního — přesně tenhle případ, dva sloupce najednou, je ten,
-    // kde by se šířka sečetla špatně a projevila se přetečením.
+  test(`${nazev}: nepřetéká do strany na desktopu (dokovaný sidebar + obsah)`, async ({ page, isMobile }) => {
+    // Na desktopu je sidebar dokovaný vedle obsahu — právě tam se špatně
+    // spočítaná šířka projeví vodorovným posuvem celého dokumentu.
+    // (Do 2026-08-11 tu stál ještě druhý dokovaný sloupec; byl odstraněn
+    // jako duplicita primárního stromu, viz templates/base.html.)
     test.skip(isMobile, "desktopové dokování, mobilní projekt ho nevykresluje");
     await page.goto(cesta);
     const prekroceni = await page.evaluate(() =>

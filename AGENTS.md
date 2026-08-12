@@ -753,6 +753,45 @@ and when. Non-interactive anchoring accepts only newly
 appended entries; modifying or removing an existing entry still requires
 direct human review and the stronger override confirmation.
 
+## Vzdělávací vrstva: kdo co vlastní a kdy ji aktualizovat (závazné)
+
+Web má vrstvu, která systém vysvětluje: `/start/` (nulová znalost),
+`/bootcamp/` (praktický kurz na syntetických datech), `/akademie/`
+(kurikulum v sedmi úrovních), `/prirucka/` (lookup) a `/prispet/`
+(rozcestník příspěvků). Datový model je `data/learning.toml` +
+`data/learning-fixtures.toml`, stránky jsou ručně psané Zola stránky se
+strukturovaným `[extra]`, integritu hlídá `npm run validate:learning`
+(součást `build` i `check`).
+
+**Vlastnictví definic — nepodkročitelné.** Kanonické znění každého pojmu
+vlastní `content/koncepty/*`. Akademie a Bootcamp pojem **aplikují**,
+Příručka ho pomáhá **dohledat**; ani jedna ho nedefinuje podruhé. Pět
+míst s pěti definicemi slova „ověřeno více zdroji" je přesně ten drift,
+kterému celý datový model brání jinde — a v dokumentaci by byl stejně
+škodlivý.
+
+**Cvičná data jsou vymyšlená a musí taková zůstat.** Vše
+v `data/learning-fixtures.toml` je fiktivní, označené `synthetic = true`,
+cvičné URL jsou v rezervovaném jmenném prostoru (RFC 2606) a validátor
+(kontrola L13) shodí build, pokud se cvičný identifikátor objeví
+v `data/dossiers/**`. Nacvičovat klasifikaci obvinění na skutečném
+člověku by znamenalo psát o něm nedoložená tvrzení — výuka nesmí být
+zadními vrátky k rozšíření rozsahu.
+
+**Kdy vzdělávací vrstvu povinně zkontrolovat:**
+
+| Změna | Co projít |
+|---|---|
+| nový nebo změněný **stav tvrzení** | `content/koncepty/stav-*.md`, `/prirucka/ref-stavy-tvrzeni/`, A104, Bootcamp 01, cvičení v `learning-fixtures.toml` (kontrola L12 to vynutí) |
+| změna **schématu záznamu** | `/prirucka/ref-povinna-pole/`, příslušná lekce úrovně A5, příklady v ní |
+| nový nebo přejmenovaný **npm příkaz** | `/prirucka/jak-validovat-a-buildnout/`, `/prispet/chci-programovat/`, A602 — a **nikdy neopisovat katalog příkazů**, ten je generovaný |
+| změna **redakčního pravidla** nebo publikační brány | Bootcamp, úroveň A3, A308, `/prispet/chci-editovat/` |
+| změna **autorizačního modelu** | A308, A701, `/prirucka/jak-zkontrolovat-rozsah/`, Bootcamp 05 |
+| změna **architektury nebo pipeline** | úroveň A6, `/prirucka/problemy-buildu/` |
+
+Zastaralá technická lekce je horší než žádná: čtenář podle ní pracuje a
+neví, že popisuje stav, který už neplatí.
+
 ## Content about real parties
 
 The default is self-only unless explicitly extended. It has been

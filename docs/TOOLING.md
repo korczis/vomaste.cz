@@ -4,11 +4,11 @@
 
 Publikovaná podoba: [/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prikazy/).
 
-128 příkazů celkem: 103 npm skriptů, 9 skills, 16 just receptů. 53 z nich může shodit běh, 44 jsou krokem `npm run build` a 10 běží v pre-commit hooku.
+129 příkazů celkem: 104 npm skriptů, 9 skills, 16 just receptů. 54 z nich může shodit běh, 45 jsou krokem `npm run build` a 10 běží v pre-commit hooku.
 
 **Pravidlo, které z katalogu plyne**: příkaz se přidává do `package.json` (nebo do `justfile` či `.claude/skills/`) a zároveň do `data/tooling/`. Bez záznamu build spadne — dokumentace tak nemůže zaostat za kódem.
 
-## npm skript (103)
+## npm skript (104)
 
 | Příkaz | Kategorie | Vynucuje | Pipeline | Pre-commit |
 |---|---|---|---|---|
@@ -26,6 +26,7 @@ Publikovaná podoba: [/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prik
 | [`npm run validate:concepts`](/dokumentace/prikazy/validate-concepts/) | validace vstupů | ano | build, check | — |
 | [`npm run validate:dossier-types`](/dokumentace/prikazy/validate-dossier-types/) | validace vstupů | ano | build, dev, check | ano |
 | [`npm run validate:entity-types`](/dokumentace/prikazy/validate-entity-types/) | validace vstupů | ano | build, check | — |
+| [`npm run validate:learning`](/dokumentace/prikazy/validate-learning/) | validace vstupů | ano | build, check | — |
 | [`npm run validate:media`](/dokumentace/prikazy/validate-media/) | validace vstupů | ano | build, check | — |
 | [`npm run verify:authorization-log`](/dokumentace/prikazy/verify-authorization-log/) | validace vstupů | ano | build, check | ano |
 | [`npm run build:data-exports`](/dokumentace/prikazy/build-data-exports/) | generování | ano | build, dev | — |
@@ -230,6 +231,18 @@ Publikovaná podoba: [/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prik
 
 - Typ entity použitý v datech, který ve slovníku nemá záznam — jinak by skupina v registru entit nesla syrovou hodnotu místo názvu.
 - Záznam ve slovníku, který v datech nikdo nepoužívá (mrtvý překlad).
+
+### `npm run validate:learning`
+
+- Rozbitý řetěz `next` nebo `next_route` — čtenář by skončil ve slepé uličce uprostřed kurzu.
+- Prerekvizita na neexistující nebo cizí lekci, kterou šablona nedohledá.
+- Duplicitní `lesson_id` a kód lekce neodpovídající kódu své úrovně.
+- Nedosažitelná lekce — nevede na ni žádný `next` ani učební cesta.
+- Učební cesta jmenující lekci, která neexistuje.
+- Odkaz `related_kb` na neexistující stránku konceptu (a prefix `@/`, který get_page() nepřijímá).
+- Cvičná data bez označení `synthetic` a cvičné URL mimo rezervovaný jmenný prostor (RFC 2606).
+- Odpověď klasifikačního cvičení neodpovídající žádnému skutečnému stavu tvrzení.
+- Cvičný identifikátor vyskytující se v data/dossiers/** — výuka nesmí být zadními vrátky k rozšíření rozsahu.
 
 ### `npm run validate:media`
 
@@ -436,7 +449,7 @@ Publikovaná podoba: [/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prik
 
 ## Příkazy podle kategorie
 
-- **validace vstupů** (16): `npm run archive:check`, `npm run data:compile`, `npm run data:validate`, `npm run check:workflow-parity`, `npm run intake:validate-form`, `npm run intake:validate-workflow`, `npm run lint:component-reuse`, `npm run lint:hardcoded-records`, `npm run lint:historical-coupling`, `npm run lint:source-outlets`, `npm run validate:authorization`, `npm run validate:concepts`, `npm run validate:dossier-types`, `npm run validate:entity-types`, `npm run validate:media`, `npm run verify:authorization-log`
+- **validace vstupů** (17): `npm run archive:check`, `npm run data:compile`, `npm run data:validate`, `npm run check:workflow-parity`, `npm run intake:validate-form`, `npm run intake:validate-workflow`, `npm run lint:component-reuse`, `npm run lint:hardcoded-records`, `npm run lint:historical-coupling`, `npm run lint:source-outlets`, `npm run validate:authorization`, `npm run validate:concepts`, `npm run validate:dossier-types`, `npm run validate:entity-types`, `npm run validate:learning`, `npm run validate:media`, `npm run verify:authorization-log`
 - **generování** (20): `npm run build:data-exports`, `npm run build:entity-type-sections`, `npm run build:government-roster`, `npm run build:graph-projections`, `npm run build:jsonld-exports`, `npm run build:navigation`, `npm run build:routes`, `npm run build:search-index`, `npm run build:source-catalog`, `npm run build:tooling-catalog`, `npm run css:build`, `npm run data:generate-content`, `npm run data:metrics`, `npm run data:sync-content`, `npm run data:views`, `npm run generate:candidates`, `npm run generate:discovery-log`, `npm run intake:index`, `npm run js:build`, `npm run report:evidence-plan`
 - **kontrola výstupů** (37): `npm run archive:check-private`, `npm run data:check-generated`, `npm run data:check-generated:content`, `npm run intake:e2e-fixture`, `npm run intake:fixture`, `npm run intake:match-fixture`, `npm run intake:preflight-fixture`, `npm run intake:publish-fixture`, `npm run intake:validate`, `npm run lint:generated-content`, `npm run test`, `npm run test:e2e`, `npm run test:e2e:benchmark`, `npm run test:e2e:desktop`, `npm run test:intake`, `npm run test:intake:e2e`, `npm run test:intake:form`, `npm run test:intake:github`, `npm run test:intake:matching`, `npm run test:intake:preflight`, `npm run test:intake:risk`, `npm run validate:directory-index`, `npm run validate:graph-projections`, `npm run validate:navigation`, `npm run validate:navigation-metrics`, `npm run verify:anchors`, `npm run verify:export`, `npm run verify:full-pages`, `npm run verify:jsonld`, `npm run verify:navigation-counts`, `npm run verify:og`, `npm run verify:source-catalog`, `npm run verify:table-responsive`, `npm run verify:tooling-catalog`, `just doctor`, `just check`, `just test`
 - **rešerše** (23): `npm run archive:refresh-private`, `npm run archive:refresh-public`, `npm run media:fetch`, `npm run prismatic:diff`, `npm run prismatic:drift`, `npm run prismatic:enrich-all`, `npm run prismatic:import`, `npm run prismatic:plan`, `npm run prismatic:probe`, `npm run prismatic:promote`, `npm run prismatic:review`, `npm run prismatic:run`, `npm run prismatic:status`, `npm run prismatic:verify`, `npm run screening:public-money`, `npm run sources:detect-family`, `skill investigate`, `skill prismatic-bootstrap`, `skill prismatic-drift-audit`, `skill prismatic-enrich-all`, `skill prismatic-promote`, `just ares *args`, `just expand ico *args`

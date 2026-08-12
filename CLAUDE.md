@@ -245,6 +245,21 @@ entry; it does not replace reading and applying the rule.
   znění pravidel: AGENTS.md, „Média: fotografie a loga"; datový kontrakt:
   `docs/data-contract.md`; přehled publikovaných médií se generuje na
   `/dokumentace/licence-medii/`.
+- **Vzdělávací vrstva má vlastní bránu a jedno tvrdé pravidlo o
+  vlastnictví definic.** `/start/`, `/bootcamp/`, `/akademie/`,
+  `/prirucka/` a `/prispet/` jsou ručně psané Zola stránky nad
+  `data/learning.toml`; integritu kurikula (řetězy `next`, prerekvizity,
+  učební cesty, dosažitelnost lekcí, odkazy na koncepty, cvičná data)
+  hlídá `npm run validate:learning` v `build` i `check`. **Kanonické
+  definice pojmů vlastní `content/koncepty/*`** — vzdělávací vrstva je
+  aplikuje a odkazuje na ně, nikdy je nepíše podruhé. Cvičná data
+  v `data/learning-fixtures.toml` jsou fiktivní a kontrola L13 shodí
+  build, pokud se cvičný identifikátor objeví v `data/dossiers/**`.
+  Tabulka „co při jaké změně projít" je v AGENTS.md, sekce „Vzdělávací
+  vrstva: kdo co vlastní". Dvě Zola pasti, na které se tu najelo:
+  `self::` nefunguje napříč importem (a self-import maker shodí Zolu
+  přetečením zásobníku — proto `macros/learning-atoms.html` zvlášť), a
+  `get_page()` bere cestu **bez** prefixu `@/`, na rozdíl od `get_url()`.
 - **UI component reuse is a real, enforced gate** —
   `npm run lint:component-reuse` (part of `npm run build`, pre-commit,
   and CI) fails if a content template doesn't import and use

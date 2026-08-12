@@ -17,6 +17,27 @@ text, jen bez nutnosti chodit na GitHub.
 > intake kanál — smazaný commit přežívá ve forcích a cache a ochranu
 > zdroje nelze po veřejné expozici obnovit.
 
+## Vyberte si typ příspěvku
+
+Tenhle dokument je závazné znění. Když hledáte **návod krok za krokem**,
+je na webu — a je psaný pro člověka, který nikdy nepoužil terminál.
+
+| Mám v ruce | Kam jít |
+|---|---|
+| Věcnou chybu, mrtvý odkaz, špatný stav | [/prispet/nasel-jsem-chybu/](https://vomaste.cz/prispet/nasel-jsem-chybu/) |
+| Nový veřejný zdroj k existujícímu tvrzení | [/prispet/mam-zdroj/](https://vomaste.cz/prispet/mam-zdroj/) |
+| Chuť odpracovat otevřenou mezeru | [/prispet/chci-reserzovat/](https://vomaste.cz/prispet/chci-reserzovat/) |
+| Redakční kontrolu před publikací | [/prispet/chci-editovat/](https://vomaste.cz/prispet/chci-editovat/) |
+| Změnu kódu, dat nebo šablon | [/prispet/chci-programovat/](https://vomaste.cz/prispet/chci-programovat/) |
+| Otázku „co vlastně umím a co dál“ | [/prispet/cesta-prispevatele/](https://vomaste.cz/prispet/cesta-prispevatele/) |
+
+Neznáte projekt? Začněte na [/start/](https://vomaste.cz/start/).
+Chcete se to naučit pořádně? [/bootcamp/](https://vomaste.cz/bootcamp/)
+je hodina a půl na vymyšlených datech a naučí přesně ty věci, na kterých
+příspěvky nejčastěji padají — rozdíl mezi třemi články a třemi
+nezávislými zdroji, kdy je „nevíme“ správná odpověď, a proč veřejně
+známý člověk plus veřejné informace nestačí na nový dossier.
+
 ## Co lze přispět hned
 
 - **Opravy a tooling** (kód, validátory, šablony, dokumentace,

@@ -219,6 +219,19 @@ seo_type = "TechArticle"
 og_type = "website"
 seo_type = "CollectionPage"
 
+# Vzdělávací vrstva (Start, Bootcamp, Akademie, Příručka, Jak přispět).
+# Lekce je výukový materiál — `LearningResource` je pro ni v schema.org
+# přesnější než holá `WebPage` a nic dalšího si nevynucuje. `article`
+# proto, že jde o samostatný čtený text, ne o rozcestník.
+[page_types.lesson]
+og_type = "article"
+seo_type = "LearningResource"
+
+# Index sekce vzdělávací vrstvy. Kolekce lekcí, ne jeden text.
+[page_types.learningIndex]
+og_type = "website"
+seo_type = "CollectionPage"
+
 # ---------------------------------------------------------------------------
 # Náhledová karta dossieru
 # ---------------------------------------------------------------------------

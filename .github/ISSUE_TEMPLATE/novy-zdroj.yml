@@ -1,0 +1,77 @@
+name: Nový zdroj k existujícímu tvrzení
+description: Máte veřejný zdroj, který podpírá tvrzení už na webu — typicky druhý nezávislý doklad k tvrzení se stavem 1 ZDROJ.
+title: "[zdroj] "
+labels: ["zdroje"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Tohle je podle CONTRIBUTING.md nejužitečnější typ příspěvku.** Druhý
+        nezávislý zdroj k tvrzení, které dnes stojí na jediném, posune jeho
+        stav — a je to práce, kterou nejde udělat automaticky.
+
+        Než formulář odešlete, dvě věci:
+
+        * **Zdroj musí být veřejný a dohledatelný.** Neposílejte sem
+          nepublikované materiály, interní dokumenty ani screenshoty
+          soukromé komunikace — GitHub je veřejný a trvalý.
+        * **Ověřte, že nejde o přetisk.** Když váš zdroj přebírá tutéž
+          agenturní zprávu nebo tiskovou zprávu jako zdroj už uvedený,
+          není to druhý nezávislý hlas. Návod:
+          [Rodiny zdrojů](https://vomaste.cz/akademie/a107-rodiny-zdroju/).
+  - type: input
+    id: claim
+    attributes:
+      label: Které tvrzení zdroj podpírá
+      description: Identifikátor a adresa stránky tvrzení.
+      placeholder: "CLM-14 — https://vomaste.cz/dossiers/…/claims/clm-14/"
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL zdroje
+      placeholder: "https://…"
+    validations:
+      required: true
+  - type: input
+    id: vydavatel
+    attributes:
+      label: Vydavatel a datum vydání
+      placeholder: "Deník N — 2026-03-14"
+    validations:
+      required: true
+  - type: textarea
+    id: co_dokazuje
+    attributes:
+      label: Co přesně zdroj dokládá
+      description: Co v něm doslova stojí — ne co z toho plyne. Pomůže i doslovná citace klíčové věty.
+    validations:
+      required: true
+  - type: dropdown
+    id: puvod
+    attributes:
+      label: Odkud materiál pochází
+      description: Rozhoduje o tom, jestli jde o nezávislý hlas, nebo o další adresu téhož.
+      options:
+        - Vlastní zjištění redakce
+        - Primární dokument (registr, smlouva, rozhodnutí)
+        - Přebírá agenturní zprávu (ČTK apod.)
+        - Vychází z tiskové zprávy
+        - Nevím / nedá se z textu poznat
+    validations:
+      required: true
+  - type: textarea
+    id: co_nedokazuje
+    attributes:
+      label: Co zdroj nedokládá (nepovinné, ale cenné)
+      description: Hranice vlastní práce. Právě tohle pole odliší použitelný podklad od odkazu s domněnkou.
+  - type: checkboxes
+    id: potvrzeni
+    attributes:
+      label: Potvrzení
+      options:
+        - label: Zdroj jsem otevřel a přečetl — neposílám výtah z vyhledávače.
+          required: true
+        - label: Vím, že tento kanál je veřejný a trvalý, a neposílám sem citlivý ani nepublikovaný materiál.
+          required: true
