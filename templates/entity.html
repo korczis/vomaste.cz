@@ -24,7 +24,7 @@
   {%- set lead_media = [m for m in view.media | default(value=[]) if m.role == "portrait" or m.role == "logo"] -%}
   {%- if lead_media | length > 0 %}
   <div class="mb-6 sm:float-right sm:ml-6 sm:w-56">
-    {{ <ui_media_figure item={lead_media | first} sizes="w-full" eager={true} /> }}
+    {{ <ui_media_figure item={lead_media | first} sizes="w-full" eager={true} subject={view.title} /> }}
   </div>
   {%- endif %}
 
@@ -56,6 +56,7 @@
   {% endif %}
 
   {% <table_advanced_table id="entity-meta" caption={"Metadata entity " ~ view.entityId} extra_class="mb-8"> %}
+      {% if view.dossiers %}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Vyskytuje se v</th><td class="p-3">
         {#- Titulek chipu je prezentační title stránky dossieru (adaptér),
             ne kanonický title — u agregátu se liší („Dossier — …"). -#}
@@ -64,6 +65,7 @@
           <a href="{{ dossier_page.permalink | safe }}" class="mr-2 inline-block rounded bg-white/5 px-2 py-0.5 text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ dossier_page.title }}</a>
         {% endfor %}
       </td></tr>
+      {% endif %}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Zjištěno</th><td class="p-3">{{ view.provenance.discoveredAt | default(value="") }}</td></tr>
       {% if view.provenanceResolved.discoveredVia | default(value=[]) %}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Objeveno přes</th><td class="p-3">
@@ -142,7 +144,7 @@
   {#- Zbylá média (fotky z akcí apod.) — galerie se vykreslí jen když nějaká
       jsou; portrét/logo už je v hlavičce, takže se tu neopakují. -#}
   {%- set gallery = [__i for __i in view.media | default(value=[]) if __i.role == "photo"] -%}
-  {{ <ui_media_gallery items={gallery} heading="Obrazová dokumentace" /> }}
+  {{ <ui_media_gallery items={gallery} heading="Obrazová dokumentace" subject={view.title} /> }}
 
   {{ <ui_back_link_footer url={get_url(path="@/entities/_index.md")} label="Zpět na registr entit" /> }}
 </main>

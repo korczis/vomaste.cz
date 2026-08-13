@@ -152,7 +152,7 @@
         {%- else %}{{ d.counts[mp[2]] | default(value=0) }}{% endif -%}
       </td>
       {%- endfor %}
-      <td class="whitespace-nowrap p-3 align-top text-xs text-white/55" data-sort-value="{{ d.reviewed_at | default(value=d.updated) }}">{{ d.reviewed_at | default(value=d.updated) | default(value="—") }}</td>
+      <td class="whitespace-nowrap p-3 align-top text-xs text-white/55" data-sort-value="{% if d.reviewed_at %}{{ d.reviewed_at }}{% else %}{{ d.updated }}{% endif %}">{% if d.reviewed_at %}{{ d.reviewed_at }}{% elif d.updated %}{{ d.updated }}{% else %}—{% endif %}</td>
     </tr>
     {%- endfor %}
     {% </table_advanced_table> %}
@@ -165,7 +165,7 @@
       <li data-record-key="{{ d.slug }}" data-type="{{ d.dossier_type }}" id="{{ id }}-list-{{ d.slug }}" class="p-3">
         <div class="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
           <a href="{{ d.routes.dossier }}" class="font-semibold text-white no-underline hover:underline">{{ d.title }}</a>
-          <span class="font-mono text-xs text-white/55">{{ d.reviewed_at | default(value=d.updated) | default(value="—") }}</span>
+          <span class="font-mono text-xs text-white/55">{% if d.reviewed_at %}{{ d.reviewed_at }}{% elif d.updated %}{{ d.updated }}{% else %}—{% endif %}</span>
         </div>
         <p class="mt-0.5 line-clamp-2 text-xs leading-snug text-white/60">{{ d.description }}</p>
         {#- Metriky jako odkazy, ne tlačítka: je to navigace do registru,
@@ -205,7 +205,7 @@
           </div>
           {%- endfor %}
         </dl>
-        <p class="mt-2 font-mono text-[0.65rem] text-white/55">{{ d.reviewed_at | default(value=d.updated) | default(value="—") }}</p>
+        <p class="mt-2 font-mono text-[0.65rem] text-white/55">{% if d.reviewed_at %}{{ d.reviewed_at }}{% elif d.updated %}{{ d.updated }}{% else %}—{% endif %}</p>
       </article>
       {%- endfor %}
     </div>

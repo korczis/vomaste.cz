@@ -64,11 +64,12 @@ audience = ["vyvojar", "maintainer"]
   v hlavičce — a `| safe` na tom řádku chybu spolkne.
 - **Najdete**: v postavené stránce. Ve zdroji to nepoznáte, protože
   syntakticky je všechno v pořádku.
-- **Opravíte**: srovnáte jméno v hlavičce `{% component %}` s tím, co
-  tělo skutečně vypisuje.
+- **Opravíte**: srovnáte jméno parametru v hlavičce komponenty s tím,
+  co tělo skutečně vypisuje.
 - **Předejdete**: `| safe` jen tam, kde vědomě vpouštíte hotové HTML.
-  `{{ x }}` build shodí, když `x` neexistuje; `{{ x | safe }}` tiše
-  nevypíše nic — viz [A603](@/akademie/a603-zola.md).
+  Výpis neexistující proměnné build shodí; s filtrem `safe` na ní tiše
+  nevypíše nic — viz [A603](@/akademie/a603-zola.md). Hlídá to
+  `npm run lint:template-contracts`.
 
 ## Zeleno lokálně, červeno v automatizaci
 

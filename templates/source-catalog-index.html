@@ -94,7 +94,7 @@
     {% <table_advanced_table id="pouzite-zdroje" caption="Citované rodiny a outlety" columns={["Rodina / outlet", "Citací", "Dossierů", "Meze popsané"]} count={catalog.counts.usedFamiliesOrOutlets} searchable={true} sort_keys={["text", "num", "num", "text"]} export_name="citovane-zdroje" footer="Dopočítáno z data/dossiers/**/sources/** při každém buildu." empty_text="Filtru neodpovídá žádná rodina ani outlet."> %}
       {%- for u in catalog.used %}
       <tr class="border-t border-white/5">
-        <td class="p-3">{{ u.family | default(value=u.outlet) }}</td>
+        <td class="p-3">{% if u.family %}{{ u.family }}{% else %}{{ u.outlet }}{% endif %}</td>
         <td class="p-3 text-right tabular-nums">{{ u.count }}</td>
         <td class="p-3 text-right tabular-nums">{{ u.dossierCount }}</td>
         <td class="p-3">

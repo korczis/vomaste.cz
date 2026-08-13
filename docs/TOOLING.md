@@ -271,9 +271,9 @@ Publikovaná podoba: [/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prik
 
 ### `npm run lint:template-contracts`
 
-- TC1 — `{{ x | safe }}`, kde x není deklarovaný parametr ani lokální proměnná; u `body` navíc jen tam, kde se komponenta nikde nevolá párově
+- TC1 — filtr `safe` na jméně, které není deklarovaný parametr ani lokální proměnná; u `body` navíc jen tam, kde se komponenta nikde nevolá párově
 - TC2 — parametr deklarovaný v hlavičce komponenty a nikde v těle nepřečtený
-- TC3 — `{% if x.a %}`, jehož tělo čte rozvětvenou verzi téhož pole (`x.aResolved`) a `x.a` ani jednou
+- TC3 — podmínka na `x.a`, jejíž tělo čte rozvětvenou verzi téhož pole (`x.aResolved`) a `x.a` ani jednou
 
 ### `npm run validate:authorization`
 
