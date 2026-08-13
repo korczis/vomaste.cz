@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "just authorize entity — Zápis autorizace"
 template = "tooling-command.html"
-weight = 122
+weight = 124
 description = "Zápis autorizace: Zkratka na zápis nové autorizace pro entitu. just recept, provoz."
 
 [extra]

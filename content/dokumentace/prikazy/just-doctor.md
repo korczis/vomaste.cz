@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "just doctor — Kontrola prerekvizit"
 template = "tooling-command.html"
-weight = 117
+weight = 119
 description = "Kontrola prerekvizit: Ověří node, zola, node_modules a nastavení git hooků proti verzím, které deklaruje README. just recept, kontrola výstupů."
 
 [extra]

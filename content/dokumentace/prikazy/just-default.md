@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "just default — Výpis receptů"
 template = "tooling-command.html"
-weight = 126
+weight = 128
 description = "Výpis receptů: Vypíše všechny recepty. just recept, provoz."
 
 [extra]
