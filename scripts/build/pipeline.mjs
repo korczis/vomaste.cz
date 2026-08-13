@@ -58,6 +58,15 @@ const BUILD_STEPS = [
   // coverage, verifies hashes and docket inventory, and proves that the
   // scheduled network refresh can only create a reviewable branch/PR.
   "archive:check",
+  // MUSÍ být před `test`. Test katalogu pravidel tvrdí „reálné repo je
+  // konzistentní“, ale jeden z výstupů katalogu (data/generated/) je
+  // gitignorovaný — v čerstvém klonu tedy neexistuje a `--check` právem
+  // hlásí rozdíl. Na našich strojích to procházelo, protože jsme ten
+  // soubor měli z dřívějška; ve fresh CI checkoutu ne. Je to tentýž tvar
+  // jako regrese, která 2026-08-13 shodila čtyři nasazení za sebou:
+  // kontrola nad generovaným artefaktem zařazená PŘED jeho generátor.
+  // Reprodukováno klonem do /tmp, ne odvozeno.
+  "build:rules-catalog",
   "test",
   // Shellový test, takže se do `test` (node --test nad *.test.mjs) nevejde.
   // Hlídá guard, který rozhoduje, jestli se commit na master sám nasadí —
@@ -85,7 +94,6 @@ const BUILD_STEPS = [
   "lint:generated-content",
   "validate:claude-tooling",
   "build:source-catalog",
-  "build:rules-catalog",
   // Katalog toolingu: brána běží PŘED generátorem schválně. `--check`
   // porovnává commitnuté stránky a docs/TOOLING.md s tím, co by z dat
   // vzniklo — kdyby běžela až za generátorem, porovnávala by výstup se

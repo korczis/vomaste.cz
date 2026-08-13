@@ -52,16 +52,24 @@ precedens), větve se jmenují `task/T-###`:
 scripts/coop/coop.sh wt-add T-001    # git worktree add ../vomaste-worktrees/T-001 -b task/T-001 master
 cd ~/dev/vomaste-worktrees/T-001
 npm ci                               # worktree má vlastní node_modules
-npm run build:source-catalog         # jediný generovaný vstup, který pre-commit nevyrobí sám
+npm run generate:all                 # generované vstupy; bez nich padne pre-commit i build
 COOP_AGENT_ID=W-1 claude             # nová instance Claude Code v worktree
 ```
 
 **Ten druhý příkaz nevynechávej.** `data/generated/` je gitignorované, takže
-v čerstvém worktree neexistuje — a pre-commit brána, která ten výstup čte,
-spadne dřív, než se stihne kdokoli podivit. Bez `npm ci` padne hned první
-kontrola (`data:validate`) na chybějícím `ajv`; s ním, ale bez generátoru,
-padne poslední (`verify:source-catalog`). Ani jedna hláška neřekne
-„neběžely generátory“, obě čtou jako rozbitá data.
+v čerstvém worktree neexistuje — a každá brána, která ten výstup čte, spadne
+dřív, než se stihne kdokoli podivit. Bez `npm ci` padne hned první kontrola
+(`data:validate`) na chybějícím `ajv`. S ním, ale bez generátorů, padne
+`verify:source-catalog` v pre-commitu a test katalogu pravidel uvnitř
+`npm run build`. Žádná z těch hlášek neřekne „neběžely generátory“ — všechny
+čtou jako rozbitá data.
+
+Původní znění tady radilo jen `npm run build:source-catalog`. Bylo to
+přesné pro pre-commit a nepřesné pro `npm run build`, a autor téhle věty na
+tu neúplnost narazil do hodiny od chvíle, kdy ji napsal. Odtud i obecné
+pravidlo: **kontrola nad generovaným, gitignorovaným artefaktem musí běžet
+až za svým generátorem.** Zatím to nic nevynucuje a stálo to 2026-08-13 dvě
+červené produkce; kdo na to sáhne příště, ať to zváží jako bránu.
 
 Po mergnutí: `scripts/coop/coop.sh wt-done T-001` (odstraní worktree i
 větev). Worktree se nikdy nerecykluje na jiný task.
