@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "just build — Brána kvality"
 template = "tooling-command.html"
-weight = 152
+weight = 158
 description = "Brána kvality: Zkratka na plný build. just recept, provoz."
 
 [extra]

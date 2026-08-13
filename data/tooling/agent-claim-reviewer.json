@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/agent-claim-reviewer",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "agent-claim-reviewer",
+  "kind": "agent",
+  "name": "claim-reviewer",
+  "title": "Recenzent tvrzení",
+  "category": "kontrola",
+  "personas": [
+    "verifier",
+    "editor",
+    "reviewer",
+    "maintainer"
+  ],
+  "riskLevel": "read-only",
+  "writes": false,
+  "summary": "Projde zadaná tvrzení dvanácti kontrolami proti jejich zdrojům a vrátí nálezy s prioritou, sloučené podle typu, plus výčet toho, co je v pořádku. Má přednačtený skill review-claim. Existuje proto, že review jednoho tvrzení znamená přečíst jeho záznam, každý citovaný zdroj, řádek v tabulce a navázané mezery — u deseti tvrzení padesát souborů.",
+  "whenToRun": "Když je tvrzení víc než dvě, nebo mají hodně zdrojů.",
+  "describedFrom": "header",
+  "notes": [
+    "Nástroje: Read, Grep, Glob. Přednačtený skill: review-claim. Žádný Write ani Edit.",
+    "Neposuzuje pravdu. Stav popisuje sílu doložení — tvrzení může být pravdivé a přesto 1 ZDROJ.",
+    "Nepovyšuje stav bez skutečně nového nezávislého hlasu.",
+    "Když tvrzení říká víc, než zdroje unesou, navrhuje zúžení textu, ne přidání výhrady."
+  ]
+}

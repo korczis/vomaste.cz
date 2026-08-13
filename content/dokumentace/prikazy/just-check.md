@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "just check — Rychlá podmnožina z pre-commitu"
 template = "tooling-command.html"
-weight = 147
+weight = 153
 description = "Rychlá podmnožina z pre-commitu: Spustí PŘÍMO .githooks/pre-commit — referenční integrita a autorizační rozsah, bez balení CSS a JS, bez zola buildu a bez ověřování kotev a JSON-LD. just recept, kontrola výstupů."
 
 [extra]

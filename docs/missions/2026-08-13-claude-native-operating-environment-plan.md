@@ -143,12 +143,12 @@ Legenda stavu: ` ` čeká · `~` běží · `x` hotovo · `!` blokováno
 
 ### Fáze I — subagenti
 
-- [ ] **I1** `source-verifier` (read-only)
-- [ ] **I2** `claim-reviewer` (read-only)
-- [ ] **I3** `editorial-reviewer` (read-only)
-- [ ] **I4** `repository-explorer` (read-only)
-- [ ] **I5** `ui-reviewer` (read-only)
-- [ ] **I6** `docs-auditor` (read-only)
+- [x] **I1** `source-verifier` (read-only)
+- [x] **I2** `claim-reviewer` (read-only)
+- [x] **I3** `editorial-reviewer` (read-only)
+- [x] **I4** `repository-explorer` (read-only)
+- [x] **I5** `ui-reviewer` (read-only)
+- [x] **I6** `docs-auditor` (read-only)
 
 ### Fáze J — hooks
 
