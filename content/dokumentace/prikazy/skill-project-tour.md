@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/project-tour — Prohlídka projektu"
 template = "tooling-command.html"
-weight = 117
+weight = 123
 description = "Prohlídka projektu: Vysvětlí, jak repozitář funguje, čtením skutečného stromu — kanonická data, čtyři vrstvy validace, generování adaptérů, šablony nad view modely, postavený web a brána nad ním, a nad tím vším autorizační rozsah a devět publikačních bran. Claude skill, provoz."
 
 [extra]

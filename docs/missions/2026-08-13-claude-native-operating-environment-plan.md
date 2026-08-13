@@ -105,12 +105,12 @@ Legenda stavu: ` ` čeká · `~` běží · `x` hotovo · `!` blokováno
 
 ### Fáze E — rešerše a důkazy
 
-- [ ] **E1** `/authorization-check`
-- [ ] **E2** `/verify-source`
-- [ ] **E3** `/source-family`
-- [ ] **E4** `/find-source`
-- [ ] **E5** `/research-question`
-- [ ] **E6** `/evidence-packet`
+- [x] **E1** `/authorization-check`
+- [x] **E2** `/verify-source`
+- [x] **E3** `/source-family`
+- [x] **E4** `/find-source`
+- [x] **E5** `/research-question`
+- [x] **E6** `/evidence-packet`
 
 ### Fáze F — redakční review
 

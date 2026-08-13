@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-research-question",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-research-question",
+  "kind": "skill",
+  "name": "research-question",
+  "title": "Zúžení rešeršní otázky",
+  "category": "reserse",
+  "personas": [
+    "researcher",
+    "editor",
+    "source-contributor"
+  ],
+  "riskLevel": "read-only",
+  "writes": false,
+  "summary": "Rozseká široké zadání („prověř firmu X“) na konkrétní doložitelné podotázky a ke každé přiřadí registr nebo typ zdroje, který na ni vůbec může odpovědět — včetně toho, co ten zdroj nedokáže a na jakou past se v něm už najelo. Podotázky bez zdroje označí jako očekávané mezery, ne jako úkol.",
+  "whenToRun": "Než se otevře deset záložek. Když zadání zní „prověř“, „zjisti“, „co je s“, nebo když rešerše nemá jasný cíl.",
+  "describedFrom": "header",
+  "notes": [
+    "Zúžení otázky NIKDY nesmí vyrobit téma, které rozsah pokrytí nedovoluje. Rešerše smí být širší než publikace, ne než rozsah.",
+    "Bez jednoznačně ověřené identity se nedá začít. Jmenovec je nejčastější a nejtišší chyba celé rešerše.",
+    "Podotázka, jejíž odpovědí je dojem („jak moc problematické“), není podotázka.",
+    "Agregátor je rozcestník, ne cíl. Tvrzení opřené jen o agregátor zůstává 1 ZDROJ."
+  ]
+}

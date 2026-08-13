@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-verify-source",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-verify-source",
+  "kind": "skill",
+  "name": "verify-source",
+  "title": "Prověření zdroje",
+  "category": "reserse",
+  "personas": [
+    "verifier",
+    "source-contributor",
+    "researcher",
+    "editor"
+  ],
+  "riskLevel": "read-only",
+  "writes": false,
+  "summary": "Otevře zdroj a oddělí, co doopravdy dokládá, od toho, co se z něj běžně vyvozuje a neplyne. Zjišťuje vydavatele, autora, datum vydání i pořízení, rubriku, primární versus převzatý původ, kandidáta na zdrojovou rodinu, doslovné citace a jmenované třetí osoby. Navrhuje stav tvrzení s odůvodněním. Nic nezapisuje.",
+  "whenToRun": "Pokaždé, než se zdroj použije u tvrzení, a při revizi existujícího SRC záznamu (mrtvý odkaz, změněný text, doplněná oprava).",
+  "describedFrom": "header",
+  "notes": [
+    "Zdroj musí být OTEVŘENÝ a přečtený. Worked example, který to stál: URL z Reflex.cz vypadala jako běžné zpravodajství a po otevření se ukázalo, že vyšla v satirické rubrice označené jako fikce — téma bylo vyřazeno z autorizace.",
+    "Rubrika se hledá na stránce, ne v URL. Komentář, názor, satira i inzerce vypadají ve výsledku vyhledávání stejně jako zpravodajství.",
+    "Nedostupná stránka (403, paywall, mrtvý odkaz) je výsledek, ne překážka k obejití. Obsah se neodhaduje.",
+    "Neposuzuje nezávislost dvou zdrojů — na to je /source-family."
+  ]
+}

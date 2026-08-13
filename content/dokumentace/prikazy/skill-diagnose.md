@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/diagnose — Diagnostika prostředí"
 template = "tooling-command.html"
-weight = 106
+weight = 107
 description = "Diagnostika prostředí: Zjistí, jestli má prostředí šanci fungovat: git a větev, worktree a souběžné session, Node, npm, Zola, závislosti, nastavení git hooků, přítomnost vygenerovaných vstupů, stav co-op a načtení konfigurace .claude/. Claude skill, kontrola výstupů."
 
 [extra]

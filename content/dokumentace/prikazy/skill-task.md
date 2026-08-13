@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/task — Rozklad zadání"
 template = "tooling-command.html"
-weight = 118
+weight = 124
 description = "Rozklad zadání: Rozloží konkrétní zadání na personu, typ změny, úroveň rizika, vztah k rozsahu pokrytí, dotčené podsystémy, příkazy, které budou muset projít, a jeden vstupní bod. Claude skill, provoz."
 
 [extra]
