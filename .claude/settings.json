@@ -13,6 +13,24 @@
             "command": "bash \"$CLAUDE_PROJECT_DIR/scripts/coop/coop.sh\" status 2>/dev/null || true",
             "timeout": 15,
             "statusMessage": "Loading co-op status"
+          },
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/scripts/hooks/session-orientation.mjs\" 2>/dev/null || true",
+            "timeout": 10,
+            "statusMessage": "Checking repository state"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/scripts/hooks/protect-canonical.mjs\"",
+            "timeout": 10
           }
         ]
       }

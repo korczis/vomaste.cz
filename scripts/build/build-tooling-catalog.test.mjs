@@ -25,6 +25,7 @@ import {
   readNpmScripts,
   readPrecommitChecks,
   readAgents,
+  readWorkflows,
   readRecords,
   readSkills,
   slugFor,
@@ -33,11 +34,17 @@ import {
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 
+// Skutečnost se čte celá, včetně Claude vrstvy. Vynechat agenty by
+// znamenalo, že brána G8 vidí prázdný adresář a hlásí každý záznam
+// jako mrtvý — což test kdysi udělal a bylo to správně: helper zaostal
+// za tím, co repozitář obsahuje.
 const real = () => ({
   records: readRecords(),
   scripts: readNpmScripts(),
   recipes: readJustRecipes(),
   skills: readSkills(),
+  agents: readAgents(),
+  workflows: readWorkflows(),
 });
 
 /* ---- 1) skutečný repozitář ------------------------------------------- */
@@ -68,6 +75,8 @@ const base = () => {
   const { records, scripts, recipes, skills } = real();
   return {
     records: records.filter((r) => ["data-validate", "skill-adr", "just-build"].includes(r.identifier)).map((r) => ({ ...r })),
+    agents: [],
+    workflows: [],
     scripts: { "data:validate": scripts["data:validate"] },
     recipes: recipes.filter((r) => r.name === "build"),
     skills: skills.filter((s) => s.name === "adr"),

@@ -152,8 +152,8 @@ Legenda stavu: ` ` čeká · `~` běží · `x` hotovo · `!` blokováno
 
 ### Fáze J — hooks
 
-- [ ] **J1** SessionStart: rychlá orientace (identita, větev, role, stav).
-- [ ] **J2** PreToolUse guardrail: ochrana autorizačního logu a
+- [x] **J1** SessionStart: rychlá orientace (identita, větev, role, stav).
+- [x] **J2** PreToolUse guardrail: ochrana autorizačního logu a
       generovaných souborů — **včetně testů allowed/blocked/edge**.
 
 ### Fáze K — workflow vrstva
