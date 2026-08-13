@@ -18,6 +18,19 @@ Nejužitečnější příspěvky téhle povahy nejsou nové kauzy. Jsou to **opr
 Vyberte si podle toho, co máte v ruce. Každá cesta říká rovnou, co se s tím
 stane dál a co pro to musíte umět.
 
+## Chcete u toho použít Claude Code?
+
+Nemusíte. Všechny cesty níž fungují bez něj a AI-asistovaný příspěvek
+má **přesně stejné nároky na kvalitu** jako ručně psaný — doložený zdroj,
+otevřený a přečtený, procesní výsledek odlišený od věcného, mezera místo
+spekulace.
+
+Co Claude Code změní: nemusíte znát strukturu repozitáře ani si pamatovat
+příkazy. [Jak začít](@/prirucka/jak-zacit-s-claude-code.md), praktické
+úkoly v [Bootcampu](@/bootcamp/_index.md).
+
+Co nezmění: jeho výstup není zdroj a nerozhoduje o rozsahu pokrytí.
+
 ## Co platí pro všechny cesty
 
 - **Programovat nemusíte.** Většina cest jde přes formulář.

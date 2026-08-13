@@ -176,8 +176,8 @@ Legenda stavu: ` ` čeká · `~` běží · `x` hotovo · `!` blokováno
       TERMINÁL / CLAUDE CODE / PROJECT SKILL).
 - [x] **M2** Akademie: úroveň Claude Code (C101–C110) v `data/learning.toml`.
 - [x] **M3** Bootcamp: praktické úkoly na syntetických datech.
-- [ ] **M4** Příručka/KB: pojmy Skill, Agent, Workflow, Hook, riziko.
-- [ ] **M5** `/start/` a `/prispet/` — rozcestník „chci pracovat s Claude Code".
+- [x] **M4** Příručka/KB: pojmy Skill, Agent, Workflow, Hook, riziko.
+- [x] **M5** `/start/` a `/prispet/` — rozcestník „chci pracovat s Claude Code".
 - [x] **M6** Veřejný katalog skillů/agentů/workflow (generovaný).
 
 ### Fáze N — vstupní dokumenty
