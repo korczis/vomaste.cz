@@ -201,6 +201,14 @@ lead = "Jak s repozitářem pracovat přes Claude Code — co umí, kde jsou jeh
 # uvedená lekce existuje.
 
 [[paths]]
+id = "bootcamp-claude"
+label = "Bootcamp: první práce přes Claude Code"
+order = 4
+audience = "zdroje"
+lead = "Tři praktické úkoly v terminálu: zjistit stav prostředí, nechat si vysvětlit změnu a spustit bránu kvality. Nic se při nich nepublikuje."
+lessons = ["B09", "B10", "B11"]
+
+[[paths]]
 id = "claude-code"
 label = "Chci pracovat přes Claude Code"
 order = 5
