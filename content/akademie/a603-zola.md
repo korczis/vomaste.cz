@@ -103,9 +103,19 @@ těla, takže se z něj stal `text`), volající se opravil — a vykreslení uv
 komponenty dál četlo `{% raw %}{{ body }}{% endraw %}`. U volání bez těla je ten slot
 prázdný, takže se vykreslil barevný rámeček s nadpisem a nicím uvnitř.
 
-Build byl přitom celou dobu zelený. Prázdný `<div>` je platné HTML, odkazy
-sedí, JSON-LD sedí, a žádný krok pipeline netvrdí, že se komponenta
-vykreslila **a něco vykreslila**.
+A teď to podstatné, protože to není „nikdo to nekontroluje". Tera to
+kontroluje. `{% raw %}{{ nedefinovana }}{% endraw %}` skončí chybou
+„Variable `nedefinovana` is not defined". Ta pojistka existuje a chytila by
+to hned při prvním sestavení.
+
+Nechytila, protože na tom řádku stálo `{% raw %}{{ body | safe }}{% endraw %}`.
+Filtr `safe` bere jakoukoli hodnotu, a nedefinovaná se v něm zformátuje
+jako prázdno — takže chybu spolkne. Build zelený, prázdný `<div>` je
+platné HTML, odkazy sedí, JSON-LD sedí.
+
+Praktické pravidlo je proto užší, než by se zdálo: **`| safe` patří jen
+tam, kde do šablony vědomě vpouštíte hotové HTML.** Jako reflex na konci
+výrazu vypíná kontrolu, kterou byste jinak dostali zadarmo.
 
 Poučení není „přejmenovávej opatrně". Je to: **argument, který do komponenty
 vejde a nikdo ho uvnitř nepřečte, je tichá ztráta obsahu.** Po každém
