@@ -65,7 +65,7 @@ Legenda stavu: ` ` čeká · `~` běží · `x` hotovo · `!` blokováno
 
 ### Fáze A — ověření reality a rozhodnutí
 
-- [ ] **A1** `docs/claude-code/compatibility.md` — ověřená fakta
+- [x] **A1** `docs/claude-code/compatibility.md` — ověřená fakta
       o Claude Code (skills/agents/hooks/rules), verze, datum ověření,
       co je volitelné a co experimentální.
 - [ ] **A2** ADR `docs/adr/claude-native-contributor-operating-environment.md`
