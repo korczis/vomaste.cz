@@ -50,7 +50,7 @@ const USE_RE = /<ui_[a-z_]+[\s/>]/;
 
 // Advanced-table rule. A template containing a raw <table> must import
 // call table_advanced_table (the raw <table> is
-// then expected to be gone — the macro renders it). Per-file exemptions
+// then expected to be gone — the component renders it). Per-file exemptions
 // with a rationale only, exactly like EXEMPT above.
 const TABLE_EXEMPT = {};
 const TABLE_TAG_RE = /<table\b/;

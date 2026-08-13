@@ -24,33 +24,33 @@ const CONFORMING = `{% extends "base.html" %}
 {% endblock content %}
 `;
 
-const NO_IMPORT = `{% extends "base.html" %}
+const NO_UI_COMPONENT = `{% extends "base.html" %}
 {% block content %}
 <h1>{{ page.title }}</h1>
 {% endblock content %}
 `;
 
-const IMPORT_BUT_UNUSED = `{% extends "base.html" %}
+const UI_COMPONENT_UNUSED = `{% extends "base.html" %}
 {% block content %}
 <h1>{{ page.title }}</h1>
 {% endblock content %}
 `;
 
-const RAW_TABLE_NO_IMPORT = `{% extends "base.html" %}
+const RAW_TABLE_NO_UI_COMPONENT = `{% extends "base.html" %}
 {% block content %}
 {{ <ui_page_header title={page.title} breadcrumb_items={[]} /> }}
 <table><tbody><tr><td>x</td></tr></tbody></table>
 {% endblock content %}
 `;
 
-const RAW_TABLE_IMPORT_UNUSED = `{% extends "base.html" %}
+const RAW_TABLE_COMPONENT_UNUSED = `{% extends "base.html" %}
 {% block content %}
 {{ <ui_page_header title={page.title} breadcrumb_items={[]} /> }}
 <table><tbody><tr><td>x</td></tr></tbody></table>
 {% endblock content %}
 `;
 
-const TABLE_VIA_MACRO = `{% extends "base.html" %}
+const TABLE_VIA_COMPONENT = `{% extends "base.html" %}
 {% block content %}
 {{ <ui_page_header title={page.title} breadcrumb_items={[]} /> }}
 {% <table_advanced_table id="t" caption="Test"> %}{% </table_advanced_table> %}
@@ -105,15 +105,15 @@ test("passes when all non-exempt templates use a ui_* component", () => {
   });
 });
 
-test("exempt files (base.html, 404.html) pass without importing macros/ui.html", () => {
+test("exempt files (base.html, 404.html) pass without calling a ui_* component", () => {
   withFixture({}, (dir) => {
     const { status } = runLint(dir);
     assert.equal(status, 0);
   });
 });
 
-test("fails when a non-exempt template never imports macros/ui.html", () => {
-  withFixture({ "example.html": NO_IMPORT }, (dir) => {
+test("fails when a non-exempt template never calls any component", () => {
+  withFixture({ "example.html": NO_UI_COMPONENT }, (dir) => {
     const { status, out } = runLint(dir);
     assert.equal(status, 1);
     assert.match(out, /never calls a ui_\* component/);
@@ -121,15 +121,15 @@ test("fails when a non-exempt template never imports macros/ui.html", () => {
 });
 
 test("fails when a non-exempt template never calls a ui_* component", () => {
-  withFixture({ "example.html": IMPORT_BUT_UNUSED }, (dir) => {
+  withFixture({ "example.html": UI_COMPONENT_UNUSED }, (dir) => {
     const { status, out } = runLint(dir);
     assert.equal(status, 1);
     assert.match(out, /never calls a ui_\* component/);
   });
 });
 
-test("fails when a template renders a raw <table> without importing macros/table.html", () => {
-  withFixture({ "example.html": RAW_TABLE_NO_IMPORT }, (dir) => {
+test("fails when a template renders a raw <table> with no shared table component", () => {
+  withFixture({ "example.html": RAW_TABLE_NO_UI_COMPONENT }, (dir) => {
     const { status, out } = runLint(dir);
     assert.equal(status, 1);
     assert.match(out, /raw <table> but never calls the shared table component/);
@@ -137,7 +137,7 @@ test("fails when a template renders a raw <table> without importing macros/table
 });
 
 test("fails when a template renders a raw <table> but never calls the shared table component", () => {
-  withFixture({ "example.html": RAW_TABLE_IMPORT_UNUSED }, (dir) => {
+  withFixture({ "example.html": RAW_TABLE_COMPONENT_UNUSED }, (dir) => {
     const { status, out } = runLint(dir);
     assert.equal(status, 1);
     assert.match(out, /never calls the shared table component/);
@@ -145,7 +145,7 @@ test("fails when a template renders a raw <table> but never calls the shared tab
 });
 
 test("passes when tabular data goes through table_advanced_table (no raw <table> in the template)", () => {
-  withFixture({ "example.html": TABLE_VIA_MACRO }, (dir) => {
+  withFixture({ "example.html": TABLE_VIA_COMPONENT }, (dir) => {
     const { status } = runLint(dir);
     assert.equal(status, 0);
   });
