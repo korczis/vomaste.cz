@@ -1,0 +1,194 @@
+# Syntetická cvičná data pro Bootcamp a Akademii.
+#
+# ZÁVAZNÉ: všechno tady je VYMYŠLENÉ.
+# ---------------------------------------------------------------------------
+# Ani jedna osoba, obec, instituce, kauza, zpravodajský server ani URL v tomhle
+# souboru neexistuje. Je to schválně: výuka nesmí být zadními vrátky
+# k rozšíření rozsahu projektu (AGENTS.md, autorizační log), a simulovat
+# obvinění konkrétního reálného člověka kvůli cvičení by bylo horší než
+# neučit vůbec.
+#
+# Proto tu platí tři pravidla, která hlídá `validate-learning.mjs`:
+#   1. Každý subjekt má `synthetic = true`. Bez toho záznam neprojde.
+#   2. Domény cvičných URL musí být z rezervovaného jmenného prostoru
+#      (`.example`, `example.com/…`) — RFC 2606 je vyhrazuje přesně na tohle,
+#      takže cvičný odkaz nemůže omylem trefit cizí web.
+#   3. Nic odsud se nesmí objevit v `data/dossiers/**`. Cvičný dossier
+#      neexistuje a existovat nebude; cvičení pracují s tímhle souborem,
+#      ne s publikovaným datasetem.
+#
+# Šablony vykreslují cvičná data přes `templates/components/cvicna_data.html`, který
+# vždycky přidá viditelné označení „FIKTIVNÍ / CVIČNÁ DATA“. Cvičný záznam se
+# tedy nikde nemůže zobrazit tak, aby vypadal jako publikovaný.
+
+# ---------------------------------------------------------------------------
+# Cvičný svět
+# ---------------------------------------------------------------------------
+
+[world]
+label = "Bukov"
+lead = "Cvičné prostředí: fiktivní město Bukov a jeho fiktivní starostka. Nic z toho neexistuje — slouží to jen k nácviku."
+disclaimer = "FIKTIVNÍ / CVIČNÁ DATA — osoby, obce, média ani odkazy v tomto cvičení neexistují."
+
+[[subjects]]
+id = "jana-novakova"
+synthetic = true
+label = "Jana Nováková"
+role = "starostka fiktivního města Bukov"
+note = "Veřejná funkce je součást zadání: cvičení má procvičit i test veřejného zájmu, ne jen klasifikaci."
+
+[[subjects]]
+id = "mesto-bukov"
+synthetic = true
+label = "Město Bukov"
+role = "fiktivní obec"
+note = "Zadavatel fiktivní veřejné zakázky použité v cvičení na primární vs. převzatý zdroj."
+
+# ---------------------------------------------------------------------------
+# Cvičné zdroje — graf pro nácvik nezávislosti
+# ---------------------------------------------------------------------------
+# Tvoří schválně past: A je tisková zpráva, B a C ji přebírají, D je vlastní
+# zjištění. Kdo napočítá čtyři potvrzení, spadl do nejčastější chyby.
+
+[[sources]]
+id = "SRC-A"
+synthetic = true
+outlet = "Tisková zpráva města Bukov"
+kind = "primární"
+family = "bukov-tz"
+url = "https://bukov.example/tiskove-zpravy/rekonstrukce"
+published = "2026-03-02"
+derives_from = ""
+note = "Vyjádření zadavatele o sobě samém. Dokládá, co město tvrdí — ne že to tak je."
+
+[[sources]]
+id = "SRC-B"
+synthetic = true
+outlet = "Bukovský deník"
+kind = "převzatý"
+family = "bukov-tz"
+url = "https://bukovsky-denik.example/rekonstrukce-zahajena"
+published = "2026-03-02"
+derives_from = "SRC-A"
+note = "Text přebírá tiskovou zprávu, včetně formulací. Vlastní zjištění nepřidává."
+
+[[sources]]
+id = "SRC-C"
+synthetic = true
+outlet = "Zpravodaj Podhůří"
+kind = "převzatý"
+family = "bukov-tz"
+url = "https://podhuri-zpravodaj.example/z-regionu/rekonstrukce"
+published = "2026-03-03"
+derives_from = "SRC-A"
+note = "Druhý přetisk téže tiskové zprávy. Jiná URL, jiný vydavatel, pořád jeden hlas."
+
+[[sources]]
+id = "SRC-D"
+synthetic = true
+outlet = "Redakce Přehled"
+kind = "primární"
+family = "prehled-vlastni"
+url = "https://prehled.example/investigace/bukov-zakazka"
+published = "2026-04-11"
+derives_from = ""
+note = "Vlastní zjištění z veřejného registru smluv — nezávislá linie evidence."
+
+# ---------------------------------------------------------------------------
+# Cvičení: klasifikace stavu
+# ---------------------------------------------------------------------------
+# `answer` musí odpovídat některému ze stavů popsaných v `content/koncepty/
+# stav-*.md`. Validátor to kontroluje — nový stav nemůže vzniknout, aniž by
+# se opravila cvičení.
+
+[[classification]]
+id = "C1"
+prompt = "Jana Nováková na tiskové konferenci řekla: „Rekonstrukci dokončíme do prosince.“ Nahrávku i přepis zveřejnil jmenovaný zpravodajský server."
+answer = "citace"
+explanation = "Doložené je, že výrok padl — ne že se rekonstrukce do prosince stihne. Obsah výroku je tvrzení mluvčí, ne zjištění webu."
+trap = "Nejčastější chyba je povýšit citaci na fakt: „starostka řekla, že se to stihne“ se v hlavě čtenáře snadno změní na „stihne se to“."
+
+[[classification]]
+id = "C2"
+prompt = "Tři weby přinesly stejnou informaci o zahájení rekonstrukce. Všechny tři vycházejí z tiskové zprávy města."
+answer = "jeden-zdroj"
+explanation = "Tři adresy, jeden původ. Nezávislé potvrzení by muselo přijít z linie, která na tiskové zprávě nestojí."
+trap = "Počítat články místo původů. Dvacet přetisků je pořád jeden hlas."
+
+[[classification]]
+id = "C3"
+prompt = "Zahájení rekonstrukce potvrzuje jednak tisková zpráva města, jednak redakce, která si nezávisle vytáhla smlouvu z veřejného registru."
+answer = "overeno"
+explanation = "Dvě různé linie: vyjádření zadavatele a nezávisle dohledaný primární dokument. To jsou dva hlasy, ne jeden."
+trap = "Pozor obráceně: kdyby redakce jen citovala tiskovou zprávu, druhý hlas by nevznikl."
+
+[[classification]]
+id = "C4"
+prompt = "Komentátor v podepsaném sloupku píše, že rozhodnutí o rekonstrukci bylo nezodpovědné."
+answer = "nazor"
+explanation = "Doložitelné je autorství a znění komentáře. Hodnocení „nezodpovědné“ je postoj autora, ne zjištěný fakt."
+trap = "Přebírat hodnocení z komentáře do souhrnu, jako by šlo o zjištění redakce."
+
+[[classification]]
+id = "C5"
+prompt = "Bývalý zaměstnanec tvrdí, že zakázka byla ušitá na míru. Město to popírá. Žádný dokument ani orgán zatím věc neuzavřel."
+answer = "sporne"
+explanation = "Tvrzení existuje a je doložitelné jako tvrzení, obě strany jsou zastoupené a nic není uzavřené. Web spor za čtenáře nerozhodne."
+trap = "„Sporné“ neznamená „spíš nepravda“ ani „skoro potvrzeno“ — je to přiznání, že zdroje závěr nedovolují."
+
+# ---------------------------------------------------------------------------
+# Cvičení: mezera, nebo tvrzení?
+# ---------------------------------------------------------------------------
+
+[[gapdrill]]
+id = "G1"
+prompt = "Chceš napsat, kolik nakonec rekonstrukce stála. Našel jsi jen původní předpokládanou cenu z tiskové zprávy."
+answer = "mezera"
+explanation = "Předpokládaná cena není konečná cena. Tvrdit „stála přibližně tolik“ by domýšlelo, co zdroj neříká — patří to do registru mezer."
+
+[[gapdrill]]
+id = "G2"
+prompt = "Smlouva ve veřejném registru uvádí konkrétní částku a datum podpisu."
+answer = "tvrzeni"
+explanation = "Primární dokument dokládá, co je v něm napsané. Tvrzení se formuluje přesně na to, co dokument říká — tedy o smluvní částce, ne o skutečně proplacené."
+
+[[gapdrill]]
+id = "G3"
+prompt = "Anonymní příspěvek na sociální síti tvrdí, že peníze skončily u známého starostky. Nic dalšího k tomu není."
+answer = "nepublikovat"
+explanation = "Nejde ani o mezeru: mezera je otevřená otázka opřená o doloženou skutečnost. Tohle je nedoložené obvinění třetí osoby — nepublikuje se a nezakládá se kvůli němu ani záznam."
+
+# ---------------------------------------------------------------------------
+# Cvičení: rozsah a autorizace
+# ---------------------------------------------------------------------------
+# `answer` je jedno ze tří: bezpecne | review | autorizace
+
+[[scopedrill]]
+id = "S1"
+prompt = "Máš další veřejný zdroj k tvrzení, které už v dossieru je."
+answer = "bezpecne"
+explanation = "Doplnění dokladu k existujícímu tvrzení v autorizovaném rozsahu je běžný příspěvek. Projde normální revizí, nepotřebuje nové rozhodnutí o rozsahu."
+
+[[scopedrill]]
+id = "S2"
+prompt = "Našel jsi u už pokryté osoby úplně nové téma, o kterém dossier zatím nic nemá."
+answer = "review"
+explanation = "Rozšíření do hloubky u už pokrytého subjektu dnes nevyžaduje samostatné autorizační kolo, ale je to redakční rozhodnutí — konkretizuje se z přímo otevřených zdrojů a zaznamenává se datovaným záznamem."
+
+[[scopedrill]]
+id = "S3"
+prompt = "Ve zdroji je jmenovaná další osoba. Chceš jí založit vlastní dossier."
+answer = "autorizace"
+explanation = "Zmínka ve zdroji z nikoho nedělá subjekt. Uzel se povýší, jen když sám projde testem veřejného zájmu; jinak zůstane kontextovou entitou bez jediného tvrzení."
+
+[[scopedrill]]
+id = "S4"
+prompt = "U existujícího zdroje je špatně datum vydání."
+answer = "bezpecne"
+explanation = "Oprava faktické chyby proti zdroji je nejužitečnější a nejbezpečnější typ příspěvku. Stačí doložit, co na zdroji doopravdy je."
+
+[[scopedrill]]
+id = "S5"
+prompt = "Soukromá osoba bez veřejné funkce, o které psalo médium v souvislosti s pokrytou kauzou."
+answer = "autorizace"
+explanation = "Test veřejného zájmu se dělá na tom uzlu, ne na kauze kolem něj. Že o někom někdo napsal, není důvod k dossieru — soukromá osoba zůstává kontextem."

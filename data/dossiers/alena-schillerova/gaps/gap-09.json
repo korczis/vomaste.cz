@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/gaps/GAP-09",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-09",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/alena-schillerova"
+  },
+  "title": "GAP-09 — Obsah senátních pozměňovacích návrhů z primárního zdroje",
+  "description": "CLM-13 a CLM-14 popisují, co Senát 17. 6. 2026 novele vytkl a jak ji změnil. Historie sněmovního tisku 90 potvrzuje datum a procesní krok, ale ne obsah návrhů; primární senátní dokument se k datu kontroly nepodařilo dohledat.",
+  "priority": "nízká",
+  "checked": "2026-08-10",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/alena-schillerova/claims/CLM-14"
+    }
+  ],
+  "subjects": [
+    "schillerova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Obě tvrzení stojí na zdrojích rodiny `ctk` (CLM-13 navíc na ČT24,\nCLM-14 na Ekonomickém deníku, oba rovněž `ctk`), tedy na jednom\ndoložení.\n\n**Co bylo 2026-08-05 zkontrolováno.** Historie sněmovního tisku 90 na\npsp.cz dokládá, že Senát návrh **projednal 17. 6. 2026 na 26. schůzi\na vrátil sněmovně s pozměňovacími návrhy (usnesení č. 472)**, a že\nvýbory přijaly usnesení č. 216 a č. 135 rozdaná jako senátní tisky 246/1\na 246/2. Neuvádí ale **obsah** těch návrhů — tedy ani snížení limitu pro\nvyjmuté infrastrukturní výdaje ze 2 % na 1 % HDP, ani podmínění\nnavyšování výdajů souhlasem rozpočtového výboru, ani okruh nezávislých\ninstitucí z CLM-14. Vyhledání senátního tisku 246 na senat.cz\nnedopadlo: veřejné URL vrátilo dokument z jiného funkčního období\na stránka schůze se nepodařila správně dekódovat.\n\n**Jak se mezera uzavře.** Přímým dokumentem Senátu — usnesením č. 472\nnebo výborovými tisky 246/1 a 246/2 —, který obsah pozměňovacích návrhů\nuvádí doslovně. Do té doby zůstávají obě tvrzení na jednom doložení;\nnejde o pochybnost o tom, že Senát novelu vrátil, to je doloženo\nprimárně."
+    }
+  ],
+  "order": 9
+}

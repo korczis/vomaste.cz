@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaroslava-nemcova/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaroslava-nemcova"
+  },
+  "text": "Jaroslava Němcová byla podle oficiálního profilu na webu Vlády ČR ministryní práce a sociálních věcí od 13. 12. 2017 do 27. 6. 2018 (první vláda Andreje Babiše, od 24. 1. 2018 v demisi); dříve působila jako radní Středočeského kraje pro zdravotnictví (2016–2017), náměstkyně ředitele nemocnice a ředitelka pobočky VZP (2011–2014)",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaroslava-nemcova/sources/SRC-01"
+    }
+  ],
+  "subjects": [
+    "jaroslava-nemcova"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jaroslava-nemcova/_index.md)."
+    }
+  ]
+}

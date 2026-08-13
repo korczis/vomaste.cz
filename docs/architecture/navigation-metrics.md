@@ -2,7 +2,7 @@
 
 > **Stav**: datová vrstva, vykreslení badge i post-build ověření hotové a
 > zapojené do buildu. Badge se renderují na serveru přes sdílené macro
-> `nav::nav_link` (desktop sidebar i mobilní navigace) a
+> `nav_nav_link` (desktop sidebar i mobilní navigace) a
 > `verify:navigation-counts` porovnává každé číslo v postaveném HTML
 > s manifestem. Neuzavřené položky — veřejný endpoint, sbalený sidebar,
 > vizuální kontrola — viz [Co zbývá](#co-zbývá).
@@ -25,7 +25,7 @@ static/data/*.json             kanonické kolekční exporty
 static/data/graph.jsonld       kanonický JSON-LD graf
         ↓ scripts/data/build-navigation-metrics.mjs
 data/generated/navigation-metrics.json   generovaný manifest
-        ↓ templates/macros/nav.html (nav::nav_link)
+        ↓ templates/macros/nav.html (nav_nav_link)
 statické HTML s badge
         ↓ scripts/data/verify-navigation-counts.mjs
 ověřeno proti manifestu
@@ -227,7 +227,7 @@ Markdownu ani JavaScriptu — navigační konfigurace smí odkazovat jen na
 
 
 Hotové: registr metrik, generátor, testy, `count_metric` v
-`data/navigation.toml`, vykreslení badge ve sdíleném macru `nav::nav_link`
+`data/navigation.toml`, vykreslení badge ve sdílené komponentě `nav_nav_link`
 (používá ho desktop sidebar i mobilní navigace, takže obě větve resolvují
 metriku jedním lookupem a nemůžou se rozejít).
 

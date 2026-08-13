@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-stropnicky",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "martin-stropnicky",
+  "slug": "martin-stropnicky",
+  "title": "Martin Stropnický",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Martin Stropnický.",
+  "dossierType": "entity",
+  "canonicalDossier": "martin-stropnicky",
+  "subject": "martin-stropnicky",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-MARTIN-STROPNICKY"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "martin-stropnicky",
+        "label": "Martin Stropnický",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nMartin Stropnický je bývalý místopředseda vlády a ministr zahraničních\nvěcí (2017–2018, první vláda Andreje Babiše), bývalý ministr obrany\n(2014–2017) a ministr kultury (1998), dlouholetý diplomat a herec; od\nroku 2018 velvyslanec v Izraeli. Jako politicky exponovaná osoba\nv souvislosti s výkonem dřívějších veřejných funkcí spadá do standing\nscope autorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam\npro tento dossier je `AUTH-2026-08-08-MARTIN-STROPNICKY`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívějších veřejných funkcí a odchodu z vysoké politiky do\ndiplomacie (dle citovaných zdrojů jeho vlastní rozhodnutí). Rozšíření\nrozsahu vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/martin-stropnicky/claims/clm-01.md) | Martin Stropnický byl podle oficiálního přehledu členů první vlády Andreje Babiše na webu Vlády ČR od 13. 12. 2017 místopředsedou vlády a ministrem zahraničních věcí (od 24. 1. 2018 do 27. 6. 2018 v demisi), předtím ministrem obrany (2014–2017) a diplomatem (velvyslanec v Portugalsku, Itálii a při Svatém stolci); podle Aktuálně.cz v roce 2018 skončil ve vysoké politice vlastním rozhodnutím a vláda schválila jeho vyslání jako velvyslance v Izraeli | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/martin-stropnicky/sources/src-01.md), [SRC-02](@/dossiers/martin-stropnicky/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

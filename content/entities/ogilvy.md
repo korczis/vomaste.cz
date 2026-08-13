@@ -3,7 +3,7 @@
 title = "Ogilvy"
 template = "entity.html"
 weight = 313
-description = "Kontextová entita — Mezinárodní reklamní agentura uvedená v oficiálním životopise Klempíře (kreativní ředitel 1990–2011); jen biografický kontext."
+description = "Ogilvy — Kontextová entita — Mezinárodní reklamní agentura uvedená v oficiálním životopise Klempíře (kreativní ředitel 1990–2011); jen biografický kontext."
 
 [extra]
 generated = true

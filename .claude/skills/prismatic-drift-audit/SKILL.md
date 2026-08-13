@@ -33,3 +33,14 @@ Build plan: Fáze 4, item 9, of
 Say there's no baseline and no drift detector yet; if genuinely needed,
 building it is Fáze 4 work and depends on the export contract (Fáze 2.2)
 existing first.
+
+## When NOT to use this skill
+
+- **As a routine step.** It answers a question that only matters after
+  `prismatic-platform` has changed materially, the export contract
+  moved, or a long gap passed since the last run.
+- **To fix drift.** It reports; the decision about what to do with a
+  changed contract is a human one, and a changed major version is a hard
+  stop, not something to negotiate around.
+- **As evidence.** A drift report says what changed in tooling, nothing
+  about the world.

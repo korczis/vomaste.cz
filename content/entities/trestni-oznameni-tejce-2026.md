@@ -3,7 +3,7 @@
 title = "Trestní oznámení ministra Tejce v bitcoinové kauze (2026)"
 template = "entity.html"
 weight = 416
-description = "Kontextová entita — Trestní oznámení podané po interním auditu (doručeno VSZ Olomouc 23. 4. 2026) pro podezření z porušení povinnosti při správě cizího majetku a zneužití pravomoci; není to…"
+description = "Trestní oznámení ministra Tejce v bitcoinové kauze (2026) — Kontextová entita — Trestní oznámení podané po interním auditu (doručeno VSZ Olomouc 23. 4. 2026) pro podezření z porušení povinnosti…"
 
 [extra]
 generated = true

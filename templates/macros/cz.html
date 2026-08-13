@@ -15,14 +15,14 @@
     byla výjimka bez opory v jazyce.
 
     Použití:
-      {{ cz::pocet(n=d.counts.sources, one="zdroj", few="zdroje", many="zdrojů") }}
+      {{ <cz_pocet n={d.counts.sources} one="zdroj" few="zdroje" many="zdrojů" /> }}
 -#}
-{%- macro pocet(n, one, few, many) -%}
+{% component cz_pocet(n, one, few, many) -%}
 {{ n }} {% if n == 1 %}{{ one }}{% elif n >= 2 and n <= 4 %}{{ few }}{% else %}{{ many }}{% endif %}
-{%- endmacro pocet -%}
+{%- endcomponent %}
 
 {#- Jen tvar bez čísla — když se číslo vypisuje zvlášť (např. v jiném
     <span> kvůli zarovnání číslic). -#}
-{%- macro tvar(n, one, few, many) -%}
+{% component cz_tvar(n, one, few, many) -%}
 {% if n == 1 %}{{ one }}{% elif n >= 2 and n <= 4 %}{{ few }}{% else %}{{ many }}{% endif %}
-{%- endmacro tvar -%}
+{%- endcomponent %}

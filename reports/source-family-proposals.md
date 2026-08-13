@@ -1,7 +1,7 @@
 # Návrhy zdrojových rodin
 
 > **Generováno** `npm run sources:detect-family` — needitovat ručně.
-> Vygenerováno: 2026-08-06T00:17:55.212Z
+> Vygenerováno: 2026-08-06T07:50:34.801Z
 
 Tenhle report je **návrh, ne zápis**. Detekce sama nic do
 `data/dossiers/**` nezapisuje; rodinu vyplní až vědomý krok
@@ -21,45 +21,46 @@ a to **jen u verdiktu `ctk`**.
 
 | Verdikt | Počet |
 |---|---|
-| `unknown` | 13 |
-| `own` | 8 |
-| **celkem zpracováno** | **21** |
+| `own` | 12 |
+| `unknown` | 7 |
+| `ctk` | 1 |
+| **celkem zpracováno** | **20** |
 
-## Verdikt `ctk` (0)
+## Verdikt `ctk` (1)
 
-_(žádný)_
+| Dossier | ID | Outlet | Jistota | Evidence |
+|---|---|---|---|---|
+| jaromir-zuna | SRC-41 | CNN Prima News | high | JSON-LD author (@type Person): ČTK |
 
 ## Jiné navržené rodiny (0)
 
 _(žádná)_
 
-## Verdikt `own` — vlastní zpravodajství, rodina se nevyplňuje (8)
+## Verdikt `own` — vlastní zpravodajství, rodina se nevyplňuje (12)
 
 | Dossier | ID | Outlet | Jistota | Evidence |
 |---|---|---|---|---|
-| adam-vojtech | SRC-06 | Aktuálně.cz | high | JSON-LD author (@type Person): Veronika Rodriguez |
-| adam-vojtech | SRC-10 | Reflex | high | JSON-LD author (@type Person): Jiří Sezemský |
-| adam-vojtech | SRC-12 | Echo24 | medium | podpis: „Jiří Peňás" |
-| adam-vojtech | SRC-17 | Olomoucký deník | high | JSON-LD author (@type Person): Daniela Tauberová |
-| adam-vojtech | SRC-24 | Podnikatel.cz | high | <meta name="author" content="Daniel Morávek"> |
-| adam-vojtech | SRC-27 | CNN Prima News | high | JSON-LD author (@type Person): Karolína Neubergerová |
-| adam-vojtech | SRC-35 | Olomoucký deník | high | JSON-LD author (@type Person): Daniela Tauberová |
-| adam-vojtech | SRC-39 | Aktuálně.cz | high | <meta content="Josef Veselka" name="author" /> |
+| jaromir-zuna | SRC-02 | e15.cz | medium | podpis: „Viliam Buchert" |
+| jaromir-zuna | SRC-06 | TN.cz (TV Nova) | high | JSON-LD author (@type Person): Tomáš Vašek |
+| jaromir-zuna | SRC-09 | Echo24 | medium | podpis: „Jiří Peňás" |
+| jaromir-zuna | SRC-15 | CZDEFENCE | high | JSON-LD author (@type Person): Tomáš Kolařík |
+| jaromir-zuna | SRC-18 | e15.cz | medium | podpis: „Pavel Otto" |
+| jaromir-zuna | SRC-22 | CZDEFENCE | high | JSON-LD author (@type Person): Katarina Přikrylová |
+| jaromir-zuna | SRC-23 | Ekonomický deník | high | <meta name="author" content="Jan Hrbáček" /> |
+| jaromir-zuna | SRC-24 | CNN Prima News | high | JSON-LD author (@type Person): Lukáš Cigánek |
+| jaromir-zuna | SRC-25 | Security magazín | high | JSON-LD author (@type Person): Jakub Samek |
+| jaromir-zuna | SRC-30 | Ekonomický deník | high | <meta name="author" content="Jan Hrbáček" /> |
+| jaromir-zuna | SRC-35 | Aktuálně.cz | high | <meta content="Ondřej Stratilík" name="author" /> |
+| jaromir-zuna | SRC-40 | Deník N | high | <meta name="author" content="Jan Tvrdoň"> |
 
-## Verdikt `unknown` — nezjištěno, rodina se nevyplňuje (13)
+## Verdikt `unknown` — nezjištěno, rodina se nevyplňuje (7)
 
 | Dossier | ID | Outlet | HTTP | Důvod |
 |---|---|---|---|---|
-| adam-vojtech | SRC-01 | Vláda České republiky (vlada.gov.cz) | 200 | no-credit |
-| adam-vojtech | SRC-15 | Hanácká Drbna | 200 | credits-inconclusive |
-| adam-vojtech | SRC-22 | Zdravé zprávy | 200 | credits-inconclusive |
-| adam-vojtech | SRC-23 | Zdravé zprávy | 404 | fetch-failed: HTTP 404 |
-| adam-vojtech | SRC-30 | Zdravé zprávy | 200 | credits-inconclusive |
-| adam-vojtech | SRC-34 | Poslanecká sněmovna Parlamentu ČR | 200 | no-credit |
-| adam-vojtech | SRC-41 | Fakultní nemocnice Olomouc (oficiální web) | 200 | credits-inconclusive |
-| adam-vojtech | SRC-42 | Fakultní nemocnice Olomouc (oficiální web) | 200 | credits-inconclusive |
-| adam-vojtech | SRC-43 | Poslanecká sněmovna Parlamentu ČR | 200 | no-credit |
-| adam-vojtech | SRC-44 | Poslanecká sněmovna Parlamentu ČR | 200 | no-credit |
-| adam-vojtech | SRC-45 | Ministerstvo zdravotnictví ČR | 200 | no-credit |
-| adam-vojtech | SRC-46 | Policie České republiky — Krajské ředitelství policie Olomouckého kraje | 200 | no-credit |
-| adam-vojtech | SRC-50 | Zdravé zprávy | 200 | credits-inconclusive |
+| jaromir-zuna | SRC-01 | Vláda České republiky (vlada.gov.cz) | 200 | no-credit |
+| jaromir-zuna | SRC-16 | ČT24 (Česká televize) | — | fetch-failed: HTTP 503 |
+| jaromir-zuna | SRC-20 | Vláda České republiky (vlada.gov.cz) | 200 | credits-inconclusive |
+| jaromir-zuna | SRC-26 | Vláda České republiky (vlada.gov.cz) | 200 | no-credit |
+| jaromir-zuna | SRC-34 | Poslanecká sněmovna Parlamentu ČR | 200 | no-credit |
+| jaromir-zuna | SRC-38 | Vláda České republiky (vlada.gov.cz) | 200 | no-credit |
+| jaromir-zuna | SRC-39 | Vláda České republiky (vlada.gov.cz) | 200 | no-credit |

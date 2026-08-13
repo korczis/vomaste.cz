@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/preflight",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "preflight",
+  "kind": "npm",
+  "name": "preflight",
+  "title": "Preflight vygenerovaných vstupů",
+  "category": "provoz",
+  "summary": "Zkontroluje, jestli existují vygenerované soubory, které šablony čtou přes load_data. Je to mapa mezi symptomem („load_data … does not exist“ z hloubi base.html) a příčinou („neběžely generátory“).",
+  "whenToRun": "Před `zola serve`, po klonu nebo po `git pull`. `--quiet` mlčí, když je vše v pořádku.",
+  "inputs": [
+    "data/generated/**"
+  ],
+  "sourceFile": "scripts/build/require-generated.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Není náhrada generátorů — jen řekne, který příkaz chybějící vstupy vyrobí."
+  ]
+}

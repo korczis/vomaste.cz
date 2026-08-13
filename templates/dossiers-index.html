@@ -1,7 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
-{% import "macros/table.html" as table %}
-{% import "partials/dossier-directory.html" as dd %}
 
 {#-
   Adresář dossierů. Se dvěma dossiery stačila zeď dlaždic; s dvaceti je
@@ -28,10 +25,10 @@
 
 {% block content %}
 <main class="mx-auto max-w-6xl px-6 py-12 text-white">
-  {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
+  {{ <ui_page_header title={section.title} description={section.description} breadcrumb_items={[
     "Domů::" ~ get_url(path="@/_index.md"),
     "Dossiery",
-  ]) }}
+  ]} /> }}
 
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
@@ -41,18 +38,11 @@
       bere ze stránky (get_section) — kanonický title žije v kartě. -#}
   {% set idx = load_data(path="data/generated/views/dossiers-index.json") %}
   {% if idx.cards | length == 0 %}
-  {{ ui::empty_state(message="Zatím zde není žádný autorizovaný dossier.") }}
+  {{ <ui_empty_state message="Zatím zde není žádný autorizovaný dossier." /> }}
   {% else %}
 
-  {% set_global entity_dossiers = [] %}
-  {% set_global aggregate_dossiers = [] %}
-  {% for card in idx.cards %}
-    {% if card.dossierType == "aggregate" %}
-      {% set_global aggregate_dossiers = aggregate_dossiers | concat(with=[card.slug]) %}
-    {% else %}
-      {% set_global entity_dossiers = entity_dossiers | concat(with=[card.slug]) %}
-    {% endif %}
-  {% endfor %}
+  {% set aggregate_dossiers = [card.slug for card in idx.cards if card.dossierType == "aggregate"] %}
+  {% set entity_dossiers = [card.slug for card in idx.cards if card.dossierType != "aggregate"] %}
 
   {#- Souhrn se sčítá z týchž view-model počtů (card.counts ← kanonický
       dataset, T-028 fáze H), které plní řádky tabulky. -#}
@@ -71,11 +61,11 @@
   {% endfor %}
 
   <div class="mb-8 grid grid-cols-2 gap-3 sm:grid-cols-5">
-    {{ ui::stat_tile(value=entity_dossiers | length, label="Dossierů") }}
-    {{ ui::stat_tile(value=t_claims, label="Tvrzení celkem") }}
-    {{ ui::stat_tile(value=t_sources, label="Zdrojů celkem") }}
-    {{ ui::stat_tile(value=t_gaps, label="Otevřených mezer") }}
-    {{ ui::stat_tile(value=t_relations, label="Vztahů v grafech") }}
+    {{ <ui_stat_tile value={entity_dossiers | length} label="Dossierů" /> }}
+    {{ <ui_stat_tile value={t_claims} label="Tvrzení celkem" /> }}
+    {{ <ui_stat_tile value={t_sources} label="Zdrojů celkem" /> }}
+    {{ <ui_stat_tile value={t_gaps} label="Otevřených mezer" /> }}
+    {{ <ui_stat_tile value={t_relations} label="Vztahů v grafech" /> }}
   </div>
 
   {#- Plný adresář: tři projekce téhož datasetu, filtrování, řazení,
@@ -83,13 +73,7 @@
       staví record-tables.mjs z kanonických zdrojů — počty ani routy nejsou
       psané v šabloně. -#}
   {%- set directory_items = load_data(path="static/data/dossiers.json") -%}
-  {{ dd::directory(
-    id="dossier-directory",
-    items=directory_items,
-    title="Autorizované dossiery",
-    default_view="table",
-    url_state=true,
-    export_name="dossiery") }}
+  {{ <dd_directory id="dossier-directory" items={directory_items} title="Autorizované dossiery" default_view="table" url_state={true} export_name="dossiery" /> }}
 
   <p class="mt-3 text-xs text-white/55">
     Počty generuje <code>scripts/dossier/generate-stats.mjs</code> při každém buildu
@@ -102,7 +86,7 @@
   </p>
 
   <div class="mb-10 max-w-xl">
-    {{ ui::intake_cta(heading="Chybí tu dossier, který by tu podle vás měl být?", lead="Navrhněte ho — veřejný podnět je vstup k posouzení, ne slib publikace.") }}
+    {{ <ui_intake_cta heading="Chybí tu dossier, který by tu podle vás měl být?" lead="Navrhněte ho — veřejný podnět je vstup k posouzení, ne slib publikace." issue_form_url={config.extra.intake_issue_form_url} /> }}
   </div>
 
   {% if aggregate_dossiers | length > 0 %}
@@ -123,6 +107,6 @@
   {% endif %}
   {% endif %}
 
-  {{ ui::back_link_footer(url=get_url(path="@/_index.md"), label="Zpět na hlavní stránku") }}
+  {{ <ui_back_link_footer url={get_url(path="@/_index.md")} label="Zpět na hlavní stránku" /> }}
 </main>
 {% endblock content %}

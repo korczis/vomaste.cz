@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/olga-richterova/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/olga-richterova"
+  },
+  "title": "SRC-01 — Poslanecká sněmovna: oficiální profil poslankyně Olgy Richterové",
+  "description": "Oficiální profilová stránka poslankyně na webu Poslanecké sněmovny Parlamentu ČR s údaji o mandátu, straně, obvodu a klubové a výborové příslušnosti.",
+  "outlet": "Poslanecká sněmovna Parlamentu ČR",
+  "sourceType": "primární úřední záznam",
+  "url": "https://www.psp.cz/sqw/detail.sqw?id=6473",
+  "retrieved": "2026-08-07",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/olga-richterova/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "olga-richterova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profilová stránka Olgy Richterové (psp.cz, id 6473) na webu Poslanecké sněmovny, otevřena a přečtena 2026-08-07.\nUvádí mandát poslankyně od 4. 10. 2025, příslušnost k poslaneckému klubu Piráti (volební obvod hlavní město Praha) a její funkci předsedkyně tohoto klubu od 5. 10. 2025, dále členství v Kontrolním výboru, Organizačním výboru a Výboru pro veřejnou správu a regionální rozvoj od 11. 11. 2025.\n\nPoznámka k typu zdroje a jeho limitům: primární úřední zdroj — zákonodárný sbor sám eviduje mandát a klubovou příslušnost svého člena, nejde o redakční zpravodajství, a stránka neuvádí funkci místopředsedkyně České pirátské strany (stranický, nikoli sněmovní orgán). Tu spolu s výsledkem lednové volby dokládají SRC-02 (Deník.cz/ČTK) a SRC-03 (CNN Prima News), dvě na sobě nezávislé redakce."
+    }
+  ],
+  "order": 1
+}

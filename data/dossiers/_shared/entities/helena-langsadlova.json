@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/helena-langsadlova",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "helena-langsadlova",
+  "entityId": "helena-langsadlova",
+  "title": "Helena Langšádlová",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "helena-langsadlova"
+  ],
+  "order": 536,
+  "description": "Helena Langšádlová — bývalá ministryně pro vědu, výzkum a inovace (2021–2024).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalá ministryně pro vědu, výzkum a inovace (17. 12. 2021 –\n5. 5. 2024, TOP 09), dlouholetá poslankyně (od 2010), starostka\nČernošic (1998–2006).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ],
+  "media": [
+    {
+      "file": "images/people/helena-langsadlova.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Helena_Lang%C5%A1%C3%A1dlov%C3%A1.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "author": "Helena Langšádlová archive",
+      "credit": "http://www.top09.cz/files/photos/large/20120814163039.jpg",
+      "retrieved": "2026-08-11",
+      "width": 1200,
+      "height": 1500,
+      "role": "portrait"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q12019419"
+  }
+}

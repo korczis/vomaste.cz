@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "CLM-02"
-description = "Českou společností za GMR GAS UA LLC je podle obchodního rejstříku GMR GAS s.r.o., IČO 28274318, se sídlem v Brně, zapsaná 2008 pod jménem KADAR s.r.o. a přejmenovaná 2015; mezi jejími zapsanými činnostmi je montáž, opravy a revize plynových zařízení"
+description = "Českou společností za GMR GAS UA LLC je podle obchodního rejstříku GMR GAS s.r.o., IČO 28274318, se sídlem v Brně, zapsaná 2008 pod jménem KADAR s.r.o. a přejmenovaná… Dossier: Petr Vencálek."
 template = "dossier-claim.html"
 weight = 2
 

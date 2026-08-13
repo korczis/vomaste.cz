@@ -1,0 +1,35 @@
+{#- Blokový komponent: cvičení se skrytým řešením.
+
+    Použití:
+      {% <cviceni zadani="Jak bys klasifikoval tohle tvrzení?"> %}
+      Řešení **v markdownu**.
+      {% </cviceni> %}
+
+    Proč <details> a ne JavaScript: odhalení odpovědi je přesně ta funkce,
+    kterou prohlížeč umí sám, přístupně, klávesnicí a bez čekání na bundle.
+    Přidávat kvůli tomu JS by znamenalo, že cvičení nefunguje tam, kde se
+    skript nenačte — což je u výukové stránky ta nejhorší možná regrese.
+    Zároveň to drží slib z konstituce: nic nepředstíráme, řešení je
+    v HTML, jen sbalené.
+
+    Řešení se NEODHALÍ samo. Kdo si nejdřív neodpoví, nic se nenaučí —
+    proto je zadání vizuálně oddělené a řešení za jedním kliknutím. -#}
+{% component cviceni(zadani="") -%}
+{%- set n = zadani | default(value="") -%}
+<section class="my-8 rounded-xl border border-white/15 bg-white/[0.03] p-6">
+  <p class="mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-white/55">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0" aria-hidden="true"><path d="M9 11l3 3L22 4 M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+    <span>Cvičení</span>
+  </p>
+  {%- if n %}
+  <p class="mb-4 text-sm leading-relaxed text-white">{{ n }}</p>
+  {%- endif %}
+  <details class="group rounded-lg border border-white/10 bg-black/30">
+    <summary class="cursor-pointer list-none px-4 py-2.5 text-sm text-[#f3e5c0] marker:content-none [&amp;::-webkit-details-marker]:hidden">
+      <span class="group-open:hidden">Zobrazit řešení</span>
+      <span class="hidden group-open:inline">Skrýt řešení</span>
+    </summary>
+    <div class="dossier-prose border-t border-white/10 px-4 py-4 text-sm">{{ body | markdown | safe }}</div>
+  </details>
+</section>
+{%- endcomponent %}

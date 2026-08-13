@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/michaela-sebelova",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "michaela-sebelova",
+  "slug": "michaela-sebelova",
+  "title": "Michaela Šebelová",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení Michaely Šebelové.",
+  "dossierType": "entity",
+  "canonicalDossier": "michaela-sebelova",
+  "subject": "michaela-sebelova",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-07",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-07-MICHAELA-SEBELOVA"
+    ]
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nMichaela Šebelová je poslankyně Poslanecké sněmovny Parlamentu ČR za\nhnutí STAN, předsedkyně poslaneckého klubu STAN a místopředsedkyně\nhnutí STAN, které je v aktuálním složení Poslanecké sněmovny opoziční\nstranou. Jako veřejná funkcionářka spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-07-MICHAELA-SEBELOVA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam — dokládá pouze její aktuální poslanecký mandát, funkci\npředsedkyně poslaneckého klubu STAN, členství ve Výboru pro\nzdravotnictví Poslanecké sněmovny a roli místopředsedkyně hnutí STAN,\nnikoli hloubkovou investigativní rešerši jiných témat. Rozšíření\nrozsahu vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/michaela-sebelova/claims/clm-01.md) | Michaela Šebelová je od 4. 10. 2025 poslankyní Poslanecké sněmovny Parlamentu ČR za hnutí STAN (volební obvod Moravskoslezský kraj); od 10. 10. 2025 je předsedkyní poslaneckého klubu STAN a od 11. 11. 2025 je členkou Výboru pro zdravotnictví. Zároveň je místopředsedkyní hnutí STAN, které je v aktuálním složení Poslanecké sněmovny opoziční stranou — nezávisle informovaly Deník.cz (ČTK) i Deník N. | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/michaela-sebelova/sources/src-01.md), [SRC-02](@/dossiers/michaela-sebelova/sources/src-02.md), [SRC-03](@/dossiers/michaela-sebelova/sources/src-03.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedeného poslaneckého mandátu, funkce předsedkyně\nklubu, členství ve výboru ani role místopředsedkyně hnutí STAN nic\ndalšího; nejde o hodnocení jejího politického působení ani o\ninvestigativní rešerši jiných témat."
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "entity": "michaela-sebelova",
+        "label": "Michaela Šebelová",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02",
+          "SRC-03"
+        ]
+      }
+    ],
+    "edges": []
+  }
+}

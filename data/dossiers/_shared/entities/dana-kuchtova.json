@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/dana-kuchtova",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "dana-kuchtova",
+  "entityId": "dana-kuchtova",
+  "title": "Dana Kuchtová",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "dana-kuchtova"
+  ],
+  "order": 636,
+  "description": "Dana Kuchtová — bývalá ministryně školství, mládeže a tělovýchovy (2007).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalá ministryně školství, mládeže a tělovýchovy (9. 1. 2007 – 4. 10. 2007, druhá vláda Mirka Topolánka); oficiální přehled u konce jejího působení uvádí demisi.\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ],
+  "media": [
+    {
+      "file": "images/people/dana-kuchtova.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dana_Kuchtova.jpg",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "author": "Petr Vilgus",
+      "credit": "Own work",
+      "retrieved": "2026-08-11",
+      "width": 1200,
+      "height": 1500,
+      "role": "portrait"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q5214769"
+  }
+}

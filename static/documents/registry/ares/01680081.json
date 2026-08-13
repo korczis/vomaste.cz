@@ -1,0 +1,188 @@
+{
+  "retrieved": "2026-08-09",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "01680081"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "01680081",
+        "obchodniJmeno": "České centrum pro investigativní žurnalistiku, o.p.s.",
+        "sidlo": {
+          "textovaAdresa": "Skryto dle zákona č. 304/2013 Sb.",
+          "standardizaceAdresy": false
+        },
+        "pravniForma": "141",
+        "pravniFormaRos": "141",
+        "financniUrad": "002",
+        "datumVzniku": "2013-06-27",
+        "datumAktualizace": "2025-12-05",
+        "icoId": "01680081",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Neuvedeno"
+        },
+        "czNace2008": [
+          "581",
+          "8559",
+          "9003"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "NEEXISTUJICI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "České centrum pro investigativní žurnalistiku, o.p.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodKraje": 19,
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "textovaAdresa": "Skryto dle zákona č. 304/2013 Sb.",
+                  "standardizaceAdresy": false
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "141",
+            "pravniFormaRos": "141",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "České centrum pro investigativní žurnalistiku, o.p.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "textovaAdresa": "Skryto dle zákona č. 304/2013 Sb.",
+                  "standardizaceAdresy": false
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "141",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "České centrum pro investigativní žurnalistiku, o.p.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 458996,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Na příkopě",
+                  "cisloDomovni": 388,
+                  "kodCastiObce": 400017,
+                  "cisloOrientacni": 1,
+                  "nazevCastiObce": "Staré Město",
+                  "kodAdresnihoMista": 21719250,
+                  "psc": 11000,
+                  "textovaAdresa": "Na příkopě 388/1, Staré Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "141",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "České centrum pro investigativní žurnalistiku, o.p.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 27,
+                  "nazevSpravnihoObvodu": "Praha 2",
+                  "kodMestskehoObvodu": 27,
+                  "nazevMestskehoObvodu": "Praha 2",
+                  "kodMestskeCastiObvodu": 500089,
+                  "kodUlice": 460451,
+                  "nazevMestskeCastiObvodu": "Praha 2",
+                  "nazevUlice": "Na Zderaze",
+                  "cisloDomovni": 1275,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 15,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21731683,
+                  "psc": 12000,
+                  "textovaAdresa": "Na Zderaze 1275/15, Nové Město, 12000 Praha 2",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "141",
+            "spisovaZnacka": "O 1135/MSPH",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "90120",
+          "581",
+          "8559"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

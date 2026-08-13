@@ -48,10 +48,24 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Kontextová entita — Zmíněna jen jako stranická afiliace citovaného Víta Rakušana. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis, boris-stastny, jaromir-zuna, jeronym-tejc, karel-havlicek, oto-klempir). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+      "value": "Kontextová entita — uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (mj. jako stranická příslušnost více subjektů dossierů). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
     }
   ],
   "externalIds": {
     "ico": "26673908"
-  }
+  },
+  "media": [
+    {
+      "file": "images/logos/stan.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_STAROSTOV%C3%89.svg",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "author": "Bruex",
+      "credit": "Own work",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 178,
+      "role": "logo"
+    }
+  ]
 }

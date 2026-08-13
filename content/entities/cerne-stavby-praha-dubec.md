@@ -3,7 +3,7 @@
 title = "Správní řízení o nepovolených stavbách v Praze-Dubči"
 template = "entity.html"
 weight = 90
-description = "Kontextová entita — Dvě samostatná pravomocná správní řízení (sadařský domek — nedbalost, „moštárna“/dvojgaráž — úmysl), pokuty celkem 200 000 Kč, stavby dodatečně zlegalizovány; přírodní park…"
+description = "Správní řízení o nepovolených stavbách v Praze-Dubči — Kontextová entita — Dvě samostatná pravomocná správní řízení (sadařský domek — nedbalost, „moštárna“/dvojgaráž — úmysl), pokuty celkem 200…"
 
 [extra]
 generated = true

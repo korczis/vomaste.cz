@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/marek-benda",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "marek-benda",
+  "slug": "marek-benda",
+  "title": "Marek Benda",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení Marka Bendy.",
+  "dossierType": "entity",
+  "canonicalDossier": "marek-benda",
+  "subject": "marek-benda",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-06",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-06-MAREK-BENDA"
+    ]
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nMarek Benda je poslanec Poslanecké sněmovny PČR za ODS a předseda\nposlaneckého klubu ODS. Jako veřejný funkcionář spadá do standing scope\nautorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento\ndossier je `AUTH-2026-08-06-MAREK-BENDA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam — dokládá pouze jeho aktuální poslanecký mandát a funkci předsedy\nposlaneckého klubu ODS, nikoli hloubkovou investigativní rešerši jeho\ndlouholetého veřejného působení nebo jiných témat. Rozšíření rozsahu\nvyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/marek-benda/claims/clm-01.md) | Marek Benda je podle profilu na webu Poslanecké sněmovny PČR poslancem zvoleným za ODS (mandát od 4. 10. 2025, členem poslaneckého klubu ODS a jeho předsedou od 8. 10. 2025 — již čtvrté volební období v této funkci); jeho zvolení předsedou poslaneckého klubu ODS jednomyslným hlasováním nezávisle informoval Echo24.cz | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/marek-benda/sources/src-01.md), [SRC-02](@/dossiers/marek-benda/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedeného mandátu a role předsedy poslaneckého klubu\nnic dalšího; nejde o hodnocení jeho politického působení ani o\ninvestigativní rešerši jiných témat, včetně jeho dlouholeté poslanecké\nkariéry od roku 1990."
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "entity": "marek-benda",
+        "label": "Marek Benda",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  }
+}

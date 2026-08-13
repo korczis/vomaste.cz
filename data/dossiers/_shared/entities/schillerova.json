@@ -92,5 +92,19 @@
       "type": "markdown",
       "value": "Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v [hlavním přehledu](@/dossiers/alena-schillerova/_index.md#kdo)."
     }
+  ],
+  "media": [
+    {
+      "file": "images/people/schillerova.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alena_Schillerov%C3%A1_listopad_2021_(cropped).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "Eva Kovaříková",
+      "credit": "Own work",
+      "retrieved": "2026-08-05",
+      "width": 1200,
+      "height": 1600,
+      "role": "portrait"
+    }
   ]
 }

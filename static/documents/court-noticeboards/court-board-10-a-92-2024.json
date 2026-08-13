@@ -1,0 +1,13 @@
+{
+  "retrieved": "2026-08-09",
+  "endpoint": "https://infodeska.gov.cz/eudpub/api/v1/vyveseni/vyhledej",
+  "docket": "10 A 92/2024",
+  "request": {
+    "kodSubjektu": "201000",
+    "cisloSenat": 10,
+    "rejstrik": "A",
+    "cisloBezne": 92,
+    "rocnik": 2024
+  },
+  "response": []
+}

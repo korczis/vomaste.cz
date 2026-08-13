@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/benjamin-cincila/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/benjamin-cincila"
+  },
+  "title": "SRC-01 — Poslanecká sněmovna Parlamentu ČR: oficiální profil poslance Benjamina Činčily",
+  "description": "Oficiální profilová stránka poslance na webu Poslanecké sněmovny Parlamentu ČR s údaji o aktuálním mandátu, klubové a výborové příslušnosti.",
+  "outlet": "Poslanecká sněmovna Parlamentu ČR",
+  "sourceType": "primární úřední záznam",
+  "url": "https://www.psp.cz/sqw/detail.sqw?id=6998",
+  "retrieved": "2026-08-07",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/benjamin-cincila/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "benjamin-cincila"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profilová stránka poslance na portálu psp.cz, otevřena a přečtena 2026-08-07.\nUvádí aktuální volební období od 4. 10. 2025 (obvod Kraj Vysočina, za KDU-ČSL), příslušnost k poslaneckému klubu KDU-ČSL od 7. 10. 2025 s poznámkou „místopředseda od 6. 5. 2026“, dále členství v Hospodářském výboru a v Rozpočtovém výboru (oba od 11. 11. 2025) a místopředsednictví Rozpočtového výboru (od 12. 11. 2025).\n\nPoznámka k typu zdroje a jeho limitům: primární úřední zdroj — sněmovna sama eviduje mandát a klubovou funkci vlastního poslance, nejde o redakční zpravodajství. Stránka nezmiňuje funkci prvního místopředsedy strany KDU-ČSL (stranická, nikoli sněmovní funkce) — tu dokládá SRC-02 (ČT24), jiná doména i jiný vydavatel, takže spolu s ním tvoří nezávislou dvojici pro účely korporace tohoto tvrzení."
+    }
+  ],
+  "order": 1
+}

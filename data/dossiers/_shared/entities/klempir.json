@@ -108,5 +108,19 @@
       "type": "markdown",
       "value": "Kontextová entita ze složení vlády — uvedena proto, že podle oficiálního\nseznamu členů vlády (Třetí vláda Andreje Babiše, ověřeno 2026-07-30 na\n<https://vlada.gov.cz/cz/vlada/clenove-vlady/>) zastává veřejnou funkci **ministr kultury**.\n\nTato stránka **není dossier**. Zaznamenává výhradně veřejnou funkci z\noficiálního zdroje — žádné tvrzení, obvinění, kauzu ani hodnocení. Rozsah\npokrytí kterékoli reálné osoby na tomto webu určuje výhradně append-only\nautorizační log v `AGENTS.md`; přítomnost v tomto seznamu na něm nic\nnemění a sama o sobě nikdy nevede k dossieru."
     }
+  ],
+  "media": [
+    {
+      "file": "images/people/klempir.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oto_Klemp%C3%AD%C5%99_2022_(cropped).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "David Sedlecký derivative work: Kacir",
+      "credit": "Own work",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 1600,
+      "role": "portrait"
+    }
   ]
 }

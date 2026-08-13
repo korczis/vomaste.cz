@@ -3,7 +3,7 @@
 title = "Generální finanční ředitelství"
 template = "entity.html"
 weight = 137
-description = "Kontextová entita — Schillerová ředitelkou odboru právního a daňového procesu 2014–2015; biografická zmínka."
+description = "Generální finanční ředitelství — Kontextová entita — Schillerová ředitelkou odboru právního a daňového procesu 2014–2015; biografická zmínka."
 
 [extra]
 generated = true

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/gaps/GAP-11",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-11",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "title": "GAP-11 — Navrhovaný kárný postih není v primárním zdroji",
+  "description": "CLM-09 uvádí, že ministr v kárné žalobě navrhuje roční snížení platu o 30 procent. Tisková zpráva ministerstva spravedlnosti k téže žalobě konkrétní navrhovaný postih neuvádí.",
+  "priority": "nízká",
+  "checked": "2026-08-10",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-09"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tvrzení stojí na zdrojích rodiny `ctk`. Nabízel se primární doklad —\ntisková zpráva ministerstva spravedlnosti z 1. 7. 2026\n([SRC-17](@/dossiers/jeronym-tejc/sources/src-17.md)), která už v tomto\ndossieru je a dokládá jiná tvrzení o téže kárné žalobě.\n\n**Co bylo 2026-08-05 zkontrolováno.** Zpráva byla otevřena a přečtena:\noznamuje podání kárné žaloby a cituje ministrovo odůvodnění, ale\n**navrhovanou sankci neuvádí vůbec** — žádnou procentní sazbu ani dobu.\nPřipojit ji k CLM-09 by proto znamenalo vydávat za doložené něco, co\nv dokumentu není; zdroj tu byl vysokou textovou shodou nabídnut, ale\nvěcně nesedí.\n\n**Jak se mezera uzavře.** Textem kárné žaloby, rozhodnutím kárného senátu\nNejvyššího správního soudu ve věci, nebo vlastním zpravodajstvím mimo\nrodinu `ctk`, které navrhovaný postih uvádí."
+    }
+  ],
+  "order": 11
+}

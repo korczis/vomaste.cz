@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/ivan-pilny",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "ivan-pilny",
+  "entityId": "ivan-pilny",
+  "title": "Ivan Pilný",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "ivan-pilny"
+  ],
+  "order": 581,
+  "description": "Ivan Pilný — bývalý ministr financí (2017).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalý ministr financí (24. 5. – 13. 12. 2017, vláda Sobotky, ANO).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ],
+  "media": [
+    {
+      "file": "images/people/ivan-pilny.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Informal_meeting_of_economic_and_financial_affairs_ministers_(ECOFIN)._Handshake_(37049509596)_(cropped).jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "author": "Arno Mikkor ( EU2017EE )",
+      "credit": "Flickr",
+      "retrieved": "2026-08-11",
+      "width": 1200,
+      "height": 1569,
+      "role": "portrait"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q15208434"
+  }
+}

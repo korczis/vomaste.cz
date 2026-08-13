@@ -28,5 +28,8 @@
       "type": "markdown",
       "value": "Hlavní subjekt autorizovaného dossieru. Záznam vznikl na základě výslovného pokynu vlastníka k veřejné, zdrojově doložené rešerši; samotná existence entity ani dossieru neobsahuje tvrzení o pochybení."
     }
-  ]
+  ],
+  "externalIds": {
+    "wikidataRejected": "Q108052419,Q16193264"
+  }
 }

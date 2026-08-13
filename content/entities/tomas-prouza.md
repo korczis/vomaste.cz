@@ -3,7 +3,7 @@
 title = "Tomáš Prouza"
 template = "entity.html"
 weight = 406
-description = "Kontextová entita — Prezident Svazu obchodu a cestovního ruchu ČR; kritik benefitového návrhu. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Tomáš Prouza — Kontextová entita — Prezident Svazu obchodu a cestovního ruchu ČR; kritik benefitového návrhu."
 
 [extra]
 generated = true

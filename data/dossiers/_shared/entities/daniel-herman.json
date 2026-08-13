@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/daniel-herman",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "daniel-herman",
+  "entityId": "daniel-herman",
+  "title": "Daniel Herman",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "daniel-herman"
+  ],
+  "order": 573,
+  "description": "Daniel Herman — bývalý ministr kultury (2014–2017).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalý ministr kultury (29. 1. 2014 – 13. 12. 2017, KDU-ČSL), dříve\nředitel ÚSTR.\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ],
+  "media": [
+    {
+      "file": "images/people/daniel-herman.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Daniel_Herman_2019.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "David Sedlecký",
+      "credit": "Own work",
+      "retrieved": "2026-08-11",
+      "width": 1200,
+      "height": 1483,
+      "role": "portrait"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q5217474"
+  }
+}

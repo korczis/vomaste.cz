@@ -15,3 +15,5 @@ lang = "cs"
 clm_id = "CLM-06"
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/martin-pavlik/_index.md#registr-tvrzeni).
+
+**Upřesnění (2026-08-06, ze SRC-02):** vklad 100 000 Kč, splaceno 100 %, zápis podílu do rejstříku 21. 10. 2020.

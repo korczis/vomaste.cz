@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-23",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-23",
+  "dossier": { "@id": "https://vomaste.cz/id/dossiers/james-quick" },
+  "text": "Česká obchodní inspekce v roce 2018 a provozovatelé BRKI a NRKI v roce 2012 nezávisle uvedli, že potvrzení o bezdlužnosti nabízené CERD nebylo pro banky, úvěrové společnosti či finanční instituce relevantní.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    { "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-11" },
+    { "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-12" }
+  ],
+  "subjects": ["james-quick"],
+  "order": 23,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tvrzení zachycuje pouze společný průnik dvou nezávislých institucionálních stanovisek. ČOI vycházela ze spotřebitelských podnětů, zatímco BRKI a NRKI popsaly postoj finančních institucí a navíc popřely předávání klientských dat. Poslední bod zůstává jen v CLM-11, protože jej ČOI nepotvrzuje."
+    }
+  ]
+}

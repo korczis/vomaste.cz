@@ -3,7 +3,7 @@
 title = "High-Level Political Forum OSN 2026 (New York)"
 template = "entity.html"
 weight = 144
-description = "Kontextová entita — Fórum OSN k udržitelnému rozvoji (7.–16. 7. 2026); oficiální důvod Červeného cesty do USA."
+description = "High-Level Political Forum OSN 2026 (New York) — Kontextová entita — Fórum OSN k udržitelnému rozvoji (7.–16. 7. 2026); oficiální důvod Červeného cesty do USA."
 
 [extra]
 generated = true

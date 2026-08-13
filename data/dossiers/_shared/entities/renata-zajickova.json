@@ -9,13 +9,14 @@
   "entityId": "renata-zajickova",
   "title": "Renáta Zajíčková",
   "entityType": "person",
-  "publicationRole": "context",
-  "dossierEnabled": false,
-  "dossierStatus": "not_authorized",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
   "coverageState": "discovered",
   "dossiers": [
     "boris-stastny",
-    "robert-plaga"
+    "robert-plaga",
+    "renata-zajickova"
   ],
   "order": 364,
   "provenance": {

@@ -3,7 +3,7 @@
 title = "Jiří Havránek"
 template = "entity.html"
 weight = 175
-description = "Kontextová entita — Stínový ministr ODS; vyzval Juchelku k podání trestního oznámení, nebo k rezignaci."
+description = "Jiří Havránek — Kontextová entita — Stínový ministr ODS; vyzval Juchelku k podání trestního oznámení, nebo k rezignaci."
 
 [extra]
 generated = true

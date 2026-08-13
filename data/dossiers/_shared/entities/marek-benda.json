@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/marek-benda",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "marek-benda",
+  "entityId": "marek-benda",
+  "title": "Marek Benda",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "marek-benda"
+  ],
+  "order": 526,
+  "provenance": {
+    "discoveredAt": "2026-08-06",
+    "discoveredVia": [
+      "opozice-25-politiku-2026-08-06"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — poslanec ODS, předseda poslaneckého klubu ODS."
+    }
+  ]
+}

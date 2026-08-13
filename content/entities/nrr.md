@@ -4,7 +4,7 @@ title = "Národní rozpočtová rada"
 template = "entity.html"
 weight = 3
 aliases = ["/dossiers/alena-schillerova/entities/nrr/"]
-description = "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
+description = "Národní rozpočtová rada — Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
 
 [extra]
 generated = true

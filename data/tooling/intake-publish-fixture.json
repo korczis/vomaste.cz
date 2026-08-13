@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/intake-publish-fixture",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "intake-publish-fixture",
+  "kind": "npm",
+  "name": "intake:publish-fixture",
+  "title": "Demo publikačního kroku",
+  "category": "kontrola",
+  "summary": "Předvede vytvoření komentáře, aktualizaci TÉHOŽ komentáře při opakovaném běhu, synchronizaci štítků a rozhodnutí o notifikaci vlastníka — výhradně proti in-memory mock GitHub adaptéru.",
+  "whenToRun": "Když měníš publikační logiku a chceš vidět její chování bez skutečného GitHubu.",
+  "sourceFile": "scripts/intake/run-publish-fixture.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Žádná síť; GITHUB_TOKEN se v tomhle souboru nikde nečte."
+  ]
+}

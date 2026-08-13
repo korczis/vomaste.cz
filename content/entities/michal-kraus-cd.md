@@ -3,7 +3,7 @@
 title = "Michal Kraus"
 template = "entity.html"
 weight = 265
-description = "Kontextová entita — Náměstek pověřený dočasným vedením ČD po Bednárikově rezignaci. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Michal Kraus — Kontextová entita — Náměstek pověřený dočasným vedením ČD po Bednárikově rezignaci."
 
 [extra]
 generated = true

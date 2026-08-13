@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-44 — Deník.cz (VLTAVA LABE MEDIA)"
-description = "Prezident Pavel zdůvodňuje odmítnutí jmenovat Turka ministrem; Turek oznamuje žalobu na ochranu osobnosti."
+description = "Prezident Pavel zdůvodňuje odmítnutí jmenovat Turka ministrem; Turek oznamuje žalobu na ochranu osobnosti. Zdroj: Deník.cz (VLTAVA LABE MEDIA), dossier Petr Macinka a Filip Turek."
 template = "dossier-source.html"
 weight = 44
 aliases = ["/dossier/zdroje/src-44/"]

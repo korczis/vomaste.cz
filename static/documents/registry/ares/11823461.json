@@ -1,0 +1,203 @@
+{
+  "retrieved": "2026-08-09",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "11823461"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "11823461",
+        "obchodniJmeno": "Centrum pro výzkum terorismu z.s.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 43,
+          "nazevSpravnihoObvodu": "Praha 4",
+          "kodMestskehoObvodu": 43,
+          "nazevMestskehoObvodu": "Praha 4",
+          "kodMestskeCastiObvodu": 547034,
+          "kodUlice": 482561,
+          "nazevMestskeCastiObvodu": "Praha 11",
+          "nazevUlice": "Švabinského",
+          "cisloDomovni": 405,
+          "kodCastiObce": 400211,
+          "cisloOrientacni": 40,
+          "nazevCastiObce": "Chodov",
+          "kodAdresnihoMista": 21830410,
+          "psc": 14900,
+          "textovaAdresa": "Švabinského 405/40, Chodov, 14900 Praha 4",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "706",
+        "pravniFormaRos": "706",
+        "financniUrad": "011",
+        "datumVzniku": "2021-09-24",
+        "datumAktualizace": "2026-04-11",
+        "icoId": "11823461",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Švabinského 405/40",
+          "radekAdresy2": "Chodov",
+          "radekAdresy3": "14900 Praha 4"
+        },
+        "czNace2008": [
+          "9499"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "NEEXISTUJICI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "NEEXISTUJICI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Centrum pro výzkum terorismu z.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 116,
+                  "nazevSpravnihoObvodu": "Praha 11",
+                  "kodMestskehoObvodu": 43,
+                  "nazevMestskehoObvodu": "Praha 4",
+                  "kodMestskeCastiObvodu": 547034,
+                  "kodUlice": 482561,
+                  "nazevMestskeCastiObvodu": "Praha 11",
+                  "nazevUlice": "Švabinského",
+                  "cisloDomovni": 405,
+                  "kodCastiObce": 400211,
+                  "cisloOrientacni": 40,
+                  "nazevCastiObce": "Chodov",
+                  "kodAdresnihoMista": 21830410,
+                  "psc": 14900,
+                  "textovaAdresa": "Švabinského 405/40, Chodov, 14900 Praha 4",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "706",
+            "pravniFormaRos": "706",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Centrum pro výzkum terorismu z.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 43,
+                  "nazevSpravnihoObvodu": "Praha 4",
+                  "kodMestskehoObvodu": 43,
+                  "nazevMestskehoObvodu": "Praha 4",
+                  "kodMestskeCastiObvodu": 547034,
+                  "kodUlice": 482561,
+                  "nazevMestskeCastiObvodu": "Praha 11",
+                  "nazevUlice": "Švabinského",
+                  "cisloDomovni": 405,
+                  "kodCastiObce": 400211,
+                  "cisloOrientacni": 40,
+                  "nazevCastiObce": "Chodov",
+                  "kodAdresnihoMista": 21830410,
+                  "psc": 14900,
+                  "textovaAdresa": "Švabinského 405/40, Chodov, 14900 Praha 4",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "706",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Centrum pro výzkum terorismu z.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 43,
+                  "nazevSpravnihoObvodu": "Praha 4",
+                  "kodMestskehoObvodu": 43,
+                  "nazevMestskehoObvodu": "Praha 4",
+                  "kodMestskeCastiObvodu": 547034,
+                  "kodUlice": 482561,
+                  "nazevMestskeCastiObvodu": "Praha 11",
+                  "nazevUlice": "Švabinského",
+                  "cisloDomovni": 405,
+                  "kodCastiObce": 400211,
+                  "cisloOrientacni": 40,
+                  "nazevCastiObce": "Chodov",
+                  "kodAdresnihoMista": 21830410,
+                  "psc": 14900,
+                  "textovaAdresa": "Švabinského 405/40, Chodov, 14900 Praha 4",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "706",
+            "spisovaZnacka": "L 75249/MSPH",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "9499"
+        ]
+      }
+    ]
+  }
+}

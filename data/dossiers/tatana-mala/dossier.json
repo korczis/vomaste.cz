@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tatana-mala",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "tatana-mala",
+  "slug": "tatana-mala",
+  "title": "Taťána Malá",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Taťána Malá.",
+  "dossierType": "entity",
+  "canonicalDossier": "tatana-mala",
+  "subject": "tatana-mala",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-TATANA-MALA"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "tatana-mala",
+        "label": "Taťána Malá",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nTaťána Malá je bývalá ministryně spravedlnosti (27. 6. – 10. 7. 2018,\ndruhá vláda Andreje Babiše, ANO) a poslankyně od října 2017. Jako\npoliticky exponovaná osoba v souvislosti s výkonem dřívější veřejné\nfunkce spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-08-TATANA-MALA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce a okolností rezignace tak, jak je popsaly\ncitované zdroje. **Povinné rámování při každé zmínce:** podezření\nz plagiátorství je mediálně popsané podezření, nikoli soudní či\nakademický verdikt doložený citovaným zdrojem, a její popření se uvádí\nvždy. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/tatana-mala/claims/clm-01.md) | Taťána Malá byla podle oficiálního profilu na webu Vlády ČR ministryní spravedlnosti od 27. 6. do 10. 7. 2018 (ANO), poslankyní od října 2017 a předtím náměstkyní hejtmana Jihomoravského kraje; podle Blesku po 13 dnech ve funkci rezignovala v souvislosti s podezřením z plagiátorství svých diplomových prací, přičemž uvedla, že nechce, aby hnutí a nová vláda byly poškozovány kampaní, a trvala na tom, že se při psaní prací ničeho nedopustila | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/tatana-mala/sources/src-01.md), [SRC-02](@/dossiers/tatana-mala/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

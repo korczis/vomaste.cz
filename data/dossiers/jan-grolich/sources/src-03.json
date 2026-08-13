@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jan-grolich/sources/SRC-03",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jan-grolich"
+  },
+  "title": "SRC-03 — Brněnský deník: Jihomoravský hejtman definitivně: zvolili Grolicha",
+  "description": "Zpravodajství Brněnského deníku o zvolení Jana Grolicha hejtmanem Jihomoravského kraje na ustavujícím zasedání zastupitelstva 4. 11. 2024 po krajských volbách 2024.",
+  "outlet": "Brněnský deník (Deník.cz)",
+  "sourceType": "zpravodajství",
+  "url": "https://brnensky.denik.cz/zpravy_region/jihomoravsky-kraj-volba-hejtman-grolich-zastupitelstvo-nove-domovy-duchodcu.html",
+  "published": "2024-11-04",
+  "retrieved": "2026-08-07",
+  "sourceFamily": "vlm",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jan-grolich/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "jan-grolich"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Článek Brněnského deníku ze 4. 11. 2024, otevřen a přečten 2026-08-07.\nInformuje o ustavujícím zasedání Zastupitelstva Jihomoravského kraje po krajských volbách 2024: hejtmanem byl zvolen Jan Grolich (KDU-ČSL) s podporou 35 z 65 hlasů zastupitelů, koalici tvoří Spolu a Starostové pro jižní Moravu, proti hlasovaly ANO, Stačilo! a koalice Trikolora-SPD-PRO. Grolich mluvil o prioritách včetně financování oprav krajských silnic a rozšíření kapacit domovů pro seniory.\n\nPoznámka k typu zdroje a jeho limitům: redakční zpravodajství vydavatelství VLTAVA LABE MEDIA (`sourceFamily: vlm`), stejně jako SRC-02 — dokládá přesné datum zahájení aktuálního mandátu hejtmana (4. 11. 2024), které SRC-01 (oficiální profil bez data) neuvádí. Pro účely korporace tvrzení tvoří nezávislou dvojici s SRC-01 (Jihomoravský kraj, primární úřední zdroj, jiná doména i jiný vydavatel); SRC-02 a SRC-03 sdílejí vydavatele, takže sami o sobě druhou nezávislou dvojici netvoří."
+    }
+  ],
+  "order": 3
+}

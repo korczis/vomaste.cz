@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vit-rakusan/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/vit-rakusan"
+  },
+  "title": "SRC-01 — Poslanecká sněmovna: oficiální profil poslance Víta Rakušana",
+  "description": "Oficiální profilová stránka poslance na webu Poslanecké sněmovny Parlamentu ČR s údaji o mandátu, straně, obvodu a klubové/výborové příslušnosti.",
+  "outlet": "Poslanecká sněmovna Parlamentu ČR",
+  "sourceType": "primární úřední záznam",
+  "url": "https://www.psp.cz/sqw/detail.sqw?id=6524",
+  "retrieved": "2026-08-07",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vit-rakusan/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "vit-rakusan"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profilová stránka Víta Rakušana (psp.cz, id 6524) na webu Poslanecké sněmovny, otevřena a přečtena 2026-08-07.\nUvádí jeho příslušnost k hnutí STAN (volební obvod Středočeský kraj), mandát poslance od 4. 10. 2025, členství v Zahraničním výboru (od 24. 6. 2026), v Podvýboru pro migrační a azylovou politiku (od 11. 2. 2026) a funkci místopředsedy poslaneckého klubu STAN (od 26. 6. 2026).\n\nPoznámka k typu zdroje a jeho limitům: primární úřední zdroj — zákonodárný sbor sám eviduje mandát a příslušnost svého člena, nejde o redakční zpravodajství, a stránka neuvádí funkci předsedy hnutí STAN. Tu dokládají SRC-02 (Blesk.cz) a SRC-03 (Tiscali.cz/ČTK), dvě na sobě nezávislé redakce."
+    }
+  ],
+  "order": 1
+}

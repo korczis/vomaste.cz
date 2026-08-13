@@ -3,7 +3,7 @@
 title = "Vlastimil Válek"
 template = "entity.html"
 weight = 435
-description = "Kontextová entita — Poslanec TOP 09, exministr zdravotnictví; iniciátor debaty o očkovací strategii."
+description = "Vlastimil Válek — Kontextová entita — Poslanec TOP 09, exministr zdravotnictví; iniciátor debaty o očkovací strategii."
 
 [extra]
 generated = true

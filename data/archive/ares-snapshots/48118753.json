@@ -1,0 +1,51 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "48118753",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/48118753",
+  "nazev": "PORTOS, advokátní kancelář s.r.o.",
+  "sidlo": "Hvězdova 1716/2b, Nusle, 14000 Praha 4",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "C",
+    "vlozka": "212268"
+  },
+  "statutarniOrgan": [],
+  "spolecnici": [
+    {
+      "kind": "person",
+      "name": "JUDr. Jakub Hollmann",
+      "podil": "1;3",
+      "vklad": "52500",
+      "splaceno": "100;00"
+    },
+    {
+      "kind": "person",
+      "name": "JUDr. Petr Michal",
+      "podil": "1;3",
+      "vklad": "52500",
+      "splaceno": "100;00"
+    },
+    {
+      "kind": "person",
+      "name": "JUDr. Jaromír Císař",
+      "podil": "1;9",
+      "vklad": "17500",
+      "splaceno": "100;00"
+    },
+    {
+      "kind": "person",
+      "name": "Mgr. Roman Kyral",
+      "podil": "1;9",
+      "vklad": "17500",
+      "splaceno": "100;00"
+    },
+    {
+      "kind": "person",
+      "name": "JUDr. Markéta Flanderková",
+      "podil": "1;9",
+      "vklad": "17500",
+      "splaceno": "100;00"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/prismatic-review",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "prismatic-review",
+  "kind": "npm",
+  "name": "prismatic:review",
+  "title": "Report k posouzení — nehotové",
+  "category": "reserse",
+  "summary": "Stub. Vypíše odkaz na architektonické rozhodnutí a skončí nenulově. Generátor reportu k posouzení neexistuje.",
+  "whenToRun": "Nespouštět.",
+  "sourceFile": "scripts/prismatic/review-report.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Soubor se jmenuje review-report.mjs a hlásí se jako `prismatic:review-report`, zatímco npm skript se jmenuje `prismatic:review` — drobný nesoulad pojmenování, ne dvě různé věci."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/jan-fischer",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "jan-fischer",
+  "entityId": "jan-fischer",
+  "title": "Jan Fischer",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "jan-fischer"
+  ],
+  "order": 586,
+  "description": "Jan Fischer — bývalý 1. místopředseda vlády a ministr financí (2013–2014).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalý 1. místopředseda vlády a ministr financí (10. 7. 2013 –\n29. 1. 2014, Rusnokova vláda, od 13. 8. 2013 v demisi); dříve předseda\núřednické vlády (2009–2010).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ],
+  "media": [
+    {
+      "file": "images/people/jan-fischer.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jan_Fischer_2009_(cropped).jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "author": "Georges Boulougouris - European Commission",
+      "credit": "https://audiovisual.ec.europa.eu/en/media/photo/P-015816/00-06",
+      "retrieved": "2026-08-11",
+      "width": 1200,
+      "height": 1800,
+      "role": "portrait"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q193675"
+  }
+}

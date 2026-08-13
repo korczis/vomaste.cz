@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/benjamin-cincila/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/benjamin-cincila"
+  },
+  "title": "SRC-02 — ČT24 (Česká televize): Novým šéfem lidovců je Grolich. Prvním místopředsedou byl zvolen Činčila",
+  "description": "Zpravodajství ČT24 o sjezdu KDU-ČSL 24. 4. 2026, kde byl Benjamin Činčila zvolen prvním místopředsedou strany.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "veřejnoprávní zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/lidovci-si-zvoli-nove-vedeni-vyborneho-zrejme-vystrida-grolich-372749",
+  "published": "2026-04-24",
+  "retrieved": "2026-08-07",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/benjamin-cincila/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "benjamin-cincila"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpráva ČT24 o sjezdu KDU-ČSL konaném 24. 4. 2026, otevřena a přečtena 2026-08-07.\nInformuje, že poslanec Benjamin Činčila byl zvolen prvním místopředsedou strany — měl podporu osmi krajů a byl jediným kandidátem, podpořilo ho 239 z 264 hlasujících delegátů. Nového předsedu strany Jana Grolicha citují s tím, že si Činčilu vybral do svého vedení pro jeho zaměření na ekonomiku a přípravu nového stranického programu.\n\nPoznámka k typu zdroje a jeho limitům: veřejnoprávní redakční zpravodajství (Česká televize) — jiná doména i jiný vydavatel než SRC-01 (Poslanecká sněmovna Parlamentu ČR, primární úřední zdroj), takže spolu s ním tvoří nezávislou dvojici pro účely korporace tohoto tvrzení. Přesné datum poslaneckého mandátu (4. 10. 2025) a klubovou funkci místopředsedy dokládá SRC-01."
+    }
+  ],
+  "order": 2
+}

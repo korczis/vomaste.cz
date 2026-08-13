@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/helena-langsadlova/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/helena-langsadlova"
+  },
+  "title": "SRC-02 — Echo24: Ženíšek má nahradit Langšádlovou jako ministr pro vědu",
+  "description": "Echo24 o rozhodnutí TOP 09 nahradit Langšádlovou Ženíškem a atribuovaných důvodech.",
+  "outlet": "Echo24",
+  "sourceType": "zpravodajský článek",
+  "url": "https://www.echo24.cz/a/HpywT/zpravy-domaci-novy-ministr-pro-vedu-vyzkum-inovace-marek-zenisek-top-09-langsadlova",
+  "retrieved": "2026-08-08",
+  "published": "2024-05-07",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/helena-langsadlova/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "helena-langsadlova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek Echo24 ze 7. 5. 2024, otevřen a přečten 2026-08-08.\nUvádí, že vedení TOP 09 rozhodlo o nahrazení Heleny Langšádlové poslancem Markem Ženíškem; jako důvod článek uvádí nespokojenost strany s prezentací výsledků resortu. Langšádlová podle článku na síti X uvedla, že mezi ní a TOP 09 aktuálně není vzájemná důvěra; původně nominovaný Pavel Tuleja předtím kandidaturu stáhl.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství — dokládá okolnosti konce v úřadu s důvody připsanými tomu, kdo je vyslovil (strana, resp. sama Langšádlová); nejde o hodnocení tohoto webu ani o tvrzení o pochybení."
+    }
+  ],
+  "order": 2
+}

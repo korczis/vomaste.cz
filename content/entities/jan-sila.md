@@ -3,7 +3,7 @@
 title = "Jan Síla"
 template = "entity.html"
 weight = 164
-description = "Kontextová entita — Zdravotnický expert SPD; hlavní koaliční kritik Vojtěchovy očkovací strategie."
+description = "Jan Síla — Kontextová entita — Zdravotnický expert SPD; hlavní koaliční kritik Vojtěchovy očkovací strategie."
 
 [extra]
 generated = true

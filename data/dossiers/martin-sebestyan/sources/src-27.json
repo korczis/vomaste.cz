@@ -23,6 +23,9 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-03"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/claims/CLM-45"
     }
   ],
   "subjects": [
@@ -31,7 +34,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Deník N dne 15. 1. 2026: mluvčí fondu uvedl, že „SZIF si nechal\nzpracovat odborná stanoviska externí advokátní kanceláří.\" Podle\nčlánku právníci dospěli mj. k závěru, že se zákon o střetu zájmů na\ndotace vyplácené fondem vztahuje. Ministerstvo zemědělství přitom\ntvrdilo, že analýzu nemá k dispozici — SZIF ji podle Deníku N má.\n\n**Nezávislost**: samostatná redakce od ČT24 (SRC-07) — obě nezávisle\npotvrzují totéž jádro sporu (SZIF vs. ministerstvo o existenci\nanalýzy). Proto CLM-02 a CLM-03 nesou stav `CORROBORATED`."
+      "value": "Deník N dne 15. 1. 2026: mluvčí fondu uvedl, že „SZIF si nechal\nzpracovat odborná stanoviska externí advokátní kanceláří.\" Podle\nčlánku právníci dospěli mj. k závěru, že se zákon o střetu zájmů na\ndotace vyplácené fondem vztahuje. Ministerstvo zemědělství přitom\ntvrdilo, že „rezort touto analýzou nedisponuje\" — SZIF ji podle Deníku N\nmá.\n\n**Nezávislost**: samostatná redakce od ČT24 (SRC-07) i od Seznam Zpráv\n(SRC-29) — jiná vydavatelská rodina i jiný vydavatel. Deník N nezávisle\npotvrzuje totéž jádro sporu (SZIF analýzu má, ministerstvo tvrdí opak),\nkteré přímo dokládá i CLM-45 (k 15. 1. 2026 ministerstvo tvrdilo, že\nklíčovou analýzu/dokument nemá a vymáhání nezačalo). Proto CLM-02, CLM-03\ni CLM-45 nesou stav `CORROBORATED`."
     }
   ],
   "order": 27

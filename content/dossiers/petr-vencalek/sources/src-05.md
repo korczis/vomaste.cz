@@ -1,0 +1,21 @@
++++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
+title = "SRC-05 — ÚDHPSH: výroční finanční zprávy Motoristé sobě (2024, 2025) — přímá kontrola primárního zdroje"
+description = "Primární úřední zprávy (ne zrcadlo Hlídače státu) prověřené přímo na donorský seznam pro téma GAP-01 (dary Klubu motoristů, z.s.)."
+template = "dossier-source.html"
+weight = 5
+
+[extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/petr-vencalek/sources/SRC-05"
+view_model = "generated/views/dossiers/petr-vencalek/sources/src-05.json"
+dossier = "petr-vencalek"
+record_type = "source"
+lang = "cs"
+src_id = "SRC-05"
++++
+**Doplňuje GAP-01, nezakládá nové tvrzení.** Dosavadní kontrola (2026-08-01, 2026-08-03) prověřovala jen zrcadlo Hlídače státu (SRC-03); katalog zdrojů (`data/source-catalog/udhpsh.json`) výslovně upozorňuje, že se má citovat primární registr, ne zrcadlo. Tento zdroj proto přímo otevírá primární výroční finanční zprávy hnutí Motoristé sobě (rejstříkový slug `referendumeu`) za roky 2024 (`https://zpravy.udh.gov.cz/zprava/vfz2024/referendumeu`) a 2025 (`https://zpravy.udh.gov.cz/zprava/vfz2025/referendumeu`) a hledá jméno „Vencálek" v části V (Dary) a části VI (Ostatní bezúplatná plnění).
+
+**Výsledek**: v obou zprávách (2024, 2025) se dárce „Vencálek" ani „Petr Vencálek" v seznamu nenachází. Zpráva za rok 2024 eviduje jediné bezúplatné plnění nad 50 000 Kč (Klára Sovová, 30 000 Kč, pronájem reklamní plochy) a stovky peněžitých darů, žádný z nich pod jménem Vencálek.
+
+**Co to dokládá a co ne**: dokládá, že primární zpráva hnutí Motoristé sobě za roky 2024 a 2025 dárce Vencálka mezi jmenovanými dárci hnutí nevede. Nedokládá totéž o zprávě o financování volební kampaně PS 2025 (samostatný podregistr `/zprava/ps2025/referendumeu`) — dostupný nástroj (WebFetch) nedokázal spolehlivě přečíst tuto konkrétní zprávu ve formátu PDF (nízká kvalita extrakce textu, potvrzeno i při stažení souboru), takže tento konkrétní podregistr zůstává neprověřený, ne prověřený s negativním výsledkem. Nedokládá ani dar subjektu Klub motoristů, z.s. jako takovému — ÚDHPSH vykonává dohled nad politickými stranami a hnutími, ne nad spolky, takže tento registr o darech spolku Klub motoristů, z.s. jako takovém nemůže strukturálně nic vypovídat; jedinou cestou k ověření daru spolku by byl přímý dotaz do sbírky listin spolkového rejstříku, který nebyl v tomto kole zkoušen.

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/case.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/cases/CASE-05",
+  "@type": "vomaste:Case",
+  "recordType": "case",
+  "identifier": "CASE-05",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "title": "Zrušení CSR & Protikorupcnilinka.cz s.r.o. bez likvidace",
+  "summary": "Rejstříkový přepis dokládá právní moc a výmaz; primární soudní usnesení dokládá chybějící účetní závěrky, nedoručenou výzvu, trvání důvodu a nezjištění majetku společnosti. Rozhodnutí se týká korporace, nikoli trestní odpovědnosti Jamese Quicka.",
+  "period": "2023–2024",
+  "status": "status-corroborated",
+  "statusLabel": "Doloženo rejstříkem a primárním usnesením",
+  "anchor": "kauza-zruseni-spolecnosti",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-22"
+    }
+  ],
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-23"
+    }
+  ],
+  "subjects": [
+    "james-quick"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Plný kontext a odkazy jsou v [hlavním přehledu dossieru](@/dossiers/james-quick/_index.md#kauza-zruseni-spolecnosti)."
+    }
+  ],
+  "order": 5
+}

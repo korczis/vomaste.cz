@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vladimir-balas/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/vladimir-balas"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil člena vlády)",
+  "description": "Oficiální vládní profil: ministr školství 1. 7. 2022 – 4. 5. 2023, poslanec od října 2021.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/vladimir-balas-197601/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vladimir-balas/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "vladimir-balas"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil člena vlády na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci ministra školství, mládeže a tělovýchovy od 1. 7. 2022 do 4. 5. 2023, poslanecký mandát od října 2021 a dřívější akademické působení včetně ředitelství Ústavu státu a práva AV ČR (1994–2002) a profesury mezinárodního práva (2022).\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — dokládá výkon vládní funkce; resortní přehled MŠMT (SRC-02) uvádí začátek funkce 29. 6. 2022, tedy o dva dny dříve — rozpor obou úředních evidencí je v tvrzení uveden otevřeně."
+    }
+  ],
+  "order": 1
+}

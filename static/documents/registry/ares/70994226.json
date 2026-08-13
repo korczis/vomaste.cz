@@ -1,0 +1,330 @@
+{
+  "retrieved": "2026-08-09",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "70994226"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "70994226",
+        "obchodniJmeno": "České dráhy, a.s.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 19,
+          "nazevSpravnihoObvodu": "Praha 1",
+          "kodMestskehoObvodu": 19,
+          "nazevMestskehoObvodu": "Praha 1",
+          "kodMestskeCastiObvodu": 500054,
+          "kodUlice": 480525,
+          "nazevMestskeCastiObvodu": "Praha 1",
+          "nazevUlice": "nábřeží Ludvíka Svobody",
+          "cisloDomovni": 1222,
+          "kodCastiObce": 490148,
+          "cisloOrientacni": 12,
+          "nazevCastiObce": "Nové Město",
+          "kodAdresnihoMista": 21710635,
+          "psc": 11000,
+          "textovaAdresa": "nábřeží Ludvíka Svobody 1222/12, Nové Město, 11000 Praha 1",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "121",
+        "pravniFormaRos": "121",
+        "financniUrad": "013",
+        "datumVzniku": "2003-01-01",
+        "datumAktualizace": "2026-07-23",
+        "dic": "CZ70994226",
+        "icoId": "70994226",
+        "adresaDorucovaci": {
+          "radekAdresy1": "nábřeží Ludvíka Svobody 1222/12",
+          "radekAdresy2": "Nové Město",
+          "radekAdresy3": "11000 Praha 1"
+        },
+        "czNace2008": [
+          "1813",
+          "256",
+          "2572",
+          "26300",
+          "27120",
+          "3109",
+          "3314",
+          "351",
+          "3514",
+          "36000",
+          "38",
+          "43220",
+          "43320",
+          "4520",
+          "461",
+          "49100",
+          "49200",
+          "49392",
+          "49393",
+          "49410",
+          "5210",
+          "5221",
+          "5224",
+          "52290",
+          "5590",
+          "56100",
+          "581",
+          "69200",
+          "702",
+          "711",
+          "7120",
+          "73120",
+          "74",
+          "74901",
+          "772",
+          "7911",
+          "79110",
+          "801",
+          "8129",
+          "821",
+          "8559",
+          "96020",
+          "00"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "HISTORICKY",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "České dráhy, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 480525,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "nábřeží Ludvíka Svobody",
+                  "cisloDomovni": 1222,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 12,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21710635,
+                  "psc": 11000,
+                  "textovaAdresa": "nábřeží Ludvíka Svobody 1222/12, Nové Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "pravniFormaRos": "121",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "České dráhy, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 480525,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "nábřeží Ludvíka Svobody",
+                  "cisloDomovni": 1222,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 12,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21710635,
+                  "psc": 11000,
+                  "textovaAdresa": "nábřeží Ludvíka Svobody 1222/12, Nové Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "121",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "České dráhy, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 480525,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "nábřeží Ludvíka Svobody",
+                  "cisloDomovni": 1222,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 12,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21710635,
+                  "psc": 11000,
+                  "textovaAdresa": "nábřeží Ludvíka Svobody 1222/12, Nové Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "České dráhy, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 480525,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "nábřeží Ludvíka Svobody",
+                  "cisloDomovni": 1222,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 12,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21710635,
+                  "psc": 11000,
+                  "textovaAdresa": "nábřeží Ludvíka Svobody 1222/12, Nové Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "spisovaZnacka": "B 8039/MSPH",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "69200",
+          "74",
+          "772",
+          "95310",
+          "26300",
+          "71200",
+          "79110",
+          "8559",
+          "18130",
+          "35150",
+          "49340",
+          "52100",
+          "43320",
+          "49110",
+          "52210",
+          "55900",
+          "56110",
+          "81230",
+          "711",
+          "74990",
+          "82100",
+          "96210",
+          "31000",
+          "4322",
+          "33140",
+          "461",
+          "49410",
+          "52240",
+          "52260",
+          "70200",
+          "27120",
+          "351",
+          "38",
+          "73120",
+          "80010",
+          "25620",
+          "255",
+          "36000",
+          "49200",
+          "49320",
+          "581",
+          "00"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/richard-brabec/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/richard-brabec"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil člena vlády)",
+  "description": "Oficiální vládní profil: ministr životního prostředí 2014–2017 a 2018–2021, místopředseda vlády 2017–2018.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/richard-brabec-167027/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/richard-brabec/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "richard-brabec"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil člena vlády na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci ministra životního prostředí leden 2014 – prosinec 2017 (vláda Bohuslava Sobotky) a znovu od 27. 6. 2018 (druhá vláda Andreje Babiše, v demisi od 11. 11. do 17. 12. 2021), funkci místopředsedy vlády (červen 2017 – prosinec 2017) a 1. místopředsedy vlády (prosinec 2017 – červen 2018) a poslanecký mandát od října 2013.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — dokládá výkon vládních funkcí a jejich data; aktuální hejtmanství dokládá SRC-02."
+    }
+  ],
+  "order": 1
+}

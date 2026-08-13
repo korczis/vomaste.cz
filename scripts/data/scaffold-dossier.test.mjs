@@ -7,7 +7,7 @@ import assert from "node:assert/strict";
 import { mkdtempSync, writeFileSync, rmSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { tmpdir } from "node:os";
-import { scaffoldDossier, loadAuthorizationRecords, REGISTRY_DIRS } from "./scaffold-dossier.mjs";
+import { scaffoldDossier, loadAuthorizationRecords, REGISTRY_DIRS, STANDING_SCOPE_RECORD_ID } from "./scaffold-dossier.mjs";
 import { validateShapeTree } from "./validate-shape.mjs";
 import { loadCanonicalDataset, validateCanonicalDataset } from "./lib/dataset.mjs";
 
@@ -71,6 +71,34 @@ test("BLOCKED — záznam existuje, ale neautorizuje daný subjekt", () => {
       /BLOCKED.*neautorizuje subjekt "someone-else"/s,
     );
     assert.ok(!existsSync(join(t.root, "example-subject")));
+  } finally {
+    rmSync(t.dir, { recursive: true, force: true });
+  }
+});
+
+test("standing-scope wildcard záznam autorizuje jakýkoli subjekt bez per-subjektového kola (rekurzivní šířka)", () => {
+  const t = makeTmp();
+  try {
+    // wildcard standing-scope záznam (subjects = ["*"]) — governance 2026-08-10.
+    writeFileSync(
+      t.authorizationsPath,
+      `[[authorizations]]\nid = "${STANDING_SCOPE_RECORD_ID}"\nauthorized_at = "2026-08-10"\n` +
+        `subjects = ["*"]\nagents_md_section = "Synthetic wildcard record"\n` +
+        `scope_summary = "Syntetický wildcard záznam."\n`,
+      "utf8",
+    );
+    // Bez explicitního authorizationRecordId se použije standing scope,
+    // a wildcard autorizuje libovolný nový subjekt.
+    const { record } = scaffoldDossier({
+      slug: "any-new-subject",
+      title: "Any New Subject",
+      subject: "any-new-subject",
+      root: t.root,
+      authorizationsPath: t.authorizationsPath,
+      today: "2026-08-10",
+    });
+    assert.deepEqual(record.authorization.records, [STANDING_SCOPE_RECORD_ID]);
+    assert.ok(existsSync(join(t.root, "any-new-subject", "dossier.json")));
   } finally {
     rmSync(t.dir, { recursive: true, force: true });
   }

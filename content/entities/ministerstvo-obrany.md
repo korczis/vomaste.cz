@@ -3,7 +3,7 @@
 title = "Ministerstvo obrany ČR"
 template = "entity.html"
 weight = 275
-description = "Kontextová entita — Resort Jaromíra Zůny; inspekce ke kauze rozhovoru, rozpočtové spory o 2 % HDP."
+description = "Ministerstvo obrany ČR — Kontextová entita — Resort Jaromíra Zůny; inspekce ke kauze rozhovoru, rozpočtové spory o 2 % HDP."
 
 [extra]
 generated = true

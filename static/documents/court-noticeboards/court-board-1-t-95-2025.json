@@ -1,0 +1,13 @@
+{
+  "retrieved": "2026-08-09",
+  "endpoint": "https://infodeska.gov.cz/eudpub/api/v1/vyveseni/vyhledej",
+  "docket": "1 T 95/2025",
+  "request": {
+    "kodSubjektu": "201010",
+    "cisloSenat": 1,
+    "rejstrik": "T",
+    "cisloBezne": 95,
+    "rocnik": 2025
+  },
+  "response": []
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-bartos",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "ivan-bartos",
+  "slug": "ivan-bartos",
+  "title": "Ivan Bartoš",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení Ivana Bartoše.",
+  "dossierType": "entity",
+  "canonicalDossier": "ivan-bartos",
+  "subject": "ivan-bartos",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-07",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-07-IVAN-BARTOS"
+    ]
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nIvan Bartoš je poslanec Poslanecké sněmovny Parlamentu ČR za Piráty a\nprvní místopředseda poslaneckého klubu Pirátů; v letech 2021–2024 byl\nmístopředsedou vlády pro digitalizaci a ministrem pro místní rozvoj. Jako\nveřejný funkcionář spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier je\n`AUTH-2026-08-07-IVAN-BARTOS`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam — dokládá pouze jeho aktuální poslanecký mandát a funkci ve\nvedení poslaneckého klubu, nikoli žádnou hloubkovou investigativní\nrešerši jeho ministerského působení nebo jiných témat. Rozšíření\nrozsahu vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/ivan-bartos/claims/clm-01.md) | Ivan Bartoš je od 4. 10. 2025 poslancem Poslanecké sněmovny Parlamentu ČR za Piráty (volební obvod Středočeský kraj) a od 5. 10. 2025 prvním místopředsedou poslaneckého klubu Pirátů (klub vede předsedkyně Olga Richterová) — doloženo oficiálním profilem na webu Poslanecké sněmovny a nezávislou agenturní zprávou ČTK. | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/ivan-bartos/sources/src-01.md), [SRC-02](@/dossiers/ivan-bartos/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedeného poslaneckého mandátu ani klubové funkce\nnic dalšího; nejde o hodnocení jeho politického působení (vč. dřívějšího\nministerského) ani o investigativní rešerši jiných témat."
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "entity": "ivan-bartos",
+        "label": "Ivan Bartoš",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  }
+}

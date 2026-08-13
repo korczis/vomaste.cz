@@ -1,0 +1,2639 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-09",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/42196451",
+  "status": "OK",
+  "subject": {
+    "ico": "42196451",
+    "businessName": "Lesy České republiky, s.p.",
+    "registerReference": "AXII 540/KSHK"
+  },
+  "filings": [
+    {
+      "referenceLabel": "AXII 540/SL1/KSHK",
+      "documentType": "účetní závěrka - rozvaha k 30.6.1997",
+      "createdAt": "30-06-1997",
+      "receivedByCourtAt": "04-09-1997",
+      "filedAt": "04-09-1997",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 77360
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL2/KSHK",
+      "documentType": "účetní závěrka - rozvaha",
+      "receivedByCourtAt": "04-09-1997",
+      "filedAt": "04-09-1997",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 272380
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL3/KSHK",
+      "documentType": "ostatní - Rozhodnutí MZ ČR",
+      "createdAt": "29-12-2000",
+      "receivedByCourtAt": "07-02-2001",
+      "filedAt": "07-02-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 43248
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL4/KSHK",
+      "documentType": "ostatní - Rozhodnutí MZ ČR",
+      "createdAt": "12-08-1997",
+      "receivedByCourtAt": "14-03-2001",
+      "filedAt": "14-03-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 112634
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL5/KSHK",
+      "documentType": "účetní závěrka - za rok 2000 + přílohy",
+      "createdAt": "30-04-2001",
+      "receivedByCourtAt": "10-10-2001",
+      "filedAt": "10-10-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 84,
+          "sizeBytes": 2407336
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL6/KSHK",
+      "documentType": "rozhod. o statut. orgánu Ing. F.Morávek,jmenování",
+      "createdAt": "01-02-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 30530
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL7/KSHK",
+      "documentType": "podpisové vzory",
+      "createdAt": "05-02-2002",
+      "receivedByCourtAt": "11-02-2002",
+      "filedAt": "11-02-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 17764
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL8/KSHK",
+      "documentType": "účetní závěrka - za rok 2001,výr.zpr.+zpr.aud",
+      "createdAt": "13-06-2002",
+      "receivedByCourtAt": "17-09-2002",
+      "filedAt": "17-09-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 65,
+          "sizeBytes": 3043929
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL9/KSHK",
+      "documentType": "ostatní - Rozhod. o změně ZL - MZ ČR",
+      "createdAt": "22-01-2002",
+      "receivedByCourtAt": "24-01-2003",
+      "filedAt": "24-01-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 38546
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL10/KSHK",
+      "documentType": "rozhod. o statut. orgánu - Rozhodnutí MZ ČR",
+      "createdAt": "18-02-2003",
+      "receivedByCourtAt": "20-02-2003",
+      "filedAt": "20-02-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 54437
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL11/KSHK",
+      "documentType": "účetní závěrka, výroční zpráva - za rok 2002 + přílohy",
+      "createdAt": "03-09-2003",
+      "receivedByCourtAt": "09-09-2003",
+      "filedAt": "09-09-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 73,
+          "sizeBytes": 1886804
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL12/KSHK",
+      "documentType": "rozhod. o statut. orgánu, podpisové vzory",
+      "createdAt": "04-09-2003",
+      "receivedByCourtAt": "12-09-2003",
+      "filedAt": "12-09-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 71035
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL13/KSHK",
+      "documentType": "rozhod. o statut. orgánu, podpisové vzory",
+      "createdAt": "11-09-2003",
+      "receivedByCourtAt": "12-11-2003",
+      "filedAt": "12-11-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 119684
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL14/KSHK",
+      "documentType": "ostatní - Rozhodnutí MZ ČR",
+      "createdAt": "02-02-2004",
+      "receivedByCourtAt": "06-02-2004",
+      "filedAt": "06-02-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 24617
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL15/KSHK",
+      "documentType": "rozhod. o statut. orgánu",
+      "createdAt": "15-03-2004",
+      "receivedByCourtAt": "25-03-2004",
+      "filedAt": "25-03-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 12771
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL16/KSHK",
+      "documentType": "zakladatelské dokumenty - Rozhodnutí MZ ČR",
+      "createdAt": "26-02-2004",
+      "receivedByCourtAt": "14-04-2004",
+      "filedAt": "14-04-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 27207
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL17/KSHK",
+      "documentType": "zakladatelské dokumenty - Rozhodnutí MZ ČR",
+      "createdAt": "13-04-2004",
+      "receivedByCourtAt": "22-04-2004",
+      "filedAt": "22-04-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 37945
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL18/KSHK",
+      "documentType": "zakladatelské dokumenty - Rozhodnutí MZ ČR",
+      "createdAt": "28-04-2004",
+      "receivedByCourtAt": "05-05-2004",
+      "filedAt": "05-05-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 33867
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL19/KSHK",
+      "documentType": "zakladatelské dokumenty, podpisové vzory - Rozhodnutí MZ ČR",
+      "createdAt": "15-07-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 57407
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL20/KSHK",
+      "documentType": "podpisové vzory",
+      "createdAt": "17-08-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 17605
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL21/KSHK",
+      "documentType": "účetní závěrka, výroční zpráva - za rok 2003",
+      "createdAt": "20-09-2004",
+      "receivedByCourtAt": "06-10-2004",
+      "filedAt": "06-10-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 85,
+          "sizeBytes": 2263002
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL22/KSHK",
+      "documentType": "zakladatelské dokumenty - Rozhodnutí MZ ČR",
+      "createdAt": "04-08-2004",
+      "receivedByCourtAt": "06-10-2004",
+      "filedAt": "06-10-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 28892
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL23/KSHK",
+      "documentType": "zakladatelské dokumenty - Rozhodnutí MZ ČR",
+      "createdAt": "25-02-2005",
+      "receivedByCourtAt": "28-02-2005",
+      "filedAt": "28-02-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 50047
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL24/KSHK",
+      "documentType": "zakladatelské dokumenty - Rozhodnutí MZ ČR",
+      "createdAt": "09-03-2005",
+      "receivedByCourtAt": "14-03-2005",
+      "filedAt": "14-03-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 26108
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL25/KSHK",
+      "documentType": "ostatní, podpisové vzory",
+      "createdAt": "22-04-2005",
+      "receivedByCourtAt": "25-05-2005",
+      "filedAt": "25-05-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 40985
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL26/KSHK",
+      "documentType": "ostatní, podpisové vzory",
+      "createdAt": "16-05-2005",
+      "receivedByCourtAt": "27-06-2005",
+      "filedAt": "27-06-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 34924
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL27/KSHK",
+      "documentType": "rozhod. o statut. orgánu - zakladatele",
+      "createdAt": "08-07-2005",
+      "receivedByCourtAt": "13-07-2005",
+      "filedAt": "13-07-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 29826
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL28/KSHK",
+      "documentType": "účetní závěrka, výroční zpráva 2004",
+      "createdAt": "10-05-2005",
+      "receivedByCourtAt": "02-09-2005",
+      "filedAt": "02-09-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 69,
+          "sizeBytes": 1818178
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL29/KSHK",
+      "documentType": "ostatní, podpisové vzory - jmenování do funkce",
+      "createdAt": "13-01-2006",
+      "receivedByCourtAt": "02-02-2006",
+      "filedAt": "02-02-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 29481
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL30/KSHK",
+      "documentType": "rozhod. o statut. orgánu",
+      "createdAt": "08-02-2006",
+      "receivedByCourtAt": "04-04-2006",
+      "filedAt": "14-04-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 13,
+          "sizeBytes": 199631
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL31/KSHK",
+      "documentType": "ostatní rozhodnutí zřizovatele",
+      "createdAt": "01-03-2006",
+      "receivedByCourtAt": "04-04-2006",
+      "filedAt": "14-04-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 51135
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL32/KSHK",
+      "documentType": "ostatní, podpisové vzory dokl.o vzd. se fce a jmenování",
+      "createdAt": "22-03-2006",
+      "receivedByCourtAt": "18-05-2006",
+      "filedAt": "24-05-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 46828
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL33/KSHK",
+      "documentType": "ostatní rozhodnutí o změně zakl.list.",
+      "createdAt": "31-05-2006",
+      "receivedByCourtAt": "21-06-2006",
+      "filedAt": "26-06-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 45599
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL34/KSHK",
+      "documentType": "ostatní odvolání z funkce",
+      "createdAt": "12-06-2006",
+      "receivedByCourtAt": "29-06-2006",
+      "filedAt": "13-07-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 17324
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL35/KSHK",
+      "documentType": "výroční zpráva r. 2005",
+      "createdAt": "28-04-2006",
+      "receivedByCourtAt": "04-07-2006",
+      "filedAt": "13-07-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 79,
+          "sizeBytes": 1706336
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL36/KSHK",
+      "documentType": "ostatní, podpisové vzory rozhod.zakl., jmen. GŘ",
+      "createdAt": "01-08-2006",
+      "receivedByCourtAt": "07-08-2006",
+      "filedAt": "11-08-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 85726
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL37/KSHK",
+      "documentType": "ostatní rozhodnutí zřizovatele",
+      "createdAt": "25-01-2007",
+      "receivedByCourtAt": "29-01-2007",
+      "filedAt": "01-02-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 44410
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL38/KSHK",
+      "documentType": "rozhod. o statut. orgánu, ostatní, podpisové vzory",
+      "createdAt": "12-02-2007",
+      "receivedByCourtAt": "17-04-2007",
+      "filedAt": "15-05-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 11,
+          "sizeBytes": 189322
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL39/KSHK",
+      "documentType": "rozhod. o statut. orgánu",
+      "createdAt": "05-06-2007",
+      "receivedByCourtAt": "11-06-2007",
+      "filedAt": "11-06-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 48993
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL40/KSHK",
+      "documentType": "ostatní, podpisové vzory odvolání z funkce",
+      "createdAt": "20-08-2007",
+      "receivedByCourtAt": "30-08-2007",
+      "filedAt": "30-08-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 49830
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL41/KSHK",
+      "documentType": "zakladatelské dokumenty -(spis)",
+      "createdAt": "19-09-2007",
+      "receivedByCourtAt": "24-09-2007",
+      "filedAt": "24-09-2007",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 35147
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL42/KSHK",
+      "documentType": "rozhod. o statut. orgánu, podpisové vzory",
+      "createdAt": "06-02-2008",
+      "receivedByCourtAt": "28-01-2008",
+      "filedAt": "12-02-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 61772
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL43/KSHK",
+      "documentType": "zakladatelské dokumenty",
+      "createdAt": "11-12-1991",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 53726
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL44/KSHK",
+      "documentType": "ostatní, podpisové vzory",
+      "receivedByCourtAt": "13-03-2008",
+      "filedAt": "13-03-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 14,
+          "sizeBytes": 272516
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL45/KSHK",
+      "documentType": "výroční zpráva 2006",
+      "receivedByCourtAt": "22-04-2008",
+      "filedAt": "22-04-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 88,
+          "sizeBytes": 4912153
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL46/KSHK",
+      "documentType": "ostatní, podpisové vzory",
+      "createdAt": "29-04-2008",
+      "receivedByCourtAt": "07-05-2008",
+      "filedAt": "07-05-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 78449
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL47/KSHK",
+      "documentType": "ostatní změna zakládací listiny",
+      "createdAt": "12-06-2008",
+      "receivedByCourtAt": "05-08-2008",
+      "filedAt": "05-08-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 119121
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL48/KSHK",
+      "documentType": "ostatní rozhodnutí o odvolání",
+      "createdAt": "14-07-2008",
+      "receivedByCourtAt": "03-11-2008",
+      "filedAt": "03-11-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 18404
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL49/KSHK",
+      "documentType": "zakladatelské dokumenty, ostatní, podpisové vzory rozhod.min., rozh. o odv. a jm",
+      "createdAt": "14-01-2009",
+      "receivedByCourtAt": "20-01-2009",
+      "filedAt": "30-01-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 178584
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL50/KSHK",
+      "documentType": "ostatní, podpisové vzory",
+      "receivedByCourtAt": "01-04-2009",
+      "filedAt": "01-04-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 24,
+          "sizeBytes": 479330
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL51/KSHK",
+      "documentType": "výroční zpráva 2007",
+      "receivedByCourtAt": "06-05-2009",
+      "filedAt": "06-05-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 83,
+          "sizeBytes": 6182639
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL52/KSHK",
+      "documentType": "ostatní, podpisové vzory",
+      "createdAt": "16-06-2009",
+      "receivedByCourtAt": "25-06-2009",
+      "filedAt": "25-06-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 253451
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL53/KSHK",
+      "documentType": "výroční zpráva 2008",
+      "receivedByCourtAt": "30-09-2009",
+      "filedAt": "30-09-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 77,
+          "sizeBytes": 2096022
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL54/KSHK",
+      "documentType": "ostatní rozhodnutí MS",
+      "createdAt": "19-10-2009",
+      "receivedByCourtAt": "20-10-2009",
+      "filedAt": "20-10-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 122411
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL55/KSHK",
+      "documentType": "ostatní, podpisové vzory rozhodnutí ministra zeměděl.",
+      "createdAt": "05-05-2010",
+      "receivedByCourtAt": "06-05-2010",
+      "filedAt": "14-05-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 211726
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL56/KSHK",
+      "documentType": "zakladatelské dokumenty, rozhod. o statut. orgánu, podpisové vzory",
+      "createdAt": "13-05-2010",
+      "receivedByCourtAt": "27-05-2010",
+      "filedAt": "01-06-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 199285
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL57/KSHK",
+      "documentType": "ostatní rozhodnutí,odstoupení z funkce",
+      "createdAt": "20-06-2010",
+      "receivedByCourtAt": "19-07-2010",
+      "filedAt": "21-07-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 141659
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL58/KSHK",
+      "documentType": "výroční zpráva 2009",
+      "receivedByCourtAt": "06-08-2010",
+      "filedAt": "06-08-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 83,
+          "sizeBytes": 7939462
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL59/KSHK",
+      "documentType": "ostatní, podpisové vzory rozhod.ministra",
+      "createdAt": "23-08-2010",
+      "receivedByCourtAt": "24-08-2010",
+      "filedAt": "01-09-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 171092
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL60/KSHK",
+      "documentType": "ostatní, podpisové vzory rozhodnutí zřizovatele",
+      "createdAt": "16-11-2010",
+      "receivedByCourtAt": "23-11-2010",
+      "filedAt": "08-12-2010",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 14,
+          "sizeBytes": 295414
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL61/KSHK",
+      "documentType": "zakladatelské dokumenty",
+      "createdAt": "11-12-1991",
+      "filedAt": "20-01-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 206940
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL62/KSHK",
+      "documentType": "ostatní, podpisové vzory rozhodnutí ministra",
+      "createdAt": "12-11-2010",
+      "receivedByCourtAt": "06-01-2011",
+      "filedAt": "04-02-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 56031
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL63/KSHK",
+      "documentType": "zakladatelské dokumenty",
+      "createdAt": "16-12-2010",
+      "receivedByCourtAt": "14-01-2011",
+      "filedAt": "04-02-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 164793
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL64/KSHK",
+      "documentType": "zakladatelské dokumenty, ostatní, podpisové vzory",
+      "createdAt": "05-01-2011",
+      "receivedByCourtAt": "01-02-2011",
+      "filedAt": "07-03-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 13,
+          "sizeBytes": 235742
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL65/KSHK",
+      "documentType": "zakladatelské dokumenty",
+      "receivedByCourtAt": "11-04-2011",
+      "filedAt": "11-04-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 123545
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL66/KSHK",
+      "documentType": "zakladatelské dokumenty, ostatní",
+      "createdAt": "27-04-2011",
+      "receivedByCourtAt": "02-06-2011",
+      "filedAt": "01-07-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 130392
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL67/KSHK",
+      "documentType": "podpisové vzory",
+      "createdAt": "16-05-2011",
+      "receivedByCourtAt": "02-06-2011",
+      "filedAt": "01-07-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 33478
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL68/KSHK",
+      "documentType": "výroční zpráva 2010",
+      "receivedByCourtAt": "08-09-2011",
+      "filedAt": "08-09-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 82,
+          "sizeBytes": 5205184
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL69/KSHK",
+      "documentType": "stanovy společnosti, ostatní rozhodnutí ministerstva",
+      "createdAt": "21-11-2011",
+      "receivedByCourtAt": "29-11-2011",
+      "filedAt": "12-12-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 156091
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL70/KSHK",
+      "documentType": "podpisové vzory",
+      "createdAt": "20-10-2011",
+      "receivedByCourtAt": "29-11-2011",
+      "filedAt": "12-12-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 11841
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL71/KSHK",
+      "documentType": "zakladatelské dokumenty, ostatní jmenování do funkce",
+      "createdAt": "30-01-2012",
+      "receivedByCourtAt": "08-02-2012",
+      "filedAt": "21-02-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 179154
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL72/KSHK",
+      "documentType": "zakladatelské dokumenty, ostatní",
+      "receivedByCourtAt": "25-04-2012",
+      "filedAt": "11-05-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 0
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL73/KSHK",
+      "documentType": "výroční zpráva 2011",
+      "receivedByCourtAt": "07-08-2012",
+      "filedAt": "07-08-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 86,
+          "sizeBytes": 7137656
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL74/KSHK",
+      "documentType": "zakladatelské dokumenty, ostatní oznámení",
+      "receivedByCourtAt": "20-11-2012",
+      "filedAt": "29-11-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 448375
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL75/KSHK",
+      "documentType": "zakladatelské dokumenty, rozhod. o statut. orgánu",
+      "receivedByCourtAt": "28-11-2012",
+      "filedAt": "03-01-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 226458
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL76/KSHK",
+      "documentType": "zakladatelské dokumenty, rozhod. o statut. orgánu",
+      "receivedByCourtAt": "24-04-2013",
+      "filedAt": "30-04-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 23,
+          "sizeBytes": 746847
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL77/KSHK",
+      "documentType": "účetní závěrka [2012], výroční zpráva [2012]",
+      "receivedByCourtAt": "28-08-2013",
+      "filedAt": "28-08-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 100,
+          "sizeBytes": 6008180
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL78/KSHK",
+      "documentType": "rozhod. o statut. orgánu",
+      "receivedByCourtAt": "05-09-2013",
+      "filedAt": "01-10-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 332457
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL79/KSHK",
+      "documentType": "rozhod. o statut. orgánu",
+      "createdAt": "31-10-2013",
+      "receivedByCourtAt": "07-11-2013",
+      "filedAt": "10-12-2013",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 13,
+          "sizeBytes": 415786
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL80/KSHK",
+      "documentType": "rozhod. o statut. orgánu",
+      "createdAt": "17-04-2014",
+      "receivedByCourtAt": "18-04-2014",
+      "filedAt": "30-04-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 11,
+          "sizeBytes": 379760
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL81/KSHK",
+      "documentType": "zakladatelské dokumenty",
+      "createdAt": "01-07-2014",
+      "receivedByCourtAt": "03-07-2014",
+      "filedAt": "24-07-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 207187
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL82/KSHK",
+      "documentType": "výroční zpráva [2013]",
+      "receivedByCourtAt": "08-08-2014",
+      "filedAt": "08-08-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 98,
+          "sizeBytes": 4803823
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL83/KSHK",
+      "documentType": "zakladatelské dokumenty, rozhod. o statut. orgánu DR, zakládací listina",
+      "receivedByCourtAt": "08-10-2014",
+      "filedAt": "13-11-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 167095
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL84/KSHK",
+      "documentType": "zakladatelské dokumenty, rozhod. o statut. orgánu",
+      "createdAt": "05-11-2014",
+      "receivedByCourtAt": "24-11-2014",
+      "filedAt": "30-12-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 244160
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL85/KSHK",
+      "documentType": "zakladatelské dokumenty, rozhod. o statut. orgánu DR",
+      "receivedByCourtAt": "28-01-2015",
+      "filedAt": "23-02-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 120388
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL86/KSHK",
+      "documentType": "zakladatelské dokumenty, rozhod. o statut. orgánu, ostatní DR",
+      "createdAt": "14-07-2015",
+      "receivedByCourtAt": "22-07-2015",
+      "filedAt": "17-08-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 20,
+          "sizeBytes": 369272
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL87/KSHK",
+      "documentType": "účetní závěrka [2014], výroční zpráva [2014]",
+      "receivedByCourtAt": "20-08-2015",
+      "filedAt": "20-08-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 110,
+          "sizeBytes": 5379344
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL88/KSHK",
+      "documentType": "rozhod. o statut. orgánu",
+      "createdAt": "14-01-2016",
+      "receivedByCourtAt": "18-02-2016",
+      "filedAt": "21-03-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 96439
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL89/KSHK",
+      "documentType": "rozhod. o statut. orgánu",
+      "createdAt": "11-04-2016",
+      "receivedByCourtAt": "09-05-2016",
+      "filedAt": "02-06-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 45811
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL90/KSHK",
+      "documentType": "zakladatelské dokumenty",
+      "createdAt": "21-04-2016",
+      "receivedByCourtAt": "09-05-2016",
+      "filedAt": "02-06-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 198654
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL91/KSHK",
+      "documentType": "výroční zpráva [2015]",
+      "receivedByCourtAt": "27-07-2016",
+      "filedAt": "27-07-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 114,
+          "sizeBytes": 8009696
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL92/KSHK",
+      "documentType": "výroční zpráva [2015]",
+      "receivedByCourtAt": "27-07-2016",
+      "filedAt": "27-07-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 114,
+          "sizeBytes": 7940152
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL93/KSHK",
+      "documentType": "ostatní Zakládací listina",
+      "receivedByCourtAt": "21-11-2016",
+      "filedAt": "14-12-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 90885
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL94/KSHK",
+      "documentType": "výroční zpráva [2016]",
+      "createdAt": "03-07-2017",
+      "receivedByCourtAt": "03-07-2017",
+      "filedAt": "04-07-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 116,
+          "sizeBytes": 10913974
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL95/KSHK",
+      "documentType": "zakladatelské dokumenty, ostatní Odvolání, pověření",
+      "receivedByCourtAt": "21-03-2018",
+      "filedAt": "04-04-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 203210
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL96/KSHK",
+      "documentType": "zakladatelské dokumenty, ostatní Odvolání, Jmenování, Pořadí jmenování v nepřítomnosti",
+      "receivedByCourtAt": "23-05-2018",
+      "filedAt": "05-06-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 139917
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL97/KSHK",
+      "documentType": "účetní závěrka [2017], výroční zpráva [2017], zpráva auditora [2017]",
+      "receivedByCourtAt": "09-07-2018",
+      "filedAt": "10-07-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 100,
+          "sizeBytes": 6008922
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL98/KSHK",
+      "documentType": "zakladatelské dokumenty, ostatní Odvolání, Jmenování",
+      "receivedByCourtAt": "03-10-2018",
+      "filedAt": "22-10-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 158406
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL99/KSHK",
+      "documentType": "zakladatelské dokumenty, ostatní Odvolání, Jmenování",
+      "receivedByCourtAt": "20-12-2018",
+      "filedAt": "16-01-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 13,
+          "sizeBytes": 391822
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL100/KSHK",
+      "documentType": "zakladatelské dokumenty odvolání, jmenování, zastupování st. orgánu, ZL",
+      "createdAt": "21-05-2019",
+      "receivedByCourtAt": "27-05-2019",
+      "filedAt": "11-06-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 196819
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL101/KSHK",
+      "documentType": "účetní závěrka [2018], výroční zpráva [2018], zpráva auditora [2018]",
+      "receivedByCourtAt": "27-08-2019",
+      "filedAt": "28-08-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 125,
+          "sizeBytes": 9244216
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL102/KSHK",
+      "documentType": "zakladatelské dokumenty Statut",
+      "createdAt": "01-09-2017",
+      "receivedByCourtAt": "07-02-2020",
+      "filedAt": "25-02-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 14,
+          "sizeBytes": 357070
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL103/KSHK",
+      "documentType": "zakladatelské dokumenty",
+      "createdAt": "21-05-2019",
+      "receivedByCourtAt": "07-02-2020",
+      "filedAt": "25-02-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 115867
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL104/KSHK",
+      "documentType": "ostatní výpověď",
+      "createdAt": "23-10-2019",
+      "receivedByCourtAt": "07-02-2020",
+      "filedAt": "25-02-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 73311
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL105/KSHK",
+      "documentType": "ostatní vzdání se funkce",
+      "createdAt": "08-07-2019",
+      "receivedByCourtAt": "07-02-2020",
+      "filedAt": "25-02-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 45524
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL106/KSHK",
+      "documentType": "rozhod. o statut. orgánu",
+      "createdAt": "02-12-2019",
+      "receivedByCourtAt": "07-02-2020",
+      "filedAt": "25-02-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 106080
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL107/KSHK",
+      "documentType": "ostatní pořadí zástupců GŘ",
+      "createdAt": "02-12-2019",
+      "receivedByCourtAt": "07-02-2020",
+      "filedAt": "25-02-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 43711
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL108/KSHK",
+      "documentType": "ostatní výpověď",
+      "createdAt": "08-04-2019",
+      "receivedByCourtAt": "07-02-2020",
+      "filedAt": "25-02-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 47378
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL109/KSHK",
+      "documentType": "ostatní jmenování",
+      "createdAt": "03-12-2019",
+      "receivedByCourtAt": "07-02-2020",
+      "filedAt": "25-02-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 23343
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL110/KSHK",
+      "documentType": "rozhod. o statut. orgánu",
+      "createdAt": "27-05-2015",
+      "receivedByCourtAt": "07-02-2020",
+      "filedAt": "25-02-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 20,
+          "sizeBytes": 486700
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL111/KSHK",
+      "documentType": "ostatní Zápis z DR",
+      "createdAt": "28-12-2018",
+      "receivedByCourtAt": "07-02-2020",
+      "filedAt": "25-02-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 68329
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL112/KSHK",
+      "documentType": "ostatní 2x jmenování",
+      "createdAt": "11-12-2019",
+      "receivedByCourtAt": "07-02-2020",
+      "filedAt": "25-02-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 35196
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL113/KSHK",
+      "documentType": "účetní závěrka [2019], výroční zpráva [2019], zpráva auditora [2019]",
+      "receivedByCourtAt": "24-06-2020",
+      "filedAt": "24-06-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 126,
+          "sizeBytes": 5231310
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL114/KSHK",
+      "documentType": "ostatní jmenování",
+      "createdAt": "06-04-2020",
+      "receivedByCourtAt": "04-08-2020",
+      "filedAt": "20-08-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 388252
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL115/KSHK",
+      "documentType": "ostatní Zápis z jednání VPA",
+      "createdAt": "18-05-2020",
+      "receivedByCourtAt": "04-08-2020",
+      "filedAt": "20-08-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 496767
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL116/KSHK",
+      "documentType": "ostatní odvolání",
+      "createdAt": "05-03-2020",
+      "receivedByCourtAt": "04-08-2020",
+      "filedAt": "20-08-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 287194
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL117/KSHK",
+      "documentType": "ostatní jmenování",
+      "createdAt": "16-07-2020",
+      "receivedByCourtAt": "04-08-2020",
+      "filedAt": "20-08-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 332902
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL118/KSHK",
+      "documentType": "rozhod. o statut. orgánu",
+      "createdAt": "28-05-2020",
+      "receivedByCourtAt": "04-08-2020",
+      "filedAt": "20-08-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 1067198
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL119/KSHK",
+      "documentType": "ostatní jmenování",
+      "createdAt": "16-07-2020",
+      "receivedByCourtAt": "04-08-2020",
+      "filedAt": "20-08-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 307145
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL120/KSHK",
+      "documentType": "zakladatelské dokumenty Statut",
+      "createdAt": "22-03-2021",
+      "receivedByCourtAt": "16-04-2021",
+      "filedAt": "23-04-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 14,
+          "sizeBytes": 715914
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL121/KSHK",
+      "documentType": "ostatní vzdání se funkce",
+      "createdAt": "08-03-2021",
+      "receivedByCourtAt": "13-05-2021",
+      "filedAt": "03-08-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 343362
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL122/KSHK",
+      "documentType": "zakladatelské dokumenty",
+      "createdAt": "30-08-2021",
+      "receivedByCourtAt": "20-09-2021",
+      "filedAt": "01-11-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 3214564
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL123/KSHK",
+      "documentType": "ostatní Výpis ze zápisu DR",
+      "createdAt": "14-11-2021",
+      "receivedByCourtAt": "23-12-2021",
+      "filedAt": "14-02-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 338892
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL124/KSHK",
+      "documentType": "ostatní jmenování",
+      "createdAt": "29-11-2021",
+      "receivedByCourtAt": "23-12-2021",
+      "filedAt": "14-02-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 353127
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL125/KSHK",
+      "documentType": "ostatní odvolání",
+      "createdAt": "22-12-2021",
+      "receivedByCourtAt": "23-12-2021",
+      "filedAt": "14-02-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 165343
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL126/KSHK",
+      "documentType": "ostatní odstoupení",
+      "createdAt": "10-11-2021",
+      "receivedByCourtAt": "23-12-2021",
+      "filedAt": "14-02-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 403354
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL127/KSHK",
+      "documentType": "ostatní pověření",
+      "createdAt": "23-12-2021",
+      "receivedByCourtAt": "23-12-2021",
+      "filedAt": "14-02-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 169015
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL128/KSHK",
+      "documentType": "účetní závěrka [2020], výroční zpráva [2020], zpráva auditora [2020]",
+      "receivedByCourtAt": "14-02-2022",
+      "filedAt": "18-02-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 116,
+          "sizeBytes": 7466699
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL129/KSHK",
+      "documentType": "ostatní vzdání se funkce",
+      "createdAt": "21-12-2021",
+      "receivedByCourtAt": "28-02-2022",
+      "filedAt": "11-04-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 384503
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL130/KSHK",
+      "documentType": "ostatní odvolání",
+      "createdAt": "06-01-2022",
+      "receivedByCourtAt": "28-02-2022",
+      "filedAt": "11-04-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 313213
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL131/KSHK",
+      "documentType": "ostatní odvolání",
+      "createdAt": "06-01-2022",
+      "receivedByCourtAt": "28-02-2022",
+      "filedAt": "11-04-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 316001
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL132/KSHK",
+      "documentType": "ostatní vzdání se funkce",
+      "createdAt": "21-12-2021",
+      "receivedByCourtAt": "28-02-2022",
+      "filedAt": "11-04-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 350149
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL133/KSHK",
+      "documentType": "ostatní vzdání se funkce",
+      "createdAt": "21-12-2021",
+      "receivedByCourtAt": "28-02-2022",
+      "filedAt": "11-04-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 394259
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL134/KSHK",
+      "documentType": "ostatní 2x Jmenování",
+      "createdAt": "30-03-2022",
+      "receivedByCourtAt": "13-04-2022",
+      "filedAt": "19-05-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 1350654
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL135/KSHK",
+      "documentType": "účetní závěrka [2021], výroční zpráva [2021]",
+      "receivedByCourtAt": "26-07-2022",
+      "filedAt": "03-08-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 98,
+          "sizeBytes": 9788554
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL136/KSHK",
+      "documentType": "účetní závěrka [2021], výroční zpráva [2021], zpráva o vztazích [2021], zpráva auditora [2021]",
+      "receivedByCourtAt": "26-07-2022",
+      "filedAt": "03-08-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 98,
+          "sizeBytes": 11106983
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL137/KSHK",
+      "documentType": "ostatní jmenování",
+      "createdAt": "07-06-2022",
+      "receivedByCourtAt": "15-08-2022",
+      "filedAt": "22-09-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 697719
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL138/KSHK",
+      "documentType": "ostatní jmenování",
+      "createdAt": "19-05-2022",
+      "receivedByCourtAt": "14-09-2022",
+      "filedAt": "20-10-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 351843
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL139/KSHK",
+      "documentType": "ostatní jmenování",
+      "createdAt": "28-07-2022",
+      "receivedByCourtAt": "14-09-2022",
+      "filedAt": "20-10-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 281729
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL140/KSHK",
+      "documentType": "ostatní jmenování",
+      "createdAt": "03-06-2022",
+      "receivedByCourtAt": "14-09-2022",
+      "filedAt": "20-10-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 400809
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL141/KSHK",
+      "documentType": "zakladatelské dokumenty Zakládací listina",
+      "createdAt": "01-12-2022",
+      "receivedByCourtAt": "04-01-2023",
+      "filedAt": "10-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 2685299
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL142/KSHK",
+      "documentType": "zakladatelské dokumenty Zakládací listina",
+      "createdAt": "09-09-2022",
+      "receivedByCourtAt": "04-01-2023",
+      "filedAt": "10-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 2746906
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL143/KSHK",
+      "documentType": "ostatní Vzdání se funkce EŘ - Ing. Dalibor Šafařík, Ph.D.",
+      "createdAt": "12-12-2022",
+      "receivedByCourtAt": "04-01-2023",
+      "filedAt": "10-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 376184
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL144/KSHK",
+      "documentType": "ostatní Jmenování do funkce EŘ - Ing. Dalibor Šafařík, Ph.D.",
+      "createdAt": "07-06-2022",
+      "receivedByCourtAt": "04-01-2023",
+      "filedAt": "10-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 697719
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL145/KSHK",
+      "documentType": "ostatní Jmenování člena DR - Mgr. Jan Grolich",
+      "createdAt": "19-09-2022",
+      "receivedByCourtAt": "04-01-2023",
+      "filedAt": "10-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 263939
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL146/KSHK",
+      "documentType": "ostatní Zrušení pověření řízením s.p. - Ing. Jiří Grod",
+      "createdAt": "13-12-2022",
+      "receivedByCourtAt": "04-01-2023",
+      "filedAt": "10-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 347529
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL147/KSHK",
+      "documentType": "ostatní Jmenování člena DR - Ing. Petr Bendl",
+      "createdAt": "10-10-2022",
+      "receivedByCourtAt": "04-01-2023",
+      "filedAt": "10-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 270672
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL148/KSHK",
+      "documentType": "ostatní Zápis o celkovém průběhu a výsledích voleb do DR",
+      "createdAt": "01-06-2020",
+      "receivedByCourtAt": "04-01-2023",
+      "filedAt": "10-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 1161960
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL149/KSHK",
+      "documentType": "ostatní Jmenování do funkce generálního ředitele s.p. - Ing. Dalibor Šafařík, Ph.D.",
+      "createdAt": "13-12-2022",
+      "receivedByCourtAt": "04-01-2023",
+      "filedAt": "10-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 350175
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL150/KSHK",
+      "documentType": "rozhod. o statut. orgánu Odvolání Ing. Strakoš",
+      "createdAt": "06-03-2023",
+      "receivedByCourtAt": "19-04-2023",
+      "filedAt": "02-06-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 720107
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL151/KSHK",
+      "documentType": "rozhod. o statut. orgánu Odvolání z funkce člena DR - Ing. Vašíček, CSc.",
+      "createdAt": "16-01-2023",
+      "receivedByCourtAt": "19-04-2023",
+      "filedAt": "02-06-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 296494
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL152/KSHK",
+      "documentType": "rozhod. o statut. orgánu Jmenování člena DR - Ing. Hájek",
+      "createdAt": "17-01-2023",
+      "receivedByCourtAt": "19-04-2023",
+      "filedAt": "02-06-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 278360
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL153/KSHK",
+      "documentType": "rozhod. o statut. orgánu Jmenování do funkce - Ing. Srba",
+      "createdAt": "01-03-2023",
+      "receivedByCourtAt": "19-04-2023",
+      "filedAt": "02-06-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 483823
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL154/KSHK",
+      "documentType": "rozhod. o statut. orgánu Odstoupení z funkce čl. DR - Ing. Kříha",
+      "createdAt": "09-01-2023",
+      "receivedByCourtAt": "19-04-2023",
+      "filedAt": "02-06-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 313781
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL155/KSHK",
+      "documentType": "rozhod. o statut. orgánu Jmenování do funkce Správního ředitele - Ing. Šmídu, Ph.D.",
+      "createdAt": "06-03-2023",
+      "receivedByCourtAt": "19-04-2023",
+      "filedAt": "02-06-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 672024
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL156/KSHK",
+      "documentType": "ostatní Volby do DR",
+      "createdAt": "14-05-2020",
+      "receivedByCourtAt": "19-04-2023",
+      "filedAt": "02-06-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 438169
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL157/KSHK",
+      "documentType": "ostatní Zápis o průběhu a výsledcích voleb",
+      "createdAt": "28-05-2020",
+      "receivedByCourtAt": "19-04-2023",
+      "filedAt": "02-06-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 1422501
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL158/KSHK",
+      "documentType": "rozhod. o statut. orgánu Jmenování do funkce Správního ředitele - Ing. Kalix, MBA",
+      "createdAt": "30-03-2022",
+      "receivedByCourtAt": "19-04-2023",
+      "filedAt": "02-06-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 701587
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL159/KSHK",
+      "documentType": "účetní závěrka [2022], výroční zpráva [2022], zpráva auditora [2022]",
+      "receivedByCourtAt": "13-06-2023",
+      "filedAt": "19-06-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 98,
+          "sizeBytes": 13478036
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL160/KSHK",
+      "documentType": "rozhod. o statut. orgánu",
+      "createdAt": "05-05-2023",
+      "receivedByCourtAt": "12-06-2023",
+      "filedAt": "19-07-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 703865
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL161/KSHK",
+      "documentType": "rozhod. o statut. orgánu",
+      "createdAt": "01-06-2023",
+      "receivedByCourtAt": "12-06-2023",
+      "filedAt": "19-07-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 436605
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL162/KSHK",
+      "documentType": "rozhod. o statut. orgánu",
+      "createdAt": "05-05-2023",
+      "receivedByCourtAt": "12-06-2023",
+      "filedAt": "19-07-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 712972
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL163/KSHK",
+      "documentType": "rozhod. o statut. orgánu",
+      "createdAt": "27-03-2023",
+      "receivedByCourtAt": "12-06-2023",
+      "filedAt": "19-07-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 728773
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL164/KSHK",
+      "documentType": "výroční zpráva [2022]",
+      "receivedByCourtAt": "12-06-2023",
+      "filedAt": "19-07-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 98,
+          "sizeBytes": 15000502
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL165/KSHK",
+      "documentType": "zakladatelské dokumenty statut",
+      "createdAt": "19-10-2022",
+      "receivedByCourtAt": "12-06-2023",
+      "filedAt": "19-07-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 14,
+          "sizeBytes": 765023
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL166/KSHK",
+      "documentType": "ostatní Jmenování do funkce člena DR",
+      "createdAt": "04-09-2023",
+      "receivedByCourtAt": "11-03-2024",
+      "filedAt": "16-04-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 402050
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL167/KSHK",
+      "documentType": "zakladatelské dokumenty zákládací listina",
+      "createdAt": "20-02-2024",
+      "receivedByCourtAt": "22-04-2024",
+      "filedAt": "24-04-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 478434
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL168/KSHK",
+      "documentType": "účetní závěrka [2023], výroční zpráva [2023], zpráva o vztazích [2023], zpráva auditora [2023]",
+      "receivedByCourtAt": "04-12-2024",
+      "filedAt": "05-12-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 100,
+          "sizeBytes": 11432227
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL169/KSHK",
+      "documentType": "ostatní Odvolání z funkce člena Dozorčí rady",
+      "createdAt": "31-10-2024",
+      "receivedByCourtAt": "29-01-2025",
+      "filedAt": "24-02-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 309724
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL170/KSHK",
+      "documentType": "ostatní Jmenování do funkce člena Dozorčí rady",
+      "createdAt": "13-12-2024",
+      "receivedByCourtAt": "29-01-2025",
+      "filedAt": "24-02-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 339476
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL171/KSHK",
+      "documentType": "ostatní Výpis ze zápisu jednání výboru pro audit DR",
+      "createdAt": "12-12-2024",
+      "receivedByCourtAt": "29-01-2025",
+      "filedAt": "24-02-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 498640
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL172/KSHK",
+      "documentType": "ostatní Rezignace na post člena DR",
+      "createdAt": "21-10-2024",
+      "receivedByCourtAt": "29-01-2025",
+      "filedAt": "24-02-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 190948
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL173/KSHK",
+      "documentType": "ostatní Jmenování do funkce člena výboru pro audit DR",
+      "createdAt": "27-11-2024",
+      "receivedByCourtAt": "29-01-2025",
+      "filedAt": "24-02-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 341481
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL174/KSHK",
+      "documentType": "ostatní Vzdání se funkce obchodního ředitele",
+      "createdAt": "10-03-2025",
+      "receivedByCourtAt": "15-07-2025",
+      "filedAt": "08-08-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 337381
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL175/KSHK",
+      "documentType": "účetní závěrka [2024], výroční zpráva [2024], zpráva o vztazích [2024], zpráva auditora [2024]",
+      "receivedByCourtAt": "13-08-2025",
+      "filedAt": "13-08-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 108,
+          "sizeBytes": 7879706
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL176/KSHK",
+      "documentType": "rozhod. o statut. orgánu zápis o volbě DR",
+      "createdAt": "03-06-2025",
+      "receivedByCourtAt": "22-08-2025",
+      "filedAt": "26-09-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 89296
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL177/KSHK",
+      "documentType": "rozhod. o statut. orgánu jmenování",
+      "createdAt": "18-03-2025",
+      "receivedByCourtAt": "21-10-2025",
+      "filedAt": "01-12-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 809292
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL178/KSHK",
+      "documentType": "rozhod. o statut. orgánu jmenování",
+      "createdAt": "15-09-2025",
+      "receivedByCourtAt": "21-10-2025",
+      "filedAt": "01-12-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 101702
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL179/KSHK",
+      "documentType": "ostatní výpis ze zápisu DR",
+      "createdAt": "17-09-2025",
+      "receivedByCourtAt": "21-10-2025",
+      "filedAt": "01-12-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 166245
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL180/KSHK",
+      "documentType": "rozhod. o statut. orgánu 3X odvolání z funkce, 1X pověření k řízení st. podniku",
+      "receivedByCourtAt": "03-03-2026",
+      "filedAt": "10-04-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 4303459
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL181/KSHK",
+      "documentType": "zakladatelské dokumenty Zakládací listina",
+      "createdAt": "10-02-2026",
+      "receivedByCourtAt": "03-03-2026",
+      "filedAt": "10-04-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 172447
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL182/KSHK",
+      "documentType": "zakladatelské dokumenty Zakládací listina",
+      "createdAt": "02-03-2026",
+      "receivedByCourtAt": "22-04-2026",
+      "filedAt": "03-06-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 117018
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL183/KSHK",
+      "documentType": "rozhod. o statut. orgánu",
+      "createdAt": "16-03-2026",
+      "receivedByCourtAt": "22-04-2026",
+      "filedAt": "03-06-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 22,
+          "sizeBytes": 620761
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL184/KSHK",
+      "documentType": "účetní závěrka [2025], výroční zpráva [2025], zpráva o vztazích [2025], zpráva auditora [2025]",
+      "receivedByCourtAt": "15-06-2026",
+      "filedAt": "23-06-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 96,
+          "sizeBytes": 6310233
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL185/KSHK",
+      "documentType": "rozhod. o statut. orgánu jmenování do DR",
+      "createdAt": "11-05-2026",
+      "receivedByCourtAt": "12-06-2026",
+      "filedAt": "21-07-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 887123
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL186/KSHK",
+      "documentType": "rozhod. o statut. orgánu jmenování",
+      "createdAt": "01-05-2026",
+      "receivedByCourtAt": "12-06-2026",
+      "filedAt": "21-07-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 1342973
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL187/KSHK",
+      "documentType": "rozhod. o statut. orgánu jmenování do DR",
+      "createdAt": "31-03-2026",
+      "receivedByCourtAt": "12-06-2026",
+      "filedAt": "21-07-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 749377
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL188/KSHK",
+      "documentType": "ostatní statut",
+      "createdAt": "21-05-2026",
+      "receivedByCourtAt": "12-06-2026",
+      "filedAt": "21-07-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 15,
+          "sizeBytes": 307292
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL189/KSHK",
+      "documentType": "rozhod. o statut. orgánu jmenování",
+      "createdAt": "02-06-2026",
+      "receivedByCourtAt": "12-06-2026",
+      "filedAt": "21-07-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 837867
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL190/KSHK",
+      "documentType": "rozhod. o statut. orgánu jmenování",
+      "createdAt": "27-04-2026",
+      "receivedByCourtAt": "12-06-2026",
+      "filedAt": "21-07-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 752220
+        }
+      ]
+    },
+    {
+      "referenceLabel": "AXII 540/SL191/KSHK",
+      "documentType": "rozhod. o statut. orgánu dohoda o rozvázání PP",
+      "createdAt": "27-04-2026",
+      "receivedByCourtAt": "12-06-2026",
+      "filedAt": "21-07-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 1190352
+        }
+      ]
+    }
+  ]
+}

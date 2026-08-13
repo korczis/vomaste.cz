@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-ui-review",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-ui-review",
+  "kind": "skill",
+  "name": "ui-review",
+  "title": "Review UI vrstvy",
+  "category": "kontrola",
+  "personas": [
+    "developer",
+    "reviewer",
+    "maintainer"
+  ],
+  "riskLevel": "read-only",
+  "writes": false,
+  "summary": "Zkontroluje změnu v šablonách proti konvencím tohohle webu: povinné volání sdílených komponent ui_* a jediné tabulkové komponenty table_advanced_table, čtení view modelu místo hardcodovaných dat a slugů, doktrínu F1–F7, prázdné a mezní stavy, responzivitu na čtyřech šířkách a jedinou povolenou cestu k zobrazení média.",
+  "whenToRun": "Po změně v templates/, assets/ nebo static/css/, a při vzniku nové šablony.",
+  "describedFrom": "header",
+  "notes": [
+    "Brána lint:component-reuse vynucuje vlastní konvenci tohohle webu, NE shodu s flowbite.com/docs/getting-started/llm/ — ta stránka žádné strojově kontrolovatelné pravidlo neobsahuje. Popisovat ji jako „Flowbite compliance“ by bylo tvrzení o vynucení, které neexistuje.",
+    "Prohlížečová automatizace není povinná a build na ní nestojí. Bez ní se dělá statická kontrola a explicitně se řekne, co ověřeno nebylo.",
+    "Tvrdit, že něco vypadá dobře, bez zobrazení, je přesně ten druh nepodloženého tvrzení, kterému repozitář brání jinde."
+  ]
+}

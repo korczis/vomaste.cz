@@ -1,0 +1,43 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "27699293",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/27699293",
+  "nazev": "SADY CZ, s.r.o.",
+  "sidlo": "Za Mlýnem 1264, 69602 Ratíškovice",
+  "spisovaZnacka": {
+    "soud": "KSBR",
+    "oddil": "C",
+    "vlozka": "52952"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "jednatel",
+      "since": "2012-02-17",
+      "kind": "person",
+      "name": "Ing. Miroslav Lněnička"
+    },
+    {
+      "role": "jednatel",
+      "since": "2022-03-01",
+      "kind": "person",
+      "name": "Ing. Milan Foltýn"
+    },
+    {
+      "role": "Jednatel",
+      "since": "2026-01-01",
+      "kind": "person",
+      "name": "Marek Nečas"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "company",
+      "name": "NAVOS, a.s.",
+      "ico": "47674857",
+      "podil": "100",
+      "vklad": "29600000",
+      "splaceno": "100"
+    }
+  ]
+}

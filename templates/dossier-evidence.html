@@ -1,6 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
-{% import "macros/table.html" as table %}
 
 {% block content %}
 <main class="mx-auto max-w-6xl px-6 py-12 text-white">
@@ -12,21 +10,32 @@
   {% set claims = claims_idx.rows %}
   {% set sources = sources_idx.rows %}
 
-  {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
+  {{ <ui_page_header title={section.title} description={section.description} breadcrumb_items={[
     "Dossier::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
     "Evidence",
-  ]) }}
+  ]} /> }}
 
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
   <section aria-labelledby="claims-evidence-table-caption" class="mb-12">
-    {{ table::advanced_table(id="claims-evidence-table", caption="Tvrzení → podkládající zdroje", record_type="claim", columns=["Tvrzení", "Stav", "Zdroje", "Nezávislé rodiny"], count=claims | length, searchable=true) }}
+    {% <table_advanced_table id="claims-evidence-table" caption="Tvrzení → podkládající zdroje" record_type="claim" columns={["Tvrzení", "Stav", "Zdroje", "Nezávislé rodiny"]} count={claims | length} searchable={true} footer="Zvýrazněný počet rodin (žlutě) označuje tvrzení se statusem CORROBORATED podložené jen jednou zdrojovou rodinou — stojí za kontrolu, ne za automatické zpochybnění."> %}
           {% for c in claims %}
-          {% set_global family_ids = [] %}
+          {#- Distinct source families behind this claim. Tera has no set and
+              no array append, so membership is a "|"-fenced string and the
+              count is carried alongside it. -#}
+          {% set_global family_seen = "|" %}
+          {% set_global family_count_c = 0 %}
           {% for s in c.sources %}
-            {% set src_row = sources | filter(attribute="identifier", value=s.identifier) | first %}
-            {% set fam = src_row.sourceFamily | default(value="singleton:" ~ s.identifier) %}
-            {% if fam not in family_ids %}{% set_global family_ids = family_ids | concat(with=[fam]) %}{% endif %}
+            {% set src_row = [__i for __i in sources if __i.identifier == s.identifier] | first %}
+            {#- Truthiness, ne `default`: ten reaguje jen na CHYBĚJÍCÍ klíč.
+                Zdroj s prázdnou rodinou by dostal `fam = ""`, dva takové
+                v jednom tvrzení by splynuly do jedné rodiny a stránka by
+                u korektně doloženého tvrzení vyvěsila varování o chybějící
+                nezávislosti. Schéma prázdnou hodnotu od 2026-08-13 zakazuje,
+                tohle je druhá pojistka — zbylých osm míst v repozitáři už
+                tenhle idiom používá. -#}
+            {% if src_row.sourceFamily %}{% set fam = src_row.sourceFamily %}{% else %}{% set fam = "singleton:" ~ s.identifier %}{% endif %}
+            {% if "|" ~ fam ~ "|" not in family_seen %}{% set_global family_seen = family_seen ~ fam ~ "|" %}{% set_global family_count_c = family_count_c + 1 %}{% endif %}
           {% endfor %}
           <tr>
             <td class="p-3"><a href="{{ config.base_url }}{{ c.route }}" class="text-[#f3e5c0] underline decoration-white/30 underline-offset-2">{{ c.identifier }}</a> <span class="text-white/50">{{ c.text | truncate(length=70) }}</span></td>
@@ -34,10 +43,10 @@
             <td class="p-3">
               {% for s in c.sources %}<a href="{{ config.base_url }}{{ s.route }}" class="mr-1 inline-block rounded bg-white/5 px-1.5 py-0.5 font-mono text-[0.65rem] text-[#f3e5c0] no-underline hover:bg-white/10">{{ s.identifier }}</a>{% endfor %}
             </td>
-            <td class="p-3 text-xs {% if family_ids | length < 2 and c.status == 'status-corroborated' %}text-yellow-300{% else %}text-white/50{% endif %}">{{ family_ids | length }}</td>
+            <td class="p-3 text-xs {% if family_count_c < 2 and c.status == 'status-corroborated' %}text-yellow-300{% else %}text-white/50{% endif %}">{{ family_count_c }}</td>
           </tr>
           {% endfor %}
-    {{ table::advanced_table_end(footer="Zvýrazněný počet rodin (žlutě) označuje tvrzení se statusem CORROBORATED podložené jen jednou zdrojovou rodinou — stojí za kontrolu, ne za automatické zpochybnění.") }}
+    {% </table_advanced_table> %}
   </section>
 
   <section aria-labelledby="sources-evidence-heading" class="mb-12">
@@ -58,6 +67,6 @@
     </div>
   </section>
 
-  {{ ui::back_link_footer(url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"), label="Zpět na celý dossier") }}
+  {{ <ui_back_link_footer url={get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md")} label="Zpět na celý dossier" /> }}
 </main>
 {% endblock content %}

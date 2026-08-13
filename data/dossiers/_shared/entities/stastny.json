@@ -106,5 +106,19 @@
       "type": "markdown",
       "value": "Hlavní subjekt autorizovaného dossieru (AUTH-2026-07-30-B), který se teprve plní — viz [hlavní přehled](@/dossiers/boris-stastny/_index.md). Veřejná funkce doložena oficiálním seznamem členů vlády (viz `data/government.toml`)."
     }
+  ],
+  "media": [
+    {
+      "file": "images/people/stastny.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boris_Stastny.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "Borisstastny",
+      "credit": "Own work",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 1200,
+      "role": "portrait"
+    }
   ]
 }

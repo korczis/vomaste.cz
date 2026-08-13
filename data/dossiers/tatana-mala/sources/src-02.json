@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/tatana-mala/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/tatana-mala"
+  },
+  "title": "SRC-02 — Blesk.cz: Ministryně Malá končí",
+  "description": "Blesk o rezignaci Malé (9. 7. 2018) po 13 dnech: podezření z plagiátorství, její popření.",
+  "outlet": "Blesk.cz",
+  "sourceType": "zpravodajský článek",
+  "url": "https://www.blesk.cz/clanek/zpravy-politika/553080/ministryne-mala-konci-o-vedeni-spravedlnosti-se-hlasi-stihany-premier-babis.html",
+  "retrieved": "2026-08-08",
+  "published": "2018-07-09",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tatana-mala/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "tatana-mala"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek Blesku z 9. 7. 2018, otevřen a přečten 2026-08-08.\nUvádí, že Taťána Malá po 13 dnech ve funkci rezignovala na post ministryně spravedlnosti v souvislosti s podezřeními z plagiátorství jejích diplomových prací; sama uvedla, že nechce, aby kampaní bylo poškozováno hnutí ani nově vznikající vláda, a trvala na tom, že se při psaní prací ničeho nedopustila. Vedení resortu chtěl dočasně převzít premiér Babiš, což opozice kritizovala.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství — dokládá rezignaci a její okolnosti. **Podezření z plagiátorství je mediálně popsané podezření, nikoli doložený verdikt, a její popření se uvádí při každé zmínce.**"
+    }
+  ],
+  "order": 2
+}

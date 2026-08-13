@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/michaela-marksova/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/michaela-marksova"
+  },
+  "text": "Michaela Marksová byla podle oficiálního profilu na webu Vlády ČR ministryní práce a sociálních věcí od 29. 1. 2014 do 13. 12. 2017 (vláda Bohuslava Sobotky, nominována za ČSSD, od 5. 12. 2017 v demisi) a v červnu 2015 byla krátce pověřena i řízením ministerstva školství; dříve vedla odbor rodinné politiky na MPSV (2004–2006)",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/michaela-marksova/sources/SRC-01"
+    }
+  ],
+  "subjects": [
+    "michaela-marksova"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/michaela-marksova/_index.md)."
+    }
+  ]
+}

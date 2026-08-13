@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 // Enforces this site's own UI-component-reuse convention: every
-// content-rendering top-level template imports and uses the shared
-// macros/ui.html library (page_header, breadcrumb, stat_tile,
-// registry-card, empty_state, back_link_footer, ...) instead of
+// content-rendering top-level template uses the shared
+// ui_* component library (page_header, breadcrumb, stat_tile,
+// empty_state, back_link_footer, ...) instead of
 // hand-rolling markup that already has a shared component.
 //
 // NOT a check against any external spec. The owner asked for pages to
@@ -18,8 +18,8 @@
 //
 // Second rule (2026-07-30, owner-directed): tabular data goes through the
 // shared advanced-table component. Any template under templates/ that
-// renders a raw <table> outside macros/table.html must import
-// macros/table.html and use table::advanced_table — the single table
+// renders a raw <table> outside macros/table.html must call
+// the shared table_advanced_table component — the single table
 // component (Flowbite "Advanced Tables"-style, own implementation over
 // free Tailwind/Flowbite) whose wrapper carries data-record-type linking
 // rows to the page's JSON-LD nodes. Exemptions are per-file with a
@@ -40,21 +40,21 @@ const TEMPLATES_DIR = path.join(ROOT, "templates");
 // Legitimately exempt templates, one entry per file with a rationale on
 // record -- no blanket/pattern-based exemptions.
 const EXEMPT = {
-  "base.html": "the layout itself -- defines the shell every ui:: macro's output is rendered inside, not a content page",
+  "base.html": "the layout itself -- defines the shell every ui_* component's output is rendered inside, not a content page",
   "404.html": "minimal error page, intentionally outside the standard page-header/breadcrumb treatment",
 };
 
-const IMPORT_RE = /\{%-?\s*import\s+"macros\/ui\.html"\s+as\s+ui\s*-?%\}/;
-const USE_RE = /\bui::/;
+// Tera 2 has no imports — components are global — so reuse is proven by
+// calling a ui_* component, not by importing the file that defines them.
+const USE_RE = /<ui_[a-z_]+[\s/>]/;
 
-// Advanced-table rule. A template containing a raw <table> must import
-// macros/table.html and call table::advanced_table (the raw <table> is
-// then expected to be gone — the macro renders it). Per-file exemptions
+// Advanced-table rule. A template containing a raw <table> must call
+// table_advanced_table instead (the raw <table> is
+// then expected to be gone — the component renders it). Per-file exemptions
 // with a rationale only, exactly like EXEMPT above.
 const TABLE_EXEMPT = {};
 const TABLE_TAG_RE = /<table\b/;
-const TABLE_IMPORT_RE = /\{%-?\s*import\s+"macros\/table\.html"\s+as\s+table\s*-?%\}/;
-const TABLE_USE_RE = /\btable::advanced_table\b/;
+const TABLE_USE_RE = /<table_advanced_table[\s/>]/;
 
 const entries = readdirSync(TEMPLATES_DIR).filter((f) => {
   const full = path.join(TEMPLATES_DIR, f);
@@ -80,28 +80,20 @@ const problems = [];
 for (const file of entries) {
   if (file in EXEMPT) continue;
   const text = readFileSync(path.join(TEMPLATES_DIR, file), "utf8");
-  if (!IMPORT_RE.test(text)) {
-    problems.push(`${file}: does not import macros/ui.html`);
-    continue;
-  }
   if (!USE_RE.test(text)) {
-    problems.push(`${file}: imports macros/ui.html but never calls a ui:: macro`);
+    problems.push(`${file}: never calls a ui_* component`);
   }
 }
 
 for (const rel of walkHtmlFiles(TEMPLATES_DIR)) {
   if (rel === "macros/table.html" || rel in TABLE_EXEMPT) continue;
+  // A call site matches TABLE_TAG_RE via "<table_advanced_table"; that is the
+  // shared component being used, not a hand-rolled table.
   const text = readFileSync(path.join(TEMPLATES_DIR, rel), "utf8");
   if (!TABLE_TAG_RE.test(text)) continue;
-  if (!TABLE_IMPORT_RE.test(text)) {
-    problems.push(
-      `${rel}: renders a raw <table> but does not import macros/table.html — wrap the table in {% import "macros/table.html" as table %} + table::advanced_table(...) / table::advanced_table_end(...)`,
-    );
-    continue;
-  }
   if (!TABLE_USE_RE.test(text)) {
     problems.push(
-      `${rel}: renders a raw <table> and imports macros/table.html but never calls table::advanced_table — the shared component must render every table`,
+      `${rel}: renders a raw <table> but never calls the shared table component — wrap the rows in {% <table_advanced_table id="..." caption="..."> %} ... {% </table_advanced_table> %}`,
     );
   }
 }
@@ -112,7 +104,7 @@ if (problems.length > 0) {
   );
   for (const p of problems) console.error(`  - ${p}`);
   console.error(
-    "\nUse macros/ui.html (page_header, breadcrumb, stat_tile, registry-card, empty_state, back_link_footer) instead of hand-rolled markup, and macros/table.html (table::advanced_table / table::advanced_table_end) for any tabular data. If a new template genuinely has no use for them, add it to EXEMPT / TABLE_EXEMPT in this script with a one-line reason -- not a silent skip.",
+    "\nUse the shared ui_* components (page_header, breadcrumb, stat_tile, empty_state, back_link_footer) instead of hand-rolled markup, and the shared table component ({% <table_advanced_table> %} … {% </table_advanced_table> %}) for any tabular data. If a new template genuinely has no use for them, add it to EXEMPT / TABLE_EXEMPT in this script with a one-line reason -- not a silent skip.",
   );
   process.exit(1);
 }

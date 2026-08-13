@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/pavel-drobil",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "pavel-drobil",
+  "slug": "pavel-drobil",
+  "title": "Pavel Drobil",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení Pavla Drobila.",
+  "dossierType": "entity",
+  "canonicalDossier": "pavel-drobil",
+  "subject": "pavel-drobil",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-06",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-06-PAVEL-DROBIL"
+    ]
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nPavel Drobil je místopředseda ODS, stínový ministr průmyslu a obchodu\nve stínové vládě ODS a bývalý ministr životního prostředí (2010).\nJako veřejný funkcionář spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-06-PAVEL-DROBIL`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam — dokládá pouze jeho aktuální stranickou funkci místopředsedy\nODS a roli stínového ministra průmyslu a obchodu, nikoli hloubkovou\ninvestigativní rešerši jeho veřejného působení nebo jiných témat.\nRozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/pavel-drobil/claims/clm-01.md) | Pavel Drobil je bývalý poslanec PSP ČR (2010–2013) a bývalý ministr životního prostředí (2010, vláda Petra Nečase); od ledna 2026 je místopředsedou ODS — zvolen na 32. kongresu ODS 18. 1. 2026 (311 z 502 platných hlasů), nezávisle informovaly ČT24 i Echo24; a podle vlastního profilu na webu ODS zastává ve stínové vládě ODS vedené Martinem Kupkou roli stínového ministra průmyslu a obchodu. | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/pavel-drobil/sources/src-01.md), [SRC-02](@/dossiers/pavel-drobil/sources/src-02.md), [SRC-03](@/dossiers/pavel-drobil/sources/src-03.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedené stranické funkce, role ve stínové vládě ani\nbývalého ministerského postu nic dalšího; nejde o hodnocení jeho\npolitického působení ani o investigativní rešerši jiných témat."
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "entity": "pavel-drobil",
+        "label": "Pavel Drobil",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02",
+          "SRC-03"
+        ]
+      }
+    ],
+    "edges": []
+  }
+}

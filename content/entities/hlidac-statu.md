@@ -3,7 +3,7 @@
 title = "Hlídač státu"
 template = "entity.html"
 weight = 145
-description = "Kontextová entita — Veřejný rejstřík sponzoringu jmenovaný přímo v textu tvrzení; funguje primárně jako zdroj, ne aktér — sporné, zda zakládat entitu."
+description = "Hlídač státu — Kontextová entita — Veřejný rejstřík sponzoringu jmenovaný přímo v textu tvrzení; funguje primárně jako zdroj, ne aktér — sporné, zda zakládat entitu."
 
 [extra]
 generated = true

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-authorization-check",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-authorization-check",
+  "kind": "skill",
+  "name": "authorization-check",
+  "title": "Kontrola rozsahu pokrytí",
+  "category": "kontrola",
+  "personas": [
+    "researcher",
+    "editor",
+    "reviewer",
+    "maintainer"
+  ],
+  "riskLevel": "read-only",
+  "writes": false,
+  "requiresAuthorization": true,
+  "summary": "Zjistí, jestli konkrétní osoba nebo téma spadá do rozsahu, který repozitář smí pokrývat — čtením append-only logu v AGENTS.md, ne odhadem. Rozlišuje čtyři stavy: autorizován, kontextová entita, neautorizován a ZAMÍTNUT (posouzeno a rozhodnuto proti). Vypisuje povinné rámování, které musí být u každé zmínky tématu, a co je výslovně mimo rozsah.",
+  "whenToRun": "Před prvním tvrzením o konkrétním člověku, před založením dossieru, a kdykoli někdo navrhne téma, které v dossieru ještě není.",
+  "inputs": [
+    "AGENTS.md",
+    "data/authorizations.toml",
+    "data/dossiers/_shared/entities"
+  ],
+  "describedFrom": "header",
+  "notes": [
+    "Autorizaci NEUDĚLUJE a nesmí. Kanonický zapisovatel je scripts/dossier/authorize-entity.mjs a jedná na základě rozhodnutí vlastníka, ne analýzy.",
+    "Rozsahový model se dvakrát měnil a starší záznamy se nepřepisují. Tematické limity starších záznamů dnes nebrání rozšíření, ale jejich zamítnutí a povinná rámování platí beze změny.",
+    "Stav ZAMÍTNUT je něco jiného než NEAUTORIZOVÁN: první znamená, že se to už posuzovalo a rozhodlo proti.",
+    "Rozsah a doloženost jsou dvě různé brány. Autorizované téma bez otevřeného zdroje se nepíše."
+  ]
+}

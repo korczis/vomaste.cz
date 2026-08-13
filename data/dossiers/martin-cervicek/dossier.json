@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-cervicek",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "martin-cervicek",
+  "slug": "martin-cervicek",
+  "title": "Martin Červíček",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení Martina Červíčka.",
+  "dossierType": "entity",
+  "canonicalDossier": "martin-cervicek",
+  "subject": "martin-cervicek",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-06",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-06-MARTIN-CERVICEK"
+    ]
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nMartin Červíček je senátor Parlamentu ČR za ODS, místopředseda ODS a\nstínový ministr vnitra ve stínové vládě ODS. Jako veřejný funkcionář\nspadá do standing scope autorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`);\nkonkrétní záznam pro tento dossier je `AUTH-2026-08-06-MARTIN-CERVICEK`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam — dokládá pouze jeho aktuální senátorský mandát, stranickou\nfunkci místopředsedy ODS a roli stínového ministra vnitra, nikoli\nhloubkovou investigativní rešerši jeho dřívějšího policejního nebo\nkrajského působení či jiných témat. Rozšíření rozsahu vyžaduje\nsamostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/martin-cervicek/claims/clm-01.md) | Martin Červíček je senátorem Parlamentu ČR za ODS (obvod č. 47 – Náchod, mandát 28. 9. 2024 – 28. 9. 2030); od ledna 2026 je místopředsedou ODS — zvolen na 32. kongresu ODS 18. 1. 2026 (308 z 502 platných hlasů) — a od března 2026 zastává ve stínové vládě ODS vedené Martinem Kupkou roli stínového ministra vnitra, nezávisle informovaly ČT24 i Novinky.cz. | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/martin-cervicek/sources/src-01.md), [SRC-02](@/dossiers/martin-cervicek/sources/src-02.md), [SRC-03](@/dossiers/martin-cervicek/sources/src-03.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedeného senátorského mandátu, stranické funkce\nani role ve stínové vládě nic dalšího; nejde o hodnocení jeho\npolitického působení ani o investigativní rešerši jiných témat."
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "entity": "martin-cervicek",
+        "label": "Martin Červíček",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02",
+          "SRC-03"
+        ]
+      }
+    ],
+    "edges": []
+  }
+}

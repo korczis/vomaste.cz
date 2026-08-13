@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-44",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-44",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
+  },
+  "title": "SRC-44 — Aktuálně.cz",
+  "description": "„Nevím, kde na to přišel.“ Podrážděný Babiš sepsul ministra Zůnu za obří výdaje",
+  "outlet": "Aktuálně.cz",
+  "sourceType": "redakční reportáž",
+  "url": "https://zpravy.aktualne.cz/domaci/pet-miliard-na-f-35-pristi-rok-skok-o-60-miliard-zunu-za-rozpocet-skoli-i-babis/r~aaa298be09f5e6c7d4d532de3fc1fc4c/",
+  "published": "2026-02-25",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/claims/CLM-45"
+    }
+  ],
+  "subjects": [
+    "zuna"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**„Nevím, kde na to přišel.“ Podrážděný Babiš sepsul ministra Zůnu za obří výdaje**\n\nVlastní reportáž Aktuálně.cz (autor Ondřej Stratilík) z února 2026. Přímo cituje Zůnovo vyjádření: „Střednědobý výhled na roky 2027 a 2028 deklaruje náš budoucí směr, kdy počítáme s limity ve výši 215 a následně 238 miliard korun, což odpovídá 2,34, respektive 2,47 procenta HDP.“ Tím nezávisle potvrzuje čísla CLM-45 (růst na 215 miliard v roce 2027 a 238 miliard v roce 2028, přibližně 2,5 % HDP). Nezávislost k SRC-24 (CNN Prima News): jiný vydavatel (Economia vs. FTV Prima), jiná redakce, obě jde o vlastní zpravodajství bez sdílené agenturní depeše. Zdroj otevřen a přečten 2026-08-08."
+    }
+  ],
+  "order": 44
+}

@@ -1,0 +1,77 @@
+name: Refresh official-document archive
+
+on:
+  schedule:
+    - cron: "17 3 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: official-document-archive-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh-public-zone:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@v7
+        with:
+          ref: master
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Setup Zola
+        uses: taiki-e/install-action@v2
+        with:
+          tool: zola@0.23.3
+
+      # This refresh writes only public Zone A derivatives. Raw Justice
+      # metadata and any non-empty noticeboard response go outside the checkout
+      # and are never uploaded. Private document downloads require persistent,
+      # access-controlled local storage and are deliberately forbidden here.
+      - name: Refresh public ARES, Justice and docket-only snapshots
+        run: npm run archive:refresh-public
+
+      - name: Verify archive policy offline
+        run: npm run archive:check
+
+      - name: Full site gate
+        run: npm run build
+
+      - name: Create or update review pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REFRESH_BRANCH: automation/document-archive-refresh
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -C "$REFRESH_BRANCH"
+          git add data/document-archive.json data/document-archive-ares.json data/document-archive-justice.json data/document-archive-court-noticeboards.json static/documents/registry/ares static/documents/registry/justice static/documents/court-noticeboards
+          if git diff --cached --quiet; then
+            echo "Archive is current; no review PR needed."
+            exit 0
+          fi
+          git commit -m "archive: scheduled official-record refresh"
+          git push --force-with-lease origin "HEAD:refs/heads/$REFRESH_BRANCH"
+          PR_URL="$(gh pr list --head "$REFRESH_BRANCH" --state open --json url --jq '.[0].url // empty')"
+          if [ -z "$PR_URL" ]; then
+            if ! PR_URL="$(gh pr create --base master --head "$REFRESH_BRANCH" --title "archive: scheduled official-record refresh" --body "Automated Zone A refresh of ARES, sanitized Justice indexes and docket-only noticeboard snapshots. Raw Zone B material was not uploaded. Review the diff before merge.")"; then
+              COMPARE_URL="https://github.com/${GITHUB_REPOSITORY}/compare/master...${REFRESH_BRANCH}?expand=1"
+              echo "::warning title=Review PR not created::GitHub Actions may not create pull requests in this repository. The verified refresh branch was pushed; open ${COMPARE_URL} to review it."
+              printf '### Archive refresh awaits review\n\nThe verified branch was pushed, but the repository denied automated PR creation. [Open the review comparison](%s).\n' "$COMPARE_URL" >> "$GITHUB_STEP_SUMMARY"
+              exit 0
+            fi
+          fi
+          printf 'Review PR: %s\n' "$PR_URL" >> "$GITHUB_STEP_SUMMARY"

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-baxa",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "martin-baxa",
+  "slug": "martin-baxa",
+  "title": "Martin Baxa",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení Martina Baxy.",
+  "dossierType": "entity",
+  "canonicalDossier": "martin-baxa",
+  "subject": "martin-baxa",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-06",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-06-MARTIN-BAXA"
+    ]
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nMartin Baxa je poslanec Poslanecké sněmovny PČR za ODS a bývalý ministr\nkultury ČR (2021–2025). Jako veřejný funkcionář spadá do standing scope\nautorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento\ndossier je `AUTH-2026-08-06-MARTIN-BAXA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam — dokládá pouze jeho aktuální poslanecký mandát, výborovou\npříslušnost a roli stínového ministra kultury ODS, nikoli hloubkovou\ninvestigativní rešerši jeho ministerského období nebo jiných témat.\nRozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/martin-baxa/claims/clm-01.md) | Martin Baxa je podle profilu na webu Poslanecké sněmovny PČR poslancem zvoleným za ODS (mandát od 4. 10. 2025, členem poslaneckého klubu ODS od 8. 10. 2025), členem sněmovního Výboru pro mediální záležitosti (od 16. 1. 2026) a předsedou Podvýboru pro kulturu (od 5. 2. 2026); v rámci stínové vlády ODS zároveň působí jako stínový ministr kultury, jak nezávisle informovalo Aktuálně.cz | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/martin-baxa/sources/src-01.md), [SRC-02](@/dossiers/martin-baxa/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedeného mandátu a výborové/stínové role nic\ndalšího; nejde o hodnocení jeho politického působení ani o investigativní\nrešerši jeho ministerského období nebo jiných témat."
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "entity": "martin-baxa",
+        "label": "Martin Baxa",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  }
+}

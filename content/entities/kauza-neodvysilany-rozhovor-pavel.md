@@ -3,7 +3,7 @@
 title = "Kauza neodvysílaného rozhovoru prezidenta Pavla (podcast Kamufláž)"
 template = "entity.html"
 weight = 207
-description = "Kontextová entita — Rozhovor pro armádní podcast Kamufláž nevyšel 7. 4. 2026; opozice mluvila o cenzuře, inspekce MO cílenou cenzuru neprokázala."
+description = "Kauza neodvysílaného rozhovoru prezidenta Pavla (podcast… — Kontextová entita — Rozhovor pro armádní podcast Kamufláž nevyšel 7. 4. 2026; opozice mluvila o cenzuře, inspekce MO cílenou…"
 
 [extra]
 generated = true

@@ -4,7 +4,7 @@ title = "Prezidentská kampaň Andreje Babiše (2022–2023)"
 template = "entity.html"
 weight = 7
 aliases = ["/dossiers/tunde-bartha/entities/kampan-babis-2023/"]
-description = "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
+description = "Prezidentská kampaň Andreje Babiše (2022–2023) — Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu."
 
 [extra]
 generated = true

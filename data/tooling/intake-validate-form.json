@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/intake-validate-form",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "intake-validate-form",
+  "kind": "npm",
+  "name": "intake:validate-form",
+  "title": "Strukturální kontrola issue formulářů",
+  "category": "validace",
+  "summary": "Kontroluje malou množinu strukturálních vlastností .github/ISSUE_TEMPLATE/*.yml a config.yml, které by jinak tiše rozbily skutečné odeslání. Není to reimplementace celého GitHub schema validátoru — to by bylo znovuvynalezení existujícího nástroje.",
+  "enforces": [
+    "Nevalidní YAML nebo tabulátory v šabloně.",
+    "Neunikátní id polí.",
+    "Pole bez atributů, které jeho typ vyžaduje.",
+    "Vadný tvar config.yml."
+  ],
+  "whenToRun": "Po editaci issue šablon. Do `npm test` je zapojený přes vlastní test soubor, takže vlastní krok pipeline nepotřebuje.",
+  "inputs": [
+    ".github/ISSUE_TEMPLATE/*.yml",
+    ".github/ISSUE_TEMPLATE/config.yml"
+  ],
+  "sourceFile": "scripts/ci/validate-issue-forms.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Hlubší kontrakt formulář ↔ parser („parsuje výstup tohohle formuláře doopravdy?“) vlastní scripts/intake/issue-form-compatibility.test.mjs, ne tenhle skript."
+  ]
+}

@@ -70,5 +70,19 @@
       "type": "markdown",
       "value": "Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v [hlavním přehledu](@/dossiers/lubomir-metnar/_index.md#kdo)."
     }
+  ],
+  "media": [
+    {
+      "file": "images/people/metnar.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Metnar_and_Radev_(cropped).jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "author": "EU2018BG Bulgarian Presidency",
+      "credit": "https://www.flickr.com/photos/eu2018bg/39888511681/in/album-72157689763359392/",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 1484,
+      "role": "portrait"
+    }
   ]
 }

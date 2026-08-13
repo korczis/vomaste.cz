@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
 
 {% block content %}
 <main class="mx-auto max-w-2xl px-6 py-12 text-white">
@@ -10,13 +9,30 @@
   {% set view = load_data(path="data/" ~ page.extra.view_model) %}
   {% set record = view.record %}
   {% set dossier_slug = view.dossier %}
-  {{ ui::page_header(title=record.identifier, breadcrumb_items=[
+  {{ <ui_page_header title={record.identifier} breadcrumb_items={[
     "Dossier::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
     "Registr tvrzení::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/claims/_index.md"),
     record.identifier,
-  ]) }}
+  ]} /> }}
 
-  <p class="mb-6"><span class="status-badge {{ record.status }}">{{ record.statusLabel }}</span></p>
+  {#- Kontextová nápověda u stavu. Stav je nejčastěji špatně čtená věc na
+      celém webu — „ověřeno více zdroji“ se běžně čte jako „je to pravda“.
+
+      Vazba stav → stránka NENÍ v šabloně: stránky stavů už ve svém front
+      matter deklarují `badge_class` (tutéž hodnotu, jakou nese záznam),
+      takže se ta správná dohledá z dat. Nový stav tím pádem dostane
+      nápovědu ve chvíli, kdy dostane svou stránku — a dokud ji nemá,
+      odkaz se prostě nevykreslí místo aby ukazoval jinam.
+
+      Přehled všech pěti stavů vedle sebe: /prirucka/ref-stavy-tvrzeni/. -#}
+  {%- set koncepty = get_section(path="koncepty/_index.md") %}
+  {%- set status_concept = [__i for __i in koncepty.pages if __i.extra.badge_class == record.status] | first %}
+  <p class="mb-6 flex flex-wrap items-center gap-3">
+    <span class="status-badge {{ record.status }}">{{ record.statusLabel }}</span>
+    {%- if status_concept %}
+    <a href="{{ status_concept.permalink | safe }}" class="text-xs text-white/55 underline underline-offset-4 hover:text-white">Co tenhle stav znamená?</a>
+    {%- endif %}
+  </p>
 
   <p class="mb-8 text-lg leading-relaxed text-white/90">{{ record.text }}</p>
 
@@ -59,8 +75,7 @@
         <span class="status-badge {{ case_view.record.status }}">{{ case_view.record.statusLabel }}</span>
       </p>
       {% if case_view.record.summary %}<p class="mt-1 text-sm leading-relaxed text-white/60">{{ case_view.record.summary }}</p>{% endif %}
-      {% set_global sibling_claims = [] %}
-      {% for cc in case_view.resolved.claims %}{% if cc.identifier != record.identifier %}{% set_global sibling_claims = sibling_claims | concat(with=[cc]) %}{% endif %}{% endfor %}
+      {% set sibling_claims = [cc for cc in case_view.resolved.claims if cc.identifier != record.identifier] %}
       {% if sibling_claims | length > 0 %}
       <p class="mt-3 text-xs text-white/50">Další tvrzení této kauzy:</p>
       <p class="mt-1 flex flex-wrap gap-1.5">
@@ -144,6 +159,6 @@
     — kdy tvrzení vzniklo, kdy a proč se měnil jeho text či stav.
   </p>
 
-  {{ ui::back_link_footer(url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"), label="Zpět na celý dossier") }}
+  {{ <ui_back_link_footer url={get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md")} label="Zpět na celý dossier" /> }}
 </main>
 {% endblock content %}

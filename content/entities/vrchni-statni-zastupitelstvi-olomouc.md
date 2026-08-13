@@ -3,7 +3,7 @@
 title = "Vrchní státní zastupitelství v Olomouci"
 template = "entity.html"
 weight = 441
-description = "Kontextová entita — Přijalo Tejcovo trestní oznámení (bitcoiny), dozoruje bitcoinovou kauzu i kauzu defibrilátorů FN Olomouc."
+description = "Vrchní státní zastupitelství v Olomouci — Kontextová entita — Přijalo Tejcovo trestní oznámení (bitcoiny), dozoruje bitcoinovou kauzu i kauzu defibrilátorů FN Olomouc."
 
 [extra]
 generated = true

@@ -3,7 +3,7 @@
 title = "STAN"
 template = "entity.html"
 weight = 391
-description = "Kontextová entita — Zmíněna jen jako stranická afiliace citovaného Víta Rakušana. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "STAN — Kontextová entita — uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (mj. jako stranická příslušnost více subjektů dossierů)."
 
 [extra]
 generated = true
@@ -12,4 +12,4 @@ view_model = "generated/views/entities/stan.json"
 record_type = "entity"
 entity_id = "stan"
 +++
-Kontextová entita — Zmíněna jen jako stranická afiliace citovaného Víta Rakušana. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis, boris-stastny, jaromir-zuna, jeronym-tejc, karel-havlicek, oto-klempir). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení.
+Kontextová entita — uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (mj. jako stranická příslušnost více subjektů dossierů). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení.

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/robert-pelikan/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/robert-pelikan"
+  },
+  "title": "SRC-02 — ČT24: Ministr Pelikán odchází z politiky",
+  "description": "ČT24 o Pelikánově ohlášeném odchodu z politiky (duben 2018) s jeho vlastním zdůvodněním.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajský článek",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/ministr-pelikan-odchazi-z-politiky-nebude-v-pristi-vlade-a-skonci-i-jako-poslanec-84088",
+  "retrieved": "2026-08-08",
+  "published": "2018-04-07",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/robert-pelikan/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "robert-pelikan"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek ČT24 ze 7. 4. 2018, otevřen a přečten 2026-08-08.\nUvádí, že ministr spravedlnosti Robert Pelikán oznámil odchod z politiky — nebude v příští vládě a složí i poslanecký mandát. Jako důvody uvedl názorové neshody s řadou kolegů z ANO (mj. postoj k SPD a k lidským právům) a kontext vydání Jevgenije Nikulina do USA („Očekával jsem, že to vyvolá u některých politických subjektů v Česku nepřátelské reakce“); plánoval návrat k advokacii a rozšíření výuky na právnické fakultě.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství veřejnoprávní televize — jeho zdůvodnění se cituje jeho slovy a nepřijímá se jako hodnocení tohoto webu."
+    }
+  ],
+  "order": 2
+}

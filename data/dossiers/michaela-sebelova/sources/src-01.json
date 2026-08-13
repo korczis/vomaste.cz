@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/michaela-sebelova/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/michaela-sebelova"
+  },
+  "title": "SRC-01 — Poslanecká sněmovna: oficiální profil poslankyně Michaely Šebelové",
+  "description": "Oficiální profilová stránka poslankyně na webu Poslanecké sněmovny Parlamentu ČR s údaji o mandátu, straně, obvodu a klubové/výborové příslušnosti.",
+  "outlet": "Poslanecká sněmovna Parlamentu ČR",
+  "sourceType": "primární úřední záznam",
+  "url": "https://www.psp.cz/sqw/detail.sqw?id=6763",
+  "retrieved": "2026-08-07",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/michaela-sebelova/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "michaela-sebelova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profilová stránka Michaely Šebelové (psp.cz, id 6763) na webu Poslanecké sněmovny, otevřena a přečtena 2026-08-07.\nUvádí mandát poslankyně od 4. 10. 2025, příslušnost k Poslaneckému klubu Starostové a nezávislí (volební obvod Moravskoslezský kraj), funkci předsedkyně klubu od 10. 10. 2025, členství ve Výboru pro zdravotnictví od 11. 11. 2025 a roli ověřovatelky výboru od 13. 11. 2025.\n\nPoznámka k typu zdroje a jeho limitům: primární úřední zdroj — zákonodárný sbor sám eviduje mandát a příslušnost svého člena, nejde o redakční zpravodajství, a stránka neuvádí funkci místopředsedkyně hnutí STAN (stranický, nikoli sněmovní orgán). Tu spolu s klubovou funkcí dokládají SRC-02 (Deník.cz/ČTK) a SRC-03 (Deník N), dvě na sobě nezávislé redakce."
+    }
+  ],
+  "order": 1
+}

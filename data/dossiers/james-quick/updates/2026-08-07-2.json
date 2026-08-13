@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/james-quick/updates/2026-08-07-2",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-07-2",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/james-quick"
+  },
+  "date": "2026-08-07",
+  "summary": "Ve Sbírce listin nalezeno, staženo, vyrenderováno a na obou stranách vizuálně ověřeno úplné usnesení Městského soudu v Praze 85 Cm 1204/2023-7. Doplněny konkrétní skutkové důvody zrušení společnosti bez likvidace, samostatná kauza a přesnější grafová evidence; dřívější mezera po primárním dokumentu je uzavřena.",
+  "addedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-22"
+    }
+  ],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-23"
+    }
+  ]
+}

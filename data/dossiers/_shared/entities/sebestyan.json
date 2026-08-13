@@ -111,5 +111,8 @@
       "type": "markdown",
       "value": "Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v [hlavním přehledu](@/dossiers/martin-sebestyan/_index.md#kdo)."
     }
-  ]
+  ],
+  "externalIds": {
+    "wikidata": "Q136471571"
+  }
 }

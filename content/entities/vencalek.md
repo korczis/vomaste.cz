@@ -3,7 +3,7 @@
 title = "Petr Vencálek (vlastník GMR GAS s.r.o.)"
 template = "entity.html"
 weight = 38
-description = "Jediný společník (podíl 100 %) a jednatel společnosti GMR GAS s.r.o., od 2026-08-01 subjektem vlastního dossieru (AUTH-2026-08-01-VENCALEK)."
+description = "Petr Vencálek (vlastník GMR GAS s.r.o.) — Jediný společník (podíl 100 %) a jednatel společnosti GMR GAS s.r.o., od 2026-08-01 subjektem vlastního dossieru (AUTH-2026-08-01-VENCALEK)."
 
 [extra]
 generated = true

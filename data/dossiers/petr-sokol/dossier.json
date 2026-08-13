@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-sokol",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "petr-sokol",
+  "slug": "petr-sokol",
+  "title": "Petr Sokol",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení Petra Sokola.",
+  "dossierType": "entity",
+  "canonicalDossier": "petr-sokol",
+  "subject": "petr-sokol",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-06",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-06-PETR-SOKOL"
+    ]
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nPetr Sokol je poslanec Parlamentu ČR za ODS, místopředseda poslaneckého\nklubu ODS a stínový poradce pro EU ve stínové vládě ODS. Jako veřejný\nfunkcionář spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-06-PETR-SOKOL`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam — dokládá pouze jeho aktuální poslanecký mandát, funkci\nmístopředsedy poslaneckého klubu ODS a roli stínového poradce pro EU,\nnikoli hloubkovou investigativní rešerši jiných témat. Totožnost byla\nověřena proti oficiálnímu profilu na psp.cz (id 7045) — jde o tutéž\nosobu, kterou zdroje zároveň popisují jako politologa a publicistu, ne\no jmenovce. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/petr-sokol/claims/clm-01.md) | Petr Sokol je od 4. 10. 2025 poslancem Parlamentu ČR za ODS (kandidoval na kandidátce koalice SPOLU, volební obvod Olomoucký kraj); od 4. 2. 2026 je místopředsedou poslaneckého klubu ODS — nezávisle informovaly Echo24 i Hospodářské noviny — a od března 2026 zastává ve stínové vládě ODS vedené Martinem Kupkou roli stínového poradce pro EU. | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/petr-sokol/sources/src-01.md), [SRC-02](@/dossiers/petr-sokol/sources/src-02.md), [SRC-03](@/dossiers/petr-sokol/sources/src-03.md), [SRC-04](@/dossiers/petr-sokol/sources/src-04.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedeného poslaneckého mandátu, funkce\nmístopředsedy klubu ani role stínového poradce pro EU nic dalšího; nejde\no hodnocení jeho politického působení ani o investigativní rešerši\njiných témat."
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "entity": "petr-sokol",
+        "label": "Petr Sokol",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02",
+          "SRC-03",
+          "SRC-04"
+        ]
+      }
+    ],
+    "edges": []
+  }
+}

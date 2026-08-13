@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
 
 {#- Manifest projektu: jediná dlouhá, ručně psaná stránka mimo /koncepty/
     a /dokumentace/.
@@ -22,10 +21,10 @@
 
 {% block content %}
 <main class="mx-auto max-w-3xl px-6 py-12 text-white">
-  {{ ui::page_header(title=page.title, description=page.description, breadcrumb_items=[
+  {{ <ui_page_header title={page.title} description={page.description} breadcrumb_items={[
     "Domů::" ~ get_url(path="@/_index.md"),
     page.title,
-  ]) }}
+  ]} /> }}
 
   {%- if page.toc | length > 0 %}
   <nav aria-labelledby="manifest-toc-heading" class="mb-10 rounded-xl border border-white/10 bg-white/[0.03] p-6">
@@ -61,6 +60,6 @@
     </ul>
   </nav>
 
-  {{ ui::back_link_footer(url=get_url(path="@/_index.md"), label="Zpět na úvod") }}
+  {{ <ui_back_link_footer url={get_url(path="@/_index.md")} label="Zpět na úvod" /> }}
 </main>
 {% endblock content %}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/richard-brabec",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "richard-brabec",
+  "slug": "richard-brabec",
+  "title": "Richard Brabec",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Richard Brabec.",
+  "dossierType": "entity",
+  "canonicalDossier": "richard-brabec",
+  "subject": "richard-brabec",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-RICHARD-BRABEC"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "richard-brabec",
+        "label": "Richard Brabec",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nRichard Brabec je hejtman Ústeckého kraje; dříve ministr životního\nprostředí (2014–2017 a 2018–2021) a místopředseda vlády (2017–2018),\ndlouholetý poslanec za ANO. Jako veřejný funkcionář spadá do standing\nscope autorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam\npro tento dossier je `AUTH-2026-08-08-RICHARD-BRABEC`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam — dokládá pouze jeho aktuální hejtmanství a dřívější vládní\nfunkce jako prostý biografický fakt. Rozšíření rozsahu (například na\nkauzy z jeho ministerského působení) vyžaduje samostatnou budoucí\nautorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/richard-brabec/claims/clm-01.md) | Richard Brabec byl podle oficiálního profilu na webu Vlády ČR ministrem životního prostředí v letech 2014–2017 a znovu od 27. 6. 2018 do 17. 12. 2021 (v demisi od 11. 11. 2021) a v letech 2017–2018 místopředsedou vlády; podle Forum24 byl 15. 11. 2024 zvolen hejtmanem Ústeckého kraje (46 hlasů z 54 přítomných zastupitelů, koalice ANO, ODS a Lepší Sever) | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/richard-brabec/sources/src-01.md), [SRC-02](@/dossiers/richard-brabec/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

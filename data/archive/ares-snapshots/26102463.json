@@ -1,0 +1,49 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "26102463",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/26102463",
+  "nazev": "Výkrm Tagrea, s.r.o.",
+  "sidlo": "Karlov 196, 28401 Kutná Hora",
+  "spisovaZnacka": {
+    "soud": "KSCB",
+    "oddil": "C",
+    "vlozka": "14066"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "jednatel",
+      "since": "2010-10-20",
+      "kind": "person",
+      "name": "Ing. Josef Fanta"
+    },
+    {
+      "role": "jednatel",
+      "since": "2010-10-20",
+      "kind": "person",
+      "name": "Ing. Pavel Doubek"
+    },
+    {
+      "role": "jednatel",
+      "since": "2012-04-01",
+      "kind": "person",
+      "name": "Ing. Michal Hájek"
+    },
+    {
+      "role": "Jednatel",
+      "since": "2026-01-01",
+      "kind": "person",
+      "name": "Ing. Michal Jedlička"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "company",
+      "name": "AGROFERT, a.s.",
+      "ico": "26185610",
+      "podil": "100",
+      "vklad": "200000;00",
+      "splaceno": "100"
+    }
+  ]
+}

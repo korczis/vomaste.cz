@@ -1,0 +1,30 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "04771664",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/04771664",
+  "nazev": "DRILL COMPANY, s.r.o.",
+  "sidlo": "Na pískovně 834/2, Bohnice, 18100 Praha 8",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "C",
+    "vlozka": "253390"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "jednatel",
+      "since": "2022-11-01",
+      "kind": "person",
+      "name": "Vojtěch Pavlík"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "person",
+      "name": "Vojtěch Pavlík",
+      "podil": "100",
+      "vklad": "20000",
+      "splaceno": "100"
+    }
+  ]
+}

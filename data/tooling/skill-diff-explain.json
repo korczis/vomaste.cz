@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-diff-explain",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-diff-explain",
+  "kind": "skill",
+  "name": "diff-explain",
+  "title": "Vysvětlení změn",
+  "category": "provoz",
+  "personas": [
+    "source-contributor",
+    "editor",
+    "developer",
+    "reviewer",
+    "maintainer"
+  ],
+  "riskLevel": "read-only",
+  "writes": false,
+  "summary": "Převede aktuální diff na srozumitelné shrnutí pro netechnického recenzenta: rozdělí změny na funkční, obsahové, generované, dokumentační a testové, řekne, které generované soubory jsou důsledkem které změny dat, vyjmenuje rizika a nečekané soubory a přidá konkrétní způsob ověření.",
+  "whenToRun": "Před review, před odesláním příspěvku, nebo po delší práci, kdy se ztratil přehled.",
+  "describedFrom": "header",
+  "notes": [
+    "Rozdělení do kategorií je celý přínos: diff se čtyřiceti soubory vypadá hrozivě, i když je to jedna změna dat.",
+    "Generovaný soubor BEZ odpovídající změny dat je nález, ne šum.",
+    "Řádek JAK OVĚŘIT je povinný. Vysvětlení bez způsobu ověření je žádost o důvěru.",
+    "Nezamlčí soubor proto, že „je to jen generované“."
+  ]
+}

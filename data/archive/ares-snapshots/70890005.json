@@ -1,0 +1,49 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "70890005",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/70890005",
+  "nazev": "Povodí Labe, státní podnik",
+  "sidlo": "Víta Nejedlého 951/8, Slezské Předměstí, 50003 Hradec Králové",
+  "spisovaZnacka": {
+    "soud": "KSHK",
+    "oddil": "A",
+    "vlozka": "9473"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "generální ředitel",
+      "since": "2013-12-03",
+      "kind": "person",
+      "name": "Ing. Marián Šebesta"
+    },
+    {
+      "role": "1. zástupce - investiční ředitel",
+      "since": "2013-12-05",
+      "kind": "person",
+      "name": "Ing. Petr Martínek"
+    },
+    {
+      "role": "2. zástupce - technický ředitel",
+      "since": "2013-12-05",
+      "kind": "person",
+      "name": "Ing. Pavel Řehák"
+    },
+    {
+      "role": "3. zástupce - finanční ředitel",
+      "since": "2021-05-01",
+      "kind": "person",
+      "name": "Ing. Mgr. Daniel Vlkanova"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "company",
+      "name": "Ministerstvo zemědělství",
+      "ico": "00020478",
+      "podil": null,
+      "vklad": null,
+      "splaceno": null
+    }
+  ]
+}

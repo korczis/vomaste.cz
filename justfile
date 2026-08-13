@@ -24,7 +24,7 @@
 # Versions the README states as supported. Kept here so `just doctor` checks
 # against a single declared value instead of a number written in prose.
 node_major := "24"
-zola_minor := "0.22"
+zola_minor := "0.23"
 
 # Show all recipes (default when you run bare `just`).
 [doc("Vypíše všechny recepty")]

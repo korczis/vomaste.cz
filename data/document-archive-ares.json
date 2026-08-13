@@ -1,0 +1,3060 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-09",
+  "records": [
+    {
+      "identifier": "ares-00020869",
+      "registry": "ARES",
+      "title": "Česká obchodní inspekce",
+      "ico": "00020869",
+      "entity": "ceska-obchodni-inspekce",
+      "dossiers": [
+        "james-quick"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00020869.json",
+      "mediaType": "application/json",
+      "sha256": "0daec3c07d3098aded76f2c8372b661e853735198b62dbee303dfe8a9ddb0e51",
+      "found": true
+    },
+    {
+      "identifier": "ares-00023752",
+      "registry": "ARES",
+      "title": "Národní ústav duševního zdraví",
+      "ico": "00023752",
+      "entity": "narodni-ustav-dusevniho-zdravi",
+      "dossiers": [
+        "robert-plaga"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00023752.json",
+      "mediaType": "application/json",
+      "sha256": "98db57846e837f2336fa8b8f75ec3bcb83b385ec8773ddd9480af748c9b711e5",
+      "found": true
+    },
+    {
+      "identifier": "ares-00024341",
+      "registry": "ARES",
+      "title": "Ministerstvo zdravotnictví",
+      "ico": "00024341",
+      "entity": "mzdrav",
+      "dossiers": [
+        "filip-turek",
+        "macinka-turek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00024341.json",
+      "mediaType": "application/json",
+      "sha256": "3c344df1d2458a0037779f01232ea78a90236c5dd42bfedea51ab49313f9257f",
+      "found": true
+    },
+    {
+      "identifier": "ares-00024384",
+      "registry": "ARES",
+      "title": "Obvodní soud pro Prahu 1",
+      "ico": "00024384",
+      "entity": "obvodni-soud-praha-1",
+      "dossiers": [
+        "tomio-okamura"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00024384.json",
+      "mediaType": "application/json",
+      "sha256": "8198e6da9ccbe9089aa5228cd201009bf5322e2ea1b9666b4894b347cf2d5682",
+      "found": true
+    },
+    {
+      "identifier": "ares-00024490",
+      "registry": "ARES",
+      "title": "Okresní soud v Benešově",
+      "ico": "00024490",
+      "entity": "okresni-soud-benesov",
+      "dossiers": [
+        "jeronym-tejc"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00024490.json",
+      "mediaType": "application/json",
+      "sha256": "9a71b6af35a22c2c918a5901726fbb50e70354fa1b2d48ce856fe0bf74ebada4",
+      "found": true
+    },
+    {
+      "identifier": "ares-00026000",
+      "registry": "ARES",
+      "title": "Městské státní zastupitelství v Praze",
+      "ico": "00026000",
+      "entity": "mestske-statni-zastupitelstvi-praha",
+      "dossiers": [
+        "jaroslav-faltynek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00026000.json",
+      "mediaType": "application/json",
+      "sha256": "90936858f5e6fb3c3ca3d50073ec21161f2131284d46bdda4e01d6a0671d15fb",
+      "found": true
+    },
+    {
+      "identifier": "ares-00027162",
+      "registry": "ARES",
+      "title": "Výzkumný ústav veterinárního lékařství, v. v. i.",
+      "ico": "00027162",
+      "entity": "vyzkumny-ustav-veterinarniho-lekarstvi",
+      "dossiers": [
+        "martin-pavlik"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00027162.json",
+      "mediaType": "application/json",
+      "sha256": "f6d3718069aeb19ddb94c50e94e376a2363d18174a47b2f159c653d55e9781e4",
+      "found": true
+    },
+    {
+      "identifier": "ares-00027383",
+      "registry": "ARES",
+      "title": "Česká televize",
+      "ico": "00027383",
+      "entity": "ceska-televize",
+      "dossiers": [
+        "oto-klempir"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00027383.json",
+      "mediaType": "application/json",
+      "sha256": "fb67d558bc2c197816234aa062fa2674d454cf906a32e8cfa4d75d239ae316b3",
+      "found": true
+    },
+    {
+      "identifier": "ares-00063517",
+      "registry": "ARES",
+      "title": "Městská část Praha 3",
+      "ico": "00063517",
+      "entity": "praha3",
+      "dossiers": [
+        "tunde-bartha"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00063517.json",
+      "mediaType": "application/json",
+      "sha256": "fb6677b86deb6ded7cf0beea396e4e1ff725b24ca57c6107252ea0c3b7c19e92",
+      "found": true
+    },
+    {
+      "identifier": "ares-00098892",
+      "registry": "ARES",
+      "title": "Fakultní nemocnice Olomouc",
+      "ico": "00098892",
+      "entity": "fn-olomouc",
+      "dossiers": [
+        "adam-vojtech"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00098892.json",
+      "mediaType": "application/json",
+      "sha256": "9703610d26f9be7a9418c993968a8460d14c2b568e8ab46c7923164717c93223",
+      "found": true
+    },
+    {
+      "identifier": "ares-00177041",
+      "registry": "ARES",
+      "title": "Škoda Auto",
+      "ico": "00177041",
+      "entity": "skoda-auto",
+      "dossiers": [
+        "karel-havlicek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00177041.json",
+      "mediaType": "application/json",
+      "sha256": "8e7c7b2882df962f233593b51ec735b14b5c6a12e82d19bf619fac1431f82820",
+      "found": true
+    },
+    {
+      "identifier": "ares-00215651",
+      "registry": "ARES",
+      "title": "Vrchní soud v Praze",
+      "ico": "00215651",
+      "entity": "vrchni-soud-praha",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00215651.json",
+      "mediaType": "application/json",
+      "sha256": "14e9ca188842739ec58e1d75adb2d2b2663d7a2f3495e5a19da165016f788742",
+      "found": true
+    },
+    {
+      "identifier": "ares-00215660",
+      "registry": "ARES",
+      "title": "Městský soud v Praze",
+      "ico": "00215660",
+      "entity": "mestsky-soud-praha",
+      "dossiers": [
+        "andrej-babis",
+        "james-quick",
+        "karel-havlicek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00215660.json",
+      "mediaType": "application/json",
+      "sha256": "80b9a8863769b09404f5ed6442862bef37e791bbd601f335f8a571fe8740d32d",
+      "found": true
+    },
+    {
+      "identifier": "ares-00215678",
+      "registry": "ARES",
+      "title": "Krajský soud v Praze",
+      "ico": "00215678",
+      "entity": "krajsky-soud-praha",
+      "dossiers": [
+        "andrej-babis",
+        "karel-havlicek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00215678.json",
+      "mediaType": "application/json",
+      "sha256": "7166d7ca2ffbc267166037ab99e22e0796e6a0704367fa224f6ff65ce34bc24e",
+      "found": true
+    },
+    {
+      "identifier": "ares-00215724",
+      "registry": "ARES",
+      "title": "Krajský soud v Brně",
+      "ico": "00215724",
+      "entity": "krajsky-soud-brno",
+      "dossiers": [
+        "macinka-turek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00215724.json",
+      "mediaType": "application/json",
+      "sha256": "c0d8cbe440652e7376baa0cbc49cb957a1f83949bec017eedf221b3614ca36c9",
+      "found": true
+    },
+    {
+      "identifier": "ares-00216208",
+      "registry": "ARES",
+      "title": "Univerzita Karlova",
+      "ico": "00216208",
+      "entity": "univerzita-karlova",
+      "dossiers": [
+        "alena-schillerova"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00216208.json",
+      "mediaType": "application/json",
+      "sha256": "a0dfc28075c257570bb5b1ae21578df9a0910e3e2fd4afe483275112890731af",
+      "found": true
+    },
+    {
+      "identifier": "ares-00216224",
+      "registry": "ARES",
+      "title": "Masarykova univerzita",
+      "ico": "00216224",
+      "entity": "masarykova-univerzita",
+      "dossiers": [
+        "alena-schillerova",
+        "jeronym-tejc",
+        "robert-plaga"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00216224.json",
+      "mediaType": "application/json",
+      "sha256": "ae927218e748ba8c1e75b286fba0eba89a2d7ff35ef9b78705b3eabba5b00327",
+      "found": true
+    },
+    {
+      "identifier": "ares-00255092",
+      "registry": "ARES",
+      "title": "Skupina Sindat",
+      "ico": "00255092",
+      "entity": "sindat",
+      "dossiers": [
+        "karel-havlicek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00255092.json",
+      "mediaType": "application/json",
+      "sha256": "76d984d906b0c605c32affed4f92d8fee012c2b14d91f9f50f791097221ecd0c",
+      "found": true
+    },
+    {
+      "identifier": "ares-00266230",
+      "registry": "ARES",
+      "title": "Město Bílina (městský úřad a stavební úřad)",
+      "ico": "00266230",
+      "entity": "mesto-bilina",
+      "dossiers": [
+        "zuzana-mrazova"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00266230.json",
+      "mediaType": "application/json",
+      "sha256": "ded5c5e8ebb044f8125ddae90830f910442cbf160726cd7441c851fe962700b6",
+      "found": true
+    },
+    {
+      "identifier": "ares-00284301",
+      "registry": "ARES",
+      "title": "Město Otrokovice",
+      "ico": "00284301",
+      "entity": "mesto-otrokovice",
+      "dossiers": [
+        "martin-pavlik"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00284301.json",
+      "mediaType": "application/json",
+      "sha256": "712a06821cfd506e8418be2c152c5524c03cc6e8ec5c9249d10662b13badf8ed",
+      "found": true
+    },
+    {
+      "identifier": "ares-00299308",
+      "registry": "ARES",
+      "title": "Statutární město Olomouc",
+      "ico": "00299308",
+      "entity": "statutarni-mesto-olomouc",
+      "dossiers": [
+        "martin-pavlik"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00299308.json",
+      "mediaType": "application/json",
+      "sha256": "b98b025dbae0abf22c250d8b4cce7ca71601fa137a2374c0ffc22ece3641b390",
+      "found": true
+    },
+    {
+      "identifier": "ares-00304450",
+      "registry": "ARES",
+      "title": "Město Vsetín",
+      "ico": "00304450",
+      "entity": "mesto-vsetin",
+      "dossiers": [
+        "martin-pavlik"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00304450.json",
+      "mediaType": "application/json",
+      "sha256": "c0bf7b7280d12a663cfce299553f2e2991a6eebcb9c7caa08b7e2fcee86f5db6",
+      "found": true
+    },
+    {
+      "identifier": "ares-00409171",
+      "registry": "ARES",
+      "title": "ČSSD",
+      "ico": "00409171",
+      "entity": "cssd",
+      "dossiers": [
+        "jeronym-tejc"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00409171.json",
+      "mediaType": "application/json",
+      "sha256": "6c22c116aece1e51ec9739c9e51ce34eece250e09f22528d4b36f37513ea9ba6",
+      "found": true
+    },
+    {
+      "identifier": "ares-00418005",
+      "registry": "ARES",
+      "title": "Uměleckohistorická společnost (UHS)",
+      "ico": "00418005",
+      "entity": "umeleckohistoricka-spolecnost",
+      "dossiers": [
+        "oto-klempir"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00418005.json",
+      "mediaType": "application/json",
+      "sha256": "15d679e489f7882f2421c3ccb43099abf27de1ea11cc162dec1b024db8d8a445",
+      "found": true
+    },
+    {
+      "identifier": "ares-00442704",
+      "registry": "ARES",
+      "title": "KDU-ČSL",
+      "ico": "00442704",
+      "entity": "kdu-csl",
+      "dossiers": [
+        "boris-stastny",
+        "jaromir-zuna",
+        "karel-havlicek",
+        "oto-klempir"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00442704.json",
+      "mediaType": "application/json",
+      "sha256": "0253d89913e3834c2a17bc12b7f02f77b63445c3fcc1332a06aa545d9bf840a9",
+      "found": true
+    },
+    {
+      "identifier": "ares-00469548",
+      "registry": "ARES",
+      "title": "Česká unie sportu",
+      "ico": "00469548",
+      "entity": "ceska-unie-sportu",
+      "dossiers": [
+        "boris-stastny"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00469548.json",
+      "mediaType": "application/json",
+      "sha256": "f4eba82a7cc91c967f8c58ae98190ab59555dda587d72d0bcd071219ca1001e6",
+      "found": true
+    },
+    {
+      "identifier": "ares-00638994",
+      "registry": "ARES",
+      "title": "Česká školní inspekce",
+      "ico": "00638994",
+      "entity": "ceska-skolni-inspekce",
+      "dossiers": [
+        "boris-stastny",
+        "robert-plaga"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/00638994.json",
+      "mediaType": "application/json",
+      "sha256": "29a4ec3cf00f3e056a49f4b21ecdeb7b3df2cf67faa95cfd7a17b11500664bee",
+      "found": true
+    },
+    {
+      "identifier": "ares-01312774",
+      "registry": "ARES",
+      "title": "Státní pozemkový úřad",
+      "ico": "01312774",
+      "entity": "statni-pozemkovy-urad",
+      "dossiers": [
+        "martin-pavlik"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/01312774.json",
+      "mediaType": "application/json",
+      "sha256": "4c91297ce80b0eb61703fc279c4e0fae4b1c124f91f28f773dd8efae9c11e002",
+      "found": true
+    },
+    {
+      "identifier": "ares-01529820",
+      "registry": "ARES",
+      "title": "MEDIA PROJECT CZ s.r.o.",
+      "ico": "01529820",
+      "entity": "media-project-cz-s-r-o",
+      "dossiers": [
+        "martin-pavlik"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/01529820.json",
+      "mediaType": "application/json",
+      "sha256": "2939e196588441afceea2f0306d0f50ef7ae36646640784994c7639e0e6c3c24",
+      "found": true
+    },
+    {
+      "identifier": "ares-01680081",
+      "registry": "ARES",
+      "title": "Investigace.cz",
+      "ico": "01680081",
+      "entity": "investigace-cz",
+      "dossiers": [
+        "macinka-turek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/01680081.json",
+      "mediaType": "application/json",
+      "sha256": "ebc14257b87649b2b1c94190e4de2e7da8e553a17ae5168733a06d7a3e245f55",
+      "found": true
+    },
+    {
+      "identifier": "ares-01801261",
+      "registry": "ARES",
+      "title": "Hartenberg Holding",
+      "ico": "01801261",
+      "entity": "hartenberg",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/01801261.json",
+      "mediaType": "application/json",
+      "sha256": "ff319af69f0127cbd8c0d960be7a558d78affb939a78ff9f498b074bfe589195",
+      "found": true
+    },
+    {
+      "identifier": "ares-01818899",
+      "registry": "ARES",
+      "title": "Aston Martin klub ČR, z.s.",
+      "ico": "01818899",
+      "entity": "aston-martin-klub-cr",
+      "dossiers": [
+        "macinka-turek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/01818899.json",
+      "mediaType": "application/json",
+      "sha256": "19d75e7d9b43bf05024b4790c80dcd0e209247bc9e28e4f05e41c59c31b23c6f",
+      "found": true
+    },
+    {
+      "identifier": "ares-02922703",
+      "registry": "ARES",
+      "title": "Bydlíme v Králově Poli, z.s.",
+      "ico": "02922703",
+      "entity": "bydlime-v-kralove-poli-z-s",
+      "dossiers": [
+        "martin-pavlik"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/02922703.json",
+      "mediaType": "application/json",
+      "sha256": "2ff21b1fc86434bde78fc498f26045577d908a36b0236095e74ca936ea16e623",
+      "found": true
+    },
+    {
+      "identifier": "ares-03877248",
+      "registry": "ARES",
+      "title": "CSR & Protikorupcnilinka.cz s.r.o.",
+      "ico": "03877248",
+      "entity": "csr-protikorupcnilinka",
+      "dossiers": [
+        "james-quick"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/03877248.json",
+      "mediaType": "application/json",
+      "sha256": "4bfef875da6a60c64d56fb605fead20ce2f7694884ac90e5766099b101ee90fe",
+      "found": false
+    },
+    {
+      "identifier": "ares-04134940",
+      "registry": "ARES",
+      "title": "SPD",
+      "ico": "04134940",
+      "entity": "spd",
+      "dossiers": [
+        "tomio-okamura"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/04134940.json",
+      "mediaType": "application/json",
+      "sha256": "f8ec5dbe910bf77909df15708bd340de397a9657881f0eb9c21d21b2892e3651",
+      "found": true
+    },
+    {
+      "identifier": "ares-04347803",
+      "registry": "ARES",
+      "title": "MEAS Consulting s.r.o. v likvidaci",
+      "ico": "04347803",
+      "entity": "meas-consulting",
+      "dossiers": [
+        "macinka-turek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/04347803.json",
+      "mediaType": "application/json",
+      "sha256": "33d913dececf71ae41f45ea27ddd5b44222d68b9ce9e6320e3d64a197117e351",
+      "found": true
+    },
+    {
+      "identifier": "ares-04449461",
+      "registry": "ARES",
+      "title": "HYDROPROGRESS, s.r.o.",
+      "ico": "04449461",
+      "entity": "hydroprogress-s-r-o",
+      "dossiers": [
+        "martin-pavlik"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/04449461.json",
+      "mediaType": "application/json",
+      "sha256": "7ca123ff51a3cd915dcefd75e331cbb0f18c2006df6041efcb0886546d4ebc93",
+      "found": true
+    },
+    {
+      "identifier": "ares-04472586",
+      "registry": "ARES",
+      "title": "Hemmont",
+      "ico": "04472586",
+      "entity": "hemmont",
+      "dossiers": [
+        "igor-cerveny"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/04472586.json",
+      "mediaType": "application/json",
+      "sha256": "943949a2788ac44f7d6c4242492352e309486fad5aacca493eb0b5b3a83f6e4d",
+      "found": true
+    },
+    {
+      "identifier": "ares-04771664",
+      "registry": "ARES",
+      "title": "DRILL COMPANY, s.r.o.",
+      "ico": "04771664",
+      "entity": "drill-company",
+      "dossiers": [
+        "macinka-turek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/04771664.json",
+      "mediaType": "application/json",
+      "sha256": "c0ac8d8802a95a894c9a9ae33e58b834f5e789dab23e3c2509bb04c32c0a2c52",
+      "found": true
+    },
+    {
+      "identifier": "ares-05015502",
+      "registry": "ARES",
+      "title": "Kauppias s.r.o.",
+      "ico": "05015502",
+      "entity": "kauppias",
+      "dossiers": [
+        "macinka-turek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/05015502.json",
+      "mediaType": "application/json",
+      "sha256": "5edbf299f082d89a9286c49bbf1906bdfcf408144a16397190fbfc6b95ee171e",
+      "found": true
+    },
+    {
+      "identifier": "ares-05140544",
+      "registry": "ARES",
+      "title": "Demagog.cz",
+      "ico": "05140544",
+      "entity": "demagog-cz",
+      "dossiers": [
+        "martin-sebestyan"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/05140544.json",
+      "mediaType": "application/json",
+      "sha256": "ebea7c8be5e2de6d601676b153ddeddef61dcb78126f0674cb478c6c9111f17e",
+      "found": true
+    },
+    {
+      "identifier": "ares-05411394",
+      "registry": "ARES",
+      "title": "Zapper-Club s.r.o.",
+      "ico": "05411394",
+      "entity": "zapper-club",
+      "dossiers": [
+        "filip-turek",
+        "macinka-turek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/05411394.json",
+      "mediaType": "application/json",
+      "sha256": "960be072be52706a447ad87370b7e4c48136ab1659a167e2887cedb81840d2c9",
+      "found": true
+    },
+    {
+      "identifier": "ares-05411408",
+      "registry": "ARES",
+      "title": "Art of Performance",
+      "ico": "05411408",
+      "entity": "art-of-performance",
+      "dossiers": [
+        "igor-cerveny",
+        "macinka-turek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/05411408.json",
+      "mediaType": "application/json",
+      "sha256": "14fb1e1727d7399be9547e0c47196f6a2e04958fe804348ec3831e50dcd5bcda",
+      "found": true
+    },
+    {
+      "identifier": "ares-05553466",
+      "registry": "ARES",
+      "title": "Úřad pro dohled nad hospodařením politických stran a politických hnutí (ÚDHPSH)",
+      "ico": "05553466",
+      "entity": "udhpsh",
+      "dossiers": [
+        "macinka-turek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/05553466.json",
+      "mediaType": "application/json",
+      "sha256": "d5ad10d65e94702c8d048a5af58c3386b7bbb6f982f43a7ba4e31923f004ea42",
+      "found": true
+    },
+    {
+      "identifier": "ares-05965527",
+      "registry": "ARES",
+      "title": "Hlídač státu",
+      "ico": "05965527",
+      "entity": "hlidac-statu",
+      "dossiers": [
+        "richard-chlad"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/05965527.json",
+      "mediaType": "application/json",
+      "sha256": "bbe543efd27a261863e23a8b90bc930ee48296d2cca8362986ec3c5fb4bc0e75",
+      "found": true
+    },
+    {
+      "identifier": "ares-05989175",
+      "registry": "ARES",
+      "title": "Motoristé sobě",
+      "ico": "05989175",
+      "entity": "motoriste",
+      "dossiers": [
+        "filip-turek",
+        "igor-cerveny",
+        "macinka-turek",
+        "petr-macinka",
+        "richard-chlad"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/05989175.json",
+      "mediaType": "application/json",
+      "sha256": "3702c56adbe4d0881b27bada9a86d1c1ac06884b8ba4ae4472aec9cf487c2091",
+      "found": true
+    },
+    {
+      "identifier": "ares-06230113",
+      "registry": "ARES",
+      "title": "Transgas s.r.o.",
+      "ico": "06230113",
+      "entity": "transgas-sro",
+      "dossiers": [
+        "macinka-turek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/06230113.json",
+      "mediaType": "application/json",
+      "sha256": "80526a501277e1ec698adb6e27268ad8d215c8969298b6363ad34d706cd06209",
+      "found": true
+    },
+    {
+      "identifier": "ares-06616275",
+      "registry": "ARES",
+      "title": "Učitelská platforma",
+      "ico": "06616275",
+      "entity": "ucitelska-platforma",
+      "dossiers": [
+        "robert-plaga"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/06616275.json",
+      "mediaType": "application/json",
+      "sha256": "aa0d5dc13cd0597e06a2048aacd9f07fe52b39aacd01e024387cb9f59536ae3b",
+      "found": true
+    },
+    {
+      "identifier": "ares-06760538",
+      "registry": "ARES",
+      "title": "Milion chvilek pro demokracii",
+      "ico": "06760538",
+      "entity": "milion-chvilek",
+      "dossiers": [
+        "oto-klempir"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/06760538.json",
+      "mediaType": "application/json",
+      "sha256": "e016b4dcebfc239d686c432b4e09280a5596c15521c25ae17b537a57d8eff75d",
+      "found": true
+    },
+    {
+      "identifier": "ares-07460121",
+      "registry": "ARES",
+      "title": "Národní sportovní agentura (NSA)",
+      "ico": "07460121",
+      "entity": "narodni-sportovni-agentura",
+      "dossiers": [
+        "boris-stastny"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/07460121.json",
+      "mediaType": "application/json",
+      "sha256": "a1559a17e725b977046d08acb1bd37c639da8940dc26b32dde1e60f11dcbc525",
+      "found": true
+    },
+    {
+      "identifier": "ares-09871713",
+      "registry": "ARES",
+      "title": "Společnost pro obranu svobody projevu",
+      "ico": "09871713",
+      "entity": "spolecnost-pro-obranu-svobody-projevu",
+      "dossiers": [
+        "tomio-okamura"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/09871713.json",
+      "mediaType": "application/json",
+      "sha256": "58a902482dbf5972b49b5caef178326ebd04051a1bcd02a5f0e0fc422870fda4",
+      "found": true
+    },
+    {
+      "identifier": "ares-10742409",
+      "registry": "ARES",
+      "title": "Přísaha",
+      "ico": "10742409",
+      "entity": "prisaha",
+      "dossiers": [
+        "macinka-turek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/10742409.json",
+      "mediaType": "application/json",
+      "sha256": "26fcec5916d893c668289bbc078537fd88a6eb74cb7a5e69972651e8ab53bf09",
+      "found": true
+    },
+    {
+      "identifier": "ares-11823461",
+      "registry": "ARES",
+      "title": "Centrum pro výzkum terorismu, z.s.",
+      "ico": "11823461",
+      "entity": "centrum-pro-vyzkum-terorismu",
+      "dossiers": [
+        "macinka-turek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/11823461.json",
+      "mediaType": "application/json",
+      "sha256": "81593147dd346e3d9b279dc817b818408ab3eed48f6336b758f9d1e2052b8b98",
+      "found": true
+    },
+    {
+      "identifier": "ares-14076705",
+      "registry": "ARES",
+      "title": "Motoristé Praha s.r.o.",
+      "ico": "14076705",
+      "entity": "motoriste-praha",
+      "dossiers": [
+        "macinka-turek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/14076705.json",
+      "mediaType": "application/json",
+      "sha256": "423dd8a3dd86e7923b1e25770a1231288907d902a66a6866b006be2960abd3a2",
+      "found": true
+    },
+    {
+      "identifier": "ares-16192656",
+      "registry": "ARES",
+      "title": "ODS",
+      "ico": "16192656",
+      "entity": "ods",
+      "dossiers": [
+        "andrej-babis",
+        "boris-stastny",
+        "jaromir-zuna",
+        "jeronym-tejc",
+        "karel-havlicek",
+        "oto-klempir"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/16192656.json",
+      "mediaType": "application/json",
+      "sha256": "fd339178bf3d3c0277ca2c6db5a7afdd5e846d16b7b85e9cd162b5bab3981318",
+      "found": true
+    },
+    {
+      "identifier": "ares-17048826",
+      "registry": "ARES",
+      "title": "Sdružení automobilového průmyslu (AutoSAP)",
+      "ico": "17048826",
+      "entity": "autosap",
+      "dossiers": [
+        "karel-havlicek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/17048826.json",
+      "mediaType": "application/json",
+      "sha256": "266b1d889d61fe02c63f69d3a8b6365cde1aa168d8a8bbba70f0d2e1471ad87e",
+      "found": true
+    },
+    {
+      "identifier": "ares-17353882",
+      "registry": "ARES",
+      "title": "Klub motoristů, z.s.",
+      "ico": "17353882",
+      "entity": "klubmotoristu",
+      "dossiers": [
+        "macinka-turek",
+        "petr-macinka"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/17353882.json",
+      "mediaType": "application/json",
+      "sha256": "8a23232264688d8e1c4c2186d47a44c289b300277191286ccc94efc8c9b574f9",
+      "found": true
+    },
+    {
+      "identifier": "ares-17573866",
+      "registry": "ARES",
+      "title": "Moravia Green Hydrogen",
+      "ico": "17573866",
+      "entity": "moravia-green-hydrogen",
+      "dossiers": [
+        "macinka-turek",
+        "richard-chlad"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/17573866.json",
+      "mediaType": "application/json",
+      "sha256": "94fab9757ab3e5332190beb559e3bc3f43d28dc9170564dd95e568f41f664b78",
+      "found": true
+    },
+    {
+      "identifier": "ares-21030367",
+      "registry": "ARES",
+      "title": "Ředitelství silnic a dálnic (ŘSD)",
+      "ico": "21030367",
+      "entity": "rsd",
+      "dossiers": [
+        "ivan-bednarik"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/21030367.json",
+      "mediaType": "application/json",
+      "sha256": "5610964ac7ca54ec13da27eb8376443802962afd813b37a6c36e2c831acf1230",
+      "found": true
+    },
+    {
+      "identifier": "ares-22419519",
+      "registry": "ARES",
+      "title": "BYD Automotive",
+      "ico": "22419519",
+      "entity": "byd-automotive",
+      "dossiers": [
+        "karel-havlicek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/22419519.json",
+      "mediaType": "application/json",
+      "sha256": "154f5f886101d61d46579b35ee559aa504965f6d4ba0245e0da41ffe0a0ff4bf",
+      "found": true
+    },
+    {
+      "identifier": "ares-22461787",
+      "registry": "ARES",
+      "title": "Extreme BFG Cast s.r.o.",
+      "ico": "22461787",
+      "entity": "extreme-bfg-cast",
+      "dossiers": [
+        "igor-cerveny"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/22461787.json",
+      "mediaType": "application/json",
+      "sha256": "954ff9e16ade38bbf67970873d59a0c6cab717263ae15e7c37fb23d097c68a34",
+      "found": true
+    },
+    {
+      "identifier": "ares-23177586",
+      "registry": "ARES",
+      "title": "Krijcos Energy",
+      "ico": "23177586",
+      "entity": "krijcos-energy",
+      "dossiers": [
+        "macinka-turek",
+        "richard-chlad"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/23177586.json",
+      "mediaType": "application/json",
+      "sha256": "0b95eadaa623cdc65ff19bb0c8a3bbc3aacac5c461cce3b1a84bba6671d72948",
+      "found": true
+    },
+    {
+      "identifier": "ares-24099333",
+      "registry": "ARES",
+      "title": "RSVP Trust",
+      "ico": "24099333",
+      "entity": "rsvp-trust",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/24099333.json",
+      "mediaType": "application/json",
+      "sha256": "3abed0a41c71dc8195a5b670a7fe271ea4e719abc6bea487b872c78454cbb700",
+      "found": true
+    },
+    {
+      "identifier": "ares-24220345",
+      "registry": "ARES",
+      "title": "Institut Václava Klause",
+      "ico": "24220345",
+      "entity": "institut-vaclava-klause",
+      "dossiers": [
+        "macinka-turek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/24220345.json",
+      "mediaType": "application/json",
+      "sha256": "fbbf4eda413e40ebfc656430de4b1ae6ba9877cb5a515772fd8c75f8a78978fe",
+      "found": true
+    },
+    {
+      "identifier": "ares-24706370",
+      "registry": "ARES",
+      "title": "EDUin",
+      "ico": "24706370",
+      "entity": "eduin",
+      "dossiers": [
+        "robert-plaga"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/24706370.json",
+      "mediaType": "application/json",
+      "sha256": "c09cd920e583493831fe701b9c6d4e5e3969b0958f6b394ce4486833af1de57e",
+      "found": true
+    },
+    {
+      "identifier": "ares-24722197",
+      "registry": "ARES",
+      "title": "Advokátní kancelář Šenkýř Pánik",
+      "ico": "24722197",
+      "entity": "senkyr-panik",
+      "dossiers": [
+        "tunde-bartha"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/24722197.json",
+      "mediaType": "application/json",
+      "sha256": "d36b3c223138651ffa85a77b289eccb0fc0cc0f4ca996e46d042ebd9794c3f48",
+      "found": true
+    },
+    {
+      "identifier": "ares-25157507",
+      "registry": "ARES",
+      "title": "SPV Pelhřimov",
+      "ico": "25157507",
+      "entity": "spv-pelhrimov",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/25157507.json",
+      "mediaType": "application/json",
+      "sha256": "4af034b8b71530115d7fc0d5767730c51cbf4808959f8fbf729562f95a771c6e",
+      "found": true
+    },
+    {
+      "identifier": "ares-25396480",
+      "registry": "ARES",
+      "title": "Vodňanská drůbež",
+      "ico": "25396480",
+      "entity": "vodnanska-drubez",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/25396480.json",
+      "mediaType": "application/json",
+      "sha256": "4b50a9f75d901e6691b2886a6f33a0f33b5035aa5c9a23b0398af20a1b65c8b4",
+      "found": true
+    },
+    {
+      "identifier": "ares-25542125",
+      "registry": "ARES",
+      "title": "PG Contract, spol. s r.o.",
+      "ico": "25542125",
+      "entity": "pg-contract",
+      "dossiers": [
+        "macinka-turek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/25542125.json",
+      "mediaType": "application/json",
+      "sha256": "8ba3a3ca2a9212fe716e8b7201b98553388880d9911df9b29e5c14397d78c069",
+      "found": true
+    },
+    {
+      "identifier": "ares-26014343",
+      "registry": "ARES",
+      "title": "SynBiol",
+      "ico": "26014343",
+      "entity": "synbiol",
+      "dossiers": [
+        "adam-vojtech",
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/26014343.json",
+      "mediaType": "application/json",
+      "sha256": "3e2f9f6b276beec0243d4c93c2b61e31ab49cf6b56469efd6bdab2eaf2e8097d",
+      "found": true
+    },
+    {
+      "identifier": "ares-26102463",
+      "registry": "ARES",
+      "title": "Výkrm Tagrea",
+      "ico": "26102463",
+      "entity": "vykrm-tagrea",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/26102463.json",
+      "mediaType": "application/json",
+      "sha256": "e31bd20dc951033a89d8f935de25f8f54028e5f614642b860e7c4dfbd0082b07",
+      "found": true
+    },
+    {
+      "identifier": "ares-26124459",
+      "registry": "ARES",
+      "title": "Imoba",
+      "ico": "26124459",
+      "entity": "imoba",
+      "dossiers": [
+        "andrej-babis",
+        "tunde-bartha"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/26124459.json",
+      "mediaType": "application/json",
+      "sha256": "b7467256384dcbd3937ae65f300a9d24c016f4746382d01734507943b76d0749",
+      "found": true
+    },
+    {
+      "identifier": "ares-26168685",
+      "registry": "ARES",
+      "title": "Seznam.cz",
+      "ico": "26168685",
+      "entity": "seznam-cz",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/26168685.json",
+      "mediaType": "application/json",
+      "sha256": "cba332639b4d1ec3d25343d6e8b68480cf01119dc397b6719630bca578edbff8",
+      "found": true
+    },
+    {
+      "identifier": "ares-26185610",
+      "registry": "ARES",
+      "title": "Agrofert",
+      "ico": "26185610",
+      "entity": "agrofert",
+      "dossiers": [
+        "andrej-babis",
+        "karel-havlicek",
+        "martin-sebestyan",
+        "tunde-bartha"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/26185610.json",
+      "mediaType": "application/json",
+      "sha256": "14eb2b445ed57cf8897317678d45c276d508370163b390b7ad087c704227db4c",
+      "found": true
+    },
+    {
+      "identifier": "ares-26228548",
+      "registry": "ARES",
+      "title": "\"Nadační fond FIDUCIA\"",
+      "ico": "26228548",
+      "entity": "nadacni-fond-fiducia",
+      "dossiers": [
+        "martin-pavlik"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/26228548.json",
+      "mediaType": "application/json",
+      "sha256": "fecab4d68367b639f2e2b4ea5aa748296a0c97f6660f47e592c9e437350a44db",
+      "found": true
+    },
+    {
+      "identifier": "ares-26311208",
+      "registry": "ARES",
+      "title": "Preol",
+      "ico": "26311208",
+      "entity": "preol",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/26311208.json",
+      "mediaType": "application/json",
+      "sha256": "cc55fe4b608142f855972c4146e06cc5fbaba79093540dce3fbf2fe924687e2f",
+      "found": true
+    },
+    {
+      "identifier": "ares-26417171",
+      "registry": "ARES",
+      "title": "Young & Rubicam",
+      "ico": "26417171",
+      "entity": "young-rubicam",
+      "dossiers": [
+        "oto-klempir"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/26417171.json",
+      "mediaType": "application/json",
+      "sha256": "944fad04db7fe86a8bbdf2c982af5f7492453f8fe6500bc949a62e2391bbdb74",
+      "found": true
+    },
+    {
+      "identifier": "ares-26547783",
+      "registry": "ARES",
+      "title": "Asociace malých a středních podniků a živnostníků ČR",
+      "ico": "26547783",
+      "entity": "amsp-cr",
+      "dossiers": [
+        "adam-vojtech",
+        "karel-havlicek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/26547783.json",
+      "mediaType": "application/json",
+      "sha256": "4221cd367cfc7f27dca0182bc5227536848fc89119b30dd86e12392070170fc1",
+      "found": true
+    },
+    {
+      "identifier": "ares-26557975",
+      "registry": "ARES",
+      "title": "Jaguar klub ČR, z.s.",
+      "ico": "26557975",
+      "entity": "jaguar-klub-cr",
+      "dossiers": [
+        "macinka-turek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/26557975.json",
+      "mediaType": "application/json",
+      "sha256": "53b2d8de037d23f8d031c6b37906c4f0d9b3a69d201cc4d5430a7acf03fcff22",
+      "found": true
+    },
+    {
+      "identifier": "ares-26673908",
+      "registry": "ARES",
+      "title": "STAN",
+      "ico": "26673908",
+      "entity": "stan",
+      "dossiers": [
+        "andrej-babis",
+        "boris-stastny",
+        "jaromir-zuna",
+        "jeronym-tejc",
+        "karel-havlicek",
+        "oto-klempir"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/26673908.json",
+      "mediaType": "application/json",
+      "sha256": "967a62fda9e152bf1159df80e8190519b304d127c49be059e9f1bebfbdb3fd36",
+      "found": true
+    },
+    {
+      "identifier": "ares-27082440",
+      "registry": "ARES",
+      "title": "Alza.cz",
+      "ico": "27082440",
+      "entity": "alza",
+      "dossiers": [
+        "boris-stastny"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/27082440.json",
+      "mediaType": "application/json",
+      "sha256": "3f164de32f15445fa637a44c306847f583c690b11c746c2e4df93405f392bad2",
+      "found": true
+    },
+    {
+      "identifier": "ares-27699293",
+      "registry": "ARES",
+      "title": "Sady CZ",
+      "ico": "27699293",
+      "entity": "sady-cz",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/27699293.json",
+      "mediaType": "application/json",
+      "sha256": "1877ff5ea0b45e4d8b159a4d8a6dd581b5216c663f25be70e43e289e6bc928d0",
+      "found": true
+    },
+    {
+      "identifier": "ares-28196678",
+      "registry": "ARES",
+      "title": "ČD Cargo",
+      "ico": "28196678",
+      "entity": "cd-cargo",
+      "dossiers": [
+        "ivan-bednarik"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/28196678.json",
+      "mediaType": "application/json",
+      "sha256": "4ef7d7842f060a0477545e0c44e5de6d44e87dfb430dd0e0034eef2b0807dc76",
+      "found": true
+    },
+    {
+      "identifier": "ares-28274318",
+      "registry": "ARES",
+      "title": "GMR GAS s.r.o. (Brno)",
+      "ico": "28274318",
+      "entity": "gmrgas-cz",
+      "dossiers": [
+        "macinka-turek",
+        "petr-macinka",
+        "petr-vencalek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/28274318.json",
+      "mediaType": "application/json",
+      "sha256": "3fd1148f3c6b38e320643d34c251340125b1c499e69790f9acbfa66b0c84f3be",
+      "found": true
+    },
+    {
+      "identifier": "ares-41035895",
+      "registry": "ARES",
+      "title": "Pekárna Zelená louka (skupina Agrofert)",
+      "ico": "41035895",
+      "entity": "penam-zelena-louka",
+      "dossiers": [
+        "andrej-babis",
+        "karel-havlicek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/41035895.json",
+      "mediaType": "application/json",
+      "sha256": "13da748d0df368e66bafcb581fa7d3d7fc0502bb739c76bbe17561a03e750cee",
+      "found": true
+    },
+    {
+      "identifier": "ares-41197518",
+      "registry": "ARES",
+      "title": "Všeobecná zdravotní pojišťovna (VZP)",
+      "ico": "41197518",
+      "entity": "vzp",
+      "dossiers": [
+        "adam-vojtech"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/41197518.json",
+      "mediaType": "application/json",
+      "sha256": "4203113321f8de7c4e9d8d52a32cd86a85178acc32e7c922d82e97f39b4cb805",
+      "found": true
+    },
+    {
+      "identifier": "ares-42196451",
+      "registry": "ARES",
+      "title": "Lesy České republiky, s.p.",
+      "ico": "42196451",
+      "entity": "lesy-ceske-republiky-sp",
+      "dossiers": [
+        "martin-pavlik"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/42196451.json",
+      "mediaType": "application/json",
+      "sha256": "594dba3144fb660a864559f8f65a4cbded60daf600567112c20599ebef3a9a1b",
+      "found": true
+    },
+    {
+      "identifier": "ares-45245053",
+      "registry": "ARES",
+      "title": "Český rozhlas",
+      "ico": "45245053",
+      "entity": "cesky-rozhlas",
+      "dossiers": [
+        "oto-klempir"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/45245053.json",
+      "mediaType": "application/json",
+      "sha256": "8bb980806be3305670128455308f30cbf8556dcd9d239c3af278ac619e4504a8",
+      "found": true
+    },
+    {
+      "identifier": "ares-45770743",
+      "registry": "ARES",
+      "title": "Česká komora autorizovaných inženýrů a techniků (ČKAIT)",
+      "ico": "45770743",
+      "entity": "ckait",
+      "dossiers": [
+        "karel-havlicek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/45770743.json",
+      "mediaType": "application/json",
+      "sha256": "cd76dad0a0f72f3dd3230668e26ef4a9ea8ea8f460d94494f5fd33b0a125b263",
+      "found": true
+    },
+    {
+      "identifier": "ares-46504940",
+      "registry": "ARES",
+      "title": "Cerea",
+      "ico": "46504940",
+      "entity": "cerea",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/46504940.json",
+      "mediaType": "application/json",
+      "sha256": "393ec57853e1068770edde29024ca3b42779629109bc74913c0fccb82c5ba856",
+      "found": true
+    },
+    {
+      "identifier": "ares-46708707",
+      "registry": "ARES",
+      "title": "Setuza",
+      "ico": "46708707",
+      "entity": "setuza",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/46708707.json",
+      "mediaType": "application/json",
+      "sha256": "d317ea85a829b4445b90e973496dab40fdf0acf11863d2d2333734be861a4610",
+      "found": true
+    },
+    {
+      "identifier": "ares-46900411",
+      "registry": "ARES",
+      "title": "Kostelecké uzeniny",
+      "ico": "46900411",
+      "entity": "kostelecke-uzeniny",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/46900411.json",
+      "mediaType": "application/json",
+      "sha256": "48b7fc2200e4433dad219df6da3fa62c49c166805c00619ab4ffa9497cff36a0",
+      "found": true
+    },
+    {
+      "identifier": "ares-46967851",
+      "registry": "ARES",
+      "title": "Penam",
+      "ico": "46967851",
+      "entity": "penam",
+      "dossiers": [
+        "karel-havlicek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/46967851.json",
+      "mediaType": "application/json",
+      "sha256": "54e61e2dbc158a93dc7cb6c321d61442aa276f4f77ea27e6ceebeed33885f27c",
+      "found": true
+    },
+    {
+      "identifier": "ares-47609109",
+      "registry": "ARES",
+      "title": "Ministerstvo průmyslu a obchodu",
+      "ico": "47609109",
+      "entity": "mpo",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/47609109.json",
+      "mediaType": "application/json",
+      "sha256": "27cbe00e960e26d876db53d0b7731591dcda010768c90998e19384d49eea727a",
+      "found": true
+    },
+    {
+      "identifier": "ares-48118753",
+      "registry": "ARES",
+      "title": "Advokátní kancelář Portos (dříve Češka a Smutný)",
+      "ico": "48118753",
+      "entity": "ak-portos",
+      "dossiers": [
+        "martin-sebestyan"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/48118753.json",
+      "mediaType": "application/json",
+      "sha256": "3fe123428abc199715e6807be2e6b07b7334d5442c3e10542021c52c7b9d52d2",
+      "found": true
+    },
+    {
+      "identifier": "ares-48133981",
+      "registry": "ARES",
+      "title": "Státní zemědělský intervenční fond",
+      "ico": "48133981",
+      "entity": "szif",
+      "dossiers": [
+        "andrej-babis",
+        "martin-sebestyan"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/48133981.json",
+      "mediaType": "application/json",
+      "sha256": "4844effad07c7c42cbfef6b59fcc00d4d98029f301652c1482f35eabf3c39e29",
+      "found": true
+    },
+    {
+      "identifier": "ares-48136000",
+      "registry": "ARES",
+      "title": "Kancelář prezidenta republiky",
+      "ico": "48136000",
+      "entity": "kancelar-prezidenta-republiky",
+      "dossiers": [
+        "alena-schillerova",
+        "jaromir-zuna"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/48136000.json",
+      "mediaType": "application/json",
+      "sha256": "c495b0f9b06ba38119f174bde722555eb97e06921847fe1f43127d0196ba251d",
+      "found": true
+    },
+    {
+      "identifier": "ares-48136450",
+      "registry": "ARES",
+      "title": "Česká národní banka",
+      "ico": "48136450",
+      "entity": "cnb",
+      "dossiers": [
+        "alena-schillerova",
+        "lubomir-metnar"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/48136450.json",
+      "mediaType": "application/json",
+      "sha256": "ec8856478faf66f8cf5dfe544ca163eea957c1e2ec47d7cc68bf794f66aa1072",
+      "found": true
+    },
+    {
+      "identifier": "ares-48169188",
+      "registry": "ARES",
+      "title": "Mlékárna Hlinsko",
+      "ico": "48169188",
+      "entity": "mlekarna-hlinsko",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/48169188.json",
+      "mediaType": "application/json",
+      "sha256": "14163e9b047880912fee9580e63c604834aaf6c30850c47bc5b21b6dabe0c8c7",
+      "found": true
+    },
+    {
+      "identifier": "ares-48513687",
+      "registry": "ARES",
+      "title": "Ústavní soud",
+      "ico": "48513687",
+      "entity": "ustavni-soud",
+      "dossiers": [
+        "andrej-babis",
+        "jeronym-tejc",
+        "tomio-okamura"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/48513687.json",
+      "mediaType": "application/json",
+      "sha256": "68df94dfb0e1b94af06b65f19d473319e5b8248d8980d5426d5966bb0182935e",
+      "found": true
+    },
+    {
+      "identifier": "ares-49241494",
+      "registry": "ARES",
+      "title": "Podpůrný a garanční rolnický a lesnický fond (PGRLF)",
+      "ico": "49241494",
+      "entity": "pgrlf",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/49241494.json",
+      "mediaType": "application/json",
+      "sha256": "2ad49260309f6678a0fb79f706d988ae08bb2a00f613dbb7850d6caf57b243d0",
+      "found": true
+    },
+    {
+      "identifier": "ares-49282778",
+      "registry": "ARES",
+      "title": "JWT (J. Walter Thompson)",
+      "ico": "49282778",
+      "entity": "jwt",
+      "dossiers": [
+        "oto-klempir"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/49282778.json",
+      "mediaType": "application/json",
+      "sha256": "8fd399917f866617af341cccfc097f7f5fcabee5276df915ac94b38d9b69860e",
+      "found": true
+    },
+    {
+      "identifier": "ares-49370227",
+      "registry": "ARES",
+      "title": "Nejvyšší kontrolní úřad",
+      "ico": "49370227",
+      "entity": "nku",
+      "dossiers": [
+        "ales-juchelka",
+        "lubomir-metnar"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/49370227.json",
+      "mediaType": "application/json",
+      "sha256": "9ae634549d25b273be2d12b13f36969fb32097ec11200493a2aa1586956f8485",
+      "found": true
+    },
+    {
+      "identifier": "ares-49455958",
+      "registry": "ARES",
+      "title": "Agro Jevišovice",
+      "ico": "49455958",
+      "entity": "agro-jevisovice",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/49455958.json",
+      "mediaType": "application/json",
+      "sha256": "2688fe48e5bd0f955de649b849dab8be5ac7f44102308a902b50763f7379ee2e",
+      "found": true
+    },
+    {
+      "identifier": "ares-49467352",
+      "registry": "ARES",
+      "title": "Nejvyšší státní zastupitelství",
+      "ico": "49467352",
+      "entity": "nejvyssi-statni-zastupitelstvi",
+      "dossiers": [
+        "andrej-babis",
+        "jeronym-tejc"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/49467352.json",
+      "mediaType": "application/json",
+      "sha256": "87e7209064d09f88f6cc9beb5aac0a4579162ca433060c5a575e00a019e9237c",
+      "found": true
+    },
+    {
+      "identifier": "ares-49625586",
+      "registry": "ARES",
+      "title": "Vrchní státní zastupitelství v Praze",
+      "ico": "49625586",
+      "entity": "vrchni-statni-zastupitelstvi-praha",
+      "dossiers": [
+        "martin-sebestyan"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/49625586.json",
+      "mediaType": "application/json",
+      "sha256": "4953d36f49ee59f1cac4fe0267a0c5088dd79f0483fdb4593a39b7d0b76d8d19",
+      "found": true
+    },
+    {
+      "identifier": "ares-60449101",
+      "registry": "ARES",
+      "title": "Asociace ředitelů základních škol",
+      "ico": "60449101",
+      "entity": "asociace-reditelu-zs",
+      "dossiers": [
+        "robert-plaga"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/60449101.json",
+      "mediaType": "application/json",
+      "sha256": "84badbe4ab6374a1f04d5f4bbd44a2421df8ab3426f264f099751523428816f4",
+      "found": true
+    },
+    {
+      "identifier": "ares-60461446",
+      "registry": "ARES",
+      "title": "Akademie výtvarných umění v Praze",
+      "ico": "60461446",
+      "entity": "akademie-vytvarnych-umeni",
+      "dossiers": [
+        "oto-klempir"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/60461446.json",
+      "mediaType": "application/json",
+      "sha256": "8ae55fd46c9194f71bb3828486ced54efc979924b5a492b86a8b2d950e63e1d0",
+      "found": true
+    },
+    {
+      "identifier": "ares-61384399",
+      "registry": "ARES",
+      "title": "Vysoká škola ekonomická v Praze (VŠE)",
+      "ico": "61384399",
+      "entity": "vse-praha",
+      "dossiers": [
+        "karel-havlicek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/61384399.json",
+      "mediaType": "application/json",
+      "sha256": "e36198106fcf78befcc8424fe79b8659120445f4c58e24ca3f909a0199007b61",
+      "found": true
+    },
+    {
+      "identifier": "ares-61388246",
+      "registry": "ARES",
+      "title": "Gymnázium Jana Keplera",
+      "ico": "61388246",
+      "entity": "gymnazium-jana-keplera",
+      "dossiers": [
+        "robert-plaga"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/61388246.json",
+      "mediaType": "application/json",
+      "sha256": "e464c981effd39543453625dba7c1e60c700318fe4cd31e7bad350414861cbee",
+      "found": true
+    },
+    {
+      "identifier": "ares-61505463",
+      "registry": "ARES",
+      "title": "Space Plan",
+      "ico": "61505463",
+      "entity": "space-plan",
+      "dossiers": [
+        "igor-cerveny"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/61505463.json",
+      "mediaType": "application/json",
+      "sha256": "c0aed6801861117e5ff2164d8c2f6bc2416173a1534e5a8a1572f3edf3771c39",
+      "found": true
+    },
+    {
+      "identifier": "ares-61858374",
+      "registry": "ARES",
+      "title": "Fio banka",
+      "ico": "61858374",
+      "entity": "fio-banka",
+      "dossiers": [
+        "macinka-turek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/61858374.json",
+      "mediaType": "application/json",
+      "sha256": "e4f5e6a690ede5df78d959537d5a654ea864d521c647079384f0dc3936d39cf7",
+      "found": true
+    },
+    {
+      "identifier": "ares-62301659",
+      "registry": "ARES",
+      "title": "Schrom Farms",
+      "ico": "62301659",
+      "entity": "schrom-farms",
+      "dossiers": [
+        "martin-sebestyan"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/62301659.json",
+      "mediaType": "application/json",
+      "sha256": "a854b1ca3bfc0bd2ec2e0df826763e39e659c8970f85adf00e868bb6e055f46e",
+      "found": true
+    },
+    {
+      "identifier": "ares-63489911",
+      "registry": "ARES",
+      "title": "Navos Farm Technic",
+      "ico": "63489911",
+      "entity": "navos-farm-technic",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/63489911.json",
+      "mediaType": "application/json",
+      "sha256": "7b87ee219e399682d5c66995cf4c44035a006e1a215ded2ba29df87003269309",
+      "found": true
+    },
+    {
+      "identifier": "ares-63832721",
+      "registry": "ARES",
+      "title": "ACRI — Asociace podniků českého železničního průmyslu",
+      "ico": "63832721",
+      "entity": "acri",
+      "dossiers": [
+        "ivan-bednarik"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/63832721.json",
+      "mediaType": "application/json",
+      "sha256": "5c7b916ff331c12bbc256dd6bb45efce8c3a86020f55070fecfc50dd8b422525",
+      "found": true
+    },
+    {
+      "identifier": "ares-63833239",
+      "registry": "ARES",
+      "title": "Unie státních zástupců",
+      "ico": "63833239",
+      "entity": "unie-statnich-zastupcu",
+      "dossiers": [
+        "tomio-okamura"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/63833239.json",
+      "mediaType": "application/json",
+      "sha256": "7bb670c931af40c4a8d8081b25fddefa7bb312747dfadc1b5d7b526bb19b29a2",
+      "found": true
+    },
+    {
+      "identifier": "ares-64124584",
+      "registry": "ARES",
+      "title": "Vrchní státní zastupitelství v Olomouci",
+      "ico": "64124584",
+      "entity": "vrchni-statni-zastupitelstvi-olomouc",
+      "dossiers": [
+        "adam-vojtech",
+        "jeronym-tejc"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/64124584.json",
+      "mediaType": "application/json",
+      "sha256": "adb3e98fbed4171e48732b53a14701acb5c6d306712c9673b54edc0eb83d27ab",
+      "found": true
+    },
+    {
+      "identifier": "ares-67981801",
+      "registry": "ARES",
+      "title": "Ředitelství vodních cest",
+      "ico": "67981801",
+      "entity": "reditelstvi-vodnich-cest",
+      "dossiers": [
+        "ivan-bednarik"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/67981801.json",
+      "mediaType": "application/json",
+      "sha256": "0c3d62ef8e1bf94fd024cec98b4ac4ff89e977c5c57a0d0e7e870a3117697f6f",
+      "found": true
+    },
+    {
+      "identifier": "ares-68407700",
+      "registry": "ARES",
+      "title": "České vysoké učení technické v Praze (ČVUT)",
+      "ico": "68407700",
+      "entity": "cvut",
+      "dossiers": [
+        "karel-havlicek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/68407700.json",
+      "mediaType": "application/json",
+      "sha256": "0ffca14d1495e009b8d47112f52b662dc4b9a52a7dca7870fb15e8e78a0f1a51",
+      "found": true
+    },
+    {
+      "identifier": "ares-70856508",
+      "registry": "ARES",
+      "title": "Státní fond dopravní infrastruktury (SFDI)",
+      "ico": "70856508",
+      "entity": "sfdi",
+      "dossiers": [
+        "ivan-bednarik"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/70856508.json",
+      "mediaType": "application/json",
+      "sha256": "a41156ecbd1268666caba2c7894e4cd3cba0f99567a254291e615137b8861334",
+      "found": true
+    },
+    {
+      "identifier": "ares-70888337",
+      "registry": "ARES",
+      "title": "Jihomoravský kraj",
+      "ico": "70888337",
+      "entity": "jihomoravsky-kraj",
+      "dossiers": [
+        "martin-pavlik"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/70888337.json",
+      "mediaType": "application/json",
+      "sha256": "02d16d947260279ab34840cc93d3ace6afcc836a4d0647b9e3473843eb54d43f",
+      "found": true
+    },
+    {
+      "identifier": "ares-70890005",
+      "registry": "ARES",
+      "title": "Povodí Labe, státní podnik",
+      "ico": "70890005",
+      "entity": "povodi-labe-sp",
+      "dossiers": [
+        "martin-pavlik"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/70890005.json",
+      "mediaType": "application/json",
+      "sha256": "545a6c792be48b80ebc7e7bf7a3d0742a314d574ed74879b4207f53a2133d8b7",
+      "found": true
+    },
+    {
+      "identifier": "ares-70890021",
+      "registry": "ARES",
+      "title": "Povodí Odry, státní podnik",
+      "ico": "70890021",
+      "entity": "povodi-odry-sp",
+      "dossiers": [
+        "martin-pavlik"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/70890021.json",
+      "mediaType": "application/json",
+      "sha256": "7236a0abc8bc4659c5413221a1567fda9b13264009f8ee7e4d4be3a152e2e6c6",
+      "found": true
+    },
+    {
+      "identifier": "ares-70890692",
+      "registry": "ARES",
+      "title": "Moravskoslezský kraj",
+      "ico": "70890692",
+      "entity": "moravskoslezsky-kraj",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/70890692.json",
+      "mediaType": "application/json",
+      "sha256": "eded7ef6da8f6c897377922b5b7314c7f95928550511374d607bf5e519a6dfb9",
+      "found": true
+    },
+    {
+      "identifier": "ares-70891095",
+      "registry": "ARES",
+      "title": "Středočeský kraj",
+      "ico": "70891095",
+      "entity": "stredocesky-kraj",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/70891095.json",
+      "mediaType": "application/json",
+      "sha256": "b3d60b8863e81df2928eba37c4b3ed83172ac15fc7fb271efdbbe793bd116473",
+      "found": true
+    },
+    {
+      "identifier": "ares-70994226",
+      "registry": "ARES",
+      "title": "České dráhy",
+      "ico": "70994226",
+      "entity": "ceske-drahy",
+      "dossiers": [
+        "ivan-bednarik"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/70994226.json",
+      "mediaType": "application/json",
+      "sha256": "86b728e6080bddc0d09bf56d22a75be9f516d055438b0ada8b50ff43a768896e",
+      "found": true
+    },
+    {
+      "identifier": "ares-70994234",
+      "registry": "ARES",
+      "title": "Správa železnic",
+      "ico": "70994234",
+      "entity": "sprava-zeleznic",
+      "dossiers": [
+        "ivan-bednarik"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/70994234.json",
+      "mediaType": "application/json",
+      "sha256": "54347ba899a416980067d391daeec94833b029ba985fb0137e6ea37bb6b55ef6",
+      "found": true
+    },
+    {
+      "identifier": "ares-71339698",
+      "registry": "ARES",
+      "title": "Piráti (Česká pirátská strana)",
+      "ico": "71339698",
+      "entity": "pirati",
+      "dossiers": [
+        "alena-schillerova",
+        "andrej-babis",
+        "karel-havlicek",
+        "martin-sebestyan",
+        "tomio-okamura",
+        "zuzana-mrazova"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/71339698.json",
+      "mediaType": "application/json",
+      "sha256": "340707e1ce651fe77497f0ebfab4e6785298c425b235bd92b6b67dd5509018ee",
+      "found": true
+    },
+    {
+      "identifier": "ares-71339728",
+      "registry": "ARES",
+      "title": "TOP 09",
+      "ico": "71339728",
+      "entity": "top-09",
+      "dossiers": [
+        "andrej-babis",
+        "boris-stastny",
+        "jaromir-zuna",
+        "karel-havlicek"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/71339728.json",
+      "mediaType": "application/json",
+      "sha256": "dd8ca4345db5c49d884cb092986fa6b41c874f4fd9aa4bd196c080aff2af909e",
+      "found": true
+    },
+    {
+      "identifier": "ares-71443339",
+      "registry": "ARES",
+      "title": "ANO 2011",
+      "ico": "71443339",
+      "entity": "ano",
+      "dossiers": [
+        "adam-vojtech",
+        "andrej-babis",
+        "jaromir-zuna",
+        "jaroslav-faltynek",
+        "jeronym-tejc",
+        "karel-havlicek",
+        "macinka-turek",
+        "robert-plaga",
+        "tomio-okamura",
+        "tunde-bartha",
+        "zuzana-mrazova"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/71443339.json",
+      "mediaType": "application/json",
+      "sha256": "c49c90f4462efb534199dcc64714fe65e1c16e4f927c4d7a368c1fe13645681f",
+      "found": true
+    },
+    {
+      "identifier": "ares-72080043",
+      "registry": "ARES",
+      "title": "Generální finanční ředitelství",
+      "ico": "72080043",
+      "entity": "generalni-financni-reditelstvi",
+      "dossiers": [
+        "alena-schillerova"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/72080043.json",
+      "mediaType": "application/json",
+      "sha256": "6410cb3e6330370aa34e486df8df7d1568d17a3d9a3e13b67267c6abe66651b3",
+      "found": true
+    },
+    {
+      "identifier": "ares-75003716",
+      "registry": "ARES",
+      "title": "Nejvyšší správní soud",
+      "ico": "75003716",
+      "entity": "nss",
+      "dossiers": [
+        "andrej-babis"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/75003716.json",
+      "mediaType": "application/json",
+      "sha256": "17021f3a4951b3f4ab1e11aec9df7a64eb16c8cec12bfedbf644d30df6e7b0b2",
+      "found": true
+    },
+    {
+      "identifier": "ares-75032333",
+      "registry": "ARES",
+      "title": "Národní památkový ústav",
+      "ico": "75032333",
+      "entity": "narodni-pamatkovy-ustav",
+      "dossiers": [
+        "oto-klempir"
+      ],
+      "retrieved": "2026-08-09",
+      "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+      "file": "/documents/registry/ares/75032333.json",
+      "mediaType": "application/json",
+      "sha256": "4b376e6eefb5c23503d2976314aab6cd9cbb1f2a3b98bcbe7648c5f110a0064d",
+      "found": true
+    }
+  ],
+  "entitiesWithoutIco": [
+    {
+      "entity": "ab-private-trusts",
+      "title": "AB private trust I a II",
+      "dossiers": [
+        "andrej-babis"
+      ]
+    },
+    {
+      "entity": "agrarni-komora",
+      "title": "Agrární komora ČR",
+      "dossiers": [
+        "martin-sebestyan"
+      ]
+    },
+    {
+      "entity": "agrofert-hungaria",
+      "title": "AGROFERT Hungária",
+      "dossiers": [
+        "tunde-bartha"
+      ]
+    },
+    {
+      "entity": "alcogal",
+      "title": "ALCOGAL",
+      "dossiers": [
+        "andrej-babis"
+      ]
+    },
+    {
+      "entity": "alzheimer-home",
+      "title": "Alzheimer Home",
+      "dossiers": [
+        "macinka-turek"
+      ]
+    },
+    {
+      "entity": "armada-cr",
+      "title": "Armáda České republiky",
+      "dossiers": [
+        "jaromir-zuna"
+      ]
+    },
+    {
+      "entity": "asociace-orchestru",
+      "title": "Asociace orchestrů",
+      "dossiers": [
+        "oto-klempir"
+      ]
+    },
+    {
+      "entity": "asociace-soukromeho-zemedelstvi",
+      "title": "Asociace soukromého zemědělství ČR",
+      "dossiers": [
+        "martin-sebestyan"
+      ]
+    },
+    {
+      "entity": "bezpecnostni-rada-statu",
+      "title": "Bezpečnostní rada státu",
+      "dossiers": [
+        "jaromir-zuna"
+      ]
+    },
+    {
+      "entity": "bis",
+      "title": "BIS (Bezpečnostní informační služba)",
+      "dossiers": [
+        "boris-stastny"
+      ]
+    },
+    {
+      "entity": "blakey-finance",
+      "title": "BLAKEY FINANCE LIMITED (BVI)",
+      "dossiers": [
+        "andrej-babis"
+      ]
+    },
+    {
+      "entity": "boyne-holding",
+      "title": "BOYNE HOLDING LLC (Washington, D.C.)",
+      "dossiers": [
+        "andrej-babis"
+      ]
+    },
+    {
+      "entity": "brki-nrki",
+      "title": "BRKI a NRKI",
+      "dossiers": [
+        "james-quick"
+      ]
+    },
+    {
+      "entity": "central-group",
+      "title": "Central Group",
+      "dossiers": [
+        "karel-havlicek"
+      ]
+    },
+    {
+      "entity": "centrum-verejnych-financi",
+      "title": "Centrum veřejných financí (Univerzita Karlova)",
+      "dossiers": [
+        "alena-schillerova"
+      ]
+    },
+    {
+      "entity": "cer-asociace",
+      "title": "CER (Community of European Railway and Infrastructure Companies)",
+      "dossiers": [
+        "ivan-bednarik"
+      ]
+    },
+    {
+      "entity": "cerd-system-llc",
+      "title": "CERD SYSTEM LLC",
+      "dossiers": [
+        "james-quick"
+      ]
+    },
+    {
+      "entity": "ceska-asociace-pro-srdecni-rytmus",
+      "title": "Česká asociace pro srdeční rytmus",
+      "dossiers": [
+        "adam-vojtech"
+      ]
+    },
+    {
+      "entity": "chemapol-bratislava",
+      "title": "Chemapol Bratislava",
+      "dossiers": [
+        "andrej-babis"
+      ]
+    },
+    {
+      "entity": "denik-n",
+      "title": "Deník N",
+      "dossiers": [
+        "macinka-turek"
+      ]
+    },
+    {
+      "entity": "dg-agri",
+      "title": "Generální ředitelství Evropské komise pro zemědělství (DG AGRI)",
+      "dossiers": [
+        "martin-sebestyan"
+      ]
+    },
+    {
+      "entity": "dg-budget",
+      "title": "Generální ředitelství Evropské komise pro rozpočet (DG BUDGET)",
+      "dossiers": [
+        "martin-sebestyan"
+      ]
+    },
+    {
+      "entity": "dg-just",
+      "title": "Generální ředitelství Evropské komise pro spravedlnost (DG JUST)",
+      "dossiers": [
+        "martin-sebestyan"
+      ]
+    },
+    {
+      "entity": "dg-move",
+      "title": "DG MOVE (Generální ředitelství EK pro mobilitu a dopravu)",
+      "dossiers": [
+        "ivan-bednarik"
+      ]
+    },
+    {
+      "entity": "ep",
+      "title": "Evropský parlament",
+      "dossiers": [
+        "filip-turek",
+        "macinka-turek"
+      ]
+    },
+    {
+      "entity": "eppo",
+      "title": "Úřad evropského veřejného žalobce (EPPO)",
+      "dossiers": [
+        "andrej-babis"
+      ]
+    },
+    {
+      "entity": "evropska-komise",
+      "title": "Evropská komise",
+      "dossiers": [
+        "ales-juchelka",
+        "andrej-babis",
+        "karel-havlicek",
+        "martin-sebestyan"
+      ]
+    },
+    {
+      "entity": "evropska-unie",
+      "title": "Evropská unie",
+      "dossiers": [
+        "karel-havlicek"
+      ]
+    },
+    {
+      "entity": "evropsky-fond-pro-konkurenceschopnost",
+      "title": "Evropský fond pro konkurenceschopnost",
+      "dossiers": [
+        "karel-havlicek"
+      ]
+    },
+    {
+      "entity": "evropsky-ucetni-dvur",
+      "title": "Evropský účetní dvůr",
+      "dossiers": [
+        "martin-sebestyan"
+      ]
+    },
+    {
+      "entity": "farma-capi-hnizdo",
+      "title": "Farma Čapí hnízdo",
+      "dossiers": [
+        "andrej-babis"
+      ]
+    },
+    {
+      "entity": "fastned",
+      "title": "Fastned",
+      "dossiers": [
+        "karel-havlicek"
+      ]
+    },
+    {
+      "entity": "financni-sprava",
+      "title": "Finanční správa ČR",
+      "dossiers": [
+        "alena-schillerova"
+      ]
+    },
+    {
+      "entity": "ftvs-uk",
+      "title": "FTVS UK (Fakulta tělesné výchovy a sportu Univerzity Karlovy)",
+      "dossiers": [
+        "boris-stastny"
+      ]
+    },
+    {
+      "entity": "gen-digital",
+      "title": "Gen Digital",
+      "dossiers": [
+        "macinka-turek"
+      ]
+    },
+    {
+      "entity": "generalni-stab-acr",
+      "title": "Generální štáb Armády ČR",
+      "dossiers": [
+        "jaromir-zuna"
+      ]
+    },
+    {
+      "entity": "gmrgas",
+      "title": "GMR GAS UA LLC (Kyjev)",
+      "dossiers": [
+        "macinka-turek",
+        "petr-macinka",
+        "petr-vencalek"
+      ]
+    },
+    {
+      "entity": "hammerton-capital",
+      "title": "Hammerton Capital Co. Limited",
+      "dossiers": [
+        "igor-cerveny"
+      ]
+    },
+    {
+      "entity": "hrebcin-napajedla",
+      "title": "Hřebčín Napajedla",
+      "dossiers": [
+        "oto-klempir"
+      ]
+    },
+    {
+      "entity": "hyundai",
+      "title": "Hyundai",
+      "dossiers": [
+        "karel-havlicek"
+      ]
+    },
+    {
+      "entity": "icomos",
+      "title": "ICOMOS",
+      "dossiers": [
+        "oto-klempir"
+      ]
+    },
+    {
+      "entity": "imodim",
+      "title": "I.M.O.D.I.M.",
+      "dossiers": [
+        "andrej-babis"
+      ]
+    },
+    {
+      "entity": "jar-kapela",
+      "title": "J.A.R.",
+      "dossiers": [
+        "oto-klempir"
+      ]
+    },
+    {
+      "entity": "kamuflaz-podcast",
+      "title": "Kamufláž (armádní podcast)",
+      "dossiers": [
+        "jaromir-zuna"
+      ]
+    },
+    {
+      "entity": "kia",
+      "title": "Kia",
+      "dossiers": [
+        "karel-havlicek"
+      ]
+    },
+    {
+      "entity": "komise-pro-prezkum-neprirozenych-umrti-deti",
+      "title": "Komise pro přezkum nepřirozených úmrtí dětí",
+      "dossiers": [
+        "jeronym-tejc"
+      ]
+    },
+    {
+      "entity": "komora-danovych-poradcu",
+      "title": "Komora daňových poradců ČR",
+      "dossiers": [
+        "adam-vojtech"
+      ]
+    },
+    {
+      "entity": "krajsky-urad-usteckeho-kraje",
+      "title": "Krajský úřad Ústeckého kraje",
+      "dossiers": [
+        "zuzana-mrazova"
+      ]
+    },
+    {
+      "entity": "krijcos",
+      "title": "Krijcos",
+      "dossiers": [
+        "macinka-turek",
+        "richard-chlad"
+      ]
+    },
+    {
+      "entity": "lieken-ag",
+      "title": "Lieken AG",
+      "dossiers": [
+        "karel-havlicek"
+      ]
+    },
+    {
+      "entity": "magistrat-mesta-most",
+      "title": "Magistrát města Most",
+      "dossiers": [
+        "zuzana-mrazova"
+      ]
+    },
+    {
+      "entity": "mandatovy-a-imunitni-vybor-psp",
+      "title": "Mandátový a imunitní výbor Poslanecké sněmovny",
+      "dossiers": [
+        "tomio-okamura"
+      ]
+    },
+    {
+      "entity": "masarykova-nemocnice-usti",
+      "title": "Masarykova nemocnice v Ústí nad Labem",
+      "dossiers": [
+        "adam-vojtech"
+      ]
+    },
+    {
+      "entity": "medical-investments",
+      "title": "Medical Investments",
+      "dossiers": [
+        "macinka-turek"
+      ]
+    },
+    {
+      "entity": "mestsky-urad-nymburk",
+      "title": "Městský úřad Nymburk",
+      "dossiers": [
+        "igor-cerveny"
+      ]
+    },
+    {
+      "entity": "meta",
+      "title": "Meta",
+      "dossiers": [
+        "igor-cerveny",
+        "macinka-turek"
+      ]
+    },
+    {
+      "entity": "ministerstvo-dopravy",
+      "title": "Ministerstvo dopravy ČR",
+      "dossiers": [
+        "ivan-bednarik"
+      ]
+    },
+    {
+      "entity": "ministerstvo-financi",
+      "title": "Ministerstvo financí ČR",
+      "dossiers": [
+        "adam-vojtech",
+        "alena-schillerova",
+        "andrej-babis",
+        "lubomir-metnar",
+        "macinka-turek",
+        "tunde-bartha"
+      ]
+    },
+    {
+      "entity": "ministerstvo-kultury",
+      "title": "Ministerstvo kultury ČR",
+      "dossiers": [
+        "oto-klempir"
+      ]
+    },
+    {
+      "entity": "ministerstvo-obrany",
+      "title": "Ministerstvo obrany ČR",
+      "dossiers": [
+        "alena-schillerova",
+        "jaromir-zuna",
+        "martin-pavlik"
+      ]
+    },
+    {
+      "entity": "ministerstvo-prace-a-socialnich-veci",
+      "title": "Ministerstvo práce a sociálních věcí ČR",
+      "dossiers": [
+        "ales-juchelka",
+        "jeronym-tejc"
+      ]
+    },
+    {
+      "entity": "ministerstvo-pro-mistni-rozvoj",
+      "title": "Ministerstvo pro místní rozvoj ČR",
+      "dossiers": [
+        "andrej-babis",
+        "igor-cerveny",
+        "martin-sebestyan",
+        "zuzana-mrazova"
+      ]
+    },
+    {
+      "entity": "ministerstvo-spravedlnosti",
+      "title": "Ministerstvo spravedlnosti ČR",
+      "dossiers": [
+        "igor-cerveny",
+        "jeronym-tejc",
+        "zuzana-mrazova"
+      ]
+    },
+    {
+      "entity": "ministerstvo-vnitra",
+      "title": "Ministerstvo vnitra ČR",
+      "dossiers": [
+        "lubomir-metnar",
+        "tomio-okamura"
+      ]
+    },
+    {
+      "entity": "ministerstvo-zemedelstvi",
+      "title": "Ministerstvo zemědělství ČR",
+      "dossiers": [
+        "andrej-babis",
+        "martin-sebestyan"
+      ]
+    },
+    {
+      "entity": "ministerstvo-zivotniho-prostredi",
+      "title": "Ministerstvo životního prostředí ČR",
+      "dossiers": [
+        "igor-cerveny",
+        "macinka-turek"
+      ]
+    },
+    {
+      "entity": "msmt",
+      "title": "Ministerstvo školství, mládeže a tělovýchovy ČR",
+      "dossiers": [
+        "robert-plaga"
+      ]
+    },
+    {
+      "entity": "narodni-galerie-praha",
+      "title": "Národní galerie Praha",
+      "dossiers": [
+        "oto-klempir"
+      ]
+    },
+    {
+      "entity": "national-war-college",
+      "title": "National War College (Washington)",
+      "dossiers": [
+        "jaromir-zuna"
+      ]
+    },
+    {
+      "entity": "nato",
+      "title": "NATO (Severoatlantická aliance)",
+      "dossiers": [
+        "alena-schillerova",
+        "jaromir-zuna",
+        "jeronym-tejc"
+      ]
+    },
+    {
+      "entity": "ncoz",
+      "title": "Národní centrála proti organizovanému zločinu",
+      "dossiers": [
+        "andrej-babis",
+        "jeronym-tejc",
+        "karel-havlicek"
+      ]
+    },
+    {
+      "entity": "nemocnice-homolce",
+      "title": "Nemocnice Na Homolce",
+      "dossiers": [
+        "filip-turek",
+        "macinka-turek"
+      ]
+    },
+    {
+      "entity": "nrr",
+      "title": "Národní rozpočtová rada",
+      "dossiers": [
+        "alena-schillerova"
+      ]
+    },
+    {
+      "entity": "nukib",
+      "title": "NÚKIB",
+      "dossiers": [
+        "boris-stastny"
+      ]
+    },
+    {
+      "entity": "obvodni-statni-zastupitelstvi-praha-1",
+      "title": "Obvodní státní zastupitelství pro Prahu 1",
+      "dossiers": [
+        "tomio-okamura"
+      ]
+    },
+    {
+      "entity": "odbory-ngp",
+      "title": "Základní odborová organizace Národní galerie Praha",
+      "dossiers": [
+        "oto-klempir"
+      ]
+    },
+    {
+      "entity": "ogilvy",
+      "title": "Ogilvy",
+      "dossiers": [
+        "oto-klempir"
+      ]
+    },
+    {
+      "entity": "olaf",
+      "title": "Evropský úřad pro boj proti podvodům (OLAF)",
+      "dossiers": [
+        "andrej-babis"
+      ]
+    },
+    {
+      "entity": "orlen",
+      "title": "Orlen",
+      "dossiers": [
+        "karel-havlicek"
+      ]
+    },
+    {
+      "entity": "osn",
+      "title": "Organizace spojených národů (OSN)",
+      "dossiers": [
+        "igor-cerveny"
+      ]
+    },
+    {
+      "entity": "osz-praha-4",
+      "title": "Obvodní státní zastupitelství pro Prahu 4",
+      "dossiers": [
+        "macinka-turek"
+      ]
+    },
+    {
+      "entity": "petrimex",
+      "title": "Petrimex",
+      "dossiers": [
+        "andrej-babis"
+      ]
+    },
+    {
+      "entity": "plaud",
+      "title": "Plaud",
+      "dossiers": [
+        "boris-stastny"
+      ]
+    },
+    {
+      "entity": "pnf",
+      "title": "Národní finanční prokuratura (PNF, Francie)",
+      "dossiers": [
+        "andrej-babis"
+      ]
+    },
+    {
+      "entity": "policie",
+      "title": "Policie ČR",
+      "dossiers": [
+        "filip-turek",
+        "lubomir-metnar",
+        "macinka-turek"
+      ]
+    },
+    {
+      "entity": "poslanecka-snemovna",
+      "title": "Poslanecká sněmovna",
+      "dossiers": [
+        "andrej-babis",
+        "jaromir-zuna",
+        "jaroslav-faltynek",
+        "jeronym-tejc",
+        "karel-havlicek",
+        "oto-klempir",
+        "tomio-okamura"
+      ]
+    },
+    {
+      "entity": "rada-eu-pro-konkurenceschopnost",
+      "title": "Rada EU pro konkurenceschopnost (COMPET)",
+      "dossiers": [
+        "karel-havlicek"
+      ]
+    },
+    {
+      "entity": "rozpoctovy-vybor-psp",
+      "title": "Rozpočtový výbor Poslanecké sněmovny",
+      "dossiers": [
+        "adam-vojtech"
+      ]
+    },
+    {
+      "entity": "scp-bigaud",
+      "title": "SCP Bigaud (Monako)",
+      "dossiers": [
+        "andrej-babis"
+      ]
+    },
+    {
+      "entity": "senat-pcr",
+      "title": "Senát Parlamentu ČR",
+      "dossiers": [
+        "adam-vojtech",
+        "alena-schillerova",
+        "jaromir-zuna",
+        "karel-havlicek",
+        "lubomir-metnar"
+      ]
+    },
+    {
+      "entity": "shenzhen-smart-connect-technology",
+      "title": "Shenzhen Smart Connect Technology",
+      "dossiers": [
+        "boris-stastny"
+      ]
+    },
+    {
+      "entity": "soudcovska-unie",
+      "title": "Soudcovská unie ČR",
+      "dossiers": [
+        "jeronym-tejc"
+      ]
+    },
+    {
+      "entity": "statni-zastupitelstvi",
+      "title": "Státní zastupitelství",
+      "dossiers": [
+        "filip-turek",
+        "macinka-turek"
+      ]
+    },
+    {
+      "entity": "stavebni-urad-praha-15",
+      "title": "Stavební úřad Prahy 15",
+      "dossiers": [
+        "macinka-turek"
+      ]
+    },
+    {
+      "entity": "strana-pro",
+      "title": "PRO (Právo Respekt Odbornost)",
+      "dossiers": [
+        "adam-vojtech"
+      ]
+    },
+    {
+      "entity": "svaz-obchodu-a-cestovniho-ruchu",
+      "title": "Svaz obchodu a cestovního ruchu ČR",
+      "dossiers": [
+        "adam-vojtech"
+      ]
+    },
+    {
+      "entity": "svaz-prumyslu-a-dopravy",
+      "title": "Svaz průmyslu a dopravy ČR",
+      "dossiers": [
+        "adam-vojtech"
+      ]
+    },
+    {
+      "entity": "szpi",
+      "title": "SZPI",
+      "dossiers": [
+        "filip-turek",
+        "macinka-turek"
+      ]
+    },
+    {
+      "entity": "transparency-international",
+      "title": "Transparency International ČR",
+      "dossiers": [
+        "andrej-babis",
+        "martin-sebestyan",
+        "tomio-okamura"
+      ]
+    },
+    {
+      "entity": "transport-environment",
+      "title": "Transport & Environment",
+      "dossiers": [
+        "karel-havlicek"
+      ]
+    },
+    {
+      "entity": "unie-rodicu",
+      "title": "Unie rodičů",
+      "dossiers": [
+        "robert-plaga"
+      ]
+    },
+    {
+      "entity": "urad-pro-rozvoj-uzemi",
+      "title": "Úřad pro rozvoj území",
+      "dossiers": [
+        "karel-havlicek",
+        "zuzana-mrazova"
+      ]
+    },
+    {
+      "entity": "urad-vlady",
+      "title": "Úřad vlády ČR",
+      "dossiers": [
+        "andrej-babis",
+        "boris-stastny",
+        "jaromir-zuna",
+        "jeronym-tejc",
+        "karel-havlicek",
+        "oto-klempir",
+        "tunde-bartha"
+      ]
+    },
+    {
+      "entity": "vezenska-sluzba",
+      "title": "Vězeňská služba ČR",
+      "dossiers": [
+        "jeronym-tejc"
+      ]
+    },
+    {
+      "entity": "vlada",
+      "title": "Vláda ČR",
+      "dossiers": [
+        "adam-vojtech",
+        "alena-schillerova",
+        "ales-juchelka",
+        "andrej-babis",
+        "boris-stastny",
+        "filip-turek",
+        "igor-cerveny",
+        "ivan-bednarik",
+        "jaromir-zuna",
+        "jeronym-tejc",
+        "karel-havlicek",
+        "macinka-turek",
+        "martin-sebestyan",
+        "oto-klempir",
+        "petr-macinka",
+        "robert-plaga",
+        "tunde-bartha",
+        "zuzana-mrazova"
+      ]
+    },
+    {
+      "entity": "volkswagen",
+      "title": "Volkswagen",
+      "dossiers": [
+        "karel-havlicek"
+      ]
+    },
+    {
+      "entity": "vsb-tu-ostrava",
+      "title": "VŠB — Technická univerzita Ostrava",
+      "dossiers": [
+        "ales-juchelka"
+      ]
+    },
+    {
+      "entity": "vybor-pro-obranu-psp",
+      "title": "Výbor pro obranu Poslanecké sněmovny",
+      "dossiers": [
+        "jaromir-zuna"
+      ]
+    },
+    {
+      "entity": "vybor-pro-rozpoctove-prognozy",
+      "title": "Výbor pro rozpočtové prognózy",
+      "dossiers": [
+        "alena-schillerova"
+      ]
+    },
+    {
+      "entity": "vybor-pro-vedu-vzdelavani-psp",
+      "title": "Výbor pro vědu, vzdělávání, mládež a sport Poslanecké sněmovny",
+      "dossiers": [
+        "robert-plaga"
+      ]
+    },
+    {
+      "entity": "vybor-pro-zdravotnictvi-psp",
+      "title": "Výbor pro zdravotnictví Poslanecké sněmovny",
+      "dossiers": [
+        "adam-vojtech"
+      ]
+    },
+    {
+      "entity": "zeleznice-slovenskej-republiky",
+      "title": "Železnice Slovenskej republiky (ŽSR)",
+      "dossiers": [
+        "ivan-bednarik"
+      ]
+    },
+    {
+      "entity": "zemedelsky-svaz",
+      "title": "Zemědělský svaz ČR",
+      "dossiers": [
+        "martin-sebestyan"
+      ]
+    }
+  ]
+}

@@ -172,6 +172,43 @@ const undocumented = used.filter((u) => !u.catalogEntry && u.count >= 5);
 
 /* ---- 3) view model ---------------------------------------------------- */
 
+// Rešerše nezačíná názvem registru, ale otázkou. Tahle tabulka je most mezi
+// obojím: otázka → prameny, které na ni odpovídají, s primárními registry a
+// listinami před agregátory a médii. Pořadí není abecední záměrně — první
+// v řadě má být ten, kterým se má začít.
+const KIND_RANK = {
+  "primary-registry": 0,
+  "primary-document": 1,
+  aggregator: 2,
+  tool: 3,
+  media: 4,
+};
+
+const routingMap = new Map();
+for (const e of entries) {
+  for (const a of e.answers ?? []) {
+    const row = routingMap.get(a.question) || { question: a.question, sources: [] };
+    row.sources.push({
+      identifier: e.identifier,
+      title: e.title,
+      kind: e.kind,
+      route: `/zdroje/${e.identifier}/`,
+      note: a.note ?? null,
+    });
+    routingMap.set(a.question, row);
+  }
+}
+const routing = [...routingMap.values()]
+  .map((r) => ({
+    ...r,
+    sources: r.sources.sort((a, b) => (KIND_RANK[a.kind] ?? 9) - (KIND_RANK[b.kind] ?? 9)),
+  }))
+  .sort(
+    (a, b) =>
+      (KIND_RANK[a.sources[0].kind] ?? 9) - (KIND_RANK[b.sources[0].kind] ?? 9) ||
+      a.question.localeCompare(b.question, "cs"),
+  );
+
 const view = {
   generated: true,
   note: GENERATED_NOTE,
@@ -180,7 +217,9 @@ const view = {
     usedFamiliesOrOutlets: used.length,
     sourceRecords: used.reduce((n, u) => n + u.count, 0),
     undocumentedAboveThreshold: undocumented.length,
+    routedQuestions: routing.length,
   },
+  routing,
   entries: entries.map((e) => ({
     identifier: e.identifier,
     "@id": e["@id"],
@@ -197,6 +236,7 @@ const view = {
     traps: e.traps ?? [],
     subRegisters: e.subRegisters ?? [],
     howToSearch: e.howToSearch ?? null,
+    answers: e.answers ?? [],
     route: `/zdroje/${e.identifier}/`,
     // Jeden záznam může pokrývat víc outletů (ČTK i její přebírající, sněmovna
     // pod dvěma názvy). Sečíst je nutné, jinak stránka hlásí užití jen toho
@@ -325,6 +365,20 @@ const doc = [
   ``,
   `**Pravidlo, které z katalogu plyne**: doklad je vždy primární registr. Agregátor je rozcestník — ukáže, kde hledat, ale cituje se ten registr, na který ukazuje.`,
   ``,
+  `## Na co se ptáš`,
+  ``,
+  `Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé otázky seřazené tak, že první je ten, kterým se má začít — primární registry a listiny před agregátory a médii.`,
+  ``,
+  ...routing.flatMap((r) => [
+    `**${r.question}**`,
+    ``,
+    ...r.sources.map(
+      (x) =>
+        `- [${x.title}](/zdroje/${x.identifier}/) — ${KIND_LABEL[x.kind] ?? x.kind}` +
+        (x.note ? `. ${x.note}` : ""),
+    ),
+    ``,
+  ]),
   `## Registry a nástroje`,
   ``,
   `| Zdroj | Typ | Přístup | Kde |`,
@@ -372,9 +426,30 @@ writeIfChanged(OUT_DOC, doc + "\n");
 /* ---- 6) hlášení ------------------------------------------------------- */
 
 if (CHECK && changed.length) {
-  console.error("Katalog zdrojů není aktuální. Rozdíly by vznikly v:");
-  for (const p of changed) console.error(`  ${p}`);
-  console.error("Spusť: npm run build:source-catalog");
+  // Dva úplně různé stavy vypadaly v hlášce stejně: „výstup se rozešel se
+  // zdrojovými daty“ (někdo změnil data/source-catalog/ a nepřegeneroval)
+  // a „výstup nikdy nevznikl“ (čerstvý klon nebo nový worktree — adresář
+  // data/generated/ je gitignorovaný). Druhý případ se čte jako rozbitá
+  // data, ačkoli je v pořádku všechno kromě toho, že neběžely generátory,
+  // a je to nejčastější první zážitek v novém worktree. Rozlišujeme je.
+  //
+  // `changed` drží cesty relativní ke ROOT; existsSync by je jinak řešil
+  // proti cwd, a ta se liší podle toho, odkud kdo skript spustí.
+  const missing = changed.filter((p) => !existsSync(join(ROOT, p)));
+  const drifted = changed.filter((p) => existsSync(join(ROOT, p)));
+
+  if (drifted.length) {
+    console.error("Katalog zdrojů není aktuální — výstup se rozešel se zdrojovými daty:");
+    for (const p of drifted) console.error(`  ${p}`);
+  }
+  if (missing.length) {
+    console.error(
+      `${drifted.length ? "\n" : ""}Katalog zdrojů ještě nikdy nevznikl — tyhle soubory chybí (nejsou v gitu):`,
+    );
+    for (const p of missing) console.error(`  ${p}`);
+    console.error("Nejde o rozbitá data. V čerstvém klonu nebo novém worktree stačí generátory spustit.");
+  }
+  console.error("\nSpusť: npm run build:source-catalog");
   process.exit(1);
 }
 

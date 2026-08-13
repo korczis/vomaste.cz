@@ -36,6 +36,12 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-23"
     }
   ],
   "sources": [
@@ -59,6 +65,9 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-21"
     }
   ],
   "subjects": [

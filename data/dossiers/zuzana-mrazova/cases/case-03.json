@@ -10,12 +10,24 @@
     "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova"
   },
   "title": "Stavby v rozporu s územním plánem",
-  "summary": "Stavby v rozporu s územním plánem — viz tvrzení CLM-12, CLM-13, CLM-14, CLM-15.",
+  "summary": "Stavby v rozporu s územním plánem — stavby na pozemku vedeném jako lesní plocha, Mrázové vysvětlení, že parcelu nabyla s existujícími objekty, polovina pozemku darovaná manželem, souběh kauzy s projednávanou novelou stavebního zákona, Mrázové tvrzení o již schválené změně územního plánu vyvrácené nezávislým zjištěním Seznam Zpráv, a opoziční reakce ve výboru k novele.",
   "period": "2026",
   "status": "status-single",
   "statusLabel": "Sledované téma",
   "anchor": "kauza-cerne-stavby",
   "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-13"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-15"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-35"
     },
@@ -63,9 +75,27 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-50"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-58"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-59"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/claims/CLM-60"
     }
   ],
   "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-11"
+    },
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-15"
     },
@@ -76,7 +106,7 @@
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-17"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-25"
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-18"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-22"
@@ -85,10 +115,16 @@
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-23"
     },
     {
-      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-18"
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-25"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-30"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-32"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-34"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/zuzana-mrazova/sources/SRC-36"

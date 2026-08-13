@@ -3,7 +3,7 @@
 title = "Milion chvilek pro demokracii"
 template = "entity.html"
 weight = 268
-description = "Kontextová entita — Spolek organizující demonstraci proti zákonu o financování médií a petici „Oto, zabal to!“ za odvolání Klempíře."
+description = "Milion chvilek pro demokracii — Kontextová entita — Spolek organizující demonstraci proti zákonu o financování médií a petici „Oto, zabal to!“ za odvolání Klempíře."
 
 [extra]
 generated = true

@@ -1,7 +1,7 @@
 ---
 name: bootstrap
-description: Onboard a new Claude Code (or human) session into vomaste.cz — read the binding rules, check the co-op board/bus, verify local prerequisites, and land in the right role (ORCH direct work vs. a worker worktree) before touching anything.
-argument-hint: [task-id]
+description: Onboard a new Claude Code (or human) session into vomaste.cz — read the binding rules, check the co-op board/bus, verify local prerequisites, pick a persona, and land in the right role (ORCH direct work vs. a worker worktree) before touching anything. Use at the start of every session, or when someone says "I'm new here", "where do I start", "how do I contribute".
+argument-hint: "[persona: reader | verifier | source-contributor | researcher | editor | developer | reviewer | maintainer | orchestrator] [or a task id T-###]"
 ---
 
 ## What this is for
@@ -18,6 +18,25 @@ re-deriving the rules from scratch.
 Read this whole skill before acting. It does not replace the source
 documents below — it tells you which ones to read, in what order, and
 what to check before your first edit.
+
+## Argument: persona, task id, or nothing
+
+The argument decides how much of this skill applies.
+
+| Argument | Meaning |
+|---|---|
+| *(none)* | Ask what the person wants to do, then infer the persona from the answer — don't make them pick from a list of nine roles they've never seen. |
+| a persona name | Skip step 5's role question; go straight to that persona's path. |
+| `T-###` | You are a worker on that co-op task. Persona follows from the task. |
+
+The nine personas, what each may do, and the five risk levels are in
+`.claude/rules/personas.md`, which is loaded in every session. Don't
+restate the table here — point at it.
+
+**A persona is not a permission.** It describes what someone is doing
+right now, and one person passes through three of them in a session.
+What no persona may do is widen the coverage scope — that is governed by
+`AGENTS.md` and by nothing else.
 
 ## Steps
 
@@ -50,7 +69,7 @@ what to check before your first edit.
 3. **Check prerequisites are actually met** — don't assume:
    ```bash
    node -v          # expect the version in .tool-versions (nodejs)
-   zola --version   # expect 0.22.x (CI pins 0.22.1)
+   zola --version   # expect 0.23.x (CI pins zola@0.23.3; 0.22 will not build this repo)
    git config --get core.hooksPath   # expect ".githooks"; if empty, run:
    npm run hooks:install
    npm ci           # if you haven't already — also (re)installs the git hook
@@ -116,6 +135,31 @@ what to check before your first edit.
    pre-commit hook is not the same thing as a green `npm run build` —
    don't conflate them.
 
+## Finish: three next steps and one safe first task
+
+Do not end a bootstrap with "you're ready." End it with something to do.
+
+1. **Name the persona** you landed on and where its limits are written.
+2. **Recommend exactly three capabilities**, read from the generated
+   catalogue (`data/generated/tooling-catalog.json`), filtered by
+   `personas` containing that persona and sorted so that a `read-only`
+   one comes first. Never invent a name — if the catalogue has fewer
+   than three for that persona, offer fewer and say so.
+3. **Offer one concrete first task** that is safe for that persona.
+   For a reader or verifier that is always read-only; for an editor or
+   developer it may write, and then you say what will have to pass
+   before it counts as done (`npm run build`, exit 0).
+
+Format:
+
+```
+ROLE:        <ORCH direct | worker in worktree T-###>
+PERSONA:     <role> — limits: .claude/rules/personas.md
+NEXT:        <three capabilities from the catalogue, with risk levels>
+FIRST TASK:  <one concrete, safe thing>
+GATE:        <what must pass before it counts as done>
+```
+
 ## What this skill deliberately does not do
 
 It does not write content, claim a task, or run `npm run build` for you
@@ -123,3 +167,18 @@ It does not write content, claim a task, or run `npm run build` for you
 does not replace `docs/coop/PROTOCOL.md` for the full mechanics of the
 bus/board/worktree lifecycle; read that document for anything this
 summary doesn't cover.
+
+## When NOT to use this skill
+
+- **Mid-session, when you are already oriented.** Re-running it costs
+  context and tells you what you already know. If you only need one
+  fact, read that one file.
+- **As a substitute for reading `AGENTS.md`.** This skill tells you what
+  to read and in what order; it does not contain the rules, and a
+  summary of an authorization log is not an authorization log.
+- **When the environment itself is broken.** If commands fail, if
+  `node_modules` is missing, if you are not sure which worktree you are
+  in — that is `/diagnose`, and bootstrapping on top of a broken
+  environment produces confident nonsense.
+- **To decide whether a subject may be covered.** That is a scope
+  question — see the authorization rules, not this.

@@ -3,7 +3,7 @@
 title = "Kauppias s.r.o."
 template = "entity.html"
 weight = 198
-description = "Kontextová entita — IČO 05015502; Macinka členem statutárního orgánu a společníkem od 14. 7. 2017 (rejstříková vazba)."
+description = "Kauppias s.r.o. — Kontextová entita — IČO 05015502; Macinka členem statutárního orgánu a společníkem od 14. 7. 2017 (rejstříková vazba)."
 
 [extra]
 generated = true

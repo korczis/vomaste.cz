@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/marek-vyborny/sources/SRC-03",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/marek-vyborny"
+  },
+  "title": "SRC-03 — ČeskéNoviny.cz: Novým předsedou KDU-ČSL se stal hejtman Jan Grolich",
+  "description": "ČTK o sjezdu KDU-ČSL v Ostravě 24. 4. 2026: Grolich (233 z 266 hlasů) vystřídal Výborného po dvou letech.",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajský článek",
+  "url": "https://www.ceskenoviny.cz/zpravy/novym-predsedou-kdu-csl-se-stal-hejtman-jan-grolich/2815849",
+  "retrieved": "2026-08-08",
+  "published": "2026-04-24",
+  "sourceFamily": "ctk",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/marek-vyborny/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "marek-vyborny"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek ČeskýchNovin (servis ČTK) z 24. 4. 2026, otevřen a přečten 2026-08-08.\nUvádí, že na dvoudenním sjezdu KDU-ČSL v ostravském hotelu Clarion byl novým předsedou strany zvolen hejtman Jan Grolich (233 z 266 delegátských hlasů, jediný kandidát) a vystřídal Marka Výborného, který stranu vedl dva roky; prvním místopředsedou byl zvolen Benjamin Činčila.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé agenturní zpravodajství (rodina ČTK) — dokládá konec druhého Výborného období v čele strany; jde o výsledek stranické volby, nikoli o pochybení, a nic dalšího se z něj nevyvozuje."
+    }
+  ],
+  "order": 3
+}

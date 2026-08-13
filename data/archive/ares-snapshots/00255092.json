@@ -1,0 +1,30 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "00255092",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/00255092",
+  "nazev": "SINDAT spol. s r.o.",
+  "sidlo": "Ukrajinská 1488/10, Vršovice, 10100 Praha 10",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "C",
+    "vlozka": "720"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "jednatel",
+      "since": "2020-08-01",
+      "kind": "person",
+      "name": "Ing. Tomáš Frýbert"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "person",
+      "name": "Ing. Tomáš Frýbert",
+      "podil": "100",
+      "vklad": "18582000",
+      "splaceno": "100"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/data-metrics",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "data-metrics",
+  "kind": "npm",
+  "name": "data:metrics",
+  "title": "Navigační metriky",
+  "category": "generovani",
+  "summary": "Spočítá pojmenované agregované metriky z registru scripts/data/navigation-metrics.registry.mjs a zapíše deterministický manifest, ze kterého šablony berou počty do navigačních odznaků.",
+  "whenToRun": "V pipeline až PO build:jsonld-exports — metriky čtou kanonické exporty, které vyrábí právě ten krok.",
+  "inputs": [
+    "scripts/data/navigation-metrics.registry.mjs",
+    "static/data/**"
+  ],
+  "outputs": [
+    "data/generated/navigation-metrics.json"
+  ],
+  "sourceFile": "scripts/data/build-navigation-metrics.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Počty patří do serverem vykresleného HTML, ne do JavaScriptu: číslo dopočítané po DOMContentLoaded by problikávalo, posouvalo layout a pro crawler by neexistovalo.",
+    "Manifest se zapisuje atomicky přes dočasný soubor a rename, aby zabitý build nenechal poloviční soubor, který by další validátor četl jako platný."
+  ]
+}

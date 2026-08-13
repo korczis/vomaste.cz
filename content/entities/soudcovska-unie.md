@@ -3,7 +3,7 @@
 title = "Soudcovská unie ČR"
 template = "entity.html"
 weight = 382
-description = "Kontextová entita — Profesní sdružení soudců; ohradila se proti výrokům politiků o Ústavním soudu."
+description = "Soudcovská unie ČR — Kontextová entita — Profesní sdružení soudců; ohradila se proti výrokům politiků o Ústavním soudu."
 
 [extra]
 generated = true

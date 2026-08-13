@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "James Quick — ČOI zveřejnila spotřebitelské varování k CERD — Česká obchodní inspekce"
-description = "James Quick — ČOI zveřejnila spotřebitelské varování k CERD — Česká obchodní inspekce. Vztah v grafu dossieru James Quick. Záznam vazby, nikoli tvrzení o pochybení."
+description = "CERD SYSTEM LLC — ČOI zveřejnila spotřebitelské varování k CERD — Česká obchodní inspekce. Vztah v grafu dossieru James Quick. Záznam vazby, nikoli tvrzení o pochybení."
 template = "dossier-relation.html"
 weight = 7
 
@@ -14,4 +14,4 @@ record_type = "relation"
 lang = "cs"
 rel_id = "edge-james-quick-ceska-obchodni-inspekce"
 +++
-Institucionální vazba přes veřejné varování ČOI k CERD; nevyjadřuje soukromý vztah ani trestní rozhodnutí.
+Institucionální vazba vede od CERD k veřejnému varování ČOI. Nevyjadřuje osobní vztah mezi inspekcí a Jamesem Quickem ani trestní rozhodnutí.

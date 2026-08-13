@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-data-model",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-data-model",
+  "kind": "skill",
+  "name": "data-model",
+  "title": "Průvodce datovým modelem",
+  "category": "provoz",
+  "personas": [
+    "researcher",
+    "editor",
+    "developer",
+    "maintainer"
+  ],
+  "riskLevel": "read-only",
+  "writes": false,
+  "summary": "Odpoví na otázky o kanonickém datovém modelu ze schématu, validátorů a skutečných záznamů — jaká pole typ má, co je povinné, jaké enumy jsou uzavřené, kdo pole vynucuje nad rámec tvaru a kdo ho čte. Při rozporu mezi schématem a dokumentací vyhrává schéma a rozpor je nález.",
+  "whenToRun": "Před přidáním nebo změnou pole, při ručním psaní záznamu, a když není jasné, co které pole znamená.",
+  "describedFrom": "header",
+  "notes": [
+    "Pole, které nikdo nečte, i šablonové pole bez pokrytí schématem jsou obojí nedodělaná změna.",
+    "Přidat záznam je čistě datová operace; přidat pole se dotýká tří míst. Na druhé je /schema-change.",
+    "additionalProperties: false není překážka, je to brána — neuvedené pole shodí build záměrně."
+  ]
+}

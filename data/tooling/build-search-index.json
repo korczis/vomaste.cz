@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/build-search-index",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "build-search-index",
+  "kind": "npm",
+  "name": "build:search-index",
+  "title": "Statický index vyhledávání",
+  "category": "generovani",
+  "summary": "Staví statický index pokrývající každý routovatelný záznam napříč dossiery — zdroje, tvrzení, kauzy, mezery, vztahy, samotné stránky dossierů i globální registr entit. Deterministické, bez sítě.",
+  "whenToRun": "V build i dev pipeline před zola build.",
+  "inputs": [
+    "data/dossiers/** (compiled model)",
+    "kurátorovaná grafová vrstva dossier.json `graph`"
+  ],
+  "outputs": [
+    "static/search-index.json (Zola kopíruje na public/search-index.json)"
+  ],
+  "sourceFile": "scripts/dossier/build-search-index.mjs",
+  "describedFrom": "header"
+}

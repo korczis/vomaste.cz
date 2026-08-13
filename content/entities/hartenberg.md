@@ -4,7 +4,7 @@ title = "Hartenberg Holding"
 template = "entity.html"
 weight = 17
 aliases = ["/dossiers/andrej-babis/entities/hartenberg/"]
-description = "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
+description = "Hartenberg Holding — Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
 
 [extra]
 generated = true

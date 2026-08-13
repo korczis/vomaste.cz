@@ -29,6 +29,24 @@ ověření a historií revizí.
 > přežívá ve forcích a cache. Projekt **nemá** zavedený důvěrný intake
 > kanál a netvrdí opak; anonymitu negarantuje.
 
+## Kudy začít
+
+Podle toho, co chcete. Každý odkaz je vstupní bod, ne rozcestník
+rozcestníků.
+
+| Jsem tu poprvé | → [/start/](https://vomaste.cz/start/) — pět minut od „nevím, co to je“ k „umím dossier přečíst“ |
+|---|---|
+| Chci přispět bez programování | → [/bootcamp/](https://vomaste.cz/bootcamp/) — praktický kurz na vymyšlených datech |
+| Chci rozumět metodice | → [/akademie/](https://vomaste.cz/akademie/) — kurikulum v sedmi úrovních |
+| Potřebuju rychle dohledat konkrétní věc | → [/prirucka/](https://vomaste.cz/prirucka/) — postupy, reference, řešení chyb, slovníček, FAQ |
+| Chci vědět, co který pojem znamená | → [/koncepty/](https://vomaste.cz/koncepty/) — **kanonické** definice |
+| Chci projekt vyvíjet | → [/prispet/chci-programovat/](https://vomaste.cz/prispet/chci-programovat/) a [Rychlý start](#rychlý-start) níž |
+| Chci pracovat přes Claude Code | → [/prirucka/jak-zacit-s-claude-code/](https://vomaste.cz/prirucka/jak-zacit-s-claude-code/) a [`docs/claude-code/`](docs/claude-code/) |
+
+Vztah těch vrstev je záměrný a hlídá ho validátor: **Koncepty vlastní
+definice**, Akademie a Bootcamp je učí používat, Příručka je pomáhá
+dohledat. Žádná z nich pojem nedefinuje podruhé.
+
 ## Co to je
 
 vomaste.cz je **Open Intelligence Commons** — otevřený, fork-friendly
@@ -166,8 +184,8 @@ Metadata pro náhledové karty a vyhledávače nejsou šablonová logika, ale
 | Vrstva | Soubor | Co vlastní |
 |---|---|---|
 | Konfigurace | [`data/seo.toml`](data/seo.toml) | locale, výchozí karta a rozměry, oddělovač/tagline titulku, meze délky, povinná sada značek, mapování typu stránky na `og:type` a výchozí schema.org typ |
-| Vykreslení | `templates/macros/meta.html` | `meta::open_graph`, `meta::twitter`, `meta::canonical` + čisté funkce pro titulek, popis, obrázek a alt |
-| Vstupy | `templates/base.html` | rozloží front matter stránky/sekce na `meta_*` skaláry a zavolá makra |
+| Vykreslení | `templates/macros/meta.html` | `meta_open_graph`, `meta_twitter`, `meta_canonical` + čisté funkce pro titulek, popis, obrázek a alt |
+| Vstupy | `templates/base.html` | rozloží front matter stránky/sekce na `meta_*` skaláry a zavolá komponenty |
 | Vynucení | `scripts/build/verify-og.mjs` | `npm run verify:og`, součást `npm run build` |
 
 `og:type` a výchozí schema.org typ se **nerozhodují v šabloně**. Klíčem je
@@ -256,7 +274,10 @@ Vedle vložených dat existují **samostatné JSON-LD exportní routy**
   `node scripts/dossier/verify-export.mjs --dir <stažená-kopie>`;
 - každý citovaný zdroj nese `vomaste:citationFingerprint` — SHA-256 nad
   trojicí url + retrieved + outlet, přepočitatelný kýmkoli z viditelných
-  polí (otisk citace, ne archivu stránky — archivace zatím neexistuje).
+  polí. Je to otisk citace, ne otisk archivované stránky; úřední registrní
+  snapshoty a individuálně revidované dokumenty mají vlastní SHA-256 v
+  samostatném [archivu dokumentů](https://vomaste.cz/dokumenty/), běžné
+  citované webové stránky se však plošně nearchivují.
   Stejný otisk nesou i citační uzly vložené v HTML a dossier stránky na
   svůj export odkazují `<link rel="alternate" type="application/ld+json">`.
 
@@ -267,7 +288,7 @@ zdrojování vycházejí jako `vomaste:status` doslova.
 
 ## Stack a architektura
 
-Build-time: [Zola](https://www.getzola.org/) 0.22.1 (obsah, routing,
+Build-time: [Zola](https://www.getzola.org/) 0.23.3 (obsah, routing,
 šablony Tera), Node.js 24 + npm (validátory a generátory v
 `scripts/`), Tailwind CSS (kompilace `static/css/input.css` →
 `main.css`), esbuild (bundle `assets/js/` → `static/js/app.js`),
@@ -280,7 +301,7 @@ Statický web nemá žádný běhový backend; kritický obsah má no-JS
 fallback.
 
 Tabulární data v šablonách renderuje jednotná komponenta
-`templates/macros/table.html` (`table::advanced_table`, vlastní
+`templates/macros/table.html` (`table_advanced_table`, párové volání, vlastní
 implementace podle vzoru Flowbite „Advanced Tables" nad volným
 Tailwindem/Flowbite), vynuceno branou `npm run lint:component-reuse`;
 obal tabulky nese `data-record-type` provazující řádky s JSON-LD uzly
@@ -302,6 +323,38 @@ nemůžou rozejít. Bez JavaScriptu zůstává výchozí projekce plně použite
 
 Rozhodnutí a jeho důsledky: [ADR](docs/adr/dossier-directory-multi-view.md).
 
+## Archivace ARES, Justice a soudních vývěsek
+
+<!-- DOCUMENT_ARCHIVE_DOCTRINE_V1 -->
+
+Archiv úředních podkladů je na webu pod
+[/dokumenty/](https://vomaste.cz/dokumenty/). **Zone A** ve veřejném Gitu
+obsahuje hashované základní odpovědi ARES, sanitizované indexy Sbírky listin,
+prázdné docket-only odpovědi soudních vývěsek a jednotlivě revidované
+bezpečné dokumenty. Každá podporovaná česká právnická osoba s ověřeným IČO
+musí mít ARES i Justice záznam; chybějící IČO zůstává v explicitním seznamu a
+nikdy se nehádá podle názvu. Každá strojově rozpoznaná spisová značka v
+kanonických dossierech musí být v inventuře jako dotaz správné vývěsky nebo
+jako odkaz na samostatný oficiální systém NSS/Ústavního soudu. Nulový nález
+na vývěsce vypovídá jen o dni kontroly, ne o celé historii.
+
+**Zone B** je vždy mimo Git, PR, CI artifact i web: raw Justice metadata,
+originální listiny a neprázdné odpovědi vývěsek. Výchozí kořen je
+`~/dev/vomaste-archive`, nebo `VOMASTE_JUSTICE_ARCHIVE_ROOT`. Každý fyzický
+soubor má SHA-256 a globální `inventory.sha256`; `.part`, chybějící soubor či
+neúplné stažení se hlásí jako chyba. Originál lze zveřejnit jen jednotlivě po
+obsahové a osobněprávní kontrole s proveniencí a `reviewNote` — veřejnost
+zdrojového registru není souhlas s hromadným vložením PDF do Gitu.
+
+Vynucení je záměrně rozdělené: `npm run archive:check` je offline a běží v
+pre-commit hooku i v `build`/`dev`/`check`; kontroluje pokrytí, sanitizaci,
+hash parity, spisovou inventuru, hranici Zone A/B a zapojení doktríny.
+`npm run archive:refresh-public` dělá živé dotazy a týdenní GitHub workflow z
+jeho bezpečných změn pouze otevře review PR. `npm run archive:refresh-private`
+smí běžet jen na důvěryhodném stroji s perzistentním úložištěm a vyžaduje
+úplný soukromý inventář. Deterministický build sám nikdy nesahá na síť ani do
+Zone B.
+
 ## Struktura repozitáře
 
 ```text
@@ -315,7 +368,8 @@ Rozhodnutí a jeho důsledky: [ADR](docs/adr/dossier-directory-multi-view.md).
 │                           # (ručně psané: kořenové indexy, koncepty, dokumentace,
 │                           #  manifest, mapa, /data/ a per-dossier evidence//entities/ indexy)
 ├── templates/              # Tera šablony (čtou view modely přes load_data);
-│                           # macros/meta.html vydává og:*/twitter:*/canonical
+│                           # macros/ (sdílené komponenty ui_*, table_*, meta_*),
+│                           # components/ (volatelné z markdownu), partials/
 ├── data/source-catalog/    # ručně psané záznamy zdrojů: co dokládá, co ne, pasti
 ├── data/                   # navigační skeleton, seo.toml (metadata), government
 │                           # roster, generovaná data
@@ -350,7 +404,7 @@ Rozhodnutí a jeho důsledky: [ADR](docs/adr/dossier-directory-multi-view.md).
 
 ## Rychlý start
 
-Prerekvizity: Git, **Node.js 24** a npm, **Zola 0.22.x**
+Prerekvizity: Git, **Node.js 24** a npm, **Zola 0.23.x**
 (<https://www.getzola.org/documentation/getting-started/installation/>).
 
 ```bash
@@ -463,6 +517,15 @@ Instalace `just`: <https://github.com/casey/just#installation>.
 
 ## Referenční příkazy
 
+Tahle tabulka je **výběr toho nejpoužívanějšího**. Úplný katalog — každý npm
+skript, každý `just` recept i každá Claude skill na vlastní stránce, s tím, co
+příkaz vynucuje, kdy ho spustit a co čte a zapisuje — je v
+[`docs/TOOLING.md`](docs/TOOLING.md) a na webu v
+[dokumentaci příkazů](https://vomaste.cz/dokumentace/prikazy/). Generuje se
+z repozitáře (`npm run build:tooling-catalog`) a brána `verify:tooling-catalog`
+shodí build, když se objeví příkaz bez záznamu — proto katalog nemůže zastarat,
+zatímco tenhle výběr je ruční a záměrně neúplný.
+
 | Příkaz | K čemu |
 |---|---|
 | `npm run build` | celá kvalitní brána (`scripts/build/pipeline.mjs build`): kanonická validace → view modely + adaptéry → validátory → generátory → CSS/JS → `zola build` → post-build kontroly |
@@ -478,6 +541,8 @@ Instalace `just`: <https://github.com/casey/just#installation>.
 | `npm run validate:authorization` | každý obsah o reálné osobě odpovídá autorizačnímu záznamu |
 | `npm run verify:authorization-log` | append-only autorizační log v `AGENTS.md`: žádná existující sekce nesmí být upravena ani smazána, jen přidána nová |
 | `npm run validate:dossier-types` | invarianty entity/aggregate dossierů |
+| `npm run validate:media` | fotografie a loga: doložená **svobodná** licence, autor, odkaz na stránku zdroje, soubor v repu; nepřipsaný obrázek v repu shodí build (M1–M4) |
+| `npm run media:fetch -- <entity-id>` | stáhne portrét/logo jedné entity: identita přes Wikidata (`P31=Q5`, `P18`), licence se čte z metadat **před** stažením, soubor jde do `static/images/…` a licence do kanonického záznamu. Vždy jedna entita na běh. Přehled: `/dokumentace/licence-medii/` |
 | `npm run validate:navigation` | navigace odpovídá kanonickému datasetu a existujícím routám |
 | `npm run verify:anchors` | po buildu: každá kotva ze zdrojů existuje v HTML |
 | `npm run verify:jsonld` | po buildu: validita, pokrytí a poctivost JSON-LD (žádné truth ratingy, citační otisky se přepočítávají) |
@@ -489,7 +554,7 @@ Instalace `just`: <https://github.com/casey/just#installation>.
 | `npm run report:evidence-plan` | vygeneruje `reports/evidence-plan.md` + `data/generated/evidence-plan.json`: per dossier počty tvrzení dle stavu a evidenční třídy, potenciál korroborace, mezery, datově odvozená priorita a konkrétní další krok — součást `npm run data:build` i `npm run build`, nikdy se needituje ručně. Viz [evidenční plán práce](#evidenční-plán-práce) |
 | `npm run lint:historical-coupling` | de-specializační brána: žádná jména subjektů ve strukturálním kódu |
 | `npm run lint:generated-content` | generované content adaptéry zůstávají minimální obálkou — ruční doménová pole neprojdou |
-| `npm run lint:component-reuse` | každá šablona (kromě `base.html`/`404.html`) používá `macros/ui.html`, a každá šablona s tabulkou používá `macros/table.html` (`table::advanced_table`) — žádný ručně psaný duplicitní markup místo sdílené komponenty |
+| `npm run lint:component-reuse` | každá top-level šablona (kromě `base.html`/`404.html`) volá aspoň jednu sdílenou komponentu `ui_*`, a každá šablona s `<table>` mimo `macros/table.html` volá `table_advanced_table` — žádný ručně psaný duplicitní markup místo sdílené komponenty |
 | `npm run build:government-roster` | z `data/government.toml` vygeneruje kontextové entity členů vlády (veřejná funkce z oficiálního zdroje, `publicationRole = "context"`, **nikdy** dossier); existující záznamy nikdy nepřepisuje; součást `npm run build` |
 | `node scripts/osint/ares-lookup.mjs --ico=… \| --name="…"` | dotaz do ARES (jediný spolehlivě funkční primární rejstřík) — **není** součástí `npm run build`, dělá živý síťový dotaz; doloží identitu/sídlo/formu/status, **nedoloží** skutečné majitele ani „od kdy ovládá" |
 | `npm run screening:public-money -- --ico=…` | screening toku veřejných prostředků k IČO z registru smluv (ISRS) — **není** součástí `npm run build`, stahuje měsíční otevřená data; výstup je **interní** (`data/generated/public-money-screening.json` + `reports/public-money-screening.md`), nikdy se neroutuje. Doloží zveřejněné smlouvy, objem a objednatele v pokrytém období; **nedoloží** žádné pochybení ani úplnost. Viz [screening veřejných peněz](#screening-toku-veřejných-prostředků) |
@@ -498,6 +563,9 @@ Instalace `just`: <https://github.com/casey/just#installation>.
 | `npm run verify:rules-catalog` | drift gate: nic nezapíše, ale spadne, když by se katalog změnil, když vlastník přišel o hlavičku, nebo když dokumentace odkazuje na pravidlo, které žádný validátor nevlastní |
 | `npm run build:source-catalog` | přegeneruje [katalog zdrojů](#katalog-zdrojů-zdroje): `data/generated/source-catalog.json`, stránky pod `content/zdroje/` a `docs/osint/SOURCE_CATALOG.md`. Ručně psané záznamy (`data/source-catalog/*.json`) nesou `proves`/`doesNotProve`/`traps`; kolikrát byl který outlet skutečně použit se **dopočítá** z `data/dossiers/*/sources/`, aby seznam nemohl zastarat proti datům — součást `npm run build` |
 | `npm run verify:source-catalog` | tentýž generátor s `--check`: nic nezapíše, ale spadne, kdyby zápis něco změnil — brána proti ručně upravené vygenerované stránce |
+| `npm run archive:check` | čistě offline závazná brána archivu: úplné pokrytí entit s IČO v ARES + sanitizované Justice indexy, SHA-256 všech veřejných souborů, úplná inventura rozpoznaných spisových značek, nepřítomnost Zone B v Gitu a bezpečné zapojení plánovaného refresh workflow |
+| `npm run archive:refresh-public` | živý refresh veřejné Zone A; ARES + sanitizované Justice indexy + docket-only vývěsky, pak offline brána. Týdenní workflow z výsledku jen otevře review PR |
+| `npm run archive:check-private` / `archive:refresh-private` | kontrola checksum inventáře Zone B / úplné stažení všech indexovaných listin na důvěryhodném perzistentním úložišti. Nikdy CI ani veřejný Git; kořen určuje `VOMASTE_JUSTICE_ARCHIVE_ROOT` |
 | `node scripts/osint/expand-entity.mjs --ico=… [--write]` | rozbalí rejstříkové okolí firmy (statutární orgány, společníci) na kontextové entity — kanonické JSON záznamy v `data/dossiers/_shared/entities/` (stránky `/entities/…` přegeneruje `npm run data:build`); na rozdíl od základního endpointu čte větev veřejného rejstříku, která u s.r.o. **vrací** zapsané společníky i velikost podílu. Akcionáři a.s. v rejstříku nejsou, takže prázdný seznam znamená „nezapsáno", ne „firma nemá vlastníky". Data narození a adresy bydliště nepřebírá; existující záznam nikdy nepřepíše |
 
 ## Screening toku veřejných prostředků
@@ -937,10 +1005,11 @@ tam vůbec nedostane, byl na plné bráně červený.
   nikdo nedoplnil. Opraveno tím, že CI volá `npm run build`; proti
   opakování hlídá `npm run check:workflow-parity` (součást build gate).
 - Citační otisky (`vomaste:citationFingerprint`) jsou otiskem citace
-  (url + retrieved + outlet), **ne** archivované stránky — projekt
-  zatím fetchnuté stránky nearchivuje; manifest exportů je hashovaný,
-  ne podepsaný (ADR práh: podpis až bude reálná potřeba prokazovat
-  autorství exportu, ne jen integritu).
+  (url + retrieved + outlet), **ne** archivované stránky. Projekt nyní
+  archivuje bezpečné úřední registrní výstupy a jednotlivě revidované
+  dokumenty s vlastními SHA-256, nikoli plošně všechny citované webové
+  stránky; manifest exportů je hashovaný, ne podepsaný (ADR práh: podpis
+  až bude reálná potřeba prokazovat autorství exportu, ne jen integritu).
 - **Žádný důvěrný intake kanál.** Veřejný intake (níže) je veřejná
   GitHub issue — okamžitě viditelná, trvale dohledatelná, bez záruky
   anonymity odesílatele. Nic v tomto repozitáři nenabízí chráněné ani
@@ -960,7 +1029,7 @@ tam vůbec nedostane, byl na plné bráně červený.
 
 | Příznak | Příčina a oprava |
 |---|---|
-| `zola: command not found` / build padá na Zole | Zola není v PATH nebo je jiná řada než **0.22.x** (CI pinuje 0.22.1). Instalace: <https://www.getzola.org/documentation/getting-started/installation/>; ověření `zola --version`. |
+| `zola: command not found` / build padá na Zole | Zola není v PATH nebo je jiná řada než **0.23.x** (CI pinuje 0.23.3). Instalace: <https://www.getzola.org/documentation/getting-started/installation/>; ověření `zola --version`. |
 | `data:validate` hlásí T3 „řádka tabulky se neshoduje s kanonickým claimem" | Tabulka tvrzení v `dossier.json` a kanonický záznam `claims/clm-NN.json` se rozešly (text/stav/zdroje se porovnávají byte-verně). Uprav jedno či druhé tak, aby se shodovaly, a validaci zopakuj. |
 | `data:check-generated:content` hlásí drift | Ručně editovaný generovaný soubor pod `content/dossiers/**` nebo `content/entities/`. Vrať úpravu do kanonického JSON a spusť `npm run data:build`. **Pozor na pořadí**: uvnitř `npm run build` běží `data:sync-content` *před* touhle bránou, takže ruční úpravu těla stránky přepíše a build zůstane zelený — drift se ohlásí jen když bránu spustíš samostatně nad nesynchronizovaným stromem. Podezřelý diff v `content/` se kontroluje takhle: `npm run data:check-generated:content`. |
 | `npm run dev` „visí" | Nevisí — `zola serve` je server a sám neskončí. Čekej na řádek `Web server is available`, web běží na <http://127.0.0.1:1111>. |

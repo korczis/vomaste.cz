@@ -14,6 +14,6 @@ record_type = "gap"
 lang = "cs"
 gap_id = "GAP-02"
 +++
-Vyhledávací formulář registru smluv tiše ignoruje vlastní stránkovací parametr a na jakoukoli stránku vrací první. Pokus o součet přes stránky proto vrátil patnáctkrát tutéž desítku záznamů — 150 „smluv" místo 119, a součet o řád jinde. Chyba se projevila jen díky kontrole, že se stránky mezi sebou liší.
+**Uzavřeno 2026-08-06.** Vyhledávací formulář registru smluv tiše ignoruje vlastní stránkovací parametr a na jakoukoli stránku vrací první. Pokus o součet přes stránky proto nejprve vrátil patnáctkrát tutéž desítku záznamů — 150 „smluv" místo 119, a součet o řád jinde. Chyba se projevila jen díky kontrole, že se stránky mezi sebou liší.
 
-Dokud objem nespočte průchod otevřenými daty registru, zůstává neuvedený. Číslo, které se nedá zopakovat, sem nepatří ani jako odhad.
+Správnou cestou k reprodukovatelnému součtu byla měsíční otevřená data registru (`data.smlouvy.gov.cz`), ne vyhledávací formulář — viz [SRC-04](@/dossiers/martin-pavlik/sources/src-04.md) a [CLM-08](@/dossiers/martin-pavlik/claims/clm-08.md): 119 unikátních smluv, souhrnná hodnota nejméně 53 934 085 Kč (18 smluv bez vyplněné hodnoty), deset objednatelů. Mezera zůstává jako záznam metodické pasti pro budoucí rešerše nad stejným zdrojem, ne jako otevřená otázka.

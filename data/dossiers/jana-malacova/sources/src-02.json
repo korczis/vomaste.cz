@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jana-malacova/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jana-malacova"
+  },
+  "title": "SRC-02 — ČT24: Maláčová je novou předsedkyní SOCDEM",
+  "description": "ČT24 o zvolení Maláčové předsedkyní SOCDEM 5. 10. 2024 (101/139 hlasů).",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajský článek",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/malacova-je-novou-predsedkyni-socdem-353705",
+  "retrieved": "2026-08-08",
+  "published": "2024-10-05",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jana-malacova/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "jana-malacova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek ČT24 z 5. 10. 2024, otevřen a přečten 2026-08-08.\nUvádí, že Jana Maláčová byla na sjezdu SOCDEM v Hradci Králové zvolena předsedkyní strany v prvním kole se 101 hlasy ze 139 odevzdaných (protikandidáti Jiří Dienstbier 33, Petr Hůla 5) a nahradila Michala Šmardu, který už nekandidoval; článek ji označuje za bývalou ministryni práce a sociálních věcí. Statutárním místopředsedou byl zvolen Lubomír Zaorálek.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství veřejnoprávní televize — dokládá stranickou volbu a její čísla; vládní funkci a její data nese SRC-01."
+    }
+  ],
+  "order": 2
+}

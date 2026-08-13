@@ -1,0 +1,19 @@
+{#- Blokový komponent: kopírovatelný příkaz uvnitř těla stránky.
+
+    Použití — příkaz je TĚLO, ne atribut:
+      {% <prikaz kind="claude" note="Nic nezapisuje."> %}
+      /verify-source https://example.org/clanek
+      {% </prikaz> %}
+
+    `kind`: terminal | claude | skill | prompt | output
+
+    Tělo se NEprochází markdownem: je to příkaz, ne text. Podtržítko
+    uprostřed názvu skriptu by se jinak stalo kurzívou a čtenář by
+    zkopíroval něco jiného, než co vidí.
+
+    Markup nevlastní tenhle soubor — volá tutéž listovou komponentu
+    `atoms_command`, jakou používají i šablony. Jinak by příkazový blok v lekci a v katalogu
+    časem vypadaly jinak. -#}
+{% component prikaz(kind="terminal", label="", note="") -%}
+{{ <atoms_command text={body | trim} kind={kind} label={label} note={note} /> }}
+{%- endcomponent %}

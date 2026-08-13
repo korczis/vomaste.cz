@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-adr",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-adr",
+  "kind": "skill",
+  "name": "adr",
+  "title": "Architektonické rozhodnutí (ADR)",
+  "category": "provoz",
+  "personas": [
+    "developer",
+    "maintainer"
+  ],
+  "riskLevel": "safe-write",
+  "writes": true,
+  "summary": "Postup pro napsání záznamu architektonického rozhodnutí do docs/adr/ podle šablony, kterou repozitář už používá: měřeno, ne odhadnuto. Předepisuje disciplínu i strukturu výsledného souboru.",
+  "whenToRun": "Když je rozhodnutí zároveň VÝZNAMNÉ (nová závislost, změna datového modelu, výměna knihovny) a SPORNÉ (rozumný člověk může argumentovat oběma směry). Malé zjevně správné změny ADR nepotřebují.",
+  "describedFrom": "header",
+  "notes": [
+    "Měř, neodhaduj. ADR, které tvrdí „mohlo by to být pomalé ve velkém“, aniž by uvedlo změřený současný rozsah, není hotové.",
+    "Řekni, co bylo skutečně rozbité. Návrhy na větší stack často začínají u reálného symptomu, jehož skutečná příčina je mnohem menší — najít a opravit ten skutečný problém bývá celé řešení.",
+    "Zvaž konkrétní údržbovou cenu přijetí, ne jen nepřijetí. Druhý zdroj pravdy je nové riziko duplikace, ne jeho snížení.",
+    "Dej ČÍSELNÝ práh pro přehodnocení, ne „později“ nebo „až to poroste“ — to je rozdíl mezi „teď ne“ a „ne“.",
+    "ADR nikdy nepřebíjí AGENTS.md: dokumentuje technické rozhodnutí, ne rozhodnutí o rozsahu. Rozsah se mění výhradně zápisem do append-only autorizačního logu."
+  ]
+}

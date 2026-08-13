@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/data-compile",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "data-compile",
+  "kind": "npm",
+  "name": "data:compile",
+  "title": "Kompilace kanonického datasetu",
+  "category": "validace",
+  "summary": "Načte kanonický dataset, zvaliduje ho a zkompiluje do modelu, se kterým dál pracují generátory. Vypíše souhrn: počet balíčků, záznamů podle typu, rout, uzlů a hran grafu a schemaVersion manifestu.",
+  "enforces": [
+    "Nenačtitelný nebo nevalidní kanonický dataset (tytéž chyby jako data:validate — sdílí runCheck)."
+  ],
+  "whenToRun": "Když chceš vidět, co z dat po validaci vznikne (počty záznamů, rout, velikost grafu). V build pipeline nefiguruje — generátory si model kompilují samy.",
+  "inputs": [
+    "data/dossiers/**"
+  ],
+  "sourceFile": "scripts/data/check.mjs",
+  "describedFrom": "header"
+}

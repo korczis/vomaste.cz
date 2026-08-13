@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
 
 {#-
   Filtrovaný pohled na globální registr entit — jeden typ entity.
@@ -39,12 +38,7 @@
   {#- T-028 fáze H: filtruje se view model entities-index.json (kanonický
       dataset), ne front matter section pages. -#}
   {%- set registry = load_data(path="data/generated/views/entities-index.json") -%}
-  {%- set_global matching = [] -%}
-  {%- for p in registry.rows -%}
-    {%- if p.entityType == section.extra.entity_type -%}
-      {%- set_global matching = matching | concat(with=p) -%}
-    {%- endif -%}
-  {%- endfor -%}
+  {%- set matching = [p for p in registry.rows if p.entityType == section.extra.entity_type] -%}
 
   <p class="mt-6 text-xs text-white/55">
     <span class="tabular-nums text-white">{{ matching | length }}</span>
@@ -55,7 +49,7 @@
 
   {% if matching | length == 0 %}
   <div class="mt-6">
-    {{ ui::empty_state(message="Tento typ zatím nemá žádnou evidovanou entitu.") }}
+    {{ <ui_empty_state message="Tento typ zatím nemá žádnou evidovanou entitu." /> }}
   </div>
   {% else %}
   <ul class="mt-6 grid gap-2 sm:grid-cols-2 xl:grid-cols-3">

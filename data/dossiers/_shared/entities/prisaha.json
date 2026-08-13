@@ -40,5 +40,18 @@
   ],
   "externalIds": {
     "ico": "10742409"
-  }
+  },
+  "media": [
+    {
+      "file": "images/logos/prisaha.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:P%C5%99%C3%ADsaha_Logo.png",
+      "license": "Public domain",
+      "author": "Přísaha",
+      "credit": "https://www.prisaha.cz/",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 295,
+      "role": "logo"
+    }
+  ]
 }

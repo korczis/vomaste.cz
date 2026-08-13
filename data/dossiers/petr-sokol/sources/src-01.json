@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-sokol/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-sokol"
+  },
+  "title": "SRC-01 — Poslanecká sněmovna: oficiální profil poslance Petra Sokola",
+  "description": "Oficiální profilová stránka poslance na webu Poslanecké sněmovny Parlamentu ČR s údaji o mandátu, straně, obvodu a klubové/výborové příslušnosti.",
+  "outlet": "Poslanecká sněmovna Parlamentu ČR",
+  "sourceType": "primární úřední záznam",
+  "url": "https://www.psp.cz/sqw/detail.sqw?id=7045",
+  "retrieved": "2026-08-06",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-sokol/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "petr-sokol"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profilová stránka Petra Sokola (psp.cz, id 7045) na webu Poslanecké sněmovny, otevřena a přečtena 2026-08-06.\nUvádí jeho příslušnost k ODS (zvolen na kandidátce koalice SPOLU za Olomoucký kraj), mandát poslance od 4. 10. 2025, funkci předsedy Výboru pro evropské záležitosti (od 26. 11. 2025), místopředsedy Zahraničního výboru (od 22. 1. 2026) a místopředsedy poslaneckého klubu ODS (od 4. 2. 2026). Numerické psp.cz id 7045 zároveň jednoznačně odlišuje tohoto poslance od případného jmenovce.\n\nPoznámka k typu zdroje a jeho limitům: primární úřední zdroj — zákonodárný sbor sám eviduje mandát a příslušnost svého člena, nejde o redakční zpravodajství. Nezávislé potvrzení funkce místopředsedy klubu viz SRC-02 (Echo24) a SRC-03 (Hospodářské noviny); roli stínového poradce pro EU dokládá SRC-04 (Forum24.cz)."
+    }
+  ],
+  "order": 1
+}

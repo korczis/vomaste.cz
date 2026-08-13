@@ -1,7 +1,7 @@
 +++
 # GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
 title = "SRC-13 — ČeskéNoviny.cz (ČTK)"
-description = "Komise: Ve FN Olomouc byly některé defibrilátory voperovány bez splnění kritérií"
+description = "Komise: Ve FN Olomouc byly některé defibrilátory voperovány bez splnění kritérií Zdroj: ČeskéNoviny.cz (ČTK), dossier Adam Vojtěch."
 template = "dossier-source.html"
 weight = 13
 

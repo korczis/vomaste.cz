@@ -14,4 +14,4 @@ record_type = "relation"
 lang = "cs"
 rel_id = "edge-csr-protikorupcnilinka-mestsky-soud-praha"
 +++
-Rejstříková procesní vazba s přesnou spisovou značkou. Bez úplného usnesení nevykládáme konkrétní skutkové důvody nad rámec zapsaného právního titulu.
+Procesní vazba s přesnou spisovou značkou je doložena rejstříkovým přepisem i úplným usnesením. Primární dokument uvádí chybějící účetní závěrky, nedoručenou výzvu, trvání důvodu zrušení a nezjištění majetku společnosti; nejde o výrok o osobní trestní odpovědnosti Jamese Quicka.

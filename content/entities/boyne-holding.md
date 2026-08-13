@@ -4,7 +4,7 @@ title = "BOYNE HOLDING LLC (Washington, D.C.)"
 template = "entity.html"
 weight = 14
 aliases = ["/dossiers/andrej-babis/entities/boyne-holding/"]
-description = "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
+description = "BOYNE HOLDING LLC (Washington, D.C.) — Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu."
 
 [extra]
 generated = true

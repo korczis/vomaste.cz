@@ -30,6 +30,9 @@ FAST_CHECKS=(
   validate:authorization
   verify:authorization-log
   validate:dossier-types
+  # Offline only: full IČO coverage, sanitized Justice indexes, hashes,
+  # docket inventory, Zone A/B boundary and doctrine/workflow wiring.
+  archive:check
   build:routes
   # Must generate the navigation before validating it, exactly as build:routes
   # does for routes.json. Without this the hook failed on the FIRST commit in
@@ -40,6 +43,8 @@ FAST_CHECKS=(
   build:navigation
   validate:navigation
   lint:component-reuse
+  lint:template-contracts
+  validate:claude-tooling
   # Katalog zdrojů má tři generované výstupy (stránky /zdroje/, markdown pro
   # agenty, view model pro UI a JSON-LD). Kdo změní data/source-catalog/ nebo
   # přidá citaci a nepřegeneruje, zacommituje výstup, který o datech lhal.

@@ -58,5 +58,19 @@
       "type": "markdown",
       "value": "Hlavní subjekt autorizovaného dossieru. Tato stránka je kanonický záznam\ntéto entity — dossiery, tvrzení, zdroje a vztahy v tabulce a sekcích níže\njsou úplné; nejde o zkrácenou verzi něčeho podrobnějšího jinde."
     }
+  ],
+  "media": [
+    {
+      "file": "images/people/macinka.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Petr_Macinka_2026-02-14.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "author": "Bundesministerium für europäische und internationale Angelegenheiten",
+      "credit": "_MGR8052",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 1610,
+      "role": "portrait"
+    }
   ]
 }

@@ -38,5 +38,18 @@
       "type": "markdown",
       "value": "Sbírka listin je nejvyšší stupeň důkazu, který má tenhle projekt bez žádosti podle zákona o svobodném přístupu k informacím k dispozici. Kde rejstříkový výpis říká „je zapsán\", listina říká „takto to bylo podepsáno a kým\".\n\nPoužívá se zejména k **rozlišení osob stejného jména**. Dokud identita napříč subjekty nestojí na listině, zůstává evidovaná jako mezera, ne jako tvrzení."
     }
+  ],
+  "answers": [
+    {
+      "question": "Je tenhle Jan Novák tentýž člověk ve dvou firmách?",
+      "note": "Jediný veřejný pramen, který spolehlivě odliší jmenovce."
+    },
+    {
+      "question": "Jak zněla zakladatelská listina nebo smlouva o převodu podílu?"
+    },
+    {
+      "question": "Jak firma hospodařila?",
+      "note": "Účetní závěrka, pokud byla založena — část subjektů lhůty nedodržuje."
+    }
   ]
 }

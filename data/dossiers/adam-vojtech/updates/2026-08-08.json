@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/updates/2026-08-08",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-08",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "date": "2026-08-08",
+  "summary": "Kolo rešerší v mezích autorizace AUTH-2026-07-30-Q — povýšena dvě jednozdrojová faktická tvrzení na CORROBORATED přidáním nezávislého druhého hlasu. CLM-07 (účast FN Olomouc v klinické studii PROFID EHRA, vystoupení v únoru 2025 a nesrovnalosti v dokumentaci) doloženo nově vlastní investigativní reportáží Seznam Zpráv z 16. 3. 2026 (SRC-51) — nezávislý pár vůči SRC-04 (Zdravotnický deník, rodina ctk): jiný vydavatel i jiná zdrojová rodina (seznam-zpravy). CLM-34 (Vojtěchovo oznámení návrhu na daňové vynětí vybraných preventivních programů z limitu ~50 tis. Kč, 4. 5. 2026, včetně výčtu programů) doloženo nově reportáží Zdravých zpráv z 4. 5. 2026 (SRC-52) — nezávislý pár vůči SRC-26 (Zdravotnický deník, rodina ctk): jiný vydavatel a jiná rodina, vlastní znění a citace, ne agenturní přebírka. Rozlišení nemocnice/ministr u kauzy FN Olomouc zachováno. Prověřeny, ale ponechány na 1 ZDROJ: CLM-47 (výrok z 20. 3. 2026 o zrušení kampaně za 50–80 mil. Kč) — RESPEKT, ČT24 i ČeskéNoviny nesou tentýž agenturní hlas ČTK jako stávající SRC-31, nezávislý pár se nenašel; CLM-37 (doporučení rozpočtového výboru z 13. 7. 2026 a zamítnutí konkurenčního návrhu ODS v čele se Štěpánem Slovákem) — nezávislé pokrytí konkrétní události mimo Zdravé zprávy (SRC-23) a agenturní ČTK linku se nepodařilo doložit. Flag k CLM-38 (rozpor v počtu hlasů 84/50 oproti oficiálnímu psp.cz 85/49 při 159 přítomných) předán k samostatnému věcnému přezkumu; v tomto kole se substance tvrzení nemění.",
+  "addedClaims": [],
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-07"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-34"
+    }
+  ],
+  "addedGaps": [],
+  "closedGaps": [],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-51"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-52"
+    }
+  ]
+}

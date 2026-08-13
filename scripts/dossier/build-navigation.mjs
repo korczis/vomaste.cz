@@ -27,7 +27,7 @@
  * (registry order), aggregate views last, flagged `isAggregate` so the
  * template can label them and refuse them an expandable subtree.
  */
-import { readFileSync, writeFileSync, mkdirSync, readdirSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadDossierRegistry } from "./lib/dossier-registry.mjs";
@@ -225,6 +225,101 @@ if (conceptsItem) {
       children,
     });
   }
+}
+
+/*
+ * Learning subtree — Start, Bootcamp, Akademie, Příručka, Jak přispět.
+ *
+ * Jedna kořenová položka („Naučit se“) a pod ní pět sekcí z
+ * data/learning.toml. Sekce, která si v datech řekne `nav_children = true`,
+ * dostane i třetí úroveň se svými stránkami; Akademie a Příručka ne —
+ * padesát lekcí ve stromu by z postranního panelu udělalo seznam, ve kterém
+ * se ztratí všechno ostatní, a obě mají vlastní seskupený index, který to
+ * zobrazí líp.
+ *
+ * Stejné pravidlo jako u zbytku stromu: strom následuje data. Přidání lekce
+ * je jeden soubor v content/, nikdo needituje skeleton, a smazaná lekce tu
+ * nemůže zůstat viset jako mrtvý odkaz.
+ */
+const learnItem = items.find((i) => i.id === "learn");
+if (learnItem) {
+  const learningText = readFileSync(join(ROOT, "data/learning.toml"), "utf8");
+  const sections = [...learningText.matchAll(/\[\[sections\]\]\n([\s\S]*?)(?=\n\[\[|\n#\s*---|\n*$)/g)]
+    .map((m) => ({
+      id: str(m[1], "id"),
+      label: str(m[1], "label"),
+      route: str(m[1], "route"),
+      order: num(m[1], "order"),
+      icon: str(m[1], "icon"),
+      navChildren: /^\s*nav_children\s*=\s*true\s*$/m.test(m[1]),
+    }))
+    .filter((s) => s.id)
+    .sort((a, b) => a.order - b.order);
+
+  for (const s of sections) {
+    const dir = join(ROOT, "content", s.id);
+    let children = [];
+    if (s.navChildren && existsSync(dir)) {
+      children = readdirSync(dir)
+        .filter((f) => f.endsWith(".md") && f !== "_index.md")
+        .map((f) => {
+          const fm = (readFileSync(join(dir, f), "utf8").match(/^\+\+\+\r?\n([\s\S]*?)\r?\n\+\+\+/) ?? [])[1] ?? "";
+          return { slug: f.replace(/\.md$/, ""), title: str(fm, "title"), weight: num(fm, "weight") };
+        })
+        .sort((a, b) => a.weight - b.weight || (a.title < b.title ? -1 : 1))
+        .map((p) => ({
+          id: `${s.id}-${p.slug}`,
+          label: p.title || p.slug,
+          path: `@/${s.id}/${p.slug}.md`,
+          matchPrefix: `/${s.id}/${p.slug}/`,
+          icon: s.icon,
+          depth: 2,
+          children: [],
+        }));
+    }
+    learnItem.children.push({
+      id: `learn-${s.id}`,
+      label: s.label,
+      path: s.route,
+      matchPrefix: `/${s.id}/`,
+      icon: s.icon,
+      overviewLabel: children.length > 0 ? `Přehled: ${s.label.toLowerCase()}` : "",
+      depth: 1,
+      children,
+    });
+  }
+}
+
+/*
+ * Documentation subtree — generated from the pages that actually exist.
+ *
+ * Same rule the rest of this tree follows: the sidebar follows the data, not a
+ * hand-kept list. Documentation had only its landing item, so every document
+ * under it — the constitution, the licences, the newly generated media
+ * attribution index — was one click away and invisible from the sidebar.
+ * Listing pages here means adding a document is enough; nobody has to remember
+ * to also edit the skeleton, and a removed document cannot linger as a dead
+ * link.
+ */
+const docsItem = items.find((i) => i.id === "docs");
+if (docsItem) {
+  const dir = join(ROOT, "content/dokumentace");
+  docsItem.children = readdirSync(dir)
+    .filter((f) => f.endsWith(".md") && f !== "_index.md")
+    .map((f) => {
+      const fm = (readFileSync(join(dir, f), "utf8").match(/^\+\+\+\r?\n([\s\S]*?)\r?\n\+\+\+/) ?? [])[1] ?? "";
+      return { slug: f.replace(/\.md$/, ""), title: str(fm, "title"), weight: num(fm, "weight") };
+    })
+    .sort((a, b) => a.weight - b.weight || (a.title < b.title ? -1 : 1))
+    .map((p) => ({
+      id: `dokumentace-${p.slug}`,
+      label: p.title || p.slug,
+      path: `@/dokumentace/${p.slug}.md`,
+      matchPrefix: `/dokumentace/${p.slug}/`,
+      icon: docsItem.icon,
+      depth: 1,
+      children: [],
+    }));
 }
 
 for (const i of items) i.depth = 0;

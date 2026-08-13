@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/build-rules-catalog",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "build-rules-catalog",
+  "kind": "npm",
+  "name": "build:rules-catalog",
+  "title": "Generátor katalogu pravidel",
+  "category": "generovani",
+  "summary": "Vytáhne pravidla, která brány doopravdy vynucují, z hlaviček samotných validátorů a postaví z nich katalog a stránku /pravidla/. Dokumentace tak nemůže popisovat pravidlo, které žádný modul nevlastní.",
+  "whenToRun": "V build i dev pipeline; ručně po změně hlavičky validátoru — jinak spadne verify:rules-catalog.",
+  "inputs": [
+    "scripts/data/validate-*.mjs",
+    "scripts/dossier/validate-*.mjs",
+    "scripts/lint/*.mjs"
+  ],
+  "outputs": [
+    "data/generated/rules-catalog.json",
+    "content/pravidla/_index.md"
+  ],
+  "sourceFile": "scripts/dossier/build-rules-catalog.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Popis pravidla se nikdy nepíše do stránky ručně; jediným zdrojem je hlavička modulu, který pravidlo vynucuje.",
+    "Zápis je idempotentní: soubor se přepíše jen tehdy, když se obsah liší."
+  ]
+}

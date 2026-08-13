@@ -1,0 +1,323 @@
+# Vzdělávací vrstva: sekce, úrovně, audience, cesty a kategorie příručky.
+#
+# Proč tenhle soubor existuje a co do něj NEPATŘÍ
+# -----------------------------------------------
+# Stejný vztah jako `data/concept-groups.toml` ke `content/koncepty/*`:
+# tady je struktura (pořadí, popisky, ikony, prerekvizity), v jednotlivých
+# stránkách je obsah. Šablony `learning-*.html` a generátor navigace
+# (`scripts/dossier/build-navigation.mjs`) čtou tenhle soubor místo aby
+# pořadí sekcí nebo názvy úrovní držely natvrdo v markupu.
+#
+# Co tu NENÍ a nikdy nesmí být:
+#   * definice pojmů — kanonické jsou stránky `content/koncepty/*`.
+#     Vzdělávací vrstva na ně odkazuje, nikdy je nepřepisuje. Druhá
+#     definice slova „sporné“ nebo „nezávislé doložení“ je drift, ne
+#     didaktika (AGENTS.md, pravidlo dvou reprezentací).
+#   * počty lekcí — počítají se ze stránek, které opravdu existují.
+#   * jakýkoli reálný subjekt, kauza nebo tvrzení. Cvičení běží výhradně
+#     na syntetických datech (`data/learning-fixtures.toml`), protože
+#     výuka nesmí být zadními vrátky k rozšíření rozsahu projektu.
+#
+# Vynucuje `scripts/dossier/validate-learning.mjs` (součást `npm run build`):
+# neznámá sekce, neznámá úroveň, neznámá audience, prerekvizita na
+# neexistující lekci, `next` do prázdna, duplicitní `lesson_id`, osiřelá
+# lekce nebo odkaz na neexistující stránku příručky shodí build.
+#
+# `icon` je surová data `<path d="…">` pro 24×24 stroke ikonu, stejná
+# konvence jako `data/navigation.toml` — markup ikon nepatří do šablon.
+
+# ---------------------------------------------------------------------------
+# Sekce vzdělávací vrstvy
+# ---------------------------------------------------------------------------
+# Pořadí je zároveň pořadím v postranní navigaci pod položkou „Naučit se“.
+# `route` je Zola cesta k indexu sekce; `validate-navigation.mjs` ověří, že
+# soubor na disku opravdu existuje.
+#
+# `nav_children` = vypisovat jednotlivé stránky sekce i v postranní navigaci.
+# Akademie a Příručka mají desítky položek; ty patří na vlastní seskupený
+# index, ne do stromu, kde by přebily zbytek webu.
+
+[[sections]]
+id = "start"
+label = "Start"
+route = "@/start/_index.md"
+order = 10
+lead = "Pět minut od „nevím, co to je“ k „umím dossier přečíst“. Nepředpokládá žádnou znalost projektu, Gitu ani datových formátů."
+icon = "M12 2 4 6v6c0 5 3.5 8.9 8 10 4.5-1.1 8-5 8-10V6l-8-4Z M9.5 12l1.8 1.8L15 10"
+nav_children = true
+
+[[sections]]
+id = "bootcamp"
+label = "Bootcamp"
+route = "@/bootcamp/_index.md"
+order = 20
+lead = "Praktický kurz na syntetických datech. Osm lekcí s úlohami — na konci umíš klasifikovat tvrzení, poznat převzatý zdroj a bezpečně podat podnět."
+icon = "M22 10 12 5 2 10l10 5 10-5Z M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"
+nav_children = true
+
+[[sections]]
+id = "akademie"
+label = "Akademie"
+route = "@/akademie/_index.md"
+order = 30
+lead = "Hlubší kurikulum v sedmi úrovních — od základů přes rešerši a redakční práci až po datový model, inženýrství a governance."
+icon = "M4 19.5A2.5 2.5 0 0 1 6.5 17H20 M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z M9 7h7"
+nav_children = false
+
+[[sections]]
+id = "prirucka"
+label = "Příručka"
+route = "@/prirucka/_index.md"
+order = 40
+lead = "Rychlé dohledání konkrétní věci: postupy, referenční přehledy, řešení chyb, slovníček a časté otázky. Na rozdíl od Akademie se nečte odshora dolů."
+icon = "M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z M12 16v-4 M12 8h.01"
+nav_children = false
+
+[[sections]]
+id = "prispet"
+label = "Jak přispět"
+route = "@/prispet/_index.md"
+order = 50
+lead = "Rozcestník podle toho, co chceš udělat — od nahlášení chyby bez Gitu po technický pull request."
+icon = "M12 5v14 M5 12h14"
+nav_children = true
+
+# ---------------------------------------------------------------------------
+# Audience
+# ---------------------------------------------------------------------------
+# Lekce deklaruje `extra.audience = ["…"]`. Slouží k filtrování v Akademii
+# a k odznaku na kartě lekce — ne k omezení přístupu. Všechno je veřejné;
+# odznak jen říká „tohle je psané pro tebe“, ne „sem nesmíš“.
+
+[[audiences]]
+id = "ctenar"
+label = "Čtenář"
+order = 10
+lead = "Chci webu rozumět a umět si tvrzení ověřit."
+
+[[audiences]]
+id = "zdroje"
+label = "Dodavatel zdrojů"
+order = 20
+lead = "Chci posílat veřejné zdroje k existujícím tvrzením."
+
+[[audiences]]
+id = "research"
+label = "Rešeršista"
+order = 30
+lead = "Chci připravovat podklady, které editor ověří a použije."
+
+[[audiences]]
+id = "editor"
+label = "Editor"
+order = 40
+lead = "Chci kontrolovat obsah před publikací."
+
+[[audiences]]
+id = "vyvojar"
+label = "Vývojář"
+order = 50
+lead = "Chci měnit kód, data nebo šablony."
+
+[[audiences]]
+id = "maintainer"
+label = "Maintainer"
+order = 60
+lead = "Chci systém rozvíjet, ne jen používat."
+
+# ---------------------------------------------------------------------------
+# Úrovně Akademie
+# ---------------------------------------------------------------------------
+# `code` je prefix identifikátorů lekcí (A1 → A101, A102…). Validátor z něj
+# ověřuje, že lekce sedí do úrovně, kterou deklaruje — překlep v `level` se
+# jinak projeví až tím, že lekce zmizí z výpisu.
+
+[[levels]]
+id = "foundations"
+code = "A1"
+label = "Základy"
+order = 10
+lead = "Co je dossier, co je tvrzení, zdroj a mezera — a proč se stavy nikdy neslévají do generického „faktu“."
+
+[[levels]]
+id = "research"
+code = "A2"
+label = "Rešerše"
+order = 20
+lead = "Jak formulovat atomické tvrzení, hledat doklad, rozlišit primární a převzatý zdroj a poznat skutečně nezávislé potvrzení."
+
+[[levels]]
+id = "editorial"
+code = "A3"
+label = "Redakční práce"
+order = 30
+lead = "Neutrální formulace, integrita citace, zacházení s obviněním, procesní výsledky, ochrana třetích osob a kontrolní seznam před publikací."
+
+[[levels]]
+id = "contribution"
+code = "A4"
+label = "Příspěvky"
+order = 40
+lead = "Jak podat opravu, zdroj nebo návrh tvrzení — včetně Gitu pro netechnické lidi a anatomie pull requestu."
+
+[[levels]]
+id = "data"
+code = "A5"
+label = "Datový model"
+order = 50
+lead = "Kanonické JSON záznamy, JSON-LD, schémata, validace a generované adaptéry."
+
+[[levels]]
+id = "engineering"
+code = "A6"
+label = "Inženýrství"
+order = 60
+lead = "Architektura repozitáře, lokální vývoj, Zola, šablony, frontend, validační pipeline, testy, CI a nasazení."
+
+[[levels]]
+id = "governance"
+code = "A7"
+label = "Governance"
+order = 70
+lead = "Autorizační model, append-only historie, redakční politika, evoluce schémat, opravy a reprodukovatelnost."
+
+# Claude Code dostal vlastní kód (C1), ne pokračování řady A: není to
+# další stupeň metodiky, je to jiná osa. Člověk, který umí A1–A3, může
+# přispívat bez Claude Code úplně; člověk, který projde C1, pořád
+# potřebuje metodiku. Sloučit obojí do jedné řady by naznačovalo pořadí,
+# které neplatí.
+[[levels]]
+id = "claude-code"
+code = "C1"
+label = "Claude Code"
+order = 80
+lead = "Jak s repozitářem pracovat přes Claude Code — co umí, kde jsou jeho hranice, jak poznat rizikovou operaci a proč jeho výstup není zdroj."
+
+# ---------------------------------------------------------------------------
+# Learning paths
+# ---------------------------------------------------------------------------
+# Cesta je pořadí existujících lekcí, ne samostatný obsah. `minutes` je
+# součet odhadů — orientační, ne měření. Validátor kontroluje, že každá
+# uvedená lekce existuje.
+
+[[paths]]
+id = "bootcamp-claude"
+label = "Bootcamp: první práce přes Claude Code"
+order = 4
+audience = "zdroje"
+lead = "Tři praktické úkoly v terminálu: zjistit stav prostředí, nechat si vysvětlit změnu a spustit bránu kvality. Nic se při nich nepublikuje."
+lessons = ["B09", "B10", "B11"]
+
+[[paths]]
+id = "claude-code"
+label = "Chci pracovat přes Claude Code"
+order = 5
+audience = "ctenar"
+lead = "Jak s repozitářem pracovat přes Claude Code — od toho, co ten nástroj je, po bezpečný příspěvek. Metodiku nenahrazuje: kdo chce psát tvrzení, potřebuje i cesty výše."
+lessons = ["C101", "C102", "C103", "C104", "C105", "C106", "C107", "C108", "C109", "C110"]
+
+[[paths]]
+id = "claude-code-pokrocile"
+label = "Claude Code pro vývojáře a údržbáře"
+order = 6
+audience = "maintainer"
+lead = "Souběžná práce ve worktree a přidávání nových schopností tak, aby prošly branami."
+lessons = ["C111", "C112"]
+
+[[paths]]
+id = "rozumet"
+label = "Chci jen rozumět webu"
+order = 10
+audience = "ctenar"
+lead = "Nejkratší cesta k tomu, abys uměl dossier přečíst a nenechal se zmást stavem, který znamená něco jiného, než vypadá."
+lessons = ["A101", "A102", "A104", "A108"]
+
+[[paths]]
+id = "zdroje"
+label = "Chci dodávat zdroje"
+order = 20
+audience = "zdroje"
+lead = "Co musí zdroj splňovat, aby byl použitelný, a jak poznat, že dva články jsou jeden hlas."
+lessons = ["A101", "A102", "A104", "A107", "A203", "A204", "A208", "A402"]
+
+[[paths]]
+id = "rešerše"
+label = "Chci dělat rešerši"
+order = 30
+audience = "research"
+lead = "Plné rešeršní kurikulum: od atomického tvrzení po evidence packet, který editor převezme."
+lessons = ["A101", "A102", "A103", "A104", "A105", "A106", "A107", "A108", "A201", "A202", "A203", "A204", "A205", "A206", "A207", "A208"]
+
+[[paths]]
+id = "review"
+label = "Chci reviewovat"
+order = 40
+audience = "editor"
+lead = "Redakční vrstva — co se kontroluje před publikací a co se odmítá bez diskuse."
+lessons = ["A104", "A107", "A301", "A302", "A303", "A304", "A305", "A306", "A307", "A308", "A309"]
+
+[[paths]]
+id = "vyvoj"
+label = "Chci programovat"
+order = 50
+audience = "vyvojar"
+lead = "Datový model a inženýrská vrstva — od kanonického JSON po zelenou bránu a nasazení."
+lessons = ["A501", "A502", "A503", "A504", "A506", "A507", "A508", "A601", "A602", "A606", "A607", "A608", "A610"]
+
+# ---------------------------------------------------------------------------
+# Kategorie příručky (Knowledge Base)
+# ---------------------------------------------------------------------------
+# `canonical_elsewhere` = kategorie, jejíž obsah vlastní jiná část webu.
+# Příručka pro ni dělá rozcestník a kontext, ale text nepřepisuje — proto
+# u ní validátor nevyžaduje vlastní stránky.
+
+[[kb_categories]]
+id = "koncept"
+label = "Pojmy"
+order = 10
+lead = "Kanonické definice pojmů. Vlastní je sekce Koncepty — příručka na ně odkazuje a přidává kontext, kdy se který pojem použije."
+icon = "M12 3v3 M12 18v3 M3 12h3 M18 12h3 M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z"
+canonical_elsewhere = "@/koncepty/_index.md"
+
+[[kb_categories]]
+id = "postup"
+label = "Postupy"
+order = 20
+lead = "Jak něco udělat, krok za krokem. Od ověření tvrzení po spuštění projektu lokálně."
+icon = "M9 11l3 3L22 4 M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+
+[[kb_categories]]
+id = "reference"
+label = "Reference"
+order = 30
+lead = "Stručné přehledy k dohledání: stavy, konvence identifikátorů, povinná pole, příkazy, routy."
+icon = "M4 4h16v16H4z M8 8h8 M8 12h8 M8 16h4"
+
+[[kb_categories]]
+id = "problem"
+label = "Řešení problémů"
+order = 40
+lead = "Konkrétní chyba → co znamená, proč nastala, jak ji najít, jak opravit a jak jí předejít."
+icon = "M12 9v4 M12 17h.01 M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"
+
+[[kb_categories]]
+id = "faq"
+label = "Časté otázky"
+order = 50
+lead = "Otázky, které web dostává opakovaně — odpovědi odvozené z pravidel projektu, ne z dojmu."
+icon = "M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3 M12 17h.01"
+
+[[kb_categories]]
+id = "slovnicek"
+label = "Slovníček"
+order = 60
+lead = "Jednovětá vysvětlení termínů běžnou češtinou, s odkazem na podrobnou stránku."
+icon = "M4 19.5A2.5 2.5 0 0 1 6.5 17H20 M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"
+
+[[kb_categories]]
+id = "politika"
+label = "Pravidla"
+order = 70
+lead = "Závazná pravidla projektu. Kanonické znění vlastní AGENTS.md a konstituce — tady je čitelný rozcestník."
+icon = "M12 2 3 6v6c0 5 3.8 9.2 9 10 5.2-.8 9-5 9-10V6l-9-4Z"
+canonical_elsewhere = "@/dokumentace/_index.md"

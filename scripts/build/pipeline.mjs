@@ -53,7 +53,16 @@ const BUILD_STEPS = [
   // pro Zolu. Běží hned po kanonické bráně, aby report nemohl být starší
   // než data; kdyby žil mimo pipeline, zastaral by první změnou dossieru.
   "report:evidence-plan",
+  // Offline archive doctrine gate: no network and no Zone B dependency.
+  // It makes every entity with a verified IČO carry ARES + sanitized Justice
+  // coverage, verifies hashes and docket inventory, and proves that the
+  // scheduled network refresh can only create a reviewable branch/PR.
+  "archive:check",
   "test",
+  // Shellový test, takže se do `test` (node --test nad *.test.mjs) nevejde.
+  // Hlídá guard, který rozhoduje, jestli se commit na master sám nasadí —
+  // jeho chyba znamená buď tichý nedeploy, nebo nechtěné zveřejnění.
+  "test:hooks",
   "build:government-roster",
   "validate:authorization",
   "verify:authorization-log",
@@ -65,15 +74,28 @@ const BUILD_STEPS = [
   // (fresh clone) nebo byl stale (změna kanonických dat v témže běhu).
   "data:check-generated:content",
   "build:navigation",
-  "build:secondary-providers",
   "validate:navigation",
   "validate:concepts",
+  "validate:learning",
   "validate:entity-types",
+  "validate:media",
   "lint:component-reuse",
+  "lint:template-contracts",
   "lint:hardcoded-records",
   "lint:generated-content",
+  "validate:claude-tooling",
   "build:source-catalog",
   "build:rules-catalog",
+  // Katalog toolingu: brána běží PŘED generátorem schválně. `--check`
+  // porovnává commitnuté stránky a docs/TOOLING.md s tím, co by z dat
+  // vzniklo — kdyby běžela až za generátorem, porovnávala by výstup se
+  // sebou samým a nikdy by neselhala. Zároveň je to místo, kde build
+  // spadne na příkazu přidaném do package.json / justfile /
+  // .claude/skills bez záznamu v data/tooling/ (kontroly G1–G6 běží
+  // v obou režimech). Generátor za ní pak doplní gitignorovaný view
+  // model, který šablony čtou při `zola build`.
+  "verify:tooling-catalog",
+  "build:tooling-catalog",
   "build:data-exports",
   "build:graph-projections",
   "validate:graph-projections",
@@ -100,6 +122,12 @@ const BUILD_STEPS = [
   // Musí běžet po zola build — kontroluje vydané HTML, ne šablony.
   "verify:og",
   "verify:full-pages",
+  // Každá vydaná <table> musí být ve scroll kontextu (.dossier-prose nebo
+  // overflow-x-auto obal z macros/table.html) — jinak by se na mobilu
+  // hroutila místo scrollování. Doplněk lint:component-reuse na úrovni
+  // hotového HTML: markdown tabulky šablonou neprojdou, vidí je až
+  // post-build průchod nad public/.
+  "verify:table-responsive",
   "verify:export",
 ];
 
@@ -111,15 +139,16 @@ const DEV_STEPS = [
   "data:views",
   "data:generate-content",
   "data:sync-content",
+  "archive:check",
   "validate:authorization",
   "validate:dossier-types",
   "build:entity-type-sections",
   "build:routes",
   "build:navigation",
-  "build:secondary-providers",
   "validate:navigation",
   "build:source-catalog",
   "build:rules-catalog",
+  "build:tooling-catalog",
   "build:data-exports",
   "build:graph-projections",
   "validate:graph-projections",
@@ -140,17 +169,26 @@ const DEV_STEPS = [
 // data/generated/).
 const CHECK_STEPS = [
   "data:validate",
+  "archive:check",
   "validate:authorization",
   "verify:authorization-log",
   "validate:dossier-types",
   "validate:concepts",
+  "validate:learning",
   "validate:entity-types",
+  "validate:media",
   "lint:component-reuse",
+  "lint:template-contracts",
   "lint:hardcoded-records",
   "lint:generated-content",
+  "validate:claude-tooling",
   "lint:source-outlets",
   "verify:rules-catalog",
   "check:workflow-parity",
+  // Staví jen dočasné repozitáře přes mktemp a nikdy nepushuje, takže se
+  // vejde i do rychlého režimu — a chybné rozhodnutí toho guardu znamená
+  // buď tichý nedeploy, nebo nechtěné zveřejnění.
+  "test:hooks",
 ];
 
 export const MODES = { build: BUILD_STEPS, dev: DEV_STEPS, check: CHECK_STEPS };

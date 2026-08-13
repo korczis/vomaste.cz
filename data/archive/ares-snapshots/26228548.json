@@ -1,0 +1,56 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "26228548",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/26228548",
+  "nazev": "\"Nadační fond FIDUCIA\"",
+  "sidlo": "Sevastopolská 338/6, Starý Lískovec, 62500 Brno",
+  "spisovaZnacka": {
+    "soud": "KSBR",
+    "oddil": "N",
+    "vlozka": "233"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "Člen statutárního orgánu",
+      "since": "2015-10-16",
+      "kind": "person",
+      "name": "Martin Korec"
+    },
+    {
+      "role": "Člen statutárního orgánu",
+      "since": "2020-10-21",
+      "kind": "person",
+      "name": "Martin Pavlík"
+    },
+    {
+      "role": "Člen statutárního orgánu",
+      "since": "2016-10-24",
+      "kind": "person",
+      "name": "František Pavlík"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "person",
+      "name": "Martin Pavlík",
+      "podil": null,
+      "vklad": null,
+      "splaceno": null
+    },
+    {
+      "kind": "person",
+      "name": "Martin Korec",
+      "podil": null,
+      "vklad": null,
+      "splaceno": null
+    },
+    {
+      "kind": "person",
+      "name": "František Pavlík",
+      "podil": null,
+      "vklad": null,
+      "splaceno": null
+    }
+  ]
+}

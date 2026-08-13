@@ -3,7 +3,7 @@
 title = "DG MOVE (Generální ředitelství EK pro mobilitu a dopravu)"
 template = "entity.html"
 weight = 111
-description = "Kontextová entita — Útvar Evropské komise (entita evropska-komise existuje, DG MOVE ne); partner jednání o kofinancování VRT."
+description = "DG MOVE (Generální ředitelství EK pro mobilitu a dopravu) — Kontextová entita — Útvar Evropské komise (entita evropska-komise existuje, DG MOVE ne); partner jednání o kofinancování VRT."
 
 [extra]
 generated = true

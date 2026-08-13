@@ -1,0 +1,244 @@
+{
+  "retrieved": "2026-08-09",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "26417171"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "26417171",
+        "obchodniJmeno": "YOUNG & RUBICAM CZ s.r.o., člen koncernu YOUNG & RUBICAM",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 78,
+          "nazevSpravnihoObvodu": "Praha 7",
+          "kodMestskehoObvodu": 78,
+          "nazevMestskehoObvodu": "Praha 7",
+          "kodMestskeCastiObvodu": 500186,
+          "kodUlice": 444324,
+          "nazevMestskeCastiObvodu": "Praha 7",
+          "nazevUlice": "Bubenská",
+          "cisloDomovni": 1477,
+          "kodCastiObce": 490067,
+          "cisloOrientacni": 1,
+          "nazevCastiObce": "Holešovice",
+          "kodAdresnihoMista": 22312111,
+          "psc": 17000,
+          "textovaAdresa": "Bubenská 1477/1, Holešovice, 17000 Praha 7",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "112",
+        "pravniFormaRos": "112",
+        "financniUrad": "007",
+        "datumVzniku": "2000-12-11",
+        "datumAktualizace": "2026-07-21",
+        "dic": "CZ26417171",
+        "icoId": "26417171",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Bubenská 1477/1",
+          "radekAdresy2": "Holešovice",
+          "radekAdresy3": "17000 Praha 7"
+        },
+        "czNace2008": [
+          "731"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "YOUNG & RUBICAM CZ s.r.o., člen koncernu YOUNG & RUBICAM",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 78,
+                  "nazevSpravnihoObvodu": "Praha 7",
+                  "kodMestskehoObvodu": 78,
+                  "nazevMestskehoObvodu": "Praha 7",
+                  "kodMestskeCastiObvodu": 500186,
+                  "kodUlice": 444324,
+                  "nazevMestskeCastiObvodu": "Praha 7",
+                  "nazevUlice": "Bubenská",
+                  "cisloDomovni": 1477,
+                  "kodCastiObce": 490067,
+                  "cisloOrientacni": 1,
+                  "nazevCastiObce": "Holešovice",
+                  "kodAdresnihoMista": 22312111,
+                  "psc": 17000,
+                  "textovaAdresa": "Bubenská 1477/1, Holešovice, 17000 Praha 7",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "pravniFormaRos": "112",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "YOUNG & RUBICAM CZ s.r.o., člen koncernu YOUNG & RUBICAM",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 78,
+                  "nazevSpravnihoObvodu": "Praha 7",
+                  "kodMestskehoObvodu": 78,
+                  "nazevMestskehoObvodu": "Praha 7",
+                  "kodMestskeCastiObvodu": 500186,
+                  "kodUlice": 444324,
+                  "nazevMestskeCastiObvodu": "Praha 7",
+                  "nazevUlice": "Bubenská",
+                  "cisloDomovni": 1477,
+                  "kodCastiObce": 490067,
+                  "cisloOrientacni": 1,
+                  "nazevCastiObce": "Holešovice",
+                  "kodAdresnihoMista": 22312111,
+                  "psc": 17000,
+                  "textovaAdresa": "Bubenská 1477/1, Holešovice, 17000 Praha 7",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "112",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "YOUNG & RUBICAM CZ s.r.o., člen koncernu YOUNG & RUBICAM",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 78,
+                  "nazevSpravnihoObvodu": "Praha 7",
+                  "kodMestskehoObvodu": 78,
+                  "nazevMestskehoObvodu": "Praha 7",
+                  "kodMestskeCastiObvodu": 500186,
+                  "kodUlice": 444324,
+                  "nazevMestskeCastiObvodu": "Praha 7",
+                  "nazevUlice": "Bubenská",
+                  "cisloDomovni": 1477,
+                  "kodCastiObce": 490067,
+                  "cisloOrientacni": 1,
+                  "nazevCastiObce": "Holešovice",
+                  "kodAdresnihoMista": 22312111,
+                  "psc": 17000,
+                  "textovaAdresa": "Bubenská 1477/1, Holešovice, 17000 Praha 7",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "YOUNG & RUBICAM CZ s.r.o., člen koncernu YOUNG & RUBICAM",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 78,
+                  "nazevSpravnihoObvodu": "Praha 7",
+                  "kodMestskehoObvodu": 78,
+                  "nazevMestskehoObvodu": "Praha 7",
+                  "kodMestskeCastiObvodu": 500186,
+                  "kodUlice": 444324,
+                  "nazevMestskeCastiObvodu": "Praha 7",
+                  "nazevUlice": "Bubenská",
+                  "cisloDomovni": 1477,
+                  "kodCastiObce": 490067,
+                  "cisloOrientacni": 1,
+                  "nazevCastiObce": "Holešovice",
+                  "kodAdresnihoMista": 22312111,
+                  "psc": 17000,
+                  "textovaAdresa": "Bubenská 1477/1, Holešovice, 17000 Praha 7",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "spisovaZnacka": "C 80574/MSPH",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "731"
+        ]
+      }
+    ]
+  }
+}

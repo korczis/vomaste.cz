@@ -1,37 +1,43 @@
 {
-  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
-  "schemaVersion": 1,
-  "@context": "https://vomaste.cz/context/v1.jsonld",
-  "@id": "https://vomaste.cz/id/entities/greendeal",
-  "@type": "vomaste:Entity",
-  "recordType": "entity",
-  "identifier": "greendeal",
-  "entityId": "greendeal",
-  "title": "Zmocněnec pro Green Deal",
-  "entityType": "role",
-  "publicationRole": "context",
-  "dossierEnabled": false,
-  "dossierStatus": "not_authorized",
-  "coverageState": "discovered",
-  "dossiers": [
-    "macinka-turek",
-    "filip-turek"
+ "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+ "schemaVersion": 1,
+ "@context": "https://vomaste.cz/context/v1.jsonld",
+ "@id": "https://vomaste.cz/id/entities/greendeal",
+ "@type": "vomaste:Entity",
+ "recordType": "entity",
+ "identifier": "greendeal",
+ "entityId": "greendeal",
+ "title": "Zmocněnec pro Green Deal",
+ "entityType": "role",
+ "publicationRole": "context",
+ "dossierEnabled": false,
+ "dossierStatus": "not_authorized",
+ "coverageState": "discovered",
+ "dossiers": [
+  "macinka-turek",
+  "filip-turek"
+ ],
+ "routeAliases": [
+  "/dossiers/macinka-turek/entities/greendeal/"
+ ],
+ "order": 6,
+ "provenance": {
+  "discoveredAt": "2026-07-29",
+  "discoveredVia": [
+   "edge-turek-greendeal"
   ],
-  "routeAliases": [
-    "/dossiers/macinka-turek/entities/greendeal/"
+  "claimRefs": [
+   "CLM-11"
   ],
-  "order": 6,
-  "provenance": {
-    "discoveredAt": "2026-07-29",
-    "discoveredVia": [
-      "edge-turek-greendeal"
-    ],
-    "claimRefs": [
-      "CLM-11"
-    ],
-    "sourceRefs": [
-      "SRC-06"
-    ],
-    "depth": 1
+  "sourceRefs": [
+   "SRC-06"
+  ],
+  "depth": 1
+ },
+ "content": [
+  {
+   "type": "markdown",
+   "value": "Kontextová entita — Role vládního zmocněnce pro Green Deal, kterou Filip Turek zastával dle citovaného zpravodajství. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek). Tato stránka neobsahuje samostatný profil mimo tento kontext."
   }
+ ]
 }

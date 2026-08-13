@@ -1,0 +1,22 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/test-intake-risk",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "test-intake-risk",
+  "kind": "npm",
+  "name": "test:intake:risk",
+  "title": "Testy klasifikace rizika",
+  "category": "kontrola",
+  "summary": "node:test nad scripts/intake/risk/*.test.mjs.",
+  "enforces": [
+    "Padlý test klasifikace rizika."
+  ],
+  "whenToRun": "Rychlá smyčka při práci na klasifikaci rizika.",
+  "inputs": [
+    "scripts/intake/risk/*.test.mjs"
+  ],
+  "describedFrom": "command"
+}

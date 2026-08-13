@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/anna-hubackova",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "anna-hubackova",
+  "entityId": "anna-hubackova",
+  "title": "Anna Hubáčková",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "anna-hubackova"
+  ],
+  "order": 535,
+  "description": "Anna Hubáčková — bývalá ministryně životního prostředí (2021–2022).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalá ministryně životního prostředí (17. 12. 2021 – 31. 10. 2022,\nnominována KDU-ČSL), senátorka (2016–2022), starostka Ratíškovic\n(2014–2018).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ],
+  "media": [
+    {
+      "file": "images/people/anna-hubackova.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anna_Hub%C3%A1%C4%8Dkov%C3%A1_in_2016.jpg",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "author": "Martin Vlček, Kancelář Senátu",
+      "credit": "Senate of the Parliament of the Czech Republic",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 1800,
+      "role": "portrait"
+    }
+  ]
+}

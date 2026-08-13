@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
 
 {#- Full page for ONE concept (a data-model registry, a claim status, a
     methodology rule, an openness boundary, an identity statement). Every tile
@@ -11,13 +10,13 @@
 {% block content %}
 <main class="mx-auto max-w-2xl px-6 py-12 text-white">
   {% set groups = load_data(path="data/concept-groups.toml") %}
-  {% set group = groups.groups | filter(attribute="id", value=page.extra.group) | first %}
+  {% set group = [__i for __i in groups.groups if __i.id == page.extra.group] | first %}
 
-  {{ ui::page_header(title=page.title, breadcrumb_items=[
+  {{ <ui_page_header title={page.title} breadcrumb_items={[
     "Domů::" ~ get_url(path="@/_index.md"),
     "Koncepty::" ~ get_url(path="@/koncepty/_index.md"),
     page.title,
-  ], description=page.description) }}
+  ]} description={page.description} /> }}
 
   <p class="mb-8 flex flex-wrap items-center gap-2 text-xs">
     {%- if page.extra.code %}
@@ -46,7 +45,7 @@
   {#- Siblings in the same group: keeps every concept one click from the others
       without a hand-maintained "related" list in front matter. -#}
   {% set section = get_section(path="koncepty/_index.md") %}
-  {% set siblings = section.pages | filter(attribute="extra.group", value=page.extra.group) %}
+  {% set siblings = [__i for __i in section.pages if __i.extra.group == page.extra.group] %}
   {%- if siblings | length > 1 %}
   <nav aria-labelledby="siblings-heading" class="mt-12 border-t border-white/10 pt-6">
     <h2 id="siblings-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">{% if group %}{{ group.label }}{% else %}Související pojmy{% endif %}</h2>
@@ -64,6 +63,6 @@
   </nav>
   {%- endif %}
 
-  {{ ui::back_link_footer(url=get_url(path="@/koncepty/_index.md"), label="Zpět na koncepty") }}
+  {{ <ui_back_link_footer url={get_url(path="@/koncepty/_index.md")} label="Zpět na koncepty" /> }}
 </main>
 {% endblock content %}

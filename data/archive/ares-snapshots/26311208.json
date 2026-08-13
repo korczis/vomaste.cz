@@ -1,0 +1,47 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "26311208",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/26311208",
+  "nazev": "PREOL, a.s.",
+  "sidlo": "Terezínská 1214, 41002 Lovosice",
+  "spisovaZnacka": {
+    "soud": "KSBR",
+    "oddil": "B",
+    "vlozka": "3870"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "Místopředseda představenstva",
+      "since": "2023-01-23",
+      "kind": "person",
+      "name": "Milan Kuncíř"
+    },
+    {
+      "role": "Člen představenstva",
+      "since": "2024-02-01",
+      "kind": "person",
+      "name": "Josef Vytrhlík"
+    },
+    {
+      "role": "Předseda představenstva",
+      "since": "2024-05-20",
+      "kind": "company",
+      "name": "AGROFERT, a.s.",
+      "ico": "26185610"
+    },
+    {
+      "role": "Místopředseda představenstva",
+      "since": "2025-06-25",
+      "kind": "person",
+      "name": "Jitka Nezbedová"
+    },
+    {
+      "role": "Člen představenstva",
+      "since": "2026-04-18",
+      "kind": "person",
+      "name": "Libor Toužimský"
+    }
+  ],
+  "spolecnici": []
+}

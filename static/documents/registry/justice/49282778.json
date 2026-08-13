@@ -1,0 +1,515 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-09",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/49282778",
+  "status": "OK",
+  "subject": {
+    "ico": "49282778",
+    "businessName": "JWT, s.r.o.",
+    "registerReference": "C 11910/KSUL"
+  },
+  "filings": [
+    {
+      "referenceLabel": "C 11910/SL1/KSUL",
+      "documentType": "zakladatelské dokumenty",
+      "createdAt": "21-10-1996",
+      "filedAt": "02-09-1999",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 15,
+          "sizeBytes": 363443
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL2/KSUL",
+      "documentType": "notářský zápis NZ 32/96",
+      "createdAt": "01-10-1996",
+      "filedAt": "02-09-1999",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 120844
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL3/KSUL",
+      "documentType": "posudek znalce č. 132/96",
+      "createdAt": "11-10-1996",
+      "filedAt": "02-09-1999",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 139431
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL4/KSUL",
+      "documentType": "účetní závěrka k 31.12.2000",
+      "createdAt": "29-05-2001",
+      "filedAt": "26-06-2001",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 129511
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL5/KSUL",
+      "documentType": "podpisové vzory jednatelů",
+      "createdAt": "27-12-2001",
+      "filedAt": "02-07-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 21053
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL6/KSUL",
+      "documentType": "zakladatelské dokumenty",
+      "createdAt": "27-12-2001",
+      "filedAt": "02-07-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 14,
+          "sizeBytes": 374885
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL7/KSUL",
+      "documentType": "účetní závěrka k 31. 12. 2001",
+      "createdAt": "06-06-2002",
+      "receivedByCourtAt": "21-06-2002",
+      "filedAt": "12-11-2002",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 146000
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL8/KSUL",
+      "documentType": "účetní závěrka k 31. 12. 2002",
+      "createdAt": "01-06-2003",
+      "receivedByCourtAt": "30-06-2003",
+      "filedAt": "01-07-2003",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 144339
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL9/KSUL",
+      "documentType": "účetní závěrka k 31. 12. 2003",
+      "createdAt": "12-06-2004",
+      "receivedByCourtAt": "11-10-2004",
+      "filedAt": "08-11-2004",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 94293
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL10/KSUL",
+      "documentType": "účetní závěrka k 31.12.2004",
+      "createdAt": "25-05-2005",
+      "receivedByCourtAt": "27-06-2005",
+      "filedAt": "15-07-2005",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 108807
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL11/KSUL",
+      "documentType": "účetní závěrka k 31.12.2005",
+      "createdAt": "14-05-2006",
+      "receivedByCourtAt": "22-05-2006",
+      "filedAt": "26-05-2006",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 113996
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL12/KSUL",
+      "documentType": "účetní závěrka k 31.12.2006",
+      "createdAt": "28-05-2007",
+      "receivedByCourtAt": "10-10-2011",
+      "filedAt": "11-10-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 352009
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL13/KSUL",
+      "documentType": "účetní závěrka k 31.12.2007",
+      "createdAt": "01-06-2008",
+      "receivedByCourtAt": "10-10-2011",
+      "filedAt": "11-10-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 343625
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL14/KSUL",
+      "documentType": "účetní závěrka k 31.12.2008",
+      "createdAt": "20-05-2009",
+      "receivedByCourtAt": "10-10-2011",
+      "filedAt": "11-10-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 343406
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL15/KSUL",
+      "documentType": "účetní závěrka k 31.12.2009",
+      "createdAt": "13-06-2010",
+      "receivedByCourtAt": "10-10-2011",
+      "filedAt": "11-10-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 316727
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL16/KSUL",
+      "documentType": "účetní závěrka k 31.12.2010",
+      "createdAt": "25-05-2011",
+      "receivedByCourtAt": "10-10-2011",
+      "filedAt": "11-10-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 352607
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL17/KSUL",
+      "documentType": "účetní závěrka 2011",
+      "createdAt": "10-05-2012",
+      "receivedByCourtAt": "19-06-2012",
+      "filedAt": "20-06-2012",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 226974
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL18/KSUL",
+      "documentType": "notářský zápis NZ 291/2014",
+      "createdAt": "07-07-2014",
+      "receivedByCourtAt": "23-07-2014",
+      "filedAt": "24-07-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 67235
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL19/KSUL",
+      "documentType": "zakladatelské dokumenty, notářský zápis NZ 291/2014",
+      "createdAt": "07-07-2014",
+      "receivedByCourtAt": "08-09-2014",
+      "filedAt": "08-09-2014",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 223500
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL20/KSUL",
+      "documentType": "účetní závěrka [2012]",
+      "createdAt": "26-05-2013",
+      "receivedByCourtAt": "08-06-2015",
+      "filedAt": "09-06-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 140173
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL21/KSUL",
+      "documentType": "účetní závěrka [2014]",
+      "createdAt": "04-06-2015",
+      "receivedByCourtAt": "08-06-2015",
+      "filedAt": "09-06-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 159703
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL22/KSUL",
+      "documentType": "účetní závěrka [2013]",
+      "createdAt": "27-05-2014",
+      "receivedByCourtAt": "08-06-2015",
+      "filedAt": "09-06-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 142113
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL23/KSUL",
+      "documentType": "notářský zápis [NZ 343/2016]",
+      "createdAt": "07-12-2016",
+      "receivedByCourtAt": "15-12-2016",
+      "filedAt": "28-12-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 907848
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL24/KSUL",
+      "documentType": "zakladatelské dokumenty úplné znění",
+      "createdAt": "03-01-2017",
+      "receivedByCourtAt": "06-01-2017",
+      "filedAt": "18-01-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 31946
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL25/KSUL",
+      "documentType": "účetní závěrka [2016]",
+      "createdAt": "16-03-2017",
+      "receivedByCourtAt": "17-08-2017",
+      "filedAt": "21-08-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 176741
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL26/KSUL",
+      "documentType": "účetní závěrka [2015]",
+      "createdAt": "02-06-2016",
+      "receivedByCourtAt": "17-08-2017",
+      "filedAt": "21-08-2017",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 177822
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL27/KSUL",
+      "documentType": "účetní závěrka [2017]",
+      "createdAt": "01-05-2018",
+      "receivedByCourtAt": "02-05-2018",
+      "filedAt": "09-05-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 190676
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL28/KSUL",
+      "documentType": "účetní závěrka [2018]",
+      "createdAt": "24-05-2019",
+      "receivedByCourtAt": "24-05-2019",
+      "filedAt": "27-05-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 95264
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL29/KSUL",
+      "documentType": "účetní závěrka [2019]",
+      "createdAt": "18-05-2020",
+      "receivedByCourtAt": "18-05-2020",
+      "filedAt": "19-05-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 97418
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL30/KSUL",
+      "documentType": "účetní závěrka [2020]",
+      "createdAt": "30-05-2021",
+      "receivedByCourtAt": "30-05-2021",
+      "filedAt": "31-05-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 96283
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL31/KSUL",
+      "documentType": "účetní závěrka [2022] - předána prostřednictvím správce daně z příjmů k 09.07.2023",
+      "createdAt": "09-07-2023",
+      "receivedByCourtAt": "15-07-2023",
+      "filedAt": "18-07-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 0,
+          "sizeBytes": 33792
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 2173
+        },
+        {
+          "pageCount": 2,
+          "sizeBytes": 143430
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL32/KSUL",
+      "documentType": "účetní závěrka [2023] - předána prostřednictvím správce daně z příjmů k 08.07.2024",
+      "createdAt": "08-07-2024",
+      "receivedByCourtAt": "09-07-2024",
+      "filedAt": "11-07-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 0,
+          "sizeBytes": 33792
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 2164
+        },
+        {
+          "pageCount": 2,
+          "sizeBytes": 143346
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL36/KSUL",
+      "documentType": "účetní závěrka [2024] - předána prostřednictvím správce daně z příjmů k 06.07.2025",
+      "createdAt": "06-07-2025",
+      "receivedByCourtAt": "14-07-2025",
+      "filedAt": "14-07-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 0,
+          "sizeBytes": 33792
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 2174
+        },
+        {
+          "pageCount": 2,
+          "sizeBytes": 143337
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 11910/SL37/KSUL",
+      "documentType": "účetní závěrka [2025] - předána prostřednictvím správce daně z příjmů k 06.04.2026",
+      "createdAt": "06-04-2026",
+      "receivedByCourtAt": "07-04-2026",
+      "filedAt": "08-04-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 0,
+          "sizeBytes": 931
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 33792
+        },
+        {
+          "pageCount": 2,
+          "sizeBytes": 95659
+        }
+      ]
+    }
+  ]
+}

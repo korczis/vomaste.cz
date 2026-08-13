@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/verify-tooling-catalog",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "verify-tooling-catalog",
+  "kind": "npm",
+  "name": "verify:tooling-catalog",
+  "title": "Obousměrná brána katalogu toolingu",
+  "category": "kontrola",
+  "summary": "Týž generátor s přepínačem --check: nic nezapíše, jen skončí nenulově, pokud katalog neodpovídá repozitáři nebo pokud by se commitnutý výstup lišil od toho, co z dat vzniká.",
+  "enforces": [
+    "G1 — npm skript v package.json (mimo npm lifecycle hooky) bez záznamu v data/tooling/, a záznam ukazující na skript, který v package.json není.",
+    "G2 — adresář .claude/skills/<name>/ se souborem SKILL.md bez záznamu, a záznam ukazující na skill, který neexistuje.",
+    "G3 — recept v justfile bez záznamu, a záznam ukazující na recept, který v justfile není.",
+    "G4 — identifier záznamu, který neodpovídá dvojici kind+name (slug ukazující na jiný příkaz, než jaký popisuje).",
+    "G5 — deklarovaný sourceFile, který neexistuje, nebo který příkazová řádka npm skriptu vůbec nevolá.",
+    "G6 — npm skript, který spouští soubor repozitáře jako svůj program, ale záznam sourceFile neuvádí.",
+    "G7 — rozdíl mezi commitnutými stránkami / docs/TOOLING.md a tím, co by z dat vzniklo. Náprava: `npm run build:tooling-catalog`."
+  ],
+  "whenToRun": "Před commitem a v buildu, kde běží PŘED generátorem — kdyby běžela za ním, porovnávala by výstup se sebou samým a nikdy by neselhala.",
+  "inputs": [
+    "data/tooling/*.json",
+    "package.json",
+    "justfile",
+    ".claude/skills/*/SKILL.md",
+    "content/dokumentace/prikazy/**",
+    "docs/TOOLING.md"
+  ],
+  "sourceFile": "scripts/build/build-tooling-catalog.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Gitignorovaný view model data/generated/tooling-catalog.json se do porovnání nezapočítává: v čerstvém klonu neexistuje a brána by hlásila zastaralost u souboru, který v repozitáři z principu nikdy neleží.",
+    "Nový příkaz bez dokumentace shodí build. To je smysl brány — dokumentace toolingu nesmí zaostat za kódem."
+  ]
+}

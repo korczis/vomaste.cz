@@ -27,7 +27,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Tvrzení reprodukuje pouze roli zobrazenou na určeném veřejném rejstříkovém profilu. Nevyjadřuje závěr o skutečném rozsahu činnosti společnosti, o rozhodování Martina Pavlíka ani o jakémkoli pochybení. Protože je zatím doloženo jediným rejstříkovým agregátorem, zůstává ve stavu 1 ZDROJ.\n\nRoli shodně uvádí primární registr ARES i agregátor Podnikatel.cz, ale nejde o nezávislé potvrzení: agregátor tato data z registru přebírá, takže mu nemůže odporovat. Je to jedno doložení citované dvakrát — proto 1 ZDROJ, byť opřený o primární registr, ne pouze o agregátor."
+      "value": "Tvrzení reprodukuje pouze roli zobrazenou na určeném veřejném rejstříkovém profilu. Nevyjadřuje závěr o skutečném rozsahu činnosti společnosti, o rozhodování Martina Pavlíka ani o jakémkoli pochybení. Protože je zatím doloženo jediným rejstříkovým agregátorem, zůstává ve stavu 1 ZDROJ.\n\nRoli shodně uvádí primární registr ARES i agregátor Podnikatel.cz, ale nejde o nezávislé potvrzení: agregátor tato data z registru přebírá, takže mu nemůže odporovat. Je to jedno doložení citované dvakrát — proto 1 ZDROJ, byť opřený o primární registr, ne pouze o agregátor.\n\n**Upřesnění (2026-08-06, ze SRC-02):** aktuální zápis funkce jednatele vznikl 11. 7. 2023 (`vznikFunkce`), zapsán do rejstříku 13. 7. 2023. Rejstříkový profil Podnikatel.cz eviduje i dřívější, ukončené období jednatelství (1. 5. 2013 – 21. 10. 2020) — historický zápis se do tvrzení nepřebírá, protože netvoří nepřerušenou funkci a jde jen o evidenční historii, ne o nové fakt."
     }
   ]
 }

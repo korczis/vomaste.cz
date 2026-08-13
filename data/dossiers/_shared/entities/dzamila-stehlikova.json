@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/dzamila-stehlikova",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "dzamila-stehlikova",
+  "entityId": "dzamila-stehlikova",
+  "title": "Džamila Stehlíková",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "dzamila-stehlikova"
+  ],
+  "order": 644,
+  "description": "Džamila Stehlíková — bývalá ministryně pro lidská práva a národnostní menšiny (2007–2009).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalá ministryně vlády ČR pro lidská práva a národnostní menšiny (9. 1. 2007 – 23. 1. 2009, druhá vláda Mirka Topolánka); oficiální přehled u konce jejího působení uvádí demisi.\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ],
+  "media": [
+    {
+      "file": "images/people/dzamila-stehlikova.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:D%C5%BEamila_Stehl%C3%ADkov%C3%A1_(2017).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "Jindřich Nosek (NoJin)",
+      "credit": "Own work",
+      "retrieved": "2026-08-11",
+      "width": 1200,
+      "height": 1500,
+      "role": "portrait"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q1046372"
+  }
+}

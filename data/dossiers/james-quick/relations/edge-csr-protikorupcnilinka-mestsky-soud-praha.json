@@ -18,15 +18,21 @@
   },
   "relationType": "SUBJECT_OF_PROCEEDING",
   "label": "společnost zrušena bez likvidace a vymazána na základě usnesení soudu",
-  "status": "single",
+  "status": "corroborated",
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-14"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/claims/CLM-22"
     }
   ],
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-15"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/james-quick/sources/SRC-23"
     }
   ],
   "subjects": [
@@ -37,7 +43,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Rejstříková procesní vazba s přesnou spisovou značkou. Bez úplného usnesení nevykládáme konkrétní skutkové důvody nad rámec zapsaného právního titulu."
+      "value": "Procesní vazba s přesnou spisovou značkou je doložena rejstříkovým přepisem i úplným usnesením. Primární dokument uvádí chybějící účetní závěrky, nedoručenou výzvu, trvání důvodu zrušení a nezjištění majetku společnosti; nejde o výrok o osobní trestní odpovědnosti Jamese Quicka."
     }
   ]
 }

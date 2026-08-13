@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karolina-peake/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karolina-peake"
+  },
+  "text": "Karolína Peake byla podle oficiálního přehledu členů vlády Petra Nečase na webu Vlády ČR místopředsedkyní vlády od 1. 7. 2011 do 17. 6. 2013 a poté do 10. 7. 2013 vykonávala funkci v demisi",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karolina-peake/sources/SRC-01"
+    }
+  ],
+  "subjects": [
+    "karolina-peake"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/karolina-peake/_index.md)."
+    }
+  ]
+}

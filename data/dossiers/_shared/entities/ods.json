@@ -48,10 +48,23 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Kontextová entita — Zmíněna jen jako stranická afiliace citovaného Martina Kupky. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis, boris-stastny, jaromir-zuna, jeronym-tejc, karel-havlicek, oto-klempir). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+      "value": "Kontextová entita — uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (mj. jako stranická příslušnost více subjektů dossierů). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
     }
   ],
   "externalIds": {
     "ico": "16192656"
-  }
+  },
+  "media": [
+    {
+      "file": "images/logos/ods.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_ODS_inverse_version.svg",
+      "license": "Public domain",
+      "author": "Civic Democratic Party",
+      "credit": "This vector image includes elements that have been taken or adapted from this file:",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 517,
+      "role": "logo"
+    }
+  ]
 }

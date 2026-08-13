@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-haas/sources/SRC-03",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-haas"
+  },
+  "title": "SRC-03 — ODS: profil Karla Haase ve stínové vládě",
+  "description": "Vlastní profilová stránka Karla Haase na webu ODS, uvádějící jeho roli ve stínové vládě strany.",
+  "outlet": "ODS (Občanská demokratická strana)",
+  "sourceType": "vlastní profil strany",
+  "url": "https://www.ods.cz/stinova-vlada/profil/4095-karel-haas",
+  "retrieved": "2026-08-06",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-haas/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "karel-haas"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Vlastní profilová stránka Karla Haase v sekci stínové vlády na webu ODS, otevřena a přečtena 2026-08-06.\nUvádí, že zastává funkci „stínového ministra sportu, prevence a zdraví\", a potvrzuje, že „od ledna 2026 je také místopředsedou ODS\".\n\nPoznámka k typu zdroje a jeho limitům: jde o **vlastní publikaci strany**, ne o zprávu nezávislého média — dokládá, jakou roli si strana sama přiřazuje (stínová vláda je vnitrostranická konstrukce, nikoli státní funkce), nikoli nezávislé redakční posouzení. Pro nezávislé potvrzení funkce místopředsedy ODS viz SRC-02 (ČT24); roli stínového ministra sportu, prevence a zdraví jiný nezávislý zdroj v tomto minimálním dossieru zatím nedokládá — jde o údaj strany o vlastní vnitřní struktuře."
+    }
+  ],
+  "order": 3
+}

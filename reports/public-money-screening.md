@@ -16,14 +16,28 @@ nepovyšuje nikoho na předmět šetření a neroutuje se na web. Rozšíření
 rozhodnutí zapsané v `AGENTS.md` (viz `docs/entity-discovery.md`).
 
 **Neúplnost je vlastnost, ne chyba.** Registr obsahuje smlouvy nad
-50 000 Kč od 1. 7. 2016, se zákonnými výjimkami. Report navíc pokrývá
-jen období **null až null** (0 měsíců).
+50 000 Kč od 1. 7. 2016, se zákonnými výjimkami.
+Report navíc pokrývá jen období **2016-07 až 2026-08** (122 měsíců).
 Chybějící záznam znamená „v pokrytém období nic zveřejněného“, nikdy
 „subjekt nedostal veřejné peníze“.
 
-Datum kontroly: **2026-08-02**. Zdroj: Registr smluv (ISRS) — měsíční otevřená data data.smlouvy.gov.cz.
+Datum kontroly: **2026-08-08**. Zdroj: Registr smluv (ISRS) — měsíční otevřená data data.smlouvy.gov.cz.
 Regenerace: `npm run screening:public-money -- --ico=…`.
 
-## Žádné vstupy
+## (název subjektu není v pokrytých záznamech) — IČO 01529820
 
-Screening neběžel nad žádným IČO.
+- Počet smluv: **0** — v pokrytém období není v registru zveřejněná
+  smlouva, ve které by subjekt vystupoval jako smluvní strana.
+  To není zjištění o subjektu, jen o obsahu registru za tohle období.
+
+## (název subjektu není v pokrytých záznamech) — IČO 02922703
+
+- Počet smluv: **0** — v pokrytém období není v registru zveřejněná
+  smlouva, ve které by subjekt vystupoval jako smluvní strana.
+  To není zjištění o subjektu, jen o obsahu registru za tohle období.
+
+## (název subjektu není v pokrytých záznamech) — IČO 26228548
+
+- Počet smluv: **0** — v pokrytém období není v registru zveřejněná
+  smlouva, ve které by subjekt vystupoval jako smluvní strana.
+  To není zjištění o subjektu, jen o obsahu registru za tohle období.

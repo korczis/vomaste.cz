@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/jan-chvojka",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "jan-chvojka",
+  "entityId": "jan-chvojka",
+  "title": "Jan Chvojka",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "jan-chvojka"
+  ],
+  "order": 583,
+  "description": "Jan Chvojka — bývalý ministr pro lidská práva (2016–2017).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalý ministr pro lidská práva, rovné příležitosti a legislativu\n(30. 11. 2016 – 13. 12. 2017, ČSSD).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ],
+  "media": [
+    {
+      "file": "images/people/jan-chvojka.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jan_chvojka.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "OISV",
+      "credit": "Own work",
+      "retrieved": "2026-08-11",
+      "width": 1200,
+      "height": 1335,
+      "role": "portrait"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q12022462"
+  }
+}

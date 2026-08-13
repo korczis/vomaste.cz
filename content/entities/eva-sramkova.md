@@ -3,7 +3,7 @@
 title = "Eva Šrámková"
 template = "entity.html"
 weight = 120
-description = "Kontextová entita — Pirátská poslankyně; iniciovala debatu o očkovací strategii ve výboru. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Eva Šrámková — Kontextová entita — Pirátská poslankyně; iniciovala debatu o očkovací strategii ve výboru."
 
 [extra]
 generated = true

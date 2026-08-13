@@ -34,5 +34,18 @@
   ],
   "externalIds": {
     "ico": "00409171"
-  }
+  },
+  "media": [
+    {
+      "file": "images/logos/cssd.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Social_Democracy_(Czech_Republic).svg",
+      "license": "Public domain",
+      "author": "Sociální demokracie",
+      "credit": "https://socdem.cz/wp-content/uploads/2023/09/logo-bile-transparent.svg",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 1568,
+      "role": "logo"
+    }
+  ]
 }

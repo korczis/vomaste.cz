@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/olga-richterova",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "olga-richterova",
+  "slug": "olga-richterova",
+  "title": "Olga Richterová",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení Olgy Richterové.",
+  "dossierType": "entity",
+  "canonicalDossier": "olga-richterova",
+  "subject": "olga-richterova",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-07",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-07-OLGA-RICHTEROVA"
+    ]
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nOlga Richterová je poslankyně Poslanecké sněmovny Parlamentu ČR za Piráty,\npředsedkyně poslaneckého klubu Pirátů a místopředsedkyně České pirátské\nstrany, která je v aktuálním složení Poslanecké sněmovny opoziční\nstranou. Jako veřejná funkcionářka spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier je\n`AUTH-2026-08-07-OLGA-RICHTEROVA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam — dokládá pouze její aktuální poslanecký mandát a funkce ve\nvedení poslaneckého klubu a strany, nikoli žádnou hloubkovou\ninvestigativní rešerši jiných témat. Rozšíření rozsahu vyžaduje\nsamostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/olga-richterova/claims/clm-01.md) | Olga Richterová je od 4. 10. 2025 poslankyní Poslanecké sněmovny Parlamentu ČR za Piráty (volební obvod hlavní město Praha) a od 5. 10. 2025 předsedkyní poslaneckého klubu Pirátů; 17. 1. 2026 na republikovém fóru v Prachaticích obhájila pozici 4. místopředsedkyně České pirátské strany (322 hlasů z 589 odevzdaných) — nezávisle informovaly Deník.cz (ČTK) i CNN Prima News. | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/olga-richterova/sources/src-01.md), [SRC-02](@/dossiers/olga-richterova/sources/src-02.md), [SRC-03](@/dossiers/olga-richterova/sources/src-03.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedeného poslaneckého mandátu ani stranických funkcí\nnic dalšího; nejde o hodnocení jejího politického působení ani o\ninvestigativní rešerši jiných témat."
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "entity": "olga-richterova",
+        "label": "Olga Richterová",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02",
+          "SRC-03"
+        ]
+      }
+    ],
+    "edges": []
+  }
+}

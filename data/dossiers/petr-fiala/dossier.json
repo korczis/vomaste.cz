@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-fiala",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "petr-fiala",
+  "slug": "petr-fiala",
+  "title": "Petr Fiala",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení Petra Fialy.",
+  "dossierType": "entity",
+  "canonicalDossier": "petr-fiala",
+  "subject": "petr-fiala",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-07",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-06-PETR-FIALA",
+      "AUTH-2026-08-07-PETR-FIALA-PREMIERSHIP"
+    ]
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nPetr Fiala je poslanec Poslanecké sněmovny PČR, bývalý předseda ODS\n(2014–2026) a bývalý předseda vlády ČR (2021–2025). Jako veřejný\nfunkcionář spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznamy pro tento dossier\njsou `AUTH-2026-08-06-PETR-FIALA` (poslanecký profil) a\n`AUTH-2026-08-07-PETR-FIALA-PREMIERSHIP` (rozšíření na premiérské\nobdobí 2021–2025, v mezích tam popsaných témat).\n\nDossier dokládá jeho aktuální poslanecký mandát a roli řadového\nposlance po odchodu z čela ODS, a dále — v mezích autorizace z\n2026-08-07 — souhrnné veřejné hodnocení jeho čtyřletého premiérského\nmandátu (průzkum CVVM, anketa RESPEKT). Hlubší investigativní rešerše\nkonkrétních kauz jeho premiérského období (ministerské rezignace,\nbitcoinová kauza, hospodářský rekord) je zatím jen autorizovaná, nikoli\nprovedená — viz registr mezer (GAP-01 až GAP-03).\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/petr-fiala/claims/clm-01.md) | Petr Fiala je podle profilu na webu Poslanecké sněmovny PČR poslancem zvoleným za ODS (mandát od 4. 10. 2025) a od 17. 1. 2026, po zvolení Martina Kupky předsedou ODS, řadovým poslancem — dříve dvanáct let předsedou ODS a čtyři roky (2021–2025) předsedou vlády ČR, jak nezávisle informovaly Hospodářské noviny (HN.cz) | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/petr-fiala/sources/src-01.md), [SRC-02](@/dossiers/petr-fiala/sources/src-02.md) |\n| <a id=\"clm-02\"></a>[CLM-02](@/dossiers/petr-fiala/claims/clm-02.md) | Podle průzkumu CVVM ze šetření z června 2025 (zveřejněno 21. 8. 2025) mezi veřejností ve všech zkoumaných oblastech hodnocení Fialovy vlády převažovala nespokojenost; relativně nejlépe byl hodnocen ohlášený vládní program (30 % spokojených) a osoba předsedy vlády (28 %), nejhůře komunikace vlády s veřejností (18 %) | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-03](@/dossiers/petr-fiala/sources/src-03.md) |\n| <a id=\"clm-03\"></a>[CLM-03](@/dossiers/petr-fiala/claims/clm-03.md) | V anketě týdeníku RESPEKT „Jaký premiér byl Petr Fiala\" (12. 9. 2025) hodnotilo Fialovo čtyřleté premiérské období patnáct jmenovaných osobností s protichůdnými závěry — od ocenění podpory Ukrajině a stability vládnutí (např. Jindřich Šídlo, Tomáš Halík) po kritiku chybějícího sociálního dialogu, nenaplněných environmentálních a rovnostářských závazků nebo „promarněné příležitosti\" k reformám (např. Josef Středula, Zuzana Szabó Lenhartová, Ivan Pilný) | <span class=\"status-badge status-opinion\">NÁZOR</span> | [SRC-04](@/dossiers/petr-fiala/sources/src-04.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedeného mandátu a dřívějších funkcí nic dalšího.\nCLM-02 a CLM-03 dokládají veřejné hodnocení premiérského období\n(průzkum a názorová anketa) v mezích AUTH-2026-08-07-PETR-FIALA-\nPREMIERSHIP; hlubší investigativní rešerše konkrétních kauz\npremiérského období zůstává otevřená (viz registr mezer)."
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "entity": "petr-fiala",
+        "label": "Petr Fiala",
+        "subject": true,
+        "claims": [
+          "CLM-01",
+          "CLM-02",
+          "CLM-03"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02",
+          "SRC-03",
+          "SRC-04"
+        ]
+      }
+    ],
+    "edges": []
+  }
+}

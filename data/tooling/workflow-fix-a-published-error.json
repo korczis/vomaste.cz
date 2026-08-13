@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/workflow-fix-a-published-error",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "workflow-fix-a-published-error",
+  "kind": "workflow",
+  "name": "fix-a-published-error",
+  "title": "Oprava publikovaného obsahu",
+  "category": "provoz",
+  "personas": [
+    "editor",
+    "source-contributor",
+    "maintainer"
+  ],
+  "riskLevel": "review-required",
+  "writes": true,
+  "summary": "Cesta od nahlášení k ověřené, doložené a validované opravě — nebo k odůvodněnému odmítnutí. Určí typ opravy, ověří nahlášení nezávisle, zjistí dosah napříč dossierem, opraví v kanonických datech, zanechá stopu a projde branami.",
+  "whenToRun": "Když někdo nahlásí chybu v publikovaném obsahu nebo když review vrátil nález.",
+  "describedFrom": "header",
+  "notes": [
+    "Doklad není předpoklad cesty, je to její druhý krok. Bez něj se oprava neprovádí, ale nahlášení se nezahazuje.",
+    "Oprava zostřující tvrzení má stejnou důkazní laťku jako nové tvrzení.",
+    "Odmítnutí s odůvodněním je hotová práce, ne selhání."
+  ]
+}

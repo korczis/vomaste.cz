@@ -9,17 +9,19 @@
   "entityId": "vit-rakusan",
   "title": "Vít Rakušan",
   "entityType": "person",
-  "publicationRole": "context",
-  "dossierEnabled": false,
-  "dossierStatus": "not_authorized",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
   "coverageState": "discovered",
   "dossiers": [
+    "vit-rakusan",
     "andrej-babis",
     "boris-stastny",
     "martin-sebestyan",
     "oto-klempir",
     "ales-juchelka",
-    "alena-schillerova"
+    "alena-schillerova",
+    "vit-rakusan"
   ],
   "order": 434,
   "provenance": {
@@ -45,6 +47,20 @@
     {
       "type": "markdown",
       "value": "Kontextová entita — Předseda STAN; nevymáhané miliardy podle něj poškodí rozpočet na obranu a vědu. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis, boris-stastny, martin-sebestyan, oto-klempir, ales-juchelka, alena-schillerova). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
+  ],
+  "media": [
+    {
+      "file": "images/people/vit-rakusan.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:V%C3%ADt_Raku%C5%A1an_2023_Praha.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "author": "David Sedlecký",
+      "credit": "Own work",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 1495,
+      "role": "portrait"
     }
   ]
 }

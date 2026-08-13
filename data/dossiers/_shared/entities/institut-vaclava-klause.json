@@ -1,38 +1,41 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/institut-vaclava-klause",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "institut-vaclava-klause",
- "entityId": "institut-vaclava-klause",
- "title": "Institut Václava Klause",
- "entityType": "organization",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "macinka-turek"
- ],
- "order": 152,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/institut-vaclava-klause",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "institut-vaclava-klause",
+  "entityId": "institut-vaclava-klause",
+  "title": "Institut Václava Klause",
+  "entityType": "organization",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "macinka-turek"
   ],
-  "claimRefs": [
-   "CLM-24"
+  "order": 152,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02"
+    ],
+    "claimRefs": [
+      "CLM-24"
+    ],
+    "sourceRefs": [
+      "SRC-27"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Macinka podle Hlídače státu manažerem institutu od 2017 (přehled funkcí). Institut Václava Klause staršího — odlišit od entity vaclav-klaus-ml. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ],
-  "sourceRefs": [
-   "SRC-27"
-  ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Macinka podle Hlídače státu manažerem institutu od 2017 (přehled funkcí). Institut Václava Klause staršího — odlišit od entity vaclav-klaus-ml. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (macinka-turek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  "externalIds": {
+    "ico": "24220345"
   }
- ]
 }

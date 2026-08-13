@@ -39,10 +39,23 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Kontextová entita — Zmíněna jen jako stranická afiliace citovaného Matěje Ondřeje Havla. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (andrej-babis, boris-stastny, jaromir-zuna, karel-havlicek). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+      "value": "Kontextová entita — uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (mj. jako stranická příslušnost více subjektů dossierů). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
     }
   ],
   "externalIds": {
     "ico": "71339728"
-  }
+  },
+  "media": [
+    {
+      "file": "images/logos/top-09.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Logo_of_the_TOP_09_(2021).svg",
+      "license": "Public domain",
+      "author": "TOP 09",
+      "credit": "https://www.top09.cz/styles/assets/svg/logo.svg",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 722,
+      "role": "logo"
+    }
+  ]
 }

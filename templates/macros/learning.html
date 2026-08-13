@@ -1,0 +1,146 @@
+{#- Komponenty vzdělávací vrstvy (Start, Bootcamp, Akademie, Příručka).
+
+    Proč makro a ne markup ve stránkách: lekcí jsou desítky a každá potřebuje
+    tytéž prvky — cíl, příklad, protipříklad, varování, odkaz na pravidlo,
+    cvičení, kontrolní otázku. Kdyby si každá stránka nesla vlastní <div>y,
+    byla by změna vzhledu nebo přístupnostní opravy padesátinásobná práce
+    a rozjela by se. Stejný důvod, proč registry jedou přes macros/ui.html.
+
+    Dvě vrstvy, jeden markup:
+      * šablony (learning-*.html) volají makra přímo;
+      * těla lekcí v markdownu volají komponenty z templates/components/
+        které si tenhle soubor importují — takže markup callloutu existuje
+        právě jednou, ať přijde odkud chce.
+
+    Barevné tokeny jsou ze stávající palety (žádná „Academy Theme“), inline
+    style se nepoužívá — F1 z Flowbite doktríny to shodí buildem. -#}
+
+{#- ---------------------------------------------------------------------
+    objectives — co budeš po lekci umět
+    ---------------------------------------------------------------------
+    Vždycky na začátku a vždycky formulované jako schopnost („poznáš…“),
+    ne jako téma („o zdrojích“). Prázdný seznam nic nevykreslí — poloprázdný
+    rámeček je horší než žádný.                                          -#}
+{% component learning_objectives(items) -%}
+{%- if items and items | length > 0 %}
+<section aria-labelledby="cile-heading" class="mb-8 rounded-xl border border-white/10 bg-white/[0.03] p-6">
+  <h2 id="cile-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Po téhle lekci</h2>
+  <ul class="space-y-2 text-sm leading-relaxed text-white/70">
+    {%- for it in items %}
+    <li class="flex gap-3">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="mt-1 shrink-0 text-[#f3e5c0]" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+      <span>{{ it | safe }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endif -%}
+{%- endcomponent %}
+
+{#- ---------------------------------------------------------------------
+    lesson_meta — řádek odznaků pod nadpisem lekce
+    ---------------------------------------------------------------------
+    Bere CELÝ `data/learning.toml`, aby si popisky úrovně a audience
+    dohledalo samo. Šablona tak nemůže vypsat jiný popisek než index.   -#}
+{% component learning_lesson_meta(page, learning) -%}
+<p class="mb-8 flex flex-wrap items-center gap-2">
+  {%- if page.extra.lesson_id | default(value="") %}
+  {{ <atoms_badge label={page.extra.lesson_id} title="Identifikátor lekce" tone="accent" /> }}
+  {%- endif %}
+  {%- if page.extra.level | default(value="") %}
+    {%- set lvl = [__i for __i in learning.levels if __i.id == page.extra.level] | first %}
+    {%- if lvl %}{{ <atoms_badge label={lvl.label} title={"Úroveň " ~ lvl.code} /> }}{% endif %}
+  {%- endif %}
+  {%- if page.extra.estimated_minutes | default(value=0) %}
+  {{ <atoms_badge label={page.extra.estimated_minutes ~ " min"} title="Orientační čas čtení, ne měření" tone="muted" /> }}
+  {%- endif %}
+  {%- for a in page.extra.audience | default(value=[]) %}
+    {%- set aud = [__i for __i in learning.audiences if __i.id == a] | first %}
+    {%- if aud %}{{ <atoms_badge label={aud.label} title={aud.lead} tone="muted" /> }}{% endif %}
+  {%- endfor %}
+</p>
+{%- endcomponent %}
+
+{#- ---------------------------------------------------------------------
+    prerequisites — co si přečíst dřív
+    ---------------------------------------------------------------------
+    Nezobrazuje se jako zákaz. Je to nabídka: kdo tomu rozumí, jde dál.
+    `lookup` je mapa lesson_id → stránka, sestavená v šabloně.           -#}
+{% component learning_prerequisites(ids, lookup) -%}
+{%- if ids and ids | length > 0 %}
+<nav aria-labelledby="prereq-heading" class="mb-8 rounded-xl border border-white/10 p-5">
+  <h2 id="prereq-heading" class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/55">Předpokládá</h2>
+  <ul class="flex flex-wrap gap-2 text-sm">
+    {%- for id in ids %}
+    {%- set target = [__i for __i in lookup if __i.extra.lesson_id == id] | first %}
+    <li>
+      {%- if target %}
+      <a href="{{ target.permalink | safe }}" class="rounded-lg border border-white/15 px-3 py-1.5 text-white/70 no-underline hover:border-white/30 hover:text-white">{{ id }} — {{ target.title }}</a>
+      {%- else %}
+      <span class="rounded-lg border border-white/10 px-3 py-1.5 text-white/65">{{ id }}</span>
+      {%- endif %}
+    </li>
+    {%- endfor %}
+  </ul>
+</nav>
+{%- endif -%}
+{%- endcomponent %}
+
+{#- ---------------------------------------------------------------------
+    next_lesson — jedno další místo, kam jít
+    ---------------------------------------------------------------------
+    Záměrně JEDEN odkaz, ne rozcestník: na konci lekce je rozhodování
+    o pěti možnostech přesně to, co člověka z kurzu vyžene.              -#}
+{% component learning_next_lesson(id, lookup, label="Pokračovat") -%}
+{%- set target = [__i for __i in lookup if __i.extra.lesson_id == id] | first %}
+{%- if target %}
+<nav aria-label="Další lekce" class="mt-12 border-t border-white/10 pt-6">
+  <a href="{{ target.permalink | safe }}" class="group flex items-center justify-between gap-4 rounded-xl border border-white/15 p-5 no-underline hover:border-[#f3e5c0]/40">
+    <span class="min-w-0">
+      <span class="block text-xs uppercase tracking-wide text-white/65">{{ label }}</span>
+      <span class="block truncate text-base text-[#f3e5c0]">{{ target.extra.lesson_id }} — {{ target.title }}</span>
+    </span>
+    <span class="shrink-0 text-white/65 transition-transform group-hover:translate-x-1" aria-hidden="true">→</span>
+  </a>
+</nav>
+{%- endif -%}
+{%- endcomponent %}
+
+{#- ---------------------------------------------------------------------
+    related_kb — odkaz na kanonický pojem
+    ---------------------------------------------------------------------
+    Tohle je ta část, která brání driftu: lekce pojem VYSVĚTLUJE a použije,
+    ale definici vlastní `content/koncepty/*`. Odkaz sem proto není
+    „související čtení“, je to ukazatel na jediné závazné znění.         -#}
+{% component learning_related_kb(paths) -%}
+{%- if paths and paths | length > 0 %}
+<section aria-labelledby="kb-heading" class="mt-10 rounded-xl border border-white/10 bg-white/[0.03] p-6">
+  <h2 id="kb-heading" class="mb-1 text-xs font-semibold uppercase tracking-wide text-white/55">Kanonické znění pojmů</h2>
+  <p class="mb-3 text-xs text-white/65">Lekce pojem vysvětluje. Závazná definice je tady — když se rozejdou, platí tahle stránka.</p>
+  <ul class="flex flex-wrap gap-2 text-sm">
+    {#- Tera neumí sáhnout na atribut přímo z volání funkce, proto set. -#}
+    {%- for p in paths %}
+    {%- set kb_page = get_page(path=p) %}
+    <li><a href="{{ get_url(path="@/" ~ p) | safe }}" class="rounded-lg border border-white/15 px-3 py-1.5 text-white/70 no-underline hover:border-white/30 hover:text-white">{{ kb_page.title }}</a></li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endif -%}
+{%- endcomponent %}
+
+{#- ---------------------------------------------------------------------
+    lesson_card — dlaždice lekce v indexu
+    --------------------------------------------------------------------- -#}
+{% component learning_lesson_card(page) -%}
+<li>
+  <a href="{{ page.permalink | safe }}" class="flex h-full flex-col rounded-xl border border-white/10 bg-white/[0.02] p-5 no-underline transition-colors hover:border-[#f3e5c0]/40">
+    <span class="mb-2 flex flex-wrap items-center gap-2">
+      {%- if page.extra.lesson_id | default(value="") %}{{ <atoms_badge label={page.extra.lesson_id} title="Identifikátor lekce" tone="accent" /> }}{% endif %}
+      {%- if page.extra.estimated_minutes | default(value=0) %}{{ <atoms_badge label={page.extra.estimated_minutes ~ " min"} title="Orientační čas" tone="muted" /> }}{% endif %}
+    </span>
+    <span class="mb-1 block text-base text-white">{{ page.title }}</span>
+    <span class="block text-sm leading-relaxed text-white/60">{{ page.description }}</span>
+  </a>
+</li>
+{%- endcomponent %}
+

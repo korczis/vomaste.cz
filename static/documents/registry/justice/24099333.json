@@ -1,0 +1,61 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-09",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/24099333",
+  "status": "OK",
+  "subject": {
+    "ico": "24099333",
+    "businessName": "RSVP TRUST, soukromý svěřenský fond",
+    "registerReference": "SF 4262/MSPH"
+  },
+  "filings": [
+    {
+      "referenceLabel": "SF 4262/SL1/MSPH",
+      "documentType": "notářský zápis [NZ 1637/2025]",
+      "createdAt": "17-12-2025",
+      "filedAt": "22-12-2025",
+      "digitized": true,
+      "files": []
+    },
+    {
+      "referenceLabel": "SF 4262/SL2/MSPH",
+      "documentType": "notářský zápis [NZ 174/2026]",
+      "createdAt": "20-02-2026",
+      "receivedByCourtAt": "20-02-2026",
+      "filedAt": "25-02-2026",
+      "digitized": true,
+      "files": []
+    },
+    {
+      "referenceLabel": "SF 4262/SL3/MSPH",
+      "documentType": "notářský zápis [NZ 175/2026]",
+      "createdAt": "20-02-2026",
+      "receivedByCourtAt": "20-02-2026",
+      "filedAt": "25-02-2026",
+      "digitized": true,
+      "files": []
+    },
+    {
+      "referenceLabel": "SF 4262/SL4/MSPH",
+      "documentType": "účetní závěrka [2025] - předána prostřednictvím správce daně z příjmů k 06.07.2026",
+      "createdAt": "06-07-2026",
+      "receivedByCourtAt": "06-07-2026",
+      "filedAt": "11-07-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 0,
+          "sizeBytes": 565
+        },
+        {
+          "pageCount": 4,
+          "sizeBytes": 125865
+        },
+        {
+          "pageCount": 3,
+          "sizeBytes": 90253
+        }
+      ]
+    }
+  ]
+}

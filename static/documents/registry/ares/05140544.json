@@ -1,0 +1,206 @@
+{
+  "retrieved": "2026-08-09",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "05140544"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "05140544",
+        "obchodniJmeno": "Demagog.cz, z.s.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 35,
+          "nazevSpravnihoObvodu": "Praha 3",
+          "kodMestskehoObvodu": 35,
+          "nazevMestskehoObvodu": "Praha 3",
+          "kodMestskeCastiObvodu": 500097,
+          "kodUlice": 467723,
+          "nazevMestskeCastiObvodu": "Praha 3",
+          "nazevUlice": "Roháčova",
+          "cisloDomovni": 145,
+          "kodCastiObce": 490261,
+          "cisloOrientacni": 14,
+          "nazevCastiObce": "Žižkov",
+          "kodAdresnihoMista": 21768480,
+          "psc": 13000,
+          "textovaAdresa": "Roháčova 145/14, Žižkov, 13000 Praha 3",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "706",
+        "pravniFormaRos": "706",
+        "financniUrad": "003",
+        "datumVzniku": "2016-06-28",
+        "datumAktualizace": "2026-08-02",
+        "dic": "CZ05140544",
+        "icoId": "05140544",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Roháčova 145/14",
+          "radekAdresy2": "Žižkov",
+          "radekAdresy3": "13000 Praha 3"
+        },
+        "czNace2008": [
+          "9499"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "NEEXISTUJICI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Demagog.cz, z.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 35,
+                  "nazevSpravnihoObvodu": "Praha 3",
+                  "kodMestskehoObvodu": 35,
+                  "nazevMestskehoObvodu": "Praha 3",
+                  "kodMestskeCastiObvodu": 500097,
+                  "kodUlice": 467723,
+                  "nazevMestskeCastiObvodu": "Praha 3",
+                  "nazevUlice": "Roháčova",
+                  "cisloDomovni": 145,
+                  "kodCastiObce": 490261,
+                  "cisloOrientacni": 14,
+                  "nazevCastiObce": "Žižkov",
+                  "kodAdresnihoMista": 21768480,
+                  "psc": 13000,
+                  "textovaAdresa": "Roháčova 145/14, Žižkov, 13000 Praha 3",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "706",
+            "pravniFormaRos": "706",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Demagog.cz, z.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 35,
+                  "nazevSpravnihoObvodu": "Praha 3",
+                  "kodMestskehoObvodu": 35,
+                  "nazevMestskehoObvodu": "Praha 3",
+                  "kodMestskeCastiObvodu": 500097,
+                  "kodUlice": 467723,
+                  "nazevMestskeCastiObvodu": "Praha 3",
+                  "nazevUlice": "Roháčova",
+                  "cisloDomovni": 145,
+                  "kodCastiObce": 490261,
+                  "cisloOrientacni": 14,
+                  "nazevCastiObce": "Žižkov",
+                  "kodAdresnihoMista": 21768480,
+                  "psc": 13000,
+                  "textovaAdresa": "Roháčova 145/14, Žižkov, 13000 Praha 3",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "706",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Demagog.cz, z.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 35,
+                  "nazevSpravnihoObvodu": "Praha 3",
+                  "kodMestskehoObvodu": 35,
+                  "nazevMestskehoObvodu": "Praha 3",
+                  "kodMestskeCastiObvodu": 500097,
+                  "kodUlice": 467723,
+                  "nazevMestskeCastiObvodu": "Praha 3",
+                  "nazevUlice": "Roháčova",
+                  "cisloDomovni": 145,
+                  "kodCastiObce": 490261,
+                  "cisloOrientacni": 14,
+                  "nazevCastiObce": "Žižkov",
+                  "kodAdresnihoMista": 21768480,
+                  "psc": 13000,
+                  "textovaAdresa": "Roháčova 145/14, Žižkov, 13000 Praha 3",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "706",
+            "spisovaZnacka": "L 71087/MSPH",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "9499"
+        ]
+      }
+    ]
+  }
+}

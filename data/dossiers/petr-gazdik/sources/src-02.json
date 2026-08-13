@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-gazdik/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-gazdik"
+  },
+  "title": "SRC-02 — Forum24: Gazdík končí jako ministr školství",
+  "description": "Forum24 o oznámení demise 19. 6. 2022: kontakty s M. Redlem, vlastní zdůvodnění, rezignace i na místopředsedu STAN.",
+  "outlet": "Forum24",
+  "sourceType": "zpravodajský článek",
+  "url": "https://www.forum24.cz/gazdik-konci-jako-ministr-skolstvi-nechci-rozkolisat-vladu-napsal/",
+  "retrieved": "2026-08-08",
+  "published": "2022-06-19",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-gazdik/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "petr-gazdik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek Forum24 z 19. 6. 2022, otevřen a přečten 2026-08-08.\nUvádí, že Petr Gazdík oznámil demisi z funkce ministra školství ke 30. 6. 2022 poté, co média upozornila na jeho kontakty s podnikatelem a lobbistou Michalem Redlem, obviněným v kauze kolem pražského dopravního podniku (Dozimetr). Cituje jeho slova: „Rozhodl jsem se podat demisi z funkce ministra školství ke 30. 6. Přesto, že se necítím ničím vinen“ a „Nechci rozkolísat vládu ani koalici na prahu předsednictví EU“; Gazdík podle článku připustil, že „stýkat se s Michalem Redlem byla chyba“, a rezignoval i na funkci místopředsedy hnutí STAN.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství — dokládá oznámení demise a jeho zdůvodnění Gazdíkovými vlastními slovy. **Gazdík není v kauze Dozimetr obviněn a z doložených kontaktů se zde nevyvozuje žádné pochybení**; demise je politický krok, ne procesní ani věcný závěr."
+    }
+  ],
+  "order": 2
+}

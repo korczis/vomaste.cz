@@ -1,0 +1,22 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "01818899",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/01818899",
+  "nazev": "Aston Martin klub České republiky, z. s.",
+  "sidlo": "Petrská 1136/12, Nové Město, 11000 Praha 1",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "L",
+    "vlozka": "67238"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "Prezident",
+      "since": "2017-01-05",
+      "kind": "person",
+      "name": "Bc. Filip Turek"
+    }
+  ],
+  "spolecnici": []
+}

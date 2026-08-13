@@ -1,0 +1,246 @@
+{
+  "retrieved": "2026-08-09",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "06760538"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "06760538",
+        "obchodniJmeno": "Milion Chvilek, z. s.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 35,
+          "nazevSpravnihoObvodu": "Praha 3",
+          "kodMestskehoObvodu": 35,
+          "nazevMestskehoObvodu": "Praha 3",
+          "kodMestskeCastiObvodu": 500097,
+          "kodUlice": 448591,
+          "nazevMestskeCastiObvodu": "Praha 3",
+          "nazevUlice": "Husinecká",
+          "cisloDomovni": 808,
+          "kodCastiObce": 490261,
+          "cisloOrientacni": 5,
+          "nazevCastiObce": "Žižkov",
+          "kodAdresnihoMista": 21775168,
+          "psc": 13000,
+          "textovaAdresa": "Husinecká 808/5, Žižkov, 13000 Praha 3",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "706",
+        "pravniFormaRos": "706",
+        "financniUrad": "003",
+        "datumVzniku": "2018-01-31",
+        "datumAktualizace": "2026-07-03",
+        "dic": "CZ06760538",
+        "icoId": "06760538",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Husinecká 808/5",
+          "radekAdresy2": "Žižkov",
+          "radekAdresy3": "13000 Praha 3"
+        },
+        "czNace2008": [
+          "9499"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Milion Chvilek, z. s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 35,
+                  "nazevSpravnihoObvodu": "Praha 3",
+                  "kodMestskehoObvodu": 35,
+                  "nazevMestskehoObvodu": "Praha 3",
+                  "kodMestskeCastiObvodu": 500097,
+                  "kodUlice": 448591,
+                  "nazevMestskeCastiObvodu": "Praha 3",
+                  "nazevUlice": "Husinecká",
+                  "cisloDomovni": 808,
+                  "kodCastiObce": 490261,
+                  "cisloOrientacni": 5,
+                  "nazevCastiObce": "Žižkov",
+                  "kodAdresnihoMista": 21775168,
+                  "psc": 13000,
+                  "textovaAdresa": "Husinecká 808/5, Žižkov, 13000 Praha 3",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "706",
+            "pravniFormaRos": "706",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Milion Chvilek, z. s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 35,
+                  "nazevSpravnihoObvodu": "Praha 3",
+                  "kodMestskehoObvodu": 35,
+                  "nazevMestskehoObvodu": "Praha 3",
+                  "kodMestskeCastiObvodu": 500097,
+                  "kodUlice": 448591,
+                  "nazevMestskeCastiObvodu": "Praha 3",
+                  "nazevUlice": "Husinecká",
+                  "cisloDomovni": 808,
+                  "kodCastiObce": 490261,
+                  "cisloOrientacni": 5,
+                  "nazevCastiObce": "Žižkov",
+                  "kodAdresnihoMista": 21775168,
+                  "psc": 13000,
+                  "textovaAdresa": "Husinecká 808/5, Žižkov, 13000 Praha 3",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "706",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Milion Chvilek, z. s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 35,
+                  "nazevSpravnihoObvodu": "Praha 3",
+                  "kodMestskehoObvodu": 35,
+                  "nazevMestskehoObvodu": "Praha 3",
+                  "kodMestskeCastiObvodu": 500097,
+                  "kodUlice": 448591,
+                  "nazevMestskeCastiObvodu": "Praha 3",
+                  "nazevUlice": "Husinecká",
+                  "cisloDomovni": 808,
+                  "kodCastiObce": 490261,
+                  "cisloOrientacni": 5,
+                  "nazevCastiObce": "Žižkov",
+                  "kodAdresnihoMista": 21775168,
+                  "psc": 13000,
+                  "textovaAdresa": "Husinecká 808/5, Žižkov, 13000 Praha 3",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "706",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Milion Chvilek, z. s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 35,
+                  "nazevSpravnihoObvodu": "Praha 3",
+                  "kodMestskehoObvodu": 35,
+                  "nazevMestskehoObvodu": "Praha 3",
+                  "kodMestskeCastiObvodu": 500097,
+                  "kodUlice": 448591,
+                  "nazevMestskeCastiObvodu": "Praha 3",
+                  "nazevUlice": "Husinecká",
+                  "cisloDomovni": 808,
+                  "kodCastiObce": 490261,
+                  "cisloOrientacni": 5,
+                  "nazevCastiObce": "Žižkov",
+                  "kodAdresnihoMista": 21775168,
+                  "psc": 13000,
+                  "textovaAdresa": "Husinecká 808/5, Žižkov, 13000 Praha 3",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "706",
+            "spisovaZnacka": "L 69778/MSPH",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "9499"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-kulhanek/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-kulhanek"
+  },
+  "text": "Petr Kulhánek byl podle oficiálního profilu na webu Vlády ČR ministrem pro místní rozvoj od 8. 10. 2024 (od 6. 11. 2025 do 15. 12. 2025 v demisi), dříve hejtmanem Karlovarského kraje (od 2020) a primátorem Karlových Varů (2010–2018); podle ČeskýchNovin ho do funkce jmenoval prezident Petr Pavel 8. 10. 2024 jako nástupce odvolaného Ivana Bartoše (nominován za STAN)",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-kulhanek/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-kulhanek/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "petr-kulhanek"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/petr-kulhanek/_index.md)."
+    }
+  ]
+}

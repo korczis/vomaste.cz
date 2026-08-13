@@ -26,7 +26,8 @@
     },
     "sourceFamily": {
       "type": "string",
-      "$comment": "Zdrojová rodina — zdroje se stejnou neprázdnou hodnotou se počítají jako JEDEN nezávislý zdroj (převzetí téže agenturní zprávy). Prázdný string = samostatný zdroj; sémantiku nezávislosti vynucuje validátor fáze C, ne tvar."
+      "minLength": 1,
+      "$comment": "Zdrojová rodina — zdroje se stejnou hodnotou se počítají jako JEDEN nezávislý zdroj (převzetí téže agenturní zprávy). Sémantiku nezávislosti vynucuje validátor fáze C, ne tvar. Samostatný zdroj pole VYNECHÁ; prázdný string je zakázaný, protože znamená totéž co chybějící klíč a jen svádí konzumenty k tomu, aby ho odlišovali (dvě evidenční šablony to dělaly a podhodnocovaly počet nezávislých rodin)."
     },
     "sourceType": {
       "type": "string",
@@ -51,6 +52,27 @@
       "type": "string",
       "minLength": 1,
       "$comment": "Volitelný stav dostupnosti (validate:dossier dnes hlásí possibly-dead zdroje jen jako warning; strukturované pole je připraveno pro fázi C/D)."
+    },
+    "localDocument": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "originalUrl", "retrievedAt", "reviewNote"],
+      "properties": {
+        "path": {
+          "type": "string",
+          "pattern": "^documents/[a-z0-9-]+/[a-zA-Z0-9._-]+$",
+          "$comment": "Relativní ke static/ — soubor musí fyzicky existovat na disku (vynucuje validate-registry-table.mjs)."
+        },
+        "originalUrl": { "$ref": "_defs.schema.json#/$defs/httpUrl" },
+        "retrievedAt": { "$ref": "_defs.schema.json#/$defs/isoDate" },
+        "sizeBytes": { "type": "integer", "minimum": 1 },
+        "reviewNote": {
+          "type": "string",
+          "minLength": 30,
+          "$comment": "Povinný záznam ruční kontroly osobních údajů před publikací — co bylo prověřeno, proč je dokument bezpečný ke zveřejnění (viz AGENTS.md, Data minimization)."
+        }
+      },
+      "$comment": "Lokálně hostovaná kopie primárního dokumentu proti zmizení z internetu — jen pro jednotlivě prověřené dokumenty bez osobních údajů. Nikdy hromadný dump (viz AGENTS.md publication gate 6 a 8)."
     }
   },
   "$comment": "Jen tvar. Nezávislost source families a mrtvé odkazy vlastní sémantické validátory fáze C."

@@ -1,45 +1,63 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/eva-decroix",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "eva-decroix",
- "entityId": "eva-decroix",
- "title": "Eva Decroix",
- "entityType": "person",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "jeronym-tejc"
- ],
- "order": 118,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/eva-decroix",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "eva-decroix",
+  "entityId": "eva-decroix",
+  "title": "Eva Decroix",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "jeronym-tejc",
+    "eva-decroix"
   ],
-  "claimRefs": [
-   "CLM-07",
-   "CLM-30",
-   "CLM-31",
-   "CLM-32"
+  "order": 118,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02"
+    ],
+    "claimRefs": [
+      "CLM-07",
+      "CLM-30",
+      "CLM-31",
+      "CLM-32"
+    ],
+    "sourceRefs": [
+      "SRC-02",
+      "SRC-03",
+      "SRC-04",
+      "SRC-15",
+      "SRC-16"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Exministryně spravedlnosti (ODS); dohody s kupci bitcoinů spadají do jejího období, pochybení odmítá. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jeronym-tejc). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ],
-  "sourceRefs": [
-   "SRC-02",
-   "SRC-03",
-   "SRC-04",
-   "SRC-15",
-   "SRC-16"
-  ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Exministryně spravedlnosti (ODS); dohody s kupci bitcoinů spadají do jejího období, pochybení odmítá. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (jeronym-tejc). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  "media": [
+    {
+      "file": "images/people/eva-decroix.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eva_Decroix_(2025)_I.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "author": "Jindřich Nosek (NoJin)",
+      "credit": "Own work",
+      "retrieved": "2026-08-11",
+      "width": 1200,
+      "height": 1500,
+      "role": "portrait"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q108057136"
   }
- ]
 }

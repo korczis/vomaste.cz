@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/css-watch",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "css-watch",
+  "kind": "npm",
+  "name": "css:watch",
+  "title": "CSS ve watch režimu",
+  "category": "provoz",
+  "summary": "Totéž co css:build, ale bez minifikace a v nekonečném watch režimu.",
+  "whenToRun": "Vedle `zola serve`, když ladíš styly a nechceš po každé změně spouštět build.",
+  "inputs": [
+    "static/css/input.css",
+    "tailwind.config.js"
+  ],
+  "outputs": [
+    "static/css/main.css (gitignorováno)"
+  ],
+  "describedFrom": "command"
+}

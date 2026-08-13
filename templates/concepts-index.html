@@ -1,21 +1,20 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
 
 {#- /koncepty/ — index of every concept, grouped by data/concept-groups.toml.
     Group order and labels come from that data file, never from this template. -#}
 
 {% block content %}
 <main class="mx-auto max-w-3xl px-6 py-12 text-white">
-  {{ ui::page_header(title=section.title, breadcrumb_items=[
+  {{ <ui_page_header title={section.title} breadcrumb_items={[
     "Domů::" ~ get_url(path="@/_index.md"),
     section.title,
-  ], description=section.description) }}
+  ]} description={section.description} /> }}
 
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
   {% set groups = load_data(path="data/concept-groups.toml") %}
   {% for group in groups.groups | sort(attribute="order") %}
-  {% set pages = section.pages | filter(attribute="extra.group", value=group.id) %}
+  {% set pages = [__i for __i in section.pages if __i.extra.group == group.id] %}
   {%- if pages | length > 0 %}
   <section id="{{ group.id }}" aria-labelledby="{{ group.id }}-heading" class="mb-10">
     <h2 id="{{ group.id }}-heading" class="mb-1 text-xs font-semibold uppercase tracking-wide text-white/55">{{ group.label }}</h2>
@@ -36,6 +35,6 @@
   {%- endif %}
   {% endfor %}
 
-  {{ ui::back_link_footer(url=get_url(path="@/_index.md"), label="Zpět na úvod") }}
+  {{ <ui_back_link_footer url={get_url(path="@/_index.md")} label="Zpět na úvod" /> }}
 </main>
 {% endblock content %}

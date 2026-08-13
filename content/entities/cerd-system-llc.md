@@ -3,7 +3,7 @@
 title = "CERD SYSTEM LLC"
 template = "entity.html"
 weight = 517
-description = "Kontextová americká společnost uvedená v závěru kontroly ÚOOÚ mezi právnickými osobami zapojenými do systému CERD."
+description = "CERD SYSTEM LLC — Kontextová americká společnost uvedená v závěru kontroly ÚOOÚ mezi právnickými osobami zapojenými do systému CERD."
 
 [extra]
 generated = true

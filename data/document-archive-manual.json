@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "identifier": "justice-mestsky-soud-85-cm-1204-2023-7",
+      "registry": "Sbírka listin",
+      "title": "Usnesení Městského soudu v Praze 85 Cm 1204/2023-7",
+      "entity": "csr-protikorupcnilinka",
+      "dossiers": ["james-quick"],
+      "retrieved": "2026-08-07",
+      "sourceUrl": "https://or.justice.cz/ias/ui/vypis-sl-detail?dokument=82250971&subjektId=891728&spis=977094",
+      "file": "/documents/james-quick/mestsky-soud-85-cm-1204-2023-7.pdf",
+      "mediaType": "application/pdf",
+      "sha256": "440dc5a21185f5f99a78eaaeb88c57f2defb6556bc5eb5b9b9615d2b158ec6cd",
+      "found": true
+    },
+    {
+      "identifier": "uoou-protokol-uoou-09488-14-74",
+      "registry": "ÚOOÚ",
+      "title": "Protokol o kontrole UOOU-09488/14-74",
+      "entity": "csr-protikorupcnilinka",
+      "dossiers": ["james-quick"],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://uoou.gov.cz/media/poskytnute-informace/2019/2162019/priloha-k-poskytnuti-informace-protokol-o-kontrole.pdf",
+      "file": "/documents/james-quick/uoou-protokol-uoou-09488-14-74.pdf",
+      "mediaType": "application/pdf",
+      "sha256": "aa700d93f468636c2b0fe83efdc4e4b14e409ef6fc1de94b75482b8135d58a0f",
+      "found": true
+    },
+    {
+      "identifier": "nku-kontrolni-zaver-24-28",
+      "registry": "NKÚ",
+      "title": "Kontrolní závěr NKÚ č. 24/28",
+      "entity": "nku",
+      "dossiers": ["vit-rakusan"],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://www.nku.cz/assets/kon-zavery/k24028.pdf",
+      "file": "/documents/vit-rakusan/nku-kontrolni-zaver-24-28.pdf",
+      "mediaType": "application/pdf",
+      "sha256": "2ceb2587a9dac316e78ac340eb37722fa954ee45a925f067d310b28993c91ea7",
+      "found": true
+    },
+    {
+      "identifier": "vrchni-soud-3-to-34-2024-tiskova-zprava",
+      "registry": "Vrchní soud v Praze",
+      "title": "Tisková zpráva k věci sp. zn. 3 To 34/2024",
+      "entity": "vrchni-soud-praha",
+      "dossiers": ["andrej-babis"],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://msp.gov.cz/documents/d/vrchni-soud-v-praze/tiskova-zprava-3-to-34-2024",
+      "file": "/documents/andrej-babis/vrchni-soud-3-to-34-2024-tiskova-zprava.pdf",
+      "mediaType": "application/pdf",
+      "sha256": "ff0a2e769c8d8cbac015999a2da08e4a5566e00bae5808e4157f6b16bed7628e",
+      "found": true
+    },
+    {
+      "identifier": "nss-6-afs-82-2025-75",
+      "registry": "Nejvyšší správní soud",
+      "title": "Rozsudek NSS č. j. 6 Afs 82/2025-75",
+      "entity": "nss",
+      "dossiers": ["andrej-babis"],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://vyhledavac.nssoud.cz/DokumentOriginal/Index/747444",
+      "file": "/documents/andrej-babis/nss-6-afs-82-2025-75.pdf",
+      "mediaType": "application/pdf",
+      "sha256": "e1a81f0d53ccbdc1a32b6d5ef93892c73fffeee11677240542eb78440fc06ba5",
+      "found": true
+    },
+    {
+      "identifier": "nss-8-afs-215-2024-74",
+      "registry": "Nejvyšší správní soud",
+      "title": "Rozsudek NSS č. j. 8 Afs 215/2024-74",
+      "entity": "nss",
+      "dossiers": ["andrej-babis"],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://vyhledavac.nssoud.cz/DokumentOriginal/Index/747815",
+      "file": "/documents/andrej-babis/nss-8-afs-215-2024-74.pdf",
+      "mediaType": "application/pdf",
+      "sha256": "051396aef298faaf54c65b0c93d84825a9f4160ba9d2e3fac4ef21b3eb8cafe4",
+      "found": true
+    },
+    {
+      "identifier": "nss-1-afs-59-2025-98",
+      "registry": "Nejvyšší správní soud",
+      "title": "Rozsudek NSS č. j. 1 Afs 59/2025-98",
+      "entity": "nss",
+      "dossiers": ["martin-sebestyan"],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://vyhledavac.nssoud.cz/DokumentOriginal/Index/745165",
+      "file": "/documents/martin-sebestyan/nss-1-afs-59-2025-98.pdf",
+      "mediaType": "application/pdf",
+      "sha256": "88ff29103e356b35f47e1aa4d16526aeee07d8f76877bef517d9026b4dfb9c34",
+      "found": true
+    },
+    {
+      "identifier": "us-iv-us-3359-25",
+      "registry": "Ústavní soud – NALUS",
+      "title": "Usnesení Ústavního soudu sp. zn. IV. ÚS 3359/25",
+      "entity": "ustavni-soud",
+      "dossiers": ["andrej-babis"],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://nalus.usoud.cz/Search/GetText.aspx?sz=4-3359-25_1",
+      "file": "/documents/andrej-babis/us-iv-us-3359-25.html.txt",
+      "mediaType": "text/plain",
+      "sha256": "e80ecabed060153fc8001d248b1c64b3038f0da764c37d41d11e937ff404d7ca",
+      "found": true
+    },
+    {
+      "identifier": "vsz-olomouc-2-vzv-11-2025",
+      "registry": "Vrchní státní zastupitelství v Olomouci",
+      "title": "Tisková zpráva ve věci sp. zn. 2 VZV 11/2025",
+      "entity": "vrchni-statni-zastupitelstvi-olomouc",
+      "dossiers": ["jeronym-tejc"],
+      "retrieved": "2026-08-08",
+      "sourceUrl": "https://verejnazaloba.cz/vsz-olomouc/tiskova-zprava-ze-dne-4-5-2026-v-trestni-veci-souvisejici-s-darovanim-bitcoinu-ministerstvu-spravedlnosti/",
+      "file": "/documents/jeronym-tejc/vsz-olomouc-2-vzv-11-2025.html.txt",
+      "mediaType": "text/plain",
+      "sha256": "b6b2d461023e1d6ac3e984fc55fd89c28a9ed8d04c8689351d0bbffa9dda847b",
+      "found": true
+    }
+  ]
+}

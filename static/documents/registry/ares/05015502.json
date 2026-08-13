@@ -1,0 +1,248 @@
+{
+  "retrieved": "2026-08-09",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "05015502"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "05015502",
+        "obchodniJmeno": "Kauppias s.r.o.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 51,
+          "nazevSpravnihoObvodu": "Praha 5",
+          "kodMestskehoObvodu": 51,
+          "nazevMestskehoObvodu": "Praha 5",
+          "kodMestskeCastiObvodu": 500143,
+          "kodUlice": 464228,
+          "nazevMestskeCastiObvodu": "Praha 5",
+          "nazevUlice": "Plaská",
+          "cisloDomovni": 614,
+          "kodCastiObce": 490121,
+          "cisloOrientacni": 10,
+          "nazevCastiObce": "Malá Strana",
+          "kodAdresnihoMista": 22039619,
+          "psc": 15000,
+          "textovaAdresa": "Plaská 614/10, Malá Strana, 15000 Praha 5",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "112",
+        "pravniFormaRos": "112",
+        "financniUrad": "005",
+        "datumVzniku": "2016-04-22",
+        "datumAktualizace": "2026-06-26",
+        "dic": "CZ05015502",
+        "icoId": "05015502",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Plaská 614/10",
+          "radekAdresy2": "Malá Strana",
+          "radekAdresy3": "15000 Praha 5"
+        },
+        "czNace2008": [
+          "461",
+          "702"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "ZANIKLY",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Kauppias s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 51,
+                  "nazevSpravnihoObvodu": "Praha 5",
+                  "kodMestskehoObvodu": 51,
+                  "nazevMestskehoObvodu": "Praha 5",
+                  "kodMestskeCastiObvodu": 500143,
+                  "kodUlice": 464228,
+                  "nazevMestskeCastiObvodu": "Praha 5",
+                  "nazevUlice": "Plaská",
+                  "cisloDomovni": 614,
+                  "kodCastiObce": 490121,
+                  "cisloOrientacni": 10,
+                  "nazevCastiObce": "Malá Strana",
+                  "kodAdresnihoMista": 22039619,
+                  "psc": 15000,
+                  "textovaAdresa": "Plaská 614/10, Malá Strana, 15000 Praha 5",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "pravniFormaRos": "112",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Kauppias s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 51,
+                  "nazevSpravnihoObvodu": "Praha 5",
+                  "kodMestskehoObvodu": 51,
+                  "nazevMestskehoObvodu": "Praha 5",
+                  "kodMestskeCastiObvodu": 500143,
+                  "kodUlice": 464228,
+                  "nazevMestskeCastiObvodu": "Praha 5",
+                  "nazevUlice": "Plaská",
+                  "cisloDomovni": 614,
+                  "kodCastiObce": 490121,
+                  "cisloOrientacni": 10,
+                  "nazevCastiObce": "Malá Strana",
+                  "kodAdresnihoMista": 22039619,
+                  "psc": 15000,
+                  "textovaAdresa": "Plaská 614/10, Malá Strana, 15000 Praha 5",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "112",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Kauppias s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 51,
+                  "nazevSpravnihoObvodu": "Praha 5",
+                  "kodMestskehoObvodu": 51,
+                  "nazevMestskehoObvodu": "Praha 5",
+                  "kodMestskeCastiObvodu": 500143,
+                  "kodUlice": 464228,
+                  "nazevMestskeCastiObvodu": "Praha 5",
+                  "nazevUlice": "Plaská",
+                  "cisloDomovni": 614,
+                  "kodCastiObce": 490121,
+                  "cisloOrientacni": 10,
+                  "nazevCastiObce": "Malá Strana",
+                  "kodAdresnihoMista": 22039619,
+                  "psc": 15000,
+                  "textovaAdresa": "Plaská 614/10, Malá Strana, 15000 Praha 5",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Kauppias s.r.o.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 51,
+                  "nazevSpravnihoObvodu": "Praha 5",
+                  "kodMestskehoObvodu": 51,
+                  "nazevMestskehoObvodu": "Praha 5",
+                  "kodMestskeCastiObvodu": 500143,
+                  "kodUlice": 464228,
+                  "nazevMestskeCastiObvodu": "Praha 5",
+                  "nazevUlice": "Plaská",
+                  "cisloDomovni": 614,
+                  "kodCastiObce": 490121,
+                  "cisloOrientacni": 10,
+                  "nazevCastiObce": "Malá Strana",
+                  "kodAdresnihoMista": 22039619,
+                  "psc": 15000,
+                  "textovaAdresa": "Plaská 614/10, Malá Strana, 15000 Praha 5",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "112",
+            "spisovaZnacka": "C 257044/MSPH",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "461",
+          "70200"
+        ]
+      }
+    ]
+  }
+}

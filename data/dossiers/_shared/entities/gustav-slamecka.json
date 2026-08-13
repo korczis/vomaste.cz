@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/gustav-slamecka",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "gustav-slamecka",
+  "entityId": "gustav-slamecka",
+  "title": "Gustáv Slamečka",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "gustav-slamecka"
+  ],
+  "order": 614,
+  "description": "Gustáv Slamečka — bývalý ministr dopravy (2009–2010).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalý ministr dopravy (8. 5. 2009 – 13. 7. 2010, Fischerova\núřednická vláda, od 25. 6. 2010 v demisi).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ],
+  "media": [
+    {
+      "file": "images/people/gustav-slamecka.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Slamecka_2010.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "OISV",
+      "credit": "Own work",
+      "retrieved": "2026-08-11",
+      "width": 1200,
+      "height": 2102,
+      "role": "portrait"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q446378"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/sources/SRC-52",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-52",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/adam-vojtech"
+  },
+  "title": "SRC-52 — Zdravé zprávy, 4. 5. 2026",
+  "description": "Zdravotní benefity na kardio a onko prevenci nebudou daňově omezené — Vojtěchovo oznámení návrhu po jednání vlády.",
+  "outlet": "Zdravé zprávy",
+  "sourceType": "zpravodajství",
+  "url": "https://www.zdravezpravy.cz/2026/05/04/zdravotni-benefity-na-kardio-a-onko-prevenci-nebudou-danove-omezene/",
+  "published": "2026-05-04",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/adam-vojtech/claims/CLM-34"
+    }
+  ],
+  "subjects": [
+    "vojtech"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "**Co dokládá.** Reportáž Zdravých zpráv z 4. května 2026 nezávisle potvrzuje týž skutkový základ jako CLM-34: ministr Adam Vojtěch po jednání vlády oznámil návrh vyjmout vybrané preventivní programy z limitu zhruba 50 tisíc Kč na zdravotní benefity, s účinností od roku 2027. Uvádí shodně vymezený rozsah programů — nadstandardní preventivní prohlídky, rozšířené onkologické screeningy, vyšetření kardiovaskulárního rizika, screening diabetu u rizikových skupin a vybraná očkování nehrazená z veřejného pojištění — a Vojtěchův výrok, že jde o kompromis zachovávající obecný strop kolem 50 tisíc Kč.\n\n**Nezávislost.** Nezávislý zdroj vůči SRC-26 (Zdravotnický deník, rodina `ctk`): jiný vydavatel (zdravezpravy.cz) i jiná zdrojová rodina — jde o vlastní redakci Zdravých zpráv s vlastním zněním a citací, ne o agenturní přebírku ČTK. Tvoří nezávislý pár dle pravidla S2/S10 pro faktické jádro (datum a obsah oznámení návrhu). Dokládá znění citovaného zpravodajství k datu otevření (2026-08-08), ne přijetí návrhu."
+    }
+  ],
+  "order": 52
+}

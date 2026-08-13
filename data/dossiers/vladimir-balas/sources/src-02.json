@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vladimir-balas/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/vladimir-balas"
+  },
+  "title": "SRC-02 — MŠMT: Ministři školství od roku 1848 (oficiální přehled)",
+  "description": "Oficiální resortní přehled ministrů školství: Balaš 29. 6. 2022 – 4. 5. 2023.",
+  "outlet": "Ministerstvo školství, mládeže a tělovýchovy (msmt.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://msmt.gov.cz/ministerstvo/ministri-skolstvi-od-roku-1848",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vladimir-balas/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "vladimir-balas"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální přehled ministrů školství na webu MŠMT, otevřen a přečten 2026-08-08.\nUvádí funkční období Vladimíra Balaše jako ministra školství, mládeže a tělovýchovy od 29. 6. 2022 do 4. 5. 2023.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam jiné instituce než SRC-01** — dokládá funkční období v resortní evidenci; rozpor s datem 1. 7. 2022 na vlada.gov.cz (nejspíš rozdíl mezi jmenováním a ujmutím se úřadu) je v tvrzení uveden otevřeně a nerozhoduje se tiše."
+    }
+  ],
+  "order": 2
+}

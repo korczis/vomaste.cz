@@ -3,7 +3,7 @@
 title = "Miloslav Kala"
 template = "entity.html"
 weight = 271
-description = "Kontextová entita — Prezident NKÚ; návrh na zrušení policejní ochrany označil za „útok na nezávislou instituci“ a „pokus o vyhladovění“; dlouhodobý spor s Babišem od 2016 (financování stavby…"
+description = "Miloslav Kala — Kontextová entita — Prezident NKÚ; návrh na zrušení policejní ochrany označil za „útok na nezávislou instituci“ a „pokus o vyhladovění“; dlouhodobý spor s Babišem od 2016…"
 
 [extra]
 generated = true

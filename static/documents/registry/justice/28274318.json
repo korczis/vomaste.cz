@@ -1,0 +1,448 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-09",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/28274318",
+  "status": "OK",
+  "subject": {
+    "ico": "28274318",
+    "businessName": "GMR GAS s.r.o.",
+    "registerReference": "C 57941/KSBR"
+  },
+  "filings": [
+    {
+      "referenceLabel": "C 57941/SL1/KSBR",
+      "documentType": "podpisové vzory +ČP",
+      "createdAt": "30-01-2008",
+      "filedAt": "25-02-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 61811
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL2/KSBR",
+      "documentType": "notářský zápis -spol. smlouva, NZ 32/08",
+      "createdAt": "30-01-2008",
+      "filedAt": "27-02-2008",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 699706
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL3/KSBR",
+      "documentType": "notářský zápis .- rozh. VH, NZ 30/09",
+      "createdAt": "20-01-2009",
+      "filedAt": "06-02-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 727676
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL4/KSBR",
+      "documentType": "notářský zápis - zakl. listina, NZ 31/09",
+      "createdAt": "20-01-2009",
+      "filedAt": "06-02-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 862082
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL5/KSBR",
+      "documentType": "smlouvy o převodu obchod. podílu",
+      "createdAt": "20-01-2009",
+      "filedAt": "06-02-2009",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 509458
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL6/KSBR",
+      "documentType": "účetní závěrka 2008",
+      "createdAt": "12-03-2009",
+      "filedAt": "19-10-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 419135
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL7/KSBR",
+      "documentType": "účetní závěrka 2009",
+      "createdAt": "05-03-2010",
+      "filedAt": "19-10-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 424689
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL8/KSBR",
+      "documentType": "účetní závěrka 2010",
+      "createdAt": "16-03-2011",
+      "filedAt": "19-10-2011",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 417732
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL9/KSBR",
+      "documentType": "notářský zápis [NZ 606/2014] rozhod. jed. spol., zaklad. listina",
+      "createdAt": "18-12-2014",
+      "receivedByCourtAt": "31-12-2014",
+      "filedAt": "13-01-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 241115
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL10/KSBR",
+      "documentType": "účetní závěrka [2014] rozvaha",
+      "createdAt": "12-03-2015",
+      "receivedByCourtAt": "02-04-2015",
+      "filedAt": "08-04-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 8142
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL11/KSBR",
+      "documentType": "účetní závěrka [2014] výkaz",
+      "createdAt": "12-03-2015",
+      "receivedByCourtAt": "02-04-2015",
+      "filedAt": "08-04-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 8189
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL12/KSBR",
+      "documentType": "účetní závěrka [2014] příloha",
+      "createdAt": "01-03-2015",
+      "receivedByCourtAt": "02-04-2015",
+      "filedAt": "08-04-2015",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 21310
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL13/KSBR",
+      "documentType": "účetní závěrka [2016] příloha",
+      "receivedByCourtAt": "04-02-2018",
+      "filedAt": "07-02-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 298371
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL14/KSBR",
+      "documentType": "účetní závěrka [2016] příloha",
+      "receivedByCourtAt": "04-02-2018",
+      "filedAt": "07-02-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 152213
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL15/KSBR",
+      "documentType": "účetní závěrka [2015] rozvaha",
+      "createdAt": "31-03-2016",
+      "receivedByCourtAt": "08-02-2018",
+      "filedAt": "13-02-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 258956
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL16/KSBR",
+      "documentType": "účetní závěrka [2015] výkaz",
+      "createdAt": "31-03-2016",
+      "receivedByCourtAt": "08-02-2018",
+      "filedAt": "13-02-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 249733
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL17/KSBR",
+      "documentType": "účetní závěrka [2016] rozvaha",
+      "createdAt": "20-03-2017",
+      "receivedByCourtAt": "08-02-2018",
+      "filedAt": "13-02-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 261140
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL18/KSBR",
+      "documentType": "účetní závěrka [2016] výkaz",
+      "createdAt": "20-03-2017",
+      "receivedByCourtAt": "08-02-2018",
+      "filedAt": "13-02-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 248992
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL19/KSBR",
+      "documentType": "účetní závěrka [2015] příloha",
+      "receivedByCourtAt": "05-02-2018",
+      "filedAt": "19-02-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 41626
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL20/KSBR",
+      "documentType": "účetní závěrka [2017] příloha",
+      "receivedByCourtAt": "02-04-2018",
+      "filedAt": "18-04-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 545448
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL21/KSBR",
+      "documentType": "účetní závěrka [2017] rozvaha+výkaz",
+      "receivedByCourtAt": "02-04-2018",
+      "filedAt": "18-04-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 40522
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL22/KSBR",
+      "documentType": "zakladatelské dokumenty, notářský zápis [NZ 290/2019, N 299/2019]",
+      "createdAt": "13-05-2019",
+      "filedAt": "13-05-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 165501
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL23/KSBR",
+      "documentType": "účetní závěrka [2018]",
+      "createdAt": "31-12-2018",
+      "receivedByCourtAt": "25-11-2019",
+      "filedAt": "07-01-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 2987351
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL24/KSBR",
+      "documentType": "účetní závěrka [2019]",
+      "receivedByCourtAt": "15-07-2021",
+      "filedAt": "18-08-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 2189401
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL25/KSBR",
+      "documentType": "účetní závěrka [2020]",
+      "receivedByCourtAt": "15-07-2021",
+      "filedAt": "18-08-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 2062666
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL26/KSBR",
+      "documentType": "účetní závěrka [2021] rozvaha + výkaz",
+      "receivedByCourtAt": "03-10-2022",
+      "filedAt": "13-10-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 653664
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL27/KSBR",
+      "documentType": "účetní závěrka [2022] - předána prostřednictvím správce daně z příjmů k 16.05.2023",
+      "createdAt": "16-05-2023",
+      "receivedByCourtAt": "28-05-2023",
+      "filedAt": "06-06-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 507010
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 4320
+        },
+        {
+          "pageCount": 4,
+          "sizeBytes": 234717
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL28/KSBR",
+      "documentType": "účetní závěrka [2023] - předána prostřednictvím správce daně z příjmů k 14.05.2024",
+      "createdAt": "14-05-2024",
+      "receivedByCourtAt": "14-05-2024",
+      "filedAt": "24-05-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 509706
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 4306
+        },
+        {
+          "pageCount": 4,
+          "sizeBytes": 234160
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL29/KSBR",
+      "documentType": "účetní závěrka [2024] - předána prostřednictvím správce daně z příjmů k 18.05.2025",
+      "createdAt": "18-05-2025",
+      "receivedByCourtAt": "20-05-2025",
+      "filedAt": "25-05-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 511177
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 4267
+        },
+        {
+          "pageCount": 4,
+          "sizeBytes": 232225
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 57941/SL30/KSBR",
+      "documentType": "účetní závěrka [2025] - předána prostřednictvím správce daně z příjmů k 20.05.2026",
+      "createdAt": "20-05-2026",
+      "receivedByCourtAt": "20-05-2026",
+      "filedAt": "02-06-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 481922
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 4260
+        },
+        {
+          "pageCount": 4,
+          "sizeBytes": 233954
+        }
+      ]
+    }
+  ]
+}

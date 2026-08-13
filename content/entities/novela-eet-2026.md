@@ -3,7 +3,7 @@
 title = "Novela o elektronické evidenci tržeb (2026, vč. zdravotních benefitů)"
 template = "entity.html"
 weight = 302
-description = "Kontextová entita — Schválena Sněmovnou 15. 7. 2026; obsahuje přílohu osvobozující zdravotní benefity (návrh Vojtěch + Schillerová)."
+description = "Novela o elektronické evidenci tržeb (2026, vč. zdravotních… — Kontextová entita — Schválena Sněmovnou 15. 7. 2026; obsahuje přílohu osvobozující zdravotní benefity (návrh Vojtěch + Schillerová)."
 
 [extra]
 generated = true

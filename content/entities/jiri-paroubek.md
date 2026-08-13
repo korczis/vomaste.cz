@@ -3,7 +3,7 @@
 title = "Jiří Paroubek"
 template = "entity.html"
 weight = 524
-description = "Kontextová veřejná osoba: Jiří Jehlička v roce 2006 organizoval demonstrace požadující Paroubkův odchod z politiky. Záznam popisuje veřejný politický protest, nikoli osobní či obchodní vztah."
+description = "Jiří Paroubek — Kontextová veřejná osoba: Jiří Jehlička v roce 2006 organizoval demonstrace požadující Paroubkův odchod z politiky."
 
 [extra]
 generated = true
@@ -13,3 +13,5 @@ record_type = "entity"
 entity_id = "jiri-paroubek"
 +++
 Kontextová veřejná osoba: Jiří Jehlička v roce 2006 organizoval demonstrace požadující Paroubkův odchod z politiky. Záznam popisuje veřejný politický protest, nikoli osobní či obchodní vztah.
+
+Bývalý předseda vlády České republiky (25. 4. 2005 – 16. 8. 2006); podle oficiálního přehledu vláda podala demisi 16. 8. 2006. Záznam veřejné funkce, ne profil ani tvrzení o pochybení.

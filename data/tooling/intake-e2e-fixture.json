@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/intake-e2e-fixture",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "intake-e2e-fixture",
+  "kind": "npm",
+  "name": "intake:e2e-fixture",
+  "title": "End-to-end běh všech golden fixtures",
+  "category": "kontrola",
+  "summary": "Protáhne každý golden fixture tests/fixtures/intake/e2e-*.json PLNOU pipeline — parsování, validace, normalizace, párování entit, klasifikace rizika, preflight URL, manifest, report — s pevnými hodinami a mock DNS adaptérem.",
+  "whenToRun": "Když měníš cokoli napříč intake pipeline a chceš vidět chování na celé matici typů podání a nepřátelských scénářů.",
+  "inputs": [
+    "tests/fixtures/intake/e2e-*.json"
+  ],
+  "outputs": [
+    ".tmp/intake/e2e-run/ (gitignorováno)"
+  ],
+  "sourceFile": "scripts/intake/run-e2e-fixture.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Nikdy nesahá na veřejný internet, nikdy nezapisuje produkční dossierová data, nikdy nevolá GitHub API."
+  ]
+}

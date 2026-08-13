@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/michael-kocab/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/michael-kocab"
+  },
+  "text": "Michael Kocáb byl podle oficiálních přehledů členů vlád na webu Vlády ČR ministrem vlády ČR pro lidská práva a menšiny od 23. 1. 2009 do 26. 3. 2009 (poté do 8. 5. 2009 v demisi, druhá vláda Mirka Topolánka) a ministrem vlády ČR pro lidská práva od 8. 5. 2009 do 29. 3. 2010 ve vládě Jana Fischera, kde přehled u konce jeho působení uvádí demisi",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/michael-kocab/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/michael-kocab/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "michael-kocab"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/michael-kocab/_index.md)."
+    }
+  ]
+}

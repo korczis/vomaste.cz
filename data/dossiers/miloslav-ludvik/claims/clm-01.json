@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/miloslav-ludvik/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/miloslav-ludvik"
+  },
+  "text": "Miloslav Ludvík byl podle oficiálního profilu na webu Vlády ČR ministrem zdravotnictví od 30. 11. 2016 do 13. 12. 2017 (vláda Bohuslava Sobotky, nominován za ČSSD, od 5. 12. 2017 v demisi), předtím byl v letech 2000–2016 ředitelem Fakultní nemocnice v Motole",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/miloslav-ludvik/sources/SRC-01"
+    }
+  ],
+  "subjects": [
+    "miloslav-ludvik"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/miloslav-ludvik/_index.md)."
+    }
+  ]
+}

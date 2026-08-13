@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vlastimil-valek/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/vlastimil-valek"
+  },
+  "text": "Vlastimil Válek je od 4. 10. 2025 poslancem Poslanecké sněmovny Parlamentu ČR za TOP 09 a od 20. 1. 2026 místopředsedou sněmovního Výboru pro zdravotnictví; dříve byl místopředsedou vlády a ministrem zdravotnictví (17. 12. 2021 – 15. 12. 2025) — doloženo oficiálním profilem na webu Poslanecké sněmovny (psp.cz), oficiálním záznamem na webu vlády (vlada.gov.cz) a nezávislým zpravodajstvím zdravezpravy.cz.",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vlastimil-valek/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vlastimil-valek/sources/SRC-02"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vlastimil-valek/sources/SRC-03"
+    }
+  ],
+  "subjects": [
+    "vlastimil-valek"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/vlastimil-valek/_index.md)."
+    }
+  ]
+}

@@ -3,7 +3,7 @@
 title = "Ministerstvo pro místní rozvoj ČR"
 template = "entity.html"
 weight = 277
-description = "Kontextová entita — Resort Zuzany Mrázové; vyjadřoval se i k dopisu EK o fondech EU. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Ministerstvo pro místní rozvoj ČR — Kontextová entita — Resort Zuzany Mrázové; vyjadřoval se i k dopisu EK o fondech EU."
 
 [extra]
 generated = true

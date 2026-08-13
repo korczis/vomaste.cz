@@ -50,5 +50,18 @@
   },
   "externalIds": {
     "ico": "05989175"
-  }
+  },
+  "media": [
+    {
+      "file": "images/logos/motoriste.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Motorist%C3%A9_sob%C4%9B_logo.svg",
+      "license": "Public domain",
+      "author": "Motoristé sobě",
+      "credit": "https://motoristesobe.cz/ Direct source: https://motoristesobe.cz/wp-content/uploads/Motoriste-Sobe.zip",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 354,
+      "role": "logo"
+    }
+  ]
 }

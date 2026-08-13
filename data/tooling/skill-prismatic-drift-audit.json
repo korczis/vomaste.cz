@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-prismatic-drift-audit",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-prismatic-drift-audit",
+  "kind": "skill",
+  "name": "prismatic-drift-audit",
+  "title": "Audit driftu Prismatic",
+  "category": "reserse",
+  "personas": [
+    "maintainer"
+  ],
+  "riskLevel": "read-only",
+  "writes": false,
+  "summary": "Má porovnávat nainstalovaný commit Prismatic, dostupné schopnosti, schémata kontraktu a fixtures proti poslednímu přijatému integračnímu baseline. DNES NENÍ POSTAVENÁ.",
+  "whenToRun": "Nespouštět. Dokud neprojde touhle pipeline aspoň jedna promoce, neexistuje baseline, proti kterému by šlo drift měřit.",
+  "describedFrom": "header",
+  "notes": [
+    "Odpovídající příkaz je stub, který vypíše odkaz na architektonické rozhodnutí a skončí nenulově.",
+    "Chování se nesmí simulovat: kdo se na tuhle skill zeptá dnes, má dostat odpověď, že baseline ani detektor driftu neexistují."
+  ]
+}

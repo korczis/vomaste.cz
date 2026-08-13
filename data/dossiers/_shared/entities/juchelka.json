@@ -110,5 +110,19 @@
       "type": "markdown",
       "value": "Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v [hlavním přehledu](@/dossiers/ales-juchelka/_index.md#kdo)."
     }
+  ],
+  "media": [
+    {
+      "file": "images/people/juchelka.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ale%C5%A1_Juchelka_2018_(cropped).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "David Sedlecký derivative work: Kacir",
+      "credit": "Own work",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 1599,
+      "role": "portrait"
+    }
   ]
 }

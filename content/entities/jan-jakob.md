@@ -3,7 +3,7 @@
 title = "Jan Jakob"
 template = "entity.html"
 weight = 162
-description = "Kontextová entita — Oznámil přípravu ústavní stížnosti proti novele rozpočtových zákonů. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Jan Jakob — Kontextová entita — Oznámil přípravu ústavní stížnosti proti novele rozpočtových zákonů."
 
 [extra]
 generated = true

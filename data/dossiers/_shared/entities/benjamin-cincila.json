@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/benjamin-cincila",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "benjamin-cincila",
+  "entityId": "benjamin-cincila",
+  "title": "Benjamin Činčila",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "benjamin-cincila"
+  ],
+  "order": 536,
+  "provenance": {
+    "discoveredAt": "2026-08-07",
+    "discoveredVia": [
+      "opozice-25-politiku-2026-08-07"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — poslanec KDU-ČSL (psp.cz id 6998, Kraj Vysočina), od 24. 4. 2026 první místopředseda KDU-ČSL a od 6. 5. 2026 místopředseda poslaneckého klubu KDU-ČSL."
+    }
+  ]
+}

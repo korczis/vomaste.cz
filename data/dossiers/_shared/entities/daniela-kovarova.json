@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/daniela-kovarova",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "daniela-kovarova",
+  "entityId": "daniela-kovarova",
+  "title": "Daniela Kovářová",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "daniela-kovarova"
+  ],
+  "order": 615,
+  "description": "Daniela Kovářová — bývalá ministryně spravedlnosti (2009–2010).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalá ministryně spravedlnosti (2009–2010, Fischerova úřednická\nvláda).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ],
+  "media": [
+    {
+      "file": "images/people/daniela-kovarova.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Daniela_Kov%C3%A1%C5%99ov%C3%A1_(cropped).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "Robert Tichý",
+      "credit": "Own work",
+      "retrieved": "2026-08-11",
+      "width": 1200,
+      "height": 1276,
+      "role": "portrait"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q5219227"
+  }
+}

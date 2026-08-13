@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vera-jourova/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/vera-jourova"
+  },
+  "text": "Věra Jourová byla podle oficiálního profilu na webu Vlády ČR ministryní pro místní rozvoj od 29. 1. do 3. 10. 2014 (vláda Bohuslava Sobotky) a poslankyní od října 2013; podle Aktuálně.cz poté působila deset let v Evropské komisi — v letech 2014–2019 jako eurokomisařka pro spravedlnost, ochranu spotřebitelů a rovnost žen a mužů a v letech 2019–2024 jako místopředsedkyně Evropské komise pro hodnoty a transparentnost, ve funkci skončila 30. 11. 2024 a v křesle českého komisaře ji nahradil Jozef Síkela",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vera-jourova/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vera-jourova/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "vera-jourova"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/vera-jourova/_index.md)."
+    }
+  ]
+}

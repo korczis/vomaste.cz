@@ -1,0 +1,43 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "24722197",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/24722197",
+  "nazev": "ŠENKÝŘ PÁNIK, advokátní kancelář s.r.o.",
+  "sidlo": "Na viničních horách 1834/24, Dejvice, 16000 Praha 6",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "C",
+    "vlozka": "168834"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "jednatel",
+      "since": "2010-08-11",
+      "kind": "person",
+      "name": "JUDr. Martin Šenkýř"
+    },
+    {
+      "role": "jednatel",
+      "since": "2012-08-03",
+      "kind": "person",
+      "name": "Mgr. Lubomír Pánik"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "person",
+      "name": "JUDr. Martin Šenkýř",
+      "podil": "60",
+      "vklad": "120000",
+      "splaceno": "100"
+    },
+    {
+      "kind": "person",
+      "name": "Mgr. Lubomír Pánik",
+      "podil": "40",
+      "vklad": "80000",
+      "splaceno": "100"
+    }
+  ]
+}

@@ -1,0 +1,459 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-09",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/06760538",
+  "status": "OK",
+  "subject": {
+    "ico": "06760538",
+    "businessName": "Milion Chvilek, z. s.",
+    "registerReference": "L 69778/MSPH"
+  },
+  "filings": [
+    {
+      "referenceLabel": "L 69778/SL1/MSPH",
+      "documentType": "ostatní zápis z ustavující schůze",
+      "createdAt": "06-01-2018",
+      "receivedByCourtAt": "10-01-2018",
+      "filedAt": "02-02-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 51373
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL2/MSPH",
+      "documentType": "stanovy společnosti",
+      "createdAt": "06-01-2018",
+      "receivedByCourtAt": "10-01-2018",
+      "filedAt": "02-02-2018",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 250636
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL3/MSPH",
+      "documentType": "účetní závěrka [2018] příloha",
+      "createdAt": "31-12-2018",
+      "receivedByCourtAt": "10-07-2019",
+      "filedAt": "16-07-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 74512
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL4/MSPH",
+      "documentType": "účetní závěrka [2018]",
+      "createdAt": "31-12-2018",
+      "receivedByCourtAt": "10-07-2019",
+      "filedAt": "16-07-2019",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 47672
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL5/MSPH",
+      "documentType": "stanovy společnosti",
+      "createdAt": "15-10-2019",
+      "receivedByCourtAt": "17-12-2019",
+      "filedAt": "15-01-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 196061
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL6/MSPH",
+      "documentType": "ostatní záp.z VH",
+      "createdAt": "26-09-2020",
+      "receivedByCourtAt": "08-10-2020",
+      "filedAt": "09-11-2020",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 21011
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL7/MSPH",
+      "documentType": "výroční zpráva [2019]",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "29-04-2021",
+      "filedAt": "10-05-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 52,
+          "sizeBytes": 6242643
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL8/MSPH",
+      "documentType": "účetní závěrka [2019]",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "29-04-2021",
+      "filedAt": "10-05-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 48032
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL9/MSPH",
+      "documentType": "účetní závěrka [2019] příloha",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "29-04-2021",
+      "filedAt": "10-05-2021",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 144252
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL10/MSPH",
+      "documentType": "stanovy společnosti",
+      "createdAt": "23-11-2021",
+      "receivedByCourtAt": "14-12-2021",
+      "filedAt": "02-02-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 2817827
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL11/MSPH",
+      "documentType": "ostatní zápis VH",
+      "createdAt": "23-11-2021",
+      "receivedByCourtAt": "14-12-2021",
+      "filedAt": "02-02-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 1014067
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL12/MSPH",
+      "documentType": "zpráva auditora r. 2020",
+      "createdAt": "29-06-2021",
+      "receivedByCourtAt": "18-01-2022",
+      "filedAt": "14-02-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 1972966
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL13/MSPH",
+      "documentType": "účetní závěrka [2020]",
+      "createdAt": "31-12-2020",
+      "receivedByCourtAt": "18-01-2022",
+      "filedAt": "14-02-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 3263825
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL14/MSPH",
+      "documentType": "výroční zpráva [2020], zpráva auditora [2020]",
+      "createdAt": "31-12-2020",
+      "receivedByCourtAt": "18-01-2022",
+      "filedAt": "14-02-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 26,
+          "sizeBytes": 4460673
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL15/MSPH",
+      "documentType": "účetní závěrka [2020] příloha",
+      "createdAt": "31-12-2020",
+      "receivedByCourtAt": "18-01-2022",
+      "filedAt": "14-02-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 4974103
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL16/MSPH",
+      "documentType": "účetní závěrka [2021] příloha",
+      "createdAt": "31-12-2021",
+      "receivedByCourtAt": "29-11-2022",
+      "filedAt": "07-12-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 10,
+          "sizeBytes": 804938
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL17/MSPH",
+      "documentType": "účetní závěrka [2021] rozvaha",
+      "createdAt": "31-12-2021",
+      "receivedByCourtAt": "29-11-2022",
+      "filedAt": "07-12-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 286108
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL18/MSPH",
+      "documentType": "ostatní zápis VH",
+      "createdAt": "11-10-2022",
+      "receivedByCourtAt": "29-11-2022",
+      "filedAt": "07-12-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 418295
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL19/MSPH",
+      "documentType": "zpráva auditora r. 2021",
+      "createdAt": "31-12-2021",
+      "receivedByCourtAt": "29-11-2022",
+      "filedAt": "07-12-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 197278
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL20/MSPH",
+      "documentType": "účetní závěrka [2021] VZZ",
+      "createdAt": "31-12-2021",
+      "receivedByCourtAt": "29-11-2022",
+      "filedAt": "07-12-2022",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 325606
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL21/MSPH",
+      "documentType": "ostatní zápis VH -  č. 10",
+      "createdAt": "11-10-2022",
+      "receivedByCourtAt": "28-11-2022",
+      "filedAt": "10-01-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 950783
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL22/MSPH",
+      "documentType": "ostatní valná hromada",
+      "createdAt": "28-05-2024",
+      "receivedByCourtAt": "02-10-2024",
+      "filedAt": "31-10-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 26141
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL23/MSPH",
+      "documentType": "stanovy společnosti",
+      "receivedByCourtAt": "02-10-2024",
+      "filedAt": "31-10-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 102678
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL24/MSPH",
+      "documentType": "účetní závěrka [2022]",
+      "createdAt": "28-06-2024",
+      "receivedByCourtAt": "30-10-2024",
+      "filedAt": "07-11-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 690909
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL25/MSPH",
+      "documentType": "účetní závěrka [2023], výroční zpráva [2023]",
+      "createdAt": "25-06-2024",
+      "receivedByCourtAt": "30-10-2024",
+      "filedAt": "07-11-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 6,
+          "sizeBytes": 743298
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL26/MSPH",
+      "documentType": "ostatní zápis valné hromady",
+      "receivedByCourtAt": "28-01-2025",
+      "filedAt": "13-03-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 435100
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL27/MSPH",
+      "documentType": "účetní závěrka [2024] VZZ",
+      "createdAt": "31-12-2024",
+      "receivedByCourtAt": "03-09-2025",
+      "filedAt": "08-09-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 33008
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL28/MSPH",
+      "documentType": "účetní závěrka [2024] příloha",
+      "createdAt": "31-12-2024",
+      "receivedByCourtAt": "03-09-2025",
+      "filedAt": "08-09-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 9,
+          "sizeBytes": 77920
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL29/MSPH",
+      "documentType": "účetní závěrka [2024] rozvaha",
+      "createdAt": "31-12-2024",
+      "receivedByCourtAt": "03-09-2025",
+      "filedAt": "08-09-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 4,
+          "sizeBytes": 36669
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL30/MSPH",
+      "documentType": "ostatní zápis z 19. VH",
+      "createdAt": "29-10-2025",
+      "receivedByCourtAt": "15-11-2025",
+      "filedAt": "03-12-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 59379
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL31/MSPH",
+      "documentType": "ostatní Zápis z valné hromady",
+      "createdAt": "21-02-2026",
+      "receivedByCourtAt": "23-02-2026",
+      "filedAt": "09-04-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 736440
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL32/MSPH",
+      "documentType": "stanovy společnosti Stanovy",
+      "createdAt": "20-02-2026",
+      "receivedByCourtAt": "23-02-2026",
+      "filedAt": "09-04-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 8,
+          "sizeBytes": 3555496
+        }
+      ]
+    }
+  ]
+}

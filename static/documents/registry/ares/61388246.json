@@ -1,0 +1,202 @@
+{
+  "retrieved": "2026-08-09",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "61388246"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "61388246",
+        "obchodniJmeno": "Gymnázium Jana Keplera, Praha 6, Parléřova 2",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 60,
+          "nazevSpravnihoObvodu": "Praha 6",
+          "kodMestskehoObvodu": 60,
+          "nazevMestskehoObvodu": "Praha 6",
+          "kodMestskeCastiObvodu": 500178,
+          "kodUlice": 463639,
+          "nazevMestskeCastiObvodu": "Praha 6",
+          "nazevUlice": "Parléřova",
+          "cisloDomovni": 118,
+          "kodCastiObce": 490075,
+          "cisloOrientacni": 2,
+          "nazevCastiObce": "Hradčany",
+          "kodAdresnihoMista": 22215352,
+          "psc": 16900,
+          "textovaAdresa": "Parléřova 118/2, Hradčany, 16900 Praha 6",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "331",
+        "pravniFormaRos": "331",
+        "financniUrad": "006",
+        "datumVzniku": "2001-01-01",
+        "datumAktualizace": "2026-06-04",
+        "icoId": "61388246",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Parléřova 118/2",
+          "radekAdresy2": "Hradčany",
+          "radekAdresy3": "16900 Praha 6"
+        },
+        "czNace2008": [
+          "85312"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "NEEXISTUJICI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "NEEXISTUJICI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "NEEXISTUJICI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "AKTIVNI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "AKTIVNI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Gymnázium Jana Keplera, Praha 6, Parléřova 2",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 60,
+                  "nazevSpravnihoObvodu": "Praha 6",
+                  "kodMestskehoObvodu": 60,
+                  "nazevMestskehoObvodu": "Praha 6",
+                  "kodMestskeCastiObvodu": 500178,
+                  "kodUlice": 463639,
+                  "nazevMestskeCastiObvodu": "Praha 6",
+                  "nazevUlice": "Parléřova",
+                  "cisloDomovni": 118,
+                  "kodCastiObce": 490075,
+                  "cisloOrientacni": 2,
+                  "nazevCastiObce": "Hradčany",
+                  "kodAdresnihoMista": 22215352,
+                  "psc": 16900,
+                  "textovaAdresa": "Parléřova 118/2, Hradčany, 16900 Praha 6",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "331",
+            "pravniFormaRos": "331",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Gymnázium Jana Keplera, Praha 6, Parléřova 2",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 60,
+                  "nazevSpravnihoObvodu": "Praha 6",
+                  "kodMestskehoObvodu": 60,
+                  "nazevMestskehoObvodu": "Praha 6",
+                  "kodMestskeCastiObvodu": 500178,
+                  "kodUlice": 463639,
+                  "nazevMestskeCastiObvodu": "Praha 6",
+                  "nazevUlice": "Parléřova",
+                  "cisloDomovni": 118,
+                  "kodCastiObce": 490075,
+                  "cisloOrientacni": 2,
+                  "nazevCastiObce": "Hradčany",
+                  "kodAdresnihoMista": 22215352,
+                  "psc": 16900,
+                  "textovaAdresa": "Parléřova 118/2, Hradčany, 16900 Praha 6",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "331",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Gymnázium Jana Keplera, Praha 6, Parléřova 2",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 60,
+                  "nazevSpravnihoObvodu": "Praha 6",
+                  "kodMestskehoObvodu": 60,
+                  "nazevMestskehoObvodu": "Praha 6",
+                  "kodMestskeCastiObvodu": 500178,
+                  "kodUlice": 463639,
+                  "nazevMestskeCastiObvodu": "Praha 6",
+                  "nazevUlice": "Parléřova",
+                  "cisloDomovni": 118,
+                  "kodCastiObce": 490075,
+                  "cisloOrientacni": 2,
+                  "nazevCastiObce": "Hradčany",
+                  "kodAdresnihoMista": 22215352,
+                  "psc": 16900,
+                  "textovaAdresa": "Parléřova 118/2, Hradčany, 16900 Praha 6",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "331",
+            "datovyZdroj": "rs"
+          }
+        ],
+        "czNace": [
+          "85312"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/jan-dusik",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "jan-dusik",
+  "entityId": "jan-dusik",
+  "title": "Jan Dusík",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "jan-dusik"
+  ],
+  "order": 622,
+  "description": "Jan Dusík — bývalý ministr životního prostředí (2009–2010).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalý ministr životního prostředí (30. 11. 2009 – 19. 3. 2010, Fischerova úřednická vláda); oficiální přehled u konce jeho působení uvádí demisi.\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ],
+  "media": [
+    {
+      "file": "images/people/jan-dusik.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jan_Dus%C3%ADk,_RR,_20090228.jpg",
+      "license": "Public domain",
+      "author": "Martin Kozák",
+      "credit": "Own work",
+      "retrieved": "2026-08-11",
+      "width": 1200,
+      "height": 800,
+      "role": "portrait"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q6148813"
+  }
+}

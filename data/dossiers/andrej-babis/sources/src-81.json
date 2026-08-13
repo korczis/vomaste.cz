@@ -17,6 +17,13 @@
   "url": "https://nalus.usoud.cz/Search/GetText.aspx?sz=4-3359-25_1",
   "published": "2025-12-17",
   "retrieved": "2026-08-05",
+  "localDocument": {
+    "path": "documents/andrej-babis/us-iv-us-3359-25.html.txt",
+    "originalUrl": "https://nalus.usoud.cz/Search/GetText.aspx?sz=4-3359-25_1",
+    "retrievedAt": "2026-08-08",
+    "sizeBytes": 83618,
+    "reviewNote": "Plné znění usnesení z databáze NALUS bylo staženo a strojově prohledáno 2026-08-08. Neobsahuje rodná čísla, data narození ani adresy bydliště soukromých osob. Původní HTML je z bezpečnostních důvodů publikováno jako prostý text, aby se archivovaná stránka nespouštěla jako aktivní web."
+  },
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-66"

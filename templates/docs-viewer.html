@@ -1,13 +1,12 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
 
 {% block content %}
 <main class="mx-auto max-w-3xl px-6 py-12 text-white">
-  {{ ui::page_header(title=page.title, description=page.description, breadcrumb_items=[
+  {{ <ui_page_header title={page.title} description={page.description} breadcrumb_items={[
     "Domů::" ~ get_url(path="@/_index.md"),
     "Dokumentace::" ~ get_url(path="@/dokumentace/_index.md"),
     page.title,
-  ]) }}
+  ]} /> }}
 
   {#- Redakční úvod z těla obálky (content/dokumentace/*.md): kontext, který
       do samotného řídicího dokumentu nepatří — proč ho číst, co z něj je
@@ -40,17 +39,23 @@
     {%- for pair in shifts -%}
       {%- set lv = pair | split(pat="::") -%}
       {%- set_global rendered = rendered
-            | replace(from="<h" ~ lv.0, to="<h" ~ lv.1)
-            | replace(from="</h" ~ lv.0 ~ ">", to="</h" ~ lv.1 ~ ">") -%}
+            | replace(from="<h" ~ lv[0], to="<h" ~ lv[1])
+            | replace(from="</h" ~ lv[0] ~ ">", to="</h" ~ lv[1] ~ ">") -%}
     {%- endfor -%}
     {#- Odkazy mezi řídicími dokumenty jsou v repozitáři relativní (correct na
         GitHubu, 404 pod /dokumentace/). Mapa se skládá z této sekce, takže
         přidání dalšího dokumentu nevyžaduje zásah sem. -#}
     {%- set docs = get_section(path="dokumentace/_index.md") -%}
+    {#- Sekce dokumentace nemusí být jen zrcadlem souborů z repozitáře:
+        stránky generované z dat (např. licence médií) žádný `source_file`
+        nemají a přepis odkazů se jich netýká. Bez téhle podmínky by jedna
+        taková stránka shodila render všech ostatních. -#}
     {%- for d in docs.pages -%}
+      {%- if d.extra.source_file -%}
       {%- set base = d.extra.source_file | split(pat="/") | last -%}
       {%- set_global rendered = rendered | replace(from='href="' ~ base ~ '"', to='href="' ~ d.permalink ~ '"') -%}
       {%- set_global rendered = rendered | replace(from='href="' ~ d.extra.source_file ~ '"', to='href="' ~ d.permalink ~ '"') -%}
+      {%- endif -%}
     {%- endfor -%}
     {#- The source files link to each other by their repo-root relative
         path (e.g. `[AGENTS.md](AGENTS.md)`), correct on GitHub but wrong

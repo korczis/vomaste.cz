@@ -35,6 +35,85 @@ mezitím přesunuty dolů do „Vyřešeno“, ať je vidět skutečná fronta.
    rodina na hranu, nebo grafová obdoba stavu „1 ZDROJ“. Rozhodnout při
    de-specializaci.
 
+## Faktické nesrovnalosti k redakčnímu přezkumu (nález rešeršních kol 2026-08-08)
+
+Během kola korroboračních rešerší (evidence-plan priority 1–6:
+andrej-babis, karel-havlicek, jaromir-zuna, martin-sebestyan,
+ivan-bednarik, adam-vojtech) narazily rešeršní agenti na faktické
+nesrovnalosti mezi zněním existujícího tvrzení a nezávislými zdroji.
+**Žádná z nich nebyla „opravena" pod zdrojovým mandátem** — úprava
+podstaty tvrzení je redakční akt, ne korroborace. Vyžadují rozhodnutí
+vlastníka / redakční přezkum:
+
+1. **[P1] adam-vojtech CLM-38 — počet hlasů.** Tvrzení uvádí „84
+   koaličních … proti 50 opozičních ze 159 přítomných"; oficiální
+   psp.cz hlasování k EET 2.0 (3. čtení 15. 7. 2026) dává 85 Ano / 49 Ne
+   / 159 přítomno. „159 přítomných" sedí, rozchází se jen poměr pro/proti
+   (84/50 vs 85/49). Poprvé zaznamenáno v T-050, potvrzeno 2026-08-08.
+   Přesný rozpad z přímo otevřitelné psp.cz stránky se zatím nepodařilo
+   stáhnout — ověřit proti primárnímu hlasovacímu záznamu a opravit
+   znění, pokud je chybné.
+2. **[P2] martin-sebestyan CLM-52 — spisová značka a předmět rozsudku.**
+   Tvrzení cituje rozsudek NSS „1 Afs 59/2025-**98**"; nezávislé
+   pokrytí (Podnikatel.cz) popisuje spis „-**108**" o **veřejné
+   zakázce**, ne o dotacích SZIF, a ČeskéNoviny odkazují **lednový 2025**
+   rozsudek. Možná záměna spisu/předmětu — ověřit proti NSS.
+3. **[P2] ivan-bednarik CLM-27 — časová osa Krušnohorského tunelu.**
+   Tvrzení (ze SRC-11, březnové jednání) uvádí zahájení stavby **2030**,
+   provoz **2042**. Nezávislé zdroje se rozcházejí: Echo24/ČTK
+   (27. 2. 2026) provoz 2039, celá trať 2045; zprávy o schválení německým
+   parlamentem start 2032, dokončení 2044. Tvrzení věrně reprodukuje
+   SRC-11, ale veřejné reportáže se v datech neshodují — zvážit kaveát
+   nebo aktualizaci.
+4. **[P2] karel-havlicek CLM-44 — počet zemí koalice k cíli 2035.**
+   Tvrzení uvádí „sedm zemí včetně Německa"; nezávislé zdroje popisují
+   **šest zemí bez Německa** (společný dopis). Rozpor v samém obsahu —
+   nekorroborováno záměrně, aby se rozpor nezakryl. Ověřit správný počet
+   a účast Německa.
+
+Postup: každou položku ověřit proti primárnímu záznamu (psp.cz, NSS,
+oficiální oznámení) a buď opravit znění tvrzení (redakční akt, nový
+update záznam), nebo doplnit kaveát, pokud je rozpor v samotné realitě.
+
+**Přezkum proveden 2026-08-09 — všechny čtyři položky prošly, žádné
+tvrzení nebylo chybné vůči svému citovanému zdroji.** Klíčový nález:
+„nesrovnalosti", které rešeršní kola nahlásila, byly ve všech čtyřech
+případech rozdíly mezi zdrojem tvrzení a JINÝM zdrojem dohledaným při
+hledání korroborace — přesně proto ta kola daná tvrzení správně
+nekorroborovala. Nešlo o chyby v tvrzeních. Výsledky:
+
+1. **CLM-38 (adam-vojtech) — VYŘEŠENO, tvrzení věrné zdroji.** Citovaný
+   zdroj (SRC-25, ČTK přes ČeskéNoviny) i shodně řada dalších výstupů
+   uvádějí přesně 84/50/159 — ověřeno otevřením zdroje. Údaj „85 Ano /
+   49 Ne" se z přímo otevřitelné psp.cz stránky nepodařilo potvrdit ani
+   vyvrátit; nejpravděpodobněji jde o rozdíl mezi rámcem
+   koaliční/opoziční (ČTK) a syrovým Ano/Ne roll-callem (jeden přeběhlý
+   hlas by rozdíl vysvětlil). Tvrzení věrně reprodukuje svůj zdroj —
+   NEMĚNIT bez přímého psp.cz roll-callu; pokud se otevře a bude
+   85/49, doplnit kaveát, ne přepsat citovaný údaj.
+2. **CLM-52 (martin-sebestyan) — VYŘEŠENO, tvrzení přesné vůči
+   primárnímu zdroji.** Ověřeno přímo proti oficiální stránce Sbírky
+   rozhodnutí NSS (sbírka.nssoud.cz, kterou tvrzení cituje jako SRC-43):
+   spis. zn. **1 Afs 59/2025-98**, datum **12. 9. 2025**, Sbírka
+   **4707/2025**, předmět **dotace podle zákona o SZIF + střet zájmů**,
+   účastník **Vodňanská drůbež (Agrofert)** — vše přesně sedí. Rozpor
+   pocházel ze sekundárního agregátoru (Podnikatel.cz), který popisoval
+   JINÝ spis („-108", veřejná zakázka). Tvrzení je správné, beze změny.
+3. **CLM-27 (ivan-bednarik) — VYŘEŠENO, tvrzení přesné vůči primárnímu
+   zdroji.** Ověřeno přímo proti citovanému zdroji (SRC-11, Česká
+   infrastruktura): tunel ~30 km, 12 km na území ČR, zahájení stavby
+   2030, provoz 2042 — vše přesně sedí. Odlišné roky u Echo24 / německého
+   parlamentu jsou jiné výstupy k vyvíjejícímu se megaprojektu, ne chyba
+   tvrzení. Beze změny (SRC-11 je autoritativní zdroj tohoto konkrétního
+   březnového jednání).
+4. **CLM-44 (karel-havlicek) — VYŘEŠENO, doplněn kaveát.** Ověřeno proti
+   citovanému zdroji (SRC-30, EV Magazín): uvádí sedm zemí včetně
+   Německa, tvrzení je věrné. Postoj Německa k cíli 2035 se ale v čase
+   měnil a jiné zpravodajství uvádí šest zemí bez Německa — do těla
+   CLM-44 doplněn kaveát, který tuto divergenci zpravodajství přiznává;
+   tvrzení zůstává 1 ZDROJ (přidání zdroje s jiným počtem by byl rozpor,
+   ne korroborace). Deployováno.
+
 ## Inženýrské — otevřené
 
 7. **[P2]** `published_state = "living-page"` pro src-23..27, 40, 41 +

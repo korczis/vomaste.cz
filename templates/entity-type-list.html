@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
 
 {#-
   Rozcestník filtrovaných pohledů podle typu entity.
@@ -30,7 +29,7 @@
 
   {% if section.subsections | length == 0 %}
   <div class="mt-8">
-    {{ ui::empty_state(message="Zatím není evidován žádný typ entity. Sekce se generují z dat — spusťte `npm run build:entity-type-sections`.") }}
+    {{ <ui_empty_state message="Zatím není evidován žádný typ entity. Sekce se generují z dat — spusťte `npm run build:entity-type-sections`." /> }}
   </div>
   {% else %}
   <ul class="mt-8 grid gap-2 sm:grid-cols-2 xl:grid-cols-3">

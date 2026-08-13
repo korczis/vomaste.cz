@@ -3,7 +3,7 @@
 title = "Ředitelství vodních cest"
 template = "entity.html"
 weight = 363
-description = "Kontextová entita — Příjemce 1,3 mld. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+description = "Ředitelství vodních cest — Kontextová entita — Příjemce 1,3 mld. Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
 
 [extra]
 generated = true

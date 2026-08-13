@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jana-cernochova/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jana-cernochova"
+  },
+  "title": "SRC-02 — Novinky.cz: Poslanci zvolili do čela bezpečnostního výboru Černochovou",
+  "description": "Zpravodajský článek o volbě Jany Černochové předsedkyní sněmovního Výboru pro bezpečnost.",
+  "outlet": "Novinky.cz",
+  "sourceType": "zpravodajství",
+  "url": "https://www.novinky.cz/clanek/domaci-poslanci-zvolili-do-cela-bezpecnostniho-vyboru-cernochovou-40563233",
+  "retrieved": "2026-08-06",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jana-cernochova/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "jana-cernochova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek Novinky.cz, otevřen a přečten 2026-08-06.\nInformuje, že poslankyni a bývalou ministryni obrany Janu Černochovou (ODS) zvolil sněmovní Výbor pro bezpečnost do čela tajnou volbou — pro hlasovalo 11 ze 14 přítomných členů výboru. Ve svém vystoupení Černochová uvedla, že problematice se dlouhodobě věnuje a že chce, aby výbor \"fungoval\", bez stranění jedné politické straně.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé, redakčně zpracované zpravodajství soukromého vydavatele (Seznam.cz) — jiný vydavatel i jiná doména než SRC-01 (státní instituce), takže spolu tvoří nezávislou dvojici pro účely korporace tvrzení. Článek nedokládá aktuální poslanecký mandát ke dni čtení ani přesné datum nástupu do funkce předsedkyně — to dokládá SRC-01."
+    }
+  ],
+  "order": 2
+}

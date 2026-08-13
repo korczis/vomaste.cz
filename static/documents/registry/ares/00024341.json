@@ -1,0 +1,204 @@
+{
+  "retrieved": "2026-08-09",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "00024341"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "00024341",
+        "obchodniJmeno": "Ministerstvo zdravotnictví",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 27,
+          "nazevSpravnihoObvodu": "Praha 2",
+          "kodMestskehoObvodu": 27,
+          "nazevMestskehoObvodu": "Praha 2",
+          "kodMestskeCastiObvodu": 500089,
+          "kodUlice": 463531,
+          "nazevMestskeCastiObvodu": "Praha 2",
+          "nazevUlice": "Palackého náměstí",
+          "cisloDomovni": 375,
+          "kodCastiObce": 490148,
+          "cisloOrientacni": 4,
+          "nazevCastiObce": "Nové Město",
+          "kodAdresnihoMista": 21728861,
+          "psc": 12800,
+          "textovaAdresa": "Palackého náměstí 375/4, Nové Město, 12800 Praha 2",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "325",
+        "pravniFormaRos": "325",
+        "financniUrad": "002",
+        "datumAktualizace": "2026-08-02",
+        "dic": "CZ00024341",
+        "icoId": "00024341",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Palackého náměstí 375/4",
+          "radekAdresy2": "Nové Město",
+          "radekAdresy3": "12800 Praha 2"
+        },
+        "czNace2008": [
+          "84110"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "NEEXISTUJICI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "NEEXISTUJICI",
+          "stavZdrojeNrpzs": "AKTIVNI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "AKTIVNI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Ministerstvo zdravotnictví - Národní kontaktní bod",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 27,
+                  "nazevSpravnihoObvodu": "Praha 2",
+                  "kodMestskehoObvodu": 27,
+                  "nazevMestskehoObvodu": "Praha 2",
+                  "kodMestskeCastiObvodu": 500089,
+                  "kodUlice": 463531,
+                  "nazevMestskeCastiObvodu": "Praha 2",
+                  "nazevUlice": "Palackého náměstí",
+                  "cisloDomovni": 358,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 2,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21728763,
+                  "psc": 12800,
+                  "textovaAdresa": "Palackého náměstí 358/2, Nové Město, 12800 Praha 2",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "datovyZdroj": "nrpzs"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Ministerstvo zdravotnictví",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 27,
+                  "nazevSpravnihoObvodu": "Praha 2",
+                  "kodMestskehoObvodu": 27,
+                  "nazevMestskehoObvodu": "Praha 2",
+                  "kodMestskeCastiObvodu": 500089,
+                  "kodUlice": 463531,
+                  "nazevMestskeCastiObvodu": "Praha 2",
+                  "nazevUlice": "Palackého náměstí",
+                  "cisloDomovni": 375,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 4,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21728861,
+                  "psc": 12800,
+                  "textovaAdresa": "Palackého náměstí 375/4, Nové Město, 12800 Praha 2",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "325",
+            "pravniFormaRos": "325",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Ministerstvo zdravotnictví",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 27,
+                  "nazevSpravnihoObvodu": "Praha 2",
+                  "kodMestskehoObvodu": 27,
+                  "nazevMestskehoObvodu": "Praha 2",
+                  "kodMestskeCastiObvodu": 500089,
+                  "kodUlice": 463531,
+                  "nazevMestskeCastiObvodu": "Praha 2",
+                  "nazevUlice": "Palackého náměstí",
+                  "cisloDomovni": 375,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 4,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21728861,
+                  "psc": 12800,
+                  "textovaAdresa": "Palackého náměstí 375/4, Nové Město, 12800 Praha 2",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "325",
+            "datovyZdroj": "ros"
+          }
+        ],
+        "czNace": [
+          "84110"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

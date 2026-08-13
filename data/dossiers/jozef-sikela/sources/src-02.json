@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jozef-sikela/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jozef-sikela"
+  },
+  "title": "SRC-02 — ČT24: Síkela bude eurokomisařem pro mezinárodní partnerství",
+  "description": "ČT24 o oznámení Síkelova portfolia předsedkyní EK von der Leyenovou 17. 9. 2024.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajský článek",
+  "url": "https://ct24.ceskatelevize.cz/clanek/svet/sikela-bude-eurokomisarem-pro-mezinarodni-partnerstvi-oznamila-von-der-leyenova-353081",
+  "retrieved": "2026-08-08",
+  "published": "2024-09-17",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jozef-sikela/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "jozef-sikela"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek ČT24 ze 17. 9. 2024, otevřen a přečten 2026-08-08.\nUvádí, že předsedkyně Evropské komise Ursula von der Leyenová oznámila ve Štrasburku složení nové Komise a Jozef Síkela (do té doby český ministr průmyslu a obchodu) dostal portfolio mezinárodních partnerství, včetně dohledu nad programem Global Gateway a největším generálním ředitelstvím Komise.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství veřejnoprávní televize — dokládá oznámení nominace a portfolia; skutečný výkon funkce a funkční období nese SRC-01."
+    }
+  ],
+  "order": 2
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/test-intake-form",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "test-intake-form",
+  "kind": "npm",
+  "name": "test:intake:form",
+  "title": "Testy kontraktu formulář ↔ parser",
+  "category": "kontrola",
+  "summary": "node:test nad kompatibilitou skutečné issue šablony s parserem, nad strukturálním validátorem formulářů a nad regresní stráží šablon.",
+  "enforces": [
+    "Rozejití skutečné .github/ISSUE_TEMPLATE/navrh-dossieru.yml s parserem — chyba se pak neprojeví až na podání skutečného člověka.",
+    "Povolené blank issues, contact_links slibující důvěrnost nebo anonymitu, obsahový formulář bez varování o veřejnosti a bez povinného potvrzovacího checkboxu."
+  ],
+  "whenToRun": "Po každé editaci .github/ISSUE_TEMPLATE/**.",
+  "inputs": [
+    ".github/ISSUE_TEMPLATE/**"
+  ],
+  "describedFrom": "command",
+  "notes": [
+    "Syntaktická kontrola YAML používá systémové `ruby -ryaml`, je-li k dispozici. Repozitář kvůli jedné stráži nepřidává YAML parser jako závislost; strukturální kontroly běží vždy."
+  ]
+}

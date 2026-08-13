@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
 
 {% block content %}
 <main class="mx-auto max-w-4xl px-6 py-12 text-white">
@@ -7,27 +6,23 @@
       dossiers[].slug, ne get_section + p.extra.dossiers filtr. -#}
   {% set dossier_slug = section.extra.dossier %}
   {% set entities = load_data(path="data/generated/views/entities-index.json") %}
-  {% set_global filtered = [] %}
-  {% for p in entities.rows %}
-    {% set_global belongs = false %}
-    {% for d in p.dossiers %}{% if d.slug == dossier_slug %}{% set_global belongs = true %}{% endif %}{% endfor %}
-    {% if belongs %}{% set_global filtered = filtered | concat(with=[p]) %}{% endif %}
-  {% endfor %}
+  {#- An entity belongs here when any of its dossiers is this one. -#}
+  {% set filtered = [p for p in entities.rows if [d for d in p.dossiers if d.slug == dossier_slug] | length > 0] %}
 
-  {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
+  {{ <ui_page_header title={section.title} description={section.description} breadcrumb_items={[
     "Dossiery::" ~ get_url(path="@/dossiers/_index.md"),
     section.extra.dossier_title ~ "::" ~ get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"),
     "Registr entit",
-  ]) }}
+  ]} /> }}
 
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
   <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-    {{ ui::stat_tile(value=filtered | length, label="Entit celkem") }}
+    {{ <ui_stat_tile value={filtered | length} label="Entit celkem" /> }}
   </div>
 
   {% if filtered | length == 0 %}
-    {{ ui::empty_state(message="Žádná entita v tomto rozsahu.") }}
+    {{ <ui_empty_state message="Žádná entita v tomto rozsahu." /> }}
   {% else %}
   <div class="grid gap-3 sm:grid-cols-2">
     {% for p in filtered %}
@@ -44,6 +39,6 @@
   </div>
   {% endif %}
 
-  {{ ui::back_link_footer(url=get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md"), label="Zpět na dossier") }}
+  {{ <ui_back_link_footer url={get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md")} label="Zpět na dossier" /> }}
 </main>
 {% endblock content %}

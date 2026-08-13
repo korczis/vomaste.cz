@@ -1,0 +1,323 @@
+{
+  "retrieved": "2026-08-09",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "26124459"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "26124459",
+        "obchodniJmeno": "IMOBA, a.s.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 43,
+          "nazevSpravnihoObvodu": "Praha 4",
+          "kodMestskehoObvodu": 43,
+          "nazevMestskehoObvodu": "Praha 4",
+          "kodMestskeCastiObvodu": 547034,
+          "kodUlice": 770078,
+          "nazevMestskeCastiObvodu": "Praha 11",
+          "nazevUlice": "Pyšelská",
+          "cisloDomovni": 2327,
+          "kodCastiObce": 400211,
+          "cisloOrientacni": 2,
+          "nazevCastiObce": "Chodov",
+          "kodAdresnihoMista": 26628031,
+          "psc": 14900,
+          "textovaAdresa": "Pyšelská 2327/2, Chodov, 14900 Praha 4",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "121",
+        "pravniFormaRos": "121",
+        "financniUrad": "011",
+        "datumVzniku": "1999-10-27",
+        "datumAktualizace": "2026-06-06",
+        "dic": "CZ26124459",
+        "icoId": "26124459",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Pyšelská 2327/2",
+          "radekAdresy2": "Chodov",
+          "radekAdresy3": "14900 Praha 4"
+        },
+        "czNace2008": [
+          "107",
+          "4120",
+          "43220",
+          "4675",
+          "4690",
+          "471",
+          "4725",
+          "49393",
+          "56100",
+          "68310",
+          "70220",
+          "7112",
+          "731",
+          "8559",
+          "931",
+          "9602",
+          "96040",
+          "493",
+          "016"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "AKTIVNI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "ZANIKLY",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "IMOBA, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 116,
+                  "nazevSpravnihoObvodu": "Praha 11",
+                  "kodMestskehoObvodu": 43,
+                  "nazevMestskehoObvodu": "Praha 4",
+                  "kodMestskeCastiObvodu": 547034,
+                  "kodUlice": 770078,
+                  "nazevMestskeCastiObvodu": "Praha 11",
+                  "nazevUlice": "Pyšelská",
+                  "cisloDomovni": 2327,
+                  "kodCastiObce": 400211,
+                  "cisloOrientacni": 2,
+                  "nazevCastiObce": "Chodov",
+                  "kodAdresnihoMista": 26628031,
+                  "psc": 14900,
+                  "textovaAdresa": "Pyšelská 2327/2, Chodov, 14900 Praha 4",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "pravniFormaRos": "121",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "IMOBA, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 43,
+                  "nazevSpravnihoObvodu": "Praha 4",
+                  "kodMestskehoObvodu": 43,
+                  "nazevMestskehoObvodu": "Praha 4",
+                  "kodMestskeCastiObvodu": 547034,
+                  "kodUlice": 770078,
+                  "nazevMestskeCastiObvodu": "Praha 11",
+                  "nazevUlice": "Pyšelská",
+                  "cisloDomovni": 2327,
+                  "kodCastiObce": 400211,
+                  "cisloOrientacni": 2,
+                  "nazevCastiObce": "Chodov",
+                  "kodAdresnihoMista": 26628031,
+                  "psc": 14900,
+                  "textovaAdresa": "Pyšelská 2327/2, Chodov, 14900 Praha 4",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "121",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "IMOBA, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 43,
+                  "nazevSpravnihoObvodu": "Praha 4",
+                  "kodMestskehoObvodu": 43,
+                  "nazevMestskehoObvodu": "Praha 4",
+                  "kodMestskeCastiObvodu": 547034,
+                  "kodUlice": 770078,
+                  "nazevMestskeCastiObvodu": "Praha 11",
+                  "nazevUlice": "Pyšelská",
+                  "cisloDomovni": 2327,
+                  "kodCastiObce": 400211,
+                  "cisloOrientacni": 2,
+                  "nazevCastiObce": "Chodov",
+                  "kodAdresnihoMista": 26628031,
+                  "psc": 14900,
+                  "textovaAdresa": "Pyšelská 2327/2, Chodov, 14900 Praha 4",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "IMOBA, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 43,
+                  "nazevSpravnihoObvodu": "Praha 4",
+                  "kodMestskehoObvodu": 43,
+                  "nazevMestskehoObvodu": "Praha 4",
+                  "kodMestskeCastiObvodu": 547034,
+                  "kodUlice": 770078,
+                  "nazevMestskeCastiObvodu": "Praha 11",
+                  "nazevUlice": "Pyšelská",
+                  "cisloDomovni": 2327,
+                  "kodCastiObce": 400211,
+                  "cisloOrientacni": 2,
+                  "nazevCastiObce": "Chodov",
+                  "kodAdresnihoMista": 26628031,
+                  "psc": 14900,
+                  "textovaAdresa": "Pyšelská 2327/2, Chodov, 14900 Praha 4",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "datovyZdroj": "szr"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "IMOBA, a.s.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 43,
+                  "nazevSpravnihoObvodu": "Praha 4",
+                  "kodMestskehoObvodu": 43,
+                  "nazevMestskehoObvodu": "Praha 4",
+                  "kodMestskeCastiObvodu": 547034,
+                  "kodUlice": 770078,
+                  "nazevMestskeCastiObvodu": "Praha 11",
+                  "nazevUlice": "Pyšelská",
+                  "cisloDomovni": 2327,
+                  "kodCastiObce": 400211,
+                  "cisloOrientacni": 2,
+                  "nazevCastiObce": "Chodov",
+                  "kodAdresnihoMista": 26628031,
+                  "psc": 14900,
+                  "textovaAdresa": "Pyšelská 2327/2, Chodov, 14900 Praha 4",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "121",
+            "spisovaZnacka": "B 6203/MSPH",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "41000",
+          "46900",
+          "68310",
+          "8559",
+          "56110",
+          "107",
+          "931",
+          "96230",
+          "46850",
+          "49320",
+          "70200",
+          "71120",
+          "731",
+          "96210",
+          "4322",
+          "471",
+          "47250",
+          "493",
+          "016"
+        ],
+        "subRegistrSzr": "ezp"
+      }
+    ]
+  }
+}

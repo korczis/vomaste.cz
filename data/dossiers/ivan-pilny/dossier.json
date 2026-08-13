@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-pilny",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "ivan-pilny",
+  "slug": "ivan-pilny",
+  "title": "Ivan Pilný",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Ivan Pilný.",
+  "dossierType": "entity",
+  "canonicalDossier": "ivan-pilny",
+  "subject": "ivan-pilny",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-IVAN-PILNY"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "ivan-pilny",
+        "label": "Ivan Pilný",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nIvan Pilný je bývalý ministr financí (2017, vláda Bohuslava Sobotky,\nANO). Jako politicky exponovaná osoba v souvislosti s výkonem dřívější\nveřejné funkce spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-08-IVAN-PILNY`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce doložený oficiálním přehledem členů\nvlády. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED vyžaduje\notevření druhého, nezávislého zdroje. Rozšíření rozsahu vyžaduje\nsamostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/ivan-pilny/claims/clm-01.md) | Ivan Pilný byl podle oficiálního přehledu členů vlády Bohuslava Sobotky na webu Vlády ČR ministrem financí od 24. 5. 2017 do 13. 12. 2017 (od 5. 12. 2017 v demisi), když ve funkci nahradil Andreje Babiše, který byl podle téhož přehledu 1. místopředsedou vlády pro ekonomiku a ministrem financí od 29. 1. 2014 do 24. 5. 2017 | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/ivan-pilny/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

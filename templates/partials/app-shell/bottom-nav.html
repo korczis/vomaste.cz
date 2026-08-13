@@ -1,0 +1,39 @@
+{#- Mobile bottom navigation (T-012, application shell master prompt §4.1):
+    "kompaktní bottom navigation pro globální úlohy, contextual navigation
+    dej do draweru." A fixed bar for the handful of GLOBAL destinations,
+    distinct from the drawer's full contextual tree (dossier registries
+    etc. stay reachable one tap away via the existing "Menu" toggle,
+    not duplicated here). Reuses the SAME data/generated/navigation.json
+    items the primary sidebar already renders — no new data provider, no
+    hardcoded slug, and the item ids referenced below (home/dossiers/map)
+    are the same stable top-level ids build-navigation.mjs itself looks
+    up by id, not a person or dossier slug.
+
+    md:hidden: only small viewports get this — the docked primary sidebar
+    already gives desktop one-tap access to everything. -#}
+{% component bottom_nav_render(nav_items, active_id) -%}
+<nav aria-label="Rychlá navigace" class="fixed inset-x-0 bottom-0 z-40 flex border-t border-white/10 bg-black md:hidden">
+  {%- for wanted_id in ["home", "dossiers", "map"] %}
+    {%- for item in nav_items %}
+      {%- if item.id == wanted_id %}
+  <a href="{{ get_url(path=item.path) | safe }}"
+     class="flex flex-1 flex-col items-center gap-0.5 py-2 text-[0.65rem]{% if item.id == active_id %} text-[#f3e5c0]{% else %} text-white/55{% endif %}"
+     {% if item.id == active_id %}aria-current="page"{% endif %}>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{ item.icon }}"/></svg>
+    <span class="max-w-full truncate px-1">{{ item.label }}</span>
+  </a>
+      {%- endif %}
+    {%- endfor %}
+  {%- endfor %}
+  {#- Same Flowbite drawer trigger as the navbar hamburger (data-drawer-*,
+      aria-controls, aria-expanded) — one drawer, two openers, so it can
+      never end up in two different states. Requires JS like the navbar's
+      own toggle; the <noscript> nav right above already covers that
+      case with plain links. -#}
+  <button type="button" data-drawer-target="sidebar" data-drawer-toggle="sidebar" data-drawer-body-scrolling="false" aria-controls="sidebar" aria-expanded="false"
+          class="flex flex-1 flex-col items-center gap-0.5 py-2 text-[0.65rem] text-white/55">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    <span>Menu</span>
+  </button>
+</nav>
+{%- endcomponent %}

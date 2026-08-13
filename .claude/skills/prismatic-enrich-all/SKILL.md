@@ -2,6 +2,7 @@
 name: prismatic-enrich-all
 description: Builds a deterministic job plan across canonical entities and dossiers, runs only applicable Prismatic capabilities, imports sanitized candidates into staging and generates a review report. Never writes canonical content. Run after prismatic-bootstrap confirms both repos are ready.
 argument-hint: [--entity <id> | --dossier <slug> | --all] [--dry-run]
+disable-model-invocation: true
 ---
 
 ## Status (2026-08-06): `plan` is real, narrowly scoped; `run`/`import`/`review` are not
@@ -49,3 +50,14 @@ Fáze 2 + companion checklist.
 6. **Never** write to `data/dossiers/**`, `content/**` or any generated
    export. That is exclusively `prismatic-promote`'s job, and only from
    an explicit, human-reviewed manifest.
+
+## When NOT to use this skill
+
+- **Before `prismatic-bootstrap` has confirmed both repositories.**
+  Running against an unverified checkout produces candidates whose
+  provenance cannot be reconstructed.
+- **To write canonical content.** This skill never touches
+  `data/dossiers/**`. Promotion is a separate, reviewable step.
+- **To answer whether something is true.** It generates candidates and
+  gaps. A candidate is not evidence and a confidence value is not a
+  source.

@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/antonin-prachar",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "antonin-prachar",
+  "entityId": "antonin-prachar",
+  "title": "Antonín Prachař",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "antonin-prachar"
+  ],
+  "order": 582,
+  "description": "Antonín Prachař — bývalý ministr dopravy (2014).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalý ministr dopravy (29. 1. – 13. 11. 2014, vláda Sobotky, ANO).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ],
+  "media": [
+    {
+      "file": "images/people/antonin-prachar.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antonin_prachar.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "author": "OISV",
+      "credit": "Own work",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 1546,
+      "role": "portrait"
+    }
+  ]
+}

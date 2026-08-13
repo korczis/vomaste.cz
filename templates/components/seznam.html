@@ -1,0 +1,20 @@
+{#- Blokový komponent: kontrolní seznam v těle stránky.
+
+    Použití — jedna položka na řádek, prázdné řádky se ignorují:
+      {% <seznam id="onboarding" nadpis="Než začnete"> %}
+      Chápu, co vomaste.cz je
+      Rozlišuji tvrzení, zdroj a mezeru
+      {% </seznam> %}
+
+    Položky se parsují z těla, ne z parametru: seznam o dvanácti bodech
+    zapsaný jako jeden dlouhý řetězec v atributu se needituje.
+
+    Odškrtnutí si drží prohlížeč a nikam se neukládá. Web nemá účty ani
+    server a předstírat uložený postup by bylo tvrzení o schopnosti, která
+    neexistuje — komponenta to proto říká přímo pod seznamem. -#}
+{% component seznam(id="", nadpis="") -%}
+{%- set items = body | trim | split(pat="
+") -%}
+{%- set cleaned = [i | trim for i in items if i | trim] -%}
+{{ <atoms_checklist id={id} items={cleaned} heading={nadpis} /> }}
+{%- endcomponent %}

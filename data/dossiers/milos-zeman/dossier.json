@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/milos-zeman",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "milos-zeman",
+  "slug": "milos-zeman",
+  "title": "Miloš Zeman",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Miloš Zeman.",
+  "dossierType": "entity",
+  "canonicalDossier": "milos-zeman",
+  "subject": "milos-zeman",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-MILOS-ZEMAN"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "milos-zeman",
+        "label": "Miloš Zeman",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nMiloš Zeman je bývalý předseda vlády ČR (1998–2002). Jako politicky exponovaná osoba\nv souvislosti s výkonem dřívější veřejné funkce spadá do standing scope\nautorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro\ntento dossier je `AUTH-2026-08-08-MILOS-ZEMAN`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce doložený oficiálním přehledem členů\nvlády Miloše Zemana na webu Vlády ČR. Tvrzení nese stav 1 ZDROJ;\npovýšení na CORROBORATED i doplnění okolností konce v úřadu či dalších\nfunkcí vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje\nsamostatnou budoucí autorizaci.\n\nRozsah tohoto dossieru je výhradně uvedená vládní funkce. Pozdější prezidentské období (2013–2023) není tímto záznamem autorizováno, není zde pokryto a vyžadovalo by samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/milos-zeman/claims/clm-01.md) | Miloš Zeman byl podle oficiálního přehledu členů vlády Miloše Zemana na webu Vlády ČR předsedou vlády České republiky od 22. 7. 1998 do 12. 7. 2002 | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/milos-zeman/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

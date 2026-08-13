@@ -1,0 +1,397 @@
+{
+  "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
+  "retrieved": "2026-08-09",
+  "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/05015502",
+  "status": "OK",
+  "subject": {
+    "ico": "05015502",
+    "businessName": "Kauppias s.r.o.",
+    "registerReference": "C 257044/MSPH"
+  },
+  "filings": [
+    {
+      "referenceLabel": "C 257044/SL1/MSPH",
+      "documentType": "zakladatelské dokumenty, notářský zápis [NZ 577/2016]",
+      "createdAt": "23-03-2016",
+      "filedAt": "22-04-2016",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 7,
+          "sizeBytes": 221519
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 257044/SL2/MSPH",
+      "documentType": "účetní závěrka [2017] VZZ",
+      "createdAt": "31-12-2017",
+      "receivedByCourtAt": "07-02-2023",
+      "filedAt": "13-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 58419
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 257044/SL3/MSPH",
+      "documentType": "účetní závěrka [2018] VZZ",
+      "createdAt": "31-12-2018",
+      "receivedByCourtAt": "07-02-2023",
+      "filedAt": "13-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 58909
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 257044/SL4/MSPH",
+      "documentType": "účetní závěrka [2019] příloha",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "07-02-2023",
+      "filedAt": "13-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 312630
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 257044/SL5/MSPH",
+      "documentType": "účetní závěrka [2021] VZZ",
+      "createdAt": "31-12-2021",
+      "receivedByCourtAt": "07-02-2023",
+      "filedAt": "13-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 52523
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 257044/SL6/MSPH",
+      "documentType": "účetní závěrka [2016] rozvaha",
+      "createdAt": "31-12-2016",
+      "receivedByCourtAt": "07-02-2023",
+      "filedAt": "13-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 36218
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 257044/SL7/MSPH",
+      "documentType": "účetní závěrka [2019] VZZ",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "07-02-2023",
+      "filedAt": "13-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 53502
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 257044/SL8/MSPH",
+      "documentType": "účetní závěrka [2019] rozvaha",
+      "createdAt": "31-12-2019",
+      "receivedByCourtAt": "07-02-2023",
+      "filedAt": "13-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 54937
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 257044/SL9/MSPH",
+      "documentType": "účetní závěrka [2017] rozvaha",
+      "createdAt": "31-12-2017",
+      "receivedByCourtAt": "07-02-2023",
+      "filedAt": "13-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 54140
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 257044/SL10/MSPH",
+      "documentType": "účetní závěrka [2018] rozvaha",
+      "createdAt": "31-12-2018",
+      "receivedByCourtAt": "07-02-2023",
+      "filedAt": "13-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 55130
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 257044/SL11/MSPH",
+      "documentType": "účetní závěrka [2021] rozvaha",
+      "createdAt": "31-12-2021",
+      "receivedByCourtAt": "07-02-2023",
+      "filedAt": "13-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 55188
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 257044/SL12/MSPH",
+      "documentType": "účetní závěrka [2016] VZZ",
+      "createdAt": "31-12-2016",
+      "receivedByCourtAt": "07-02-2023",
+      "filedAt": "13-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 33907
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 257044/SL13/MSPH",
+      "documentType": "účetní závěrka [2020] VZZ",
+      "createdAt": "31-12-2020",
+      "receivedByCourtAt": "07-02-2023",
+      "filedAt": "13-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 53399
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 257044/SL14/MSPH",
+      "documentType": "účetní závěrka [2018] příloha",
+      "createdAt": "31-12-2018",
+      "receivedByCourtAt": "07-02-2023",
+      "filedAt": "13-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 307190
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 257044/SL15/MSPH",
+      "documentType": "účetní závěrka [2020] rozvaha",
+      "createdAt": "31-12-2020",
+      "receivedByCourtAt": "07-02-2023",
+      "filedAt": "13-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 2,
+          "sizeBytes": 55131
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 257044/SL16/MSPH",
+      "documentType": "účetní závěrka [2021] příloha",
+      "createdAt": "31-12-2021",
+      "receivedByCourtAt": "07-02-2023",
+      "filedAt": "13-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 314084
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 257044/SL17/MSPH",
+      "documentType": "účetní závěrka [2020] příloha",
+      "createdAt": "31-12-2020",
+      "receivedByCourtAt": "07-02-2023",
+      "filedAt": "13-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 602610
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 257044/SL18/MSPH",
+      "documentType": "účetní závěrka [2017] příloha",
+      "createdAt": "31-12-2017",
+      "receivedByCourtAt": "07-02-2023",
+      "filedAt": "13-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 323825
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 257044/SL19/MSPH",
+      "documentType": "účetní závěrka [2016] příloha",
+      "createdAt": "31-12-2016",
+      "receivedByCourtAt": "07-02-2023",
+      "filedAt": "13-02-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 210730
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 257044/SL20/MSPH",
+      "documentType": "účetní závěrka [2022] - předána prostřednictvím správce daně z příjmů k 19.08.2023",
+      "createdAt": "19-08-2023",
+      "receivedByCourtAt": "19-08-2023",
+      "filedAt": "19-08-2023",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 0,
+          "sizeBytes": 3576
+        },
+        {
+          "pageCount": 5,
+          "sizeBytes": 330571
+        },
+        {
+          "pageCount": 3,
+          "sizeBytes": 209507
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 257044/SL21/MSPH",
+      "documentType": "účetní závěrka [2023] - předána prostřednictvím správce daně z příjmů k 13.07.2024",
+      "createdAt": "13-07-2024",
+      "receivedByCourtAt": "13-07-2024",
+      "filedAt": "16-07-2024",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 0,
+          "sizeBytes": 45104
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 3692
+        },
+        {
+          "pageCount": 3,
+          "sizeBytes": 213937
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 257044/SL22/MSPH",
+      "documentType": "účetní závěrka [2024] - předána prostřednictvím správce daně z příjmů k 27.07.2025",
+      "createdAt": "27-07-2025",
+      "receivedByCourtAt": "27-07-2025",
+      "filedAt": "27-07-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 0,
+          "sizeBytes": 349
+        },
+        {
+          "pageCount": 3,
+          "sizeBytes": 78074
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 257044/SL23/MSPH",
+      "documentType": "účetní závěrka [2024] - předána prostřednictvím správce daně z příjmů k 11.10.2025",
+      "createdAt": "11-10-2025",
+      "receivedByCourtAt": "11-10-2025",
+      "filedAt": "11-10-2025",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 5,
+          "sizeBytes": 440425
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 3500
+        },
+        {
+          "pageCount": 3,
+          "sizeBytes": 205915
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 257044/SL24/MSPH",
+      "documentType": "notářský zápis [NZ 25/2026]",
+      "createdAt": "08-01-2026",
+      "filedAt": "08-01-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 3,
+          "sizeBytes": 294269
+        }
+      ]
+    },
+    {
+      "referenceLabel": "C 257044/SL25/MSPH",
+      "documentType": "účetní závěrka [2025] - předána prostřednictvím správce daně z příjmů k 17.05.2026",
+      "createdAt": "17-05-2026",
+      "receivedByCourtAt": "17-05-2026",
+      "filedAt": "29-05-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 0,
+          "sizeBytes": 44849
+        },
+        {
+          "pageCount": 0,
+          "sizeBytes": 1168
+        },
+        {
+          "pageCount": 3,
+          "sizeBytes": 116487
+        }
+      ]
+    }
+  ]
+}

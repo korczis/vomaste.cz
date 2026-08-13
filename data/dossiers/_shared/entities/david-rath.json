@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/david-rath",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "david-rath",
+  "entityId": "david-rath",
+  "title": "David Rath",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "david-rath"
+  ],
+  "order": 658,
+  "description": "David Rath — bývalý ministr zdravotnictví (2005–2006).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalý ministr zdravotnictví (4. 11. 2005 – 16. 8. 2006, vláda Jiřího Paroubka).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ],
+  "media": [
+    {
+      "file": "images/people/david-rath.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vaje%C4%8Dn%C3%A1_intif%C3%A1da_%E2%80%93_p%C5%99edvolebn%C3%AD_kampa%C5%88_%C4%8CSSD_do_Evropsk%C3%A9ho_parlamentu_2009_(And%C4%9Bl,_27.5.2009),_David_Rath_(cropped).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "Skot",
+      "credit": "Own work",
+      "retrieved": "2026-08-11",
+      "width": 1200,
+      "height": 1570,
+      "role": "portrait"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q2343411"
+  }
+}

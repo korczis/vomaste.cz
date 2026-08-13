@@ -1,0 +1,30 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "28274318",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/28274318",
+  "nazev": "GMR GAS s.r.o.",
+  "sidlo": "Mlýnská 326/13, Trnitá, 60200 Brno",
+  "spisovaZnacka": {
+    "soud": "KSBR",
+    "oddil": "C",
+    "vlozka": "57941"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "jednatel",
+      "since": "2014-12-18",
+      "kind": "person",
+      "name": "Bc. Petr Vencálek"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "person",
+      "name": "Bc. Petr Vencálek",
+      "podil": "100",
+      "vklad": "200000",
+      "splaceno": "100"
+    }
+  ]
+}

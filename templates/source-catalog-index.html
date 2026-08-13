@@ -1,6 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
-{% import "macros/table.html" as table %}
 
 {#- Index of the source catalogue.
 
@@ -17,10 +15,10 @@
 {%- set catalog = load_data(path="data/generated/source-catalog.json") -%}
 
 <main class="mx-auto max-w-3xl px-6 py-12 text-white">
-  {{ ui::page_header(title=section.title, breadcrumb_items=[
+  {{ <ui_page_header title={section.title} breadcrumb_items={[
     "Domů::" ~ get_url(path="@/_index.md"),
     section.title,
-  ], description=section.description) }}
+  ]} description={section.description} /> }}
 
   <article class="dossier-prose mb-10">
     {{ section.content | safe }}
@@ -31,6 +29,35 @@
     <span class="rounded border border-white/15 px-2 py-1 text-white/50">{{ catalog.counts.sourceRecords }} citací v datasetu</span>
     <span class="rounded border border-white/15 px-2 py-1 text-white/50">{{ catalog.counts.usedFamiliesOrOutlets }} rodin a outletů</span>
   </p>
+
+  {#- Otázka → pramen. Katalog bez tohohle popisuje zdroje, ale nemapuje na ně
+      otázky — a rešerše začíná otázkou, ne názvem registru. Pořadí uvnitř
+      otázky není abecední: primární registry a listiny stojí před agregátory
+      a médii, takže první v řadě je ten, kterým se má začít. Staví se
+      z `answers` u jednotlivých záznamů, ne ručně. -#}
+  {%- if catalog.routing | length > 0 %}
+  <section aria-labelledby="otazky-heading" class="mb-12">
+    <h2 id="otazky-heading" class="mb-2 text-xs font-semibold uppercase tracking-wide text-white/55">Na co se ptáš</h2>
+    <p class="mb-5 text-sm leading-relaxed text-white/60">
+      Rešerše nezačíná názvem registru, ale otázkou. U každé je první ten pramen, kterým se má začít.
+    </p>
+    <dl class="space-y-4">
+      {%- for r in catalog.routing %}
+      <div class="rounded-xl border border-white/10 bg-white/[0.03] p-4">
+        <dt class="text-sm font-semibold text-white">{{ r.question }}</dt>
+        <dd class="mt-2 space-y-1 text-sm">
+          {%- for x in r.sources %}
+          <div>
+            <a href="{{ config.base_url }}{{ x.route }}" class="text-[#f3e5c0] underline decoration-white/30 underline-offset-2">{{ x.title }}</a>
+            <span class="text-white/60">— {{ x.kind }}{% if x.note %}. {{ x.note }}{% endif %}</span>
+          </div>
+          {%- endfor %}
+        </dd>
+      </div>
+      {%- endfor %}
+    </dl>
+  </section>
+  {%- endif %}
 
   <section aria-labelledby="popsane-heading">
     <h2 id="popsane-heading" class="mb-4 text-xs font-semibold uppercase tracking-wide text-white/55">Popsané zdroje</h2>
@@ -64,17 +91,10 @@
     <p class="mb-4 text-sm leading-relaxed text-white/55">
       Dopočítáno ze záznamů zdrojů, ne udržováno ručně. Rodina znamená, že dvě citace nejsou dvě nezávislá doložení, ale jedno převzetí téže zprávy.
     </p>
-    {{ table::advanced_table(
-      id="pouzite-zdroje",
-      caption="Citované rodiny a outlety",
-      columns=["Rodina / outlet", "Citací", "Dossierů", "Meze popsané"],
-      count=catalog.counts.usedFamiliesOrOutlets,
-      searchable=true,
-      sort_keys=["text", "num", "num", "text"],
-      export_name="citovane-zdroje") }}
+    {% <table_advanced_table id="pouzite-zdroje" caption="Citované rodiny a outlety" columns={["Rodina / outlet", "Citací", "Dossierů", "Meze popsané"]} count={catalog.counts.usedFamiliesOrOutlets} searchable={true} sort_keys={["text", "num", "num", "text"]} export_name="citovane-zdroje" footer="Dopočítáno z data/dossiers/**/sources/** při každém buildu." empty_text="Filtru neodpovídá žádná rodina ani outlet."> %}
       {%- for u in catalog.used %}
       <tr class="border-t border-white/5">
-        <td class="p-3">{{ u.family | default(value=u.outlet) }}</td>
+        <td class="p-3">{% if u.family %}{{ u.family }}{% else %}{{ u.outlet }}{% endif %}</td>
         <td class="p-3 text-right tabular-nums">{{ u.count }}</td>
         <td class="p-3 text-right tabular-nums">{{ u.dossierCount }}</td>
         <td class="p-3">
@@ -86,11 +106,9 @@
         </td>
       </tr>
       {%- endfor %}
-    {{ table::advanced_table_end(
-      footer="Dopočítáno z data/dossiers/**/sources/** při každém buildu.",
-      empty_text="Filtru neodpovídá žádná rodina ani outlet.") }}
+    {% </table_advanced_table> %}
   </section>
 
-  {{ ui::back_link_footer(url=get_url(path="@/_index.md"), label="Zpět na úvod") }}
+  {{ <ui_back_link_footer url={get_url(path="@/_index.md")} label="Zpět na úvod" /> }}
 </main>
 {% endblock content %}

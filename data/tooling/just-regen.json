@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/just-regen",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "just-regen",
+  "kind": "just",
+  "name": "regen",
+  "title": "Regenerace content adaptérů",
+  "category": "provoz",
+  "summary": "Zkratka na datový řetěz, který přegeneruje content adaptéry z kanonických dat.",
+  "whenToRun": "Po editaci data/dossiers/**/*.json.",
+  "describedFrom": "header",
+  "notes": [
+    "Dřívější podoba tohohle receptu (migrace tvrzení a kauz na stránky) zanikla — content/** je generovaný adaptér kanonických dat."
+  ]
+}

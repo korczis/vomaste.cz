@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/dana-berova",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "dana-berova",
+  "entityId": "dana-berova",
+  "title": "Dana Bérová",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "dana-berova"
+  ],
+  "order": 663,
+  "description": "Dana Bérová — bývalá ministryně informatiky (2005–2006).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalá ministryně informatiky (25. 4. 2005 – 16. 8. 2006, vláda Jiřího Paroubka).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ]
+}

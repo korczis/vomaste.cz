@@ -1,0 +1,22 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/just-ares",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "just-ares",
+  "kind": "just",
+  "name": "ares",
+  "title": "Dotaz do ARES",
+  "category": "reserse",
+  "summary": "Dotaz do českého primárního obchodního registru podle `--ico=` nebo `--name=`. Živá síť, nikdy součást buildu.",
+  "whenToRun": "Při rešerši k firmě. Příklady: `just ares --ico=28274318`, `just ares --name=\"GMR GAS\"`.",
+  "sourceFile": "scripts/osint/ares-lookup.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "DOKLÁDÁ identitu, sídlo, právní formu a stav subjektu k datu výpisu.",
+    "NEDOKLÁDÁ vlastnictví, skutečné majitele ani to, od kdy kdo co ovládal.",
+    "Je to jeden REST dotaz, reimplementovaný záměrně: závislost na cizí platformě by porušila invariant forkovatelnosti. Znovu se použila znalost, KTERÝ endpoint a tvar dotazu funguje — ne kód."
+  ]
+}

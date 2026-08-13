@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/pavel-blazek",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "pavel-blazek",
+  "slug": "pavel-blazek",
+  "title": "Pavel Blažek",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Pavel Blažek.",
+  "dossierType": "entity",
+  "canonicalDossier": "pavel-blazek",
+  "subject": "pavel-blazek",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-PAVEL-BLAZEK"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "pavel-blazek",
+        "label": "Pavel Blažek",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nPavel Blažek je bývalý ministr spravedlnosti (2021–2025, vláda Petra\nFialy, ODS; ministrem spravedlnosti byl i 2012–2013 ve vládě Petra\nNečase) a dlouholetý poslanec. Jako politicky exponovaná osoba\nv souvislosti s výkonem dřívějších veřejných funkcí spadá do standing\nscope autorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam\npro tento dossier je `AUTH-2026-08-08-PAVEL-BLAZEK`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívějších vládních funkcí a okolností demise tak, jak je\npopsaly citované zdroje. **Povinné rámování při každé zmínce:** demise\nje politický krok, Blažek podle citovaných zdrojů není obviněn a jeho\nvyjádření (že si není vědom protiprávního jednání a nechce poškozovat\npověst vlády) se uvádí vždy; samotná bitcoinová kauza ministerstva\nspravedlnosti je v tomto repozitáři pokryta samostatně v dossieru\nJeronýma Tejce a tento dossier ji nerozšiřuje. Rozšíření rozsahu\nvyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/pavel-blazek/claims/clm-01.md) | Pavel Blažek byl podle oficiálního profilu na webu Vlády ČR ministrem spravedlnosti od 17. 12. 2021 do 9. 6. 2025 (vláda Petra Fialy, ODS) a ministrem spravedlnosti byl i v letech 2012–2013 ve vládě Petra Nečase, poslancem byl od 2013; podle ČT24 oznámil 30. 5. 2025 demisi v souvislosti s bitcoinovou kauzou ministerstva spravedlnosti (dar bitcoinů od odsouzeného Tomáše Jiříkovského a jejich prodej ministerstvem) s vyjádřením, že si není vědom žádného protiprávního jednání, ale nechce poškozovat pověst vlády a vládní koalice | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/pavel-blazek/sources/src-01.md), [SRC-02](@/dossiers/pavel-blazek/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

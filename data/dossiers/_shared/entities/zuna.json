@@ -135,5 +135,19 @@
       "type": "markdown",
       "value": "Hlavní subjekt autorizovaného dossieru (AUTH-2026-07-30-F), který se teprve plní — viz [hlavní přehled](@/dossiers/jaromir-zuna/_index.md). Veřejná funkce doložena oficiálním webem Úřadu vlády (viz `data/government.toml`)."
     }
+  ],
+  "media": [
+    {
+      "file": "images/people/zuna.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jarom%C3%ADr_Z%C5%AFna_ofici%C3%A1ln%C3%AD_portr%C3%A9t_(prosinec_2025).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "Úřad vlády ČR a Ministerstvo obrany ČR",
+      "credit": "Úřad vlády ČR a Ministerstvo obrany ČR",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 1698,
+      "role": "portrait"
+    }
   ]
 }

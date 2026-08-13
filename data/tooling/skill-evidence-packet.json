@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-evidence-packet",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-evidence-packet",
+  "kind": "skill",
+  "name": "evidence-packet",
+  "title": "Důkazní balíček",
+  "category": "reserse",
+  "personas": [
+    "source-contributor",
+    "researcher",
+    "editor"
+  ],
+  "riskLevel": "safe-write",
+  "writes": true,
+  "summary": "Vede člověka sedmi otázkami od ověřených zdrojů ke strukturovanému podkladu, který může někdo jiný posoudit a zapsat: tvrzení, doklady s doslovnými pasážemi, typ zdroje, počet nezávislých hlasů, rozpory mezi zdroji, otevřené otázky a jmenované třetí osoby. Umožňuje přispět bez znalosti kanonického datového modelu.",
+  "whenToRun": "Když má někdo ověřené zdroje a chce z nich udělat použitelný podklad — typicky netechnický přispěvatel před tím, než se záznam vůbec zapíše.",
+  "outputs": [
+    "podklad mimo kanonická data (markdown), určený k lidskému posouzení"
+  ],
+  "describedFrom": "header",
+  "notes": [
+    "Balíček NIKDY nepublikuje. Mezi ním a webem stojí kontrola rozsahu, redakční posouzení, zápis, build a review diffu.",
+    "Pole „co tomu odporuje“ je povinné. Rozpor mezi zdroji se dokumentuje, ne zprůměruje — a bývá to nejcennější část balíčku.",
+    "Chybějící údaj se nechá prázdný a označí. Vymyšlená hodnota je horší než mezera, protože se tváří jako zjištění.",
+    "Neveřejný materiál a materiál identifikující zdroj do repozitáře nesmí ani jako podklad."
+  ]
+}

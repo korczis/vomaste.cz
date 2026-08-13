@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/katerina-valachova/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/katerina-valachova"
+  },
+  "title": "SRC-02 — Vláda ČR (oficiální přehled členů vlády Bohuslava Sobotky)",
+  "description": "Oficiální přehled: Valachová ministryně školství 5. 6. 2015 – 21. 6. 2017.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/historie-minulych-vlad/prehled-vlad-cr/1993-2013-cr/bohuslav_sobotka/prehled-clenu-vlady-bohuslava-sobotky-29-01-2014---trva-124534/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/katerina-valachova/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "katerina-valachova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální přehled členů vlády Bohuslava Sobotky na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkční období Kateřiny Valachové jako ministryně školství, mládeže a tělovýchovy od 5. 6. 2015 do 21. 6. 2017.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam téhož vydavatele jako SRC-01** — podle pravidla o nezávislosti vydavatelů jde o jeden hlas, tvrzení proto nese stav 1 ZDROJ; rozpor s datem publikace profilu (17. 6. 2015) je v tvrzení uveden otevřeně."
+    }
+  ],
+  "order": 2
+}

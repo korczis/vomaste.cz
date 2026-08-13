@@ -4,7 +4,7 @@ title = "Pekárna Zelená louka (skupina Agrofert)"
 template = "entity.html"
 weight = 3
 aliases = ["/dossiers/karel-havlicek/entities/penam-zelena-louka/"]
-description = "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
+description = "Pekárna Zelená louka (skupina Agrofert) — Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu."
 
 [extra]
 generated = true

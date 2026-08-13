@@ -16,6 +16,13 @@
   "url": "https://verejnazaloba.cz/vsz-olomouc/tiskova-zprava-ze-dne-4-5-2026-v-trestni-veci-souvisejici-s-darovanim-bitcoinu-ministerstvu-spravedlnosti/",
   "published": "2026-05-04",
   "retrieved": "2026-08-06",
+  "localDocument": {
+    "path": "documents/jeronym-tejc/vsz-olomouc-2-vzv-11-2025.html.txt",
+    "originalUrl": "https://verejnazaloba.cz/vsz-olomouc/tiskova-zprava-ze-dne-4-5-2026-v-trestni-veci-souvisejici-s-darovanim-bitcoinu-ministerstvu-spravedlnosti/",
+    "retrievedAt": "2026-08-08",
+    "sizeBytes": 28928,
+    "reviewNote": "Oficiální tisková zpráva VSZ v Olomouci byla stažena a strojově prohledána 2026-08-08. Zpráva stíhané osoby nejmenuje a neobsahuje rodná čísla, data narození ani adresy bydliště. Původní HTML je publikováno jako prostý text, aby archivovaná stránka nespouštěla aktivní webový obsah."
+  },
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-19"

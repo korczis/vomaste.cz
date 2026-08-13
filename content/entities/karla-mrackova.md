@@ -3,7 +3,7 @@
 title = "Karla Mráčková"
 template = "entity.html"
 weight = 193
-description = "Kontextová entita — Mluvčí Úřadu vlády; uvedla, že v souvislosti s nálezem nahrávacího zařízení nevzniklo bezpečnostní riziko."
+description = "Karla Mráčková — Kontextová entita — Mluvčí Úřadu vlády; uvedla, že v souvislosti s nálezem nahrávacího zařízení nevzniklo bezpečnostní riziko."
 
 [extra]
 generated = true

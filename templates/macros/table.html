@@ -3,13 +3,12 @@
     kód z placených Flowbite Pro bloků). Každá <table> v šablonách jde
     přes tuto dvojici maker; vynucuje scripts/lint/lint-component-reuse.mjs.
 
-    Slotový mechanismus: Tera 0.22 nemá call-bloky s tělem (macros/ui.html
-    proto také řeší vše parametry), takže obsahový slot je dvojice
-    otevírací/uzavírací makro — advanced_table() vypíše obal, hlavičku,
-    <table>, volitelný <thead> a otevře <tbody>; volající vypíše vlastní
-    řádky <tr> 1:1; advanced_table_end() tbody/table uzavře a vykreslí
-    volitelnou patičku. Patička je parametrem uzavíracího makra, protože
-    dvě nezávislá Tera makra nesdílejí stav a patička patří až za tbody.
+    Obsahový slot: komponenta bere řádky jako TĚLO. Volající vypíše vlastní
+    <tr> mezi otevírací a uzavírací značkou; komponenta kolem nich vykreslí
+    obal, hlavičku, <table>, volitelný <thead>, <tbody> a patičku. Do Zoly
+    0.23 to byla dvojice maker advanced_table()/advanced_table_end(), protože
+    Tera 1 neuměla call-bloky s tělem — ta polovina s _end už neexistuje
+    a footer/empty_text jsou parametry téhle jedné komponenty.
 
     Propojení s JSON-LD: obal nese data-record-type (např. "claim",
     "source", "relation") — deklaruje, že řádky tabulky odpovídají
@@ -33,16 +32,16 @@
                     bez protějšku ve strukturovaných datech, např. metadata)
       columns     — pole popisků sloupců pro <thead>; "" (výchozí) = bez
                     <thead> (tabulky typu klíč–hodnota si <th scope="row">
-                    píší v řádcích samy). Sentinel je řetězec ze stejného
-                    důvodu jako u count — Tera 0.22 neumí pole [] jako
-                    výchozí hodnotu parametru makra; `| length` funguje
+                    píší v řádcích samy). Výchozí hodnota je [] — v Teře 2 se typ
+                    parametru odvozuje z výchozí hodnoty, takže "" by z něj
+                    udělalo string a pole by neprošlo; `| length` funguje
                     stejně na řetězci i poli, takže volající, kteří
                     předávají skutečné pole, nejsou ovlivněni.
       count       — počet záznamů pro badge v hlavičce; "" (výchozí) = bez
-                    badge. Sentinel je řetězec, ne -1: Tera 0.22 neumí
-                    záporné číslo jako výchozí hodnotu parametru makra
-                    ("expected an integer, a float, a string, or `true`/
-                    `false`" — unární minus tam není literál).
+                    badge. Výchozí hodnota je -1 a podmínka je
+                    `count >= 0`. Do 0.23 to byl řetězcový sentinel "";
+                    po změně typu na integer zůstalo porovnání s "" a badge
+                    tiskl -1 na 2728 stránkách, než se to opravilo.
       searchable  — true přidá vyhledávací pole napojené na Alpine
                     komponentu advancedTable (assets/js/modules/
                     table-filter.js, stejný vzor jako claims-filter.js);
@@ -76,15 +75,15 @@
                     by vyhrála a sdílený odkaz by obnovil filtr jinde, než
                     ho uživatel nastavil. Zapínat na hlavní tabulce stránky.
 -#}
-{%- macro advanced_table(id, caption, record_type="", columns="", count="", searchable=false, extra_class="", sort_keys="", facets="", select_facets="", url_state=false, export_name="", inspector=false) -%}
-{%- set facet_attrs = [] -%}
-{%- for sf in select_facets %}{% set_global facet_attrs = facet_attrs | concat(with=sf | split(pat="::") | first) %}{% endfor -%}
-<div class="relative overflow-x-auto rounded-lg border border-white/10 bg-white/[0.03]{% if extra_class %} {{ extra_class }}{% endif %}"{% if record_type %} data-record-type="{{ record_type }}"{% endif %}{% if searchable %} x-data="advancedTable()"{% endif %}{% if url_state %} data-url-state="true"{% endif %}{% if facet_attrs | length > 0 %} data-select-facets="{{ facet_attrs | join(sep='|') }}"{% endif %}{% if export_name %} data-export-name="{{ export_name }}"{% endif %}{% if inspector %} data-inspector="true"{% endif %}>
-  {%- if count != "" or searchable %}
+{% component table_advanced_table(id, caption, record_type="", columns=[], count: integer = -1, searchable=false, extra_class="", sort_keys=[], facets=[], select_facets=[], url_state=false, export_name="", inspector=false, footer="", empty_text="") -%}
+{%- set facet_attrs = "" -%}
+{%- for sf in select_facets -%}{%- if not loop.first %}{% set_global facet_attrs = facet_attrs ~ "|" %}{% endif -%}{%- set_global facet_attrs = facet_attrs ~ (sf | split(pat="::") | first) -%}{%- endfor -%}
+<div class="relative overflow-x-auto rounded-lg border border-white/10 bg-white/[0.03]{% if extra_class %} {{ extra_class }}{% endif %}"{% if record_type %} data-record-type="{{ record_type }}"{% endif %}{% if searchable %} x-data="advancedTable()"{% endif %}{% if url_state %} data-url-state="true"{% endif %}{% if facet_attrs | length > 0 %} data-select-facets="{{ facet_attrs }}"{% endif %}{% if export_name %} data-export-name="{{ export_name }}"{% endif %}{% if inspector %} data-inspector="true"{% endif %}>
+  {%- if count >= 0 or searchable %}
   <div class="flex flex-wrap items-center justify-between gap-3 border-b border-white/10 px-3 py-2.5">
     <h2 id="{{ id }}-caption" class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-white/55">
       {{ caption }}
-      {%- if count != "" %}
+      {%- if count >= 0 %}
       <span class="rounded-full bg-white/5 px-2 py-0.5 font-mono text-[0.65rem] normal-case text-white/50"{% if searchable %} x-text="visible + ' / ' + total" aria-live="polite"{% endif %}>{{ count }}</span>
       {%- endif %}
     </h2>
@@ -145,10 +144,10 @@
     {%- for sf in select_facets %}
     {%- set sp = sf | split(pat="::") %}
     <div class="flex flex-col gap-1">
-      <label for="{{ id }}-{{ sp.0 }}" class="text-xs text-white/50">{{ sp.1 }}</label>
-      <select id="{{ id }}-{{ sp.0 }}" x-model="facetValues['{{ sp.0 }}']" @change="apply()" class="src-filter-select">
+      <label for="{{ id }}-{{ sp[0] }}" class="text-xs text-white/50">{{ sp[1] }}</label>
+      <select id="{{ id }}-{{ sp[0] }}" x-model="facetValues['{{ sp[0] }}']" @change="apply()" class="src-filter-select">
         <option value="">Vše</option>
-        <template x-for="v in facetOptions['{{ sp.0 }}'] || []" :key="v"><option :value="v" x-text="v"></option></template>
+        <template x-for="v in facetOptions['{{ sp[0] }}'] || []" :key="v"><option :value="v" x-text="v"></option></template>
       </select>
     </div>
     {%- endfor %}
@@ -159,10 +158,10 @@
   <div class="flex flex-wrap items-center gap-1.5 border-b border-white/10 px-3 py-2" role="group" aria-label="Filtr: {{ caption }}">
     {%- for f in facets %}
     {%- set fp = f | split(pat="::") %}
-    <button type="button" @click="setFacet('{{ fp.0 }}')"
-      :aria-pressed="facet === '{{ fp.0 }}' ? 'true' : 'false'"
-      :class="facet === '{{ fp.0 }}' ? 'border-[#f3e5c0]/60 bg-[#f3e5c0]/10 text-[#f3e5c0]' : 'border-white/15 text-white/60 hover:border-white/35 hover:text-white'"
-      class="inline-flex min-h-8 items-center rounded-lg border px-2.5 text-xs transition-colors">{{ fp.1 }}</button>
+    <button type="button" @click="setFacet('{{ fp[0] }}')"
+      :aria-pressed="facet === '{{ fp[0] }}' ? 'true' : 'false'"
+      :class="facet === '{{ fp[0] }}' ? 'border-[#f3e5c0]/60 bg-[#f3e5c0]/10 text-[#f3e5c0]' : 'border-white/15 text-white/60 hover:border-white/35 hover:text-white'"
+      class="inline-flex min-h-8 items-center rounded-lg border px-2.5 text-xs transition-colors">{{ fp[1] }}</button>
     {%- endfor %}
   </div>
   {%- endif %}
@@ -184,16 +183,8 @@
     </thead>
     {%- endif %}
     <tbody class="divide-y divide-white/5 [&>tr:nth-child(odd)]:bg-white/[0.02] [&>tr:hover]:bg-white/5">
-{%- endmacro advanced_table -%}
-
-{#- Uzavírací polovina slotu. `footer` (text patičky, např. původ dat) i
-    `empty_text` (hlášení, když filtr nic nevrátí) jsou zde, ne na
-    advanced_table: obojí se vykresluje až za tbody a makra nesdílejí stav.
-
-    empty_text stojí za vyplnění všude, kde se filtruje — prázdná tabulka
-    bez vysvětlení vypadá jako chyba webu, ne jako výsledek filtru. -#}
-{%- macro advanced_table_end(footer="", empty_text="", inspector=false) -%}
-    </tbody>
+{{ body }}
+</tbody>
   </table>
   {%- if inspector %}
   {#- Postranní panel s detailem řádku. Není to modální dialog: seznam
@@ -233,4 +224,12 @@
   <p class="border-t border-white/10 px-3 py-2 text-xs text-white/55">{{ footer }}</p>
   {%- endif %}
 </div>
-{%- endmacro advanced_table_end -%}
+{%- endcomponent %}
+
+{#- Uzavírací polovina slotu. `footer` (text patičky, např. původ dat) i
+    `empty_text` (hlášení, když filtr nic nevrátí) jsou zde, ne na
+    advanced_table: obojí se vykresluje až za tbody a makra nesdílejí stav.
+
+    empty_text stojí za vyplnění všude, kde se filtruje — prázdná tabulka
+    bez vysvětlení vypadá jako chyba webu, ne jako výsledek filtru. -#}
+

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/marie-souckova",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "marie-souckova",
+  "slug": "marie-souckova",
+  "title": "Marie Součková",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Marie Součková.",
+  "dossierType": "entity",
+  "canonicalDossier": "marie-souckova",
+  "subject": "marie-souckova",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-MARIE-SOUCKOVA"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "marie-souckova",
+        "label": "Marie Součková",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nMarie Součková je bývalá ministryně zdravotnictví (2002–2004, vláda Vladimíra Špidly). Jako politicky exponovaná osoba\nv souvislosti s výkonem dřívější veřejné funkce spadá do standing scope\nautorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro\ntento dossier je `AUTH-2026-08-08-MARIE-SOUCKOVA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce doložený oficiálním přehledem členů\nvlády Vladimíra Špidly na webu Vlády ČR. Tvrzení nese stav 1 ZDROJ;\npovýšení na CORROBORATED i doplnění okolností konce v úřadu či dalších\nfunkcí vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje\nsamostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/marie-souckova/claims/clm-01.md) | Marie Součková byla podle oficiálního přehledu členů vlády Vladimíra Špidly na webu Vlády ČR ministryní zdravotnictví od 15. 7. 2002 do 14. 4. 2004 | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/marie-souckova/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

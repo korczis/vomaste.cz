@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/jiri-pospisil",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "jiri-pospisil",
+  "entityId": "jiri-pospisil",
+  "title": "Jiří Pospíšil",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "jiri-pospisil"
+  ],
+  "order": 537,
+  "provenance": {
+    "discoveredAt": "2026-08-07",
+    "discoveredVia": [
+      "opozice-25-politiku-2026-08-07"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — poslanec Poslanecké sněmovny Parlamentu ČR za TOP 09 (psp.cz id 5273, Praha), od 8. 11. 2025 první místopředseda TOP 09."
+    }
+  ],
+  "media": [
+    {
+      "file": "images/people/jiri-pospisil.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Praha,_Magistr%C3%A1t,_TK_Ji%C5%99%C3%AD_Posp%C3%AD%C5%A1il_II.jpg",
+      "license": "Public domain",
+      "author": "I would appreciate being notified if you use my work outside Wikimedia. More of my work can be found in my personal gallery .",
+      "credit": "Own work",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 1801,
+      "role": "portrait"
+    }
+  ]
+}

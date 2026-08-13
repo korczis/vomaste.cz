@@ -3,7 +3,7 @@
 title = "Václav Klaus (mladší)"
 template = "entity.html"
 weight = 426
-description = "Kontextová entita — Třetí účastník setkání s íránským velvyslancem podle investigace Neovlivní.cz; schůzku potvrdil."
+description = "Václav Klaus (mladší) — Kontextová entita — Třetí účastník setkání s íránským velvyslancem podle investigace Neovlivní.cz; schůzku potvrdil."
 
 [extra]
 generated = true

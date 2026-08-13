@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
 
 {% block extra_js %}
 <script type="module" defer src="{{ get_url(path='js/graph-app.js', cachebust=true) | safe }}"></script>
@@ -7,10 +6,10 @@
 
 {% block content %}
 <main class="mx-auto max-w-[90rem] px-6 py-12 text-white" data-graph-workbench>
-  {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
+  {{ <ui_page_header title={section.title} description={section.description} breadcrumb_items={[
     "Domů::" ~ get_url(path="@/_index.md"),
     "Globální mapa",
-  ]) }}
+  ]} /> }}
 
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
@@ -25,10 +24,10 @@
   {% set curated = load_data(path="static/data/graph/global-curated.json") %}
 
   <div class="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-    {{ ui::stat_tile(value=manifest.dossiers | length, label="Autorizované dossiery", url=get_url(path="@/dossiers/_index.md")) }}
-    {{ ui::stat_tile(value=curated.nodes | length, label="Entit v síti", url=get_url(path="@/entities/_index.md")) }}
-    {{ ui::stat_tile(value=curated.edges | length, label="Vztahů v síti") }}
-    {{ ui::stat_tile(value=curated.clusters | length, label="Tematických okruhů") }}
+    {{ <ui_stat_tile value={manifest.dossiers | length} label="Autorizované dossiery" url={get_url(path="@/dossiers/_index.md")} /> }}
+    {{ <ui_stat_tile value={curated.nodes | length} label="Entit v síti" url={get_url(path="@/entities/_index.md")} /> }}
+    {{ <ui_stat_tile value={curated.edges | length} label="Vztahů v síti" /> }}
+    {{ <ui_stat_tile value={curated.clusters | length} label="Tematických okruhů" /> }}
   </div>
 
   <section aria-labelledby="dossier-catalog-heading" class="mb-12">
@@ -72,8 +71,8 @@
       <span class="text-xs text-white/55">Okolí vybraného uzlu:</span>
       {%- for d in ["0::vypnuto", "1::sousedé", "2::dva kroky", "component::celá komponenta"] %}
       {%- set dp = d | split(pat="::") %}
-      <button type="button" class="graph-chip" data-graph-depth="{{ dp.0 }}"
-        aria-pressed="{% if dp.0 == '0' %}true{% else %}false{% endif %}">{{ dp.1 }}</button>
+      <button type="button" class="graph-chip" data-graph-depth="{{ dp[0] }}"
+        aria-pressed="{% if dp[0] == '0' %}true{% else %}false{% endif %}">{{ dp[1] }}</button>
       {%- endfor %}
     </div>
     <div class="graph-toolbar mb-4" role="group" aria-label="Nástroje mapy">
@@ -156,11 +155,11 @@
     {% set entities = get_section(path="entities/_index.md") %}
     <ul class="space-y-1.5 text-sm text-white/70">
       {% for e in curated.edges %}
-      {% set source_entity = entities.pages | filter(attribute="extra.entity_id", value=e.source) | first %}
-      {% set target_entity = entities.pages | filter(attribute="extra.entity_id", value=e.target) | first %}
+      {% set source_entity = [__i for __i in entities.pages if __i.extra.entity_id == e.source] | first %}
+      {% set target_entity = [__i for __i in entities.pages if __i.extra.entity_id == e.target] | first %}
       {% set relation_page = get_section(path="dossiers/" ~ e.dossier ~ "/relations/_index.md") %}
       {#- e.id je v globální mapě klíčované "<dossier>::<id>"; stránka vztahu se hledá podle původního rel_id, sekce je už zúžená na e.dossier -#}
-      {% set r = relation_page.pages | filter(attribute="extra.rel_id", value=e.rel_id) | first %}
+      {% set r = [__i for __i in relation_page.pages if __i.extra.rel_id == e.rel_id] | first %}
       <li>
         <span class="edge-status-dot edge-{{ e.status }}"></span>
         {% if source_entity %}<a href="{{ source_entity.permalink | safe }}" class="text-white/80 underline decoration-white/30 underline-offset-2">{{ source_entity.title }}</a>{% endif %}
@@ -174,7 +173,7 @@
     </ul>
   </section>
 
-  {{ ui::back_link_footer(url=get_url(path="@/_index.md"), label="Zpět na hlavní stránku") }}
+  {{ <ui_back_link_footer url={get_url(path="@/_index.md")} label="Zpět na hlavní stránku" /> }}
 </main>
 
 {#- Same JSON-island pattern as templates/dossier.html's local graph — read

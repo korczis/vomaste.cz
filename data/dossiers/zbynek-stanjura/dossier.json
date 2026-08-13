@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zbynek-stanjura",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "zbynek-stanjura",
+  "slug": "zbynek-stanjura",
+  "title": "Zbyněk Stanjura",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Zbyněk Stanjura.",
+  "dossierType": "entity",
+  "canonicalDossier": "zbynek-stanjura",
+  "subject": "zbynek-stanjura",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-ZBYNEK-STANJURA"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "zbynek-stanjura",
+        "label": "Zbyněk Stanjura",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nZbyněk Stanjura je bývalý ministr financí ČR (2021–2025, vláda Petra\nFialy), dříve ministr dopravy (2012–2013) a dlouholetý poslanec\n(2010–2025). Jako politicky exponovaná osoba v souvislosti s výkonem\ndřívější veřejné funkce spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-08-ZBYNEK-STANJURA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívějších veřejných funkcí a výsledku sněmovních voleb 2025.\nNeobhájení mandátu je volební výsledek, nikoli pochybení, a tak je zde\npodáno. Rozšíření rozsahu (například na kauzy z jeho ministerského\npůsobení) vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/zbynek-stanjura/claims/clm-01.md) | Zbyněk Stanjura byl podle oficiálního profilu na webu Vlády ČR ministrem financí od 17. 12. 2021 (od 6. 11. 2025 do 15. 12. 2025 v demisi), dříve ministrem dopravy (prosinec 2012 – srpen 2013) a poslancem od roku 2010; ve sněmovních volbách v říjnu 2025 podle Aktuálně.cz mandát jako lídr kandidátky SPOLU v Moravskoslezském kraji neobhájil, když ho preferenčními hlasy přeskočili jiní kandidáti koalice | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/zbynek-stanjura/sources/src-01.md), [SRC-02](@/dossiers/zbynek-stanjura/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

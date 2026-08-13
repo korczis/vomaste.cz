@@ -1,6 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
-{% import "macros/table.html" as table %}
 
 {% block content %}
 <main class="mx-auto max-w-2xl px-6 py-12 text-white">
@@ -9,11 +7,26 @@
       provenience je kanonická (entity.provenance) a resolve lokálních id
       per dossier je předpočítaný ve view.provenanceResolved. -#}
   {% set view = load_data(path="data/" ~ page.extra.view_model) %}
-  {{ ui::page_header(title=page.title, breadcrumb_items=[
+  {{ <ui_page_header title={page.title} breadcrumb_items={[
     "Domů::" ~ get_url(path="@/_index.md"),
     "Registr entit::" ~ get_url(path="@/entities/_index.md"),
     view.entityId,
-  ]) }}
+  ]} /> }}
+
+  {#- Obrazová dokumentace: 1..N položek z kanonického `media`, každá s vlastní
+      licencí a odkazem na zdroj (ui_media_figure). Portrét stojí vedle
+      identifikačního řádku, ostatní jdou do galerie níž — a když entita žádné
+      médium nemá, nevykreslí se nic; prázdný rámeček by byl přesně ten
+      placeholder, který sem nepatří. -#}
+  {#- Portraits first, then logos: the order is the priority of what leads. -#}
+  {%- set portraits = [m for m in view.media | default(value=[]) if m.role == "portrait"] -%}
+  {%- set logos = [m for m in view.media | default(value=[]) if m.role == "logo"] -%}
+  {%- set lead_media = [m for m in view.media | default(value=[]) if m.role == "portrait" or m.role == "logo"] -%}
+  {%- if lead_media | length > 0 %}
+  <div class="mb-6 sm:float-right sm:ml-6 sm:w-56">
+    {{ <ui_media_figure item={lead_media | first} sizes="w-full" eager={true} subject={view.title} /> }}
+  </div>
+  {%- endif %}
 
   <p class="mb-6 flex flex-wrap items-center gap-2">
     <span class="font-mono text-xs text-[#f3e5c0]">{{ view.entityId }}</span>
@@ -42,7 +55,8 @@
   </div>
   {% endif %}
 
-  {{ table::advanced_table(id="entity-meta", caption="Metadata entity " ~ view.entityId, extra_class="mb-8") }}
+  {% <table_advanced_table id="entity-meta" caption={"Metadata entity " ~ view.entityId} extra_class="mb-8"> %}
+      {% if view.dossiers %}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Vyskytuje se v</th><td class="p-3">
         {#- Titulek chipu je prezentační title stránky dossieru (adaptér),
             ne kanonický title — u agregátu se liší („Dossier — …"). -#}
@@ -51,8 +65,9 @@
           <a href="{{ dossier_page.permalink | safe }}" class="mr-2 inline-block rounded bg-white/5 px-2 py-0.5 text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ dossier_page.title }}</a>
         {% endfor %}
       </td></tr>
+      {% endif %}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Zjištěno</th><td class="p-3">{{ view.provenance.discoveredAt | default(value="") }}</td></tr>
-      {% if view.provenance.discoveredVia | default(value=[]) %}
+      {% if view.provenanceResolved.discoveredVia | default(value=[]) %}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Objeveno přes</th><td class="p-3">
         {#- Resolve lokálních id per dossier je předpočítaný ve view
             modelu (provenanceResolved) — syntetické značky procesu
@@ -63,21 +78,21 @@
         {% endfor %}
       </td></tr>
       {% endif %}
-      {% if view.provenance.claimRefs | default(value=[]) %}
+      {% if view.provenanceResolved.claims | default(value=[]) %}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Tvrzení</th><td class="p-3">
         {% for c in view.provenanceResolved.claims %}
           <a href="{{ config.base_url }}{{ c.route }}" class="mr-2 inline-block rounded bg-white/5 px-2 py-0.5 font-mono text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ c.identifier }}</a>
         {% endfor %}
       </td></tr>
       {% endif %}
-      {% if view.provenance.sourceRefs | default(value=[]) %}
+      {% if view.provenanceResolved.sources | default(value=[]) %}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Zdroje</th><td class="p-3">
         {% for s in view.provenanceResolved.sources %}
           <a href="{{ config.base_url }}{{ s.route }}" class="mr-2 inline-block rounded bg-white/5 px-2 py-0.5 font-mono text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ s.identifier }}</a>
         {% endfor %}
       </td></tr>
       {% endif %}
-  {{ table::advanced_table_end() }}
+  {% </table_advanced_table> %}
 
   {%- if page.content | striptags | trim %}
   <article class="dossier-prose mb-8">
@@ -88,7 +103,7 @@
   {#- Proč je entita v dossieru: vypsat tvrzení, která ji zmiňují, i s jejich
       textem a stavem — kanonická provenience (claimRefs), resolve
       předpočítaný ve view.provenanceResolved.claims. -#}
-  {%- if view.provenance.claimRefs | default(value=[]) %}
+  {%- if view.provenanceResolved.claims | default(value=[]) %}
   <section class="mb-8" aria-labelledby="entity-claims-heading">
     <h2 id="entity-claims-heading" class="mb-1 text-xs font-semibold uppercase tracking-wide text-white/55">Proč je tato entita v dossieru</h2>
     <p class="mb-3 text-xs text-white/50">Tvrzení z registru, která ji zmiňují. Stav u každého říká, čím je doložené — ne jak je závažné.</p>
@@ -107,14 +122,8 @@
   {#- Vztahy per dossier z view modelu (kanonický graf): odchozí, pak
       příchozí, v prezentačním pořadí registru vztahů. -#}
   {% for d in view.dossiers %}
-  {% set_global outgoing = [] %}
-  {% set_global incoming = [] %}
-  {% for r in view.relations %}
-    {% if r.dossier == d.slug %}
-      {% if r.direction == "outgoing" %}{% set_global outgoing = outgoing | concat(with=[r]) %}{% endif %}
-      {% if r.direction == "incoming" %}{% set_global incoming = incoming | concat(with=[r]) %}{% endif %}
-    {% endif %}
-  {% endfor %}
+  {% set outgoing = [r for r in view.relations if r.dossier == d.slug and r.direction == "outgoing"] %}
+  {% set incoming = [r for r in view.relations if r.dossier == d.slug and r.direction == "incoming"] %}
 
   {% if outgoing | length > 0 or incoming | length > 0 %}
   {% set dossier_page = get_section(path="dossiers/" ~ d.slug ~ "/_index.md") %}
@@ -132,6 +141,11 @@
   {% endif %}
   {% endfor %}
 
-  {{ ui::back_link_footer(url=get_url(path="@/entities/_index.md"), label="Zpět na registr entit") }}
+  {#- Zbylá média (fotky z akcí apod.) — galerie se vykreslí jen když nějaká
+      jsou; portrét/logo už je v hlavičce, takže se tu neopakují. -#}
+  {%- set gallery = [__i for __i in view.media | default(value=[]) if __i.role == "photo"] -%}
+  {{ <ui_media_gallery items={gallery} heading="Obrazová dokumentace" subject={view.title} /> }}
+
+  {{ <ui_back_link_footer url={get_url(path="@/entities/_index.md")} label="Zpět na registr entit" /> }}
 </main>
 {% endblock content %}

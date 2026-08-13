@@ -1,24 +1,50 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
 
 {% block content %}
 <main class="mx-auto max-w-3xl px-6 py-12 text-white">
-  {{ ui::page_header(title=section.title, description=section.description, breadcrumb_items=[
+  {{ <ui_page_header title={section.title} description={section.description} breadcrumb_items={[
     "Domů::" ~ get_url(path="@/_index.md"),
     "Dokumentace",
-  ]) }}
+  ]} /> }}
 
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
 
+  {#- Podsekce dokumentace (dnes katalog příkazů). Vypisují se odděleně od
+      stránek: stránka vykresluje JEDEN řídicí dokument repozitáře, podsekce
+      je generovaný katalog s vlastním indexem. Seznam jde ze
+      section.subsections, takže přidání další podsekce sem nevyžaduje
+      žádnou změnu. -#}
+  {% if section.subsections | length > 0 %}
+  <div class="mb-3 grid gap-3">
+    {% for path in section.subsections %}
+    {% set sub = get_section(path=path, metadata_only=true) %}
+    <a href="{{ sub.permalink | safe }}" class="registry-card">
+      <span class="font-semibold text-white">{{ sub.title }}</span>
+      <span class="mt-1 block text-xs text-white/60">{{ sub.description }}</span>
+      <span class="mt-2 block font-mono text-[0.7rem] text-white/55">generovaný katalog</span>
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
   {% if section.pages | length == 0 %}
-  {{ ui::empty_state(message="Zatím zde není žádná zveřejněná stránka dokumentace.") }}
+  {{ <ui_empty_state message="Zatím zde není žádná zveřejněná stránka dokumentace." /> }}
   {% else %}
   <div class="grid gap-3 sm:grid-cols-2">
     {% for p in section.pages %}
     <a href="{{ p.permalink | safe }}" class="registry-card">
       <span class="font-semibold text-white">{{ p.title }}</span>
       <span class="mt-1 block text-xs text-white/60">{{ p.description }}</span>
+      {#- Zrcadlené dokumenty ukazují svůj zdrojový soubor v repu; stránky
+          generované z dat žádný nemají a řádek se u nich nevykreslí. -#}
+      {%- if p.extra.source_file %}
       <span class="mt-2 block font-mono text-[0.7rem] text-white/55">{{ p.extra.source_file }}</span>
+      {%- else %}
+      {#- text-white/65, ne /45: při 0.7rem je to malý text a bílá na 45 %
+          dává na černém pozadí kontrast 4,0:1 — pod prahem WCAG AA (4,5:1).
+          Nalezeno plošnou přístupnostní kontrolou 2026-08-11. -#}
+      <span class="mt-2 block font-mono text-[0.7rem] text-white/65">generováno z dat</span>
+      {%- endif %}
     </a>
     {% endfor %}
   </div>

@@ -1,38 +1,56 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/jan-jakob",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "jan-jakob",
- "entityId": "jan-jakob",
- "title": "Jan Jakob",
- "entityType": "person",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "alena-schillerova"
- ],
- "order": 162,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/jan-jakob",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "jan-jakob",
+  "entityId": "jan-jakob",
+  "title": "Jan Jakob",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "alena-schillerova",
+    "jan-jakob"
   ],
-  "claimRefs": [
-   "CLM-39"
+  "order": 162,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02"
+    ],
+    "claimRefs": [
+      "CLM-39"
+    ],
+    "sourceRefs": [
+      "SRC-08"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Oznámil přípravu ústavní stížnosti proti novele rozpočtových zákonů. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (alena-schillerova). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ],
-  "sourceRefs": [
-   "SRC-08"
-  ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Oznámil přípravu ústavní stížnosti proti novele rozpočtových zákonů. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (alena-schillerova). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  "media": [
+    {
+      "file": "images/people/jan-jakob.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jan_Jakob.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "TOP 09",
+      "credit": "TOP 09",
+      "retrieved": "2026-08-11",
+      "width": 1200,
+      "height": 1565,
+      "role": "portrait"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q39728392"
   }
- ]
 }

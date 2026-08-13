@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "mesto-otrokovice",
+  "@id": "https://vomaste.cz/id/entities/mesto-otrokovice",
+  "entityId": "mesto-otrokovice",
+  "title": "Město Otrokovice",
+  "entityType": "public_institution",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "martin-pavlik"
+  ],
+  "order": 534,
+  "description": "Město Otrokovice (IČO 00284301) — kontextový záznam zveřejňujícího subjektu z registru smluv, ne dossier.",
+  "provenance": {
+    "discoveredAt": "2026-08-06",
+    "discoveredVia": [
+      "registr-smluv-party-04449461-2026-08-06"
+    ],
+    "depth": 3
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Obec s rozšířenou působností zapsaná pod IČO 00284301. V datasetu se objevuje jako **zveřejňující smluvní strana** v registru smluv.\n\n**Kontextová entita, ne předmět šetření.** Záznam eviduje jen to, že subjekt v registru smluv vystupuje. Nenese tvrzení o jeho hospodaření ani o čemkoli závadném; zveřejňování smluv je zákonná povinnost, ne indicie."
+    }
+  ],
+  "externalIds": {
+    "ares": "00284301"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "49455958",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/49455958",
+  "nazev": "AGRO Jevišovice, a.s.",
+  "sidlo": "č.p. 102, 67153 Jevišovice",
+  "spisovaZnacka": {
+    "soud": "KSBR",
+    "oddil": "B",
+    "vlozka": "6130"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "místopředseda představenstva",
+      "since": "2024-06-17",
+      "kind": "person",
+      "name": "Ing. Petr Foukal"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2024-07-17",
+      "kind": "person",
+      "name": "Ing. Milan Škvor"
+    },
+    {
+      "role": "předseda představenstva",
+      "since": "2026-03-18",
+      "kind": "person",
+      "name": "Ing. Antonín Kyjovský"
+    }
+  ],
+  "spolecnici": []
+}

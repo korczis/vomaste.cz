@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/marian-jurecka/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/marian-jurecka"
+  },
+  "title": "SRC-02 — ČeskéNoviny.cz (ČTK): Marian Jurečka se stal předsedou poslaneckého klubu KDU-ČSL",
+  "description": "Zpravodajství ČTK (ČeskéNoviny.cz) o zvolení Mariana Jurečky předsedou poslaneckého klubu KDU-ČSL 5.–6. 5. 2026.",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/marian-jurecka-se-stal-predsedou-poslaneckeho-klubu-kdu-csl/2821490",
+  "published": "2026-05-05",
+  "retrieved": "2026-08-07",
+  "sourceFamily": "ctk",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/marian-jurecka/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "marian-jurecka"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpráva ČTK publikovaná na ČeskéNoviny.cz 5. 5. 2026, otevřena a přečtena 2026-08-07.\nInformuje, že poslanci KDU-ČSL zvolili na jednání poslaneckého klubu novým předsedou bývalého ministra práce a sociálních věcí Mariana Jurečku, který nahradil dosavadního šéfa frakce Toma Philippa; místopředsedy klubu se stali Tom Philipp a Benjamin Činčila.\n\nPoznámka k typu zdroje a jeho limitům: redakční zpravodajství ČTK (`sourceFamily: ctk`) — jiná doména i jiný vydavatel než SRC-01 (Poslanecká sněmovna Parlamentu ČR, primární úřední zdroj), takže spolu s ním tvoří nezávislou dvojici pro účely korporace tohoto tvrzení. Přesné datum poslaneckého mandátu (4. 10. 2025) dokládá SRC-01."
+    }
+  ],
+  "order": 2
+}

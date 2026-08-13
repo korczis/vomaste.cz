@@ -4,7 +4,7 @@ title = "Ministerstvo průmyslu a obchodu"
 template = "entity.html"
 weight = 23
 aliases = ["/dossiers/andrej-babis/entities/mpo/"]
-description = "Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu. Tato stránka neobsahuje samostatný profil mimo tento kontext."
+description = "Ministerstvo průmyslu a obchodu — Kontextová entita — uvedena, protože se přímo objevuje v citovaném zpravodajství o autorizovaném tématu."
 
 [extra]
 generated = true

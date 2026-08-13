@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/build-government-roster",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "build-government-roster",
+  "kind": "npm",
+  "name": "build:government-roster",
+  "title": "Vládní jmenný seznam jako kontext",
+  "category": "generovani",
+  "summary": "Generuje globální KONTEXTOVÝ záznam entity pro každého člena vládního seznamu v data/government.toml — faktický veřejný údaj „kdo zastává který úřad“, záměrně nejslabší publikační stav, jaký repozitář má.",
+  "whenToRun": "V build pipeline; ručně po editaci data/government.toml. `--dry-run` ukáže, co by vzniklo.",
+  "inputs": [
+    "data/government.toml"
+  ],
+  "outputs": [
+    "data/dossiers/_shared/entities/<id>.json"
+  ],
+  "sourceFile": "scripts/dossier/build-government-roster.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Není to způsob, jak někoho dostat do dossierového pokrytí: generované záznamy jsou vždy publicationRole = \"context\", dossierEnabled = false, dossierStatus = \"not_authorized\", coverageState = \"referenced\".",
+    "Nikdy nepřepisuje existující kanonický záznam. Idempotentní — vytváří jen to, co ještě neexistuje."
+  ]
+}

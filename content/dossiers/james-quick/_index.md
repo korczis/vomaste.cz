@@ -79,7 +79,7 @@ Věc oznámení na Vladimíra Růžičku je jediná z těchto kauz, u které je 
 
 ## Zrušení společnosti {#kauza-zruseni-spolecnosti}
 
-Rejstříkový přepis uvádí zrušení bez likvidace a výmaz společnosti CSR & Protikorupcnilinka.cz s.r.o. v roce 2024; úplné soudní usnesení zůstává otevřeným primárním dokumentem ([CLM-14](@/dossiers/james-quick/claims/clm-14.md)).
+Rejstříkový přepis dokládá zrušení bez likvidace a výmaz společnosti v roce 2024 ([CLM-14](@/dossiers/james-quick/claims/clm-14.md)). Úplné usnesení Městského soudu v Praze nyní dokládá i konkrétní skutkové důvody rozhodnutí ([CLM-22](@/dossiers/james-quick/claims/clm-22.md)); výrok se týká korporace, nikoli osobní trestní odpovědnosti Jamese Quicka.
 
 ## Politický aktivismus {#kauza-politicky-aktivismus}
 
@@ -87,8 +87,33 @@ Dobové zpravodajství dokládá organizování demonstrací proti Jiřímu Paro
 
 ## Co tento přehled zatím neověřil {#mezery}
 
-Dále je třeba ověřit deklarovanou afiliaci „CIA“, širší firemní síť CERD, obchodní protistrany a úplné znění soudního usnesení o zrušení společnosti.
+Dále je třeba ověřit deklarovanou afiliaci „CIA“, širší firemní síť CERD a obchodní protistrany. Úplné znění soudního usnesení o zrušení společnosti bylo dohledáno 7. srpna 2026 a je zpracováno v CLM-22.
 
 ## Metodické omezení
 
 Oficiální web subjektu, CERD a otevřené blogovací platformy mohou doložit autorství nebo existenci veřejného výroku. Bez dalšího nezávislého zdroje ale nedokládají pravdivost tvrzení, která o sobě nebo jiných osobách publikují.
+
+## Doplnění registru tvrzení {#doplneni-registru}
+
+| ID | Tvrzení | Stav | Zdroje |
+|---|---|---|---|
+| <a id="clm-20"></a>[CLM-20](@/dossiers/james-quick/claims/clm-20.md) | ČT24 a Peníze.cz v dubnu 2011 nezávisle popsaly síť domén připomínajících názvy českých státních institucí, které návštěvníky přesměrovávaly nebo vedly k nabídce služeb CERD; oba zdroje uvádějí například domény odkazující názvem na ministerstvo financí či finanční úřady. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-05](@/dossiers/james-quick/sources/src-05.md), [SRC-21](@/dossiers/james-quick/sources/src-21.md) |
+| <a id="clm-21"></a>[CLM-21](@/dossiers/james-quick/claims/clm-21.md) | ČT24 a iROZHLAS 26. října 2010 nezávisle uvedly, že CERD plánoval veřejně zpřístupnit registr osob spojovaných se sexuálním násilím na dětech a umístit jej na zahraniční server; oba zdroje zároveň citovaly stanovisko ÚOOÚ, podle něhož by takový internetový seznam odporoval pravidlům ochrany osobních údajů. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-13](@/dossiers/james-quick/sources/src-13.md), [SRC-22](@/dossiers/james-quick/sources/src-22.md) |
+
+Nové záznamy oddělují nezávisle potvrzené společné jádro od detailů a citací, které jsou zatím doloženy pouze jedním zdrojem. Doménová praxe je napojena na kauzu CERD; oznámený registr je napojen na samostatnou kauzu včetně následného upuštění od projektu.
+
+## Primární usnesení ke zrušení společnosti {#primarni-usneseni}
+
+| ID | Tvrzení | Stav | Zdroje |
+|---|---|---|---|
+| <a id="clm-22"></a>[CLM-22](@/dossiers/james-quick/claims/clm-22.md) | Městský soud v Praze v usnesení č. j. 85 Cm 1204/2023-7 ze dne 27. května 2024 uvedl, že CSR & Protikorupcnilinka.cz s.r.o. nezaložila do sbírky listin účetní závěrky za roky 2015 až 2019, výzvu k nápravě se nepodařilo doručit, důvod zrušení trval i po roce a v řízení ani lustrací veřejných seznamů nevyšel najevo žádný majetek společnosti; soud ji proto zrušil bez likvidace. | <span class="status-badge status-single">1 ZDROJ</span> | [SRC-23](@/dossiers/james-quick/sources/src-23.md) |
+
+Úplné dvoustránkové usnesení je nyní přímo dostupné ve Sbírce listin a uzavírá dřívější mezeru po primárním dokumentu. Rozhodnutí se týká obchodní korporace; samo o sobě neurčuje osobní trestní odpovědnost Jamese Quicka.
+
+## Institucionální stanoviska k potvrzení CERD {#institucionalni-stanoviska}
+
+| ID | Tvrzení | Stav | Zdroje |
+|---|---|---|---|
+| <a id="clm-23"></a>[CLM-23](@/dossiers/james-quick/claims/clm-23.md) | Česká obchodní inspekce v roce 2018 a provozovatelé BRKI a NRKI v roce 2012 nezávisle uvedli, že potvrzení o bezdlužnosti nabízené CERD nebylo pro banky, úvěrové společnosti či finanční instituce relevantní. | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-11](@/dossiers/james-quick/sources/src-11.md), [SRC-12](@/dossiers/james-quick/sources/src-12.md) |
+
+Společný závěr je omezen na praktickou relevanci potvrzení CERD pro finanční instituce. Tvrzení BRKI a NRKI o nepředávání klientských dat zůstává samostatně v CLM-11, protože ČOI tuto část nepotvrzuje. Grafové vazby stanovisek vedou od CERD k institucím, nikoli přímo od Jamese Quicka.

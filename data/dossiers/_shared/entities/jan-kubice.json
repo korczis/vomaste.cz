@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/jan-kubice",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "jan-kubice",
+  "entityId": "jan-kubice",
+  "title": "Jan Kubice",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "jan-kubice"
+  ],
+  "order": 605,
+  "description": "Jan Kubice — bývalý ministr vnitra (2011–2013).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalý ministr vnitra (22. 4. 2011 – 10. 7. 2013, Nečasova vláda, od\n17. 6. 2013 v demisi).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ],
+  "media": [
+    {
+      "file": "images/people/jan-kubice.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jan_Kubice(portret).jpg",
+      "license": "Public domain",
+      "author": "Vojtech Brzek (vobrcz)",
+      "credit": "Took during discussion.",
+      "retrieved": "2026-08-11",
+      "width": 1200,
+      "height": 1562,
+      "role": "portrait"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q168783"
+  }
+}

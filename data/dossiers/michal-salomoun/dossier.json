@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/michal-salomoun",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "michal-salomoun",
+  "slug": "michal-salomoun",
+  "title": "Michal Šalomoun",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Michal Šalomoun.",
+  "dossierType": "entity",
+  "canonicalDossier": "michal-salomoun",
+  "subject": "michal-salomoun",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-MICHAL-SALOMOUN"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "michal-salomoun",
+        "label": "Michal Šalomoun",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nMichal Šalomoun je bývalý ministr pro legislativu a předseda\nLegislativní rady vlády (2021–2024, nominován za Piráty). Jako\npoliticky exponovaná osoba v souvislosti s výkonem dřívější veřejné\nfunkce spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-08-MICHAL-SALOMOUN`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce a okolností demise tak, jak je popsaly\ncitované zdroje — demise navazovala na rozhodnutí Pirátů odejít\nz vlády a je politický krok, nikoli pochybení. Rozšíření rozsahu\nvyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/michal-salomoun/claims/clm-01.md) | Michal Šalomoun byl podle oficiálního profilu na webu Vlády ČR ministrem pro legislativu a předsedou Legislativní rady vlády od 17. 12. 2021 do 11. 10. 2024 (nominován za Piráty); podle Aktuálně.cz podal demisi 1. 10. 2024 v souvislosti s odchodem Pirátů z vlády po odvolání Ivana Bartoše se slovy, že ve vládě už nemá koho reprezentovat, a jeho post nebyl znovu obsazen — agendu převzalo ministerstvo spravedlnosti | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/michal-salomoun/sources/src-01.md), [SRC-02](@/dossiers/michal-salomoun/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

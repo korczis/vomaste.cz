@@ -3,7 +3,7 @@
 title = "Piráti (Česká pirátská strana)"
 template = "entity.html"
 weight = 347
-description = "Kontextová entita — Opoziční strana; aktér ve více kauzách (stavební zákon, Mrázová, dotace Agrofertu, vydání Okamury)."
+description = "Piráti (Česká pirátská strana) — Kontextová entita — Opoziční strana; aktér ve více kauzách (stavební zákon, Mrázová, dotace Agrofertu, vydání Okamury)."
 
 [extra]
 generated = true

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/karel-haas/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/karel-haas"
+  },
+  "title": "SRC-02 — ČT24: Místopředsedy ODS se stali Haas, Drobil, Červíček a Vondra",
+  "description": "Zpravodajský článek o volbě čtyř řadových místopředsedů ODS na 32. kongresu strany v lednu 2026.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "veřejnoprávní zpravodajství",
+  "url": "https://ct24.ceskatelevize.cz/clanek/domaci/kongres-ods-rozhodne-kdo-doplni-kupku-a-portlika-v-novem-vedeni-369367",
+  "published": "2026-01-18",
+  "retrieved": "2026-08-06",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/karel-haas/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "karel-haas"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek ČT24 z 18. 1. 2026, otevřen a přečten 2026-08-06.\nInformuje, že „místa čtyř řadových místopředsedů obsadí poslanec Karel Haas, exministr životního prostředí Pavel Drobil, senátor Martin Červíček a europoslanec Alexandr Vondra\", a že „nejúspěšnější byl u delegátů Haas, který získal 383 z 502 platných hlasů\" — nejvíce ze všech čtyř zvolených.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé, redakčně zpracované veřejnoprávní zpravodajství — jiný vydavatel i jiná doména než SRC-01 (státní instituce) a SRC-03 (vlastní web strany ODS), takže spolu s SRC-01 tvoří nezávislou dvojici pro účely korporace tvrzení. Článek se týká výsledku volby na kongresu, nikoli poslaneckého mandátu jako takového — ten dokládá SRC-01."
+    }
+  ],
+  "order": 2
+}

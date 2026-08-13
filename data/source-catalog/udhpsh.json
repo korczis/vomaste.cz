@@ -70,5 +70,16 @@
       "type": "markdown",
       "value": "Primární registr, ne médium. Zprávy o hospodaření stran a o financování kampaní tu leží v podobě, v jaké je subjekty Úřadu předložily — což je zároveň jejich hlavní mez: **registr dokládá vykázané, ne skutečné**.\n\nPro tenhle projekt je ÚDHPSH ukázkou dvou samostatných pastí naráz. Úřední slovník („úplná\") svádí ke čtení, které úřad sám na téže stránce vylučuje. A agregátor, který registr přebírá, vypadá jako druhý zdroj, přestože je to totéž číslo přečtené podruhé.\n\nWebové sídlo úřadu je [udhpsh.cz](https://udhpsh.cz/); citovatelné dokumenty jsou na portálu zpráv."
     }
+  ],
+  "answers": [
+    {
+      "question": "Kdo financuje politickou stranu?"
+    },
+    {
+      "question": "Daroval tenhle člověk nebo firma politické straně?"
+    },
+    {
+      "question": "Dostala strana od úřadu sankci?"
+    }
   ]
 }

@@ -21,6 +21,8 @@ import { initStatusChart } from "./modules/charts.js";
 import { initFullscreenButtons } from "./modules/fullscreen.js";
 import { initSidebarAria } from "./modules/shell.js";
 import { initSqlConsole } from "./modules/sql-console.js";
+import { initScrollableRegions } from "./modules/scrollable-regions.js";
+import { initCopyCommands } from "./modules/copy-command.js";
 // Sigma/Graphology (assets/js/modules/graph/index.js) are NOT imported here —
 // they're a separate entrypoint (assets/js/graph-app.js, built to
 // static/js/graph-app.js) loaded only by pages with a graph
@@ -43,4 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
   initFullscreenButtons();
   initSidebarAria();
   initSqlConsole();
+  initScrollableRegions();
+  initCopyCommands();
 });

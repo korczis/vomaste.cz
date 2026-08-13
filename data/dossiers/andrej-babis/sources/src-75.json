@@ -16,6 +16,13 @@
   "url": "https://msp.gov.cz/documents/d/vrchni-soud-v-praze/tiskova-zprava-3-to-34-2024",
   "published": "2025-06-23",
   "retrieved": "2026-08-05",
+  "localDocument": {
+    "path": "documents/andrej-babis/vrchni-soud-3-to-34-2024-tiskova-zprava.pdf",
+    "originalUrl": "https://msp.gov.cz/documents/d/vrchni-soud-v-praze/tiskova-zprava-3-to-34-2024",
+    "retrievedAt": "2026-08-08",
+    "sizeBytes": 67281,
+    "reviewNote": "Jednostránková tisková zpráva Vrchního soudu v Praze byla stažena, vykreslena a strojově prohledána 2026-08-08. Neobsahuje rodná čísla, data narození ani adresy bydliště; jmenované osoby jsou účastníci veřejně popsaného soudního řízení a autor tiskové zprávy ve veřejné funkci."
+  },
   "claims": [
     {
       "@id": "https://vomaste.cz/id/dossiers/andrej-babis/claims/CLM-02"

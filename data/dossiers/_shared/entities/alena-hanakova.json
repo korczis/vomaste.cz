@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/alena-hanakova",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "alena-hanakova",
+  "entityId": "alena-hanakova",
+  "title": "Alena Hanáková",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "alena-hanakova"
+  ],
+  "order": 610,
+  "description": "Alena Hanáková — bývalá ministryně kultury (2011–2013).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalá ministryně kultury (20. 12. 2011 – 10. 7. 2013, Nečasova\nvláda, od 17. 6. 2013 v demisi).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ],
+  "media": [
+    {
+      "file": "images/people/alena-hanakova.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hanakova.jpg",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "author": "Vojtěch Slovák",
+      "credit": "Own work",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 1142,
+      "role": "portrait"
+    }
+  ]
+}

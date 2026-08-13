@@ -3,7 +3,7 @@
 title = "Eva Decroix"
 template = "entity.html"
 weight = 118
-description = "Kontextová entita — Exministryně spravedlnosti (ODS); dohody s kupci bitcoinů spadají do jejího období, pochybení odmítá."
+description = "Eva Decroix — Kontextová entita — Exministryně spravedlnosti (ODS); dohody s kupci bitcoinů spadají do jejího období, pochybení odmítá."
 
 [extra]
 generated = true

@@ -1,0 +1,34 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "11823461",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/11823461",
+  "nazev": "Centrum pro výzkum terorismu z.s.",
+  "sidlo": "Švabinského 405/40, Chodov, 14900 Praha 4",
+  "spisovaZnacka": {
+    "soud": "MSPH",
+    "oddil": "L",
+    "vlozka": "75249"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "člen Rady spolku",
+      "since": "2021-09-24",
+      "kind": "person",
+      "name": "Mgr. Viktor Janeček"
+    },
+    {
+      "role": "Tajemník Rady spolku",
+      "since": "2022-06-02",
+      "kind": "person",
+      "name": "Mgr. Petr Macinka"
+    },
+    {
+      "role": "člen Rady spolku",
+      "since": "2025-04-27",
+      "kind": "person",
+      "name": "Jaroslav Štefec"
+    }
+  ],
+  "spolecnici": []
+}

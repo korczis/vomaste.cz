@@ -6,6 +6,102 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 
 **Pravidlo, které z katalogu plyne**: doklad je vždy primární registr. Agregátor je rozcestník — ukáže, kde hledat, ale cituje se ten registr, na který ukazuje.
 
+## Na co se ptáš
+
+Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé otázky seřazené tak, že první je ten, kterým se má začít — primární registry a listiny před agregátory a médii.
+
+**Bere tenhle subjekt peníze z veřejných rozpočtů?**
+
+- [Registr smluv (ISRS)](/zdroje/registr-smluv/) — primární registr
+
+**Byla zakázka zrušena, opravena, nebo zadána?**
+
+- [Věstník veřejných zakázek (VVZ)](/zdroje/vestnik-verejnych-zakazek/) — primární registr
+
+**Daroval tenhle člověk nebo firma politické straně?**
+
+- [ÚDHPSH — Úřad pro dohled nad hospodařením politických stran a politických hnutí](/zdroje/udhpsh/) — primární registr
+
+**Dostala strana od úřadu sankci?**
+
+- [ÚDHPSH — Úřad pro dohled nad hospodařením politických stran a politických hnutí](/zdroje/udhpsh/) — primární registr
+
+**Existuje subjekt s tímhle IČO a co o něm rejstřík vede?**
+
+- [ARES — Administrativní registr ekonomických subjektů](/zdroje/ares/) — primární registr
+
+**Jak probíhalo konkrétní zadávací řízení?**
+
+- [Věstník veřejných zakázek (VVZ)](/zdroje/vestnik-verejnych-zakazek/) — primární registr. Jen podle čísla zakázky nebo formuláře — filtr na dodavatele věstník neumí.
+
+**Jaké má firma živnostenská oprávnění a předmět podnikání?**
+
+- [ARES — Administrativní registr ekonomických subjektů](/zdroje/ares/) — primární registr
+
+**Kdo drží v firmě obchodní podíl a jak velký?**
+
+- [ARES — Administrativní registr ekonomických subjektů](/zdroje/ares/) — primární registr
+
+**Kdo financuje politickou stranu?**
+
+- [ÚDHPSH — Úřad pro dohled nad hospodařením politických stran a politických hnutí](/zdroje/udhpsh/) — primární registr
+
+**Kdo je jednatelem nebo členem statutárního orgánu firmy?**
+
+- [ARES — Administrativní registr ekonomických subjektů](/zdroje/ares/) — primární registr
+
+**Kolik smluv s veřejným zadavatelem má?**
+
+- [Registr smluv (ISRS)](/zdroje/registr-smluv/) — primární registr. Počet ano; souhrnnou částku formulář nedá, viz pasti.
+
+**Má subjekt datovou schránku?**
+
+- [Informační systém datových schránek (ISDS)](/zdroje/datove-schranky/) — primární registr. Zjistíš z výpisu ARES (ROS), ne dotazem na ISDS — zpětné vyhledání neexistuje.
+
+**S kterými úřady a státními podniky má uzavřené smlouvy?**
+
+- [Registr smluv (ISRS)](/zdroje/registr-smluv/) — primární registr
+
+**V jakých rejstřících je subjekt vůbec zapsán?**
+
+- [ARES — Administrativní registr ekonomických subjektů](/zdroje/ares/) — primární registr. Pole `seznamRegistraci` odpoví předem a ušetří slepé dotazy.
+
+**Vlastní tenhle člověk nemovitosti?**
+
+- [Katastr nemovitostí (ČÚZK)](/zdroje/katastr-nemovitosti/) — primární registr. Veřejně a bezplatně NELZE zjistit podle osoby. Odpověď na tuhle otázku tímhle pramenem nezískáš.
+
+**Co přesně řekl ve sněmovně?**
+
+- [Poslanecká sněmovna Parlamentu ČR](/zdroje/psp-cz/) — primární listina. Stenozáznam, ne novinová parafráze.
+
+**Co vláda rozhodla a kdy?**
+
+- [Vláda České republiky](/zdroje/vlada-cz/) — primární listina. Cituj usnesení s číslem a datem, ne tiskovou zprávu o něm.
+
+**Jak firma hospodařila?**
+
+- [Sbírka listin veřejného rejstříku](/zdroje/justice-sbirka-listin/) — primární listina. Účetní závěrka, pokud byla založena — část subjektů lhůty nedodržuje.
+
+**Jak poslanec hlasoval?**
+
+- [Poslanecká sněmovna Parlamentu ČR](/zdroje/psp-cz/) — primární listina
+
+**Jak zněla zakladatelská listina nebo smlouva o převodu podílu?**
+
+- [Sbírka listin veřejného rejstříku](/zdroje/justice-sbirka-listin/) — primární listina
+
+**Je tenhle Jan Novák tentýž člověk ve dvou firmách?**
+
+- [Sbírka listin veřejného rejstříku](/zdroje/justice-sbirka-listin/) — primární listina. Jediný veřejný pramen, který spolehlivě odliší jmenovce.
+
+**Jaké má osoba rejstříkové vazby?**
+
+- [Podnikatel.cz — rejstříkové profily](/zdroje/podnikatel-cz-rejstrik/) — agregátor. Rychlý přehled jako vstupní stopa; doložení pořiď znovu z ARES.
+
+**Kde vůbec začít hledat stopu subjektu?**
+
+- [Hlídač státu](/zdroje/hlidac-statu/) — agregátor. Rozcestník. Nalezené vždy dohledej v primárním registru a cituj ten.
+
 ## Registry a nástroje
 
 | Zdroj | Typ | Přístup | Kde |
@@ -101,52 +197,61 @@ Odpovídá na otázku „kam se podívat a čemu z toho věřit". Publikovaná p
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 704 záznamů v 122 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 989 záznamů v 141 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
-| ctk | 290 | 21 | [ano](/zdroje/ctk/) |
-| seznam-zpravy | 38 | 13 | [ano](/zdroje/seznam-zpravy/) |
-| Poslanecká sněmovna Parlamentu ČR | 34 | 15 | [ano](/zdroje/psp-cz/) |
-| Vláda České republiky (vlada.gov.cz) | 28 | 17 | [ano](/zdroje/vlada-cz/) |
-| FORUM 24 | 19 | 9 | [ano](/zdroje/forum24/) |
-| denik-n | 17 | 9 | [ano](/zdroje/denik-n/) |
-| ČT24 (Česká televize) | 15 | 7 | [ano](/zdroje/ceska-televize/) |
-| Echo24 | 13 | 9 | [ano](/zdroje/echo24/) |
-| denik-cz | 11 | 6 | [ano](/zdroje/denik-cz/) |
-| Aktuálně.cz | 11 | 6 | [ano](/zdroje/aktualne-cz/) |
+| ctk | 305 | 31 | [ano](/zdroje/ctk/) |
+| Vláda České republiky (vlada.gov.cz) | 184 | 167 | [ano](/zdroje/vlada-cz/) |
+| Poslanecká sněmovna Parlamentu ČR | 61 | 42 | [ano](/zdroje/psp-cz/) |
+| seznam-zpravy | 40 | 14 | [ano](/zdroje/seznam-zpravy/) |
+| ČT24 (Česká televize) | 26 | 18 | [ano](/zdroje/ceska-televize/) |
+| Aktuálně.cz | 22 | 15 | [ano](/zdroje/aktualne-cz/) |
+| FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
+| Echo24 | 19 | 15 | [ano](/zdroje/echo24/) |
+| denik-n | 18 | 10 | [ano](/zdroje/denik-n/) |
+| Novinky.cz | 13 | 12 | [ano](/zdroje/novinky-cz/) |
+| denik-cz | 12 | 7 | [ano](/zdroje/denik-cz/) |
 | Česká justice | 11 | 6 | [ano](/zdroje/ceska-justice/) |
-| Ekonomický deník | 9 | 5 | [ano](/zdroje/ekonomicky-denik/) |
-| Novinky.cz | 9 | 8 | [ano](/zdroje/novinky-cz/) |
-| irozhlas | 8 | 6 | [ano](/zdroje/irozhlas/) |
+| Ekonomický deník | 10 | 6 | [ano](/zdroje/ekonomicky-denik/) |
+| irozhlas | 9 | 6 | [ano](/zdroje/irozhlas/) |
 | hlidac-statu | 7 | 2 | [ano](/zdroje/hlidac-statu/) |
-| udhpsh | 6 | 1 | [ano](/zdroje/udhpsh/) |
-| Blesk.cz | 5 | 3 | [ano](/zdroje/blesk-cz/) |
-| Zdravé zprávy | 5 | 2 | — |
-| CNN Prima News | 4 | 3 | — |
-| e15.cz | 4 | 2 | — |
+| Blesk.cz | 7 | 5 | [ano](/zdroje/blesk-cz/) |
+| Hospodářské noviny | 7 | 6 | — |
+| udhpsh | 7 | 2 | [ano](/zdroje/udhpsh/) |
+| CNN Prima News | 6 | 6 | — |
+| Seznam Zprávy | 6 | 6 | [ano](/zdroje/seznam-zpravy/) |
+| Zdravé zprávy | 6 | 2 | — |
+| e15.cz | 5 | 3 | — |
+| Respekt | 5 | 4 | — |
 | HlídacíPes.org | 4 | 4 | — |
-| Hospodářské noviny | 4 | 3 | — |
 | Ministerstvo dopravy ČR | 4 | 1 | — |
 | Reflex | 4 | 4 | — |
-| Respekt | 4 | 3 | — |
 | Státní zemědělský intervenční fond | 4 | 1 | — |
 | verejnazaloba | 4 | 1 | — |
+| Forum24 | 3 | 3 | — |
 | Investigace.cz | 3 | 3 | — |
 | Ministerstvo financí ČR | 3 | 1 | — |
+| Ministerstvo školství, mládeže a tělovýchovy (msmt.gov.cz) | 3 | 3 | — |
 | Ministerstvo školství, mládeže a tělovýchovy ČR | 3 | 1 | — |
 | Ministerstvo zemědělství ČR | 3 | 1 | — |
 | Národní rozpočtová rada | 3 | 1 | — |
 | Nejvyšší kontrolní úřad (nku.cz) | 3 | 2 | — |
+| ODS (Občanská demokratická strana) | 3 | 3 | — |
 | Tiscali.cz | 3 | 3 | — |
 | Transparency International ČR | 3 | 2 | — |
 | Úřad pro ochranu osobních údajů | 3 | 1 | — |
+| smlouvy-gov-cz | 3 | 1 | [ano](/zdroje/registr-smluv/) |
+| ct24 | 2 | 2 | [ano](/zdroje/ceska-televize/) |
 | cz-verejny-rejstrik | 2 | 1 | [ano](/zdroje/ares/) |
 | ARES — Administrativní registr ekonomických subjektů (Ministerstvo financí ČR) | 2 | 2 | [ano](/zdroje/ares/) |
 | Česká školní inspekce | 2 | 1 | — |
 | CZDEFENCE | 2 | 1 | — |
 | Deník Alarm | 2 | 1 | — |
+| Deník N | 2 | 2 | [ano](/zdroje/denik-n/) |
+| Deník.cz (VLTAVA LABE MEDIA) | 2 | 2 | [ano](/zdroje/denik-cz/) |
 | Fakultní nemocnice Olomouc (oficiální web) | 2 | 1 | — |
+| InfoDnes.cz | 2 | 2 | — |
 | Médiář | 2 | 1 | — |
 | Ministerstvo kultury ČR | 2 | 1 | — |
 | Ministerstvo průmyslu a obchodu (MPO) | 2 | 2 | — |
@@ -155,14 +260,21 @@ Dopočítáno z `data/dossiers/**/sources/**`, 704 záznamů v 122 rodinách/out
 | NašeTéma.cz | 2 | 2 | — |
 | Nejvyšší správní soud | 2 | 2 | — |
 | Olomoucký deník | 2 | 1 | — |
+| Podnikatel.cz | 2 | 2 | [ano](/zdroje/podnikatel-cz-rejstrik/) |
 | Pražský deník | 2 | 1 | — |
 | Registr lobbování (RELOB) | 2 | 1 | — |
-| Seznam Zprávy | 2 | 2 | [ano](/zdroje/seznam-zpravy/) |
+| Senát Parlamentu České republiky | 2 | 2 | — |
 | Ústavní soud ČR | 2 | 2 | — |
 | Vrchní státní zastupitelství v Olomouci | 2 | 1 | — |
-| ct24 | 1 | 1 | [ano](/zdroje/ceska-televize/) |
+| blesk | 1 | 1 | [ano](/zdroje/blesk-cz/) |
+| cvvm | 1 | 1 | — |
+| denik | 1 | 1 | [ano](/zdroje/denik-cz/) |
+| echo24 | 1 | 1 | [ano](/zdroje/echo24/) |
+| ekonomicky-denik | 1 | 1 | [ano](/zdroje/ekonomicky-denik/) |
 | eppo | 1 | 1 | — |
 | idnes-dividenda-2026-07 | 1 | 1 | [ano](/zdroje/echo24/) |
+| mestsky-soud-praha | 1 | 1 | — |
+| nku | 1 | 1 | — |
 | nssoud | 1 | 1 | — |
 | ACRI — Asociace podniků českého železničního průmyslu | 1 | 1 | — |
 | Agrofert (agrofert.cz) | 1 | 1 | — |
@@ -170,10 +282,10 @@ Dopočítáno z `data/dossiers/**/sources/**`, 704 záznamů v 122 rodinách/out
 | Centrum veřejných financí (Univerzita Karlova) | 1 | 1 | — |
 | Česká infrastruktura | 1 | 1 | — |
 | Česká obchodní inspekce | 1 | 1 | — |
+| ČeskéNoviny.cz (ČTK) | 1 | 1 | — |
 | ČKAIT (Česká komora autorizovaných inženýrů a techniků) | 1 | 1 | — |
 | CNCB / BRKI a NRKI | 1 | 1 | — |
 | Demagog.cz | 1 | 1 | — |
-| Deník N | 1 | 1 | [ano](/zdroje/denik-n/) |
 | Deník Referendum | 1 | 1 | — |
 | Deník VEKTOR | 1 | 1 | — |
 | Dopravní noviny | 1 | 1 | — |
@@ -182,6 +294,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 704 záznamů v 122 rodinách/out
 | Ekonews | 1 | 1 | — |
 | Ekonom | 1 | 1 | — |
 | EV Magazín | 1 | 1 | — |
+| Evropská komise (commission.europa.eu) | 1 | 1 | — |
 | Evropský parlament | 1 | 1 | — |
 | Extra.cz | 1 | 1 | — |
 | Finmag.cz — přepis obchodního rejstříku | 1 | 1 | — |
@@ -191,6 +304,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 704 záznamů v 122 rodinách/out
 | iportal24.cz | 1 | 1 | — |
 | iSport.cz (Blesk) | 1 | 1 | — |
 | Jezdci.cz | 1 | 1 | — |
+| Jihomoravský kraj | 1 | 1 | — |
 | Kancelář veřejného ochránce práv a ochránce práv dětí | 1 | 1 | — |
 | Kurzy.cz | 1 | 1 | — |
 | Lupa.cz | 1 | 1 | — |
@@ -202,35 +316,40 @@ Dopočítáno z `data/dossiers/**/sources/**`, 704 záznamů v 122 rodinách/out
 | Motoristé sobě (motoristesobe.cz/udhpsh) | 1 | 1 | — |
 | Neovlivní.cz | 1 | 1 | — |
 | Novinky.cz / Právo | 1 | 1 | [ano](/zdroje/novinky-cz/) |
-| ODS (Občanská demokratická strana) | 1 | 1 | — |
 | ParlamentníListy.cz | 1 | 1 | — |
-| Podnikatel.cz | 1 | 1 | [ano](/zdroje/podnikatel-cz-rejstrik/) |
+| Peníze.cz | 1 | 1 | — |
 | Podpůrný a garanční rolnický a lesnický fond (PGRLF) | 1 | 1 | — |
 | Policie České republiky — Krajské ředitelství policie Olomouckého kraje | 1 | 1 | — |
-| Průmyslová automatizace | 1 | 1 | — |
 | RAILTARGET | 1 | 1 | — |
 | Refresher.cz | 1 | 1 | — |
 | Romea.cz | 1 | 1 | — |
 | Security magazín | 1 | 1 | — |
-| Senát Parlamentu České republiky | 1 | 1 | — |
 | silnice-zeleznice.cz | 1 | 1 | — |
 | Společnost pro obranu svobody projevu | 1 | 1 | — |
 | Taneční aktuality | 1 | 1 | — |
 | TN.cz (TV Nova) | 1 | 1 | — |
 | Transport a logistika | 1 | 1 | — |
-| Transport Minutes | 1 | 1 | — |
 | Uměleckohistorická společnost (UHS) | 1 | 1 | — |
 | Úřad evropského veřejného žalobce (EPPO) | 1 | 1 | — |
 | Vrchní soud v Praze | 1 | 1 | — |
 | YouControl | 1 | 1 | — |
 | Zdopravy.cz | 1 | 1 | — |
+| zdravezpravy.cz | 1 | 1 | — |
+| Zdravotnický deník | 1 | 1 | — |
 | Život v Česku | 1 | 1 | — |
-| smlouvy-gov-cz | 1 | 1 | [ano](/zdroje/registr-smluv/) |
+| Zprávy Tiscali (zpravy.tiscali.cz) | 1 | 1 | — |
+| patria | 1 | 1 | — |
+| respekt | 1 | 1 | — |
 | usoud | 1 | 1 | — |
+| vlm | 1 | 1 | — |
 
 ## Chybí popis
 
 Tyhle zdroje dataset používá aspoň pětkrát, ale katalog k nim nemá záznam s mezemi a pastmi:
 
-- Zdravé zprávy (5×)
+- Hospodářské noviny (7×)
+- CNN Prima News (6×)
+- Zdravé zprávy (6×)
+- e15.cz (5×)
+- Respekt (5×)
 

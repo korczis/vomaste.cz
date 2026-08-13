@@ -1,0 +1,166 @@
+{
+  "retrieved": "2026-08-09",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "00020869"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "00020869",
+        "obchodniJmeno": "Česká obchodní inspekce",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 27,
+          "nazevSpravnihoObvodu": "Praha 2",
+          "kodMestskehoObvodu": 27,
+          "nazevMestskehoObvodu": "Praha 2",
+          "kodMestskeCastiObvodu": 500089,
+          "kodUlice": 447072,
+          "nazevMestskeCastiObvodu": "Praha 2",
+          "nazevUlice": "Gorazdova",
+          "cisloDomovni": 1969,
+          "kodCastiObce": 490148,
+          "cisloOrientacni": 24,
+          "nazevCastiObce": "Nové Město",
+          "kodAdresnihoMista": 21735956,
+          "psc": 12000,
+          "textovaAdresa": "Gorazdova 1969/24, Nové Město, 12000 Praha 2",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "325",
+        "pravniFormaRos": "325",
+        "financniUrad": "002",
+        "datumAktualizace": "2026-03-12",
+        "icoId": "00020869",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Gorazdova 1969/24",
+          "radekAdresy2": "Nové Město",
+          "radekAdresy3": "12000 Praha 2"
+        },
+        "czNace2008": [
+          "7120",
+          "84130"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "NEEXISTUJICI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "NEEXISTUJICI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "NEEXISTUJICI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "AKTIVNI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Česká obchodní inspekce",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 27,
+                  "nazevSpravnihoObvodu": "Praha 2",
+                  "kodMestskehoObvodu": 27,
+                  "nazevMestskehoObvodu": "Praha 2",
+                  "kodMestskeCastiObvodu": 500089,
+                  "kodUlice": 447072,
+                  "nazevMestskeCastiObvodu": "Praha 2",
+                  "nazevUlice": "Gorazdova",
+                  "cisloDomovni": 1969,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 24,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21735956,
+                  "psc": 12000,
+                  "textovaAdresa": "Gorazdova 1969/24, Nové Město, 12000 Praha 2",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "325",
+            "pravniFormaRos": "325",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Česká obchodní inspekce",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 27,
+                  "nazevSpravnihoObvodu": "Praha 2",
+                  "kodMestskehoObvodu": 27,
+                  "nazevMestskehoObvodu": "Praha 2",
+                  "kodMestskeCastiObvodu": 500089,
+                  "kodUlice": 447072,
+                  "nazevMestskeCastiObvodu": "Praha 2",
+                  "nazevUlice": "Gorazdova",
+                  "cisloDomovni": 1969,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 24,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21735956,
+                  "psc": 12000,
+                  "textovaAdresa": "Gorazdova 1969/24, Nové Město, 12000 Praha 2",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "325",
+            "datovyZdroj": "ros"
+          }
+        ],
+        "czNace": [
+          "71200",
+          "84130"
+        ],
+        "subRegistrSzr": "szr"
+      }
+    ]
+  }
+}

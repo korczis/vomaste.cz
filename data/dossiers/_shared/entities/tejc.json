@@ -114,5 +114,19 @@
       "type": "markdown",
       "value": "Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#kdo)."
     }
+  ],
+  "media": [
+    {
+      "file": "images/people/tejc.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jeron%C3%BDmTejc4.JPG",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "author": "Tsazima",
+      "credit": "Own work",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 1510,
+      "role": "portrait"
+    }
   ]
 }

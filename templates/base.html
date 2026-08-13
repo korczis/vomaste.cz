@@ -1,8 +1,3 @@
-{%- import "macros/jsonld.html" as jsonld -%}
-{%- import "macros/meta.html" as meta -%}
-{%- import "macros/nav.html" as nav -%}
-{%- import "macros/ui.html" as ui -%}
-{%- import "partials/app-shell/secondary-sidebar.html" as app_shell -%}
 {#- ===================== Sociální a SEO metadata =====================
 
     Politika (jaký `og:type` pro jaký typ stránky, jaké meze délky, jaká
@@ -25,15 +20,21 @@
 
 {#- Typ stránky: klíč do `seo.page_types`. `record_type` vyplňuje generátor
     obsahu u každého záznamu; u dossieru se zpřesňuje o `dossier_type`
-    (entity vs. agregátní pohled). /404.html nemá page ani section.
+    (entity vs. agregátní pohled). /404.html nemá page ani sec.
 
     Do T-076 se `og:type` rozhodoval podle přítomnosti
-    `page.extra.clm_id|src_id|case_id|gap_id|relation_id`. Front matter
+    `pg.extra.clm_id|src_id|case_id|gap_id|relation_id`. Front matter
     vztahů ale nese `rel_id` — všech 334 stránek vztahů tiše dostávalo
     `website` místo `article`. `record_type` tenhle druh tichého rozchodu
     vylučuje a `verify-og.mjs` ho navíc kontroluje oběma směry. -#}
-{%- set meta_record_type = page.extra.record_type | default(value=section.extra.record_type | default(value="")) -%}
-{%- set meta_dossier_type = page.extra.dossier_type | default(value=section.extra.dossier_type | default(value="")) -%}
+{#- /404.html is rendered with neither `page` nor `section`. Tera 2 errors on
+    attribute access against an undefined variable (Tera 1 quietly yielded
+    undefined), so both are normalised to empty stand-ins here and the meta
+    block below reads `pg`/`sec` instead. -#}
+{%- set pg = page | default(value={"extra": {}}) -%}
+{%- set sec = section | default(value={"extra": {}}) -%}
+{%- set meta_record_type = pg.extra.record_type | default(value=sec.extra.record_type | default(value="")) -%}
+{%- set meta_dossier_type = pg.extra.dossier_type | default(value=sec.extra.dossier_type | default(value="")) -%}
 {%- if page is not defined and section is not defined -%}
   {%- set meta_kind = "not_found" -%}
 {%- elif meta_record_type == "dossier" and meta_dossier_type -%}
@@ -44,18 +45,22 @@
   {%- set meta_kind = "default" -%}
 {%- endif -%}
 {%- set meta_type = seo.page_types[meta_kind] | default(value=seo.page_types.default) -%}
-{%- set meta_og_type = page.extra.og_type | default(value=section.extra.og_type | default(value=meta_type.og_type)) -%}
+{%- set meta_og_type = pg.extra.og_type | default(value=sec.extra.og_type | default(value=meta_type.og_type)) -%}
 {#- `seo_type` (schema.org) je jen výchozí hodnota typu stránky — front
     matter má přednost, takže registrové indexy drží `CollectionPage`
     a hlavní stránka entity dossieru `ProfilePage`. -#}
-{%- set meta_seo_type = page.extra.seo_type | default(value=section.extra.seo_type | default(value=meta_type.seo_type)) -%}
+{%- set meta_seo_type = pg.extra.seo_type | default(value=sec.extra.seo_type | default(value=meta_type.seo_type)) -%}
 
-{%- set meta_dossier = section.extra.dossier | default(value=page.extra.dossier | default(value="")) -%}
-{%- set meta_dossier_label = meta::dossier_label(nav=nav_data, slug=meta_dossier) -%}
+{%- set meta_dossier = sec.extra.dossier | default(value=pg.extra.dossier | default(value="")) -%}
+{#- Component output is HTML-escaped when captured into a variable and
+    Tera has no unescape filter, so each capture below decodes once.
+    Without it JSON-LD carries literal &quot; while the og: attribute
+    decodes to " — one page stating two different things. -#}
+{%- set meta_dossier_label = <meta_dossier_label nav={nav_data} slug={meta_dossier} /> | replace(from="&quot;", to="\"") | replace(from="&#39;", to="'") | replace(from="&lt;", to="<") | replace(from="&gt;", to=">") | replace(from="&amp;", to="&") -%}
 
 {#- /404.html má vlastní titulek i popis z dat: bez nich přebírá titulek
     webu a v náhledu na sociální síti se tváří jako úvodní stránka. -#}
-{%- set meta_page_title = meta_type.title | default(value=page.title | default(value=section.title | default(value=config.title))) -%}
+{%- set meta_page_title = meta_type.title | default(value=pg.title | default(value=sec.title | default(value=config.title))) -%}
 {%- set meta_is_home = meta_page_title == config.title -%}
 {#- `label not in title` není kosmetika: registrové sekce entity dossieru
     se jmenují už samy „Tvrzení — Filip Turek", takže bez téhle podmínky
@@ -63,29 +68,31 @@
     (agregátního) dossieru se naopak jmenují jen „Registr tvrzení" a
     doplnění potřebují. -#}
 {%- set meta_add_dossier = seo.title.dossier_disambiguation and meta_dossier_label != "" and meta_page_title != meta_dossier_label and meta_dossier_label not in meta_page_title -%}
-{%- set meta_title = meta::social_title(seo=seo, title=meta_page_title, label=meta_dossier_label, add_dossier=meta_add_dossier) -%}
-{%- set meta_document_title = meta::document_title(seo=seo, social=meta_title, site_title=config.title, is_home=meta_is_home) -%}
+{%- set meta_title = <meta_social_title seo={seo} title={meta_page_title} label={meta_dossier_label} add_dossier={meta_add_dossier} /> | replace(from="&quot;", to="\"") | replace(from="&#39;", to="'") | replace(from="&lt;", to="<") | replace(from="&gt;", to=">") | replace(from="&amp;", to="&") -%}
+{%- set meta_document_title = <meta_document_title seo={seo} social={meta_title} site_title={config.title} is_home={meta_is_home} /> | replace(from="&quot;", to="\"") | replace(from="&#39;", to="'") | replace(from="&lt;", to="<") | replace(from="&gt;", to=">") | replace(from="&amp;", to="&") -%}
 
 {#- Registrové indexy mají generický popis sdílený všemi dossiery
     („Registr tvrzení dossieru — …"), proto se u nich doplňuje, o čí
     dossier jde; u záznamu je description jeho vlastní text a doplňovat
     není co. -#}
-{%- set meta_raw_description = meta_type.description | default(value=page.description | default(value=section.description | default(value=config.description))) -%}
-{%- set meta_add_desc_dossier = meta_add_dossier and not page.description and section.description -%}
-{%- set meta_description = meta::description(seo=seo, text=meta_raw_description, label=meta_dossier_label, add_dossier=meta_add_desc_dossier) -%}
+{%- set meta_raw_description = meta_type.description | default(value=pg.description | default(value=sec.description | default(value=config.description))) -%}
+{#- `and` yields its last operand, not a bool, so the final term is an
+    explicit comparison — the component declares this parameter as bool. -#}
+{%- set meta_add_desc_dossier = meta_add_dossier and not pg.description and sec.description != "" -%}
+{%- set meta_description = <meta_description seo={seo} text={meta_raw_description} label={meta_dossier_label} add_dossier={meta_add_desc_dossier} /> | replace(from="&quot;", to="\"") | replace(from="&#39;", to="'") | replace(from="&lt;", to="<") | replace(from="&gt;", to=">") | replace(from="&amp;", to="&") -%}
 
-{%- set meta_image_override = page.extra.og_image | default(value=section.extra.og_image | default(value="")) -%}
-{%- set meta_image_url = get_url(path=meta::image_path(seo=seo, override=meta_image_override, dossier=meta_dossier)) -%}
-{%- set meta_image_alt_override = page.extra.og_image_alt | default(value=section.extra.og_image_alt | default(value="")) -%}
-{%- set meta_image_alt = meta::image_alt(seo=seo, override=meta_image_alt_override, dossier=meta_dossier, label=meta_dossier_label) -%}
+{%- set meta_image_override = pg.extra.og_image | default(value=sec.extra.og_image | default(value="")) -%}
+{%- set meta_image_url = get_url(path=<meta_image_path seo={seo} override={meta_image_override} dossier={meta_dossier} /> | replace(from="&quot;", to="\"") | replace(from="&#39;", to="'") | replace(from="&lt;", to="<") | replace(from="&gt;", to=">") | replace(from="&amp;", to="&")) -%}
+{%- set meta_image_alt_override = pg.extra.og_image_alt | default(value=sec.extra.og_image_alt | default(value="")) -%}
+{%- set meta_image_alt = <meta_image_alt seo={seo} override={meta_image_alt_override} dossier={meta_dossier} label={meta_dossier_label} /> | replace(from="&quot;", to="\"") | replace(from="&#39;", to="'") | replace(from="&lt;", to="<") | replace(from="&gt;", to=">") | replace(from="&amp;", to="&") -%}
 
 {#- Zola nedává /404.html `current_url` — chybová stránka žádnou kanonickou
     URL nemá a vydat ji by ji přihlásilo do indexu jako regulérní obsah.
     Výjimka je pojmenovaná v `seo.enforce.without_canonical`. -#}
 {%- set meta_url = current_url | default(value="") -%}
-{%- set meta_locale = page.extra.locale | default(value=section.extra.locale | default(value=seo.site.locale)) -%}
-{%- set meta_lang = page.extra.lang | default(value=section.extra.lang | default(value=config.extra.lang | default(value="en"))) -%}
-{%- set meta_updated = page.extra.updated | default(value=section.extra.updated | default(value="")) -%}
+{%- set meta_locale = pg.extra.locale | default(value=sec.extra.locale | default(value=seo.site.locale)) -%}
+{%- set meta_lang = pg.extra.lang | default(value=sec.extra.lang | default(value=config.extra.lang | default(value="en"))) -%}
+{%- set meta_updated = pg.extra.updated | default(value=sec.extra.updated | default(value="")) -%}
 <!DOCTYPE html>
 <html lang="{{ meta_lang }}" class="scroll-smooth no-js">
 <head>
@@ -106,21 +113,21 @@
       Tady se už jen volají makra — žádné skládání řetězců v hlavičce. -#}
   <title>{{ meta_document_title }}</title>
   <meta name="description" content="{{ meta_description }}">
-  {%- set page_keywords = page.extra.keywords | default(value=section.extra.keywords | default(value=config.extra.keywords | default(value=""))) %}
+  {%- set page_keywords = pg.extra.keywords | default(value=sec.extra.keywords | default(value=config.extra.keywords | default(value=""))) %}
   {% if page_keywords %}<meta name="keywords" content="{{ page_keywords }}">{% endif %}
   {% if config.extra.author %}<meta name="author" content="{{ config.extra.author }}">{% endif %}
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="generator" content="Zola">
   <meta name="apple-mobile-web-app-title" content="{{ config.title }}">
   <meta name="application-name" content="{{ config.title }}">
-  {{ meta::canonical(seo=seo, url=meta_url, lang=meta_lang) }}
+  {{ <meta_canonical seo={seo} url={meta_url} lang={meta_lang} /> }}
 
   <link rel="icon" type="image/svg+xml" href="{{ get_url(path='favicon.svg') | safe }}">
   <link rel="icon" type="image/x-icon" sizes="32x32" href="{{ get_url(path='favicon.ico') | safe }}">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ get_url(path='apple-touch-icon.png') | safe }}">
   <link rel="manifest" href="{{ get_url(path='site.webmanifest') | safe }}">
-{{ meta::open_graph(seo=seo, site_name=config.title, title=meta_title, description=meta_description, og_type=meta_og_type, url=meta_url, image_url=meta_image_url, image_alt=meta_image_alt, locale=meta_locale, updated=meta_updated) }}
-{{ meta::twitter(seo=seo, title=meta_title, description=meta_description, image_url=meta_image_url, image_alt=meta_image_alt) }}
+{{ <meta_open_graph seo={seo} site_name={config.title} title={meta_title} description={meta_description} og_type={meta_og_type} url={meta_url} image_url={meta_image_url} image_alt={meta_image_alt} locale={meta_locale} updated={meta_updated} /> }}
+{{ <meta_twitter seo={seo} title={meta_title} description={meta_description} image_url={meta_image_url} image_alt={meta_image_alt} /> }}
 
   {#- All JSON-LD (page node from `extra.seo_type`, breadcrumbs, Person on
       entity dossiers, Claim/citation nodes on record pages, the
@@ -162,30 +169,32 @@
     "Zdroje" under its dossier rather than the top-level "Dossiery". -#}
 {%- set_global active_id = "" -%}
 {%- set_global active_len = 0 -%}
-{%- set_global active_trail = [] -%}
+{#- Delimited string, not an array: Tera has no array-append. Membership
+    is tested with the same "|" fences that build it. -#}
+{%- set_global active_trail = "|" -%}
 {%- for item in nav_items -%}
   {%- if item.matchPrefix == "/" -%}
     {%- if current_path == "/" and active_len < 1 -%}
       {%- set_global active_id = item.id -%}
       {%- set_global active_len = 1 -%}
     {%- endif -%}
-  {%- elif current_path is starting_with(item.matchPrefix) and item.matchPrefix | length > active_len -%}
+  {%- elif current_path is starting_with(pat=item.matchPrefix) and item.matchPrefix | length > active_len -%}
     {%- set_global active_id = item.id -%}
     {%- set_global active_len = item.matchPrefix | length -%}
   {%- endif -%}
   {%- for child in item.children -%}
-    {%- if current_path is starting_with(child.matchPrefix) -%}
-      {%- set_global active_trail = active_trail | concat(with=child.id) -%}
+    {%- if current_path is starting_with(pat=child.matchPrefix) -%}
+      {%- set_global active_trail = active_trail ~ child.id ~ "|" -%}
       {%- if child.matchPrefix | length > active_len -%}
         {%- set_global active_id = child.id -%}
         {%- set_global active_len = child.matchPrefix | length -%}
       {%- endif -%}
     {%- endif -%}
     {%- for grandchild in child.children -%}
-      {%- if current_path is starting_with(grandchild.matchPrefix) -%}
+      {%- if current_path is starting_with(pat=grandchild.matchPrefix) -%}
         {#- A group node (e.g. a concept group) has no route of its own, so it
             can only become part of the active trail through its children. -#}
-        {%- set_global active_trail = active_trail | concat(with=child.id) -%}
+        {%- set_global active_trail = active_trail ~ child.id ~ "|" -%}
         {%- if grandchild.matchPrefix | length > active_len -%}
           {%- set_global active_id = grandchild.id -%}
           {%- set_global active_len = grandchild.matchPrefix | length -%}
@@ -324,24 +333,15 @@
     navigace je tam dostupná hamburgrem (drawer) + obsahem stránky.
     Všude jinde zůstává na desktopu docked. -#}
 {% set sidebar_docked = current_path is defined and current_path != "/" %}
-{#- Secondary sidebar (T-012): page or section extra.dossier tells us which
-    dossier we are inside, if any — same page/section resolution the footer
-    below already uses. Resolved here (not inside the macro) so both the
-    <aside> and #main's margin agree on whether it is actually rendered. -#}
-{%- set_global dossier_slug = "" -%}
-{%- if page is defined and page.extra.dossier -%}
-  {%- set_global dossier_slug = page.extra.dossier -%}
-{%- elif section is defined and section.extra.dossier -%}
-  {%- set_global dossier_slug = section.extra.dossier -%}
-{%- endif -%}
-{%- set_global has_secondary_sidebar = false -%}
-{%- if dossier_slug -%}
-  {%- set secondary_nav = load_data(path="data/generated/navigation-secondary.json") -%}
-  {%- set secondary_entry = secondary_nav[dossier_slug] | default(value=false) -%}
-  {%- if secondary_entry and secondary_entry.registries | length > 0 -%}
-    {%- set_global has_secondary_sidebar = true -%}
-  {%- endif -%}
-{%- endif -%}
+{#- Jediná navigační vrstva. Do 2026-08-11 tu vedle tohoto stromu stál ještě
+    docked sekundární panel (T-012, `partials/app-shell/secondary-sidebar.html`)
+    nad vlastním providerem `data/generated/navigation-secondary.json`. Byl
+    přidán jako additive druhý sloupec, ale primární strom se nikdy nezúžil,
+    takže na lg+ vypisoval registry aktuálního dossieru dvakrát vedle sebe —
+    dvě reprezentace téhož, přesně to, co tenhle repozitář zakazuje v datech.
+    Rozhodnuto ve prospěch jednoho vlastníka: strom níž registry už umí, umí je
+    bez JS i na mobilu a je zdrojem pro SiteNavigationElement. Panel, jeho
+    generátor i jeho tři (jinde nečtené) artefakty jsou pryč. -#}
 <aside id="sidebar" data-drawer-placement="left" tabindex="-1" aria-labelledby="sidebar-heading"
        class="fixed inset-y-0 left-0 z-40 w-64 -translate-x-full border-r border-white/10 bg-black pt-16 transition-transform{% if sidebar_docked %} md:translate-x-0{% endif %}">
   <h2 id="sidebar-heading" class="sr-only">Hlavní navigace</h2>
@@ -355,32 +355,30 @@
         data/generated/navigation.json, so nothing here knows what a dossier
         or a concept is. -#}
     {% for item in nav_items %}
-    {{ nav::nav_link(item=item, depth=0, active_id=active_id, metrics=nav_metrics) }}
+    {{ <nav_nav_link item={item} depth={0} active_id={active_id} metrics={nav_metrics} /> }}
     {%- for child in item.children %}
     {%- if child.children | length > 0 %}
-    <details class="group" {% if child.id in active_trail %}open{% endif %}>
+    <details class="group" {% if "|" ~ child.id ~ "|" in active_trail %}open{% endif %}>
       <summary class="flex cursor-pointer list-none items-center gap-3 py-2.5 pl-8 pr-4 text-sm marker:content-none [&::-webkit-details-marker]:hidden {% if child.id == active_id %}bg-white/5 text-[#f3e5c0]{% else %}text-white/60 hover:bg-white/5 hover:text-white{% endif %}">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0" aria-hidden="true"><path d="{{ child.icon }}"/></svg>
         <span class="min-w-0 flex-1 truncate">{{ child.label }}</span>
-        {{ nav::dossier_count(metrics=nav_metrics, slug=child.id) }}
+        {{ <nav_dossier_count metrics={nav_metrics} slug={child.id} /> }}
         <span class="text-white/55 transition-transform group-open:rotate-90" aria-hidden="true">›</span>
       </summary>
       {%- if child.overviewLabel %}
-      {{ nav::nav_link(item=child, depth=1, active_id=active_id, label=child.overviewLabel, metrics=nav_metrics) }}
+      {{ <nav_nav_link item={child} depth={1} active_id={active_id} label={child.overviewLabel} metrics={nav_metrics} /> }}
       {%- endif %}
       {%- for grandchild in child.children %}
-      {{ nav::nav_link(item=grandchild, depth=2, active_id=active_id, metrics=nav_metrics) }}
+      {{ <nav_nav_link item={grandchild} depth={2} active_id={active_id} metrics={nav_metrics} /> }}
       {%- endfor %}
     </details>
     {%- else %}
-    {{ nav::nav_link(item=child, depth=1, active_id=active_id, metrics=nav_metrics) }}
+    {{ <nav_nav_link item={child} depth={1} active_id={active_id} metrics={nav_metrics} /> }}
     {%- endif %}
     {%- endfor %}
     {% endfor %}
   </nav>
 </aside>
-
-{{ app_shell::render(dossier_slug=dossier_slug, current_path=current_path) }}
 
 <noscript>
   {#- The drawer's hamburger toggle requires JS (inherent to any off-canvas
@@ -401,7 +399,9 @@
   </nav>
 </noscript>
 
-<div id="main" class="pt-16{% if sidebar_docked %} md:ml-64{% endif %}{% if has_secondary_sidebar %} lg:ml-[32rem]{% endif %}">
+{{ <bottom_nav_render nav_items={nav_items} active_id={active_id} /> }}
+
+<div id="main" class="pb-16 pt-16 md:pb-0{% if sidebar_docked %} md:ml-64{% endif %}">
 {% block content %}{% endblock content %}
 {#- Resolve the content path ONCE (page or section, "" for neither, e.g.
     404) and let the macro render the footer. Previously the page and
@@ -409,12 +409,12 @@
     correction links, so any change had to be made twice — the same
     duplication the dossier data model forbids elsewhere. -#}
 {%- set footer_path = "" -%}
-{%- if page is defined and page.relative_path -%}
-  {%- set footer_path = page.relative_path -%}
-{%- elif section is defined and section.relative_path -%}
-  {%- set footer_path = section.relative_path -%}
+{%- if page is defined and pg.relative_path -%}
+  {%- set footer_path = pg.relative_path -%}
+{%- elif section is defined and sec.relative_path -%}
+  {%- set footer_path = sec.relative_path -%}
 {%- endif -%}
-{{ ui::site_footer(content_path=footer_path) }}
+{{ <ui_site_footer content_path={footer_path} /> }}
 </div>
 </body>
 </html>

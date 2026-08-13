@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/milada-emmerova",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "milada-emmerova",
+  "slug": "milada-emmerova",
+  "title": "Milada Emmerová",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Milada Emmerová.",
+  "dossierType": "entity",
+  "canonicalDossier": "milada-emmerova",
+  "subject": "milada-emmerova",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-MILADA-EMMEROVA"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "milada-emmerova",
+        "label": "Milada Emmerová",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nMilada Emmerová je bývalá ministryně zdravotnictví (2004–2005, vláda Stanislava Grosse a vláda Jiřího Paroubka). Jako politicky exponovaná osoba\nv souvislosti s výkonem dřívější veřejné funkce spadá do standing scope\nautorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro\ntento dossier je `AUTH-2026-08-08-MILADA-EMMEROVA`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce doložený oficiálním přehledem členů\nvlád Stanislava Grosse a Jiřího Paroubka na webu Vlády ČR. Tvrzení nese stav 1 ZDROJ;\npovýšení na CORROBORATED i doplnění okolností konce v úřadu či dalších\nfunkcí vyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje\nsamostatnou budoucí autorizaci.\n\nOba citované přehledy vydává týž vydavatel (vlada.gov.cz) — dva záznamy jednoho vydavatele jsou jeden hlas, tvrzení proto poctivě zůstává 1 ZDROJ.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/milada-emmerova/claims/clm-01.md) | Milada Emmerová byla podle oficiálních přehledů členů vlád na webu Vlády ČR ministryní zdravotnictví od 4. 8. 2004 do 25. 4. 2005 ve vládě Stanislava Grosse a od 25. 4. 2005 do 12. 10. 2005 ve vládě Jiřího Paroubka | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/milada-emmerova/sources/src-01.md), [SRC-02](@/dossiers/milada-emmerova/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

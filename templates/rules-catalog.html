@@ -1,6 +1,4 @@
 {% extends "base.html" %}
-{% import "macros/ui.html" as ui %}
-{% import "macros/table.html" as table %}
 
 {#- Katalog pravidel brány.
 
@@ -16,16 +14,16 @@
 {% block content %}
 {%- set catalog = load_data(path="data/generated/rules-catalog.json") -%}
 
-{{ ui::page_header(title=section.title, breadcrumb_items=[
+{{ <ui_page_header title={section.title} breadcrumb_items={[
   "Domů::" ~ get_url(path="@/_index.md"),
   "Dokumentace::" ~ get_url(path="@/dokumentace/_index.md"),
   section.title,
-], description=section.description) }}
+]} description={section.description} /> }}
 
 <div class="mt-8 grid gap-4 sm:grid-cols-3" data-record-type="rulesCatalogCounts">
-  {{ ui::stat_tile(label="pravidel celkem", value=catalog.counts.rules) }}
-  {{ ui::stat_tile(label="shodí build (ERROR)", value=catalog.counts.error) }}
-  {{ ui::stat_tile(label="jen hlásí (WARNING)", value=catalog.counts.warning) }}
+  {{ <ui_stat_tile label="pravidel celkem" value={catalog.counts.rules} /> }}
+  {{ <ui_stat_tile label="shodí build (ERROR)" value={catalog.counts.error} /> }}
+  {{ <ui_stat_tile label="jen hlásí (WARNING)" value={catalog.counts.warning} /> }}
 </div>
 
 {{ section.content | safe }}
@@ -40,13 +38,7 @@
     Vlastník: <code class="font-mono">{{ group.file }}</code> — {{ group.count }} pravidel
   </p>
 
-  {{ table::advanced_table(
-    id="pravidla-" ~ group.namespace | lower,
-    caption="Pravidla " ~ group.namespace ~ " — " ~ group.title,
-    record_type="rule",
-    columns=["ID", "Co vynucuje", "Závažnost"],
-    count=group.count
-  ) }}
+  {% <table_advanced_table id={"pravidla-" ~ group.namespace | lower} caption={"Pravidla " ~ group.namespace ~ " — " ~ group.title} record_type="rule" columns={["ID", "Co vynucuje", "Závažnost"]} count={group.count}> %}
   {%- for rule in group.rules %}
     <tr id="pravidlo-{{ rule.id | lower }}">
       <th scope="row" class="whitespace-nowrap px-4 py-3 text-left font-mono text-[#f3e5c0]">{{ rule.id }}</th>
@@ -62,7 +54,7 @@
       </td>
     </tr>
   {%- endfor %}
-  {{ table::advanced_table_end() }}
+  {% </table_advanced_table> %}
 </section>
 {%- endfor %}
 
@@ -87,5 +79,5 @@
   </div>
 </section>
 
-{{ ui::back_link_footer(url=get_url(path="@/dokumentace/_index.md"), label="Zpět na dokumentaci") }}
+{{ <ui_back_link_footer url={get_url(path="@/dokumentace/_index.md")} label="Zpět na dokumentaci" /> }}
 {% endblock content %}

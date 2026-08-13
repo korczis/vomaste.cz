@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/michal-salomoun/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/michal-salomoun"
+  },
+  "text": "Michal Šalomoun byl podle oficiálního profilu na webu Vlády ČR ministrem pro legislativu a předsedou Legislativní rady vlády od 17. 12. 2021 do 11. 10. 2024 (nominován za Piráty); podle Aktuálně.cz podal demisi 1. 10. 2024 v souvislosti s odchodem Pirátů z vlády po odvolání Ivana Bartoše se slovy, že ve vládě už nemá koho reprezentovat, a jeho post nebyl znovu obsazen — agendu převzalo ministerstvo spravedlnosti",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/michal-salomoun/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/michal-salomoun/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "michal-salomoun"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/michal-salomoun/_index.md)."
+    }
+  ]
+}

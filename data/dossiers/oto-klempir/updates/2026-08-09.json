@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/update.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/oto-klempir/updates/2026-08-09",
+  "@type": "vomaste:Update",
+  "recordType": "update",
+  "identifier": "2026-08-09",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/oto-klempir"
+  },
+  "date": "2026-08-09",
+  "summary": "Úzké kolo korroborace jednozdrojových tvrzení ve financování ČT/ČRo. CLM-09 (výchozí výnos poplatků: ČT 6,73 mld., ČRo 2,48 mld.) povýšeno na CORROBORATED — tytéž částky nezávisle uvádí i autorská reportáž Médiáře (SRC-20, autor Ondřej Aust, mediar.cz, 15. 6. 2026), tedy jiný vydavatel, jiná doména a mimo agenturní rodinu ctk, do níž spadá dosavadní ČT24 (SRC-03). Nový samostatný zdroj nevznikal — Médiář už v dossieru existuje jako SRC-20, proto se pouze obousměrně provázal s CLM-09 (duplicitní URL by byla datová chyba). CLM-38 (schválení novely stavebního zákona 89 hlasy) a CLM-20 (jednání s prezidentem Pavlem) prověřeny, ale ponechány na 1 ZDROJ: k CLM-38 nezávislé vlastní zpravodajství (Globe24) potvrzuje jen schválení, nikoli počet hlasů ani opoziční formulaci a primární hlasovací záznam psp.cz nebyl jednoznačný; k CLM-20 jsou všechny otevíratelné zdroje z rodiny ctk a primární tisková zpráva Hradu i Forbes.cz nešly automatizovaně otevřít (403 / jen titulek). Rozsah pokrytí se nerozšiřoval, žádné tvrzení se nepřepisovalo.",
+  "updatedClaims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/claims/CLM-09"
+    }
+  ],
+  "reviewedSources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/oto-klempir/sources/SRC-20"
+    }
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "## Co se v tomto kole dělalo\n\nKolo bylo úzké a čistě zdrojové. Cílem bylo povýšit jednozdrojová tvrzení\n(`status-single`, 1 ZDROJ) v autorizovaném rozsahu na CORROBORATED jen\ntam, kde existuje **skutečně nezávislý** druhý zdroj podle pravidla S10 —\njiný vydavatel a jiná registrovaná doména, a pro S2 i mimo tutéž zdrojovou\nrodinu.\n\n| Tvrzení | Dosavadní zdroj (rodina) | Nový nezávislý doklad | Výsledek |\n|---|---|---|---|\n| [CLM-09](@/dossiers/oto-klempir/claims/clm-09.md) | SRC-03 ČT24 (`ctk`) | [SRC-20](@/dossiers/oto-klempir/sources/src-20.md) Médiář (autorská reportáž) | CORROBORATED |\n\nČástku výchozího výnosu poplatků (ČT 6,73 mld., ČRo 2,48 mld.) uvádí\nnezávisle jak ČT24, tak Médiář — dvě redakce, dva vydavatelé, dvě domény.\nMédiář v dossieru už existoval jako SRC-20 (stejná URL), proto nevznikal\nnový zdroj a jen se doplnila obousměrná vazba s CLM-09; založit druhý\nzáznam téže URL by bylo porušení referenční integrity.\n\n## Co se prověřovalo, ale zůstává na 1 ZDROJ\n\n- **CLM-38** (Sněmovna schválila novelu stavebního zákona 10. 7. 2026\n  hlasy 89 poslanců, opozice proti). Nezávislé vlastní zpravodajství\n  (Globe24, autor Jan Hrabě, mimo ČTK) potvrzuje jen **schválení novely**\n  v tom týdnu, ne počet hlasů ani opoziční tezi „nahrává developerům“;\n  primární hlasovací záznam na psp.cz nešel k tomuto tvrzení jednoznačně\n  přiřadit. Doklad nereprodukuje nosné části tvrzení, proto se nepovyšuje.\n- **CLM-20** (jednání s prezidentem Pavlem 30. 6. 2026). Všechny\n  otevíratelné zprávy o schůzce (Echo24 = SRC-19, Blesk, ČeskéNoviny.cz)\n  nesou agenturní rodinu `ctk` — jeden hlas. Primární tisková zpráva\n  Pražského hradu (na kterou se tvrzení odvolává formulací „podle Hradu“)\n  vrací 403 na automatické stažení a Forbes.cz vydává jen titulek; zdroj,\n  který nelze otevřít, se nezapočítává.\n\n## Co se nedělalo\n\nRESPEKTová témata (CLM-03, CLM-04, CLM-06 a resortní kroky podle textu\nRESPEKTU) se v tomto kole záměrně neřešila: druhé médium jen shrnující\ntext RESPEKTU není nezávislé původní doložení faktu. Autorizační rozsah\ndossieru se nerozšiřoval, kurátorská vrstva grafu ani registr vztahů se\nnepřepisovaly a žádné tvrzení se kvůli zdroji neupravovalo."
+    }
+  ]
+}

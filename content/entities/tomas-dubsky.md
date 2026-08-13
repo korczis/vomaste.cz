@@ -3,7 +3,7 @@
 title = "Tomáš Dubský"
 template = "entity.html"
 weight = 403
-description = "Kontextová entita — Předseda dozorčí rady SZIF (STAN); rada vyzvala k bezodkladnému vymáhání dotací."
+description = "Tomáš Dubský — Kontextová entita — Předseda dozorčí rady SZIF (STAN); rada vyzvala k bezodkladnému vymáhání dotací."
 
 [extra]
 generated = true

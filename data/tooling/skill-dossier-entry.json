@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-dossier-entry",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-dossier-entry",
+  "kind": "skill",
+  "name": "dossier-entry",
+  "title": "Přidání záznamu do dossieru",
+  "category": "provoz",
+  "personas": [
+    "researcher",
+    "editor"
+  ],
+  "riskLevel": "review-required",
+  "writes": true,
+  "requiresAuthorization": true,
+  "summary": "Vedený, validátorem kontrolovaný postup pro přidání zdroje, tvrzení, kauzy, mezery nebo vztahu: nejdřív autorizační brána, pak editace kanonického JSON datasetu a nakonec regenerace content adaptérů a build. Pro každý typ záznamu má vlastní krokovaný postup i pravidla, podle kterých se volí stav tvrzení.",
+  "whenToRun": "Před přidáním JAKÉHOKOLI záznamu do dossieru — bez výjimky, pro každý jednotlivý záznam.",
+  "describedFrom": "header",
+  "notes": [
+    "Krok 0 je autorizační brána a nemá override: výchozí stav je nepokrývat nikoho. Bez konkrétní datované podsekce v AGENTS.md, která pokrývá přesně tuhle osobu A přesně tohle téma, se zastavuje a ptá se vlastníka. Není to build-time kontrola, je to lidský úsudek, který tooling za nikoho neudělá.",
+    "Cituje se jen zdroj, který jsi sám otevřel — nikdy z výňatku ve vyhledávači.",
+    "Stav tvrzení se volí poctivě, ne optimisticky: dva články jednoho vydavatele nezakládají stav „doloženo dvěma nezávislými“. Povýšení stavu později vyžaduje skutečně nový nezávislý zdroj, nikdy jen přeštítkování.",
+    "Popisuje-li tvrzení procesní výsledek (zastavené řízení, promlčení, nepravomocné rozhodnutí), musí být pokaždé, ne jednou v poznámce, výslovně řečeno, že to NENÍ zjištění o vině ani o pravdě.",
+    "Mezera se formuluje jako neutrální otevřená otázka — co citované zdroje zatím nedokládají — nikdy jako narážka nebo skryté tvrzení.",
+    "Nikdy needituj content/dossiers/** ani content/entities/*.md; jsou to generované adaptéry a ruční editaci blokuje lint."
+  ]
+}

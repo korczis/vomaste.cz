@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zdenek-hrib/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zdenek-hrib"
+  },
+  "title": "SRC-02 — ČeskéNoviny.cz (ČTK): Předsedou Pirátů bude nadále Hřib, prvním místopředsedou se stal Šmída",
+  "description": "Agenturní zpravodajství ČTK o znovuzvolení Zdeňka Hřiba předsedou České pirátské strany na republikovém fóru v Prachaticích.",
+  "outlet": "ČeskéNoviny.cz (ČTK)",
+  "sourceType": "zpravodajství",
+  "url": "https://www.ceskenoviny.cz/zpravy/predsedou-piratu-bude-nadale-hrib-prvnim-mistopredsedou-se-stal-smida/2759821",
+  "published": "2026-01-17",
+  "retrieved": "2026-08-07",
+  "sourceFamily": "ctk",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zdenek-hrib/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "zdenek-hrib"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Agenturní zpráva ČTK z 17. 1. 2026, otevřena a přečtena 2026-08-07.\nInformuje o znovuzvolení Zdeňka Hřiba předsedou České pirátské strany na republikovém fóru v Prachaticích — získal 469 hlasů z 611 odevzdaných a porazil Davida Witosze (257 hlasů) v prvním kole; prvním místopředsedou se stal Martin Šmída. Uvádí Hřiba jako poslance a předsedu strany od podzimu 2024.\n\nPoznámka k typu zdroje a jeho limitům: agenturní zpravodajství ČTK (`sourceFamily: ctk`) — jiný vydavatel i jiná doména než SRC-03 (CNN Prima News, vlastní redakční práce s bylinem, bez ČTK přebírky u tohoto textu), takže spolu s ním tvoří nezávislou dvojici pro účely korporace tvrzení o znovuzvolení předsedou strany. Nedokládá podrobnosti sněmovního mandátu ani výborové příslušnosti — ty dokládá SRC-01 (psp.cz)."
+    }
+  ],
+  "order": 2
+}

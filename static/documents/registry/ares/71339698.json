@@ -1,0 +1,205 @@
+{
+  "retrieved": "2026-08-09",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "71339698"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "71339698",
+        "obchodniJmeno": "Česká pirátská strana",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 27,
+          "nazevSpravnihoObvodu": "Praha 2",
+          "kodMestskehoObvodu": 27,
+          "nazevMestskehoObvodu": "Praha 2",
+          "kodMestskeCastiObvodu": 500089,
+          "kodUlice": 458422,
+          "nazevMestskeCastiObvodu": "Praha 2",
+          "nazevUlice": "Na Moráni",
+          "cisloDomovni": 360,
+          "kodCastiObce": 490148,
+          "cisloOrientacni": 3,
+          "nazevCastiObce": "Nové Město",
+          "kodAdresnihoMista": 22718451,
+          "psc": 12800,
+          "textovaAdresa": "Na Moráni 360/3, Nové Město, 12800 Praha 2",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "711",
+        "pravniFormaRos": "711",
+        "financniUrad": "002",
+        "datumVzniku": "2009-06-17",
+        "datumAktualizace": "2026-07-30",
+        "dic": "CZ71339698",
+        "icoId": "71339698",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Na Moráni 360/3",
+          "radekAdresy2": "Nové Město",
+          "radekAdresy3": "12800 Praha 2"
+        },
+        "czNace2008": [
+          "94920"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "NEEXISTUJICI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "NEEXISTUJICI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "AKTIVNI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Česká pirátská strana",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 27,
+                  "nazevSpravnihoObvodu": "Praha 2",
+                  "kodMestskehoObvodu": 27,
+                  "nazevMestskehoObvodu": "Praha 2",
+                  "kodMestskeCastiObvodu": 500089,
+                  "kodUlice": 458422,
+                  "nazevMestskeCastiObvodu": "Praha 2",
+                  "nazevUlice": "Na Moráni",
+                  "cisloDomovni": 360,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 3,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 22718451,
+                  "psc": 12800,
+                  "textovaAdresa": "Na Moráni 360/3, Nové Město, 12800 Praha 2",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "711",
+            "pravniFormaRos": "711",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Česká pirátská strana",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 27,
+                  "nazevSpravnihoObvodu": "Praha 2",
+                  "kodMestskehoObvodu": 27,
+                  "nazevMestskehoObvodu": "Praha 2",
+                  "kodMestskeCastiObvodu": 500089,
+                  "kodUlice": 458422,
+                  "nazevMestskeCastiObvodu": "Praha 2",
+                  "nazevUlice": "Na Moráni",
+                  "cisloDomovni": 360,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 3,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 22718451,
+                  "psc": 12800,
+                  "textovaAdresa": "Na Moráni 360/3, Nové Město, 12800 Praha 2",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "711",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Česká pirátská strana",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 27,
+                  "nazevSpravnihoObvodu": "Praha 2",
+                  "kodMestskehoObvodu": 27,
+                  "nazevMestskehoObvodu": "Praha 2",
+                  "kodMestskeCastiObvodu": 500089,
+                  "kodUlice": 458422,
+                  "nazevMestskeCastiObvodu": "Praha 2",
+                  "nazevUlice": "Na Moráni",
+                  "cisloDomovni": 360,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 3,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 22718451,
+                  "psc": 12800,
+                  "textovaAdresa": "Na Moráni 360/3, Nové Město, 12800 Praha 2",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "711",
+            "datovyZdroj": "rpsh"
+          }
+        ],
+        "czNace": [
+          "94920"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "41035895",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/41035895",
+  "nazev": "Pekárna Zelená louka, a.s.",
+  "sidlo": "Hlavní 71, 25101 Herink",
+  "spisovaZnacka": {
+    "soud": "KSOS",
+    "oddil": "C",
+    "vlozka": "1905"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "předseda představenstva",
+      "since": "2022-09-02",
+      "kind": "person",
+      "name": "Ing. Jaroslav Kurčík"
+    },
+    {
+      "role": "místopředseda představenstva",
+      "since": "2022-09-02",
+      "kind": "person",
+      "name": "Mgr. Georgios Koulisianis"
+    },
+    {
+      "role": "člen představenstva",
+      "since": "2022-09-27",
+      "kind": "person",
+      "name": "Ing. Jan Stoklasa"
+    }
+  ],
+  "spolecnici": []
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jiri-dienstbier-ml/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jiri-dienstbier-ml"
+  },
+  "text": "Jiří Dienstbier ml. byl podle oficiálního profilu na webu Vlády ČR ministrem pro lidská práva, rovné příležitosti a legislativu a předsedou Legislativní rady vlády od 29. 1. 2014 do 30. 11. 2016 (vláda Bohuslava Sobotky, ČSSD), byl senátorem za obvod Kladno, stínovým ministrem spravedlnosti ČSSD (od 2010) a místopředsedou ČSSD (2011–2013)",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jiri-dienstbier-ml/sources/SRC-01"
+    }
+  ],
+  "subjects": [
+    "jiri-dienstbier-ml"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jiri-dienstbier-ml/_index.md)."
+    }
+  ]
+}

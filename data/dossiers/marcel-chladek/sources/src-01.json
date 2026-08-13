@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/marcel-chladek/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/marcel-chladek"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil člena vlády)",
+  "description": "Oficiální vládní profil: ministr školství 29. 1. 2014 – 5. 6. 2015, dříve senátor.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/marcel-chladek-115399/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/marcel-chladek/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "marcel-chladek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil člena vlády na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci ministra školství, mládeže a tělovýchovy od 29. 1. 2014 do 5. 6. 2015, nominaci za ČSSD (členem od 2004), senátorský mandát od 2008 s místopředsednictvím výboru pro vzdělávání, vědu, kulturu, lidská práva a petice a funkci náměstka hejtmana Středočeského kraje.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — jediný přímo otevřený zdroj tohoto dossieru; tvrzení proto nese stav 1 ZDROJ a okolnosti konce v úřadu se neuvádějí."
+    }
+  ],
+  "order": 1
+}

@@ -1,40 +1,43 @@
 {
- "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
- "schemaVersion": 1,
- "@context": "https://vomaste.cz/context/v1.jsonld",
- "@id": "https://vomaste.cz/id/entities/vzp",
- "@type": "vomaste:Entity",
- "recordType": "entity",
- "identifier": "vzp",
- "entityId": "vzp",
- "title": "Všeobecná zdravotní pojišťovna (VZP)",
- "entityType": "public_institution",
- "publicationRole": "context",
- "dossierEnabled": false,
- "dossierStatus": "not_authorized",
- "coverageState": "discovered",
- "dossiers": [
-  "adam-vojtech"
- ],
- "order": 450,
- "provenance": {
-  "discoveredAt": "2026-08-02",
-  "discoveredVia": [
-   "content-extraction-2026-08-02"
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/vzp",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "vzp",
+  "entityId": "vzp",
+  "title": "Všeobecná zdravotní pojišťovna (VZP)",
+  "entityType": "public_institution",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "discovered",
+  "dossiers": [
+    "adam-vojtech"
   ],
-  "claimRefs": [
-   "CLM-21",
-   "CLM-31"
+  "order": 450,
+  "provenance": {
+    "discoveredAt": "2026-08-02",
+    "discoveredVia": [
+      "content-extraction-2026-08-02"
+    ],
+    "claimRefs": [
+      "CLM-21",
+      "CLM-31"
+    ],
+    "sourceRefs": [
+      "SRC-12",
+      "SRC-19"
+    ]
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová entita — Prověřuje stovky implantací ICD ve FN Olomouc; projekt Zdravá firma kritizovaný Okamurou. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (adam-vojtech). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+    }
   ],
-  "sourceRefs": [
-   "SRC-12",
-   "SRC-19"
-  ]
- },
- "content": [
-  {
-   "type": "markdown",
-   "value": "Kontextová entita — Prověřuje stovky implantací ICD ve FN Olomouc; projekt Zdravá firma kritizovaný Okamurou. Uvedena, protože se jmenovitě objevuje v citovaném obsahu autorizovaných dossierů (adam-vojtech). Tato stránka neobsahuje samostatný profil mimo tento kontext a nezakládá žádné tvrzení o pochybení."
+  "externalIds": {
+    "ico": "41197518"
   }
- ]
 }

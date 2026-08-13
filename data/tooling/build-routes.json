@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/build-routes",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "build-routes",
+  "kind": "npm",
+  "name": "build:routes",
+  "title": "Manifest rout",
+  "category": "generovani",
+  "summary": "Staví jediný explicitní manifest id → routa napříč všemi dossiery, aby žádná šablona ani skript nemusely skládat URL z id na víc než jednom místě. Deterministické, bez sítě.",
+  "whenToRun": "V pipeline před vším, co routy čte (parita content, navigace, exporty).",
+  "inputs": [
+    "data/dossiers/** (compiled model)"
+  ],
+  "outputs": [
+    "data/generated/routes.json"
+  ],
+  "sourceFile": "scripts/dossier/build-route-manifest.mjs",
+  "describedFrom": "header"
+}

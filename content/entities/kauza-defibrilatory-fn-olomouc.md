@@ -3,7 +3,7 @@
 title = "Kauza implantací defibrilátorů ve FN Olomouc"
 template = "entity.html"
 weight = 201
-description = "Kontextová entita — Podezření z obcházení indikačních kritérií ICD, trestní oznámení resortu (3/2026), škoda přes 150 mil."
+description = "Kauza implantací defibrilátorů ve FN Olomouc — Kontextová entita — Podezření z obcházení indikačních kritérií ICD, trestní oznámení resortu (3/2026), škoda přes 150 mil."
 
 [extra]
 generated = true

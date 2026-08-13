@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "title": "Kanonický záznam příkazu toolingu (data/tooling/<slug>.json)",
+  "$comment": "Jeden záznam = jeden příkaz repozitáře: npm skript, Claude skill nebo just recept. Popisuje, co příkaz dělá, co vynucuje, kdy ho spustit a odkud čte. NEOBSAHUJE příkazovou řádku, zařazení do build pipeline, cíl just receptu ani frontmatter skillu — to všechno se DOPOČÍTÁVÁ z package.json, scripts/build/pipeline.mjs, justfile a .claude/skills/*/SKILL.md (scripts/build/build-tooling-catalog.mjs), aby katalog nemohl tvrdit něco jiného, než co repozitář skutečně obsahuje. Stejná dělba práce jako u source-catalog-entry.schema.json: ručně se píše jen to, co ze zdrojů odvodit nelze.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "@context",
+    "@id",
+    "@type",
+    "recordType",
+    "identifier",
+    "kind",
+    "name",
+    "title",
+    "category",
+    "summary",
+    "whenToRun",
+    "describedFrom"
+  ],
+  "properties": {
+    "$schema": {
+      "const": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json"
+    },
+    "schemaVersion": { "const": 1 },
+    "@context": { "const": "https://vomaste.cz/context/v1.jsonld" },
+    "@id": {
+      "type": "string",
+      "pattern": "^https://vomaste\\.cz/id/prikazy/[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "@type": { "const": "vomaste:ToolingCommand" },
+    "recordType": { "const": "toolingCommand" },
+    "identifier": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "$comment": "Slug stránky /dokumentace/prikazy/<identifier>/ a název souboru. Odvozuje se z kind + name: npm skript `data:validate` → `data-validate`, skill `adr` → `skill-adr`, just recept `build` → `just-build`. Brána tuhle shodu vynucuje, aby slug nemohl ukazovat na jiný příkaz, než který popisuje."
+    },
+    "kind": {
+      "type": "string",
+      "enum": ["npm", "skill", "just", "agent", "workflow"],
+      "$comment": "Vrstva toolingu. npm = klíč v package.json scripts, spouští se `npm run <name>`. skill = adresář .claude/skills/<name>/ se souborem SKILL.md, vyvolává ho Claude Code. just = recept v justfile, spouští se `just <name>`. agent = soubor .claude/agents/<name>.md, subagent v izolovaném kontextu. workflow = soubor .claude/workflows/<name>.md, uživatelská cesta skládající skills a agenty."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "Přesný identifikátor v příslušné vrstvě: klíč package.json scripts, název adresáře skillu nebo název just receptu."
+    },
+    "title": { "type": "string", "minLength": 1 },
+    "category": {
+      "type": "string",
+      "enum": ["validace", "generovani", "kontrola", "reserse", "provoz"],
+      "$comment": "K čemu příkaz slouží (nezávisle na vrstvě). validace = kontroluje RUČNĚ PSANÉ vstupy (data/**, content/**, templates/**, .github/**) dřív, než se cokoli vygeneruje. generovani = zapisuje generovaný artefakt. kontrola = kontroluje GENEROVANÝ artefakt, postavený web nebo běží jako testová sada. reserse = sbírá nebo prověřuje informace mimo repozitář. provoz = vývojová a provozní smyčka (build, server, hooky, scaffolding, commit). Hranice validace × kontrola je záměrně mechanická (co je vstup a co výstup), ne dojmová."
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "Co příkaz dělá. Píše se podle hlavičkového komentáře skriptu, podle těla SKILL.md nebo podle kódu — nikdy podle názvu."
+    },
+    "enforces": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 },
+      "$comment": "Co konkrétně shodí běh (nenulový exit). Pole smí být přítomné JEN u příkazu, který skutečně selhává — příkaz, který jen reportuje, ho nemá. Nepsat sem nic, co nebylo přečteno v kódu nebo ověřeno spuštěním."
+    },
+    "whenToRun": { "type": "string", "minLength": 1 },
+    "inputs": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "$comment": "Odkud příkaz čte. Cesty se píší relativně ke kořeni repozitáře."
+    },
+    "outputs": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "$comment": "Co zapisuje. Příkaz, který nic nezapisuje, pole vynechá."
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^(S([1-9]|10)|R[1-8]|T[1-8])$"
+      },
+      "$comment": "Pravidla kanonického datasetu, která tenhle příkaz vynucuje: S1–S10 (validate-semantics.mjs), R1–R8 (validate-references.mjs), T1–T8 (validate-registry-table.mjs). Uvádí se jen tam, kde je vazba doslovná."
+    },
+    "sourceFile": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9._][A-Za-z0-9._/-]*$",
+      "$comment": "Hlavní implementační soubor, relativně ke kořeni repozitáře. Brána ověřuje, že existuje, a u npm skriptů navíc, že ho příkazová řádka v package.json skutečně volá. npm skript, jehož řádka žádný soubor repozitáře nevolá (tailwindcss, esbuild, playwright, node --test, řetěz npm run …), tohle pole NEMÁ — vymyslet mu soubor by byl výmysl. U skillů a just receptů brána soubor dopočítá a pole se nepíše."
+    },
+    "describedFrom": {
+      "type": "string",
+      "enum": ["header", "code", "command"],
+      "$comment": "Odkud je popis: header = hlavičkový komentář skriptu nebo tělo SKILL.md, code = zdroj hlavičku nemá a popis vznikl čtením kódu, command = žádný soubor repozitáře se nevolá a popis vychází z příkazové řádky a z volaných nástrojů."
+    },
+    "notes": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "$comment": "Co je na příkazu potřeba vědět navíc: past, omezení, přiznaná neověřenost, hranice odpovědnosti."
+    },
+    "personas": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "reader",
+          "verifier",
+          "source-contributor",
+          "researcher",
+          "editor",
+          "developer",
+          "reviewer",
+          "maintainer",
+          "orchestrator"
+        ]
+      },
+      "$comment": "Kdo tuhle schopnost používá. POVINNÉ u kind skill/agent/workflow (brána G8) — schopnost bez persony je schopnost bez uživatele. U npm skriptů a just receptů volitelné: ty jsou příkazová vrstva, kterou obsluhuje kdokoli, kdo umí terminál. Význam person je jeden a je popsaný v .claude/rules/personas.md; přidání nové persony je změna schématu, ne dopsání řetězce."
+    },
+    "riskLevel": {
+      "type": "string",
+      "enum": [
+        "read-only",
+        "safe-write",
+        "review-required",
+        "maintainer",
+        "owner-authorization"
+      ],
+      "$comment": "Co nejhoršího schopnost udělá, když se spustí omylem. read-only = nic nezapisuje. safe-write = zapisuje jen do pracovního stromu a je to triviálně vratné (git checkout). review-required = zapisuje do kanonických dat nebo obsahu, výsledek musí projít lidským review. maintainer = mění sdílený stav (schéma, pipeline, merge, deploy). owner-authorization = dotýká se rozsahu pokrytí osob a bez explicitního rozhodnutí vlastníka na to nikdo nesahá. POVINNÉ u kind skill/agent/workflow (brána G8)."
+    },
+    "writes": {
+      "type": "boolean",
+      "$comment": "Mění schopnost stav repozitáře — soubory v pracovním stromu, nebo git historii? Odvozuje se z riskLevel jen zdánlivě: skill s riskLevel=maintainer může být čistě analytický a skill se safe-write zapisuje. Uvádí se u kind skill/agent/workflow (brána G10), aby si uživatel mohl předem vyfiltrovat, co je bezpečné pustit naslepo."
+    },
+    "requiresAuthorization": {
+      "type": "boolean",
+      "$comment": "Dotýká se schopnost rozsahu pokrytí osob, tedy autorizačního logu v AGENTS.md? true = před použitím se ověřuje rozsah. Nikdy neznamená, že schopnost autorizaci UDĚLUJE — to nesmí žádná."
+    },
+    "content": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["type", "value"],
+        "properties": {
+          "type": { "const": "markdown" },
+          "value": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

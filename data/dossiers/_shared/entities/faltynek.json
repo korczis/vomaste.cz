@@ -39,5 +39,19 @@
       "type": "markdown",
       "value": "Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v [hlavním přehledu](@/dossiers/jaroslav-faltynek/_index.md#kdo)."
     }
+  ],
+  "media": [
+    {
+      "file": "images/people/faltynek.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jaroslav_Faltynek.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "author": "OISV",
+      "credit": "Own work",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 1383,
+      "role": "portrait"
+    }
   ]
 }

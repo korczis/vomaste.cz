@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/pavel-belobradek/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/pavel-belobradek"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil člena vlády)",
+  "description": "Oficiální vládní profil: místopředseda vlády pro vědu 29. 1. 2014 – 13. 12. 2017, předseda KDU-ČSL od 2010.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/pri-uradu-vlady/pavel-belobradek/zivotopis/pavel-belobradek-115389/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/pavel-belobradek/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "pavel-belobradek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil člena vlády na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci místopředsedy vlády pro vědu, výzkum a inovace od 29. 1. 2014, s obdobím v demisi od 5. do 13. 12. 2017, předsednictví KDU-ČSL od 2010, poslanecký mandát od 2013, dřívější působení veterinárního inspektora (2001–2009) a krajského tajemníka KDU-ČSL (2009–2010).\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — jediný přímo otevřený zdroj tohoto dossieru; tvrzení proto nese stav 1 ZDROJ."
+    }
+  ],
+  "order": 1
+}

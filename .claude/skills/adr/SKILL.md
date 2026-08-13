@@ -21,8 +21,10 @@ before writing a new one, not just this skill.
 
 1. **Measure, don't estimate.** Pull real numbers from this repo before
    arguing anything — record counts (canonical dataset:
-   `npm run data:compile` prints per-type counts; or
-   `data/generated/global-graph.json`), bundle sizes (`static/js/app.js`,
+   `npm run data:compile` prints per-type counts; graph scale lives in
+   `data/generated/views/` after `npm run data:views` — the monolithic
+   global-graph.json was replaced by per-dossier graph projections
+   and no longer exists), bundle sizes (`static/js/app.js`,
    `static/css/main.css` after `npm run build`), actual page counts. An
    ADR that says "could get slow at scale" without a measured current
    scale is not done.
@@ -92,3 +94,17 @@ an ADR never overrides `AGENTS.md` — it documents a technical/
 architecture decision, not a scope decision (scope changes only ever
 happen via the append-only authorization log, see the `dossier-entry`
 skill).
+
+## When NOT to use this skill
+
+- **A small, obviously-correct change.** Replacing a helper, fixing a
+  selector, adding a validator that follows an existing pattern — none
+  of those are debatable, and an ADR for them is filing, not thinking.
+- **An editorial or scope question.** Whether a subject may be covered,
+  whether a claim is `1 ZDROJ` or CORROBORATED, whether a third party
+  stays unnamed — those are governed by `AGENTS.md` and its authorization
+  log, and an ADR cannot decide them.
+- **Retroactive justification.** If the decision is already made and the
+  numbers are being assembled to support it, this skill produces a
+  document that looks like an ADR and isn't one. Measure first or don't
+  write it.

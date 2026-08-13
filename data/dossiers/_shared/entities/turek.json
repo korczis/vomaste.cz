@@ -60,5 +60,18 @@
       "type": "markdown",
       "value": "Hlavní subjekt autorizovaného dossieru. Tato stránka je kanonický záznam\ntéto entity — dossiery, tvrzení, zdroje a vztahy v tabulce a sekcích níže\njsou úplné; nejde o zkrácenou verzi něčeho podrobnějšího jinde."
     }
+  ],
+  "media": [
+    {
+      "file": "images/people/turek.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1719998912664_20240703_TUREK_Filip_CZ_006.jpg",
+      "license": "Attribution",
+      "author": "European Union 2024 - Source : EP",
+      "credit": "https://multimedia.europarl.europa.eu/",
+      "retrieved": "2026-08-10",
+      "width": 1200,
+      "height": 1543,
+      "role": "portrait"
+    }
   ]
 }

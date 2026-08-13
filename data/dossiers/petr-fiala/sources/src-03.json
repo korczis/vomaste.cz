@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/petr-fiala/sources/SRC-03",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-03",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/petr-fiala"
+  },
+  "title": "SRC-03 — CVVM: Hodnocení vlády Petra Fialy — červen 2025",
+  "description": "Tisková zpráva Centra pro výzkum veřejného mínění (Sociologický ústav AV ČR) shrnující výsledky pravidelného šetření hodnocení vlády.",
+  "outlet": "CVVM (Centrum pro výzkum veřejného mínění, Sociologický ústav AV ČR)",
+  "sourceFamily": "cvvm",
+  "sourceType": "průzkum veřejného mínění",
+  "url": "https://cvvm.soc.cas.cz/cz/tiskove-zpravy/politicke/instituce-a-politici/6161-hodnoceni-vlady-petra-fialy-cerven-2025",
+  "published": "2025-08-21",
+  "retrieved": "2026-08-07",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/petr-fiala/claims/CLM-02"
+    }
+  ],
+  "subjects": [
+    "petr-fiala"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tisková zpráva CVVM, otevřena a přečtena 2026-08-07.\nZ červnového šetření 2025 (zveřejněno 21. 8. 2025) plyne, že ve všech zkoumaných oblastech hodnocení Fialovy vlády převažovala nespokojenost. Relativně nejlépe byl hodnocen ohlášený vládní program (30 % spokojených) a osoba předsedy vlády (28 %); nejhůře byla vnímána komunikace vlády s veřejností (18 %). Muži hodnotili vládu příznivěji než ženy, podpora byla vyšší mezi vysokoškolsky vzdělanými a lidmi do 30 let.\n\nPoznámka k typu zdroje a jeho limitům: **primární výzkumná zpráva** akademické instituce (Sociologický ústav AV ČR) — dokládá výsledek konkrétního šetření k danému měsíci, nikoli trvalý nebo definitivní úsudek o vládě; hodnoty se mění v čase a toto je jediné šetření citované zde. Tvrzení proto zůstává na stupni 1 ZDROJ, dokud nebude doplněno nezávislým srovnávacím průzkumem jiné agentury."
+    }
+  ],
+  "order": 3
+}

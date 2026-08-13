@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivan-pilny/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivan-pilny"
+  },
+  "text": "Ivan Pilný byl podle oficiálního přehledu členů vlády Bohuslava Sobotky na webu Vlády ČR ministrem financí od 24. 5. 2017 do 13. 12. 2017 (od 5. 12. 2017 v demisi), když ve funkci nahradil Andreje Babiše, který byl podle téhož přehledu 1. místopředsedou vlády pro ekonomiku a ministrem financí od 29. 1. 2014 do 24. 5. 2017",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivan-pilny/sources/SRC-01"
+    }
+  ],
+  "subjects": [
+    "ivan-pilny"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/ivan-pilny/_index.md)."
+    }
+  ]
+}

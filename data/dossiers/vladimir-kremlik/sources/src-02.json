@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vladimir-kremlik/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/vladimir-kremlik"
+  },
+  "title": "SRC-02 — Seznam Zprávy: Babiš oznámil změny ve vládě",
+  "description": "Seznam Zprávy o nominaci Kremlíka na dopravu (duben 2019) s Babišovou charakteristikou.",
+  "outlet": "Seznam Zprávy",
+  "sourceType": "zpravodajský článek",
+  "url": "https://www.seznamzpravy.cz/clanek/marta-novakova-konci-ve-funkci-ministryne-prumyslu-a-obchodu-70052",
+  "retrieved": "2026-08-08",
+  "published": "2019-04-10",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vladimir-kremlik/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "vladimir-kremlik"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek Seznam Zpráv z 10. 4. 2019, otevřen a přečten 2026-08-08.\nUvádí, že na ministerstvo dopravy nastoupí místo Dana Ťoka dosavadní náměstek ÚZSVM Vladimír Kremlík; premiér Babiš ho popsal jako „profesionála, pracovitého člověka“ a potvrdil, že drží bezpečnostní prověrku na stupeň „tajné“ od NBÚ.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství — dokládá nominaci a premiérovu charakteristiku (citovanou jako jeho výrok); data výkonu funkce nese SRC-01."
+    }
+  ],
+  "order": 2
+}

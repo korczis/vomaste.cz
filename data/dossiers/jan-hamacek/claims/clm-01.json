@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jan-hamacek/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jan-hamacek"
+  },
+  "text": "Jan Hamáček byl podle oficiálního profilu na webu Vlády ČR od 27. 6. 2018 do 17. 12. 2021 prvním místopředsedou vlády a ministrem vnitra (dvakrát byl zároveň pověřen řízením ministerstva zahraničních věcí), od roku 2018 předsedou ČSSD a v letech 2013–2017 předsedou Poslanecké sněmovny; podle e15 po odchodu z politiky působí od února 2024 jako ředitel pro vnější vztahy skupiny Czechoslovak Group",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jan-hamacek/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jan-hamacek/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "jan-hamacek"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jan-hamacek/_index.md)."
+    }
+  ]
+}

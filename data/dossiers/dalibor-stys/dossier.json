@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/dalibor-stys",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "dalibor-stys",
+  "slug": "dalibor-stys",
+  "title": "Dalibor Štys",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Dalibor Štys.",
+  "dossierType": "entity",
+  "canonicalDossier": "dalibor-stys",
+  "subject": "dalibor-stys",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-DALIBOR-STYS"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "dalibor-stys",
+        "label": "Dalibor Štys",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nDalibor Štys je bývalý ministr školství, mládeže a tělovýchovy\n(2013–2014, Rusnokova úřednická vláda). Jako politicky exponovaná osoba\nv souvislosti s výkonem dřívější veřejné funkce spadá do standing scope\nautorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro\ntento dossier je `AUTH-2026-08-08-DALIBOR-STYS`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívější vládní funkce doložený oficiálním přehledem členů vlády\nJiřího Rusnoka. Tvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED\nvyžaduje otevření dalších zdrojů. Rozšíření rozsahu vyžaduje\nsamostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/dalibor-stys/claims/clm-01.md) | Dalibor Štys byl podle oficiálního přehledu členů vlády Jiřího Rusnoka na webu Vlády ČR ministrem školství, mládeže a tělovýchovy od 10. 7. 2013, přičemž od 13. 8. 2013 do 29. 1. 2014 funkci vykonával v demisi | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/dalibor-stys/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

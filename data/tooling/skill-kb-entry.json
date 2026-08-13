@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-kb-entry",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-kb-entry",
+  "kind": "skill",
+  "name": "kb-entry",
+  "title": "Referenční záznam",
+  "category": "provoz",
+  "personas": [
+    "researcher",
+    "editor",
+    "developer",
+    "maintainer"
+  ],
+  "riskLevel": "review-required",
+  "writes": true,
+  "summary": "Vytvoří nebo aktualizuje referenční záznam na správném místě: kanonický koncept, stránku příručky, záznam v katalogu zdrojů nebo path-scoped pravidlo. Nejdůležitější rozhodnutí není co napsat, ale kam to patří — špatné umístění je horší než chybějící záznam, protože vyrobí druhou definici, která se rozejde s první.",
+  "whenToRun": "Když se v projektu používá pojem, který nikde není definovaný, když se někdo potřetí ptá na totéž, nebo když rešerše narazila na past v registru.",
+  "outputs": [
+    "content/koncepty/**",
+    "content/prirucka/**",
+    "data/source-catalog/**",
+    ".claude/rules/**"
+  ],
+  "describedFrom": "header",
+  "notes": [
+    "Nejčastější chyba je založit něco, co už existuje. Nejdřív se hledá.",
+    "Katalog zdrojů jsou DATA — docs/osint/SOURCE_CATALOG.md a /zdroje/ se generují a needitují ručně.",
+    "Nová past v registru patří do katalogu, ne do commit zprávy, kde ji najde jen ten, kdo ví, že ji má hledat.",
+    "Postup o víc krocích není referenční záznam, je to skill. Odpověď je odkaz, ne kopie."
+  ]
+}

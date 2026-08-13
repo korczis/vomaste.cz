@@ -4,7 +4,7 @@ title = "Tomio Okamura"
 template = "entity.html"
 weight = 1
 aliases = ["/dossiers/tomio-okamura/entities/okamura/"]
-description = "Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v hlavním přehledu."
+description = "Tomio Okamura — Hlavní subjekt autorizovaného dossieru. Viz plné znění a kontext v hlavním přehledu."
 
 [extra]
 generated = true

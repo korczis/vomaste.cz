@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-prismatic-enrich-all",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-prismatic-enrich-all",
+  "kind": "skill",
+  "name": "prismatic-enrich-all",
+  "title": "Hromadné obohacení přes Prismatic",
+  "category": "reserse",
+  "personas": [
+    "researcher",
+    "maintainer"
+  ],
+  "riskLevel": "safe-write",
+  "writes": true,
+  "requiresAuthorization": true,
+  "summary": "Postaví deterministický plán úloh napříč kanonickými entitami a dossiery, spustí jen použitelné schopnosti, naimportuje očištěné kandidáty do stagingu a vygeneruje report k posouzení. Do kanonického obsahu nezapisuje nikdy.",
+  "whenToRun": "Až poté, co příprava integrace potvrdí, že jsou oba repozitáře připravené.",
+  "describedFrom": "header",
+  "notes": [
+    "Reálná je dnes jen fáze plánu, a i ta záměrně jen pro JEDINOU schopnost, kterou audit ověřil jako bezpečnou k plánování: dohledání firmy v ARES pro entity typu company/organization bez IČO.",
+    "Spuštění, import a report k posouzení jsou pořád stuby — neexistuje exekutor úloh, rozřešení identit, zapisovač do stagingu ani generátor reportu.",
+    "Plán nic nespouští; je read-only nad vlastními daty vomaste. Počty úloh a zdůvodnění jednotlivých položek se reportují poctivě, ne domýšlejí."
+  ]
+}

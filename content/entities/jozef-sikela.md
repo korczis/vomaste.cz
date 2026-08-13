@@ -3,7 +3,7 @@
 title = "Jozef Síkela"
 template = "entity.html"
 weight = 182
-description = "Kontextová entita — Ministr (MPO) citovaný v tiskové zprávě k odnětí dotace Penam/Pekárna Zelená louka z programu INOVACE."
+description = "Jozef Síkela — Kontextová entita — Ministr (MPO) citovaný v tiskové zprávě k odnětí dotace Penam/Pekárna Zelená louka z programu INOVACE."
 
 [extra]
 generated = true

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/daniela-filipiova",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "daniela-filipiova",
+  "entityId": "daniela-filipiova",
+  "title": "Daniela Filipiová",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "daniela-filipiova"
+  ],
+  "order": 635,
+  "description": "Daniela Filipiová — bývalá ministryně zdravotnictví (2009).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalá ministryně zdravotnictví (23. 1. 2009 – 26. 3. 2009, poté do 8. 5. 2009 v demisi, druhá vláda Mirka Topolánka).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ],
+  "media": [
+    {
+      "file": "images/people/daniela-filipiova.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Daniela_Filipiova_(cropped).jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "author": "Občanská demokratická strana",
+      "credit": "https://www.flickr.com/photos/odscz/10855340944/in/photolist-o4t6uH-hxfsEL-eDAJ8E-pmnAgF-pmnAh2/",
+      "retrieved": "2026-08-11",
+      "width": 1200,
+      "height": 1794,
+      "role": "portrait"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q3511775"
+  }
+}

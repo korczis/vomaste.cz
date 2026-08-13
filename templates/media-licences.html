@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{#- Attribution index for every published image.
+
+    Exists because of the licence, not because of tidiness: the CC BY / BY-SA
+    photographs this site publishes may be used only if the author and the
+    licence are named. Each picture already carries that credit next to it
+    (ui_media_figure); this page makes the whole set checkable at once, and it
+    is rendered from the computed media-index view model, so it cannot drift
+    away from what is actually published. -#}
+
+{% block content %}
+<main class="mx-auto max-w-5xl px-4 py-10 text-white sm:px-6 sm:py-12">
+  {% set media = load_data(path="data/generated/views/media-index.json") %}
+
+  {{ <ui_page_header title={page.title} description={page.description} breadcrumb_items={[
+    "Domů::" ~ get_url(path="@/_index.md"),
+    "Dokumentace::" ~ get_url(path="@/dokumentace/_index.md"),
+    "Licence médií",
+  ]} /> }}
+
+  <div class="mb-8 space-y-3 text-sm leading-relaxed text-white/70">
+    <p>Fotografie a loga na tomhle webu <strong class="text-white/90">nejsou majetkem projektu</strong>. Publikují se výhradně pod svobodnými licencemi, které to dovolují — a u licencí typu <abbr title="Creative Commons Uveďte původ – Zachovejte licenci">CC BY-SA</abbr> je uvedení autora a licence <strong class="text-white/90">podmínkou užití, ne zdvořilostí</strong>.</p>
+    <p>Soubory leží přímo v repozitáři, ne jako odkaz na cizí server: odkaz se může kdykoli změnit nebo zmizet a náhled by se tiše rozbil. Každý záznam níž vede zpět na stránku zdroje, kde je licence uvedená v původním znění.</p>
+    <p>Obrázek bez doložené licence, autora a zdroje <strong class="text-white/90">neprojde buildem</strong> — stejná disciplína, jakou web uplatňuje na tvrzení, uplatněná na obrázky (<code class="rounded bg-white/5 px-1 py-0.5 text-xs">npm run validate:media</code>).</p>
+  </div>
+
+  {%- if media.byLicense | length > 0 %}
+  <div class="mb-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
+    {{ <ui_stat_tile value={media.count} label="Médií celkem" /> }}
+    {%- for row in media.byLicense %}
+    {{ <ui_stat_tile value={row.count} label={row.license} /> }}
+    {%- endfor %}
+  </div>
+  {%- endif %}
+
+  {% if media.count == 0 %}
+  {{ <ui_empty_state message="Zatím není publikovaný žádný obrázek." /> }}
+  {% else %}
+  {% <table_advanced_table id="media-licences" caption="Publikovaná média" record_type="media" count={media.count} searchable={true} columns={["Náhled", "Entita", "Autor", "Licence", "Zdroj"]} sort_keys={["", "entita", "autor", "licence", ""]} footer="Seznam je počítaný z kanonických záznamů entit — ručně se nevede a nemůže se s publikovaným obsahem rozejít." empty_text="Filtru neodpovídá žádné médium."> %}
+    {%- for row in media.rows %}
+    <tr class="border-t border-white/5 align-top" data-entita="{{ row.entityTitle }}" data-autor="{{ row.author }}" data-licence="{{ row.license }}">
+      <td class="px-3 py-2">
+        {#- Stejné pravidlo jako v ui_media_figure: logo se vejde celé, portrét
+            se ořezává na obličej. Ořezané logo je nečitelný kus písmene. -#}
+        <img src="{{ get_url(path=row.file) | safe }}" alt="" loading="lazy" decoding="async"
+             width="64" height="64"
+             class="h-16 w-16 rounded border border-white/10 bg-black/40 {% if row.role == 'logo' %}object-contain p-1{% else %}object-cover object-top{% endif %}">
+      </td>
+      <td class="px-3 py-2">
+        <a href="{{ get_url(path='@/entities/' ~ row.entityId ~ '.md') | safe }}"
+           class="font-medium text-[#f3e5c0] underline decoration-white/25 underline-offset-2 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300/70">{{ row.entityTitle }}</a>
+        {%- if row.title %}<p class="text-xs text-white/55">{{ row.title }}</p>{% endif %}
+        {%- if row.subtitle %}<p class="text-xs text-white/40">{{ row.subtitle }}</p>{% endif %}
+      </td>
+      <td class="px-3 py-2 text-white/75">
+        {{ row.author }}
+        {%- if row.credit %}<p class="text-xs text-white/45">{{ row.credit }}</p>{% endif %}
+      </td>
+      <td class="px-3 py-2">
+        {%- if row.licenseUrl %}
+        <a href="{{ row.licenseUrl | safe }}" rel="license noopener" target="_blank"
+           class="underline decoration-white/25 underline-offset-2 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300/70">{{ row.license }}</a>
+        {%- else %}{{ row.license }}{% endif %}
+      </td>
+      <td class="px-3 py-2">
+        <a href="{{ row.sourceUrl | safe }}" rel="noopener" target="_blank"
+           class="underline decoration-white/25 underline-offset-2 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300/70">stránka souboru</a>
+        <p class="text-xs text-white/40">staženo {{ row.retrieved }}</p>
+      </td>
+    </tr>
+    {%- endfor %}
+  {% </table_advanced_table> %}
+  {% endif %}
+
+  {{ <ui_back_link_footer url={get_url(path="@/dokumentace/_index.md")} label="Zpět na dokumentaci" /> }}
+</main>
+{% endblock content %}

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/daniel-herman",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "daniel-herman",
+  "slug": "daniel-herman",
+  "title": "Daniel Herman",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Daniel Herman.",
+  "dossierType": "entity",
+  "canonicalDossier": "daniel-herman",
+  "subject": "daniel-herman",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-08",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-08-DANIEL-HERMAN"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "daniel-herman",
+        "label": "Daniel Herman",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nDaniel Herman je bývalý ministr kultury (2014–2017, vláda Bohuslava\nSobotky, KDU-ČSL), dříve ředitel Ústavu pro studium totalitních režimů\na mluvčí České biskupské konference. Jako politicky exponovaná osoba\nv souvislosti s výkonem dřívější veřejné funkce spadá do standing scope\nautorizace (`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro\ntento dossier je `AUTH-2026-08-08-DANIEL-HERMAN`.\n\nTento dossier je záměrně založen jako minimální, čistě biografický\nzáznam dřívějších veřejných funkcí. Tvrzení nese stav 1 ZDROJ (jediný\npřímo otevřený zdroj je oficiální profil na vlada.gov.cz); povýšení na\nCORROBORATED vyžaduje otevření druhého, nezávislého zdroje. Rozšíření\nrozsahu vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/daniel-herman/claims/clm-01.md) | Daniel Herman byl podle oficiálního profilu na webu Vlády ČR ministrem kultury od 29. 1. 2014 do 13. 12. 2017 (vláda Bohuslava Sobotky, nominován za KDU-ČSL, od 5. 12. 2017 v demisi), poslancem byl zvolen v říjnu 2013 a dříve byl ředitelem Ústavu pro studium totalitních režimů (2010 – jaro 2013) a mluvčím České biskupské konference (1996–2005) | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/daniel-herman/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}

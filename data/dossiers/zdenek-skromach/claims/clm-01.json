@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/zdenek-skromach/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/zdenek-skromach"
+  },
+  "text": "Zdeněk Škromach byl podle oficiálního přehledu členů vlády Jiřího Paroubka na webu Vlády ČR místopředsedou vlády a ministrem práce a sociálních věcí od 25. 4. 2005 do 16. 8. 2006 a v období od 12. 10. 2005 do 4. 11. 2005 byl pověřen i řízením Ministerstva zdravotnictví",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/zdenek-skromach/sources/SRC-01"
+    }
+  ],
+  "subjects": [
+    "zdenek-skromach"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/zdenek-skromach/_index.md)."
+    }
+  ]
+}

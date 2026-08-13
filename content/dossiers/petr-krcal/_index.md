@@ -1,0 +1,43 @@
++++
+# GENERATED FILE. DO NOT EDIT. Zdroj: data/dossiers/** — regeneruje `npm run data:build`.
+title = "Petr Krčál"
+description = "Neutrální, zdroji doložený přehled veřejného politického působení — Petr Krčál."
+template = "entity-dossier.html"
+
+[extra]
+generated = true
+record_id = "https://vomaste.cz/id/dossiers/petr-krcal"
+view_model = "generated/views/dossiers/petr-krcal/overview.json"
+dossier = "petr-krcal"
+record_type = "dossier"
+dossier_type = "entity"
+lang = "cs"
+updated = "2026-08-08"
++++
+## Rozsah dossieru {#rozsah}
+
+Petr Krčál je bývalý ministr práce a sociálních věcí (27. 6. –
+18. 7. 2018, druhá vláda Andreje Babiše, ČSSD), dříve radní Kraje
+Vysočina. Jako politicky exponovaná osoba v souvislosti s výkonem
+dřívější veřejné funkce spadá do standing scope autorizace
+(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier
+je `AUTH-2026-08-08-PETR-KRCAL`.
+
+Tento dossier je záměrně založen jako minimální, čistě biografický
+záznam dřívější vládní funkce a okolností rezignace tak, jak je popsaly
+citované zdroje. **Povinné rámování při každé zmínce:** jde o mediálně
+popsaná zjištění o shodách v textu a jeho rezignaci s vlastním
+vyjádřením, nikoli o soudní či akademický verdikt doložený citovaným
+zdrojem. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+## Registr tvrzení {#registr-tvrzeni}
+
+| ID | Tvrzení | Stav | Zdroje |
+|---|---|---|---|
+| <a id="clm-01"></a>[CLM-01](@/dossiers/petr-krcal/claims/clm-01.md) | Petr Krčál byl podle oficiálního profilu na webu Vlády ČR ministrem práce a sociálních věcí od 27. 6. do 18. 7. 2018 (ČSSD), dříve radním Kraje Vysočina (2008–2016) a náměstkem na Úřadu vlády; podle Hospodářských novin rezignoval po zhruba třech týdnech v souvislosti se zjištěními Seznam Zpráv o shodách v jeho bakalářské práci, připustil možné nedostatky v jejím obsahu, zmínil též zdravotní důvody a nahradila ho Jana Maláčová | <span class="status-badge status-corroborated">CORROBORATED</span> | [SRC-01](@/dossiers/petr-krcal/sources/src-01.md), [SRC-02](@/dossiers/petr-krcal/sources/src-02.md) |
+
+## Metodické omezení
+
+Dossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o
+hodnocení politického působení ani o investigativní rešerši jiných
+témat.

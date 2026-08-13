@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vera-jourova/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/vera-jourova"
+  },
+  "title": "SRC-02 — Aktuálně.cz: Končící eurokomisařka Jourová",
+  "description": "Aktuálně.cz o konci Jourové v EK (30. 11. 2024) po dekádě: komisařka 2014–2019, místopředsedkyně 2019–2024.",
+  "outlet": "Aktuálně.cz",
+  "sourceType": "zpravodajský článek",
+  "url": "https://zpravy.aktualne.cz/zahranici/eurokomisar-udela-pro-svou-zemi-nejvic-kdyz-ji-reprezentuje/r~2dc1313caef911efb2180cc47ab5f122/",
+  "retrieved": "2026-08-08",
+  "published": "2024-11-30",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/vera-jourova/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "vera-jourova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Zpravodajský článek Aktuálně.cz z 30. 11. 2024, otevřen a přečten 2026-08-08.\nUvádí, že Věra Jourová končí 30. 11. 2024 po deseti letech v Evropské komisi — v letech 2014–2019 byla eurokomisařkou pro spravedlnost, ochranu spotřebitelů a rovnost žen a mužů, v letech 2019–2024 místopředsedkyní Komise pro hodnoty a transparentnost; v křesle českého komisaře ji od 1. 12. 2024 nahradil Jozef Síkela.\n\nPoznámka k typu zdroje a jeho limitům: nezávislé redakční zpravodajství — dokládá evropské funkce a jejich rámec; českou vládní funkci z roku 2014 nese SRC-01."
+    }
+  ],
+  "order": 2
+}

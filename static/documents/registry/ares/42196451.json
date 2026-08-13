@@ -1,0 +1,335 @@
+{
+  "retrieved": "2026-08-09",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "42196451"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "42196451",
+        "obchodniJmeno": "Lesy České republiky, s.p.",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 86,
+          "nazevKraje": "Královéhradecký kraj",
+          "kodOkresu": 3602,
+          "nazevOkresu": "Hradec Králové",
+          "kodObce": 569810,
+          "nazevObce": "Hradec Králové",
+          "kodUlice": 130168,
+          "nazevUlice": "Přemyslova",
+          "cisloDomovni": 1106,
+          "kodCastiObce": 47180,
+          "cisloOrientacni": 19,
+          "nazevCastiObce": "Nový Hradec Králové",
+          "kodAdresnihoMista": 23814004,
+          "psc": 50008,
+          "textovaAdresa": "Přemyslova 1106/19, Nový Hradec Králové, 50008 Hradec Králové",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "301",
+        "pravniFormaRos": "301",
+        "financniUrad": "013",
+        "datumVzniku": "1992-01-01",
+        "datumAktualizace": "2026-08-03",
+        "dic": "CZ42196451",
+        "icoId": "42196451",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Přemyslova 1106/19",
+          "radekAdresy2": "Nový Hradec Králové",
+          "radekAdresy3": "50008 Hradec Králové"
+        },
+        "czNace2008": [
+          "011",
+          "016",
+          "02",
+          "02100",
+          "022",
+          "02400",
+          "03220",
+          "08",
+          "101",
+          "16",
+          "25620",
+          "257",
+          "28",
+          "3317",
+          "35110",
+          "36000",
+          "38110",
+          "4120",
+          "431",
+          "43320",
+          "45200",
+          "46900",
+          "471",
+          "47250",
+          "492",
+          "4939",
+          "49410",
+          "55",
+          "56100",
+          "58",
+          "620",
+          "701",
+          "7112",
+          "82110",
+          "82990",
+          "855",
+          "93110"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "AKTIVNI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Lesy České republiky, s.p.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 86,
+                  "nazevKraje": "Královéhradecký kraj",
+                  "kodOkresu": 3602,
+                  "nazevOkresu": "Hradec Králové",
+                  "kodObce": 569810,
+                  "nazevObce": "Hradec Králové",
+                  "kodUlice": 130168,
+                  "nazevUlice": "Přemyslova",
+                  "cisloDomovni": 1106,
+                  "kodCastiObce": 47180,
+                  "cisloOrientacni": 19,
+                  "nazevCastiObce": "Nový Hradec Králové",
+                  "kodAdresnihoMista": 23814004,
+                  "psc": 50008,
+                  "textovaAdresa": "Přemyslova 1106/19, Nový Hradec Králové, 50008 Hradec Králové",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "301",
+            "pravniFormaRos": "301",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Lesy České republiky, s.p.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 86,
+                  "nazevKraje": "Královéhradecký kraj",
+                  "kodOkresu": 3602,
+                  "nazevOkresu": "Hradec Králové",
+                  "kodObce": 569810,
+                  "nazevObce": "Hradec Králové",
+                  "kodUlice": 130168,
+                  "nazevUlice": "Přemyslova",
+                  "cisloDomovni": 1106,
+                  "kodCastiObce": 47180,
+                  "cisloOrientacni": 19,
+                  "nazevCastiObce": "Nový Hradec Králové",
+                  "kodAdresnihoMista": 23814004,
+                  "psc": 50008,
+                  "textovaAdresa": "Přemyslova 1106/19, Nový Hradec Králové, 50008 Hradec Králové",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "301",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Lesy České republiky, s.p.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 86,
+                  "nazevKraje": "Královéhradecký kraj",
+                  "kodOkresu": 3602,
+                  "nazevOkresu": "Hradec Králové",
+                  "kodObce": 569810,
+                  "nazevObce": "Hradec Králové",
+                  "kodUlice": 130168,
+                  "nazevUlice": "Přemyslova",
+                  "cisloDomovni": 1106,
+                  "kodCastiObce": 47180,
+                  "cisloOrientacni": 19,
+                  "nazevCastiObce": "Nový Hradec Králové",
+                  "kodAdresnihoMista": 23814004,
+                  "psc": 50008,
+                  "textovaAdresa": "Přemyslova 1106/19, Nový Hradec Králové, 50008 Hradec Králové",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "301",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Lesy České republiky, s.p.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 86,
+                  "nazevKraje": "Královéhradecký kraj",
+                  "kodOkresu": 3602,
+                  "nazevOkresu": "Hradec Králové",
+                  "kodObce": 569810,
+                  "nazevObce": "Hradec Králové",
+                  "kodUlice": 130168,
+                  "nazevUlice": "Přemyslova",
+                  "cisloDomovni": 1106,
+                  "kodCastiObce": 47180,
+                  "cisloOrientacni": 19,
+                  "nazevCastiObce": "Nový Hradec Králové",
+                  "kodAdresnihoMista": 23814004,
+                  "psc": 50008,
+                  "textovaAdresa": "Přemyslova 1106/19, Nový Hradec Králové, 50008 Hradec Králové",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "301",
+            "datovyZdroj": "szr"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "Lesy České republiky, s.p.",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 86,
+                  "nazevKraje": "Královéhradecký kraj",
+                  "kodOkresu": 3602,
+                  "nazevOkresu": "Hradec Králové",
+                  "kodObce": 569810,
+                  "nazevObce": "Hradec Králové",
+                  "kodUlice": 130168,
+                  "nazevUlice": "Přemyslova",
+                  "cisloDomovni": 1106,
+                  "kodCastiObce": 47180,
+                  "cisloOrientacni": 19,
+                  "nazevCastiObce": "Nový Hradec Králové",
+                  "kodAdresnihoMista": 23814004,
+                  "psc": 50008,
+                  "textovaAdresa": "Přemyslova 1106/19, Nový Hradec Králové, 50008 Hradec Králové",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "301",
+            "spisovaZnacka": "AXII 540/KSHK",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "95310",
+          "02200",
+          "25530",
+          "02",
+          "03220",
+          "16",
+          "38110",
+          "431",
+          "58",
+          "71120",
+          "82100",
+          "101",
+          "28",
+          "35120",
+          "02100",
+          "08",
+          "47250",
+          "49410",
+          "41000",
+          "46900",
+          "70100",
+          "82990",
+          "93110",
+          "02400",
+          "49320",
+          "62",
+          "855",
+          "011",
+          "36000",
+          "256",
+          "471",
+          "55",
+          "56110",
+          "49200",
+          "016",
+          "3317",
+          "43320"
+        ],
+        "subRegistrSzr": "ezp"
+      }
+    ]
+  }
+}

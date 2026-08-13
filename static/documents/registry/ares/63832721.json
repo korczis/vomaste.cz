@@ -1,0 +1,246 @@
+{
+  "retrieved": "2026-08-09",
+  "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
+  "request": {
+    "ico": [
+      "63832721"
+    ],
+    "pocet": 1,
+    "start": 0
+  },
+  "response": {
+    "pocetCelkem": 1,
+    "ekonomickeSubjekty": [
+      {
+        "ico": "63832721",
+        "obchodniJmeno": "ACRI - Asociace podniků českého železničního průmyslu",
+        "sidlo": {
+          "kodStatu": "CZ",
+          "nazevStatu": "Česká republika",
+          "kodKraje": 19,
+          "nazevKraje": "Hlavní město Praha",
+          "kodObce": 554782,
+          "nazevObce": "Praha",
+          "kodSpravnihoObvodu": 19,
+          "nazevSpravnihoObvodu": "Praha 1",
+          "kodMestskehoObvodu": 19,
+          "nazevMestskehoObvodu": "Praha 1",
+          "kodMestskeCastiObvodu": 500054,
+          "kodUlice": 466115,
+          "nazevMestskeCastiObvodu": "Praha 1",
+          "nazevUlice": "Politických vězňů",
+          "cisloDomovni": 1419,
+          "kodCastiObce": 490148,
+          "cisloOrientacni": 11,
+          "nazevCastiObce": "Nové Město",
+          "kodAdresnihoMista": 21711852,
+          "psc": 11000,
+          "textovaAdresa": "Politických vězňů 1419/11, Nové Město, 11000 Praha 1",
+          "standardizaceAdresy": true,
+          "typCisloDomovni": 1
+        },
+        "pravniForma": "751",
+        "pravniFormaRos": "751",
+        "financniUrad": "001",
+        "datumVzniku": "1995-11-28",
+        "datumAktualizace": "2026-03-05",
+        "dic": "CZ63832721",
+        "icoId": "63832721",
+        "adresaDorucovaci": {
+          "radekAdresy1": "Politických vězňů 1419/11",
+          "radekAdresy2": "Nové Město",
+          "radekAdresy3": "11000 Praha 1"
+        },
+        "czNace2008": [
+          "9499"
+        ],
+        "seznamRegistraci": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "AKTIVNI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        },
+        "primarniZdroj": "ros",
+        "dalsiUdaje": [
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "ACRI - Asociace podniků českého železničního průmyslu",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 466115,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Politických vězňů",
+                  "cisloDomovni": 1419,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 11,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21711852,
+                  "psc": 11000,
+                  "textovaAdresa": "Politických vězňů 1419/11, Nové Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "751",
+            "pravniFormaRos": "751",
+            "datovyZdroj": "res"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "ACRI - Asociace podniků českého železničního průmyslu",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 466115,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Politických vězňů",
+                  "cisloDomovni": 1419,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 11,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21711852,
+                  "psc": 11000,
+                  "textovaAdresa": "Politických vězňů 1419/11, Nové Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniFormaRos": "751",
+            "datovyZdroj": "ros"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "ACRI - Asociace podniků českého železničního průmyslu",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 466115,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Politických vězňů",
+                  "cisloDomovni": 1419,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 11,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21711852,
+                  "psc": 11000,
+                  "textovaAdresa": "Politických vězňů 1419/11, Nové Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "751",
+            "datovyZdroj": "rzp"
+          },
+          {
+            "obchodniJmeno": [
+              {
+                "obchodniJmeno": "ACRI - Asociace podniků českého železničního průmyslu",
+                "primarniZaznam": true
+              }
+            ],
+            "sidlo": [
+              {
+                "sidlo": {
+                  "kodStatu": "CZ",
+                  "nazevStatu": "Česká republika",
+                  "kodKraje": 19,
+                  "nazevKraje": "Hlavní město Praha",
+                  "kodObce": 554782,
+                  "nazevObce": "Praha",
+                  "kodSpravnihoObvodu": 19,
+                  "nazevSpravnihoObvodu": "Praha 1",
+                  "kodMestskehoObvodu": 19,
+                  "nazevMestskehoObvodu": "Praha 1",
+                  "kodMestskeCastiObvodu": 500054,
+                  "kodUlice": 466115,
+                  "nazevMestskeCastiObvodu": "Praha 1",
+                  "nazevUlice": "Politických vězňů",
+                  "cisloDomovni": 1419,
+                  "kodCastiObce": 490148,
+                  "cisloOrientacni": 11,
+                  "nazevCastiObce": "Nové Město",
+                  "kodAdresnihoMista": 21711852,
+                  "psc": 11000,
+                  "textovaAdresa": "Politických vězňů 1419/11, Nové Město, 11000 Praha 1",
+                  "standardizaceAdresy": true,
+                  "typCisloDomovni": 1
+                },
+                "primarniZaznam": true
+              }
+            ],
+            "pravniForma": "751",
+            "spisovaZnacka": "L 58884/MSPH",
+            "datovyZdroj": "vr"
+          }
+        ],
+        "czNace": [
+          "9499"
+        ]
+      }
+    ]
+  }
+}

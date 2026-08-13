@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jan-hamacek/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jan-hamacek"
+  },
+  "title": "SRC-01 — Vláda ČR (oficiální profil člena vlády)",
+  "description": "Oficiální vládní profil: 1. vicepremiér a ministr vnitra od 27. 6. 2018, předseda ČSSD od 2018, předseda PS 2013–2017.",
+  "outlet": "Vláda České republiky (vlada.gov.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://vlada.gov.cz/cz/clenove-vlady/jan-hamacek-167024/",
+  "retrieved": "2026-08-08",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jan-hamacek/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "jan-hamacek"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální profil člena vlády na webu Vlády ČR, otevřen a přečten 2026-08-08.\nUvádí funkci 1. místopředsedy vlády a ministra vnitra od 27. 6. 2018 (s dovolenou/demisí 11. 11. – 17. 12. 2021), dvojí pověření řízením ministerstva zahraničních věcí (27. 6. – 15. 10. 2018 a 12. – 21. 4. 2021), předsednictví ČSSD od 2018, předsednictví Poslanecké sněmovny 2013–2017 a poslanecký mandát od 2006.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam** — dokládá výkon veřejných funkcí a jejich data; současné soukromé působení dokládá SRC-02."
+    }
+  ],
+  "order": 1
+}

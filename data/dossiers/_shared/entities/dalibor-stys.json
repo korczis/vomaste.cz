@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/dalibor-stys",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "dalibor-stys",
+  "entityId": "dalibor-stys",
+  "title": "Dalibor Štys",
+  "entityType": "person",
+  "publicationRole": "subject",
+  "dossierEnabled": true,
+  "dossierStatus": "authorized",
+  "coverageState": "referenced",
+  "dossiers": [
+    "dalibor-stys"
+  ],
+  "order": 591,
+  "description": "Dalibor Štys — bývalý ministr školství (2013–2014).",
+  "provenance": {
+    "discoveredAt": "2026-08-08",
+    "discoveredVia": [
+      "government-roster-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Bývalý ministr školství, mládeže a tělovýchovy (10. 7. 2013 –\n29. 1. 2014, Rusnokova vláda, od 13. 8. 2013 v demisi).\n\nZáznam veřejné funkce, ne profil ani tvrzení o pochybení."
+    }
+  ],
+  "media": [
+    {
+      "file": "images/people/dalibor-stys.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dalibor_%C5%A0tys_2013.JPG",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "author": "David Sedlecký",
+      "credit": "Own work",
+      "retrieved": "2026-08-11",
+      "width": 1200,
+      "height": 1634,
+      "role": "portrait"
+    }
+  ],
+  "externalIds": {
+    "wikidata": "Q13593750"
+  }
+}

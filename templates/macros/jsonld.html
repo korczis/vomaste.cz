@@ -23,7 +23,7 @@
     ne z front matter — klíčové pořadí i tvar drží 1:1 s ld_source_node,
     takže emitované JSON-LD bajty se nemění a fingerprint dál přepočítává
     verify-jsonld ze stejných viditelných polí. -#}
-{%- macro ld_source_canonical(record, name="", fp="") -%}
+{% component jsonld_ld_source_canonical(record, name="", fp="") -%}
 {%- set st = record.sourceType | default(value="") -%}
 {%- if "komentář" in st or "názor" in st -%}
   {%- set ld_t = "OpinionNewsArticle" -%}
@@ -37,7 +37,7 @@
   {%- set ld_t = "Article" -%}
 {%- endif -%}
 {"@type":{{ ld_t | json_encode | safe }},"url":{{ record.url | json_encode | safe }}{% if name %},"name":{{ name | json_encode | safe }}{% endif %}{% if record.outlet %},"publisher":{"@type":"Organization","name":{{ record.outlet | json_encode | safe }}}{% endif %}{% if record.published %},"datePublished":{{ record.published | json_encode | safe }}{% endif %}{% if record.retrieved %},"vomaste:retrieved":{{ record.retrieved | json_encode | safe }}{% endif %}{% if fp %},"vomaste:citationFingerprint":{{ fp | json_encode | safe }}{% endif %}}
-{%- endmacro ld_source_canonical -%}
+{%- endcomponent %}
 
 {#- ld_source_node(sp) zanikl s fází H (T-028): stub stránky zdrojů už nenesou
     doménová pole (url/outlet/…); citační uzly staví ld_source_canonical(record)
@@ -48,7 +48,7 @@
     Both must stay in sync: verify-jsonld.mjs recomputes every emitted
     fingerprint, so a drift between them fails the build rather than
     silently publishing two different citations for one source. -#}
-{%- macro ld_source_record(s) -%}
+{% component jsonld_ld_source_record(s) -%}
 {%- set st = s.src_type | default(value="") -%}
 {%- if "komentář" in st or "názor" in st -%}
   {%- set ld_t = "OpinionNewsArticle" -%}
@@ -62,4 +62,4 @@
   {%- set ld_t = "Article" -%}
 {%- endif -%}
 {"@type":{{ ld_t | json_encode | safe }},"url":{{ s.url | json_encode | safe }}{% if s.title %},"name":{{ s.title | json_encode | safe }}{% endif %}{% if s.outlet %},"publisher":{"@type":"Organization","name":{{ s.outlet | json_encode | safe }}}{% endif %}{% if s.published %},"datePublished":{{ s.published | json_encode | safe }}{% endif %}{% if s.retrieved %},"vomaste:retrieved":{{ s.retrieved | json_encode | safe }}{% endif %}{% if s.fingerprint %},"vomaste:citationFingerprint":{{ s.fingerprint | json_encode | safe }}{% endif %}}
-{%- endmacro ld_source_record -%}
+{%- endcomponent %}

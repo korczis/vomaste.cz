@@ -1,0 +1,55 @@
+{
+  "schemaNote": "Preservation snapshot — structured ARES VR data only, personal data of natural persons (birth date, address) intentionally excluded per docs/constitution/OPEN_INTELLIGENCE_COMMONS.md §4.",
+  "ico": "62301659",
+  "retrievedAt": "2026-08-08",
+  "sourceUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/62301659",
+  "nazev": "SCHROM FARMS spol. s r.o.",
+  "sidlo": "č.p. 327, 74291 Velké Albrechtice",
+  "spisovaZnacka": {
+    "soud": "KSOS",
+    "oddil": "C",
+    "vlozka": "12600"
+  },
+  "statutarniOrgan": [
+    {
+      "role": "Jednatel",
+      "since": "2016-05-01",
+      "kind": "person",
+      "name": "Ing. Josef Fanta"
+    },
+    {
+      "role": "Jednatel",
+      "since": "2011-01-24",
+      "kind": "person",
+      "name": "Ing. Zdeněk Tvrdoň"
+    },
+    {
+      "role": "jednatel",
+      "since": "2016-03-01",
+      "kind": "person",
+      "name": "Ing. Michal Hájek"
+    },
+    {
+      "role": "Jednatel",
+      "since": "2025-03-07",
+      "kind": "person",
+      "name": "Ing. Jiří Šavrda"
+    },
+    {
+      "role": "Jednatel",
+      "since": "2026-01-01",
+      "kind": "person",
+      "name": "Ing. Michal Jedlička"
+    }
+  ],
+  "spolecnici": [
+    {
+      "kind": "company",
+      "name": "AGROFERT, a.s.",
+      "ico": "26185610",
+      "podil": "100",
+      "vklad": "70000000;00",
+      "splaceno": "100"
+    }
+  ]
+}

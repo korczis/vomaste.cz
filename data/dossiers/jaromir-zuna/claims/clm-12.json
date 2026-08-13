@@ -10,11 +10,14 @@
     "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna"
   },
   "text": "Inspekce ministerstva obrany v červnu 2026 neprokázala, že by resort zveřejnění rozhovoru zakázal nebo že šlo o cílenou cenzuru; chyby konstatovala na obou stranách — u vedoucího komunikace generálního štábu (nový kanál bez oficiální žádosti) i u ministrova kabinetu (nedostatečná proaktivita).",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jaromir-zuna/sources/SRC-43"
     }
   ],
   "subjects": [
