@@ -31,6 +31,7 @@ Po každé změně CLAUDE.md, .claude/rules/**, .claude/skills/**, .claude/agent
 - CT6 — skill uvádí, kdy se NEMÁ použít
 - CT7 — jméno se neopakuje mezi skillem, agentem a workflow
 - CT8 — workflow deklaruje jen existující skilly a agenty, personu ze závazného slovníku a cíl
+- CT9 — zapisující skill, který mění sdílený stav nebo se dotýká rozsahu pokrytí, má disable-model-invocation
 
 ## Co je potřeba vědět {#pozor}
 
@@ -38,4 +39,5 @@ Po každé změně CLAUDE.md, .claude/rules/**, .claude/skills/**, .claude/agent
 - Doplňuje katalog toolingu, nenahrazuje ho: katalog hlídá, že každá schopnost má záznam, tenhle validátor hlídá, že cíle odkazů existují.
 - Soubory, které jsou záměrně gitignorované a lokální (.prismatic-local.toml, CLAUDE.local.md, .claude/settings.local.json), jsou vyjmenované jako výjimka. Odvozovat výjimku z .gitignore by znamenalo, že cokoli ignorovaného přestane být hlídané.
 - Součást npm run build i pre-commit hooku. V režimu dev neběží — je to rychlá iterační smyčka a brána tam nic nepřidá.
+- CT9 nevyžaduje zámek u schopností, které jen čtou. Kontrola rozsahu se má dít často a sama; brána, která by ji zamykala, by byla překážkou správného chování.
 

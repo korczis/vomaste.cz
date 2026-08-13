@@ -29,7 +29,10 @@
  *   CT7  název skillu, agenta a workflow je unikátní napříč vrstvami;
  *   CT8  workflow deklaruje jen skilly a agenty, které existují, a
  *        personu ze závazného slovníku. Cesta ukazující na schopnost,
- *        která zanikla, je návod, který nejde projít.
+ *        která zanikla, je návod, který nejde projít;
+ *   CT9  skill, jehož účinek opouští repozitář nebo se těžko vrací,
+ *        má `disable-model-invocation`. Claude ho pak nesmí spustit
+ *        mimoděk jako vedlejší efekt jiné práce — vyvolá ho člověk.
  *
  * CO ZÁMĚRNĚ NEKONTROLUJE
  * -----------------------
@@ -289,6 +292,37 @@ export function validate(root = ROOT) {
     if (!meta.persona) errors.push(`CT8: ${file} neuvádí personu.`);
     else if (!PERSONAS.has(meta.persona)) errors.push(`CT8: ${file} uvádí neznámou personu "${meta.persona}".`);
     if (!meta.goal) errors.push(`CT8: ${file} neuvádí goal — cesta bez cíle se nedá dokončit.`);
+  }
+
+  // CT9 — riziková schopnost se nesmí spustit mimoděk.
+  // Kritérium není „zapisuje": zapisuje spousta věcí a většina je
+  // triviálně vratná `git checkout`. Kritérium je, jestli účinek
+  // OPOUŠTÍ repozitář (commit, push, PR), mění SDÍLENÝ stav (schéma,
+  // pipeline), nebo se dotýká rozsahu pokrytí osob.
+  const catalogDir = join(root, "data/tooling");
+  if (existsSync(catalogDir)) {
+    for (const file of readdirSync(catalogDir).filter((f) => f.startsWith("skill-") && f.endsWith(".json"))) {
+      const rec = JSON.parse(readFileSync(join(catalogDir, file), "utf8"));
+      // Podmínkou je ZÁPIS. Schopnost, která jen čte, nemůže udělat
+      // nic nevratného — a kontrola rozsahu se má dít často a sama,
+      // ne až když si na ni někdo vzpomene. Bez téhle podmínky by
+      // brána vyžadovala zámek i na /authorization-check, což by ji
+      // proměnilo v překážku správného chování.
+      const risky =
+        rec.writes === true &&
+        (rec.riskLevel === "maintainer" ||
+          rec.riskLevel === "owner-authorization" ||
+          rec.requiresAuthorization === true);
+      if (!risky) continue;
+      const skillPath = join(root, ".claude/skills", rec.name, "SKILL.md");
+      if (!existsSync(skillPath)) continue; // řeší G2 v katalogu
+      if (!/^disable-model-invocation:\s*(true|yes|on|1)\s*$/mi.test(readFileSync(skillPath, "utf8"))) {
+        errors.push(
+          `CT9: skill "${rec.name}" (${rec.riskLevel}${rec.requiresAuthorization ? ", dotýká se rozsahu" : ""}) ` +
+            "nemá disable-model-invocation — Claude by ho mohl spustit mimoděk.",
+        );
+      }
+    }
   }
 
   // CT7 — jméno je adresa. Dvě vrstvy se stejným jménem znamenají, že

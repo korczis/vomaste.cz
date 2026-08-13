@@ -2,6 +2,7 @@
 name: correction
 description: Vede opravu chyby v publikovaném obsahu od nahlášení přes ověření a zápis až po validaci a doložení, co se změnilo a proč. Rozlišuje typy oprav, protože faktická oprava, mrtvý odkaz a překlep mají velmi různé nároky. Použij ho, když někdo hlásí „tohle je špatně", „ten odkaz nefunguje", „to není přesné", nebo když review našel nález k opravě.
 argument-hint: "<co je špatně a kde> [zdroj, který to dokládá]"
+disable-model-invocation: true
 ---
 
 Řízená oprava. **Zapisuje do kanonických dat**, takže výsledek jde na

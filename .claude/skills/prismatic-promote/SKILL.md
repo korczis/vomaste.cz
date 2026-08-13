@@ -2,6 +2,7 @@
 name: prismatic-promote
 description: Consumes an explicit review manifest, validates evidence/provenance and writes canonical changes through existing generators and data contracts. Never commits, pushes or deploys. This is the only step in the Prismatic pipeline allowed to touch data/dossiers/**.
 argument-hint: --manifest <data/review/prismatic/run-id.json> [--dry-run]
+disable-model-invocation: true
 ---
 
 ## Status: not implemented — read this before running anything

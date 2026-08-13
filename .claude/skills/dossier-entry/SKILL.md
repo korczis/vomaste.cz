@@ -2,6 +2,7 @@
 name: dossier-entry
 description: Guided, validator-checked workflow for adding a source (SRC), claim (CLM), case (CASE), gap (GAP), or relation to a vomaste.cz dossier — enforces the authorization-scope gate, edits the canonical JSON dataset (data/dossiers/**), and regenerates the content adapters before anything is considered done.
 argument-hint: <source|claim|case|gap|relation> for <dossier-slug>
+disable-model-invocation: true
 ---
 
 ## Before anything else: the scope gate

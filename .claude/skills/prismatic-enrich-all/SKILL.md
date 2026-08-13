@@ -2,6 +2,7 @@
 name: prismatic-enrich-all
 description: Builds a deterministic job plan across canonical entities and dossiers, runs only applicable Prismatic capabilities, imports sanitized candidates into staging and generates a review report. Never writes canonical content. Run after prismatic-bootstrap confirms both repos are ready.
 argument-hint: [--entity <id> | --dossier <slug> | --all] [--dry-run]
+disable-model-invocation: true
 ---
 
 ## Status (2026-08-06): `plan` is real, narrowly scoped; `run`/`import`/`review` are not

@@ -143,6 +143,32 @@ test("CT8: neznámá persona a chybějící cíl shodí bránu", () => {
   assert.ok(noGoal.some((e) => /^CT8:.*neuvádí goal/.test(e)));
 });
 
+test("CT9: riziková zapisující schopnost bez zámku shodí bránu", () => {
+  // Nejcennější negativní případ celé brány: /commit na master nasazuje
+  // web během sekund. Kdyby ho Claude mohl spustit mimoděk jako vedlejší
+  // efekt jiné práce, není mezi rozpracovanou změnou a produkcí nic.
+  const path = join(ROOT, ".claude/skills/commit/SKILL.md");
+  const before = readFileSync(path, "utf8");
+  try {
+    writeFileSync(path, before.replace(/^disable-model-invocation:.*$/m, ""));
+    const errors = validate(ROOT);
+    assert.ok(errors.some((e) => /^CT9: skill "commit"/.test(e)), JSON.stringify(errors));
+  } finally {
+    writeFileSync(path, before);
+  }
+  assert.deepEqual(validate(ROOT), []);
+});
+
+test("CT9: schopnost, která jen čte, zámek nepotřebuje", () => {
+  // /authorization-check se rozsahu dotýká, ale nic nemění. Kontrola
+  // rozsahu se má dít často a sama — brána, která by ji zamykala, by
+  // byla překážkou správného chování, ne pojistkou.
+  const rec = JSON.parse(readFileSync(join(ROOT, "data/tooling/skill-authorization-check.json"), "utf8"));
+  assert.equal(rec.requiresAuthorization, true);
+  assert.equal(rec.writes, false);
+  assert.ok(!validate(ROOT).some((e) => e.includes("authorization-check")));
+});
+
 /* ---- 4) golden paths: každá persona má průchozí cestu ---------------- */
 
 const PERSONAS = [

@@ -287,6 +287,7 @@ Publikovaná podoba: [/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prik
 - CT6 — skill uvádí, kdy se NEMÁ použít
 - CT7 — jméno se neopakuje mezi skillem, agentem a workflow
 - CT8 — workflow deklaruje jen existující skilly a agenty, personu ze závazného slovníku a cíl
+- CT9 — zapisující skill, který mění sdílený stav nebo se dotýká rozsahu pokrytí, má disable-model-invocation
 
 ### `npm run validate:concepts`
 

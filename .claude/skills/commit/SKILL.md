@@ -2,6 +2,7 @@
 name: commit
 description: Make a well-formed commit in vomaste.cz — conventional message, correct build gate for the situation (pre-commit fast subset vs. full npm run build before merge/push), the right coop-bus report for your role, and awareness that on master a commit auto-pushes/deploys via .githooks/post-commit.
 argument-hint: [optional: short description of the change]
+disable-model-invocation: true
 ---
 
 ## Before committing

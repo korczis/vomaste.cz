@@ -2,6 +2,7 @@
 name: schema-change
 description: Provede změnu kanonického schématu se všemi místy, která z ní plynou — schéma, existující data, generátory, view modely, šablony, exporty, JSON-LD, validátory, testy, migrace a dokumentace. Použij ho při přidání, přejmenování nebo odebrání pole v záznamu, nebo když někdo řekne „chci u zdroje evidovat i X".
 argument-hint: "<typ záznamu> <co se mění>"
+disable-model-invocation: true
 ---
 
 Změna datového kontraktu. **Riziko: maintainer.** Poloviční

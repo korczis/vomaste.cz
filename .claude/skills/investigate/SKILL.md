@@ -2,6 +2,7 @@
 name: investigate
 description: Run one authorized investigation end-to-end — scope check, branch, an investigation manifest, source-gated research (per-record handoff to dossier-entry), and a PR that a human must approve. Never auto-publishes. See docs/adr/aiad-and-agent-tooling-import.md for why this is one skill, not an agent framework.
 argument-hint: <subject-entity-id> "<specific topic — must already be authorized, or be a scope extension the owner is explicitly authorizing in this conversation>"
+disable-model-invocation: true
 ---
 
 ## What this is, and isn't
