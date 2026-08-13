@@ -182,9 +182,9 @@ Legenda stavu: ` ` čeká · `~` běží · `x` hotovo · `!` blokováno
 
 ### Fáze N — vstupní dokumenty
 
-- [ ] **N1** `docs/claude-code/README.md` — krátký rozcestník.
-- [ ] **N2** `README.md` + `CONTRIBUTING.md` — sekce „Work with Claude Code".
-- [ ] **N3** Troubleshooting (KB + odkazy z `/doctor`).
+- [x] **N1** `docs/claude-code/README.md` — krátký rozcestník.
+- [x] **N2** `README.md` + `CONTRIBUTING.md` — sekce „Work with Claude Code".
+- [x] **N3** Troubleshooting (KB + odkazy z `/doctor`).
 
 ### Fáze O — uzavření
 
