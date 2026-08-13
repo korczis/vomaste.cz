@@ -19,7 +19,8 @@ next_route = "@/prispet/cesta-prispevatele.md"
 next_label = "Cesta přispěvatele"
 +++
 
-**Co potřebujete:** Node (verzi drží `.tool-versions`) a Zola. Žádnou
+**Co potřebujete:** Node (verzi drží `.tool-versions`) a Zola v řadě,
+kterou očekává `just doctor` — na starší řadě build spadne. Žádnou
 databázi, žádný backend.
 
 ## Celý postup

@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/quality — Kontrola připravenosti"
 template = "tooling-command.html"
-weight = 113
+weight = 114
 description = "Kontrola připravenosti: Souhrn před odesláním: stav gitu a nečekané soubory, rozpis změn po kategoriích, rychlé validátory, drift generovaných souborů, dopad na dokumentaci, redakční review u obsahové změny a plná brána. Claude skill, kontrola výstupů."
 
 [extra]

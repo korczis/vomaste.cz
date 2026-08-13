@@ -18,7 +18,7 @@
 //
 // Second rule (2026-07-30, owner-directed): tabular data goes through the
 // shared advanced-table component. Any template under templates/ that
-// renders a raw <table> outside macros/table.html must import
+// renders a raw <table> outside macros/table.html must call
 // the shared table_advanced_table component — the single table
 // component (Flowbite "Advanced Tables"-style, own implementation over
 // free Tailwind/Flowbite) whose wrapper carries data-record-type linking
@@ -48,8 +48,8 @@ const EXEMPT = {
 // calling a ui_* component, not by importing the file that defines them.
 const USE_RE = /<ui_[a-z_]+[\s/>]/;
 
-// Advanced-table rule. A template containing a raw <table> must import
-// call table_advanced_table (the raw <table> is
+// Advanced-table rule. A template containing a raw <table> must call
+// table_advanced_table instead (the raw <table> is
 // then expected to be gone — the component renders it). Per-file exemptions
 // with a rationale only, exactly like EXEMPT above.
 const TABLE_EXEMPT = {};

@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "workflow work-a-coop-task — Práce na co-op úkolu"
 template = "tooling-command.html"
-weight = 163
+weight = 164
 description = "Práce na co-op úkolu: Cesta pro souběžnou práci víc instancí: kontrola stavu sběrnice a kolizí, vlastní worktree a větev, doplnění prerekvizit v novém worktree, ohlášení překryvu PŘED začátkem, zelený build a merge-request. Claude workflow, provoz."
 
 [extra]

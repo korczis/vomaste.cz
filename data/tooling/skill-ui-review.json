@@ -17,7 +17,7 @@
   ],
   "riskLevel": "read-only",
   "writes": false,
-  "summary": "Zkontroluje změnu v šablonách proti konvencím tohohle webu: povinné znovupoužití macros/ui.html a jednotné tabulkové komponenty, čtení view modelu místo hardcodovaných dat a slugů, doktrínu F1–F7, prázdné a mezní stavy, responzivitu na čtyřech šířkách a jedinou povolenou cestu k zobrazení média.",
+  "summary": "Zkontroluje změnu v šablonách proti konvencím tohohle webu: povinné volání sdílených komponent ui_* a jediné tabulkové komponenty table_advanced_table, čtení view modelu místo hardcodovaných dat a slugů, doktrínu F1–F7, prázdné a mezní stavy, responzivitu na čtyřech šířkách a jedinou povolenou cestu k zobrazení média.",
   "whenToRun": "Po změně v templates/, assets/ nebo static/css/, a při vzniku nové šablony.",
   "describedFrom": "header",
   "notes": [

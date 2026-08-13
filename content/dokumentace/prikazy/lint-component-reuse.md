@@ -23,7 +23,7 @@ Po každé nové nebo přepsané šabloně.
 
 ## Co shodí běh {#vynucuje}
 
-- Obsahová top-level šablona, která nezavolá žádnou sdílenou komponentu ui_* (page_header, breadcrumb, stat_tile, registry-card, empty_state, back_link_footer…).
+- Obsahová top-level šablona, která nezavolá žádnou sdílenou komponentu ui_* (ui_page_header, ui_breadcrumb, ui_stat_tile, ui_empty_state, ui_back_link_footer…).
 - Šablona s vlastním <table> mimo macros/table.html, která nepoužije párovou komponentu table_advanced_table.
 
 ## Co je potřeba vědět {#pozor}

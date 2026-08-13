@@ -1,3 +1,9 @@
+*Historický dokument — implementační report z 2026-08-11, popisuje stav
+před migrací na Zolu 0.23 / Teru 2. `templates/shortcodes/` se dnes jmenuje
+`templates/components/` a zdůvodnění dělení maker přes `self::` je jev
+Tery 1, který už neplatí. Aktuální stav: `.claude/rules/learning.md`
+a `AGENTS.md`, sekce „Vzdělávací vrstva".*
+
 # Vzdělávací a onboardingová vrstva — implementační report
 
 **Datum:** 2026-08-11

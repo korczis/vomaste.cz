@@ -59,6 +59,10 @@ const BUILD_STEPS = [
   // scheduled network refresh can only create a reviewable branch/PR.
   "archive:check",
   "test",
+  // Shellový test, takže se do `test` (node --test nad *.test.mjs) nevejde.
+  // Hlídá guard, který rozhoduje, jestli se commit na master sám nasadí —
+  // jeho chyba znamená buď tichý nedeploy, nebo nechtěné zveřejnění.
+  "test:hooks",
   "build:government-roster",
   "validate:authorization",
   "verify:authorization-log",
@@ -178,6 +182,10 @@ const CHECK_STEPS = [
   "validate:claude-tooling",
   "lint:source-outlets",
   "check:workflow-parity",
+  // Staví jen dočasné repozitáře přes mktemp a nikdy nepushuje, takže se
+  // vejde i do rychlého režimu — a chybné rozhodnutí toho guardu znamená
+  // buď tichý nedeploy, nebo nechtěné zveřejnění.
+  "test:hooks",
 ];
 
 export const MODES = { build: BUILD_STEPS, dev: DEV_STEPS, check: CHECK_STEPS };

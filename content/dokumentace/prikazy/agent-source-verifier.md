@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "agent source-verifier — Ověřovatel zdrojů"
 template = "tooling-command.html"
-weight = 151
+weight = 152
 description = "Ověřovatel zdrojů: Otevře zadané zdroje a vrátí evidence summary: vydavatel, autor, datum vydání i pořízení, rubrika hledaná na stránce (ne v URL), primární versus převzatý původ, kandidát na zdrojovou rodinu, doslovné citace, jmenované třetí osoby, a hlavně konkrétně co dokládá a co nedokládá. Claude subagent, rešerše."
 
 [extra]

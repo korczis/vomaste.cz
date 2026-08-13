@@ -50,9 +50,18 @@ precedens), větve se jmenují `task/T-###`:
 
 ```sh
 scripts/coop/coop.sh wt-add T-001    # git worktree add ../vomaste-worktrees/T-001 -b task/T-001 master
-cd ~/dev/vomaste-worktrees/T-001 && npm ci   # worktree má vlastní node_modules
+cd ~/dev/vomaste-worktrees/T-001
+npm ci                               # worktree má vlastní node_modules
+npm run build:source-catalog         # jediný generovaný vstup, který pre-commit nevyrobí sám
 COOP_AGENT_ID=W-1 claude             # nová instance Claude Code v worktree
 ```
+
+**Ten druhý příkaz nevynechávej.** `data/generated/` je gitignorované, takže
+v čerstvém worktree neexistuje — a pre-commit brána, která ten výstup čte,
+spadne dřív, než se stihne kdokoli podivit. Bez `npm ci` padne hned první
+kontrola (`data:validate`) na chybějícím `ajv`; s ním, ale bez generátoru,
+padne poslední (`verify:source-catalog`). Ani jedna hláška neřekne
+„neběžely generátory“, obě čtou jako rozbitá data.
 
 Po mergnutí: `scripts/coop/coop.sh wt-done T-001` (odstraní worktree i
 větev). Worktree se nikdy nerecykluje na jiný task.
@@ -171,9 +180,20 @@ Bezpečnostní chování, které z toho dělá něco jiného než „vždy pushn
 
 - Spustí se **jen na `master`** — workeři v task worktreech (`task/T-###`)
   jím nejsou dotčeni, single-writer pravidlo výše platí beze změny.
-- Nikdy se nespustí uprostřed rebase/merge/cherry-picku (jinak by se
-  spouštěl na každém mezikroku `git rebase --continue` a pushoval
-  rozpracovaný stav).
+- Nikdy se nespustí uprostřed rebase/cherry-picku/bisectu ani nad
+  rozpracovaným řešením konfliktu (jinak by se spouštěl na každém
+  mezikroku `git rebase --continue` a pushoval rozpracovaný stav).
+  Když se z tohohle důvodu nespustí, **napíše to** — do 2026-08-13 mlčel
+  a „nic se nevypsalo" se čte jako „nasadilo se to".
+- **Dokončený merge mezi ně nepatří** — a do 2026-08-13 patřil. Guard
+  bral přítomnost `MERGE_HEAD` jako „merge probíhá", jenže git ho po
+  úspěšném `git merge --no-ff` uklízí až *po* doběhnutí post-merge hooku.
+  Hook se tedy umlčoval přesně pro ten případ, kvůli kterému vznikl:
+  merge worker větve na `master` se tvářil jako nasazený, ačkoli push
+  nikdy neproběhl a musel se dodělat ručně. Hlídá to
+  `npm run test:hooks` (součást `build` i `check`) — a hlídá to
+  fixturem, ne odvozením z kódu, protože chybné rozhodnutí tohohle guardu
+  znamená buď tichý nedeploy, nebo zveřejnění, které nikdo nechtěl.
 - Rebase na konflikt se **vzdá** (`rebase --abort`) a nechá commit
   lokální — žádné automatické řešení konfliktů. Recept na typicky
   konfliktní generované soubory je v sekci níž.

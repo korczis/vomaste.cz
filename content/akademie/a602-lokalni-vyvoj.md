@@ -25,7 +25,8 @@ next = "A603"
 
 ## Co je potřeba
 
-Node (verzi drží `.tool-versions`) a Zola. Nic dalšího — žádná databáze,
+Node (verzi drží `.tool-versions`) a Zola v řadě, kterou očekává
+`just doctor` — na starší řadě build spadne. Nic dalšího — žádná databáze,
 žádný běžící backend.
 
 ```bash

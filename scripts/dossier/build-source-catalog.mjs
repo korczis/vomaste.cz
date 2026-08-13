@@ -426,9 +426,30 @@ writeIfChanged(OUT_DOC, doc + "\n");
 /* ---- 6) hlášení ------------------------------------------------------- */
 
 if (CHECK && changed.length) {
-  console.error("Katalog zdrojů není aktuální. Rozdíly by vznikly v:");
-  for (const p of changed) console.error(`  ${p}`);
-  console.error("Spusť: npm run build:source-catalog");
+  // Dva úplně různé stavy vypadaly v hlášce stejně: „výstup se rozešel se
+  // zdrojovými daty“ (někdo změnil data/source-catalog/ a nepřegeneroval)
+  // a „výstup nikdy nevznikl“ (čerstvý klon nebo nový worktree — adresář
+  // data/generated/ je gitignorovaný). Druhý případ se čte jako rozbitá
+  // data, ačkoli je v pořádku všechno kromě toho, že neběžely generátory,
+  // a je to nejčastější první zážitek v novém worktree. Rozlišujeme je.
+  //
+  // `changed` drží cesty relativní ke ROOT; existsSync by je jinak řešil
+  // proti cwd, a ta se liší podle toho, odkud kdo skript spustí.
+  const missing = changed.filter((p) => !existsSync(join(ROOT, p)));
+  const drifted = changed.filter((p) => existsSync(join(ROOT, p)));
+
+  if (drifted.length) {
+    console.error("Katalog zdrojů není aktuální — výstup se rozešel se zdrojovými daty:");
+    for (const p of drifted) console.error(`  ${p}`);
+  }
+  if (missing.length) {
+    console.error(
+      `${drifted.length ? "\n" : ""}Katalog zdrojů ještě nikdy nevznikl — tyhle soubory chybí (nejsou v gitu):`,
+    );
+    for (const p of missing) console.error(`  ${p}`);
+    console.error("Nejde o rozbitá data. V čerstvém klonu nebo novém worktree stačí generátory spustit.");
+  }
+  console.error("\nSpusť: npm run build:source-catalog");
   process.exit(1);
 }
 

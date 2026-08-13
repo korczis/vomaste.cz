@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "agent editorial-reviewer — Redakční recenzent"
 template = "tooling-command.html"
-weight = 149
+weight = 150
 description = "Redakční recenzent: Posoudí dossier jako celek a najde to, co z jednoho záznamu vidět není: nekonzistentní procesní rámování napříč zmínkami, tichou eskalaci tónu bez nových zdrojů, chybějící reakce subjektu, třetí osoby čtoucí se jako subjekty, koncentraci zdrojů u jednoho vydavatele a shrnutí říkající víc než záznamy pod ním.. Claude subagent, kontrola výstupů."
 
 [extra]

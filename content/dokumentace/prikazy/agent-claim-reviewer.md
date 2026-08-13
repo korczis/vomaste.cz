@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "agent claim-reviewer — Recenzent tvrzení"
 template = "tooling-command.html"
-weight = 147
+weight = 148
 description = "Recenzent tvrzení: Projde zadaná tvrzení dvanácti kontrolami proti jejich zdrojům a vrátí nálezy s prioritou, sloučené podle typu, plus výčet toho, co je v pořádku. Claude subagent, kontrola výstupů."
 
 [extra]

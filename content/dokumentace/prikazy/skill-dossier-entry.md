@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/dossier-entry — Přidání záznamu do dossieru"
 template = "tooling-command.html"
-weight = 139
+weight = 140
 description = "Přidání záznamu do dossieru: Vedený, validátorem kontrolovaný postup pro přidání zdroje, tvrzení, kauzy, mezery nebo vztahu: nejdřív autorizační brána, pak editace kanonického JSON datasetu a nakonec regenerace content adaptérů a build. Claude skill, provoz."
 
 [extra]

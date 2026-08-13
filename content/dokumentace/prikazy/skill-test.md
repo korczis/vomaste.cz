@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/test — Cílené spuštění testů"
 template = "tooling-command.html"
-weight = 120
+weight = 121
 description = "Cílené spuštění testů: Zjistí, co se změnilo, vybere nejmenší testovou sadu, která to pokryje, a při selhání vysvětlí příčinu místo symptomu — co test čekal, co dostal a jestli je správně kód, nebo očekávání. Claude skill, kontrola výstupů."
 
 [extra]

@@ -34,9 +34,33 @@ auto_push_master() {
   local GIT_DIR
   GIT_DIR="$(git rev-parse --git-dir)"
 
-  if [ -d "$GIT_DIR/rebase-merge" ] || [ -d "$GIT_DIR/rebase-apply" ] \
-     || [ -f "$GIT_DIR/MERGE_HEAD" ] || [ -f "$GIT_DIR/CHERRY_PICK_HEAD" ] \
-     || [ -f "$GIT_DIR/BISECT_LOG" ]; then
+  # Tenhle guard měl bránit běhu uprostřed rozdělané operace. U MERGE_HEAD
+  # ale zaměňoval „merge právě probíhá“ za „merge právě doběhl“: po
+  # úspěšném `git merge --no-ff` je MERGE_HEAD ve chvíli běhu post-merge
+  # PŘÍTOMNÉ — git ho uklízí až po hooku. Guard tedy umlčoval hook přesně
+  # pro ten případ, kvůli kterému post-merge vůbec vznikl (viz hlavička),
+  # a merge na master se od 2026-08-06 tvářil jako nasazený, ačkoli push
+  # nikdy neproběhl. Ověřeno fixture, ne odvozeno:
+  # scripts/coop/auto-push-guard.test.sh.
+  #
+  # V post-commit MERGE_HEAD diskvalifikuje dál — tam znamená rozpracované
+  # řešení konfliktu.
+  local blocker=""
+  if [ -d "$GIT_DIR/rebase-merge" ]; then blocker="rebase-merge"; fi
+  if [ -d "$GIT_DIR/rebase-apply" ]; then blocker="rebase-apply"; fi
+  if [ -f "$GIT_DIR/CHERRY_PICK_HEAD" ]; then blocker="cherry-pick"; fi
+  if [ -f "$GIT_DIR/BISECT_LOG" ]; then blocker="bisect"; fi
+  if [ -f "$GIT_DIR/MERGE_HEAD" ] && [ "$hook_name" != "post-merge" ]; then
+    blocker="merge"
+  fi
+
+  # A druhá polovina téže chyby: tenhle návrat byl tichý. Kdo mergnul na
+  # master, neviděl nic — ani push, ani důvod, proč nebyl. „Nic se
+  # nevypsalo“ se přitom čte jako „proběhlo to“, a u deploye je to ten
+  # horší směr omylu.
+  if [ -n "$blocker" ]; then
+    echo "$hook_name: auto-push přeskočen — probíhá $blocker." >&2
+    echo "$hook_name: až operaci dokončíš, nasaď ručně: npm run build && git push origin master" >&2
     return 0
   fi
 

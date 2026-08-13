@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "just dev — Živý náhled"
 template = "tooling-command.html"
-weight = 174
+weight = 175
 description = "Živý náhled: Zkratka na živý náhled na http://127.0.0.1:1111. just recept, provoz."
 
 [extra]

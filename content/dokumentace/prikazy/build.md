@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run build — Plný build — brána kvality"
 template = "tooling-command.html"
-weight = 93
+weight = 94
 description = "Plný build — brána kvality: Jediný orchestrační vstup build pipeline. npm skript, provoz."
 
 [extra]

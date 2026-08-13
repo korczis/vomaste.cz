@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/a11y-review — Review přístupnosti"
 template = "tooling-command.html"
-weight = 107
+weight = 108
 description = "Review přístupnosti: Deset kontrol přístupnosti: sémantika, hierarchie nadpisů, popisky ovládacích prvků, ovladatelnost klávesnicí, viditelný a správně vracený focus, ARIA, kontrast z palety, respektování redukovaného pohybu a dostupnost hlavního obsahu bez JavaScriptu. Claude skill, kontrola výstupů."
 
 [extra]

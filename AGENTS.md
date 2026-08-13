@@ -1006,9 +1006,12 @@ přes Tailwind breakpointy, širý obsah v `overflow-x-auto`; **F5**
 sémantika a ARIA (nav/aria-label, sr-only, role) — přímo, nebo přes
 `macros/ui.html`; **F6** interaktivní vzory podle Flowbite komponent
 (drawer/navbar data-atributy, žádný vlastní ad-hoc JS shell); **F7**
-typografická hierarchie dle Flowbite Typography. Per-article ověření a
-plán: `docs/dossier-audit/FLOWBITE_PLAN.md` (regenerovat při přidání
-šablony). Nová šablona, která doktrínu porušuje, neprojde buildem —
+typografická hierarchie dle Flowbite Typography. Doktrínu vynucuje build
+(`verify-full-pages.mjs` pro F1, `lint:component-reuse` pro tabulkovou
+komponentu); per-article audit z 2026-07-30 je archivovaný
+v `docs/dossier-audit/FLOWBITE_PLAN.md` — je to **ručně psaný** snímek
+tehdejšího stavu, ne generovaný soubor, a neaktualizuje se (žádný skript
+ani npm příkaz ho neumí přegenerovat). Nová šablona, která doktrínu porušuje, neprojde buildem —
 adoptér, který kontroly vypne, se nemůže hlásit k tomuto UI standardu.
 
 ## Metadata

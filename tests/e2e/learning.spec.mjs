@@ -80,7 +80,7 @@ test("řešení cvičení jde odhalit klávesnicí a je v HTML i zavřené", asy
 test("cvičná data jsou vždy označená jako fiktivní", async ({ page }) => {
   // Tohle je bezpečnostní pojistka, ne kosmetika: cvičný příklad, který
   // by šel číst jako publikovaný záznam o skutečném člověku, je přesně to,
-  // co AGENTS.md zakazuje. Označení vypisuje shortcode, ne autor lekce.
+  // co AGENTS.md zakazuje. Označení vypisuje komponenta, ne autor lekce.
   await page.goto("/bootcamp/01-klasifikuj-tvrzeni/");
   await expect(page.getByText(/FIKTIVNÍ \/ CVIČNÁ DATA/i).first()).toBeVisible();
 });

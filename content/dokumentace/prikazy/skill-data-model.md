@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/data-model — Průvodce datovým modelem"
 template = "tooling-command.html"
-weight = 137
+weight = 138
 description = "Průvodce datovým modelem: Odpoví na otázky o kanonickém datovém modelu ze schématu, validátorů a skutečných záznamů — jaká pole typ má, co je povinné, jaké enumy jsou uzavřené, kdo pole vynucuje nad rámec tvaru a kdo ho čte. Claude skill, provoz."
 
 [extra]

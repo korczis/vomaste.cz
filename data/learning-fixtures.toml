@@ -17,7 +17,7 @@
 #      neexistuje a existovat nebude; cvičení pracují s tímhle souborem,
 #      ne s publikovaným datasetem.
 #
-# Šablony vykreslují cvičná data přes `shortcodes/cvicna_data.html`, který
+# Šablony vykreslují cvičná data přes `templates/components/cvicna_data.html`, který
 # vždycky přidá viditelné označení „FIKTIVNÍ / CVIČNÁ DATA“. Cvičný záznam se
 # tedy nikde nemůže zobrazit tak, aby vypadal jako publikovaný.
 
