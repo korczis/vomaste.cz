@@ -39,15 +39,16 @@ adaptéry nesou jen routovací obálku.
 
 ## Co je vynucené
 
-**Znovupoužití komponent.** Obsahová šablona musí importovat a použít
-sdílenou UI knihovnu. Výjimky jsou per-soubor a s odůvodněním, ne plošné.
+**Znovupoužití komponent.** Obsahová šablona musí zavolat některou ze
+sdílených `ui_*` komponent. Komponenty jsou globální — nic se
+neimportuje. Výjimky jsou per-soubor a s odůvodněním, ne plošné.
 
 **Tabulky přes jednu komponentu.** Šablona s `<table>` mimo tabulkové
-makro build shodí. Obal navíc nese typ záznamu, který provazuje řádky se
+komponentu build shodí. Obal navíc nese typ záznamu, který provazuje řádky se
 strukturovanými daty stránky.
 
 **Metadata jen na jednom místě.** Žádná šablona nepíše značky pro sociální
-sítě ručně — vydává je jediné makro podle politiky v datech, a kontrola po
+sítě ručně — vydává je jediná komponenta podle politiky v datech, a kontrola po
 sestavení to ověřuje.
 
 **Žádný inline `style`.** Utility třídy, ne vlastní atributy. Kontroluje se

@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/build — Kanonická brána kvality"
 template = "tooling-command.html"
-weight = 108
+weight = 109
 description = "Kanonická brána kvality: Spustí npm run build a vyloží výsledek strukturovaně: který krok padl, co ta hláška znamená a co s ní. Claude skill, kontrola výstupů."
 
 [extra]

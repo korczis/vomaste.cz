@@ -213,9 +213,21 @@
     optional title / subtitle / href appear only when the data has them —
     nothing is invented to fill a slot. Mobile-first: full width by default,
     constrained from `sm:` upward. -#}
-{% component ui_media_figure(item, sizes="w-full sm:w-64", eager=false) -%}
+{% component ui_media_figure(item, sizes="w-full sm:w-64", eager=false, subject="") -%}
 <figure class="{{ sizes }} overflow-hidden rounded-lg border border-white/10 bg-white/5">
-  {%- set img_alt = item.title | default(value="") -%}
+  {#- Popis musí dodat volající. Media záznamy pole `title` nemají
+      VŮBEC, takže `item.title | default(value="")` sice zabere, ale
+      vrátí prázdno — a alt="" je platný zápis pro dekorativní obrázek,
+      takže to neohlásí ani axe. Bylo tak 69 z 69 fotek osob.
+
+      Prázdné alt zůstává legitimní tam, kde volající subject nepředá:
+      náhledy na přehledu licencí stojí vedle jména v témže řádku a
+      dekorativní tam skutečně jsou. -#}
+  {%- set img_alt = "" -%}
+  {%- if subject -%}
+    {%- if item.role == "logo" -%}{%- set_global img_alt = "Logo: " ~ subject -%}
+    {%- else -%}{%- set_global img_alt = "Portrét: " ~ subject -%}{%- endif -%}
+  {%- endif -%}
   {%- if item.href %}<a href="{{ item.href | safe }}" class="block focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300/70">{% endif -%}
   <img
     src="{{ get_url(path=item.file) | safe }}"
@@ -255,7 +267,7 @@
     viewport allows; a single item stays a single figure rather than a
     one-cell grid. Renders nothing at all when the entity has no media —
     an empty frame would be the placeholder this site refuses to ship. -#}
-{% component ui_media_gallery(items, heading="") -%}
+{% component ui_media_gallery(items, heading="", subject="") -%}
 {%- if items and items | length > 0 -%}
 <section class="mt-6" aria-label="{{ heading | default(value='Obrazová dokumentace') }}">
   {%- if heading %}
@@ -263,7 +275,7 @@
   {%- endif %}
   <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
     {%- for item in items %}
-    {{ <ui_media_figure item={item} sizes="w-full" eager={loop.first} /> }}
+    {{ <ui_media_figure item={item} sizes="w-full" eager={loop.first} subject={subject} /> }}
     {%- endfor %}
   </div>
 </section>

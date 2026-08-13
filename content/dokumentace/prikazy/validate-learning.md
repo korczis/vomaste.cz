@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run validate:learning — Kontrola integrity vzdělávací vrstvy"
 template = "tooling-command.html"
-weight = 16
+weight = 17
 description = "Kontrola integrity vzdělávací vrstvy: Ověřuje Start, Bootcamp, Akademii, Příručku a Jak přispět proti data/learning.toml a data/learning-fixtures.toml. npm skript, validace vstupů."
 
 [extra]

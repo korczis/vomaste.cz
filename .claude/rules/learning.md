@@ -50,8 +50,20 @@ rozsahu.**
 Zastaralá technická lekce je horší než žádná: čtenář podle ní pracuje
 a neví, že popisuje stav, který už neplatí.
 
-## Dvě Zola pasti, na které se tu najelo
+## Zola pasti, na které se tu najelo
 
-- `self::` **nefunguje** napříč importem, a self-import makra shodí Zolu
-  přetečením zásobníku — proto je `macros/learning-atoms.html` zvlášť.
 - `get_page()` bere cestu **bez** prefixu `@/`, na rozdíl od `get_url()`.
+- Komponenta vidí **jen své deklarované parametry**. Parametr, který je
+  deklarovaný a nikde nečtený, projde buildem bez chyby a obsah zmizí —
+  přesně tak se na 98 stránek dostal prázdný callout.
+- Filtr `default` reaguje jen na **chybějící** klíč, ne na prázdnou
+  hodnotu. `{{ label | default(value=x) }}` s volajícím, který posílá
+  `label=""`, vypíše prázdno.
+- Typ parametru se odvozuje z jeho **defaultu**. Parametr přijímající
+  čísla nemůže mít default `""`; sentinel jako `-1` se pak musí hlídat
+  guardem, jinak se vytiskne.
+
+`macros/learning-atoms.html` je zvlášť od `macros/learning.html` už jen
+kvůli přehlednosti — původní důvod (`self::` a přetečení zásobníku
+z self-importu maker) byl jev Tery 1 a po přechodu na Zolu 0.23
+neplatí.

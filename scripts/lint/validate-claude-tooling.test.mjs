@@ -159,6 +159,19 @@ test("CT9: riziková zapisující schopnost bez zámku shodí bránu", () => {
   assert.deepEqual(validate(ROOT), []);
 });
 
+test("CT2: odkaz na generovaný soubor projde i když soubor neexistuje", () => {
+  // Regrese z čerstvého worktree: `data/generated/tooling-catalog.json`
+  // je SPRÁVNÝ odkaz — jeho nepřítomnost znamená, že neběžely generátory,
+  // ne že dokumentace ukazuje do prázdna. Brána, která tohle hlásí, pošle
+  // člověka opravovat text, který je v pořádku.
+  const errors = withTempFile(
+    ".claude/rules/__test-probe.md",
+    "---\npaths:\n  - \"nikde/**\"\n---\n\nView modely jsou v `data/generated/views/x.json` a bundle v `static/js/app.js`.\n",
+    () => validate(ROOT),
+  );
+  assert.ok(!errors.some((e) => e.startsWith("CT2:")), JSON.stringify(errors));
+});
+
 test("CT9: schopnost, která jen čte, zámek nepotřebuje", () => {
   // /authorization-check se rozsahu dotýká, ale nic nemění. Kontrola
   // rozsahu se má dít často a sama — brána, která by ji zamykala, by

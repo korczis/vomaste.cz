@@ -69,7 +69,7 @@ What no persona may do is widen the coverage scope — that is governed by
 3. **Check prerequisites are actually met** — don't assume:
    ```bash
    node -v          # expect the version in .tool-versions (nodejs)
-   zola --version   # expect 0.22.x (CI pins 0.22.1)
+   zola --version   # expect 0.23.x (CI pins zola@0.23.3; 0.22 will not build this repo)
    git config --get core.hooksPath   # expect ".githooks"; if empty, run:
    npm run hooks:install
    npm ci           # if you haven't already — also (re)installs the git hook

@@ -4,11 +4,11 @@
 
 Publikovaná podoba: [/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prikazy/).
 
-178 příkazů celkem: 105 npm skriptů, 40 skills, 6 subagentů, 11 workflow, 16 just receptů. 55 z nich může shodit běh, 46 jsou krokem `npm run build` a 11 běží v pre-commit hooku.
+179 příkazů celkem: 106 npm skriptů, 40 skills, 6 subagentů, 11 workflow, 16 just receptů. 56 z nich může shodit běh, 47 jsou krokem `npm run build` a 12 běží v pre-commit hooku.
 
 **Pravidlo, které z katalogu plyne**: příkaz se přidává do `package.json` (nebo do `justfile` či `.claude/skills/`) a zároveň do `data/tooling/`. Bez záznamu build spadne — dokumentace tak nemůže zaostat za kódem.
 
-## npm skript (105)
+## npm skript (106)
 
 | Příkaz | Kategorie | Vynucuje | Pipeline | Pre-commit |
 |---|---|---|---|---|
@@ -22,6 +22,7 @@ Publikovaná podoba: [/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prik
 | [`npm run lint:hardcoded-records`](/dokumentace/prikazy/lint-hardcoded-records/) | validace vstupů | ano | build, check | — |
 | [`npm run lint:historical-coupling`](/dokumentace/prikazy/lint-historical-coupling/) | validace vstupů | ano | — | — |
 | [`npm run lint:source-outlets`](/dokumentace/prikazy/lint-source-outlets/) | validace vstupů | ano | check | — |
+| [`npm run lint:template-contracts`](/dokumentace/prikazy/lint-template-contracts/) | validace vstupů | ano | build, check | ano |
 | [`npm run validate:authorization`](/dokumentace/prikazy/validate-authorization/) | validace vstupů | ano | build, dev, check | ano |
 | [`npm run validate:claude-tooling`](/dokumentace/prikazy/validate-claude-tooling/) | validace vstupů | ano | build, check | ano |
 | [`npm run validate:concepts`](/dokumentace/prikazy/validate-concepts/) | validace vstupů | ano | build, check | — |
@@ -250,8 +251,8 @@ Publikovaná podoba: [/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prik
 
 ### `npm run lint:component-reuse`
 
-- Obsahová top-level šablona, která neimportuje a nepoužívá macros/ui.html (page_header, breadcrumb, stat_tile, registry-card, empty_state, back_link_footer…).
-- Šablona s vlastním <table> mimo macros/table.html, která neimportuje macros/table.html a nepoužívá table::advanced_table.
+- Obsahová top-level šablona, která nezavolá žádnou sdílenou komponentu ui_* (page_header, breadcrumb, stat_tile, registry-card, empty_state, back_link_footer…).
+- Šablona s vlastním <table> mimo macros/table.html, která nepoužije párovou komponentu table_advanced_table.
 
 ### `npm run lint:hardcoded-records`
 
@@ -267,6 +268,12 @@ Publikovaná podoba: [/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prik
 ### `npm run lint:source-outlets`
 
 - Aliasing outletu: týž vydavatel zapsaný dvěma způsoby (například „ČT24“ vs „ČT24 (Česká televize)“) — jinak by tvrzení citující obojí vypadalo jako dvě nezávislé rodiny.
+
+### `npm run lint:template-contracts`
+
+- TC1 — filtr `safe` na jméně, které není deklarovaný parametr ani lokální proměnná; u `body` navíc jen tam, kde se komponenta nikde nevolá párově
+- TC2 — parametr deklarovaný v hlavičce komponenty a nikde v těle nepřečtený
+- TC3 — podmínka na `x.a`, jejíž tělo čte rozvětvenou verzi téhož pole (`x.aResolved`) a `x.a` ani jednou
 
 ### `npm run validate:authorization`
 
@@ -520,7 +527,7 @@ Publikovaná podoba: [/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prik
 
 ## Příkazy podle kategorie
 
-- **validace vstupů** (18): `npm run archive:check`, `npm run data:compile`, `npm run data:validate`, `npm run check:workflow-parity`, `npm run intake:validate-form`, `npm run intake:validate-workflow`, `npm run lint:component-reuse`, `npm run lint:hardcoded-records`, `npm run lint:historical-coupling`, `npm run lint:source-outlets`, `npm run validate:authorization`, `npm run validate:claude-tooling`, `npm run validate:concepts`, `npm run validate:dossier-types`, `npm run validate:entity-types`, `npm run validate:learning`, `npm run validate:media`, `npm run verify:authorization-log`
+- **validace vstupů** (19): `npm run archive:check`, `npm run data:compile`, `npm run data:validate`, `npm run check:workflow-parity`, `npm run intake:validate-form`, `npm run intake:validate-workflow`, `npm run lint:component-reuse`, `npm run lint:hardcoded-records`, `npm run lint:historical-coupling`, `npm run lint:source-outlets`, `npm run lint:template-contracts`, `npm run validate:authorization`, `npm run validate:claude-tooling`, `npm run validate:concepts`, `npm run validate:dossier-types`, `npm run validate:entity-types`, `npm run validate:learning`, `npm run validate:media`, `npm run verify:authorization-log`
 - **generování** (20): `npm run build:data-exports`, `npm run build:entity-type-sections`, `npm run build:government-roster`, `npm run build:graph-projections`, `npm run build:jsonld-exports`, `npm run build:navigation`, `npm run build:routes`, `npm run build:search-index`, `npm run build:source-catalog`, `npm run build:tooling-catalog`, `npm run css:build`, `npm run data:generate-content`, `npm run data:metrics`, `npm run data:sync-content`, `npm run data:views`, `npm run generate:candidates`, `npm run generate:discovery-log`, `npm run intake:index`, `npm run js:build`, `npm run report:evidence-plan`
 - **kontrola výstupů** (58): `npm run archive:check-private`, `npm run data:check-generated`, `npm run data:check-generated:content`, `npm run intake:e2e-fixture`, `npm run intake:fixture`, `npm run intake:match-fixture`, `npm run intake:preflight-fixture`, `npm run intake:publish-fixture`, `npm run intake:validate`, `npm run lint:generated-content`, `npm run test`, `npm run test:e2e`, `npm run test:e2e:benchmark`, `npm run test:e2e:desktop`, `npm run test:intake`, `npm run test:intake:e2e`, `npm run test:intake:form`, `npm run test:intake:github`, `npm run test:intake:matching`, `npm run test:intake:preflight`, `npm run test:intake:risk`, `npm run validate:directory-index`, `npm run validate:graph-projections`, `npm run validate:navigation`, `npm run validate:navigation-metrics`, `npm run verify:anchors`, `npm run verify:export`, `npm run verify:full-pages`, `npm run verify:jsonld`, `npm run verify:navigation-counts`, `npm run verify:og`, `npm run verify:source-catalog`, `npm run verify:table-responsive`, `npm run verify:tooling-catalog`, `/a11y-review`, `/authorization-check`, `/build`, `/diagnose`, `/docs-sync`, `/editorial-review`, `/quality`, `/review-claim`, `/review-gap`, `/review-pr`, `/review-source`, `/seo-review`, `/source-family`, `/test`, `/ui-review`, `agent claim-reviewer`, `agent docs-auditor`, `agent editorial-reviewer`, `agent ui-reviewer`, `workflow review-a-dossier`, `workflow verify-a-claim`, `just doctor`, `just check`, `just test`
 - **rešerše** (30): `npm run archive:refresh-private`, `npm run archive:refresh-public`, `npm run media:fetch`, `npm run prismatic:diff`, `npm run prismatic:drift`, `npm run prismatic:enrich-all`, `npm run prismatic:import`, `npm run prismatic:plan`, `npm run prismatic:probe`, `npm run prismatic:promote`, `npm run prismatic:review`, `npm run prismatic:run`, `npm run prismatic:status`, `npm run prismatic:verify`, `npm run screening:public-money`, `npm run sources:detect-family`, `/evidence-packet`, `/find-source`, `/investigate`, `/prismatic-bootstrap`, `/prismatic-drift-audit`, `/prismatic-enrich-all`, `/prismatic-promote`, `/research-question`, `/verify-source`, `agent source-verifier`, `workflow research-a-topic`, `workflow submit-a-source`, `just ares *args`, `just expand ico *args`

@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run data:views — View modely pro šablony"
 template = "tooling-command.html"
-weight = 33
+weight = 34
 description = "View modely pro šablony: Z compiled modelu generuje deterministické view modely — jediný datový vstup šablon. npm skript, generování."
 
 [extra]

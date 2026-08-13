@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run validate:authorization — Autorizační brána dossierů"
 template = "tooling-command.html"
-weight = 11
+weight = 12
 description = "Autorizační brána dossierů: Vynucuje autorizační pravidlo z AGENTS.md: žádný dossier bez skutečného, datovaného autorizačního záznamu a žádná kontextová entita tiše vydávaná za subjekt hodný vlastního dossieru.. npm skript, validace vstupů."
 
 [extra]

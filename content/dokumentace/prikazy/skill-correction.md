@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/correction — Řízená oprava obsahu"
 template = "tooling-command.html"
-weight = 135
+weight = 136
 description = "Řízená oprava obsahu: Vede opravu publikovaného obsahu od nahlášení přes vlastní ověření, zjištění dosahu a zápis do kanonických dat až po validaci a doložení, co se změnilo a proč. Claude skill, provoz."
 
 [extra]

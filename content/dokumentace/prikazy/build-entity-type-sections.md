@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run build:entity-type-sections — Sekce podle typu entity"
 template = "tooling-command.html"
-weight = 20
+weight = 21
 description = "Sekce podle typu entity: Generuje jednu sekci na typ entity, takže každý typ má skutečnou routu místo pohledu existujícího jen v JavaScriptu.. npm skript, generování."
 
 [extra]

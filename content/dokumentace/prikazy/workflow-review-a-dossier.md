@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "workflow review-a-dossier — Redakční review dossieru"
 template = "tooling-command.html"
-weight = 152
+weight = 153
 description = "Redakční review dossieru: Cesta editora před publikací: review v celku, atomické kontroly u označených záznamů, mechanické brány z buildu a sloučené nálezy s prioritou. Claude workflow, kontrola výstupů."
 
 [extra]

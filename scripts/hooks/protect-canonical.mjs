@@ -46,7 +46,7 @@
  */
 
 import { existsSync, readFileSync } from "node:fs";
-import { join } from "node:path";
+import { dirname, join } from "node:path";
 
 const ROOT = process.env.CLAUDE_PROJECT_DIR ?? process.cwd();
 
@@ -79,12 +79,34 @@ const CANONICAL_HINT = {
   "docs/osint/SOURCE_CATALOG.md": "uprav `data/source-catalog/…` a spusť `npm run build:source-catalog`",
 };
 
+// Kořen se hledá i mimo CLAUDE_PROJECT_DIR. Bez toho hook nechrání
+// worktree: `CLAUDE_PROJECT_DIR` ukazuje na hlavní checkout, cesta do
+// `~/dev/vomaste-worktrees/T-###/AGENTS.md` pod něj nespadá, `decide`
+// vrátí null a zápis projde. Ověřeno v praxi — čtyři editace AGENTS.md
+// ve worktree prošly, aniž by se hook vůbec vyjádřil.
+//
+// Ve worktree je `.git` SOUBOR s ukazatelem, ne adresář, takže se
+// testuje existence, ne typ.
+function repoRootOf(absPath) {
+  let dir = dirname(absPath);
+  for (let i = 0; i < 40; i++) {
+    if (existsSync(join(dir, ".git"))) return dir;
+    const up = dirname(dir);
+    if (up === dir) break;
+    dir = up;
+  }
+  return null;
+}
+
 export function relativePath(filePath, root = ROOT) {
   if (!filePath) return null;
   const normalized = String(filePath).replace(/\\/g, "/");
   const base = String(root).replace(/\\/g, "/").replace(/\/$/, "");
   if (normalized.startsWith(`${base}/`)) return normalized.slice(base.length + 1);
-  if (normalized.startsWith("/")) return null; // mimo repozitář — není co chránit
+  if (normalized.startsWith("/")) {
+    const owner = repoRootOf(normalized);
+    return owner ? normalized.slice(owner.length + 1) : null;
+  }
   return normalized.replace(/^\.\//, "");
 }
 
@@ -102,14 +124,57 @@ export function isGenerated(rel) {
 // Editace autorizačního logu se pozná podle toho, že nahrazovaný text
 // leží ZA nadpisem logu. Zápis nového obsahu na konec souboru (append)
 // se tím neblokuje — a to je správně, nové záznamy vznikat mají.
+// Chráněný je KAŽDÝ datovaný autorizační záznam, ať leží kdekoli.
+//
+// Pozice v souboru se na to použít nedá: AGENTS.md prokládá log dalšími
+// governance sekcemi (`## Média`, `## Metadata`, `## Multi-instance
+// co-op protocol`) a datované záznamy pokračují i za nimi. Pravidlo
+// „všechno za nadpisem logu" by blokovalo legitimní opravy v těch
+// sekcích; pravidlo „od nadpisu logu po další `##`" by naopak nechalo
+// nechráněnou většinu záznamů. Ověřeno na skutečném souboru — první
+// varianta chránila 121 řádků z mnohem delšího logu.
+//
+// Rozhoduje proto TVAR NADPISU. Autorizační záznam je `### ` nadpis,
+// který nese datum, nebo začíná na „Authorized subject" / „Not
+// authorized". Chráněný úsek sahá k dalšímu nadpisu úrovně `##` / `###`.
+const AUTH_HEADING = /^###\s+(.*)$/gm;
+const AUTH_DATED = /\b20\d\d-\d\d-\d\d\b/;
+const AUTH_NAMED = /^(Authorized subject|Not authorized)\b/i;
+
+export function protectedRanges(text) {
+  const headings = [...text.matchAll(/^#{2,3}\s+.*$/gm)];
+  const ranges = [];
+
+  // Preambule logu — text mezi nadpisem `## Content about real parties`
+  // a prvním záznamem. Nese samotné pravidlo append-only, takže patří
+  // pod ochranu stejně jako záznamy pod ním.
+  for (let i = 0; i < headings.length; i++) {
+    if (headings[i][0].trim() !== LOG_HEADING) continue;
+    const to = i + 1 < headings.length ? headings[i + 1].index : text.length;
+    ranges.push([headings[i].index, to]);
+  }
+
+  for (let i = 0; i < headings.length; i++) {
+    const h = headings[i][0];
+    const m = /^###\s+(.*)$/.exec(h);
+    if (!m) continue;
+    const title = m[1].trim();
+    if (!AUTH_DATED.test(title) && !AUTH_NAMED.test(title)) continue;
+    const from = headings[i].index;
+    const to = i + 1 < headings.length ? headings[i + 1].index : text.length;
+    ranges.push([from, to]);
+  }
+  return ranges;
+}
+
 export function touchesAuthorizationLog(rel, input, root = ROOT) {
   if (rel !== "AGENTS.md") return false;
   const path = join(root, "AGENTS.md");
   if (!existsSync(path)) return false;
 
   const text = readFileSync(path, "utf8");
-  const logStart = text.indexOf(LOG_HEADING);
-  if (logStart === -1) return false;
+  const ranges = protectedRanges(text);
+  if (!ranges.length) return false;
 
   // Write nad celým AGENTS.md přepisuje i log.
   if (typeof input?.content === "string") return true;
@@ -117,7 +182,9 @@ export function touchesAuthorizationLog(rel, input, root = ROOT) {
   const old = input?.old_string;
   if (typeof old !== "string" || !old) return false;
   const at = text.indexOf(old);
-  return at !== -1 && at >= logStart;
+  if (at === -1) return false;
+  const end = at + old.length;
+  return ranges.some(([from, to]) => at < to && end > from);
 }
 
 export function decide(payload, root = ROOT) {

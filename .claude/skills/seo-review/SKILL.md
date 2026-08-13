@@ -33,7 +33,7 @@ Metadata jsou **data, ne šablonová logika**:
 Z toho plynou tři pravidla, která se kontrolují jako první:
 
 1. **`<meta property="og:*">` ani `<meta name="twitter:*">` se nepíše
-   ručně** v žádné šabloně. Vydává je jedině `macros/meta.html`.
+   ručně** v žádné šabloně. Vydávají je jedině komponenty `meta_*` z `macros/meta.html`.
 2. **Rozhodovací logika patří do `data/seo.toml`**, ne do `if`
    v šabloně. Nový `record_type` bez záznamu v `[page_types.*]` shodí
    build — a obousměrně i mrtvý záznam bez použití.
@@ -47,7 +47,7 @@ Z toho plynou tři pravidla, která se kontrolují jako první:
 |---|---|---|
 | 1 | **Titulek** | popisuje stránku, ne web; v mezích délky z `data/seo.toml` |
 | 2 | **Popis** | je to popis obsahu, ne pozvánka; neopakuje titulek |
-| 3 | **Kanonická URL** | jedna, správná, přes `meta::canonical` |
+| 3 | **Kanonická URL** | jedna, správná, přes `meta_canonical` |
 | 4 | **Open Graph a Twitter** | vydané makrem, ne ručně |
 | 5 | **`og:type`** | odvozený z `record_type` přes `data/seo.toml` |
 | 6 | **Obrázek** | výchozí karta, nebo médium entity — s alt textem |
@@ -79,7 +79,7 @@ STRÁNKA:     <cesta nebo route>
 TITULEK:     <hodnota> — <délka, v mezích?>
 POPIS:       <hodnota> — <délka>
 KANONICKÁ:   <URL>
-OG / TWITTER: <vydáno makrem | ručně v šabloně (nález)>
+OG / TWITTER: <vydáno komponentou | ručně v šabloně (nález)>
 og:type:     <hodnota> ← <record_type z data/seo.toml>
 JSON-LD:     <typy uzlů>  |  truth-rating: **žádný**
 OBRÁZEK:     <výchozí | médium entity>  alt: <ano/ne>

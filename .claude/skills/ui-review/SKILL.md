@@ -24,12 +24,16 @@ Review UI vrstvy. **Read-only.**
 ### 1. Znovupoužití komponent — vynucená brána
 
 `npm run lint:component-reuse` shodí build, když obsahová šablona
-neimportuje a nepoužije `macros/ui.html` (`page_header`, `breadcrumb`,
-`stat_tile`, `registry-card`, `empty_state`, `back_link_footer`).
+nezavolá žádnou `ui_*` komponentu (`ui_page_header`, `ui_breadcrumb`,
+`ui_stat_tile`, `ui_empty_state`, `ui_back_link_footer`, …).
 
-Šablona s `<table` mimo `macros/table.html` musí importovat
-`macros/table.html` a použít `table::advanced_table`. Výjimka jen
-per-file s odůvodněním.
+Šablona s `<table` mimo `macros/table.html` musí zavolat komponentu
+`table_advanced_table` — párově,
+`{% <table_advanced_table …> %}` … `{% </table_advanced_table> %}`.
+Výjimka jen per-file s odůvodněním.
+
+Tera 2 nemá importy: komponenty jsou globální, takže se znovupoužití
+dokazuje **voláním**, ne importem souboru, který je definuje.
 
 **Buď přesný v tom, co ta brána je**: vynucuje vlastní konvenci tohohle
 webu, ne shodu s flowbite.com/docs/getting-started/llm/. Ta stránka
@@ -67,7 +71,7 @@ Ověř na 360, 390, 768 a 1280 px. Široký obsah patří do vlastního
 
 ### 6. Média
 
-Obrázek entity jde **jedinou** cestou — `ui::media_figure` — a ta vždy
+Obrázek entity jde **jedinou** cestou — `ui_media_figure` — a ta vždy
 nese autora, licenci s odkazem a odkaz na zdroj. Holý `<img>` je
 porušení licence, ne odchylka od stylu.
 
@@ -88,12 +92,12 @@ ten druh nepodloženého tvrzení, kterému celý repozitář brání jinde.
 
 ```
 ZMĚNĚNO:     <šablony a assety>
-KOMPONENTY:  <použité macros | porušení>
+KOMPONENTY:  <volané ui_*/table_* komponenty | porušení>
 DATA:        view model | hardcoded (<co>)
 DOKTRÍNA:    <F1–F7: OK nebo porušení>
 PRÁZDNÉ STAVY: <ošetřeno | chybí>
 RESPONZIVITA: <ověřeno jak, na kterých šířkách>
-MÉDIA:       <n/a | ui::media_figure | porušení>
+MÉDIA:       <n/a | ui_media_figure | porušení>
 NÁLEZY:      [BLOCKER|HIGH|MEDIUM|LOW] <…>
 NEOVĚŘENO:   <co vyžaduje vizuální kontrolu>
 ```

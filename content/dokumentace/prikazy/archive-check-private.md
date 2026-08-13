@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run archive:check-private — Kontrola soukromé Zone B"
 template = "tooling-command.html"
-weight = 39
+weight = 40
 description = "Kontrola soukromé Zone B: Na důvěryhodném lokálním úložišti ověří inventory.sha256, manifestové hashe a nepřítomnost částečných .part souborů v soukromém archivu listin.. npm skript, kontrola výstupů."
 
 [extra]

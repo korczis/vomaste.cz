@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run preflight — Preflight vygenerovaných vstupů"
 template = "tooling-command.html"
-weight = 103
+weight = 104
 description = "Preflight vygenerovaných vstupů: Zkontroluje, jestli existují vygenerované soubory, které šablony čtou přes load_data. npm skript, provoz."
 
 [extra]

@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run data:check-generated:content — Parita content/ se stagingem"
 template = "tooling-command.html"
-weight = 41
+weight = 42
 description = "Parita content/ se stagingem: Totéž co data:check-generated, navíc kontrola C6: každá synchronizovaná cesta je v content/ byte-identická se stagingem a v pokrytém scope neleží žádný .md bez staging protějšku.. npm skript, kontrola výstupů."
 
 [extra]

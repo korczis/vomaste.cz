@@ -8,7 +8,7 @@
 
     Dvě vrstvy, jeden markup:
       * šablony (learning-*.html) volají makra přímo;
-      * těla lekcí v markdownu volají shortcodes v templates/shortcodes/,
+      * těla lekcí v markdownu volají komponenty z templates/components/
         které si tenhle soubor importují — takže markup callloutu existuje
         právě jednou, ať přijde odkud chce.
 
@@ -131,7 +131,7 @@
 {#- ---------------------------------------------------------------------
     lesson_card — dlaždice lekce v indexu
     --------------------------------------------------------------------- -#}
-{% component learning_lesson_card(page, learning) -%}
+{% component learning_lesson_card(page) -%}
 <li>
   <a href="{{ page.permalink | safe }}" class="flex h-full flex-col rounded-xl border border-white/10 bg-white/[0.02] p-5 no-underline transition-colors hover:border-[#f3e5c0]/40">
     <span class="mb-2 flex flex-wrap items-center gap-2">

@@ -183,8 +183,8 @@ Metadata pro náhledové karty a vyhledávače nejsou šablonová logika, ale
 | Vrstva | Soubor | Co vlastní |
 |---|---|---|
 | Konfigurace | [`data/seo.toml`](data/seo.toml) | locale, výchozí karta a rozměry, oddělovač/tagline titulku, meze délky, povinná sada značek, mapování typu stránky na `og:type` a výchozí schema.org typ |
-| Vykreslení | `templates/macros/meta.html` | `meta::open_graph`, `meta::twitter`, `meta::canonical` + čisté funkce pro titulek, popis, obrázek a alt |
-| Vstupy | `templates/base.html` | rozloží front matter stránky/sekce na `meta_*` skaláry a zavolá makra |
+| Vykreslení | `templates/macros/meta.html` | `meta_open_graph`, `meta_twitter`, `meta_canonical` + čisté funkce pro titulek, popis, obrázek a alt |
+| Vstupy | `templates/base.html` | rozloží front matter stránky/sekce na `meta_*` skaláry a zavolá komponenty |
 | Vynucení | `scripts/build/verify-og.mjs` | `npm run verify:og`, součást `npm run build` |
 
 `og:type` a výchozí schema.org typ se **nerozhodují v šabloně**. Klíčem je
@@ -300,7 +300,7 @@ Statický web nemá žádný běhový backend; kritický obsah má no-JS
 fallback.
 
 Tabulární data v šablonách renderuje jednotná komponenta
-`templates/macros/table.html` (`table::advanced_table`, vlastní
+`templates/macros/table.html` (`table_advanced_table`, párové volání, vlastní
 implementace podle vzoru Flowbite „Advanced Tables" nad volným
 Tailwindem/Flowbite), vynuceno branou `npm run lint:component-reuse`;
 obal tabulky nese `data-record-type` provazující řádky s JSON-LD uzly
@@ -550,7 +550,7 @@ zatímco tenhle výběr je ruční a záměrně neúplný.
 | `npm run report:evidence-plan` | vygeneruje `reports/evidence-plan.md` + `data/generated/evidence-plan.json`: per dossier počty tvrzení dle stavu a evidenční třídy, potenciál korroborace, mezery, datově odvozená priorita a konkrétní další krok — součást `npm run data:build` i `npm run build`, nikdy se needituje ručně. Viz [evidenční plán práce](#evidenční-plán-práce) |
 | `npm run lint:historical-coupling` | de-specializační brána: žádná jména subjektů ve strukturálním kódu |
 | `npm run lint:generated-content` | generované content adaptéry zůstávají minimální obálkou — ruční doménová pole neprojdou |
-| `npm run lint:component-reuse` | každá šablona (kromě `base.html`/`404.html`) používá `macros/ui.html`, a každá šablona s tabulkou používá `macros/table.html` (`table::advanced_table`) — žádný ručně psaný duplicitní markup místo sdílené komponenty |
+| `npm run lint:component-reuse` | každá šablona (kromě `base.html`/`404.html`) používá `macros/ui.html`, a každá šablona s tabulkou používá `macros/table.html` (`table_advanced_table`) — žádný ručně psaný duplicitní markup místo sdílené komponenty |
 | `npm run build:government-roster` | z `data/government.toml` vygeneruje kontextové entity členů vlády (veřejná funkce z oficiálního zdroje, `publicationRole = "context"`, **nikdy** dossier); existující záznamy nikdy nepřepisuje; součást `npm run build` |
 | `node scripts/osint/ares-lookup.mjs --ico=… \| --name="…"` | dotaz do ARES (jediný spolehlivě funkční primární rejstřík) — **není** součástí `npm run build`, dělá živý síťový dotaz; doloží identitu/sídlo/formu/status, **nedoloží** skutečné majitele ani „od kdy ovládá" |
 | `npm run screening:public-money -- --ico=…` | screening toku veřejných prostředků k IČO z registru smluv (ISRS) — **není** součástí `npm run build`, stahuje měsíční otevřená data; výstup je **interní** (`data/generated/public-money-screening.json` + `reports/public-money-screening.md`), nikdy se neroutuje. Doloží zveřejněné smlouvy, objem a objednatele v pokrytém období; **nedoloží** žádné pochybení ani úplnost. Viz [screening veřejných peněz](#screening-toku-veřejných-prostředků) |

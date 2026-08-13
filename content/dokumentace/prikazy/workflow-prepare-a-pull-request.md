@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "workflow prepare-a-pull-request — Příprava pull requestu"
 template = "tooling-command.html"
-weight = 161
+weight = 162
 description = "Příprava pull requestu: Závěrečná cesta před odesláním: kontrola větve a nečekaných souborů, dopad na dokumentaci, redakční review u obsahové změny, brána kvality, vysvětlení diffu jako podklad pro popis, commit a otevření PR.. Claude workflow, provoz."
 
 [extra]

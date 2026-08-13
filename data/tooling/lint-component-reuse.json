@@ -12,8 +12,8 @@
   "category": "validace",
   "summary": "Vynucuje vlastní konvenci webu: obsahová šablona nesmí ručně psát markup, pro který už existuje sdílená komponenta.",
   "enforces": [
-    "Obsahová top-level šablona, která neimportuje a nepoužívá macros/ui.html (page_header, breadcrumb, stat_tile, registry-card, empty_state, back_link_footer…).",
-    "Šablona s vlastním <table> mimo macros/table.html, která neimportuje macros/table.html a nepoužívá table::advanced_table."
+    "Obsahová top-level šablona, která nezavolá žádnou sdílenou komponentu ui_* (page_header, breadcrumb, stat_tile, registry-card, empty_state, back_link_footer…).",
+    "Šablona s vlastním <table> mimo macros/table.html, která nepoužije párovou komponentu table_advanced_table."
   ],
   "whenToRun": "Po každé nové nebo přepsané šabloně.",
   "inputs": [

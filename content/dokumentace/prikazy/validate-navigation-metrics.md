@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run validate:navigation-metrics — Kontrola manifestu metrik"
 template = "tooling-command.html"
-weight = 63
+weight = 64
 description = "Kontrola manifestu metrik: Spočítá metriky znovu a porovná je s odevzdaným manifestem. npm skript, kontrola výstupů."
 
 [extra]

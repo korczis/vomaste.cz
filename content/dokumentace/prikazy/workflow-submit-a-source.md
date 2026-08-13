@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "workflow submit-a-source — Podání zdroje nebo opravy"
 template = "tooling-command.html"
-weight = 155
+weight = 156
 description = "Podání zdroje nebo opravy: Cesta přispěvatele, který umí najít a přečíst zdroj, ale nemá znát datový model: ověření zdroje, posouzení nezávislosti, kontrola rozsahu pokrytí a sestavení strukturovaného důkazního balíčku k lidskému posouzení.. Claude workflow, rešerše."
 
 [extra]

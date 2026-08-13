@@ -450,11 +450,12 @@ only the routing envelope.
   do jiných šablon `<meta>` tagy nepatří. Nese taky site-wide patičku
   (licence, „navrhnout opravu"); patičky stránek ty odkazy neopakují.
 - `templates/macros/meta.html` — jednotná komponenta pro sociální a SEO
-  metadata (`meta::open_graph`, `meta::twitter`, `meta::canonical`).
+  metadata (`meta_open_graph`, `meta_twitter`, `meta_canonical`).
   Politiku čte z `data/seo.toml`, výsledek vynucuje
   `npm run verify:og` po každém buildu. Viz sekci [Metadata](#metadata).
 - `templates/macros/table.html` — jednotná komponenta pro tabulární data
-  (`table::advanced_table` / `table::advanced_table_end`; vlastní
+  (párové volání `{% <table_advanced_table …> %}` …
+  `{% </table_advanced_table> %}`; vlastní
   implementace podle vzoru Flowbite „Advanced Tables" nad volným
   Tailwindem/Flowbite). Každá `<table>` v šablonách jde přes ni — vynucuje
   `npm run lint:component-reuse`; obal nese `data-record-type` provazující
@@ -965,7 +966,7 @@ Pravidla, protože obrázek je publikace cizího díla, ne dekorace:
    „non-free logo", `©` ani prázdná hodnota neprojdou.
 2. **Atribuce je podmínka, ne zdvořilost.** U CC BY / BY-SA je uvedení
    autora a licence podmínkou užití. Proto existuje **jediná** cesta, jak
-   se na webu zobrazí obrázek — `ui::media_figure` — a ta vždy vypíše
+   se na webu zobrazí obrázek — `ui_media_figure` — a ta vždy vypíše
    autora, licenci s odkazem a odkaz na stránku zdroje. Holý `<img>` na
    médium z `media` je porušení licence, ne jen odchylka od stylu.
 3. **Bajty patří do repozitáře.** Hotlink na cizí server znamená, že
@@ -1017,7 +1018,7 @@ Sociální a SEO metadata jsou **data, ne šablonová logika**:
 | Vrstva | Soubor | Co vlastní |
 |---|---|---|
 | Konfigurace | `data/seo.toml` | locale, výchozí karta a její rozměry, oddělovač a tagline titulku, meze délky, povinná sada značek, mapování `record_type` → `og:type` + výchozí schema.org typ |
-| Vykreslení | `templates/macros/meta.html` | `meta::open_graph`, `meta::twitter`, `meta::canonical` + čisté funkce pro titulek, popis, obrázek a jeho alt |
+| Vykreslení | `templates/macros/meta.html` | `meta_open_graph`, `meta_twitter`, `meta_canonical` + čisté funkce pro titulek, popis, obrázek a jeho alt |
 | Vstupy | `templates/base.html` | rozloží front matter stránky/sekce na `meta_*` skaláry a zavolá makra |
 | Strojová vrstva | `templates/partials/jsonld.html` | stránkový uzel `@graph[0]` čte **tytéž** `meta_*` proměnné |
 | Vynucení | `scripts/build/verify-og.mjs` | po `zola build` ověří výsledek proti `data/seo.toml` |

@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run generate:candidates — Přehled kontextových entit k posouzení"
 template = "tooling-command.html"
-weight = 34
+weight = 35
 description = "Přehled kontextových entit k posouzení: Generuje přehled každé kontextové entity v systému — tedy entity objevené proto, že ji pojmenoval zdroj nebo tvrzení, ale která nemá vlastní autorizovaný dossier. npm skript, generování."
 
 [extra]
