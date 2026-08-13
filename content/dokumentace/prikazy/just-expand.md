@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "just expand ico *args — Rozbalení rejstříkového okolí"
 template = "tooling-command.html"
-weight = 167
+weight = 168
 description = "Rozbalení rejstříkového okolí: Přečte veřejný rejstřík k danému IČO a zapíše jeden KONTEXTOVÝ záznam entity na každou nalezenou právnickou osobu a každou zapsanou fyzickou osobu. just recept, rešerše."
 
 [extra]

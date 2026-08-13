@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run test:e2e — Playwright end-to-end testy"
 template = "tooling-command.html"
-weight = 50
+weight = 51
 description = "Playwright end-to-end testy: Spustí Playwright testy podle playwright.config.mjs nad všemi nakonfigurovanými projekty.. npm skript, kontrola výstupů."
 
 [extra]

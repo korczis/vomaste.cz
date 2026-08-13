@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/pr — Otevření pull requestu"
 template = "tooling-command.html"
-weight = 142
+weight = 143
 description = "Otevření pull requestu: Ověří větev a čistou bránu, sestaví popis PR, ze kterého recenzent pozná, co posuzuje a jak to ověřit — rozsah po kategoriích, doložení spuštěných validací, dotčené záznamy, vztah k rozsahu pokrytí, na co se zaměřit a co autor vědomě neudělal. Claude skill, provoz."
 
 [extra]

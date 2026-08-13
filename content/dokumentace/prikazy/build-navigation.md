@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run build:navigation — Generátor navigačního stromu"
 template = "tooling-command.html"
-weight = 24
+weight = 25
 description = "Generátor navigačního stromu: Generuje primární navigační STROM z dat — to, co skutečně vykresluje base.html. npm skript, generování."
 
 [extra]

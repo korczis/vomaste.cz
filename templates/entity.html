@@ -65,7 +65,7 @@
         {% endfor %}
       </td></tr>
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Zjištěno</th><td class="p-3">{{ view.provenance.discoveredAt | default(value="") }}</td></tr>
-      {% if view.provenance.discoveredVia | default(value=[]) %}
+      {% if view.provenanceResolved.discoveredVia | default(value=[]) %}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Objeveno přes</th><td class="p-3">
         {#- Resolve lokálních id per dossier je předpočítaný ve view
             modelu (provenanceResolved) — syntetické značky procesu
@@ -76,14 +76,14 @@
         {% endfor %}
       </td></tr>
       {% endif %}
-      {% if view.provenance.claimRefs | default(value=[]) %}
+      {% if view.provenanceResolved.claims | default(value=[]) %}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Tvrzení</th><td class="p-3">
         {% for c in view.provenanceResolved.claims %}
           <a href="{{ config.base_url }}{{ c.route }}" class="mr-2 inline-block rounded bg-white/5 px-2 py-0.5 font-mono text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ c.identifier }}</a>
         {% endfor %}
       </td></tr>
       {% endif %}
-      {% if view.provenance.sourceRefs | default(value=[]) %}
+      {% if view.provenanceResolved.sources | default(value=[]) %}
       <tr><th scope="row" class="w-40 p-3 align-top font-normal text-white/50">Zdroje</th><td class="p-3">
         {% for s in view.provenanceResolved.sources %}
           <a href="{{ config.base_url }}{{ s.route }}" class="mr-2 inline-block rounded bg-white/5 px-2 py-0.5 font-mono text-xs text-[#f3e5c0] no-underline hover:bg-white/10">{{ s.identifier }}</a>
@@ -101,7 +101,7 @@
   {#- Proč je entita v dossieru: vypsat tvrzení, která ji zmiňují, i s jejich
       textem a stavem — kanonická provenience (claimRefs), resolve
       předpočítaný ve view.provenanceResolved.claims. -#}
-  {%- if view.provenance.claimRefs | default(value=[]) %}
+  {%- if view.provenanceResolved.claims | default(value=[]) %}
   <section class="mb-8" aria-labelledby="entity-claims-heading">
     <h2 id="entity-claims-heading" class="mb-1 text-xs font-semibold uppercase tracking-wide text-white/55">Proč je tato entita v dossieru</h2>
     <p class="mb-3 text-xs text-white/50">Tvrzení z registru, která ji zmiňují. Stav u každého říká, čím je doložené — ne jak je závažné.</p>

@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/ui-review — Review UI vrstvy"
 template = "tooling-command.html"
-weight = 120
+weight = 121
 description = "Review UI vrstvy: Zkontroluje změnu v šablonách proti konvencím tohohle webu: povinné znovupoužití macros/ui.html a jednotné tabulkové komponenty, čtení view modelu místo hardcodovaných dat a slugů, doktrínu F1–F7, prázdné a mezní stavy, responzivitu na čtyřech šířkách a jedinou povolenou cestu k zobrazení média.. Claude skill, kontrola výstupů."
 
 [extra]

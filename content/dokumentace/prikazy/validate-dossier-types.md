@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run validate:dossier-types — Entitní × agregátní dossier"
 template = "tooling-command.html"
-weight = 14
+weight = 15
 description = "Entitní × agregátní dossier: Vynucuje rozdíl mezi entitním a agregátním dossierem: agregát je generovaný pohled, nikdy třetí rovnocenný dossier a nikdy místo, kde vznikají nové záznamy.. npm skript, validace vstupů."
 
 [extra]

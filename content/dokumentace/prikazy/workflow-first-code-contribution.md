@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "workflow first-code-contribution — První technický příspěvek"
 template = "tooling-command.html"
-weight = 156
+weight = 157
 description = "První technický příspěvek: Cesta nového vývojáře od naklonovaného repozitáře k otevřenému pull requestu: bootstrap s personou, vlastní větev, rozklad zadání, malá změna, cílené testy, kontrola dopadu na dokumentaci, brána kvality a popis PR postavený na vysvětlení diffu.. Claude workflow, provoz."
 
 [extra]

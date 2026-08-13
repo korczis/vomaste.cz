@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "just test — Regresní testy toolingu"
 template = "tooling-command.html"
-weight = 165
+weight = 166
 description = "Regresní testy toolingu: Zkratka na testovou sadu repozitáře; je i součástí `just build`.. just recept, kontrola výstupů."
 
 [extra]

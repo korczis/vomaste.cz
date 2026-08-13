@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run intake:fixture — Smoke běh nad syntetickým podnětem"
 template = "tooling-command.html"
-weight = 43
+weight = 44
 description = "Smoke běh nad syntetickým podnětem: Protáhne jeden syntetický validní fixture celou pipeline s pevnými hodinami a commitem do gitignorovaného .tmp/intake/ a vypíše vzniklé cesty.. npm skript, kontrola výstupů."
 
 [extra]

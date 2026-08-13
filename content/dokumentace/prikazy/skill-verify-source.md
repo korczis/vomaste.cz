@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/verify-source — Prověření zdroje"
 template = "tooling-command.html"
-weight = 129
+weight = 130
 description = "Prověření zdroje: Otevře zdroj a oddělí, co doopravdy dokládá, od toho, co se z něj běžně vyvozuje a neplyne. Claude skill, rešerše."
 
 [extra]

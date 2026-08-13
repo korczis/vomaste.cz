@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run validate:claude-tooling — Integrita Claude toolingu"
 template = "tooling-command.html"
-weight = 12
+weight = 13
 description = "Integrita Claude toolingu: Kontroluje, že všechno, na co CLAUDE.md, pravidla v .claude/rules/ a jednotlivé schopnosti odkazují, v repozitáři skutečně existuje: cesty v backticích, markdownové odkazy, npm příkazy a odkazy na jiné skilly. npm skript, validace vstupů."
 
 [extra]

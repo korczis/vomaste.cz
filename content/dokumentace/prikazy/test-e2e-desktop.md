@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run test:e2e:desktop — Playwright — jen desktop"
 template = "tooling-command.html"
-weight = 52
+weight = 53
 description = "Playwright — jen desktop: Totéž co test:e2e, omezené na projekt `desktop`.. npm skript, kontrola výstupů."
 
 [extra]

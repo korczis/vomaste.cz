@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "workflow research-a-topic — Rešerše tématu"
 template = "tooling-command.html"
-weight = 154
+weight = 155
 description = "Rešerše tématu: Cesta rešeršisty od širokého zadání k doloženým záznamům nebo poctivým mezerám: kontrola rozsahu jako PRVNÍ krok, zúžení otázky, hledání kandidátů v pořadí registr → zpravodajství → agregátor, ověření, posouzení nezávislosti, důkazní balíček a teprve pak zápis.. Claude workflow, rešerše."
 
 [extra]

@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "workflow first-session — První session v repozitáři"
 template = "tooling-command.html"
-weight = 157
+weight = 158
 description = "První session v repozitáři: Cesta od naklonovaného repozitáře k prvnímu bezpečnému úkolu bez vedení autora: diagnostika prostředí, nastartování session s volbou persony, prohlídka architektury, vysvětlení první nesrozumitelné věci a rozcestník pro další krok.. Claude workflow, provoz."
 
 [extra]
