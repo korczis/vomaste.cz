@@ -68,7 +68,7 @@ Legenda stavu: ` ` čeká · `~` běží · `x` hotovo · `!` blokováno
 - [x] **A1** `docs/claude-code/compatibility.md` — ověřená fakta
       o Claude Code (skills/agents/hooks/rules), verze, datum ověření,
       co je volitelné a co experimentální.
-- [ ] **A2** ADR `docs/adr/claude-native-contributor-operating-environment.md`
+- [x] **A2** ADR `docs/adr/claude-native-contributor-operating-environment.md`
       — proč se mění dřívější rozhodnutí „5 skillů záměrně", jaký nový
       měřitelný požadavek vznikl, a pravidla proti tooling sprawl.
 
