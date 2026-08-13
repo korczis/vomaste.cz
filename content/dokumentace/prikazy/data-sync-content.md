@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run data:sync-content — Sync stagingu do content/"
 template = "tooling-command.html"
-weight = 31
+weight = 32
 description = "Sync stagingu do content/: Kopíruje data/generated/content-staging/** do content/** pro všechny cesty pokryté kanonickým modelem. npm skript, generování."
 
 [extra]

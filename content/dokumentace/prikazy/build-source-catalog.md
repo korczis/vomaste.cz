@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run build:source-catalog — Generátor katalogu zdrojů"
 template = "tooling-command.html"
-weight = 26
+weight = 27
 description = "Generátor katalogu zdrojů: Staví katalog zdrojů ze dvou záměrně oddělených vstupů: ručně psaných záznamů o registrech (co dokládají, co nedokládají, jaké mají pasti) a SKUTEČNĚ použitých zdrojů dopočítaných z datasetu.. npm skript, generování."
 
 [extra]

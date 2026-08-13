@@ -85,3 +85,66 @@
   <p class="mt-4 text-xs text-white/65">Odškrtnutí se nikam neukládá — web nemá účty ani server, který by si postup pamatoval.</p>
 </section>
 {%- endcomponent %}
+
+{#- ---------------------------------------------------------------------
+    command — kopírovatelný blok pro jednu z pěti věcí
+    ---------------------------------------------------------------------
+    Nováček nesmí hádat, KAM co napsat. Terminál, Claude Code a přirozená
+    formulace jsou tři různá místa a vypadají v dokumentaci stejně —
+    proto má každý blok viditelný textový štítek, ne jen barvu
+    (F5 / přístupnost: barva nesmí být jediný nosič informace).
+
+      terminal  — do shellu
+      claude    — do Claude Code jako /příkaz
+      prompt    — do Claude Code vlastními slovy
+      output    — co se má objevit; nekopíruje se
+      skill     — projektová schopnost; jako claude, ale zdůrazňuje původ
+
+    Tlačítko Kopírovat je progresivní vylepšení: text je normálně
+    vybratelný i bez JS a bez schránky se prostě jen nezobrazí potvrzení.
+    Kopírovací logiku vlastní `assets/js/modules/copy-command.js`, která
+    sdílí schránkový helper s odkazy na záznamy — jedna implementace,
+    jedno chování.                                                       -#}
+{% component atoms_command(text, kind="terminal", label="", note="") -%}
+{%- set tone = "border-white/15 bg-black/30" -%}
+{%- set chip = "border-white/20 text-white/70" -%}
+{%- set default_label = "Terminál" -%}
+{%- if kind == "claude" -%}
+  {%- set tone = "border-[#f3e5c0]/25 bg-[#f3e5c0]/[0.04]" -%}
+  {%- set chip = "border-[#f3e5c0]/40 bg-[#f3e5c0]/10 text-[#f3e5c0]" -%}
+  {%- set default_label = "Claude Code" -%}
+{%- elif kind == "skill" -%}
+  {%- set tone = "border-[#f3e5c0]/25 bg-[#f3e5c0]/[0.04]" -%}
+  {%- set chip = "border-[#f3e5c0]/40 bg-[#f3e5c0]/10 text-[#f3e5c0]" -%}
+  {%- set default_label = "Schopnost projektu" -%}
+{%- elif kind == "prompt" -%}
+  {%- set tone = "border-sky-400/25 bg-sky-400/[0.04]" -%}
+  {%- set chip = "border-sky-400/40 bg-sky-400/10 text-sky-200" -%}
+  {%- set default_label = "Vlastními slovy" -%}
+{%- elif kind == "output" -%}
+  {%- set tone = "border-white/10 bg-white/[0.02]" -%}
+  {%- set chip = "border-white/15 text-white/55" -%}
+  {%- set default_label = "Očekávaný výstup" -%}
+{%- endif -%}
+<div class="my-5 overflow-hidden rounded-xl border {{ tone }}">
+  <div class="flex items-center justify-between gap-3 border-b border-white/10 px-4 py-2">
+    {#- `default` filtr platí na NEDEFINOVANOU hodnotu, ne na prázdný
+        řetězec — a komponenta předává label="" vždycky. Bez téhle
+        podmínky by štítek zmizel a barva by zůstala jediným nosičem
+        informace, což je přesně to, čemu má tenhle blok bránit. -#}
+    <span class="inline-flex items-center rounded-full border {{ chip }} px-2.5 py-0.5 text-[0.7rem] font-medium">{% if label %}{{ label }}{% else %}{{ default_label }}{% endif %}</span>
+    {%- if kind != "output" %}
+    <button type="button"
+            class="js-copy-command rounded-md border border-white/15 px-2.5 py-1 text-xs text-white/65 transition hover:border-white/30 hover:text-white/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#f3e5c0]"
+            data-copy-text="{{ text }}"
+            aria-label="Kopírovat: {{ text }}">Kopírovat</button>
+    {%- endif %}
+  </div>
+  <div class="overflow-x-auto px-4 py-3">
+    <code class="whitespace-pre text-sm text-white/85">{{ text }}</code>
+  </div>
+  {%- if note %}
+  <p class="border-t border-white/10 px-4 py-2 text-xs text-white/60">{{ note | safe }}</p>
+  {%- endif %}
+</div>
+{%- endcomponent %}

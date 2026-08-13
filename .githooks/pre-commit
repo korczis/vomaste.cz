@@ -43,6 +43,7 @@ FAST_CHECKS=(
   build:navigation
   validate:navigation
   lint:component-reuse
+  validate:claude-tooling
   # Katalog zdrojů má tři generované výstupy (stránky /zdroje/, markdown pro
   # agenty, view model pro UI a JSON-LD). Kdo změní data/source-catalog/ nebo
   # přidá citaci a nepřegeneruje, zacommituje výstup, který o datech lhal.

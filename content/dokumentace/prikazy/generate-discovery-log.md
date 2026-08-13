@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run generate:discovery-log — Append-only log objevení"
 template = "tooling-command.html"
-weight = 34
+weight = 35
 description = "Append-only log objevení: Append-only auditní stopa každé entity a každého vztahu ve chvíli, kdy poprvé vstoupí do systému. npm skript, generování."
 
 [extra]

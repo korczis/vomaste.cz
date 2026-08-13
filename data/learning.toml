@@ -181,12 +181,48 @@ label = "Governance"
 order = 70
 lead = "Autorizační model, append-only historie, redakční politika, evoluce schémat, opravy a reprodukovatelnost."
 
+# Claude Code dostal vlastní kód (C1), ne pokračování řady A: není to
+# další stupeň metodiky, je to jiná osa. Člověk, který umí A1–A3, může
+# přispívat bez Claude Code úplně; člověk, který projde C1, pořád
+# potřebuje metodiku. Sloučit obojí do jedné řady by naznačovalo pořadí,
+# které neplatí.
+[[levels]]
+id = "claude-code"
+code = "C1"
+label = "Claude Code"
+order = 80
+lead = "Jak s repozitářem pracovat přes Claude Code — co umí, kde jsou jeho hranice, jak poznat rizikovou operaci a proč jeho výstup není zdroj."
+
 # ---------------------------------------------------------------------------
 # Learning paths
 # ---------------------------------------------------------------------------
 # Cesta je pořadí existujících lekcí, ne samostatný obsah. `minutes` je
 # součet odhadů — orientační, ne měření. Validátor kontroluje, že každá
 # uvedená lekce existuje.
+
+[[paths]]
+id = "bootcamp-claude"
+label = "Bootcamp: první práce přes Claude Code"
+order = 4
+audience = "zdroje"
+lead = "Tři praktické úkoly v terminálu: zjistit stav prostředí, nechat si vysvětlit změnu a spustit bránu kvality. Nic se při nich nepublikuje."
+lessons = ["B09", "B10", "B11"]
+
+[[paths]]
+id = "claude-code"
+label = "Chci pracovat přes Claude Code"
+order = 5
+audience = "ctenar"
+lead = "Jak s repozitářem pracovat přes Claude Code — od toho, co ten nástroj je, po bezpečný příspěvek. Metodiku nenahrazuje: kdo chce psát tvrzení, potřebuje i cesty výše."
+lessons = ["C101", "C102", "C103", "C104", "C105", "C106", "C107", "C108", "C109", "C110"]
+
+[[paths]]
+id = "claude-code-pokrocile"
+label = "Claude Code pro vývojáře a údržbáře"
+order = 6
+audience = "maintainer"
+lead = "Souběžná práce ve worktree a přidávání nových schopností tak, aby prošly branami."
+lessons = ["C111", "C112"]
 
 [[paths]]
 id = "rozumet"

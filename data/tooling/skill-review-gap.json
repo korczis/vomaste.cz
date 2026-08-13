@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-review-gap",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-review-gap",
+  "kind": "skill",
+  "name": "review-gap",
+  "title": "Review mezery",
+  "category": "kontrola",
+  "personas": [
+    "verifier",
+    "editor",
+    "reviewer",
+    "maintainer"
+  ],
+  "riskLevel": "read-only",
+  "writes": false,
+  "summary": "Sedmi kontrolami posoudí, jestli je zapsaná mezera skutečně otevřenou otázkou, a ne skrytou spekulací. Rozhodující je test čtenáře, který o věci nic neví: co si odnese, kdyby mezeru nikdo nikdy nedoplnil. Dobrá mezera po sobě nechá prázdné místo, ne stín — a řekne, co konkrétně chybí ve zdrojích, místo aby naznačila, co si má čtenář domyslet.",
+  "whenToRun": "Před zápisem nové mezery, při revizi dossieru, a když někdo namítne, že formulace mezery něco naznačuje.",
+  "describedFrom": "header",
+  "notes": [
+    "Mezera je nejcitlivější typ záznamu: na tvrzení je vidět, že je tvrzení, ale mezera vypadá jako poctivé přiznání neznalosti — a proto se do ní dá schovat obvinění, které by jako tvrzení neprošlo.",
+    "Skill nerozhoduje, jestli má mezera vzniknout. Vzniknout má vždy, když zdroje na otázku neodpovídají; kontroluje se, JAK je napsaná.",
+    "U nálezu BLOCKER je návrh nového znění povinný. U mezery, která zavádí téma bez jediného zdroje, je správný návrh žádný — má zaniknout."
+  ]
+}

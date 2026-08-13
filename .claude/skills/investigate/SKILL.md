@@ -2,6 +2,7 @@
 name: investigate
 description: Run one authorized investigation end-to-end — scope check, branch, an investigation manifest, source-gated research (per-record handoff to dossier-entry), and a PR that a human must approve. Never auto-publishes. See docs/adr/aiad-and-agent-tooling-import.md for why this is one skill, not an agent framework.
 argument-hint: <subject-entity-id> "<specific topic — must already be authorized, or be a scope extension the owner is explicitly authorizing in this conversation>"
+disable-model-invocation: true
 ---
 
 ## What this is, and isn't
@@ -154,3 +155,15 @@ coop bus once green, or a solo session opens a normal PR against
 `master`. Merge/push is ORCH's or the site owner's call, same as every
 other content change here — this skill's job ends at a reviewable PR,
 full stop.
+
+## When NOT to use this skill
+
+- **For a single record.** One source, one claim, one gap — use
+  `dossier-entry` directly. This skill is the orchestration around
+  many of them and its ceremony is wasted on one.
+- **For a subject whose scope you have not checked.** The scope check is
+  the first step for a reason; running the rest first produces work that
+  cannot be published.
+- **To publish.** This skill ends at a pull request, always. If what you
+  want is for findings to appear on the site without a human approving
+  the diff, that is not this skill and not this repository.

@@ -10,6 +10,12 @@
   "name": "adr",
   "title": "Architektonické rozhodnutí (ADR)",
   "category": "provoz",
+  "personas": [
+    "developer",
+    "maintainer"
+  ],
+  "riskLevel": "safe-write",
+  "writes": true,
   "summary": "Postup pro napsání záznamu architektonického rozhodnutí do docs/adr/ podle šablony, kterou repozitář už používá: měřeno, ne odhadnuto. Předepisuje disciplínu i strukturu výsledného souboru.",
   "whenToRun": "Když je rozhodnutí zároveň VÝZNAMNÉ (nová závislost, změna datového modelu, výměna knihovny) a SPORNÉ (rozumný člověk může argumentovat oběma směry). Malé zjevně správné změny ADR nepotřebují.",
   "describedFrom": "header",

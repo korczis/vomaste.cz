@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/agent-repository-explorer",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "agent-repository-explorer",
+  "kind": "agent",
+  "name": "repository-explorer",
+  "title": "Průzkumník repozitáře",
+  "category": "provoz",
+  "personas": [
+    "reader",
+    "researcher",
+    "developer",
+    "reviewer",
+    "maintainer"
+  ],
+  "riskLevel": "read-only",
+  "writes": false,
+  "summary": "Prohledá repozitář a vrátí odpověď s dokladem, ne výpis souborů. Existuje proto, že hledání tady znamená projít desítky souborů a z každého použít pár řádků — v hlavním kontextu by se tím utopil zbytek konverzace. Začíná od skutečnosti (package.json, pipeline, hlavičky skriptů, schémata), ne od dokumentace.",
+  "whenToRun": "Na otázky „kde se to validuje“, „kolik je čeho“, „čeho se dotkne změna Y“, „existuje už něco, co dělá Z“. Ne na jeden známý soubor — ten je rychlejší přečíst.",
+  "describedFrom": "header",
+  "notes": [
+    "Nástroje: Read, Grep, Glob. Žádný Write ani Edit — průzkum a změna jsou dva různé úkony.",
+    "Netvrdí, co soubor dělá, aniž by ho otevřel. Nulový nález je odpověď, ne důvod k odhadu pravděpodobného umístění.",
+    "Rozpor mezi dokumentací a implementací je NÁLEZ a patří do odpovědi."
+  ]
+}

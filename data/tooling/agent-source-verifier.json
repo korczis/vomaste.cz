@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/agent-source-verifier",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "agent-source-verifier",
+  "kind": "agent",
+  "name": "source-verifier",
+  "title": "Ověřovatel zdrojů",
+  "category": "reserse",
+  "personas": [
+    "verifier",
+    "source-contributor",
+    "researcher",
+    "editor"
+  ],
+  "riskLevel": "read-only",
+  "writes": false,
+  "summary": "Otevře zadané zdroje a vrátí evidence summary: vydavatel, autor, datum vydání i pořízení, rubrika hledaná na stránce (ne v URL), primární versus převzatý původ, kandidát na zdrojovou rodinu, doslovné citace, jmenované třetí osoby, a hlavně konkrétně co dokládá a co nedokládá. Na konci počet nezávislých hlasů.",
+  "whenToRun": "Když je zdrojů víc než jeden nebo jsou dlouhé — pět článků v hlavním kontextu zbyde jako kaše, ze které se použije pár vět.",
+  "describedFrom": "header",
+  "notes": [
+    "Nástroje: Read, Grep, Glob, WebFetch, WebSearch. Žádný Write ani Edit.",
+    "Zdroj musí být OTEVŘENÝ. Nedostupná stránka je výsledek, ne překážka k odhadu obsahu.",
+    "Jeho výstup NENÍ zdroj — je to shrnutí zdrojů. Citace vždy míří na původní materiál.",
+    "Nepřebírá z registrů data narození ani adresy, ani do poznámky. Nejistota o nezávislosti se řeší dolů."
+  ]
+}

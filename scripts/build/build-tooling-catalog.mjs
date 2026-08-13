@@ -51,7 +51,15 @@
  *       MUSÍ — jinak by se dal popsat, aniž by se kdokoli podíval do
  *       implementace;
  *   G7  generovaný výstup odpovídá datům (stejný princip jako
- *       verify:source-catalog).
+ *       verify:source-catalog);
+ *   G8  každý soubor .claude/agents/(*).md má záznam a naopak;
+ *   G9  každý soubor .claude/workflows/(*).md má záznam a naopak;
+ *   G10 skill, agent i workflow uvádějí personu, riziko a to, jestli
+ *       zapisují — schopnost bez persony je schopnost bez uživatele,
+ *       a „jen čte" + „zapisuje" zároveň je nepravdivý štítek;
+ *   G11 subagent má name shodné s názvem souboru, má description a má
+ *       vyjmenované `tools`. Vynechané `tools` znamená v Claude Code
+ *       dědění VŠECH nástrojů — read-only agent by uměl Write a Edit.
  *
  * CACHOVÁNÍ
  * ---------
@@ -104,7 +112,31 @@ const readText = (p) => readFileSync(p, "utf8");
 const toml = (s) => `"${String(s).replace(/\\/g, "\\\\").replace(/"/g, '\\"')}"`;
 const bullets = (xs) => xs.map((x) => `- ${x}`).join("\n");
 
-export const KIND_LABEL = { npm: "npm skript", skill: "Claude skill", just: "just recept" };
+export const KIND_LABEL = {
+  npm: "npm skript",
+  skill: "Claude skill",
+  just: "just recept",
+  agent: "Claude subagent",
+  workflow: "Claude workflow",
+};
+export const PERSONA_LABEL = {
+  reader: "čtenář",
+  verifier: "ověřovatel",
+  "source-contributor": "přispěvatel zdrojem",
+  researcher: "rešeršista",
+  editor: "editor",
+  developer: "vývojář",
+  reviewer: "recenzent",
+  maintainer: "údržbář",
+  orchestrator: "orchestrátor",
+};
+export const RISK_LABEL = {
+  "read-only": "jen čte",
+  "safe-write": "bezpečný zápis",
+  "review-required": "vyžaduje review",
+  maintainer: "údržbář",
+  "owner-authorization": "autorizace vlastníka",
+};
 export const CATEGORY_LABEL = {
   validace: "validace vstupů",
   generovani: "generování",
@@ -113,7 +145,12 @@ export const CATEGORY_LABEL = {
   provoz: "provoz",
 };
 const CATEGORY_ORDER = ["validace", "generovani", "kontrola", "reserse", "provoz"];
-const KIND_ORDER = ["npm", "skill", "just"];
+const KIND_ORDER = ["npm", "skill", "agent", "workflow", "just"];
+
+// Vrstvy, u kterých je persona a riziko povinné (brána G10). npm skripty
+// a just recepty jsou příkazová vrstva pro kohokoli s terminálem —
+// vymýšlet jim personu by byla libovůle.
+export const PERSONA_REQUIRED_KINDS = new Set(["skill", "agent", "workflow"]);
 
 // Slug musí být odvoditelný z dvojice kind+name, jinak by stránka mohla
 // popisovat jiný příkaz, než na jaký ukazuje její adresa (kontrola G4).
@@ -209,6 +246,26 @@ export function readJustRecipes(root = ROOT) {
 // Frontmatter skillu. `description` a `argument-hint` jsou strojově
 // čitelná deklarace samotného skillu — přebírají se doslova, aby se
 // katalog nemohl rozejít s tím, co skill o sobě říká Claude Code.
+// Frontmatter je ve všech třech vrstvách plochý a jednořádkový; plný YAML
+// parser by sem přinesl závislost kvůli hrstce klíčů. Pokračovací řádky
+// (zalomený dlouhý description) se slepují do jedné hodnoty.
+export function parseFrontmatter(text) {
+  const fm = /^---\n([\s\S]*?)\n---/.exec(text);
+  const meta = {};
+  if (!fm) return meta;
+  let key = null;
+  for (const raw of fm[1].split("\n")) {
+    const kv = /^([a-z-]+):\s*(.*)$/.exec(raw);
+    if (kv) {
+      key = kv[1];
+      meta[key] = kv[2].trim();
+    } else if (key && raw.trim()) {
+      meta[key] = `${meta[key]} ${raw.trim()}`.trim();
+    }
+  }
+  return meta;
+}
+
 export function readSkills(root = ROOT) {
   const dir = join(root, ".claude/skills");
   if (!existsSync(dir)) return [];
@@ -217,31 +274,63 @@ export function readSkills(root = ROOT) {
     const file = join(dir, name, "SKILL.md");
     if (!statSync(join(dir, name)).isDirectory() || !existsSync(file)) continue;
     const text = readText(file);
-    const fm = /^---\n([\s\S]*?)\n---/.exec(text);
-    const meta = {};
-    if (fm) {
-      // Frontmatter skillu je plochý a jednořádkový; plný YAML parser by
-      // sem přinesl závislost kvůli dvěma klíčům.
-      let key = null;
-      for (const raw of fm[1].split("\n")) {
-        const kv = /^([a-z-]+):\s*(.*)$/.exec(raw);
-        if (kv) {
-          key = kv[1];
-          meta[key] = kv[2].trim();
-        } else if (key && raw.trim()) {
-          meta[key] = `${meta[key]} ${raw.trim()}`.trim();
-        }
-      }
-    }
+    const meta = parseFrontmatter(text);
     out.push({
       name,
       file: `.claude/skills/${name}/SKILL.md`,
       description: meta.description ?? null,
       argumentHint: meta["argument-hint"] ?? null,
+      modelInvocable: String(meta["disable-model-invocation"] ?? "").toLowerCase() !== "true",
       lines: text.split("\n").length,
     });
   }
   return out;
+}
+
+// Subagenti a workflow jsou jeden .md soubor v .claude/<vrstva>/. Název
+// souboru bez přípony je identita — u agentů proto brána kontroluje, že
+// se shoduje s `name` ve frontmatteru, protože Claude Code deleguje podle
+// frontmatteru, ale katalog podle názvu souboru.
+function readClaudeDefs(root, subdir) {
+  const dir = join(root, ".claude", subdir);
+  if (!existsSync(dir)) return [];
+  return readdirSync(dir)
+    .filter((f) => f.endsWith(".md") && f !== "README.md")
+    .sort()
+    .map((f) => {
+      const name = f.replace(/\.md$/, "");
+      const text = readText(join(dir, f));
+      return { name, file: `.claude/${subdir}/${f}`, meta: parseFrontmatter(text), lines: text.split("\n").length };
+    });
+}
+
+export function readAgents(root = ROOT) {
+  return readClaudeDefs(root, "agents").map((d) => ({
+    name: d.name,
+    file: d.file,
+    declaredName: d.meta.name ?? null,
+    description: d.meta.description ?? null,
+    // Vynechané `tools` znamená v Claude Code dědění VŠECH nástrojů —
+    // read-only agent bez tohoto pole by tedy uměl Write a Edit. Katalog
+    // to proto musí odlišit od prázdného seznamu.
+    tools: d.meta.tools ? d.meta.tools.split(/[,\s]+/).filter(Boolean) : null,
+    model: d.meta.model ?? null,
+    skills: d.meta.skills ? d.meta.skills.split(/[,\s]+/).filter(Boolean) : [],
+    lines: d.lines,
+  }));
+}
+
+export function readWorkflows(root = ROOT) {
+  return readClaudeDefs(root, "workflows").map((d) => ({
+    name: d.name,
+    file: d.file,
+    title: d.meta.title ?? null,
+    persona: d.meta.persona ?? null,
+    goal: d.meta.goal ?? null,
+    skills: d.meta.skills ? d.meta.skills.split(/[,\s]+/).filter(Boolean) : [],
+    agents: d.meta.agents ? d.meta.agents.split(/[,\s]+/).filter(Boolean) : [],
+    lines: d.lines,
+  }));
 }
 
 /* ---- 2) ručně psané záznamy ------------------------------------------ */
@@ -283,9 +372,27 @@ export function executedPrograms(command) {
   return [...new Set(out)];
 }
 
-export function auditCatalog({ records, scripts, recipes, skills, root = ROOT }) {
+export function auditCatalog({ records, scripts, recipes, skills, agents = [], workflows = [], root = ROOT }) {
   const errors = [];
   const byKind = (k) => records.filter((r) => r.kind === k);
+
+  // Obousměrná brána pro vrstvu, která je „jeden soubor = jedna položka".
+  // Stejný tvar jako G1–G3, jen parametrizovaný, aby se stejná logika
+  // nepsala potřetí a počtvrté.
+  const bothWays = (gate, kind, defs, describe) => {
+    const present = new Set(defs.map((d) => d.name));
+    const documented = new Set(byKind(kind).map((r) => r.name));
+    for (const d of defs) {
+      if (!documented.has(d.name)) {
+        errors.push(`${gate}: ${describe} "${d.name}" nemá záznam v data/tooling/ — přidej ${slugFor(kind, d.name)}.json.`);
+      }
+    }
+    for (const r of byKind(kind)) {
+      if (!present.has(r.name)) {
+        errors.push(`${gate}: záznam ${r.identifier} ukazuje na ${describe} "${r.name}", který neexistuje.`);
+      }
+    }
+  };
 
   // G1 — npm skripty oběma směry.
   const documented = new Set(byKind("npm").map((r) => r.name));
@@ -354,6 +461,47 @@ export function auditCatalog({ records, scripts, recipes, skills, root = ROOT })
     }
   }
 
+  // G8 / G9 — subagenti a workflow oběma směry.
+  bothWays("G8", "agent", agents, "subagent .claude/agents/<name>.md");
+  bothWays("G9", "workflow", workflows, "workflow .claude/workflows/<name>.md");
+
+  // G10 — schopnost, kterou obsluhuje člověk, musí říct pro koho je a co
+  // nejhoršího udělá. Bez toho ji nejde zařadit do `/help` ani do
+  // persona matice a uživatel ji pustí naslepo.
+  for (const r of records) {
+    if (!PERSONA_REQUIRED_KINDS.has(r.kind)) continue;
+    const missing = [];
+    if (!r.personas?.length) missing.push("personas");
+    if (!r.riskLevel) missing.push("riskLevel");
+    if (typeof r.writes !== "boolean") missing.push("writes");
+    if (missing.length) {
+      errors.push(`G10: záznam ${r.identifier} (${r.kind}) neuvádí ${missing.join(", ")}.`);
+    }
+    // Riziko a zápis si nesmějí odporovat: „jen čte" a „zapisuje" je
+    // buď překlep, nebo nepravdivý štítek — obojí je horší než nic.
+    if (r.riskLevel === "read-only" && r.writes === true) {
+      errors.push(`G10: záznam ${r.identifier} má riskLevel "read-only", ale writes: true.`);
+    }
+  }
+
+  // G11 — subagent deleguje podle `name` ve frontmatteru, katalog podle
+  // názvu souboru. Když se rozejdou, katalog popisuje něco jiného, než
+  // co Claude Code spustí.
+  for (const a of agents) {
+    if (!a.declaredName) {
+      errors.push(`G11: ${a.file} nemá povinné pole "name" ve frontmatteru.`);
+    } else if (a.declaredName !== a.name) {
+      errors.push(`G11: ${a.file} deklaruje name "${a.declaredName}", ale soubor se jmenuje "${a.name}".`);
+    }
+    if (!a.description) errors.push(`G11: ${a.file} nemá povinné pole "description" ve frontmatteru.`);
+    // Vynechané `tools` = zdědí všechno, včetně Write a Edit. U tohohle
+    // repozitáře je to vždycky chyba, ne úmysl: každý agent tady je
+    // specialista s vymezeným dosahem.
+    if (a.tools === null) {
+      errors.push(`G11: ${a.file} neuvádí "tools" — subagent by zdědil všechny nástroje včetně Write a Edit.`);
+    }
+  }
+
   return errors;
 }
 
@@ -368,15 +516,27 @@ function delegationOf(recipe) {
   return { runs: first, npmScript: m ? m[1] : null };
 }
 
-export function buildViewModel({ records, scripts, recipes, skills, pipelines, precommit }) {
+export function buildViewModel({ records, scripts, recipes, skills, agents = [], workflows = [], pipelines, precommit }) {
 const recipeByName = new Map(recipes.map((r) => [r.name, r]));
 const skillByName = new Map(skills.map((s) => [s.name, s]));
+const agentByName = new Map(agents.map((a) => [a.name, a]));
+const workflowByName = new Map(workflows.map((w) => [w.name, w]));
 const recordIds = new Set(records.map((r) => r.identifier));
+
+const INVOCATION = {
+  npm: (r) => `npm run ${r.name}`,
+  just: (r, recipe) => `just ${[r.name, ...(recipe?.params ?? [])].join(" ")}`,
+  skill: (r) => `/${r.name}`,
+  agent: (r) => `agent ${r.name}`,
+  workflow: (r) => `workflow ${r.name}`,
+};
 
 const entries = records
   .map((r) => {
     const recipe = r.kind === "just" ? recipeByName.get(r.name) : null;
     const skill = r.kind === "skill" ? skillByName.get(r.name) : null;
+    const agent = r.kind === "agent" ? agentByName.get(r.name) : null;
+    const workflow = r.kind === "workflow" ? workflowByName.get(r.name) : null;
     const delegation = delegationOf(recipe);
     return {
       identifier: r.identifier,
@@ -396,13 +556,18 @@ const entries = records
       notes: r.notes ?? [],
       describedFrom: r.describedFrom,
       route: `/dokumentace/prikazy/${r.identifier}/`,
+      personas: r.personas ?? [],
+      personaLabels: (r.personas ?? []).map((p) => PERSONA_LABEL[p]),
+      riskLevel: r.riskLevel ?? null,
+      riskLabel: r.riskLevel ? RISK_LABEL[r.riskLevel] : null,
+      writes: r.writes ?? null,
+      requiresAuthorization: r.requiresAuthorization ?? false,
       // --- dopočítáno ze skutečnosti, nikdy z dat ---
-      invocation:
-        r.kind === "npm" ? `npm run ${r.name}` : r.kind === "just" ? `just ${[r.name, ...(recipe?.params ?? [])].join(" ")}` : `skill ${r.name}`,
+      invocation: INVOCATION[r.kind](r, recipe),
       command: r.kind === "npm" ? scripts[r.name] : null,
       pipelines: r.kind === "npm" ? (pipelines.get(r.name) ?? []) : [],
       precommit: r.kind === "npm" ? precommit.has(r.name) : false,
-      sourceFile: r.sourceFile ?? (skill ? skill.file : r.kind === "just" ? "justfile" : null),
+      sourceFile: r.sourceFile ?? (skill ?? agent ?? workflow)?.file ?? (r.kind === "just" ? "justfile" : null),
       justDoc: recipe?.doc ?? null,
       justRuns: delegation.runs,
       justNpmScript: delegation.npmScript,
@@ -415,6 +580,14 @@ const entries = records
           : null,
       skillDescription: skill?.description ?? null,
       skillArgumentHint: skill?.argumentHint ?? null,
+      skillModelInvocable: skill ? skill.modelInvocable : null,
+      agentTools: agent?.tools ?? [],
+      agentModel: agent?.model ?? null,
+      agentSkills: agent?.skills ?? [],
+      workflowPersona: workflow?.persona ?? null,
+      workflowGoal: workflow?.goal ?? null,
+      workflowSkills: workflow?.skills ?? [],
+      workflowAgents: workflow?.agents ?? [],
     };
   })
   .sort(
@@ -431,6 +604,16 @@ const counts = {
   gates: entries.filter((e) => e.enforces.length > 0).length,
   inBuild: entries.filter((e) => e.pipelines.includes("build")).length,
   inPrecommit: entries.filter((e) => e.precommit).length,
+  // Rozpočet schopností: ADR nezavádí tvrdý strop (byl by libovolný), ale
+  // číslo musí být vidět v každém běhu, aby sprawl nešel provést
+  // nepozorovaně.
+  claudeCapabilities: entries.filter((e) => PERSONA_REQUIRED_KINDS.has(e.kind)).length,
+  byPersona: Object.fromEntries(
+    Object.keys(PERSONA_LABEL).map((p) => [p, entries.filter((e) => e.personas.includes(p)).length]),
+  ),
+  byRisk: Object.fromEntries(
+    Object.keys(RISK_LABEL).map((r) => [r, entries.filter((e) => e.riskLevel === r).length]),
+  ),
 };
 
 return { generated: true, note: GENERATED_NOTE, counts, entries };
@@ -467,6 +650,19 @@ for (const [i, e] of entries.entries()) {
     ``,
     e.whenToRun,
     ``,
+    ...(PERSONA_REQUIRED_KINDS.has(e.kind)
+      ? [
+          `## Pro koho a s jakým rizikem {#persona}`,
+          ``,
+          bullets([
+            `**Persona:** ${e.personaLabels.join(", ")}`,
+            `**Riziko:** ${e.riskLabel}`,
+            `**Zapisuje do souborů:** ${e.writes ? "ano" : "ne"}`,
+            ...(e.requiresAuthorization ? [`**Před použitím se ověřuje rozsah pokrytí** (autorizační log v \`AGENTS.md\`).`] : []),
+          ]),
+          ``,
+        ]
+      : []),
     ...(e.enforces.length
       ? [`## Co shodí běh {#vynucuje}`, ``, bullets(e.enforces), ``]
       : [
@@ -514,15 +710,24 @@ const row = (e) =>
     e.enforces.length ? "ano" : "—"
   } | ${e.pipelines.length ? e.pipelines.join(", ") : "—"} | ${e.precommit ? "ano" : "—"} |`;
 
+// Claude vrstva se v tabulce popisuje jinak než npm/just: pipeline ani
+// pre-commit u ní nedávají smysl (nic z toho ji nespouští), zato persona
+// a riziko rozhodují, jestli ji uživatel má vůbec pustit.
+const claudeRow = (e) =>
+  `| [\`${e.invocation}\`](/dokumentace/prikazy/${e.identifier}/) | ${
+    e.personaLabels.length ? e.personaLabels.join(", ") : "—"
+  } | ${e.riskLabel ?? "—"} | ${e.writes ? "ano" : "ne"} | ${e.requiresAuthorization ? "ano" : "—"} |`;
+
 const section = (kind) => {
   const rows = entries.filter((e) => e.kind === kind);
   if (!rows.length) return [];
+  const claude = PERSONA_REQUIRED_KINDS.has(kind);
   return [
     `## ${KIND_LABEL[kind]} (${rows.length})`,
     ``,
-    `| Příkaz | Kategorie | Vynucuje | Pipeline | Pre-commit |`,
+    claude ? `| Volání | Persona | Riziko | Zapisuje | Rozsahová brána |` : `| Příkaz | Kategorie | Vynucuje | Pipeline | Pre-commit |`,
     `|---|---|---|---|---|`,
-    ...rows.map(row),
+    ...rows.map(claude ? claudeRow : row),
     ``,
   ];
 };
@@ -534,7 +739,8 @@ const doc = [
   ``,
   `Publikovaná podoba: [/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prikazy/).`,
   ``,
-  `${counts.total} příkazů celkem: ${counts.byKind.npm} npm skriptů, ${counts.byKind.skill} skills, ${counts.byKind.just} just receptů. ` +
+  `${counts.total} příkazů celkem: ${counts.byKind.npm} npm skriptů, ${counts.byKind.skill} skills, ` +
+    `${counts.byKind.agent} subagentů, ${counts.byKind.workflow} workflow, ${counts.byKind.just} just receptů. ` +
     `${counts.gates} z nich může shodit běh, ${counts.inBuild} jsou krokem \`npm run build\` a ${counts.inPrecommit} běží v pre-commit hooku.`,
   ``,
   `**Pravidlo, které z katalogu plyne**: příkaz se přidává do \`package.json\` (nebo do \`justfile\` či \`.claude/skills/\`) a zároveň do \`data/tooling/\`. Bez záznamu build spadne — dokumentace tak nemůže zaostat za kódem.`,
@@ -565,8 +771,10 @@ function main() {
   const scripts = readNpmScripts();
   const recipes = readJustRecipes();
   const skills = readSkills();
+  const agents = readAgents();
+  const workflows = readWorkflows();
 
-  const auditErrors = auditCatalog({ records, scripts, recipes, skills });
+  const auditErrors = auditCatalog({ records, scripts, recipes, skills, agents, workflows });
   if (auditErrors.length) {
     console.error("Katalog toolingu neodpovídá repozitáři:");
     for (const e of auditErrors) console.error(`  ${e}`);
@@ -578,6 +786,8 @@ function main() {
     scripts,
     recipes,
     skills,
+    agents,
+    workflows,
     pipelines: pipelineMembership(),
     precommit: new Set(readPrecommitChecks()),
   });
@@ -593,8 +803,10 @@ function main() {
   const { counts } = view;
   console.log(
     `Katalog toolingu: ${counts.total} příkazů (${counts.byKind.npm} npm, ${counts.byKind.skill} skills, ` +
-      `${counts.byKind.just} just), ${counts.gates} bran, ${counts.inBuild} kroků buildu, ${counts.inPrecommit} v pre-commitu.`,
+      `${counts.byKind.agent} agentů, ${counts.byKind.workflow} workflow, ${counts.byKind.just} just), ` +
+      `${counts.gates} bran, ${counts.inBuild} kroků buildu, ${counts.inPrecommit} v pre-commitu.`,
   );
+  console.log(`  Claude schopnosti: ${counts.claudeCapabilities} (skills + agenti + workflow).`);
   console.log(changed.length ? `  zapsáno: ${changed.length} souborů` : "  beze změny");
 }
 

@@ -1,73 +1,106 @@
-# Claude tooling for vomaste.cz
+# Claude tooling pro vomaste.cz
 
-This directory contains small, repository-specific skills. It is not a
-copy of Prismatic's agent ecosystem — that import was measured and
-declined; see
+Tenhle adresář je **contributor interface** projektu: tři vrstvy
+schopností, které mají člověka dostat od „naklonoval jsem repozitář"
+k bezpečnému příspěvku, aniž by musel znát layout, memorovat příkazy
+nebo skládat několikastránkové prompty.
+
+Proč vznikl a jaké má meze růstu:
+[`docs/adr/claude-native-contributor-operating-environment.md`](../docs/adr/claude-native-contributor-operating-environment.md).
+Proč se **neimportoval** cizí agent framework a proč to platí dál:
 [`docs/adr/aiad-and-agent-tooling-import.md`](../docs/adr/aiad-and-agent-tooling-import.md).
 
-## Skills
+## Co tu je
 
-### Core (always available, fully working)
-
-- `bootstrap` — new session onboarding: rules, co-op status,
-  prerequisites, role.
-- `dossier-entry` — add a claim/source/case/gap/relation, scope-gated.
-- `investigate` — full authorized investigation, scope check → PR.
-- `adr` — write an Architecture Decision Record for a debatable choice.
-- `commit` — the commit itself: message format, right gate, coop report.
-
-### Prismatic integration (scaffolded, 2026-08-05 — see status below)
-
-- `prismatic-bootstrap`
-- `prismatic-enrich-all`
-- `prismatic-promote`
-- `prismatic-drift-audit`
-
-Intended flow once built:
-
-```text
-bootstrap
-  ↓
-prismatic-bootstrap
-  ↓
-prismatic-enrich-all
-  ↓
-review generated plan, candidates and diff
-  ↓
-prismatic-promote
-  ↓
-commit
+```
+.claude/
+├── rules/      pravidla — path-scoped, načtou se u odpovídajících souborů
+├── skills/     postupy — načtou se při použití
+├── agents/     specialisté v izolovaném kontextu
+└── settings.json
 ```
 
-**Current status (2026-08-06): governance/architecture accepted, config +
-export contract + status/probe/plan real and tested, run/import/promote
-still stubs.** `npm run prismatic:{status,probe,plan}` actually work —
-`status`/`probe` report on the local `prismatic-platform` checkout
-(file-existence only, no network), `plan` builds a real, deterministic
-job list against vomaste's compiled model, narrowly scoped to the one
-capability the Fáze 0 audit verified safe (ARES lookups for
-company/organization entities). Everything past planning — actually
-invoking a capability, staging, reviewing, promoting — is still a stub,
-because Prismatic itself has no matching exporter yet. Read each skill's
-own `SKILL.md` before invoking it, and point at
-[the build plan](../docs/missions/2026-08-05-prismatic-platform-integration-master-prompt.md) +
-its companion checklist for exactly what's done vs. open.
+**Seznam schopností tady záměrně není.** Zastaral by při prvním
+přidání. Je generovaný:
 
-## Portable settings
+- `docs/TOOLING.md` — katalog pro čtení v repozitáři;
+- `/dokumentace/prikazy/` — publikovaná podoba;
+- `data/generated/tooling-catalog.json` — view model, ze kterého čte
+  `/guide`.
 
-Versioned `.claude/settings.json` may contain only portable hooks that
-work in a fresh clone and fail harmlessly when the sibling repo is
-absent.
+Regeneruje `npm run build:tooling-catalog`, drift hlídá
+`npm run verify:tooling-catalog`.
 
-Never commit `.claude/settings.local.json`. Local permissions and machine
-paths belong to local configuration.
+## Jak to spolu souvisí
 
-## Output expectations (once the pipeline is built)
+```
+fakt platný vždy         → CLAUDE.md
+pravidlo pro část stromu → .claude/rules/<téma>.md s `paths`
+postup                   → skill
+specialista v izolaci    → agent
+ZÁRUKA                   → validátor v scripts/
+```
 
-Every integration run will have a stable `run_id` and record: Vomaste
-commit; Prismatic commit; export contract version; invocation arguments;
-planned and completed jobs; warnings/errors; candidate counts; review
-status; import/promotion receipts.
+Poslední řádek je ten, na kterém záleží: **pravidlo, které jde vynutit
+kódem, se nevynucuje promptem.**
 
-No generated prose or internal platform score is self-authenticating. The
-underlying public evidence remains the basis for publication.
+## Než přidáš schopnost
+
+Přečti [`rules/claude-tooling.md`](rules/claude-tooling.md) — pět
+otázek, při první „ne" schopnost nevzniká. A vezmi na vědomí, že brána
+je mechanická:
+
+- schopnost bez záznamu v `data/tooling/` shodí build (G2/G8/G9);
+- záznam bez persony, rizika a `writes` shodí build (G10);
+- subagent bez vyjmenovaných `tools` shodí build (G11) — vynechané
+  `tools` znamená v Claude Code dědění **všech** nástrojů, takže by
+  „read-only" agent uměl `Write`;
+- odkaz na neexistující soubor, příkaz nebo skill shodí build
+  (`npm run validate:claude-tooling`).
+
+Jména ověřuj proti vestavěným příkazům Claude Code. Rozcestník se
+jmenuje `/guide` a ne `help`, diagnostika `/diagnose` a ne `doctor`,
+právě proto — viz [`../docs/claude-code/compatibility.md`](../docs/claude-code/compatibility.md).
+
+## Subagenti: co bylo vyhodnoceno a nevytvořeno
+
+Vytvořeno je šest: `repository-explorer`, `source-verifier`,
+`claim-reviewer`, `editorial-reviewer`, `ui-reviewer`, `docs-auditor`.
+Všichni **read-only** (`Read`, `Grep`, `Glob`, u ověřovatele zdrojů
+navíc `WebFetch` a `WebSearch`).
+
+Dva další se zvažovaly a **záměrně nevznikly**:
+
+- **code-reviewer** — technickou kvalitu už pokrývá `/review-pr`, který
+  navíc ví, které osy pro danou změnu dávají smysl. Samostatný agent by
+  musel dostat `Bash`, aby si spustil testy, čímž by přestal být
+  read-only. Až bude měřená potřeba, je to jeden soubor.
+- **test-analyzer** — `/test` pokrývá výběr sady i výklad selhání.
+  Izolovaný kontext by pomohl jen u velmi objemného výstupu, což se
+  zatím nestalo. A stejně jako výše: potřeboval by `Bash`.
+
+Obojí je zapsané tady, ne zapomenuté. Kritérium pro vznik je stejné
+jako u všeho ostatního — měřená potřeba, ne anticipace.
+
+## Portable nastavení
+
+Verzované `.claude/settings.json` smí obsahovat jen to, co funguje
+v čerstvém klonu a neškodně selže, když sousední repozitář chybí.
+Žádné absolutní osobní cesty, žádná tajemství.
+
+`.claude/settings.local.json` se **necommituje**. Lokální oprávnění
+a cesty patří do lokální konfigurace.
+
+## Prismatic
+
+Čtyři `prismatic-*` skilly volají versionovaný export kontrakt.
+Skutečné a otestované je `status`, `probe` a `plan`; `run`, `import`,
+`diff`, `review-report`, `promote`, `verify`, `drift` a `enrich-all`
+jsou **pořád stuby**, protože Prismatic nemá odpovídající exportér.
+
+Přečti `SKILL.md` toho konkrétního skillu, než cokoli ohlásíš jako
+hotové. Veřejný build na Prismaticu nestojí a musí fungovat i s úplně
+chybějícím sousedním repozitářem.
+
+Prismatic **není citovatelný zdroj**. Může najít kandidáta nebo ukázat,
+kde hledat; citace míří na registr.

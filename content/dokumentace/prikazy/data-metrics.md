@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run data:metrics — Navigační metriky"
 template = "tooling-command.html"
-weight = 30
+weight = 31
 description = "Navigační metriky: Spočítá pojmenované agregované metriky z registru scripts/data/navigation-metrics.registry.mjs a zapíše deterministický manifest, ze kterého šablony berou počty do navigačních odznaků.. npm skript, generování."
 
 [extra]

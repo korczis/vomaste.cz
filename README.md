@@ -41,6 +41,7 @@ rozcestníků.
 | Potřebuju rychle dohledat konkrétní věc | → [/prirucka/](https://vomaste.cz/prirucka/) — postupy, reference, řešení chyb, slovníček, FAQ |
 | Chci vědět, co který pojem znamená | → [/koncepty/](https://vomaste.cz/koncepty/) — **kanonické** definice |
 | Chci projekt vyvíjet | → [/prispet/chci-programovat/](https://vomaste.cz/prispet/chci-programovat/) a [Rychlý start](#rychlý-start) níž |
+| Chci pracovat přes Claude Code | → [/prirucka/jak-zacit-s-claude-code/](https://vomaste.cz/prirucka/jak-zacit-s-claude-code/) a [`docs/claude-code/`](docs/claude-code/) |
 
 Vztah těch vrstev je záměrný a hlídá ho validátor: **Koncepty vlastní
 definice**, Akademie a Bootcamp je učí používat, Příručka je pomáhá

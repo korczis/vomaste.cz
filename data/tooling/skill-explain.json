@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-explain",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-explain",
+  "kind": "skill",
+  "name": "explain",
+  "title": "Vysvětlení jedné věci",
+  "category": "provoz",
+  "personas": [
+    "reader",
+    "verifier",
+    "source-contributor",
+    "researcher",
+    "editor",
+    "developer",
+    "reviewer"
+  ],
+  "riskLevel": "read-only",
+  "writes": false,
+  "summary": "Vysvětlí jeden konkrétní záznam, soubor, pojem nebo chybovou hlášku — ve výchozím nastavení netechnicky, bez předpokladu znalosti Gitu, JSONu a struktury repozitáře. Kanonické definice pojmů neopisuje: vlastní je content/koncepty a vysvětlení je aplikuje na položenou otázku.",
+  "whenToRun": "Když někdo narazí na pojem, záznam nebo hlášku a nerozumí jí. Na celý projekt je /project-tour.",
+  "describedFrom": "header",
+  "notes": [
+    "Odborný termín smí zaznít, když se hned vysvětlí. Termín bez vysvětlení je pro tazatele jen další neznámé slovo.",
+    "Pět míst s pěti definicemi téhož pojmu je přesně ten drift, kterému datový model brání jinde.",
+    "Na otázku typu „co je špatně na tom člověku“ odpovídá, že web nehodnotí lidi, eviduje doložená tvrzení."
+  ]
+}

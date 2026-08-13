@@ -78,6 +78,7 @@ const BUILD_STEPS = [
   "lint:component-reuse",
   "lint:hardcoded-records",
   "lint:generated-content",
+  "validate:claude-tooling",
   "build:source-catalog",
   // Katalog toolingu: brána běží PŘED generátorem schválně. `--check`
   // porovnává commitnuté stránky a docs/TOOLING.md s tím, co by z dat
@@ -172,6 +173,7 @@ const CHECK_STEPS = [
   "lint:component-reuse",
   "lint:hardcoded-records",
   "lint:generated-content",
+  "validate:claude-tooling",
   "lint:source-outlets",
   "check:workflow-parity",
 ];

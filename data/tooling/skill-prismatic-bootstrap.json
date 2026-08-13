@@ -10,6 +10,12 @@
   "name": "prismatic-bootstrap",
   "title": "Příprava integrace s Prismatic",
   "category": "reserse",
+  "personas": [
+    "researcher",
+    "maintainer"
+  ],
+  "riskLevel": "read-only",
+  "writes": false,
   "summary": "Zkontroluje oba repozitáře, vyřeší cestu k prismatic-platform, zaznamená commit SHA, ověří exportní kontrakt a řekne, jestli je bezpečné začít lokální integrační běh.",
   "whenToRun": "Jako první, dřív než cokoli dalšího z Prismatic vrstvy — kdykoli se úkol dotýká rešerše nebo obohacení ze strany Prismatic.",
   "describedFrom": "header",

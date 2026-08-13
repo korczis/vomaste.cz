@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run validate:entity-types — Kontrola typů entit"
 template = "tooling-command.html"
-weight = 14
+weight = 15
 description = "Kontrola typů entit: Ověřuje kanonické záznamy entit proti slovníku data/entity-types.toml, a to oběma směry.. npm skript, validace vstupů."
 
 [extra]

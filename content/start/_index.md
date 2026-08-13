@@ -70,3 +70,47 @@ Tohle je stejně důležité jako to, co dělá — a je to lepší vědět hned
 Když máte pět minut, projděte si [průvodce čtením dossieru](@/start/pet-minut.md).
 Když chcete rovnou vědět, co které barevné označení u tvrzení znamená,
 začněte [Jak číst dossier](@/start/jak-cist-dossier.md).
+
+### Chci jen rozumět
+
+[Bootcamp](@/bootcamp/_index.md) je nejkratší cesta k tomu, umět dossier
+přečíst a nenechat se zmást stavem, který znamená něco jiného, než
+vypadá. [Akademie](@/akademie/_index.md) jde do hloubky, [příručka](@/prirucka/_index.md)
+odpovídá na konkrétní otázky.
+
+### Chci přispět
+
+[Jak přispět](@/prispet/_index.md) rozlišuje šest cest podle toho, co
+umíte a kolik času máte — od nahlášení chyby po programování.
+
+### Chci pracovat s repozitářem přes Claude Code
+
+Projekt má vlastní vrstvu schopností pro Claude Code: rozcestník, který
+zjistí, co chcete udělat, diagnostiku prostředí, ověřování zdrojů,
+redakční review a bránu kvality. Nemusíte znát jejich názvy ani strukturu
+repozitáře.
+
+Začátek je jeden příkaz v adresáři repozitáře:
+
+{% <prikaz kind="terminal"> %}
+claude
+{% </prikaz> %}
+
+a potom:
+
+{% <prikaz kind="claude" note="Ověří prostředí. Nic nemění."> %}
+/diagnose
+{% </prikaz> %}
+
+{% <prikaz kind="claude" note="Určí roli a skončí konkrétním prvním úkolem."> %}
+/bootstrap
+{% </prikaz> %}
+
+Podrobně: [Jak začít s Claude Code](@/prirucka/jak-zacit-s-claude-code.md).
+Praktické úkoly jsou v [Bootcampu](@/bootcamp/_index.md), teorie
+v [Akademii](@/akademie/_index.md), úplný seznam schopností
+v [katalogu příkazů](@/dokumentace/prikazy/_index.md).
+
+**Jedna věc předem:** Claude Code v tomhle projektu není zdroj a nemůže
+rozhodnout, o kom se smí psát. Je to navigátor a kontrolor uvnitř
+pravidel, která si projekt určil sám.

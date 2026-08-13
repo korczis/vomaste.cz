@@ -1,8 +1,8 @@
 +++
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
-title = "skill prismatic-promote — Promoce kandidátů do kanonických dat"
+title = "/prismatic-promote — Promoce kandidátů do kanonických dat"
 template = "tooling-command.html"
-weight = 109
+weight = 127
 description = "Promoce kandidátů do kanonických dat: Má konzumovat výslovný manifest po revizi, ověřit evidenci a provenienci a zapsat kanonické změny přes EXISTUJÍCÍ generátory a datové kontrakty. Claude skill, rešerše."
 
 [extra]
@@ -20,6 +20,13 @@ Má konzumovat výslovný manifest po revizi, ověřit evidenci a provenienci a 
 ## Kdy ho spustit {#kdy}
 
 Nespouštět. Formát manifestu, zapisovač promoce ani rollback logika neexistují.
+
+## Pro koho a s jakým rizikem {#persona}
+
+- **Persona:** editor, údržbář
+- **Riziko:** vyžaduje review
+- **Zapisuje do souborů:** ano
+- **Před použitím se ověřuje rozsah pokrytí** (autorizační log v `AGENTS.md`).
 
 ## Co vynucuje {#vynucuje}
 

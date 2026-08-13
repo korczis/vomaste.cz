@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-project-tour",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-project-tour",
+  "kind": "skill",
+  "name": "project-tour",
+  "title": "Prohlídka projektu",
+  "category": "provoz",
+  "personas": [
+    "reader",
+    "verifier",
+    "source-contributor",
+    "researcher",
+    "editor",
+    "developer",
+    "reviewer",
+    "maintainer"
+  ],
+  "riskLevel": "read-only",
+  "writes": false,
+  "summary": "Vysvětlí, jak repozitář funguje, čtením skutečného stromu — kanonická data, čtyři vrstvy validace, generování adaptérů, šablony nad view modely, postavený web a brána nad ním, a nad tím vším autorizační rozsah a devět publikačních bran. Každé číslo a název v odpovědi musí pocházet z běhu nebo ze souboru, ne z paměti. Volitelný argument zaostří na jednu vrstvu: data, redakce, frontend, validace, claude.",
+  "whenToRun": "Když je někdo v repozitáři poprvé, zná jednu vrstvu a potřebuje sousední, nebo se chystá na změnu a potřebuje vědět, čeho se dotkne.",
+  "describedFrom": "header",
+  "notes": [
+    "Když se realita rozchází s tím, co prohlídka čeká, vyhrává realita a je to nález, ne chyba prohlídky.",
+    "Nenahrazuje přečtení AGENTS.md. Prohlídka ukazuje strukturu; závazná pravidla se musí přečíst, ne shrnout.",
+    "Typický správný výstup na otázku „kde je seznam dossierů“ je, že žádný neexistuje a nemá — registrací je adresář s dossier.json."
+  ]
+}

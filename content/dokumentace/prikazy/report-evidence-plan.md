@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run report:evidence-plan — Evidenční plán práce"
 template = "tooling-command.html"
-weight = 37
+weight = 38
 description = "Evidenční plán práce: Generovaný přehled stavu evidence per dossier: kde je zdrojování nejslabší a co ho konkrétně posílí. npm skript, generování."
 
 [extra]

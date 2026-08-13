@@ -10,6 +10,11 @@
   "name": "prismatic-drift-audit",
   "title": "Audit driftu Prismatic",
   "category": "reserse",
+  "personas": [
+    "maintainer"
+  ],
+  "riskLevel": "read-only",
+  "writes": false,
   "summary": "Má porovnávat nainstalovaný commit Prismatic, dostupné schopnosti, schémata kontraktu a fixtures proti poslednímu přijatému integračnímu baseline. DNES NENÍ POSTAVENÁ.",
   "whenToRun": "Nespouštět. Dokud neprojde touhle pipeline aspoň jedna promoce, neexistuje baseline, proti kterému by šlo drift měřit.",
   "describedFrom": "header",

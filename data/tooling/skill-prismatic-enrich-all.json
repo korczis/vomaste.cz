@@ -10,6 +10,13 @@
   "name": "prismatic-enrich-all",
   "title": "Hromadné obohacení přes Prismatic",
   "category": "reserse",
+  "personas": [
+    "researcher",
+    "maintainer"
+  ],
+  "riskLevel": "safe-write",
+  "writes": true,
+  "requiresAuthorization": true,
   "summary": "Postaví deterministický plán úloh napříč kanonickými entitami a dossiery, spustí jen použitelné schopnosti, naimportuje očištěné kandidáty do stagingu a vygeneruje report k posouzení. Do kanonického obsahu nezapisuje nikdy.",
   "whenToRun": "Až poté, co příprava integrace potvrdí, že jsou oba repozitáře připravené.",
   "describedFrom": "header",

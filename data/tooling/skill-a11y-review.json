@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-a11y-review",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-a11y-review",
+  "kind": "skill",
+  "name": "a11y-review",
+  "title": "Review přístupnosti",
+  "category": "kontrola",
+  "personas": [
+    "developer",
+    "reviewer",
+    "maintainer"
+  ],
+  "riskLevel": "read-only",
+  "writes": false,
+  "summary": "Deset kontrol přístupnosti: sémantika, hierarchie nadpisů, popisky ovládacích prvků, ovladatelnost klávesnicí, viditelný a správně vracený focus, ARIA, kontrast z palety, respektování redukovaného pohybu a dostupnost hlavního obsahu bez JavaScriptu. Zvlášť řeší kopírovací zpětnou vazbu, drawer, graf vztahů a tabulky.",
+  "whenToRun": "Po přidání interaktivního prvku nebo nové šablony, před merge změny UI.",
+  "describedFrom": "header",
+  "notes": [
+    "Bez JS smí filtr přestat filtrovat, obsah nesmí zmizet. Registr entit je toho vzorem: bez JS zůstává viditelný plný plochý seznam.",
+    "Špatná ARIA je horší než žádná.",
+    "Barva nikdy sama: stav, rozdíl ani riziko se nesmí sdělovat jen barvou.",
+    "Statická kontrola nepozná pořadí focusu, skutečný kontrast ani chování odečítače — a musí to říct."
+  ]
+}

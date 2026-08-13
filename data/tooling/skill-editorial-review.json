@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-editorial-review",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-editorial-review",
+  "kind": "skill",
+  "name": "editorial-review",
+  "title": "Redakční review v celku",
+  "category": "kontrola",
+  "personas": [
+    "editor",
+    "reviewer",
+    "maintainer"
+  ],
+  "riskLevel": "read-only",
+  "writes": false,
+  "summary": "Skládá atomické kontroly tvrzení, zdrojů a mezer a přidává deset kontrol, které jsou vidět až v celku: konzistence procesního rámování napříč zmínkami, tichá eskalace tónu bez nových zdrojů, poměr obvinění a reakcí, třetí osoby čtoucí se jako subjekty, koncentrace zdrojů u jednoho vydavatele, rovnováha stavů, záměna mezery za zúžený fakt, časová osa, shrnutí říkající víc než záznamy pod ním, a grafové vazby vytvářející dojem vlivu.",
+  "whenToRun": "Před merge větší obsahové změny, při periodické revizi dossieru, a po dokončení rešeršního průchodu — vždy dřív, než se cokoli publikuje.",
+  "describedFrom": "header",
+  "notes": [
+    "Nenahrazuje npm run build. Mechanické brány (parita, reference, JSON-LD) běží tam; tohle je redakční vrstva.",
+    "Nejčastější reálný nález je devátá kontrola: jednotlivá tvrzení jsou v pořádku a shrnutí nad nimi je o krok dál, než zdroje unesou.",
+    "Dvacet stejných nálezů je jeden nález. Řádek CELKOVÝ TÓN je povinný a nesmí být „v pořádku“ bez odůvodnění.",
+    "Publikovat se nesmí s BLOCKER. HIGH je rozhodnutí člověka, ale vědomé, ne přehlédnuté."
+  ]
+}

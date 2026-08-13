@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-correction",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-correction",
+  "kind": "skill",
+  "name": "correction",
+  "title": "Řízená oprava obsahu",
+  "category": "provoz",
+  "personas": [
+    "source-contributor",
+    "editor",
+    "maintainer"
+  ],
+  "riskLevel": "review-required",
+  "writes": true,
+  "summary": "Vede opravu publikovaného obsahu od nahlášení přes vlastní ověření, zjištění dosahu a zápis do kanonických dat až po validaci a doložení, co se změnilo a proč. Nejdřív určí typ opravy, protože faktická oprava, chybějící procesní rámování, mrtvý odkaz a překlep mají velmi různé nároky — a jednoslovná změna faktu není drobnost.",
+  "whenToRun": "Když někdo nahlásí chybu v publikovaném obsahu, když review vrátil nález, když vydavatel opravil svůj článek, nebo když přestal fungovat odkaz.",
+  "outputs": [
+    "data/dossiers/**",
+    "záznam v updates/ dossieru u podstatné změny"
+  ],
+  "describedFrom": "header",
+  "notes": [
+    "Bez dokladu oprava nezačíná. „Vím to“ není doklad, a smazání nepohodlného faktu není oprava.",
+    "Když hlásící nemá pravdu, je to taky výsledek: odmítnutá oprava s odůvodněním má stejnou hodnotu jako provedená.",
+    "Chyba je málokdy na jednom místě. Dosah zahrnuje ostatní zmínky téhož faktu, tabulku tvrzení, časovou osu, vazby a jiné dossiery se sdílenou entitou.",
+    "Oprava, která tvrzení ZOSTŘUJE, vyžaduje stejnou důkazní laťku jako nové tvrzení — protože to nové tvrzení je."
+  ]
+}

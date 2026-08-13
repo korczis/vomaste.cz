@@ -10,6 +10,14 @@
   "name": "investigate",
   "title": "Jedno autorizované vyšetřování",
   "category": "reserse",
+  "personas": [
+    "researcher",
+    "editor",
+    "maintainer"
+  ],
+  "riskLevel": "review-required",
+  "writes": true,
+  "requiresAuthorization": true,
   "summary": "Provede jedno autorizované vyšetřování od začátku do konce: kontrola rozsahu, větev, manifest vyšetřování, zdrojovaná rešerše s předáním každého záznamu do postupu pro vstup do dossieru, a nakonec pull request, který musí schválit člověk.",
   "whenToRun": "Když má vzniknout ucelené vyšetřování k jednomu subjektu a tématu. Argument: id subjektu a konkrétní téma, které už je autorizované — nebo rozšíření rozsahu, které vlastník výslovně autorizuje v téhle konverzaci.",
   "describedFrom": "header",

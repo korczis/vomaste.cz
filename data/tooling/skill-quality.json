@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-quality",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-quality",
+  "kind": "skill",
+  "name": "quality",
+  "title": "Kontrola připravenosti",
+  "category": "kontrola",
+  "personas": [
+    "editor",
+    "developer",
+    "reviewer",
+    "maintainer"
+  ],
+  "riskLevel": "read-only",
+  "writes": false,
+  "summary": "Souhrn před odesláním: stav gitu a nečekané soubory, rozpis změn po kategoriích, rychlé validátory, drift generovaných souborů, dopad na dokumentaci, redakční review u obsahové změny a plná brána. Vrací verdikt READY nebo NENÍ READY s tím, co konkrétně chybí.",
+  "whenToRun": "Těsně před /pr nebo před žádostí o merge. Není to průběžná kontrola.",
+  "describedFrom": "header",
+  "notes": [
+    "disable-model-invocation: true. Spouští plnou bránu a jeho verdikt se čte jako záruka.",
+    "READY se nesmí vyslovit, dokud npm run build neproběhl a neskončil exit 0 — ani když všechno ostatní vyšlo.",
+    "Generované soubory v diffu jsou v pořádku, když odpovídají změně dat. Generovaný soubor bez odpovídající změny dat je nález.",
+    "Zelená brána neznamená, že je změna dobrá. Redakční kvalitu mechanická brána neposoudí."
+  ]
+}

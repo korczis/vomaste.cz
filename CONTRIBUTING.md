@@ -192,6 +192,35 @@ autorizační rozsah — jen zrychluje orientaci v tom, co už tento
 dokument a `AGENTS.md` říkají. Fork si je bere zdarma spolu s repem;
 nejsou vázané na konkrétní instanci ani branding.
 
+### Když názvy skillů neznáte
+
+Nemusíte. Popište, co chcete udělat, vlastními slovy — nebo spusťte
+rozcestník `/guide`, který se zeptá na záměr a doporučí **jednu** věc
+včetně toho, co udělá a jak je riziková. Když něco nefunguje, `/diagnose`
+zjistí stav prostředí a navrhne opravu.
+
+Úplný, vždy aktuální seznam schopností je generovaný:
+[`docs/TOOLING.md`](docs/TOOLING.md) v repozitáři, nebo
+[/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prikazy/) na webu.
+Do dokumentace se neopisuje — zastaral by při prvním přidání.
+
+### Stejná laťka, jiná cesta
+
+**AI-asistovaný příspěvek má přesně stejné nároky jako ručně psaný.**
+Zdroj musí být otevřený a přečtený, procesní výsledek odlišený od
+věcného, nedoložené patří do mezer, brána kvality musí skončit s nulou.
+
+Dvě věci, které se v AI-asistované práci pokazí nejčastěji a na které se
+při přezkumu ptáme:
+
+- **výstup nástroje vydaný za zdroj** — shrnutí, výtah z vyhledávače ani
+  seznam nálezů nejsou doklad; citace míří na původní materiál;
+- **tvrzení o hotovosti bez doložení** — „testy prošly" a „brána je
+  zelená" jsou tvrzení jako každé jiné a ověřují se spuštěním.
+
+Praktický nácvik obojího je v [Bootcampu](https://vomaste.cz/bootcamp/),
+lekce B09–B11.
+
 ## Přezkum
 
 Každý PR prochází lidským přezkumem (data / důkazy / redakce; u obsahu

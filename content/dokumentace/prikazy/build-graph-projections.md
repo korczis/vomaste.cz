@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run build:graph-projections — Grafové projekce"
 template = "tooling-command.html"
-weight = 21
+weight = 22
 description = "Grafové projekce: Nahrazuje monolitický globální graf manifestem a samostatně stahovatelnými vrstvami: kurátorovaný entitní graf, plná registrová vrstva a per-dossier graf.. npm skript, generování."
 
 [extra]

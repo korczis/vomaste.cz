@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/workflow-submit-a-source",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "workflow-submit-a-source",
+  "kind": "workflow",
+  "name": "submit-a-source",
+  "title": "Podání zdroje nebo opravy",
+  "category": "reserse",
+  "personas": [
+    "source-contributor",
+    "verifier",
+    "researcher"
+  ],
+  "riskLevel": "safe-write",
+  "writes": true,
+  "summary": "Cesta přispěvatele, který umí najít a přečíst zdroj, ale nemá znát datový model: ověření zdroje, posouzení nezávislosti, kontrola rozsahu pokrytí a sestavení strukturovaného důkazního balíčku k lidskému posouzení.",
+  "whenToRun": "Když má někdo konkrétní zdroj s otevíratelnou URL a chce ho předat. Výsledek vyhledávání nestačí — to je kandidát.",
+  "describedFrom": "header",
+  "notes": [
+    "Balíček NIC nepublikuje. Mezi ním a webem stojí kontrola rozsahu, redakční posouzení, zápis, build a review diffu — a přispěvatel to musí vědět předem.",
+    "Chybějící údaj se nechá prázdný a označí. Vymyšlené datum je horší než mezera.",
+    "Neveřejný materiál (soukromá konverzace, screenshot) do repozitáře nesmí ani jako podklad."
+  ]
+}

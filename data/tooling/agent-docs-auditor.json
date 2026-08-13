@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/agent-docs-auditor",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "agent-docs-auditor",
+  "kind": "agent",
+  "name": "docs-auditor",
+  "title": "Auditor dokumentace",
+  "category": "kontrola",
+  "personas": [
+    "developer",
+    "maintainer",
+    "reviewer"
+  ],
+  "riskLevel": "read-only",
+  "writes": false,
+  "summary": "Porovná, co dokumentace tvrdí, s tím, co repozitář dělá — příkazy proti package.json, brány proti kódu validátorů, pole proti schématům, kroky buildu proti pipeline, definice proti kanonickým konceptům a odkazy proti existenci cílů. U každého driftu rozhoduje směr opravy: zaostal text, nebo je špatně implementace?",
+  "whenToRun": "Po větší změně a periodicky. Zvlášť užitečný na napočítané konstanty v próze, které nikdo nepřepočítává.",
+  "describedFrom": "header",
+  "notes": [
+    "Nástroje: Read, Grep, Glob. Žádný Write ani Edit.",
+    "NEPŘEPISUJE HISTORII. ADR, implementační reporty a append-only autorizační log popisují stav v době vzniku; zastaralost tam není drift a správná oprava je doplnit odkaz na aktuální stav.",
+    "Popsaná schopnost, která neexistuje, je vážnější než zaostalý popis existující — text slibuje něco, co nejde udělat.",
+    "Rozlišuje zaostalý text od nesprávného: první se aktualizuje, druhý opravuje."
+  ]
+}

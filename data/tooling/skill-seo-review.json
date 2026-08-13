@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-seo-review",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-seo-review",
+  "kind": "skill",
+  "name": "seo-review",
+  "title": "Review metadat stránky",
+  "category": "kontrola",
+  "personas": [
+    "developer",
+    "maintainer"
+  ],
+  "riskLevel": "read-only",
+  "writes": false,
+  "summary": "Zkontroluje titulek, popis, kanonickou URL, Open Graph a Twitter karty, odvození og:type z record_type, JSON-LD a vnitřní prolinkování — proti tomu, jak to tenhle web dělá: metadata jsou data v data/seo.toml, vydává je jediné makro a po buildu je ověřuje verify-og. Ruční meta tag v šabloně je nález.",
+  "whenToRun": "Při vzniku nové stránky nebo nového record_type, a když se řeší náhled při sdílení.",
+  "describedFrom": "header",
+  "notes": [
+    "og:title/og:description a name/description stránkového uzlu JSON-LD musí být tatáž hodnota. Nejsou to dva popisy téže stránky.",
+    "Nový record_type bez záznamu v [page_types.*] shodí build, a obousměrně i mrtvý záznam bez použití.",
+    "Truth-rating značky (ClaimReview, reviewRating) jsou zakázané a verify:jsonld je shodí. Stavy tohohle webu popisují doloženost, ne rozsouzenou pravdu.",
+    "Popis stránky popisuje, co na ní je. Optimalizace nad rámec pravdivosti se tu nedělá."
+  ]
+}

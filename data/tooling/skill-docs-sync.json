@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-docs-sync",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-docs-sync",
+  "kind": "skill",
+  "name": "docs-sync",
+  "title": "Dopad změny na dokumentaci",
+  "category": "kontrola",
+  "personas": [
+    "developer",
+    "editor",
+    "maintainer"
+  ],
+  "riskLevel": "read-only",
+  "writes": false,
+  "summary": "Zjistí, kterou dokumentaci, lekci nebo referenci provedená změna zasáhla, a odděluje přitom generované soubory (ty se nepíšou, ty se generují) od těch k ručnímu projití. Nese mapu dopadů pro stav tvrzení, schéma, npm příkaz, redakční pravidlo, autorizační model, architekturu, novou schopnost, UI doktrínu a Claude Code capability.",
+  "whenToRun": "Po změně, která se dotkla něčeho popsaného jinde, a před /quality — dokumentační drift je běžný nález.",
+  "describedFrom": "header",
+  "notes": [
+    "Zastaralá technická lekce je horší než žádná: čtenář podle ní pracuje a neví, že popisuje neplatný stav.",
+    "Katalog příkazů se NEOPISUJE do lekcí ani do README. Odkazuje se na něj.",
+    "Když se mění význam pojmu, mění se v content/koncepty. Ostatní místa ho jen aplikují.",
+    "ADR a implementační reporty se nepřepisují. Historické rozhodnutí zůstává a doplní se odkaz na aktuální stav."
+  ]
+}

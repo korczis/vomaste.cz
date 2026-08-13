@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-find-source",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-find-source",
+  "kind": "skill",
+  "name": "find-source",
+  "title": "Hledání kandidátních zdrojů",
+  "category": "reserse",
+  "personas": [
+    "verifier",
+    "source-contributor",
+    "researcher"
+  ],
+  "riskLevel": "read-only",
+  "writes": false,
+  "summary": "Hledá kandidáty ke konkrétní otázce v pořadí primární registr → jmenované zpravodajství → agregátor jako rozcestník, a přísně odděluje čtyři stavy: kandidát, otevřený, ověřený, citovatelný. Dodává výhradně první stupeň. Nulový nález hlásí jako výsledek a kandidáta na mezeru, ne jako neúspěch.",
+  "whenToRun": "Když je otázka už zúžená a potřebuje doklad. U faktů, na které odpoví primární registr přímo, se ve zpravodajství nehledá.",
+  "describedFrom": "header",
+  "notes": [
+    "Výstup NESMÍ být citován u tvrzení. Zaměnit kandidáta za citovatelný zdroj je jeden z mála způsobů, jak tenhle projekt může vyrobit vymyšlenou citaci.",
+    "Vydavatel podle domény a datum podle výsledku vyhledávání se běžně liší od toho, co je na stránce.",
+    "Negativní odpověď registru znamená „v den dotazu tam nic nebylo“, nikdy „nikdy to neexistovalo“.",
+    "Hledat doklad pro předem hotový závěr skill odmítá a zadání otočí na hledání evidenčních faktů."
+  ]
+}
