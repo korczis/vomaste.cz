@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/bohumila-beranova",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "bohumila-beranova",
+  "slug": "bohumila-beranova",
+  "title": "Bohumila Beranová",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Bohumila Beranová.",
+  "dossierType": "entity",
+  "canonicalDossier": "bohumila-beranova",
+  "subject": "bohumila-beranova",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-09",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-09-BOHUMILA-BERANOVA"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "bohumila-beranova",
+        "label": "Bohumila Beranová",
+        "subject": true,
+        "claims": [
+          "CLM-01",
+          "CLM-02"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nBohumila Beranová je statutární místostarostka města Znojma (Znojmáci); místostarostkou byla i v koalici ANO+SPD+Znojmáci a po jejím rozpadu v srpnu 2024 zůstala místostarostkou v koalici nové. Jako veřejný funkcionář spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-09-BOHUMILA-BERANOVA`, navazující na výslovnou žádost vlastníka pokrýt celé\nznojemské zastupitelstvo a navázané kauzy.\n\nDossier dokládá aktuální mandát a funkci podle oficiálního webu města\nZnojma a přímo otevřeného zpravodajství ČT24 (ČTK) a v mezích autorizace\nzaznamenává okolnosti změny vedení radnice v srpnu 2024. Rozšíření\nrozsahu vyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/bohumila-beranova/claims/clm-01.md) | Bohumila Beranová je místostarostkou města Znojma za uskupení Znojmáci (podle oficiálního webu města statutární místostarostkou) — nezávisle dokládají oficiální web města Znojma a ČT24 (ČTK) | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/bohumila-beranova/sources/src-01.md), [SRC-02](@/dossiers/bohumila-beranova/sources/src-02.md) |\n| <a id=\"clm-02\"></a>[CLM-02](@/dossiers/bohumila-beranova/claims/clm-02.md) | Bohumila Beranová podle ČT24 (ČTK) v létě 2024 přestala podporovat koalici ANO, SPD a Znojmáků — podle svých slov proto, že koalice nefungovala — a stala se součástí nové koalice Naše Znojmo, ODS, KDU-ČSL a PRO ZNOJMO, v níž zůstala místostarostkou | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-02](@/dossiers/bohumila-beranova/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat.\n\nZ přechodu mezi koalicemi se nevyvozuje žádné pochybení; zdůvodnění přechodu je vedeno jako atribuovaný výrok Bohumily Beranové v parafrázi ČT24 (ČTK)."
+    }
+  ]
+}

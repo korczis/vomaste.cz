@@ -197,14 +197,15 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 992 záznamů v 142 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 1037 záznamů v 143 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
-| ctk | 305 | 31 | [ano](/zdroje/ctk/) |
+| ctk | 319 | 42 | [ano](/zdroje/ctk/) |
 | Vláda České republiky (vlada.gov.cz) | 184 | 167 | [ano](/zdroje/vlada-cz/) |
 | Poslanecká sněmovna Parlamentu ČR | 61 | 42 | [ano](/zdroje/psp-cz/) |
 | seznam-zpravy | 41 | 14 | [ano](/zdroje/seznam-zpravy/) |
+| mesto-znojmo | 31 | 31 | — |
 | ČT24 (Česká televize) | 26 | 18 | [ano](/zdroje/ceska-televize/) |
 | Aktuálně.cz | 22 | 15 | [ano](/zdroje/aktualne-cz/) |
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
@@ -348,6 +349,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 992 záznamů v 142 rodinách/out
 
 Tyhle zdroje dataset používá aspoň pětkrát, ale katalog k nim nemá záznam s mezemi a pastmi:
 
+- mesto-znojmo (31×)
 - Hospodářské noviny (7×)
 - CNN Prima News (6×)
 - Zdravé zprávy (6×)

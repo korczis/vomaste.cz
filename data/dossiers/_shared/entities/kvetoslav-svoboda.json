@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/kvetoslav-svoboda",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "kvetoslav-svoboda",
+  "entityId": "kvetoslav-svoboda",
+  "title": "Květoslav Svoboda",
+  "entityType": "person",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "referenced",
+  "dossiers": [],
+  "order": 707,
+  "description": "Květoslav Svoboda — bývalý zastupitel města Znojma (SPD), kontextová osoba kauzy tvrzení o úplatcích (2024).",
+  "provenance": {
+    "discoveredAt": "2026-08-09",
+    "discoveredVia": [
+      "znojmo-council-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová veřejná osoba: v červenci 2024 byl podle ČT24 (ČTK) koaličním zastupitelem města Znojma za SPD a podle tvrzení hnutí ANO mu měla být nabídnuta půl milionu korun za odchod z koalice; Svoboda podle ČT24 uvedl, že nabídku dostal a odmítl, a hodlal se obrátit na policii. V aktuálním seznamu zastupitelstva na webu města již nefiguruje.\n\nTvrzení o nabídce úplatku je výhradně atribuované tvrzení stran sporu — nikdo nebyl obviněn a nic z něj se nevyvozuje (gate 4). Záznam vazby, ne dossier ani tvrzení o pochybení."
+    }
+  ]
+}

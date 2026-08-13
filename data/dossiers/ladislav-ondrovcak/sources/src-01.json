@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ladislav-ondrovcak/sources/SRC-01",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ladislav-ondrovcak"
+  },
+  "title": "SRC-01 — Vláda města — oficiální seznam zastupitelstva města Znojma",
+  "description": "Oficiální seznam členů zastupitelstva města Znojma na webu města: Ladislav Ondrovčák — zastupitel.",
+  "outlet": "Město Znojmo (znojmocity.cz)",
+  "sourceType": "oficiální primární zdroj",
+  "url": "https://www.znojmocity.cz/zastupitelstvo-mesta/os-50",
+  "retrieved": "2026-08-08",
+  "sourceFamily": "mesto-znojmo",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ladislav-ondrovcak/claims/CLM-01"
+    }
+  ],
+  "subjects": [
+    "ladislav-ondrovcak"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Oficiální stránka „Zastupitelstvo města\" na webu města Znojma (znojmocity.cz), otevřena a přečtena 2026-08-08. Uvádí aktuální složení zastupitelstva pro volební období 2022–2026 včetně funkcí a klubové/stranické příslušnosti.\n\nPoznámka k typu zdroje a jeho limitům: **primární úřední záznam města** — dokládá aktuální mandát a funkci, nikoli okolnosti jejich vzniku ani žádné hodnocení; vydavatelem je samo město. Jediný přímo otevřený zdroj tohoto dossieru — tvrzení proto nese stav 1 ZDROJ."
+    }
+  ],
+  "order": 1
+}

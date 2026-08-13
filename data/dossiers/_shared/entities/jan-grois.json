@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/entity.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/entities/jan-grois",
+  "@type": "vomaste:Entity",
+  "recordType": "entity",
+  "identifier": "jan-grois",
+  "entityId": "jan-grois",
+  "title": "Jan Grois",
+  "entityType": "person",
+  "publicationRole": "context",
+  "dossierEnabled": false,
+  "dossierStatus": "not_authorized",
+  "coverageState": "referenced",
+  "dossiers": [],
+  "order": 708,
+  "description": "Jan Grois — bývalý zastupitel města Znojma, kontextová osoba změny koalice (2024).",
+  "provenance": {
+    "discoveredAt": "2026-08-09",
+    "discoveredVia": [
+      "znojmo-council-research-2026-08-08"
+    ],
+    "depth": 1
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Kontextová veřejná osoba: podle ČT24 (ČTK) v srpnu 2024 jako zastupitel zvolený za Naše Znojmo podpořil vznik nové znojemské koalice. V aktuálním seznamu zastupitelstva na webu města již nefiguruje.\n\nZáznam vazby, ne dossier ani tvrzení o pochybení."
+    }
+  ]
+}

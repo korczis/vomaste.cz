@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/source.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/ivana-solarova/sources/SRC-02",
+  "@type": "vomaste:Source",
+  "recordType": "source",
+  "identifier": "SRC-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/ivana-solarova"
+  },
+  "title": "SRC-02 — ČT24: Znojemští zastupitelé odvolali starostku, nahradí ji Koudela z ODS",
+  "description": "ČT24 (zdroj ČTK) o změně vedení znojemské radnice 5. 8. 2024: odvolání Ivany Solařové z funkce starostky.",
+  "outlet": "ČT24 (Česká televize)",
+  "sourceType": "zpravodajský článek",
+  "url": "https://ct24.ceskatelevize.cz/clanek/regiony/znojemsti-zastupitele-odvolali-starostku-koalice-konci-351746",
+  "retrieved": "2026-08-08",
+  "published": "2024-08-05",
+  "sourceFamily": "ctk",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/ivana-solarova/claims/CLM-02"
+    }
+  ],
+  "subjects": [
+    "ivana-solarova"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Článek ČT24 z 5. 8. 2024 (uvedený zdroj ČTK), otevřen a přečten 2026-08-08. Popisuje odvolání starostky Ivany Solařové 17 z 31 hlasů, zvolení Františka Koudely starostou, složení nové koalice (Naše Znojmo, ODS, KDU-ČSL, PRO ZNOJMO; 16 z 31), volbu místostarostů a radních a atribuovanou kritiku hospodaření města (ztráta 71 mil. Kč za rok 2023; podle Jakuba Malačky „nejhorší hospodaření za 13 let\").\n\nPoznámka k limitům: materiál vychází z agenturního zpravodajství ČTK (sourceFamily ctk) — s dalšími přejímkami téže agentury netvoří nezávislý pár; vůči oficiálnímu webu města jde o jiného vydavatele i jinou rodinu zdrojů."
+    }
+  ],
+  "order": 2
+}

@@ -5244,3 +5244,407 @@ je to jediné, co stojí mezi kandidátem a publikací.
 Dřívější záznamy se neupravují ani neodstraňují — tento záznam mění jejich
 procesní důsledek (odpadá per-subjektové kolo i mechanická per-dossier
 transkripce), ne jejich text.
+
+### Scope extension, 2026-08-09: František Koudela
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): František Koudela je
+veřejný funkcionář — starosta města Znojma (ODS), zvolený zastupitelstvem
+5. 8. 2024 po odvolání dosavadní starostky, dříve ředitel organizace
+Znojemská Beseda. Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah: aktuální mandát a funkce starosty dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo otevřeno); okolnosti
+změny vedení radnice v srpnu 2024; jeho citovaná reakce na tvrzení hnutí
+ANO o nabídkách úplatků koaličním zastupitelům (červenec 2024) — tvrzení
+o úplatcích jsou výhradně atribuovaná tvrzení stran sporu, nikdo nebyl
+obviněn a nic z nich se nepřijímá za závěr webu (gate 4). Rozšíření
+rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Bohumila Beranová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Bohumila Beranová je
+veřejná funkcionářka — statutární místostarostka města Znojma (Znojmáci).
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt
+celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah: aktuální mandát a funkce dle oficiálního webu města (znojmocity.cz,
+přímo otevřeno) a ČT24/ČTK (přímo otevřeno); její role při změně koalice
+v srpnu 2024 — přechod od koalice ANO+SPD+Znojmáci k nové koalici — s jejím
+vlastním zdůvodněním („koalice nefungovala") vedeným jako atribuovaný výrok.
+Žádné pochybení se z přechodu mezi koalicemi nevyvozuje. Rozšíření rozsahu
+vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Jiří Kacetl
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Kacetl je veřejný
+funkcionář — místostarosta města Znojma (PRO ZNOJMO), zvolený zastupitelstvem
+5. 8. 2024. Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát a funkce místostarosty dle
+oficiálního webu města (znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo
+otevřeno). Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Jakub Malačka
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jakub Malačka je veřejný
+funkcionář — místostarosta města Znojma (Naše Znojmo), zvolený zastupitelstvem
+5. 8. 2024. Autorizace navazuje na výslovnou žádost vlastníka v této
+konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah: aktuální mandát a funkce místostarosty dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo otevřeno); jeho ČT24
+citované hodnocení hospodaření města (ztráta 71 mil. Kč, „nejhorší za
+13 let") vedené jako atribuovaný výrok opozičního politika, nikoli jako
+vlastní závěr webu. Rozšíření rozsahu vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Ivana Solařová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Ivana Solařová je veřejná
+funkcionářka — zastupitelka města Znojma (ANO 2011), starostka města od
+komunálních voleb 2022 do 5. 8. 2024, kdy ji zastupitelstvo odvolalo.
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt
+celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah: aktuální mandát dle oficiálního webu města (znojmocity.cz, přímo
+otevřeno); okolnosti jejího odvolání 5. 8. 2024 dle ČT24/ČTK (přímo
+otevřeno). Povinné rámování při každé zmínce: odvolání starostky je
+politický krok zastupitelstva, nikoli závěr o pochybení; kritika hospodaření
+města je atribuovaná kritika tehdejší opozice. Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Bert Bartas
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Bert Bartas je veřejný
+funkcionář — zastupitel města Znojma (Znojmáci). Autorizace navazuje na
+výslovnou žádost vlastníka v této konverzaci pokrýt celé znojemské
+zastupitelstvo a navázané kauzy.
+
+Rozsah: aktuální mandát dle oficiálního webu města (znojmocity.cz, přímo
+otevřeno); jeho postoj při změně vedení radnice 5. 8. 2024 dle ČT24/ČTK
+(přidal se k odvolání, nepodpořil volbu nového vedení, nepodepsal koaliční
+smlouvu); a skutečnost, že podle tvrzení hnutí ANO z července 2024 měl
+dostat „v podstatě korupční nabídky", k čemuž se dle ČT24 odmítl vyjádřit.
+Povinné rámování: tvrzení o nabídkách je výhradně atribuované tvrzení
+jedné strany sporu, nikdo nebyl obviněn, Bartas není z ničeho podezřelý
+ani obviněný a z jeho mlčení se nic nevyvozuje (gate 4). Rozšíření rozsahu
+vyžaduje samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Jan Šťastník
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Šťastník je veřejný funkcionář — zastupitel města Znojma (dle oficiálního webu města Naše Znojmo) a člen rady města; podle ČT24/ČTK podpořil v srpnu 2024 jako nezařazený zastupitel (zvolený za ANO) vznik nové koalice a byl zvolen radním — vývoj příslušnosti je doložen dvěma zdroji s různými daty a uvádí se bez hodnocení.
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt
+celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu
+města (znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo otevřeno, změna
+vedení radnice 5. 8. 2024). Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-09: Pavel Jajtner
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Pavel Jajtner je veřejný funkcionář — zastupitel města Znojma (ODS + KDU-ČSL SPOLU, dle ČT24 nominován KDU-ČSL), 5. 8. 2024 zvolen členem rady města.
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt
+celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu
+města (znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo otevřeno, změna
+vedení radnice 5. 8. 2024). Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-09: Alena Paulenková
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Alena Paulenková je veřejná funkcionářka — zastupitelka města Znojma (PRO ZNOJMO), 5. 8. 2024 zvolena členkou rady města.
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt
+celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu
+města (znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo otevřeno, změna
+vedení radnice 5. 8. 2024). Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-09: Blanka Dufková
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Blanka Dufková je veřejná funkcionářka — zastupitelka města Znojma (Naše Znojmo), 5. 8. 2024 zvolena členkou rady města.
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt
+celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu
+města (znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo otevřeno, změna
+vedení radnice 5. 8. 2024). Rozšíření rozsahu vyžaduje samostatnou budoucí
+autorizaci.
+
+### Scope extension, 2026-08-09: Vlastimil Tima
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Vlastimil Tima je veřejný funkcionář — zastupitel města Znojma (Naše Znojmo), 5. 8. 2024 zvolen členem rady města.
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt
+celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu
+města (znojmocity.cz, přímo otevřeno) a ČT24/ČTK (přímo otevřeno, změna vedení radnice 5. 8. 2024). Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Jiří Beroun
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Beroun je veřejný funkcionář — zastupitel města Znojma (Naše Znojmo).
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt
+celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu
+města (znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Jan Blaha
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Blaha je veřejný funkcionář — zastupitel města Znojma (ANO 2011).
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt
+celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu
+města (znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Karel Blahůšek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Karel Blahůšek je veřejný funkcionář — zastupitel města Znojma (ANO 2011).
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt
+celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu
+města (znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Lukáš David
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Lukáš David je veřejný funkcionář — zastupitel města Znojma (PRO ZNOJMO).
+Autorizace navazuje na výslovnou žádost vlastníka v této konverzaci pokrýt
+celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát a funkce dle oficiálního webu
+města (znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje
+samostatnou budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Jiří Jordán
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jiří Jordán je veřejný funkcionář —
+zastupitel města Znojma (ANO 2011). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Radomír Kaman
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Radomír Kaman je veřejný funkcionář —
+zastupitel města Znojma (ANO 2011). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Jan Kauer
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Kauer je veřejný funkcionář —
+zastupitel města Znojma (ANO 2011). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Miroslav Kavka
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Miroslav Kavka je veřejný funkcionář —
+zastupitel města Znojma (ODS + KDU-ČSL SPOLU). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Jana Kochová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jana Kochová je veřejná funkcionářka —
+zastupitelka města Znojma (ANO 2011). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Ladislav Ondrovčák
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Ladislav Ondrovčák je veřejný funkcionář —
+zastupitel města Znojma (Naše Znojmo). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Stanislav Plichta
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Stanislav Plichta je veřejný funkcionář —
+zastupitel města Znojma (nezařazený). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Karel Podzimek
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Karel Podzimek je veřejný funkcionář —
+zastupitel města Znojma (ODS + KDU-ČSL SPOLU). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: František Pokorný
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): František Pokorný je veřejný funkcionář —
+zastupitel města Znojma (ANO 2011). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Marcela Přibylová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Marcela Přibylová je veřejná funkcionářka —
+zastupitelka města Znojma (Naše Znojmo). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Jan Simonides
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Jan Simonides je veřejný funkcionář —
+zastupitel města Znojma (Naše Znojmo). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Oldřich Staněk
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Oldřich Staněk je veřejný funkcionář —
+zastupitel města Znojma (ANO 2011). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Petra Svedíková Vávrová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Petra Svedíková Vávrová je veřejná funkcionářka —
+zastupitelka města Znojma (SPD). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Růžena Šalomonová
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Růžena Šalomonová je veřejná funkcionářka —
+zastupitelka města Znojma (nezařazená). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: David Štolpa
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): David Štolpa je veřejný funkcionář —
+zastupitel města Znojma (ANO 2011). Autorizace navazuje na výslovnou žádost vlastníka
+v této konverzaci pokrýt celé znojemské zastupitelstvo a navázané kauzy.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.
+
+### Scope extension, 2026-08-09: Ondřej Zelinka
+
+Authorized by the site owner, explicitly and on the record, 2026-08-09:
+
+Standing scope (AUTH-2026-08-05-PLATFORM-SCOPE): Ondřej Zelinka je veřejný
+funkcionář — zastupitel města Znojma (SPD). Autorizace navazuje na výslovnou
+žádost vlastníka v této konverzaci pokrýt celé znojemské zastupitelstvo a
+navázané kauzy; tímto záznamem je pokryto všech 31 členů aktuálního
+zastupitelstva.
+
+Rozsah je záměrně minimální: aktuální mandát dle oficiálního webu města
+(znojmocity.cz, přímo otevřeno). Rozšíření rozsahu vyžaduje samostatnou
+budoucí autorizaci.

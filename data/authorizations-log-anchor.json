@@ -1,6 +1,6 @@
 {
   "$comment": "Hash-kotva append-only autorizačního logu v AGENTS.md (## Content about real parties). Generuje `npm run authorization:anchor`: interaktivně, nebo pro čistě nový záznam po výslovné autorizaci vlastníka v aktuální konverzaci. verify-authorization-log-append-only.mjs proti ní ověřuje byte-verní integritu každého záznamu; validate-authorization.mjs přes ni váže data/authorizations.toml na log. Needitovat ručně.",
-  "generatedAt": "2026-08-10",
+  "generatedAt": "2026-08-13",
   "algorithm": "sha256(normalized entry block: LF line endings, trailing whitespace trimmed)",
   "entries": [
     {
@@ -870,6 +870,130 @@
     {
       "heading": "### Governance and scope supersession, 2026-08-10: rekurzivní rozšiřování jakéhokoli dossieru do šířky i do hloubky",
       "sha256": "62611fcb1f8288023384f86c49b4234ee38c1a2348f07be3220a080d4adba1c4"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: František Koudela",
+      "sha256": "3ab43aab19183d3e34d5542355cb86889021e2a8bd5f63e135c89664f45f69f4"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Bohumila Beranová",
+      "sha256": "fec3f8c2327077a98270f22042064ef8a698aeb21a1690e53b899047b505f784"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Jiří Kacetl",
+      "sha256": "b203ee3d90b80700c1a8018fd64c72fa6310702a5bcf35f22709d232b3d0d293"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Jakub Malačka",
+      "sha256": "8d34bf53cba665ecd4b1e1cee5782d4d8f6f461406f444be4c3541fd248ca901"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Ivana Solařová",
+      "sha256": "fdb1ccd079449aa5c9be20e56817abd91b2fbc5196acfb77fb105afec06f8daa"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Bert Bartas",
+      "sha256": "20ae0f3042a517f29978f29add85c1eebf4a1faeffa24312b52399bb4fd19683"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Jan Šťastník",
+      "sha256": "8ca74ec970188be8dde36fda5ae14adbd09b1e5d6837bed7d1665b8bda8ae334"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Pavel Jajtner",
+      "sha256": "ea3b61cc802a2fb00c923dc73ee7498f971b7fe500758d637edb123026cc863d"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Alena Paulenková",
+      "sha256": "e3a3ea5cd13dc917ca259784ca740747563b5e7e235a783554b30c9fc59297c0"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Blanka Dufková",
+      "sha256": "4bfcf53f0dec9348b077b2a150690d1d49018f4252a0521bf4d6e7d47a7627b4"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Vlastimil Tima",
+      "sha256": "8cebcd88ae21c0c6b447c1f031ac2e581928171dbe1a3401088bad300627a80d"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Jiří Beroun",
+      "sha256": "da00dee18e3e9d2692bdc87423d959f3b5f89f55cd7ed70b9a0fee69d6efbc8b"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Jan Blaha",
+      "sha256": "b5e0f8b21112b99c05f04340febf4287cc3b7055cc92fb24751a588d726fb9df"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Karel Blahůšek",
+      "sha256": "962bba993dc07cfaa51ba3ca6c20b8969c7c03783aba75fc40fd4582333d5aaa"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Lukáš David",
+      "sha256": "fbde2d9b1a3b9d168f07d2598bcbe68d44e59dbdb3dcf9d8fea45ab6394160be"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Jiří Jordán",
+      "sha256": "26b3f3decdfc0744d8b42b0183b33cd678ff3cd77fb9e0ed5c899421d47c8010"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Radomír Kaman",
+      "sha256": "d28c6dd9a3a02e60a426ce5384e1a70226156e4d50a69123f16d08608d28bec0"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Jan Kauer",
+      "sha256": "216380dfb40a8e1727168e3b2616f8030acf63dbcb3d0ea9bcd3d360733c2715"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Miroslav Kavka",
+      "sha256": "710b84b1e121ba5c301aa2b3cf41fe3576c4c21ccb5d4569f8f805a92111324d"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Jana Kochová",
+      "sha256": "ddf452fef97792532feb2ac578c5f49d6ddc011c50cbac772859e623d19159d1"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Ladislav Ondrovčák",
+      "sha256": "6f44418d7c1aaaccab185e22bab502ed9c0d855bdc785792a57bafbc2bd8eb90"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Stanislav Plichta",
+      "sha256": "7943078611c64a4617ca18488a178581ab6a665e429c536ec51420ce780c1073"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Karel Podzimek",
+      "sha256": "eb75ce338e7783d6d986d7f5190374dc46abd3de9e9c3f3cb33bd81dfdf47b18"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: František Pokorný",
+      "sha256": "ed176f22784e7f9fa6e87b57ac6e5f963db773ad88de7258df4c4d781e5e8aa9"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Marcela Přibylová",
+      "sha256": "46074e9b1f0f9d770ed08f0458c6ed63351a07169eb0f105a62c39e2744e6e2f"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Jan Simonides",
+      "sha256": "a146ec1448a2ce593a18d557c1db1b05ba76c6cfc60ff96cbc648fba4f425b64"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Oldřich Staněk",
+      "sha256": "989b616872f26936c99ce00a88508280bc7e23251850bc7bf3345b8a7052aead"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Petra Svedíková Vávrová",
+      "sha256": "f8d0ec0d82ba720e80a0da7b3559ae83ab3167edf6d552caa5988bb774bbe72d"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Růžena Šalomonová",
+      "sha256": "617dc2b903d11056dfb581faa907592758d25e1303ddd3a3e229f52b3d51833c"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: David Štolpa",
+      "sha256": "a04c3817fe2cbb9e49b38164727b46aeeb9699ffdee1c43273893ef7b266cae2"
+    },
+    {
+      "heading": "### Scope extension, 2026-08-09: Ondřej Zelinka",
+      "sha256": "a1c233c8580c198d9a27654092f174856278f4370cf5b785602c8ed7fe0ab972"
     }
   ]
 }

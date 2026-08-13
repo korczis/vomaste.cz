@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/stanislav-plichta",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "stanislav-plichta",
+  "slug": "stanislav-plichta",
+  "title": "Stanislav Plichta",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Stanislav Plichta.",
+  "dossierType": "entity",
+  "canonicalDossier": "stanislav-plichta",
+  "subject": "stanislav-plichta",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-09",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-09-STANISLAV-PLICHTA"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "stanislav-plichta",
+        "label": "Stanislav Plichta",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nStanislav Plichta je zastupitel města Znojma. Jako veřejný funkcionář spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-09-STANISLAV-PLICHTA`, navazující na výslovnou žádost vlastníka pokrýt celé\nznojemské zastupitelstvo a navázané kauzy.\n\nDossier dokládá aktuální mandát podle oficiálního webu města Znojma.\nTvrzení nese stav 1 ZDROJ; povýšení na CORROBORATED vyžaduje otevření\ndalšího, nezávislého zdroje. Rozšíření rozsahu vyžaduje samostatnou\nbudoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/stanislav-plichta/claims/clm-01.md) | Stanislav Plichta je podle oficiálního webu města Znojma nezařazeným zastupitelem města | <span class=\"status-badge status-single\">1 ZDROJ</span> | [SRC-01](@/dossiers/stanislav-plichta/sources/src-01.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedeného mandátu nic dalšího; nejde o hodnocení\npolitického působení ani o investigativní rešerši jiných témat."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/blanka-dufkova/claims/CLM-01",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-01",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/blanka-dufkova"
+  },
+  "text": "Blanka Dufková je zastupitelkou města Znojma za uskupení Naše Znojmo a 5. 8. 2024 byla zvolena členkou rady města — nezávisle dokládají oficiální web města Znojma a ČT24 (ČTK)",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/blanka-dufkova/sources/SRC-01"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/blanka-dufkova/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "blanka-dufkova"
+  ],
+  "order": 1,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/blanka-dufkova/_index.md)."
+    }
+  ]
+}

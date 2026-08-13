@@ -5,7 +5,7 @@ system. This is provenance, not a publication decision — see
 `data/authorizations.toml` and `scripts/dossier/authorize-entity.mjs`
 for the only thing that actually authorizes a dossier.
 
-1022 record(s) logged across 10 day(s). 0 new since last run.
+1055 record(s) logged across 11 day(s). 3 new since last run.
 
 ## 2026-07-29
 
@@ -1058,3 +1058,39 @@ for the only thing that actually authorizes a dossier.
 - `marie-souckova` (entity, created)
 - `milos-zeman` (entity, created)
 - `miroslav-kostelka` (entity, created)
+
+## 2026-08-09
+
+- `bohumila-beranova` (entity, created)
+- `frantisek-koudela` (entity, created)
+- `ivana-solarova` (entity, created)
+- `jakub-malacka` (entity, created)
+- `jiri-kacetl` (entity, created)
+- `alena-paulenkova` (entity, created)
+- `bert-bartas` (entity, created)
+- `blanka-dufkova` (entity, created)
+- `jan-stastnik` (entity, created)
+- `pavel-jajtner` (entity, created)
+- `jan-blaha` (entity, created)
+- `jiri-beroun` (entity, created)
+- `karel-blahusek` (entity, created)
+- `lukas-david` (entity, created)
+- `vlastimil-tima` (entity, created)
+- `jan-kauer` (entity, created)
+- `jana-kochova` (entity, created)
+- `jiri-jordan` (entity, created)
+- `miroslav-kavka` (entity, created)
+- `radomir-kaman` (entity, created)
+- `frantisek-pokorny` (entity, created)
+- `karel-podzimek` (entity, created)
+- `ladislav-ondrovcak` (entity, created)
+- `marcela-pribylova` (entity, created)
+- `stanislav-plichta` (entity, created)
+- `david-stolpa` (entity, created)
+- `jan-simonides` (entity, created)
+- `oldrich-stanek` (entity, created)
+- `petra-svedikova-vavrova` (entity, created)
+- `ruzena-salomonova` (entity, created)
+- `jan-grois` (entity, created)
+- `kvetoslav-svoboda` (entity, created)
+- `ondrej-zelinka` (entity, created)

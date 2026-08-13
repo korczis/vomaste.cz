@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/frantisek-koudela/claims/CLM-02",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/frantisek-koudela"
+  },
+  "text": "Zastupitelstvo města Znojma zvolilo Františka Koudelu starostou 5. 8. 2024 poté, co 17 z 31 zastupitelů odvolalo dosavadní starostku Ivanu Solařovou (ANO); Koudela byl do té doby ředitelem organizace Znojemská Beseda a novou koalici vytvořily Naše Znojmo, ODS, KDU-ČSL a PRO ZNOJMO se 16 z 31 zastupitelů",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/frantisek-koudela/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "frantisek-koudela"
+  ],
+  "order": 2,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/frantisek-koudela/_index.md)."
+    }
+  ]
+}

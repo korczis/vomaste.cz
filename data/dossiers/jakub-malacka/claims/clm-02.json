@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jakub-malacka/claims/CLM-02",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-02",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jakub-malacka"
+  },
+  "text": "Jakub Malačka podle ČT24 (ČTK) kritizoval hospodaření města pod předchozí koalicí — hospodaření roku 2023 skončilo ztrátou 71 milionů korun a podle Malačky šlo o nejhorší hospodaření za 13 let; jde o atribuované hodnocení tehdy opozičního politika, nikoli o závěr tohoto webu",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jakub-malacka/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "jakub-malacka"
+  ],
+  "order": 2,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jakub-malacka/_index.md)."
+    }
+  ]
+}

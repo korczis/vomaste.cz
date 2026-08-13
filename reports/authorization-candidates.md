@@ -8,7 +8,7 @@ requires the site owner's explicit, dated, on-record decision in
 `AGENTS.md` — this report exists only to make that decision informed,
 never to make it for them.
 
-Generated from 480 context entities across 202 dossier(s). Regenerate with `npm run generate:candidates`.
+Generated from 482 context entities across 233 dossier(s). Regenerate with `npm run generate:candidates`.
 
 ## AB private trust I a II (`ab-private-trusts`)
 
@@ -1455,6 +1455,16 @@ Generated from 480 context entities across 202 dossier(s). Regenerate with `npm 
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 
+## Jan Grois (`jan-grois`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
 ## Jan Lelek (`jan-lelek`)
 
 - Type: person
@@ -2224,6 +2234,16 @@ Generated from 480 context entities across 202 dossier(s). Regenerate with `npm 
 - Appears in: martin-sebestyan
 - Claims: CLM-32
 - Sources: SRC-17 (1 independent source family)
+- Relations: none
+- Missing: explicit owner authorization to promote this to its own dossier
+
+## Květoslav Svoboda (`kvetoslav-svoboda`)
+
+- Type: person
+- Status: not_authorized
+- Appears in: —
+- Claims: none
+- Sources: none (0 independent source families)
 - Relations: none
 - Missing: explicit owner authorization to promote this to its own dossier
 

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/dossier.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/vlastimil-tima",
+  "@type": "vomaste:Dossier",
+  "recordType": "dossier",
+  "identifier": "vlastimil-tima",
+  "slug": "vlastimil-tima",
+  "title": "Vlastimil Tima",
+  "description": "Neutrální, zdroji doložený přehled veřejného politického působení — Vlastimil Tima.",
+  "dossierType": "entity",
+  "canonicalDossier": "vlastimil-tima",
+  "subject": "vlastimil-tima",
+  "language": "cs",
+  "navigationVisible": true,
+  "updated": "2026-08-09",
+  "authorization": {
+    "records": [
+      "AUTH-2026-08-09-VLASTIMIL-TIMA"
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "entity": "vlastimil-tima",
+        "label": "Vlastimil Tima",
+        "subject": true,
+        "claims": [
+          "CLM-01"
+        ],
+        "sources": [
+          "SRC-01",
+          "SRC-02"
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "contentBlocks": [
+    {
+      "type": "markdown",
+      "value": "## Rozsah dossieru {#rozsah}\n\nVlastimil Tima je zastupitel města Znojma (Naše Znojmo) a člen rady města. Jako veřejný funkcionář spadá do standing scope autorizace\n(`AUTH-2026-08-05-PLATFORM-SCOPE`); konkrétní záznam pro tento dossier\nje `AUTH-2026-08-09-VLASTIMIL-TIMA`, navazující na výslovnou žádost vlastníka pokrýt celé\nznojemské zastupitelstvo a navázané kauzy.\n\nDossier dokládá aktuální mandát a funkci podle oficiálního webu města\nZnojma a přímo otevřeného zpravodajství ČT24 (ČTK). Rozšíření rozsahu\nvyžaduje samostatnou budoucí autorizaci.\n\n## Registr tvrzení {#registr-tvrzeni}\n\n| ID | Tvrzení | Stav | Zdroje |\n|---|---|---|---|\n| <a id=\"clm-01\"></a>[CLM-01](@/dossiers/vlastimil-tima/claims/clm-01.md) | Vlastimil Tima je zastupitelem města Znojma za uskupení Naše Znojmo a 5. 8. 2024 byl zvolen členem rady města — nezávisle dokládají oficiální web města Znojma a ČT24 (ČTK) | <span class=\"status-badge status-corroborated\">CORROBORATED</span> | [SRC-01](@/dossiers/vlastimil-tima/sources/src-01.md), [SRC-02](@/dossiers/vlastimil-tima/sources/src-02.md) |\n\n## Metodické omezení\n\nDossier nevyvozuje z uvedených mandátů a funkcí nic dalšího; nejde o\nhodnocení politického působení ani o investigativní rešerši jiných\ntémat."
+    }
+  ]
+}
