@@ -128,7 +128,11 @@
 {%- endif -%}
 <div class="my-5 overflow-hidden rounded-xl border {{ tone }}">
   <div class="flex items-center justify-between gap-3 border-b border-white/10 px-4 py-2">
-    <span class="inline-flex items-center rounded-full border {{ chip }} px-2.5 py-0.5 text-[0.7rem] font-medium">{{ label | default(value=default_label) }}</span>
+    {#- `default` filtr platí na NEDEFINOVANOU hodnotu, ne na prázdný
+        řetězec — a komponenta předává label="" vždycky. Bez téhle
+        podmínky by štítek zmizel a barva by zůstala jediným nosičem
+        informace, což je přesně to, čemu má tenhle blok bránit. -#}
+    <span class="inline-flex items-center rounded-full border {{ chip }} px-2.5 py-0.5 text-[0.7rem] font-medium">{% if label %}{{ label }}{% else %}{{ default_label }}{% endif %}</span>
     {%- if kind != "output" %}
     <button type="button"
             class="js-copy-command rounded-md border border-white/15 px-2.5 py-1 text-xs text-white/65 transition hover:border-white/30 hover:text-white/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#f3e5c0]"

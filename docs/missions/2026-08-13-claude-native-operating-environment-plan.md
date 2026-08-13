@@ -172,9 +172,9 @@ Legenda stavu: ` ` čeká · `~` běží · `x` hotovo · `!` blokováno
 
 ### Fáze M — vzdělávací a UI integrace
 
-- [ ] **M1** UI komponenta pro Claude Code volání (copy button, labely
+- [x] **M1** UI komponenta pro Claude Code volání (copy button, labely
       TERMINÁL / CLAUDE CODE / PROJECT SKILL).
-- [ ] **M2** Akademie: úroveň Claude Code (C101–C110) v `data/learning.toml`.
+- [x] **M2** Akademie: úroveň Claude Code (C101–C110) v `data/learning.toml`.
 - [ ] **M3** Bootcamp: praktické úkoly na syntetických datech.
 - [ ] **M4** Příručka/KB: pojmy Skill, Agent, Workflow, Hook, riziko.
 - [ ] **M5** `/start/` a `/prispet/` — rozcestník „chci pracovat s Claude Code".
