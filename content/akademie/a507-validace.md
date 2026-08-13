@@ -57,6 +57,11 @@ nejde udělat ani jedním směrem.
 **Jeden vydavatel = jeden hlas.** Porovnává se `outlet` i doména `url`.
 Dva texty téže redakce nezaloží nezávislost, ať mají rodiny jakékoli.
 
+Úplné znění všech pravidel — sémantiky, referenční integrity, parity
+tabulky i expanze JSON-LD — je generované přímo z modulů, které je
+vynucují: [/pravidla/](@/pravidla/_index.md). Tahle lekce vysvětluje, proč
+jsou vrstvy rozdělené; ta stránka je závazný výčet.
+
 {% <callout kind="varovani" title="Co validace principiálně nezachytí"> %}
 Posun významu ve zkrácené citaci. Dvě redakce s týmž anonymním
 informátorem. Nepřiměřený osobní údaj. Tvrzení, které sahá dál než doklad.

@@ -26,8 +26,14 @@
   {% else %}
   {% <views_section id="cases-registry" title="Registr kauz" count={idx.rows | length} default_view="table" search_label="Hledat v kauzách" sort_options={["id::ID", "status::Stav", "period::Období"]} columns={["ID", "Stav", "Kauza", "Období"]} export_name="kauzy" empty_text="Žádná kauza neodpovídá zadanému filtru."> %}
 
+  {#- `searchable` ani `url_state` se sem NEPŘEDÁVAJÍ: obal `views_section`
+      už `x-data="advancedTable()"` nese. Když je nesla i tabulka, vznikly
+      na stránce dva nezávislé filtrovací enginy, které si přepisovaly
+      tytéž parametry v URL, a uživatel viděl dvě hledací pole s oddělenými
+      počítadly a dvě identické hlášky o prázdném výsledku. Registr tvrzení
+      to dělal správně od začátku — tohle je srovnání s ním. -#}
   {% <views_projection name="table" default_view="table"> %}
-  {% <table_advanced_table id="cases-registry-table" caption="Registr kauz" record_type="case" count={idx.rows | length} columns={["ID", "Stav", "Kauza", "Období"]} sort_keys={["id", "status", "", "period"]} searchable={true} url_state={true} export_name="kauzy" empty_text="Žádná kauza neodpovídá zadanému filtru."> %}
+  {% <table_advanced_table id="cases-registry-table" caption="Registr kauz" record_type="case" count={idx.rows | length} columns={["ID", "Stav", "Kauza", "Období"]} sort_keys={["id", "status", "", "period"]} export_name="kauzy" empty_text="Žádná kauza neodpovídá zadanému filtru."> %}
     {% for p in idx.rows %}
     <tr data-record-key="{{ p.identifier }}" data-status="{{ p.statusLabel }}" data-facet="{{ p.statusLabel }}" id="cases-registry-table-{{ p.identifier | lower }}">
       <td class="whitespace-nowrap p-3 align-top">

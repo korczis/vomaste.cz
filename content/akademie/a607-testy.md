@@ -1,6 +1,6 @@
 +++
 title = "A607 — Testy"
-description = "Dvě úrovně testů, každá na něco jiného: čisté funkce v Node a chování v prohlížeči. Co který typ pokrývá a co nepokrývá ani jeden."
+description = "Tři úrovně testů, každá na něco jiného: čisté funkce v Node, shellový guard nad git hooky a chování v prohlížeči. Co který typ pokrývá a co nepokrývá ani jeden."
 template = "learning-lesson.html"
 weight = 1607
 
@@ -23,10 +23,16 @@ related_kb = ["koncepty/prubezne-overovani.md"]
 next = "A608"
 +++
 
-## Dvě úrovně
+## Tři úrovně
 
 **Node testy** (`npm test`) — čisté funkce: validátory, generátory,
 parsery, výpočty. Běží uvnitř kanonické brány, takže se nedají obejít.
+
+**Test hooků** (`npm run test:hooks`) — shellový test nad guardem, který
+rozhoduje, jestli se commit na hlavní větvi sám nasadí. Do předchozí
+úrovně se nevejde technicky: guard je shell, a spouštěč Node testů čte
+jen soubory Node. Běží v bráně **i** v rychlém režimu, protože si staví
+vlastní dočasné repozitáře a nesahá na síť.
 
 **Prohlížečové testy** (`npm run test:e2e`) — chování nad hotovým
 `public/`: interakce, přístupnost, chování na mobilním viewportu. Běží
@@ -39,6 +45,8 @@ prodlužovaly by každý commit, který se HTML netýká.
 |---|---|
 | Spočítá se hloubka grafu správně? | Node |
 | Odmítne validátor stav bez nezávislé dvojice? | Node |
+| Nasadí se merge na hlavní větvi sám? | hook |
+| Zůstane commit lokální uprostřed rozdělané operace? | hook |
 | Přeteče tabulka na mobilu do strany? | prohlížeč |
 | Hlásí řadicí tlačítko stav čtečce obrazovky? | prohlížeč |
 | Nemá stránka vážné porušení přístupnosti? | prohlížeč |
@@ -47,6 +55,13 @@ Přístupnostní kontrola se nepouští na ručně sepsaný seznam stránek — 
 stránek se **odvozují z dat**, aby se nový typ zařadil sám. Kdyby se
 odvozování rozbilo, sada by prošla s nulou testů a vypadala zeleně; proto
 je součástí i kontrola, že seznam není prázdný ani zkrácený.
+
+Blokující hook potřebuje čtyři případy, ne jeden: **povolený**,
+**zablokovaný**, **hraniční** a **selhání samotného hooku**. Poslední se
+vynechává nejčastěji a je nejdražší — hook, který spadne na vlastní chybě,
+umí zablokovat celý repozitář. U guardu nasazení mají obě chyby svou cenu:
+přísný navíc znamená, že si někdo myslí, že nasadil, a nenasadil; volný
+navíc zveřejní něco, co nikdo zveřejnit nechtěl.
 
 {% <callout kind="pravidlo" title="Test, který nikdy nespadl, obvykle nic netestuje"> %}
 Než test odevzdáte, rozbijte to, co má hlídat, a ověřte, že spadne — a že

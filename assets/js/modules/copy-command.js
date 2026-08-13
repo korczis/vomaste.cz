@@ -17,14 +17,13 @@ export function initCopyCommands(root = document) {
       var text = button.getAttribute("data-copy-text");
       if (!text) return;
 
-      copyToClipboard(text, null);
-
-      var original = button.textContent;
-      button.textContent = "Zkopírováno";
-      button.setAttribute("aria-live", "polite");
-      window.setTimeout(function () {
-        button.textContent = original;
-      }, 1600);
+      // Tlačítko předáváme dál, aby zpětnou vazbu vydal ten, kdo zná
+      // výsledek. Dřív se posílalo null a popisek se hned synchronně
+      // přepsal na „Zkopírováno“ — tedy i tehdy, když schránka chyběla
+      // nebo zápis odmítla. Uživatel odešel s prázdnou schránkou a
+      // jistotou, že má zkopírováno; přesně to tvrzení o schopnosti,
+      // které konstituce §8 zakazuje.
+      copyToClipboard(text, button, { ok: "Zkopírováno", fail: "Nezkopírováno" });
     });
   });
 }

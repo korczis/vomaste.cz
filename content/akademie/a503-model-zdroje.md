@@ -51,8 +51,12 @@ nezávislost odebrat, nikdy ji nepřidá.** Dva zdroje se stejným vydavatelem
 zůstanou jedním hlasem, i kdyby měly rodiny různé — nezávislost se
 posuzuje podle rodiny **i** podle registrované domény.
 
-Prakticky to znamená, že prázdné pole není bezpečná mezera: znamená jen,
-že původ nikdo nezjistil.
+Prakticky z toho plyne i to, jak se zapisuje „rodinu neznám": pole se
+**vynechá**. Prázdný řetězec schéma odmítne — znamenal by přesně totéž co
+chybějící klíč a jen svádí k tomu, aby se ty dva stavy rozlišovaly. Dvě
+evidenční šablony to kdysi dělaly a podhodnocovaly tím počet nezávislých
+rodin. Chybějící rodina přitom není bezpečná mezera: neznamená
+nezávislost, znamená neposouzeno.
 
 ## Redakční poznámka je povinná
 

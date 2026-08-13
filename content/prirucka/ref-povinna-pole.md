@@ -44,7 +44,7 @@ tenhle přehled slouží k orientaci, ne k rozhodování.
 | `url` | přímý odkaz na originál |
 | `retrieved` | datum, kdy byl zdroj otevřen |
 | `claims` | tvrzení, která podpírá — musí souhlasit obousměrně |
-| `sourceFamily` | původ materiálu (volitelné, ale rozhoduje o nezávislosti) |
+| `sourceFamily` | původ materiálu — volitelné, ale rozhoduje o nezávislosti; když je původ neznámý, pole se **vynechá** (prázdný řetězec schéma odmítne) |
 | `content` | **povinná redakční poznámka**, minimální délka |
 
 ## Mezera
