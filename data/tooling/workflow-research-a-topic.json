@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/workflow-research-a-topic",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "workflow-research-a-topic",
+  "kind": "workflow",
+  "name": "research-a-topic",
+  "title": "Rešerše tématu",
+  "category": "reserse",
+  "personas": [
+    "researcher",
+    "editor"
+  ],
+  "riskLevel": "review-required",
+  "writes": true,
+  "requiresAuthorization": true,
+  "summary": "Cesta rešeršisty od širokého zadání k doloženým záznamům nebo poctivým mezerám: kontrola rozsahu jako PRVNÍ krok, zúžení otázky, hledání kandidátů v pořadí registr → zpravodajství → agregátor, ověření, posouzení nezávislosti, důkazní balíček a teprve pak zápis.",
+  "whenToRun": "Když je téma a subjekt, ale ne konkrétní otázka. Zúžení je první krok, ne předpoklad.",
+  "describedFrom": "header",
+  "notes": [
+    "Kontrola rozsahu je první, ne poslední. Rešerše mimo rozsah je práce, která nemůže skončit publikací.",
+    "Mezera je výsledek, ne neúspěch. Hedge věta není kompromis mezi tvrzením a mezerou — je to nedoložené tvrzení.",
+    "Když se rešerše rozlézá, vrací se k zúžení. To není jednorázový krok."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/workflow-work-a-coop-task",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "workflow-work-a-coop-task",
+  "kind": "workflow",
+  "name": "work-a-coop-task",
+  "title": "Práce na co-op úkolu",
+  "category": "provoz",
+  "personas": [
+    "orchestrator",
+    "developer",
+    "editor",
+    "maintainer"
+  ],
+  "riskLevel": "maintainer",
+  "writes": true,
+  "summary": "Cesta pro souběžnou práci víc instancí: kontrola stavu sběrnice a kolizí, vlastní worktree a větev, doplnění prerekvizit v novém worktree, ohlášení překryvu PŘED začátkem, zelený build a merge-request. Merge a push dělá ORCH.",
+  "whenToRun": "Když v repozitáři běží souběžná práce a máš konkrétní úkol T-### z boardu.",
+  "describedFrom": "header",
+  "notes": [
+    "docs/coop/TASKS.md edituje jen ORCH. Single-writer pravidlo je stejné jako u dat.",
+    "Nový worktree nemá node_modules ani vygenerované vstupy; bez nich spadne pre-commit dřív, než se stihne podivit.",
+    "Konflikt v generovaném souboru není chyba, je to důsledek souběžnosti. Recept je v protokolu, ne v hlavě."
+  ]
+}

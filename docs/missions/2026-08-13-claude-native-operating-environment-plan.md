@@ -158,9 +158,9 @@ Legenda stavu: ` ` čeká · `~` běží · `x` hotovo · `!` blokováno
 
 ### Fáze K — workflow vrstva
 
-- [ ] **K1** `.claude/workflows/` — schema + první tři cesty
+- [x] **K1** `.claude/workflows/` — schema + první tři cesty
       (first-session, verify-a-claim, submit-a-source).
-- [ ] **K2** Zbytek cest (research-topic, editorial-review, fix-site-bug,
+- [x] **K2** Zbytek cest (research-topic, editorial-review, fix-site-bug,
       first-code-contribution, schema-change, correction, prepare-pr).
 
 ### Fáze L — validace a testy

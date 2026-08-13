@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/workflow-first-code-contribution",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "workflow-first-code-contribution",
+  "kind": "workflow",
+  "name": "first-code-contribution",
+  "title": "První technický příspěvek",
+  "category": "provoz",
+  "personas": [
+    "developer"
+  ],
+  "riskLevel": "review-required",
+  "writes": true,
+  "summary": "Cesta nového vývojáře od naklonovaného repozitáře k otevřenému pull requestu: bootstrap s personou, vlastní větev, rozklad zadání, malá změna, cílené testy, kontrola dopadu na dokumentaci, brána kvality a popis PR postavený na vysvětlení diffu.",
+  "whenToRun": "Když někdo přispívá technicky poprvé.",
+  "describedFrom": "header",
+  "notes": [
+    "Krok s vlastní větví se přeskakuje a nejvíc bolí: commit na master nasazuje během sekund a není pauza na rozmyšlenou.",
+    "První příspěvek není místo na refaktor.",
+    "Nečekaný soubor v diffu má přednost před zelenou bránou."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/workflow-prepare-a-pull-request",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "workflow-prepare-a-pull-request",
+  "kind": "workflow",
+  "name": "prepare-a-pull-request",
+  "title": "Příprava pull requestu",
+  "category": "provoz",
+  "personas": [
+    "developer",
+    "editor",
+    "maintainer"
+  ],
+  "riskLevel": "review-required",
+  "writes": true,
+  "summary": "Závěrečná cesta před odesláním: kontrola větve a nečekaných souborů, dopad na dokumentaci, redakční review u obsahové změny, brána kvality, vysvětlení diffu jako podklad pro popis, commit a otevření PR.",
+  "whenToRun": "Když je práce hotová. Ne „skoro“.",
+  "describedFrom": "header",
+  "notes": [
+    "Obsahová změna bez redakčního review není připravená, i když je brána zelená.",
+    "Recenzent nemá nic dohledávat, aby mohl začít.",
+    "Na master v hlavním checkoutu nemá PR co otevřít — commit tam rovnou nasazuje."
+  ]
+}
