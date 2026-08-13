@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "just hooks — Přeinstalace git hooků"
 template = "tooling-command.html"
-weight = 141
+weight = 157
 description = "Přeinstalace git hooků: Zkratka, která znovu nasměruje core.hooksPath na .githooks/. just recept, provoz."
 
 [extra]

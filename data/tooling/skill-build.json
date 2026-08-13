@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-build",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-build",
+  "kind": "skill",
+  "name": "build",
+  "title": "Kanonická brána kvality",
+  "category": "kontrola",
+  "personas": [
+    "editor",
+    "developer",
+    "reviewer",
+    "maintainer",
+    "orchestrator"
+  ],
+  "riskLevel": "read-only",
+  "writes": false,
+  "summary": "Spustí npm run build a vyloží výsledek strukturovaně: který krok padl, co ta hláška znamená a co s ní. Nese tabulku typických selhání — od chyby v datech přes ruční editaci generované stránky až po chybějící záznam v katalogu toolingu — a rozlišuje je od stavu čerstvého worktree, kde vygenerované vstupy prostě nikdy nevznikly.",
+  "whenToRun": "Než se cokoli ohlásí jako hotové, před merge a před review-requestem. Ne během rychlé iterace — trvá minuty.",
+  "describedFrom": "header",
+  "notes": [
+    "disable-model-invocation: true. Trvá minuty a v hlavním checkoutu na master navazuje na auto-push; spouští ho člověk.",
+    "Čte se PRVNÍ selhání, ne poslední. Kroky na sebe navazují a pozdější chyby bývají následek.",
+    "Nikdy nehlásit hotovo bez exit 0, ani „prošlo to skoro celé“.",
+    "Build patří PŘED commit: na master hook po commitu pushuje a nasazuje."
+  ]
+}

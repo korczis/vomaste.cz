@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/review-gap — Review mezery"
 template = "tooling-command.html"
-weight = 110
+weight = 114
 description = "Review mezery: Sedmi kontrolami posoudí, jestli je zapsaná mezera skutečně otevřenou otázkou, a ne skrytou spekulací. Claude skill, kontrola výstupů."
 
 [extra]

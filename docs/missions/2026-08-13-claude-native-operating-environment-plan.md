@@ -122,23 +122,24 @@ Legenda stavu: ` ` čeká · `~` běží · `x` hotovo · `!` blokováno
 
 ### Fáze G — inženýrské skills
 
-- [ ] **G1** `/data-model`
-- [ ] **G2** `/schema-change`
-- [ ] **G3** `/test`
-- [ ] **G4** `/build`
-- [ ] **G5** `/quality`
-- [ ] **G6** `/ui-review`
-- [ ] **G7** `/a11y-review`
-- [ ] **G8** `/seo-review`
+- [x] **G1** `/data-model`
+- [x] **G2** `/schema-change`
+- [x] **G3** `/test`
+- [x] **G4** `/build`
+- [x] **G5** `/quality`
+- [x] **G6** `/ui-review`
+- [x] **G7** `/a11y-review`
+- [x] **G8** `/seo-review`
 
 ### Fáze H — dokumentace, git, co-op
 
-- [ ] **H1** `/docs-sync`
-- [ ] **H2** `/explain`
-- [ ] **H3** `/diff-explain`
-- [ ] **H4** `/pr`
-- [ ] **H5** `/review-pr`
-- [ ] **H6** `/coop-status`
+- [x] **H1** `/docs-sync`
+- [x] **H2** `/explain`
+- [x] **H3** `/diff-explain`
+- [x] **H4** `/pr`
+- [x] **H5** `/review-pr`
+- [x] **H6** `/coop-status`
+- [x] **H7** `/academy-lesson` + `/kb-entry` (doplněno z navazujícího zadání)
 
 ### Fáze I — subagenti
 

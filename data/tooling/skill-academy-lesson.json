@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-academy-lesson",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-academy-lesson",
+  "kind": "skill",
+  "name": "academy-lesson",
+  "title": "Lekce vzdělávací vrstvy",
+  "category": "provoz",
+  "personas": [
+    "editor",
+    "developer",
+    "maintainer"
+  ],
+  "riskLevel": "review-required",
+  "writes": true,
+  "summary": "Vytvoří nebo aktualizuje lekci Akademie či úkol Bootcampu podle skutečného schématu vzdělávací vrstvy: frontmatter s lesson_id, úrovní, audience a ověřitelnými cíli, odkazy na kanonické koncepty místo vlastních definic, cvičení na syntetických datech a zapojení do řetězu next a prerekvizit.",
+  "whenToRun": "Když má vzniknout nová lekce, nebo když se změnilo něco, co některá lekce popisuje. Zastaralá technická lekce je horší než žádná.",
+  "outputs": [
+    "content/akademie/**",
+    "content/bootcamp/**",
+    "data/learning-fixtures.toml"
+  ],
+  "describedFrom": "header",
+  "notes": [
+    "Kanonické znění pojmu vlastní content/koncepty. Lekce pojem APLIKUJE, nikdy ho nedefinuje podruhé — druhá definice slova „sporné“ je drift, ne didaktika.",
+    "Cvičná data jsou fiktivní, označená synthetic a v rezervovaném jmenném prostoru. Kontrola L13 shodí build, když se cvičný identifikátor objeví v reálných datech.",
+    "Výuka nesmí být zadními vrátky k rozšíření rozsahu: nacvičovat klasifikaci obvinění na skutečném člověku by znamenalo psát o něm nedoložená tvrzení.",
+    "Nová lekce musí zapadnout do řetězu. Osiřelá lekce shodí validate:learning."
+  ]
+}

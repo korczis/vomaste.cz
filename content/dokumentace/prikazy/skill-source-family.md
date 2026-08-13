@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/source-family — Nezávislost zdrojů"
 template = "tooling-command.html"
-weight = 112
+weight = 118
 description = "Nezávislost zdrojů: Posoudí, kolik nezávislých hlasů daná sada zdrojů skutečně tvoří, a tím jestli tvrzení unese CORROBORATED, nebo musí zůstat 1 ZDROJ. Claude skill, kontrola výstupů."
 
 [extra]

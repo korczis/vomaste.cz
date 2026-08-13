@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/commit — Dobře utvořený commit"
 template = "tooling-command.html"
-weight = 124
+weight = 133
 description = "Dobře utvořený commit: Vede k commitu, který odpovídá zvyklostem repozitáře: konvenční zpráva, správná brána pro danou situaci (rychlá pre-commit podmnožina versus plný build před mergem nebo pushem) a odpovídající hlášení na co-op sběrnici podle role.. Claude skill, provoz."
 
 [extra]

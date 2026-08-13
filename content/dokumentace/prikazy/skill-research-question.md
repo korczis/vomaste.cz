@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/research-question — Zúžení rešeršní otázky"
 template = "tooling-command.html"
-weight = 120
+weight = 128
 description = "Zúžení rešeršní otázky: Rozseká široké zadání („prověř firmu X“) na konkrétní doložitelné podotázky a ke každé přiřadí registr nebo typ zdroje, který na ni vůbec může odpovědět — včetně toho, co ten zdroj nedokáže a na jakou past se v něm už najelo. Claude skill, rešerše."
 
 [extra]

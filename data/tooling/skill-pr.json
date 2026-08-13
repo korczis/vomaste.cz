@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-pr",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-pr",
+  "kind": "skill",
+  "name": "pr",
+  "title": "Otevření pull requestu",
+  "category": "provoz",
+  "personas": [
+    "developer",
+    "editor",
+    "maintainer"
+  ],
+  "riskLevel": "review-required",
+  "writes": true,
+  "summary": "Ověří větev a čistou bránu, sestaví popis PR, ze kterého recenzent pozná, co posuzuje a jak to ověřit — rozsah po kategoriích, doložení spuštěných validací, dotčené záznamy, vztah k rozsahu pokrytí, na co se zaměřit a co autor vědomě neudělal. Otevře PR. Nikdy nemerguje.",
+  "whenToRun": "Když je práce hotová a /quality vrátilo READY. Ne na master v hlavním checkoutu — tam commit rovnou nasazuje.",
+  "describedFrom": "header",
+  "notes": [
+    "disable-model-invocation: true. Otevření PR je vnější akce a Claude ji nesmí udělat mimoděk.",
+    "Bez zeleného npm run build PR nevzniká. PR s červenou bránou plýtvá cizím časem.",
+    "Oddíly „na co se zaměřit“ a „co jsem neudělal“ zrychlují review nejvíc: první je poctivější než tvrdit, že je všechno v pořádku, druhý brání tomu, aby se vynechání objevilo až po mergi."
+  ]
+}

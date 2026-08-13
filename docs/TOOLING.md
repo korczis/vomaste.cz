@@ -4,7 +4,7 @@
 
 Publikovaná podoba: [/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prikazy/).
 
-145 příkazů celkem: 105 npm skriptů, 24 skills, 0 subagentů, 0 workflow, 16 just receptů. 55 z nich může shodit běh, 45 jsou krokem `npm run build` a 10 běží v pre-commit hooku.
+161 příkazů celkem: 105 npm skriptů, 40 skills, 0 subagentů, 0 workflow, 16 just receptů. 55 z nich může shodit běh, 45 jsou krokem `npm run build` a 10 běží v pre-commit hooku.
 
 **Pravidlo, které z katalogu plyne**: příkaz se přidává do `package.json` (nebo do `justfile` či `.claude/skills/`) a zároveň do `data/tooling/`. Bez záznamu build spadne — dokumentace tak nemůže zaostat za kódem.
 
@@ -118,17 +118,25 @@ Publikovaná podoba: [/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prik
 | [`npm run serve`](/dokumentace/prikazy/serve/) | provoz | — | — | — |
 | [`npm run test:update-golden`](/dokumentace/prikazy/test-update-golden/) | provoz | — | — | — |
 
-## Claude skill (24)
+## Claude skill (40)
 
 | Volání | Persona | Riziko | Zapisuje | Rozsahová brána |
 |---|---|---|---|---|
+| [`/a11y-review`](/dokumentace/prikazy/skill-a11y-review/) | vývojář, recenzent, údržbář | jen čte | ne | — |
 | [`/authorization-check`](/dokumentace/prikazy/skill-authorization-check/) | rešeršista, editor, recenzent, údržbář | jen čte | ne | ano |
+| [`/build`](/dokumentace/prikazy/skill-build/) | editor, vývojář, recenzent, údržbář, orchestrátor | jen čte | ne | — |
 | [`/diagnose`](/dokumentace/prikazy/skill-diagnose/) | čtenář, ověřovatel, přispěvatel zdrojem, rešeršista, editor, vývojář, recenzent, údržbář, orchestrátor | jen čte | ne | — |
+| [`/docs-sync`](/dokumentace/prikazy/skill-docs-sync/) | vývojář, editor, údržbář | jen čte | ne | — |
 | [`/editorial-review`](/dokumentace/prikazy/skill-editorial-review/) | editor, recenzent, údržbář | jen čte | ne | — |
+| [`/quality`](/dokumentace/prikazy/skill-quality/) | editor, vývojář, recenzent, údržbář | jen čte | ne | — |
 | [`/review-claim`](/dokumentace/prikazy/skill-review-claim/) | ověřovatel, editor, recenzent, údržbář | jen čte | ne | — |
 | [`/review-gap`](/dokumentace/prikazy/skill-review-gap/) | ověřovatel, editor, recenzent, údržbář | jen čte | ne | — |
+| [`/review-pr`](/dokumentace/prikazy/skill-review-pr/) | recenzent, editor, údržbář, orchestrátor | jen čte | ne | — |
 | [`/review-source`](/dokumentace/prikazy/skill-review-source/) | ověřovatel, editor, recenzent, údržbář | jen čte | ne | — |
+| [`/seo-review`](/dokumentace/prikazy/skill-seo-review/) | vývojář, údržbář | jen čte | ne | — |
 | [`/source-family`](/dokumentace/prikazy/skill-source-family/) | ověřovatel, rešeršista, editor, recenzent | jen čte | ne | — |
+| [`/test`](/dokumentace/prikazy/skill-test/) | vývojář, údržbář | jen čte | ne | — |
+| [`/ui-review`](/dokumentace/prikazy/skill-ui-review/) | vývojář, recenzent, údržbář | jen čte | ne | — |
 | [`/evidence-packet`](/dokumentace/prikazy/skill-evidence-packet/) | přispěvatel zdrojem, rešeršista, editor | bezpečný zápis | ano | — |
 | [`/find-source`](/dokumentace/prikazy/skill-find-source/) | ověřovatel, přispěvatel zdrojem, rešeršista | jen čte | ne | — |
 | [`/investigate`](/dokumentace/prikazy/skill-investigate/) | rešeršista, editor, údržbář | vyžaduje review | ano | ano |
@@ -138,13 +146,21 @@ Publikovaná podoba: [/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prik
 | [`/prismatic-promote`](/dokumentace/prikazy/skill-prismatic-promote/) | editor, údržbář | vyžaduje review | ano | ano |
 | [`/research-question`](/dokumentace/prikazy/skill-research-question/) | rešeršista, editor, přispěvatel zdrojem | jen čte | ne | — |
 | [`/verify-source`](/dokumentace/prikazy/skill-verify-source/) | ověřovatel, přispěvatel zdrojem, rešeršista, editor | jen čte | ne | — |
+| [`/academy-lesson`](/dokumentace/prikazy/skill-academy-lesson/) | editor, vývojář, údržbář | vyžaduje review | ano | — |
 | [`/adr`](/dokumentace/prikazy/skill-adr/) | vývojář, údržbář | bezpečný zápis | ano | — |
 | [`/bootstrap`](/dokumentace/prikazy/skill-bootstrap/) | čtenář, ověřovatel, přispěvatel zdrojem, rešeršista, editor, vývojář, recenzent, údržbář, orchestrátor | jen čte | ne | — |
 | [`/commit`](/dokumentace/prikazy/skill-commit/) | editor, vývojář, údržbář, orchestrátor | údržbář | ano | — |
+| [`/coop-status`](/dokumentace/prikazy/skill-coop-status/) | vývojář, editor, údržbář, orchestrátor | jen čte | ne | — |
 | [`/correction`](/dokumentace/prikazy/skill-correction/) | přispěvatel zdrojem, editor, údržbář | vyžaduje review | ano | — |
+| [`/data-model`](/dokumentace/prikazy/skill-data-model/) | rešeršista, editor, vývojář, údržbář | jen čte | ne | — |
+| [`/diff-explain`](/dokumentace/prikazy/skill-diff-explain/) | přispěvatel zdrojem, editor, vývojář, recenzent, údržbář | jen čte | ne | — |
 | [`/dossier-entry`](/dokumentace/prikazy/skill-dossier-entry/) | rešeršista, editor | vyžaduje review | ano | ano |
+| [`/explain`](/dokumentace/prikazy/skill-explain/) | čtenář, ověřovatel, přispěvatel zdrojem, rešeršista, editor, vývojář, recenzent | jen čte | ne | — |
 | [`/guide`](/dokumentace/prikazy/skill-guide/) | čtenář, ověřovatel, přispěvatel zdrojem, rešeršista, editor, vývojář, recenzent, údržbář, orchestrátor | jen čte | ne | — |
+| [`/kb-entry`](/dokumentace/prikazy/skill-kb-entry/) | rešeršista, editor, vývojář, údržbář | vyžaduje review | ano | — |
+| [`/pr`](/dokumentace/prikazy/skill-pr/) | vývojář, editor, údržbář | vyžaduje review | ano | — |
 | [`/project-tour`](/dokumentace/prikazy/skill-project-tour/) | čtenář, ověřovatel, přispěvatel zdrojem, rešeršista, editor, vývojář, recenzent, údržbář | jen čte | ne | — |
+| [`/schema-change`](/dokumentace/prikazy/skill-schema-change/) | vývojář, údržbář | údržbář | ano | — |
 | [`/task`](/dokumentace/prikazy/skill-task/) | přispěvatel zdrojem, rešeršista, editor, vývojář, recenzent, údržbář | jen čte | ne | — |
 
 ## just recept (16)
@@ -477,7 +493,7 @@ Publikovaná podoba: [/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prik
 
 - **validace vstupů** (18): `npm run archive:check`, `npm run data:compile`, `npm run data:validate`, `npm run check:workflow-parity`, `npm run intake:validate-form`, `npm run intake:validate-workflow`, `npm run lint:component-reuse`, `npm run lint:hardcoded-records`, `npm run lint:historical-coupling`, `npm run lint:source-outlets`, `npm run validate:authorization`, `npm run validate:claude-tooling`, `npm run validate:concepts`, `npm run validate:dossier-types`, `npm run validate:entity-types`, `npm run validate:learning`, `npm run validate:media`, `npm run verify:authorization-log`
 - **generování** (20): `npm run build:data-exports`, `npm run build:entity-type-sections`, `npm run build:government-roster`, `npm run build:graph-projections`, `npm run build:jsonld-exports`, `npm run build:navigation`, `npm run build:routes`, `npm run build:search-index`, `npm run build:source-catalog`, `npm run build:tooling-catalog`, `npm run css:build`, `npm run data:generate-content`, `npm run data:metrics`, `npm run data:sync-content`, `npm run data:views`, `npm run generate:candidates`, `npm run generate:discovery-log`, `npm run intake:index`, `npm run js:build`, `npm run report:evidence-plan`
-- **kontrola výstupů** (44): `npm run archive:check-private`, `npm run data:check-generated`, `npm run data:check-generated:content`, `npm run intake:e2e-fixture`, `npm run intake:fixture`, `npm run intake:match-fixture`, `npm run intake:preflight-fixture`, `npm run intake:publish-fixture`, `npm run intake:validate`, `npm run lint:generated-content`, `npm run test`, `npm run test:e2e`, `npm run test:e2e:benchmark`, `npm run test:e2e:desktop`, `npm run test:intake`, `npm run test:intake:e2e`, `npm run test:intake:form`, `npm run test:intake:github`, `npm run test:intake:matching`, `npm run test:intake:preflight`, `npm run test:intake:risk`, `npm run validate:directory-index`, `npm run validate:graph-projections`, `npm run validate:navigation`, `npm run validate:navigation-metrics`, `npm run verify:anchors`, `npm run verify:export`, `npm run verify:full-pages`, `npm run verify:jsonld`, `npm run verify:navigation-counts`, `npm run verify:og`, `npm run verify:source-catalog`, `npm run verify:table-responsive`, `npm run verify:tooling-catalog`, `/authorization-check`, `/diagnose`, `/editorial-review`, `/review-claim`, `/review-gap`, `/review-source`, `/source-family`, `just doctor`, `just check`, `just test`
+- **kontrola výstupů** (52): `npm run archive:check-private`, `npm run data:check-generated`, `npm run data:check-generated:content`, `npm run intake:e2e-fixture`, `npm run intake:fixture`, `npm run intake:match-fixture`, `npm run intake:preflight-fixture`, `npm run intake:publish-fixture`, `npm run intake:validate`, `npm run lint:generated-content`, `npm run test`, `npm run test:e2e`, `npm run test:e2e:benchmark`, `npm run test:e2e:desktop`, `npm run test:intake`, `npm run test:intake:e2e`, `npm run test:intake:form`, `npm run test:intake:github`, `npm run test:intake:matching`, `npm run test:intake:preflight`, `npm run test:intake:risk`, `npm run validate:directory-index`, `npm run validate:graph-projections`, `npm run validate:navigation`, `npm run validate:navigation-metrics`, `npm run verify:anchors`, `npm run verify:export`, `npm run verify:full-pages`, `npm run verify:jsonld`, `npm run verify:navigation-counts`, `npm run verify:og`, `npm run verify:source-catalog`, `npm run verify:table-responsive`, `npm run verify:tooling-catalog`, `/a11y-review`, `/authorization-check`, `/build`, `/diagnose`, `/docs-sync`, `/editorial-review`, `/quality`, `/review-claim`, `/review-gap`, `/review-pr`, `/review-source`, `/seo-review`, `/source-family`, `/test`, `/ui-review`, `just doctor`, `just check`, `just test`
 - **rešerše** (27): `npm run archive:refresh-private`, `npm run archive:refresh-public`, `npm run media:fetch`, `npm run prismatic:diff`, `npm run prismatic:drift`, `npm run prismatic:enrich-all`, `npm run prismatic:import`, `npm run prismatic:plan`, `npm run prismatic:probe`, `npm run prismatic:promote`, `npm run prismatic:review`, `npm run prismatic:run`, `npm run prismatic:status`, `npm run prismatic:verify`, `npm run screening:public-money`, `npm run sources:detect-family`, `/evidence-packet`, `/find-source`, `/investigate`, `/prismatic-bootstrap`, `/prismatic-drift-audit`, `/prismatic-enrich-all`, `/prismatic-promote`, `/research-question`, `/verify-source`, `just ares *args`, `just expand ico *args`
-- **provoz** (36): `npm run authorization:anchor`, `npm run authorize:entity`, `npm run benchmark:graph`, `npm run build`, `npm run css:watch`, `npm run data:build`, `npm run dev`, `npm run dossier:next-id`, `npm run dossier:scaffold`, `npm run generate:all`, `npm run hooks:install`, `npm run check`, `npm run intake:github-event`, `npm run intake:process`, `npm run preflight`, `npm run serve`, `npm run test:update-golden`, `/adr`, `/bootstrap`, `/commit`, `/correction`, `/dossier-entry`, `/guide`, `/project-tour`, `/task`, `just authorize entity`, `just build`, `just clean`, `just coop`, `just default`, `just dev`, `just hooks`, `just inbox`, `just regen`, `just scaffold slug title subject auth_record_id`, `just setup`
+- **provoz** (44): `npm run authorization:anchor`, `npm run authorize:entity`, `npm run benchmark:graph`, `npm run build`, `npm run css:watch`, `npm run data:build`, `npm run dev`, `npm run dossier:next-id`, `npm run dossier:scaffold`, `npm run generate:all`, `npm run hooks:install`, `npm run check`, `npm run intake:github-event`, `npm run intake:process`, `npm run preflight`, `npm run serve`, `npm run test:update-golden`, `/academy-lesson`, `/adr`, `/bootstrap`, `/commit`, `/coop-status`, `/correction`, `/data-model`, `/diff-explain`, `/dossier-entry`, `/explain`, `/guide`, `/kb-entry`, `/pr`, `/project-tour`, `/schema-change`, `/task`, `just authorize entity`, `just build`, `just clean`, `just coop`, `just default`, `just dev`, `just hooks`, `just inbox`, `just regen`, `just scaffold slug title subject auth_record_id`, `just setup`
 
