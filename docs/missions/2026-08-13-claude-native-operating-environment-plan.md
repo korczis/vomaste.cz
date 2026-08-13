@@ -32,11 +32,12 @@ navrhované řešení se jim musí přizpůsobit, ne je duplikovat:
    a o pole persona/risk. Druhý registr by byl přesně ten drift, proti
    kterému celý repozitář stojí.
 
-2. **`metadata` je legální frontmatter pole SKILL.md** (ověřeno
-   v oficiální dokumentaci 2026-08-13, viz `docs/claude-code/compatibility.md`):
-   free-form YAML mapa pro vlastní tooling, Claude Code na ni nesahá.
-   → Persona/risk/writes žijí ve frontmatteru skillu, katalog je odtud
-   čte. Žádný companion manifest, žádná druhá kopie.
+2. **Persona a riziko patří do `data/tooling/*.json`, ne do frontmatteru.**
+   `metadata` v `SKILL.md` je sice legální free-form pole, ale Claude
+   Code na ně nesahá — runtime by to nepřineslo nic — a subagenti mají
+   uzavřenou sadu polí frontmatteru, takže by pro ně stejně musel vzniknout
+   druhý mechanismus. Jedno místo pro všechny tři vrstvy.
+   → Rozhodnutí a jeho zdůvodnění: `docs/adr/claude-native-contributor-operating-environment.md`.
 
 3. **Vzdělávací vrstva už existuje** (`data/learning.toml`,
    `/start/`, `/bootcamp/`, `/akademie/`, `/prirucka/`, `/prispet/`,
@@ -74,7 +75,7 @@ Legenda stavu: ` ` čeká · `~` běží · `x` hotovo · `!` blokováno
 
 ### Fáze B — registr a brána (mechanika první)
 
-- [ ] **B1** Rozšířit `schemas/canonical/tooling-command.schema.json`:
+- [x] **B1** Rozšířit `schemas/canonical/tooling-command.schema.json`:
       `kind` o `agent`/`workflow`, nová pole `personas`, `riskLevel`,
       `writes`, `requiresAuthorization`.
 - [ ] **B2** `build-tooling-catalog.mjs`: číst `metadata` z frontmatteru

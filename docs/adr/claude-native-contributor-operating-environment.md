@@ -139,11 +139,21 @@ kanonický datový model a generované adaptéry. Rozšiřuje se proto
 existující katalog o `kind: agent` a `kind: workflow` a o pole
 `personas` / `riskLevel` / `writes` / `requiresAuthorization`.
 
-Persona a riziko se přitom **nepíšou do katalogového záznamu ručně** —
-žijí ve frontmatteru skillu v poli `metadata` (ověřeně legální
-free-form pole, viz [`../claude-code/compatibility.md`](../claude-code/compatibility.md))
-a generátor je odtud čte. Jeden vlastník na každou věc: prózu vlastní
-`data/tooling/*.json`, strojová fakta vlastní zdroj sám.
+**Kde persona a riziko žijí — a proč ne ve frontmatteru.** Během
+implementace se zvažovalo zapsat je do pole `metadata` ve frontmatteru
+`SKILL.md` (ověřeně legální free-form pole, viz
+[`../claude-code/compatibility.md`](../claude-code/compatibility.md)).
+Zamítnuto ze dvou důvodů. Claude Code na `metadata` nesahá, takže by to
+runtime nic nepřineslo — jediným čtenářem by byl stejně katalog. A hlavně:
+subagenti v `.claude/agents/*.md` mají uzavřenou sadu polí frontmatteru,
+takže by pro ně stejně musel existovat druhý mechanismus. Jednotné
+řešení pro všechny tři vrstvy je jedno místo: `data/tooling/*.json`,
+kde už schéma i brána existují.
+
+Dělba práce v katalogu tedy zůstává původní: **ručně se píše jen to, co
+se ze zdrojů odvodit nedá** (próza, persona, riziko), **strojová fakta se
+dopočítávají ze skutečnosti** (příkazová řádka, zařazení do pipeline,
+frontmatter skillu, nástroje subagenta).
 
 ## Meze růstu — co brání sprawlu
 
