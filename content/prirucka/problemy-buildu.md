@@ -56,16 +56,19 @@ audience = ["vyvojar", "maintainer"]
 - **Opravíte**: změnu udělejte v kanonických datech.
 - **Předejdete**: generovaný soubor poznáte podle příznaku v hlavičce.
 
-## Přetečení zásobníku při sestavení
+## Komponenta se vykreslí prázdná
 
-- **Znamená**: generátor spadl bez čitelné chyby.
-- **Příčina**: cyklický import v šablonách — typicky soubor maker
-  importující sám sebe.
-- **Najdete**: podle posledního zásahu do šablon; hláška bývá k ničemu.
-- **Opravíte**: rozdělte makra na listová (nevolají nic) a složená, která
-  si listová importují.
-- **Předejdete**: `self::` nefunguje napříč importem a self-import to
-  neřeší — viz [A603](@/akademie/a603-zola.md).
+- **Znamená**: rámeček je na stránce, obsah v něm chybí, build je zelený
+  a nic se neohlásilo.
+- **Příčina**: tělo komponenty čte jiné jméno parametru, než jaké je
+  v hlavičce — a `| safe` na tom řádku chybu spolkne.
+- **Najdete**: v postavené stránce. Ve zdroji to nepoznáte, protože
+  syntakticky je všechno v pořádku.
+- **Opravíte**: srovnáte jméno v hlavičce `{% component %}` s tím, co
+  tělo skutečně vypisuje.
+- **Předejdete**: `| safe` jen tam, kde vědomě vpouštíte hotové HTML.
+  `{{ x }}` build shodí, když `x` neexistuje; `{{ x | safe }}` tiše
+  nevypíše nic — viz [A603](@/akademie/a603-zola.md).
 
 ## Zeleno lokálně, červeno v automatizaci
 

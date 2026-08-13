@@ -15,7 +15,7 @@ import { spawnSync } from "node:child_process";
 import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { decide, isGenerated, relativePath, LOG_HEADING } from "./protect-canonical.mjs";
+import { decide, isGenerated, protectedRanges, relativePath, LOG_HEADING } from "./protect-canonical.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const HOOK = join(ROOT, "scripts/hooks/protect-canonical.mjs");
@@ -42,6 +42,43 @@ test("P1: editace uvnitř autorizačního logu se blokuje", () => {
   const snippet = text.slice(logStart + 200, logStart + 260);
   const reason = decide(edit("AGENTS.md", { old_string: snippet }), ROOT);
   assert.match(reason ?? "", /^P1:/);
+});
+
+test("P1: chrání datované záznamy podle TVARU nadpisu, ne podle pozice", () => {
+  // Regrese: první verze chránila „všechno za nadpisem logu". To
+  // blokovalo legitimní opravy v governance sekcích, které za ním leží
+  // (Média, Metadata, co-op), a varianta „po další ##" naopak nechala
+  // nechráněnou většinu záznamů — log v tomhle souboru pokračuje i za
+  // nimi. Rozhoduje proto tvar nadpisu.
+  const text = readFileSync(join(ROOT, "AGENTS.md"), "utf8");
+  const ranges = protectedRanges(text);
+  assert.ok(ranges.length > 100, `čekal jsem stovky záznamů, mám ${ranges.length}`);
+
+  const covered = (needle) => {
+    const at = text.indexOf(needle);
+    assert.notEqual(at, -1, `v AGENTS.md chybí: ${needle}`);
+    return ranges.some(([from, to]) => at >= from && at < to);
+  };
+
+  // Datované záznamy jsou chráněné, ať leží kdekoli — i ty za sekcemi
+  // Média a Metadata, které jsou v souboru až za začátkem logu.
+  assert.ok(covered("### Authorized subject: Petr Macinka"), "první záznam logu");
+  assert.ok(covered("### Not authorized: Radovan Krejčíř"), "zamítavý záznam");
+  assert.ok(covered("### Governance and scope supersession, 2026-08-10"), "poslední governance záznam");
+
+  // Governance sekce chráněné NEJSOU — mění se legitimně.
+  assert.ok(!covered("## Média: fotografie a loga"), "sekce Média musí být editovatelná");
+  assert.ok(!covered("## Metadata"), "sekce Metadata musí být editovatelná");
+  assert.ok(!covered("## Canonical data model"), "sekce nad logem musí být editovatelná");
+});
+
+test("P1: oprava v governance sekci za logem projde", () => {
+  // Konkrétní případ, který tuhle vadu odhalil: `ui::media_figure`
+  // v sekci Média leží ZA nadpisem logu, ale je to normální text.
+  const text = readFileSync(join(ROOT, "AGENTS.md"), "utf8");
+  const needle = "se na webu zobrazí obrázek";
+  if (!text.includes(needle)) return; // už opraveno jinak, test nemá co ověřit
+  assert.equal(decide(edit("AGENTS.md", { old_string: needle }), ROOT), null);
 });
 
 test("P1: Write přes celý AGENTS.md se blokuje", () => {
@@ -115,6 +152,21 @@ test("chybějící pole nevedou k blokaci ani k pádu", () => {
   assert.equal(decide({ tool_name: "Edit" }, ROOT), null);
   assert.equal(decide({ tool_name: "Edit", tool_input: {} }, ROOT), null);
   assert.equal(decide(null, ROOT), null);
+});
+
+test("chrání i worktree, ne jen hlavní checkout", () => {
+  // Skutečná díra, na kterou se přišlo při práci: CLAUDE_PROJECT_DIR
+  // ukazuje na hlavní checkout, takže cesta do worktree pod něj
+  // nespadla a zápis do generovaného souboru i do logu prošel bez
+  // vyjádření hooku. Kořen se proto hledá od souboru nahoru.
+  const wt = "/Users/korczis/dev/vomaste-worktrees/T-999";
+  assert.equal(relativePath(`${ROOT}/docs/TOOLING.md`, ROOT), "docs/TOOLING.md");
+  // Cesta v jiném stromu se rozřeší proti JEHO kořeni, když tam .git je;
+  // když neexistuje, hook mlčí místo aby hádal.
+  assert.equal(relativePath(`${wt}/docs/TOOLING.md`, ROOT), null);
+  // A tenhle worktree .git má, takže se rozřeší.
+  const here = new URL("../..", import.meta.url).pathname.replace(/\/$/, "");
+  assert.equal(relativePath(`${here}/docs/TOOLING.md`, "/nonexistent"), "docs/TOOLING.md");
 });
 
 test("cesta mimo repozitář se neřeší", () => {

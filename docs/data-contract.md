@@ -189,8 +189,8 @@ Pole `media` prošlo přesně těmi třemi místy a je proto dobrou ukázkou:
 2. **view model** — `build-view-models.mjs` promítá `media` beze změny do
    entity view a navíc počítá `media-index.json` (souhrn napříč entitami)
    pro stránku atribucí;
-3. **konzumenti** — `templates/entity.html` přes `ui::media_figure`
-   a `ui::media_gallery`, `templates/media-licences.html`
+3. **konzumenti** — `templates/entity.html` přes `ui_media_figure`
+   a `ui_media_gallery`, `templates/media-licences.html`
    (`/dokumentace/licence-medii/`) a OG karty
    (`scripts/og/build-og-images.mjs`, portrét se inlinuje z repa).
 

@@ -5,7 +5,7 @@
  * a badge it was never given a metric for.
  *
  * WHY A POST-BUILD CHECK AT ALL — the pre-build validator proves the metric
- * is computable; it cannot prove the template rendered it. A macro edit that
+ * is computable; it cannot prove the template rendered it. A component edit that
  * silently drops the badge, or a stale manifest read by Zola, both produce a
  * green pre-build and wrong pages. This closes that gap.
  *

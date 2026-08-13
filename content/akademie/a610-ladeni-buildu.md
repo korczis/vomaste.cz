@@ -45,7 +45,7 @@ next_label = "A701 — Model autorizace (úroveň Governance)"
 | Rozbitá kotva | odkaz na `id`, které ve vydaném HTML není |
 | Neznámý typ entity | typ bez popisku, nebo popisek bez použití |
 | Chybí generovaný soubor | pouštíte generátor mimo pipeline, bez předchozích kroků |
-| Přetečení zásobníku | cyklický import v šablonách |
+| Komponenta se vykreslí prázdná | argument, který tělo komponenty nikdy nepřečte |
 
 {% <callout kind="varovani" title="Pády, kde chyba není tam, kde se ohlásila"> %}
 **Obousměrné brány** hlásí i mrtvé záznamy. „Neznámý typ“ může znamenat, že

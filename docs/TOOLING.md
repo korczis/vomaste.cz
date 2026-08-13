@@ -250,8 +250,8 @@ Publikovaná podoba: [/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prik
 
 ### `npm run lint:component-reuse`
 
-- Obsahová top-level šablona, která neimportuje a nepoužívá macros/ui.html (page_header, breadcrumb, stat_tile, registry-card, empty_state, back_link_footer…).
-- Šablona s vlastním <table> mimo macros/table.html, která neimportuje macros/table.html a nepoužívá table::advanced_table.
+- Obsahová top-level šablona, která nezavolá žádnou sdílenou komponentu ui_* (page_header, breadcrumb, stat_tile, registry-card, empty_state, back_link_footer…).
+- Šablona s vlastním <table> mimo macros/table.html, která nepoužije párovou komponentu table_advanced_table.
 
 ### `npm run lint:hardcoded-records`
 

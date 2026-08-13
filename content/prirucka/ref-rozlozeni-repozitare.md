@@ -31,7 +31,7 @@ content/                     stránky pro generátor webu
   start/ bootcamp/ akademie/ prirucka/ prispet/   ručně psané
 
 templates/                   Tera šablony
-  macros/ partials/ shortcodes/
+  macros/ partials/ components/
 scripts/                     validátory a generátory
 schemas/canonical/           kanonická schémata
 assets/ static/              zdroje frontendu
