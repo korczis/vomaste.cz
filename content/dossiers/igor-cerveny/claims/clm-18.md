@@ -15,3 +15,5 @@ lang = "cs"
 clm_id = "CLM-18"
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni).
+
+Doloženo nezávisle: [SRC-16](@/dossiers/igor-cerveny/sources/src-16.md) je původní zjištění Deníku N (21. 7. 2026, Karolína Blažková a Zdislava Pokorná), zatímco [SRC-10](@/dossiers/igor-cerveny/sources/src-10.md) o něm referuje zprostředkovaně. Zdroj v tomto dossieru už byl — chyběla jen vazba na tohle tvrzení. Plné znění je za paywallem; ověřeny byly autoři, datum, titulek a viditelný úvod, což pokrývá právě účast mluvčího v delegaci a chybějící vysvětlení. Nevysvětlená otázka je otevřená otázka, ne zjištění pochybení.

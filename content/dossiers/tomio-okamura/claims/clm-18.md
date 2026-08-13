@@ -15,3 +15,5 @@ lang = "cs"
 clm_id = "CLM-18"
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/tomio-okamura/_index.md#registr-tvrzeni).
+
+Doloženo nezávisle: dosavadní zdroje u tohoto výroku přebíraly tutéž agenturní zprávu a tvořily jeden hlas; [SRC-33](@/dossiers/tomio-okamura/sources/src-33.md) je autorský text Romea.cz, takže vzniká nezávislá dvojice. Doložen je tím výrok, nikoli jeho obsah — rozsudek nad hnutím SPD není pravomocný a není rozsudkem nad Tomiem Okamurou osobně.

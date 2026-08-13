@@ -197,19 +197,19 @@ Rešerše nezačíná názvem registru, ale otázkou. Prameny jsou u každé ot�
 
 ## Skutečně použité zdroje v datasetu
 
-Dopočítáno z `data/dossiers/**/sources/**`, 989 záznamů v 141 rodinách/outletech.
+Dopočítáno z `data/dossiers/**/sources/**`, 992 záznamů v 142 rodinách/outletech.
 
 | Rodina / outlet | Záznamů | Dossierů | Popsaný v katalogu |
 |---|---:|---:|---|
 | ctk | 305 | 31 | [ano](/zdroje/ctk/) |
 | Vláda České republiky (vlada.gov.cz) | 184 | 167 | [ano](/zdroje/vlada-cz/) |
 | Poslanecká sněmovna Parlamentu ČR | 61 | 42 | [ano](/zdroje/psp-cz/) |
-| seznam-zpravy | 40 | 14 | [ano](/zdroje/seznam-zpravy/) |
+| seznam-zpravy | 41 | 14 | [ano](/zdroje/seznam-zpravy/) |
 | ČT24 (Česká televize) | 26 | 18 | [ano](/zdroje/ceska-televize/) |
 | Aktuálně.cz | 22 | 15 | [ano](/zdroje/aktualne-cz/) |
 | FORUM 24 | 20 | 10 | [ano](/zdroje/forum24/) |
+| denik-n | 19 | 10 | [ano](/zdroje/denik-n/) |
 | Echo24 | 19 | 15 | [ano](/zdroje/echo24/) |
-| denik-n | 18 | 10 | [ano](/zdroje/denik-n/) |
 | Novinky.cz | 13 | 12 | [ano](/zdroje/novinky-cz/) |
 | denik-cz | 12 | 7 | [ano](/zdroje/denik-cz/) |
 | Česká justice | 11 | 6 | [ano](/zdroje/ceska-justice/) |
@@ -340,6 +340,7 @@ Dopočítáno z `data/dossiers/**/sources/**`, 989 záznamů v 141 rodinách/out
 | Zprávy Tiscali (zpravy.tiscali.cz) | 1 | 1 | — |
 | patria | 1 | 1 | — |
 | respekt | 1 | 1 | — |
+| romea-cz | 1 | 1 | — |
 | usoud | 1 | 1 | — |
 | vlm | 1 | 1 | — |
 

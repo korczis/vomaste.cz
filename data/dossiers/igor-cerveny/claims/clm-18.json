@@ -10,11 +10,14 @@
     "@id": "https://vomaste.cz/id/dossiers/igor-cerveny"
   },
   "text": "Podle Blesku (s odkazem na zjištění Deníku N) byl členem delegace v USA šéf komunikace Motoristů Lukáš Koutník; ministr nevysvětlil, proč byl v delegaci, ani zda jeho cestu hradil úřad.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-10"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/igor-cerveny/sources/SRC-16"
     }
   ],
   "subjects": [
@@ -24,7 +27,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni)."
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/igor-cerveny/_index.md#registr-tvrzeni).\n\nDoloženo nezávisle: [SRC-16](@/dossiers/igor-cerveny/sources/src-16.md) je původní zjištění Deníku N (21. 7. 2026, Karolína Blažková a Zdislava Pokorná), zatímco [SRC-10](@/dossiers/igor-cerveny/sources/src-10.md) o něm referuje zprostředkovaně. Zdroj v tomto dossieru už byl — chyběla jen vazba na tohle tvrzení. Plné znění je za paywallem; ověřeny byly autoři, datum, titulek a viditelný úvod, což pokrývá právě účast mluvčího v delegaci a chybějící vysvětlení. Nevysvětlená otázka je otevřená otázka, ne zjištění pochybení."
     }
   ]
 }

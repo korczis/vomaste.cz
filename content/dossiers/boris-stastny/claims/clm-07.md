@@ -15,3 +15,5 @@ lang = "cs"
 clm_id = "CLM-07"
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/boris-stastny/_index.md#registr-tvrzeni).
+
+Doloženo nezávisle: dosavadní zdroje navazovaly na tutéž agenturní zprávu a tvořily jeden hlas; [SRC-23](@/dossiers/boris-stastny/sources/src-23.md) je původní zjištění Seznam Zpráv, ze kterého kauza vzešla, takže vzniká nezávislá dvojice. Nález sám o sobě není zjištěním pochybení kohokoli.

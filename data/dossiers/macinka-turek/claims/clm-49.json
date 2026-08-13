@@ -10,11 +10,14 @@
     "@id": "https://vomaste.cz/id/dossiers/macinka-turek"
   },
   "text": "K odložení věci pro promlčení dozorující státní zástupce Jan Vychyta uvedl, že k danému skutku došlo a že by byl trestným činem, ale trestní odpovědnost zanikla promlčením; policie podle citovaného zdroje zjištění Deníku N nezpochybnila. Turek autorství konkrétního komentáře odmítal, za některé jiné výroky se omluvil",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-56"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/macinka-turek/sources/SRC-62"
     }
   ],
   "subjects": [
@@ -24,7 +27,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#kauza-z-rijna-2025-smazane-prispevky-na-facebooku)."
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#kauza-z-rijna-2025-smazane-prispevky-na-facebooku).\n\nDoloženo nezávisle: [SRC-62](@/dossiers/macinka-turek/sources/src-62.md) je původní zjištění Deníku N s vyjádřením státního zástupce, zatímco [SRC-56](@/dossiers/macinka-turek/sources/src-56.md) o něm referuje zprostředkovaně. **Rozsah doložení se ale liší:** dvěma nezávislými zdroji je kryté vyjádření Jana Vychyty a to, že policie zjištění Deníku N nezpochybnila. Věta o tom, že Turek odmítal autorství konkrétního komentáře a za některé jiné výroky se omluvil, stojí i nadále výhradně na SRC-56.\n\nOdložení pro promlčení zůstává procesním výsledkem — trestní odpovědnost zanikla uplynutím času a nejde o rozhodnutí o vině."
     }
   ]
 }
