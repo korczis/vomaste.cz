@@ -15,7 +15,7 @@ Závazné znění: `AGENTS.md`, sekce „Média: fotografie a loga".
    „Fair use", „non-free logo", `©` ani prázdná hodnota neprojdou.
 2. **Atribuce je podmínka užití, ne zdvořilost.** U CC BY / BY-SA je
    uvedení autora a licence podmínkou. Proto existuje jediná cesta, jak
-   se obrázek zobrazí: `ui::media_figure`.
+   se obrázek zobrazí: `ui_media_figure`.
 3. **Bajty patří do repozitáře** (`static/images/{people,logos,media}/`).
    Hotlink znamená rozbitý náhled, až někdo přeuspořádá CDN, a tiché
    posílání každého požadavku čtenáře třetí straně.

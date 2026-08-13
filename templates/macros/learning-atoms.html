@@ -1,14 +1,23 @@
-{#- Listová makra vzdělávací vrstvy — `badge` a `callout`.
+{#- Listové komponenty vzdělávací vrstvy — `badge`, `callout`, `command`.
 
-    Proč vlastní soubor: Tera neumí zavolat sourozenecké makro ve stejném
-    souboru (`self::` se vyhodnocuje proti VOLAJÍCÍ šabloně, ne proti té,
-    kde makro bydlí) a import sebe sama skončí nekonečnou rekurzí — Zola
-    na tom spadne přetečením zásobníku, ne chybou. Rozdělení na listová
-    a složená makra je proto jediné řešení, které drží pravidlo „jeden
-    markup, jedno místo“: složená makra i shortcodes importují tenhle
-    soubor a badge tak existuje právě jednou.
+    Proč vlastní soubor: drží pravidlo „jeden markup, jedno místo“.
+    Složené komponenty i komponenty volatelné z markdownu
+    (`templates/components/`) volají tyhle atomy, takže badge i callout
+    existují právě jednou, ať přijdou odkud chtějí.
 
-    Nic tady nesmí volat jiné makro. To je celý smysl téhle vrstvy. -#}
+    Původní důvod rozdělení byl jiný — v Teře 1 nešlo zavolat
+    sourozenecké makro (`self::` se vyhodnocoval proti volající šabloně)
+    a self-import shodil Zolu přetečením zásobníku. Po migraci na Zolu
+    0.23 / Teru 2 tenhle důvod padl: komponenty jsou globální a volají
+    se napříč soubory přímo. Rozdělení zůstává kvůli členění.
+
+    POZOR na dvě věci, které tu už stály živou chybu:
+      * tělo komponenty čte JEN své deklarované parametry. Parametr
+        deklarovaný a nikde nečtený projde buildem a obsah zmizí —
+        přesně tak se prázdný callout dostal na 98 stránek;
+      * `| safe` na holém identifikátoru vypíná kontrolu nedefinované
+        proměnné. `{{ x }}` build shodí, `{{ x | safe }}` tiše nevypíše
+        nic. Používej ho jen tam, kde vědomě vpouštíš hotové HTML. -#}
 
 {#- ---------------------------------------------------------------------
     callout — jeden prvek pro pět významů

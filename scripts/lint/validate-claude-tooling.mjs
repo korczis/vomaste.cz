@@ -188,6 +188,17 @@ const INTENTIONALLY_ABSENT = new Set([
   ".claude/settings.local.json",
 ]);
 
+// Generované stromy. Odkaz na `data/generated/tooling-catalog.json` je
+// SPRÁVNÝ odkaz — ten soubor tam patří. Že zrovna neexistuje znamená, že
+// v tomhle stromu ještě neběžely generátory (čerstvý klon nebo nový
+// worktree), ne že dokumentace ukazuje do prázdna.
+//
+// Bez téhle výjimky brána v čerstvém worktree spadne na šesti odkazech,
+// které jsou v pořádku, a poslala by člověka opravovat správný text.
+// Přesně ta past, kterou /diagnose popisuje jako nejčastější v novém
+// worktree — a kterou si tenhle validátor sám postavil pod nohy.
+const GENERATED_ROOTS = ["data/generated/", "static/js/", "static/css/main.css", "public/", "reports/"];
+
 export function validate(root = ROOT) {
   const errors = [];
   const pkg = JSON.parse(readFileSync(join(root, "package.json"), "utf8"));
@@ -233,6 +244,7 @@ export function validate(root = ROOT) {
     // CT2 — cesty v backticích.
     for (const candidate of pathCandidates(text)) {
       if (INTENTIONALLY_ABSENT.has(candidate)) continue;
+      if (GENERATED_ROOTS.some((root) => candidate === root.replace(/\/$/, "") || candidate.startsWith(root))) continue;
       if (!referenceResolves(candidate, { root, fromDir: dirname(file), index })) {
         errors.push(`CT2: ${file} odkazuje na \`${candidate}\`, který v repozitáři není.`);
       }

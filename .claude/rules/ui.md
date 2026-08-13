@@ -9,6 +9,28 @@ paths:
 
 # UI — komponenty, doktrína, metadata
 
+## Jak se komponenty volají (Tera 2)
+
+Repozitář běží na Zole 0.23 / Teře 2. Makra s `{% import %}` a zápis
+`ns::fn` **neexistují** — v `templates/` po migraci nezbyl ani jeden
+import.
+
+```
+definice   {% component ui_stat_tile(value, label, url="") -%} … {% endcomponent %}
+volání     {{ <ui_stat_tile value={n} label="Zdroje" /> }}
+párové     {% <table_advanced_table id="x" …> %} … {% </table_advanced_table> %}
+```
+
+Z markdownu se komponenta volá **jen párově**:
+`{% <callout kind="pravidlo"> %}` … `{% </callout> %}`. Self-closing tvar
+`{% <callout … /> %}` je syntaktická chyba — obsah je **tělo**, ne atribut.
+
+Tři sémantiky Tery 2, které v tomhle repozitáři stály živé chyby:
+typ parametru se odvozuje z jeho defaultu (parametr přijímající čísla
+nemůže mít default `""`); filtr `default` reaguje jen na **chybějící**
+klíč, ne na prázdnou hodnotu; a komponenta vidí **jen své deklarované
+parametry** — žádné `page`, `section` ani `config`.
+
 ## Šablona je prezentační vrstva, nic víc
 
 Každá dossierová šablona čte data z **view modelu**
@@ -22,12 +44,13 @@ cesty se skládají z něj.
 ## Znovupoužití komponent je vynucená brána
 
 `npm run lint:component-reuse` (v `build`, pre-commit i CI) shodí build,
-když obsahová šablona neimportuje a nepoužije `macros/ui.html`
-(`page_header`, `breadcrumb`, `stat_tile`, `registry-card`,
-`empty_state`, `back_link_footer`).
+když obsahová šablona nepoužije sdílené `ui_*` komponenty
+(`ui_page_header`, `ui_breadcrumb`, `ui_stat_tile`, `ui_empty_state`,
+`ui_back_link_footer` a další z `macros/ui.html`).
 
 Od 2026-07-30 navíc: šablona obsahující `<table` mimo `macros/table.html`
-musí importovat `macros/table.html` a použít `table::advanced_table`
+musí použít párovou komponentu
+`{% <table_advanced_table …> %}` … `{% </table_advanced_table> %}`
 (výjimky jen per-file s odůvodněním v `TABLE_EXEMPT`). Obal tabulky nese
 `data-record-type`, který provazuje řádky s JSON-LD uzly stránky.
 
@@ -76,7 +99,7 @@ build. Žádná osoba není top-level položkou sidebaru.
 
 ## Média jsou publikace cizího díla
 
-Obrázek entity se zobrazí **jedinou** cestou — `ui::media_figure` —
+Obrázek entity se zobrazí **jedinou** cestou — `ui_media_figure` —
 a ta vždy nese autora, licenci s odkazem a odkaz na zdroj. Holý `<img>`
 na položku z `media` je porušení licence, ne odchylka od stylu. Detaily:
 [`media.md`](media.md).

@@ -5,7 +5,7 @@
     Exists because of the licence, not because of tidiness: the CC BY / BY-SA
     photographs this site publishes may be used only if the author and the
     licence are named. Each picture already carries that credit next to it
-    (ui::media_figure); this page makes the whole set checkable at once, and it
+    (ui_media_figure); this page makes the whole set checkable at once, and it
     is rendered from the computed media-index view model, so it cannot drift
     away from what is actually published. -#}
 
@@ -41,7 +41,7 @@
     {%- for row in media.rows %}
     <tr class="border-t border-white/5 align-top" data-entita="{{ row.entityTitle }}" data-autor="{{ row.author }}" data-licence="{{ row.license }}">
       <td class="px-3 py-2">
-        {#- Stejné pravidlo jako v ui::media_figure: logo se vejde celé, portrét
+        {#- Stejné pravidlo jako v ui_media_figure: logo se vejde celé, portrét
             se ořezává na obličej. Ořezané logo je nečitelný kus písmene. -#}
         <img src="{{ get_url(path=row.file) | safe }}" alt="" loading="lazy" decoding="async"
              width="64" height="64"

@@ -11,21 +11,24 @@ Jsi recenzent UI vrstvy vomaste.cz.
 
 ## Proč existuješ
 
-Repozitář má 38 šablon a několik vrstev konvencí. Projít je znamená
-načíst je všechny plus makra, na která se odkazují. To patří do
-izolovaného kontextu.
+Repozitář má desítky šablon a několik vrstev konvencí. Projít je
+znamená načíst je všechny plus globální komponenty z
+`templates/macros/**` a `templates/components/**` — v Teře 2 žádná
+šablona nedeklaruje, které používá, takže se nedá jít „po odkazech".
+To patří do izolovaného kontextu.
 
 ## Co kontroluješ
 
 Postup je ve skillu `ui-review`. Tři věci, které se nesmí přehlédnout:
 
-1. **Znovupoužití komponent** — obsahová šablona musí importovat
-   a použít `macros/ui.html`; `<table>` musí jít přes
-   `macros/table.html`. Vynucuje `npm run lint:component-reuse`.
+1. **Znovupoužití komponent** — obsahová šablona musí zavolat aspoň
+   jednu `ui_*` komponentu; `<table>` musí jít přes
+   `table_advanced_table` (párově). Tera 2 nemá importy, komponenty jsou
+   globální. Vynucuje `npm run lint:component-reuse`.
 2. **Data-driven, ne hardcoded** — šablona čte view model a nezná slug
    dossieru. Hardcodovaný slug je BLOCKER: který dossier existuje,
    rozhoduje adresář s `dossier.json`.
-3. **Médium jedinou cestou** — obrázek entity přes `ui::media_figure`,
+3. **Médium jedinou cestou** — obrázek entity přes `ui_media_figure`,
    která vždy nese autora, licenci a odkaz na zdroj. Holý `<img>` je
    porušení licence, ne odchylka od stylu.
 
