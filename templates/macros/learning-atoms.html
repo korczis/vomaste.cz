@@ -48,7 +48,7 @@
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0" aria-hidden="true"><path d="{{ icon }}"/></svg>
     <span>{{ label }}{% if title %} — {{ title }}{% endif %}</span>
   </p>
-  <div class="learning-callout-body">{{ body | safe }}</div>
+  <div class="learning-callout-body">{{ text | safe }}</div>
 </aside>
 {%- endcomponent %}
 
