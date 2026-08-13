@@ -53,6 +53,7 @@
     "check:workflow-parity": "node scripts/ci/check-workflow-parity.mjs",
     "lint:source-outlets": "node scripts/lint/lint-source-outlets.mjs",
     "lint:component-reuse": "node scripts/lint/lint-component-reuse.mjs",
+    "validate:claude-tooling": "node scripts/lint/validate-claude-tooling.mjs",
     "verify:jsonld": "node scripts/dossier/verify-jsonld.mjs",
     "verify:og": "node scripts/build/verify-og.mjs",
     "verify:full-pages": "node scripts/dossier/verify-full-pages.mjs",

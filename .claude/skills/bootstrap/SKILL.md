@@ -123,3 +123,14 @@ It does not write content, claim a task, or run `npm run build` for you
 does not replace `docs/coop/PROTOCOL.md` for the full mechanics of the
 bus/board/worktree lifecycle; read that document for anything this
 summary doesn't cover.
+
+## When NOT to use this skill
+
+- **Mid-session, when you are already oriented.** Re-running it costs
+  context and tells you what you already know. If you only need one
+  fact, read that one file.
+- **As a substitute for reading `AGENTS.md`.** This skill tells you what
+  to read and in what order; it does not contain the rules, and a
+  summary of an authorization log is not an authorization log.
+- **To decide whether a subject may be covered.** That is a scope
+  question — see the authorization rules, not this.

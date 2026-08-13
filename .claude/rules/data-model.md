@@ -59,7 +59,7 @@ konzistentní:
 3. šablona nebo export, který pole čte.
 
 Pole, které nikdo nečte, i šablonové pole bez pokrytí schématem, je
-nedodělaná změna. Na dopadovou analýzu je `/schema-change`.
+nedodělaná změna.
 
 ## Co se počítá a co se neukládá
 

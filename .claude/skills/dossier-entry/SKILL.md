@@ -125,3 +125,15 @@ If you're working inside the multi-instance co-op protocol
 (`docs/coop/PROTOCOL.md` — see the `bootstrap` skill first if you
 haven't already), a green `npm run build` in your worktree is also the
 precondition for sending `review-request` on the co-op bus.
+
+## When NOT to use this skill
+
+- **For a subject outside the authorized scope.** Recording that a
+  registry relation exists is a context entity and needs no
+  authorization; writing a claim about a person does. If you are unsure
+  which one you are doing, you are writing a claim — stop.
+- **To edit a page under `content/`.** Those are generated adapters.
+  The canonical fix is always the JSON record plus `npm run data:build`.
+- **To add a new FIELD to a record type.** That touches the schema, the
+  view-model builder and the consuming template together — a different
+  and larger change than adding a record.

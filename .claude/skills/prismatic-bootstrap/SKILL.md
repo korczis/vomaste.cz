@@ -45,3 +45,14 @@ status per sub-phase:
 4. If the task is something else entirely and just mentions Prismatic in
    passing, don't pull in this whole mission — do the smaller thing
    actually asked.
+
+## When NOT to use this skill
+
+- **When the sibling repository is absent.** The public build has no
+  dependency on Prismatic and must keep working without it. This skill
+  reports that absence; it does not work around it.
+- **To obtain a citable source.** Prismatic is a research capability
+  provider, never a source. A registry record it transports is cited as
+  that registry.
+- **As a general session bootstrap.** That is the `bootstrap` skill.
+  This one only checks the Prismatic integration.

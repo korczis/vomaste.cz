@@ -119,3 +119,15 @@ In a worker worktree this doesn't apply directly — `task/T-###`
 branches are never auto-pushed — but the same logic lands one step
 later: get confirmation before ORCH merges into `master`, since that
 merge commit is what the hook picks up and pushes.
+
+## When NOT to use this skill
+
+- **When `npm run build` is red.** A commit on `master` triggers the
+  full build and an automatic push; a red build either blocks it or,
+  worse, gets fixed by someone else under time pressure. Fix first.
+- **On `master`, for anything that should be reviewed first.** There is
+  no pause between the commit and the live deploy. Work on a
+  `task/T-###` branch, or use `COOP_NO_AUTOPUSH=1`.
+- **To sidestep a validator.** `--no-verify` exists for a genuine
+  emergency, not for a gate that is inconveniently right. A blocked
+  commit is information.

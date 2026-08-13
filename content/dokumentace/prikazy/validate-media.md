@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run validate:media — Licenční brána médií"
 template = "tooling-command.html"
-weight = 16
+weight = 17
 description = "Licenční brána médií: Ověřuje, že každá publikovaná fotografie a logo má doloženou svobodnou licenci, autora, odkaz na stránku zdroje a soubor přímo v repozitáři.. npm skript, validace vstupů."
 
 [extra]

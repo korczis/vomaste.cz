@@ -50,6 +50,6 @@ balíčků, prefixy conventional commitů.
 
 ## Když měníš něco, co dokumentace popisuje
 
-Na dopadovou analýzu je `/docs-sync`. Ptá se, které stránky, lekce
-a reference tvá změna zasáhla — a tabulka „co při jaké změně projít" je
-v [`learning.md`](learning.md) a v `AGENTS.md`.
+Tabulka „co při jaké změně projít" je v [`learning.md`](learning.md)
+a v `AGENTS.md`. Projdi ji dřív, než změnu ohlásíš jako hotovou —
+zastaralá lekce je horší než žádná, protože podle ní někdo pracuje.

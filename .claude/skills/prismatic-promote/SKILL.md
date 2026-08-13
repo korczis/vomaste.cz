@@ -44,3 +44,14 @@ promotion pipeline doesn't exist and nothing can be written to
 `data/dossiers/**` through it. If a specific claim/source genuinely needs
 to be added right now, use the existing `dossier-entry` skill instead —
 it has always worked independently of this integration.
+
+## When NOT to use this skill
+
+- **Without a reviewed manifest.** The manifest is what makes the
+  promotion reviewable; producing one automatically from a discovery run
+  and immediately consuming it defeats the entire gate.
+- **To commit, push or deploy.** This skill writes canonical changes and
+  stops. The commit is a separate, human-invoked act.
+- **For a record whose underlying public evidence is not cited.**
+  Prismatic output is never self-authenticating, no matter how confident
+  it looks.

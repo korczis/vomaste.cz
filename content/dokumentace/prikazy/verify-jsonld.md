@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run verify:jsonld — JSON-LD postaveného webu"
 template = "tooling-command.html"
-weight = 66
+weight = 67
 description = "JSON-LD postaveného webu: Post-build kontrola strukturovaných dat emitovaných šablonou. npm skript, kontrola výstupů."
 
 [extra]

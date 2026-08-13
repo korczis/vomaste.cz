@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run lint:generated-content — Lint generovaných content adaptérů"
 template = "tooling-command.html"
-weight = 47
+weight = 48
 description = "Lint generovaných content adaptérů: Hlídá, že content/** v pokrytém scope zůstává generovaným routing adaptérem kanonických dat a nikdo do něj nepropašoval doménová data ani ručně psanou stránku.. npm skript, kontrola výstupů."
 
 [extra]

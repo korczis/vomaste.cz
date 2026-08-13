@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run prismatic:promote — Promoce do kanonických dat — nehotové"
 template = "tooling-command.html"
-weight = 81
+weight = 82
 description = "Promoce do kanonických dat — nehotové: Stub. npm skript, rešerše."
 
 [extra]

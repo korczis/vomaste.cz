@@ -154,3 +154,15 @@ coop bus once green, or a solo session opens a normal PR against
 `master`. Merge/push is ORCH's or the site owner's call, same as every
 other content change here — this skill's job ends at a reviewable PR,
 full stop.
+
+## When NOT to use this skill
+
+- **For a single record.** One source, one claim, one gap — use
+  `dossier-entry` directly. This skill is the orchestration around
+  many of them and its ceremony is wasted on one.
+- **For a subject whose scope you have not checked.** The scope check is
+  the first step for a reason; running the rest first produces work that
+  cannot be published.
+- **To publish.** This skill ends at a pull request, always. If what you
+  want is for findings to appear on the site without a human approving
+  the diff, that is not this skill and not this repository.
