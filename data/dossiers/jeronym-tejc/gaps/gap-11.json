@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/gap.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/gaps/GAP-11",
+  "@type": "vomaste:Gap",
+  "recordType": "gap",
+  "identifier": "GAP-11",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "title": "GAP-11 — Procesní stav bitcoinové kauzy se dál vyvíjí",
+  "description": "Obžaloba z 30. 7. 2026 je doložena (CLM-53); soud o vině ani trestu nerozhodl a další vývoj dossier zatím nesleduje.",
+  "priority": "nízká",
+  "checked": "2026-08-06",
+  "claims": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-19"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-20"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-21"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-53"
+    }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Původní podoba této mezery upozorňovala, že procesní záznam dossieru končí u zahájení trestního stíhání 4. 5. 2026, zatímco zpravodajství hovořilo o podané obžalobě. **Tato část je uzavřena**: obžaloba podaná 30. 7. 2026 je doložena v [CLM-53](@/dossiers/jeronym-tejc/claims/clm-53.md) ze zdroje, který byl přímo otevřen a přečten.\n\nOtevřené zůstává, co bude dál. Krajský soud v Brně k datu poslední kontroly o vině ani trestu nerozhodl a tento dossier zatím nesleduje nařízení hlavního líčení, jeho průběh ani rozhodnutí. Dokud soud nerozhodne, platí presumpce neviny; výše trestu navržená v obžalobě není a nesmí být čtena jako výsledek.\n\nRovněž nadále platí, že navržené tresty pro Tomáše Jiřikovského a Kárima Titze nejsou v přečtené části citovaného zdroje uvedeny, a dossier je proto neuvádí."
+    }
+  ],
+  "order": 11
+}

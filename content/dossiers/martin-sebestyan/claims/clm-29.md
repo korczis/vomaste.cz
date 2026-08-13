@@ -15,3 +15,5 @@ lang = "cs"
 clm_id = "CLM-29"
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/martin-sebestyan/_index.md#registr-tvrzeni).
+
+Doloženo nezávisle: [SRC-38](@/dossiers/martin-sebestyan/sources/src-38.md) je původní zjištění Seznam Zpráv (Lukáš Valášek, 27. 5. 2026) — přibližně 195 milionů korun 48 subjektům skupiny Agrofert ke stavu k 26. 5. 2026, podle mluvčí SZIF. [SRC-11](@/dossiers/martin-sebestyan/sources/src-11.md) je Echo24 přebírající agenturní zprávu o témže zjištění, takže sám druhý hlas netvořil. Jde o nárokové dotace z českých zdrojů; sporná je jejich proplatitelnost z rozpočtu EU, ne zákonnost výplaty.

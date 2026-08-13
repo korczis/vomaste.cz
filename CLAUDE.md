@@ -116,6 +116,22 @@ entry; it does not replace reading and applying the rule.
   potential, gaps, a data-derived priority and a concrete next step. Read
   it instead of asking "what should I work on"; never hand-maintain a
   parallel todo list, it would be stale before the next commit.
+- **A claim citing four outlets can still rest on one voice.** Rule S10
+  already refuses to count agency reprints as independent corroboration,
+  but it doesn't say where the missing voice is. `npm run
+  report:originator-gaps` (also in `data:build`) does: it lists claims
+  that stand on a single voice *and* name, in their own text, an outlet
+  absent from their sources — "podle zjištění Seznam Zpráv", "jak napsal
+  Deník N". That named outlet is usually the originator, and it is a
+  concrete lead rather than a generic "find a second source". Two rules
+  ride along, both learned the hard way and both written into the report
+  itself: **a mention is a lead, not a conclusion** — open the actual
+  article, and if it doesn't carry what the claim says (wrong story,
+  paywalled where the substance is), leave the claim at `1 ZDROJ`; and
+  **never attach by publisher match** — the same outlet's other article
+  in the dossier is usually about something else entirely, and attaching
+  one that is itself an agency reprint manufactures a second voice that
+  does not exist.
 - **Discovery is unblocked; publishing findings is not.** Since 2026-07-30
   these are two different acts and only the second is gated:
   - **Recording that a registry relation exists** — a context entity

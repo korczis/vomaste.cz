@@ -15,3 +15,7 @@ lang = "cs"
 clm_id = "CLM-49"
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/macinka-turek/_index.md#kauza-z-rijna-2025-smazane-prispevky-na-facebooku).
+
+Doloženo nezávisle: [SRC-62](@/dossiers/macinka-turek/sources/src-62.md) je původní zjištění Deníku N s vyjádřením státního zástupce, zatímco [SRC-56](@/dossiers/macinka-turek/sources/src-56.md) o něm referuje zprostředkovaně. **Rozsah doložení se ale liší:** dvěma nezávislými zdroji je kryté vyjádření Jana Vychyty a to, že policie zjištění Deníku N nezpochybnila. Věta o tom, že Turek odmítal autorství konkrétního komentáře a za některé jiné výroky se omluvil, stojí i nadále výhradně na SRC-56.
+
+Odložení pro promlčení zůstává procesním výsledkem — trestní odpovědnost zanikla uplynutím času a nejde o rozhodnutí o vině.

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/claims/CLM-53",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-53",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
+  },
+  "text": "Vrchní státní zastupitelství v Olomouci podalo 30. července 2026 ke Krajskému soudu v Brně obžalobu ve věci bitcoinového daru ministerstvu spravedlnosti na čtyři osoby — exministra spravedlnosti Pavla Blažka, bývalého náměstka Radomíra Daňhela, Tomáše Jiřikovského a jeho advokáta Kárima Titze; pro Blažka a Daňhela obžaloba navrhuje shodně šest a půl roku vězení. Podání obžaloby není odsouzením a navržený trest není trestem uloženým — o vině i trestu rozhoduje soud, který k datu citovaného zpravodajství nerozhodl",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    { "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-30" }
+  ],
+  "subjects": [
+    "tejc"
+  ],
+  "order": 53,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Tvrzení posouvá procesní záznam kauzy, který v tomto dossieru dosud končil zahájením trestního stíhání 4. května 2026 — viz [CLM-19](@/dossiers/jeronym-tejc/claims/clm-19.md) až [CLM-21](@/dossiers/jeronym-tejc/claims/clm-21.md). Doloženo jediným přímo otevřeným zdrojem ([SRC-30](@/dossiers/jeronym-tejc/sources/src-30.md), Deník N), proto stav 1 ZDROJ.\n\n**Procesní rámec se opakuje záměrně.** Obžaloba je návrhem státního zastupitelství, aby soud věc projednal — není zjištěním viny a nezakládá ho. Návrh trestu uvedený v obžalobě není uloženým trestem. Dokud soud nerozhodne, platí presumpce neviny bez ohledu na výši navrženého trestu.\n\n**Rozsah.** Obžalovaní nejsou subjekty tohoto dossieru. Objevují se zde jako záznam vazby v rozsahu, který citované zpravodajství samo zveřejňuje, a to proto, že jde o procesní pokračování kauzy, k níž se váže trestní oznámení Jeronýma Tejce. Že by je jeho oznámení způsobilo, žádný citovaný zdroj neuvádí — viz [GAP-08](@/dossiers/jeronym-tejc/gaps/gap-08.md)."
+    }
+  ]
+}

@@ -34,6 +34,12 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-06"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-09"
     }
   ],
   "subjects": [

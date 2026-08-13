@@ -10,8 +10,8 @@
     "@id": "https://vomaste.cz/id/dossiers/boris-stastny"
   },
   "text": "Šlo o přístroj značky Plaud ve formátu kreditní karty, který umožňuje nahrávat konverzace, odesílat je na internetové servery a pomocí umělé inteligence je převádět na text.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-03"
@@ -21,6 +21,9 @@
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-05"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/boris-stastny/sources/SRC-23"
     }
   ],
   "subjects": [
@@ -30,7 +33,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/boris-stastny/_index.md#registr-tvrzeni)."
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/boris-stastny/_index.md#registr-tvrzeni).\n\nDoloženo nezávisle: dosavadní zdroje navazovaly na tutéž agenturní zprávu a tvořily jeden hlas; [SRC-23](@/dossiers/boris-stastny/sources/src-23.md) je původní zjištění Seznam Zpráv, ze kterého kauza vzešla, takže vzniká nezávislá dvojice. Nález sám o sobě není zjištěním pochybení kohokoli."
     }
   ]
 }

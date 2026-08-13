@@ -10,14 +10,17 @@
     "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
   },
   "text": "Detektivové Národní centrály proti organizovanému zločinu zahájili 4. května 2026 trestní stíhání tří osob v bitcoinové kauze — exministra spravedlnosti Pavla Blažka, jeho bývalého náměstka Radomíra Daňhela a brněnského advokáta Kárima Titze. Jde o zahájení stíhání, tedy o obvinění, nikoli o obžalobu ani o odsouzení; platí presumpce neviny.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-11"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-29"
     }
   ],
   "subjects": [
@@ -27,7 +30,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni)."
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni).\n\nDoloženo nezávisle: dosavadní zdroje (Česká justice, Echo24) v tomto případě přebíraly tutéž agenturní zprávu a tvořily jeden hlas; [SRC-29](@/dossiers/jeronym-tejc/sources/src-29.md) je vlastní zpravodajství Seznam Zpráv s vlastními autory, takže vzniká nezávislá dvojice. Zahájení trestního stíhání není obžaloba ani odsouzení; obvinění se stíháním nesouhlasí a podali stížnost."
     }
   ]
 }

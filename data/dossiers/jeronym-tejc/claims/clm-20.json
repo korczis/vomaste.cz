@@ -10,14 +10,17 @@
     "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc"
   },
   "text": "Obvinění je kvalifikováno jako legalizace výnosů z trestné činnosti a zneužití pravomoci úřední osoby; podle České justice jde o dva skutky legalizace a o zneužití pravomoci zčásti dokonané a zčásti ve stadiu pokusu.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-11"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-12"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/jeronym-tejc/sources/SRC-29"
     }
   ],
   "subjects": [
@@ -27,7 +30,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni)."
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni).\n\nDoloženo nezávisle: dosavadní zdroje (Česká justice, Echo24) v tomto případě přebíraly tutéž agenturní zprávu a tvořily jeden hlas; [SRC-29](@/dossiers/jeronym-tejc/sources/src-29.md) je vlastní zpravodajství Seznam Zpráv s vlastními autory, takže vzniká nezávislá dvojice. Zahájení trestního stíhání není obžaloba ani odsouzení; obvinění se stíháním nesouhlasí a podali stížnost."
     }
   ]
 }

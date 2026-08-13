@@ -10,11 +10,14 @@
     "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan"
   },
   "text": "Podle údajů Seznam Zpráv převzatých dalšími médii vyplatil SZIF holdingu Agrofert od nástupu Andreje Babiše do funkce premiéra téměř 200 milionů korun na dotacích.",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-11"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-sebestyan/sources/SRC-38"
     }
   ],
   "subjects": [
@@ -24,7 +27,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/martin-sebestyan/_index.md#registr-tvrzeni)."
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/martin-sebestyan/_index.md#registr-tvrzeni).\n\nDoloženo nezávisle: [SRC-38](@/dossiers/martin-sebestyan/sources/src-38.md) je původní zjištění Seznam Zpráv (Lukáš Valášek, 27. 5. 2026) — přibližně 195 milionů korun 48 subjektům skupiny Agrofert ke stavu k 26. 5. 2026, podle mluvčí SZIF. [SRC-11](@/dossiers/martin-sebestyan/sources/src-11.md) je Echo24 přebírající agenturní zprávu o témže zjištění, takže sám druhý hlas netvořil. Jde o nárokové dotace z českých zdrojů; sporná je jejich proplatitelnost z rozpočtu EU, ne zákonnost výplaty."
     }
   ]
 }

@@ -168,6 +168,21 @@ export const INTENTIONALLY_UNMEASURED = {
   concepts:
     "Koncepty jsou taxonomická vrstva mimo JSON-LD export; dokud pro ně neexistuje vlastní kanonická kolekce, badge by nešel odvodit ze stejného zdroje jako ostatní metriky.",
   data: "Route /data/ prezentuje samotné exporty; počet kolekcí popisuje infrastrukturu, ne obsah, a mísil by dvě různé jednotky v jednom sloupci.",
+  // Projekční entity dossiery. NEJSOU prázdné — obsah mají, jen ho fyzicky
+  // nevlastní: jejich tvrzení žijí v kanonickém dossieru macinka-turek a
+  // zobrazují se filtrovanou projekcí podle pole `subjects`. Badge se jim
+  // proto nepočítá: `claims.by_dossier` je PARTITION nad `claims.total`
+  // (build-navigation-metrics.mjs to vynucuje kontrolou, že součet sedí na
+  // celek), takže započítat je znovu pod jejich vlastní slug by tatáž
+  // tvrzení počítalo dvakrát a partition by přestala sedět.
+  //
+  // Zapsáno sem proto, že v sidebaru je to jediné dva dossiery z 26 bez
+  // čísla. Bez tohohle záznamu vypadá chybějící badge jako vypadlý údaj a
+  // svádí ke čtení „tyhle dva jsou prázdné" — nejsou.
+  "dossier:filip-turek":
+    "Projekce nad kanonickým dossierem macinka-turek; vlastní žádný fyzický záznam, takže by číslo v partition claims.by_dossier duplikovalo tvrzení už započítaná pod macinka-turek.",
+  "dossier:petr-macinka":
+    "Projekce nad kanonickým dossierem macinka-turek; vlastní žádný fyzický záznam, takže by číslo v partition claims.by_dossier duplikovalo tvrzení už započítaná pod macinka-turek.",
 };
 
 /**

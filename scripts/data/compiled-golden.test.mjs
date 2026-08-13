@@ -16,15 +16,15 @@ import { compileDataset } from "./compile.mjs";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const compiled = compileDataset(loadCanonicalTree(join(ROOT, "data/dossiers")));
 
-test("golden: počty záznamů per typ (snapshot 2026-08-05f: T-070 vojtech+mrazova nezávislé doklady, sloučeno)", () => {
+test("golden: počty záznamů per typ (snapshot 2026-08-06c: pavlik CLM-08/09; tejc SRC-29/30 + CLM-53; okamura SRC-33; relace obžaloby VSZ→KS Brno; stastny SRC-23 (6 tvrzení); turek SRC-62 Deník N)", () => {
   assert.deepEqual(compiled.counts.perType, {
     case: 93,
-    claim: 955,
+    claim: 958,
     dossier: 26,
     entity: 527,
-    gap: 202,
-    relation: 334,
-    source: 658,
+    gap: 203,
+    relation: 336,
+    source: 664,
     update: 76,
   });
   assert.equal(compiled.counts.dossiers, 26);
@@ -33,7 +33,7 @@ test("golden: počty záznamů per typ (snapshot 2026-08-05f: T-070 vojtech+mraz
 
 test("golden: graf — uzly z entit, hrany z relations", () => {
   assert.equal(compiled.graph.nodes.length, 527);
-  assert.equal(compiled.graph.edges.length, 334);
+  assert.equal(compiled.graph.edges.length, 336);
 });
 
 test("golden: vzorek claim záznamu (andrej-babis CLM-01; snapshot 2026-08-05, T-058: 1 ZDROJ → CORROBORATED, k oběma zdrojům rodiny ctk přibyla tisková zpráva Vrchního soudu v Praze SRC-75)", () => {

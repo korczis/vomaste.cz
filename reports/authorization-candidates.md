@@ -402,6 +402,7 @@ Generated from 502 context entities across 26 dossier(s). Regenerate with `npm r
 - Claims: CLM-02, CLM-03, CLM-04, CLM-05, CLM-06, CLM-07, CLM-19, CLM-20, CLM-21, CLM-22, CLM-23, CLM-24, CLM-25, CLM-26, CLM-27, CLM-28, CLM-29, CLM-30, CLM-31, CLM-32
 - Sources: SRC-02, SRC-03, SRC-04, SRC-11, SRC-12, SRC-13, SRC-14, SRC-15, SRC-16, SRC-26 (3 independent source families)
 - Relations:
+  - edge-bitcoinova-kauza-krajsky-soud-brno (bitcoinova-kauza-ministerstva-spravedlnosti -> krajsky-soud-brno, "Bitcoinová kauza míří po obžalobě k projednání před Krajský soud v Brně", dossier: jeronym-tejc)
   - edge-tejc-bitcoinova-kauza (tejc -> bitcoinova-kauza-ministerstva-spravedlnosti, "Tejcovo oznámení interního auditu otevřelo bitcoinovou kauzu resortu spravedlnosti", dossier: jeronym-tejc)
 - Missing: explicit owner authorization to promote this to its own dossier
 
@@ -606,7 +607,7 @@ Generated from 502 context entities across 26 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: boris-stastny, robert-plaga
 - Claims: CLM-02, CLM-04, CLM-21, CLM-24
-- Sources: SRC-02, SRC-03, SRC-12, SRC-14, SRC-15, SRC-23 (3 independent source families)
+- Sources: SRC-02, SRC-03, SRC-12, SRC-14, SRC-15, SRC-23 (4 independent source families)
 - Relations:
   - edge-plaga-csi (plaga -> ceska-skolni-inspekce, "nařídil zastavení testování 5./9. tříd organizovaného ČŠI (2026)", dossier: robert-plaga)
   - edge-zatloukal-csi (tomas-zatloukal -> ceska-skolni-inspekce, "ústřední školní inspektor", dossier: robert-plaga)
@@ -2140,7 +2141,7 @@ Generated from 502 context entities across 26 dossier(s). Regenerate with `npm r
 - Status: not_authorized
 - Appears in: boris-stastny, jaromir-zuna, karel-havlicek, oto-klempir
 - Claims: CLM-09, CLM-17, CLM-32, CLM-34, CLM-39
-- Sources: SRC-18, SRC-23 (4 independent source families)
+- Sources: SRC-18, SRC-23 (5 independent source families)
 - Relations:
   - edge-tomas-zdechovsky-kdu-csl (tomas-zdechovsky -> kdu-csl, "europoslanec za KDU-ČSL", dossier: boris-stastny)
 - Missing: explicit owner authorization to promote this to its own dossier
@@ -2242,10 +2243,12 @@ Generated from 502 context entities across 26 dossier(s). Regenerate with `npm r
 
 - Type: public_institution
 - Status: not_authorized
-- Appears in: macinka-turek
+- Appears in: jeronym-tejc, macinka-turek
 - Claims: CLM-46
 - Sources: SRC-55 (1 independent source family)
-- Relations: none
+- Relations:
+  - edge-bitcoinova-kauza-krajsky-soud-brno (bitcoinova-kauza-ministerstva-spravedlnosti -> krajsky-soud-brno, "Bitcoinová kauza míří po obžalobě k projednání před Krajský soud v Brně", dossier: jeronym-tejc)
+  - edge-vsz-olomouc-krajsky-soud-brno (vrchni-statni-zastupitelstvi-olomouc -> krajsky-soud-brno, "VSZ Olomouc podalo 30. 7. 2026 obžalobu v bitcoinové kauze ke Krajskému soudu v Brně", dossier: jeronym-tejc)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Krajský soud v Praze (`krajsky-soud-praha`)
@@ -5172,7 +5175,8 @@ Generated from 502 context entities across 26 dossier(s). Regenerate with `npm r
 - Appears in: adam-vojtech, jeronym-tejc
 - Claims: CLM-02, CLM-03, CLM-21, CLM-23, CLM-29
 - Sources: SRC-02, SRC-03, SRC-04, SRC-11, SRC-12, SRC-13, SRC-15 (6 independent source families)
-- Relations: none
+- Relations:
+  - edge-vsz-olomouc-krajsky-soud-brno (vrchni-statni-zastupitelstvi-olomouc -> krajsky-soud-brno, "VSZ Olomouc podalo 30. 7. 2026 obžalobu v bitcoinové kauze ke Krajskému soudu v Brně", dossier: jeronym-tejc)
 - Missing: explicit owner authorization to promote this to its own dossier
 
 ## Vrchní státní zastupitelství v Praze (`vrchni-statni-zastupitelstvi-praha`)

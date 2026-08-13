@@ -15,3 +15,5 @@ lang = "cs"
 clm_id = "CLM-21"
 +++
 Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/jeronym-tejc/_index.md#registr-tvrzeni).
+
+Doloženo nezávisle: dosavadní zdroje (Česká justice, Echo24) v tomto případě přebíraly tutéž agenturní zprávu a tvořily jeden hlas; [SRC-29](@/dossiers/jeronym-tejc/sources/src-29.md) je vlastní zpravodajství Seznam Zpráv s vlastními autory, takže vzniká nezávislá dvojice. Zahájení trestního stíhání není obžaloba ani odsouzení; obvinění se stíháním nesouhlasí a podali stížnost.

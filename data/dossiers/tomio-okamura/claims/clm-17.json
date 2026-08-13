@@ -10,14 +10,17 @@
     "@id": "https://vomaste.cz/id/dossiers/tomio-okamura"
   },
   "text": "Tomio Okamura po vyhlášení nepravomocného rozsudku uvedl: „Cílem našich plakátů nebylo vyvolat nenávist, ale pojmenovat problémy, které reálně jsou“, a dodal: „V žádném případě jsme necílili na rasové pohnutky.“",
-  "status": "status-single",
-  "statusLabel": "1 ZDROJ",
+  "status": "status-corroborated",
+  "statusLabel": "CORROBORATED",
   "sources": [
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-07"
     },
     {
       "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-08"
+    },
+    {
+      "@id": "https://vomaste.cz/id/dossiers/tomio-okamura/sources/SRC-33"
     }
   ],
   "subjects": [
@@ -27,7 +30,7 @@
   "content": [
     {
       "type": "markdown",
-      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/tomio-okamura/_index.md#registr-tvrzeni)."
+      "value": "Viz plné znění, kontext a sousední tvrzení v [hlavním přehledu](@/dossiers/tomio-okamura/_index.md#registr-tvrzeni).\n\nDoloženo nezávisle: dosavadní zdroje u tohoto výroku přebíraly tutéž agenturní zprávu a tvořily jeden hlas; [SRC-33](@/dossiers/tomio-okamura/sources/src-33.md) je autorský text Romea.cz, takže vzniká nezávislá dvojice. Doložen je tím výrok, nikoli jeho obsah — rozsudek nad hnutím SPD není pravomocný a není rozsudkem nad Tomiem Okamurou osobně."
     }
   ]
 }

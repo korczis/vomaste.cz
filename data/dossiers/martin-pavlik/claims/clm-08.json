@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/claim.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/claims/CLM-08",
+  "@type": "vomaste:Claim",
+  "recordType": "claim",
+  "identifier": "CLM-08",
+  "dossier": {
+    "@id": "https://vomaste.cz/id/dossiers/martin-pavlik"
+  },
+  "text": "Jednatelství Martina Pavlíka ve společnosti MEDIA PROJECT CZ s.r.o. (IČO 01529820) není souvislé — rejstřík vede první funkci od 2013-05-01 se zánikem 2015-12-10 a současnou funkci až od 2016-08-09",
+  "status": "status-single",
+  "statusLabel": "1 ZDROJ",
+  "sources": [
+    {
+      "@id": "https://vomaste.cz/id/dossiers/martin-pavlik/sources/SRC-02"
+    }
+  ],
+  "subjects": [
+    "martin-pavlik"
+  ],
+  "order": 8,
+  "content": [
+    {
+      "type": "markdown",
+      "value": "Doloženo rejstříkovou větví ARES, která u každého zápisu vede vlastní datum vzniku a zániku funkce. Sekundární agregátor roli uvádí bez období, takže přerušení z něj patrné není; tvrzení proto stojí na primárním registru a nese stav 1 ZDROJ.\n\nPřerušení výkonu funkce je běžný rejstříkový fakt. Tvrzení ho eviduje kvůli přesnosti — [CLM-01](@/dossiers/martin-pavlik/claims/clm-01.md) samo o sobě by čtenáře nechalo předpokládat souvislé období — a nenaznačuje jím nic dalšího.\n\nÚdaj odpovídá stavu rejstříkového záznamu k 2023-07-15; viz [GAP-02](@/dossiers/martin-pavlik/gaps/gap-02.md)."
+    }
+  ]
+}
