@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run verify:table-responsive — Responzivní tabulky"
 template = "tooling-command.html"
-weight = 73
+weight = 75
 description = "Responzivní tabulky: Vynucuje, že každá vydaná <table> sedí ve scroll kontextu (.dossier-prose pro markdown tabulky, obal overflow-x-auto z macros/table.html pro komponentové) — jinak by se na mobilu hroutila do šířky viewportu místo scrollování (text po jednom slově na řádek, identifikátory zlomené uprostřed tokenu).. npm skript, kontrola výstupů."
 
 [extra]

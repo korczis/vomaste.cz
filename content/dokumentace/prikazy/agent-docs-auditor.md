@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "agent docs-auditor — Auditor dokumentace"
 template = "tooling-command.html"
-weight = 149
+weight = 151
 description = "Auditor dokumentace: Porovná, co dokumentace tvrdí, s tím, co repozitář dělá — příkazy proti package.json, brány proti kódu validátorů, pole proti schématům, kroky buildu proti pipeline, definice proti kanonickým konceptům a odkazy proti existenci cílů. Claude subagent, kontrola výstupů."
 
 [extra]

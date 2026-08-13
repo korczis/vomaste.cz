@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/verify-rules-catalog",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "verify-rules-catalog",
+  "kind": "npm",
+  "name": "verify:rules-catalog",
+  "title": "Brána proti rozejití katalogu pravidel",
+  "category": "kontrola",
+  "summary": "Týž generátor v režimu kontroly: nic nezapíše, ale spadne, kdyby zápis něco změnil, kdyby vlastník pravidla přišel o hlavičku, nebo kdyby dokumentace odkazovala na pravidlo, které žádný validátor nevlastní.",
+  "whenToRun": "V build pipeline a před review; ručně kdykoli po zásahu do hlaviček validátorů nebo do generované stránky.",
+  "inputs": [
+    "data/generated/rules-catalog.json",
+    "content/pravidla/_index.md"
+  ],
+  "outputs": [],
+  "sourceFile": "scripts/dossier/build-rules-catalog.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Nezapisuje. Selhání znamená, že se generovaný výstup rozešel se svým zdrojem — spusť build:rules-catalog.",
+    "Chytá i opačný směr: text odkazující na pravidlo, které nikdo nevynucuje."
+  ]
+}

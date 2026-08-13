@@ -109,6 +109,14 @@ order = 18.7
 icon = "M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z M12 7v5l3 2 M3.5 9h17"
 
 [[items]]
+id = "rules"
+label = "Pravidla brány"
+path = "@/pravidla/_index.md"
+match_prefix = "/pravidla/"
+order = 18.8
+icon = "M9 12l2 2 4-4 M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z"
+
+[[items]]
 id = "docs"
 label = "Dokumentace"
 path = "@/dokumentace/_index.md"

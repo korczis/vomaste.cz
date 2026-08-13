@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "workflow fix-a-site-bug — Oprava chyby na webu"
 template = "tooling-command.html"
-weight = 161
+weight = 163
 description = "Oprava chyby na webu: Cesta vývojáře od nahlášeného projevu k opravené příčině: rozklad zadání, reprodukce, hledání příčiny (mrtvá kotva bývá důsledek přečíslování záznamu, ne chyba šablony), oprava tam, kde příčina je, UI a přístupnostní review, testy, build a vysvětlení změny.. Claude workflow, provoz."
 
 [extra]

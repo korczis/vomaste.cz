@@ -75,6 +75,35 @@
 //       vlastní reportáž Blesku by splynula s ČTK jen proto, že Blesk
 //       jinde ČTK přetiskuje — a pravdivá korroborace by zmizela.
 //
+// S10b  registr a web, který ten registr přetiskuje, nejsou dvě nezávislá
+//       doložení: dvojice, kde OBA zdroje čerpají z téhož českého
+//       veřejného rejstříku (ARES, obchodní rejstřík, Hlídač státu,
+//       Podnikatel.cz, Kurzy.cz), se počítá jako JEDEN hlas — stejná
+//       severita jako u hostitelského pravidla (ERROR u claims,
+//       WARNING u hran, viz S10).
+//
+//       Díra, kterou S10b zavírá: dvojice ARES + Podnikatel.cz projde
+//       rodinou, outletem i doménou, protože to opravdu JSOU dva různí
+//       provozovatelé na dvou různých doménách. Jenže agregátor svá
+//       rejstříková data z registru přebírá, takže mu nemůže odporovat:
+//       kdyby byl zápis chybný, přetiskl by tutéž chybu. Nezávislost
+//       znamená, že druhý zdroj mohl dojít k JINÉMU výsledku — testem
+//       není jiný provozovatel, ale jiný původ důkazu.
+//
+//       Rozsah je úzký schválně. Rejstříky dvou různých států jsou na
+//       sobě nezávislé a slévat se nesmějí; redakce, která o rejstříku
+//       píše, sem nepatří, protože udělala vlastní práci a může se mýlit
+//       nezávisle. Citovat registr i agregátor společně je v pořádku a je
+//       to lepší provenience než jen agregátor — zakázané je počítat je
+//       jako dva hlasy.
+//
+//       Implementačně je S10b, stejně jako S10, vlastnost primitivu
+//       v source-independence.mjs (`czechRegistryOrigin()` jako čtvrtý
+//       důvod kolize vedle rodiny, outletu a domény), takže platí pro
+//       S1, S2 i S4 naráz. Nalezeno živě 2026-08-05 na dossieru
+//       martin-pavlik: tři tvrzení a tři hrany nesly CORROBORATED přesně
+//       na téhle dvojici. Data opravena v 16c072ff.
+//
 // Baseline (T-028 fáze D, grandfathered debt): porušení zděděná 1:1
 // z migrovaného obsahu se NEopravují změnou dat ani změkčením pravidel —
 // místo toho žijí v explicitním allowlistu

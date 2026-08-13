@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run sources:detect-family — Detektor zdrojových rodin"
 template = "tooling-command.html"
-weight = 90
+weight = 92
 description = "Detektor zdrojových rodin: Opakovatelná náhrada ručního čtení podpisů: stáhne stránku zdroje a hledá doslovný kredit původu ve třech ukotvených oblastech — strojová metadata, podpisový element, patička „Zdroj: …“. npm skript, rešerše."
 
 [extra]

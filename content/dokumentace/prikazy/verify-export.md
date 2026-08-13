@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run verify:export — Offline ověření exportů"
 template = "tooling-command.html"
-weight = 67
+weight = 68
 description = "Offline ověření exportů: Ověří stažené /data/*.jsonld exporty proti manifestu. npm skript, kontrola výstupů."
 
 [extra]

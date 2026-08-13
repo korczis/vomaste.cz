@@ -118,6 +118,51 @@ let defaultPublisherGroups = null;
  * zdrojů, aby brána i report viděly tutéž definici bez zapojování na
  * dvou místech; testy si injektují syntetickou mapu.
  */
+/*
+ * Zdroje, jejichž rejstříkový obsah JE český veřejný rejstřík — ať už jde
+ * o registr sám (ARES, obchodní rejstřík), nebo o web, který ho přetiskuje
+ * (Hlídač státu, Podnikatel.cz, Kurzy.cz).
+ *
+ * Proč to musí být čtvrtý důvod kolize vedle rodiny, outletu a domény:
+ * dvojice ARES + Podnikatel.cz projde všemi třemi (jiná rodina, jiný
+ * vydavatel, jiná doména) a přesto NENÍ dvojí doložení. Agregátor svá
+ * rejstříková data z registru přebírá, takže mu nemůže odporovat — kdyby
+ * byl zápis chybný, přetiskl by tutéž chybu. Nezávislost znamená, že druhý
+ * zdroj mohl dojít k JINÉMU výsledku; testem není jiný provozovatel, ale
+ * jiný původ důkazu.
+ *
+ * Nalezeno živě 2026-08-05 na dossieru martin-pavlik: tři tvrzení a tři
+ * hrany grafu nesly CORROBORATED přesně na téhle dvojici, přičemž záznam
+ * zdroje sám o dva odstavce výš popisoval agregátor jako „odvozený přehled"
+ * registru. Opraveno v 16c072ff, pravidlo přidáno sem, aby to příště
+ * neprošlo bránou.
+ *
+ * Záměrně úzké a jen české: dva rejstříky RŮZNÝCH států jsou na sobě
+ * nezávislé a tenhle výčet je nesmí slévat. Redakce, která o rejstříku
+ * píše, sem taky nepatří — udělala vlastní práci a může se mýlit
+ * nezávisle.
+ */
+export const CZ_REGISTRY_ORIGIN = [
+  { id: "ares", label: "ARES", match: /\bares\b|ares\.gov\.cz/i },
+  { id: "or-justice", label: "obchodní rejstřík (justice.cz)", match: /or\.justice\.cz|justice\.cz\/ias/i },
+  { id: "hlidac-statu", label: "Hlídač státu", match: /hlídač státu|hlidac ?statu|hlidacstatu\.cz/i },
+  { id: "podnikatel", label: "Podnikatel.cz (rejstřík)", match: /podnikatel\.cz\/rejstrik|sekundární rejstříkový agregátor/i },
+  { id: "kurzy", label: "Kurzy.cz (rejstřík)", match: /kurzy\.cz\/[^ ]*rejstrik|rejstrik\.kurzy\.cz/i },
+];
+
+/*
+ * Vrací popisek původu, pokud zdroj JE český veřejný rejstřík nebo jeho
+ * přetisk; jinak null. Rozhoduje se podle outletu, typu zdroje a URL, aby
+ * se nový agregátor chytil podle vlastního sebepopisu a nemusel se sem
+ * nejdřív dopsat.
+ */
+export function czechRegistryOrigin(source) {
+  if (!source) return null;
+  const hay = [source.outlet, source.sourceType, source.url].filter(Boolean).join(" ");
+  for (const r of CZ_REGISTRY_ORIGIN) if (r.match.test(hay)) return r.label;
+  return null;
+}
+
 export function createSourceIndependence(recordById, options = {}) {
   const publisherGroups =
     options.publisherGroups ?? (defaultPublisherGroups ??= loadPublisherGroups());
@@ -152,6 +197,11 @@ export function createSourceIndependence(recordById, options = {}) {
     const groupA = publisherGroupOf(a);
     if (groupA && groupA === publisherGroupOf(b)) {
       return `táž skupina vydavatelů "${groupA}" (${outletA} + ${outletOf(b)})`;
+    }
+    const originA = czechRegistryOrigin(a);
+    const originB = czechRegistryOrigin(b);
+    if (originA && originB) {
+      return `oba přebírají týž český veřejný rejstřík (${originA} + ${originB}) — agregátor nemůže registru odporovat`;
     }
     return null;
   };

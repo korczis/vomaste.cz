@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run test:hooks — Test guardu automatického nasazení"
 template = "tooling-command.html"
-weight = 54
+weight = 55
 description = "Test guardu automatického nasazení: Ověřuje rozhodovací guard sdílené rutiny, kterou volají post-commit i post-merge hook — tedy to, co rozhoduje, jestli se commit na master sám postaví a pushne. npm skript, kontrola výstupů."
 
 [extra]

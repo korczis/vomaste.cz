@@ -1,6 +1,6 @@
 +++
 title = "Nezávislé doložení"
-description = "Rozdíl mezi „dvě redakce to otiskly“ a „dva nezávislé zdroje to potvrzují“. Převzatá agenturní zpráva v pěti médiích je jeden hlas, ne pět — a vynucuje to build, ne dobrá vůle."
+description = "Rozdíl mezi „dvě redakce to otiskly“ a „dva nezávislé zdroje to potvrzují“. Převzatá agenturní zpráva v pěti médiích je jeden hlas, ne pět; státní registr a web, který ho přetiskuje, taky jeden — a vynucuje to build, ne dobrá vůle."
 template = "concept.html"
 weight = 160
 
@@ -13,6 +13,7 @@ tile_summary = "Pět převzetí jedné agenturní zprávy je jedno doložení. N
 bullets = [
   "Zdrojová rodina: převzatá agenturní zpráva v pěti redakcích = <strong>jeden</strong> nezávislý hlas.",
   "Týž vydavatel nikdy nepotvrzuje sám sebe — porovnává se název média i registrovaná doména.",
+  "Rejstřík a web, který ho přetiskuje, taky ne: <strong>jiný provozovatel není jiný původ důkazu</strong>.",
   "Pravidlo vynucuje build: tvrzení, které slib odznaku nesplní, shodí validaci.",
 ]
 +++
@@ -56,6 +57,36 @@ sdílenou rodinu, splynula by vlastní reportáž jednoho média s agenturní
 zprávou jen proto, že tentýž web jinde agenturu přetiskuje — a skutečná
 korroborace by zmizela.
 
+## Rejstřík a jeho přetisk nejsou dva hlasy
+
+Rodina i vydavatel řeší, že tentýž materiál koluje víc médii. Existuje ale
+dvojice, která projde obojím a stejně je jedno doložení:
+
+> státní registr (ARES) **+** web, který ten registr přetiskuje
+
+Jiná rodina, jiný provozovatel, jiná doména — a jeden původ důkazu.
+Agregátor svá rejstříková data z registru přebírá, takže mu **nemůže
+odporovat**: kdyby byl zápis v rejstříku chybný, přetiskl by tutéž chybu.
+Nezávislost neznamená „jiný provozovatel", ale „druhý zdroj mohl dojít
+k jinému výsledku".
+
+Citovat registr i agregátor společně je přitom v pořádku a je to lepší
+provenience než jen agregátor. Zakázané je počítat je jako **dva hlasy**.
+Když tvrzení cituje registr, agregátor *a* nezávislou redakci, odznak platí —
+druhý hlas je ta redakce.
+
+Pravidlo je záměrně úzké. Týká se **českého** veřejného rejstříku a jeho
+přetisků; rejstříky dvou různých států jsou na sobě nezávislé. A redakce,
+která o rejstříku píše, sem nepatří — udělala vlastní práci a může se mýlit
+nezávisle.
+
+Našlo se to na živých datech 5. srpna 2026: tři tvrzení a tři hrany grafu
+nesly odznak nezávislého potvrzení přesně na téhle dvojici, přičemž popis
+zdroje sám o dva odstavce výš označoval agregátor za „odvozený přehled"
+registru. Tvrzení klesla na [1 zdroj](@/koncepty/stav-jeden-zdroj.md), obě
+citace zůstaly a pravidlo se přidalo do brány — aby to příště shodilo build
+místo aby se to publikovalo.
+
 ## Vynucuje to build, ne dobrá vůle
 
 Pravidlo není redakční předsevzetí. Je to brána v `npm run data:validate`,
@@ -67,9 +98,15 @@ kterou musí projít každý build (sémantická pravidla S1, S2, S4 a S10):
 | tvrzení `1 ZDROJ` (S1) | mezi citovanými zdroji nezávislá dvojice **je**, tedy je doloženo víc, než přiznává |
 | hrana v grafu (S4) | vztah označený jako potvrzený nemá nezávislé doložení |
 | týž vydavatel (S10) | dva zdroje se shodným vydavatelem nebo registrovanou doménou se nikdy nepočítají jako dva hlasy |
+| registr a jeho přetisk (S10b) | oba citované zdroje čerpají z téhož veřejného rejstříku — agregátor nemůže registru odporovat |
 
 Odznak si tedy nelze „dát". Buď v datech existují dva nezávislí vydavatelé,
 nebo tvrzení nese slabší stav.
+
+Úplný výčet pravidel, která build vynucuje — včetně toho, která z nich shodí
+build a která jen hlásí — je na stránce [pravidla brány](@/pravidla/_index.md).
+Ta se generuje přímo z modulů, které pravidla vlastní, takže nemůže slíbit
+kontrolu, která ve skutečnosti neběží.
 
 ## Revize 5. srpna 2026: 119 tvrzení dolů
 

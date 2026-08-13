@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/editorial-review — Redakční review v celku"
 template = "tooling-command.html"
-weight = 113
+weight = 115
 description = "Redakční review v celku: Skládá atomické kontroly tvrzení, zdrojů a mezer a přidává deset kontrol, které jsou vidět až v celku: konzistence procesního rámování napříč zmínkami, tichá eskalace tónu bez nových zdrojů, poměr obvinění a reakcí, třetí osoby čtoucí se jako subjekty, koncentrace zdrojů u jednoho vydavatele, rovnováha stavů, záměna mezery za zúžený fakt, časová osa, shrnutí říkající víc než záznamy pod ním, a grafové vazby vytvářející dojem vlivu.. Claude skill, kontrola výstupů."
 
 [extra]

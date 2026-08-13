@@ -196,6 +196,9 @@ seo_type = "WebPage"
 og_type = "website"
 seo_type = "WebPage"
 
+[page_types.rulesCatalogIndex]
+og_type = "website"
+seo_type = "WebPage"
 # Veřejný archiv uchovává samostatné úřední dokumenty a jejich metadata;
 # index je proto kolekce, ne jeden zpravodajský článek.
 [page_types.documentArchive]

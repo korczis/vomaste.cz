@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run build:tooling-catalog — Generátor katalogu toolingu"
 template = "tooling-command.html"
-weight = 29
+weight = 30
 description = "Generátor katalogu toolingu: Staví katalog příkazů ze dvou záměrně oddělených vstupů: ručně psaných záznamů v data/tooling/*.json (co příkaz dělá, co vynucuje, kdy ho spustit) a SKUTEČNOSTI dopočítané z package.json, scripts/build/pipeline.mjs, .githooks/pre-commit, justfile a .claude/skills/**/SKILL.md.. npm skript, generování."
 
 [extra]

@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run prismatic:review — Report k posouzení — nehotové"
 template = "tooling-command.html"
-weight = 85
+weight = 87
 description = "Report k posouzení — nehotové: Stub. npm skript, rešerše."
 
 [extra]

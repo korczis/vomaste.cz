@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/review-claim — Review tvrzení"
 template = "tooling-command.html"
-weight = 115
+weight = 117
 description = "Review tvrzení: Projde jedno tvrzení dvanácti kontrolami proti jeho zdrojům a redakčním pravidlům: atomicita, neutralita, doloženost, stav versus nezávislost zdrojů, zdrojová rodina, procesní rámování u TÉHLE zmínky, doslovnost citací, data, třetí osoby, osobní údaje, obousměrné vazby a parita s ručně psanou tabulkou. Claude skill, kontrola výstupů."
 
 [extra]

@@ -21,6 +21,7 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadCanonicalTree } from "../data/load.mjs";
 import { collectSemanticsFindings, registeredDomain } from "../data/validate-semantics.mjs";
+import { czechRegistryOrigin, createSourceIndependence } from "../data/lib/source-independence.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 
@@ -83,4 +84,63 @@ test("žádné tvrzení netvrdí nezávislé potvrzení, které data nedokládaj
   // Bez tohohle by test prošel i tehdy, kdyby čtečka přestala cokoli najít.
   assert.ok(kontrolovano > 50, `zkontrolováno jen ${kontrolovano} tvrzení — čtečka nejspíš nic nenašla`);
   assert.deepEqual(problemy, [], "\n" + problemy.join("\n"));
+});
+
+
+// --- S10b: registr a jeho vlastní agregátor -------------------------------
+//
+// Dvojice ARES + Podnikatel.cz projde rodinou, outletem i doménou, a přesto
+// není dvojí doložení: agregátor rejstříková data z registru přebírá, takže
+// mu nemůže odporovat. Nalezeno živě 2026-08-05 na dossieru martin-pavlik
+// (tři tvrzení a tři hrany grafu s odznakem CORROBORATED), opraveno
+// v 16c072ff. Testuje se pravidlo, ne dnešní data.
+
+const ares = {
+  "@id": "src:ares", identifier: "SRC-ARES", recordType: "source",
+  outlet: "ARES — Administrativní registr ekonomických subjektů (Ministerstvo financí ČR)",
+  sourceType: "primární úřední záznam", url: "https://ares.gov.cz/ekonomicke-subjekty?ico=04449461",
+  sourceFamily: "ares-gov-cz",
+};
+const agregator = {
+  "@id": "src:agg", identifier: "SRC-AGG", recordType: "source",
+  outlet: "Podnikatel.cz", sourceType: "sekundární rejstříkový agregátor",
+  url: "https://www.podnikatel.cz/rejstrik/osoby/x/", sourceFamily: "podnikatel-cz-rejstrik",
+};
+const redakce = {
+  "@id": "src:news", identifier: "SRC-NEWS", recordType: "source",
+  outlet: "Deník N", sourceType: "investigativní zpravodajství",
+  url: "https://denikn.cz/clanek/", sourceFamily: "denik-n",
+};
+const indep = (...records) => {
+  const by = new Map(records.map((r) => [r["@id"], r]));
+  return createSourceIndependence((iri) => by.get(iri));
+};
+
+test("czechRegistryOrigin pozná registr i jeho přetisk, redakci ne", () => {
+  assert.equal(czechRegistryOrigin(ares), "ARES");
+  assert.equal(czechRegistryOrigin(agregator), "Podnikatel.cz (rejstřík)");
+  assert.equal(czechRegistryOrigin(redakce), null);
+  // Redakce, která o rejstříku píše, udělala vlastní práci.
+  assert.equal(
+    czechRegistryOrigin({ outlet: "Česká justice", sourceType: "odborné právní zpravodajství", url: "https://ceska-justice.cz/x" }),
+    null,
+  );
+});
+
+test("registr + jeho agregátor NENÍ nezávislá dvojice, přestože se liší rodinou, outletem i doménou", () => {
+  const i = indep(ares, agregator);
+  assert.notEqual(i.familyOf(ares["@id"]), i.familyOf(agregator["@id"]), "rodiny se opravdu liší");
+  assert.match(i.collisionReason(ares, agregator), /týž český veřejný rejstřík/);
+  assert.equal(i.independentPair([ares["@id"], agregator["@id"]]), null);
+});
+
+test("registr + nezávislá redakce nezávislá dvojice JE", () => {
+  const i = indep(ares, redakce);
+  assert.equal(i.collisionReason(ares, redakce), null);
+  assert.deepEqual(i.independentPair([ares["@id"], redakce["@id"]]), ["SRC-ARES", "SRC-NEWS"]);
+});
+
+test("registr + agregátor + redakce: redakce je ten druhý hlas, dvojice se veze s ní", () => {
+  const i = indep(ares, agregator, redakce);
+  assert.notEqual(i.independentPair([ares["@id"], agregator["@id"], redakce["@id"]]), null);
 });

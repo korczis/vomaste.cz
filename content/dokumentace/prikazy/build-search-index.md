@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run build:search-index — Statický index vyhledávání"
 template = "tooling-command.html"
-weight = 27
+weight = 28
 description = "Statický index vyhledávání: Staví statický index pokrývající každý routovatelný záznam napříč dossiery — zdroje, tvrzení, kauzy, mezery, vztahy, samotné stránky dossierů i globální registr entit. npm skript, generování."
 
 [extra]

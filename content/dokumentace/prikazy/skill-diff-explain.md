@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/diff-explain — Vysvětlení změn"
 template = "tooling-command.html"
-weight = 139
+weight = 141
 description = "Vysvětlení změn: Převede aktuální diff na srozumitelné shrnutí pro netechnického recenzenta: rozdělí změny na funkční, obsahové, generované, dokumentační a testové, řekne, které generované soubory jsou důsledkem které změny dat, vyjmenuje rizika a nečekané soubory a přidá konkrétní způsob ověření.. Claude skill, provoz."
 
 [extra]

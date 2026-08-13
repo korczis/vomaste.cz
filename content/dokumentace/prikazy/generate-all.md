@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run generate:all — Všechny generátory bez validace"
 template = "tooling-command.html"
-weight = 100
+weight = 102
 description = "Všechny generátory bez validace: Generační podmnožina jednotné dev pipeline: view modely a content adaptéry, sekce typů entit, routy, navigace, sekundární providery, katalogy, exporty, grafové projekce, JSON-LD, metriky, index vyhledávání, kandidáti, log objevení, CSS a JS.. npm skript, provoz."
 
 [extra]

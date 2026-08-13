@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "agent ui-reviewer — Recenzent UI vrstvy"
 template = "tooling-command.html"
-weight = 151
+weight = 153
 description = "Recenzent UI vrstvy: Projde šablony proti konvencím webu: povinné znovupoužití komponent, jednotná tabulka, čtení view modelu místo hardcodovaných slugů, doktrína F1–F7, prázdné stavy a jediná povolená cesta k zobrazení média. Claude subagent, kontrola výstupů."
 
 [extra]

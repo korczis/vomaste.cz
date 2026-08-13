@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/schema-change — Změna datového kontraktu"
 template = "tooling-command.html"
-weight = 146
+weight = 148
 description = "Změna datového kontraktu: Provede změnu kanonického schématu se všemi třinácti místy, která z ní plynou: schéma, existující data, view modely, šablony, exporty, JSON-LD kontext, validátory, testy, golden snapshot, migrace, datový kontrakt, vzdělávací vrstva a SEO konfigurace. Claude skill, provoz."
 
 [extra]

@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run screening:public-money — Screening toku veřejných prostředků"
 template = "tooling-command.html"
-weight = 89
+weight = 91
 description = "Screening toku veřejných prostředků: Pro zadaná IČO spočítá z registru smluv (ISRS, zákon č. npm skript, rešerše."
 
 [extra]

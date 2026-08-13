@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run intake:preflight-fixture — Smoke běh s preflightem přes mock DNS"
 template = "tooling-command.html"
-weight = 46
+weight = 47
 description = "Smoke běh s preflightem přes mock DNS: Týž fixture jako intake:fixture, ale s `--preflight` přes MOCK DNS transport — nikdy skutečná síť. npm skript, kontrola výstupů."
 
 [extra]

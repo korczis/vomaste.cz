@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run validate:graph-projections — Brána grafového kontraktu"
 template = "tooling-command.html"
-weight = 63
+weight = 64
 description = "Brána grafového kontraktu: Vlastní mezisouborovou SÉMANTIKU grafových projekcí, kterou nelze vyjádřit schématem: referenční integritu, paritu manifestu se soubory, integritu hashů a pokrytí registrové vrstvy.. npm skript, kontrola výstupů."
 
 [extra]

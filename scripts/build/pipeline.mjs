@@ -85,6 +85,7 @@ const BUILD_STEPS = [
   "lint:generated-content",
   "validate:claude-tooling",
   "build:source-catalog",
+  "build:rules-catalog",
   // Katalog toolingu: brána běží PŘED generátorem schválně. `--check`
   // porovnává commitnuté stránky a docs/TOOLING.md s tím, co by z dat
   // vzniklo — kdyby běžela až za generátorem, porovnávala by výstup se
@@ -146,6 +147,7 @@ const DEV_STEPS = [
   "build:navigation",
   "validate:navigation",
   "build:source-catalog",
+  "build:rules-catalog",
   "build:tooling-catalog",
   "build:data-exports",
   "build:graph-projections",
@@ -181,6 +183,7 @@ const CHECK_STEPS = [
   "lint:generated-content",
   "validate:claude-tooling",
   "lint:source-outlets",
+  "verify:rules-catalog",
   "check:workflow-parity",
   // Staví jen dočasné repozitáře přes mktemp a nikdy nepushuje, takže se
   // vejde i do rychlého režimu — a chybné rozhodnutí toho guardu znamená
