@@ -138,7 +138,7 @@ rozhodnutí: [ADR](docs/adr/json-first-canonical-data-model.md).
 
 | Stav | Význam | Vynucení |
 |---|---|---|
-| `CORROBORATED` | potvrzeno nezávisle více redakcemi | pravidlo S2 vyžaduje dvojici zdrojů lišící se rodinou **i** vydavatelem (S10) |
+| `CORROBORATED` | potvrzeno nezávisle více redakcemi | pravidlo S2 vyžaduje dvojici zdrojů lišící se rodinou **i** vydavatelem (S10) **a nesdílející původ důkazu** (S10b) |
 | `1 ZDROJ` | doloženo jediným citovaným zdrojem, bez nezávislého potvrzení | pravidlo S1 vyžaduje, aby mezi citovanými zdroji žádná taková nezávislá dvojice nebyla |
 | `CITACE` | přímý výrok subjektu — ověřuje, že výrok padl, **ne** že platí jeho obsah | — |
 | `SPORNÉ` | neuzavřené, nepotvrzené či rozporované tvrzení | — |
@@ -147,8 +147,9 @@ rozhodnutí: [ADR](docs/adr/json-first-canonical-data-model.md).
 Trvalá pravidla: procesní výsledek (odložení, promlčení, nepravomocné
 rozhodnutí) se **pokaždé** odlišuje od meritorního rozhodnutí o
 vině/pravdě; derivativní články jednoho původu nejsou korroborace; **ani
-dva články téže redakce nejsou dvě nezávislá doložení** (S10); povýšení
-stavu vyžaduje nový důkaz, nikdy jen přeznačení. Ověření, že výrok padl,
+dva články téže redakce nejsou dvě nezávislá doložení** (S10); **ani
+veřejný rejstřík a web, který ten rejstřík přetiskuje** (S10b);
+povýšení stavu vyžaduje nový důkaz, nikdy jen přeznačení. Ověření, že výrok padl,
 není ověřením jeho obsahu.
 
 Evidenční pravidla S1–S4 a S10 se dají grandfatherovat jen výslovným
@@ -315,6 +316,7 @@ Rozhodnutí a jeho důsledky: [ADR](docs/adr/dossier-directory-multi-view.md).
 │                           #  manifest, mapa, /data/ a per-dossier evidence//entities/ indexy)
 ├── templates/              # Tera šablony (čtou view modely přes load_data);
 │                           # macros/meta.html vydává og:*/twitter:*/canonical
+├── data/source-catalog/    # ručně psané záznamy zdrojů: co dokládá, co ne, pasti
 ├── data/                   # navigační skeleton, seo.toml (metadata), government
 │                           # roster, generovaná data
 ├── assets/js/              # zdrojové JS moduly (bundluje esbuild)
@@ -448,6 +450,7 @@ justfile je chyba.
 | `just build` | `npm run build` | **ta** brána kvality, stejná sekvence jako CI |
 | `just check` | `.githooks/pre-commit` | rychlá podmnožina; spouští přímo hook, takže se od něj nemůže rozejít |
 | `just test` | `npm test` | regresní testy tooling skriptů |
+| `npm run test:e2e` | [prohlížečové testy](#prohlížečové-testy-playwright) (Playwright, desktop + mobile): přístupnost, překryvy, graf, tabulky, fasety. **Není** součástí `npm run build`, ale běží v CI před nasazením |
 | `just clean` | `rm -rf public` | build output není zdroj pravdy |
 | `just regen` | `npm run data:build` | přegeneruje view modely a content adaptéry po editaci kanonického JSON |
 | `just scaffold <slug> "<Jméno>" <subjekt> <AUTH-id>` | `npm run dossier:scaffold` | založí kanonický balíček; odmítne subjekt bez záznamu v `data/authorizations.toml` |
@@ -491,6 +494,10 @@ Instalace `just`: <https://github.com/casey/just#installation>.
 | `node scripts/osint/ares-lookup.mjs --ico=… \| --name="…"` | dotaz do ARES (jediný spolehlivě funkční primární rejstřík) — **není** součástí `npm run build`, dělá živý síťový dotaz; doloží identitu/sídlo/formu/status, **nedoloží** skutečné majitele ani „od kdy ovládá" |
 | `npm run screening:public-money -- --ico=…` | screening toku veřejných prostředků k IČO z registru smluv (ISRS) — **není** součástí `npm run build`, stahuje měsíční otevřená data; výstup je **interní** (`data/generated/public-money-screening.json` + `reports/public-money-screening.md`), nikdy se neroutuje. Doloží zveřejněné smlouvy, objem a objednatele v pokrytém období; **nedoloží** žádné pochybení ani úplnost. Viz [screening veřejných peněz](#screening-toku-veřejných-prostředků) |
 | `npm run sources:detect-family` | detekce zdrojové rodiny u zdrojů s prázdným `sourceFamily` — **není** součástí `npm run build`, stahuje živě stránky zdrojů. Výstup je **návrh** (`data/generated/source-family-proposals.json` + `reports/source-family-proposals.md`), do kanonických dat sám nezapisuje; zápis dělá samostatný krok `--apply`, a to jen u verdiktu `ctk` a jen do prázdného pole. Doloží kredit původu v metadatech/podpisu/patičce; **nedoloží** obsahovou totožnost článků ani úplnost. Viz [detekce zdrojových rodin](#detekce-zdrojových-rodin) |
+| `npm run build:rules-catalog` | přegeneruje [katalog pravidel](#katalog-pravidel-pravidla): `data/generated/rules-catalog.json` a stránku `/pravidla/`, vytažené z hlaviček validátorů — součást `npm run build` |
+| `npm run verify:rules-catalog` | drift gate: nic nezapíše, ale spadne, když by se katalog změnil, když vlastník přišel o hlavičku, nebo když dokumentace odkazuje na pravidlo, které žádný validátor nevlastní |
+| `npm run build:source-catalog` | přegeneruje [katalog zdrojů](#katalog-zdrojů-zdroje): `data/generated/source-catalog.json`, stránky pod `content/zdroje/` a `docs/osint/SOURCE_CATALOG.md`. Ručně psané záznamy (`data/source-catalog/*.json`) nesou `proves`/`doesNotProve`/`traps`; kolikrát byl který outlet skutečně použit se **dopočítá** z `data/dossiers/*/sources/`, aby seznam nemohl zastarat proti datům — součást `npm run build` |
+| `npm run verify:source-catalog` | tentýž generátor s `--check`: nic nezapíše, ale spadne, kdyby zápis něco změnil — brána proti ručně upravené vygenerované stránce |
 | `node scripts/osint/expand-entity.mjs --ico=… [--write]` | rozbalí rejstříkové okolí firmy (statutární orgány, společníci) na kontextové entity — kanonické JSON záznamy v `data/dossiers/_shared/entities/` (stránky `/entities/…` přegeneruje `npm run data:build`); na rozdíl od základního endpointu čte větev veřejného rejstříku, která u s.r.o. **vrací** zapsané společníky i velikost podílu. Akcionáři a.s. v rejstříku nejsou, takže prázdný seznam znamená „nezapsáno", ne „firma nemá vlastníky". Data narození a adresy bydliště nepřebírá; existující záznam nikdy nepřepíše |
 
 ## Screening toku veřejných prostředků
@@ -551,6 +558,119 @@ nafoukly.
 > `<zaznam>`, je tvrdá chyba, ne prázdný výsledek — ale první běh na
 > funkční síti je potřeba zkontrolovat očima. Mapování žije na jednom místě
 > (konstanta `ISRS_DUMP` v `scripts/osint/screen-public-money.mjs`).
+
+## Katalog pravidel (`/pravidla/`)
+
+README i koncepty citují pravidla jako `S1`, `T4` nebo `R3`, ale ta pravidla
+žijí v hlavičkách validátorů. Text a kód se proto můžou rozejít potichu:
+pravidlo se zpřísní a popis zůstane, nebo se popis napíše pro pravidlo, které
+nikdy nevzniklo. Konstituce §8 zakazuje inzerovat schopnost, kterou nic
+nevynucuje — a tohle je táž past z druhé strany.
+
+Katalog proto **nic neopisuje**. Čte hlavičky těch modulů, které pravidla
+vlastní, takže co v kódu není, se na webu neobjeví.
+
+```bash
+npm run build:rules-catalog      # přegeneruje /pravidla/ a view model
+npm run verify:rules-catalog     # drift gate, nic nezapíše
+```
+
+| namespace | vlastník | co hlídá |
+|---|---|---|
+| `S` | `scripts/data/validate-semantics.mjs` | co smí tvrzení a hrana slíbit o síle doložení |
+| `R` | `scripts/data/validate-references.mjs` | že každý odkaz vede na existující cíl |
+| `T` | `scripts/data/validate-registry-table.mjs` | parita přehledové tabulky s kanonickými záznamy |
+| `J` | `scripts/data/validate-jsonld.mjs` | identita a čistota JSON-LD expanze |
+
+Stránka rozlišuje **`ERROR` (shodí build)** od **`WARNING` (jen hlásí)** a od
+**„neuvedeno"** — když hlavička severitu nedeklaruje, katalog ji nedomýšlí.
+Dopsat závažnost, kterou nikdo nenapsal, by bylo přesně to tvrzení bez
+podkladu, které má katalog odhalovat.
+
+Skutečný přínos je drift gate v `--check`: **odkaz na neexistující pravidlo
+je chyba buildu**, ne překlep, který nikdo nenajde. Při prvním běhu odhalil
+dvě reálné mezery — `S10` bylo v hlavičce zarovnané jinak a vypadávalo
+z výčtu, a `S10b` se citovalo v README, aniž by ho jakýkoli validátor
+deklaroval. Obojí je opravené.
+
+## Katalog zdrojů (`/zdroje/`)
+
+Rešerše se opakovaně zdržovala na tomtéž: který registr vůbec odpoví, co
+z jeho odpovědi jde citovat a kde jsou pasti, na které už někdo jednou
+najel. Ta znalost žila v hlavách a v commit zprávách, takže se platila
+znovu při každém dossieru. Katalog ji drží na jednom místě, strojově
+čitelně, a web ji publikuje — pro člověka i pro agenta.
+
+Dva vstupy, záměrně oddělené:
+
+| vstup | co v něm je | kdo ho píše |
+|---|---|---|
+| `data/source-catalog/*.json` | co zdroj **dokládá**, co **nedokládá** a jeho **pasti** (`proves` / `doesNotProve` / `traps`) | člověk — z dat se to odvodit nedá |
+| `data/dossiers/*/sources/*.json` | které outlety a rodiny už v datasetu skutečně figurují a kolikrát | nikdo, dopočítá se |
+
+Druhý díl se nepíše ručně schválně: seznam „co už bylo použito" tak nemůže
+zastarat proti datům.
+
+```bash
+npm run build:source-catalog     # přegeneruje katalog
+npm run verify:source-catalog    # nic nezapíše, spadne, kdyby zápis něco změnil
+```
+
+Generátor (`scripts/dossier/build-source-catalog.mjs`) vyrábí
+`data/generated/source-catalog.json` (view model pro UI i JSON-LD),
+stránku pro každý zdroj pod `content/zdroje/`, a `docs/osint/SOURCE_CATALOG.md`
+pro čtení v repozitáři bez stavění webu. Zápis je idempotentní — soubor se
+přepíše jen při skutečné změně, takže build neinvaliduje celý strom.
+
+Obě fáze pipeline (`build` i `dev`) katalog staví, `--check` varianta hlídá
+drift: kdyby někdo upravil vygenerovanou stránku ručně, build spadne.
+
+Na úvodní stránce z toho žije sekce **„Odkud to víme"** — čísla i vyzdvižené
+registry se čtou z vygenerovaného katalogu, takže v šabloně není napsaný ani
+jeden název zdroje a landing nemůže zastarat proti datům. Ukazuje se
+záměrně i to, co zdroj **nedokládá**; bez toho by výčet registrů působil jako
+nárok na vševědoucnost, což je přesně opačné sdělení.
+
+## Nezávislost není „jiný provozovatel" (S10b)
+
+`CORROBORATED` znamená, že totéž doložily dva **nezávislé** zdroje.
+Pravidla S1/S2 to počítají přes rodinu, S10 navíc přes vydavatele a
+registrovanou doménu. Existuje ale dvojice, která projde všemi třemi a
+přesto je jedno jediné doložení:
+
+```
+ARES (státní registr)  +  Podnikatel.cz (web, který ARES přetiskuje)
+```
+
+Jiná rodina, jiný provozovatel, jiná doména — a jeden původ důkazu.
+Agregátor svá rejstříková data z registru přebírá, takže mu **nemůže
+odporovat**: kdyby byl zápis chybný, přetiskl by tutéž chybu. Nezávislost
+znamená, že druhý zdroj mohl dojít k jinému výsledku. Testem není jiný
+provozovatel, ale **jiný původ důkazu**.
+
+Pravidlo je proto čtvrtým důvodem kolize v
+`scripts/data/lib/source-independence.mjs` — v jediném vlastníkovi
+primitiva nezávislosti, ne v samostatném lintu. Tím ho dostanou naráz
+brána (S1/S2/S4/S10 ve `validate-semantics.mjs`) i evidenční report
+(`report-evidence-plan.mjs`), a nemůžou se rozejít.
+
+Rozsah je záměrně úzký:
+
+- Sleduje se **český** veřejný rejstřík a jeho přetisky (ARES,
+  obchodní rejstřík, Hlídač státu, Podnikatel.cz, Kurzy.cz). Rejstříky
+  dvou různých států jsou na sobě nezávislé a slévat se nesmějí.
+- **Redakce, která o rejstříku píše, sem nepatří** — udělala vlastní práci
+  a může se mýlit nezávisle.
+- Citovat registr i agregátor společně je v pořádku, je to dobrá
+  provenience. Zakázané je počítat je jako **dva hlasy**. Tvrzení citující
+  registr, agregátor *a* nezávislou redakci projde: ta redakce je druhý
+  hlas a dvojice se veze s ní.
+
+Nalezeno živě 2026-08-05 na dossieru `martin-pavlik`: tři tvrzení a tři
+hrany grafu nesly `CORROBORATED` přesně na téhle dvojici, přičemž záznam
+zdroje sám o dva odstavce výš popisoval agregátor jako „odvozený přehled"
+registru. Opraveno v `16c072ff`, pravidlo zabudováno do brány, aby
+příště shodilo build místo aby odjelo na web.
 
 ## Detekce zdrojových rodin
 
@@ -765,12 +885,42 @@ Subjekty dossierů mohou žádat opravu, dodat reakci nebo protidůkazy;
 nemají redakční veto. Podání samo o sobě dataset nemění — projde
 posouzením proti redakčním pravidlům v `AGENTS.md`.
 
+## Prohlížečové testy (Playwright)
+
+Node testy (`npm test`) hlídají tooling a data. To, co uvidí čtenář —
+kontrast, ovládání klávesnicí, překryv prvků, chování grafu — se dá změřit
+jen ve skutečném prohlížeči, a proto na to je druhá sada.
+
+```bash
+npm run test:e2e                # desktop i mobile (Pixel 5, Desktop Chrome)
+npm run test:e2e:desktop        # jen desktop
+npm run test:e2e:benchmark      # výkonnostní běh grafu (RUN_GRAPH_BENCHMARK=1)
+npm run benchmark:graph         # měření grafu bez prohlížeče
+```
+
+Čtrnáct sad pod `tests/e2e/` pokrývá přístupnost (`a11y-sweep`,
+`accessibility`), hustotu a překryv layoutu (`density-overlap`), grafový
+workbench a jeho nástroje, registrové tabulky, fasetové filtry, chování
+vyhledávání při selhání, intake CTA, české skloňování a adresář dossierů.
+
+Podstatný detail: **typy stránek se odvozují z `routes.json` a
+`navigation.json`** (`tests/e2e/archetypes.mjs`), ne z ručního seznamu.
+Nový typ stránky se do plošné kontroly zařadí sám — ruční výčet by se
+tvářil jako úplný, přestože by nový typ tiše přeskočil.
+
+Sada **není** součástí `npm run build` (potřebuje nainstalovaný prohlížeč),
+ale **běží v CI**: `deploy.yml` po validaci spustí `npx playwright install
+--with-deps chrome` a `npm run test:e2e`, a report ukládá jako artefakt
+`playwright-report`. Červený e2e běh tedy zastaví nasazení stejně jako
+červený build.
+
 ## Nasazení
 
 Push do `master` spustí `.github/workflows/deploy.yml`: `npm ci` → celá
 validace (stejné příkazy jako lokálně) → `zola check` → `zola build` →
-`verify:anchors` → upload artefaktu → `actions/deploy-pages`. Ruční
-spuštění: workflow_dispatch. Ověření produkce: porovnat nasazený obsah
+`verify:anchors` → [prohlížečové testy](#prohlížečové-testy-playwright)
+(`npm run test:e2e`, report jako artefakt `playwright-report`) → upload
+artefaktu → `actions/deploy-pages`. Ruční spuštění: workflow_dispatch. Ověření produkce: porovnat nasazený obsah
 s očekávaným commitem (`gh run list`, pak kontrola klíčových rout).
 
 Ten push typicky nespouští nikdo ručně — `.githooks/post-commit` ho

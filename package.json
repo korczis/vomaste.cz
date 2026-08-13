@@ -36,6 +36,8 @@
     "build:data-exports": "node scripts/dossier/build-data-exports.mjs",
     "build:jsonld-exports": "node scripts/dossier/build-jsonld-exports.mjs",
     "build:source-catalog": "node scripts/dossier/build-source-catalog.mjs",
+    "build:rules-catalog": "node scripts/dossier/build-rules-catalog.mjs",
+    "verify:rules-catalog": "node scripts/dossier/build-rules-catalog.mjs --check",
     "verify:source-catalog": "node scripts/dossier/build-source-catalog.mjs --check",
     "verify:export": "node scripts/dossier/verify-export.mjs",
     "build:graph-projections": "node scripts/dossier/build-graph-projections.mjs",

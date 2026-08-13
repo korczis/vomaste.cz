@@ -73,6 +73,7 @@ const BUILD_STEPS = [
   "lint:hardcoded-records",
   "lint:generated-content",
   "build:source-catalog",
+  "build:rules-catalog",
   "build:data-exports",
   "build:graph-projections",
   "validate:graph-projections",
@@ -118,6 +119,7 @@ const DEV_STEPS = [
   "build:secondary-providers",
   "validate:navigation",
   "build:source-catalog",
+  "build:rules-catalog",
   "build:data-exports",
   "build:graph-projections",
   "validate:graph-projections",
@@ -147,6 +149,7 @@ const CHECK_STEPS = [
   "lint:hardcoded-records",
   "lint:generated-content",
   "lint:source-outlets",
+  "verify:rules-catalog",
   "check:workflow-parity",
 ];
 
