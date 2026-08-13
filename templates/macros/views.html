@@ -51,7 +51,7 @@
   <div class="mb-3 flex flex-wrap items-end justify-between gap-3">
     <h2 id="{{ id }}-heading" class="flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-white/55">
       {{ title }}
-      {%- if count != "" %}
+      {%- if count >= 0 %}
       <span class="rounded-full bg-white/5 px-2 py-0.5 font-mono text-[0.65rem] normal-case text-white/55"
         x-text="visible + ' / ' + total" aria-live="polite">{{ count }}</span>
       {%- endif %}

@@ -80,11 +80,11 @@
 {%- set facet_attrs = "" -%}
 {%- for sf in select_facets -%}{%- if not loop.first %}{% set_global facet_attrs = facet_attrs ~ "|" %}{% endif -%}{%- set_global facet_attrs = facet_attrs ~ (sf | split(pat="::") | first) -%}{%- endfor -%}
 <div class="relative overflow-x-auto rounded-lg border border-white/10 bg-white/[0.03]{% if extra_class %} {{ extra_class }}{% endif %}"{% if record_type %} data-record-type="{{ record_type }}"{% endif %}{% if searchable %} x-data="advancedTable()"{% endif %}{% if url_state %} data-url-state="true"{% endif %}{% if facet_attrs | length > 0 %} data-select-facets="{{ facet_attrs }}"{% endif %}{% if export_name %} data-export-name="{{ export_name }}"{% endif %}{% if inspector %} data-inspector="true"{% endif %}>
-  {%- if count != "" or searchable %}
+  {%- if count >= 0 or searchable %}
   <div class="flex flex-wrap items-center justify-between gap-3 border-b border-white/10 px-3 py-2.5">
     <h2 id="{{ id }}-caption" class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-white/55">
       {{ caption }}
-      {%- if count != "" %}
+      {%- if count >= 0 %}
       <span class="rounded-full bg-white/5 px-2 py-0.5 font-mono text-[0.65rem] normal-case text-white/50"{% if searchable %} x-text="visible + ' / ' + total" aria-live="polite"{% endif %}>{{ count }}</span>
       {%- endif %}
     </h2>
