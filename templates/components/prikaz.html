@@ -1,0 +1,14 @@
+{#- Blokový komponent: kopírovatelný příkaz uvnitř těla stránky.
+
+    Použití v markdownu:
+      {% <prikaz kind="claude" text="/verify-source https://…" /> %}
+      {% <prikaz kind="terminal" text="npm run build" note="Trvá minuty." /> %}
+
+    `kind`: terminal | claude | skill | prompt | output
+
+    Markup nevlastní tenhle soubor — importuje listové makro, které
+    používají i šablony. Jinak by příkazový blok v lekci a v katalogu
+    časem vypadaly jinak. -#}
+{% component prikaz(text, kind="terminal", label="", note="") -%}
+{{ <atoms_command text={text} kind={kind} label={label} note={note} /> }}
+{%- endcomponent %}
