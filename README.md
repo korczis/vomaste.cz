@@ -367,7 +367,8 @@ Zone B.
 │                           # (ručně psané: kořenové indexy, koncepty, dokumentace,
 │                           #  manifest, mapa, /data/ a per-dossier evidence//entities/ indexy)
 ├── templates/              # Tera šablony (čtou view modely přes load_data);
-│                           # macros/meta.html vydává og:*/twitter:*/canonical
+│                           # macros/ (sdílené komponenty ui_*, table_*, meta_*),
+│                           # components/ (volatelné z markdownu), partials/
 ├── data/                   # navigační skeleton, seo.toml (metadata), government
 │                           # roster, generovaná data
 ├── assets/js/              # zdrojové JS moduly (bundluje esbuild)
@@ -550,7 +551,7 @@ zatímco tenhle výběr je ruční a záměrně neúplný.
 | `npm run report:evidence-plan` | vygeneruje `reports/evidence-plan.md` + `data/generated/evidence-plan.json`: per dossier počty tvrzení dle stavu a evidenční třídy, potenciál korroborace, mezery, datově odvozená priorita a konkrétní další krok — součást `npm run data:build` i `npm run build`, nikdy se needituje ručně. Viz [evidenční plán práce](#evidenční-plán-práce) |
 | `npm run lint:historical-coupling` | de-specializační brána: žádná jména subjektů ve strukturálním kódu |
 | `npm run lint:generated-content` | generované content adaptéry zůstávají minimální obálkou — ruční doménová pole neprojdou |
-| `npm run lint:component-reuse` | každá šablona (kromě `base.html`/`404.html`) používá `macros/ui.html`, a každá šablona s tabulkou používá `macros/table.html` (`table_advanced_table`) — žádný ručně psaný duplicitní markup místo sdílené komponenty |
+| `npm run lint:component-reuse` | každá top-level šablona (kromě `base.html`/`404.html`) volá aspoň jednu sdílenou komponentu `ui_*`, a každá šablona s `<table>` mimo `macros/table.html` volá `table_advanced_table` — žádný ručně psaný duplicitní markup místo sdílené komponenty |
 | `npm run build:government-roster` | z `data/government.toml` vygeneruje kontextové entity členů vlády (veřejná funkce z oficiálního zdroje, `publicationRole = "context"`, **nikdy** dossier); existující záznamy nikdy nepřepisuje; součást `npm run build` |
 | `node scripts/osint/ares-lookup.mjs --ico=… \| --name="…"` | dotaz do ARES (jediný spolehlivě funkční primární rejstřík) — **není** součástí `npm run build`, dělá živý síťový dotaz; doloží identitu/sídlo/formu/status, **nedoloží** skutečné majitele ani „od kdy ovládá" |
 | `npm run screening:public-money -- --ico=…` | screening toku veřejných prostředků k IČO z registru smluv (ISRS) — **není** součástí `npm run build`, stahuje měsíční otevřená data; výstup je **interní** (`data/generated/public-money-screening.json` + `reports/public-money-screening.md`), nikdy se neroutuje. Doloží zveřejněné smlouvy, objem a objednatele v pokrytém období; **nedoloží** žádné pochybení ani úplnost. Viz [screening veřejných peněz](#screening-toku-veřejných-prostředků) |

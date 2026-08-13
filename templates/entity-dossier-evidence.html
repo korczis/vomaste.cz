@@ -33,7 +33,10 @@
           {% set_global family_count_c = 0 %}
           {% for s in c.sources %}
             {% set src_row = [__i for __i in sources if __i.identifier == s.identifier] | first %}
-            {% set fam = src_row.sourceFamily | default(value="singleton:" ~ s.identifier) %}
+            {#- Truthiness, ne `default` — viz dossier-evidence.html: prázdná
+                rodina by dvěma zdrojům dala týž klíč a podhodnotila počet
+                nezávislých rodin u korektně doloženého tvrzení. -#}
+            {% if src_row.sourceFamily %}{% set fam = src_row.sourceFamily %}{% else %}{% set fam = "singleton:" ~ s.identifier %}{% endif %}
             {% if "|" ~ fam ~ "|" not in family_seen %}{% set_global family_seen = family_seen ~ fam ~ "|" %}{% set_global family_count_c = family_count_c + 1 %}{% endif %}
           {% endfor %}
           <tr>

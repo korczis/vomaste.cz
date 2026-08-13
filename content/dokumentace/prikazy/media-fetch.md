@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run media:fetch — Stažení licencovaného portrétu nebo loga"
 template = "tooling-command.html"
-weight = 76
+weight = 77
 description = "Stažení licencovaného portrétu nebo loga: Stáhne pro jednu entitu volně licencovaný obrázek, uloží bajty do repozitáře a licenci, autora i zdroj zapíše do kanonického záznamu.. npm skript, rešerše."
 
 [extra]

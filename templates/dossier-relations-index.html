@@ -28,6 +28,13 @@
       label (-> relation detail), target entity, each CLM-##. No single
       row-wide link, since a row has more than one independent navigation
       target (the literal complaint this page exists to fix). -#}
+  {#- Nula vztahů je legitimní stav (dossier bez doložené vazby), ale bez
+      téhle větve se vyrenderuje ohraničený rámeček bez jediného slova —
+      176 stránek přesně takhle vypadalo. Formulace musí říct PROČ je
+      prázdno: absence vazby není doklad, že žádná neexistuje. -#}
+  {% if idx.rows | length == 0 %}
+    {{ <ui_empty_state message="Tenhle dossier zatím nemá zaznamenaný žádný vztah. Chybějící vztah neznamená, že žádný neexistuje — jen že ho dosud nedoložil citovaný zdroj ani veřejný rejstřík." /> }}
+  {% else %}
   <div class="divide-y divide-white/10 rounded-lg border border-white/10">
     {% for r in idx.rows %}
     <article id="{{ r.identifier }}" class="flex flex-col gap-1 p-3 text-sm sm:flex-row sm:flex-wrap sm:items-center sm:gap-2">
@@ -49,6 +56,7 @@
     </article>
     {% endfor %}
   </div>
+  {% endif %}
 
   {{ <ui_back_link_footer url={get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md")} label="Zpět na celý dossier" /> }}
 </main>

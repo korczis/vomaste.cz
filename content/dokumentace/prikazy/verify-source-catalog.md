@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run verify:source-catalog — Aktuálnost katalogu zdrojů"
 template = "tooling-command.html"
-weight = 71
+weight = 72
 description = "Aktuálnost katalogu zdrojů: Týž generátor s přepínačem --check: nic nezapíše, jen skončí nenulově, pokud by zápis něco změnil.. npm skript, kontrola výstupů."
 
 [extra]

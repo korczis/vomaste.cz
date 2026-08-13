@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "agent repository-explorer — Průzkumník repozitáře"
 template = "tooling-command.html"
-weight = 152
+weight = 153
 description = "Průzkumník repozitáře: Prohledá repozitář a vrátí odpověď s dokladem, ne výpis souborů. Claude subagent, provoz."
 
 [extra]

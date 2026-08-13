@@ -17,6 +17,13 @@
     {{ <ui_stat_tile value={idx.rows | length} label="Kauzy celkem" /> }}
   </div>
 
+  {#- Bez téhle větve zbyla při nule kauz jediná věta „Žádná kauza
+      neodpovídá zadanému filtru“ — jenže žádný filtr zadaný nebyl, dossier
+      prostě kauzu nemá. Navíc ji tabulka tiskne pod `x-cloak`, takže bez
+      JavaScriptu nezůstalo na stránce vůbec nic. 177 stránek. -#}
+  {% if idx.rows | length == 0 %}
+    {{ <ui_empty_state message="Tenhle dossier zatím nemá vedenou žádnou kauzu. Kauza je sledovaný případ s vlastním záznamem — dossier bez ní může mít tvrzení i zdroje, jen nejsou seskupené do případu." /> }}
+  {% else %}
   {% <views_section id="cases-registry" title="Registr kauz" count={idx.rows | length} default_view="table" search_label="Hledat v kauzách" sort_options={["id::ID", "status::Stav", "period::Období"]} columns={["ID", "Stav", "Kauza", "Období"]} export_name="kauzy" empty_text="Žádná kauza neodpovídá zadanému filtru."> %}
 
   {% <views_projection name="table" default_view="table"> %}
@@ -72,7 +79,7 @@
   {% </views_projection> %}
 
   {% </views_section> %}
-
+  {% endif %}
 
   {{ <ui_back_link_footer url={get_url(path="@/dossiers/" ~ dossier_slug ~ "/_index.md")} label="Zpět na celý dossier" /> }}
 </main>

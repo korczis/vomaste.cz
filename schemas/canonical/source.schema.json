@@ -26,7 +26,8 @@
     },
     "sourceFamily": {
       "type": "string",
-      "$comment": "Zdrojová rodina — zdroje se stejnou neprázdnou hodnotou se počítají jako JEDEN nezávislý zdroj (převzetí téže agenturní zprávy). Prázdný string = samostatný zdroj; sémantiku nezávislosti vynucuje validátor fáze C, ne tvar."
+      "minLength": 1,
+      "$comment": "Zdrojová rodina — zdroje se stejnou hodnotou se počítají jako JEDEN nezávislý zdroj (převzetí téže agenturní zprávy). Sémantiku nezávislosti vynucuje validátor fáze C, ne tvar. Samostatný zdroj pole VYNECHÁ; prázdný string je zakázaný, protože znamená totéž co chybějící klíč a jen svádí konzumenty k tomu, aby ho odlišovali (dvě evidenční šablony to dělaly a podhodnocovaly počet nezávislých rodin)."
     },
     "sourceType": {
       "type": "string",

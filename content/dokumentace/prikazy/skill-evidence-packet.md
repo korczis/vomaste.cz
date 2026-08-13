@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/evidence-packet — Důkazní balíček"
 template = "tooling-command.html"
-weight = 122
+weight = 123
 description = "Důkazní balíček: Vede člověka sedmi otázkami od ověřených zdrojů ke strukturovanému podkladu, který může někdo jiný posoudit a zapsat: tvrzení, doklady s doslovnými pasážemi, typ zdroje, počet nezávislých hlasů, rozpory mezi zdroji, otevřené otázky a jmenované třetí osoby. Claude skill, rešerše."
 
 [extra]

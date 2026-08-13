@@ -48,7 +48,7 @@ Z toho plynou tři pravidla, která se kontrolují jako první:
 | 1 | **Titulek** | popisuje stránku, ne web; v mezích délky z `data/seo.toml` |
 | 2 | **Popis** | je to popis obsahu, ne pozvánka; neopakuje titulek |
 | 3 | **Kanonická URL** | jedna, správná, přes `meta_canonical` |
-| 4 | **Open Graph a Twitter** | vydané makrem, ne ručně |
+| 4 | **Open Graph a Twitter** | vydané komponentou, ne ručně |
 | 5 | **`og:type`** | odvozený z `record_type` přes `data/seo.toml` |
 | 6 | **Obrázek** | výchozí karta, nebo médium entity — s alt textem |
 | 7 | **JSON-LD** | stránka má aspoň jeden blok, tvar uzlu sedí |

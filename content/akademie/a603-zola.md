@@ -142,8 +142,10 @@ Nestringový argument patří do složených závorek: `{% raw %}poradi={3}{% en
 `{% raw %}polozky={seznam}{% endraw %}`. Řetězcový literál je bez nich.
 
 Soubor komponentu nikam neregistruje — jméno je globální, takže dvě
-komponenty stejného jména kolidují. Proto mají v tomhle repozitáři prefix
-podle role (`ui_`, `table_`, `views_`).
+komponenty stejného jména kolidují. Sdílené komponenty v `macros/` proto
+nesou prefix podle role (`ui_`, `table_`, `meta_`, `nav_`, …); komponenty
+v `components/`, které volá autor obsahu z markdownu, zůstávají bez
+prefixu a krátké (`callout`, `kontrola`, `prikaz`).
 
 Dvě věci, které při migraci tohohle webu **ověřoval** a na které nenarazil —
 aby je nikdo nemusel odvozovat znovu:

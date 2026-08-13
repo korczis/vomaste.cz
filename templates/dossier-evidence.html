@@ -27,7 +27,14 @@
           {% set_global family_count_c = 0 %}
           {% for s in c.sources %}
             {% set src_row = [__i for __i in sources if __i.identifier == s.identifier] | first %}
-            {% set fam = src_row.sourceFamily | default(value="singleton:" ~ s.identifier) %}
+            {#- Truthiness, ne `default`: ten reaguje jen na CHYBĚJÍCÍ klíč.
+                Zdroj s prázdnou rodinou by dostal `fam = ""`, dva takové
+                v jednom tvrzení by splynuly do jedné rodiny a stránka by
+                u korektně doloženého tvrzení vyvěsila varování o chybějící
+                nezávislosti. Schéma prázdnou hodnotu od 2026-08-13 zakazuje,
+                tohle je druhá pojistka — zbylých osm míst v repozitáři už
+                tenhle idiom používá. -#}
+            {% if src_row.sourceFamily %}{% set fam = src_row.sourceFamily %}{% else %}{% set fam = "singleton:" ~ s.identifier %}{% endif %}
             {% if "|" ~ fam ~ "|" not in family_seen %}{% set_global family_seen = family_seen ~ fam ~ "|" %}{% set_global family_count_c = family_count_c + 1 %}{% endif %}
           {% endfor %}
           <tr>

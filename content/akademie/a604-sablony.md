@@ -35,6 +35,7 @@ adaptéry nesou jen routovací obálku.
 | `macros/table.html` | jediná tabulková komponenta |
 | `macros/meta.html` | sociální a SEO metadata |
 | `macros/learning*.html` | prvky vzdělávací vrstvy |
+| `components/` | komponenty volatelné z markdownu (`callout`, `cviceni`, `cvicna_data`, `kontrola`, `prikaz`, `seznam`) |
 | `partials/jsonld.html` | strukturovaná data stránky |
 
 ## Co je vynucené
@@ -43,9 +44,9 @@ adaptéry nesou jen routovací obálku.
 sdílených `ui_*` komponent. Komponenty jsou globální — nic se
 neimportuje. Výjimky jsou per-soubor a s odůvodněním, ne plošné.
 
-**Tabulky přes jednu komponentu.** Šablona s `<table>` mimo tabulkové
-komponentu build shodí. Obal navíc nese typ záznamu, který provazuje řádky se
-strukturovanými daty stránky.
+**Tabulky přes jednu komponentu.** Šablona s `<table>` mimo
+`macros/table.html` build shodí. Obal navíc nese typ záznamu, který provazuje
+řádky se strukturovanými daty stránky.
 
 **Metadata jen na jednom místě.** Žádná šablona nepíše značky pro sociální
 sítě ručně — vydává je jediná komponenta podle politiky v datech, a kontrola po

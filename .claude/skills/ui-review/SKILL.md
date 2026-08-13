@@ -59,7 +59,7 @@ shell · F7 typografická hierarchie.
 
 ### 4. Prázdné a mezní stavy
 
-- Co se zobrazí při **nule** položek? (`empty_state`, ne prázdná
+- Co se zobrazí při **nule** položek? (`ui_empty_state`, ne prázdná
   tabulka.)
 - Co při velmi dlouhém názvu, chybějícím obrázku, jednom prvku?
 

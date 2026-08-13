@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/explain — Vysvětlení jedné věci"
 template = "tooling-command.html"
-weight = 140
+weight = 141
 description = "Vysvětlení jedné věci: Vysvětlí jeden konkrétní záznam, soubor, pojem nebo chybovou hlášku — ve výchozím nastavení netechnicky, bez předpokladu znalosti Gitu, JSONu a struktury repozitáře. Claude skill, provoz."
 
 [extra]

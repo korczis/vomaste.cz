@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run test:intake:risk — Testy klasifikace rizika"
 template = "tooling-command.html"
-weight = 60
+weight = 61
 description = "Testy klasifikace rizika: node:test nad scripts/intake/risk/*.test.mjs.. npm skript, kontrola výstupů."
 
 [extra]

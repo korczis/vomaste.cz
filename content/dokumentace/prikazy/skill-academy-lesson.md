@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/academy-lesson — Lekce vzdělávací vrstvy"
 template = "tooling-command.html"
-weight = 131
+weight = 132
 description = "Lekce vzdělávací vrstvy: Vytvoří nebo aktualizuje lekci Akademie či úkol Bootcampu podle skutečného schématu vzdělávací vrstvy: frontmatter s lesson_id, úrovní, audience a ověřitelnými cíli, odkazy na kanonické koncepty místo vlastních definic, cvičení na syntetických datech a zapojení do řetězu next a prerekvizit.. Claude skill, provoz."
 
 [extra]

@@ -21,7 +21,8 @@ nebo poslat zdroj jde formulářem v prohlížeči.
 
 ## Předpoklady
 
-Node (verzi drží `.tool-versions`) a Zola. Nic jiného — žádná databáze,
+Node (verzi drží `.tool-versions`) a Zola v řadě, kterou očekává
+`just doctor` — na starší řadě build spadne. Nic jiného — žádná databáze,
 žádný backend.
 
 ## Postup

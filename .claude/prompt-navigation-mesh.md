@@ -1,3 +1,8 @@
+*Historický dokument — zadání mise „navigační síť" z doby, kdy dossier žil
+na `/dossier/` a metadata byla ve front matteru. Splněno a překonáno migrací
+T-028 (kanonická data v `data/dossiers/**`). Uchováno jako záznam zadání,
+ne jako platný postup; nic na něj neodkazuje.*
+
 # VOMASTE.CZ: PLNÁ NAVIGAČNÍ SÍŤ — OBOUSMĚRNÉ, DRILL-DOWN, IZOLOVANÉ A OVĚŘENÉ PROPOJENÍ
 
 ## MISE
