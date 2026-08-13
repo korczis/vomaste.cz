@@ -78,11 +78,11 @@ Legenda stavu: ` ` čeká · `~` běží · `x` hotovo · `!` blokováno
 - [x] **B1** Rozšířit `schemas/canonical/tooling-command.schema.json`:
       `kind` o `agent`/`workflow`, nová pole `personas`, `riskLevel`,
       `writes`, `requiresAuthorization`.
-- [ ] **B2** `build-tooling-catalog.mjs`: číst `metadata` z frontmatteru
+- [x] **B2** `build-tooling-catalog.mjs`: číst `metadata` z frontmatteru
       SKILL.md, přidat obousměrnou bránu pro `.claude/agents/*.md`
       a `.claude/workflows/*.md`, kontrolu parity metadat.
 - [ ] **B3** Testy nových bran (`scripts/build/build-tooling-catalog.test.mjs`).
-- [ ] **B4** Doplnit persona/risk metadata do 9 existujících skillů
+- [x] **B4** Doplnit persona/risk metadata do 9 existujících skillů
       a jejich katalogových záznamů.
 
 ### Fáze C — pravidla a zhubnutí CLAUDE.md

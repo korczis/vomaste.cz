@@ -1,6 +1,6 @@
 +++
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
-title = "skill investigate — Jedno autorizované vyšetřování"
+title = "/investigate — Jedno autorizované vyšetřování"
 template = "tooling-command.html"
 weight = 105
 description = "Jedno autorizované vyšetřování: Provede jedno autorizované vyšetřování od začátku do konce: kontrola rozsahu, větev, manifest vyšetřování, zdrojovaná rešerše s předáním každého záznamu do postupu pro vstup do dossieru, a nakonec pull request, který musí schválit člověk.. Claude skill, rešerše."
@@ -20,6 +20,13 @@ Provede jedno autorizované vyšetřování od začátku do konce: kontrola rozs
 ## Kdy ho spustit {#kdy}
 
 Když má vzniknout ucelené vyšetřování k jednomu subjektu a tématu. Argument: id subjektu a konkrétní téma, které už je autorizované — nebo rozšíření rozsahu, které vlastník výslovně autorizuje v téhle konverzaci.
+
+## Pro koho a s jakým rizikem {#persona}
+
+- **Persona:** rešeršista, editor, údržbář
+- **Riziko:** vyžaduje review
+- **Zapisuje do souborů:** ano
+- **Před použitím se ověřuje rozsah pokrytí** (autorizační log v `AGENTS.md`).
 
 ## Co vynucuje {#vynucuje}
 

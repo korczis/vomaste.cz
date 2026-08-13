@@ -1,6 +1,6 @@
 +++
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
-title = "skill bootstrap — Nastartování session"
+title = "/bootstrap — Nastartování session"
 template = "tooling-command.html"
 weight = 111
 description = "Nastartování session: Rychlá opakovatelná cesta k tomu být bezpečně v obraze: potvrdit pracovní adresář a větev, přečíst závazná pravidla v daném pořadí (AGENTS.md, konstituce, co-op protokol, CLAUDE.md), ověřit prerekvizity, podívat se, co v repozitáři právě běží, a teprve pak zvolit roli — přímá práce v hlavním checkoutu, nebo worker ve worktree pro konkrétní úkol.. Claude skill, provoz."
@@ -20,6 +20,12 @@ Rychlá opakovatelná cesta k tomu být bezpečně v obraze: potvrdit pracovní 
 ## Kdy ho spustit {#kdy}
 
 Jako první věc v každé nové session, dřív než se cokoli edituje. Volitelný argument je id úkolu (T-###).
+
+## Pro koho a s jakým rizikem {#persona}
+
+- **Persona:** čtenář, ověřovatel, přispěvatel zdrojem, rešeršista, editor, vývojář, recenzent, údržbář, orchestrátor
+- **Riziko:** jen čte
+- **Zapisuje do souborů:** ne
 
 ## Co vynucuje {#vynucuje}
 

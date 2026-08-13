@@ -10,6 +10,14 @@
   "name": "commit",
   "title": "Dobře utvořený commit",
   "category": "provoz",
+  "personas": [
+    "editor",
+    "developer",
+    "maintainer",
+    "orchestrator"
+  ],
+  "riskLevel": "maintainer",
+  "writes": true,
   "summary": "Vede k commitu, který odpovídá zvyklostem repozitáře: konvenční zpráva, správná brána pro danou situaci (rychlá pre-commit podmnožina versus plný build před mergem nebo pushem) a odpovídající hlášení na co-op sběrnici podle role.",
   "whenToRun": "Před každým commitem, pokud si nejsi jistý, co se v téhle situaci od commitu čeká.",
   "describedFrom": "header",

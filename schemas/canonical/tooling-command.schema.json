@@ -132,7 +132,7 @@
     },
     "writes": {
       "type": "boolean",
-      "$comment": "Zapisuje schopnost do souborů repozitáře? Odvozuje se z riskLevel jen zdánlivě — skill s riskLevel=maintainer může být čistě analytický. Uvádí se u kind skill/agent/workflow (brána G8), aby si uživatel mohl předem vyfiltrovat, co je bezpečné pustit naslepo."
+      "$comment": "Mění schopnost stav repozitáře — soubory v pracovním stromu, nebo git historii? Odvozuje se z riskLevel jen zdánlivě: skill s riskLevel=maintainer může být čistě analytický a skill se safe-write zapisuje. Uvádí se u kind skill/agent/workflow (brána G10), aby si uživatel mohl předem vyfiltrovat, co je bezpečné pustit naslepo."
     },
     "requiresAuthorization": {
       "type": "boolean",

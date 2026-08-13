@@ -10,6 +10,13 @@
   "name": "dossier-entry",
   "title": "Přidání záznamu do dossieru",
   "category": "provoz",
+  "personas": [
+    "researcher",
+    "editor"
+  ],
+  "riskLevel": "review-required",
+  "writes": true,
+  "requiresAuthorization": true,
   "summary": "Vedený, validátorem kontrolovaný postup pro přidání zdroje, tvrzení, kauzy, mezery nebo vztahu: nejdřív autorizační brána, pak editace kanonického JSON datasetu a nakonec regenerace content adaptérů a build. Pro každý typ záznamu má vlastní krokovaný postup i pravidla, podle kterých se volí stav tvrzení.",
   "whenToRun": "Před přidáním JAKÉHOKOLI záznamu do dossieru — bez výjimky, pro každý jednotlivý záznam.",
   "describedFrom": "header",

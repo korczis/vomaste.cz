@@ -1,6 +1,6 @@
 +++
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
-title = "skill adr — Architektonické rozhodnutí (ADR)"
+title = "/adr — Architektonické rozhodnutí (ADR)"
 template = "tooling-command.html"
 weight = 110
 description = "Architektonické rozhodnutí (ADR): Postup pro napsání záznamu architektonického rozhodnutí do docs/adr/ podle šablony, kterou repozitář už používá: měřeno, ne odhadnuto. Claude skill, provoz."
@@ -20,6 +20,12 @@ Postup pro napsání záznamu architektonického rozhodnutí do docs/adr/ podle 
 ## Kdy ho spustit {#kdy}
 
 Když je rozhodnutí zároveň VÝZNAMNÉ (nová závislost, změna datového modelu, výměna knihovny) a SPORNÉ (rozumný člověk může argumentovat oběma směry). Malé zjevně správné změny ADR nepotřebují.
+
+## Pro koho a s jakým rizikem {#persona}
+
+- **Persona:** vývojář, údržbář
+- **Riziko:** bezpečný zápis
+- **Zapisuje do souborů:** ano
 
 ## Co vynucuje {#vynucuje}
 
