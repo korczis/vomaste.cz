@@ -25,6 +25,7 @@
     <span class="rounded border border-white/15 px-2 py-1 text-white/50">{{ catalog.counts.gates }} může shodit běh</span>
     <span class="rounded border border-white/15 px-2 py-1 text-white/50">{{ catalog.counts.inBuild }} kroků buildu</span>
     <span class="rounded border border-white/15 px-2 py-1 text-white/50">{{ catalog.counts.inPrecommit }} v pre-commitu</span>
+    <span class="rounded border border-[#f3e5c0]/30 px-2 py-1 text-[#f3e5c0]/80">{{ catalog.counts.claudeCapabilities }} schopností Claude Code</span>
   </p>
 
   <section aria-labelledby="prikazy-heading">
@@ -32,8 +33,10 @@
     <p class="mb-4 text-sm leading-relaxed text-white/55">
       Sloupec „Vynucuje“ říká, jestli příkaz při porušení skončí nenulově a zastaví tím build. Sloupce „Pipeline“ a „Pre-commit“ se čtou
       z <code class="font-mono">scripts/build/pipeline.mjs</code> a <code class="font-mono">.githooks/pre-commit</code>, ne z ručně psaného záznamu.
+      U schopností Claude Code říká sloupec „Riziko“, co nejhoršího se stane, když se spustí omylem — a hledáním v tabulce se dá filtrovat
+      i podle něj nebo podle persony. Příkazová vrstva (npm, just) personu nemá záměrně: obsluhuje ji kdokoli, kdo umí terminál.
     </p>
-    {% <table_advanced_table id="tooling-prikazy" caption="Příkazy repozitáře" record_type="toolingCommand" columns={["Příkaz", "Vrstva", "Kategorie", "Vynucuje", "Pipeline", "Pre-commit"]} count={catalog.counts.total} searchable={true} sort_keys={["text", "text", "text", "text", "text", "text"]} export_name="tooling-prikazy" footer="Dopočítáno z package.json, justfile, .claude/skills/** a scripts/build/pipeline.mjs při každém buildu." empty_text="Filtru neodpovídá žádný příkaz."> %}
+    {% <table_advanced_table id="tooling-prikazy" caption="Příkazy repozitáře" record_type="toolingCommand" columns={["Příkaz", "Vrstva", "Persona", "Riziko", "Kategorie", "Vynucuje", "Pipeline", "Pre-commit"]} count={catalog.counts.total} searchable={true} sort_keys={["text", "text", "text", "text", "text", "text", "text", "text"]} export_name="tooling-prikazy" footer="Dopočítáno z package.json, justfile, .claude/skills/** a scripts/build/pipeline.mjs při každém buildu." empty_text="Filtru neodpovídá žádný příkaz."> %}
       {%- for e in catalog.entries %}
       <tr class="border-t border-white/5">
         <td class="p-3">
@@ -41,6 +44,8 @@
           <span class="mt-1 block text-xs text-white/60">{{ e.title }}</span>
         </td>
         <td class="p-3 text-white/70">{{ e.kindLabel }}</td>
+        <td class="p-3 text-white/70">{% if e.personaLabels | length > 0 %}{{ e.personaLabels | join(sep=", ") }}{% else %}<span class="text-white/60">—</span>{% endif %}</td>
+        <td class="p-3 text-white/70">{% if e.riskLabel %}{{ e.riskLabel }}{% if e.writes %} · zapisuje{% endif %}{% else %}<span class="text-white/60">—</span>{% endif %}</td>
         <td class="p-3 text-white/70">{{ e.categoryLabel }}</td>
         <td class="p-3">{% if e.enforces | length > 0 %}ano{% else %}<span class="text-white/60">—</span>{% endif %}</td>
         <td class="p-3 text-white/70">{% if e.pipelines | length > 0 %}{{ e.pipelines | join(sep=", ") }}{% else %}<span class="text-white/60">—</span>{% endif %}</td>
