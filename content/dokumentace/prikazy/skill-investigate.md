@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/investigate — Jedno autorizované vyšetřování"
 template = "tooling-command.html"
-weight = 111
+weight = 115
 description = "Jedno autorizované vyšetřování: Provede jedno autorizované vyšetřování od začátku do konce: kontrola rozsahu, větev, manifest vyšetřování, zdrojovaná rešerše s předáním každého záznamu do postupu pro vstup do dossieru, a nakonec pull request, který musí schválit člověk.. Claude skill, rešerše."
 
 [extra]

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/skill-review-claim",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "skill-review-claim",
+  "kind": "skill",
+  "name": "review-claim",
+  "title": "Review tvrzení",
+  "category": "kontrola",
+  "personas": [
+    "verifier",
+    "editor",
+    "reviewer",
+    "maintainer"
+  ],
+  "riskLevel": "read-only",
+  "writes": false,
+  "summary": "Projde jedno tvrzení dvanácti kontrolami proti jeho zdrojům a redakčním pravidlům: atomicita, neutralita, doloženost, stav versus nezávislost zdrojů, zdrojová rodina, procesní rámování u TÉHLE zmínky, doslovnost citací, data, třetí osoby, osobní údaje, obousměrné vazby a parita s ručně psanou tabulkou. Vrací nálezy s prioritou a vyjmenuje i to, co je v pořádku.",
+  "whenToRun": "Před zápisem nového tvrzení nebo hned po něm, po přidání zdroje k existujícímu tvrzení, a při periodické revizi.",
+  "describedFrom": "header",
+  "notes": [
+    "Stav popisuje sílu doložení, ne pravdu. Tvrzení může být pravdivé a přesto 1 ZDROJ.",
+    "Když tvrzení říká víc, než zdroje unesou, správná oprava je zúžit text, ne přidat výhradu. „Podle dostupných informací se zdá“ je nedoložené tvrzení v převleku.",
+    "BLOCKER je vyhrazený pro čtyři věci: nedoložené tvrzení o člověku, chybějící procesní rámování, jmenovanou třetí osobu a osobní údaje.",
+    "Procesní rámování se nejčastěji poruší až u DRUHÉ zmínky téhož faktu."
+  ]
+}

@@ -114,11 +114,11 @@ Legenda stavu: ` ` čeká · `~` běží · `x` hotovo · `!` blokováno
 
 ### Fáze F — redakční review
 
-- [ ] **F1** `/review-claim`
-- [ ] **F2** `/review-source`
-- [ ] **F3** `/review-gap`
-- [ ] **F4** `/editorial-review`
-- [ ] **F5** `/correction`
+- [x] **F1** `/review-claim`
+- [x] **F2** `/review-source`
+- [x] **F3** `/review-gap`
+- [x] **F4** `/editorial-review`
+- [x] **F5** `/correction`
 
 ### Fáze G — inženýrské skills
 

@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/find-source — Hledání kandidátních zdrojů"
 template = "tooling-command.html"
-weight = 110
+weight = 114
 description = "Hledání kandidátních zdrojů: Hledá kandidáty ke konkrétní otázce v pořadí primární registr → jmenované zpravodajství → agregátor jako rozcestník, a přísně odděluje čtyři stavy: kandidát, otevřený, ověřený, citovatelný. Claude skill, rešerše."
 
 [extra]

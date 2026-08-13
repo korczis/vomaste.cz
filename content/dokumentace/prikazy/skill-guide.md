@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/guide — Rozcestník podle záměru"
 template = "tooling-command.html"
-weight = 122
+weight = 127
 description = "Rozcestník podle záměru: Zjistí, co chce člověk udělat, a doporučí jednu schopnost — ne seznam čtyřiceti příkazů. Claude skill, provoz."
 
 [extra]

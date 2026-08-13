@@ -139,6 +139,6 @@ existuje.
 ## Související
 
 `/verify-source` (prověření jednoho zdroje — dělá se dřív),
-`.claude/rules/evidence.md`
+`/review-claim` (celý stav tvrzení), `.claude/rules/evidence.md`
 (pravidla stavů a rodin), `npm run sources:detect-family` (strojový
 návrh původu).
