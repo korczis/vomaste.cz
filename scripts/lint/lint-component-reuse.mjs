@@ -2,7 +2,7 @@
 // Enforces this site's own UI-component-reuse convention: every
 // content-rendering top-level template uses the shared
 // ui_* component library (page_header, breadcrumb, stat_tile,
-// registry-card, empty_state, back_link_footer, ...) instead of
+// empty_state, back_link_footer, ...) instead of
 // hand-rolling markup that already has a shared component.
 //
 // NOT a check against any external spec. The owner asked for pages to
@@ -104,7 +104,7 @@ if (problems.length > 0) {
   );
   for (const p of problems) console.error(`  - ${p}`);
   console.error(
-    "\nUse the shared ui_* components (page_header, breadcrumb, stat_tile, registry-card, empty_state, back_link_footer) instead of hand-rolled markup, and the shared table component ({% <table_advanced_table> %} … {% </table_advanced_table> %}) for any tabular data. If a new template genuinely has no use for them, add it to EXEMPT / TABLE_EXEMPT in this script with a one-line reason -- not a silent skip.",
+    "\nUse the shared ui_* components (page_header, breadcrumb, stat_tile, empty_state, back_link_footer) instead of hand-rolled markup, and the shared table component ({% <table_advanced_table> %} … {% </table_advanced_table> %}) for any tabular data. If a new template genuinely has no use for them, add it to EXEMPT / TABLE_EXEMPT in this script with a one-line reason -- not a silent skip.",
   );
   process.exit(1);
 }
