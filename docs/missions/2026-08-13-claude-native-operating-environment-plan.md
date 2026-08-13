@@ -89,7 +89,7 @@ Legenda stavu: ` ` čeká · `~` běží · `x` hotovo · `!` blokováno
 
 - [x] **C1** `.claude/rules/` — rozdělení závazných pravidel do modulů
       (odkazují na `AGENTS.md`, nekopírují ho).
-- [ ] **C2** `CLAUDE.md` zkrátit na identitu + invarianty + rozcestník.
+- [x] **C2** `CLAUDE.md` zkrátit na identitu + invarianty + rozcestník.
 - [ ] **C3** Validátor: každý odkaz z rules a z CLAUDE.md ukazuje na
       existující soubor/příkaz.
 
