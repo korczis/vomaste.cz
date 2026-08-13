@@ -1,6 +1,20 @@
 // Status doughnut chart. Counts are derived from the already-rendered
 // claims table's status badges (single source of truth — never a second,
 // hand-maintained count that could drift from the actual table).
+//
+// Dva způsoby, jak se ten záměr rozešel se skutečností, oba opravené
+// 2026-08-13:
+//
+//   1. Selektor bral VŠECHNY odznaky v próze, tedy i ty na kartách kauz.
+//      Na macinka-turek to dělalo 60 místo 55 a nafukovalo každou
+//      kategorii — přitom dlaždice o kus výš hlásila 55 z view modelu.
+//      Dvě čísla o téže věci na jedné obrazovce, obě „automaticky
+//      spočítaná". Odznak tvrzení je vždy v buňce tabulky, karta kauzy
+//      nikdy; selektor to teď rozlišuje.
+//   2. Barvy byly druhou ručně psanou kopií palety z input.css a tři
+//      z pěti už se rozešly (odznak a jeho výseč měly pro tentýž stav
+//      jinou barvu). Čtou se proto za běhu z týchž CSS proměnných, které
+//      obarvují odznak — druhý zdroj pravdy tím mizí, ne se srovnává.
 import { resizeHandlers } from "./fullscreen.js";
 
 var STATUS_LABELS = {
@@ -11,14 +25,16 @@ var STATUS_LABELS = {
   "status-opinion": "Názor",
   "status-ongoing": "Probíhá",
 };
-var STATUS_COLORS = {
-  "status-corroborated": "#4ade80",
-  "status-single": "#fdba74",
-  "status-quote": "#93c5fd",
-  "status-disputed": "#facc15",
-  "status-opinion": "#a3a3a3",
-  "status-ongoing": "#d8b4fe",
-};
+// Nouzová záloha pro případ, že se CSS proměnná nepřečte (nenačtené nebo
+// jinak sestavené CSS). Není to paleta — je to poslední pojistka, aby graf
+// nezmizel; barvy vlastní input.css.
+var STATUS_COLOR_FALLBACK = "rgba(255, 255, 255, 0.6)";
+
+function statusColor(key) {
+  var v = getComputedStyle(document.documentElement).getPropertyValue("--" + key + "-fg");
+  v = v && v.trim();
+  return v || STATUS_COLOR_FALLBACK;
+}
 
 export function initStatusChart() {
   var canvas = document.getElementById("chart-status");
@@ -26,7 +42,7 @@ export function initStatusChart() {
   canvas.dataset.chartInit = "true";
 
   var counts = {};
-  document.querySelectorAll(".dossier-prose .status-badge").forEach(function (el) {
+  document.querySelectorAll(".dossier-prose table td .status-badge").forEach(function (el) {
     var key = Array.prototype.find.call(el.classList, function (c) {
       return c.indexOf("status-") === 0 && c !== "status-badge";
     });
@@ -48,7 +64,7 @@ export function initStatusChart() {
     type: "doughnut",
     data: {
       labels: keys.map(function (k) { return STATUS_LABELS[k] || k; }),
-      datasets: [{ data: keys.map(function (k) { return counts[k]; }), backgroundColor: keys.map(function (k) { return STATUS_COLORS[k] || "#666"; }) }],
+      datasets: [{ data: keys.map(function (k) { return counts[k]; }), backgroundColor: keys.map(statusColor) }],
     },
     options: {
       maintainAspectRatio: false,

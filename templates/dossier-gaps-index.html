@@ -28,8 +28,11 @@
   {% else %}
   {% <views_section id="gaps-registry" title="Registr mezer" count={idx.rows | length} default_view="table" search_label="Hledat v mezerách" sort_options={["id::ID", "priority::Priorita", "checked::Ověřeno"]} columns={["ID", "Priorita", "Otevřená otázka", "Ověřeno"]} export_name="mezery" select_facets={["priority::Priorita"]} empty_text="Žádná mezera neodpovídá zadanému filtru." footer="Mezera je otevřená otázka, ne tvrzení — absence odpovědi není doklad, že se nic nestalo."> %}
 
+  {#- Bez `searchable`/`url_state` — nese je už obal `views_section`.
+      Viz komentář v dossier-cases-index.html: dva enginy na jedné stránce
+      si přepisovaly tytéž parametry v URL. -#}
   {% <views_projection name="table" default_view="table"> %}
-  {% <table_advanced_table id="gaps-registry-table" caption="Registr mezer" record_type="gap" count={idx.rows | length} columns={["ID", "Priorita", "Otevřená otázka", "Ověřeno"]} sort_keys={["id", "priority", "", "checked"]} searchable={true} url_state={true} export_name="mezery" footer="Mezera je otevřená otázka, ne tvrzení — absence odpovědi není doklad, že se nic nestalo." empty_text="Žádná mezera neodpovídá zadanému filtru."> %}
+  {% <table_advanced_table id="gaps-registry-table" caption="Registr mezer" record_type="gap" count={idx.rows | length} columns={["ID", "Priorita", "Otevřená otázka", "Ověřeno"]} sort_keys={["id", "priority", "", "checked"]} export_name="mezery" footer="Mezera je otevřená otázka, ne tvrzení — absence odpovědi není doklad, že se nic nestalo." empty_text="Žádná mezera neodpovídá zadanému filtru."> %}
     {% for p in idx.rows %}
     <tr data-record-key="{{ p.identifier }}" data-priority="{{ p.priority }}" data-facet="{{ p.priority }}" id="gaps-registry-table-{{ p.identifier | lower }}">
       <td class="whitespace-nowrap p-3 align-top">

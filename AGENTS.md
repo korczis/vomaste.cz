@@ -435,10 +435,11 @@ only the routing envelope.
   i JSON-LD `@graph`, a
   každý nese `data-jsonld-id` na svůj uzel v exportu — UI a strojová data
   proto nemůžou ukazovat jiný svět. Skupiny nad těmi řádky staví
-  `assets/js/modules/entity-explorer.js` (Alpine, přesouvá existující DOM
-  uzly, nic nedogeneruje); otevírání menu „Seskupit podle" řídí Flowbite
-  dropdown, hodnotu Alpine — jedna komponenta, jeden vlastník na každou
-  věc. Bez JavaScriptu zůstává viditelný plný plochý seznam, takže
+  sdílená komponenta `advancedTable` (`assets/js/modules/table-filter.js`,
+  Alpine — přesouvá existující DOM uzly, nic nedogeneruje), tatáž, kterou
+  používají ostatní registry; otevírání menu „Seskupit podle" řídí
+  Flowbite dropdown, hodnotu Alpine — jedna komponenta, jeden vlastník na
+  každou věc. Bez JavaScriptu zůstává viditelný plný plochý seznam, takže
   stránka funguje i tak. Stav (`?q=`, `?group=`, `?role=`) je v URL, takže
   konkrétní pohled jde poslat odkazem. Lidské názvy typů entit žijí
   v `data/entity-types.toml`; `scripts/dossier/validate-entity-types.mjs`

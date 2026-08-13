@@ -52,14 +52,17 @@
     {% endif %}
   </section>
 
+  {#- Číslo v nadpisu musí být číslo toho, co se vypíše — viz komentář
+      v dossier-evidence.html. Kontextový zdroj s prázdným `claims` se
+      započítával a nevypisoval. -#}
+  {% set supporting = [__s for __s in sources if __s.claims] %}
   <section aria-labelledby="sources-evidence-heading" class="mb-12">
-    <h2 id="sources-evidence-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Zdroje &rarr; podložená tvrzení ({{ sources | length }})</h2>
-    {% if sources | length == 0 %}
-      {{ <ui_empty_state message="Žádný zdroj v tomto rozsahu." /> }}
+    <h2 id="sources-evidence-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Zdroje &rarr; podložená tvrzení ({{ supporting | length }})</h2>
+    {% if supporting | length == 0 %}
+      {{ <ui_empty_state message="Žádný zdroj v tomto rozsahu zatím nepodpírá konkrétní tvrzení. Zdroje uvedené jako kontext se tady nezobrazují — najdete je v registru zdrojů." /> }}
     {% else %}
     <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-      {% for s in sources %}
-      {% if s.claims %}
+      {% for s in supporting %}
       <div class="registry-card">
         <a href="{{ config.base_url }}{{ s.route }}" class="font-mono text-xs text-[#f3e5c0] underline decoration-white/30 underline-offset-2">{{ s.identifier }}</a>
         <span class="mt-1 text-sm font-semibold text-white">{{ s.outlet }}</span>
@@ -68,7 +71,6 @@
           {% for c in s.claims %}<a href="{{ config.base_url }}{{ c.route }}" class="id-chip rounded bg-white/5 px-1.5 py-0.5 font-mono text-[0.65rem] text-[#f3e5c0] no-underline hover:bg-white/10">{{ c.identifier }}</a>{% endfor %}
         </span>
       </div>
-      {% endif %}
       {% endfor %}
     </div>
     {% endif %}
