@@ -87,7 +87,7 @@ Legenda stavu: ` ` čeká · `~` běží · `x` hotovo · `!` blokováno
 
 ### Fáze C — pravidla a zhubnutí CLAUDE.md
 
-- [ ] **C1** `.claude/rules/` — rozdělení závazných pravidel do modulů
+- [x] **C1** `.claude/rules/` — rozdělení závazných pravidel do modulů
       (odkazují na `AGENTS.md`, nekopírují ho).
 - [ ] **C2** `CLAUDE.md` zkrátit na identitu + invarianty + rozcestník.
 - [ ] **C3** Validátor: každý odkaz z rules a z CLAUDE.md ukazuje na
