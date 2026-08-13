@@ -15,7 +15,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
-import { readFileSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import {
@@ -24,6 +24,7 @@ import {
   readJustRecipes,
   readNpmScripts,
   readPrecommitChecks,
+  readAgents,
   readRecords,
   readSkills,
   slugFor,
@@ -155,6 +156,138 @@ test("slugFor odděluje vrstvy, takže se npm skript a stejnojmenný recept nesr
   assert.equal(slugFor("just", "build"), "just-build");
   assert.equal(slugFor("skill", "adr"), "skill-adr");
   assert.notEqual(slugFor("npm", "build"), slugFor("just", "build"));
+});
+
+/* ---- 2b) Claude vrstva: subagenti, workflow, persona, riziko --------- */
+
+// Minimální platný pár záznam + soubor. Skutečné agenty a workflow tenhle
+// repozitář v době psaní testu ještě nemá, takže se brána musí dát ověřit
+// na fixture — jinak by testy zezelenaly jen proto, že není co kontrolovat.
+const agentRecord = (over = {}) => ({
+  identifier: "agent-source-verifier",
+  kind: "agent",
+  name: "source-verifier",
+  personas: ["researcher"],
+  riskLevel: "read-only",
+  writes: false,
+  ...over,
+});
+
+const agentFile = (over = {}) => ({
+  name: "source-verifier",
+  file: ".claude/agents/source-verifier.md",
+  declaredName: "source-verifier",
+  description: "Ověří zdroj a vrátí evidence summary.",
+  tools: ["Read", "Grep"],
+  model: null,
+  skills: [],
+  ...over,
+});
+
+const withAgent = (recordOver = {}, fileOver = {}) => {
+  const fixture = base();
+  fixture.records.push(agentRecord(recordOver));
+  fixture.agents = [agentFile(fileOver)];
+  return fixture;
+};
+
+test("Claude vrstva projde, když záznam i soubor sedí", () => {
+  assert.deepEqual(auditCatalog(withAgent()), []);
+});
+
+test("G8: subagent bez záznamu i mrtvý záznam agenta shodí bránu", () => {
+  const missing = base();
+  missing.agents = [agentFile()];
+  assert.ok(auditCatalog(missing).some((e) => /^G8: subagent .* "source-verifier" nemá záznam/.test(e)));
+
+  const dead = withAgent();
+  dead.agents = [];
+  assert.ok(auditCatalog(dead).some((e) => /^G8: záznam agent-source-verifier ukazuje na/.test(e)));
+});
+
+test("G9: workflow bez záznamu i mrtvý záznam workflow shodí bránu", () => {
+  const missing = base();
+  missing.workflows = [{ name: "verify-a-claim", file: ".claude/workflows/verify-a-claim.md" }];
+  assert.ok(auditCatalog(missing).some((e) => /^G9: workflow .* "verify-a-claim" nemá záznam/.test(e)));
+
+  const dead = base();
+  dead.records.push({
+    identifier: "workflow-verify-a-claim",
+    kind: "workflow",
+    name: "verify-a-claim",
+    personas: ["verifier"],
+    riskLevel: "read-only",
+    writes: false,
+  });
+  assert.ok(auditCatalog(dead).some((e) => /^G9: záznam workflow-verify-a-claim ukazuje na/.test(e)));
+});
+
+test("G10: schopnost bez persony, rizika nebo writes shodí bránu", () => {
+  for (const missing of ["personas", "riskLevel", "writes"]) {
+    const fixture = withAgent();
+    delete fixture.records.at(-1)[missing];
+    const errors = auditCatalog(fixture);
+    assert.ok(
+      errors.some((e) => e.startsWith("G10:") && e.includes(missing)),
+      `chybějící ${missing} musí shodit bránu, dostal jsem: ${JSON.stringify(errors)}`,
+    );
+  }
+});
+
+test("G10: prázdné pole person se nepočítá za vyplněné", () => {
+  assert.ok(auditCatalog(withAgent({ personas: [] })).some((e) => /^G10:.*personas/.test(e)));
+});
+
+test("G10: „jen čte\" spolu se zápisem je nepravdivý štítek", () => {
+  const fixture = withAgent({ riskLevel: "read-only", writes: true });
+  assert.ok(auditCatalog(fixture).some((e) => /^G10: záznam agent-source-verifier má riskLevel "read-only"/.test(e)));
+});
+
+test("G10: npm skript personu mít nemusí — je to příkazová vrstva", () => {
+  // Kdyby brána vyžadovala personu i tady, muselo by se 104 npm skriptům
+  // vymyslet publikum, které nemají. To by byla libovůle, ne dokumentace.
+  const fixture = base();
+  assert.ok(fixture.records.some((r) => r.kind === "npm" && !r.personas));
+  assert.deepEqual(auditCatalog(fixture), []);
+});
+
+test("G11: subagent bez vyjmenovaných tools shodí bránu", () => {
+  // Nejdůležitější negativní případ celé vrstvy: vynechané `tools` znamená
+  // v Claude Code dědění všech nástrojů, takže by „read-only" agent uměl
+  // Write a Edit. Tichý průchod by tu byl bezpečnostní díra.
+  assert.ok(auditCatalog(withAgent({}, { tools: null })).some((e) => /^G11: .* neuvádí "tools"/.test(e)));
+});
+
+test("G11: rozejité name a název souboru shodí bránu", () => {
+  const fixture = withAgent({}, { declaredName: "neco-jineho" });
+  assert.ok(auditCatalog(fixture).some((e) => /^G11: .* deklaruje name "neco-jineho"/.test(e)));
+
+  const noName = withAgent({}, { declaredName: null });
+  assert.ok(auditCatalog(noName).some((e) => /^G11: .* nemá povinné pole "name"/.test(e)));
+});
+
+test("G11: subagent bez description shodí bránu", () => {
+  const fixture = withAgent({}, { description: null });
+  assert.ok(auditCatalog(fixture).some((e) => /^G11: .* nemá povinné pole "description"/.test(e)));
+});
+
+test("readAgents odliší vynechané tools od prázdného seznamu", () => {
+  // `tools` vynechané (zdědí všechno) a `tools: Read, Grep` jsou dvě různé
+  // věci a brána G11 na tom rozdílu stojí.
+  const dir = join(ROOT, ".claude/agents");
+  mkdirSync(dir, { recursive: true });
+  const probe = join(dir, "__test-probe.md");
+  try {
+    writeFileSync(probe, "---\nname: __test-probe\ndescription: Sonda.\n---\n\nTělo.\n");
+    const found = readAgents(ROOT).find((a) => a.name === "__test-probe");
+    assert.equal(found.tools, null);
+    assert.equal(found.declaredName, "__test-probe");
+
+    writeFileSync(probe, "---\nname: __test-probe\ndescription: Sonda.\ntools: Read, Grep\n---\n\nTělo.\n");
+    assert.deepEqual(readAgents(ROOT).find((a) => a.name === "__test-probe").tools, ["Read", "Grep"]);
+  } finally {
+    rmSync(probe, { force: true });
+  }
 });
 
 /* ---- 3) dopočítávané údaje čtou skutečnost --------------------------- */
