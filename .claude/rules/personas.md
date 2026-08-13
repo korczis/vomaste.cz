@@ -3,7 +3,7 @@
 Devět rolí, kterými se v tomhle repozitáři popisuje, **pro koho** je
 která schopnost a **co ta role smí**. Slovník je jeden a je závazný:
 katalog schopností (`data/tooling/*.json`, pole `personas`) i schéma
-ho vynucují, `/help` a `/bootstrap` podle něj směrují.
+ho vynucují, `/guide` a `/bootstrap` podle něj směrují.
 
 Persona **není** oprávnění ani identita. Je to popis toho, co člověk
 právě dělá. Jeden člověk během jedné session projde třemi.

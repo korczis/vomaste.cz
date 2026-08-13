@@ -95,8 +95,10 @@ Legenda stavu: ` ` čeká · `~` běží · `x` hotovo · `!` blokováno
 
 ### Fáze D — základní skills (orientace)
 
-- [ ] **D1** `/help` — router podle záměru, ne seznam příkazů.
-- [ ] **D2** `/doctor` — diagnostika prostředí, PASS/WARN/FAIL + oprava.
+- [x] **D1** `/guide` — router podle záměru, ne seznam příkazů.
+      (Ne `/help` — to je vestavěný příkaz Claude Code.)
+- [x] **D2** `/diagnose` — diagnostika prostředí, PASS/WARN/FAIL + oprava.
+      (Ne `/doctor` — vestavěný příkaz.)
 - [ ] **D3** `/project-tour` — vysvětlení projektu ze skutečného repa.
 - [ ] **D4** `/task` — dekompozice zadání na personu, rizika, workflow.
 - [ ] **D5** `bootstrap` 2.0 — argument persony, tři doporučené další kroky.

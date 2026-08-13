@@ -83,8 +83,8 @@ a `.claude/rules/archive.md`.
 | Chci | Kde |
 |---|---|
 | začít session | skill `/bootstrap` |
-| nevím, co dál | skill `/help` |
-| ověřit prostředí | skill `/doctor` |
+| nevím, co dál | skill `/guide` |
+| ověřit prostředí | skill `/diagnose` |
 | co který příkaz dělá | `docs/TOOLING.md` (generovaný) |
 | pravidla pro část stromu | `.claude/rules/` (path-scoped, načtou se samy) |
 | datový kontrakt | `docs/data-contract.md` |

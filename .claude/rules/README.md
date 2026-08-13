@@ -38,7 +38,7 @@ Dělba je proto tahle:
   vynutit kódem, se nevynucuje promptem.
 
 Jediná výjimka je [`personas.md`](personas.md): definuje slovník, kterým
-o sobě mluví `/help`, `/bootstrap` i katalog schopností, takže musí být
+o sobě mluví `/guide`, `/bootstrap` i katalog schopností, takže musí být
 v kontextu dřív, než se sáhne na jakýkoli soubor.
 
 ## Co tu je

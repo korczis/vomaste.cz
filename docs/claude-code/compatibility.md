@@ -44,15 +44,22 @@ Pole frontmatteru, která tenhle repozitář používá:
 | `argument-hint` | nápověda k argumentům v autocomplete |
 | `disable-model-invocation` | u rizikových akcí (`commit`, `pr`, zápis do dat) — Claude je nesmí spustit mimoděk, jen člověk přes `/jméno` |
 | `allowed-tools` | předschválené nástroje pro daný tah |
-| `metadata` | **free-form YAML mapa pro vlastní tooling.** Claude Code na ni nesahá. Tady v ní žije persona/riziko/zápis — a katalog toolingu je odtud čte. |
+
 
 Ověřená pole, která tady zatím nepoužíváme: `when_to_use`, `arguments`,
 `user-invocable`, `disallowed-tools`, `model`, `effort`, `context: fork`,
-`agent`, `background`, `hooks`, `paths`, `shell`, `license`,
+`agent`, `background`, `hooks`, `paths`, `shell`, `metadata`, `license`,
 `compatibility`.
 
-**Pozor na `metadata`:** mimo Claude Code (nahrání na claude.ai, Skills
-API, `package_skill.py`) projde jen šestice `name`, `description`,
+**Proč ne `metadata`.** Je to legální free-form mapa pro vlastní
+tooling a nabízela se jako místo pro personu a riziko. Nepoužívá se:
+Claude Code na ni nesahá, takže by runtime nepřinesla nic, a subagenti
+mají uzavřenou sadu polí frontmatteru, takže by pro ně stejně musel
+vzniknout druhý mechanismus. Persona a riziko proto žijí jednotně
+v `data/tooling/*.json`.
+
+**Pozor při vývozu skillu ven.** Mimo Claude Code (nahrání na claude.ai,
+Skills API, `package_skill.py`) projde jen šestice `name`, `description`,
 `license`, `compatibility`, `metadata`, `allowed-tools`. `argument-hint`
 by tam skončil tvrdou chybou. Skilly tohoto repozitáře se nikam
 nenahrávají — jsou projektové a žijí v gitu — takže to nevadí; kdyby se
@@ -139,6 +146,15 @@ Dokumentace to smí zmiňovat jen jako volitelné.
   konkrétní sekce toho souboru odkazuje.
 - **Doporučená velikost `CLAUDE.md` je pod 200 řádků.** Delší soubor
   spolehlivost dodržování snižuje.
+- **Vestavěné příkazy si své jméno drží.** `/help`, `/doctor`, `/memory`,
+  `/context`, `/init`, `/compact`, `/agents`, `/model` a další
+  terminálové built-iny jsou rezervované a projektový skill toho jména
+  v interaktivní session nepřebijí. Skill by šel napsat a zdokumentovat,
+  ale ne spustit — což je přesně ta „dokumentovaná schopnost bez
+  implementace", kterou konstituce §8 zakazuje. Tenhle repozitář se
+  proto trefil dvakrát a dvakrát přejmenoval: rozcestník je `/guide`
+  (ne `/help`) a diagnostika `/diagnose` (ne `/doctor`). **Než skill
+  pojmenuješ, ověř, že jméno není built-in.**
 - **Import se nedělá uvnitř backticků.** `` `@README` `` je text,
   `@README` je import.
 - **`CLAUDE.local.md` v gitignore existuje jen v tom worktree, kde
