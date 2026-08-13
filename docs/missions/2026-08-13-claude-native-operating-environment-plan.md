@@ -165,10 +165,10 @@ Legenda stavu: ` ` čeká · `~` běží · `x` hotovo · `!` blokováno
 
 ### Fáze L — validace a testy
 
-- [ ] **L1** `npm run validate:claude-tooling` — duplicity, chybějící
+- [x] **L1** `npm run validate:claude-tooling` — duplicity, chybějící
       metadata, neznámé persony/workflow/agenti, rozbité odkazy.
-- [ ] **L2** Golden-path testy pro tři persony.
-- [ ] **L3** Zapojení do `npm run build` a pre-commit.
+- [x] **L2** Golden-path testy pro tři persony.
+- [x] **L3** Zapojení do `npm run build` a pre-commit.
 
 ### Fáze M — vzdělávací a UI integrace
 

@@ -26,7 +26,10 @@
  *   CT4  `npm run <x>` odkazuje na skript, který v package.json je;
  *   CT5  odkaz na skill (`/jméno`) vede na existující skill;
  *   CT6  skill má povinné oddíly, aby nebyl jen název;
- *   CT7  název skillu, agenta a workflow je unikátní napříč vrstvami.
+ *   CT7  název skillu, agenta a workflow je unikátní napříč vrstvami;
+ *   CT8  workflow deklaruje jen skilly a agenty, které existují, a
+ *        personu ze závazného slovníku. Cesta ukazující na schopnost,
+ *        která zanikla, je návod, který nejde projít.
  *
  * CO ZÁMĚRNĚ NEKONTROLUJE
  * -----------------------
@@ -145,6 +148,25 @@ export function npmCandidates(text) {
 
 /* ---- kontroly --------------------------------------------------------- */
 
+// Plochý frontmatter, stejná konvence jako u katalogu toolingu: klíč
+// na začátku řádku, pokračovací řádky se slepují.
+export function frontmatterOf(text) {
+  const fm = /^---\n([\s\S]*?)\n---/.exec(text);
+  if (!fm) return {};
+  const meta = {};
+  let key = null;
+  for (const raw of fm[1].split("\n")) {
+    const kv = /^([a-z-]+):\s*(.*)$/.exec(raw);
+    if (kv) {
+      key = kv[1];
+      meta[key] = kv[2].trim();
+    } else if (key && raw.trim()) {
+      meta[key] = `${meta[key]} ${raw.trim()}`.trim();
+    }
+  }
+  return meta;
+}
+
 // Jediný oddíl, který se vyžaduje mechanicky. Vybraný ne proto, že by
 // byl nejdůležitější, ale proto, že je univerzální a nejčastěji chybí:
 // skill bez hranice se použije tam, kam nepatří, a udělá tam něco
@@ -242,6 +264,31 @@ export function validate(root = ROOT) {
     if (!REQUIRED_SKILL_SECTION.test(text)) {
       errors.push(`CT6: skill "${name}" neuvádí, kdy se NEMÁ použít — přidej oddíl "Kdy ho NEPOUŽÍT".`);
     }
+  }
+
+  // CT8 — workflow deklaruje jen to, co existuje.
+  // Frontmatter cesty je slib: „projdeš to těmito schopnostmi". Když
+  // některá zanikla, je to návod do zdi, a pozná se to až u toho, kdo
+  // podle něj pracuje.
+  const PERSONAS = new Set([
+    "reader", "verifier", "source-contributor", "researcher", "editor",
+    "developer", "reviewer", "maintainer", "orchestrator",
+  ]);
+  for (const file of listMd(".claude/workflows")) {
+    const name = file.split("/").pop().replace(/\.md$/, "");
+    if (name === "README") continue;
+    const meta = frontmatterOf(readFileSync(join(root, file), "utf8"));
+    const declared = (key) => (meta[key] ? meta[key].split(/[,\s]+/).filter(Boolean) : []);
+
+    for (const s of declared("skills")) {
+      if (!skillNames.includes(s)) errors.push(`CT8: ${file} deklaruje skill "${s}", který neexistuje.`);
+    }
+    for (const a of declared("agents")) {
+      if (!agentNames.includes(a)) errors.push(`CT8: ${file} deklaruje agenta "${a}", který neexistuje.`);
+    }
+    if (!meta.persona) errors.push(`CT8: ${file} neuvádí personu.`);
+    else if (!PERSONAS.has(meta.persona)) errors.push(`CT8: ${file} uvádí neznámou personu "${meta.persona}".`);
+    if (!meta.goal) errors.push(`CT8: ${file} neuvádí goal — cesta bez cíle se nedá dokončit.`);
   }
 
   // CT7 — jméno je adresa. Dvě vrstvy se stejným jménem znamenají, že

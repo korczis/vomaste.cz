@@ -4,7 +4,7 @@
 
 Publikovaná podoba: [/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prikazy/).
 
-178 příkazů celkem: 105 npm skriptů, 40 skills, 6 subagentů, 11 workflow, 16 just receptů. 55 z nich může shodit běh, 45 jsou krokem `npm run build` a 10 běží v pre-commit hooku.
+178 příkazů celkem: 105 npm skriptů, 40 skills, 6 subagentů, 11 workflow, 16 just receptů. 55 z nich může shodit běh, 46 jsou krokem `npm run build` a 11 běží v pre-commit hooku.
 
 **Pravidlo, které z katalogu plyne**: příkaz se přidává do `package.json` (nebo do `justfile` či `.claude/skills/`) a zároveň do `data/tooling/`. Bez záznamu build spadne — dokumentace tak nemůže zaostat za kódem.
 
@@ -23,7 +23,7 @@ Publikovaná podoba: [/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prik
 | [`npm run lint:historical-coupling`](/dokumentace/prikazy/lint-historical-coupling/) | validace vstupů | ano | — | — |
 | [`npm run lint:source-outlets`](/dokumentace/prikazy/lint-source-outlets/) | validace vstupů | ano | check | — |
 | [`npm run validate:authorization`](/dokumentace/prikazy/validate-authorization/) | validace vstupů | ano | build, dev, check | ano |
-| [`npm run validate:claude-tooling`](/dokumentace/prikazy/validate-claude-tooling/) | validace vstupů | ano | — | — |
+| [`npm run validate:claude-tooling`](/dokumentace/prikazy/validate-claude-tooling/) | validace vstupů | ano | build, check | ano |
 | [`npm run validate:concepts`](/dokumentace/prikazy/validate-concepts/) | validace vstupů | ano | build, check | — |
 | [`npm run validate:dossier-types`](/dokumentace/prikazy/validate-dossier-types/) | validace vstupů | ano | build, dev, check | ano |
 | [`npm run validate:entity-types`](/dokumentace/prikazy/validate-entity-types/) | validace vstupů | ano | build, check | — |
@@ -286,6 +286,7 @@ Publikovaná podoba: [/dokumentace/prikazy/](https://vomaste.cz/dokumentace/prik
 - CT5 — odkaz na skill vede na existující .claude/skills/<jméno>/SKILL.md
 - CT6 — skill uvádí, kdy se NEMÁ použít
 - CT7 — jméno se neopakuje mezi skillem, agentem a workflow
+- CT8 — workflow deklaruje jen existující skilly a agenty, personu ze závazného slovníku a cíl
 
 ### `npm run validate:concepts`
 
