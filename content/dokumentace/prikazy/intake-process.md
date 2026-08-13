@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run intake:process — Zpracování podnětu z issue"
 template = "tooling-command.html"
-weight = 106
+weight = 107
 description = "Zpracování podnětu z issue: Jediný vstupní bod, který protáhne podnět celou intake pipeline od začátku do konce. npm skript, provoz."
 
 [extra]

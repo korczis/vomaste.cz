@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run verify:anchors — Kotvy v postaveném HTML"
 template = "tooling-command.html"
-weight = 67
+weight = 68
 description = "Kotvy v postaveném HTML: Post-build kontrola, že každá kotva odkazovaná z kanonických dat dossieru skutečně existuje v postaveném HTML — ne jen ve zdroji.. npm skript, kontrola výstupů."
 
 [extra]

@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run verify:rules-catalog — Brána proti rozejití katalogu pravidel"
 template = "tooling-command.html"
-weight = 73
+weight = 74
 description = "Brána proti rozejití katalogu pravidel: Týž generátor v režimu kontroly: nic nezapíše, ale spadne, kdyby zápis něco změnil, kdyby vlastník pravidla přišel o hlavičku, nebo kdyby dokumentace odkazovala na pravidlo, které žádný validátor nevlastní.. npm skript, kontrola výstupů."
 
 [extra]

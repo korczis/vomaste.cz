@@ -185,6 +185,39 @@ const perDossier = {};
   }
 }
 
+// --- every dossier in the sidebar is either measured or explained ---------
+// Regrese na skutečný nález: filip-turek a petr-macinka byly jediné dva
+// dossiery bez badge s počtem tvrzení, a nikde nebylo zapsáno proč. Chybějící
+// číslo tak vypadalo jako vypadlý údaj a svádělo ke čtení „ten dossier je
+// prázdný“, ačkoli prázdný není — jeho tvrzení fyzicky vlastní kanonický
+// dossier a zobrazují se projekcí.
+//
+// Invariant bydlí TADY, a ne v *.test.mjs, protože čte dva generované
+// artefakty: data/generated/navigation.json (build:navigation) a perDossier
+// níže (data:metrics). Krok `test` běží v pipeline před oběma — kontrola nad
+// generovaným artefaktem zařazená před svůj generátor je přesně ten tvar,
+// který 2026-08-13 shodil čtyři nasazení za sebou. Jako součást
+// `validate:navigation-metrics` běží až za nimi, takže v čerstvém klonu
+// nečte ani neexistující, ani stale soubor.
+{
+  const navFile = path.join(ROOT, "data", "generated", "navigation.json");
+  if (existsSync(navFile)) {
+    const nav = JSON.parse(readFileSync(navFile, "utf8"));
+    const node = (nav.items ?? []).find((i) => String(i.label ?? "").startsWith("Dossiery"));
+    if (!node) fail("data/generated/navigation.json has no \"Dossiery\" node.");
+    const unexplained = (node?.children ?? [])
+      .filter((d) => !perDossier[d.id])
+      .filter((d) => !INTENTIONALLY_UNMEASURED[`dossier:${d.id}`])
+      .map((d) => d.id);
+    if (unexplained.length > 0) {
+      fail(
+        `dossiery bez metriky i bez zapsaného důvodu: ${unexplained.join(", ")} — ` +
+          "buď doplň metriku, nebo důvod do INTENTIONALLY_UNMEASURED pod klíč dossier:<slug>.",
+      );
+    }
+  }
+}
+
 const manifest = {
   // Not hand-editable: regenerate with `npm run data:metrics`.
   generator: "scripts/data/build-navigation-metrics.mjs",

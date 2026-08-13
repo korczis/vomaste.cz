@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/authorization-check — Kontrola rozsahu pokrytí"
 template = "tooling-command.html"
-weight = 111
+weight = 112
 description = "Kontrola rozsahu pokrytí: Zjistí, jestli konkrétní osoba nebo téma spadá do rozsahu, který repozitář smí pokrývat — čtením append-only logu v AGENTS.md, ne odhadem. Claude skill, kontrola výstupů."
 
 [extra]

@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/seo-review — Review metadat stránky"
 template = "tooling-command.html"
-weight = 121
+weight = 122
 description = "Review metadat stránky: Zkontroluje titulek, popis, kanonickou URL, Open Graph a Twitter karty, odvození og:type z record_type, JSON-LD a vnitřní prolinkování — proti tomu, jak to tenhle web dělá: metadata jsou data v data/seo.toml, vydává je jediné makro a po buildu je ověřuje verify-og. Claude skill, kontrola výstupů."
 
 [extra]

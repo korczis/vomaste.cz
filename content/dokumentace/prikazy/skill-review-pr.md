@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/review-pr — Review cizí změny"
 template = "tooling-command.html"
-weight = 119
+weight = 120
 description = "Review cizí změny: Posoudí pull request podle toho, čeho se skutečně dotýká — pustí jen relevantní osy (redakční, schéma, UI, přístupnost, skripty, tooling, dokumentace), ověří, co autor tvrdí, a posoudí i rozsah: dělá změna to, co měla, nevynechává něco tiše, a nevzniká tím snadnější cesta k nedoloženému tvrzení nebo úniku dat než předtím.. Claude skill, kontrola výstupů."
 
 [extra]

@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/review-source — Review zdrojového záznamu"
 template = "tooling-command.html"
-weight = 120
+weight = 121
 description = "Review zdrojového záznamu: Zkontroluje devíti kontrolami existující SRC záznam: živost odkazu, změnu textu u vydavatele, metadata proti stránce, typ zdroje, zdrojovou rodinu podle původu, povinnou redakční poznámku (T7), obousměrné vazby (R8), skutečnou podporu každého tvrzení, u kterého je uvedený, a existenci lokálně hostovaného dokumentu.. Claude skill, kontrola výstupů."
 
 [extra]

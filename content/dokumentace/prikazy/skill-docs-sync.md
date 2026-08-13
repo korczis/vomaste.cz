@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/docs-sync — Dopad změny na dokumentaci"
 template = "tooling-command.html"
-weight = 114
+weight = 115
 description = "Dopad změny na dokumentaci: Zjistí, kterou dokumentaci, lekci nebo referenci provedená změna zasáhla, a odděluje přitom generované soubory (ty se nepíšou, ty se generují) od těch k ručnímu projití. Claude skill, kontrola výstupů."
 
 [extra]

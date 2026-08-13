@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run intake:match-fixture — Fixture pro ladění párování"
 template = "tooling-command.html"
-weight = 46
+weight = 47
 description = "Fixture pro ladění párování: Předvyplněné volání intake:process nad fixture tests/fixtures/intake/valid-new-dossier.json s pevným časem, pevným commitem a --overwrite do .tmp/intake/match-fixture.. npm skript, kontrola výstupů."
 
 [extra]

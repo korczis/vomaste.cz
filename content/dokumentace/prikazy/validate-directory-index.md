@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run validate:directory-index — Kontrola prezentačního indexu adresáře"
 template = "tooling-command.html"
-weight = 63
+weight = 64
 description = "Kontrola prezentačního indexu adresáře: Ověřuje, že index adresáře nese vše, co adresář potřebuje, že jeho počty pocházejí z kanonických dat a že routy registrů se čtou z navigačního manifestu místo skládání z řetězců.. npm skript, kontrola výstupů."
 
 [extra]

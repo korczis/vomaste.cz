@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/kb-entry — Referenční záznam"
 template = "tooling-command.html"
-weight = 145
+weight = 146
 description = "Referenční záznam: Vytvoří nebo aktualizuje referenční záznam na správném místě: kanonický koncept, stránku příručky, záznam v katalogu zdrojů nebo path-scoped pravidlo. Claude skill, provoz."
 
 [extra]

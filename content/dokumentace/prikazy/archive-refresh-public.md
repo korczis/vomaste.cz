@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run archive:refresh-public — Síťový refresh veřejné Zone A"
 template = "tooling-command.html"
-weight = 78
+weight = 79
 description = "Síťový refresh veřejné Zone A: Stáhne nové základní ARES snapshoty, uloží raw Justice odpovědi mimo Git, vytvoří sanitizované Justice indexy, provede docket-only dotazy soudních vývěsek a nakonec spustí offline archivní bránu.. npm skript, rešerše."
 
 [extra]

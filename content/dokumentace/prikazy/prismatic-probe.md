@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run prismatic:probe — Drift kontrola proti auditu schopností"
 template = "tooling-command.html"
-weight = 85
+weight = 86
 description = "Drift kontrola proti auditu schopností: Kontroluje, jestli konkrétní soubory, které audit schopností skutečně otevřel, jsou pořád tam, kde je našel — jen existence souborů, žádná síť, žádné volání Mixu ani Elixiru.. npm skript, rešerše."
 
 [extra]

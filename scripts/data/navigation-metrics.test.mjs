@@ -107,42 +107,15 @@ test("navigation items without a badge carry a recorded reason", () => {
   }
 });
 
-// Regrese na skutečný nález: filip-turek a petr-macinka byly jediné dva
-// dossiery z 26, které v sidebaru neměly badge s počtem tvrzení — a nikde
-// nebylo zapsáno proč. Chybějící číslo tak vypadalo jako vypadlý údaj a
-// svádělo ke čtení „ten dossier je prázdný", ačkoli prázdný není: jeho
-// tvrzení fyzicky vlastní kanonický dossier a zobrazují se projekcí.
+// Invariant „každý dossier v navigaci má buď metriku, nebo zapsaný důvod“
+// tady záměrně NENÍ. Čte dva generované artefakty — data/generated/
+// navigation.json (build:navigation) a data/generated/navigation-metrics.json
+// (data:metrics) — a krok `test` běží v pipeline před oběma. V čerstvém klonu
+// jsou gitignorované, takže by se test tiše přeskočil; na stroji, kde zůstaly
+// z dřívějška, by porovnával nová data se starým souborem a padal na rozdílu,
+// který v datech není. Přesně tenhle tvar (kontrola nad generovaným
+// artefaktem zařazená před svůj generátor) shodil 2026-08-13 čtyři nasazení
+// za sebou.
 //
-// Test výše tuhle díru nechytal, protože kontroluje jen kvalitu důvodů
-// u klíčů, které v INTENTIONALLY_UNMEASURED JSOU. Tenhle drží opačný
-// invariant: každý dossier v navigaci má buď číslo v perDossier, nebo
-// zapsaný důvod pod klíčem `dossier:<slug>`.
-test("každý dossier v navigaci má buď metriku, nebo zapsaný důvod", async () => {
-  const { readFileSync, existsSync } = await import("node:fs");
-  const path = await import("node:path");
-  const { fileURLToPath } = await import("node:url");
-  const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..");
-  const navFile = path.join(root, "data", "generated", "navigation.json");
-  const metricsFile = path.join(root, "data", "generated", "navigation-metrics.json");
-  if (!existsSync(navFile) || !existsSync(metricsFile)) {
-    // Generované vstupy nejsou v gitu. Bez `npm run data:build` nemá smysl
-    // předstírat, že se invariant ověřil — proto se test přeskočí, ne projde.
-    return;
-  }
-  const nav = JSON.parse(readFileSync(navFile, "utf8"));
-  const metrics = JSON.parse(readFileSync(metricsFile, "utf8"));
-  const dossierNode = (nav.items ?? []).find((i) => String(i.label ?? "").startsWith("Dossiery"));
-  assert.ok(dossierNode, "navigace musí mít uzel Dossiery");
-
-  const unexplained = (dossierNode.children ?? [])
-    .filter((d) => !metrics.perDossier?.[d.id])
-    .filter((d) => !metrics.intentionallyUnmeasured?.[`dossier:${d.id}`])
-    .map((d) => d.id);
-
-  assert.deepEqual(
-    unexplained,
-    [],
-    `dossiery bez metriky i bez zapsaného důvodu: ${unexplained.join(", ")} — ` +
-      "buď doplň metriku, nebo důvod do INTENTIONALLY_UNMEASURED pod klíč dossier:<slug>",
-  );
-});
+// Vlastníkem je proto scripts/data/build-navigation-metrics.mjs, kde invariant
+// běží jako součást `validate:navigation-metrics` — až za oběma generátory.

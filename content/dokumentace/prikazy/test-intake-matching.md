@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run test:intake:matching — Testy párování entit"
 template = "tooling-command.html"
-weight = 60
+weight = 61
 description = "Testy párování entit: node:test nad scripts/intake/matching/*.test.mjs.. npm skript, kontrola výstupů."
 
 [extra]

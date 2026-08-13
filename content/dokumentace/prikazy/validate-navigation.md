@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run validate:navigation — Kontrola navigačního stromu"
 template = "tooling-command.html"
-weight = 65
+weight = 66
 description = "Kontrola navigačního stromu: Hlídá generovaný navigační strom proti dvěma strukturálním rozhodnutím vlastníka a proti realitě na disku.. npm skript, kontrola výstupů."
 
 [extra]

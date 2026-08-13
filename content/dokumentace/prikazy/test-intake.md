@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run test:intake — Testy intake pipeline"
 template = "tooling-command.html"
-weight = 56
+weight = 57
 description = "Testy intake pipeline: node:test nad scripts/intake/*.test.mjs a podadresáři matching, risk, preflight, adapters a github.. npm skript, kontrola výstupů."
 
 [extra]

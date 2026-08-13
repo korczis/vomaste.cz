@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run benchmark:graph — Benchmark grafového layoutu"
 template = "tooling-command.html"
-weight = 95
+weight = 96
 description = "Benchmark grafového layoutu: Technický benchmark build-time layoutu grafu nad syntetickým grafem (výchozí velikost se dá změnit přes --nodes/--edges). npm skript, provoz."
 
 [extra]

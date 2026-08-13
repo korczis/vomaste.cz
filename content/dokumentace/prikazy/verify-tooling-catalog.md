@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "npm run verify:tooling-catalog — Obousměrná brána katalogu toolingu"
 template = "tooling-command.html"
-weight = 76
+weight = 77
 description = "Obousměrná brána katalogu toolingu: Týž generátor s přepínačem --check: nic nezapíše, jen skončí nenulově, pokud katalog neodpovídá repozitáři nebo pokud by se commitnutý výstup lišil od toho, co z dat vzniká.. npm skript, kontrola výstupů."
 
 [extra]

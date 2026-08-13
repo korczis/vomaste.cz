@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/coop-status — Stav souběžné práce"
 template = "tooling-command.html"
-weight = 138
+weight = 139
 description = "Stav souběžné práce: Vyloží výstup co-op sběrnice jako odpověď na otázku „můžu do toho jít“: kde jsi a jakou máš roli, které worktree jsou aktivní, které otevřené úkoly se týkají tvé práce, jestli je build-lock volný a jestli hrozí kolize na stejném dossieru nebo generovaném souboru.. Claude skill, provoz."
 
 [extra]

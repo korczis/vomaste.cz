@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vomaste.cz/schemas/canonical/tooling-command.schema.json",
+  "schemaVersion": 1,
+  "@context": "https://vomaste.cz/context/v1.jsonld",
+  "@id": "https://vomaste.cz/id/prikazy/report-originator-gaps",
+  "@type": "vomaste:ToolingCommand",
+  "recordType": "toolingCommand",
+  "identifier": "report-originator-gaps",
+  "kind": "npm",
+  "name": "report:originator-gaps",
+  "title": "Detektor původního zjišťovatele",
+  "category": "generovani",
+  "summary": "Generovaný seznam tvrzení, která stojí na jednom hlasu a přitom sama jmenují outlet, jenž věc zjistil první („podle zjištění Seznam Zpráv\") — a ten outlet mezi jejich zdroji chybí. Pravidlo S10 takové tvrzení odmítne uznat za nezávisle doložené, ale neřekne, kde nezávislý hlas hledat; tenhle report to řekne konkrétně.",
+  "whenToRun": "Automaticky v data:build i v build. Ručně, když hledáš, kde má korroborační kolo začít.",
+  "inputs": [
+    "data/dossiers/** (compiled model)"
+  ],
+  "outputs": [
+    "reports/originator-gaps.md",
+    "data/generated/originator-gaps.json"
+  ],
+  "sourceFile": "scripts/data/report-originator-gaps.mjs",
+  "describedFrom": "header",
+  "notes": [
+    "Stopa, ne závěr. Že tvrzení jmenuje outlet, nedokládá, že ten outlet tvrzení potvrdí — konkrétní článek se musí najít, otevřít a přečíst, a když nesedí, zdroj se NEPŘIPOJÍ. Ověřeno v praxi: u jedné stopy se článek nenašel vůbec, u jiné byl za paywallem právě v části nesoucí jádro tvrzení.",
+    "Názvy outletů se porovnávají na normalizovaný celý název (bez diakritiky a nealfanumerických znaků) jako prefix. První verze porovnávala první slovo malými písmeny a „Deník N\" se jí shodovalo s „Deník.cz\", „Ekonomický deník\" i „Jihlavský deník\" — výsledek byl nafouknutý o třetinu.",
+    "Výstupy jdou do reports/ a data/generated/, nikdy do content/ — neroutují se a žádná stránka z nich nevzniká."
+  ]
+}
