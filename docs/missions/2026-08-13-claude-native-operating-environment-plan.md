@@ -188,10 +188,10 @@ Legenda stavu: ` ` čeká · `~` běží · `x` hotovo · `!` blokováno
 
 ### Fáze O — uzavření
 
-- [ ] **O1** Persona walkthroughs (reader, researcher, editor, developer).
-- [ ] **O2** Bezpečnostní review toolingu.
-- [ ] **O3** Plný `npm run build` zelený.
-- [ ] **O4** `docs/implementation/claude-native-operating-environment.md`.
+- [x] **O1** Persona walkthroughs (reader, researcher, editor, developer).
+- [x] **O2** Bezpečnostní review toolingu.
+- [x] **O3** Plný `npm run build` zelený.
+- [x] **O4** `docs/implementation/claude-native-operating-environment.md`.
 
 ---
 
