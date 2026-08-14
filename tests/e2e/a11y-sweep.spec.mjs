@@ -51,18 +51,24 @@ for (const { archetype, url } of ARCHETYPES) {
   });
 }
 
-test("každá stránka má právě jeden h1", async ({ page }) => {
-  // Nadpisová osnova je pro odečítač hlavní způsob orientace. Dvě h1
-  // znamenají dva „hlavní obsahy", žádná h1 znamená stránku bez názvu —
-  // obojí projde vizuální kontrolou bez povšimnutí.
-  const problems = [];
-  for (const { archetype, url } of ARCHETYPES) {
+// Nadpisová osnova je pro odečítač hlavní způsob orientace. Dvě h1
+// znamenají dva „hlavní obsahy", žádná h1 znamená stránku bez názvu —
+// obojí projde vizuální kontrolou bez povšimnutí.
+//
+// PROČ TEST NA ARCHETYP, a ne jeden cyklus přes všechny: jako jediný test
+// to bylo 27 sekvenčních `page.goto` pod jedním 30s limitem. Lokálně 15,6 s,
+// v CI (pomalejší runner) přes limit — a spadlo to na timeoutu, ne na
+// nálezu. Dataset přitom roste, takže by se to vracelo po každé větší
+// dávce dossierů. Rozpad na test na archetyp dává každému vlastní rozpočet,
+// pouští je paralelně (`fullyParallel`) a hlášku váže na konkrétní stránku
+// místo agregovaného seznamu.
+for (const { archetype, url } of ARCHETYPES) {
+  test(`${archetype} — právě jeden h1`, async ({ page }) => {
     await page.goto(url);
     const count = await page.locator("h1").count();
-    if (count !== 1) problems.push(`${archetype} (${url}): ${count}x h1`);
-  }
-  expect(problems, problems.join("\n")).toEqual([]);
-});
+    expect(count, `${archetype} (${url}): ${count}x h1`).toBe(1);
+  });
+}
 
 // Známé duplicitní kotvy — RÁČNA, ne výjimka.
 //
@@ -140,6 +146,18 @@ const ZNAME_DUPLICITY = {
 const ZNAME_CELKEM = 34;
 
 test("duplicitní kotvy nepřibývají (ráčna)", async ({ page }) => {
+  // Tenhle NEJDE rozpadnout na test na archetyp jako kontrola h1 nad ním:
+  // druhá půlka ráčny je CELKOVÝ počet duplicit, a ten je znát až po
+  // návštěvě všech stránek. Zůstává tedy jeden test s jedním cyklem — a
+  // proto potřebuje rozpočet, který roste se stránkami, ne pevných 30 s
+  // z playwright.config.mjs. Na tom v CI 2026-08-13 spadl (timeout, ne
+  // nález) poté, co dataset povyrostl na 233 dossierů.
+  //
+  // 8 s základ + 3 s na stránku: lokálně vychází ~0,6 s/stránku, CI runner
+  // je zhruba 2–3x pomalejší, takže je v tom rezerva, aniž by se rozbitý
+  // test protahoval na minuty.
+  test.setTimeout(8_000 + ARCHETYPES.length * 3_000);
+
   const found = {};
   for (const { url } of ARCHETYPES) {
     await page.goto(url);

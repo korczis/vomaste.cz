@@ -128,9 +128,20 @@ test.describe("landing page — šířka, počty, FAQ", () => {
   });
 
   test("FAQ nabízí rozšířenou sadu otázek a všechny se otevřou", async ({ page }) => {
+    // Rozpočet podle toho, co test dělá: rozklikne KAŽDOU položku zvlášť a
+    // u každé čeká na viditelnost odstavce. Lokálně to vychází na ~2 s na
+    // položku (mobil, 12 položek → 20–24 s), takže výchozích 30 s
+    // z playwright.config.mjs nechávalo pár sekund rezervy — a CI runner je
+    // 2–3x pomalejší. V CI proto test procházel jen díky retry a 2026-08-13
+    // se v jednom běhu překlopil do timeoutu. Není to vada webu ani pomalá
+    // stránka: je to test, jehož délka roste s počtem otázek, pod pevným
+    // limitem. Rozpočet se proto odvozuje od téhož počtu, který se asertuje.
+    const POCET_OTAZEK = 12;
+    test.setTimeout(10_000 + POCET_OTAZEK * 6_000);
+
     await page.goto("/");
     const faq = page.locator("section[aria-labelledby='faq-heading'] details");
-    await expect(faq).toHaveCount(12);
+    await expect(faq).toHaveCount(POCET_OTAZEK);
     for (const d of await faq.all()) {
       await d.locator("summary").click();
       await expect(d.locator("p")).toBeVisible();
