@@ -53,7 +53,23 @@ for (const f of walk(PUB)) {
     const hasClaimsSection = h.includes('id="src-claims-h"') || h.includes("id=src-claims-h");
     // Kontextové zdroje (claims = []) sekci nemají — legitimní, pokud to
     // body stránky vysvětluje (vynuceno min. délkou ve validate-dossier).
-    if (!hasClaimsSection && !/kontext|komentář|názor|nepodporuje|nepodkládá/i.test(h))
+    //
+    // HLEDÁ SE JEN V <main>, ne v celém HTML. Dokud se hledalo všude,
+    // stačilo, aby se kterékoli z těch slov objevilo kdekoli ve stránce —
+    // třeba v postranní navigaci, která do každé stránky vypisovala celý
+    // strom webu včetně štítků konceptů. Dvě stránky zdrojů tak procházely
+    // ne proto, že by svou kontextovou roli vysvětlovaly, ale proto, že
+    // slovo padlo v menu. Odhaleno 2026-08-14 při zeštíhlení navigace:
+    // jakmile z chrome ta slova zmizela, brána obě stránky správně odmítla.
+    // Brána, kterou umí splnit menu, není brána nad obsahem.
+    //
+    // `nedokládá` ve výčtu chybělo, ačkoli je to slovo, kterým to redakční
+    // poznámky ve skutečnosti píšou („Co to dokládá a co ne… Nedokládá…“).
+    // Vedle něj stál jen řídký tvar `nepodkládá`. Zúžení výčtu na chrome
+    // (viz výše) tu mezeru odhalilo: obě dotčené stránky svou roli
+    // vysvětlují poctivě a obšírně, jen jiným slovem, než brána znala.
+    const main = h.slice(h.indexOf("<main"), h.indexOf("</main>") + 1);
+    if (!hasClaimsSection && !/kontext|komentář|názor|nepodporuje|nedokládá|nepodkládá/i.test(main))
       err(`${rel}: stránka zdroje nemá sekci podporovaných tvrzení ani vysvětlenou kontextovou roli.`);
     if (!hasProvenance) err(`${rel}: stránka zdroje bez Git provenance odkazu.`);
   }
