@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "workflow verify-a-claim — Ověření existujícího tvrzení"
 template = "tooling-command.html"
-weight = 158
+weight = 159
 description = "Ověření existujícího tvrzení: Cesta ověřovatele: dvanáct kontrol tvrzení, otevření každého citovaného zdroje, posouzení počtu nezávislých hlasů a kontrola navázaných mezer. Claude workflow, kontrola výstupů."
 
 [extra]

@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "just scaffold slug title subject auth_record_id — Scaffold dossier balíčku"
 template = "tooling-command.html"
-weight = 182
+weight = 183
 description = "Scaffold dossier balíčku: Zkratka na scaffold kanonického balíčku se čtyřmi povinnými parametry: slug, titul, subjekt a id autorizačního záznamu.. just recept, provoz."
 
 [extra]

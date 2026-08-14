@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "just ares *args — Dotaz do ARES"
 template = "tooling-command.html"
-weight = 171
+weight = 172
 description = "Dotaz do ARES: Dotaz do českého primárního obchodního registru podle `--ico=` nebo `--name=`. just recept, rešerše."
 
 [extra]

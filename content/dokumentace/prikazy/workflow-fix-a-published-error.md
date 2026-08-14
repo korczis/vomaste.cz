@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "workflow fix-a-published-error — Oprava publikovaného obsahu"
 template = "tooling-command.html"
-weight = 163
+weight = 164
 description = "Oprava publikovaného obsahu: Cesta od nahlášení k ověřené, doložené a validované opravě — nebo k odůvodněnému odmítnutí. Claude workflow, provoz."
 
 [extra]
