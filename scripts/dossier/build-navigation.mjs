@@ -338,11 +338,26 @@ writeFileSync(OUT, JSON.stringify({ items }, null, 2) + "\n");
 // Změřeno: se zaslepenou šablonou jsonld.html trval `zola build` 48,8 s,
 // s ní 366,1 s. Ta jedna šablona tedy stála 87 % celého buildu a tohle
 // zplošťování byla jeho hlavní část.
+// DVĚ ÚROVNĚ, NE TŘI. Zploštělý seznam se vydává jako uzly
+// SiteNavigationElement do KAŽDÉ stránky. S třetí úrovní (registry každého
+// dossieru) to při 233 dossierech bylo 1964 uzlů a 217 kB JSON-LD na
+// stránku — proti 8 kB skutečného obsahu té stránky. Krát 6042 stránek to
+// byla jedna z půlek desetigigabajtového `public/`, na kterém GitHub Pages
+// odmítly artefakt nasadit (běh 31796352276).
+//
+// Sémanticky navíc SiteNavigationElement popisuje navigaci WEBU, ne
+// rozbalený podstrom aktuální stránky: patří sem rozcestníky a dossiery,
+// ne claims/sources/gaps každého z nich. Postranní strom se řídí týmž
+// pravidlem (templates/base.html vypisuje registry jen u aktivního
+// dossieru), takže strukturovaná data a sidebar dál popisují totéž —
+// invariant z AGENTS.md drží, jen se obě strany zbavily balastu.
+const FLAT_DEPTH = 2;
 const flat = [];
-const walk = (list) => {
+const walk = (list, depth = 0) => {
+  if (depth >= FLAT_DEPTH) return;
   for (const item of list ?? []) {
     flat.push(item);
-    walk(item.children);
+    walk(item.children, depth + 1);
   }
 };
 walk(items);

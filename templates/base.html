@@ -354,10 +354,21 @@
         labelled entry, see AGENTS.md). The tree itself comes from
         data/generated/navigation.json, so nothing here knows what a dossier
         or a concept is. -#}
+    {#- PROČ SE PODSTROM VYPISUJE JEN U AKTIVNÍHO UZLU: strom se vykresluje do
+        KAŽDÉ stránky. Při 233 dossierech to bylo 1624 registrových odkazů na
+        stránku, tedy 1,65 MB `<nav>` z 1,88 MB stránky (88 %) a 10 GB celého
+        `public/` — přesně na limitu, za kterým GitHub Pages odmítne artefakt
+        nasadit („Artifact could not be deployed… total size is less than
+        10GB", běh 31796352276). Při 22 dossierech to byl neviditelný náklad,
+        po sloučení znojemského zastupitelstva zastavil nasazení.
+        Podstrom navíc u neaktivního dossieru nikdy nebyl vidět: `<details>`
+        je bez `open` zavřené, takže se těch 1,6 MB posílalo čtenáři pro nic.
+        Každý dossier zůstává v seznamu a na jeden klik; jeho registry se
+        rozbalí, jakmile jsi uvnitř. Funguje to dál bez JavaScriptu. -#}
     {% for item in nav_items %}
     {{ <nav_nav_link item={item} depth={0} active_id={active_id} metrics={nav_metrics} /> }}
     {%- for child in item.children %}
-    {%- if child.children | length > 0 %}
+    {%- if child.children | length > 0 and "|" ~ child.id ~ "|" in active_trail %}
     <details class="group" {% if "|" ~ child.id ~ "|" in active_trail %}open{% endif %}>
       <summary class="flex cursor-pointer list-none items-center gap-3 py-2.5 pl-8 pr-4 text-sm marker:content-none [&::-webkit-details-marker]:hidden {% if child.id == active_id %}bg-white/5 text-[#f3e5c0]{% else %}text-white/60 hover:bg-white/5 hover:text-white{% endif %}">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0" aria-hidden="true"><path d="{{ child.icon }}"/></svg>
@@ -386,13 +397,18 @@
       instead of only reachable via in-page breadcrumbs/footer links. -#}
   <nav aria-label="Hlavní navigace (bez JavaScriptu)" class="border-b border-white/10 bg-black px-4 py-3 pt-16">
     <ul class="flex flex-wrap gap-4 text-sm">
+      {#- Registry se stejně jako v postranním stromu vypisují jen u dossieru,
+          ve kterém právě jsi — jinak by tenhle blok sám o sobě vrátil zpátky
+          plochý seznam 1624 odkazů na každou stránku (viz komentář výše). -#}
       {% for item in nav_items %}
       <li><a href="{{ get_url(path=item.path) | safe }}" class="text-[#f3e5c0] underline">{{ item.label }}</a></li>
       {%- for dossier in item.children %}
       <li><a href="{{ get_url(path=dossier.path) | safe }}" class="text-[#f3e5c0] underline">{{ item.label }} — {{ dossier.label }}</a></li>
+      {%- if "|" ~ dossier.id ~ "|" in active_trail %}
       {%- for child in dossier.children %}
       <li><a href="{{ get_url(path=child.path) | safe }}" class="text-[#f3e5c0] underline">{{ dossier.label }} — {{ child.label }}</a></li>
       {%- endfor %}
+      {%- endif %}
       {%- endfor %}
       {% endfor %}
     </ul>
