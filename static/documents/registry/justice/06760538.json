@@ -1,6 +1,6 @@
 {
   "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
-  "retrieved": "2026-08-09",
+  "retrieved": "2026-08-16",
   "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/06760538",
   "status": "OK",
   "subject": {
@@ -372,48 +372,6 @@
       ]
     },
     {
-      "referenceLabel": "L 69778/SL27/MSPH",
-      "documentType": "účetní závěrka [2024] VZZ",
-      "createdAt": "31-12-2024",
-      "receivedByCourtAt": "03-09-2025",
-      "filedAt": "08-09-2025",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 2,
-          "sizeBytes": 33008
-        }
-      ]
-    },
-    {
-      "referenceLabel": "L 69778/SL28/MSPH",
-      "documentType": "účetní závěrka [2024] příloha",
-      "createdAt": "31-12-2024",
-      "receivedByCourtAt": "03-09-2025",
-      "filedAt": "08-09-2025",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 9,
-          "sizeBytes": 77920
-        }
-      ]
-    },
-    {
-      "referenceLabel": "L 69778/SL29/MSPH",
-      "documentType": "účetní závěrka [2024] rozvaha",
-      "createdAt": "31-12-2024",
-      "receivedByCourtAt": "03-09-2025",
-      "filedAt": "08-09-2025",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 4,
-          "sizeBytes": 36669
-        }
-      ]
-    },
-    {
       "referenceLabel": "L 69778/SL30/MSPH",
       "documentType": "ostatní zápis z 19. VH",
       "createdAt": "29-10-2025",
@@ -452,6 +410,20 @@
         {
           "pageCount": 8,
           "sizeBytes": 3555496
+        }
+      ]
+    },
+    {
+      "referenceLabel": "L 69778/SL33/MSPH",
+      "documentType": "účetní závěrka [2024], zpráva auditora [2024]",
+      "createdAt": "31-12-2024",
+      "receivedByCourtAt": "12-08-2026",
+      "filedAt": "13-08-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 18,
+          "sizeBytes": 2161523
         }
       ]
     }

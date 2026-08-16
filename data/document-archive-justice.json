@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-09",
+  "generatedAt": "2026-08-16",
   "records": [
     {
       "identifier": "justice-metadata-00020869",
@@ -11,11 +11,11 @@
       "dossiers": [
         "james-quick"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00020869.json",
       "mediaType": "application/json",
-      "sha256": "b0505be1c3439441828c6daeab6f08d7f4d24c5275b76c93218edd885244dd74",
+      "sha256": "6f194135c883db5023baa733004dbb92b53a47c647302054ccf193722de74712",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -32,11 +32,11 @@
       "dossiers": [
         "robert-plaga"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00023752.json",
       "mediaType": "application/json",
-      "sha256": "55b3f76aa5379d5ee67413a20f825628f81248efab4b76128890d123cceb0245",
+      "sha256": "183c444835cfab96bfaa03671055bfe3e68601d2b3409bd5add6489c05ef8326",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -54,11 +54,11 @@
         "filip-turek",
         "macinka-turek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00024341.json",
       "mediaType": "application/json",
-      "sha256": "c42ff5b3b735a71517295fb287ffc1462076d43281e1cbd0a23c63484b97b919",
+      "sha256": "53e1f6a181594a6bdebc551296cacb6457f1c4ac16bbbf588ea5da5fde5ce0d7",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -75,11 +75,11 @@
       "dossiers": [
         "tomio-okamura"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00024384.json",
       "mediaType": "application/json",
-      "sha256": "ed610837bd4f3f78506cd440971bef7212c057f3b1b6d1c7f16d1dad1c23cf33",
+      "sha256": "e6af4b59a2be81197161e901c0584edc710be5c0bf6a816c8e0e6bd9dcd9bf4a",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -96,11 +96,11 @@
       "dossiers": [
         "jeronym-tejc"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00024490.json",
       "mediaType": "application/json",
-      "sha256": "2ecb384b54510185ee87688fb9798d8f53a05272bb759c063e4be0b8b9a83345",
+      "sha256": "11aa7754b37deb0107d7f866db5ec4323760917239659327c2da9aa13470b102",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -117,11 +117,11 @@
       "dossiers": [
         "jaroslav-faltynek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00026000.json",
       "mediaType": "application/json",
-      "sha256": "f6cab75a22f1ff39c0d181f72acf85b5c8df051059fba74a824d1082b1107c5e",
+      "sha256": "aaedc2d02f70f03e86ae82c84ebd80cf082275dcab2c700e976711a5f2d23c3f",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -138,11 +138,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00027162.json",
       "mediaType": "application/json",
-      "sha256": "947df3df4dac201b186945768eafb99a8cdc3f41b83e85fbb6ac27bcbf3961b1",
+      "sha256": "3a7930a95b840918593ecdcc14a9521666ccee8554a76a6d688a234b91e51ed5",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -159,11 +159,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00027383.json",
       "mediaType": "application/json",
-      "sha256": "33b38c7640c4be58d2f7e148f7a507f13dbc8d0bce2e897f8d1de8db4985a0c4",
+      "sha256": "f542ceab4a6cdbeef75f3918f18f86f90a108c5cd2ef7de26a3ada2940be155f",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -180,11 +180,11 @@
       "dossiers": [
         "tunde-bartha"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00063517.json",
       "mediaType": "application/json",
-      "sha256": "dab01854737a02f9511e7ba40dfbd29682b737de3ec89db951de27e2dab3a06f",
+      "sha256": "83edcac1327c1ae471401f04fc209183568ea6b9911b08e4ed4374143b856012",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -201,11 +201,11 @@
       "dossiers": [
         "adam-vojtech"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00098892.json",
       "mediaType": "application/json",
-      "sha256": "52d30433311a906718552ef646be4166d7e5e95dc43f6d8bd12f727fc1cced6b",
+      "sha256": "418631527e901a46cf097ff47fe8f5935ca7f61bc2c566703df1402aa6b36298",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -222,11 +222,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00177041.json",
       "mediaType": "application/json",
-      "sha256": "5cd15943903876d1b6f6ed24e4a8a94ffa9d983e4c29ef0be82a89a669ebe01f",
+      "sha256": "db5f428e4cb6c91d4ba2b96e71166695a8e21bb00a3d9227ea4808f26f2daa42",
       "found": true,
       "filingCount": 233,
       "documentCount": 233,
@@ -243,11 +243,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00215651.json",
       "mediaType": "application/json",
-      "sha256": "2ecc22ae2fc689cc2165bce88cdfc9a3cb2cc35dcdfa881d1bf6e29b431fb521",
+      "sha256": "c0da26514b773d34f7e49b15de20b0ec619045d54d35f3616eada835c70289cb",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -266,11 +266,11 @@
         "james-quick",
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00215660.json",
       "mediaType": "application/json",
-      "sha256": "4286457ccf531b063ecfa5594659ce4cabd6571008aed2396ca06ded140b5ac2",
+      "sha256": "f6c3882433851b2c6500283ee72ec7fb3aa5a31c65012bf0f8dfeef5ee98e8b4",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -288,11 +288,11 @@
         "andrej-babis",
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00215678.json",
       "mediaType": "application/json",
-      "sha256": "4826794b1fe0ec58b51f8d521c8fbb5e49e72ba8700996c9bfb5c72b581b9500",
+      "sha256": "3486ea1d9a809fdc1933f458a87b7009ced5bf07dc55eaecc634a0e1086c43cf",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -309,11 +309,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00215724.json",
       "mediaType": "application/json",
-      "sha256": "230e6f844531be2bc2daa73e78e4bb471ae4549e753249da6261fb1b74bca8b6",
+      "sha256": "bb9536af9bd088d0b31c3ce382ca0b165c7573351bc84648c5249c2f26ad5291",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -330,11 +330,11 @@
       "dossiers": [
         "alena-schillerova"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00216208.json",
       "mediaType": "application/json",
-      "sha256": "a776321429d4c55531128f9b6fc22b3ae858931f0b67b6a0d23b8b62c7ff0301",
+      "sha256": "43199545567e3b65dd5d488a899eb8f3ff5d862db153ff5aed7906738ca3e431",
       "found": true,
       "filingCount": 0,
       "documentCount": 0,
@@ -353,11 +353,11 @@
         "jeronym-tejc",
         "robert-plaga"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00216224.json",
       "mediaType": "application/json",
-      "sha256": "cf1bde2ffd60f29ad29a6f233d2ae5c2208af16a1a9f5e3ebfc5d08327dc2d20",
+      "sha256": "debef8b2bc4051131b7bcb0a1786bf14c288006eda71d25d32ca1899935c6ceb",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -374,11 +374,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00255092.json",
       "mediaType": "application/json",
-      "sha256": "f6f9eb36bc6a3798aabb610c57b35377dcd5e5fe10b188938a562b89cf43a049",
+      "sha256": "cce06ae86636a532965a1efd8d011aaa98c2cd467af9cc6148d1b51134ba91b3",
       "found": true,
       "filingCount": 139,
       "documentCount": 145,
@@ -395,11 +395,11 @@
       "dossiers": [
         "zuzana-mrazova"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00266230.json",
       "mediaType": "application/json",
-      "sha256": "47fa536ebbf629f04384b5e3c52bfb6d2db6607e93261ddded84397b18a390d5",
+      "sha256": "a333ab7aab53d1a9c24bdf124b76e0c59e625be8cc923ab1a5cb2c8f52829eab",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -416,11 +416,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00284301.json",
       "mediaType": "application/json",
-      "sha256": "ac6d7c067afdc7bcf3ab8de2ba3cff5e552a0dcc56d3dc2dc884f5507c92785f",
+      "sha256": "8d48fc7d380ac0dafd88d7dca6c38c252f51061dd7fdc422f8176ee13afb4a10",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -437,11 +437,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00299308.json",
       "mediaType": "application/json",
-      "sha256": "551812d2d7f2e3e21b6cc6c78c1d60775312367e10134b0730f1aec281d080f5",
+      "sha256": "4ec60297e1e5406179ad4f76a1d2d09dfc55844db0cf736d226063412d9a56ae",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -458,11 +458,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00304450.json",
       "mediaType": "application/json",
-      "sha256": "f8ce41b4566f0bd2ddea5aeda25bbe9482177ae8fa6689b836b79f1d40a84dd1",
+      "sha256": "94d64813c1acb55ba637dbbba944bf131e0869ff6a25c17e9fc6f4ccfa6bfede",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -479,11 +479,11 @@
       "dossiers": [
         "jeronym-tejc"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00409171.json",
       "mediaType": "application/json",
-      "sha256": "f1d00a0d325d6d3efef075261915f317003f0f2a5e47ad05283929c03e80cc0d",
+      "sha256": "0f4b1cc68f39ea4a141107bb593374c6b3d1528e7527735eae2f1a032c303950",
       "found": true,
       "filingCount": 0,
       "documentCount": 0,
@@ -500,11 +500,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00418005.json",
       "mediaType": "application/json",
-      "sha256": "e6882ee7fa6639bfdd48b830acaca18319f03ad090b88ce9ee4629b6fe9b41e8",
+      "sha256": "8389e7e26b6ae11c08549de2bfc8daafb38f2cf45c2f6d9465da72730809b44b",
       "found": true,
       "filingCount": 19,
       "documentCount": 19,
@@ -524,11 +524,11 @@
         "karel-havlicek",
         "oto-klempir"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00442704.json",
       "mediaType": "application/json",
-      "sha256": "2e7436b92e8f27e1a692737db83776aca039eebb91428ed17fb37e128b7b6a83",
+      "sha256": "5b7863863ef156ad96738786d91db2439cd6d313f50a136ee04ecfa868e9fde7",
       "found": true,
       "filingCount": 0,
       "documentCount": 0,
@@ -545,11 +545,11 @@
       "dossiers": [
         "boris-stastny"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00469548.json",
       "mediaType": "application/json",
-      "sha256": "0d3c37edc63945de663d6f9280c6da812f4dbfb8b1a61dad1f989a01c63c8e2b",
+      "sha256": "ace3483e770fbe847442a6581657533b3a88b5ae13213f86833e5e01a741fdbc",
       "found": true,
       "filingCount": 31,
       "documentCount": 31,
@@ -567,11 +567,11 @@
         "boris-stastny",
         "robert-plaga"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/00638994.json",
       "mediaType": "application/json",
-      "sha256": "b2183e2bbf0dc8741e4d82017f4d49a174a2307a18ab9c4da13bdea89f2efebe",
+      "sha256": "adb10ea7cefca5ff71cd93aba249ff9a1b1c500d359499f1927769ea117954d0",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -588,11 +588,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/01312774.json",
       "mediaType": "application/json",
-      "sha256": "0195a688f46c55ead244942cf05d619237a686b0114995f78713cd2c469dae74",
+      "sha256": "d8c6eff20258c02d17656c4ba99e160d33aaae3cb495f59ee209adbeed311f0e",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -609,11 +609,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/01529820.json",
       "mediaType": "application/json",
-      "sha256": "4e9d563b08c1f8927af8e9fc0c3dd2d9bce395acbdf3a061a22a3517bcb444b0",
+      "sha256": "56cd4a2cafc54c26c282aa5c39ff4c96e15f5f583dd00561d534e7a51c25ca2f",
       "found": true,
       "filingCount": 11,
       "documentCount": 21,
@@ -630,11 +630,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/01680081.json",
       "mediaType": "application/json",
-      "sha256": "71bef7cb029040ed0d525a01104ea245ac3e38054cdac5ec43c6bf926188352e",
+      "sha256": "58928fdf5f6e4acb6db2d6d98ed04f9d116971ce8556d50d4858496143b55444",
       "found": true,
       "filingCount": 27,
       "documentCount": 27,
@@ -651,11 +651,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/01801261.json",
       "mediaType": "application/json",
-      "sha256": "62634e9f908e1f3678549c751e8f902ae944f6e7f708f7430f08e338b96bb3a5",
+      "sha256": "ca7e76fbf1f1fac00934568716eed709bc95504f8dd7f0bdad8177d1b1508499",
       "found": true,
       "filingCount": 42,
       "documentCount": 42,
@@ -672,11 +672,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/01818899.json",
       "mediaType": "application/json",
-      "sha256": "e8b481ad1b3c0c9aee4241eb3ce270644df9f7fec343b6f6ebd5c31e1abbf42b",
+      "sha256": "5cfdd6df67df6baebc7a487df7323eef27e21db39207919616924c214ba3f1ca",
       "found": true,
       "filingCount": 1,
       "documentCount": 1,
@@ -693,11 +693,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/02922703.json",
       "mediaType": "application/json",
-      "sha256": "8d52c13dbe1d0f597015c286bdf45eaf32598604be638925ae47a763230c761d",
+      "sha256": "30960f73fdd429dd08e8b601d3a75bd9215d9b77b9b4d2192162519fcb9fbe86",
       "found": true,
       "filingCount": 1,
       "documentCount": 1,
@@ -714,11 +714,11 @@
       "dossiers": [
         "james-quick"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/03877248.json",
       "mediaType": "application/json",
-      "sha256": "8351cb135abe20bf6df1f331c5552f002f2a7c49dd10c55c6f63261512726aab",
+      "sha256": "70c78654583b980caf0b5410b960cab5d8d9b33dde610aa974d91f88f02f3a40",
       "found": true,
       "filingCount": 5,
       "documentCount": 5,
@@ -735,11 +735,11 @@
       "dossiers": [
         "tomio-okamura"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/04134940.json",
       "mediaType": "application/json",
-      "sha256": "5d781563446f4339b34bae04b9d9564e721ee1bded3aa8f08e5f8d9cb8657293",
+      "sha256": "02e30c383d2ae141a415cabb3dae944ce9fc3b2f22f2550d7c336585e26aefa4",
       "found": true,
       "filingCount": 0,
       "documentCount": 0,
@@ -756,11 +756,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/04347803.json",
       "mediaType": "application/json",
-      "sha256": "0acd92d66b04ba7d498a87fe0321f859bc0aeae777a4733d1366591ff5392cad",
+      "sha256": "86177e266156a69d683fbc8dffefd3f043e9ec7258628b4d57b7f083c2a72d9e",
       "found": true,
       "filingCount": 15,
       "documentCount": 19,
@@ -777,11 +777,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/04449461.json",
       "mediaType": "application/json",
-      "sha256": "606ff1047fac0559cad12107f4bc229b361ce506a9a9807918aa87b93c929dbf",
+      "sha256": "8d52944103f96de66799eca6ca43658d20951852c0815f450fe603e3aa2282d1",
       "found": true,
       "filingCount": 8,
       "documentCount": 18,
@@ -798,11 +798,11 @@
       "dossiers": [
         "igor-cerveny"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/04472586.json",
       "mediaType": "application/json",
-      "sha256": "1f5c5052e101bae74116fc854e42ec3303d3044ae1c988c4f3d30acc75d69db7",
+      "sha256": "512cd7f59b19bd2baa56b2e5b53d55e4210c1c33d35aad99a12dc90bcb3c10b2",
       "found": true,
       "filingCount": 18,
       "documentCount": 27,
@@ -819,11 +819,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/04771664.json",
       "mediaType": "application/json",
-      "sha256": "b27170e1828e2e26c4f8fb9b30489951a7baa37155dadbc503aa1cd9bf57a6a5",
+      "sha256": "3844e49938c5d94c4e9df9c9c777df63c2c422ca7640c441cd917bf5c170356e",
       "found": true,
       "filingCount": 15,
       "documentCount": 21,
@@ -840,11 +840,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/05015502.json",
       "mediaType": "application/json",
-      "sha256": "0b2c4cb4ec18dc2e04225c449415cfc56638fa0fe73d8d0eec8f763ee84e53be",
+      "sha256": "ac0b9d3758fd7bae46a69cbb6ceccf2b1ce703cec6b6d604eb33f98a05e12f41",
       "found": true,
       "filingCount": 25,
       "documentCount": 34,
@@ -861,11 +861,11 @@
       "dossiers": [
         "martin-sebestyan"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/05140544.json",
       "mediaType": "application/json",
-      "sha256": "8ea959998fb7d625bec43b9190cdd9837fe24afd670c9965539cf18e5b5a83e8",
+      "sha256": "2c310ff92c8ad418134076528267d1bb3503ee03f07a0cc71b66897db24e64d7",
       "found": true,
       "filingCount": 23,
       "documentCount": 23,
@@ -883,11 +883,11 @@
         "filip-turek",
         "macinka-turek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/05411394.json",
       "mediaType": "application/json",
-      "sha256": "3aafed1feffa5608b92b31ceb6878746062640bd693badbc683d49bb7eed9870",
+      "sha256": "b926e78c3016ed9fb4245238d13ffd6d7b0de5a3c8195aa5e9d2513fc9cdc9c7",
       "found": true,
       "filingCount": 22,
       "documentCount": 22,
@@ -905,11 +905,11 @@
         "igor-cerveny",
         "macinka-turek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/05411408.json",
       "mediaType": "application/json",
-      "sha256": "26d3896f303b9ff3c82251bc274b7488abe273148c6e15b1be9625ff1c5cbbd4",
+      "sha256": "8e1dbb3f1dc0125e88659a47f04a5a95cf295893ae622b723e7c335e552b7cd8",
       "found": true,
       "filingCount": 19,
       "documentCount": 19,
@@ -926,11 +926,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/05553466.json",
       "mediaType": "application/json",
-      "sha256": "ec6d72776d2ce12748bf042697ac6308bca3a833c271d720a95e6e2868592226",
+      "sha256": "40ebea64b76859e3c5201dc34c8fd4fc43933ed45cef1132ae644f171779dfe1",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -947,11 +947,11 @@
       "dossiers": [
         "richard-chlad"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/05965527.json",
       "mediaType": "application/json",
-      "sha256": "79a1fa00432d5af701c6f3213f6c9447a10b7c184670952f32ecabd8c8b5705a",
+      "sha256": "7e78a469ba19c736e57b2151906cff1d4f0efeb373b8c9ab70accd8823e60ae4",
       "found": true,
       "filingCount": 16,
       "documentCount": 16,
@@ -972,11 +972,11 @@
         "petr-macinka",
         "richard-chlad"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/05989175.json",
       "mediaType": "application/json",
-      "sha256": "67d4a91a1bb14fe885038bf47bf84ec27a1063e9eb18255ef8ab1be5c7e90d36",
+      "sha256": "64d2d9137003345dae768d034133569bbb528fbd39e59492dd6563610fa5817c",
       "found": true,
       "filingCount": 0,
       "documentCount": 0,
@@ -993,11 +993,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/06230113.json",
       "mediaType": "application/json",
-      "sha256": "59a8b1b83e8a611843389ff02ae48d02e4b6b949cf62319ba0553175cf6b5665",
+      "sha256": "c15d89c35d001a139c16c9b67868099aefd7ef73bc3bdfdc75de1da3453883aa",
       "found": true,
       "filingCount": 25,
       "documentCount": 25,
@@ -1014,11 +1014,11 @@
       "dossiers": [
         "robert-plaga"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/06616275.json",
       "mediaType": "application/json",
-      "sha256": "7170d8f7077f359596d5bd0811ccef523a68b69c45048af758771c7ef12e2026",
+      "sha256": "b9921882d92cd4c57e4cebe9c8db15d1241ccf73eff0805a6e718b490e5aee7f",
       "found": true,
       "filingCount": 20,
       "documentCount": 20,
@@ -1035,16 +1035,16 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/06760538.json",
       "mediaType": "application/json",
-      "sha256": "52840bec9f348c903e9017be78cb852b7bd11d4ef8ae155bcef90c5bf1452ddc",
+      "sha256": "701d694553d8a140010921d2b7e9cf42172031dc8d818ca040b4615a23b3da3e",
       "found": true,
-      "filingCount": 32,
-      "documentCount": 32,
-      "pageCount": 222,
-      "documentBytes": 35059699,
+      "filingCount": 30,
+      "documentCount": 30,
+      "pageCount": 225,
+      "documentBytes": 37073625,
       "nonDigitizedCount": 0
     },
     {
@@ -1056,11 +1056,11 @@
       "dossiers": [
         "boris-stastny"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/07460121.json",
       "mediaType": "application/json",
-      "sha256": "fc7d724cd7246cad539e7d24a27c3fd9e0b33fccdf4ed9a72fa175ad3a86c8d9",
+      "sha256": "de9f68e06969ffc420176cd840abb4f471ae18da236d4b09dbeb79e132b98dd3",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -1077,11 +1077,11 @@
       "dossiers": [
         "tomio-okamura"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/09871713.json",
       "mediaType": "application/json",
-      "sha256": "2af28d60708514adebbd34dc9a543043f1145cd3041fdd49b9358abefe606284",
+      "sha256": "10bf71ba24ec403bf5a136e8fd6769b165886a7df48bd2c1c0bd981d4c8ba7b9",
       "found": true,
       "filingCount": 9,
       "documentCount": 9,
@@ -1098,11 +1098,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/10742409.json",
       "mediaType": "application/json",
-      "sha256": "6061ed8dc9ed15bc2641a29f2051b3b7584f84c0bfee6379bd85b2374ddcc1db",
+      "sha256": "9ab557f93273a9a62aa3ccdd3b5f1ce397afe21df591ac44f89ea0d667e64a77",
       "found": true,
       "filingCount": 0,
       "documentCount": 0,
@@ -1119,11 +1119,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/11823461.json",
       "mediaType": "application/json",
-      "sha256": "dadb10eb6a8eaefbc4330f5d030fffdcc4301aed8a5eacb8a3f15ea554daf4b0",
+      "sha256": "fbe33fff7db2aade799342a644b667e0233303a696c1296ddcf5416fc933fa32",
       "found": true,
       "filingCount": 3,
       "documentCount": 3,
@@ -1140,11 +1140,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/14076705.json",
       "mediaType": "application/json",
-      "sha256": "66bdf79ff18090a59e26d62dcee00f7c058fcfc78833dd3f858e7fa16d962f10",
+      "sha256": "97ff9bd8818f5c0ac63335bebfc4d16d80f199624c864659e0eefe9d0ec8e3e5",
       "found": true,
       "filingCount": 3,
       "documentCount": 3,
@@ -1166,11 +1166,11 @@
         "karel-havlicek",
         "oto-klempir"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/16192656.json",
       "mediaType": "application/json",
-      "sha256": "f6220f9311e1950ddbb62cf4ce220ea5b821f009b3239d6388321d82bfdcc24b",
+      "sha256": "3fcede1f0855a2023ad6084c01c91cddd5a89c5c1683e744fc6e498438a37d42",
       "found": true,
       "filingCount": 0,
       "documentCount": 0,
@@ -1187,11 +1187,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/17048826.json",
       "mediaType": "application/json",
-      "sha256": "8ecb4afb77f4b0ae8b61bba7093260253d16e68bb1841662c073f90a9fec5fe3",
+      "sha256": "be12533319b1abd86b83d0e28627aae79205390beff3cd7ad381cc377dada81c",
       "found": true,
       "filingCount": 36,
       "documentCount": 36,
@@ -1209,11 +1209,11 @@
         "macinka-turek",
         "petr-macinka"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/17353882.json",
       "mediaType": "application/json",
-      "sha256": "c8ae8777c3c6bbcebf3089f657b426fd2e0866c1c33fdcbbe47ad6a667e091b7",
+      "sha256": "1a46574ebed0aabd8d75eaeb11fe33d57bef7507599198ef0455f2712f880b71",
       "found": true,
       "filingCount": 4,
       "documentCount": 4,
@@ -1231,11 +1231,11 @@
         "macinka-turek",
         "richard-chlad"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/17573866.json",
       "mediaType": "application/json",
-      "sha256": "13a2b4ba91d9ed8bac7873b02293b3d936d4d15d7934f024b0c4a436328319bf",
+      "sha256": "62f4cb2b33ab594b78ca44ee5beefd62169752a09b01cb561274cf50783e2ccf",
       "found": true,
       "filingCount": 5,
       "documentCount": 5,
@@ -1252,11 +1252,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/21030367.json",
       "mediaType": "application/json",
-      "sha256": "68d0b1912de9e76ea0f594aa2aeffb1466c58ffa3cba2d0f92f3ee82478d4df0",
+      "sha256": "2db45fa8892697276057e21ca31cb8bd896cb67a40a86b36b1a551ccc217490e",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -1273,11 +1273,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/22419519.json",
       "mediaType": "application/json",
-      "sha256": "05bf53e294297bbc704cb4d27ae56eb326d2eeae18a033020eb9de1cf62a7948",
+      "sha256": "8edd85162bf772150bbe5367954d913f809666b9b2feb18b43c9358ab7063308",
       "found": true,
       "filingCount": 1,
       "documentCount": 1,
@@ -1294,11 +1294,11 @@
       "dossiers": [
         "igor-cerveny"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/22461787.json",
       "mediaType": "application/json",
-      "sha256": "3a5db103c4d3e2e99de1dee6ac8b78e09347bf257dc2684ef9e911b83aa9f7c9",
+      "sha256": "2167d429f95b86bc134f10c7c55e3a68391ef976b43cbc81544bb386c4bef501",
       "found": true,
       "filingCount": 4,
       "documentCount": 6,
@@ -1316,11 +1316,11 @@
         "macinka-turek",
         "richard-chlad"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/23177586.json",
       "mediaType": "application/json",
-      "sha256": "05c80f58ed9f6ced9b0c7add163582c10f5fcba9d572e6cd4cad513934c2cb1c",
+      "sha256": "2079ca0ead39070789cd928fa85ef7c820f027188662d87ac19344794c8358dd",
       "found": true,
       "filingCount": 1,
       "documentCount": 1,
@@ -1337,11 +1337,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/24099333.json",
       "mediaType": "application/json",
-      "sha256": "904fb1094042081ff1d5475a467c1b5d8ff9118508c4ccffc3404e9c3481f046",
+      "sha256": "cb045e26407c2363a23b1776cab81e56211fa6e7d4996b91f3bbe11816d5fc7e",
       "found": true,
       "filingCount": 4,
       "documentCount": 3,
@@ -1358,11 +1358,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/24220345.json",
       "mediaType": "application/json",
-      "sha256": "4719318c0a52c550bfc021a5fe42632dc577006b4b44bbf62a970087146bc882",
+      "sha256": "51973b0435e698ea1e5e25113e6208088eaba03b0af9b4c85afbfb501dfb72c1",
       "found": true,
       "filingCount": 18,
       "documentCount": 18,
@@ -1379,11 +1379,11 @@
       "dossiers": [
         "robert-plaga"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/24706370.json",
       "mediaType": "application/json",
-      "sha256": "650714cbcbef7015352d6a91e5e6f5de0f015e77ba944fde81c6abaed5b5edda",
+      "sha256": "3ffc965f6da8d1bf952883cbe48a568a4a1b8635c8fbbf6f8638d5efa99b70db",
       "found": true,
       "filingCount": 72,
       "documentCount": 72,
@@ -1400,11 +1400,11 @@
       "dossiers": [
         "tunde-bartha"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/24722197.json",
       "mediaType": "application/json",
-      "sha256": "61f33e7f640a03b768c6fb7a95ba0b2d278f40a25ca897afcf5d9295d50f7991",
+      "sha256": "62c548180e2cf2996a735c8776011acfcd0ecb43595dab4b91d95e1a15ed8fc8",
       "found": true,
       "filingCount": 44,
       "documentCount": 46,
@@ -1421,16 +1421,16 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/25157507.json",
       "mediaType": "application/json",
-      "sha256": "ab4d307cc6cf7340a21afeb983571b4086e0a6a46caad02a868b013c4ca7f057",
+      "sha256": "79375c94f4aefdbb57928bd8395785399e6212e15cdba1b9c9b0622db0a1559e",
       "found": true,
-      "filingCount": 123,
-      "documentCount": 123,
-      "pageCount": 2020,
-      "documentBytes": 150263537,
+      "filingCount": 124,
+      "documentCount": 124,
+      "pageCount": 2021,
+      "documentBytes": 150303169,
       "nonDigitizedCount": 0
     },
     {
@@ -1442,11 +1442,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/25396480.json",
       "mediaType": "application/json",
-      "sha256": "7a011f8be59eee0e4a80a4acd9a6954448e70a79ca5da5b0b017f36852b0ebd0",
+      "sha256": "0d8d5267e5c74e92f66ab82ed77a8072af8bc7e66a054f1558025f57676fa4a3",
       "found": true,
       "filingCount": 127,
       "documentCount": 126,
@@ -1463,11 +1463,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/25542125.json",
       "mediaType": "application/json",
-      "sha256": "8f0f44d3c650434ad34be255a11ca470a468e26989b31b9bb53ac679a7e17b89",
+      "sha256": "589bd08bb08333335a6b9a6ed561110dba58e9ee229660247ba056efe0703a06",
       "found": true,
       "filingCount": 15,
       "documentCount": 23,
@@ -1485,11 +1485,11 @@
         "adam-vojtech",
         "andrej-babis"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/26014343.json",
       "mediaType": "application/json",
-      "sha256": "d0e86583ae46c90a555b12e0e69d5fe371ed04a6c66562d18013092f36d2549f",
+      "sha256": "4dbd3873b87dec3df35b79050586cb9418115d200409e6d16297df88f098a5e7",
       "found": true,
       "filingCount": 64,
       "documentCount": 64,
@@ -1506,11 +1506,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/26102463.json",
       "mediaType": "application/json",
-      "sha256": "7eb47a0bd59868cb83efdb05a2bf1f7fc1d6372e16437075cab1411903e50a82",
+      "sha256": "3326cb6749020c774eeea1437977a6fb9a2636580fcacea299c60573060f3616",
       "found": true,
       "filingCount": 70,
       "documentCount": 70,
@@ -1528,11 +1528,11 @@
         "andrej-babis",
         "tunde-bartha"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/26124459.json",
       "mediaType": "application/json",
-      "sha256": "f3af6e088332109c1fcaede2e06b91e46fb7aa5b86f1a21c9cc1ed60f7c8532b",
+      "sha256": "2df7e4803fe1d6a5b5e6f4f16608ca2d6e3d9ebfa284f9664588af68d8aefbe0",
       "found": true,
       "filingCount": 109,
       "documentCount": 109,
@@ -1549,11 +1549,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/26168685.json",
       "mediaType": "application/json",
-      "sha256": "2908ed0df2596ed65eaf2e3be6f226c301f368b90c37e42ae5bb6d0451bc62d0",
+      "sha256": "2752fc789163ff225c3eada70a1eb1bdd14a1d534cb7bacc10c83f02dc4ed5b7",
       "found": true,
       "filingCount": 161,
       "documentCount": 161,
@@ -1573,16 +1573,16 @@
         "martin-sebestyan",
         "tunde-bartha"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/26185610.json",
       "mediaType": "application/json",
-      "sha256": "a5aca852734795105769f844d2ac4f0a7b7aaa52bb64e66c5914d8f73eb6d2ca",
+      "sha256": "f6f7d8d1a23574aea609fa9c49084aebc94966c0d4302cffadf6cdf0b37eea37",
       "found": true,
-      "filingCount": 244,
-      "documentCount": 244,
-      "pageCount": 9181,
-      "documentBytes": 307176218,
+      "filingCount": 245,
+      "documentCount": 245,
+      "pageCount": 9309,
+      "documentBytes": 316739652,
       "nonDigitizedCount": 0
     },
     {
@@ -1594,11 +1594,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/26228548.json",
       "mediaType": "application/json",
-      "sha256": "8a97a8d7522df11be9a8aeb18cbfd8a8c6d320bc84f0f51b22f3b8d90db2a01e",
+      "sha256": "d9b9b211349a948f3fd34b10132e0e46edcf93cc859be3e56c7946d0cce828ee",
       "found": true,
       "filingCount": 0,
       "documentCount": 0,
@@ -1615,11 +1615,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/26311208.json",
       "mediaType": "application/json",
-      "sha256": "593a99de7c2e4ca983d548afb4d0aa7478f3ab087da5a8aab4c470df28b4a2e2",
+      "sha256": "ad38753159745aa6f213079f56416b7e39bb54240752e0895b65d86e76b4e07c",
       "found": true,
       "filingCount": 148,
       "documentCount": 148,
@@ -1636,11 +1636,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/26417171.json",
       "mediaType": "application/json",
-      "sha256": "e9f6db29595bfb48650f92d79406ff2313fc3e7e56487f1b19659d964d44a3f5",
+      "sha256": "60fba23ce750b936e12e0fd5b230795246297be76f469699b171f05a397bf1d3",
       "found": true,
       "filingCount": 58,
       "documentCount": 58,
@@ -1658,11 +1658,11 @@
         "adam-vojtech",
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/26547783.json",
       "mediaType": "application/json",
-      "sha256": "eff2b389e21758a0365208a89eb6fc2a4c760fdd192a96cf90474e4a5c6d0a19",
+      "sha256": "65eb56f4a3a18ae5a9e7fc70919f4e8089b6c26eef43402720587bd2450a8f22",
       "found": true,
       "filingCount": 77,
       "documentCount": 77,
@@ -1679,11 +1679,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/26557975.json",
       "mediaType": "application/json",
-      "sha256": "ff9606f2a626d9c21a29a6e1c0574c1ff8be6d6494c6280b27e20fb3e7dd931e",
+      "sha256": "f6ff5833006d587dcb0a2a4333510f39abddfce605dc44b7a29d5adb3725db54",
       "found": true,
       "filingCount": 2,
       "documentCount": 2,
@@ -1705,11 +1705,11 @@
         "karel-havlicek",
         "oto-klempir"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/26673908.json",
       "mediaType": "application/json",
-      "sha256": "b541471becbc85a0d75b49942699c0c1db593a81f0acf1ceb30bb16dfdd21478",
+      "sha256": "9d2ebcaa41cd2e48c0f4d5277b6830d7861e063008cff997d0b926db706326db",
       "found": true,
       "filingCount": 0,
       "documentCount": 0,
@@ -1726,11 +1726,11 @@
       "dossiers": [
         "boris-stastny"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/27082440.json",
       "mediaType": "application/json",
-      "sha256": "2fd0ebb2bcd8f6087e8f46d31ee402ca1747530a117cdedb72ca06fff4d047de",
+      "sha256": "83dd125e59ade7279d19252a079494caec4cee52b213f69b99d7e74aed45c709",
       "found": true,
       "filingCount": 93,
       "documentCount": 93,
@@ -1747,11 +1747,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/27699293.json",
       "mediaType": "application/json",
-      "sha256": "ce94ec63dd97bafe819f4dd3081f4fee5e307dc4b745c6e631d1ee7067bdf120",
+      "sha256": "257c5a3f55b8534c80150c8b882b4bac7fbe532c35c0ed84d5192d846793c8df",
       "found": true,
       "filingCount": 93,
       "documentCount": 93,
@@ -1768,11 +1768,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/28196678.json",
       "mediaType": "application/json",
-      "sha256": "ae25618653f055e537c6446134305eb100696f84e3fab7446de53894380269ff",
+      "sha256": "c923b2bd04574eeef3b08bfc31bd20826488fed070eec8b70fa1479c16e45fcf",
       "found": true,
       "filingCount": 150,
       "documentCount": 150,
@@ -1791,11 +1791,11 @@
         "petr-macinka",
         "petr-vencalek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/28274318.json",
       "mediaType": "application/json",
-      "sha256": "818e13a3fa4c8b2084658e6431633d081e87bc9f22aad48052eaa13a4732e402",
+      "sha256": "208439102177e4b0eec83cfcac3f48f1f6eb50ce920e403ed225563757805f1a",
       "found": true,
       "filingCount": 30,
       "documentCount": 38,
@@ -1813,16 +1813,16 @@
         "andrej-babis",
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/41035895.json",
       "mediaType": "application/json",
-      "sha256": "44c430d89e5c45b8a257f5a62d382b7622006bbc6181bf33604d983df9d47be9",
+      "sha256": "5889f3de22c829d6bf569c32eefd8dac39c7de490cdd95f36a241194b2c2316a",
       "found": true,
-      "filingCount": 86,
-      "documentCount": 86,
-      "pageCount": 1106,
-      "documentBytes": 104094449,
+      "filingCount": 87,
+      "documentCount": 87,
+      "pageCount": 1140,
+      "documentBytes": 116583625,
       "nonDigitizedCount": 0
     },
     {
@@ -1834,11 +1834,11 @@
       "dossiers": [
         "adam-vojtech"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/41197518.json",
       "mediaType": "application/json",
-      "sha256": "26eae7884283b309e40b106b82fafe308fa72cd9243f79cf79381c1c3b49721b",
+      "sha256": "27b548812711030ef982dcaac8ba64b85e228d650e373548c905503436469e3b",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -1855,11 +1855,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/42196451.json",
       "mediaType": "application/json",
-      "sha256": "902ddbed50dcd58a7b3ff6bfe9ff5bb0947cab46050f24d500f294eb24cda7c6",
+      "sha256": "f496a58cf30d6aa9fe438bc9d59a680f3722efaa1a8c9d0e18d49cf2a95fd1aa",
       "found": true,
       "filingCount": 191,
       "documentCount": 191,
@@ -1876,11 +1876,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/45245053.json",
       "mediaType": "application/json",
-      "sha256": "2450c3d42ee0575dcf22f01acf843c3f7132737afab6ce928f040e2679990571",
+      "sha256": "ad6bdc7c1541d477f75ebbc1141e02b5bfecf1338dad8957e4b914f2a4d35066",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -1897,11 +1897,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/45770743.json",
       "mediaType": "application/json",
-      "sha256": "e34a2e0fe93b94999df72b6c62126c74556fd7a1ca1231b26b52050f79887a84",
+      "sha256": "b99a167b9d93d9cef0c56d05e051dac950e7a500224909e416f0a4c3f5e884c4",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -1918,16 +1918,16 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/46504940.json",
       "mediaType": "application/json",
-      "sha256": "24170155a4a79d2151222b0bf573d72badc75b5b3dc424a8e6ffde327679acaf",
+      "sha256": "6afe726c74af6858d25263be877896da469258489a1c2fcc47d8401017972798",
       "found": true,
-      "filingCount": 178,
-      "documentCount": 178,
-      "pageCount": 5532,
-      "documentBytes": 289212183,
+      "filingCount": 180,
+      "documentCount": 180,
+      "pageCount": 5534,
+      "documentBytes": 289899732,
       "nonDigitizedCount": 0
     },
     {
@@ -1939,11 +1939,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/46708707.json",
       "mediaType": "application/json",
-      "sha256": "3b41153fb207ca368487d7316b8c4b734cc1a6e14f7866bc7605db657affef89",
+      "sha256": "ea62ebf99700ab5704f0ffc18ec9725cf770ff8ae0917e35dcc8d4909c1053d6",
       "found": true,
       "filingCount": 151,
       "documentCount": 147,
@@ -1960,11 +1960,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/46900411.json",
       "mediaType": "application/json",
-      "sha256": "735b88f463f030ad1147277163f009ab9ea326cb80a8258b2902e2ae60de2a35",
+      "sha256": "86b4646627402e2f6d3c3faa4b6fecfcbaee576fe15145abf140680a74886430",
       "found": true,
       "filingCount": 237,
       "documentCount": 237,
@@ -1981,11 +1981,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/46967851.json",
       "mediaType": "application/json",
-      "sha256": "38caff2ab69cd4f06f223aa496c426e583f2b6e6240d6c3ec7ec4f743c012f16",
+      "sha256": "203901dcb8ccf2a5782d9ed9c044d2ec9cac04cf698478bd1ab7354133d00f50",
       "found": true,
       "filingCount": 227,
       "documentCount": 219,
@@ -2002,11 +2002,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/47609109.json",
       "mediaType": "application/json",
-      "sha256": "f5d93eb8c09bf28f42e64ad2df44a27bb6afbfa2bd94cedc35d0506ac8d9cdfc",
+      "sha256": "0e326756aed6cebb4efdd728be21ced57c1ca200df3576ad8ff15a37b445b4e4",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2023,11 +2023,11 @@
       "dossiers": [
         "martin-sebestyan"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/48118753.json",
       "mediaType": "application/json",
-      "sha256": "2bd25a6f074c38f15a587253696d23ceb69510a7dbca59aec3408896fe8e17b0",
+      "sha256": "552b80c59cba303d53347f99a81ac64d30926c748143a5fd46fe602abe1c65ff",
       "found": true,
       "filingCount": 40,
       "documentCount": 40,
@@ -2045,11 +2045,11 @@
         "andrej-babis",
         "martin-sebestyan"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/48133981.json",
       "mediaType": "application/json",
-      "sha256": "cf9dec1a8c3535036d845b2d5c91fc57974d7af46d47b7c7d2a34061ad9ee84d",
+      "sha256": "ff43717534653de6f314689b10a6f96ed7668a20dfae07757cf662ef68328733",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2067,11 +2067,11 @@
         "alena-schillerova",
         "jaromir-zuna"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/48136000.json",
       "mediaType": "application/json",
-      "sha256": "4b9818b1daf6ceac7a4c1d11cffb05b1eb753d2c364ff056ecb479f4f076dc23",
+      "sha256": "6454ace580d8132268449d0578463a7b6f98979f9e8a86f3ff77f9ddcd9b00cf",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2089,11 +2089,11 @@
         "alena-schillerova",
         "lubomir-metnar"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/48136450.json",
       "mediaType": "application/json",
-      "sha256": "ca3bf0b4d1656af00d400764ec2a4fd62a5987dcb3c0ba93016c5316ae6e342d",
+      "sha256": "06a269adea5a05def27e85f0a07b84451e5b076db4db889e0c8918c23bf4e780",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2110,11 +2110,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/48169188.json",
       "mediaType": "application/json",
-      "sha256": "02ae6641bf64f04840c4d71f6d31840e01d05017d5d79782902aabb6dc190e34",
+      "sha256": "a6e747c469ea44625245ca16c5ca632a999c06fc66e721267482f6a9290dafa3",
       "found": true,
       "filingCount": 80,
       "documentCount": 80,
@@ -2133,11 +2133,11 @@
         "jeronym-tejc",
         "tomio-okamura"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/48513687.json",
       "mediaType": "application/json",
-      "sha256": "ccde0e15311dabc52db4dd6ad0262c6cedd808d1afa8931206b9f2f419cd2f15",
+      "sha256": "72496f6d4012ca7e8b40f5f0f809dfea437868342b504fc72df010fc3b72a226",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2154,11 +2154,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/49241494.json",
       "mediaType": "application/json",
-      "sha256": "1ad6f41a17583092a50fb91f0679e02f1e14da5de2ab19f4797bf42666b0a19c",
+      "sha256": "789ad86d5e442bd081dc029c9d3762f451aee53afc1f70887f78ca9720e79f0e",
       "found": true,
       "filingCount": 174,
       "documentCount": 174,
@@ -2175,11 +2175,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/49282778.json",
       "mediaType": "application/json",
-      "sha256": "02fd9f752f5854d0e59a8ffee5afecc2786fe85fa4bc7ef490ec0ceafcf18967",
+      "sha256": "b58bdcd1208de8c6857bcc633f9b7b8afa87b2a249a833c809a792d63d16e798",
       "found": true,
       "filingCount": 34,
       "documentCount": 42,
@@ -2197,11 +2197,11 @@
         "ales-juchelka",
         "lubomir-metnar"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/49370227.json",
       "mediaType": "application/json",
-      "sha256": "a1e19d0ded4efcbdb65f5dd868f03a7fdfa6dec6e923264f04ce0adef8a8eb3e",
+      "sha256": "84b9b517cd190d0b1741455cd642d7d4730f928b7c3dd8b024ac910a8bed1266",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2218,11 +2218,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/49455958.json",
       "mediaType": "application/json",
-      "sha256": "0709ef12f5cecf7535c1d8e1a69f46d5c833d3afcd057cf139647e79cf9d6b6e",
+      "sha256": "91b5456ce31c1b85b46993e1295fa79eda600a5baff85c0d5662dd00f43af869",
       "found": true,
       "filingCount": 159,
       "documentCount": 159,
@@ -2240,11 +2240,11 @@
         "andrej-babis",
         "jeronym-tejc"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/49467352.json",
       "mediaType": "application/json",
-      "sha256": "2d7dd36cc09158523286aaf4be7210af54fa7d055e6bad5e675fb240af798180",
+      "sha256": "d72cd426e643bcd0c51d65ca5590dc7ebaf59b419db0670954275f7eb9b144a2",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2261,11 +2261,11 @@
       "dossiers": [
         "martin-sebestyan"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/49625586.json",
       "mediaType": "application/json",
-      "sha256": "dc9dad3606f17f5207f8fdeeef7b0a764a664f1249a5b36221648957c6d467d1",
+      "sha256": "506707f4740dcd591405058e48df320b04b3211cc4273ee5c53c408606b3c870",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2282,11 +2282,11 @@
       "dossiers": [
         "robert-plaga"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/60449101.json",
       "mediaType": "application/json",
-      "sha256": "b52c2cd8c36abb823b573c1913ceb07b593882b86e93d777ed3b0e7dbca8e45f",
+      "sha256": "8f1ddf4c01d13208db9b92faaa9c351c58a63e1f1a12131e387699a7db8a86d6",
       "found": true,
       "filingCount": 14,
       "documentCount": 14,
@@ -2303,11 +2303,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/60461446.json",
       "mediaType": "application/json",
-      "sha256": "93e8a1ef63d4e85a7b53bd6397c3f010d0466c9213be572d2bbe693a1b91ba7b",
+      "sha256": "9b9c8841bca6063481d1cdffd3394e7b97770dd0a4c9c154f6b1ec912b7891f6",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2324,11 +2324,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/61384399.json",
       "mediaType": "application/json",
-      "sha256": "20e3e9d8d4a2a059eec2c8bcf36595d225301903172a77b22bc041c9306cc21d",
+      "sha256": "0f1c10098f60c30838fff214ebae9848149dcc1a62da29ac52cc057d5674a62c",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2345,11 +2345,11 @@
       "dossiers": [
         "robert-plaga"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/61388246.json",
       "mediaType": "application/json",
-      "sha256": "0a4270ab391d7e7a738a63901a4d445ca6839421d130698557de1fdd9f0624dc",
+      "sha256": "6bd1314d3a52a1d02dd2e3c739eed9cdca2e046d662395202217e5dbec5bc8f9",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2366,11 +2366,11 @@
       "dossiers": [
         "igor-cerveny"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/61505463.json",
       "mediaType": "application/json",
-      "sha256": "6d7042de77cd7bb5bd92abf02e9a6c18761e96f84a9b43859794b65e1e46cd3f",
+      "sha256": "9b778543eb097ac0e69934d2281cce496153fc234188dfc0f412a440258d0cb7",
       "found": true,
       "filingCount": 40,
       "documentCount": 50,
@@ -2387,11 +2387,11 @@
       "dossiers": [
         "macinka-turek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/61858374.json",
       "mediaType": "application/json",
-      "sha256": "eb0eaf647e60923c90a6b0a48b47b168cb10d1e6b8dafaa3d81b2bca72cb1ccd",
+      "sha256": "f5d45edb3f07d630ce7dc663645d1c28b63e162f80c8ceefbf72dc09469893fa",
       "found": true,
       "filingCount": 89,
       "documentCount": 93,
@@ -2408,11 +2408,11 @@
       "dossiers": [
         "martin-sebestyan"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/62301659.json",
       "mediaType": "application/json",
-      "sha256": "21fea9d5504c5b4b78e19d519a0715d0355417b52ab11cf6af0f97f14f2425fc",
+      "sha256": "60f85753360fdd6462fa84e475ebf46c23ad4b6634ee42433d08b9d1c23d00a0",
       "found": true,
       "filingCount": 47,
       "documentCount": 47,
@@ -2429,11 +2429,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/63489911.json",
       "mediaType": "application/json",
-      "sha256": "482aba9acba134cd817fd8c58f99685013d8cc9181f570b4298e59e05614da0c",
+      "sha256": "0237760a8a9ca0445cf36b3e1099388507178b870e48fdee2058def4b2a2d1cc",
       "found": true,
       "filingCount": 53,
       "documentCount": 53,
@@ -2450,11 +2450,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/63832721.json",
       "mediaType": "application/json",
-      "sha256": "0b7d75b0cd21b5249600c3e32886836e76ecb0cd609b0f96159580f09569db38",
+      "sha256": "71baa5cac088aa767f588301967b01c0691edb0b9816bf17c8ea18b974ac413d",
       "found": true,
       "filingCount": 27,
       "documentCount": 27,
@@ -2471,11 +2471,11 @@
       "dossiers": [
         "tomio-okamura"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/63833239.json",
       "mediaType": "application/json",
-      "sha256": "cf5f4595c8f5ba59b29615a34001aa3ad44d5c7f172a049914666cc27f4dbdb5",
+      "sha256": "2e9ca7a7ca29325c8239ed8e6a0fc6ff73cc154250cd319ac118a00c6ecdf17f",
       "found": true,
       "filingCount": 12,
       "documentCount": 12,
@@ -2493,11 +2493,11 @@
         "adam-vojtech",
         "jeronym-tejc"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/64124584.json",
       "mediaType": "application/json",
-      "sha256": "6c5ede0825ab3be135c39907a2790261215f39d63c187e05f62207b8c6e75117",
+      "sha256": "7a7be407a10f5615c7a90dfb1351ff282022a9d55fffa11338332a2d480c1238",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2514,11 +2514,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/67981801.json",
       "mediaType": "application/json",
-      "sha256": "d8f856750dc02d202558ff36ec11887ffa0c8a5526d4fa74a85427cd69f2c11d",
+      "sha256": "500087a36111b533666f180c22164d2f19289decf59adb556bd7630246d00413",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2535,11 +2535,11 @@
       "dossiers": [
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/68407700.json",
       "mediaType": "application/json",
-      "sha256": "8d64ba62b6f25c55b2e248b9d25b930090d1d2aff5f496acec57bcbe479643cb",
+      "sha256": "074db7a8713be10f8fc4b4d6201cb18e6cfb237bf76393bc72a50832ff286965",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2556,11 +2556,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/70856508.json",
       "mediaType": "application/json",
-      "sha256": "3d960eb37319fbb1117d3a0625b3a087c8d76302f6e0cdd91e27c6b35c8a52aa",
+      "sha256": "430f9fa9e1e1f07571288230280b3d356b46aec4682108a449757b0a7eb26d9b",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2577,11 +2577,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/70888337.json",
       "mediaType": "application/json",
-      "sha256": "a89c43d0a82089e1c6847eb6f58cbbc38bdaae0d525f167940ee33e50d8d4c95",
+      "sha256": "c2f6881770f1084b85d08c76d0ff001dce49c3c02cbdcdb1b783d1e106148b58",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2598,11 +2598,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/70890005.json",
       "mediaType": "application/json",
-      "sha256": "b2ddc155042c0ce1f45d3068abcf2cd99404fd106bb1870325850deb908dda34",
+      "sha256": "0f10efc8b4ecd6ff602c20607c4913a6b0223f50549fadd66ecf5134ea9b3286",
       "found": true,
       "filingCount": 127,
       "documentCount": 127,
@@ -2619,11 +2619,11 @@
       "dossiers": [
         "martin-pavlik"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/70890021.json",
       "mediaType": "application/json",
-      "sha256": "9bd050a6fc8db5d179be870122de39dda5e5d0c296e8c70a0dae4e397b38aa44",
+      "sha256": "cfe4f2461e8b2056aed478b2e25323590621b5be9590878fe01e3cf2f95a87f4",
       "found": true,
       "filingCount": 140,
       "documentCount": 140,
@@ -2640,11 +2640,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/70890692.json",
       "mediaType": "application/json",
-      "sha256": "0382d5f57a8e2906beed7ed4989cd9ffefed5fea54f1e12462fca5b289b57774",
+      "sha256": "e170658ef9e0247e84bc1a8b233d896b8346411bca35e85a31fe7c3e3ab41387",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2661,11 +2661,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/70891095.json",
       "mediaType": "application/json",
-      "sha256": "76401ef32f4b4671106c863a302dcc66467bb3a008cda0120099be84a7eb2542",
+      "sha256": "a112ed3272c9f8760fdfee697cb8a055714881baf620f86dc066617d7d59bb00",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2682,11 +2682,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/70994226.json",
       "mediaType": "application/json",
-      "sha256": "98089fe61c07a760c693fc6be2a6e0fefcec810ad7fc3e4e3d06b884f03a2346",
+      "sha256": "bc30ffba4fdfc7166345262810446cf3c2d754ac98b464aecbc0055de51a2299",
       "found": true,
       "filingCount": 236,
       "documentCount": 238,
@@ -2703,11 +2703,11 @@
       "dossiers": [
         "ivan-bednarik"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/70994234.json",
       "mediaType": "application/json",
-      "sha256": "d14fd4975d31428a5f70e2fa7301b0d9f33fc5903434cdbbd3462642b957e1fd",
+      "sha256": "3487c42a7614db0b24aac6f6a227640d6ee812f2df3f829fed5642eff99517a6",
       "found": true,
       "filingCount": 68,
       "documentCount": 68,
@@ -2729,11 +2729,11 @@
         "tomio-okamura",
         "zuzana-mrazova"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/71339698.json",
       "mediaType": "application/json",
-      "sha256": "ac84d6b4571a5f2277eb073954e322e0eefb31ccb588cfcb2f11c30b2870b9c0",
+      "sha256": "cc675a4a409a981b5f5a5bc33a425441af1b6c7536c56c0f2d8272b83714b532",
       "found": true,
       "filingCount": 0,
       "documentCount": 0,
@@ -2753,11 +2753,11 @@
         "jaromir-zuna",
         "karel-havlicek"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/71339728.json",
       "mediaType": "application/json",
-      "sha256": "23adfd7b5e8fe8687a51584573d96f5193236da45a9c2b6f90461736d31bc8a3",
+      "sha256": "ec1831d2b6e1e16239bacc713583690a39c6324aa8954a721a49de05ef0fbaef",
       "found": true,
       "filingCount": 0,
       "documentCount": 0,
@@ -2784,11 +2784,11 @@
         "tunde-bartha",
         "zuzana-mrazova"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/71443339.json",
       "mediaType": "application/json",
-      "sha256": "847631dc481ca4fd9696ec43190080d4f8172efe3449fd1f712c185d8d949161",
+      "sha256": "08b3270c21170eb868aef2b42832af09595a4644fbe15dad627b491fb4cb66d4",
       "found": true,
       "filingCount": 0,
       "documentCount": 0,
@@ -2805,11 +2805,11 @@
       "dossiers": [
         "alena-schillerova"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/72080043.json",
       "mediaType": "application/json",
-      "sha256": "b22523913180ac1825650dc340d4aa9ec7500460230789cf394c748ab0152974",
+      "sha256": "2f2ea310f68a745e1521f8ced1fc91de9ee3e7dc20af3d3ac8e57de24454a393",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2826,11 +2826,11 @@
       "dossiers": [
         "andrej-babis"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/75003716.json",
       "mediaType": "application/json",
-      "sha256": "62206c3268235cbe121051e3b4d368e9b1b8001d1416d9b584f7bf2b3ae7c11e",
+      "sha256": "78b4ccca7e9cd5ddfeb306811db34738ca2f782b52f6d59c6fe78f8bdf8a4d74",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,
@@ -2847,11 +2847,11 @@
       "dossiers": [
         "oto-klempir"
       ],
-      "retrieved": "2026-08-09",
+      "retrieved": "2026-08-16",
       "sourceUrl": "https://verejnerejstriky.msp.gov.cz/",
       "file": "/documents/registry/justice/75032333.json",
       "mediaType": "application/json",
-      "sha256": "6694e537f21977d0e5c3de87ac0b3ce7eaaea33d03bf5f42ba811a3722661c90",
+      "sha256": "d379eac6bb302a737e13fe12a2ef654076a3fdcac3697ab08f54dfe5ab4da7d3",
       "found": false,
       "filingCount": 0,
       "documentCount": 0,

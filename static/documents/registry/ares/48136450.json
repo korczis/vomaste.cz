@@ -1,5 +1,5 @@
 {
-  "retrieved": "2026-08-09",
+  "retrieved": "2026-08-16",
   "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
   "request": {
     "ico": [
@@ -43,7 +43,7 @@
         "pravniForma": "313",
         "pravniFormaRos": "313",
         "financniUrad": "001",
-        "datumAktualizace": "2026-07-03",
+        "datumAktualizace": "2026-08-08",
         "dic": "CZ48136450",
         "icoId": "48136450",
         "adresaDorucovaci": {

@@ -1,6 +1,6 @@
 {
   "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
-  "retrieved": "2026-08-09",
+  "retrieved": "2026-08-16",
   "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/41035895",
   "status": "OK",
   "subject": {
@@ -1175,6 +1175,20 @@
         {
           "pageCount": 34,
           "sizeBytes": 3211562
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 15167/SL90/MSPH",
+      "documentType": "účetní závěrka [2025], výroční zpráva [2025], zpráva o vztazích [2025], zpráva auditora [2025]",
+      "createdAt": "31-12-2025",
+      "receivedByCourtAt": "23-07-2026",
+      "filedAt": "12-08-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 34,
+          "sizeBytes": 12489176
         }
       ]
     }

@@ -1,6 +1,6 @@
 {
   "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
-  "retrieved": "2026-08-09",
+  "retrieved": "2026-08-16",
   "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/25157507",
   "status": "OK",
   "subject": {
@@ -1615,6 +1615,19 @@
         {
           "pageCount": 14,
           "sizeBytes": 327721
+        }
+      ]
+    },
+    {
+      "referenceLabel": "B 824/SL125/KSCB",
+      "documentType": "ostatní Rozhodnutí jediného akcionáře ze dne 29.4.2026",
+      "receivedByCourtAt": "28-07-2026",
+      "filedAt": "13-08-2026",
+      "digitized": true,
+      "files": [
+        {
+          "pageCount": 1,
+          "sizeBytes": 39632
         }
       ]
     }
