@@ -1,6 +1,6 @@
 {
   "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
-  "retrieved": "2026-08-09",
+  "retrieved": "2026-09-13",
   "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/70890005",
   "status": "OK",
   "subject": {
@@ -17,7 +17,7 @@
       "files": [
         {
           "pageCount": 6,
-          "sizeBytes": 154160
+          "sizeBytes": 0
         }
       ]
     },
@@ -29,7 +29,7 @@
       "files": [
         {
           "pageCount": 3,
-          "sizeBytes": 43334
+          "sizeBytes": 0
         }
       ]
     },
@@ -41,7 +41,7 @@
       "files": [
         {
           "pageCount": 2,
-          "sizeBytes": 35449
+          "sizeBytes": 0
         }
       ]
     },
@@ -55,7 +55,7 @@
       "files": [
         {
           "pageCount": 6,
-          "sizeBytes": 141323
+          "sizeBytes": 0
         }
       ]
     },
@@ -69,7 +69,7 @@
       "files": [
         {
           "pageCount": 35,
-          "sizeBytes": 4261142
+          "sizeBytes": 0
         }
       ]
     },
@@ -83,7 +83,7 @@
       "files": [
         {
           "pageCount": 42,
-          "sizeBytes": 6015373
+          "sizeBytes": 0
         }
       ]
     },
@@ -97,7 +97,7 @@
       "files": [
         {
           "pageCount": 24,
-          "sizeBytes": 377717
+          "sizeBytes": 0
         }
       ]
     },
@@ -111,7 +111,7 @@
       "files": [
         {
           "pageCount": 6,
-          "sizeBytes": 159717
+          "sizeBytes": 0
         }
       ]
     },
@@ -125,7 +125,7 @@
       "files": [
         {
           "pageCount": 60,
-          "sizeBytes": 11448161
+          "sizeBytes": 0
         }
       ]
     },
@@ -139,7 +139,7 @@
       "files": [
         {
           "pageCount": 7,
-          "sizeBytes": 209462
+          "sizeBytes": 0
         }
       ]
     },
@@ -153,7 +153,7 @@
       "files": [
         {
           "pageCount": 53,
-          "sizeBytes": 8172105
+          "sizeBytes": 0
         }
       ]
     },
@@ -167,7 +167,7 @@
       "files": [
         {
           "pageCount": 7,
-          "sizeBytes": 168129
+          "sizeBytes": 0
         }
       ]
     },
@@ -181,7 +181,7 @@
       "files": [
         {
           "pageCount": 60,
-          "sizeBytes": 1968806
+          "sizeBytes": 0
         }
       ]
     },
@@ -195,7 +195,7 @@
       "files": [
         {
           "pageCount": 15,
-          "sizeBytes": 284107
+          "sizeBytes": 0
         }
       ]
     },
@@ -209,7 +209,7 @@
       "files": [
         {
           "pageCount": 7,
-          "sizeBytes": 205220
+          "sizeBytes": 0
         }
       ]
     },
@@ -223,7 +223,7 @@
       "files": [
         {
           "pageCount": 12,
-          "sizeBytes": 248538
+          "sizeBytes": 0
         }
       ]
     },
@@ -237,7 +237,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 17550
+          "sizeBytes": 0
         }
       ]
     },
@@ -249,7 +249,7 @@
       "files": [
         {
           "pageCount": 3,
-          "sizeBytes": 845403
+          "sizeBytes": 0
         }
       ]
     },
@@ -261,7 +261,7 @@
       "files": [
         {
           "pageCount": 2,
-          "sizeBytes": 662570
+          "sizeBytes": 0
         }
       ]
     },
@@ -273,7 +273,7 @@
       "files": [
         {
           "pageCount": 0,
-          "sizeBytes": 6752356
+          "sizeBytes": 0
         }
       ]
     },
@@ -285,7 +285,7 @@
       "files": [
         {
           "pageCount": 2,
-          "sizeBytes": 570932
+          "sizeBytes": 0
         }
       ]
     },
@@ -297,7 +297,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 304665
+          "sizeBytes": 0
         }
       ]
     },
@@ -309,7 +309,7 @@
       "files": [
         {
           "pageCount": 28,
-          "sizeBytes": 13243458
+          "sizeBytes": 0
         }
       ]
     },
@@ -321,7 +321,7 @@
       "files": [
         {
           "pageCount": 3,
-          "sizeBytes": 534312
+          "sizeBytes": 0
         }
       ]
     },
@@ -333,7 +333,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 275829
+          "sizeBytes": 0
         }
       ]
     },
@@ -347,7 +347,7 @@
       "files": [
         {
           "pageCount": 7,
-          "sizeBytes": 215490
+          "sizeBytes": 0
         }
       ]
     },
@@ -361,7 +361,7 @@
       "files": [
         {
           "pageCount": 11,
-          "sizeBytes": 239662
+          "sizeBytes": 0
         }
       ]
     },
@@ -375,7 +375,7 @@
       "files": [
         {
           "pageCount": 8,
-          "sizeBytes": 171678
+          "sizeBytes": 0
         }
       ]
     },
@@ -388,7 +388,7 @@
       "files": [
         {
           "pageCount": 48,
-          "sizeBytes": 7416019
+          "sizeBytes": 0
         }
       ]
     },
@@ -402,7 +402,7 @@
       "files": [
         {
           "pageCount": 16,
-          "sizeBytes": 1481159
+          "sizeBytes": 0
         }
       ]
     },
@@ -415,7 +415,7 @@
       "files": [
         {
           "pageCount": 50,
-          "sizeBytes": 9394036
+          "sizeBytes": 0
         }
       ]
     },
@@ -429,7 +429,7 @@
       "files": [
         {
           "pageCount": 11,
-          "sizeBytes": 216321
+          "sizeBytes": 0
         }
       ]
     },
@@ -443,7 +443,7 @@
       "files": [
         {
           "pageCount": 10,
-          "sizeBytes": 281241
+          "sizeBytes": 0
         }
       ]
     },
@@ -456,7 +456,7 @@
       "files": [
         {
           "pageCount": 8,
-          "sizeBytes": 181511
+          "sizeBytes": 0
         }
       ]
     },
@@ -469,7 +469,7 @@
       "files": [
         {
           "pageCount": 48,
-          "sizeBytes": 10660615
+          "sizeBytes": 0
         }
       ]
     },
@@ -483,7 +483,7 @@
       "files": [
         {
           "pageCount": 9,
-          "sizeBytes": 181649
+          "sizeBytes": 0
         }
       ]
     },
@@ -497,7 +497,7 @@
       "files": [
         {
           "pageCount": 7,
-          "sizeBytes": 170232
+          "sizeBytes": 0
         }
       ]
     },
@@ -511,7 +511,7 @@
       "files": [
         {
           "pageCount": 11,
-          "sizeBytes": 208168
+          "sizeBytes": 0
         }
       ]
     },
@@ -525,7 +525,7 @@
       "files": [
         {
           "pageCount": 11,
-          "sizeBytes": 259632
+          "sizeBytes": 0
         }
       ]
     },
@@ -538,7 +538,7 @@
       "files": [
         {
           "pageCount": 20,
-          "sizeBytes": 448588
+          "sizeBytes": 0
         }
       ]
     },
@@ -551,7 +551,7 @@
       "files": [
         {
           "pageCount": 28,
-          "sizeBytes": 1454396
+          "sizeBytes": 0
         }
       ]
     },
@@ -564,7 +564,7 @@
       "files": [
         {
           "pageCount": 48,
-          "sizeBytes": 7091173
+          "sizeBytes": 0
         }
       ]
     },
@@ -578,7 +578,7 @@
       "files": [
         {
           "pageCount": 15,
-          "sizeBytes": 223411
+          "sizeBytes": 0
         }
       ]
     },
@@ -592,7 +592,7 @@
       "files": [
         {
           "pageCount": 11,
-          "sizeBytes": 207015
+          "sizeBytes": 0
         }
       ]
     },
@@ -606,7 +606,7 @@
       "files": [
         {
           "pageCount": 9,
-          "sizeBytes": 272145
+          "sizeBytes": 0
         }
       ]
     },
@@ -659,7 +659,7 @@
       "files": [
         {
           "pageCount": 19,
-          "sizeBytes": 1104606
+          "sizeBytes": 0
         }
       ]
     },
@@ -672,7 +672,7 @@
       "files": [
         {
           "pageCount": 10,
-          "sizeBytes": 740035
+          "sizeBytes": 0
         }
       ]
     },
@@ -685,7 +685,7 @@
       "files": [
         {
           "pageCount": 28,
-          "sizeBytes": 2301606
+          "sizeBytes": 0
         }
       ]
     },
@@ -698,7 +698,7 @@
       "files": [
         {
           "pageCount": 19,
-          "sizeBytes": 1155234
+          "sizeBytes": 0
         }
       ]
     },
@@ -711,7 +711,7 @@
       "files": [
         {
           "pageCount": 13,
-          "sizeBytes": 116297
+          "sizeBytes": 0
         }
       ]
     },
@@ -724,7 +724,7 @@
       "files": [
         {
           "pageCount": 13,
-          "sizeBytes": 135232
+          "sizeBytes": 0
         }
       ]
     },
@@ -737,7 +737,7 @@
       "files": [
         {
           "pageCount": 14,
-          "sizeBytes": 516824
+          "sizeBytes": 0
         }
       ]
     },
@@ -750,7 +750,7 @@
       "files": [
         {
           "pageCount": 11,
-          "sizeBytes": 378497
+          "sizeBytes": 0
         }
       ]
     },
@@ -763,7 +763,7 @@
       "files": [
         {
           "pageCount": 11,
-          "sizeBytes": 541229
+          "sizeBytes": 0
         }
       ]
     },
@@ -776,7 +776,7 @@
       "files": [
         {
           "pageCount": 10,
-          "sizeBytes": 488960
+          "sizeBytes": 0
         }
       ]
     },
@@ -790,7 +790,7 @@
       "files": [
         {
           "pageCount": 14,
-          "sizeBytes": 498662
+          "sizeBytes": 0
         }
       ]
     },
@@ -804,7 +804,7 @@
       "files": [
         {
           "pageCount": 10,
-          "sizeBytes": 443062
+          "sizeBytes": 0
         }
       ]
     },
@@ -817,7 +817,7 @@
       "files": [
         {
           "pageCount": 28,
-          "sizeBytes": 1689573
+          "sizeBytes": 0
         }
       ]
     },
@@ -830,7 +830,7 @@
       "files": [
         {
           "pageCount": 18,
-          "sizeBytes": 1476242
+          "sizeBytes": 0
         }
       ]
     },
@@ -844,880 +844,7 @@
       "files": [
         {
           "pageCount": 8,
-          "sizeBytes": 359216
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL64/KSHK",
-      "documentType": "zakladatelské dokumenty, rozhod. o statut. orgánu",
-      "createdAt": "16-06-2014",
-      "receivedByCourtAt": "04-07-2014",
-      "filedAt": "23-07-2014",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 8,
-          "sizeBytes": 347214
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL65/KSHK",
-      "documentType": "zakladatelské dokumenty, rozhod. o statut. orgánu jmenování člena DR",
-      "receivedByCourtAt": "15-08-2014",
-      "filedAt": "04-09-2014",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 9,
-          "sizeBytes": 566762
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL66/KSHK",
-      "documentType": "zakladatelské dokumenty, rozhod. o statut. orgánu",
-      "createdAt": "09-09-2014",
-      "receivedByCourtAt": "10-10-2014",
-      "filedAt": "03-11-2014",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 9,
-          "sizeBytes": 363991
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL67/KSHK",
-      "documentType": "zakladatelské dokumenty, rozhod. o statut. orgánu jmenování člena DR",
-      "receivedByCourtAt": "27-11-2014",
-      "filedAt": "18-12-2014",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 8,
-          "sizeBytes": 135770
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL68/KSHK",
-      "documentType": "výroční zpráva [2014]",
-      "receivedByCourtAt": "06-05-2015",
-      "filedAt": "06-05-2015",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 28,
-          "sizeBytes": 3341719
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL69/KSHK",
-      "documentType": "účetní závěrka [2014], zpráva auditora [2014]",
-      "receivedByCourtAt": "06-05-2015",
-      "filedAt": "06-05-2015",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 17,
-          "sizeBytes": 2985509
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL70/KSHK",
-      "documentType": "zakladatelské dokumenty zakládací listina",
-      "createdAt": "25-05-2015",
-      "receivedByCourtAt": "09-06-2015",
-      "filedAt": "25-06-2015",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 4,
-          "sizeBytes": 128450
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL71/KSHK",
-      "documentType": "zakladatelské dokumenty zakládací listina",
-      "createdAt": "16-06-2015",
-      "receivedByCourtAt": "24-06-2015",
-      "filedAt": "03-07-2015",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 8,
-          "sizeBytes": 129323
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL72/KSHK",
-      "documentType": "zakladatelské dokumenty zakládací listina",
-      "createdAt": "14-07-2015",
-      "receivedByCourtAt": "21-07-2015",
-      "filedAt": "30-07-2015",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 6,
-          "sizeBytes": 715894
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL73/KSHK",
-      "documentType": "účetní závěrka [2015], zpráva auditora [2015]",
-      "receivedByCourtAt": "06-05-2016",
-      "filedAt": "06-05-2016",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 51,
-          "sizeBytes": 73194981
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL74/KSHK",
-      "documentType": "zakladatelské dokumenty, rozhod. o statut. orgánu",
-      "createdAt": "20-01-2016",
-      "receivedByCourtAt": "22-03-2016",
-      "filedAt": "06-05-2016",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 11,
-          "sizeBytes": 239825
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL75/KSHK",
-      "documentType": "zakladatelské dokumenty, ostatní Zakládací listina, jmenovací dekret",
-      "createdAt": "15-08-2016",
-      "receivedByCourtAt": "30-08-2016",
-      "filedAt": "14-09-2016",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 7,
-          "sizeBytes": 132202
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL76/KSHK",
-      "documentType": "zakladatelské dokumenty, rozhod. o statut. orgánu DR",
-      "createdAt": "10-01-2017",
-      "receivedByCourtAt": "28-02-2017",
-      "filedAt": "17-03-2017",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 9,
-          "sizeBytes": 332219
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL77/KSHK",
-      "documentType": "účetní závěrka [2016], výroční zpráva [2016], zpráva auditora [2016]",
-      "receivedByCourtAt": "10-07-2017",
-      "filedAt": "10-07-2017",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 73,
-          "sizeBytes": 9470830
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL78/KSHK",
-      "documentType": "ostatní Rozhodnutí o odvolání, zakladatelská listina",
-      "receivedByCourtAt": "16-08-2017",
-      "filedAt": "30-08-2017",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 7,
-          "sizeBytes": 134634
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL79/KSHK",
-      "documentType": "zpráva auditora [2017] Schváleno 11.5.2018",
-      "createdAt": "20-02-2018",
-      "receivedByCourtAt": "15-06-2018",
-      "filedAt": "18-06-2018",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 5,
-          "sizeBytes": 620932
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL80/KSHK",
-      "documentType": "účetní závěrka [2017], ostatní, výroční zpráva [2017], zpráva auditora [2017] Schváleno 11.5.2018",
-      "createdAt": "28-02-2018",
-      "receivedByCourtAt": "15-06-2018",
-      "filedAt": "18-06-2018",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 48,
-          "sizeBytes": 5480457
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL81/KSHK",
-      "documentType": "účetní závěrka [2017] Příloha , Schváleno 11.5.2018",
-      "createdAt": "20-02-2018",
-      "receivedByCourtAt": "15-06-2018",
-      "filedAt": "18-06-2018",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 14,
-          "sizeBytes": 1499625
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL82/KSHK",
-      "documentType": "zakladatelské dokumenty zákládací listina",
-      "createdAt": "06-02-2018",
-      "receivedByCourtAt": "26-04-2018",
-      "filedAt": "26-06-2018",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 6,
-          "sizeBytes": 119467
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL83/KSHK",
-      "documentType": "zakladatelské dokumenty zákládací listina",
-      "createdAt": "03-10-2018",
-      "receivedByCourtAt": "22-10-2018",
-      "filedAt": "07-12-2018",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 6,
-          "sizeBytes": 120626
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL84/KSHK",
-      "documentType": "zakladatelské dokumenty zákládací listina",
-      "createdAt": "26-10-2018",
-      "receivedByCourtAt": "14-11-2018",
-      "filedAt": "10-12-2018",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 6,
-          "sizeBytes": 124616
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL85/KSHK",
-      "documentType": "ostatní protokol o výsledku voleb člena DR",
-      "createdAt": "21-09-2018",
-      "receivedByCourtAt": "14-11-2018",
-      "filedAt": "10-12-2018",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 21463
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL86/KSHK",
-      "documentType": "zakladatelské dokumenty, rozhod. o statut. orgánu zakládací listina",
-      "createdAt": "12-12-2018",
-      "receivedByCourtAt": "04-02-2019",
-      "filedAt": "26-02-2019",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 10,
-          "sizeBytes": 174264
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL87/KSHK",
-      "documentType": "účetní závěrka [2018]",
-      "createdAt": "18-02-2019",
-      "receivedByCourtAt": "25-06-2019",
-      "filedAt": "25-06-2019",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 24,
-          "sizeBytes": 3631618
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL88/KSHK",
-      "documentType": "výroční zpráva [2018]",
-      "receivedByCourtAt": "25-06-2019",
-      "filedAt": "25-06-2019",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 48,
-          "sizeBytes": 4935937
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL89/KSHK",
-      "documentType": "zakladatelské dokumenty, rozhod. o statut. orgánu zakl. listina, jmenování",
-      "createdAt": "31-10-2019",
-      "receivedByCourtAt": "06-11-2019",
-      "filedAt": "28-11-2019",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 7,
-          "sizeBytes": 130210
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL90/KSHK",
-      "documentType": "zakladatelské dokumenty, rozhod. o statut. orgánu zakl. listina, jmenování",
-      "createdAt": "21-01-2020",
-      "receivedByCourtAt": "18-02-2020",
-      "filedAt": "16-03-2020",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 7,
-          "sizeBytes": 1281709
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL91/KSHK",
-      "documentType": "účetní závěrka [2019]",
-      "receivedByCourtAt": "30-06-2020",
-      "filedAt": "01-07-2020",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 21,
-          "sizeBytes": 3108143
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL92/KSHK",
-      "documentType": "výroční zpráva [2019], zpráva auditora [2019]",
-      "receivedByCourtAt": "30-06-2020",
-      "filedAt": "01-07-2020",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 52,
-          "sizeBytes": 4213602
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL93/KSHK",
-      "documentType": "rozhod. o statut. orgánu DR",
-      "createdAt": "18-06-2020",
-      "receivedByCourtAt": "06-08-2020",
-      "filedAt": "23-09-2020",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 2,
-          "sizeBytes": 31972
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL94/KSHK",
-      "documentType": "rozhod. o statut. orgánu jmenovací dekret",
-      "createdAt": "29-04-2021",
-      "receivedByCourtAt": "06-05-2021",
-      "filedAt": "26-05-2021",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 26099
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL95/KSHK",
-      "documentType": "rozhod. o statut. orgánu vzdání se funkce",
-      "createdAt": "30-04-2021",
-      "receivedByCourtAt": "06-05-2021",
-      "filedAt": "26-05-2021",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 22141
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL96/KSHK",
-      "documentType": "zakladatelské dokumenty, rozhod. o statut. orgánu DR",
-      "createdAt": "21-01-2021",
-      "receivedByCourtAt": "06-05-2021",
-      "filedAt": "31-05-2021",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 7,
-          "sizeBytes": 133282
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL97/KSHK",
-      "documentType": "účetní závěrka [2020], výroční zpráva [2020], zpráva auditora [2020]",
-      "receivedByCourtAt": "24-06-2021",
-      "filedAt": "30-06-2021",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 52,
-          "sizeBytes": 7344040
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL98/KSHK",
-      "documentType": "účetní závěrka [2020]",
-      "receivedByCourtAt": "24-06-2021",
-      "filedAt": "30-06-2021",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 16,
-          "sizeBytes": 546014
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL99/KSHK",
-      "documentType": "zakladatelské dokumenty",
-      "createdAt": "13-07-2021",
-      "receivedByCourtAt": "16-07-2021",
-      "filedAt": "12-08-2021",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 6,
-          "sizeBytes": 114356
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL100/KSHK",
-      "documentType": "rozhod. o statut. orgánu jmenování",
-      "createdAt": "22-11-2021",
-      "receivedByCourtAt": "15-12-2021",
-      "filedAt": "17-01-2022",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 19890
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL101/KSHK",
-      "documentType": "zakladatelské dokumenty, rozhod. o statut. orgánu rezignace, jmenování",
-      "createdAt": "14-02-2022",
-      "receivedByCourtAt": "17-02-2022",
-      "filedAt": "18-03-2022",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 8,
-          "sizeBytes": 135059
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL102/KSHK",
-      "documentType": "účetní závěrka [2021]",
-      "receivedByCourtAt": "10-06-2022",
-      "filedAt": "13-06-2022",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 16,
-          "sizeBytes": 3098808
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL103/KSHK",
-      "documentType": "výroční zpráva [2021], zpráva auditora [2021]",
-      "receivedByCourtAt": "10-06-2022",
-      "filedAt": "13-06-2022",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 52,
-          "sizeBytes": 3383034
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL104/KSHK",
-      "documentType": "ostatní pozvánka na zasedání DR",
-      "createdAt": "05-12-2019",
-      "receivedByCourtAt": "14-10-2022",
-      "filedAt": "15-11-2022",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 185192
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL105/KSHK",
-      "documentType": "ostatní zápis ze zasedání DR",
-      "createdAt": "06-12-2018",
-      "receivedByCourtAt": "14-10-2022",
-      "filedAt": "15-11-2022",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 5,
-          "sizeBytes": 335415
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL106/KSHK",
-      "documentType": "zakladatelské dokumenty",
-      "createdAt": "11-10-2022",
-      "receivedByCourtAt": "14-10-2022",
-      "filedAt": "15-11-2022",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 6,
-          "sizeBytes": 117664
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL107/KSHK",
-      "documentType": "ostatní jmenování",
-      "receivedByCourtAt": "12-12-2022",
-      "filedAt": "10-01-2023",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 21390
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL108/KSHK",
-      "documentType": "zakladatelské dokumenty",
-      "receivedByCourtAt": "12-12-2022",
-      "filedAt": "10-01-2023",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 6,
-          "sizeBytes": 142004
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL109/KSHK",
-      "documentType": "zakladatelské dokumenty, rozhod. o statut. orgánu zakládací listina, odvolání, jmenování",
-      "createdAt": "27-04-2023",
-      "receivedByCourtAt": "18-05-2023",
-      "filedAt": "12-06-2023",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 8,
-          "sizeBytes": 151386
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL110/KSHK",
-      "documentType": "účetní závěrka [2022]",
-      "receivedByCourtAt": "26-06-2023",
-      "filedAt": "28-06-2023",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 26,
-          "sizeBytes": 3984199
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL111/KSHK",
-      "documentType": "účetní závěrka [2022], výroční zpráva [2022], zpráva auditora [2022]",
-      "receivedByCourtAt": "26-06-2023",
-      "filedAt": "11-07-2023",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 54,
-          "sizeBytes": 5847556
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL112/KSHK",
-      "documentType": "zakladatelské dokumenty Zakládací listina",
-      "createdAt": "27-04-2023",
-      "receivedByCourtAt": "28-11-2023",
-      "filedAt": "28-12-2023",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 6,
-          "sizeBytes": 120798
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL113/KSHK",
-      "documentType": "ostatní odvolání Ing. Macková",
-      "createdAt": "18-01-2024",
-      "receivedByCourtAt": "05-04-2024",
-      "filedAt": "13-05-2024",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 19461
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL114/KSHK",
-      "documentType": "ostatní jmenování Ing. Mareš",
-      "createdAt": "05-03-2024",
-      "receivedByCourtAt": "05-04-2024",
-      "filedAt": "13-05-2024",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 19013
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL115/KSHK",
-      "documentType": "zakladatelské dokumenty zakládací listina",
-      "createdAt": "25-03-2024",
-      "receivedByCourtAt": "05-04-2024",
-      "filedAt": "13-05-2024",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 6,
-          "sizeBytes": 118777
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL116/KSHK",
-      "documentType": "účetní závěrka [2023], výroční zpráva [2023], zpráva auditora [2023]",
-      "receivedByCourtAt": "20-06-2024",
-      "filedAt": "21-06-2024",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 56,
-          "sizeBytes": 7970376
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL117/KSHK",
-      "documentType": "zakladatelské dokumenty Zakládací listina",
-      "createdAt": "09-10-2024",
-      "receivedByCourtAt": "17-10-2024",
-      "filedAt": "12-12-2024",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 6,
-          "sizeBytes": 541784
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL118/KSHK",
-      "documentType": "ostatní Odvolání a zvolení člena DR",
-      "createdAt": "25-07-2024",
-      "receivedByCourtAt": "17-10-2024",
-      "filedAt": "12-12-2024",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 2,
-          "sizeBytes": 97782
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL119/KSHK",
-      "documentType": "ostatní protokol o výsl. voleb",
-      "createdAt": "25-07-2024",
-      "receivedByCourtAt": "17-10-2024",
-      "filedAt": "12-12-2024",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 71095
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL120/KSHK",
-      "documentType": "zakladatelské dokumenty, rozhod. o statut. orgánu Zakládací listina, odvolání z funkce, jmenování do funkce",
-      "createdAt": "17-04-2025",
-      "receivedByCourtAt": "28-04-2025",
-      "filedAt": "28-05-2025",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 8,
-          "sizeBytes": 150268
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL121/KSHK",
-      "documentType": "účetní závěrka [2024], výroční zpráva [2024], zpráva auditora [2024]",
-      "receivedByCourtAt": "25-06-2025",
-      "filedAt": "26-06-2025",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 68,
-          "sizeBytes": 4741408
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL122/KSHK",
-      "documentType": "účetní závěrka [2024]",
-      "receivedByCourtAt": "25-06-2025",
-      "filedAt": "26-06-2025",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 23,
-          "sizeBytes": 1891959
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL123/KSHK",
-      "documentType": "zakladatelské dokumenty, rozhod. o statut. orgánu zakládací listina, protokol o výsledku voleb DR",
-      "createdAt": "25-09-2025",
-      "receivedByCourtAt": "01-10-2025",
-      "filedAt": "31-10-2025",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 7,
-          "sizeBytes": 139869
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL124/KSHK",
-      "documentType": "účetní závěrka [2025], výroční zpráva [2025], zpráva auditora [2025]",
-      "receivedByCourtAt": "10-06-2026",
-      "filedAt": "10-06-2026",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 108,
-          "sizeBytes": 5910362
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL125/KSHK",
-      "documentType": "ostatní schválení účetní závěrky",
-      "createdAt": "02-06-2026",
-      "receivedByCourtAt": "03-07-2026",
-      "filedAt": "31-07-2026",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 2,
-          "sizeBytes": 41882
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL126/KSHK",
-      "documentType": "rozhod. o statut. orgánu 4x odvolání + 4x jmenování",
-      "receivedByCourtAt": "03-07-2026",
-      "filedAt": "31-07-2026",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 8,
-          "sizeBytes": 158113
-        }
-      ]
-    },
-    {
-      "referenceLabel": "A 9473/SL127/KSHK",
-      "documentType": "zakladatelské dokumenty zakládací listina",
-      "createdAt": "24-06-2026",
-      "receivedByCourtAt": "03-07-2026",
-      "filedAt": "31-07-2026",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 5,
-          "sizeBytes": 97883
+          "sizeBytes": 0
         }
       ]
     }

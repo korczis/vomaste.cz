@@ -1,5 +1,5 @@
 {
-  "retrieved": "2026-08-09",
+  "retrieved": "2026-09-13",
   "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
   "request": {
     "ico": [
@@ -44,7 +44,7 @@
         "pravniFormaRos": "112",
         "financniUrad": "010",
         "datumVzniku": "1990-12-19",
-        "datumAktualizace": "2026-06-05",
+        "datumAktualizace": "2026-08-26",
         "icoId": "00255092",
         "adresaDorucovaci": {
           "radekAdresy1": "Ukrajinská 1488/10",

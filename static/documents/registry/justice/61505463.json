@@ -1,6 +1,6 @@
 {
   "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
-  "retrieved": "2026-08-09",
+  "retrieved": "2026-09-13",
   "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/61505463",
   "status": "OK",
   "subject": {
@@ -15,93 +15,66 @@
       "createdAt": "07-09-2001",
       "filedAt": "07-01-2002",
       "digitized": true,
-      "files": [
-        {
-          "pageCount": 6,
-          "sizeBytes": 199770
-        }
-      ]
+      "files": []
     },
     {
       "referenceLabel": "C 29747/SL2/MSPH",
-      "documentType": "zakladatelské dokumenty, notářský zápis, souhlas druhého manžela NZ 644/2001",
+      "documentType": "zakladatelské dokumenty, notářský zápis, souhlas druhého manžela, podpisové vzory",
       "createdAt": "04-10-2001",
       "filedAt": "07-01-2002",
       "digitized": true,
-      "files": [
-        {
-          "pageCount": 24,
-          "sizeBytes": 1161766
-        }
-      ]
+      "files": []
     },
     {
       "referenceLabel": "C 29747/SL3/MSPH",
-      "documentType": "zakladatelské dokumenty, notářský zápis NZ 124/2002",
+      "documentType": "zakladatelské dokumenty, notářský zápis",
       "createdAt": "04-02-2002",
       "filedAt": "13-05-2002",
       "digitized": true,
-      "files": [
-        {
-          "pageCount": 16,
-          "sizeBytes": 830465
-        }
-      ]
+      "files": []
     },
     {
       "referenceLabel": "C 29747/SL4/MSPH",
-      "documentType": "ostatní zápis z VH",
+      "documentType": "notářský zápis",
       "createdAt": "04-10-2001",
       "filedAt": "22-08-2002",
       "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 50635
-        }
-      ]
+      "files": []
     },
     {
       "referenceLabel": "C 29747/SL5/MSPH",
-      "documentType": "účetní závěrka za r. 2001",
-      "createdAt": "31-12-2001",
+      "documentType": "účetní závěrka za r. 2001 + příloha",
+      "createdAt": "08-01-2003",
       "receivedByCourtAt": "14-01-2003",
       "filedAt": "23-01-2003",
       "digitized": true,
-      "files": [
-        {
-          "pageCount": 8,
-          "sizeBytes": 523996
-        }
-      ]
+      "files": []
     },
     {
       "referenceLabel": "C 29747/SL6/MSPH",
-      "documentType": "ostatní zápis z VH",
-      "createdAt": "24-06-2002",
+      "documentType": "ostatní +plná moc, zápis z VH",
+      "createdAt": "08-01-2003",
       "receivedByCourtAt": "14-01-2003",
       "filedAt": "23-01-2003",
       "digitized": true,
-      "files": [
-        {
-          "pageCount": 3,
-          "sizeBytes": 113145
-        }
-      ]
+      "files": []
+    },
+    {
+      "referenceLabel": "C 29747/SL7/MSPH",
+      "documentType": "účetní závěrka r. 2002+ příl.",
+      "createdAt": "19-03-2003",
+      "receivedByCourtAt": "18-06-2003",
+      "filedAt": "23-06-2003",
+      "digitized": true,
+      "files": []
     },
     {
       "referenceLabel": "C 29747/SL8/MSPH",
-      "documentType": "účetní závěrka za rok 2002",
-      "createdAt": "31-12-2002",
+      "documentType": "účetní závěrka za rok 2002 + přílohy",
       "receivedByCourtAt": "26-06-2003",
       "filedAt": "22-07-2003",
       "digitized": true,
-      "files": [
-        {
-          "pageCount": 10,
-          "sizeBytes": 421532
-        }
-      ]
+      "files": []
     },
     {
       "referenceLabel": "C 29747/SL9/MSPH",
@@ -113,35 +86,25 @@
       "files": [
         {
           "pageCount": 6,
-          "sizeBytes": 97084
+          "sizeBytes": 0
         }
       ]
     },
     {
       "referenceLabel": "C 29747/SL10/MSPH",
-      "documentType": "notářský zápis NZ 190/2004",
-      "createdAt": "23-04-2004",
-      "filedAt": "03-05-2005",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 10,
-          "sizeBytes": 430930
-        }
-      ]
-    },
-    {
-      "referenceLabel": "C 29747/SL11/MSPH",
-      "documentType": "notářský zápis, smlouvy o převodu obchod. podílu - NZ 554/2004 +  zápis z mim. VH",
+      "documentType": "smlouvy o převodu obchod. podílu - 2x",
       "createdAt": "14-12-2004",
       "filedAt": "03-05-2005",
       "digitized": true,
-      "files": [
-        {
-          "pageCount": 19,
-          "sizeBytes": 723045
-        }
-      ]
+      "files": []
+    },
+    {
+      "referenceLabel": "C 29747/SL11/MSPH",
+      "documentType": "notářský zápis - NZ 554/04- rozh. VH+ zápis",
+      "createdAt": "14-12-2004",
+      "filedAt": "03-05-2005",
+      "digitized": true,
+      "files": []
     },
     {
       "referenceLabel": "C 29747/SL12/MSPH",
@@ -150,12 +113,7 @@
       "receivedByCourtAt": "17-05-2005",
       "filedAt": "26-05-2005",
       "digitized": true,
-      "files": [
-        {
-          "pageCount": 6,
-          "sizeBytes": 199541
-        }
-      ]
+      "files": []
     },
     {
       "referenceLabel": "C 29747/SL13/MSPH",
@@ -167,7 +125,7 @@
       "files": [
         {
           "pageCount": 9,
-          "sizeBytes": 146302
+          "sizeBytes": 0
         }
       ]
     },
@@ -181,7 +139,7 @@
       "files": [
         {
           "pageCount": 4,
-          "sizeBytes": 58491
+          "sizeBytes": 0
         }
       ]
     },
@@ -195,7 +153,7 @@
       "files": [
         {
           "pageCount": 5,
-          "sizeBytes": 85191
+          "sizeBytes": 0
         }
       ]
     },
@@ -209,7 +167,7 @@
       "files": [
         {
           "pageCount": 5,
-          "sizeBytes": 83512
+          "sizeBytes": 0
         }
       ]
     },
@@ -223,7 +181,7 @@
       "files": [
         {
           "pageCount": 5,
-          "sizeBytes": 82629
+          "sizeBytes": 0
         }
       ]
     },
@@ -236,7 +194,7 @@
       "files": [
         {
           "pageCount": 8,
-          "sizeBytes": 115908
+          "sizeBytes": 0
         }
       ]
     },
@@ -249,7 +207,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 15005
+          "sizeBytes": 0
         }
       ]
     },
@@ -263,7 +221,7 @@
       "files": [
         {
           "pageCount": 6,
-          "sizeBytes": 169994
+          "sizeBytes": 0
         }
       ]
     },
@@ -277,7 +235,7 @@
       "files": [
         {
           "pageCount": 5,
-          "sizeBytes": 82824
+          "sizeBytes": 0
         }
       ]
     },
@@ -291,7 +249,7 @@
       "files": [
         {
           "pageCount": 5,
-          "sizeBytes": 82311
+          "sizeBytes": 0
         }
       ]
     },
@@ -305,7 +263,7 @@
       "files": [
         {
           "pageCount": 5,
-          "sizeBytes": 82473
+          "sizeBytes": 0
         }
       ]
     },
@@ -319,284 +277,7 @@
       "files": [
         {
           "pageCount": 5,
-          "sizeBytes": 45920
-        }
-      ]
-    },
-    {
-      "referenceLabel": "C 29747/SL27/MSPH",
-      "documentType": "zakladatelské dokumenty, notářský zápis NZ 1416/2014",
-      "createdAt": "27-06-2014",
-      "receivedByCourtAt": "07-08-2014",
-      "filedAt": "17-09-2014",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 6,
-          "sizeBytes": 330406
-        }
-      ]
-    },
-    {
-      "referenceLabel": "C 29747/SL28/MSPH",
-      "documentType": "účetní závěrka [2013]",
-      "createdAt": "31-12-2013",
-      "receivedByCourtAt": "29-08-2014",
-      "filedAt": "03-11-2014",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 5,
-          "sizeBytes": 45014
-        }
-      ]
-    },
-    {
-      "referenceLabel": "C 29747/SL29/MSPH",
-      "documentType": "účetní závěrka [2013]",
-      "createdAt": "31-12-2013",
-      "receivedByCourtAt": "29-08-2014",
-      "filedAt": "03-11-2014",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 5,
-          "sizeBytes": 45014
-        }
-      ]
-    },
-    {
-      "referenceLabel": "C 29747/SL30/MSPH",
-      "documentType": "účetní závěrka [2014]",
-      "createdAt": "31-12-2014",
-      "receivedByCourtAt": "31-08-2015",
-      "filedAt": "01-09-2015",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 5,
-          "sizeBytes": 51318
-        }
-      ]
-    },
-    {
-      "referenceLabel": "C 29747/SL31/MSPH",
-      "documentType": "účetní závěrka [2015]",
-      "createdAt": "31-12-2015",
-      "receivedByCourtAt": "04-08-2016",
-      "filedAt": "05-08-2016",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 5,
-          "sizeBytes": 66476
-        }
-      ]
-    },
-    {
-      "referenceLabel": "C 29747/SL32/MSPH",
-      "documentType": "účetní závěrka [2016]",
-      "createdAt": "31-12-2016",
-      "receivedByCourtAt": "10-11-2017",
-      "filedAt": "15-11-2017",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 3,
-          "sizeBytes": 66599
-        }
-      ]
-    },
-    {
-      "referenceLabel": "C 29747/SL33/MSPH",
-      "documentType": "účetní závěrka [2017]",
-      "createdAt": "31-12-2017",
-      "receivedByCourtAt": "02-08-2018",
-      "filedAt": "07-08-2018",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 4,
-          "sizeBytes": 64332
-        }
-      ]
-    },
-    {
-      "referenceLabel": "C 29747/SL34/MSPH",
-      "documentType": "účetní závěrka [2018]",
-      "createdAt": "31-12-2018",
-      "receivedByCourtAt": "24-09-2019",
-      "filedAt": "26-09-2019",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 4,
-          "sizeBytes": 43166
-        }
-      ]
-    },
-    {
-      "referenceLabel": "C 29747/SL35/MSPH",
-      "documentType": "zakladatelské dokumenty, notářský zápis [NZ 1544/2019]",
-      "createdAt": "05-11-2019",
-      "filedAt": "05-11-2019",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 5,
-          "sizeBytes": 409028
-        }
-      ]
-    },
-    {
-      "referenceLabel": "C 29747/SL36/MSPH",
-      "documentType": "účetní závěrka [2019]",
-      "createdAt": "31-12-2019",
-      "receivedByCourtAt": "09-10-2020",
-      "filedAt": "13-10-2020",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 4,
-          "sizeBytes": 529553
-        }
-      ]
-    },
-    {
-      "referenceLabel": "C 29747/SL37/MSPH",
-      "documentType": "účetní závěrka [2020]",
-      "createdAt": "31-12-2020",
-      "receivedByCourtAt": "11-08-2021",
-      "filedAt": "13-09-2021",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 4,
-          "sizeBytes": 527641
-        }
-      ]
-    },
-    {
-      "referenceLabel": "C 29747/SL38/MSPH",
-      "documentType": "účetní závěrka [2021]",
-      "createdAt": "31-12-2021",
-      "receivedByCourtAt": "01-09-2022",
-      "filedAt": "07-09-2022",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 4,
-          "sizeBytes": 527237
-        }
-      ]
-    },
-    {
-      "referenceLabel": "C 29747/SL39/MSPH",
-      "documentType": "účetní závěrka [2022] - předána prostřednictvím správce daně z příjmů k 07.05.2023",
-      "createdAt": "07-05-2023",
-      "receivedByCourtAt": "03-06-2023",
-      "filedAt": "03-06-2023",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 2,
-          "sizeBytes": 301661
-        },
-        {
-          "pageCount": 0,
-          "sizeBytes": 2242
-        },
-        {
-          "pageCount": 2,
-          "sizeBytes": 143493
-        }
-      ]
-    },
-    {
-      "referenceLabel": "C 29747/SL40/MSPH",
-      "documentType": "účetní závěrka [2023] - předána prostřednictvím správce daně z příjmů k 07.05.2024",
-      "createdAt": "07-05-2024",
-      "receivedByCourtAt": "08-05-2024",
-      "filedAt": "15-05-2024",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 2,
-          "sizeBytes": 301745
-        },
-        {
-          "pageCount": 0,
-          "sizeBytes": 10094
-        },
-        {
-          "pageCount": 5,
-          "sizeBytes": 444834
-        }
-      ]
-    },
-    {
-      "referenceLabel": "C 29747/SL41/MSPH",
-      "documentType": "účetní závěrka [2024] - předána prostřednictvím správce daně z příjmů k 10.05.2025",
-      "createdAt": "10-05-2025",
-      "receivedByCourtAt": "12-05-2025",
-      "filedAt": "19-05-2025",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 2,
-          "sizeBytes": 303107
-        },
-        {
-          "pageCount": 0,
-          "sizeBytes": 2257
-        },
-        {
-          "pageCount": 2,
-          "sizeBytes": 143455
-        }
-      ]
-    },
-    {
-      "referenceLabel": "C 29747/SL42/MSPH",
-      "documentType": "účetní závěrka [2024] - předána prostřednictvím správce daně z příjmů k 05.07.2025",
-      "createdAt": "05-07-2025",
-      "receivedByCourtAt": "05-07-2025",
-      "filedAt": "05-07-2025",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 2,
-          "sizeBytes": 303105
-        },
-        {
-          "pageCount": 0,
-          "sizeBytes": 2257
-        },
-        {
-          "pageCount": 2,
-          "sizeBytes": 143455
-        }
-      ]
-    },
-    {
-      "referenceLabel": "C 29747/SL43/MSPH",
-      "documentType": "účetní závěrka [2025] - předána prostřednictvím správce daně z příjmů k 12.04.2026",
-      "createdAt": "12-04-2026",
-      "receivedByCourtAt": "12-04-2026",
-      "filedAt": "17-04-2026",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 0,
-          "sizeBytes": 2252
-        },
-        {
-          "pageCount": 2,
-          "sizeBytes": 308158
-        },
-        {
-          "pageCount": 2,
-          "sizeBytes": 143779
+          "sizeBytes": 0
         }
       ]
     }

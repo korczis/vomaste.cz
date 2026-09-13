@@ -1,5 +1,5 @@
 {
-  "retrieved": "2026-08-09",
+  "retrieved": "2026-09-13",
   "endpoint": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/vyhledat",
   "request": {
     "ico": [
@@ -43,7 +43,7 @@
         "pravniForma": "325",
         "pravniFormaRos": "325",
         "financniUrad": "007",
-        "datumAktualizace": "2026-03-23",
+        "datumAktualizace": "2026-09-05",
         "icoId": "49370227",
         "adresaDorucovaci": {
           "radekAdresy1": "Komunardů 1634/44",

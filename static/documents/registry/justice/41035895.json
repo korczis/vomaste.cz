@@ -1,6 +1,6 @@
 {
   "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
-  "retrieved": "2026-08-09",
+  "retrieved": "2026-09-13",
   "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/41035895",
   "status": "OK",
   "subject": {
@@ -18,7 +18,7 @@
       "files": [
         {
           "pageCount": 13,
-          "sizeBytes": 320345
+          "sizeBytes": 0
         }
       ]
     },
@@ -31,7 +31,7 @@
       "files": [
         {
           "pageCount": 14,
-          "sizeBytes": 347150
+          "sizeBytes": 0
         }
       ]
     },
@@ -44,7 +44,7 @@
       "files": [
         {
           "pageCount": 13,
-          "sizeBytes": 186189
+          "sizeBytes": 0
         }
       ]
     },
@@ -57,7 +57,7 @@
       "files": [
         {
           "pageCount": 2,
-          "sizeBytes": 41130
+          "sizeBytes": 0
         }
       ]
     },
@@ -70,7 +70,7 @@
       "files": [
         {
           "pageCount": 5,
-          "sizeBytes": 69797
+          "sizeBytes": 0
         }
       ]
     },
@@ -83,7 +83,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 17253
+          "sizeBytes": 0
         }
       ]
     },
@@ -96,7 +96,7 @@
       "files": [
         {
           "pageCount": 4,
-          "sizeBytes": 53283
+          "sizeBytes": 0
         }
       ]
     },
@@ -109,7 +109,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 19284
+          "sizeBytes": 0
         }
       ]
     },
@@ -122,7 +122,7 @@
       "files": [
         {
           "pageCount": 25,
-          "sizeBytes": 696375
+          "sizeBytes": 0
         }
       ]
     },
@@ -135,7 +135,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 15056
+          "sizeBytes": 0
         }
       ]
     },
@@ -148,7 +148,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 18718
+          "sizeBytes": 0
         }
       ]
     },
@@ -161,7 +161,7 @@
       "files": [
         {
           "pageCount": 34,
-          "sizeBytes": 570374
+          "sizeBytes": 0
         }
       ]
     },
@@ -174,7 +174,7 @@
       "files": [
         {
           "pageCount": 4,
-          "sizeBytes": 53850
+          "sizeBytes": 0
         }
       ]
     },
@@ -187,7 +187,7 @@
       "files": [
         {
           "pageCount": 35,
-          "sizeBytes": 821909
+          "sizeBytes": 0
         }
       ]
     },
@@ -200,7 +200,7 @@
       "files": [
         {
           "pageCount": 7,
-          "sizeBytes": 137634
+          "sizeBytes": 0
         }
       ]
     },
@@ -213,7 +213,7 @@
       "files": [
         {
           "pageCount": 25,
-          "sizeBytes": 1705299
+          "sizeBytes": 0
         }
       ]
     },
@@ -226,7 +226,7 @@
       "files": [
         {
           "pageCount": 3,
-          "sizeBytes": 136652
+          "sizeBytes": 0
         }
       ]
     },
@@ -239,7 +239,7 @@
       "files": [
         {
           "pageCount": 9,
-          "sizeBytes": 438456
+          "sizeBytes": 0
         }
       ]
     },
@@ -252,7 +252,7 @@
       "files": [
         {
           "pageCount": 3,
-          "sizeBytes": 230445
+          "sizeBytes": 0
         }
       ]
     },
@@ -265,7 +265,7 @@
       "files": [
         {
           "pageCount": 2,
-          "sizeBytes": 135218
+          "sizeBytes": 0
         }
       ]
     },
@@ -278,7 +278,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 20368
+          "sizeBytes": 0
         }
       ]
     },
@@ -291,7 +291,7 @@
       "files": [
         {
           "pageCount": 2,
-          "sizeBytes": 28397
+          "sizeBytes": 0
         }
       ]
     },
@@ -304,7 +304,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 9263
+          "sizeBytes": 0
         }
       ]
     },
@@ -317,7 +317,7 @@
       "files": [
         {
           "pageCount": 28,
-          "sizeBytes": 2071747
+          "sizeBytes": 0
         }
       ]
     },
@@ -330,7 +330,7 @@
       "files": [
         {
           "pageCount": 23,
-          "sizeBytes": 740886
+          "sizeBytes": 0
         }
       ]
     },
@@ -343,7 +343,7 @@
       "files": [
         {
           "pageCount": 29,
-          "sizeBytes": 835850
+          "sizeBytes": 0
         }
       ]
     },
@@ -356,7 +356,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 53490
+          "sizeBytes": 0
         }
       ]
     },
@@ -369,7 +369,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 47763
+          "sizeBytes": 0
         }
       ]
     },
@@ -382,7 +382,7 @@
       "files": [
         {
           "pageCount": 27,
-          "sizeBytes": 2048286
+          "sizeBytes": 0
         }
       ]
     },
@@ -395,7 +395,7 @@
       "files": [
         {
           "pageCount": 27,
-          "sizeBytes": 2049671
+          "sizeBytes": 0
         }
       ]
     },
@@ -408,7 +408,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 67434
+          "sizeBytes": 0
         }
       ]
     },
@@ -422,7 +422,7 @@
       "files": [
         {
           "pageCount": 29,
-          "sizeBytes": 9526210
+          "sizeBytes": 0
         }
       ]
     },
@@ -436,7 +436,7 @@
       "files": [
         {
           "pageCount": 27,
-          "sizeBytes": 5851617
+          "sizeBytes": 0
         }
       ]
     },
@@ -450,7 +450,7 @@
       "files": [
         {
           "pageCount": 22,
-          "sizeBytes": 2881801
+          "sizeBytes": 0
         }
       ]
     },
@@ -464,7 +464,7 @@
       "files": [
         {
           "pageCount": 18,
-          "sizeBytes": 208059
+          "sizeBytes": 0
         }
       ]
     },
@@ -477,7 +477,7 @@
       "files": [
         {
           "pageCount": 8,
-          "sizeBytes": 805346
+          "sizeBytes": 0
         }
       ]
     },
@@ -490,7 +490,7 @@
       "files": [
         {
           "pageCount": 18,
-          "sizeBytes": 151227
+          "sizeBytes": 0
         }
       ]
     },
@@ -504,7 +504,7 @@
       "files": [
         {
           "pageCount": 28,
-          "sizeBytes": 9184726
+          "sizeBytes": 0
         }
       ]
     },
@@ -531,7 +531,7 @@
       "files": [
         {
           "pageCount": 29,
-          "sizeBytes": 2880612
+          "sizeBytes": 0
         }
       ]
     },
@@ -545,7 +545,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 35227
+          "sizeBytes": 0
         }
       ]
     },
@@ -559,7 +559,7 @@
       "files": [
         {
           "pageCount": 26,
-          "sizeBytes": 4410727
+          "sizeBytes": 0
         }
       ]
     },
@@ -573,7 +573,7 @@
       "files": [
         {
           "pageCount": 11,
-          "sizeBytes": 1028123
+          "sizeBytes": 0
         }
       ]
     },
@@ -587,7 +587,7 @@
       "files": [
         {
           "pageCount": 22,
-          "sizeBytes": 2928160
+          "sizeBytes": 0
         }
       ]
     },
@@ -601,7 +601,7 @@
       "files": [
         {
           "pageCount": 20,
-          "sizeBytes": 2685655
+          "sizeBytes": 0
         }
       ]
     },
@@ -615,7 +615,7 @@
       "files": [
         {
           "pageCount": 15,
-          "sizeBytes": 130163
+          "sizeBytes": 0
         }
       ]
     },
@@ -629,7 +629,7 @@
       "files": [
         {
           "pageCount": 2,
-          "sizeBytes": 157146
+          "sizeBytes": 0
         }
       ]
     },
@@ -643,7 +643,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 282668
+          "sizeBytes": 0
         }
       ]
     },
@@ -657,524 +657,7 @@
       "files": [
         {
           "pageCount": 27,
-          "sizeBytes": 2745041
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL53/MSPH",
-      "documentType": "ostatní rozhodnutí představenstva",
-      "createdAt": "30-06-2014",
-      "receivedByCourtAt": "07-08-2014",
-      "filedAt": "17-09-2014",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 2,
-          "sizeBytes": 118717
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL54/MSPH",
-      "documentType": "ostatní zápis z mimořádného jednání představenstva",
-      "createdAt": "27-06-2014",
-      "receivedByCourtAt": "07-08-2014",
-      "filedAt": "17-09-2014",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 4,
-          "sizeBytes": 104202
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL55/MSPH",
-      "documentType": "ostatní Rozhod. jediného akcionáře",
-      "createdAt": "24-03-2014",
-      "receivedByCourtAt": "14-10-2014",
-      "filedAt": "19-11-2014",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
           "sizeBytes": 0
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL56/MSPH",
-      "documentType": "účetní závěrka [2014], výroční zpráva [2014], zpráva o vztazích [2014], zpráva auditora [2014]",
-      "createdAt": "31-12-2014",
-      "receivedByCourtAt": "15-04-2015",
-      "filedAt": "16-04-2015",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 29,
-          "sizeBytes": 1037731
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL57/MSPH",
-      "documentType": "ostatní rozhodnutí jediného akcionáře",
-      "createdAt": "02-03-2015",
-      "receivedByCourtAt": "15-04-2015",
-      "filedAt": "24-04-2015",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 43273
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL58/MSPH",
-      "documentType": "ostatní rozhodnutí jediného akcionáře",
-      "createdAt": "01-02-2016",
-      "receivedByCourtAt": "04-02-2016",
-      "filedAt": "11-03-2016",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 34202
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL59/MSPH",
-      "documentType": "ostatní rozhodnutí jed. akcio.",
-      "createdAt": "20-06-2016",
-      "receivedByCourtAt": "11-07-2016",
-      "filedAt": "22-07-2016",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 41150
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL60/MSPH",
-      "documentType": "účetní závěrka [2015], výroční zpráva [2015], zpráva o vztazích [2015], zpráva auditora [2015]",
-      "createdAt": "31-12-2015",
-      "receivedByCourtAt": "11-07-2016",
-      "filedAt": "22-07-2016",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 34,
-          "sizeBytes": 1153554
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL61/MSPH",
-      "documentType": "ostatní rozhodnutí jed. akc.",
-      "createdAt": "19-12-2016",
-      "receivedByCourtAt": "12-01-2017",
-      "filedAt": "03-02-2017",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 710228
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL62/MSPH",
-      "documentType": "ostatní rozhodnutí dozorčí rady",
-      "createdAt": "06-01-2017",
-      "receivedByCourtAt": "10-01-2017",
-      "filedAt": "03-02-2017",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 44704
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL63/MSPH",
-      "documentType": "ostatní rozhodnutí jediného akcionáře",
-      "createdAt": "19-12-2016",
-      "receivedByCourtAt": "10-01-2017",
-      "filedAt": "03-02-2017",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 41569
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL64/MSPH",
-      "documentType": "stanovy společnosti",
-      "createdAt": "30-01-2017",
-      "receivedByCourtAt": "06-02-2017",
-      "filedAt": "14-02-2017",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 14,
-          "sizeBytes": 984462
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL65/MSPH",
-      "documentType": "notářský zápis [NZ 127/2017], stanovy společnosti",
-      "createdAt": "30-01-2017",
-      "receivedByCourtAt": "06-02-2017",
-      "filedAt": "14-02-2017",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 14,
-          "sizeBytes": 835785
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL66/MSPH",
-      "documentType": "ostatní rozhodnutí představenstva",
-      "createdAt": "30-01-2017",
-      "receivedByCourtAt": "06-02-2017",
-      "filedAt": "14-02-2017",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 50418
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL67/MSPH",
-      "documentType": "notářský zápis [NZ 127/2017]",
-      "createdAt": "30-01-2017",
-      "receivedByCourtAt": "06-02-2017",
-      "filedAt": "27-02-2017",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 14,
-          "sizeBytes": 2401163
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL68/MSPH",
-      "documentType": "ostatní rozhodnutí jed. akc.",
-      "createdAt": "19-06-2017",
-      "receivedByCourtAt": "17-07-2017",
-      "filedAt": "16-08-2017",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 56554
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL69/MSPH",
-      "documentType": "účetní závěrka [2016], výroční zpráva [2016], zpráva o vztazích [2016], zpráva auditora [2016]",
-      "createdAt": "31-12-2016",
-      "receivedByCourtAt": "17-07-2017",
-      "filedAt": "16-08-2017",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 37,
-          "sizeBytes": 2188811
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL70/MSPH",
-      "documentType": "ostatní rozhodnutí jed. akc.",
-      "createdAt": "21-08-2017",
-      "receivedByCourtAt": "06-09-2017",
-      "filedAt": "19-09-2017",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 2,
-          "sizeBytes": 198183
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL71/MSPH",
-      "documentType": "ostatní odstoupení z funkce",
-      "createdAt": "14-08-2017",
-      "receivedByCourtAt": "05-09-2017",
-      "filedAt": "27-09-2017",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 38363
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL72/MSPH",
-      "documentType": "ostatní rozhodnutí představenstva",
-      "createdAt": "14-08-2017",
-      "receivedByCourtAt": "05-09-2017",
-      "filedAt": "27-09-2017",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 48967
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL73/MSPH",
-      "documentType": "účetní závěrka [2017], výroční zpráva [2017], zpráva o vztazích [2017], zpráva auditora [2017]",
-      "createdAt": "31-12-2017",
-      "receivedByCourtAt": "10-07-2018",
-      "filedAt": "24-07-2018",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 36,
-          "sizeBytes": 2889578
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL74/MSPH",
-      "documentType": "ostatní rozhodnutí jediného akcionáře",
-      "createdAt": "18-02-2019",
-      "receivedByCourtAt": "18-03-2019",
-      "filedAt": "25-03-2019",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 43663
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL75/MSPH",
-      "documentType": "ostatní rozhodnutí jed. akc.",
-      "createdAt": "18-02-2019",
-      "receivedByCourtAt": "18-03-2019",
-      "filedAt": "01-04-2019",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 23284
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL76/MSPH",
-      "documentType": "účetní závěrka [2018], výroční zpráva [2018], zpráva o vztazích [2018], zpráva auditora [2018]",
-      "createdAt": "31-12-2018",
-      "receivedByCourtAt": "10-07-2019",
-      "filedAt": "12-07-2019",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 37,
-          "sizeBytes": 2197489
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL77/MSPH",
-      "documentType": "ostatní rozhodnutí jediného akcionáře",
-      "createdAt": "22-07-2019",
-      "receivedByCourtAt": "05-08-2019",
-      "filedAt": "08-08-2019",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 127670
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL78/MSPH",
-      "documentType": "ostatní rozhodnutí jediného  akcionáře",
-      "createdAt": "22-07-2019",
-      "receivedByCourtAt": "01-08-2019",
-      "filedAt": "14-08-2019",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 35248
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL79/MSPH",
-      "documentType": "ostatní rozhodnutí jediného akcionáře",
-      "createdAt": "21-10-2019",
-      "receivedByCourtAt": "08-11-2019",
-      "filedAt": "02-12-2019",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 37247
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL80/MSPH",
-      "documentType": "účetní závěrka [2019], výroční zpráva [2019], zpráva o vztazích [2019], zpráva auditora [2019]",
-      "createdAt": "31-12-2019",
-      "receivedByCourtAt": "21-07-2020",
-      "filedAt": "27-07-2020",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 38,
-          "sizeBytes": 3321528
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL81/MSPH",
-      "documentType": "účetní závěrka [2020], výroční zpráva [2020], zpráva auditora [2020]",
-      "createdAt": "31-12-2020",
-      "receivedByCourtAt": "15-07-2021",
-      "filedAt": "30-08-2021",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 35,
-          "sizeBytes": 2382804
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL82/MSPH",
-      "documentType": "notářský zápis [NZ 88/2022], stanovy společnosti",
-      "createdAt": "31-03-2022",
-      "filedAt": "31-03-2022",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 8,
-          "sizeBytes": 172999
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL83/MSPH",
-      "documentType": "účetní závěrka [2021], výroční zpráva [2021], zpráva o vztazích [2021], zpráva auditora [2021]",
-      "createdAt": "31-12-2021",
-      "receivedByCourtAt": "14-07-2022",
-      "filedAt": "25-07-2022",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 34,
-          "sizeBytes": 11648667
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL84/MSPH",
-      "documentType": "ostatní rozhodnutí jediného akcionáře",
-      "createdAt": "26-07-2022",
-      "receivedByCourtAt": "14-09-2022",
-      "filedAt": "03-10-2022",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 48513
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL85/MSPH",
-      "documentType": "ostatní rozhodnutí představenstva",
-      "createdAt": "02-09-2022",
-      "receivedByCourtAt": "14-09-2022",
-      "filedAt": "03-10-2022",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 73405
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL86/MSPH",
-      "documentType": "účetní závěrka [2022], výroční zpráva [2022], zpráva o vztazích [2022], zpráva auditora [2022]",
-      "createdAt": "31-12-2022",
-      "receivedByCourtAt": "20-07-2023",
-      "filedAt": "27-07-2023",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 33,
-          "sizeBytes": 4696147
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL87/MSPH",
-      "documentType": "ostatní rozhodnutí jediného akcionáře",
-      "createdAt": "21-05-2024",
-      "receivedByCourtAt": "03-06-2024",
-      "filedAt": "12-06-2024",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 45971
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL88/MSPH",
-      "documentType": "účetní závěrka [2023], výroční zpráva [2023], zpráva o vztazích [2023], zpráva auditora [2023]",
-      "createdAt": "31-12-2023",
-      "receivedByCourtAt": "29-07-2024",
-      "filedAt": "02-08-2024",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 33,
-          "sizeBytes": 3126558
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 15167/SL89/MSPH",
-      "documentType": "účetní závěrka [2024], výroční zpráva [2024], zpráva o vztazích [2024], zpráva auditora [2024]",
-      "createdAt": "31-12-2024",
-      "receivedByCourtAt": "22-07-2025",
-      "filedAt": "30-07-2025",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 34,
-          "sizeBytes": 3211562
         }
       ]
     }

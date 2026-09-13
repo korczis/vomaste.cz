@@ -1,6 +1,6 @@
 {
   "schemaNote": "Public preservation index only. Registered addresses, original filenames, document IDs and document contents are kept outside Git pending individual privacy review.",
-  "retrieved": "2026-08-09",
+  "retrieved": "2026-09-13",
   "sourceUrl": "https://verejnerejstriky.msp.gov.cz/api/sbirka-listin/subjekty/49455958",
   "status": "OK",
   "subject": {
@@ -18,7 +18,7 @@
       "files": [
         {
           "pageCount": 23,
-          "sizeBytes": 354785
+          "sizeBytes": 0
         }
       ]
     },
@@ -31,7 +31,7 @@
       "files": [
         {
           "pageCount": 14,
-          "sizeBytes": 303143
+          "sizeBytes": 0
         }
       ]
     },
@@ -44,7 +44,7 @@
       "files": [
         {
           "pageCount": 16,
-          "sizeBytes": 362635
+          "sizeBytes": 0
         }
       ]
     },
@@ -57,7 +57,7 @@
       "files": [
         {
           "pageCount": 13,
-          "sizeBytes": 216906
+          "sizeBytes": 0
         }
       ]
     },
@@ -70,7 +70,7 @@
       "files": [
         {
           "pageCount": 2,
-          "sizeBytes": 55809
+          "sizeBytes": 0
         }
       ]
     },
@@ -83,7 +83,7 @@
       "files": [
         {
           "pageCount": 10,
-          "sizeBytes": 238966
+          "sizeBytes": 0
         }
       ]
     },
@@ -96,7 +96,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 20806
+          "sizeBytes": 0
         }
       ]
     },
@@ -109,7 +109,7 @@
       "files": [
         {
           "pageCount": 9,
-          "sizeBytes": 262389
+          "sizeBytes": 0
         }
       ]
     },
@@ -122,7 +122,7 @@
       "files": [
         {
           "pageCount": 3,
-          "sizeBytes": 69467
+          "sizeBytes": 0
         }
       ]
     },
@@ -135,7 +135,7 @@
       "files": [
         {
           "pageCount": 2,
-          "sizeBytes": 23355
+          "sizeBytes": 0
         }
       ]
     },
@@ -148,7 +148,7 @@
       "files": [
         {
           "pageCount": 2,
-          "sizeBytes": 20941
+          "sizeBytes": 0
         }
       ]
     },
@@ -161,7 +161,7 @@
       "files": [
         {
           "pageCount": 17,
-          "sizeBytes": 500297
+          "sizeBytes": 0
         }
       ]
     },
@@ -174,7 +174,7 @@
       "files": [
         {
           "pageCount": 9,
-          "sizeBytes": 261304
+          "sizeBytes": 0
         }
       ]
     },
@@ -187,7 +187,7 @@
       "files": [
         {
           "pageCount": 3,
-          "sizeBytes": 92455
+          "sizeBytes": 0
         }
       ]
     },
@@ -200,7 +200,7 @@
       "files": [
         {
           "pageCount": 4,
-          "sizeBytes": 82743
+          "sizeBytes": 0
         }
       ]
     },
@@ -213,7 +213,7 @@
       "files": [
         {
           "pageCount": 7,
-          "sizeBytes": 165629
+          "sizeBytes": 0
         }
       ]
     },
@@ -226,7 +226,7 @@
       "files": [
         {
           "pageCount": 26,
-          "sizeBytes": 591507
+          "sizeBytes": 0
         }
       ]
     },
@@ -239,7 +239,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 21740
+          "sizeBytes": 0
         }
       ]
     },
@@ -252,7 +252,7 @@
       "files": [
         {
           "pageCount": 3,
-          "sizeBytes": 61387
+          "sizeBytes": 0
         }
       ]
     },
@@ -265,7 +265,7 @@
       "files": [
         {
           "pageCount": 2,
-          "sizeBytes": 22595
+          "sizeBytes": 0
         }
       ]
     },
@@ -278,7 +278,7 @@
       "files": [
         {
           "pageCount": 41,
-          "sizeBytes": 969300
+          "sizeBytes": 0
         }
       ]
     },
@@ -291,7 +291,7 @@
       "files": [
         {
           "pageCount": 4,
-          "sizeBytes": 103985
+          "sizeBytes": 0
         }
       ]
     },
@@ -304,7 +304,7 @@
       "files": [
         {
           "pageCount": 9,
-          "sizeBytes": 266026
+          "sizeBytes": 0
         }
       ]
     },
@@ -317,7 +317,7 @@
       "files": [
         {
           "pageCount": 8,
-          "sizeBytes": 178694
+          "sizeBytes": 0
         }
       ]
     },
@@ -330,7 +330,7 @@
       "files": [
         {
           "pageCount": 5,
-          "sizeBytes": 114632
+          "sizeBytes": 0
         }
       ]
     },
@@ -343,7 +343,7 @@
       "files": [
         {
           "pageCount": 6,
-          "sizeBytes": 140388
+          "sizeBytes": 0
         }
       ]
     },
@@ -356,7 +356,7 @@
       "files": [
         {
           "pageCount": 45,
-          "sizeBytes": 1087697
+          "sizeBytes": 0
         }
       ]
     },
@@ -369,7 +369,7 @@
       "files": [
         {
           "pageCount": 35,
-          "sizeBytes": 45675989
+          "sizeBytes": 0
         }
       ]
     },
@@ -382,7 +382,7 @@
       "files": [
         {
           "pageCount": 6,
-          "sizeBytes": 336490
+          "sizeBytes": 0
         }
       ]
     },
@@ -395,7 +395,7 @@
       "files": [
         {
           "pageCount": 3,
-          "sizeBytes": 140632
+          "sizeBytes": 0
         }
       ]
     },
@@ -408,7 +408,7 @@
       "files": [
         {
           "pageCount": 7,
-          "sizeBytes": 177892
+          "sizeBytes": 0
         }
       ]
     },
@@ -421,7 +421,7 @@
       "files": [
         {
           "pageCount": 10,
-          "sizeBytes": 267309
+          "sizeBytes": 0
         }
       ]
     },
@@ -434,7 +434,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 17192
+          "sizeBytes": 0
         }
       ]
     },
@@ -447,7 +447,7 @@
       "files": [
         {
           "pageCount": 2,
-          "sizeBytes": 30035
+          "sizeBytes": 0
         }
       ]
     },
@@ -461,7 +461,7 @@
       "files": [
         {
           "pageCount": 18,
-          "sizeBytes": 1062445
+          "sizeBytes": 0
         }
       ]
     },
@@ -474,7 +474,7 @@
       "files": [
         {
           "pageCount": 19,
-          "sizeBytes": 1149386
+          "sizeBytes": 0
         }
       ]
     },
@@ -487,7 +487,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 15260
+          "sizeBytes": 0
         }
       ]
     },
@@ -500,7 +500,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 21727
+          "sizeBytes": 0
         }
       ]
     },
@@ -513,7 +513,7 @@
       "files": [
         {
           "pageCount": 33,
-          "sizeBytes": 2142394
+          "sizeBytes": 0
         }
       ]
     },
@@ -525,7 +525,7 @@
       "files": [
         {
           "pageCount": 88,
-          "sizeBytes": 5925465
+          "sizeBytes": 0
         }
       ]
     },
@@ -537,7 +537,7 @@
       "files": [
         {
           "pageCount": 240,
-          "sizeBytes": 12187786
+          "sizeBytes": 0
         }
       ]
     },
@@ -550,7 +550,7 @@
       "files": [
         {
           "pageCount": 3,
-          "sizeBytes": 177908
+          "sizeBytes": 0
         }
       ]
     },
@@ -563,7 +563,7 @@
       "files": [
         {
           "pageCount": 24,
-          "sizeBytes": 1116691
+          "sizeBytes": 0
         }
       ]
     },
@@ -576,7 +576,7 @@
       "files": [
         {
           "pageCount": 2,
-          "sizeBytes": 84954
+          "sizeBytes": 0
         }
       ]
     },
@@ -589,7 +589,7 @@
       "files": [
         {
           "pageCount": 2,
-          "sizeBytes": 84984
+          "sizeBytes": 0
         }
       ]
     },
@@ -602,7 +602,7 @@
       "files": [
         {
           "pageCount": 2,
-          "sizeBytes": 84062
+          "sizeBytes": 0
         }
       ]
     },
@@ -615,7 +615,7 @@
       "files": [
         {
           "pageCount": 3,
-          "sizeBytes": 95660
+          "sizeBytes": 0
         }
       ]
     },
@@ -628,7 +628,7 @@
       "files": [
         {
           "pageCount": 2,
-          "sizeBytes": 84519
+          "sizeBytes": 0
         }
       ]
     },
@@ -641,7 +641,7 @@
       "files": [
         {
           "pageCount": 10,
-          "sizeBytes": 498669
+          "sizeBytes": 0
         }
       ]
     },
@@ -654,7 +654,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 28072
+          "sizeBytes": 0
         }
       ]
     },
@@ -667,7 +667,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 27545
+          "sizeBytes": 0
         }
       ]
     },
@@ -680,7 +680,7 @@
       "files": [
         {
           "pageCount": 11,
-          "sizeBytes": 301615
+          "sizeBytes": 0
         }
       ]
     },
@@ -693,7 +693,7 @@
       "files": [
         {
           "pageCount": 20,
-          "sizeBytes": 2026948
+          "sizeBytes": 0
         }
       ]
     },
@@ -706,7 +706,7 @@
       "files": [
         {
           "pageCount": 2,
-          "sizeBytes": 47549
+          "sizeBytes": 0
         }
       ]
     },
@@ -719,7 +719,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 27487
+          "sizeBytes": 0
         }
       ]
     },
@@ -732,7 +732,7 @@
       "files": [
         {
           "pageCount": 2,
-          "sizeBytes": 43524
+          "sizeBytes": 0
         }
       ]
     },
@@ -745,7 +745,7 @@
       "files": [
         {
           "pageCount": 2,
-          "sizeBytes": 24051
+          "sizeBytes": 0
         }
       ]
     },
@@ -758,7 +758,7 @@
       "files": [
         {
           "pageCount": 2,
-          "sizeBytes": 49403
+          "sizeBytes": 0
         }
       ]
     },
@@ -771,7 +771,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 26540
+          "sizeBytes": 0
         }
       ]
     },
@@ -784,7 +784,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 17214
+          "sizeBytes": 0
         }
       ]
     },
@@ -797,7 +797,7 @@
       "files": [
         {
           "pageCount": 5,
-          "sizeBytes": 107851
+          "sizeBytes": 0
         }
       ]
     },
@@ -810,7 +810,7 @@
       "files": [
         {
           "pageCount": 8,
-          "sizeBytes": 199353
+          "sizeBytes": 0
         }
       ]
     },
@@ -823,7 +823,7 @@
       "files": [
         {
           "pageCount": 5,
-          "sizeBytes": 150537
+          "sizeBytes": 0
         }
       ]
     },
@@ -836,7 +836,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 24456
+          "sizeBytes": 0
         }
       ]
     },
@@ -849,7 +849,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 30474
+          "sizeBytes": 0
         }
       ]
     },
@@ -862,7 +862,7 @@
       "files": [
         {
           "pageCount": 23,
-          "sizeBytes": 1242952
+          "sizeBytes": 0
         }
       ]
     },
@@ -875,7 +875,7 @@
       "files": [
         {
           "pageCount": 81,
-          "sizeBytes": 2588828
+          "sizeBytes": 0
         }
       ]
     },
@@ -888,7 +888,7 @@
       "files": [
         {
           "pageCount": 6,
-          "sizeBytes": 157934
+          "sizeBytes": 0
         }
       ]
     },
@@ -900,7 +900,7 @@
       "files": [
         {
           "pageCount": 7,
-          "sizeBytes": 232214
+          "sizeBytes": 0
         }
       ]
     },
@@ -913,7 +913,7 @@
       "files": [
         {
           "pageCount": 17,
-          "sizeBytes": 4499737
+          "sizeBytes": 0
         }
       ]
     },
@@ -926,7 +926,7 @@
       "files": [
         {
           "pageCount": 24,
-          "sizeBytes": 4994083
+          "sizeBytes": 0
         }
       ]
     },
@@ -939,7 +939,7 @@
       "files": [
         {
           "pageCount": 19,
-          "sizeBytes": 4404294
+          "sizeBytes": 0
         }
       ]
     },
@@ -952,7 +952,7 @@
       "files": [
         {
           "pageCount": 17,
-          "sizeBytes": 3426128
+          "sizeBytes": 0
         }
       ]
     },
@@ -965,7 +965,7 @@
       "files": [
         {
           "pageCount": 30,
-          "sizeBytes": 6147951
+          "sizeBytes": 0
         }
       ]
     },
@@ -978,7 +978,7 @@
       "files": [
         {
           "pageCount": 63,
-          "sizeBytes": 14312658
+          "sizeBytes": 0
         }
       ]
     },
@@ -991,7 +991,7 @@
       "files": [
         {
           "pageCount": 33,
-          "sizeBytes": 1045252
+          "sizeBytes": 0
         }
       ]
     },
@@ -1004,7 +1004,7 @@
       "files": [
         {
           "pageCount": 23,
-          "sizeBytes": 682521
+          "sizeBytes": 0
         }
       ]
     },
@@ -1017,7 +1017,7 @@
       "files": [
         {
           "pageCount": 7,
-          "sizeBytes": 587586
+          "sizeBytes": 0
         }
       ]
     },
@@ -1030,7 +1030,7 @@
       "files": [
         {
           "pageCount": 3,
-          "sizeBytes": 193977
+          "sizeBytes": 0
         }
       ]
     },
@@ -1043,7 +1043,7 @@
       "files": [
         {
           "pageCount": 23,
-          "sizeBytes": 2016113
+          "sizeBytes": 0
         }
       ]
     },
@@ -1083,7 +1083,7 @@
       "files": [
         {
           "pageCount": 187,
-          "sizeBytes": 5990838
+          "sizeBytes": 0
         }
       ]
     },
@@ -1097,7 +1097,7 @@
       "files": [
         {
           "pageCount": 26,
-          "sizeBytes": 2433024
+          "sizeBytes": 0
         }
       ]
     },
@@ -1111,7 +1111,7 @@
       "files": [
         {
           "pageCount": 43,
-          "sizeBytes": 4010830
+          "sizeBytes": 0
         }
       ]
     },
@@ -1125,7 +1125,7 @@
       "files": [
         {
           "pageCount": 24,
-          "sizeBytes": 2131620
+          "sizeBytes": 0
         }
       ]
     },
@@ -1139,7 +1139,7 @@
       "files": [
         {
           "pageCount": 28,
-          "sizeBytes": 2619187
+          "sizeBytes": 0
         }
       ]
     },
@@ -1153,7 +1153,7 @@
       "files": [
         {
           "pageCount": 24,
-          "sizeBytes": 2138086
+          "sizeBytes": 0
         }
       ]
     },
@@ -1167,7 +1167,7 @@
       "files": [
         {
           "pageCount": 26,
-          "sizeBytes": 2364160
+          "sizeBytes": 0
         }
       ]
     },
@@ -1181,7 +1181,7 @@
       "files": [
         {
           "pageCount": 187,
-          "sizeBytes": 5934513
+          "sizeBytes": 0
         }
       ]
     },
@@ -1195,7 +1195,7 @@
       "files": [
         {
           "pageCount": 43,
-          "sizeBytes": 5241168
+          "sizeBytes": 0
         }
       ]
     },
@@ -1209,7 +1209,7 @@
       "files": [
         {
           "pageCount": 2,
-          "sizeBytes": 149566
+          "sizeBytes": 0
         }
       ]
     },
@@ -1223,7 +1223,7 @@
       "files": [
         {
           "pageCount": 3,
-          "sizeBytes": 1223812
+          "sizeBytes": 0
         }
       ]
     },
@@ -1237,7 +1237,7 @@
       "files": [
         {
           "pageCount": 34,
-          "sizeBytes": 2034506
+          "sizeBytes": 0
         }
       ]
     },
@@ -1251,7 +1251,7 @@
       "files": [
         {
           "pageCount": 20,
-          "sizeBytes": 1511523
+          "sizeBytes": 0
         }
       ]
     },
@@ -1265,7 +1265,7 @@
       "files": [
         {
           "pageCount": 32,
-          "sizeBytes": 2313228
+          "sizeBytes": 0
         }
       ]
     },
@@ -1279,7 +1279,7 @@
       "files": [
         {
           "pageCount": 13,
-          "sizeBytes": 957440
+          "sizeBytes": 0
         }
       ]
     },
@@ -1293,7 +1293,7 @@
       "files": [
         {
           "pageCount": 49,
-          "sizeBytes": 2151225
+          "sizeBytes": 0
         }
       ]
     },
@@ -1307,7 +1307,7 @@
       "files": [
         {
           "pageCount": 13,
-          "sizeBytes": 4295202
+          "sizeBytes": 0
         }
       ]
     },
@@ -1321,7 +1321,7 @@
       "files": [
         {
           "pageCount": 13,
-          "sizeBytes": 4353892
+          "sizeBytes": 0
         }
       ]
     },
@@ -1335,7 +1335,7 @@
       "files": [
         {
           "pageCount": 25,
-          "sizeBytes": 1802775
+          "sizeBytes": 0
         }
       ]
     },
@@ -1349,7 +1349,7 @@
       "files": [
         {
           "pageCount": 14,
-          "sizeBytes": 1071903
+          "sizeBytes": 0
         }
       ]
     },
@@ -1363,7 +1363,7 @@
       "files": [
         {
           "pageCount": 1,
-          "sizeBytes": 43406
+          "sizeBytes": 0
         }
       ]
     },
@@ -1377,769 +1377,7 @@
       "files": [
         {
           "pageCount": 40,
-          "sizeBytes": 2257852
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL105/KSBR",
-      "documentType": "ostatní rozhodnutí jediného akcionáře",
-      "createdAt": "17-06-2014",
-      "receivedByCourtAt": "04-08-2014",
-      "filedAt": "16-10-2014",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 31684
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL106/KSBR",
-      "documentType": "notářský zápis rozhod. jed. akcionáře, NZ 575/2014",
-      "createdAt": "22-10-2014",
-      "receivedByCourtAt": "24-11-2014",
-      "filedAt": "26-11-2014",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 8,
-          "sizeBytes": 396403
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL107/KSBR",
-      "documentType": "výroční zpráva [2014]",
-      "createdAt": "16-03-2015",
-      "receivedByCourtAt": "04-05-2015",
-      "filedAt": "07-05-2015",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 46,
-          "sizeBytes": 12753075
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL108/KSBR",
-      "documentType": "ostatní zápis o rozhodnutí představenstva",
-      "createdAt": "15-07-2015",
-      "receivedByCourtAt": "01-09-2015",
-      "filedAt": "09-09-2015",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 33945
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL109/KSBR",
-      "documentType": "ostatní rozhodnutí jediného akcionáře",
-      "createdAt": "16-07-2015",
-      "receivedByCourtAt": "01-09-2015",
-      "filedAt": "09-09-2015",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 40597
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL110/KSBR",
-      "documentType": "ostatní zápis o rozhodnutí dozorčí rady",
-      "createdAt": "03-08-2015",
-      "receivedByCourtAt": "01-09-2015",
-      "filedAt": "09-09-2015",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 37437
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL111/KSBR",
-      "documentType": "ostatní zápis o rozhodnutí představenstva",
-      "createdAt": "03-08-2015",
-      "receivedByCourtAt": "01-09-2015",
-      "filedAt": "09-09-2015",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 32862
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL112/KSBR",
-      "documentType": "ostatní rozhodnutí jediného akcionáře",
-      "createdAt": "25-01-2016",
-      "receivedByCourtAt": "18-03-2016",
-      "filedAt": "12-04-2016",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 29420
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL113/KSBR",
-      "documentType": "ostatní zápis o rozhodnutí představenstva",
-      "createdAt": "26-01-2016",
-      "receivedByCourtAt": "18-03-2016",
-      "filedAt": "12-04-2016",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 31872
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL114/KSBR",
-      "documentType": "účetní závěrka [2013] dodatek",
-      "createdAt": "31-12-2013",
-      "receivedByCourtAt": "27-04-2016",
-      "filedAt": "03-05-2016",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 267640
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL115/KSBR",
-      "documentType": "účetní závěrka [2014] dodatek",
-      "createdAt": "31-12-2014",
-      "receivedByCourtAt": "27-04-2016",
-      "filedAt": "03-05-2016",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 267969
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL116/KSBR",
-      "documentType": "výroční zpráva [2013]",
-      "createdAt": "31-12-2013",
-      "receivedByCourtAt": "27-04-2016",
-      "filedAt": "03-05-2016",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 109,
-          "sizeBytes": 2068391
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL117/KSBR",
-      "documentType": "výroční zpráva [2014]",
-      "createdAt": "31-12-2014",
-      "receivedByCourtAt": "27-04-2016",
-      "filedAt": "03-05-2016",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 111,
-          "sizeBytes": 1121092
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL118/KSBR",
-      "documentType": "výroční zpráva [205]",
-      "createdAt": "18-02-2016",
-      "receivedByCourtAt": "27-04-2016",
-      "filedAt": "03-05-2016",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 43,
-          "sizeBytes": 2451544
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL119/KSBR",
-      "documentType": "ostatní rozhodnutí jediného akcionáře",
-      "createdAt": "30-05-2016",
-      "receivedByCourtAt": "29-06-2016",
-      "filedAt": "26-07-2016",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 28733
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL120/KSBR",
-      "documentType": "notářský zápis [NZ 18/2017] rozhodnutí stat.orgánu",
-      "createdAt": "26-01-2017",
-      "filedAt": "27-01-2017",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 28,
-          "sizeBytes": 14944191
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL121/KSBR",
-      "documentType": "výroční zpráva [2016]",
-      "createdAt": "20-02-2017",
-      "receivedByCourtAt": "12-06-2017",
-      "filedAt": "15-06-2017",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 46,
-          "sizeBytes": 2994381
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL122/KSBR",
-      "documentType": "notářský zápis [NZ 79/2017]",
-      "createdAt": "25-10-2017",
-      "filedAt": "25-10-2017",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 16,
-          "sizeBytes": 1395980
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL123/KSBR",
-      "documentType": "notářský zápis [NZ 79/2017]",
-      "createdAt": "25-10-2017",
-      "filedAt": "23-11-2017",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 16,
-          "sizeBytes": 1395980
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL124/KSBR",
-      "documentType": "stanovy společnosti úplné znění stanov ke dni 23.11.2017",
-      "createdAt": "23-11-2017",
-      "filedAt": "23-11-2017",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 13,
-          "sizeBytes": 927112
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL125/KSBR",
-      "documentType": "ostatní rozhodnutí jediného akcionáře",
-      "createdAt": "28-02-2018",
-      "receivedByCourtAt": "28-03-2018",
-      "filedAt": "26-04-2018",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 38968
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL126/KSBR",
-      "documentType": "ostatní zápis o rozhodnutí dozorčí rady",
-      "createdAt": "01-03-2018",
-      "receivedByCourtAt": "28-03-2018",
-      "filedAt": "26-04-2018",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 30681
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL127/KSBR",
-      "documentType": "výroční zpráva [2017], zpráva auditora [2017]",
-      "createdAt": "20-02-2018",
-      "receivedByCourtAt": "25-06-2018",
-      "filedAt": "10-07-2018",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 45,
-          "sizeBytes": 3089083
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL128/KSBR",
-      "documentType": "účetní závěrka [2017] rozvaha + výkaz",
-      "createdAt": "20-02-2018",
-      "receivedByCourtAt": "23-07-2018",
-      "filedAt": "01-08-2018",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 6,
-          "sizeBytes": 5990749
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL129/KSBR",
-      "documentType": "výroční zpráva [2018]",
-      "createdAt": "12-02-2019",
-      "receivedByCourtAt": "19-06-2019",
-      "filedAt": "26-06-2019",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 43,
-          "sizeBytes": 3002398
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL130/KSBR",
-      "documentType": "ostatní rozhodnutí jediného akcionáře",
-      "createdAt": "26-04-2019",
-      "receivedByCourtAt": "28-06-2019",
-      "filedAt": "24-07-2019",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 32145
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL131/KSBR",
-      "documentType": "účetní závěrka [2018] rozvaha + výkaz",
-      "createdAt": "15-02-2019",
-      "receivedByCourtAt": "16-07-2019",
-      "filedAt": "23-08-2019",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 6,
-          "sizeBytes": 935591
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL132/KSBR",
-      "documentType": "ostatní rozhodnutí jediného akcionáře",
-      "createdAt": "30-05-2019",
-      "receivedByCourtAt": "15-08-2019",
-      "filedAt": "04-09-2019",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 29750
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL133/KSBR",
-      "documentType": "výroční zpráva [2019]",
-      "receivedByCourtAt": "13-07-2020",
-      "filedAt": "22-07-2020",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 41,
-          "sizeBytes": 2606033
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL134/KSBR",
-      "documentType": "ostatní rozhodnutí jediného akcionáře",
-      "createdAt": "27-01-2021",
-      "receivedByCourtAt": "23-02-2021",
-      "filedAt": "16-03-2021",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 34131
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL135/KSBR",
-      "documentType": "notářský zápis [NZ 190/2021], stanovy společnosti",
-      "createdAt": "27-04-2021",
-      "filedAt": "04-05-2021",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 7,
-          "sizeBytes": 184638
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL136/KSBR",
-      "documentType": "ostatní rozhodnutí  jedin. akcionáře",
-      "createdAt": "28-04-2021",
-      "receivedByCourtAt": "11-06-2021",
-      "filedAt": "14-07-2021",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 32440
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL137/KSBR",
-      "documentType": "výroční zpráva [2020]",
-      "createdAt": "19-02-2021",
-      "receivedByCourtAt": "25-06-2021",
-      "filedAt": "03-08-2021",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 41,
-          "sizeBytes": 2364142
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL138/KSBR",
-      "documentType": "účetní závěrka [2021] rozvaha + výkaz",
-      "createdAt": "13-02-2022",
-      "receivedByCourtAt": "25-07-2022",
-      "filedAt": "08-08-2022",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 6,
-          "sizeBytes": 67091
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL139/KSBR",
-      "documentType": "výroční zpráva [2021]",
-      "createdAt": "25-02-2022",
-      "receivedByCourtAt": "25-07-2022",
-      "filedAt": "08-08-2022",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 36,
-          "sizeBytes": 2314054
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL140/KSBR",
-      "documentType": "ostatní rozhodnutí jediného akcionáře",
-      "createdAt": "22-11-2022",
-      "receivedByCourtAt": "14-03-2023",
-      "filedAt": "05-04-2023",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 48530
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL141/KSBR",
-      "documentType": "ostatní rozhodnutí jediného akcionáře",
-      "createdAt": "22-11-2022",
-      "receivedByCourtAt": "14-03-2023",
-      "filedAt": "05-04-2023",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 46741
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL142/KSBR",
-      "documentType": "výroční zpráva [2022]",
-      "createdAt": "20-02-2023",
-      "receivedByCourtAt": "21-07-2023",
-      "filedAt": "07-08-2023",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 36,
-          "sizeBytes": 2293355
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL143/KSBR",
-      "documentType": "účetní závěrka [2022] příloha",
-      "createdAt": "20-02-2023",
-      "receivedByCourtAt": "19-07-2023",
-      "filedAt": "07-08-2023",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 11,
-          "sizeBytes": 1061491
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL144/KSBR",
-      "documentType": "účetní závěrka [2022] rozvaha + výkaz",
-      "createdAt": "01-04-2023",
-      "receivedByCourtAt": "19-07-2023",
-      "filedAt": "07-08-2023",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 6,
-          "sizeBytes": 67357
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL145/KSBR",
-      "documentType": "projekt přeměny - rozdělení odštěpením, sloučením projekt rozdělení odštěpením sloučením",
-      "createdAt": "13-11-2023",
-      "receivedByCourtAt": "14-11-2023",
-      "filedAt": "20-11-2023",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 37,
-          "sizeBytes": 1359154
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL146/KSBR",
-      "documentType": "notářský zápis [NZ 132/2023]",
-      "createdAt": "15-12-2023",
-      "filedAt": "01-01-2024",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 44,
-          "sizeBytes": 5899042
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL147/KSBR",
-      "documentType": "ostatní rozh. jed. akcionáře",
-      "createdAt": "06-03-2024",
-      "receivedByCourtAt": "10-06-2024",
-      "filedAt": "03-07-2024",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 47102
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL148/KSBR",
-      "documentType": "ostatní zápis o rozh. představenstva",
-      "createdAt": "29-05-2024",
-      "receivedByCourtAt": "10-06-2024",
-      "filedAt": "03-07-2024",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 33807
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL149/KSBR",
-      "documentType": "ostatní rozhodnutí jedin. akcionáře",
-      "createdAt": "23-05-2024",
-      "receivedByCourtAt": "11-07-2024",
-      "filedAt": "23-07-2024",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 47026
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL150/KSBR",
-      "documentType": "výroční zpráva [2023], zpráva auditora [2023]",
-      "createdAt": "20-02-2024",
-      "receivedByCourtAt": "26-07-2024",
-      "filedAt": "30-08-2024",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 37,
-          "sizeBytes": 2295159
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL151/KSBR",
-      "documentType": "účetní závěrka [2023] rozvaha + výkaz",
-      "createdAt": "18-06-2024",
-      "receivedByCourtAt": "26-07-2024",
-      "filedAt": "30-08-2024",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 6,
-          "sizeBytes": 70153
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL152/KSBR",
-      "documentType": "výroční zpráva [2023]",
-      "createdAt": "20-02-2024",
-      "receivedByCourtAt": "12-08-2024",
-      "filedAt": "30-08-2024",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 37,
-          "sizeBytes": 2295159
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL153/KSBR",
-      "documentType": "notářský zápis [NZ 104/2024] stanovy ke dni 24. 9. 2024",
-      "createdAt": "24-09-2024",
-      "filedAt": "10-10-2024",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 9,
-          "sizeBytes": 177153
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL154/KSBR",
-      "documentType": "výroční zpráva [2024]",
-      "createdAt": "20-02-2025",
-      "receivedByCourtAt": "27-05-2025",
-      "filedAt": "11-06-2025",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 37,
-          "sizeBytes": 2300647
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL155/KSBR",
-      "documentType": "účetní závěrka [2024] rozvaha + výkaz",
-      "createdAt": "03-06-2025",
-      "receivedByCourtAt": "23-07-2025",
-      "filedAt": "07-08-2025",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 6,
-          "sizeBytes": 69567
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL156/KSBR",
-      "documentType": "zpráva auditora",
-      "createdAt": "20-02-2025",
-      "receivedByCourtAt": "23-07-2025",
-      "filedAt": "07-08-2025",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 20,
-          "sizeBytes": 1328370
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL157/KSBR",
-      "documentType": "ostatní zápis o rozhodnutí představenstva",
-      "createdAt": "18-03-2026",
-      "receivedByCourtAt": "19-03-2026",
-      "filedAt": "01-04-2026",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 178304
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL158/KSBR",
-      "documentType": "ostatní rozhodnutí jediného akcionáře",
-      "createdAt": "19-02-2026",
-      "receivedByCourtAt": "19-03-2026",
-      "filedAt": "01-04-2026",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 1,
-          "sizeBytes": 178281
-        }
-      ]
-    },
-    {
-      "referenceLabel": "B 6130/SL159/KSBR",
-      "documentType": "výroční zpráva [2025]",
-      "createdAt": "20-02-2026",
-      "receivedByCourtAt": "01-06-2026",
-      "filedAt": "07-07-2026",
-      "digitized": true,
-      "files": [
-        {
-          "pageCount": 36,
-          "sizeBytes": 2280883
+          "sizeBytes": 0
         }
       ]
     }
