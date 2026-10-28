@@ -51,6 +51,10 @@ jako „Flowbite compliance" by bylo tvrzení o vynucení, které neexistuje.
 
 ### 3. Doktrína F1–F7
 
+F0 (`.claude/rules/ui.md`): měněná část začíná od odpovídající Flowbite
+Pro šablony nebo bloku. Pro je adaptovaný, žádný Pro soubor v Gitu ani
+v `public/`. Barvy zůstávají z palety F2.
+
 F1 žádné inline `style="…"` (vynucuje `verify-full-pages.mjs`) ·
 F2 barvy jen z palety v `base.html` a `input.css` · F3 viditelný
 `:focus-visible` · F4 breakpointy a `overflow-x-auto` u širokého obsahu ·
