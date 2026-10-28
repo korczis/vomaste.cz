@@ -61,6 +61,29 @@ rozcestník, ne konformanční specifikace. Vynucuje se **vlastní konvence
 tohohle webu**. Popisovat bránu jako „Flowbite LLM compliance" by bylo
 přesně to tvrzení o vynucení, které konstituce §8 zakazuje.
 
+## F0 — výchozí bod je Flowbite Pro (závazné od 2026-10-28)
+
+Vlastník drží licenci Flowbite Pro a nařídil ji pro UI všech svých
+projektů. Nová nebo měněná část UI proto začíná od odpovídající Pro
+šablony nebo bloku (shell s navbarem a drawer sidebarem, hlavička stránky
+s breadcrumbem, karty, tabulky, záložky, prázdné stavy, formuláře) a
+přebírá jeho strukturu a třídy. Nevymýšlí komponentu, kterou Pro sada
+už má. Zdroj je licencovaný a lokální: skill `flowbite-pro`
+(`~/.claude/skills/flowbite-pro/reference.md` je jeho výtah) a
+`~/dev/poppyhead/assets/vendor/flowbite/`.
+
+Tenhle repozitář i web jsou **veřejné**, takže Pro se **adaptuje, nikdy
+nekopíruje**: do Gitu ani do `public/` nesmí žádný Pro zdrojový soubor,
+bundle ani blok v dodané podobě. Za běhu se načítá jen volný balík
+`flowbite`. Barvy, písmo a rozestupy zůstávají z palety F2. Pro dává
+strukturu, ne druhou paletu.
+
+**Co vynucuje co** (konstituce §8): F0 dnes vynucuje review (agent
+`ui-reviewer`, skill `ui-review`) a měří ho
+`node ~/.claude/skills/flowbite-pro/verify.mjs .`. Build ho zatím
+nevynucuje a v CI neběží. Stav k 2026-10-28: volný Flowbite 4 je
+použitý, Pro shell zatím ne.
+
 ## Flowbite doktrína F1–F7 (závazná)
 
 **F1** utility-first, žádné inline `style="…"` v šablonách (vynucuje
