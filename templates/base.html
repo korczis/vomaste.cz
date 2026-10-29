@@ -94,11 +94,11 @@
 {%- set meta_lang = pg.extra.lang | default(value=sec.extra.lang | default(value=config.extra.lang | default(value="en"))) -%}
 {%- set meta_updated = pg.extra.updated | default(value=sec.extra.updated | default(value="")) -%}
 <!DOCTYPE html>
-<html lang="{{ meta_lang }}" class="scroll-smooth no-js">
+<html lang="{{ meta_lang }}" class="dark scroll-smooth no-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#111827">
   <meta name="robots" content="{% if config.extra.index %}index, follow{% else %}noindex, nofollow{% endif %}">
   {#- Classic no-js/js flip: starts "no-js", flips before first paint so
       CSS (see .no-js rules in input.css) can hide controls that are
@@ -145,7 +145,7 @@
       this block to load static/js/graph-app.js. -#}
   {% block extra_js %}{% endblock extra_js %}
 </head>
-<body class="bg-black text-white font-sans antialiased">
+<body class="bg-gray-50 text-gray-900 font-sans antialiased dark:bg-gray-900 dark:text-white">
 <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:rounded focus:bg-[#f3e5c0] focus:px-3 focus:py-2 focus:text-black">Přeskočit na obsah</a>
 
 {#- Navigation is a GENERATED TREE, not a hand-written list:
@@ -224,17 +224,28 @@
     (Flowbite's own documented docked-sidebar technique);
     assets/js/modules/shell.js corrects the one side effect of that trick
     (Drawer.init() sets aria-hidden="true" regardless of viewport) and keeps
-    aria-expanded on the trigger in sync. -#}
-<nav class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black">
+    aria-expanded on the trigger in sync.
+
+    Colour roles follow the Flowbite Pro admin shell: page bg-gray-50 /
+    dark:bg-gray-900, navbar and sidebar surfaces bg-white / dark:bg-gray-800,
+    borders border-gray-200 / dark:border-gray-700. The site is dark-only, so
+    <html> carries the `dark` class permanently (tailwind.config.js darkMode).
+    The sidebar keeps the Pro marker aria-label="Sidebar" (the Flowbite Pro
+    verifier keys the drawer on it), but aria-labelledby wins in the
+    accessible-name computation, so screen readers announce only the Czech
+    heading "Hlavní navigace"; the English string is never exposed.
+    Every white/N token is paired with a light-mode counterpart, so the shell
+    stays readable if the `dark` class is ever dropped. -#}
+<nav class="fixed inset-x-0 top-0 z-50 border-b border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800">
   <div class="flex h-16 items-center gap-3 px-4">
     <button type="button" data-drawer-target="sidebar" data-drawer-toggle="sidebar" data-drawer-body-scrolling="false" aria-controls="sidebar" aria-expanded="false"
-      class="inline-flex items-center rounded-lg p-2 text-white/60 hover:bg-white/5 hover:text-white{% if current_path is defined and current_path != '/' %} md:hidden{% endif %}">
+      class="inline-flex items-center rounded-lg p-2 text-gray-600 hover:bg-gray-100 hover:text-gray-900 focus:ring-2 focus:ring-gray-100 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700{% if current_path is defined and current_path != '/' %} md:hidden{% endif %}">
       <span class="sr-only">Otevřít hlavní menu</span>
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
     </button>
     {#- py-2.5 dělá z loga plnohodnotný dotykový cíl (bylo 28 px vysoké),
         aniž by se cokoli vizuálně posunulo — navbar má pevných h-16. -#}
-    <a href="{{ get_url(path='@/_index.md') | safe }}" class="flex min-w-[44px] items-center justify-center gap-2 py-2.5 font-black text-white no-underline sm:min-w-0 sm:justify-start">
+    <a href="{{ get_url(path='@/_index.md') | safe }}" class="flex min-w-[44px] items-center justify-center gap-2 py-2.5 font-black text-gray-900 dark:text-white no-underline sm:min-w-0 sm:justify-start">
       <span class="text-lg">V</span>
       {#- Pod 640 px zůstává jen značka „V": celý wordmark tam ukrajoval
           z globálního vyhledávání natolik, že v poli nebylo vidět ani
@@ -261,7 +272,7 @@
         @keydown.enter.prevent="go()"
         autocomplete="off"
         placeholder="Hledat: osoba, CLM-##, SRC-##, kauza, vydavatel…"
-        class="w-full rounded-lg border border-white/15 bg-white/5 px-3 py-1.5 pr-14 text-sm text-white placeholder:text-white/55 focus:border-[#f3e5c0]/60 focus:outline-none"
+        class="block w-full rounded-lg border border-gray-300 bg-gray-50 px-3 py-1.5 pr-14 text-sm text-gray-900 placeholder:text-gray-500 focus:border-[#f3e5c0]/60 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-300"
         role="combobox" aria-expanded="false" :aria-expanded="open ? 'true' : 'false'" aria-controls="global-search-results" aria-autocomplete="list"
         :aria-activedescendant="activeOptionId"
       >
@@ -269,7 +280,7 @@
           wired in assets/js/modules/global-search.js initSearchShortcuts).
           Decorative for pointer users, hidden from AT (the label already
           names the input). -#}
-      <span aria-hidden="true" class="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 select-none rounded border border-white/15 px-1.5 py-0.5 font-mono text-[0.6rem] text-white/55">Ctrl K</span>
+      <span aria-hidden="true" class="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 select-none rounded border border-gray-300 px-1.5 py-0.5 font-mono text-[0.6rem] text-gray-500 dark:border-gray-500 dark:text-gray-300">Ctrl K</span>
       {#- Výsledky seskupené podle typu záznamu (search-core.js GROUPS
           order); klávesová navigace běží po plochém seznamu `flat`, takže
           šipky přecházejí přes hranice skupin. Zvýraznění shody je přes
@@ -280,17 +291,17 @@
         x-cloak
         role="listbox"
         aria-label="Výsledky hledání"
-        class="absolute left-0 right-0 top-full z-50 mt-1 max-h-96 overflow-y-auto rounded-lg border border-white/10 bg-black shadow-xl"
+        class="absolute left-0 right-0 top-full z-50 mt-1 max-h-96 overflow-y-auto rounded-lg border border-gray-200 bg-white shadow-xl dark:border-gray-700 dark:bg-gray-800"
       >
         <template x-for="group in groups" :key="group.type">
           <div>
-            <div role="presentation" class="sticky top-0 border-b border-white/10 bg-black/95 px-3 py-1 text-[0.6rem] font-semibold uppercase tracking-wider text-white/55" x-text="group.label"></div>
+            <div role="presentation" class="sticky top-0 border-b border-gray-200 bg-white/95 px-3 py-1 dark:border-gray-700 dark:bg-gray-800/95 text-[0.6rem] font-semibold uppercase tracking-wider text-gray-500 dark:text-white/55" x-text="group.label"></div>
             <template x-for="r in group.items" :key="r.id + r.route">
               <a :href="r.route" @mouseenter="activeIndex = r.flatIndex"
                  :id="'global-search-option-' + r.flatIndex"
                  role="option" :aria-selected="r.flatIndex === activeIndex ? 'true' : 'false'"
-                 class="block border-b border-white/5 px-3 py-2 text-sm no-underline last:border-b-0"
-                 :class="r.flatIndex === activeIndex ? 'bg-white/10' : ''">
+                 class="block border-b border-gray-100 dark:border-white/5 px-3 py-2 text-sm no-underline last:border-b-0"
+                 :class="r.flatIndex === activeIndex ? 'bg-gray-100 dark:bg-white/10' : ''">
                 <span class="font-mono text-xs text-[#f3e5c0]">
                   <template x-if="r.hlField === 'id'">
                     <span><span x-text="r.hl.before"></span><mark class="bg-[#f3e5c0]/30 text-[#f3e5c0]" x-text="r.hl.match"></mark><span x-text="r.hl.after"></span></span>
@@ -299,15 +310,15 @@
                     <span x-text="r.id"></span>
                   </template>
                 </span>
-                <span class="ml-2 text-white/80">
+                <span class="ml-2 text-gray-700 dark:text-white/80">
                   <template x-if="r.hlField === 'title'">
-                    <span><span x-text="r.hl.before"></span><mark class="bg-white/20 text-white" x-text="r.hl.match"></mark><span x-text="r.hl.after"></span></span>
+                    <span><span x-text="r.hl.before"></span><mark class="bg-gray-200 dark:bg-white/20 text-gray-900 dark:text-white" x-text="r.hl.match"></mark><span x-text="r.hl.after"></span></span>
                   </template>
                   <template x-if="r.hlField !== 'title'">
                     <span x-text="r.title"></span>
                   </template>
                 </span>
-                <span class="mt-0.5 block truncate text-xs text-white/55" x-text="r.summary"></span>
+                <span class="mt-0.5 block truncate text-xs text-gray-500 dark:text-white/55" x-text="r.summary"></span>
               </a>
             </template>
           </div>
@@ -316,13 +327,13 @@
       {#- Nenačtený rejstřík NENÍ prázdný výsledek: „Nic nenalezeno" by
           uživatele nechalo v přesvědčení, že záznam neexistuje, přestože
           hledání vůbec neběželo. Rozlišené hlášení proto i vizuálně. -#}
-      <p x-show="open && query.trim().length > 0 && flat.length === 0 && !loadError" x-cloak class="absolute left-0 right-0 top-full z-50 mt-1 rounded-lg border border-white/10 bg-black p-3 text-xs text-white/50">Nic nenalezeno pro „<span x-text="query"></span>“. Zkuste ID záznamu (CLM-##, SRC-##), jméno, kauzu nebo vydavatele.</p>
-      <p x-show="open && loadError" x-cloak class="absolute left-0 right-0 top-full z-50 mt-1 rounded-lg border border-amber-400/40 bg-black p-3 text-xs text-amber-200/90">Rejstřík hledání se nepodařilo načíst, takže výsledky teď nejsou k dispozici — <strong>neznamená to, že záznam neexistuje</strong>. Zkuste to znovu, nebo procházejte přes <a href="/dossiers/" class="underline">seznam dossierů</a>.</p>
+      <p x-show="open && query.trim().length > 0 && flat.length === 0 && !loadError" x-cloak class="absolute left-0 right-0 top-full z-50 mt-1 rounded-lg border border-gray-200 bg-white p-3 text-xs text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-white/60">Nic nenalezeno pro „<span x-text="query"></span>“. Zkuste ID záznamu (CLM-##, SRC-##), jméno, kauzu nebo vydavatele.</p>
+      <p x-show="open && loadError" x-cloak class="absolute left-0 right-0 top-full z-50 mt-1 rounded-lg border border-amber-400/40 bg-white p-3 dark:bg-gray-800 text-xs text-amber-700 dark:text-amber-200/90">Rejstřík hledání se nepodařilo načíst, takže výsledky teď nejsou k dispozici — <strong>neznamená to, že záznam neexistuje</strong>. Zkuste to znovu, nebo procházejte přes <a href="/dossiers/" class="underline">seznam dossierů</a>.</p>
       <p class="sr-only" role="status" aria-live="polite" x-text="resultAnnouncement"></p>
     </div>
 
     <a href="https://github.com/korczis/vomaste.cz" title="Zdrojový kód a data na GitHubu"
-       class="ml-auto inline-flex items-center gap-2 rounded-lg p-2 text-white/60 no-underline hover:bg-white/5 hover:text-white">
+       class="ml-auto inline-flex items-center gap-2 rounded-lg p-2 text-gray-600 no-underline hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white">
       <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg>
       <span class="sr-only">GitHub — zdrojový kód a data</span>
     </a>
@@ -342,8 +353,8 @@
     Rozhodnuto ve prospěch jednoho vlastníka: strom níž registry už umí, umí je
     bez JS i na mobilu a je zdrojem pro SiteNavigationElement. Panel, jeho
     generátor i jeho tři (jinde nečtené) artefakty jsou pryč. -#}
-<aside id="sidebar" data-drawer-placement="left" tabindex="-1" aria-labelledby="sidebar-heading"
-       class="fixed inset-y-0 left-0 z-40 w-64 -translate-x-full border-r border-white/10 bg-black pt-16 transition-transform{% if sidebar_docked %} md:translate-x-0{% endif %}">
+<aside id="sidebar" data-drawer-placement="left" tabindex="-1" aria-label="Sidebar" aria-labelledby="sidebar-heading"
+       class="fixed inset-y-0 left-0 z-40 w-64 -translate-x-full border-r border-gray-200 bg-white pt-16 transition-transform dark:border-gray-700 dark:bg-gray-800{% if sidebar_docked %} md:translate-x-0{% endif %}">
   <h2 id="sidebar-heading" class="sr-only">Hlavní navigace</h2>
   <nav aria-label="Hlavní navigace dossieru" class="h-full overflow-y-auto py-3">
     {#- Generic three-level renderer: any top-level item may carry a subtree
@@ -370,11 +381,11 @@
     {%- for child in item.children %}
     {%- if child.children | length > 0 and "|" ~ child.id ~ "|" in active_trail %}
     <details class="group" {% if "|" ~ child.id ~ "|" in active_trail %}open{% endif %}>
-      <summary class="flex cursor-pointer list-none items-center gap-3 py-2.5 pl-8 pr-4 text-sm marker:content-none [&::-webkit-details-marker]:hidden {% if child.id == active_id %}bg-white/5 text-[#f3e5c0]{% else %}text-white/60 hover:bg-white/5 hover:text-white{% endif %}">
+      <summary class="flex cursor-pointer list-none items-center gap-3 py-2.5 pl-8 pr-4 text-sm marker:content-none [&::-webkit-details-marker]:hidden {% if child.id == active_id %}bg-gray-100 dark:bg-white/5 text-[#f3e5c0]{% else %}text-gray-600 dark:text-white/60 hover:bg-gray-100 dark:hover:bg-white/5 hover:text-gray-900 dark:hover:text-white{% endif %}">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0" aria-hidden="true"><path d="{{ child.icon }}"/></svg>
         <span class="min-w-0 flex-1 truncate">{{ child.label }}</span>
         {{ <nav_dossier_count metrics={nav_metrics} slug={child.id} /> }}
-        <span class="text-white/55 transition-transform group-open:rotate-90" aria-hidden="true">›</span>
+        <span class="text-gray-500 dark:text-white/55 transition-transform group-open:rotate-90" aria-hidden="true">›</span>
       </summary>
       {%- if child.overviewLabel %}
       {{ <nav_nav_link item={child} depth={1} active_id={active_id} label={child.overviewLabel} metrics={nav_metrics} /> }}
@@ -395,7 +406,7 @@
   {#- The drawer's hamburger toggle requires JS (inherent to any off-canvas
       drawer). Without JS, the destinations are still one click away here
       instead of only reachable via in-page breadcrumbs/footer links. -#}
-  <nav aria-label="Hlavní navigace (bez JavaScriptu)" class="border-b border-white/10 bg-black px-4 py-3 pt-16">
+  <nav aria-label="Hlavní navigace (bez JavaScriptu)" class="border-b border-gray-200 bg-white px-4 py-3 pt-16 dark:border-gray-700 dark:bg-gray-800">
     <ul class="flex flex-wrap gap-4 text-sm">
       {#- Registry se stejně jako v postranním stromu vypisují jen u dossieru,
           ve kterém právě jsi — jinak by tenhle blok sám o sobě vrátil zpátky

@@ -123,7 +123,7 @@
     "alpinejs": "^3.15.12",
     "autoprefixer": "^10.4.24",
     "esbuild": "^0.28.1",
-    "flowbite": "^4.0.2",
+    "flowbite": "^2.5.2",
     "graphology": "^0.26.0",
     "graphology-layout-forceatlas2": "^0.10.1",
     "js-yaml": "^5.2.3",

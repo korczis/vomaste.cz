@@ -97,7 +97,7 @@
   {% if filtered_relations | length > 0 %}
   <section aria-labelledby="graph-list-heading" class="mb-12">
     <h2 id="graph-list-heading" class="mb-3 text-xs font-semibold uppercase tracking-wide text-white/55">Vztahy ({{ filtered_relations | length }})</h2>
-    <p class="mb-4 text-xs text-white/50">Interaktivní graf se všemi vztahy (včetně sdílených) je na <a href="{{ get_url(path='@/dossiers/' ~ canonical_slug ~ '/_index.md') | safe }}#graf-vztahu" class="text-[#f3e5c0] hover:underline">společném přehledu</a>.</p>
+    <p class="mb-4 text-xs text-white/50">Interaktivní graf se všemi vztahy (včetně sdílených) je na <a href="{{ get_url(path='@/dossiers/' ~ canonical_slug ~ '/_index.md') | safe }}#graf-vztahu" class="text-[#f3e5c0] underline underline-offset-2">společném přehledu</a>.</p>
     <ul class="space-y-1.5 text-sm text-white/70">
       {% for r in filtered_relations %}
       <li><span class="edge-status-dot edge-{{ r.status }}"></span>{% if r.from.title %}{{ r.from.title }}{% else %}{{ r.from.entityId }}{% endif %} <span aria-hidden="true" class="text-white/55">&rarr;</span> <span class="text-white/50">{{ r.label }}</span> <span aria-hidden="true" class="text-white/55">&rarr;</span> {% if r.to.title %}{{ r.to.title }}{% else %}{{ r.to.entityId }}{% endif %}</li>

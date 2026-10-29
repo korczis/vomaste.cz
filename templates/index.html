@@ -462,12 +462,12 @@
       </div>
       <p class="p-4 text-sm leading-relaxed text-white/80">{{ demo.text }}</p>
       <div class="grid gap-px border-t border-white/10 bg-white/10 sm:grid-cols-3">
-        <a href="{{ config.base_url }}{{ demo.route }}" class="group bg-black p-4 no-underline transition-colors hover:bg-white/[0.04]">
+        <a href="{{ config.base_url }}{{ demo.route }}" class="group bg-gray-50 p-4 no-underline dark:bg-gray-900 transition-colors hover:bg-white/[0.04]">
           <span class="font-mono text-[0.65rem] uppercase tracking-widest text-white/55">Krok 1</span>
           <span class="mt-1 block text-sm font-semibold text-white group-hover:text-[#f3e5c0]">Tvrzení a jeho stav →</span>
           <span class="mt-1 block text-xs text-white/50">Proč nese „{{ demo.statusLabel }}" a co k tomu bylo potřeba doložit.</span>
         </a>
-        <div class="bg-black p-4">
+        <div class="bg-gray-50 p-4 dark:bg-gray-900">
           <span class="font-mono text-[0.65rem] uppercase tracking-widest text-white/55">Krok 2</span>
           <span class="mt-1 block text-sm font-semibold text-white">Citované zdroje →</span>
           <ul class="mt-2 space-y-1 text-xs text-white/50">
@@ -482,7 +482,7 @@
           </ul>
           <span class="mt-2 block text-xs text-white/50">Každý s přímým odkazem na originál. Kolik z nich je nezávislých hlasů, řeší <a href="{{ get_url(path='@/koncepty/nezavisle-dolozeni.md') | safe }}" class="underline decoration-white/30 underline-offset-2 hover:text-white">důkazní standard</a>.</span>
         </div>
-        <a href="https://github.com/korczis/vomaste.cz/commits/master/content/{{ demo.contentPath }}" class="group bg-black p-4 no-underline transition-colors hover:bg-white/[0.04]">
+        <a href="https://github.com/korczis/vomaste.cz/commits/master/content/{{ demo.contentPath }}" class="group bg-gray-50 p-4 no-underline dark:bg-gray-900 transition-colors hover:bg-white/[0.04]">
           <span class="font-mono text-[0.65rem] uppercase tracking-widest text-white/55">Krok 3</span>
           <span class="mt-1 block text-sm font-semibold text-white group-hover:text-[#f3e5c0]">Historie změn v Gitu →</span>
           <span class="mt-1 block text-xs text-white/50">Kdy záznam vznikl a co se v něm kdy změnilo.</span>

@@ -12,12 +12,12 @@
     md:hidden: only small viewports get this — the docked primary sidebar
     already gives desktop one-tap access to everything. -#}
 {% component bottom_nav_render(nav_items, active_id) -%}
-<nav aria-label="Rychlá navigace" class="fixed inset-x-0 bottom-0 z-40 flex border-t border-white/10 bg-black md:hidden">
+<nav aria-label="Rychlá navigace" class="fixed inset-x-0 bottom-0 z-40 flex border-t border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800 md:hidden">
   {%- for wanted_id in ["home", "dossiers", "map"] %}
     {%- for item in nav_items %}
       {%- if item.id == wanted_id %}
   <a href="{{ get_url(path=item.path) | safe }}"
-     class="flex flex-1 flex-col items-center gap-0.5 py-2 text-[0.65rem]{% if item.id == active_id %} text-[#f3e5c0]{% else %} text-white/55{% endif %}"
+     class="flex flex-1 flex-col items-center gap-0.5 py-2 text-[0.65rem]{% if item.id == active_id %} text-[#f3e5c0]{% else %} text-gray-500 dark:text-white/55{% endif %}"
      {% if item.id == active_id %}aria-current="page"{% endif %}>
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{ item.icon }}"/></svg>
     <span class="max-w-full truncate px-1">{{ item.label }}</span>
@@ -31,7 +31,7 @@
       own toggle; the <noscript> nav right above already covers that
       case with plain links. -#}
   <button type="button" data-drawer-target="sidebar" data-drawer-toggle="sidebar" data-drawer-body-scrolling="false" aria-controls="sidebar" aria-expanded="false"
-          class="flex flex-1 flex-col items-center gap-0.5 py-2 text-[0.65rem] text-white/55">
+          class="flex flex-1 flex-col items-center gap-0.5 py-2 text-[0.65rem] text-gray-500 dark:text-white/55">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
     <span>Menu</span>
   </button>

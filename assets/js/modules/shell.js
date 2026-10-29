@@ -1,58 +1,67 @@
-// Two corrections to Flowbite's official docked-sidebar-via-Drawer technique
-// (templates/base.html), both side effects of the same trick — the sidebar is
-// one element that is a real Drawer on mobile and a permanently visible
-// sidebar on desktop (`md:translate-x-0`):
+// Accessibility state for the docked-sidebar Drawer (templates/base.html).
+//
+// The sidebar is one element that is a real Flowbite Drawer on mobile and a
+// permanently visible sidebar on desktop (`md:translate-x-0`). Flowbite owns
+// every behaviour (open, close, backdrop, body scroll); this module only
+// reflects the Drawer's own state into ARIA, through Flowbite's public API
+// (`FlowbiteInstances.getInstance` + `updateOnShow` / `updateOnHide`):
 //
 //  1. Drawer.init() sets aria-hidden="true" on the target regardless of
-//     viewport, so on desktop the sidebar ends up visible yet marked hidden
-//     for assistive tech.
-//  2. Flowbite does not maintain aria-expanded on the trigger, so the
-//     hamburger never announces whether the menu is open.
+//     viewport, so on desktop the sidebar would be visible yet hidden for
+//     assistive tech.
+//  2. Flowbite does not maintain aria-expanded on the triggers, so the
+//     hamburger would never announce whether the menu is open.
+//  3. aria-hidden alone leaves the links of a closed drawer reachable by Tab;
+//     `inert` removes the whole subtree from tab order and the a11y tree
+//     (axe aria-hidden-focus, mobile project of the browser tests).
 //
-// Both are mirrored from the drawer's own state (Flowbite toggles the
-// `transform-none` / `-translate-x-full` classes), so this never fights the
-// library — it only reflects what the Drawer already did. Runs after
-// `window.load` too, because Flowbite wires its instances there (see
-// node_modules/flowbite/lib/esm/index.js).
+// Flowbite creates its instances on `window.load` (flowbite/lib/esm/index.js),
+// and its listener is registered first because app.js imports it first.
 export function initSidebarAria() {
   var sidebar = document.getElementById("sidebar");
   if (!sidebar) return;
-  var toggles = document.querySelectorAll('[data-drawer-toggle="sidebar"]');
+  // Triggers are found by the ARIA relation they declare, not by Flowbite's
+  // data attributes: Flowbite wires them, this only mirrors their state.
+  var triggers = document.querySelectorAll('[aria-controls="sidebar"]');
   var mq = window.matchMedia("(min-width: 768px)");
+  var drawer = null;
 
   function isOpen() {
-    return sidebar.classList.contains("transform-none");
+    // Without a registry instance, read the class Flowbite toggles on show().
+    return drawer ? drawer.isVisible() : sidebar.classList.contains("transform-none");
   }
 
   function sync() {
+    var open = isOpen();
     if (mq.matches) {
       sidebar.removeAttribute("aria-hidden");
       sidebar.removeAttribute("inert");
-    } else if (!isOpen()) {
-      // Only on mobile and only when the drawer is actually closed —
-      // Flowbite's own show()/hide() already set this on every toggle.
+    } else if (!open) {
       sidebar.setAttribute("aria-hidden", "true");
-      // aria-hidden samo nestačí: panel dál obsahuje odkazy, na které se
-      // dá dostat tabulátorem, takže klávesnicí šlo zabloudit do zavřeného
-      // a neviditelného menu. `inert` odebere celý podstrom z pořadí
-      // tabulátoru i ze stromu přístupnosti najednou. Odhalil axe
-      // v mobilním projektu prohlížečových testů (aria-hidden-focus);
-      // statická kontrola šablony to najít nemohla, protože atribut
-      // nastavuje až tenhle skript za běhu.
       sidebar.setAttribute("inert", "");
     } else {
       sidebar.removeAttribute("inert");
     }
-    for (var i = 0; i < toggles.length; i++) {
-      toggles[i].setAttribute("aria-expanded", isOpen() ? "true" : "false");
+    for (var i = 0; i < triggers.length; i++) {
+      triggers[i].setAttribute("aria-expanded", open ? "true" : "false");
     }
   }
 
-  // The class flip is the only state change Flowbite emits without
-  // registering per-instance callbacks, so observe it rather than wrapping
-  // its API.
-  new MutationObserver(sync).observe(sidebar, { attributes: true, attributeFilter: ["class"] });
-  window.addEventListener("load", sync);
+  window.addEventListener("load", function () {
+    var registry = window.FlowbiteInstances;
+    drawer = registry ? registry.getInstance("Drawer", "sidebar") : null;
+    if (drawer) {
+      drawer.updateOnShow(sync);
+      drawer.updateOnHide(sync);
+    } else {
+      // Registry missing (Flowbite not loaded, or a version without
+      // FlowbiteInstances): warn instead of failing silently, and fall back
+      // to observing the transform-none / -translate-x-full class flip.
+      console.warn("shell.js: no Flowbite Drawer instance for #sidebar; observing classes.");
+      new MutationObserver(sync).observe(sidebar, { attributes: true, attributeFilter: ["class"] });
+    }
+    sync();
+  });
   mq.addEventListener("change", sync);
   sync();
 }
