@@ -31,5 +31,9 @@ module.exports = {
       },
     },
   },
+  // flowbite follows the Tailwind major: this project runs Tailwind 3, so it
+  // pins flowbite ^2.5.2. flowbite 3+ builds its plugin base styles on CSS
+  // variables (--color-brand, --color-body, ...) that only a Tailwind 4
+  // @theme defines; on Tailwind 3 form controls would render unstyled.
   plugins: [require("flowbite/plugin")],
 };
