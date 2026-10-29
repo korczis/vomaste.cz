@@ -18,7 +18,12 @@ module.exports = {
   // (dossier.json contentBlocks timeline) a šablona je renderuje dynamicky
   // ({{ entry.dot }}), takže je scan nevidí — safelist je drží explicitně.
   safelist: ["dot-fact", "dot-disputed", "dot-ongoing"],
-  darkMode: "media",
+  // Pro admin shell colour roles (page gray-50/gray-900, surface white/gray-800,
+  // border gray-200/gray-700) are written as light + dark: pairs. The site is
+  // dark-only, so the dark scheme is pinned by the `dark` class on <html>
+  // (templates/base.html) instead of following the OS: a light-OS reader keeps
+  // the same dark site rather than gray-50 under white text.
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {

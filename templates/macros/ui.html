@@ -8,15 +8,19 @@
     so each crumb is encoded as a single string "Label::URL" (linked) or
     just "Label" (current page, no link — normally the last item). -#}
 {% component ui_breadcrumb(items) -%}
-<nav class="mb-2 text-sm text-white/50" aria-label="Drobečková navigace">
-  <ol class="flex flex-wrap items-center gap-1">
+{#- Breadcrumb adapted from the Flowbite Pro page header:
+    nav[aria-label="Breadcrumb"] > ol.inline-flex, chevron separators between
+    items, the current item marked aria-current. The landmark name is the Pro
+    one ("Breadcrumb"); the visible trail stays Czech. -#}
+<nav class="mb-2 flex text-sm" aria-label="Breadcrumb">
+  <ol class="inline-flex flex-wrap items-center gap-x-1 md:gap-x-2">
     {%- for item in items %}
     {%- set parts = item | split(pat="::") %}
-    <li class="flex items-center gap-1">
+    <li class="inline-flex items-center gap-1 md:gap-2">
+      {%- if not loop.first %}<svg class="h-4 w-4 shrink-0 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M7.3 14.7a1 1 0 0 1 0-1.4L10.6 10 7.3 6.7a1 1 0 0 1 1.4-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.4 0Z" clip-rule="evenodd"/></svg>{% endif %}
       {#- min-h-6 + inline-flex: drobeček byl 20 px vysoký, tedy pod minimem
           dotykového cíle (WCAG 2.5.8). Text zůstává stejně velký. -#}
-      {%- if parts | length > 1 %}<a href="{{ parts[1] | safe }}" class="inline-flex min-h-6 items-center text-[#f3e5c0] hover:underline">{{ parts[0] }}</a>{% else %}<span class="inline-flex min-h-6 items-center" aria-current="page">{{ parts[0] }}</span>{% endif -%}
-      {%- if not loop.last %}<span aria-hidden="true">/</span>{% endif %}
+      {%- if parts | length > 1 %}<a href="{{ parts[1] | safe }}" class="inline-flex min-h-6 items-center font-medium text-[#f3e5c0] hover:underline">{{ parts[0] }}</a>{% else %}<span class="inline-flex min-h-6 items-center font-medium text-gray-500 dark:text-white/60" aria-current="page">{{ parts[0] }}</span>{% endif -%}
     </li>
     {%- endfor %}
   </ol>
@@ -45,7 +49,7 @@
     `reviewed` are only rendered when actually present in front matter —
     never fabricated. -#}
 {% component ui_page_header(breadcrumb_items, title, description="", updated="", reviewed="") -%}
-<header class="mb-8 border-b border-white/10 pb-6">
+<header class="mb-8 border-b border-gray-200 pb-6 dark:border-gray-700">
   {{ <ui_breadcrumb items={breadcrumb_items} /> }}
   <h1 class="mt-1 text-2xl font-black sm:text-3xl">{{ title }}</h1>
   {%- if description %}
@@ -154,7 +158,7 @@
 
 {% component ui_site_footer(content_path="") -%}
 {%- set repo = "https://github.com/korczis/vomaste.cz" -%}
-<footer class="mt-16 border-t border-white/10 bg-white/[0.02]">
+<footer class="mt-16 border-t border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800">
   <div class="mx-auto max-w-5xl px-4 py-8 sm:px-6">
     {%- if content_path %}
     <nav aria-label="Zdroj a historie této stránky" class="mb-6">
@@ -181,7 +185,7 @@
     </nav>
     {%- endif %}
 
-    <div class="flex flex-col gap-4 border-t border-white/10 pt-6 text-xs leading-relaxed text-white/55 sm:flex-row sm:items-start sm:justify-between">
+    <div class="flex flex-col gap-4 border-t border-gray-200 pt-6 text-xs leading-relaxed text-white/55 dark:border-gray-700 sm:flex-row sm:items-start sm:justify-between">
       <p class="sm:max-w-md">
         Kód, tooling i původní obsah:
         <a href="{{ repo }}/blob/master/LICENSE.md" class="text-white/70 underline decoration-white/25 underline-offset-2 hover:text-white hover:decoration-white/60">The&nbsp;Unlicense</a>

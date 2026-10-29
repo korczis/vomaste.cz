@@ -12,7 +12,7 @@
     md:hidden: only small viewports get this — the docked primary sidebar
     already gives desktop one-tap access to everything. -#}
 {% component bottom_nav_render(nav_items, active_id) -%}
-<nav aria-label="Rychlá navigace" class="fixed inset-x-0 bottom-0 z-40 flex border-t border-white/10 bg-black md:hidden">
+<nav aria-label="Rychlá navigace" class="fixed inset-x-0 bottom-0 z-40 flex border-t border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800 md:hidden">
   {%- for wanted_id in ["home", "dossiers", "map"] %}
     {%- for item in nav_items %}
       {%- if item.id == wanted_id %}
