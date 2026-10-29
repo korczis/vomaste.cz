@@ -27,7 +27,8 @@ export function initSidebarAria() {
   var drawer = null;
 
   function isOpen() {
-    return drawer ? drawer.isVisible() : false;
+    // Without a registry instance, read the class Flowbite toggles on show().
+    return drawer ? drawer.isVisible() : sidebar.classList.contains("transform-none");
   }
 
   function sync() {
@@ -52,6 +53,12 @@ export function initSidebarAria() {
     if (drawer) {
       drawer.updateOnShow(sync);
       drawer.updateOnHide(sync);
+    } else {
+      // Registry missing (Flowbite not loaded, or a version without
+      // FlowbiteInstances): warn instead of failing silently, and fall back
+      // to observing the transform-none / -translate-x-full class flip.
+      console.warn("shell.js: no Flowbite Drawer instance for #sidebar; observing classes.");
+      new MutationObserver(sync).observe(sidebar, { attributes: true, attributeFilter: ["class"] });
     }
     sync();
   });

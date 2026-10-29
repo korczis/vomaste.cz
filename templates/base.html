@@ -230,9 +230,12 @@
     dark:bg-gray-900, navbar and sidebar surfaces bg-white / dark:bg-gray-800,
     borders border-gray-200 / dark:border-gray-700. The site is dark-only, so
     <html> carries the `dark` class permanently (tailwind.config.js darkMode).
-    The sidebar carries the Pro aria-label="Sidebar", but aria-labelledby wins
-    in the accessible-name computation, so screen readers still announce the
-    Czech heading "Hlavní navigace". -#}
+    The sidebar keeps the Pro marker aria-label="Sidebar" (the Flowbite Pro
+    verifier keys the drawer on it), but aria-labelledby wins in the
+    accessible-name computation, so screen readers announce only the Czech
+    heading "Hlavní navigace"; the English string is never exposed.
+    Every white/N token is paired with a light-mode counterpart, so the shell
+    stays readable if the `dark` class is ever dropped. -#}
 <nav class="fixed inset-x-0 top-0 z-50 border-b border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800">
   <div class="flex h-16 items-center gap-3 px-4">
     <button type="button" data-drawer-target="sidebar" data-drawer-toggle="sidebar" data-drawer-body-scrolling="false" aria-controls="sidebar" aria-expanded="false"
@@ -242,7 +245,7 @@
     </button>
     {#- py-2.5 dělá z loga plnohodnotný dotykový cíl (bylo 28 px vysoké),
         aniž by se cokoli vizuálně posunulo — navbar má pevných h-16. -#}
-    <a href="{{ get_url(path='@/_index.md') | safe }}" class="flex min-w-[44px] items-center justify-center gap-2 py-2.5 font-black text-white no-underline sm:min-w-0 sm:justify-start">
+    <a href="{{ get_url(path='@/_index.md') | safe }}" class="flex min-w-[44px] items-center justify-center gap-2 py-2.5 font-black text-gray-900 dark:text-white no-underline sm:min-w-0 sm:justify-start">
       <span class="text-lg">V</span>
       {#- Pod 640 px zůstává jen značka „V": celý wordmark tam ukrajoval
           z globálního vyhledávání natolik, že v poli nebylo vidět ani
@@ -292,13 +295,13 @@
       >
         <template x-for="group in groups" :key="group.type">
           <div>
-            <div role="presentation" class="sticky top-0 border-b border-gray-200 bg-white/95 px-3 py-1 dark:border-gray-700 dark:bg-gray-800/95 text-[0.6rem] font-semibold uppercase tracking-wider text-white/55" x-text="group.label"></div>
+            <div role="presentation" class="sticky top-0 border-b border-gray-200 bg-white/95 px-3 py-1 dark:border-gray-700 dark:bg-gray-800/95 text-[0.6rem] font-semibold uppercase tracking-wider text-gray-500 dark:text-white/55" x-text="group.label"></div>
             <template x-for="r in group.items" :key="r.id + r.route">
               <a :href="r.route" @mouseenter="activeIndex = r.flatIndex"
                  :id="'global-search-option-' + r.flatIndex"
                  role="option" :aria-selected="r.flatIndex === activeIndex ? 'true' : 'false'"
-                 class="block border-b border-white/5 px-3 py-2 text-sm no-underline last:border-b-0"
-                 :class="r.flatIndex === activeIndex ? 'bg-white/10' : ''">
+                 class="block border-b border-gray-100 dark:border-white/5 px-3 py-2 text-sm no-underline last:border-b-0"
+                 :class="r.flatIndex === activeIndex ? 'bg-gray-100 dark:bg-white/10' : ''">
                 <span class="font-mono text-xs text-[#f3e5c0]">
                   <template x-if="r.hlField === 'id'">
                     <span><span x-text="r.hl.before"></span><mark class="bg-[#f3e5c0]/30 text-[#f3e5c0]" x-text="r.hl.match"></mark><span x-text="r.hl.after"></span></span>
@@ -307,15 +310,15 @@
                     <span x-text="r.id"></span>
                   </template>
                 </span>
-                <span class="ml-2 text-white/80">
+                <span class="ml-2 text-gray-700 dark:text-white/80">
                   <template x-if="r.hlField === 'title'">
-                    <span><span x-text="r.hl.before"></span><mark class="bg-white/20 text-white" x-text="r.hl.match"></mark><span x-text="r.hl.after"></span></span>
+                    <span><span x-text="r.hl.before"></span><mark class="bg-gray-200 dark:bg-white/20 text-gray-900 dark:text-white" x-text="r.hl.match"></mark><span x-text="r.hl.after"></span></span>
                   </template>
                   <template x-if="r.hlField !== 'title'">
                     <span x-text="r.title"></span>
                   </template>
                 </span>
-                <span class="mt-0.5 block truncate text-xs text-white/55" x-text="r.summary"></span>
+                <span class="mt-0.5 block truncate text-xs text-gray-500 dark:text-white/55" x-text="r.summary"></span>
               </a>
             </template>
           </div>
@@ -325,7 +328,7 @@
           uživatele nechalo v přesvědčení, že záznam neexistuje, přestože
           hledání vůbec neběželo. Rozlišené hlášení proto i vizuálně. -#}
       <p x-show="open && query.trim().length > 0 && flat.length === 0 && !loadError" x-cloak class="absolute left-0 right-0 top-full z-50 mt-1 rounded-lg border border-gray-200 bg-white p-3 text-xs text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-white/60">Nic nenalezeno pro „<span x-text="query"></span>“. Zkuste ID záznamu (CLM-##, SRC-##), jméno, kauzu nebo vydavatele.</p>
-      <p x-show="open && loadError" x-cloak class="absolute left-0 right-0 top-full z-50 mt-1 rounded-lg border border-amber-400/40 bg-white p-3 dark:bg-gray-800 text-xs text-amber-200/90">Rejstřík hledání se nepodařilo načíst, takže výsledky teď nejsou k dispozici — <strong>neznamená to, že záznam neexistuje</strong>. Zkuste to znovu, nebo procházejte přes <a href="/dossiers/" class="underline">seznam dossierů</a>.</p>
+      <p x-show="open && loadError" x-cloak class="absolute left-0 right-0 top-full z-50 mt-1 rounded-lg border border-amber-400/40 bg-white p-3 dark:bg-gray-800 text-xs text-amber-700 dark:text-amber-200/90">Rejstřík hledání se nepodařilo načíst, takže výsledky teď nejsou k dispozici — <strong>neznamená to, že záznam neexistuje</strong>. Zkuste to znovu, nebo procházejte přes <a href="/dossiers/" class="underline">seznam dossierů</a>.</p>
       <p class="sr-only" role="status" aria-live="polite" x-text="resultAnnouncement"></p>
     </div>
 
@@ -378,11 +381,11 @@
     {%- for child in item.children %}
     {%- if child.children | length > 0 and "|" ~ child.id ~ "|" in active_trail %}
     <details class="group" {% if "|" ~ child.id ~ "|" in active_trail %}open{% endif %}>
-      <summary class="flex cursor-pointer list-none items-center gap-3 py-2.5 pl-8 pr-4 text-sm marker:content-none [&::-webkit-details-marker]:hidden {% if child.id == active_id %}bg-white/5 text-[#f3e5c0]{% else %}text-white/60 hover:bg-white/5 hover:text-white{% endif %}">
+      <summary class="flex cursor-pointer list-none items-center gap-3 py-2.5 pl-8 pr-4 text-sm marker:content-none [&::-webkit-details-marker]:hidden {% if child.id == active_id %}bg-gray-100 dark:bg-white/5 text-[#f3e5c0]{% else %}text-gray-600 dark:text-white/60 hover:bg-gray-100 dark:hover:bg-white/5 hover:text-gray-900 dark:hover:text-white{% endif %}">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0" aria-hidden="true"><path d="{{ child.icon }}"/></svg>
         <span class="min-w-0 flex-1 truncate">{{ child.label }}</span>
         {{ <nav_dossier_count metrics={nav_metrics} slug={child.id} /> }}
-        <span class="text-white/55 transition-transform group-open:rotate-90" aria-hidden="true">›</span>
+        <span class="text-gray-500 dark:text-white/55 transition-transform group-open:rotate-90" aria-hidden="true">›</span>
       </summary>
       {%- if child.overviewLabel %}
       {{ <nav_nav_link item={child} depth={1} active_id={active_id} label={child.overviewLabel} metrics={nav_metrics} /> }}

@@ -66,7 +66,7 @@
 <a href="{{ href | safe }}" title="{{ text }}{% if has_count %} — {{ count }} {{ noun }}{% endif %}"
    {% if has_count %}aria-label="{{ text }}, {{ noun }}: {{ count }}"{% endif %}
    {% if is_active %}aria-current="page"{% endif %}
-   class="grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-3 py-2.5 text-sm no-underline {{ pad }} {% if is_active %}bg-white/5 text-[#f3e5c0]{% else %}text-white/60 hover:bg-white/5 hover:text-white{% endif %}">
+   class="grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-3 py-2.5 text-sm no-underline {{ pad }} {% if is_active %}bg-gray-100 dark:bg-white/5 text-[#f3e5c0]{% else %}text-gray-600 dark:text-white/60 hover:bg-gray-100 dark:hover:bg-white/5 hover:text-gray-900 dark:hover:text-white{% endif %}">
   <svg width="{{ size }}" height="{{ size }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0" aria-hidden="true"><path d="{{ item.icon }}"/></svg>
   <span class="min-w-0 truncate">{{ text }}</span>
   {%- if has_count %}
