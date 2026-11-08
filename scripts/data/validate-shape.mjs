@@ -21,6 +21,7 @@ import { readFileSync, readdirSync, statSync, existsSync } from "node:fs";
 import { join, relative, dirname, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { Ajv2020 } from "ajv/dist/2020.js";
+import { formatAjvErrors } from "./lib/ajv-format.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const SCHEMAS_DIR = join(ROOT, "schemas/canonical");
@@ -69,13 +70,6 @@ function* walkJsonFiles(dir) {
   }
 }
 
-function formatAjvErrors(relPath, ajvErrors) {
-  return (ajvErrors ?? []).map((e) => {
-    const where = e.instancePath || "(root)";
-    const extra = e.keyword === "additionalProperties" ? ` (cizí pole "${e.params.additionalProperty}")` : "";
-    return `${relPath}: ${where} ${e.message}${extra}`;
-  });
-}
 
 // Zvaliduje jeden kanonický záznam (už rozparsovaný objekt); vrací pole
 // chybových hlášek s cestou. Export pro testy.
@@ -89,7 +83,7 @@ export function validateRecordObject(record, relPath) {
   }
   const validate = byRecordType[recordType];
   if (validate(record)) return [];
-  return formatAjvErrors(relPath, validate.errors);
+  return formatAjvErrors(relPath, validate.errors, record);
 }
 
 // Projde jeden strom kanonických dat. Vrací { errors, records,
@@ -116,7 +110,7 @@ export function validateShapeTree(rootDir = RECORDS_ROOT) {
     if (parts[0] === "_shared") {
       if (parts[1] === "vocabularies") {
         vocabularies++;
-        if (!vocabulary(parsed)) errors.push(...formatAjvErrors(relPath, vocabulary.errors));
+        if (!vocabulary(parsed)) errors.push(...formatAjvErrors(relPath, vocabulary.errors, parsed));
       } else if (parts[1] === "entities") {
         records++;
         errors.push(...validateRecordObject(parsed, relPath));

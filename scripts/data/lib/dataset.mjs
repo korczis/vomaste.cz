@@ -16,6 +16,7 @@ import { validateSemantics } from "../validate-semantics.mjs";
 import { validateRegistryTables } from "../validate-registry-table.mjs";
 import { validateJsonLd } from "../validate-jsonld.mjs";
 import { compileDataset } from "../compile.mjs";
+import { formatAjvErrors } from "./ajv-format.mjs";
 
 export { compileDataset, RECORDS_ROOT };
 
@@ -26,9 +27,6 @@ export async function loadCanonicalDataset(root = RECORDS_ROOT) {
   return loadCanonicalTree(root);
 }
 
-function formatAjvErrors(relPath, ajvErrors) {
-  return (ajvErrors ?? []).map((e) => `${relPath}: ${e.instancePath || "(root)"} ${e.message}`);
-}
 
 /*
  * Kompletní validace modelu: shape → references → semantics → jsonld.
@@ -46,7 +44,7 @@ export async function validateCanonicalDataset(model, options = {}) {
     errors.push(...validateRecordObject(wrapper.record, wrapper.relPath));
   }
   for (const { relPath, data } of model.vocabularies) {
-    if (!vocabulary(data)) errors.push(...formatAjvErrors(relPath, vocabulary.errors));
+    if (!vocabulary(data)) errors.push(...formatAjvErrors(relPath, vocabulary.errors, data));
   }
 
   // 2) referenční integrita

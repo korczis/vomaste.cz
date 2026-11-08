@@ -169,9 +169,10 @@ Hlášky vždy nesou cestu k souboru / id záznamu:
 |---|---|
 | `(root) must have required property 'subjects'` | Záznamu chybí povinné pole — doplň podle schématu (`schemas/canonical/<typ>.schema.json`). |
 | `(root) must NOT have additional properties (cizí pole "…")` | Překlep v názvu pole, nebo pole, které model v1 nezná — schválně tvrdá chyba. |
+| `/status must be equal to one of the allowed values — povolené hodnoty: … (zadáno: "…")` | Hodnota mimo uzavřený výčet schématu (stav, typ zdroje, priorita…). Hláška vypíše povolené hodnoty i to, co v záznamu je — vyber jednu z nich. |
 | `CLM-07: text řádky se neshoduje byte-verně s claim.text (rozjetá kopie)` | Tabulka v `dossier.json` a kanonický záznam se rozešly (T3) — uprav jedno či druhé do shody. |
 | `CLM-07: řádka tabulky nemá kanonický claim záznam` | Řádka bez souboru `claims/clm-07.json` (T2) — chybí záznam, nebo má špatné id. |
-| `status-single cituje 2 zdrojů — „1 ZDROJ" znamená přesně jeden` | S1 — buď odeber zdroj, nebo (jsou-li nezávislé rodiny) povyš status na corroborated. |
+| `status-single cituje 3 zdroj(ů) z 2 nezávislých source families (nezávislá dvojice SRC-04 + SRC-31) — „1 ZDROJ" znamená jedno nezávislé doložení` | S1 — citované zdroje už tvoří nezávislou dvojici (liší se rodinou i vydavatelem), takže stav patří `status-corroborated`. „1 ZDROJ" není „právě jedna URL": tři přetisky jedné agenturní zprávy jsou pořád jeden hlas. Zdroj kvůli tomu neodebírej. |
 | `status-corroborated cituje 2 zdroj(e) z 1 source family/families` | S2 — dvě citace z téže vydavatelské rodiny nejsou nezávislé potvrzení. |
 | `reference … na neexistující záznam` / `cross-dossier` | R4 — odkazovaný SRC/CLM neexistuje, nebo odkazuješ do cizího dossieru (i když cíl existuje, je to chyba). |
 | `authorization.records odkazuje na "AUTH-…", který v data/authorizations.toml neexistuje` | S5 — dossier bez skutečné autorizace; viz Krok 0. |
