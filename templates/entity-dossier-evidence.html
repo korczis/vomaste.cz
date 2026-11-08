@@ -8,6 +8,7 @@
   {% set dossier_slug = section.extra.dossier %}
   {% set claims_idx = load_data(path="data/generated/views/dossiers/" ~ dossier_slug ~ "/claims-index.json") %}
   {% set sources_idx = load_data(path="data/generated/views/dossiers/" ~ dossier_slug ~ "/sources-index.json") %}
+  {% set gaps_idx = load_data(path="data/generated/views/dossiers/" ~ dossier_slug ~ "/gaps-index.json") %}
   {% set claims = claims_idx.rows %}
   {% set sources = sources_idx.rows %}
 
@@ -18,6 +19,9 @@
   ]} /> }}
 
   <article class="dossier-prose mb-10">{{ section.content | safe }}</article>
+  {#- Vlastní záznamy (canonicalDossier == slug) → dlaždice odkazují na /hledat/ se stejným filtrem. -#}
+  {% if claims_idx.canonicalDossier == dossier_slug %}{% set evidence_search = dossier_slug %}{% else %}{% set evidence_search = "" %}{% endif %}
+  {{ <ui_evidence_summary claims={claims} sources={sources} gaps={gaps_idx.rows} search_dossier={evidence_search} /> }}
 
   <section aria-labelledby="claims-evidence-table-caption" class="mb-12">
     {% if claims | length == 0 %}

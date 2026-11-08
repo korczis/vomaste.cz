@@ -482,6 +482,10 @@ export function buildViewModels(compiled, { governmentRoster = new Map() } = {})
             description: r.description,
             priority: r.priority,
             checked: r.checked,
+            // Chybějící status = otevřená (schéma gap.schema.json); stejná
+            // definice jako v report-evidence-plan.mjs. Čte ho panel „Stav
+            // doložení" na stránce evidence, aby nepočítal uzavřené mezery.
+            status: r.status ?? "open",
             claims: (r.claims ?? []).map((ref) => ({
               "@id": ref["@id"],
               identifier: byId[ref["@id"]]?.record.identifier ?? localPart(ref["@id"]),

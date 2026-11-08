@@ -101,6 +101,64 @@
 <p class="rounded-lg border border-dashed border-white/15 p-6 text-center text-sm text-white/50">{{ message }}</p>
 {%- endcomponent %}
 
+{#- Stav doložení jednoho dossieru — panel na stránce evidence.
+
+    Počítá jen to, co stránka pod ním už zobrazuje záznam po záznamu:
+    stavy tvrzení, otevřené mezery a zdroje bez určené zdrojové rodiny.
+    Žádné skóre, žádný součet do jednoho čísla, žádné srovnání s jinými
+    dossiery — popisuje doložení na TOMTO webu, ne jednání osoby.
+    (Interní evidenční plán s bodovým hodnocením zůstává nepublikovaný,
+    viz scripts/data/report-evidence-plan.mjs.)
+
+    `search_dossier` neprázdné = dossier vlastní své záznamy, takže dlaždice
+    stavů vedou na /hledat/ se stejným filtrem a výsledek sedí s počtem.
+    U dossieru, který jen promítá záznamy jiného, by odkaz ukázal jiná čísla
+    — tam dlaždice odkaz nemají. -#}
+{% component ui_evidence_summary(claims, sources, gaps, search_dossier="") -%}
+{%- set n_corr = [c for c in claims if c.status == "status-corroborated"] | length -%}
+{%- set n_single = [c for c in claims if c.status == "status-single"] | length -%}
+{%- set n_quote = [c for c in claims if c.status == "status-quote"] | length -%}
+{%- set n_disp = [c for c in claims if c.status == "status-disputed"] | length -%}
+{%- set n_opin = [c for c in claims if c.status == "status-opinion"] | length -%}
+{%- set open_gaps = [g for g in gaps if g.status != "closed"] -%}
+{%- set n_gaps_high = [g for g in open_gaps if g.priority == "vysoká"] | length -%}
+{%- set n_nofam = [x for x in sources if not x.sourceFamily] | length -%}
+{%- set search = get_url(path="@/hledat/_index.md") ~ "?dossier=" ~ search_dossier ~ "&stav=" -%}
+<section class="mb-10" aria-labelledby="evidence-summary-heading" data-record-type="evidenceSummary"
+         data-claims="{{ claims | length }}" data-corroborated="{{ n_corr }}" data-single="{{ n_single }}"
+         data-open-gaps="{{ open_gaps | length }}" data-no-family="{{ n_nofam }}">
+  <h2 id="evidence-summary-heading" class="text-lg font-bold text-white">Stav doložení</h2>
+  <p class="mt-1 max-w-3xl text-sm text-white/60">
+    Kolik z {{ claims | length }} tvrzení tohoto dossieru stojí na dvou nezávislých hlasech a kolik zatím na jednom.
+    Popisuje to práci <strong>tohoto webu</strong> se zdroji, ne jednání osoby, a není to hodnocení pravdivosti.
+  </p>
+  <div class="mt-4 grid gap-3 sm:grid-cols-3 lg:grid-cols-5">
+    {%- if search_dossier %}
+    {{ <ui_stat_tile value={n_corr} label="nezávislá dvojice zdrojů (CORROBORATED)" url={search ~ "CORROBORATED"} /> }}
+    {{ <ui_stat_tile value={n_single} label="zatím jeden nezávislý hlas (1 ZDROJ)" url={search ~ "1+ZDROJ"} /> }}
+    {{ <ui_stat_tile value={n_quote} label="přímé citace (CITACE)" url={search ~ "CITACE"} /> }}
+    {%- else %}
+    {{ <ui_stat_tile value={n_corr} label="nezávislá dvojice zdrojů (CORROBORATED)" /> }}
+    {{ <ui_stat_tile value={n_single} label="zatím jeden nezávislý hlas (1 ZDROJ)" /> }}
+    {{ <ui_stat_tile value={n_quote} label="přímé citace (CITACE)" /> }}
+    {%- endif %}
+    {{ <ui_stat_tile value={open_gaps | length} label="otevřené mezery" /> }}
+    {{ <ui_stat_tile value={n_nofam} label="zdroje bez určené zdrojové rodiny" /> }}
+  </div>
+  <ul class="mt-3 space-y-1 text-xs text-white/55">
+    {%- if n_disp > 0 or n_opin > 0 %}
+    <li>Dále {{ n_disp }} sporných tvrzení (SPORNÉ) a {{ n_opin }} označených jako názor (NÁZOR).</li>
+    {%- endif %}
+    {%- if n_gaps_high > 0 %}
+    <li>Z otevřených mezer má {{ n_gaps_high }} prioritu „vysoká" — otevřená mezera není zjištění, jen otázka, na kterou citované zdroje zatím neodpovídají.</li>
+    {%- endif %}
+    {%- if n_nofam > 0 %}
+    <li>U zdroje bez určené rodiny se nezávislost posuzuje jen podle vydavatele a domény; rodina může nezávislost jen ubrat, nikdy přidat.</li>
+    {%- endif %}
+  </ul>
+</section>
+{%- endcomponent %}
+
 {#- Public-intake CTA (PHASE_006.md §42 Phase 7 contract). One shared
     macro so the landing page and the dossier index render byte-identical
     markup and copy — never two hand-typed near-duplicates that could
