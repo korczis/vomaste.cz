@@ -23,6 +23,25 @@ import { test as base, expect } from "@playwright/test";
 
 const PROD_ORIGIN = "https://vomaste.cz";
 
+// Přeposlání na lokální http-server (jeden proces) se pod plnou paralelní
+// zátěží občas utne na transportu: 2026-11-08 jeden test z 410 spadl na
+// „apiRequestContext.get: read ECONNRESET" při stahování 1,4 MB rejstříku
+// hledání — stránka správně ukázala poruchu, test ale neověřoval to, co
+// chtěl. Opakuje se proto JEN přeposlání a JEN na transportní chybě
+// lokálního serveru z výčtu níže; HTTP odpověď (i 404/500) se vrací tak,
+// jak přišla, a aserce testů se neopakují nikdy.
+const TRANSPORT_ERRORS = /\b(ECONNRESET|ECONNREFUSED|EPIPE|socket hang up)\b/;
+export async function localGet(request, url, attempts = 3) {
+  for (let i = 1; ; i++) {
+    try {
+      return await request.get(url);
+    } catch (e) {
+      if (i >= attempts || !TRANSPORT_ERRORS.test(String(e?.message))) throw e;
+      await new Promise((r) => setTimeout(r, 100 * i));
+    }
+  }
+}
+
 export const test = base.extend({
   page: async ({ page, baseURL, request }, use) => {
     await page.route(`${PROD_ORIGIN}/**`, async (route) => {
@@ -31,7 +50,7 @@ export const test = base.extend({
       // protokolu (https -> http) a selže. Obsah se proto stáhne z
       // lokálního serveru a odpověď se vyplní ručně. Query string nese
       // cache-busting hash, lokální soubor ho nemá, takže se zahazuje.
-      const res = await request.get(`${baseURL}${url.pathname}`);
+      const res = await localGet(request, `${baseURL}${url.pathname}`);
       await route.fulfill({
         status: res.status(),
         headers: res.headers(),
