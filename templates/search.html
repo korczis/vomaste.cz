@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+
+{#- Stránka /hledat/ — plné hledání s filtry a stavem v URL.
+
+    Výsledky vykresluje Alpine komponenta `searchPage`
+    (assets/js/modules/search-page.js) nad static/search-index.json, tímtéž
+    rejstříkem, ze kterého čte příkazový řádek v navigaci. Šablona nezná
+    žádný dossier, typ ani stav: volby filtrů staví komponenta z indexu
+    (facetOptions v search-core.js), takže nový dossier nebo stav tvrzení
+    tu nic neupravuje.
+
+    Bez JavaScriptu se hledání provést nedá (index se filtruje v prohlížeči
+    a web je statický) — stránka to říká rovnou a nabídne rozcestníky,
+    místo aby zobrazila prázdný výsledek, který by se dal číst jako
+    „nic takového neexistuje". -#}
+
+{% block content %}
+{{ <ui_page_header title={section.title} breadcrumb_items={[
+  "Domů::" ~ get_url(path="@/_index.md"),
+  section.title,
+]} description={section.description} /> }}
+
+<div class="dossier-prose mt-6 max-w-3xl text-white/70">{{ section.content | safe }}</div>
+
+<noscript>
+  <p class="mt-8 rounded-lg border border-amber-400/40 p-4 text-sm text-amber-200/90">
+    Hledání běží v prohlížeči a potřebuje JavaScript. Bez něj procházejte
+    <a href="{{ get_url(path='@/dossiers/_index.md') | safe }}" class="underline">seznam dossierů</a>
+    nebo <a href="{{ get_url(path='@/entities/_index.md') | safe }}" class="underline">registr entit</a>.
+  </p>
+</noscript>
+
+<section class="mt-8" aria-labelledby="search-form-heading"
+         x-data="searchPage('{{ get_url(path='search-index.json', cachebust=true) | safe }}')" x-cloak
+         data-record-type="searchPage">
+  <h2 id="search-form-heading" class="sr-only">Dotaz a filtry</h2>
+  <form role="search" class="grid gap-4 md:grid-cols-[minmax(0,2fr)_repeat(3,minmax(0,1fr))]"
+        action="{{ get_url(path='@/hledat/_index.md') | safe }}" method="get" @submit.prevent="run()">
+    <div>
+      <label for="search-q" class="mb-1 block text-xs font-semibold uppercase tracking-wide text-white/55">Hledaný text nebo ID</label>
+      <input id="search-q" name="q" type="search" autocomplete="off" x-model="state.q" @input.debounce.150ms="run()"
+             placeholder="jméno, kauza, vydavatel nebo ID (CLM-##, SRC-##)"
+             class="block w-full rounded-lg border border-white/15 bg-black p-2.5 text-sm text-white placeholder-white/35 focus:border-[#f3e5c0] focus:ring-[#f3e5c0]">
+    </div>
+    <div>
+      <label for="search-type" class="mb-1 block text-xs font-semibold uppercase tracking-wide text-white/55">Typ záznamu</label>
+      <select id="search-type" name="typ" x-model="state.type" @change="if (state.type && state.type !== 'claim') state.status = ''; run()"
+              class="block w-full rounded-lg border border-white/15 bg-black p-2.5 text-sm text-white focus:border-[#f3e5c0] focus:ring-[#f3e5c0]">
+        <option value="">Všechny typy</option>
+        <template x-for="o in options.types" :key="o.value">
+          <option :value="o.value" x-text="o.label" :selected="o.value === state.type"></option>
+        </template>
+      </select>
+    </div>
+    <div>
+      <label for="search-dossier" class="mb-1 block text-xs font-semibold uppercase tracking-wide text-white/55">Dossier</label>
+      <select id="search-dossier" name="dossier" x-model="state.dossier" @change="run()"
+              class="block w-full rounded-lg border border-white/15 bg-black p-2.5 text-sm text-white focus:border-[#f3e5c0] focus:ring-[#f3e5c0]">
+        <option value="">Všechny dossiery</option>
+        <template x-for="o in options.dossiers" :key="o.value">
+          <option :value="o.value" x-text="o.label" :selected="o.value === state.dossier"></option>
+        </template>
+      </select>
+    </div>
+    <div>
+      <label for="search-status" class="mb-1 block text-xs font-semibold uppercase tracking-wide text-white/55">Stav tvrzení</label>
+      <select id="search-status" name="stav" x-model="state.status" @change="if (state.status) state.type = 'claim'; run()"
+              class="block w-full rounded-lg border border-white/15 bg-black p-2.5 text-sm text-white focus:border-[#f3e5c0] focus:ring-[#f3e5c0]">
+        <option value="">Jakýkoli stav</option>
+        <template x-for="o in options.statuses" :key="o.value">
+          <option :value="o.value" x-text="o.label" :selected="o.value === state.status"></option>
+        </template>
+      </select>
+    </div>
+  </form>
+
+  <div class="mt-6" aria-live="polite">
+    <p x-show="loadError" class="rounded-lg border border-amber-400/40 p-4 text-sm text-amber-200/90" data-search-state="error">
+      Rejstřík hledání se nepodařilo načíst, takže výsledky teď nejsou k dispozici —
+      <strong>neznamená to, že záznam neexistuje</strong>. Zkuste stránku načíst znovu.
+    </p>
+    <p x-show="!loaded && !loadError" class="text-sm text-white/50" data-search-state="loading">Načítám rejstřík hledání…</p>
+    <p x-show="loaded && result.empty" class="text-sm text-white/50" data-search-state="idle">
+      Zadejte hledaný text nebo zvolte filtr.
+    </p>
+    <div x-show="loaded && !result.empty" data-search-state="results">
+      <div class="flex flex-wrap items-baseline justify-between gap-2">
+        <p class="text-sm text-white/70" data-search-total>
+          Nalezeno: <strong class="text-white" x-text="countLabel(result.total)"></strong>
+        </p>
+        <button type="button" @click="reset()" class="rounded-lg px-3 py-1.5 text-xs text-white/60 hover:bg-white/5 hover:text-white">Zrušit dotaz a filtry</button>
+      </div>
+      <ul class="mt-2 flex flex-wrap gap-2 text-xs" aria-label="Počet výsledků podle typu záznamu">
+        <template x-for="o in options.types.filter((t) => result.byType[t.value])" :key="o.value">
+          <li class="rounded-full border border-white/10 px-2.5 py-0.5 text-white/60"><span x-text="o.label"></span>: <span x-text="result.byType[o.value]"></span></li>
+        </template>
+      </ul>
+
+      <p x-show="result.total === 0" class="mt-6 rounded-lg border border-dashed border-white/15 p-6 text-center text-sm text-white/50" data-search-state="none">
+        Pro tento dotaz a filtry rejstřík nic neobsahuje. To popisuje jen tento web — ne to, zda o věci existují veřejné zdroje.
+      </p>
+
+      <ol class="mt-4 divide-y divide-white/10 border-y border-white/10" data-search-results>
+        <template x-for="r in result.items" :key="r.type + r.dossier + r.id">
+          <li class="py-3">
+            <a :href="r.route" class="group block rounded-lg px-2 py-1 hover:bg-white/5">
+              <span class="flex flex-wrap items-center gap-2 text-xs text-white/50">
+                <span class="rounded border border-white/15 px-1.5 py-0.5 uppercase tracking-wide" x-text="r.typeLabel"></span>
+                <span class="font-mono text-[#f3e5c0]" x-text="r.type === 'dossier' || r.type === 'entity' ? '' : r.id"></span>
+                <span x-show="r.type === 'claim' && r.extra" class="status-badge mb-0" :class="r.status" x-text="r.extra"></span>
+                <span x-show="r.dossier && r.type !== 'dossier'" x-text="dossierLabel(r.dossier)"></span>
+              </span>
+              <span class="mt-1 block font-semibold text-white group-hover:underline">
+                <template x-if="r.hlField === 'title' && r.hl.match"><span><span x-text="r.hl.before"></span><mark class="bg-[#f3e5c0]/25 text-white" x-text="r.hl.match"></mark><span x-text="r.hl.after"></span></span></template>
+                <template x-if="!(r.hlField === 'title' && r.hl.match)"><span x-text="r.title"></span></template>
+              </span>
+              <span x-show="r.summary && r.summary !== r.title" class="mt-0.5 line-clamp-2 block text-sm text-white/60" x-text="r.summary"></span>
+            </a>
+          </li>
+        </template>
+      </ol>
+      <div class="mt-4 text-center" x-show="result.truncated">
+        <button type="button" @click="more()" class="rounded-lg border border-white/15 px-4 py-2 text-sm text-white/80 hover:bg-white/5">
+          Zobrazit dalších <span x-text="Math.min(50, result.total - result.items.length)"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}

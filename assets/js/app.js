@@ -15,6 +15,7 @@ import Alpine from "alpinejs";
 import { registerClaimsFilter } from "./modules/claims-filter.js";
 import { registerTableFilter } from "./modules/table-filter.js";
 import { registerGlobalSearch, initSearchShortcuts } from "./modules/global-search.js";
+import { registerSearchPage } from "./modules/search-page.js";
 
 import { initSectionNav } from "./modules/section-nav.js";
 import { initStatusChart } from "./modules/charts.js";
@@ -33,6 +34,7 @@ document.addEventListener("alpine:init", function () {
   registerClaimsFilter();
   registerTableFilter();
   registerGlobalSearch();
+  registerSearchPage();
 });
 
 window.Alpine = Alpine;

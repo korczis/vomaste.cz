@@ -118,3 +118,109 @@ export function searchRecords(index, rawQuery, { perGroup = 5, total = 24 } = {}
   }
   return { groups: groups.filter((g) => g.items.length > 0), flat, total: matched.length };
 }
+
+// ---------------------------------------------------------------------------
+// Stránka /hledat/ (plné hledání s filtry a stavem v URL).
+//
+// Na rozdíl od příkazového řádku nemá strop 24 výsledků a umí filtrovat
+// podle typu záznamu, dossieru a stavu tvrzení — i BEZ dotazu, takže jde
+// procházet třeba „všechna sporná tvrzení v dossieru X". Stav tvrzení se
+// bere doslova z indexu (`extra` u záznamu typu claim = statusLabel
+// kanonického záznamu); nic se tu nepřekládá ani nedopočítává.
+
+// Klíče parametrů v URL. České, protože je člověk vidí a sdílí.
+export const PAGE_PARAMS = { q: "q", type: "typ", dossier: "dossier", status: "stav" };
+
+export function readPageState(search) {
+  const p = new URLSearchParams(search || "");
+  return {
+    q: p.get(PAGE_PARAMS.q) || "",
+    type: p.get(PAGE_PARAMS.type) || "",
+    dossier: p.get(PAGE_PARAMS.dossier) || "",
+    status: p.get(PAGE_PARAMS.status) || "",
+  };
+}
+
+// Prázdné hodnoty se do adresy nepíšou: výchozí pohled má čistou URL.
+export function writePageState(state) {
+  const p = new URLSearchParams();
+  for (const [key, param] of Object.entries(PAGE_PARAMS)) {
+    const v = (state[key] || "").trim();
+    if (v) p.set(param, v);
+  }
+  const s = p.toString();
+  return s ? `?${s}` : "";
+}
+
+// Volby filtrů odvozené z indexu samotného — žádný seznam dossierů ani
+// stavů v kódu. Dossier se popisuje názvem ze záznamu typu "dossier".
+export function facetOptions(index) {
+  const dossierTitle = new Map();
+  for (const r of index) if (r.type === "dossier" && r.dossier) dossierTitle.set(r.dossier, r.title);
+  const dossiers = new Set();
+  const statuses = new Set();
+  const types = new Set();
+  for (const r of index) {
+    types.add(r.type);
+    if (r.dossier) dossiers.add(r.dossier);
+    if (r.type === "claim" && r.extra) statuses.add(r.extra);
+  }
+  return {
+    types: GROUPS.filter(([t]) => types.has(t)).map(([value, label]) => ({ value, label }))
+      .concat([...types].filter((t) => !GROUP_RANK.has(t)).sort().map((t) => ({ value: t, label: t }))),
+    dossiers: [...dossiers]
+      .map((value) => ({ value, label: dossierTitle.get(value) || value }))
+      .sort((a, b) => a.label.localeCompare(b.label, "cs")),
+    statuses: [...statuses].sort((a, b) => a.localeCompare(b, "cs")).map((value) => ({ value, label: value })),
+  };
+}
+
+function passesFilters(record, { type, dossier, status }) {
+  if (type && record.type !== type) return false;
+  if (dossier && record.dossier !== dossier) return false;
+  // Filtr stavu dává smysl jen u tvrzení; jiný typ záznamu ho nesplní.
+  if (status && !(record.type === "claim" && record.extra === status)) return false;
+  return true;
+}
+
+// Dotaz + filtry → seřazený seznam (stránkovaný přes `limit`) a počty
+// podle typu nad celým filtrovaným výsledkem. Prázdný dotaz BEZ filtrů
+// nevrací nic: výpis všech ~4 000 záznamů by nebyl odpověď na otázku.
+export function searchPage(index, state, { limit = 50 } = {}) {
+  const query = normalize((state.q || "").trim());
+  const filters = { type: state.type || "", dossier: state.dossier || "", status: state.status || "" };
+  const hasFilter = Boolean(filters.type || filters.dossier || filters.status);
+  if (!query && !hasFilter) return { items: [], total: 0, byType: {}, truncated: false, empty: true };
+  const tokens = query ? query.split(/\s+/).filter(Boolean) : [];
+
+  const matched = [];
+  for (const record of index) {
+    if (!passesFilters(record, filters)) continue;
+    if (!query) {
+      matched.push({ record, score: 0, field: "title" });
+      continue;
+    }
+    const hit = scoreRecord(record, tokens, query);
+    if (hit) matched.push({ record, ...hit });
+  }
+  matched.sort((a, b) => {
+    if (b.score !== a.score) return b.score - a.score;
+    const ga = GROUP_RANK.get(a.record.type) ?? GROUPS.length;
+    const gb = GROUP_RANK.get(b.record.type) ?? GROUPS.length;
+    if (ga !== gb) return ga - gb;
+    if ((a.record.dossier || "") !== (b.record.dossier || "")) {
+      return (a.record.dossier || "").localeCompare(b.record.dossier || "");
+    }
+    return (a.record.id || "").localeCompare(b.record.id || "", "cs", { numeric: true });
+  });
+
+  const byType = {};
+  for (const m of matched) byType[m.record.type] = (byType[m.record.type] || 0) + 1;
+  const items = matched.slice(0, limit).map((m) => ({
+    ...m.record,
+    typeLabel: GROUP_LABEL.get(m.record.type) ?? m.record.type,
+    hl: highlight(m.field === "id" ? m.record.id : m.record.title || "", (state.q || "").trim()),
+    hlField: m.field === "id" ? "id" : "title",
+  }));
+  return { items, total: matched.length, byType, truncated: matched.length > limit, empty: false };
+}

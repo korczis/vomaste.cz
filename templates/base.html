@@ -274,13 +274,17 @@
           order); klávesová navigace běží po plochém seznamu `flat`, takže
           šipky přecházejí přes hranice skupin. Zvýraznění shody je přes
           tři x-text spany (hl.before/match/after) — nikdy x-html. -#}
+      {#- Obal nese pozici a viditelnost; uvnitř je listbox (jen volby, jak
+          vyžaduje ARIA vzor) a pod ním odkaz na plné hledání /hledat/ se
+          stejným dotazem — příkazový řádek má strop 24 výsledků, stránka
+          ne, a navíc filtruje podle typu, dossieru a stavu tvrzení. -#}
+      <div x-show="open && flat.length > 0" x-cloak
+           class="absolute left-0 right-0 top-full z-50 mt-1 overflow-hidden rounded-lg border border-white/10 bg-black shadow-xl">
       <div
         id="global-search-results"
-        x-show="open && flat.length > 0"
-        x-cloak
         role="listbox"
         aria-label="Výsledky hledání"
-        class="absolute left-0 right-0 top-full z-50 mt-1 max-h-96 overflow-y-auto rounded-lg border border-white/10 bg-black shadow-xl"
+        class="max-h-96 overflow-y-auto"
       >
         <template x-for="group in groups" :key="group.type">
           <div>
@@ -312,6 +316,11 @@
             </template>
           </div>
         </template>
+      </div>
+      <a :href="'{{ get_url(path='@/hledat/_index.md') | safe }}?q=' + encodeURIComponent(query.trim())" data-search-all
+         class="block border-t border-white/10 px-3 py-2 text-xs text-[#f3e5c0] no-underline hover:bg-white/5">
+        <span x-text="totalMatches > flat.length ? 'Všech ' + totalMatches + ' výsledků a filtry' : 'Hledat s filtry'"></span> →
+      </a>
       </div>
       {#- Nenačtený rejstřík NENÍ prázdný výsledek: „Nic nenalezeno" by
           uživatele nechalo v přesvědčení, že záznam neexistuje, přestože

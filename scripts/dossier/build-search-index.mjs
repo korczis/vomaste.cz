@@ -85,6 +85,9 @@ for (const slug of dossierSlugs) {
     title: r.identifier,
     summary: r.text ?? "",
     extra: [r.statusLabel].filter(Boolean).join(" "),
+    // Třída stavu kanonického záznamu (status-single, …) — jen pro barvu
+    // odznaku na stránce /hledat/; text odznaku je dál `extra` (statusLabel).
+    status: r.status ?? "",
     route: w.route,
   }));
   push("cases", (w, r) => ({
