@@ -37,6 +37,7 @@ import {
 import { homedir } from "node:os";
 import { join, resolve } from "node:path";
 import { assertPublicBusinessOnly, buildDocumentArchive, sha256 } from "./lib/document-archive.mjs";
+import { CURL_STATUS_ARGS, parseJusticeResponse, splitCurlOutput } from "./lib/justice-response.mjs";
 
 const ROOT = resolve(import.meta.dirname, "../..");
 const ENTITY_DIR = join(ROOT, "data/dossiers/_shared/entities");
@@ -90,10 +91,13 @@ function fetchJustice(ico) {
   // has no Collection-of-Deeds subject. Do not use --fail here; transport and
   // TLS errors still make curl fail.
   const resolution = resolveIp ? ["--resolve", `verejnerejstriky.msp.gov.cz:443:${resolveIp}`] : [];
-  return execFileSync("curl", [...resolution, "-L", "--silent", "--show-error", "-H", "Accept: application/json", `${API_BASE}/${ico}`], {
+  const output = execFileSync("curl", [...resolution, "-L", "--silent", "--show-error", ...CURL_STATUS_ARGS, "-H", "Accept: application/json", `${API_BASE}/${ico}`], {
     encoding: "utf8",
     maxBuffer: 64 * 1024 * 1024,
   });
+  // JSON i s HTTP 400 (platná negativní odpověď), HTML/jiné → chyba s kódem
+  // a titulkem stránky místo holého SyntaxError (viz lib/justice-response.mjs).
+  return parseJusticeResponse(splitCurlOutput(output), ico);
 }
 
 function filingStats(response) {
@@ -364,7 +368,7 @@ if (mode === "fetch") {
   const retrieved = new Date().toISOString().slice(0, 10);
   const records = [];
   for (const entity of entities) {
-    const response = JSON.parse(fetchJustice(entity.ico));
+    const response = fetchJustice(entity.ico);
     saveRaw(entity.ico, rawEnvelope(entity.ico, retrieved, response));
     records.push(writePublicAndRecord(entity, retrieved, response));
   }
