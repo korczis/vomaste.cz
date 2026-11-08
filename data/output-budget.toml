@@ -1,0 +1,28 @@
+# Limity velikosti vydaného webu (`public/`), které hlídá
+# scripts/build/verify-output-budget.mjs po `zola build` (součást `npm run build`).
+#
+# PROČ: 2026-08-14 GitHub Pages odmítly nasadit 10GB artefakt (běh
+# 31796352276) — navigace se vypisovala celá do každé stránky a nic velikost
+# neměřilo. Limit na opakovaný obal stránky (shell_bytes_max) zachytí přesně
+# tuhle třídu chyb hned, ne až odmítnutým nasazením.
+#
+# Hodnoty jsou BAJTY a jsou nastavené podle měření, ne odhadem: brána při
+# každém běhu vypíše naměřené hodnoty i nejtěžší stránky. Zvýšit limit je
+# rozhodnutí s odůvodněním v komentáři u hodnoty — nejdřív zjisti, co roste.
+#
+# Měření 2026-11-08 (233 dossierů, 5 859 HTML stránek):
+#   před sbalením seznamu dossierů v navigaci: celkem 1,77 GiB, p95 stránky
+#   314 KiB, obal 285 KiB (sidebar 219 + noscript 35 + JSON-LD navigace 31)
+#   po sbalení (inline_children_max v data/navigation.toml): celkem 499,8 MiB,
+#   p95 stránky 85,9 KiB, obal 55,9 KiB (sidebar 41,9 + noscript 8,1 + JSON-LD 5,9)
+#
+# Limity = měření + rezerva na růst obsahu. Obsahové stránky rostou lineárně
+# s daty, obal růst nemá vůbec — jeho rezerva je proto nejmenší.
+
+[budget]
+# 768 MiB: ~1,5× měření. Překročení je signál „co přibylo?", ne chyba dat.
+total_bytes_max = 805306368
+# 128 KiB: ~1,5× měření.
+html_page_bytes_p95_max = 131072
+# 80 KiB: ~1,4× měření. Před sbalením 285 KiB — tenhle limit by to shodil.
+shell_bytes_max = 81920

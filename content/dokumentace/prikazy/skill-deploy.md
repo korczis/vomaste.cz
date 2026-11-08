@@ -2,7 +2,7 @@
 # GENEROVANÝ SOUBOR. NEUPRAVUJ RUČNĚ. Zdroj: data/tooling/** + package.json + justfile + .claude/skills/** — regeneruje `npm run build:tooling-catalog`.
 title = "/deploy — Ruční nasazení na GitHub Pages"
 template = "tooling-command.html"
-weight = 142
+weight = 143
 description = "Ruční nasazení na GitHub Pages: Ruční push na master, tedy živý deploy na GitHub Pages — pro případy, kdy se automatický post-commit/post-merge hook nespustil nebo nedoběhl. Claude skill, provoz."
 
 [extra]

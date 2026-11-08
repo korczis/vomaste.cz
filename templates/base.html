@@ -365,10 +365,16 @@
         je bez `open` zavřené, takže se těch 1,6 MB posílalo čtenáři pro nic.
         Každý dossier zůstává v seznamu a na jeden klik; jeho registry se
         rozbalí, jakmile jsi uvnitř. Funguje to dál bez JavaScriptu. -#}
+    {#- SBALENÁ POLOŽKA (`item.collapsed`, generuje build-navigation.mjs nad
+        `inline_children_max` z data/navigation.toml): ani seznam dětí se do
+        každé stránky nevypisuje — jen dítě na aktivní cestě a odkaz na úplný
+        seznam. Při 233 dossierech to bylo 219 kB postranního stromu na
+        stránku z ~314 kB; strop hlídá verify-output-budget.mjs. -#}
     {% for item in nav_items %}
     {{ <nav_nav_link item={item} depth={0} active_id={active_id} metrics={nav_metrics} /> }}
     {%- for child in item.children %}
-    {%- if child.children | length > 0 and "|" ~ child.id ~ "|" in active_trail %}
+    {%- if item.collapsed and "|" ~ child.id ~ "|" not in active_trail %}
+    {%- elif child.children | length > 0 and "|" ~ child.id ~ "|" in active_trail %}
     <details class="group" {% if "|" ~ child.id ~ "|" in active_trail %}open{% endif %}>
       <summary class="flex cursor-pointer list-none items-center gap-3 py-2.5 pl-8 pr-4 text-sm marker:content-none [&::-webkit-details-marker]:hidden {% if child.id == active_id %}bg-white/5 text-[#f3e5c0]{% else %}text-white/60 hover:bg-white/5 hover:text-white{% endif %}">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0" aria-hidden="true"><path d="{{ child.icon }}"/></svg>
@@ -387,6 +393,13 @@
     {{ <nav_nav_link item={child} depth={1} active_id={active_id} metrics={nav_metrics} /> }}
     {%- endif %}
     {%- endfor %}
+    {%- if item.collapsed %}
+    <a href="{{ get_url(path=item.path) | safe }}" data-nav-collapsed-link="{{ item.id }}"
+       class="flex items-center gap-3 py-2.5 pl-12 pr-4 text-[0.8rem] text-white/60 hover:bg-white/5 hover:text-white">
+      <span class="min-w-0 flex-1 truncate">{{ item.collapsedLabel }}</span>
+      <span aria-hidden="true">→</span>
+    </a>
+    {%- endif %}
     {% endfor %}
   </nav>
 </aside>
@@ -403,13 +416,18 @@
       {% for item in nav_items %}
       <li><a href="{{ get_url(path=item.path) | safe }}" class="text-[#f3e5c0] underline">{{ item.label }}</a></li>
       {%- for dossier in item.children %}
+      {%- if not item.collapsed or "|" ~ dossier.id ~ "|" in active_trail %}
       <li><a href="{{ get_url(path=dossier.path) | safe }}" class="text-[#f3e5c0] underline">{{ item.label }} — {{ dossier.label }}</a></li>
       {%- if "|" ~ dossier.id ~ "|" in active_trail %}
       {%- for child in dossier.children %}
       <li><a href="{{ get_url(path=child.path) | safe }}" class="text-[#f3e5c0] underline">{{ dossier.label }} — {{ child.label }}</a></li>
       {%- endfor %}
       {%- endif %}
+      {%- endif %}
       {%- endfor %}
+      {%- if item.collapsed %}
+      <li><a href="{{ get_url(path=item.path) | safe }}" class="text-[#f3e5c0] underline">{{ item.collapsedLabel }}</a></li>
+      {%- endif %}
       {% endfor %}
     </ul>
   </nav>

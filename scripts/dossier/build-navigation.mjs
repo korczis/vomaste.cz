@@ -59,6 +59,12 @@ const items = blocks("items")
     // hand-written into navigation.toml.
     countMetric: str(b, "count_metric"),
     countNoun: str(b, "count_noun"),
+    // Kolik dětí smí položka vypsat do KAŽDÉ stránky (0 = bez omezení).
+    // Nad limitem se položka označí `collapsed` a šablona vypíše jen dítě
+    // na aktivní cestě + odkaz na úplný seznam — viz komentář u `collapsed`
+    // níže a v data/navigation.toml.
+    inlineChildrenMax: num(b, "inline_children_max"),
+    collapsedLabel: str(b, "collapsed_label"),
     children: [],
   }))
   .sort((a, b) => a.order - b.order);
@@ -324,6 +330,29 @@ if (docsItem) {
 
 for (const i of items) i.depth = 0;
 
+// SBALENÉ POLOŽKY. Postranní strom se vykresluje do KAŽDÉ z ~6 000 stránek.
+// Po incidentu z 2026-08-14 (10 GB `public/`, viz komentář v base.html) se
+// registry vypisovaly jen u aktivního dossieru, ale SEZNAM dossierů zůstal
+// celý: při 233 dossierech 219 kB postranního stromu + 35 kB <noscript>
+// + 31 kB JSON-LD navigace, tedy ~285 kB z ~314 kB stránky (změřeno
+// verify-output-budget.mjs). Náklad roste součinem počtu dossierů a počtu
+// stránek, takže by se limit Pages vrátil kolem 500–600 dossierů.
+//
+// Položka, která má víc dětí než `inline_children_max`, se proto označí
+// `collapsed`: šablona vypíše jen dítě na aktivní cestě (dossier, ve kterém
+// čtenář je, i s jeho registry) a odkaz `collapsed_label` na úplný seznam,
+// který už existuje jako stránka (u dossierů /dossiers/ s hledáním a filtry).
+// Děti v navigation.json zůstávají — validátory a počítadla s nimi pracují
+// dál; mění se jen to, co se vypisuje do každé stránky.
+for (const item of items) {
+  item.childCount = item.children.length;
+  item.collapsed = item.inlineChildrenMax > 0 && item.children.length > item.inlineChildrenMax;
+  if (item.collapsed && !item.collapsedLabel) {
+    console.log(`ERROR data/navigation.toml: item "${item.id}" has ${item.children.length} children over inline_children_max = ${item.inlineChildrenMax} but no collapsed_label for the link to the full list.`);
+    process.exit(1);
+  }
+}
+
 mkdirSync(dirname(OUT), { recursive: true });
 writeFileSync(OUT, JSON.stringify({ items }, null, 2) + "\n");
 
@@ -353,11 +382,14 @@ writeFileSync(OUT, JSON.stringify({ items }, null, 2) + "\n");
 // invariant z AGENTS.md drží, jen se obě strany zbavily balastu.
 const FLAT_DEPTH = 2;
 const flat = [];
+// Sbalená položka (viz výše) se do JSON-LD vydává bez dětí — z téhož důvodu
+// a podle téhož pravidla jako v postranním stromu, aby strukturovaná data
+// a sidebar dál popisovaly totéž.
 const walk = (list, depth = 0) => {
   if (depth >= FLAT_DEPTH) return;
   for (const item of list ?? []) {
     flat.push(item);
-    walk(item.children, depth + 1);
+    if (!item.collapsed) walk(item.children, depth + 1);
   }
 };
 walk(items);

@@ -87,10 +87,21 @@ const CANONICAL_HINT = {
 //
 // Ve worktree je `.git` SOUBOR s ukazatelem, ne adresář, takže se
 // testuje existence, ne typ.
-function repoRootOf(absPath) {
+//
+// Nejbližší `.git` nestačí: od 2026-08 je git repozitářem i nadřazený
+// `~/dev`, takže cesta pod ním (mimo jakýkoli checkout tohohle projektu)
+// by se rozřešila proti `~/dev` a hook by soudil cizí soubor podle
+// pravidel vomaste.cz. Kořen se proto přijme, jen když je to checkout
+// TOHOHLE projektu — pozná se podle vlastního souboru tohohle hooku.
+// Jinak hook mlčí: cizí repozitář není jeho věc.
+export const PROJECT_MARKER = "scripts/hooks/protect-canonical.mjs";
+
+export function repoRootOf(absPath) {
   let dir = dirname(absPath);
   for (let i = 0; i < 40; i++) {
-    if (existsSync(join(dir, ".git"))) return dir;
+    if (existsSync(join(dir, ".git"))) {
+      return existsSync(join(dir, PROJECT_MARKER)) ? dir : null;
+    }
     const up = dirname(dir);
     if (up === dir) break;
     dir = up;

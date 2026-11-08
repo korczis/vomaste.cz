@@ -12,10 +12,13 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
-import { readFileSync } from "node:fs";
+import { mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { decide, isGenerated, protectedRanges, relativePath, LOG_HEADING } from "./protect-canonical.mjs";
+import {
+  decide, isGenerated, protectedRanges, relativePath, repoRootOf, LOG_HEADING, PROJECT_MARKER,
+} from "./protect-canonical.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const HOOK = join(ROOT, "scripts/hooks/protect-canonical.mjs");
@@ -167,6 +170,29 @@ test("chrání i worktree, ne jen hlavní checkout", () => {
   // A tenhle worktree .git má, takže se rozřeší.
   const here = new URL("../..", import.meta.url).pathname.replace(/\/$/, "");
   assert.equal(relativePath(`${here}/docs/TOOLING.md`, "/nonexistent"), "docs/TOOLING.md");
+});
+
+test("nejbližší .git, který není checkout tohohle projektu, se nepřijme", () => {
+  // Regrese z 2026-11: ~/dev se stal git repozitářem a cesta pod ním
+  // (mimo checkout vomaste.cz) se rozřešila proti ~/dev — hook pak soudil
+  // cizí soubor jako generovaný soubor tohohle projektu. Na konkrétní
+  // cestě stroje to stát nesmí, proto dočasný adresář.
+  const outer = mkdtempSync(join(tmpdir(), "protect-canonical-"));
+  try {
+    mkdirSync(join(outer, ".git"));
+    mkdirSync(join(outer, "elsewhere", "docs"), { recursive: true });
+    assert.equal(repoRootOf(join(outer, "elsewhere/docs/TOOLING.md")), null);
+    assert.equal(relativePath(join(outer, "elsewhere/docs/TOOLING.md"), "/nonexistent"), null);
+    // Táž cesta uvnitř checkoutu tohohle projektu (marker existuje) se rozřeší.
+    const wt = join(outer, "wt");
+    mkdirSync(join(wt, ".git"), { recursive: true });
+    mkdirSync(join(wt, dirname(PROJECT_MARKER)), { recursive: true });
+    writeFileSync(join(wt, PROJECT_MARKER), "");
+    assert.equal(repoRootOf(join(wt, "docs/TOOLING.md")), wt);
+    assert.equal(relativePath(join(wt, "docs/TOOLING.md"), "/nonexistent"), "docs/TOOLING.md");
+  } finally {
+    rmSync(outer, { recursive: true, force: true });
+  }
 });
 
 test("cesta mimo repozitář se neřeší", () => {

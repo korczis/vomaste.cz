@@ -98,7 +98,7 @@ kanonická data (data/dossiers/**/*.json — JSON Schema + JSON-LD context)
   parita content == staging, linty, katalog zdrojů, exporty, search index, graf)
 → Tailwind + esbuild (assets)
 → zola build (statické HTML; šablony čtou view modely přes load_data)
-→ verify:navigation-counts / verify:anchors / verify:jsonld / verify:og / verify:full-pages / verify:export
+→ verify:navigation-counts / verify:anchors / verify:jsonld / verify:og / verify:full-pages / verify:export / verify:output-budget
 → GitHub Actions → GitHub Pages
 ```
 
@@ -550,6 +550,7 @@ zatímco tenhle výběr je ruční a záměrně neúplný.
 | `npm run build:jsonld-exports` | vygeneruje `/data/dossiers/<slug>.jsonld`, `/data/graph.jsonld`, manifest s checksumy a citační otisky pro šablony — součást `npm run build` |
 | `npm run verify:export` | po buildu (i offline nad staženou kopií, `--dir <cesta>`): každý export sedí na manifest hash, parsuje, nenese truth ratingy a otisky se přepočítávají |
 | `npm run verify:full-pages` | po buildu: každá stránka tvrzení/zdroje má v hotovém HTML povinné sekce (full-page doktrína), kotvy `clm-##` leží uvnitř tabulky |
+| `npm run verify:output-budget` | po buildu: celková velikost `public/`, p95 velikosti stránky a opakovaný obal stránky (navigace v každé stránce) proti limitům z `data/output-budget.toml`; vypíše i nejtěžší stránky |
 | `npm run build:source-catalog` / `verify:source-catalog` | přegeneruje katalog zdrojů (`/zdroje/`, `docs/osint/SOURCE_CATALOG.md`, `data/generated/source-catalog.json`) z `data/source-catalog/*.json` / shodí, když se zacommitovaný výstup rozešel s daty — `verify` je součást pre-commit hooku, ne build pipeline (v pipeline běží hned za generátorem a nikdy by neselhal) |
 | `npm run report:evidence-plan` | vygeneruje `reports/evidence-plan.md` + `data/generated/evidence-plan.json`: per dossier počty tvrzení dle stavu a evidenční třídy, potenciál korroborace, mezery, datově odvozená priorita a konkrétní další krok — součást `npm run data:build` i `npm run build`, nikdy se needituje ručně. Viz [evidenční plán práce](#evidenční-plán-práce) |
 | `npm run lint:historical-coupling` | de-specializační brána: žádná jména subjektů ve strukturálním kódu |

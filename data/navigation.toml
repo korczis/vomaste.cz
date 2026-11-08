@@ -46,6 +46,12 @@ order = 15
 icon = "M4 19.5A2.5 2.5 0 0 1 6.5 17H20 M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"
 count_metric = "dossiers.total"
 count_noun = "dossierů"
+# Postranní strom je v KAŽDÉ stránce. Nad tímhle počtem dossierů se jejich
+# seznam do stránky nevypisuje: zůstane jen dossier, ve kterém čtenář právě
+# je (i s registry), a odkaz na úplný seznam /dossiers/ (hledání, filtry).
+# Hlídá verify-output-budget.mjs (shell_bytes_max v data/output-budget.toml).
+inline_children_max = 40
+collapsed_label = "Všechny dossiery"
 
 [[items]]
 id = "entities"

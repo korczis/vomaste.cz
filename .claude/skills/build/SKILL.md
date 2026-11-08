@@ -59,6 +59,7 @@ generátory → CSS/JS → `zola build` → kontroly nad postaveným webem
 | `verify:anchors` | odkaz na kotvu, která v postaveném HTML není |
 | `verify:jsonld` | stránka bez JSON-LD, špatný tvar uzlu, nebo truth-rating značka |
 | `verify:og` | metadata neodpovídají `data/seo.toml` |
+| `verify:output-budget` | web nebo opakovaný obal stránky (navigace) přerostl limit v `data/output-budget.toml` — výpis ukáže, co roste |
 
 **V čerstvém worktree** padá build nejčastěji proto, že vygenerované
 vstupy nikdy nevznikly. To není rozejitá data — spusť

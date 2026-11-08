@@ -10,6 +10,20 @@ Stavy: `todo → claimed → in-progress → review → merged`, kdykoliv
 nese štítek `[scope-check]` a před startem se ověřuje proti
 autorizačnímu logu v `AGENTS.md`.
 
+## Aktivní zadání: autonomní rozšíření a produkční release (2026-11-08)
+
+Zadání vlastníka (master prompt „VOMASTE.CZ — AUTONOMOUS EXPANSION &
+PRODUCTION RELEASE", 2026-11-08): inženýrské releasy průběžně do produkce,
+obsah o skutečných lidech jen po redakčním schválení. Majordomus běží jako
+**osobní** vrstva (`majordomus init --personal`, `.ai/` v `.git/info/exclude`):
+sdílená projekce by do `AGENTS.md` vepsala, že normativní je jen `.ai/`,
+což odporuje kanoničnosti tohoto souboru — povýšení na sdílenou vrstvu
+čeká na úpravu policy.
+
+| ID | Titul | Scope (soubory/sekce) | Branch | Owner | Stav | Závislosti | Akceptace |
+|----|-------|-----------------------|--------|-------|------|------------|-----------|
+| T-092 | Release A: brána velikosti vydaného webu + postranní navigace už nevypisuje seznam všech dossierů do každé stránky; oprava `protect-canonical` hooku, který po vzniku git repa v `~/dev` rozřešoval cizí cesty proti `~/dev` | `scripts/build/verify-output-budget*.mjs`, `data/output-budget.toml`, `scripts/build/pipeline.mjs`, `scripts/dossier/build-navigation.mjs`, `data/navigation.toml`, `templates/base.html`, `tests/e2e/sidebar-collapse.spec.mjs`, `scripts/hooks/protect-canonical*.mjs`, `data/tooling/verify-output-budget.json` + generovaný katalog, `README.md`, `.claude/skills/build/SKILL.md` | master | ORCH | review | – | `public/` 1,77 GiB → 500 MiB, p95 stránky 314 → 86 KiB, opakovaný obal 285 → 56 KiB; brána padá na nafouknutém stromu (12 testů); `npm run build` zelený, `npm test` 1122/1122; e2e viz commit |
+
 ## Aktivní zadání: James Quick — pokračující doložení (2026-08-07)
 
 | ID | Titul | Scope (soubory/sekce) | Branch | Owner | Stav | Závislosti | Akceptace |

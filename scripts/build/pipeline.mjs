@@ -137,6 +137,11 @@ const BUILD_STEPS = [
   // post-build průchod nad public/.
   "verify:table-responsive",
   "verify:export",
+  // Velikost vydaného webu: celkem, p95 stránky a opakovaný obal stránky
+  // (navigace v každé stránce). Poslední, protože měří hotový public/ —
+  // incident z 2026-08-14 (10 GB, Pages odmítly nasadit) by zastavil tady,
+  // ne až při nasazení. Limity: data/output-budget.toml.
+  "verify:output-budget",
 ];
 
 // Dev — rychlá podmnožina pro `zola serve` (stejné kroky jako dřívější
